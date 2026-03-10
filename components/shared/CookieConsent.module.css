@@ -1,0 +1,282 @@
+/* ─── Overlay ─── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 2, 6, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ─── Banner ─── */
+.banner {
+  background: #0d1117;
+  border: 1px solid rgba(93, 116, 249, 0.15);
+  border-radius: 20px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(93, 116, 249, 0.08);
+  max-width: 560px;
+  width: 100%;
+  padding: 28px;
+  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bannerLarge {
+  max-width: 520px;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Header ─── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.iconWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(93, 116, 249, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconWrap svg {
+  width: 24px;
+  height: 24px;
+  color: #5d74f9;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 2px;
+}
+
+/* ─── Body ─── */
+.body p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.privacyLink {
+  margin-top: 8px;
+  font-size: 13px !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.privacyLink a {
+  color: #5d74f9;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.privacyLink a:hover {
+  color: #7b8fff;
+}
+
+/* ─── Details view ─── */
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+
+.category {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.category:last-of-type {
+  border-bottom: none;
+}
+
+.catHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.catInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.catName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.catDesc {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.4;
+}
+
+/* ─── Toggle switch ─── */
+.toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.25s ease;
+  padding: 0;
+}
+
+.toggleOn {
+  background: #5d74f9;
+}
+
+.toggleDisabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.toggleDot {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toggleOn .toggleDot {
+  transform: translateX(20px);
+}
+
+/* ─── Action buttons ─── */
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.btnAccept,
+.btnReject,
+.btnCustomize {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.btnAccept {
+  background: #5d74f9;
+  color: #fff;
+}
+
+.btnAccept:hover {
+  background: #4a63e8;
+  transform: translateY(-1px);
+}
+
+.btnReject {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btnReject:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.btnCustomize {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.btnCustomize:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 600px) {
+  .overlay {
+    padding: 12px;
+    align-items: flex-end;
+  }
+
+  .banner {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .btnAccept,
+  .btnReject,
+  .btnCustomize {
+    padding: 14px 16px;
+  }
+
+  .header {
+    gap: 12px;
+  }
+
+  .iconWrap {
+    width: 38px;
+    height: 38px;
+  }
+
+  .iconWrap svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+}
