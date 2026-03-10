@@ -15,6 +15,8 @@ export default function MetricsSection() {
 
     let ticking = false;
 
+    const stickyWrapper = section.querySelector('.metrics-sticky-wrapper') as HTMLElement | null;
+
     const onScroll = () => {
       if (ticking) return;
       ticking = true;
@@ -31,14 +33,15 @@ export default function MetricsSection() {
         const progress = Math.max(0, Math.min(1, scrolled / scrollableDistance));
 
         const n = TEXTS.length;
+        const containerHeight = stickyWrapper?.offsetHeight || viewportHeight;
 
         itemRefs.current.forEach((item, i) => {
           if (!item) return;
 
           const centerAt = i / (n - 1);
-          const translateY = -(progress - centerAt) * (n - 1) * 100;
+          const offsetPx = -(progress - centerAt) * containerHeight;
 
-          item.style.transform = `translate(0, ${translateY}%)`;
+          item.style.transform = `translate(0, ${offsetPx}px)`;
         });
       });
     };

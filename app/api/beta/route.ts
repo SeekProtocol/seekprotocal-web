@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 async function verifyTurnstile(token: string): Promise<boolean> {
   const res = await fetch(
     "https://challenges.cloudflare.com/turnstile/v0/siteverify",
@@ -45,6 +43,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "Seek Protocol <noreply@seekprotocol.ai>",
       to: ["support@seekprotocal.ai"],
