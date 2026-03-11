@@ -6008,9 +6008,10 @@ li {
   border-left-style: solid;
   border-left-width: 1px;
   border-left-color: var(--color--black-color);
-  clip-path: circle(var(--_animations---reveal--video-start));
+  clip-path: circle(10% at 50% 50%);
   background-color: #00020680;
   border-radius: .5rem;
+  transition: clip-path 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -10184,4 +10185,8 @@ li {
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
+}
+
+.video_component.is-revealed {
+  clip-path: circle(100% at 50% 50%);
 }

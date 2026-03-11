@@ -5,10 +5,10 @@
  * The actual GA4 script is loaded dynamically by the CookieConsent
  * component only after the user gives consent.
  *
- * Replace 'G-XXXXXXXXXX' with your GA4 Measurement ID.
+ * Set NEXT_PUBLIC_GA_MEASUREMENT_ID in your environment variables.
  */
 
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '';
 
 export default function GoogleAnalytics() {
   return (

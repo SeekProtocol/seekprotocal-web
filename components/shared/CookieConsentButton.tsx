@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useConsent } from './CookieConsent';
 
 interface CookieConsentButtonProps {
@@ -8,6 +9,7 @@ interface CookieConsentButtonProps {
 
 export default function CookieConsentButton({ className }: CookieConsentButtonProps) {
   const { openBanner } = useConsent();
+  const t = useTranslations('cookies');
 
   return (
     <button
@@ -15,7 +17,7 @@ export default function CookieConsentButton({ className }: CookieConsentButtonPr
       className={className}
       onClick={openBanner}
     >
-      Cookie Settings
+      {t('cookieSettings')}
     </button>
   );
 }

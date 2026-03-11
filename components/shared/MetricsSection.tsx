@@ -1,13 +1,16 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
-const TEXTS = ["UNLIMITED ASSETS.", "REAL ENGAGEMENT.", "SEEK. COLLECT. EARN"];
 const CLASSES = ["metrics-1st", "metrics-2nd", "metrics-3rd"];
 
 export default function MetricsSection() {
+  const t = useTranslations("metrics");
   const sectionRef = useRef<HTMLElement>(null);
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  const texts = [t("text1"), t("text2"), t("text3")];
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -32,7 +35,7 @@ export default function MetricsSection() {
         const scrolled = -rect.top;
         const progress = Math.max(0, Math.min(1, scrolled / scrollableDistance));
 
-        const n = TEXTS.length;
+        const n = texts.length;
         const containerHeight = stickyWrapper?.offsetHeight || viewportHeight;
 
         itemRefs.current.forEach((item, i) => {
@@ -55,15 +58,15 @@ export default function MetricsSection() {
     onScroll();
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [texts]);
 
   return (
     <section ref={sectionRef} className="metrics-01">
       <div className="container-2 _02">
         <div className="metrics-sticky-wrapper">
-          {TEXTS.map((text, i) => (
+          {texts.map((text, i) => (
             <div
-              key={text}
+              key={i}
               ref={(el) => { itemRefs.current[i] = el; }}
               className={CLASSES[i]}
             >

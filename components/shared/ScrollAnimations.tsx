@@ -13,6 +13,7 @@ function animateIn(el: HTMLElement, delay = 0) {
   }, delay);
 }
 
+
 export default function ScrollAnimations() {
   const pathname = usePathname();
 
@@ -57,7 +58,6 @@ export default function ScrollAnimations() {
 
     setup();
     const timer = setTimeout(setup, 100);
-
     return () => {
       observer.disconnect();
       clearTimeout(timer);

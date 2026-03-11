@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
+import { useTranslations } from "next-intl";
 
 declare global {
   interface Window {
@@ -22,6 +23,7 @@ declare global {
 }
 
 export default function ContactForm() {
+  const t = useTranslations("forms");
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -75,7 +77,7 @@ export default function ContactForm() {
 
     if (!formData.name || !formData.email || !formData.message) return;
     if (!turnstileToken) {
-      setErrorMessage("Please complete the captcha verification.");
+      setErrorMessage(t("captchaError"));
       setStatus("error");
       return;
     }
@@ -93,7 +95,7 @@ export default function ContactForm() {
       const data = await res.json();
 
       if (!res.ok) {
-        throw new Error(data.error || "Something went wrong.");
+        throw new Error(data.error || t("genericError"));
       }
 
       setStatus("success");
@@ -101,7 +103,7 @@ export default function ContactForm() {
       setTurnstileToken("");
     } catch (err) {
       setErrorMessage(
-        err instanceof Error ? err.message : "Something went wrong. Please try again."
+        err instanceof Error ? err.message : t("genericErrorRetry")
       );
       setStatus("error");
       if (widgetIdRef.current && window.turnstile) {
@@ -116,13 +118,13 @@ export default function ContactForm() {
         <form onSubmit={handleSubmit} className="form-2">
           <div className="filed-wrap">
             <label htmlFor="name" className="text-field-label paragraph-02">
-              Your Name
+              {t("yourName")}
             </label>
             <input
               className="text-field-option w-input"
               maxLength={256}
               name="name"
-              placeholder="Enter your name"
+              placeholder={t("namePlaceholder")}
               type="text"
               id="name"
               required
@@ -134,13 +136,13 @@ export default function ContactForm() {
           </div>
           <div className="filed-wrap">
             <label htmlFor="Email" className="text-field-label paragraph-02">
-              Your Email
+              {t("yourEmail")}
             </label>
             <input
               className="text-field-option w-input"
               maxLength={256}
               name="Email"
-              placeholder="Enter your email"
+              placeholder={t("emailInputPlaceholder")}
               type="email"
               id="Email"
               required
@@ -152,13 +154,13 @@ export default function ContactForm() {
           </div>
           <div className="filed-wrap _01">
             <label htmlFor="message" className="text-field-label paragraph-02">
-              Message
+              {t("message")}
             </label>
             <textarea
               id="message"
               name="message"
               maxLength={5000}
-              placeholder="Type here"
+              placeholder={t("messagePlaceholder")}
               required
               className="textarea w-input"
               value={formData.message}
@@ -176,16 +178,14 @@ export default function ContactForm() {
           <input
             type="submit"
             className="normal-submit-button _03 w-button"
-            value={status === "submitting" ? "Sending..." : "Send Now"}
+            value={status === "submitting" ? t("sending") : t("sendNow")}
             disabled={status === "submitting"}
           />
         </form>
       )}
       {status === "success" && (
         <div className="success-message w-form-done" style={{ display: "block" }}>
-          <div className="paragraph-02 text-black">
-            Thank you! Your submission has been received!
-          </div>
+          <div className="paragraph-02 text-black">{t("successMessage")}</div>
         </div>
       )}
     </div>

@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import LanguageSwitcher from "@/components/shared/LanguageSwitcher";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations("nav");
 
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
@@ -46,7 +48,7 @@ export default function Navigation() {
                   className={`nav-link-text ${pathname === "/" ? "w--current" : ""}`}
                   onClick={() => setIsOpen(false)}
                 >
-                  Home
+                  {t("home")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -55,7 +57,7 @@ export default function Navigation() {
                   className={`nav-link-text ${pathname === "/about" ? "w--current" : ""}`}
                   onClick={() => setIsOpen(false)}
                 >
-                  About
+                  {t("about")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -65,7 +67,7 @@ export default function Navigation() {
                   rel="noopener noreferrer"
                   className="nav-link-text"
                 >
-                  Whitepaper
+                  {t("whitepaper")}
                 </a>
               </li>
               <li className="nav-item show-tablet">
@@ -74,8 +76,11 @@ export default function Navigation() {
                   className={`nav-link-text ${pathname === "/contact" ? "w--current" : ""}`}
                   onClick={() => setIsOpen(false)}
                 >
-                  Contact
+                  {t("contact")}
                 </Link>
+              </li>
+              <li className="nav-item show-tablet">
+                <LanguageSwitcher />
               </li>
             </ul>
           </nav>
@@ -88,8 +93,11 @@ export default function Navigation() {
                       href="/contact"
                       className={`nav-link-text ${pathname === "/contact" ? "w--current" : ""}`}
                     >
-                      Contact
+                      {t("contact")}
                     </Link>
+                  </li>
+                  <li className="nav-item">
+                    <LanguageSwitcher />
                   </li>
                 </ul>
               </div>
@@ -97,7 +105,7 @@ export default function Navigation() {
             <div
               className={`menu-button w-nav-button ${isOpen ? "w--open" : ""}`}
               onClick={toggleMenu}
-              aria-label="Toggle navigation menu"
+              aria-label={t("toggleMenu")}
               role="button"
               tabIndex={0}
             >

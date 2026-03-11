@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, createContext, useContext } from 'react';
+import { useTranslations } from 'next-intl';
 import styles from './CookieConsent.module.css';
 
 export interface CookiePreferences {
@@ -109,7 +110,7 @@ function loadGoogleAnalytics() {
 }
 
 function removeNonEssentialCookies() {
-  const essentialPrefixes = [COOKIE_NAME, 'next', '__Host', '__Secure'];
+  const essentialPrefixes = [COOKIE_NAME, 'next', '__Host', '__Secure', 'NEXT_LOCALE'];
   document.cookie.split(';').forEach((c) => {
     const name = c.trim().split('=')[0];
     if (!essentialPrefixes.some((p) => name.startsWith(p))) {
@@ -121,6 +122,7 @@ function removeNonEssentialCookies() {
 }
 
 export default function CookieConsent({ children }: { children: React.ReactNode }) {
+  const t = useTranslations('cookies');
   const [preferences, setPreferences] = useState<CookiePreferences | null>(null);
   const [showBanner, setShowBanner] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
@@ -133,8 +135,8 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
       updateGoogleConsent(saved);
       if (saved.analytics) loadGoogleAnalytics();
     } else {
-      const t = setTimeout(() => setShowBanner(true), 800);
-      return () => clearTimeout(t);
+      const timer = setTimeout(() => setShowBanner(true), 800);
+      return () => clearTimeout(timer);
     }
   }, []);
 
@@ -218,21 +220,17 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                 </svg>
               </div>
               <div>
-                <h3 className={styles.title}>Cookie Preferences</h3>
-                <p className={styles.subtitle}>Manage your privacy settings</p>
+                <h3 className={styles.title}>{t('title')}</h3>
+                <p className={styles.subtitle}>{t('subtitle')}</p>
               </div>
             </div>
 
             {!showDetails && (
               <div className={styles.body}>
-                <p>
-                  We use cookies to enhance your browsing experience, serve personalized
-                  content, and analyze our traffic. By clicking &quot;Accept All&quot;, you
-                  consent to our use of cookies.
-                </p>
+                <p>{t('description')}</p>
                 <p className={styles.privacyLink}>
-                  Read more in our{' '}
-                  <a href="/privacy-policy">Privacy Policy</a>.
+                  {t('readMore')}{' '}
+                  <a href="/privacy-policy">{t('privacyPolicy')}</a>.
                 </p>
               </div>
             )}
@@ -242,10 +240,8 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                 <div className={styles.category}>
                   <div className={styles.catHeader}>
                     <div className={styles.catInfo}>
-                      <span className={styles.catName}>Necessary</span>
-                      <span className={styles.catDesc}>
-                        Required for the website to function properly. Cannot be disabled.
-                      </span>
+                      <span className={styles.catName}>{t('necessary')}</span>
+                      <span className={styles.catDesc}>{t('necessaryDesc')}</span>
                     </div>
                     <div className={`${styles.toggle} ${styles.toggleOn} ${styles.toggleDisabled}`}>
                       <div className={styles.toggleDot} />
@@ -256,16 +252,14 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                 <div className={styles.category}>
                   <div className={styles.catHeader}>
                     <div className={styles.catInfo}>
-                      <span className={styles.catName}>Functional</span>
-                      <span className={styles.catDesc}>
-                        Enable enhanced functionality and personalization.
-                      </span>
+                      <span className={styles.catName}>{t('functional')}</span>
+                      <span className={styles.catDesc}>{t('functionalDesc')}</span>
                     </div>
                     <button
                       type="button"
                       className={`${styles.toggle} ${tempPrefs.functional ? styles.toggleOn : ''}`}
                       onClick={() => togglePref('functional')}
-                      aria-label="Toggle functional cookies"
+                      aria-label={`Toggle ${t('functional')}`}
                     >
                       <div className={styles.toggleDot} />
                     </button>
@@ -275,16 +269,14 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                 <div className={styles.category}>
                   <div className={styles.catHeader}>
                     <div className={styles.catInfo}>
-                      <span className={styles.catName}>Analytics</span>
-                      <span className={styles.catDesc}>
-                        Help us understand how visitors interact with our website.
-                      </span>
+                      <span className={styles.catName}>{t('analytics')}</span>
+                      <span className={styles.catDesc}>{t('analyticsDesc')}</span>
                     </div>
                     <button
                       type="button"
                       className={`${styles.toggle} ${tempPrefs.analytics ? styles.toggleOn : ''}`}
                       onClick={() => togglePref('analytics')}
-                      aria-label="Toggle analytics cookies"
+                      aria-label={`Toggle ${t('analytics')}`}
                     >
                       <div className={styles.toggleDot} />
                     </button>
@@ -294,16 +286,14 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                 <div className={styles.category}>
                   <div className={styles.catHeader}>
                     <div className={styles.catInfo}>
-                      <span className={styles.catName}>Marketing</span>
-                      <span className={styles.catDesc}>
-                        Used to deliver relevant advertisements and track campaigns.
-                      </span>
+                      <span className={styles.catName}>{t('marketing')}</span>
+                      <span className={styles.catDesc}>{t('marketingDesc')}</span>
                     </div>
                     <button
                       type="button"
                       className={`${styles.toggle} ${tempPrefs.marketing ? styles.toggleOn : ''}`}
                       onClick={() => togglePref('marketing')}
-                      aria-label="Toggle marketing cookies"
+                      aria-label={`Toggle ${t('marketing')}`}
                     >
                       <div className={styles.toggleDot} />
                     </button>
@@ -311,8 +301,8 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                 </div>
 
                 <p className={styles.privacyLink}>
-                  Read more in our{' '}
-                  <a href="/privacy-policy">Privacy Policy</a>.
+                  {t('readMore')}{' '}
+                  <a href="/privacy-policy">{t('privacyPolicy')}</a>.
                 </p>
               </div>
             )}
@@ -321,7 +311,7 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
               {!showDetails ? (
                 <>
                   <button type="button" className={styles.btnReject} onClick={rejectAll}>
-                    Reject All
+                    {t('rejectAll')}
                   </button>
                   <button
                     type="button"
@@ -331,19 +321,19 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                       setShowDetails(true);
                     }}
                   >
-                    Customize
+                    {t('customize')}
                   </button>
                   <button type="button" className={styles.btnAccept} onClick={acceptAll}>
-                    Accept All
+                    {t('acceptAll')}
                   </button>
                 </>
               ) : (
                 <>
                   <button type="button" className={styles.btnReject} onClick={rejectAll}>
-                    Reject All
+                    {t('rejectAll')}
                   </button>
                   <button type="button" className={styles.btnAccept} onClick={saveCustom}>
-                    Save Preferences
+                    {t('savePreferences')}
                   </button>
                 </>
               )}

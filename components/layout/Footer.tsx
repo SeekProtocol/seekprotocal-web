@@ -1,7 +1,10 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import CookieConsentButton from "@/components/shared/CookieConsentButton";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
   return (
     <section className="footer">
       <div className="container">
@@ -10,23 +13,23 @@ export default function Footer() {
             <div className="footer-left-wrap">
               <div className="footer-link-list">
                 <Link href="/" className="footer-link w-inline-block">
-                  <div className="footer-link-text">Home</div>
-                  <div className="footer-link-text absolute-link">Home</div>
+                  <div className="footer-link-text">{t("home")}</div>
+                  <div className="footer-link-text absolute-link">{t("home")}</div>
                   <div className="link-under-line"></div>
                 </Link>
                 <Link href="/about" className="footer-link w-inline-block">
-                  <div className="footer-link-text">About</div>
-                  <div className="footer-link-text absolute-link">About</div>
+                  <div className="footer-link-text">{t("about")}</div>
+                  <div className="footer-link-text absolute-link">{t("about")}</div>
                   <div className="link-under-line"></div>
                 </Link>
                 <Link href="/contact" className="footer-link w-inline-block">
-                  <div className="footer-link-text">Contact</div>
-                  <div className="footer-link-text absolute-link">Contact</div>
+                  <div className="footer-link-text">{t("contact")}</div>
+                  <div className="footer-link-text absolute-link">{t("contact")}</div>
                   <div className="link-under-line"></div>
                 </Link>
                 <Link href="/blog" className="footer-link w-inline-block">
-                  <div className="footer-link-text">Blog</div>
-                  <div className="footer-link-text absolute-link">Blog</div>
+                  <div className="footer-link-text">{t("blog")}</div>
+                  <div className="footer-link-text absolute-link">{t("blog")}</div>
                   <div className="link-under-line"></div>
                 </Link>
                 <a
@@ -35,8 +38,8 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="footer-link w-inline-block"
                 >
-                  <div className="footer-link-text">Whitepaper</div>
-                  <div className="footer-link-text absolute-link">Whitepaper</div>
+                  <div className="footer-link-text">{t("whitepaper")}</div>
+                  <div className="footer-link-text absolute-link">{t("whitepaper")}</div>
                   <div className="link-under-line"></div>
                 </a>
                 <a
@@ -45,8 +48,8 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="footer-link w-inline-block"
                 >
-                  <div className="footer-link-text">Token Dashboard</div>
-                  <div className="footer-link-text absolute-link">Token Dashboard</div>
+                  <div className="footer-link-text">{t("tokenDashboard")}</div>
+                  <div className="footer-link-text absolute-link">{t("tokenDashboard")}</div>
                   <div className="link-under-line"></div>
                 </a>
               </div>
@@ -61,22 +64,13 @@ export default function Footer() {
                 />
               </Link>
               <div className="footer-text-wrap">
-                <p className="paragraph-03">
-                  Block Protocol L.L.C-FZ Meydan Grandstand, 6th floor, Meydan
-                  Road, Nad AlSheba, Dubai, U.A.E.
-                </p>
-                <p className="paragraph-03 text-gray-color">
-                  Seek Protocol is a next-gen platform developed by Block Protocol
-                  L.L.C-FZ, combining augmented reality, AI, and blockchain to
-                  create real-world gamified experiences.
-                </p>
+                <p className="paragraph-03">{t("address")}</p>
+                <p className="paragraph-03 text-gray-color">{t("description")}</p>
               </div>
             </div>
           </div>
           <div className="footer-bottom-wrap">
-            <p className="paragraph-04">
-              © 2024-2026 Block Protocol All rights reserved
-            </p>
+            <p className="paragraph-04">{t("copyright")}</p>
             <div className="copyright-link-wrap">
               <a
                 href="https://t.me/+Nrn7K1pRN9M3OTU0"
@@ -84,12 +78,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="w-inline-block"
               >
-                <img
-                  src="/images/telegram.svg"
-                  loading="lazy"
-                  width="27"
-                  alt="Telegram"
-                />
+                <img src="/images/telegram.svg" loading="lazy" width="27" alt="Telegram" />
               </a>
               <a
                 href="https://x.com/seekprotocol"
@@ -97,25 +86,14 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="w-inline-block"
               >
-                <img
-                  src="/images/twitter.svg"
-                  loading="lazy"
-                  width="27"
-                  alt="X (Twitter)"
-                />
+                <img src="/images/twitter.svg" loading="lazy" width="27" alt="X (Twitter)" />
               </a>
-              <Link
-                href="/privacy-policy"
-                className="copyright-link paragraph-04"
-              >
-                Privacy Policy
+              <Link href="/privacy-policy" className="copyright-link paragraph-04">
+                {t("privacyPolicy")}
               </Link>
               <div className="horizontal-divider"></div>
-              <Link
-                href="/terms-conditions"
-                className="copyright-link paragraph-04"
-              >
-                Terms of Service
+              <Link href="/terms-conditions" className="copyright-link paragraph-04">
+                {t("termsOfService")}
               </Link>
               <div className="horizontal-divider"></div>
               <CookieConsentButton className="copyright-link paragraph-04" />

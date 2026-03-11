@@ -18,8 +18,15 @@ export default function manifest(): MetadataRoute.Manifest {
       },
       {
         src: "/images/webclip.png",
-        sizes: "256x256",
+        sizes: "192x192",
         type: "image/png",
+        purpose: "any",
+      },
+      {
+        src: "/images/webclip.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "any",
       },
     ],
   };

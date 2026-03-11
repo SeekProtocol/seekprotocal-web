@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
+import { useTranslations } from "next-intl";
 
 export default function BetaForm() {
+  const t = useTranslations("forms");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -56,7 +58,7 @@ export default function BetaForm() {
 
     if (!email) return;
     if (!turnstileToken) {
-      setErrorMessage("Please complete the captcha verification.");
+      setErrorMessage(t("captchaError"));
       setStatus("error");
       return;
     }
@@ -74,7 +76,7 @@ export default function BetaForm() {
       const data = await res.json();
 
       if (!res.ok) {
-        throw new Error(data.error || "Something went wrong.");
+        throw new Error(data.error || t("genericError"));
       }
 
       setStatus("success");
@@ -82,7 +84,7 @@ export default function BetaForm() {
       setTurnstileToken("");
     } catch (err) {
       setErrorMessage(
-        err instanceof Error ? err.message : "Something went wrong. Please try again."
+        err instanceof Error ? err.message : t("genericErrorRetry")
       );
       setStatus("error");
       if (widgetIdRef.current && window.turnstile) {
@@ -100,7 +102,7 @@ export default function BetaForm() {
               className="cta-text-field w-input"
               maxLength={256}
               name="email"
-              placeholder="Email Address"
+              placeholder={t("emailPlaceholder")}
               type="email"
               required
               value={email}
@@ -110,7 +112,7 @@ export default function BetaForm() {
               <input
                 type="submit"
                 className="normal-submit-button w-button"
-                value={status === "submitting" ? "Sending..." : "Send Now"}
+                value={status === "submitting" ? t("sending") : t("sendNow")}
                 disabled={status === "submitting"}
               />
             </div>
@@ -129,9 +131,7 @@ export default function BetaForm() {
         <div className="success-message-wrapper w-form-done" style={{ display: "block" }}>
           <div className="success-message-wrap">
             <div className="success-message">
-              <div className="paragraph-01 text-black">
-                Thank you! Your submission has been received!
-              </div>
+              <div className="paragraph-01 text-black">{t("successMessage")}</div>
             </div>
           </div>
         </div>
