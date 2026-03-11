@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import LanguageSwitcher from "@/components/shared/LanguageSwitcher";
@@ -13,6 +13,21 @@ export default function Navigation() {
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
   }, []);
+
+  const closeMenu = useCallback(() => {
+    setIsOpen(false);
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   return (
     <div
@@ -39,14 +54,29 @@ export default function Navigation() {
           <nav
             role="navigation"
             className="nav-menu-wrapper w-nav-menu"
-            style={isOpen ? { display: "block" } : {}}
+            data-nav-menu-open={isOpen || undefined}
+            style={
+              isOpen
+                ? {
+                    display: "block",
+                    position: "fixed",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    zIndex: 99,
+                    paddingTop: "80px",
+                    overflowY: "auto",
+                  }
+                : {}
+            }
           >
-            <ul role="list" className="nav-menus w-list-unstyled">
+            <ul role="list" className="nav-menus">
               <li className="nav-item">
                 <Link
                   href="/"
                   className={`nav-link-text ${pathname === "/" ? "w--current" : ""}`}
-                  onClick={() => setIsOpen(false)}
+                  onClick={closeMenu}
                 >
                   {t("home")}
                 </Link>
@@ -55,7 +85,7 @@ export default function Navigation() {
                 <Link
                   href="/about"
                   className={`nav-link-text ${pathname === "/about" ? "w--current" : ""}`}
-                  onClick={() => setIsOpen(false)}
+                  onClick={closeMenu}
                 >
                   {t("about")}
                 </Link>
@@ -74,7 +104,7 @@ export default function Navigation() {
                 <Link
                   href="/contact"
                   className={`nav-link-text ${pathname === "/contact" ? "w--current" : ""}`}
-                  onClick={() => setIsOpen(false)}
+                  onClick={closeMenu}
                 >
                   {t("contact")}
                 </Link>
@@ -106,12 +136,25 @@ export default function Navigation() {
               className={`menu-button w-nav-button ${isOpen ? "w--open" : ""}`}
               onClick={toggleMenu}
               aria-label={t("toggleMenu")}
+              aria-expanded={isOpen}
               role="button"
               tabIndex={0}
+              style={{ position: "relative", zIndex: 100 }}
             >
-              <div className="w-icon-nav-menu" style={{ fontSize: "24px", color: "white" }}>
+              <span
+                style={{
+                  fontSize: "24px",
+                  color: "white",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "100%",
+                  height: "100%",
+                  lineHeight: 1,
+                }}
+              >
                 {isOpen ? "✕" : "☰"}
-              </div>
+              </span>
             </div>
           </div>
         </div>
