@@ -17,7 +17,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https://d3e54v103j8qbb.cloudfront.net https://cdn.prod.website-files.com",
       "font-src 'self' data:",
-      "connect-src 'self' https://prod.spline.design https://cdn.prod.website-files.com https://unpkg.com https://*.spline.design",
+      "connect-src 'self' https://prod.spline.design https://cdn.prod.website-files.com https://unpkg.com https://*.spline.design https://challenges.cloudflare.com",
       "frame-src 'self' https://iframe.mediadelivery.net https://prod.spline.design https://challenges.cloudflare.com",
       "media-src 'self' blob:",
       "object-src 'none'",
