@@ -39,9 +39,14 @@ export default function MetricsSection() {
           if (!item) return;
 
           const centerAt = i / (n - 1);
-          const offsetPx = -(progress - centerAt) * containerHeight;
+          const distance = progress - centerAt;
+          const offsetPx = -distance * (containerHeight + item.offsetHeight);
+
+          const absDist = Math.abs(distance) * (n - 1);
+          const opacity = Math.max(0, 1 - absDist * 1.8);
 
           item.style.transform = `translate(0, ${offsetPx}px)`;
+          item.style.opacity = String(opacity);
         });
       });
     };

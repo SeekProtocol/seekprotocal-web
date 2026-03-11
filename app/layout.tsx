@@ -134,6 +134,7 @@ export default function RootLayout({
       className={`w-mod-js ${dmSans.variable} ${interTight.variable} ${jetBrainsMono.variable}`}
     >
       <head>
+        <meta name="google" content="notranslate" />
         <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="/css/webflow.css" rel="stylesheet" type="text/css" />
         <link

@@ -1,6 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 async function verifyTurnstile(token: string): Promise<boolean> {
   const res = await fetch(
     "https://challenges.cloudflare.com/turnstile/v0/siteverify",
@@ -43,6 +52,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const safeEmail = escapeHtml(String(email));
+
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "Seek Protocol <noreply@seekprotocol.ai>",
@@ -50,7 +61,7 @@ export async function POST(request: NextRequest) {
       subject: "New Beta Signup",
       html: `
         <h2>New Beta Signup</h2>
-        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Email:</strong> ${safeEmail}</p>
       `,
     });
 
