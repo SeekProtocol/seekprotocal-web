@@ -1,38 +1,35 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
-
-function escapeHtml(str: string): string {
-  return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
-
-async function verifyTurnstile(token: string): Promise<boolean> {
-  const res = await fetch(
-    "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({
-        secret: process.env.TURNSTILE_SECRET_KEY!,
-        response: token,
-      }),
-    }
-  );
-  const data = await res.json();
-  return data.success === true;
-}
+import { isValidEmail, sanitizeInput } from "@/lib/sanitize";
+import { verifyTurnstile } from "@/lib/turnstile";
+import { getResendClient } from "@/lib/resend";
+import { rateLimit } from "@/lib/rate-limit";
 
 export async function POST(request: NextRequest) {
   try {
-    const { email, turnstileToken } = await request.json();
+    const ip =
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
+      "unknown";
+    const { allowed } = rateLimit(`beta:${ip}`);
+    if (!allowed) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429 }
+      );
+    }
+
+    const body = await request.json();
+    const { email, turnstileToken } = body;
 
     if (!email) {
       return NextResponse.json(
         { error: "Email is required." },
+        { status: 400 }
+      );
+    }
+
+    if (typeof email !== "string" || !isValidEmail(email)) {
+      return NextResponse.json(
+        { error: "Please provide a valid email address." },
         { status: 400 }
       );
     }
@@ -52,12 +49,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const safeEmail = escapeHtml(String(email));
+    const safeEmail = sanitizeInput(email, 256);
+    if (!safeEmail) {
+      return NextResponse.json(
+        { error: "Invalid input." },
+        { status: 400 }
+      );
+    }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    await resend.emails.send({
+    const resend = getResendClient();
+    const { error } = await resend.emails.send({
       from: "Seek Protocol <noreply@seekprotocol.ai>",
-      to: ["support@seekprotocal.ai"],
+      to: ["support@seekprotocol.ai"],
       subject: "New Beta Signup",
       html: `
         <h2>New Beta Signup</h2>
@@ -65,8 +68,17 @@ export async function POST(request: NextRequest) {
       `,
     });
 
+    if (error) {
+      console.error("[Beta] Resend error:", error);
+      return NextResponse.json(
+        { error: "Failed to send message. Please try again later." },
+        { status: 500 }
+      );
+    }
+
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (err) {
+    console.error("[Beta] Unexpected error:", err);
     return NextResponse.json(
       { error: "Something went wrong. Please try again later." },
       { status: 500 }

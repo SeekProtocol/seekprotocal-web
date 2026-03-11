@@ -1,38 +1,35 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
-
-function escapeHtml(str: string): string {
-  return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
-
-async function verifyTurnstile(token: string): Promise<boolean> {
-  const res = await fetch(
-    "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({
-        secret: process.env.TURNSTILE_SECRET_KEY!,
-        response: token,
-      }),
-    }
-  );
-  const data = await res.json();
-  return data.success === true;
-}
+import { escapeHtml, isValidEmail, sanitizeInput } from "@/lib/sanitize";
+import { verifyTurnstile } from "@/lib/turnstile";
+import { getResendClient } from "@/lib/resend";
+import { rateLimit } from "@/lib/rate-limit";
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, message, turnstileToken } = await request.json();
+    const ip =
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
+      "unknown";
+    const { allowed } = rateLimit(`contact:${ip}`);
+    if (!allowed) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429 }
+      );
+    }
+
+    const body = await request.json();
+    const { name, email, message, phone, turnstileToken } = body;
 
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: "All fields are required." },
+        { status: 400 }
+      );
+    }
+
+    if (typeof email !== "string" || !isValidEmail(email)) {
+      return NextResponse.json(
+        { error: "Please provide a valid email address." },
         { status: 400 }
       );
     }
@@ -52,27 +49,47 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const safeName = escapeHtml(String(name));
-    const safeEmail = escapeHtml(String(email));
-    const safeMessage = escapeHtml(String(message)).replace(/\n/g, "<br>");
+    const safeName = sanitizeInput(name, 256);
+    const safeEmail = sanitizeInput(email, 256);
+    const safeMessage = sanitizeInput(message, 5000);
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    await resend.emails.send({
+    if (!safeName || !safeEmail || !safeMessage) {
+      return NextResponse.json(
+        { error: "Invalid input." },
+        { status: 400 }
+      );
+    }
+
+    const safePhone = phone ? sanitizeInput(phone, 20) : null;
+    const formattedMessage = safeMessage.replace(/\n/g, "<br>");
+
+    const resend = getResendClient();
+    const { error } = await resend.emails.send({
       from: "Seek Protocol <noreply@seekprotocol.ai>",
-      to: ["support@seekprotocal.ai"],
+      to: ["support@seekprotocol.ai"],
       subject: `Contact Form: ${safeName}`,
-      replyTo: safeEmail,
+      replyTo: email,
       html: `
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${safeName}</p>
         <p><strong>Email:</strong> ${safeEmail}</p>
+        ${safePhone ? `<p><strong>Phone:</strong> ${safePhone}</p>` : ""}
         <p><strong>Message:</strong></p>
-        <p>${safeMessage}</p>
+        <p>${formattedMessage}</p>
       `,
     });
 
+    if (error) {
+      console.error("[Contact] Resend error:", error);
+      return NextResponse.json(
+        { error: "Failed to send message. Please try again later." },
+        { status: 500 }
+      );
+    }
+
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (err) {
+    console.error("[Contact] Unexpected error:", err);
     return NextResponse.json(
       { error: "Something went wrong. Please try again later." },
       { status: 500 }
