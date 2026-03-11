@@ -212,7 +212,8 @@
     "validationRequired": "이 필드는 필수입니다",
     "validationEmail": "유효한 이메일 주소를 입력하세요",
     "validationPhone": "유효한 전화번호를 입력하세요",
-    "validationName": "이름을 입력하세요"
+    "validationName": "이름을 입력하세요",
+    "optional": "선택사항"
   },
   "cookies": {
     "title": "쿠키 환경설정",

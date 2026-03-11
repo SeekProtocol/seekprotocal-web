@@ -212,7 +212,8 @@
     "validationRequired": "此字段为必填项",
     "validationEmail": "请输入有效的电子邮件地址",
     "validationPhone": "请输入有效的电话号码",
-    "validationName": "请输入您的姓名"
+    "validationName": "请输入您的姓名",
+    "optional": "可选"
   },
   "cookies": {
     "title": "Cookie 偏好设置",

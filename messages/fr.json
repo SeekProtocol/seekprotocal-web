@@ -212,7 +212,8 @@
     "validationRequired": "Ce champ est obligatoire",
     "validationEmail": "Veuillez entrer une adresse e-mail valide",
     "validationPhone": "Veuillez entrer un numéro de téléphone valide",
-    "validationName": "Veuillez entrer votre nom"
+    "validationName": "Veuillez entrer votre nom",
+    "optional": "facultatif"
   },
   "cookies": {
     "title": "Préférences des cookies",
