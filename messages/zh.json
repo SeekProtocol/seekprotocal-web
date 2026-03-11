@@ -206,7 +206,13 @@
     "yourEmail": "您的邮箱",
     "emailInputPlaceholder": "输入您的邮箱",
     "message": "留言",
-    "messagePlaceholder": "在此输入"
+    "messagePlaceholder": "在此输入",
+    "yourPhone": "电话号码",
+    "phonePlaceholder": "输入您的电话号码",
+    "validationRequired": "此字段为必填项",
+    "validationEmail": "请输入有效的电子邮件地址",
+    "validationPhone": "请输入有效的电话号码",
+    "validationName": "请输入您的姓名"
   },
   "cookies": {
     "title": "Cookie 偏好设置",

@@ -1,44 +1,53 @@
 import type { Metadata } from "next";
+import { getMultilingualAlternates } from "@/lib/seo";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "Read the Seek Protocol and SeekAR privacy policy. Learn how we collect, use, and protect your personal data, location information, and blockchain wallet details.",
-  openGraph: {
-    title: "Privacy Policy - Seek Protocol",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    title: "Privacy Policy",
     description:
-      "Seek Protocol's privacy policy. How we handle your data, location info, and wallet details in SeekAR.",
-    url: "/privacy-policy",
-    images: [
-      {
-        url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-        width: 1200,
-        height: 630,
-        alt: "Seek Protocol Privacy Policy",
-      },
-    ],
-  },
-  twitter: {
-    title: "Privacy Policy - Seek Protocol",
-    description:
-      "How Seek Protocol handles your data, location info, and wallet details in the SeekAR app.",
-    images: [
-      {
-        url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-        width: 1200,
-        height: 630,
-        alt: "Seek Protocol Privacy Policy",
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: { canonical: "/privacy-policy" },
-};
+      "Read the Seek Protocol and SeekAR privacy policy. Learn how we collect, use, and protect your personal data, location information, and blockchain wallet details.",
+    openGraph: {
+      title: "Privacy Policy - Seek Protocol",
+      description:
+        "Seek Protocol's privacy policy. How we handle your data, location info, and wallet details in SeekAR.",
+      url: `/${locale}/privacy-policy`,
+      images: [
+        {
+          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
+          width: 1200,
+          height: 630,
+          alt: "Seek Protocol Privacy Policy",
+        },
+      ],
+    },
+    twitter: {
+      title: "Privacy Policy - Seek Protocol",
+      description:
+        "How Seek Protocol handles your data, location info, and wallet details in the SeekAR app.",
+      images: [
+        {
+          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
+          width: 1200,
+          height: 630,
+          alt: "Seek Protocol Privacy Policy",
+        },
+      ],
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    alternates: getMultilingualAlternates("/privacy-policy", locale),
+  };
+}
 
 export default function PrivacyPolicyPage() {
   return (

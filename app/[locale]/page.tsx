@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { getMultilingualAlternates } from "@/lib/seo";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import SplineScene from "@/components/shared/SplineScene";
@@ -9,32 +10,40 @@ import BetaForm from "@/components/shared/BetaForm";
 import VideoBackground from "@/components/shared/VideoBackground";
 import MetricsSection from "@/components/shared/MetricsSection";
 
-export const metadata: Metadata = {
-  title:
-    "Seek Protocol | The First AR & AI Platform on Solana - Redefining Innovation",
-  description:
-    "Explore a new reality with Seek Protocol ($SEEK). Hunt location-based airdrops, collect NFTs in augmented reality, earn crypto rewards, and explore the world with AI companions on Solana.",
-  openGraph: {
-    title: "Seek Protocol | AR & AI Platform on Solana",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    title:
+      "Seek Protocol | The First AR & AI Platform on Solana - Redefining Innovation",
     description:
-      "The first AR and AI platform on Solana. Transform your world into a blockchain-powered playground. Hunt airdrops, collect NFTs, and explore with AI companions.",
-    url: "/",
-    images: [
-      {
-        url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-        width: 1200,
-        height: 630,
-        alt: "Seek Protocol - Explore a New Reality with AR & AI on Solana",
-      },
-    ],
-  },
-  twitter: {
-    title: "Seek Protocol | AR & AI Platform on Solana",
-    description:
-      "Hunt location-based airdrops, collect NFTs in AR, and earn crypto rewards. The first AR & AI platform on Solana.",
-  },
-  alternates: { canonical: "/" },
-};
+      "Explore a new reality with Seek Protocol ($SEEK). Hunt location-based airdrops, collect NFTs in augmented reality, earn crypto rewards, and explore the world with AI companions on Solana.",
+    openGraph: {
+      title: "Seek Protocol | AR & AI Platform on Solana",
+      description:
+        "The first AR and AI platform on Solana. Transform your world into a blockchain-powered playground. Hunt airdrops, collect NFTs, and explore with AI companions.",
+      url: `/${locale}`,
+      images: [
+        {
+          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
+          width: 1200,
+          height: 630,
+          alt: "Seek Protocol - Explore a New Reality with AR & AI on Solana",
+        },
+      ],
+    },
+    twitter: {
+      title: "Seek Protocol | AR & AI Platform on Solana",
+      description:
+        "Hunt location-based airdrops, collect NFTs in AR, and earn crypto rewards. The first AR & AI platform on Solana.",
+    },
+    alternates: getMultilingualAlternates("/", locale),
+  };
+}
 
 export default async function HomePage({
   params,

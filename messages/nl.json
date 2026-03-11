@@ -206,7 +206,14 @@
     "yourEmail": "Je e-mail",
     "emailInputPlaceholder": "Voer je e-mail in",
     "message": "Bericht",
-    "messagePlaceholder": "Typ hier"
+    "messagePlaceholder": "Typ hier",
+    "yourPhone": "Telefoonnummer",
+    "phonePlaceholder": "Voer je telefoonnummer in",
+    "validationRequired": "Dit veld is verplicht",
+    "validationEmail": "Voer een geldig e-mailadres in",
+    "validationPhone": "Voer een geldig telefoonnummer in",
+    "validationName": "Voer je naam in",
+    "optional": "optioneel"
   },
   "cookies": {
     "title": "Cookievoorkeuren",

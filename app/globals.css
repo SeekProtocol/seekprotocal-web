@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+*,
+*::before,
+*::after {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea,
+[contenteditable="true"] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
 :root {
   --color--black-color: #000206;
   --color--white: white;
@@ -427,4 +445,16 @@
 
 .language-option-active:hover {
   background: rgba(93, 116, 249, 0.3);
+}
+
+.field-error {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.3);
+}
+
+.field-error-message {
+  color: #ef4444;
+  font-size: 13px;
+  margin: 6px 0 0;
+  line-height: 1.3;
 }

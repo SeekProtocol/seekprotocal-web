@@ -22,9 +22,14 @@ declare global {
   }
 }
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const PHONE_REGEX = /^[+]?[\d\s\-().]{7,20}$/;
+
 export default function ContactForm() {
   const t = useTranslations("forms");
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
+  const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [turnstileToken, setTurnstileToken] = useState("");
@@ -72,10 +77,51 @@ export default function ContactForm() {
     };
   }, []);
 
+  const validateField = (name: string, value: string): string => {
+    if (name === "name") {
+      if (!value.trim()) return t("validationName");
+    }
+    if (name === "email") {
+      if (!value.trim()) return t("validationRequired");
+      if (!EMAIL_REGEX.test(value)) return t("validationEmail");
+    }
+    if (name === "phone") {
+      if (value.trim() && !PHONE_REGEX.test(value)) return t("validationPhone");
+    }
+    if (name === "message") {
+      if (!value.trim()) return t("validationRequired");
+    }
+    return "";
+  };
+
+  const handleBlur = (name: string) => {
+    setTouched((prev) => ({ ...prev, [name]: true }));
+    const error = validateField(name, formData[name as keyof typeof formData]);
+    setFieldErrors((prev) => ({ ...prev, [name]: error }));
+  };
+
+  const handleChange = (name: string, value: string) => {
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (touched[name]) {
+      const error = validateField(name, value);
+      setFieldErrors((prev) => ({ ...prev, [name]: error }));
+    }
+  };
+
+  const validateAll = (): boolean => {
+    const errors: Record<string, string> = {};
+    for (const key of ["name", "email", "phone", "message"] as const) {
+      errors[key] = validateField(key, formData[key]);
+    }
+    setFieldErrors(errors);
+    setTouched({ name: true, email: true, phone: true, message: true });
+    return !Object.values(errors).some((e) => e);
+  };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.message) return;
+    if (!validateAll()) return;
     if (!turnstileToken) {
       setErrorMessage(t("captchaError"));
       setStatus("error");
@@ -99,7 +145,9 @@ export default function ContactForm() {
       }
 
       setStatus("success");
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setFieldErrors({});
+      setTouched({});
       setTurnstileToken("");
     } catch (err) {
       setErrorMessage(
@@ -115,59 +163,81 @@ export default function ContactForm() {
   return (
     <div className="contact-form-block w-form">
       {(status === "idle" || status === "submitting" || status === "error") && (
-        <form onSubmit={handleSubmit} className="form-2">
+        <form onSubmit={handleSubmit} className="form-2" noValidate>
           <div className="filed-wrap">
             <label htmlFor="name" className="text-field-label paragraph-02">
-              {t("yourName")}
+              {t("yourName")} <span className="field-required">*</span>
             </label>
             <input
-              className="text-field-option w-input"
+              className={`text-field-option w-input ${touched.name && fieldErrors.name ? "field-error" : ""}`}
               maxLength={256}
               name="name"
               placeholder={t("namePlaceholder")}
               type="text"
               id="name"
-              required
               value={formData.name}
-              onChange={(e) =>
-                setFormData((prev) => ({ ...prev, name: e.target.value }))
-              }
+              onChange={(e) => handleChange("name", e.target.value)}
+              onBlur={() => handleBlur("name")}
             />
+            {touched.name && fieldErrors.name && (
+              <p className="field-error-message">{fieldErrors.name}</p>
+            )}
           </div>
           <div className="filed-wrap">
             <label htmlFor="Email" className="text-field-label paragraph-02">
-              {t("yourEmail")}
+              {t("yourEmail")} <span className="field-required">*</span>
             </label>
             <input
-              className="text-field-option w-input"
+              className={`text-field-option w-input ${touched.email && fieldErrors.email ? "field-error" : ""}`}
               maxLength={256}
               name="Email"
               placeholder={t("emailInputPlaceholder")}
               type="email"
               id="Email"
-              required
               value={formData.email}
-              onChange={(e) =>
-                setFormData((prev) => ({ ...prev, email: e.target.value }))
-              }
+              onChange={(e) => handleChange("email", e.target.value)}
+              onBlur={() => handleBlur("email")}
             />
+            {touched.email && fieldErrors.email && (
+              <p className="field-error-message">{fieldErrors.email}</p>
+            )}
+          </div>
+          <div className="filed-wrap">
+            <label htmlFor="phone" className="text-field-label paragraph-02">
+              {t("yourPhone")} <span className="field-optional">({t("optional")})</span>
+            </label>
+            <input
+              className={`text-field-option w-input ${touched.phone && fieldErrors.phone ? "field-error" : ""}`}
+              maxLength={20}
+              name="phone"
+              placeholder={t("phonePlaceholder")}
+              type="tel"
+              id="phone"
+              value={formData.phone}
+              onChange={(e) => handleChange("phone", e.target.value)}
+              onBlur={() => handleBlur("phone")}
+            />
+            {touched.phone && fieldErrors.phone && (
+              <p className="field-error-message">{fieldErrors.phone}</p>
+            )}
           </div>
           <div className="filed-wrap _01">
             <label htmlFor="message" className="text-field-label paragraph-02">
-              {t("message")}
+              {t("message")} <span className="field-required">*</span>
             </label>
             <textarea
               id="message"
               name="message"
               maxLength={5000}
               placeholder={t("messagePlaceholder")}
-              required
-              className="textarea w-input"
+              className={`textarea w-input ${touched.message && fieldErrors.message ? "field-error" : ""}`}
               value={formData.message}
-              onChange={(e) =>
-                setFormData((prev) => ({ ...prev, message: e.target.value }))
-              }
+              onChange={(e) => handleChange("message", e.target.value)}
+              onBlur={() => handleBlur("message")}
             />
+            {touched.message && fieldErrors.message && (
+              <p className="field-error-message">{fieldErrors.message}</p>
+            )}
           </div>
           <div ref={turnstileRef} className="cf-turnstile" style={{ marginBottom: "1rem" }} />
           {status === "error" && errorMessage && (

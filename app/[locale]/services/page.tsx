@@ -2,32 +2,41 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { getMultilingualAlternates } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services - AR, AI & Blockchain Solutions",
-  description:
-    "Explore Seek Protocol's services: location-based AR airdrops, AI-powered personalization, immersive AR experiences, move-to-earn gaming, creator tools, and blockchain reward distribution on Solana.",
-  openGraph: {
-    title: "Seek Protocol Services - AR, AI & Blockchain Solutions",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    title: "Services - AR, AI & Blockchain Solutions",
     description:
-      "Location-based AR airdrops, AI-powered personalization, immersive experiences, move-to-earn, and blockchain rewards. Discover what Seek Protocol can do.",
-    url: "/services",
-    images: [
-      {
-        url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-        width: 1200,
-        height: 630,
-        alt: "Seek Protocol Services",
-      },
-    ],
-  },
-  twitter: {
-    title: "Seek Protocol Services - AR, AI & Blockchain",
-    description:
-      "AR airdrops, AI personalization, move-to-earn, and blockchain rewards on Solana. Explore Seek Protocol's full service offering.",
-  },
-  alternates: { canonical: "/services" },
-};
+      "Explore Seek Protocol's services: location-based AR airdrops, AI-powered personalization, immersive AR experiences, move-to-earn gaming, creator tools, and blockchain reward distribution on Solana.",
+    openGraph: {
+      title: "Seek Protocol Services - AR, AI & Blockchain Solutions",
+      description:
+        "Location-based AR airdrops, AI-powered personalization, immersive experiences, move-to-earn, and blockchain rewards. Discover what Seek Protocol can do.",
+      url: `/${locale}/services`,
+      images: [
+        {
+          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
+          width: 1200,
+          height: 630,
+          alt: "Seek Protocol Services",
+        },
+      ],
+    },
+    twitter: {
+      title: "Seek Protocol Services - AR, AI & Blockchain",
+      description:
+        "AR airdrops, AI personalization, move-to-earn, and blockchain rewards on Solana. Explore Seek Protocol's full service offering.",
+    },
+    alternates: getMultilingualAlternates("/services", locale),
+  };
+}
 
 const servicesFaqJsonLd = {
   "@context": "https://schema.org",

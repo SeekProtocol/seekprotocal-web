@@ -2,36 +2,45 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { getMultilingualAlternates } from "@/lib/seo";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import SplineScene from "@/components/shared/SplineScene";
 import BetaForm from "@/components/shared/BetaForm";
 
-export const metadata: Metadata = {
-  title: "About Us - Meet the Team Behind SeekAR",
-  description:
-    "Meet the Seek Protocol team building the future of location-based AR experiences on Solana. Discover our mission, core technologies, values, and the people behind $SEEK and SeekAR.",
-  openGraph: {
-    title: "About Seek Protocol - The Team Behind SeekAR",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    title: "About Us - Meet the Team Behind SeekAR",
     description:
-      "Discover how Seek Protocol bridges physical and digital worlds through location-based AR technology, blockchain rewards, and AI-powered exploration on Solana.",
-    url: "/about",
-    images: [
-      {
-        url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-        width: 1200,
-        height: 630,
-        alt: "About Seek Protocol - AR & AI Platform on Solana",
-      },
-    ],
-  },
-  twitter: {
-    title: "About Seek Protocol - Meet the SeekAR Team",
-    description:
-      "Meet the team building the future of location-based AR experiences on Solana. AR technology, blockchain rewards, and AI-powered exploration.",
-  },
-  alternates: { canonical: "/about" },
-};
+      "Meet the Seek Protocol team building the future of location-based AR experiences on Solana. Discover our mission, core technologies, values, and the people behind $SEEK and SeekAR.",
+    openGraph: {
+      title: "About Seek Protocol - The Team Behind SeekAR",
+      description:
+        "Discover how Seek Protocol bridges physical and digital worlds through location-based AR technology, blockchain rewards, and AI-powered exploration on Solana.",
+      url: `/${locale}/about`,
+      images: [
+        {
+          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
+          width: 1200,
+          height: 630,
+          alt: "About Seek Protocol - AR & AI Platform on Solana",
+        },
+      ],
+    },
+    twitter: {
+      title: "About Seek Protocol - Meet the SeekAR Team",
+      description:
+        "Meet the team building the future of location-based AR experiences on Solana. AR technology, blockchain rewards, and AI-powered exploration.",
+    },
+    alternates: getMultilingualAlternates("/about", locale),
+  };
+}
 
 const aboutFaqJsonLd = {
   "@context": "https://schema.org",

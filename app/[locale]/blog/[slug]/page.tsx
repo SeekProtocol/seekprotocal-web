@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import { getMultilingualAlternates } from "@/lib/seo";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import SplineScene from "@/components/shared/SplineScene";
@@ -22,7 +23,7 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
 
@@ -32,7 +33,7 @@ export async function generateMetadata({
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `/blog/${post.slug}`,
+      url: `/${locale}/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
       images: [
@@ -54,7 +55,7 @@ export async function generateMetadata({
         },
       ],
     },
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: getMultilingualAlternates(`/blog/${post.slug}`, locale),
   };
 }
 

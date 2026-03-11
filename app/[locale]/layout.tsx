@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
+import { getMultilingualAlternates } from "@/lib/seo";
 import ScrollAnimations from "@/components/shared/ScrollAnimations";
 import CookieConsent from "@/components/shared/CookieConsent";
 import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
@@ -152,19 +153,7 @@ export async function generateMetadata({
         "max-snippet": -1,
       },
     },
-    alternates: {
-      canonical: "/",
-      languages: {
-        en: "/en",
-        nl: "/nl",
-        de: "/de",
-        es: "/es",
-        fr: "/fr",
-        zh: "/zh",
-        ja: "/ja",
-        ko: "/ko",
-      },
-    },
+    alternates: getMultilingualAlternates("/", locale),
     icons: {
       icon: "/images/favicon.png",
       apple: "/images/webclip.png",
@@ -251,7 +240,7 @@ export default async function LocaleLayout({
                   {
                     "@type": "WebSite",
                     "@id": "https://www.seekprotocol.ai/#website",
-                    url: "https://www.seekprotocol.ai",
+                    url: `https://www.seekprotocol.ai/${locale}`,
                     name: "Seek Protocol",
                     publisher: {
                       "@id": "https://www.seekprotocol.ai/#organization",
@@ -259,6 +248,10 @@ export default async function LocaleLayout({
                     description:
                       "The first AR and AI platform on Solana transforming real-world exploration into crypto rewards.",
                     inLanguage: locale,
+                    availableLanguage: routing.locales.map((loc) => ({
+                      "@type": "Language",
+                      name: loc,
+                    })),
                   },
                   {
                     "@type": "SoftwareApplication",
@@ -279,6 +272,11 @@ export default async function LocaleLayout({
                   },
                 ],
               }),
+            }}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `document.addEventListener('contextmenu',function(e){e.preventDefault()});document.addEventListener('copy',function(e){e.preventDefault()});document.addEventListener('cut',function(e){e.preventDefault()});document.addEventListener('selectstart',function(e){e.preventDefault()});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.key==='c'||e.key==='x'||e.key==='a'||e.key==='u'||e.key==='s')){e.preventDefault()}});`,
             }}
           />
           <a

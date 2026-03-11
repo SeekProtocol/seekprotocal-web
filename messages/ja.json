@@ -206,7 +206,13 @@
     "yourEmail": "メールアドレス",
     "emailInputPlaceholder": "メールアドレスを入力",
     "message": "メッセージ",
-    "messagePlaceholder": "こちらに入力"
+    "messagePlaceholder": "こちらに入力",
+    "yourPhone": "電話番号",
+    "phonePlaceholder": "電話番号を入力",
+    "validationRequired": "この項目は必須です",
+    "validationEmail": "有効なメールアドレスを入力してください",
+    "validationPhone": "有効な電話番号を入力してください",
+    "validationName": "お名前を入力してください"
   },
   "cookies": {
     "title": "Cookie 設定",

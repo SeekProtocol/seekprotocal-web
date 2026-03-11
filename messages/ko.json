@@ -206,7 +206,13 @@
     "yourEmail": "이메일",
     "emailInputPlaceholder": "이메일을 입력하세요",
     "message": "메시지",
-    "messagePlaceholder": "여기에 입력하세요"
+    "messagePlaceholder": "여기에 입력하세요",
+    "yourPhone": "전화번호",
+    "phonePlaceholder": "전화번호를 입력하세요",
+    "validationRequired": "이 필드는 필수입니다",
+    "validationEmail": "유효한 이메일 주소를 입력하세요",
+    "validationPhone": "유효한 전화번호를 입력하세요",
+    "validationName": "이름을 입력하세요"
   },
   "cookies": {
     "title": "쿠키 환경설정",

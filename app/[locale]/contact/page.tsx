@@ -1,43 +1,52 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import { getMultilingualAlternates } from "@/lib/seo";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/shared/ContactForm";
 
-export const metadata: Metadata = {
-  title: "Contact Us - Get in Touch",
-  description:
-    "Contact the Seek Protocol team for partnerships, inquiries, beta access, or collaboration opportunities. Reach out to learn more about SeekAR and $SEEK on Solana.",
-  openGraph: {
-    title: "Contact Seek Protocol",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    title: "Contact Us - Get in Touch",
     description:
-      "Get in touch with the Seek Protocol team for partnerships, beta access, and collaboration on AR & AI experiences on Solana.",
-    url: "/contact",
-    images: [
-      {
-        url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-        width: 1200,
-        height: 630,
-        alt: "Contact Seek Protocol",
-      },
-    ],
-  },
-  twitter: {
-    title: "Contact Seek Protocol",
-    description:
-      "Reach out to the Seek Protocol team for partnerships, beta access, and collaboration opportunities.",
-    images: [
-      {
-        url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-        width: 1200,
-        height: 630,
-        alt: "Contact Seek Protocol",
-      },
-    ],
-  },
-  alternates: { canonical: "/contact" },
-};
+      "Contact the Seek Protocol team for partnerships, inquiries, beta access, or collaboration opportunities. Reach out to learn more about SeekAR and $SEEK on Solana.",
+    openGraph: {
+      title: "Contact Seek Protocol",
+      description:
+        "Get in touch with the Seek Protocol team for partnerships, beta access, and collaboration on AR & AI experiences on Solana.",
+      url: `/${locale}/contact`,
+      images: [
+        {
+          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
+          width: 1200,
+          height: 630,
+          alt: "Contact Seek Protocol",
+        },
+      ],
+    },
+    twitter: {
+      title: "Contact Seek Protocol",
+      description:
+        "Reach out to the Seek Protocol team for partnerships, beta access, and collaboration opportunities.",
+      images: [
+        {
+          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
+          width: 1200,
+          height: 630,
+          alt: "Contact Seek Protocol",
+        },
+      ],
+    },
+    alternates: getMultilingualAlternates("/contact", locale),
+  };
+}
 
 export default async function ContactPage({
   params,

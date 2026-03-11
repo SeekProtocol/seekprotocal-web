@@ -206,7 +206,13 @@
     "yourEmail": "Tu correo",
     "emailInputPlaceholder": "Ingresa tu correo",
     "message": "Mensaje",
-    "messagePlaceholder": "Escribe aquí"
+    "messagePlaceholder": "Escribe aquí",
+    "yourPhone": "Número de teléfono",
+    "phonePlaceholder": "Ingresa tu número de teléfono",
+    "validationRequired": "Este campo es obligatorio",
+    "validationEmail": "Ingresa una dirección de correo válida",
+    "validationPhone": "Ingresa un número de teléfono válido",
+    "validationName": "Ingresa tu nombre"
   },
   "cookies": {
     "title": "Preferencias de cookies",

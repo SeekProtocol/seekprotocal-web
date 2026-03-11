@@ -206,7 +206,14 @@
     "yourEmail": "Deine E-Mail",
     "emailInputPlaceholder": "Gib deine E-Mail ein",
     "message": "Nachricht",
-    "messagePlaceholder": "Hier eingeben"
+    "messagePlaceholder": "Hier eingeben",
+    "yourPhone": "Telefonnummer",
+    "phonePlaceholder": "Gib deine Telefonnummer ein",
+    "validationRequired": "Dieses Feld ist erforderlich",
+    "validationEmail": "Bitte gib eine gültige E-Mail-Adresse ein",
+    "validationPhone": "Bitte gib eine gültige Telefonnummer ein",
+    "validationName": "Bitte gib deinen Namen ein",
+    "optional": "optional"
   },
   "cookies": {
     "title": "Cookie-Einstellungen",
