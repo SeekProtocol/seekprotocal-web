@@ -94,31 +94,35 @@ export default function BetaForm() {
   return (
     <div className="form-block-2 w-form">
       {(status === "idle" || status === "submitting" || status === "error") && (
-        <form onSubmit={handleSubmit} className="form-3">
-          <input
-            className="cta-text-field w-input"
-            maxLength={256}
-            name="email"
-            placeholder="Email Address"
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <div ref={turnstileRef} className="cf-turnstile" style={{ margin: "0.75rem 0" }} />
+        <form onSubmit={handleSubmit}>
+          <div className="form-3">
+            <input
+              className="cta-text-field w-input"
+              maxLength={256}
+              name="email"
+              placeholder="Email Address"
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <div>
+              <input
+                type="submit"
+                className="normal-submit-button w-button"
+                value={status === "submitting" ? "Sending..." : "Send Now"}
+                disabled={status === "submitting"}
+              />
+            </div>
+          </div>
+          <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
+            <div ref={turnstileRef} className="cf-turnstile" />
+          </div>
           {status === "error" && errorMessage && (
-            <div className="w-form-fail" style={{ display: "block", marginBottom: "0.5rem" }}>
+            <div className="w-form-fail" style={{ display: "block", marginTop: "0.75rem", textAlign: "center" }}>
               <div>{errorMessage}</div>
             </div>
           )}
-          <div>
-            <input
-              type="submit"
-              className="normal-submit-button w-button"
-              value={status === "submitting" ? "Sending..." : "Send Now"}
-              disabled={status === "submitting"}
-            />
-          </div>
         </form>
       )}
       {status === "success" && (
