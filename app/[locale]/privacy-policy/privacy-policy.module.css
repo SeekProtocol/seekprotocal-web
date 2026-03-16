@@ -1,0 +1,81 @@
+.content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  letter-spacing: -0.01em;
+}
+
+.content h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+
+.content p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+
+.content ul {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 1em;
+  padding-left: 1.25em;
+}
+
+.content li {
+  margin-bottom: 0.35em;
+}
+
+.content a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.7;
+  margin-bottom: 2em;
+}
+
+.pageTitle {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .pageTitle {
+    font-size: 34px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .content h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pageTitle {
+    font-size: 28px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+    margin-top: 1.75em;
+  }
+
+  .content h3 {
+    font-size: 15px;
+  }
+
+  .content p,
+  .content ul {
+    font-size: 14px;
+  }
+}

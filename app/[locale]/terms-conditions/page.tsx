@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getMultilingualAlternates } from "@/lib/seo";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import styles from "../privacy-policy/privacy-policy.module.css";
 
 export async function generateMetadata({
   params,
@@ -59,12 +60,17 @@ export default function TermsConditionsPage() {
             <div className="change-log-top">
               <div className="hero-top-wrap">
                 <div className="hero-01-text-wrap">
-                  <h1 className="h1">Terms &amp; Conditions</h1>
+                  <h1 className={`h1 ${styles.pageTitle}`}>Terms &amp; Conditions</h1>
                 </div>
               </div>
             </div>
             <div className="change-log-bottom">
-              <div className="rich-text-block w-richtext">
+              <div className={`rich-text-block w-richtext ${styles.content}`}>
+                <p className={styles.subtitle}>
+                  SeekAR — Block Protocol LLC
+                  <br />
+                  Effective: August 12, 2025
+                </p>
                 <p>
                   These terms and conditions apply to the SeekAR app (hereby referred
                   to as &quot;Application&quot;) for mobile devices that was created
@@ -179,18 +185,14 @@ export default function TermsConditionsPage() {
                   terms will end; (b) you must cease using the application, and (if
                   necessary) delete it from your device.
                 </p>
-                <h3>Changes to These Terms and Conditions</h3>
+                <h2>Changes to These Terms and Conditions</h2>
                 <p>
                   The Service Provider may periodically update their Terms and
                   Conditions. Therefore, you are advised to review this page regularly
                   for any changes. The Service Provider will notify you of any changes
                   by posting the new Terms and Conditions on this page.
                 </p>
-                <p>
-                  These terms and conditions are effective as of{" "}
-                  <strong>2025-08-12</strong>
-                </p>
-                <h3>Contact Us</h3>
+                <h2>Contact Us</h2>
                 <p>
                   If you have any questions or suggestions about the Terms and
                   Conditions, please do not hesitate to contact the Service Provider
