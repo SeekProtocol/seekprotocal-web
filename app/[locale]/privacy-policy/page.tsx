@@ -66,49 +66,57 @@ function PrivacyPolicyContent() {
       <h2>{t("introTitle")}</h2>
       <p>{t("introP1")}</p>
       <p>{t("introP2")}</p>
+      <p>{t("introP3")}</p>
 
       <h2>{t("part1Title")}</h2>
       <p>{t("part1P1")}</p>
       <p>{t("part1P2")}</p>
+      <p>{t("part1P3")}</p>
 
       <h3>{t("part1s1Title")}</h3>
       <p>{t("part1s1P1")}</p>
-      <p>{t("part1s1P2")}</p>
 
       <h3>{t("part1s2Title")}</h3>
       <p>{t("part1s2P1")}</p>
       <p>{t("part1s2P2")}</p>
       <p>{t("part1s2P3")}</p>
+      <p>{t("part1s2P4")}</p>
 
       <h3>{t("part1s3Title")}</h3>
       <p>{t("part1s3P1")}</p>
+      <p>{t("part1s3P2")}</p>
+      <p>{t("part1s3P3")}</p>
 
       <h3>{t("part1s4Title")}</h3>
       <p>{t("part1s4P1")}</p>
+      <p>{t("part1s4P2")}</p>
+      <p>{t("part1s4P3")}</p>
+      <p>{t("part1s4P4")}</p>
 
       <h3>{t("part1s5Title")}</h3>
       <p>{t("part1s5P1")}</p>
 
       <h3>{t("part1s6Title")}</h3>
       <p>{t("part1s6P1")}</p>
+      <p>{t("part1s6P2")}</p>
+      <p>{t("part1s6P3")}</p>
 
       <h3>{t("part1s7Title")}</h3>
       <p>{t("part1s7P1")}</p>
+      <p>{t("part1s7P2")}</p>
+      <p>{t("part1s7P3")}</p>
+
+      <h3>{t("part1s8Title")}</h3>
+      <p>{t("part1s8P1")}</p>
+
+      <h3>{t("part1s9Title")}</h3>
+      <p>{t("part1s9P1")}</p>
+      <p>{t("part1s9P2")}</p>
 
       <h2>{t("part2Title")}</h2>
       <p>{t("part2P1")}</p>
       <p>{t("part2P2")}</p>
       <p>{t("part2P3")}</p>
-
-      <h3>{t("part2s1Title")}</h3>
-      <p>{t("part2s1P1")}</p>
-      <p>{t("part2s1P2")}</p>
-
-      <h3>{t("part2s2Title")}</h3>
-      <p>{t("part2s2P1")}</p>
-
-      <h3>{t("part2s3Title")}</h3>
-      <p>{t("part2s3P1")}</p>
       <ul role="list">
         <li>
           <a href="https://www.google.com/policies/privacy/">
@@ -125,10 +133,13 @@ function PrivacyPolicyContent() {
 
       <h2>{t("part3Title")}</h2>
       <p>{t("part3P1")}</p>
+      <p>{t("part3P2")}</p>
+      <p>{t("part3P3")}</p>
 
       <h2>{t("part4Title")}</h2>
+      <p>{t("part4P1")}</p>
       <p>
-        {t.rich("part4P1", {
+        {t.rich("part4P2", {
           email: (chunks) => (
             <a href="mailto:support@seekprotocol.ai">{chunks}</a>
           ),
@@ -159,13 +170,6 @@ function PrivacyPolicyContent() {
           ),
         })}
       </p>
-      <p>
-        {t.rich("part7P3", {
-          link: (chunks) => (
-            <a href="https://www.seekprotocol.ai/en/privacy-policy">{chunks}</a>
-          ),
-        })}
-      </p>
 
       <h2>{t("part8Title")}</h2>
       <p>{t("part8P1")}</p>
@@ -176,12 +180,14 @@ function PrivacyPolicyContent() {
       <h2>{t("contactTitle")}</h2>
       <p>{t("contactP1")}</p>
       <p>
-        {t("contactAddress").split("\n").map((line, i, arr) => (
-          <span key={i}>
-            {line}
-            {i < arr.length - 1 && <br />}
-          </span>
-        ))}
+        {t("contactAddress")
+          .split("\n")
+          .map((line, i, arr) => (
+            <span key={i}>
+              {line}
+              {i < arr.length - 1 && <br />}
+            </span>
+          ))}
       </p>
       <p>
         Email:{" "}
