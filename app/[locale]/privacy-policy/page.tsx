@@ -200,13 +200,18 @@ function PrivacyPolicyContent() {
   );
 }
 
-export default function PrivacyPolicyPage({
+export default async function PrivacyPolicyPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  return <PrivacyPolicyPageContent />;
+}
+
+function PrivacyPolicyPageContent() {
   const t = useTranslations("privacyPolicyPage");
-  params.then(({ locale }) => setRequestLocale(locale));
 
   return (
     <div className="page-wrapper">

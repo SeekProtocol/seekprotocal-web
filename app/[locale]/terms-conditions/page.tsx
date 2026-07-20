@@ -102,13 +102,18 @@ function TermsContent() {
   );
 }
 
-export default function TermsConditionsPage({
+export default async function TermsConditionsPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  return <TermsPageContent />;
+}
+
+function TermsPageContent() {
   const t = useTranslations("termsPage");
-  params.then(({ locale }) => setRequestLocale(locale));
 
   return (
     <div className="page-wrapper">
