@@ -131,8 +131,8 @@ function HomeContent() {
                 <div className="video_embed w-embed">
                   <div style={{ position: "relative", paddingTop: "56.25%" }}>
                     <video
-                      src="/videos/video.mp4"
-                      poster="/videos/video-poster-00001.jpg"
+                      src="/videos/Seekr.mp4"
+                      poster="/videos/Seekr-poster.jpg"
                       autoPlay
                       loop
                       muted
