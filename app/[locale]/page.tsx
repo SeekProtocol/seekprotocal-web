@@ -128,20 +128,24 @@ function HomeContent() {
           <div className="container">
             <div className="video_wrap">
               <div className="video_component" style={{ clipPath: "none" }}>
-                <div className="video_embed w-embed w-iframe">
+                <div className="video_embed w-embed">
                   <div style={{ position: "relative", paddingTop: "56.25%" }}>
-                    <iframe
-                      src="https://iframe.mediadelivery.net/embed/489466/c8d77fab-0226-48ca-b725-ed922933a6c5?autoplay=true&loop=true&muted=true&preload=true&responsive=true"
-                      loading="eager"
+                    <video
+                      src="/videos/video.mp4"
+                      poster="/videos/video-poster-00001.jpg"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
                       style={{
                         border: 0,
                         position: "absolute",
                         top: 0,
                         height: "100%",
                         width: "100%",
+                        objectFit: "cover",
                       }}
-                      allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                      allowFullScreen
                     />
                   </div>
                 </div>
