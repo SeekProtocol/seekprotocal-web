@@ -97,7 +97,10 @@
     "liveTitle": "挑一座城市，碰碰运气",
     "liveLead": "跳到任意枢纽城市，点一枚币看看是谁捡走的，也可以自己试着抓一枚，按应用里真实的概率来掷。",
     "foundationsEyebrow": "底层基础",
-    "readWhitepaper": "阅读技术白皮书"
+    "readWhitepaper": "阅读技术白皮书",
+    "metaTitle": "Solana 上首个 AR 与 AI 平台",
+    "metaDescription": "在真实地点捕捉空投、用增强现实收集 NFT，并与 AI 伙伴一同探索。SeekAR 把现实中的地点变成可在 Solana 上领取的奖励。",
+    "ogTitle": "Seek Protocol｜Solana 上的 AR 与 AI"
   },
   "about": {
     "heroTitle": "发现基于位置的数字体验的未来",
@@ -157,11 +160,17 @@
     "ourTeam": "我们出色的团队",
     "joinBeta": "加入我们的测试版",
     "getReady": "准备好寻找了！",
-    "ctaDesc": "走进一个全新的现实，让世界成为您的游乐场。SeekAR 将您的周围变成互动冒险，融合最新的 AR 技术与真实世界探索。"
+    "ctaDesc": "走进一个全新的现实，让世界成为您的游乐场。SeekAR 将您的周围变成互动冒险，融合最新的 AR 技术与真实世界探索。",
+    "metaTitle": "关于 SeekAR 背后的团队",
+    "metaDescription": "认识在 Solana 上构建位置增强现实的团队：位置证明背后的想法、SeekAR 的技术，以及 $SEEK 背后的人。",
+    "ogTitle": "SeekAR 背后的团队"
   },
   "contact": {
     "getInTouch": "联系我们",
-    "formDesc": "填写下方表单，我们会尽快回复您。"
+    "formDesc": "填写下方表单，我们会尽快回复您。",
+    "metaTitle": "联系我们：合作与投放",
+    "metaDescription": "就在你自己的坐标上投放活动、商务合作、内测资格或媒体采访，联系 Seek Protocol 团队。",
+    "ogTitle": "联系 Seek Protocol"
   },
   "services": {
     "heroTitle": "我们的专业，您的增长",
@@ -218,7 +227,10 @@
     "moreArticles": "更多文章",
     "keepReading": "继续阅读",
     "allArticles": "全部文章",
-    "relatedPages": "相关页面"
+    "relatedPages": "相关页面",
+    "metaTitle": "博客：AR、AI 与基于位置的奖励",
+    "metaDescription": "关于增强现实、AI 伙伴、地理围栏空投与位置证明的文章，来自在 Solana 上构建 SeekAR 的团队。",
+    "ogTitle": "Seek Protocol 博客"
   },
   "forms": {
     "emailPlaceholder": "电子邮件地址",
@@ -340,7 +352,10 @@
     "consentP1": "使用本应用即表示您同意按照本隐私政策所述方式收集、使用和共享您的信息，包括本政策的当前版本以及服务提供商未来可能修订的版本。",
     "contactTitle": "联系方式",
     "contactP1": "如果您在使用本应用时对隐私保护有任何疑问，或对本政策中描述的数据处理规范有任何问题，请通过以下方式联系服务提供商：",
-    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates"
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
+    "metaTitle": "隐私政策",
+    "metaDescription": "Seek Protocol 与 SeekAR 如何处理位置数据、传感器读数与钱包信息：收集什么、保留多久，以及什么绝不共享。",
+    "ogTitle": "Seek Protocol 的隐私做法"
   },
   "termsPage": {
     "title": "条款与条件",
@@ -359,7 +374,10 @@
     "changesTitle": "本条款与条件的变更",
     "changesP1": "服务提供商可能会定期更新其条款与条件。因此，建议您定期查阅本页面以了解任何变更。服务提供商将通过在本页面发布新的条款与条件来通知您任何变更。",
     "contactTitle": "联系我们",
-    "contactP1": "如果您对本条款与条件有任何疑问或建议，请随时通过 <email>support@seekprotocol.ai</email> 联系服务提供商。"
+    "contactP1": "如果您对本条款与条件有任何疑问或建议，请随时通过 <email>support@seekprotocol.ai</email> 联系服务提供商。",
+    "metaTitle": "条款与条件",
+    "metaDescription": "使用 SeekAR 与 Seek Protocol 平台的条款：你的权利、领取资产的规则，以及付费项目的运作方式。",
+    "ogTitle": "Seek Protocol 使用条款"
   },
   "languageSwitcher": {
     "en": "English",
@@ -1154,9 +1172,9 @@
     }
   },
   "businessPage": {
-    "metaTitle": "商业合作：买到场，而不是买曝光",
-    "metaDescription": "在你自己的坐标上投放奖励，衡量谁真的来了。Seek Protocol 把数字营销变成零售、活动、代币项目与城市的可验证到店。",
-    "ogTitle": "买到场，而不是买曝光",
+    "metaTitle": "地理围栏营销，按到店付费",
+    "metaDescription": "用会数人的位置营销，而不是靠模型推算。把奖励放在你自己的坐标上，按门口测得的验证到店付费。",
+    "ogTitle": "按验证到店付费",
     "eyebrow": "商业合作",
     "titleStart": "买到场，而不是买",
     "titleAccent": "曝光",

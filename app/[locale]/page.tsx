@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import CoinStage from "@/components/sections/CoinStage";
@@ -28,18 +28,23 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "home" });
+  const description = t("metaDescription");
 
   return {
-    // 52 characters, inside the ~60 Google will render. The trailing
+    // 52 characters in English, inside the ~60 Google will render. The trailing
     // "- Redefining Innovation" was always truncated away.
-    title: "Seek Protocol | The First AR & AI Platform on Solana",
-    description:
-      "Explore a new reality with Seek Protocol ($SEEK). Hunt location-based airdrops, collect NFTs in augmented reality, earn crypto rewards, and explore the world with AI companions on Solana.",
+    title: t("metaTitle"),
+    description,
     openGraph: {
-      title: "Seek Protocol | AR & AI Platform on Solana",
-      description:
-        "The first AR and AI platform on Solana. Transform your world into a blockchain-powered playground. Hunt airdrops, collect NFTs, and explore with AI companions.",
+      title: t("ogTitle"),
+      description,
       url: `/${locale}`,
+      images: [OG_IMAGE],
+    },
+    twitter: {
+      title: t("ogTitle"),
+      description,
       images: [OG_IMAGE],
     },
     alternates: getMultilingualAlternates("/", locale),

@@ -97,7 +97,10 @@
     "liveTitle": "都市を選んで運を試す",
     "liveLead": "どの拠点にでも飛んで、コインをタップすれば誰が拾ったかがわかります。アプリ本来の確率で、自分でも1枚狙ってみてください。",
     "foundationsEyebrow": "土台",
-    "readWhitepaper": "技術ホワイトペーパーを読む"
+    "readWhitepaper": "技術ホワイトペーパーを読む",
+    "metaTitle": "Solana初のARとAIのプラットフォーム",
+    "metaDescription": "現実の場所でエアドロップを探し、ARでNFTを集め、AIの相棒と歩く。SeekARは実在の場所を、Solana上で受け取れる報酬に変えます。",
+    "ogTitle": "Seek Protocol｜Solana上のARとAI"
   },
   "about": {
     "heroTitle": "位置ベースデジタル体験の未来を発見",
@@ -157,11 +160,17 @@
     "ourTeam": "素晴らしいチーム",
     "joinBeta": "ベータ版に参加",
     "getReady": "探索の準備はできましたか！",
-    "ctaDesc": "世界があなたの遊び場になる新しい現実に踏み出しましょう。SeekAR は最新の AR テクノロジーと現実世界の探索を融合させ、あなたの周囲をインタラクティブな冒険に変えます。"
+    "ctaDesc": "世界があなたの遊び場になる新しい現実に踏み出しましょう。SeekAR は最新の AR テクノロジーと現実世界の探索を融合させ、あなたの周囲をインタラクティブな冒険に変えます。",
+    "metaTitle": "SeekARをつくるチームについて",
+    "metaDescription": "Solanaで位置連動のARをつくるチームの紹介。位置証明という発想、SeekARを支える技術、そして$SEEKの背後にいる人たち。",
+    "ogTitle": "SeekARをつくるチーム"
   },
   "contact": {
     "getInTouch": "お問い合わせ",
-    "formDesc": "以下のフォームにご記入ください。できるだけ早くご返信いたします。"
+    "formDesc": "以下のフォームにご記入ください。できるだけ早くご返信いたします。",
+    "metaTitle": "お問い合わせ：協業とキャンペーン",
+    "metaDescription": "自社の座標でのキャンペーン、パートナーシップ、ベータ参加、取材について、Seek Protocolのチームにご連絡ください。",
+    "ogTitle": "Seek Protocolへのお問い合わせ"
   },
   "services": {
     "heroTitle": "私たちの専門知識、あなたの成長",
@@ -218,7 +227,10 @@
     "moreArticles": "その他の記事",
     "keepReading": "続けて読む",
     "allArticles": "すべての記事",
-    "relatedPages": "関連ページ"
+    "relatedPages": "関連ページ",
+    "metaTitle": "ブログ：AR、AI、位置連動の報酬",
+    "metaDescription": "拡張現実、AIの相棒、ジオフェンス型エアドロップ、位置証明についての記事。Solanaで SeekAR をつくるチームより。",
+    "ogTitle": "Seek Protocolのブログ"
   },
   "forms": {
     "emailPlaceholder": "メールアドレス",
@@ -340,7 +352,10 @@
     "consentP1": "本アプリケーションを使用することにより、お客様は、本プライバシーポリシーに記載されたとおり、現在および将来サービス提供者により修正される可能性のある内容に従い、お客様の情報の収集、使用、および共有に同意するものとします。",
     "contactTitle": "お問い合わせ",
     "contactP1": "本アプリケーションの使用中のプライバシーに関するご質問、または本ポリシーに記載されたデータ取扱い慣行に関するご質問がございましたら、以下の連絡先までサービス提供者にお問い合わせください：",
-    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates"
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
+    "metaTitle": "プライバシーポリシー",
+    "metaDescription": "Seek ProtocolとSeekARが位置情報、センサーの値、ウォレット情報をどう扱うか。何を集め、どれだけ保持し、何を決して共有しないか。",
+    "ogTitle": "Seek Protocolのプライバシー"
   },
   "termsPage": {
     "title": "利用規約",
@@ -359,7 +374,10 @@
     "changesTitle": "本利用規約の変更",
     "changesP1": "サービス提供者は、利用規約を定期的に更新する場合があります。したがって、変更がないか定期的に本ページをご確認ください。サービス提供者は、新しい利用規約を本ページに掲載することにより、変更をお知らせします。",
     "contactTitle": "お問い合わせ",
-    "contactP1": "利用規約についてご質問やご提案がございましたら、サービス提供者（<email>support@seekprotocol.ai</email>）までお気軽にお問い合わせください。"
+    "contactP1": "利用規約についてご質問やご提案がございましたら、サービス提供者（<email>support@seekprotocol.ai</email>）までお気軽にお問い合わせください。",
+    "metaTitle": "利用規約",
+    "metaDescription": "SeekARおよびSeek Protocolプラットフォームの利用条件。利用者の権利、アセット受け取りのルール、有料アイテムの扱いについて。",
+    "ogTitle": "Seek Protocolの利用規約"
   },
   "languageSwitcher": {
     "en": "English",
@@ -1154,9 +1172,9 @@
     }
   },
   "businessPage": {
-    "metaTitle": "法人向け：インプレッションではなく来訪を買う",
-    "metaDescription": "自分の座標に報酬を置き、実際に誰が来たかを測る。Seek Protocolはデジタル施策を、小売、イベント、トークンプロジェクト、都市のための検証済み来店に変えます。",
-    "ogTitle": "インプレッションではなく来訪を買う",
+    "metaTitle": "ジオフェンス広告、来訪ごとの課金",
+    "metaDescription": "来訪を推定ではなく実測する位置連動マーケティング。自社の座標に報酬を置き、店先で測った検証済み来訪ごとに支払います。",
+    "ogTitle": "検証済み来訪ごとの支払い",
     "eyebrow": "法人向け",
     "titleStart": "買うのは来訪、",
     "titleAccent": "インプレッションではなく",

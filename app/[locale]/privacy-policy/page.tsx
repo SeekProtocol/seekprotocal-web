@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import styles from "./privacy-policy.module.css";
 
@@ -10,27 +10,22 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "privacyPolicyPage" });
+  const description = t("metaDescription");
 
   return {
-    title: "Privacy Policy",
-    description:
-      "Read the Seek Protocol and SeekAR privacy policy. Learn how we collect, use, and protect your personal data, location information, and blockchain wallet details.",
+    title: t("metaTitle"),
+    description,
     openGraph: {
-      title: "Privacy Policy - Seek Protocol",
-      description:
-        "Seek Protocol's privacy policy. How we handle your data, location info, and wallet details in SeekAR.",
+      title: t("ogTitle"),
+      description,
       url: `/${locale}/privacy-policy`,
       images: [OG_IMAGE],
     },
     twitter: {
-      title: "Privacy Policy - Seek Protocol",
-      description:
-        "How Seek Protocol handles your data, location info, and wallet details in the SeekAR app.",
+      title: t("ogTitle"),
+      description,
       images: [OG_IMAGE],
-    },
-    robots: {
-      index: true,
-      follow: true,
     },
     alternates: getMultilingualAlternates("/privacy-policy", locale),
   };
