@@ -51,7 +51,7 @@ export default function SiteHeader() {
     <header className="site-header" data-open={open || undefined}>
       <div className="site-header-inner shell-wide">
         <Link href="/" className="site-header-brand" aria-label="Seek Protocol">
-          <SeekLogo markSize={30} />
+          <SeekLogo markSize={42} />
         </Link>
 
         <nav className="site-nav" aria-label="Main">
