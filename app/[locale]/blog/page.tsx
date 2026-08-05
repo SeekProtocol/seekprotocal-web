@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import { blogPosts } from "@/lib/blog-data";
 
 export async function generateMetadata({
@@ -21,14 +21,7 @@ export async function generateMetadata({
       description:
         "The latest articles on augmented reality, AI companions, blockchain rewards, and the future of location-based experiences on Solana.",
       url: `/${locale}/blog`,
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "Seek Protocol Blog",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     twitter: {
       title: "Seek Protocol Blog - AR, AI & Blockchain Insights",

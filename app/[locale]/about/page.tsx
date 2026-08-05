@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import BetaForm from "@/components/shared/BetaForm";
 import {
   ARIcon,
@@ -27,14 +27,7 @@ export async function generateMetadata({
       description:
         "Discover how Seek Protocol bridges physical and digital worlds through location-based AR technology, blockchain rewards, and AI-powered exploration on Solana.",
       url: `/${locale}/about`,
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "About Seek Protocol - AR & AI Platform on Solana",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     twitter: {
       title: "About Seek Protocol - Meet the SeekAR Team",

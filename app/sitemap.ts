@@ -1,102 +1,63 @@
 import { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog-data";
-import { getSitemapAlternates } from "@/lib/seo";
+import { baseUrl, getSitemapAlternates, OG_IMAGE } from "@/lib/seo";
 import { routing } from "@/i18n/routing";
 
-const baseUrl = "https://www.seekprotocol.ai";
 const defaultLocale = routing.defaultLocale;
 
+/**
+ * Only canonical URLs belong here, and only one entry per canonical.
+ *
+ * Translated pages carry the hreflang cluster. The English-only pages do not:
+ * they list the /en URL alone, matching the canonical their metadata declares.
+ * Listing /nl/whitepaper with an hreflang cluster while the page canonicalises
+ * to /en/whitepaper would contradict the page and waste crawl budget on URLs
+ * we are asking Google not to index.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastUpdated = new Date("2026-03-11");
-  const ogImage =
-    "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png";
+  const lastUpdated = new Date("2026-08-05");
+  const ogImage = OG_IMAGE.url;
 
-  const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: `${baseUrl}/${defaultLocale}`,
-      lastModified: lastUpdated,
-      changeFrequency: "weekly",
-      priority: 1,
-      alternates: getSitemapAlternates("/"),
-      images: [ogImage],
-    },
-    {
-      url: `${baseUrl}/${defaultLocale}/about`,
-      lastModified: lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.8,
-      alternates: getSitemapAlternates("/about"),
-      images: [ogImage],
-    },
-    {
-      url: `${baseUrl}/${defaultLocale}/ecosystem`,
-      lastModified: lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9,
-      alternates: getSitemapAlternates("/ecosystem"),
-      images: [ogImage],
-    },
-    {
-      url: `${baseUrl}/${defaultLocale}/whitepaper`,
-      lastModified: lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9,
-      alternates: getSitemapAlternates("/whitepaper"),
-      images: [ogImage],
-    },
-    {
-      url: `${baseUrl}/${defaultLocale}/roadmap`,
-      lastModified: lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.8,
-      alternates: getSitemapAlternates("/roadmap"),
-      images: [ogImage],
-    },
-    {
-      url: `${baseUrl}/${defaultLocale}/business`,
-      lastModified: lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.8,
-      alternates: getSitemapAlternates("/business"),
-      images: [ogImage],
-    },
-    {
-      url: `${baseUrl}/${defaultLocale}/blog`,
-      lastModified: lastUpdated,
-      changeFrequency: "weekly",
-      priority: 0.8,
-      alternates: getSitemapAlternates("/blog"),
-    },
-    {
-      url: `${baseUrl}/${defaultLocale}/contact`,
-      lastModified: lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.7,
-      alternates: getSitemapAlternates("/contact"),
-    },
-    {
-      url: `${baseUrl}/${defaultLocale}/privacy-policy`,
-      lastModified: lastUpdated,
-      changeFrequency: "yearly",
-      priority: 0.3,
-      alternates: getSitemapAlternates("/privacy-policy"),
-    },
-    {
-      url: `${baseUrl}/${defaultLocale}/terms-conditions`,
-      lastModified: lastUpdated,
-      changeFrequency: "yearly",
-      priority: 0.3,
-      alternates: getSitemapAlternates("/terms-conditions"),
-    },
+  const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly" }[] = [
+    { path: "/", priority: 1, changeFrequency: "weekly" },
+    { path: "/about", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/blog", priority: 0.8, changeFrequency: "weekly" },
+    { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
+    { path: "/terms-conditions", priority: 0.3, changeFrequency: "yearly" },
   ];
+
+  const englishOnly: { path: string; priority: number }[] = [
+    { path: "/ecosystem", priority: 0.9 },
+    { path: "/whitepaper", priority: 0.9 },
+    { path: "/roadmap", priority: 0.8 },
+    { path: "/business", priority: 0.8 },
+  ];
+
+  const translatedEntries: MetadataRoute.Sitemap = translated.map((page) => ({
+    url: `${baseUrl}/${defaultLocale}${page.path === "/" ? "" : page.path}`,
+    lastModified: lastUpdated,
+    changeFrequency: page.changeFrequency,
+    priority: page.priority,
+    alternates: getSitemapAlternates(page.path),
+    images: [ogImage],
+  }));
+
+  const englishOnlyEntries: MetadataRoute.Sitemap = englishOnly.map((page) => ({
+    url: `${baseUrl}/${defaultLocale}${page.path}`,
+    lastModified: lastUpdated,
+    changeFrequency: "monthly",
+    priority: page.priority,
+    images: [ogImage],
+  }));
 
   const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${baseUrl}/${defaultLocale}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "monthly",
     priority: 0.7,
-    alternates: getSitemapAlternates(`/blog/${post.slug}`),
+    images: [`${baseUrl}/og/blog/${post.slug}`],
   }));
 
-  return [...staticPages, ...blogEntries];
+  return [...translatedEntries, ...englishOnlyEntries, ...blogEntries];
 }

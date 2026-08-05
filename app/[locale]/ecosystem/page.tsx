@@ -1,24 +1,51 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { baseUrl, getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
 import { CAPABILITIES, FAQ, PARTICIPANTS } from "@/content/ecosystem";
 import GlobeSection from "@/components/sections/GlobeSection";
 import Accordion from "@/components/ui/Accordion";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
+const DESCRIPTION =
+  "How the Seek Protocol ecosystem fits together: seekers who collect, publishers who place, and the protocol that verifies presence and settles it on Solana.";
+
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Ecosystem",
-    description:
-      "How the Seek Protocol ecosystem fits together: seekers who collect, publishers who place, and the protocol that verifies presence and settles it on Solana.",
-    alternates: getMultilingualAlternates("/ecosystem", locale),
+    description: DESCRIPTION,
+    alternates: getSingleLanguageAlternates("/ecosystem"),
+    openGraph: {
+      title: "Three parties, one coordinate",
+      description: DESCRIPTION,
+      url: "/en/ecosystem",
+      images: [OG_IMAGE],
+    },
+    twitter: {
+      title: "Three parties, one coordinate",
+      description: DESCRIPTION,
+      images: [OG_IMAGE],
+    },
   };
 }
+
+/**
+ * The page already answers these questions in an accordion. Restating them as
+ * FAQPage is what makes them eligible for a SERP rich result, and it is the one
+ * form an answer engine can lift verbatim rather than paraphrase.
+ */
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": `${baseUrl}/en/ecosystem#faq`,
+  mainEntity: FAQ.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
 
 export default async function EcosystemPage({
   params,
@@ -30,6 +57,11 @@ export default async function EcosystemPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       <section className="page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />

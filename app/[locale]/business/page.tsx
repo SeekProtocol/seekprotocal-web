@@ -1,22 +1,32 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
 import { MEASUREMENT, USE_CASES } from "@/content/business";
 import DeployConsole from "@/components/business/DeployConsole";
 import AttentionFunnel from "@/components/business/AttentionFunnel";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
+const DESCRIPTION =
+  "Place rewards at your own coordinates and measure who actually arrived. Seek Protocol turns digital campaigns into verified footfall for retail, events, token projects and cities.";
+
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "For business",
-    description:
-      "Place rewards at your own coordinates and measure who actually arrived. Seek Protocol turns digital campaigns into verified footfall for retail, events, token projects and cities.",
-    alternates: getMultilingualAlternates("/business", locale),
+    description: DESCRIPTION,
+    // English only, so this canonicalises to /en rather than claiming eight
+    // translations of the same copy. See getSingleLanguageAlternates.
+    alternates: getSingleLanguageAlternates("/business"),
+    openGraph: {
+      title: "Buy arrivals, not impressions",
+      description: DESCRIPTION,
+      url: "/en/business",
+      images: [OG_IMAGE],
+    },
+    twitter: {
+      title: "Buy arrivals, not impressions",
+      description: DESCRIPTION,
+      images: [OG_IMAGE],
+    },
   };
 }
 
