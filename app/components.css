@@ -411,6 +411,46 @@
    COIN STAGE — the signature
    -------------------------------------------------------------------------- */
 
+/* --------------------------------------------------------------------------
+   3D SCENE PLACEHOLDER
+   -------------------------------------------------------------------------- */
+
+/* Every three.js host carries .three-host, and gains data-ready the moment its
+   renderer is attached. Until then the box was simply empty, which read as a
+   broken layout rather than as something arriving.
+
+   The parent reserves the space in all five cases, so this paints inside a box
+   that already has its final size. That matters: the site's CLS is 0.000 and a
+   placeholder that changed the geometry would be the thing that broke it. */
+.three-host { position: relative; }
+
+.three-host:not([data-ready])::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  border: 2px solid var(--line);
+  border-top-color: var(--brand);
+  border-radius: 50%;
+  animation: three-host-spin 0.9s linear infinite;
+}
+
+@keyframes three-host-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* A spinner is motion for its own sake to a reader who asked for less of it.
+   The ring still marks the spot, it just does not turn. */
+@media (prefers-reduced-motion: reduce) {
+  .three-host:not([data-ready])::after {
+    animation: none;
+    border-top-color: var(--line);
+  }
+}
+
 .coin-canvas {
   position: relative;
   width: 100%;

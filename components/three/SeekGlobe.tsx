@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
+import { useNearViewport } from "@/lib/use-near-viewport";
 import { CITIES, type City } from "@/lib/seek-cities";
 import {
   DROP_COINS,
@@ -124,10 +125,14 @@ export default function SeekGlobe({
   const selectRef = useRef(onSelect);
   selectRef.current = onSelect;
 
+  // Built one viewport out, not on mount. See useNearViewport.
+  const nearViewport = useNearViewport(hostRef);
+
   useEffect(() => {
     const host = hostRef.current;
     const labelLayer = labelLayerRef.current;
     if (!host || !labelLayer) return;
+    if (!nearViewport) return;
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let renderer: THREE.WebGLRenderer;
@@ -889,12 +894,12 @@ export default function SeekGlobe({
       renderer.domElement.remove();
       delete host.dataset.ready;
     };
-  }, [zoomDepth]);
+  }, [zoomDepth, nearViewport]);
 
   return (
     <div
       ref={hostRef}
-      className={`globe-canvas ${className}`}
+      className={`three-host globe-canvas ${className}`}
       role="img"
       aria-label="Interactive globe showing SeekAR collection activity worldwide"
     >

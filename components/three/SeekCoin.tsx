@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
+import { useNearViewport } from "@/lib/use-near-viewport";
 import { MARK_HOLES, MARK_OUTLINE } from "@/lib/seek-mark";
 import { useTheme } from "@/components/theme/ThemeProvider";
 
@@ -215,9 +216,13 @@ export default function SeekCoin({ className = "", scale = 1, spin = 0.35 }: Pro
   const themeRef = useRef(theme);
   themeRef.current = theme;
 
+  // Built one viewport out, not on mount. See useNearViewport.
+  const nearViewport = useNearViewport(hostRef);
+
   useEffect(() => {
     const host = hostRef.current;
     if (!host) return;
+    if (!nearViewport) return;
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let renderer: THREE.WebGLRenderer;
@@ -387,7 +392,7 @@ export default function SeekCoin({ className = "", scale = 1, spin = 0.35 }: Pro
       renderer.domElement.remove();
       delete host.dataset.ready;
     };
-  }, [scale, spin]);
+  }, [scale, spin, nearViewport]);
 
-  return <div ref={hostRef} className={`coin-canvas ${className}`} aria-hidden="true" />;
+  return <div ref={hostRef} className={`three-host coin-canvas ${className}`} aria-hidden="true" />;
 }

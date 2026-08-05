@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
+import { useNearViewport } from "@/lib/use-near-viewport";
 import { COLLECTIBLES, RARITY_LADDER } from "@/content/collectibles";
 
 /**
@@ -108,9 +109,13 @@ export default function WorldToPhone({ progressRef, className = "" }: Props) {
      the section it sits in is `.section-inverse`, and the ref this used to
      mirror the theme into was never read by anything. */
 
+  // Built one viewport out, not on mount. See useNearViewport.
+  const nearViewport = useNearViewport(hostRef);
+
   useEffect(() => {
     const host = hostRef.current;
     if (!host) return;
+    if (!nearViewport) return;
 
     let renderer: THREE.WebGLRenderer;
     try {
@@ -736,7 +741,7 @@ export default function WorldToPhone({ progressRef, className = "" }: Props) {
       renderer.domElement.remove();
       delete host.dataset.ready;
     };
-  }, [progressRef]);
+  }, [progressRef, nearViewport]);
 
-  return <div ref={hostRef} className={`wtp-canvas ${className}`} aria-hidden="true" />;
+  return <div ref={hostRef} className={`three-host wtp-canvas ${className}`} aria-hidden="true" />;
 }
