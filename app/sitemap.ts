@@ -8,11 +8,12 @@ const defaultLocale = routing.defaultLocale;
 /**
  * Only canonical URLs belong here, and only one entry per canonical.
  *
- * Translated pages carry the hreflang cluster. The English-only pages do not:
- * they list the /en URL alone, matching the canonical their metadata declares.
- * Listing /nl/whitepaper with an hreflang cluster while the page canonicalises
- * to /en/whitepaper would contradict the page and waste crawl budget on URLs
- * we are asking Google not to index.
+ * Every page except the articles is translated now, so each entry lists its /en
+ * URL once and carries the hreflang cluster beside it. The articles are the
+ * exception and list /en alone, matching the canonical they declare. Advertising
+ * /nl/blog/<slug> with a cluster while the page canonicalises to /en would
+ * contradict the page and spend crawl budget on URLs we are asking Google not
+ * to index.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastUpdated = new Date("2026-08-05");

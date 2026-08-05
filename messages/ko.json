@@ -97,7 +97,10 @@
     "liveTitle": "도시를 골라 운을 시험해 보세요",
     "liveLead": "아무 거점으로나 이동해 코인을 눌러 누가 가져갔는지 확인하고, 앱의 실제 확률로 직접 한 번 잡아 보세요.",
     "foundationsEyebrow": "기반",
-    "readWhitepaper": "기술 백서 읽기"
+    "readWhitepaper": "기술 백서 읽기",
+    "metaTitle": "Solana 최초의 AR·AI 플랫폼",
+    "metaDescription": "실제 장소에서 에어드롭을 찾고, 증강현실로 NFT를 모으고, AI 동반자와 함께 탐험하세요. SeekAR는 실제 장소를 Solana에서 받는 보상으로 바꿉니다.",
+    "ogTitle": "Seek Protocol | Solana 위의 AR·AI"
   },
   "about": {
     "heroTitle": "위치 기반 디지털 경험의 미래를 발견하세요",
@@ -157,11 +160,17 @@
     "ourTeam": "우리의 멋진 팀",
     "joinBeta": "베타에 참여하세요",
     "getReady": "탐험할 준비가 되셨나요!",
-    "ctaDesc": "세상이 당신의 놀이터가 되는 새로운 현실로 발걸음을 내딛으세요. SeekAR은 최신 AR 기술과 현실 세계 탐험을 융합하여 주변을 인터랙티브 모험으로 변환합니다."
+    "ctaDesc": "세상이 당신의 놀이터가 되는 새로운 현실로 발걸음을 내딛으세요. SeekAR은 최신 AR 기술과 현실 세계 탐험을 융합하여 주변을 인터랙티브 모험으로 변환합니다.",
+    "metaTitle": "SeekAR를 만드는 팀 소개",
+    "metaDescription": "Solana에서 위치 기반 AR를 만드는 팀을 소개합니다. 위치 증명이라는 발상, SeekAR를 떠받치는 기술, 그리고 $SEEK 뒤의 사람들.",
+    "ogTitle": "SeekAR를 만드는 팀"
   },
   "contact": {
     "getInTouch": "문의하기",
-    "formDesc": "아래 양식을 작성해 주시면 최대한 빨리 답변드리겠습니다."
+    "formDesc": "아래 양식을 작성해 주시면 최대한 빨리 답변드리겠습니다.",
+    "metaTitle": "문의: 제휴와 캠페인",
+    "metaDescription": "직접 정한 좌표에 캠페인을 놓는 일, 제휴, 베타 참여, 취재 문의는 Seek Protocol 팀에 연락해 주세요.",
+    "ogTitle": "Seek Protocol에 문의하기"
   },
   "services": {
     "heroTitle": "우리의 전문성, 당신의 성장",
@@ -218,7 +227,10 @@
     "moreArticles": "더 많은 기사",
     "keepReading": "이어서 읽기",
     "allArticles": "전체 글",
-    "relatedPages": "관련 페이지"
+    "relatedPages": "관련 페이지",
+    "metaTitle": "블로그: AR, AI, 위치 기반 보상",
+    "metaDescription": "증강현실과 AI 동반자, 지오펜스 에어드롭, 위치 증명에 대한 글. Solana에서 SeekAR를 만드는 팀이 씁니다.",
+    "ogTitle": "Seek Protocol 블로그"
   },
   "forms": {
     "emailPlaceholder": "이메일 주소",
@@ -340,7 +352,10 @@
     "consentP1": "본 애플리케이션을 사용함으로써, 귀하는 본 개인정보 보호정책에 기술된 대로, 현재 및 향후 서비스 제공자에 의해 수정될 수 있는 내용에 따라 귀하의 정보의 수집, 사용 및 공유에 동의합니다.",
     "contactTitle": "연락처",
     "contactP1": "본 애플리케이션 사용 중 개인정보에 관한 문의사항이 있으시거나, 본 정책에 기술된 데이터 처리 관행에 대해 질문이 있으시면, 아래 연락처로 서비스 제공자에게 문의해 주십시오:",
-    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates"
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
+    "metaTitle": "개인정보 처리방침",
+    "metaDescription": "Seek Protocol과 SeekAR가 위치 데이터와 센서 값, 지갑 정보를 다루는 방식. 무엇을 모으고, 얼마나 보관하며, 무엇을 절대 공유하지 않는지.",
+    "ogTitle": "Seek Protocol의 개인정보 보호"
   },
   "termsPage": {
     "title": "이용약관",
@@ -359,7 +374,10 @@
     "changesTitle": "본 이용약관의 변경",
     "changesP1": "서비스 제공자는 이용약관을 주기적으로 업데이트할 수 있습니다. 따라서 변경 사항이 있는지 정기적으로 본 페이지를 확인하시기 바랍니다. 서비스 제공자는 새로운 이용약관을 본 페이지에 게시하여 변경 사항을 통지합니다.",
     "contactTitle": "문의하기",
-    "contactP1": "이용약관에 대한 질문이나 제안이 있으시면, 서비스 제공자(<email>support@seekprotocol.ai</email>)에게 주저하지 마시고 문의해 주십시오."
+    "contactP1": "이용약관에 대한 질문이나 제안이 있으시면, 서비스 제공자(<email>support@seekprotocol.ai</email>)에게 주저하지 마시고 문의해 주십시오.",
+    "metaTitle": "이용약관",
+    "metaDescription": "SeekAR와 Seek Protocol 플랫폼 이용 조건. 이용자의 권리, 자산 수령 규칙, 유료 항목이 작동하는 방식.",
+    "ogTitle": "Seek Protocol 이용약관"
   },
   "languageSwitcher": {
     "en": "English",
@@ -1154,9 +1172,9 @@
     }
   },
   "businessPage": {
-    "metaTitle": "비즈니스: 노출 말고 방문을 사세요",
-    "metaDescription": "당신의 좌표에 보상을 놓고 실제로 누가 왔는지 측정하세요. Seek Protocol은 디지털 캠페인을 리테일, 행사, 토큰 프로젝트, 도시를 위한 검증된 방문으로 바꿉니다.",
-    "ogTitle": "노출 말고 방문을 사세요",
+    "metaTitle": "지오펜싱 마케팅, 방문당 과금",
+    "metaDescription": "방문을 추정하지 않고 세는 위치 기반 마케팅. 원하는 좌표에 보상을 놓고, 문 앞에서 측정한 검증된 방문마다 지불하세요.",
+    "ogTitle": "검증된 방문당 지불",
     "eyebrow": "비즈니스",
     "titleStart": "사는 것은 방문, 노출이",
     "titleAccent": "아닙니다",

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import BetaForm from "@/components/shared/BetaForm";
@@ -18,22 +18,22 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
+  const description = t("metaDescription");
 
   return {
-    title: "About Us - Meet the Team Behind SeekAR",
-    description:
-      "Meet the Seek Protocol team building the future of location-based AR experiences on Solana. Discover our mission, core technologies, values, and the people behind $SEEK and SeekAR.",
+    title: t("metaTitle"),
+    description,
     openGraph: {
-      title: "About Seek Protocol - The Team Behind SeekAR",
-      description:
-        "Discover how Seek Protocol bridges physical and digital worlds through location-based AR technology, blockchain rewards, and AI-powered exploration on Solana.",
+      title: t("ogTitle"),
+      description,
       url: `/${locale}/about`,
       images: [OG_IMAGE],
     },
     twitter: {
-      title: "About Seek Protocol - Meet the SeekAR Team",
-      description:
-        "Meet the team building the future of location-based AR experiences on Solana. AR technology, blockchain rewards, and AI-powered exploration.",
+      title: t("ogTitle"),
+      description,
+      images: [OG_IMAGE],
     },
     alternates: getMultilingualAlternates("/about", locale),
   };

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import styles from "../privacy-policy/privacy-policy.module.css";
 
@@ -10,27 +10,22 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "termsPage" });
+  const description = t("metaDescription");
 
   return {
-    title: "Terms & Conditions",
-    description:
-      "Review the terms and conditions for using SeekAR and the Seek Protocol platform. Understand your rights, responsibilities, and usage guidelines for $SEEK services.",
+    title: t("metaTitle"),
+    description,
     openGraph: {
-      title: "Terms & Conditions - Seek Protocol",
-      description:
-        "Terms and conditions for using the Seek Protocol platform and SeekAR application.",
+      title: t("ogTitle"),
+      description,
       url: `/${locale}/terms-conditions`,
       images: [OG_IMAGE],
     },
     twitter: {
-      title: "Terms & Conditions - Seek Protocol",
-      description:
-        "Terms and conditions for using the Seek Protocol platform and SeekAR application.",
+      title: t("ogTitle"),
+      description,
       images: [OG_IMAGE],
-    },
-    robots: {
-      index: true,
-      follow: true,
     },
     alternates: getMultilingualAlternates("/terms-conditions", locale),
   };

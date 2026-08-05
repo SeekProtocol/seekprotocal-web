@@ -97,7 +97,10 @@
     "liveTitle": "Choisissez une ville et tentez votre chance",
     "liveLead": "Sautez sur n'importe quel hub, touchez une pièce pour voir qui l'a ramassée, et tentez d'en attraper une vous-même, tirée avec les vraies probabilités de l'application.",
     "foundationsEyebrow": "Fondations",
-    "readWhitepaper": "Lire le whitepaper technique"
+    "readWhitepaper": "Lire le whitepaper technique",
+    "metaTitle": "La première plateforme AR et IA sur Solana",
+    "metaDescription": "Chassez des airdrops géolocalisés, collectionnez des NFT en réalité augmentée et explorez avec des compagnons IA. SeekAR transforme les lieux réels en récompenses sur Solana.",
+    "ogTitle": "Seek Protocol | AR et IA sur Solana"
   },
   "about": {
     "heroTitle": "Découvrez l'avenir des expériences numériques géolocalisées",
@@ -157,11 +160,17 @@
     "ourTeam": "Notre incroyable équipe",
     "joinBeta": "Rejoignez notre bêta",
     "getReady": "Préparez-vous à chercher !",
-    "ctaDesc": "Plongez dans une nouvelle réalité où le monde devient votre terrain de jeu. SeekAR transforme votre environnement en une aventure interactive, alliant la dernière technologie AR à l'exploration du monde réel."
+    "ctaDesc": "Plongez dans une nouvelle réalité où le monde devient votre terrain de jeu. SeekAR transforme votre environnement en une aventure interactive, alliant la dernière technologie AR à l'exploration du monde réel.",
+    "metaTitle": "L'équipe derrière SeekAR",
+    "metaDescription": "Rencontrez l'équipe qui construit l'AR géolocalisée sur Solana : l'idée derrière la preuve de localisation, la technique de SeekAR et les personnes derrière $SEEK.",
+    "ogTitle": "L'équipe derrière SeekAR"
   },
   "contact": {
     "getInTouch": "Contactez-nous",
-    "formDesc": "Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible."
+    "formDesc": "Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.",
+    "metaTitle": "Contact : partenariats et campagnes",
+    "metaDescription": "Parlez à l'équipe Seek Protocol d'une campagne à vos propres coordonnées, de partenariats, d'un accès bêta ou de presse.",
+    "ogTitle": "Contacter Seek Protocol"
   },
   "services": {
     "heroTitle": "NOTRE EXPERTISE, VOTRE CROISSANCE",
@@ -218,7 +227,10 @@
     "moreArticles": "Plus d'articles",
     "keepReading": "Continuer la lecture",
     "allArticles": "Tous les articles",
-    "relatedPages": "Pages liées"
+    "relatedPages": "Pages liées",
+    "metaTitle": "Blog : AR, IA et récompenses géolocalisées",
+    "metaDescription": "Des articles sur la réalité augmentée, les compagnons IA, les airdrops géolocalisés et la preuve de localisation, par l'équipe qui construit SeekAR sur Solana.",
+    "ogTitle": "Le blog de Seek Protocol"
   },
   "forms": {
     "emailPlaceholder": "Adresse e-mail",
@@ -340,7 +352,10 @@
     "consentP1": "En utilisant l'Application, vous consentez à la collecte, à l'utilisation et au partage de vos informations tel que décrit dans la présente Politique de confidentialité, telle qu'elle existe actuellement et telle qu'elle pourra être modifiée par le Prestataire de Services à l'avenir.",
     "contactTitle": "Contact",
     "contactP1": "Si vous avez des questions concernant votre vie privée lors de l'utilisation de l'Application, ou si vous avez des questions sur les pratiques en matière de données décrites dans cette politique, veuillez contacter le Prestataire de Services à :",
-    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates"
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
+    "metaTitle": "Politique de confidentialité",
+    "metaDescription": "Comment Seek Protocol et SeekAR traitent les données de localisation, les relevés de capteurs et les informations de portefeuille : ce qui est collecté, conservé et jamais partagé.",
+    "ogTitle": "Confidentialité chez Seek Protocol"
   },
   "termsPage": {
     "title": "Conditions générales d'utilisation",
@@ -359,7 +374,10 @@
     "changesTitle": "Modifications des présentes conditions générales",
     "changesP1": "Le Prestataire de Services peut mettre à jour périodiquement ses Conditions générales d'utilisation. Par conséquent, il vous est conseillé de consulter cette page régulièrement pour prendre connaissance des éventuelles modifications. Le Prestataire de Services vous informera de tout changement en publiant les nouvelles Conditions générales d'utilisation sur cette page.",
     "contactTitle": "Nous contacter",
-    "contactP1": "Si vous avez des questions ou des suggestions concernant les Conditions générales d'utilisation, n'hésitez pas à contacter le Prestataire de Services à <email>support@seekprotocol.ai</email>."
+    "contactP1": "Si vous avez des questions ou des suggestions concernant les Conditions générales d'utilisation, n'hésitez pas à contacter le Prestataire de Services à <email>support@seekprotocol.ai</email>.",
+    "metaTitle": "Conditions générales",
+    "metaDescription": "Les conditions d'utilisation de SeekAR et de la plateforme Seek Protocol : vos droits, les règles de réclamation des actifs et le fonctionnement des articles payants.",
+    "ogTitle": "Conditions de Seek Protocol"
   },
   "languageSwitcher": {
     "en": "English",
@@ -1154,9 +1172,9 @@
     }
   },
   "businessPage": {
-    "metaTitle": "Entreprises : achetez des arrivées, pas des impressions",
-    "metaDescription": "Déposez des récompenses à vos propres coordonnées et mesurez qui est réellement venu. Seek Protocol transforme les campagnes numériques en visites vérifiées pour le commerce, les événements, les projets de tokens et les villes.",
-    "ogTitle": "Achetez des arrivées, pas des impressions",
+    "metaTitle": "Marketing géolocalisé, payé à l'arrivée",
+    "metaDescription": "Un marketing de proximité qui compte les arrivées au lieu de les modéliser. Déposez une récompense à vos coordonnées et payez par visite vérifiée, mesurée à la porte.",
+    "ogTitle": "Payez par arrivée vérifiée",
     "eyebrow": "Entreprises",
     "titleStart": "Achetez des arrivées, pas des",
     "titleAccent": "impressions",

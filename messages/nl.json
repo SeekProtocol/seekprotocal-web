@@ -97,7 +97,10 @@
     "liveTitle": "Kies een stad en waag een poging",
     "liveLead": "Spring naar elke hub, tik op een munt om te zien wie hem opgepakt heeft, en probeer er zelf een te vangen, gerold tegen de echte kansen uit de app.",
     "foundationsEyebrow": "Fundamenten",
-    "readWhitepaper": "Lees de technische whitepaper"
+    "readWhitepaper": "Lees de technische whitepaper",
+    "metaTitle": "Het eerste AR- en AI-platform op Solana",
+    "metaDescription": "Jaag op locatiegebonden airdrops, verzamel NFT's in augmented reality en verken met AI-metgezellen. SeekAR maakt van echte plekken op te halen beloningen op Solana.",
+    "ogTitle": "Seek Protocol | AR en AI op Solana"
   },
   "about": {
     "heroTitle": "Ontdek de toekomst van locatie-gebaseerde digitale ervaringen",
@@ -157,11 +160,17 @@
     "ourTeam": "Ons geweldige team",
     "joinBeta": "Doe mee met onze beta",
     "getReady": "Bereid je voor om te zoeken!",
-    "ctaDesc": "Stap in een nieuwe realiteit waar de wereld je speeltuin wordt. SeekAR transformeert je omgeving in een interactief avontuur, de nieuwste AR-technologie vermengend met verkenning in de echte wereld."
+    "ctaDesc": "Stap in een nieuwe realiteit waar de wereld je speeltuin wordt. SeekAR transformeert je omgeving in een interactief avontuur, de nieuwste AR-technologie vermengend met verkenning in de echte wereld.",
+    "metaTitle": "Over het team achter SeekAR",
+    "metaDescription": "Maak kennis met het team achter locatiegebonden AR op Solana: de missie achter locatiebewijs, de techniek onder SeekAR en de mensen achter $SEEK.",
+    "ogTitle": "Het team achter SeekAR"
   },
   "contact": {
     "getInTouch": "Neem contact op",
-    "formDesc": "Vul het onderstaande formulier in, en we nemen zo snel mogelijk contact met je op."
+    "formDesc": "Vul het onderstaande formulier in, en we nemen zo snel mogelijk contact met je op.",
+    "metaTitle": "Contact: samenwerking en campagnes",
+    "metaDescription": "Spreek het team van Seek Protocol over een campagne op je eigen coördinaten, samenwerking, bètatoegang of pers.",
+    "ogTitle": "Contact met Seek Protocol"
   },
   "services": {
     "heroTitle": "ONZE EXPERTISE, JOUW GROEI",
@@ -218,7 +227,10 @@
     "moreArticles": "Meer artikelen",
     "keepReading": "Verder lezen",
     "allArticles": "Alle artikelen",
-    "relatedPages": "Verwante pagina's"
+    "relatedPages": "Verwante pagina's",
+    "metaTitle": "Blog: AR, AI en locatiegebonden beloningen",
+    "metaDescription": "Artikelen over augmented reality, AI-metgezellen, geofenced airdrops en locatiebewijs, van het team dat SeekAR op Solana bouwt.",
+    "ogTitle": "Blog van Seek Protocol"
   },
   "forms": {
     "emailPlaceholder": "E-mailadres",
@@ -340,7 +352,10 @@
     "consentP1": "Door de Applicatie te gebruiken, stemt u in met de verzameling, het gebruik en het delen van uw informatie zoals beschreven in dit Privacybeleid, zoals het nu bestaat en zoals het in de toekomst door de Dienstverlener kan worden gewijzigd.",
     "contactTitle": "Contact",
     "contactP1": "Indien u vragen heeft over uw privacy tijdens het gebruik van de Applicatie, of indien u vragen heeft over de gegevenspraktijken die in dit beleid worden beschreven, neem dan contact op met de Dienstverlener via:",
-    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates"
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
+    "metaTitle": "Privacybeleid",
+    "metaDescription": "Hoe Seek Protocol en SeekAR omgaan met locatiedata, sensormetingen en walletgegevens: wat er verzameld wordt, hoe lang het bewaard blijft en wat nooit gedeeld wordt.",
+    "ogTitle": "Privacy bij Seek Protocol"
   },
   "termsPage": {
     "title": "Algemene Voorwaarden",
@@ -359,7 +374,10 @@
     "changesTitle": "Wijzigingen in deze Algemene Voorwaarden",
     "changesP1": "De Dienstverlener kan periodiek hun Algemene Voorwaarden bijwerken. Daarom wordt u geadviseerd deze pagina regelmatig te raadplegen voor eventuele wijzigingen. De Dienstverlener zal u op de hoogte stellen van eventuele wijzigingen door de nieuwe Algemene Voorwaarden op deze pagina te plaatsen.",
     "contactTitle": "Neem contact met ons op",
-    "contactP1": "Indien u vragen of suggesties heeft over de Algemene Voorwaarden, aarzel dan niet om contact op te nemen met de Dienstverlener via <email>support@seekprotocol.ai</email>."
+    "contactP1": "Indien u vragen of suggesties heeft over de Algemene Voorwaarden, aarzel dan niet om contact op te nemen met de Dienstverlener via <email>support@seekprotocol.ai</email>.",
+    "metaTitle": "Algemene voorwaarden",
+    "metaDescription": "De voorwaarden voor het gebruik van SeekAR en het Seek Protocol-platform: je rechten, de regels voor het claimen van assets en hoe de betaalde items werken.",
+    "ogTitle": "Voorwaarden van Seek Protocol"
   },
   "languageSwitcher": {
     "en": "English",
@@ -1154,9 +1172,9 @@
     }
   },
   "businessPage": {
-    "metaTitle": "Zakelijk: koop bezoeken, geen vertoningen",
-    "metaDescription": "Plaats beloningen op je eigen coördinaten en meet wie er echt gekomen is. Seek Protocol maakt van digitale campagnes geverifieerd bezoek voor retail, evenementen, tokenprojecten en steden.",
-    "ogTitle": "Koop bezoeken, geen vertoningen",
+    "metaTitle": "Geofencing-marketing, betaald per bezoek",
+    "metaDescription": "Locatiegebonden marketing die bezoeken telt in plaats van ze te modelleren. Leg een beloning op je eigen coördinaten en betaal per geverifieerd bezoek, gemeten aan de deur.",
+    "ogTitle": "Betaal per geverifieerd bezoek",
     "eyebrow": "Zakelijk",
     "titleStart": "Koop bezoeken, geen",
     "titleAccent": "vertoningen",

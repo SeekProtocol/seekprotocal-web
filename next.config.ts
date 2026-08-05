@@ -90,6 +90,24 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      /* The root, permanently.
+       *
+       * next-intl's proxy answers "/" with a 307, because the destination it
+       * picks depends on the visitor's Accept-Language. A 307 is by definition
+       * the wrong signal for a URL that always ends up in the same place for a
+       * crawler: it tells Google to keep the source URL and not to pass the
+       * link equity on. That matters more here than anywhere else on the site,
+       * because the root is what everybody links to: 163 of the domain's 190
+       * referring domains point at "/" and nothing else, and those signals were
+       * stopping at a temporary hop instead of reaching /en.
+       *
+       * Config redirects are evaluated before middleware, so this answers first
+       * and the proxy never sees "/". Locale detection still runs for every
+       * other path, and a visitor who lands on /en can switch language from the
+       * header. x-default already points at /en, so this only makes the routing
+       * agree with what the metadata has been claiming all along. */
+      { source: "/", destination: DEFAULT, permanent: true },
+
       // /services carried generic agency boilerplate that never described the
       // product. The B2B story now lives on /business.
       { source: "/services", destination: `${DEFAULT}/business`, permanent: true },

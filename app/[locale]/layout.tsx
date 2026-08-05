@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { DM_Sans, Inter_Tight, JetBrains_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import { clientMessages } from "@/i18n/client-messages";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { getMultilingualAlternates, OG_IMAGE, baseUrl } from "@/lib/seo";
@@ -191,7 +192,7 @@ export default async function LocaleLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={clientMessages(messages)}>
           <GoogleAnalytics />
           <script
             type="application/ld+json"

@@ -97,7 +97,10 @@
     "liveTitle": "Pick a city and try your luck",
     "liveLead": "Jump to any hub, tap a coin to see who picked it up, and take a swing at one yourself, rolled against the app's real odds.",
     "foundationsEyebrow": "Foundations",
-    "readWhitepaper": "Read the technical whitepaper"
+    "readWhitepaper": "Read the technical whitepaper",
+    "metaTitle": "The First AR & AI Platform on Solana",
+    "metaDescription": "Hunt location-based airdrops, collect NFTs in augmented reality and explore with AI companions. SeekAR turns real places into claimable rewards on Solana.",
+    "ogTitle": "Seek Protocol | AR & AI on Solana"
   },
   "about": {
     "heroTitle": "Discover the Future of Location-Based Digital Experiences",
@@ -157,11 +160,17 @@
     "ourTeam": "Our Amazing Team",
     "joinBeta": "Join our beta",
     "getReady": "Get ready to seek!",
-    "ctaDesc": "Step into a new reality where the world becomes your playground. SeekAR transforms your surroundings into an interactive adventure, blending the latest AR technology with real-world exploration."
+    "ctaDesc": "Step into a new reality where the world becomes your playground. SeekAR transforms your surroundings into an interactive adventure, blending the latest AR technology with real-world exploration.",
+    "metaTitle": "About the Team Behind SeekAR",
+    "metaDescription": "Meet the team building location-based AR on Solana: the mission behind proof of location, the technology under SeekAR and the people behind $SEEK.",
+    "ogTitle": "The team behind SeekAR"
   },
   "contact": {
     "getInTouch": "Get in Touch",
-    "formDesc": "Fill out the form below, and we'll get back to you ASAP."
+    "formDesc": "Fill out the form below, and we'll get back to you ASAP.",
+    "metaTitle": "Contact: Partnerships and Campaigns",
+    "metaDescription": "Talk to the Seek Protocol team about placing a campaign at your own coordinates, partnerships, beta access or press.",
+    "ogTitle": "Contact Seek Protocol"
   },
   "services": {
     "heroTitle": "OUR EXPERTISE, YOUR GROWTH",
@@ -218,7 +227,10 @@
     "moreArticles": "More Articles",
     "keepReading": "Keep reading",
     "allArticles": "All articles",
-    "relatedPages": "Related pages"
+    "relatedPages": "Related pages",
+    "metaTitle": "Blog: AR, AI and Location-Based Rewards",
+    "metaDescription": "Articles on augmented reality, AI companions, geofenced airdrops and proof of location, from the team building SeekAR on Solana.",
+    "ogTitle": "Seek Protocol blog"
   },
   "forms": {
     "emailPlaceholder": "Email Address",
@@ -340,7 +352,10 @@
     "consentP1": "By using the Application, you consent to the collection, use, and sharing of your information as described in this Privacy Policy, as it exists now and as it may be amended by the Service Provider in the future.",
     "contactTitle": "Contact",
     "contactP1": "If you have any questions regarding your privacy while using the Application, or if you have questions about the data practices described in this policy, please contact the Service Provider at:",
-    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates"
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "How Seek Protocol and SeekAR handle location data, sensor readings and wallet details: what is collected, how long it is kept and what is never shared.",
+    "ogTitle": "Privacy at Seek Protocol"
   },
   "termsPage": {
     "title": "Terms & Conditions",
@@ -359,7 +374,10 @@
     "changesTitle": "Changes to These Terms and Conditions",
     "changesP1": "The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review this page regularly for any changes. The Service Provider will notify you of any changes by posting the new Terms and Conditions on this page.",
     "contactTitle": "Contact Us",
-    "contactP1": "If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at <email>support@seekprotocol.ai</email>."
+    "contactP1": "If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at <email>support@seekprotocol.ai</email>.",
+    "metaTitle": "Terms & Conditions",
+    "metaDescription": "The terms for using SeekAR and the Seek Protocol platform: your rights, the rules for claiming assets and how the paid items work.",
+    "ogTitle": "Seek Protocol terms"
   },
   "languageSwitcher": {
     "en": "English",
@@ -1154,9 +1172,9 @@
     }
   },
   "businessPage": {
-    "metaTitle": "For Business: Buy Arrivals, Not Impressions",
-    "metaDescription": "Place rewards at your own coordinates and measure who actually arrived. Seek Protocol turns digital campaigns into verified footfall for retail, events, token projects and cities.",
-    "ogTitle": "Buy arrivals, not impressions",
+    "metaTitle": "Geofencing Marketing, Paid Per Arrival",
+    "metaDescription": "Location-based marketing that counts arrivals instead of modelling them. Place a reward at your own coordinates and pay per verified visit, measured at the door.",
+    "ogTitle": "Pay per verified arrival",
     "eyebrow": "For business",
     "titleStart": "Buy arrivals, not",
     "titleAccent": "impressions",

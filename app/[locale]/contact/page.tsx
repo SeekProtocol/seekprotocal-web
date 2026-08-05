@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import ContactForm from "@/components/shared/ContactForm";
 
@@ -10,22 +10,21 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contact" });
+  const description = t("metaDescription");
 
   return {
-    title: "Contact Us - Get in Touch",
-    description:
-      "Contact the Seek Protocol team for partnerships, inquiries, beta access, or collaboration opportunities. Reach out to learn more about SeekAR and $SEEK on Solana.",
+    title: t("metaTitle"),
+    description,
     openGraph: {
-      title: "Contact Seek Protocol",
-      description:
-        "Get in touch with the Seek Protocol team for partnerships, beta access, and collaboration on AR & AI experiences on Solana.",
+      title: t("ogTitle"),
+      description,
       url: `/${locale}/contact`,
       images: [OG_IMAGE],
     },
     twitter: {
-      title: "Contact Seek Protocol",
-      description:
-        "Reach out to the Seek Protocol team for partnerships, beta access, and collaboration opportunities.",
+      title: t("ogTitle"),
+      description,
       images: [OG_IMAGE],
     },
     alternates: getMultilingualAlternates("/contact", locale),

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import { blogPosts } from "@/lib/blog-data";
@@ -12,22 +12,22 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "blog" });
+  const description = t("metaDescription");
 
   return {
-    title: "Blog - Insights on AR, AI & Blockchain",
-    description:
-      "Stay up to date with the latest insights on augmented reality, AI, blockchain gaming, and the Seek Protocol ecosystem. Explore articles on location-based airdrops, move-to-earn, and more.",
+    title: t("metaTitle"),
+    description,
     openGraph: {
-      title: "Seek Protocol Blog - AR, AI & Blockchain Insights",
-      description:
-        "The latest articles on augmented reality, AI companions, blockchain rewards, and the future of location-based experiences on Solana.",
+      title: t("ogTitle"),
+      description,
       url: `/${locale}/blog`,
       images: [OG_IMAGE],
     },
     twitter: {
-      title: "Seek Protocol Blog - AR, AI & Blockchain Insights",
-      description:
-        "Articles on AR, AI, blockchain gaming, and the Seek Protocol ecosystem on Solana.",
+      title: t("ogTitle"),
+      description,
+      images: [OG_IMAGE],
     },
     alternates: getMultilingualAlternates("/blog", locale),
   };
