@@ -68,7 +68,7 @@
 }
 
 .is-scrolled .site-header,
-.site-header[data-open] {
+.nav-toggle:checked ~ .site-header {
   background: color-mix(in srgb, var(--bg) 94%, transparent);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -98,7 +98,7 @@
    text behind the nav. */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   .is-scrolled .site-header,
-  .site-header[data-open] { background: var(--bg); }
+  .nav-toggle:checked ~ .site-header { background: var(--bg); }
 }
 
 .site-header-inner {
@@ -199,6 +199,22 @@
 .theme-toggle-icon[data-dark] mask circle { transform: translateX(-9px) translateY(-1px); }
 .theme-toggle-icon mask circle { transition: transform 0.45s var(--ease-out); }
 
+/* The real control. Hidden from sight but not from the keyboard or the
+   accessibility tree, so the label beside it can borrow its focus ring. */
+.nav-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-toggle:focus-visible ~ .site-header .site-burger {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
 .site-burger {
   display: none;
   flex-direction: column;
@@ -222,8 +238,8 @@
   transition: transform 0.3s var(--ease-out), opacity 0.2s;
 }
 
-.site-header[data-open] .site-burger span:first-child { transform: translateY(3.25px) rotate(45deg); }
-.site-header[data-open] .site-burger span:last-child { transform: translateY(-3.25px) rotate(-45deg); }
+.nav-toggle:checked ~ .site-header .site-burger span:first-child { transform: translateY(3.25px) rotate(45deg); }
+.nav-toggle:checked ~ .site-header .site-burger span:last-child { transform: translateY(-3.25px) rotate(-45deg); }
 
 /* Must stay a sibling of .site-header in the markup, never a descendant. The
    open header carries a backdrop-filter, which would make it the containing
@@ -243,7 +259,9 @@
   height: calc(100vh - var(--nav-h));
   height: calc(100dvh - var(--nav-h));
   z-index: 89;
-  display: flex;
+  /* Closed is the default state now. The `hidden` attribute used to do this from
+     React, which meant the panel could not open until React was running. */
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem var(--gutter) 2.5rem;
@@ -263,7 +281,15 @@
   to { opacity: 1; }
 }
 
-.mobile-nav[hidden] { display: none; }
+/* Closed by default and opened by the checkbox, so the very first tap works
+   whether or not the JavaScript has arrived. */
+.nav-toggle:checked ~ .mobile-nav { display: flex; }
+
+/* Scroll lock, previously a React effect writing to body.style. :has() is the
+   only way to reach an ancestor from the checkbox, and it is the right thing to
+   degrade: without it the page scrolls behind an open menu, which is untidy
+   rather than broken. */
+body:has(.nav-toggle:checked) { overflow: hidden; }
 
 .mobile-nav-list { display: flex; flex-direction: column; }
 
