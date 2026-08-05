@@ -48,48 +48,58 @@ export default function SiteHeader() {
     pathname === href || pathname.startsWith(`${href}/`);
 
   return (
-    <header className="site-header" data-open={open || undefined}>
-      <div className="site-header-inner shell-wide">
-        <Link href="/" className="site-header-brand" aria-label="Seek Protocol">
-          <SeekLogo markSize={42} />
-        </Link>
-
-        <nav className="site-nav" aria-label="Main">
-          {LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="site-nav-link"
-              data-active={isActive(link.href) || undefined}
-              aria-current={isActive(link.href) ? "page" : undefined}
-            >
-              {t(link.key)}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="site-header-actions">
-          <ThemeToggle />
-          <div className="site-header-lang">
-            <LanguageSwitcher />
-          </div>
-          <Link href="/contact" className="btn btn-brand btn-sm site-header-cta">
-            {t("getApp")}
+    <>
+      <header className="site-header" data-open={open || undefined}>
+        <div className="site-header-inner shell-wide">
+          <Link href="/" className="site-header-brand" aria-label="Seek Protocol">
+            <SeekLogo markSize={42} />
           </Link>
-          <button
-            type="button"
-            className="site-burger"
-            onClick={() => setOpen((v) => !v)}
-            aria-label={t("toggleMenu")}
-            aria-expanded={open}
-            aria-controls="mobile-nav"
-          >
-            <span />
-            <span />
-          </button>
-        </div>
-      </div>
 
+          <nav className="site-nav" aria-label="Main">
+            {LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="site-nav-link"
+                data-active={isActive(link.href) || undefined}
+                aria-current={isActive(link.href) ? "page" : undefined}
+              >
+                {t(link.key)}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="site-header-actions">
+            <ThemeToggle />
+            <div className="site-header-lang">
+              <LanguageSwitcher />
+            </div>
+            <Link href="/contact" className="btn btn-brand btn-sm site-header-cta">
+              {t("getApp")}
+            </Link>
+            <button
+              type="button"
+              className="site-burger"
+              onClick={() => setOpen((v) => !v)}
+              aria-label={t("toggleMenu")}
+              aria-expanded={open}
+              aria-controls="mobile-nav"
+            >
+              <span />
+              <span />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* A sibling of <header>, not a child, and it has to stay that way.
+          The panel is position:fixed and sizes itself off the viewport. When the
+          menu opens, .site-header[data-open] gains a backdrop-filter, and a
+          backdrop-filter makes an element the containing block for its
+          fixed-position descendants. Nested in the header, this panel's
+          `inset: var(--nav-h) 0 0` resolved against the 72px bar rather than the
+          viewport, so it collapsed to 72px and the page showed through below it.
+          Desktop never caught it: the panel is display:none above 1080px. */}
       <div
         id="mobile-nav"
         className="mobile-nav"
@@ -122,6 +132,6 @@ export default function SiteHeader() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
