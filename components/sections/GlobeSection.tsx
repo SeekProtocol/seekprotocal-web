@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { useFormatter, useTranslations } from "next-intl";
 import { SeekMark } from "@/components/brand/SeekLogo";
 import { RARITY_COLOUR, type Drop, type Rarity } from "@/lib/globe-drops";
+import { useNearViewport } from "@/lib/use-near-viewport";
 import { RARITY_LADDER, RETRY_DECAY } from "@/content/collectibles";
 
 const SeekGlobe = dynamic(() => import("@/components/three/SeekGlobe"), { ssr: false });
@@ -20,6 +21,12 @@ export default function GlobeSection() {
   const t = useTranslations("globe");
   const format = useFormatter();
   const rarityLabel = useTranslations("rarity");
+  /* Gated at the section rather than inside the scene. The scene's own
+     useNearViewport stops it building, but a rendered dynamic() still fetches
+     its chunk, and all five scenes share one 603 KB bundle with three.js in
+     it. Holding the render back holds the download back with it. */
+  const stageRef = useRef<HTMLDivElement>(null);
+  const nearScene = useNearViewport(stageRef, "150% 0px");
   const [feed, setFeed] = useState<Drop[]>([]);
   const [selected, setSelected] = useState<Drop | null>(null);
   const [total, setTotal] = useState(0);
@@ -111,7 +118,7 @@ export default function GlobeSection() {
 
   return (
     <div className="globe-layout">
-      <div className="globe-stage">
+      <div className="globe-stage" ref={stageRef}>
         {/* The live marker belongs on the map, not boxed in the panel. The
             mark itself is the beacon: it pulses a halo the way a drop pings on
             the app's own map, which a plain dot never said. */}
@@ -122,13 +129,15 @@ export default function GlobeSection() {
           {t("liveLabel")}
         </span>
 
-        <SeekGlobe
-          onCollect={onCollect}
-          onSelect={onSelect}
-          focusRef={focusRef}
-          zoomRef={zoomRef}
-          zoomDepth={0.28}
-        />
+        {nearScene && (
+          <SeekGlobe
+            onCollect={onCollect}
+            onSelect={onSelect}
+            focusRef={focusRef}
+            zoomRef={zoomRef}
+            zoomDepth={0.28}
+          />
+        )}
 
         {/* Same shape as the map HUD in the app. */}
         <div className="globe-zoom" role="group" aria-label="Zoom">
@@ -295,6 +304,12 @@ function DropCard({
   const t = useTranslations("globe");
   const format = useFormatter();
   const rarityLabel = useTranslations("rarity");
+  /* Gated at the section rather than inside the scene. The scene's own
+     useNearViewport stops it building, but a rendered dynamic() still fetches
+     its chunk, and all five scenes share one 603 KB bundle with three.js in
+     it. Holding the render back holds the download back with it. */
+  const stageRef = useRef<HTMLDivElement>(null);
+  const nearScene = useNearViewport(stageRef, "150% 0px");
   const kindLabel = useTranslations("dropKinds");
   const colour = RARITY_COLOUR[drop.rarity];
   const ladder = RARITY_LADDER[drop.rarity];

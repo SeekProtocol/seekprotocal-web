@@ -4,6 +4,7 @@ import { useCallback, useRef } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import { withCopy } from "@/lib/content-i18n";
+import { useNearViewport } from "@/lib/use-near-viewport";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { TabIcon } from "@/components/app/screens/MapScreen";
 import { useScrubbedSection } from "@/lib/use-scrubbed-section";
@@ -43,6 +44,11 @@ export default function WorldDescent() {
   const tabs = useTranslations("appChrome");
   const stages = withCopy(t, STAGES, ["label", "title", "body"]);
   const sectionRef = useRef<HTMLElement>(null);
+  /* Gated at the section rather than inside the scene. The scene's own
+     useNearViewport stops it building, but a rendered dynamic() still fetches
+     its chunk, and all five scenes share one 603 KB bundle with three.js in
+     it. Holding the render back holds the download back with it. */
+  const nearScene = useNearViewport(sectionRef, "150% 0px");
   const stageRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef(0);
 
@@ -80,14 +86,14 @@ export default function WorldDescent() {
       >
         {/* The window onto the scene, closing down to a phone screen. */}
         <div className="wtp-frame">
-          <WorldToPhone progressRef={progressRef} />
+          {nearScene && <WorldToPhone progressRef={progressRef} />}
 
           {/* The app's own chrome, arriving once the frame is a screen. */}
           <div className="wtp-chrome">
             <StatusBar />
 
             <div className="map-banner wtp-banner">
-              <img src={WIF.image} alt="" className="map-banner-coin" />
+              <img src={WIF.image} alt="" className="map-banner-coin" loading="lazy" decoding="async" />
               <span className="map-banner-text">
                 <b>dogwifhat</b>
                 <i>{t("bannerDistance")}</i>
@@ -129,6 +135,8 @@ export default function WorldDescent() {
         <img
           src="/app/devices/iphone.png"
           alt=""
+          loading="lazy"
+          decoding="async"
           className="wtp-device"
           aria-hidden="true"
           draggable={false}

@@ -43,7 +43,7 @@ export default function ResultScreen({
           </span>
         )}
         <span className="result-glow" aria-hidden="true" />
-        <img src={coin.image} alt="" className="result-coin" />
+        <img src={coin.image} alt="" className="result-coin" loading="lazy" decoding="async" />
       </div>
 
       <p className="result-verdict">{outcome.caught ? t("caught") : t("escaped")}</p>

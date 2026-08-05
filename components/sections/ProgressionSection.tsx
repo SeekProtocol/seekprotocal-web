@@ -37,6 +37,8 @@ export default function ProgressionSection() {
             key={current.img}
             src={`/app/badges/${current.img}`}
             alt={t("badgeAlt", { name: current.name })}
+            loading="lazy"
+            decoding="async"
             className="rank-display-badge"
           />
           <div>

@@ -179,7 +179,7 @@ export default function CatchScreen({
             style={{ strokeDashoffset: 339.3 * (1 - charge) }}
           />
         </svg>
-        <img key={pulse} src={coin.image} alt="" className="catch-orb-coin" />
+        <img key={pulse} src={coin.image} alt="" className="catch-orb-coin" decoding="async" />
         {active && mechanic === "freeze" && <span className="catch-frost" aria-hidden="true" />}
       </button>
 

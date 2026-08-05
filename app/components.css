@@ -497,6 +497,19 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
 .coin-stage-canvas { position: absolute; inset: 0; }
 
+/* The still the hero falls back to on a handheld. Same box as the canvas, and
+   the artwork is a render of the same coin, so the swap is not a change of
+   subject. See CoinStage for why a phone does not get the live one. */
+.coin-stage-still {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 62%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Soft contact glow so the coin doesn't float on white. */
 .coin-stage::after {
   content: "";

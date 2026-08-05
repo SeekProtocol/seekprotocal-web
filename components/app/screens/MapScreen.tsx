@@ -102,7 +102,7 @@ export default function MapScreen({
       </svg>
 
       <div className="map-banner">
-        <img src={WIF.image} alt="" className="map-banner-coin" />
+        <img src={WIF.image} alt="" className="map-banner-coin" loading="lazy" decoding="async" />
         <span className="map-banner-text">
           <b>{spawns[0]?.coin.name}</b>
           <i>{t("distanceAway", { metres: 84 })}</i>
@@ -126,7 +126,7 @@ export default function MapScreen({
           onClick={() => onPick?.(spawn.coin)}
           aria-label={`${spawn.coin.name}, ${rarity(spawn.coin.rarity)}`}
         >
-          <img src={spawn.coin.image} alt="" />
+          <img src={spawn.coin.image} alt="" loading="lazy" decoding="async" />
           <span className="map-spawn-shadow" />
         </button>
       ))}

@@ -2620,9 +2620,42 @@
 
 /* Below the opening threshold the controls are not merely invisible, they are
    not there to be clicked or tabbed into. */
-.video-reveal:not([data-armed]) .video-reveal-sound {
+.video-reveal:not([data-armed]) .video-reveal-sound,
+.video-reveal:not([data-armed]) .video-reveal-play {
   pointer-events: none;
   visibility: hidden;
+}
+
+/* The start control, which only a handheld ever sees. The film is 16 MB, so on
+   a phone it stays a poster until someone asks for it. Same treatment as the
+   sound button, centred and larger, because it is the one thing to press. */
+.video-reveal-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(0, 0, 0, 0.52);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font: inherit;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  grid-auto-flow: column;
+  align-items: center;
+  opacity: calc(1.6 * var(--open) - 0.9);
+}
+
+.video-reveal-play:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* --------------------------------------------------------------------------

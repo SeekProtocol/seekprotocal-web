@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
+import { isHandheld } from "@/lib/render-budget";
 
 // WebGL is heavy and never needed for first paint — load it after hydration.
 const SeekCoin = dynamic(() => import("@/components/three/SeekCoin"), {
@@ -26,6 +27,23 @@ function formatCoord(value: number, positive: string, negative: string) {
 export default function CoinStage({ className = "" }: { className?: string }) {
   const t = useTranslations("home");
   const [reading, setReading] = useState({ lat: 25.2048, lon: 55.2708, acc: 12.4 });
+
+  /* Null until the pointer type is known, which is after hydration. Everyone
+     gets the still first, so the largest thing in the hero is an image the
+     browser can paint immediately; a desktop then swaps it for the live coin.
+     A phone keeps the still.
+
+     three.js and the five scenes share one 603 KB chunk, and the hero is the
+     only thing that pulls it before anybody scrolls. Keeping it out of the
+     critical path on a handheld takes that download, its parse and a WebGL
+     context off the load entirely; the scenes further down still build when
+     they are approached. Measured LCP on mobile before this was 17.7 s. */
+  const [live, setLive] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setLive(!isHandheld());
+  }, []);
 
   // Drift the readout so it feels like a live lock rather than a label.
   useEffect(() => {
@@ -56,7 +74,20 @@ export default function CoinStage({ className = "" }: { className?: string }) {
         <span />
       </div>
 
-      <SeekCoin className="coin-stage-canvas" />
+      {live ? (
+        <SeekCoin className="coin-stage-canvas" />
+      ) : (
+        <img
+          src="/app/seek-coin-3d.png"
+          alt=""
+          aria-hidden="true"
+          className="coin-stage-still"
+          width={640}
+          height={640}
+          fetchPriority="high"
+          decoding="async"
+        />
+      )}
 
       <div className="coin-stage-readout">
         <span className="t-mono-sm coin-stage-readout-label">{t("coinReadoutLabel")}</span>

@@ -575,7 +575,8 @@
   },
   "videoReveal": {
     "mute": "영상 음소거",
-    "unmute": "소리와 함께 영상 재생"
+    "unmute": "소리와 함께 영상 재생",
+    "play": "영상 재생"
   },
   "featureGroups": {
     "eyebrow": "무엇이 들어 있나",

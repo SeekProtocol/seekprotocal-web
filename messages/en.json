@@ -575,7 +575,8 @@
   },
   "videoReveal": {
     "mute": "Mute the film",
-    "unmute": "Play the film with sound"
+    "unmute": "Play the film with sound",
+    "play": "Play the film"
   },
   "featureGroups": {
     "eyebrow": "What is in there",

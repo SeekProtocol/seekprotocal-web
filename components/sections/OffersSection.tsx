@@ -160,7 +160,14 @@ function OfferArtefact({ offer }: { offer: Offer }) {
       {offer.id === "collectible" && <span className="offer-ribbon" aria-hidden="true" />}
       {offer.id === "asset" && <span className="offer-serial t-mono-sm" aria-hidden="true">1 / 250</span>}
       {offer.id === "token" && (
-        <img className="offer-coin" src="/app/seek-coin-3d.png" alt="" aria-hidden="true" />
+        <img
+          className="offer-coin"
+          src="/app/seek-coin-3d.png"
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+        />
       )}
     </span>
   );

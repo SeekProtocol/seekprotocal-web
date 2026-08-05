@@ -575,7 +575,8 @@
   },
   "videoReveal": {
     "mute": "映像を消音する",
-    "unmute": "音声つきで映像を再生する"
+    "unmute": "音声つきで映像を再生する",
+    "play": "映像を再生"
   },
   "featureGroups": {
     "eyebrow": "中身",

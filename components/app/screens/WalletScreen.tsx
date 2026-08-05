@@ -76,7 +76,7 @@ export default function WalletScreen({
                 className="wallet-caught-item"
                 style={{ ["--rarity" as string]: RARITY_LADDER[coin.rarity].colour }}
               >
-                <img src={coin.image} alt="" />
+                <img src={coin.image} alt="" loading="lazy" decoding="async" />
                 <em>{coin.symbol}</em>
               </span>
             ))}

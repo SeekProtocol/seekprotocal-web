@@ -59,6 +59,8 @@ export default function PhoneFrame({
       <Image
         src="/app/devices/iphone.png"
         alt=""
+        loading="lazy"
+        decoding="async"
         className="device-art"
         width={1530}
         height={3036}

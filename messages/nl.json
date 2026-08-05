@@ -575,7 +575,8 @@
   },
   "videoReveal": {
     "mute": "Zet de film uit",
-    "unmute": "Speel de film met geluid af"
+    "unmute": "Speel de film met geluid af",
+    "play": "Speel de film af"
   },
   "featureGroups": {
     "eyebrow": "Wat erin zit",

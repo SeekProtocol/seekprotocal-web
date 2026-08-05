@@ -575,7 +575,8 @@
   },
   "videoReveal": {
     "mute": "Couper le son du film",
-    "unmute": "Lire le film avec le son"
+    "unmute": "Lire le film avec le son",
+    "play": "Lire le film"
   },
   "featureGroups": {
     "eyebrow": "Ce qu'il y a dedans",

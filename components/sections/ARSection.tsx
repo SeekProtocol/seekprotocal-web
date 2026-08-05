@@ -4,6 +4,7 @@ import { useRef } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import { withCopy } from "@/lib/content-i18n";
+import { useNearViewport } from "@/lib/use-near-viewport";
 import { useScrubbedSection } from "@/lib/use-scrubbed-section";
 
 const ARStory = dynamic(() => import("@/components/three/ARStory"), { ssr: false });
@@ -26,6 +27,11 @@ export default function ARSection() {
   const t = useTranslations("arSection");
   const stages = withCopy(t, STAGES, ["label", "title", "body", "readout"]);
   const sectionRef = useRef<HTMLElement>(null);
+  /* Gated at the section rather than inside the scene. The scene's own
+     useNearViewport stops it building, but a rendered dynamic() still fetches
+     its chunk, and all five scenes share one 603 KB bundle with three.js in
+     it. Holding the render back holds the download back with it. */
+  const nearScene = useNearViewport(sectionRef, "150% 0px");
   const progressRef = useRef(0);
 
   const stage = useScrubbedSection({
@@ -40,7 +46,7 @@ export default function ARSection() {
   return (
     <section className="ar-section section-inverse" ref={sectionRef}>
       <div className="ar-sticky">
-        <ARStory progressRef={progressRef} />
+        {nearScene && <ARStory progressRef={progressRef} />}
 
         <div className="ar-overlay shell">
           <div className="ar-copy">

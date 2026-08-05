@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import { listCopy, withCopy } from "@/lib/content-i18n";
+import { useNearViewport } from "@/lib/use-near-viewport";
 import type { MobiState } from "@/components/three/MobiOrb";
 
 const MobiOrb = dynamic(() => import("@/components/three/MobiOrb"), { ssr: false });
@@ -35,6 +36,11 @@ export default function MobiSection() {
   /** Bumped on every tap. The orb reads it as one impulse per increment. */
   const [pulse, setPulse] = useState(0);
   const hostRef = useRef<HTMLDivElement>(null);
+  /* Gated at the section rather than inside the scene. The scene's own
+     useNearViewport stops it building, but a rendered dynamic() still fetches
+     its chunk, and all five scenes share one 603 KB bundle with three.js in
+     it. Holding the render back holds the download back with it. */
+  const nearScene = useNearViewport(hostRef, "150% 0px");
   const tapRef = useRef<HTMLButtonElement>(null);
 
   const advance = useCallback(() => {
@@ -88,7 +94,9 @@ export default function MobiSection() {
           <span className="mobi-reticle" aria-hidden="true">
             <i /><i /><i /><i />
           </span>
-          <MobiOrb state={current.state} pulse={pulse} className="mobi-orb" />
+          {nearScene && (
+            <MobiOrb state={current.state} pulse={pulse} className="mobi-orb" />
+          )}
           <span className="mobi-ripple" aria-hidden="true" />
           <span className="mobi-strike" aria-hidden="true" />
           <span className="mobi-sweep" aria-hidden="true" />

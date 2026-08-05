@@ -575,7 +575,8 @@
   },
   "videoReveal": {
     "mute": "关闭影片声音",
-    "unmute": "带声音播放影片"
+    "unmute": "带声音播放影片",
+    "play": "播放影片"
   },
   "featureGroups": {
     "eyebrow": "里面有什么",

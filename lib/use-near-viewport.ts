@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { isHandheld } from "@/lib/render-budget";
 
 /**
  * Whether an element has come within reach of the viewport.
@@ -17,17 +18,39 @@ import { useEffect, useState } from "react";
  * This gates construction instead. A scene builds itself one viewport before it
  * is reached, so the first paint pays for the hero and nothing else.
  *
- * The latch is deliberately one-way. Tearing a scene down on the way past would
- * free memory, but two of these scenes are scrubbed by scroll position, and
- * rebuilding one mid-scroll would drop the frame it was meant to be showing.
- * Once built, a scene stays built and falls back to the existing pause.
- *
  * Returns true when IntersectionObserver is unavailable, so an unsupported
  * browser gets every scene rather than none.
  */
+
+/** One viewport of reach before the scene is needed. */
+const BUILD_MARGIN = "100% 0px";
+
+/**
+ * Two and a half viewports before a handheld gives one back.
+ *
+ * The gap between this and BUILD_MARGIN is the hysteresis. Releasing at the
+ * same distance a scene builds at would rebuild it on every small scroll
+ * around the boundary, which costs more than holding it ever did.
+ */
+const RELEASE_MARGIN = "250% 0px";
+
+/**
+ * The latch is one-way on a desktop and two-way on a handheld.
+ *
+ * On a desktop, holding five contexts is unremarkable, and two of these scenes
+ * are scrubbed by scroll position, where rebuilding mid-scroll would drop the
+ * frame the scene was meant to be showing. So a built scene stays built.
+ *
+ * A phone does not get that luxury. Scroll to the bottom of the homepage and
+ * all five contexts are live at once; Safari does not degrade under that, it
+ * kills the tab and the page reloads itself. Two and a half viewports away
+ * nobody is scrubbing anything, so the frame that a rebuild would cost is a
+ * frame nobody is looking at, and it buys the page a ceiling of roughly two
+ * live contexts instead of five.
+ */
 export function useNearViewport(
   ref: React.RefObject<HTMLElement | null>,
-  rootMargin = "100% 0px",
+  rootMargin = BUILD_MARGIN,
 ) {
   /* Starts latched where there is no observer to latch it, so an unsupported
      browser builds every scene rather than none. Decided here rather than in
@@ -41,11 +64,23 @@ export function useNearViewport(
   );
 
   useEffect(() => {
-    // Once latched, the effect re-runs, tears the observer down and stops here.
-    if (near) return;
-
     const el = ref.current;
     if (!el) return;
+    if (typeof IntersectionObserver === "undefined") return;
+
+    if (near) {
+      // Built already. Only a handheld ever gives one back.
+      if (!isHandheld()) return;
+
+      const release = new IntersectionObserver(
+        (entries) => {
+          if (entries.every((entry) => !entry.isIntersecting)) setNear(false);
+        },
+        { rootMargin: RELEASE_MARGIN },
+      );
+      release.observe(el);
+      return () => release.disconnect();
+    }
 
     /* Anything already in range latches now, from geometry, without waiting on
        the observer. Two reasons. The observer's first callback is async, so the

@@ -34,7 +34,7 @@ export default function SpawnScreen({
 
       <div className="spawn-hero">
         <span className="spawn-hero-glow" aria-hidden="true" />
-        <img src={coin.image} alt="" className="spawn-hero-coin" />
+        <img src={coin.image} alt="" className="spawn-hero-coin" loading="lazy" decoding="async" />
       </div>
 
       <div className="spawn-head">

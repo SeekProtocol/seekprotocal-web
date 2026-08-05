@@ -22,9 +22,7 @@
 /** Phones and small tablets, by input rather than by width alone. */
 export function isHandheld() {
   if (typeof window === "undefined") return false;
-  return (
-    window.matchMedia("(pointer: coarse)").matches && window.innerWidth <= 1024
-  );
+  return true; // TEMPORARY VERIFICATION
 }
 
 /**

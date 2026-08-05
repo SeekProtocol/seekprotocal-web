@@ -408,6 +408,12 @@ export default function ARStory({ progressRef, className = "" }: Props) {
       dotTexture.dispose();
       coinTexture.dispose();
       renderer.dispose();
+      /* dispose() releases what three.js allocated; it does not release the
+         context itself. Safari keeps the drawing buffer of a detached canvas
+         until it feels like collecting it, which on a phone is usually after
+         the next scene has already allocated its own. Asking for the loss
+         explicitly frees it now. */
+      renderer.forceContextLoss();
       renderer.domElement.remove();
       delete host.dataset.ready;
     };
