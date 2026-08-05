@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import {
   MAX_ATTEMPTS,
@@ -18,6 +19,8 @@ export default function SpawnScreen({
   onBack: () => void;
   onCatch: () => void;
 }) {
+  const t = useTranslations("spawnScreen");
+  const rarity = useTranslations("rarity");
   const ladder = RARITY_LADDER[coin.rarity];
   const thisAttempt = ladder.base * Math.pow(RETRY_DECAY, attempt - 1);
 
@@ -26,7 +29,7 @@ export default function SpawnScreen({
       <StatusBar />
 
       <button type="button" className="scr-back" onClick={onBack}>
-        ‹ Map
+        {t("back")}
       </button>
 
       <div className="spawn-hero">
@@ -35,40 +38,37 @@ export default function SpawnScreen({
       </div>
 
       <div className="spawn-head">
-        <span className="spawn-rarity">{ladder.label}</span>
+        <span className="spawn-rarity">{rarity(coin.rarity)}</span>
         <h2 className="spawn-name">{coin.name}</h2>
         <p className="spawn-symbol">${coin.symbol}</p>
       </div>
 
       <div className="spawn-stats">
         <div>
-          <span className="spawn-stat-label">Distance</span>
-          <span className="spawn-stat-value">In range</span>
+          <span className="spawn-stat-label">{t("distance")}</span>
+          <span className="spawn-stat-value">{t("inRange")}</span>
         </div>
         <div>
-          <span className="spawn-stat-label">This attempt</span>
+          <span className="spawn-stat-label">{t("thisAttempt")}</span>
           <span className="spawn-stat-value" style={{ color: ladder.colour }}>
             {Math.round(thisAttempt * 100)}%
           </span>
         </div>
         <div>
-          <span className="spawn-stat-label">Attempts left</span>
+          <span className="spawn-stat-label">{t("attemptsLeft")}</span>
           <span className="spawn-stat-value">
-            {MAX_ATTEMPTS - attempt + 1} of {MAX_ATTEMPTS}
+            {t("attemptsOf", { left: MAX_ATTEMPTS - attempt + 1, total: MAX_ATTEMPTS })}
           </span>
         </div>
       </div>
 
       <div className="spawn-note">
         <span className="spawn-note-dot" />
-        <p>
-          Charging the ring raises this. The retry after it is worth 0.65 of the
-          first.
-        </p>
+        <p>{t("note")}</p>
       </div>
 
       <button type="button" className="scr-cta" onClick={onCatch}>
-        Catch it
+        {t("cta")}
       </button>
     </div>
   );

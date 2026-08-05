@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 type Entry = { id: string; index: string; title: string };
 
@@ -17,6 +18,7 @@ type Entry = { id: string; index: string; title: string };
  * a sheet of every chapter when you tap it.
  */
 export default function ReaderChrome({ entries }: { entries: Entry[] }) {
+  const t = useTranslations("whitepaperFigures");
   const [active, setActive] = useState(entries[0]?.id ?? "");
   /** True while the article body is what is on screen. */
   const [inBody, setInBody] = useState(false);
@@ -104,7 +106,7 @@ export default function ReaderChrome({ entries }: { entries: Entry[] }) {
         <div className="wp-progress-bar" />
       </div>
 
-      <nav className="wp-toc" aria-label="Chapters">
+      <nav className="wp-toc" aria-label={t("chaptersLabel")}>
         <h2 className="t-mono wp-toc-title">Contents</h2>
         <ul className="wp-toc-list">
           {entries.map((entry) => (
@@ -144,11 +146,11 @@ export default function ReaderChrome({ entries }: { entries: Entry[] }) {
       </div>
 
       <div className="wp-sheet" data-open={open || undefined} hidden={!open}>
-        <button type="button" className="wp-sheet-scrim" onClick={close} aria-label="Close" />
-        <div className="wp-sheet-panel" role="dialog" aria-modal="true" aria-label="Chapters">
+        <button type="button" className="wp-sheet-scrim" onClick={close} aria-label={t("close")} />
+        <div className="wp-sheet-panel" role="dialog" aria-modal="true" aria-label={t("chaptersLabel")}>
           <div className="wp-sheet-head">
-            <span className="t-mono">Contents · {entries.length} chapters</span>
-            <button type="button" className="wp-sheet-close" onClick={close} aria-label="Close">
+            <span className="t-mono">{t("contents", { count: entries.length })}</span>
+            <button type="button" className="wp-sheet-close" onClick={close} aria-label={t("close")}>
               ✕
             </button>
           </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { RARITY_LADDER, type Collectible } from "@/content/collectibles";
 
@@ -14,12 +15,6 @@ const TAPS_TO_FILL = 9;
 
 type Mechanic = "freeze" | "leak" | "surge" | "none";
 
-const MECHANIC_COPY: Record<Exclude<Mechanic, "none">, string> = {
-  freeze: "Frozen, keep tapping to melt it",
-  leak: "Leaking, seal the breaches",
-  surge: "Surge, every tap counts double",
-};
-
 type Breach = { id: number; x: number; y: number };
 
 export default function CatchScreen({
@@ -31,6 +26,7 @@ export default function CatchScreen({
   attempt: number;
   onDone: (charge: number) => void;
 }) {
+  const t = useTranslations("catchScreen");
   const ladder = RARITY_LADDER[coin.rarity];
 
   const [charge, setCharge] = useState(0);
@@ -160,7 +156,7 @@ export default function CatchScreen({
       <header className="catch-head">
         <span className="catch-chip">
           <span className="catch-chip-dot" />
-          Attempt {attempt} of 3
+          {t("attempt", { attempt, total: 3 })}
         </span>
         <span className="catch-chip catch-chip-quiet">{seconds}s</span>
       </header>
@@ -171,7 +167,7 @@ export default function CatchScreen({
         className="catch-orb"
         onClick={tapOrb}
         data-mechanic={active ? mechanic : undefined}
-        aria-label="Tap to charge"
+        aria-label={t("tapAria")}
       >
         <svg className="catch-orb-ring" viewBox="0 0 120 120" aria-hidden="true">
           <circle cx="60" cy="60" r="54" className="catch-orb-track" />
@@ -194,7 +190,7 @@ export default function CatchScreen({
           className="catch-breach"
           style={{ left: `${breach.x}%`, top: `${breach.y}%` }}
           onClick={() => sealBreach(breach.id)}
-          aria-label="Seal the breach"
+          aria-label={t("sealAria")}
         />
       ))}
 
@@ -202,10 +198,10 @@ export default function CatchScreen({
       <div className="catch-band">
         <div className="catch-prompt">
           {active && mechanic !== "none"
-            ? MECHANIC_COPY[mechanic]
+            ? t(`mechanic.${mechanic}`)
             : charge >= 1
-              ? "Ring full, hold it"
-              : "Tap the coin"}
+              ? t("ringFull")
+              : t("tapPrompt")}
         </div>
 
         <div className="catch-charge">

@@ -1,24 +1,32 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { withCopy } from "@/lib/content-i18n";
 import { ACHIEVEMENTS, COLLECTIBLE_BADGES, RANKS } from "@/content/app-features";
 
 /**
- * Rank ladder, collectible badges and platform achievements — all real
- * artwork from the app rather than icons standing in for it.
+ * Rank ladder, collectible badges and platform achievements, all real artwork
+ * from the app rather than icons standing in for it.
  */
 export default function ProgressionSection() {
-  const [rank, setRank] = useState(RANKS.length - 1);
-  const current = RANKS[rank];
+  const t = useTranslations("progression");
+  const ranks = withCopy(useTranslations("ranks"), RANKS, ["name"]);
+  const badges = withCopy(useTranslations("badges"), COLLECTIBLE_BADGES, ["name"]);
+  const achievements = withCopy(useTranslations("achievements"), ACHIEVEMENTS, [
+    "name",
+    "detail",
+  ]);
+  const [rank, setRank] = useState(ranks.length - 1);
+  const current = ranks[rank];
 
   return (
     <div className="progression">
       <div className="progression-head sec-head reveal">
-        <p className="eyebrow">Progression</p>
-        <h2 className="t-h2">Ten ranks, sixty-one badges, and no way to buy either</h2>
+        <p className="eyebrow">{t("eyebrow")}</p>
+        <h2 className="t-h2">{t("title")}</h2>
         <p className="t-lead" style={{ marginTop: "1.25rem" }}>
-          Rank comes from distance covered and places visited. Everything on
-          this wall is earned by going outside.
+          {t("lead")}
         </p>
       </div>
 
@@ -28,19 +36,21 @@ export default function ProgressionSection() {
           <img
             key={current.img}
             src={`/app/badges/${current.img}`}
-            alt={`${current.name} rank badge`}
+            alt={t("badgeAlt", { name: current.name })}
             className="rank-display-badge"
           />
           <div>
-            <span className="t-mono">Rank {current.tier} of 10</span>
+            <span className="t-mono">
+              {t("rankOf", { tier: current.tier, total: ranks.length })}
+            </span>
             <h3 className="t-h2 rank-display-name">{current.name}</h3>
           </div>
         </div>
 
-        <div className="rank-track" role="tablist" aria-label="Rank tiers">
-          {RANKS.map((entry, i) => (
+        <div className="rank-track" role="tablist" aria-label={t("rankTablist")}>
+          {ranks.map((entry, i) => (
             <button
-              key={entry.name}
+              key={entry.id}
               type="button"
               role="tab"
               aria-selected={i === rank}
@@ -63,11 +73,11 @@ export default function ProgressionSection() {
       <div className="collect-grid">
         <div className="collect-panel reveal">
           <div className="collect-panel-head">
-            <h3 className="t-h4">Collectible badges</h3>
-            <span className="chip">8 of 61 shown</span>
+            <h3 className="t-h4">{t("badgesTitle")}</h3>
+            <span className="chip">{t("badgesShown", { shown: badges.length, total: 61 })}</span>
           </div>
           <div className="badge-wall">
-            {COLLECTIBLE_BADGES.map((badge) => (
+            {badges.map((badge) => (
               <figure key={badge.img} className="badge-tile">
                 <img src={`/app/badges/${badge.img}`} alt={badge.name} loading="lazy" />
                 <figcaption className="t-mono-sm">{badge.name}</figcaption>
@@ -78,11 +88,11 @@ export default function ProgressionSection() {
 
         <div className="collect-panel reveal">
           <div className="collect-panel-head">
-            <h3 className="t-h4">Achievements</h3>
+            <h3 className="t-h4">{t("achievementsTitle")}</h3>
             <span className="chip">Game Center · Play Games</span>
           </div>
           <ul className="achievement-list">
-            {ACHIEVEMENTS.map((achievement) => (
+            {achievements.map((achievement) => (
               <li key={achievement.img} className="achievement-row">
                 <img
                   src={`/app/achievements/${achievement.img}`}

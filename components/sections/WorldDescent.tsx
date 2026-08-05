@@ -2,6 +2,8 @@
 
 import { useCallback, useRef } from "react";
 import dynamic from "next/dynamic";
+import { useTranslations } from "next-intl";
+import { withCopy } from "@/lib/content-i18n";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { TabIcon } from "@/components/app/screens/MapScreen";
 import { useScrubbedSection } from "@/lib/use-scrubbed-section";
@@ -17,31 +19,12 @@ const PHONE_H = Math.round(PHONE_W * (3036 / 1530));
 const AP_W = Math.round(PHONE_W * 0.84314);
 const AP_H = Math.round(PHONE_H * 0.91897);
 
+/** The scroll stops. The copy for each lives under `worldDescent`. */
 const STAGES = [
-  {
-    at: 0,
-    label: "Orbit",
-    title: "Every drop is a coordinate",
-    body: "Assets are published to points on the planet, not to a feed. From up here that is all the network is: a few thousand places where something is waiting.",
-  },
-  {
-    at: 0.3,
-    label: "Descent",
-    title: "Falling towards one of them",
-    body: "Pick any of those points and go. The protocol does not care which, only that you are standing there when you claim it.",
-  },
-  {
-    at: 0.58,
-    label: "Street level",
-    title: "This is the same map, four hundred kilometres closer",
-    body: "The buildings you are flying over are the ones between you and the drop. Distance is the whole mechanic, so the map has to be the real one.",
-  },
-  {
-    at: 0.82,
-    label: "In your hand",
-    title: "And it fits in a phone",
-    body: "Nothing was swapped out. The view you just flew through is what the app renders, with its own controls over the top.",
-  },
+  { id: "orbit", at: 0 },
+  { id: "descent", at: 0.3 },
+  { id: "street", at: 0.58 },
+  { id: "hand", at: 0.82 },
 ];
 
 const STOPS = STAGES.map((s) => s.at);
@@ -56,6 +39,9 @@ const WIF = COLLECTIBLES.find((c) => c.key === "wif") ?? COLLECTIBLES[0];
  * it, so the world you flew through becomes the thing in your hand.
  */
 export default function WorldDescent() {
+  const t = useTranslations("worldDescent");
+  const tabs = useTranslations("appChrome");
+  const stages = withCopy(t, STAGES, ["label", "title", "body"]);
   const sectionRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef(0);
@@ -78,7 +64,7 @@ export default function WorldDescent() {
     restingStage: 2,
   });
 
-  const current = STAGES[stage];
+  const current = stages[stage];
 
   return (
     <section className="wtp" ref={sectionRef} data-stage={stage}>
@@ -104,7 +90,7 @@ export default function WorldDescent() {
               <img src={WIF.image} alt="" className="map-banner-coin" />
               <span className="map-banner-text">
                 <b>dogwifhat</b>
-                <i>84 m away</i>
+                <i>{t("bannerDistance")}</i>
               </span>
               <span className="map-banner-x">✕</span>
             </div>
@@ -125,15 +111,14 @@ export default function WorldDescent() {
             </div>
 
             <nav className="tabbar">
-              {[
-                { label: "Home", icon: "home", active: false },
-                { label: "Map", icon: "map", active: true },
-                { label: "Quests", icon: "quest", active: false },
-                { label: "Wallet", icon: "wallet", active: false },
-              ].map((tab) => (
-                <span key={tab.label} className="tabbar-item" data-active={tab.active || undefined}>
-                  <TabIcon name={tab.icon} />
-                  <em>{tab.label}</em>
+              {["home", "map", "quests", "wallet"].map((tab) => (
+                <span
+                  key={tab}
+                  className="tabbar-item"
+                  data-active={tab === "map" || undefined}
+                >
+                  <TabIcon name={tab === "quests" ? "quest" : tab} />
+                  <em>{tabs(tab)}</em>
                 </span>
               ))}
             </nav>
@@ -161,14 +146,14 @@ export default function WorldDescent() {
 
           <ol className="ar-track" aria-hidden="true">
             {STAGES.map((s, i) => (
-              <li key={s.label} data-active={i === stage || undefined} data-done={i < stage || undefined}>
+              <li key={s.id} data-active={i === stage || undefined} data-done={i < stage || undefined}>
                 <span />
               </li>
             ))}
           </ol>
         </div>
 
-        <p className="t-mono-sm wtp-hint">Keep scrolling</p>
+        <p className="t-mono-sm wtp-hint">{t("hint")}</p>
       </div>
     </section>
   );

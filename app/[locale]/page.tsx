@@ -20,6 +20,7 @@ import BetaForm from "@/components/shared/BetaForm";
 import Marquee from "@/components/ui/Marquee";
 import Counter from "@/components/ui/Counter";
 import { PRESS_LOGOS, HOME_STEPS, HOME_STATS } from "@/content/home";
+import { withCopy } from "@/lib/content-i18n";
 
 export async function generateMetadata({
   params,
@@ -57,6 +58,8 @@ export default async function HomePage({
 
 function HomeContent() {
   const t = useTranslations("home");
+  const steps = withCopy(useTranslations("homeSteps"), HOME_STEPS, ["title", "meta", "body"]);
+  const stats = withCopy(useTranslations("homeStats"), HOME_STATS, ["label"]);
 
   const pillars = [
     { title: t("pathProofOfLocation"), desc: t("pathProofOfLocationDesc") },
@@ -85,8 +88,8 @@ function HomeContent() {
                 <StoreButtons appStore={t("downloadAppStore")} play={t("downloadGooglePlay")} />
               </div>
               <div className="hero-meta enter" style={{ animationDelay: "320ms" }}>
-                {HOME_STATS.map((stat) => (
-                  <div key={stat.label} className="hero-meta-item">
+                {stats.map((stat) => (
+                  <div key={stat.id} className="hero-meta-item">
                     <span className="hero-meta-value">
                       <Counter to={stat.value} decimals={stat.decimals} suffix={stat.suffix} />
                     </span>
@@ -142,13 +145,10 @@ function HomeContent() {
       <section className="section">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow">Beyond coins</p>
-            <h2 className="t-h2">A drop does not have to be a token</h2>
+            <p className="eyebrow">{t("beyondEyebrow")}</p>
+            <h2 className="t-h2">{t("beyondTitle")}</h2>
             <p className="t-lead" style={{ marginTop: "1.25rem" }}>
-              Anything that can be issued to a person can be issued to a place.
-              Money off at the counter, a physical thing waiting in a shop, a
-              pass that only exists at the venue. For a high street the coin is
-              usually the least interesting of them.
+              {t("beyondLead")}
             </p>
           </div>
 
@@ -162,16 +162,16 @@ function HomeContent() {
       <section className="section section-sunken">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow">How it works</p>
-            <h2 className="t-h2">Three steps, and the third one pays</h2>
+            <p className="eyebrow">{t("howEyebrow")}</p>
+            <h2 className="t-h2">{t("howTitle")}</h2>
             <p className="t-lead" style={{ marginTop: "1.25rem" }}>
               {t("futureDesc")}
             </p>
           </div>
 
           <div className="steps" style={{ marginTop: "3rem" }}>
-            {HOME_STEPS.map((step, i) => (
-              <div key={step.title} className="step reveal">
+            {steps.map((step, i) => (
+              <div key={step.id} className="step reveal">
                 <span className="t-mono step-index">{String(i + 1).padStart(2, "0")}</span>
                 <div>
                   <h3 className="t-h3 step-title">{step.title}</h3>
@@ -217,11 +217,10 @@ function HomeContent() {
       <section className="section section-sunken">
         <div className="shell">
           <div className="sec-head-center reveal" style={{ marginBottom: "3rem" }}>
-            <p className="eyebrow eyebrow-center">Live network</p>
-            <h2 className="t-h2">Pick a city and try your luck</h2>
+            <p className="eyebrow eyebrow-center">{t("liveEyebrow")}</p>
+            <h2 className="t-h2">{t("liveTitle")}</h2>
             <p className="t-lead" style={{ marginTop: "1.25rem" }}>
-              Jump to any hub, tap a coin to see who picked it up, and take a
-              swing at one yourself, rolled against the app&apos;s real odds.
+              {t("liveLead")}
             </p>
           </div>
           <GlobeSection />
@@ -246,7 +245,7 @@ function HomeContent() {
       <section className="section section-sunken">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow">Foundations</p>
+            <p className="eyebrow">{t("foundationsEyebrow")}</p>
             <h2 className="t-h2">{t("threePathsTitle")}</h2>
           </div>
 
@@ -264,7 +263,7 @@ function HomeContent() {
 
           <div className="reveal" style={{ marginTop: "2.5rem" }}>
             <Link href="/whitepaper" className="arrow-link">
-              Read the technical whitepaper
+              {t("readWhitepaper")}
               <ArrowRight />
             </Link>
           </div>

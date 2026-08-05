@@ -87,7 +87,17 @@
     "getReady": "Préparez-vous à chercher !",
     "ctaDesc": "Plongez dans une nouvelle réalité où le monde devient votre terrain de jeu. SeekAR transforme votre environnement en une aventure interactive, alliant la dernière technologie AR à l'exploration du monde réel. Traquez des trésors cachés, collectez des récompenses numériques précieuses et conquérez des quêtes dynamiques !",
     "coinReadoutLabel": "Verrouillage du signal",
-    "coinReadoutAccuracy": "Précision {meters} m"
+    "coinReadoutAccuracy": "Précision {meters} m",
+    "beyondEyebrow": "Au-delà des jetons",
+    "beyondTitle": "Un drop n'est pas forcément un token",
+    "beyondLead": "Tout ce qui peut être émis à une personne peut être émis à un lieu. Une remise à la caisse, un objet physique qui attend en boutique, un pass qui n'existe que sur place. Pour une rue commerçante, la pièce est en général le moins intéressant de tout ça.",
+    "howEyebrow": "Comment ça marche",
+    "howTitle": "Trois étapes, et la troisième paie",
+    "liveEyebrow": "Réseau en direct",
+    "liveTitle": "Choisissez une ville et tentez votre chance",
+    "liveLead": "Sautez sur n'importe quel hub, touchez une pièce pour voir qui l'a ramassée, et tentez d'en attraper une vous-même, tirée avec les vraies probabilités de l'application.",
+    "foundationsEyebrow": "Fondations",
+    "readWhitepaper": "Lire le whitepaper technique"
   },
   "about": {
     "heroTitle": "Découvrez l'avenir des expériences numériques géolocalisées",
@@ -205,7 +215,10 @@
     "backToBlog": "← Retour au Blog",
     "readyToSeek": "Prêt à commencer à chercher ?",
     "readyToSeekDesc": "Téléchargez SeekAR et transformez votre monde en un terrain de jeu propulsé par la blockchain.",
-    "moreArticles": "Plus d'articles"
+    "moreArticles": "Plus d'articles",
+    "keepReading": "Continuer la lecture",
+    "allArticles": "Tous les articles",
+    "relatedPages": "Pages liées"
   },
   "forms": {
     "emailPlaceholder": "Adresse e-mail",
@@ -370,6 +383,2096 @@
     "seekerLabel": "Seeker",
     "xpGained": "XP gagné",
     "coordsLabel": "Coordonnées",
-    "verified": "Présence vérifiée on-chain"
+    "verified": "Présence vérifiée on-chain",
+    "all": "Toutes",
+    "yourHaul": "Votre butin",
+    "filterLabel": "Filtrer par rareté",
+    "waitingRarity": "Aucune prise {rarity} pour l'instant",
+    "catchChance": "Chance de capture",
+    "close": "Fermer",
+    "secondsAgo": "il y a {seconds} s",
+    "zoomIn": "Zoom avant",
+    "zoomOut": "Zoom arrière"
+  },
+  "homeSteps": {
+    "placed": {
+      "title": "Quelque chose est déposé",
+      "meta": "Éditeur · partout sur terre",
+      "body": "Une marque, un projet ou un événement épingle un actif sur des coordonnées et fixe le rayon depuis lequel il peut être réclamé. Il reste là, visible sur la carte, jusqu'à ce que quelqu'un vienne le chercher."
+    },
+    "arrive": {
+      "title": "Vous entrez dans le rayon",
+      "meta": "30 m de rayon par défaut",
+      "body": "Votre téléphone confirme que vous y êtes vraiment : point satellite, environnement radio, attestation de l'appareil et trace de mouvement doivent tous concorder. Falsifier un signal est simple ; les falsifier tous en même temps, non."
+    },
+    "collect": {
+      "title": "Vous le récupérez",
+      "meta": "Règlement sur Solana en moins d'une seconde",
+      "body": "Levez la caméra, voyez l'actif ancré dans la rue devant vous, et prenez-le. Le transfert se règle on-chain pour une fraction de centime, et il est à vous."
+    }
+  },
+  "homeStats": {
+    "accuracy": {
+      "label": "Précision de réclamation"
+    },
+    "languages": {
+      "label": "Langues"
+    },
+    "stores": {
+      "label": "Stores actifs"
+    }
+  },
+  "worldDescent": {
+    "hint": "Continuez à faire défiler",
+    "bannerDistance": "à 84 m",
+    "orbit": {
+      "label": "Orbite",
+      "title": "Chaque drop est une coordonnée",
+      "body": "Les actifs sont publiés sur des points de la planète, pas dans un fil. Vu d'ici, le réseau n'est que cela : quelques milliers d'endroits où quelque chose attend."
+    },
+    "descent": {
+      "label": "Descente",
+      "title": "En chute vers l'un d'eux",
+      "body": "Choisissez n'importe lequel de ces points et allez-y. Le protocole se moque duquel, il veut seulement que vous soyez sur place au moment de la réclamation."
+    },
+    "street": {
+      "label": "Au niveau de la rue",
+      "title": "C'est la même carte, quatre cents kilomètres plus près",
+      "body": "Les bâtiments que vous survolez sont ceux qui vous séparent du drop. La distance est toute la mécanique, donc la carte doit être la vraie."
+    },
+    "hand": {
+      "label": "Dans votre main",
+      "title": "Et cela tient dans un téléphone",
+      "body": "Rien n'a été remplacé. La vue que vous venez de traverser est ce que l'application affiche, avec ses propres commandes par-dessus."
+    }
+  },
+  "appChrome": {
+    "home": "Accueil",
+    "map": "Carte",
+    "quests": "Quêtes",
+    "wallet": "Portefeuille",
+    "backToMap": "‹ Carte",
+    "tapCoin": "Touchez une pièce",
+    "distanceAway": "à {metres} m"
+  },
+  "arSection": {
+    "eyebrow": "Réalité augmentée",
+    "hint": "Continuez à faire défiler",
+    "see": {
+      "label": "La caméra regarde",
+      "title": "Une caméra ne voit pas une rue",
+      "body": "Elle voit de la luminosité qui change sur une grille. Avant de pouvoir poser quoi que ce soit quelque part, la scène doit devenir quelque chose de structuré, et à ce stade il n'y a rien.",
+      "readout": "IMAGE 1/60 · AUCUN SUIVI"
+    },
+    "track": {
+      "label": "Les points se dégagent",
+      "title": "Le monde est fait de coins",
+      "body": "Les points où la luminosité change dans deux directions à la fois survivent au mouvement : le moteur les garde et jette le reste. Suivez-en assez sur assez d'images et le téléphone sait comment il s'est déplacé.",
+      "readout": "SUIVI · 2 412 POINTS"
+    },
+    "plane": {
+      "label": "Un plan est trouvé",
+      "title": "De quoi tenir debout",
+      "body": "Les points qui partagent une surface sont regroupés en un plan. C'est le moment où un drop cesse d'être une image sur votre écran pour devenir un objet avec un endroit où se poser.",
+      "readout": "PLAN DÉTECTÉ · 6,0 × 6,0 M"
+    },
+    "anchor": {
+      "label": "L'ancre se pose",
+      "title": "Fixé au monde, pas au téléphone",
+      "body": "Le drop est lié à ce morceau de géométrie et à la coordonnée où il a été publié. Tournez autour, il reste où il était. Deux personnes au même endroit le voient au même endroit.",
+      "readout": "ANCRE VERROUILLÉE · 52,3702 N 4,8952 E"
+    },
+    "persist": {
+      "label": "Il persiste",
+      "title": "Toujours là demain",
+      "body": "L'ancre est enregistrée sur le lieu plutôt que sur la session : fermer l'application ne la déplace pas. Cette persistance est ce qui sépare un jouet AR d'un protocole AR.",
+      "readout": "ANCRE CONSERVÉE · INDÉPENDANTE DE LA SESSION"
+    }
+  },
+  "mobiSection": {
+    "title": "Le compagnon qui voit ce que vous voyez",
+    "lead": "Posez la question à voix haute et Mobi lit la rue à travers la caméra : repères, horaires d'ouverture, de quel côté se trouve le drop. Il tourne sur l'appareil dès que possible, et ne garde jamais la trace de vos déplacements.",
+    "tapHint": "Touchez Mobi",
+    "tapAgain": "{label} · touchez encore",
+    "tapAria": "Mobi est {state}. Touchez pour continuer.",
+    "points": [
+      "Vous parlez, il répond, mains libres pendant la marche",
+      "Lit les repères et les panneaux depuis la caméra en direct",
+      "Des quêtes qui s'adaptent à votre façon de jouer et à l'endroit"
+    ],
+    "listening": {
+      "label": "À l'écoute",
+      "line": "Qu'est-ce qui vaut le déplacement dans le coin ?"
+    },
+    "thinking": {
+      "label": "Lecture de la rue",
+      "line": "Comparaison de ce que voit la caméra avec les spawns proches…"
+    },
+    "answering": {
+      "label": "Réponse",
+      "line": "Il y a un légendaire deux rues plus haut, derrière le marché. Six minutes à votre rythme, et ça ferme à dix-huit heures."
+    },
+    "idle": {
+      "label": "En veille",
+      "line": "En attente. Rien n'est enregistré."
+    }
+  },
+  "socialSection": {
+    "eyebrow": "Ensemble",
+    "title": "La moitié, c'est avec qui vous y allez",
+    "lead": "Les clans mettent en commun ce que chacun récupère. Le chat est chiffré de bout en bout, avec des messages éphémères quand une conversation n'a pas à se survivre. Et faire venir quelqu'un vous rapporte une part de ce qu'il trouve.",
+    "points": [
+      "Messages directs et de clan, chiffrés de bout en bout",
+      "Power-ups et tuyaux qui circulent entre amis",
+      "Des primes de parrainage qui paient pendant qu'ils jouent"
+    ],
+    "online": "{count} en ligne",
+    "encrypted": "Chiffré",
+    "composer": "Message",
+    "disappearing": "Messages éphémères",
+    "yourCode": "Votre code",
+    "copy": "Copier",
+    "copied": "Copié",
+    "spot": {
+      "text": "Un légendaire vient d'apparaître près du marché. À deux rues de l'arrêt de tram."
+    },
+    "coming": {
+      "text": "J'arrive. Quelqu'un a encore un aimant ?"
+    },
+    "sent": {
+      "text": "Je t'en ai envoyé deux. Garde les diamond hands pour la fuite."
+    },
+    "missed": {
+      "text": "Anneau plein et il s'est quand même échappé. Deux tentatives restantes."
+    },
+    "invited": {
+      "label": "Invités"
+    },
+    "active": {
+      "label": "Actifs"
+    },
+    "share": {
+      "label": "Votre part"
+    }
+  },
+  "videoReveal": {
+    "mute": "Couper le son du film",
+    "unmute": "Lire le film avec le son"
+  },
+  "featureGroups": {
+    "eyebrow": "Ce qu'il y a dedans",
+    "title": "Plus qu'une carte avec des pièces dessus",
+    "tablist": "Groupes de fonctionnalités",
+    "hunt": {
+      "label": "Chasser",
+      "items": [
+        {
+          "title": "Des spawns sur de vraies coordonnées",
+          "body": "Les drops apparaissent à des points fixes autour de vous et y restent jusqu'à ce que quelqu'un les réclame. Marquez-en un et l'application décompte la distance pendant que vous marchez."
+        },
+        {
+          "title": "Des captures AR persistantes",
+          "body": "La pièce s'ancre au sol devant vous et reste ancrée d'une session à l'autre : elle est au même endroit pour tous ceux qui viennent la chercher."
+        },
+        {
+          "title": "Power-ups et timing",
+          "body": "Aimant, double et gel se cumulent sur une capture. Une barre de timing décide de la part du drop que vous gardez, parce qu'un légendaire mal attrapé reste un légendaire mal attrapé."
+        },
+        {
+          "title": "Une rareté qui veut dire quelque chose",
+          "body": "De commun à légendaire, la rareté donnant la couleur de l'anneau sur la carte bien avant que vous n'approchiez."
+        }
+      ]
+    },
+    "progress": {
+      "label": "Progression",
+      "items": [
+        {
+          "title": "Dix rangs, gagnés en marchant",
+          "body": "De Seeker à Legend. Le rang vient de la distance parcourue et des lieux visités, pas de ce que vous avez dépensé."
+        },
+        {
+          "title": "Soixante et un badges",
+          "body": "Une collection complète, de Diamond Hands à On-Chain Detective, chacun avec sa condition de déblocage."
+        },
+        {
+          "title": "Game Center et Play Games",
+          "body": "Les succès se synchronisent avec la plateforme que vous utilisez déjà, donc les séries et les jalons côtoient vos autres jeux."
+        },
+        {
+          "title": "Séries et quêtes quotidiennes",
+          "body": "Des missions qui s'adaptent à où vous êtes et à votre façon de jouer, avec une récompense qui grimpe tant que la série tient."
+        }
+      ]
+    },
+    "together": {
+      "label": "Ensemble",
+      "items": [
+        {
+          "title": "Clans",
+          "body": "Rejoignez-en un ou fondez le vôtre, mettez les contributions en commun et grimpez au classement des clans. Emblèmes, rangs et cagnottes partagées compris."
+        },
+        {
+          "title": "Chat chiffré",
+          "body": "Messages directs et de clan, chiffrés de bout en bout, avec des messages éphémères quand une conversation n'a pas à se survivre."
+        },
+        {
+          "title": "Classements",
+          "body": "Mondiaux, nationaux et par clan, avec des médailles pour les trois premiers et un tableau qui se met à jour pendant que les gens marchent."
+        },
+        {
+          "title": "Parrainage",
+          "body": "Faites venir du monde et gagnez une part de ce qu'ils récupèrent. Votre code est la première chose à l'écran, parce que c'est pour cela que vous êtes venu."
+        }
+      ]
+    },
+    "own": {
+      "label": "Posséder",
+      "items": [
+        {
+          "title": "Un portefeuille sans phrase de récupération",
+          "body": "Créé depuis une connexion sociale, pour récupérer quelque chose dans la minute qui suit l'installation. Exportez la clé quand vous voulez la garde."
+        },
+        {
+          "title": "SeekAR Pass",
+          "body": "Un parcours de récompenses saisonnier qui avance en parallèle du jeu normal, avec un palier gratuit et un payant."
+        },
+        {
+          "title": "Boutique",
+          "body": "Power-ups, cosmétiques et pièces d'avatar, payés avec ce que vous avez récupéré et pas seulement avec ce que vous pouvez acheter."
+        },
+        {
+          "title": "Avatars 3D",
+          "body": "Des avatars complets compatibles Decentraland, avec animations et emotes, pas une photo de profil recadrée."
+        }
+      ]
+    }
+  },
+  "progression": {
+    "eyebrow": "Progression",
+    "title": "Dix rangs, soixante et un badges, et aucun des deux ne s'achète",
+    "lead": "Le rang vient de la distance parcourue et des lieux visités. Tout ce qui est sur ce mur se gagne en sortant.",
+    "badgeAlt": "Badge de rang {name}",
+    "rankOf": "Rang {tier} sur {total}",
+    "rankTablist": "Paliers de rang",
+    "badgesTitle": "Badges à collectionner",
+    "badgesShown": "{shown} sur {total} affichés",
+    "achievementsTitle": "Succès"
+  },
+  "ranks": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "scout": {
+      "name": "Scout"
+    },
+    "tracker": {
+      "name": "Tracker"
+    },
+    "hunter": {
+      "name": "Hunter"
+    },
+    "pathfinder": {
+      "name": "Pathfinder"
+    },
+    "ranger": {
+      "name": "Ranger"
+    },
+    "sentinel": {
+      "name": "Sentinel"
+    },
+    "apex": {
+      "name": "Apex"
+    },
+    "mythic": {
+      "name": "Mythic"
+    },
+    "legend": {
+      "name": "Legend"
+    }
+  },
+  "badges": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "web3Wizard": {
+      "name": "Web3 Wizard"
+    },
+    "whale": {
+      "name": "Whale"
+    },
+    "bull": {
+      "name": "Bull"
+    },
+    "detective": {
+      "name": "On-Chain Detective"
+    },
+    "samurai": {
+      "name": "Degen Samurai"
+    },
+    "liquidityKing": {
+      "name": "Liquidity King"
+    }
+  },
+  "achievements": {
+    "firstCatch": {
+      "name": "Première capture",
+      "detail": "Récupérez votre premier drop"
+    },
+    "explorer": {
+      "name": "Explorateur",
+      "detail": "Récupérez dans 50 lieux différents"
+    },
+    "legendary": {
+      "name": "Légendaire",
+      "detail": "Attrapez un spawn légendaire"
+    },
+    "rareHunter": {
+      "name": "Chasseur de rares",
+      "detail": "250 captures rares"
+    },
+    "streak": {
+      "name": "Série de trente jours",
+      "detail": "Jouez 30 jours d'affilée"
+    },
+    "clanFounder": {
+      "name": "Fondateur de clan",
+      "detail": "Créez votre propre clan"
+    }
+  },
+  "clans": {
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "laserEyes": {
+      "name": "Laser Eyes"
+    },
+    "megaWhales": {
+      "name": "Mega Whales"
+    },
+    "moonSquad": {
+      "name": "Moon Squad"
+    },
+    "alphaWolves": {
+      "name": "Alpha Wolves"
+    },
+    "yieldFarmers": {
+      "name": "Yield Farmers"
+    },
+    "anonCabal": {
+      "name": "Anon Cabal"
+    },
+    "bullRunners": {
+      "name": "Bull Runners"
+    }
+  },
+  "clansSection": {
+    "eyebrow": "Clans",
+    "title": "Personne ne couvre une ville tout seul",
+    "lead": "Fondez un clan ou rejoignez-en un, mettez en commun ce que chacun récupère et grimpez ensemble au classement. Le chat est chiffré de bout en bout, et les messages peuvent être réglés pour disparaître quand une conversation n'a pas à se survivre.",
+    "statClans": "Clans fondateurs",
+    "statChat": "Chat chiffré",
+    "statRanks": "Rangs de clan",
+    "tableTitle": "Classement des clans",
+    "thisSeason": "Cette saison",
+    "rankAlt": "Place {rank}"
+  },
+  "rarity": {
+    "common": "Commun",
+    "uncommon": "Peu commun",
+    "rare": "Rare",
+    "epic": "Épique",
+    "legendary": "Légendaire"
+  },
+  "powerups": {
+    "coin_magnet": {
+      "label": "Aimant à pièces",
+      "effect": "Attire les drops proches dans le rayon"
+    },
+    "diamond_hands": {
+      "label": "Diamond hands",
+      "effect": "Conserve la charge que vous avez gagnée"
+    },
+    "pump_it": {
+      "label": "Pump it",
+      "effect": "Chaque tape compte double"
+    },
+    "to_the_moon": {
+      "label": "To the moon",
+      "effect": "Monte la chance de capture d'un cran"
+    },
+    "whale": {
+      "label": "Whale",
+      "effect": "Double les unités d'une capture"
+    },
+    "this_is_fine": {
+      "label": "This is fine",
+      "effect": "Survit à une tentative ratée"
+    }
+  },
+  "collectiblesSection": {
+    "eyebrow": "Objets à collectionner",
+    "title": "Voici les pièces qui sont dehors",
+    "lead": "La rareté décide de la fréquence d'apparition et de vos chances de la garder. Une unité capturée est une unité de jeu. Ce qu'elle vaut en tokens réels regarde le marché.",
+    "filterLabel": "Filtrer par rareté",
+    "all": "Toutes",
+    "catchChance": "Chance de capture",
+    "overThree": "Sur 3 essais",
+    "perUnit": "Par unité",
+    "powerupsTitle": "Des power-ups qui changent la manche"
+  },
+  "offers": {
+    "railLabel": "Formats de drop",
+    "redeemLabel": "Comment il se transforme",
+    "proofLabel": "Ce qui le rend valable",
+    "voucher": {
+      "label": "Bon de réduction",
+      "headline": "Une remise, à la porte qui vous l'a donnée",
+      "face": "25 % de remise",
+      "fine": "Un par personne · Valable 14 jours · En boutique uniquement",
+      "redeem": "Le code est présenté à la caisse et marqué comme utilisé. Il ne peut pas être transféré, puisqu'il a été émis à l'appareil qui se trouvait dans le rayon.",
+      "proof": "La réclamation est on-chain avec la coordonnée où elle a été prise : une utilisation se vérifie contre une arrivée réelle, pas contre une capture d'écran.",
+      "placedBy": "Commerce et hôtellerie"
+    },
+    "asset": {
+      "label": "Objet du monde réel",
+      "headline": "Une chose physique, qui attend à un endroit",
+      "face": "Paire de baskets",
+      "fine": "1 sur 250 · Retrait en boutique · Expire avec le stock",
+      "redeem": "Le détenteur retire l'article lui-même. Le token est le droit dessus, et il est brûlé à la remise pour que la même paire ne soit pas retirée deux fois.",
+      "proof": "Le stock est fini et la réclamation est un verrou, pas une consultation : deux personnes qui visent le dernier ne peuvent pas toutes deux se l'entendre confirmer.",
+      "placedBy": "Marques qui ont quelque chose à offrir"
+    },
+    "access": {
+      "label": "Pass d'accès",
+      "headline": "Le billet, c'est d'être sur place",
+      "face": "Porte B · 19:00",
+      "fine": "Non transférable · Expire à la fin de l'événement",
+      "redeem": "Scanné à l'entrée comme n'importe quel pass. La différence, c'est qu'il ne pouvait s'obtenir que sur place, et c'est ce qui vaut la peine de l'émettre.",
+      "proof": "Les drops de forte valeur imposent un seuil de confiance strict : l'environnement radio doit concorder avec la position avant la libération.",
+      "placedBy": "Événements, salles et festivals"
+    },
+    "token": {
+      "label": "Drop de tokens",
+      "headline": "Une distribution que farmer coûte quelque chose",
+      "face": "40 $SEEK",
+      "fine": "Une réclamation par appareil · Réglé sur Solana",
+      "redeem": "Il arrive dans le portefeuille que l'application a créé pour vous, à garder, déplacer ou vendre. Rien à échanger et personne à qui demander.",
+      "proof": "Créer un portefeuille est gratuit, marcher ne l'est pas. La géographie est le filtre à travers lequel un airdrop ne se farme pas à bas coût.",
+      "placedBy": "Projets de tokens et communautés"
+    },
+    "collectible": {
+      "label": "Objet de collection",
+      "headline": "Quelque chose qui n'existe que là où il a été posé",
+      "face": "Rare",
+      "fine": "Série de 500 · Échangeable · Rareté fixée à l'émission",
+      "redeem": "Rien à échanger. C'est la trace d'être allé quelque part, la plus vieille raison qu'on ait jamais eue de garder quoi que ce soit.",
+      "proof": "Chacun porte la coordonnée où il a été pris : la collection de quelqu'un est donc une carte des endroits où cette personne est vraiment allée.",
+      "placedBy": "Villes, offices de tourisme, artistes"
+    }
+  },
+  "walkthrough": {
+    "eyebrow": "Parcourez-le",
+    "title": "Voici la boucle en entier",
+    "lead": "Pas une vidéo de l'application. Ce sont ses propres règles, qui tournent ici. Touchez un spawn sur la carte et continuez à partir de là.",
+    "startOver": "Recommencer",
+    "map": {
+      "label": "La carte",
+      "title": "Tout ce qui est autour, posé là où il est vraiment",
+      "body": "Les spawns sont sur des coordonnées fixes et y restent jusqu'à ce que quelqu'un les réclame. Touchez-en un pour voir ce que c'est et quelle distance vous sépare de lui."
+    },
+    "spawn": {
+      "label": "Le spawn",
+      "title": "La rareté vous dit vers quoi vous marchez",
+      "body": "De commun à légendaire, chacun avec sa chance de capture. Vous avez deux tentatives, et la seconde vaut 0,65 de la première : la première tape est celle qui compte le plus."
+    },
+    "catch": {
+      "label": "La capture",
+      "title": "Tapez pour charger, et gardez votre sang-froid",
+      "body": "L'anneau se remplit à mesure que vous tapez. Toutes les une ou deux manches, quelque chose s'invite : la sphère gèle, la charge se met à fuir, ou une pointe s'ouvre où les tapes comptent double."
+    },
+    "result": {
+      "label": "Le tirage",
+      "title": "La charge achète de la chance, pas de la certitude",
+      "body": "Un anneau plein sur un légendaire reste une chance sur cinq. C'est ce qui rend un légendaire précieux, et ce qui fait que la tape décide de quelque chose."
+    },
+    "wallet": {
+      "label": "À vous",
+      "title": "Cela atterrit dans un portefeuille que vous n'avez jamais eu à configurer",
+      "body": "Créé depuis une connexion sociale, pour qu'un nouveau joueur récupère quelque chose en une minute. Exportez la clé quand vous voulez la garde."
+    }
+  },
+  "spawnScreen": {
+    "back": "‹ Carte",
+    "distance": "Distance",
+    "inRange": "Dans le rayon",
+    "thisAttempt": "Cette tentative",
+    "attemptsLeft": "Tentatives restantes",
+    "attemptsOf": "{left} sur {total}",
+    "note": "Charger l'anneau fait monter ce chiffre. La tentative suivante vaut 0,65 de la première.",
+    "cta": "Attrapez-le"
+  },
+  "catchScreen": {
+    "attempt": "Tentative {attempt} sur {total}",
+    "tapAria": "Tapez pour charger",
+    "sealAria": "Colmater la fuite",
+    "ringFull": "Anneau plein, tenez bon",
+    "tapPrompt": "Tapez la pièce",
+    "mechanic": {
+      "freeze": "Gelé, continuez à taper pour le dégeler",
+      "leak": "Fuite, colmatez les brèches",
+      "surge": "Pointe, chaque tape compte double"
+    }
+  },
+  "resultScreen": {
+    "caught": "Attrapé",
+    "escaped": "Il s'est échappé",
+    "ringCharged": "Anneau chargé",
+    "chance": "Chance sur cette tentative",
+    "xp": "XP",
+    "gameValue": "Valeur de jeu",
+    "noteCaught": "Une unité capturée est une unité de jeu. Ce qu'elle vaut en tokens réels regarde le marché.",
+    "noteRetry": "Encore une tentative, qui vaut 0,65 de la première.",
+    "noteGone": "Ce spawn est parti. Un autre arrivera.",
+    "openWallet": "Ouvrir le portefeuille",
+    "tryAgain": "Réessayer",
+    "backToMap": "Retour à la carte"
+  },
+  "walletScreen": {
+    "totalBalance": "Solde total",
+    "delta": "+ {amount} aujourd'hui",
+    "send": "Envoyer",
+    "receive": "Recevoir",
+    "swap": "Échanger",
+    "stake": "Staker",
+    "justCaught": "Tout juste attrapé",
+    "assets": "Actifs",
+    "recentBadges": "Badges récents"
+  },
+  "dropKinds": {
+    "airdrop": "Airdrop",
+    "quest": "Récompense de quête",
+    "partner": "Drop partenaire",
+    "event": "Token d'événement",
+    "cache": "Cache urbaine"
+  },
+  "ecosystemPage": {
+    "metaTitle": "Écosystème : seekers, éditeurs, protocole",
+    "metaDescription": "Comment l'écosystème Seek Protocol s'articule : les seekers qui récupèrent, les éditeurs qui déposent, et le protocole qui vérifie la présence et règle sur Solana.",
+    "ogTitle": "Trois parties, une coordonnée",
+    "eyebrow": "Écosystème",
+    "titleStart": "Trois parties, une",
+    "titleAccent": "coordonnée",
+    "lead": "Quelqu'un dépose un actif. Quelqu'un s'y rend. Le protocole confirme que cette personne y était vraiment et règle l'opération. Tout le reste est du détail posé sur cette boucle.",
+    "networkEyebrow": "Le réseau",
+    "networkTitle": "Chaque épingle est un lieu réel",
+    "networkLead": "Faites tourner le globe. Les coordonnées sont de vraies positions de villes, et chaque arc est un drop qui circule entre elles.",
+    "capabilitiesEyebrow": "Capacités",
+    "capabilitiesTitle": "Ce que le protocole fournit réellement",
+    "faqEyebrow": "Questions",
+    "faqTitle": "Celles qui méritent d'être posées",
+    "faqLead": "Y compris celles dont la réponse dérange.",
+    "ctaEyebrow": "Aller plus loin",
+    "ctaTitle": "L'exposé technique",
+    "ctaBody": "La preuve de localisation, l'architecture, la conception du token, et une liste franche des attaques contre lesquelles nous nous défendons et des limites que nous acceptons.",
+    "ctaWhitepaper": "Lire le whitepaper",
+    "ctaBusiness": "Déposez vos propres actifs"
+  },
+  "participants": {
+    "seekers": {
+      "label": "Seekers",
+      "tag": "Demande",
+      "title": "Ceux qui vont le chercher",
+      "body": "Toute personne équipée de l'application. Elles marchent, elles trouvent des choses, et elles gardent ce qu'elles récupèrent. Aucune connaissance préalable des cryptos n'est supposée : le portefeuille est créé depuis une connexion sociale et peut être exporté ensuite par qui veut en avoir la garde.",
+      "gets": [
+        "Tokens, NFT et récompenses de partenaires",
+        "Des quêtes qui s'adaptent à l'endroit où elles sont",
+        "Un portefeuille qu'elles n'ont pas eu à comprendre d'abord"
+      ]
+    },
+    "publishers": {
+      "label": "Éditeurs",
+      "tag": "Offre",
+      "title": "Celui qui l'a mis là",
+      "body": "Marques, salles, projets de tokens et organisateurs d'événements. Ils déposent des actifs aux coordonnées qui comptent pour eux et paient à la pose, pondérée par le rayon, la durée et le niveau de concurrence sur la zone.",
+      "gets": [
+        "Des arrivées vérifiées, pas des impressions",
+        "Une répartition géographique qui résiste au farming",
+        "Un créateur de campagnes sans travail d'intégration"
+      ]
+    },
+    "protocol": {
+      "label": "Protocole",
+      "tag": "Règlement",
+      "title": "La partie qui garde tout le monde honnête",
+      "body": "Notation de la vérification, conservation des actifs et règlement. Il prend une commission sur la pose, en reverse l'essentiel aux seekers, et conserve la trace de ce qui a été réclamé et où.",
+      "gets": [
+        "Des commissions qui suivent l'activité réelle",
+        "Un registre public des réclamations",
+        "Des paramètres qui passent à la gouvernance avec le temps"
+      ]
+    }
+  },
+  "capabilities": {
+    "placement": {
+      "title": "Dépôt géorepéré",
+      "meta": "5 m à 500 m",
+      "body": "Les actifs sont épinglés à des coordonnées avec un rayon de réclamation configurable. Une porte de boutique prend un rayon serré, un site de festival un rayon large."
+    },
+    "verification": {
+      "title": "Vérification multisignal",
+      "meta": "4 signaux indépendants",
+      "body": "Point satellite, environnement radio, attestation de l'appareil et continuité du mouvement doivent tous concorder avant qu'une réclamation soit acceptée."
+    },
+    "anchoring": {
+      "title": "Ancrage AR",
+      "meta": "Persistant",
+      "body": "Les actifs restent en place d'une session à l'autre et d'un utilisateur à l'autre. Deux personnes au même endroit voient la même chose au même endroit."
+    },
+    "companion": {
+      "title": "Compagnon IA",
+      "meta": "D'abord sur l'appareil",
+      "body": "Lit la caméra pour expliquer ce que vous regardez et suggérer où aller ensuite, sans envoyer votre historique de déplacements où que ce soit."
+    },
+    "wallet": {
+      "title": "Portefeuille social",
+      "meta": "Sans phrase de récupération",
+      "body": "Créé depuis une connexion sociale pour qu'un nouvel utilisateur récupère quelque chose en une minute, avec un export en auto-conservation quand il le souhaite."
+    },
+    "settlement": {
+      "title": "Règlement sur Solana",
+      "meta": "Moins d'une seconde",
+      "body": "Assez bon marché pour que ramasser une petite récompense ne coûte pas plus que ce qu'elle vaut, et c'est toute la raison pour laquelle le choix de la chaîne compte."
+    }
+  },
+  "ecosystemFaq": {
+    "spoofing": {
+      "question": "Puis-je falsifier ma position et récupérer sans me déplacer ?",
+      "answer": "Pas à bas coût. Un point GPS brut est facile à falsifier, c'est pourquoi il ne représente qu'un des quatre signaux. L'environnement radio, l'attestation de l'appareil et votre trace de mouvement doivent tous le corroborer, et un appareil qui échoue de façon répétée se voit imposer un seuil plus élevé. Le but est de rendre la falsification plus coûteuse que la récompense, pas d'affirmer qu'elle est impossible."
+    },
+    "crypto": {
+      "question": "Faut-il connaître les cryptos pour utiliser SeekAR ?",
+      "answer": "Non. Le portefeuille est créé depuis une connexion sociale et vous ne voyez jamais de phrase de récupération, sauf si vous allez la chercher. Si vous voulez ensuite l'auto-conservation, vous pouvez exporter la clé à tout moment."
+    },
+    "tracking": {
+      "question": "Seek Protocol suit-il mes déplacements ?",
+      "answer": "Non. L'application demande une position au moment où vous tentez une réclamation, pas en continu en arrière-plan. Les données brutes des capteurs servent à noter cette réclamation puis sont écartées, et votre historique de déplacements reste sur votre appareil."
+    },
+    "farming": {
+      "question": "Qu'est-ce qui empêche une personne de farmer un lieu avec plusieurs portefeuilles ?",
+      "answer": "Des limites de réclamation par appareil dans un rayon et une fenêtre de temps, plus une attestation d'appareil à laquelle les fermes d'émulateurs échouent. Les portefeuilles sont gratuits, se déplacer ne l'est pas, et c'est précisément l'intérêt d'ancrer la distribution à la géographie."
+    },
+    "chain": {
+      "question": "Pourquoi Solana plutôt qu'une autre chaîne ?",
+      "answer": "Le coût de transaction. Récupérer une récompense de quelques centimes doit coûter une fraction de centime à régler, sinon l'économie ne tient pas. La confirmation en moins d'une seconde compte aussi quand quelqu'un attend au coin d'une rue."
+    },
+    "business": {
+      "question": "Mon entreprise peut-elle déposer des actifs aujourd'hui ?",
+      "answer": "Via un partenariat accompagné, oui. Le portail en libre-service qui supprime l'échange avec nous est en cours, et la roadmap indique où il se situe."
+    }
+  },
+  "roadmapPage": {
+    "metaTitle": "Roadmap : livré et à venir",
+    "metaDescription": "Ce que Seek Protocol a livré et ce qui vient ensuite, du prototype de preuve de localisation au lancement public de SeekAR, jusqu'au portail en libre-service et à la gouvernance on-chain.",
+    "ogTitle": "Roadmap de Seek Protocol",
+    "eyebrow": "Roadmap",
+    "titleStart": "Ce qui est fait, et ce qui",
+    "titleAccent": "vient",
+    "lead": "{phases} phases, mesurées à ce qui a réellement été livré. {shipped} jalons terminés sur {total}.",
+    "status": {
+      "done": "Livré",
+      "active": "En cours",
+      "next": "Prévu"
+    },
+    "datesTitle": "À propos de ces dates",
+    "datesNote": "Les dates décrivent une intention, pas un engagement. Tout ce qui n'est pas encore marqué comme terminé peut bouger, et nous préférons le dire plutôt que réarranger discrètement le tableau.",
+    "legendTitle": "Légende",
+    "ctaEyebrow": "Détail",
+    "ctaTitle": "Le raisonnement derrière l'ordre",
+    "ctaBody": "Le whitepaper explique pourquoi la vérification est passée avant l'échelle, et pourquoi la gouvernance vient en dernier.",
+    "ctaWhitepaper": "Lire le whitepaper"
+  },
+  "roadmapPhases": {
+    "foundation": {
+      "title": "Fondations",
+      "summary": "Prouver que l'idée de départ tenait : un téléphone pouvait-il confirmer que quelqu'un était quelque part, de façon assez fiable pour libérer quelque chose de valeur ?",
+      "groups": {},
+      "items": {
+        "prototype": "Prototype de preuve de localisation avec GNSS et continuité du mouvement",
+        "engine": "Moteur de rendu AR avec ancrage persistant au monde",
+        "settlement": "Couche de règlement sur Solana et définitions d'actifs",
+        "alpha": "Alpha interne dans trois villes test"
+      }
+    },
+    "launch": {
+      "title": "Lancement public",
+      "summary": "Mettre SeekAR entre de vraies mains, sur les deux stores, avec un parcours d'entrée qui ne suppose pas que l'utilisateur ait déjà tenu une clé privée.",
+      "groups": {},
+      "items": {
+        "stores": "SeekAR publiée sur iOS et Android",
+        "wallet": "Portefeuille par connexion sociale, avec export facultatif en auto-conservation",
+        "drops": "Drops géolocalisés et système de quêtes",
+        "attestation": "Attestation d'appareil via Play Integrity et App Attest",
+        "localisation": "Site et application localisés en huit langues"
+      }
+    },
+    "scale": {
+      "title": "L'ouverture",
+      "summary": "L'année où le réseau cesse d'être à nous de remplir. N'importe qui peut déposer des actifs sans nous parler d'abord, le token qui les finance devient public, et les raisons de revenir cessent d'être des choses qu'on fait seul.",
+      "groups": {
+        "supply": "Côté offre",
+        "network": "Effets de réseau"
+      },
+      "items": {
+        "companion": "Compagnon IA avec guidage contextuel par la caméra",
+        "radio": "Empreinte radio ajoutée à la pile de vérification",
+        "builder": "Créateur de campagnes en glisser-déposer pour les petits éditeurs",
+        "portal": "Portail en libre-service pour les lieux et les marques",
+        "analytics": "Analytique des arrivées vérifiées et rapports de coût par visite",
+        "tge": "Événement de génération du token",
+        "partnerships": "Partenariats majeurs",
+        "liveEvents": "Mode événement en direct pour festivals, matchs et conférences",
+        "seasons": "Saisons, avec leurs propres échelles et récompenses",
+        "scanning": "Scan d'objets ludifié",
+        "guilds": "Guildes, quêtes d'équipe et cagnottes partagées",
+        "revenueShare": "Partage de revenus pour les créateurs sur les actifs déposés"
+      }
+    },
+    "governance": {
+      "title": "Passer la main sur les paramètres",
+      "summary": "La gouvernance suit un flux de commissions réel plutôt que de le précéder. Voter sur une économie sans volume relève du théâtre, donc cela vient en dernier, volontairement.",
+      "groups": {},
+      "items": {
+        "onChain": "Gouvernance on-chain des paramètres du protocole",
+        "treasury": "Allocation de la trésorerie communautaire",
+        "providers": "Fournisseurs de vérification tiers",
+        "sdk": "SDK ouvert pour les applications externes sur le protocole"
+      }
+    }
+  },
+  "businessPage": {
+    "metaTitle": "Entreprises : achetez des arrivées, pas des impressions",
+    "metaDescription": "Déposez des récompenses à vos propres coordonnées et mesurez qui est réellement venu. Seek Protocol transforme les campagnes numériques en visites vérifiées pour le commerce, les événements, les projets de tokens et les villes.",
+    "ogTitle": "Achetez des arrivées, pas des impressions",
+    "eyebrow": "Entreprises",
+    "titleStart": "Achetez des arrivées, pas des",
+    "titleAccent": "impressions",
+    "lead": "La publicité numérique met votre logo devant quelqu'un en quelques millisecondes. Elle ne le fait pas marcher trois rues plus loin. Déposez une récompense devant votre porte et payez pour les gens qui l'atteignent.",
+    "ctaTalk": "Parlez-nous",
+    "ctaVerification": "Comment marche la vérification",
+    "argumentEyebrow": "L'argument",
+    "argumentTitle": "Là où le comptage s'arrête",
+    "argumentLead": "Dépensez le même budget de deux façons et les entonnoirs se ressemblent jusqu'à la dernière ligne. L'un est compté. L'autre est un modèle, et c'est la ligne sur laquelle chaque campagne est jugée.",
+    "useCasesEyebrow": "Cas d'usage",
+    "useCasesTitle": "Quatre façons de s'en servir",
+    "setupEyebrow": "Mise en place",
+    "setupTitle": "Quatre décisions, aucun développement",
+    "setupLead": "Voici tout le parcours. Prenez les quatre décisions et publiez, et voyez ce que chacune change au terrain que vous tenez et au prix d'une personne devant votre porte.",
+    "measurementEyebrow": "Mesure",
+    "measurementTitle": "Ce que vous obtenez, et ce que vous n'obtenez pas",
+    "measurementLead": "Les données de localisation sont la catégorie la plus sensible qui soit. Vous recevez les décomptes nécessaires pour juger une campagne, et rien qui permette de suivre une personne.",
+    "ctaEyebrow": "Commencer",
+    "ctaTitle": "Posez quelque chose devant votre porte",
+    "ctaBody": "Le portail en libre-service est en cours. En attendant, nous montons les campagnes directement avec vous. Dites-nous le lieu et ce que vous voulez déposer.",
+    "ctaStart": "Entamer la conversation",
+    "ctaRoadmap": "Voir quand arrive le libre-service"
+  },
+  "useCases": {
+    "retail": {
+      "label": "Commerce et hôtellerie",
+      "metric": "Coût par arrivée vérifiée",
+      "title": "Faites d'un lieu une raison de venir",
+      "body": "Déposez une offre devant votre porte avec un rayon de réclamation serré. Seule une personne présente peut la prendre : l'utilisation que vous voyez est donc quelqu'un qui est entré, pas une annonce devant laquelle on a scrollé.",
+      "points": [
+        "Un rayon réglé sur la porte plutôt que sur le code postal",
+        "Utilisation enregistrée au moment de l'arrivée",
+        "Fonctionne sur toute une enseigne sans intégration par magasin"
+      ]
+    },
+    "events": {
+      "label": "Événements et lieux",
+      "metric": "Engagement sur place",
+      "title": "Une carte à réclamer le temps de l'événement",
+      "body": "Festivals, matchs et conférences deviennent une couche temporaire d'actifs qui expirent avec l'événement. C'est la présence qui les débloque, la récompense atteint donc les gens qui sont réellement venus.",
+      "points": [
+        "Des actifs limités dans le temps, qui expirent comme prévu",
+        "Rayons larges pour les sites, serrés pour les scènes et les tribunes",
+        "Seuils de vérification plus élevés pour les drops de forte valeur"
+      ]
+    },
+    "token": {
+      "label": "Projets de tokens et NFT",
+      "metric": "Résistance Sybil",
+      "title": "Distribuez à des personnes, pas à des portefeuilles",
+      "body": "Créer un portefeuille est gratuit, et c'est pour cela que les airdrops se font farmer. Exiger une présence physique met un coût réel sur chaque réclamation supplémentaire, car personne n'est dans quarante villes à la fois.",
+      "points": [
+        "Répartition géographique sur les marchés choisis",
+        "Limites de réclamation par appareil dans un rayon et une fenêtre",
+        "Registre public des réclamations sur Solana"
+      ]
+    },
+    "tourism": {
+      "label": "Villes et tourisme",
+      "metric": "Répartition de la fréquentation",
+      "title": "Faites passer les gens par les endroits à valoriser",
+      "body": "Enchaînez les actifs en un parcours pour que les visiteurs le suivent dans l'ordre. Les rues calmes, les sites secondaires et les heures creuses peuvent porter les récompenses dont les lieux saturés n'ont pas besoin.",
+      "points": [
+        "Des quêtes ordonnées sur plusieurs sites",
+        "Une pondération heures creuses pour étaler la demande",
+        "Des décomptes d'arrivées agrégés, jamais de traces individuelles"
+      ]
+    }
+  },
+  "measurement": {
+    "counted": {
+      "label": "Ce qui est compté",
+      "value": "Une arrivée vérifiée dans votre rayon"
+    },
+    "when": {
+      "label": "Quand c'est compté",
+      "value": "Au moment de la réclamation, pas déduit après coup"
+    },
+    "receive": {
+      "label": "Ce que vous recevez",
+      "value": "Des décomptes agrégés par lieu, heure et campagne"
+    },
+    "never": {
+      "label": "Ce que vous ne recevez jamais",
+      "value": "Des traces de déplacement ou des identités individuelles"
+    }
+  },
+  "funnel": {
+    "budget": "Budget de campagne",
+    "displayTitle": "Acheté en display",
+    "displayCost": "par visite modélisée",
+    "seekTitle": "Acheté en arrivées",
+    "seekCost": "par arrivée vérifiée",
+    "counted": "Compté",
+    "estimated": "Estimé",
+    "stages": {
+      "impressions": "Impressions servies",
+      "viewable": "Réellement affichées",
+      "clicks": "Clics",
+      "visits": "Visites en magasin",
+      "saw": "A vu l'épingle à proximité",
+      "opened": "A ouvert le drop",
+      "walked": "S'y est rendu",
+      "claimed": "A réclamé devant la porte"
+    },
+    "caption": "Le display part d'un CPM de {cpm} $, {viewability} % de visibilité, un taux de clic de {ctr} % et le chiffre de {modelled} % d'impression à visite que modélisent les régies. C'est cette dernière ligne qu'il faut regarder : elle n'est pas comptée mais estimée, et elle ne découle pas des clics au-dessus. Dans la colonne de droite, chaque ligne est un événement survenu sur un appareil à l'intérieur de votre rayon."
+  },
+  "deploy": {
+    "stepsLabel": "Étapes",
+    "steps": {
+      "location": "Lieu",
+      "asset": "Actif",
+      "rules": "Règles",
+      "publish": "Publier"
+    },
+    "whereLegend": "Où il se pose",
+    "whereNote": "Dans le portail, c'est une épingle que vous déplacez. La coordonnée est la seule adresse que l'actif aura jamais.",
+    "assetLegend": "Ce que vous déposez",
+    "assetNote": "Une réclamation par appareil dans le rayon et la fenêtre : la quantité est donc un nombre de personnes, pas un stock.",
+    "rulesLegend": "Qui peut le prendre",
+    "campaignLegend": "La campagne",
+    "quantity": "Quantité",
+    "claimRadius": "Rayon de réclamation",
+    "presets": {
+      "store": {
+        "label": "Boutique",
+        "place": "Kalverstraat 92, Amsterdam",
+        "hint": "Une porte. Assez serré pour que seule une personne au comptoir puisse réclamer."
+      },
+      "venue": {
+        "label": "Site d'événement",
+        "place": "Johan Cruijff ArenA, Amsterdam",
+        "hint": "Tout un site le temps de l'événement, qui expire quand il se termine."
+      },
+      "trail": {
+        "label": "Parcours urbain",
+        "place": "Six sites dans Amsterdam Noord",
+        "hint": "Des actifs enchaînés, à réclamer dans l'ordre, pondérés vers les rues calmes."
+      }
+    },
+    "assets": {
+      "token": "Token",
+      "nft": "Objet de collection",
+      "offer": "Code promo",
+      "ticket": "Pass d'accès"
+    },
+    "tiers": {
+      "standard": {
+        "label": "Vérification standard",
+        "note": "GNSS, attestation et mouvement doivent concorder."
+      },
+      "strict": {
+        "label": "Vérification stricte",
+        "note": "Ajoute l'empreinte radio. Pour les drops de forte valeur."
+      }
+    },
+    "summaryLocation": "Lieu",
+    "summaryAsset": "Actif",
+    "summaryRadius": "Rayon",
+    "summaryVerification": "Vérification",
+    "summaryThreshold": "{tier}, seuil {threshold}",
+    "summaryBudget": "Budget",
+    "summaryBudgetValue": "{budget} $ à {cost} $ par arrivée",
+    "publish": "Publier la campagne",
+    "sequence": {
+      "signing": "Signature de la campagne",
+      "writing": "Écriture de la définition de l'actif sur Solana",
+      "indexing": "Indexation des coordonnées",
+      "live": "En ligne sur la carte"
+    },
+    "again": "En monter une autre",
+    "back": "Retour",
+    "next": "Suivant",
+    "review": "Vérifier",
+    "verifiedArrivals": "Arrivées vérifiées",
+    "costPerArrival": "Coût par arrivée",
+    "sawPin": "A vu l'épingle à proximité",
+    "placementFee": "Frais de dépôt",
+    "perArrival": "Par arrivée",
+    "live": "En direct",
+    "radiusOf": "Rayon de {radius} m",
+    "captionLive": "Les arrivées sont une projection à partir du rayon et du trafic de la carte alentour, pas une garantie. Chacune serait une réclamation enregistrée on-chain au moment où quelqu'un se tient là.",
+    "captionIdle": "L'anneau est dessiné à l'échelle sur le plan. Rien ici ne demande de développeur : quatre décisions, puis on publie."
+  },
+  "whitepaper": {
+    "metaTitle": "Whitepaper : preuve de localisation sur Solana",
+    "metaDescription": "Comment Seek Protocol émet des actifs numériques sur des coordonnées réelles, vérifie que quelqu'un s'y trouvait vraiment et règle sur Solana. Preuve de localisation, architecture, conception du token et les attaques contre lesquelles nous nous défendons.",
+    "ogTitle": "Whitepaper de Seek Protocol",
+    "ogDescription": "Preuve de localisation, architecture, conception du token, et un compte rendu honnête des attaques et des limites.",
+    "eyebrow": "Whitepaper",
+    "titleStart": "Des actifs numériques qui vivent",
+    "titleAccent": "quelque part",
+    "lead": "L'exposé technique de la façon dont Seek Protocol émet des actifs sur des coordonnées, prouve que quelqu'un s'y tenait et règle l'opération on-chain, y compris ce que le système ne sait pas faire.",
+    "readingTime": "{minutes} min de lecture",
+    "updated": "Mis à jour en {date}",
+    "updatedValue": "août 2026",
+    "gitbook": "Documentation complète sur GitBook",
+    "ctaEyebrow": "Ensuite",
+    "ctaTitle": "Voyez-le tourner",
+    "ctaBody": "La page écosystème montre le réseau en direct, et la roadmap suit ce qui est livré face à ce qui vient.",
+    "ctaEcosystem": "Explorer l'écosystème",
+    "ctaRoadmap": "Voir la roadmap",
+    "chapters": {
+      "summary": {
+        "index": "01",
+        "eyebrow": "Résumé",
+        "title": "Un protocole pour les choses qui existent quelque part",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Internet a rendu chaque objet numérique disponible partout à la fois. C'était le but, et cela a marché. Mais cela a aussi retiré aux choses numériques la seule propriété qui donne de la valeur aux choses physiques : être à un endroit précis. Un billet de concert compte parce qu'il ouvre une salle. Un monument compte parce qu'il faut s'y rendre."
+          },
+          {
+            "kind": "p",
+            "text": "Seek Protocol remet le lieu dans les actifs numériques. Un token, un NFT ou une récompense peuvent être émis vers un jeu de coordonnées plutôt que vers un portefeuille, et ils y restent jusqu'à ce que quelqu'un se tienne physiquement dans leur rayon et le prouve. C'est ce que nous appelons la preuve de localisation, et c'est la primitive sur laquelle repose le reste du protocole."
+          },
+          {
+            "kind": "p",
+            "text": "La face visible est **SeekAR**, une application mobile sur iOS et Android qui affiche ces actifs en réalité augmentée. Vous marchez, votre téléphone montre ce qui est à proximité, et vous récupérez ce que vous trouvez. En dessous, le règlement se fait sur Solana, choisie pour des coûts de transaction assez bas pour que ramasser une petite récompense ne coûte pas plus que ce qu'elle vaut."
+          },
+          {
+            "kind": "callout",
+            "text": "La version courte : nous créons des actifs numériques qui ne peuvent être réclamés que depuis un endroit précis, nous vérifions que quelqu'un s'y trouvait bien, et nous réglons on-chain en moins d'une seconde pour une fraction de centime."
+          },
+          {
+            "kind": "h",
+            "text": "Ce que couvre ce document"
+          },
+          {
+            "kind": "p",
+            "text": "Seize chapitres, en quatre mouvements. Les trois premiers posent le problème et la primitive qui y répond. Les chapitres quatre à sept sont la mécanique : comment une réclamation circule, comment les couches s'emboîtent et ce que l'application en fait. Huit à onze forment l'économie, de qui paie la pose jusqu'à qui décide des paramètres. Les cinq derniers sont ce qu'un whitepaper laisse d'ordinaire de côté : les attaques, le coût pour la vie privée, la position réglementaire et les limites assumées."
+          },
+          {
+            "kind": "p",
+            "text": "Plusieurs figures se manipulent. Le modèle de vérification, la chronologie d'une réclamation, le tirage de capture et le calculateur de budget font le même calcul que le protocole, avec les mêmes constantes, pour que vous puissiez contester la conception plutôt qu'un dessin de la conception."
+          }
+        ]
+      },
+      "problem": {
+        "index": "02",
+        "eyebrow": "Le problème",
+        "title": "L'attention est bon marché en ligne et chère dans la rue",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Deux groupes ont un problème qui se révèle être le même, vu des deux bouts."
+          },
+          {
+            "kind": "h",
+            "text": "Les marques et les lieux ne peuvent pas acheter de visites"
+          },
+          {
+            "kind": "p",
+            "text": "La publicité numérique peut mettre une image devant quelqu'un en quelques millisecondes. Elle ne peut pas le faire marcher trois rues plus loin. Le passage de l'impression à la visite physique est le maillon le plus faible de tout l'entonnoir du commerce et de l'événementiel, et il est mal mesuré, le plus souvent en demandant aux gens en caisse s'ils ont vu une publicité."
+          },
+          {
+            "kind": "p",
+            "text": "La réponse du secteur, c'est la modélisation. Des panels d'appareils consentants sont extrapolés à une population, et le chiffre de visites en magasin qui en sort est rapporté à côté des impressions et des clics comme s'il venait du même compteur. Ce n'est pas le cas. Un chiffre est un événement, l'autre une estimation, et les campagnes sont jugées sur l'estimation."
+          },
+          {
+            "kind": "h",
+            "text": "Les projets crypto ne trouvent pas de vrais utilisateurs"
+          },
+          {
+            "kind": "p",
+            "text": "Les airdrops sont l'outil standard de distribution, et ils se font farmer. Créer un portefeuille ne coûte rien, donc toute récompense qu'un portefeuille peut réclamer sera réclamée par des milliers de portefeuilles appartenant à une poignée de personnes. Les projets répondent par des règles d'éligibilité toujours plus alambiquées, qui écartent surtout les utilisateurs ordinaires pendant que les farmeurs aguerris s'adaptent."
+          },
+          {
+            "kind": "p",
+            "text": "Les deux problèmes se dissolvent si l'on peut prouver qu'un être humain était à un endroit précis à un moment précis. La fréquentation devient mesurable parce que l'arrivée est l'événement enregistré. Farmer un airdrop devient coûteux parce qu'un portefeuille est gratuit et pas le déplacement, et personne n'est dans quarante villes à la fois."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Coût de création d'un portefeuille",
+                "value": "Quasiment nul"
+              },
+              {
+                "label": "Coût d'être quelque part",
+                "value": "Temps, distance, présence physique"
+              },
+              {
+                "label": "Ce que cet écart achète",
+                "value": "Une résistance Sybil ancrée dans la physique"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Pourquoi c'est constructible maintenant et pas avant"
+          },
+          {
+            "kind": "p",
+            "text": "Trois choses devaient converger. Les téléphones devaient embarquer en série un GNSS bifréquence, des caméras avec perception de la profondeur et une attestation matérielle, et non les réserver aux modèles haut de gamme. Le règlement devait devenir assez bon marché pour qu'une récompense de quelques centimes survive au transfert, ce qui excluait toutes les chaînes tant que les frais dépassaient un centime. Et les gens devaient accepter de pointer une caméra vers une rue et d'y voir quelque chose incrusté, ce qu'une décennie d'AR dans les jeux a réglé sans bruit."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "03",
+        "eyebrow": "Primitive centrale",
+        "title": "La preuve de localisation",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "La preuve de localisation est l'affirmation qu'un appareil donné se trouvait dans un rayon donné pendant une fenêtre donnée, rendue assez crédible pour libérer quelque chose de valeur sur cette base."
+          },
+          {
+            "kind": "p",
+            "text": "Aucun signal n'est fiable à lui seul. Le GPS brut se falsifie depuis n'importe quel appareil rooté avec un fournisseur de position simulée. Le protocole note donc une réclamation sur plusieurs signaux indépendants et exige que la combinaison soit cohérente, car falsifier un signal est facile et les falsifier tous de façon cohérente ne l'est pas."
+          },
+          {
+            "kind": "h",
+            "text": "Les signaux que nous combinons"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Point GNSS**, la position satellite brute avec la précision annoncée, plus la constellation et le nombre de satellites, que les falsificateurs se trompent souvent à reproduire.",
+              "**Environnement radio**, l'ensemble des SSID Wi-Fi et des antennes proches, comparé à ce que le protocole s'attend à voir à ces coordonnées. Les environnements radio sont difficiles à fabriquer et changent lentement.",
+              "**Attestation de l'appareil**, Play Integrity sur Android et DeviceCheck ou App Attest sur iOS, qui confirment que l'application est authentique et le système non compromis.",
+              "**Continuité du mouvement**, la trace de l'accéléromètre entre la position confirmée précédente et celle-ci. Une réclamation affirmant un trajet de 400 km en 90 secondes sans profil de mouvement correspondant est rejetée.",
+              "**Plausibilité temporelle**, où les heures d'arrivée sont confrontées au temps de trajet qu'implique votre dernière position confirmée."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Chaque signal alimente un score de confiance. Les actifs fixent le score qu'ils exigent : une récompense de quête de faible valeur peut se contenter d'un score moyen, tandis qu'un drop de forte valeur lors d'un événement à billetterie peut exiger l'attestation de l'appareil et un environnement radio concordant. Les réclamations sous le seuil sont refusées, et des refus répétés depuis un même appareil relèvent le seuil pour cet appareil."
+          },
+          {
+            "kind": "confidence"
+          },
+          {
+            "kind": "callout",
+            "text": "Le but n'est pas une preuve parfaite, hors d'atteinte sur du matériel grand public. Il est de rendre la falsification plus coûteuse que la récompense, le même standard qui rend les paiements par carte viables."
+          },
+          {
+            "kind": "h",
+            "text": "Pourquoi les signaux sont pondérés plutôt qu'exigés"
+          },
+          {
+            "kind": "p",
+            "text": "Une règle qui exige tous les signaux est une règle qui refuse des utilisateurs honnêtes. Les stations souterraines perdent le GNSS. Les bâtiments neufs ont des environnements radio que la carte n'a jamais vus. Un téléphone deux versions en retard peut échouer à l'attestation pour des raisons sans rapport avec la fraude. La pondération permet à un actif de dire combien de preuves sa valeur mérite, et permet à une réclamation honnête de survivre à un mauvais signal sans laisser une réclamation falsifiée en survivre à quatre."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Rayon de réclamation par défaut",
+                "value": "30 m"
+              },
+              {
+                "label": "Plage configurable",
+                "value": "5 m à 500 m par actif"
+              },
+              {
+                "label": "Confirmation habituelle",
+                "value": "Moins d'une seconde sur Solana"
+              },
+              {
+                "label": "Attestation",
+                "value": "Play Integrity, App Attest"
+              },
+              {
+                "label": "Traitement des refus",
+                "value": "Enregistré par appareil, relève sa barre"
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "index": "04",
+        "eyebrow": "Mécanique",
+        "title": "Ce qui se passe vraiment quand vous réclamez quelque chose",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Le chapitre précédent décrit les preuves. Celui-ci suit une seule réclamation, du moment où vous tendez la main vers un actif jusqu'à celui où il est dans votre portefeuille, car c'est dans l'ordre des opérations que se logent la plupart des décisions de conception."
+          },
+          {
+            "kind": "timeline"
+          },
+          {
+            "kind": "h",
+            "text": "La frontière qui compte"
+          },
+          {
+            "kind": "p",
+            "text": "Regardez où les étapes changent de machine. Tout ce qui est sensible se passe dans les trois premières : la position, le balayage radio, la trace de mouvement, l'attestation. Rien de tout cela ne quitte votre téléphone sous forme brute. Ce qui passe au vérificateur est une réclamation signée, et ce qui passe du vérificateur à la chaîne est une attestation signée que la réclamation a atteint son seuil."
+          },
+          {
+            "kind": "p",
+            "text": "C'est pourquoi la vérification est off-chain. Ce n'est pas un compromis de passage à l'échelle. Mettre la notation on-chain reviendrait à publier les entrées, et ces entrées décrivent où vous vous tenez et quels réseaux sans fil vous entourent."
+          },
+          {
+            "kind": "h",
+            "text": "Ce qui se passe en cas d'échec"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Sous le seuil** : la réclamation est refusée, l'actif reste sur la carte, et rien n'est écrit sur la chaîne. Le refus est consigné au compte de l'appareil.",
+              "**Refus répétés** : le score exigé pour cet appareil monte. Un appareil qui a échoué six réclamations en une heure n'est pas traité comme un appareil qui n'en a raté aucune.",
+              "**Échec de règlement** : la réclamation est conservée et relancée plutôt qu'abandonnée. Un actif gagné et non livré est un bug qui coûte de la confiance, la file est donc conçue pour mettre de côté un paiement bloqué plutôt que de bloquer ceux qui suivent.",
+              "**Expiration en cours de réclamation** : les actifs portent une fenêtre, et une réclamation qui arrive après sa fermeture est refusée, même avec un score parfait. La fenêtre appartient à l'actif, pas à l'état du réseau."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Une réclamation est un verrou, pas une consultation. Deux personnes qui visent au même instant la dernière unité d'un actif ne doivent pas toutes deux s'entendre dire qu'elles l'ont, la vérification prend donc le verrou avant de décider quoi que ce soit."
+          }
+        ]
+      },
+      "architecture": {
+        "index": "05",
+        "eyebrow": "Architecture",
+        "title": "Comment les couches s'emboîtent",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Le protocole compte quatre couches. Chacune se raisonne, et se remplace, séparément."
+          },
+          {
+            "kind": "stack"
+          },
+          {
+            "kind": "p",
+            "text": "La séparation compte surtout à la frontière entre localisation et règlement. La vérification de localisation est probabiliste et se fait off-chain, parce qu'elle dépend de données de capteurs qui n'ont rien à faire en public. Ce qui atteint la chaîne est une attestation signée qu'une réclamation a atteint son seuil, pas votre historique de déplacements."
+          },
+          {
+            "kind": "h",
+            "text": "Ce qui est stocké, et où"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**On-chain** : les définitions d'actifs, leurs coordonnées et rayons, les enregistrements de réclamation et les transferts de tokens. Public et permanent.",
+              "**Off-chain** : les relevés bruts des capteurs, les empreintes radio et les attestations d'appareil. Conservés le temps de noter une réclamation et de traiter les litiges, puis écartés.",
+              "**Sur l'appareil** : votre historique de positions et les données d'ancrage AR. Cela reste sur votre téléphone sauf partage explicite de votre part."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Pourquoi Solana"
+          },
+          {
+            "kind": "p",
+            "text": "L'exigence est inhabituelle pour une chaîne : un très grand nombre de transactions, une très faible valeur par transaction, et une confirmation assez rapide pour qu'une personne debout dans la rue ne la remarque pas. Qui ramasse une récompense de vingt centimes ne peut pas en payer dix pour la recevoir, et ne restera pas immobile trente secondes. Cette combinaison élimine la majeure partie du terrain sur le coût et le reste sur la latence."
+          },
+          {
+            "kind": "p",
+            "text": "Le compromis est réel et mérite d'être dit. Solana a connu des interruptions, et une chaîne à l'arrêt, ce sont des réclamations en file. Le protocole traite le règlement comme une étape qui peut échouer et être relancée plutôt que comme une étape toujours réussie, ce qui est la bonne conception quelle que soit la chaîne mais n'est pas optionnel sur celle-ci."
+          },
+          {
+            "kind": "h",
+            "text": "Ce qui tourne où"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Position, capteurs, ancres AR",
+                "value": "Sur l'appareil, jamais envoyés bruts"
+              },
+              {
+                "label": "Notation et seuil",
+                "value": "Vérificateur du protocole, off-chain"
+              },
+              {
+                "label": "Définitions d'actifs et réclamations",
+                "value": "Solana, public"
+              },
+              {
+                "label": "Médias et visuels des pièces",
+                "value": "En cache sur l'appareil, servis depuis un stockage objet"
+              },
+              {
+                "label": "Annonces de spawn",
+                "value": "Le serveur décide, jamais déclaré par le client"
+              }
+            ]
+          }
+        ]
+      },
+      "seekar": {
+        "index": "06",
+        "eyebrow": "Application",
+        "title": "SeekAR, la partie visible",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "SeekAR est l'endroit où le protocole devient utilisable sans rien savoir de ce qui précède. L'application s'ouvre sur une carte de ce qui est à proximité, et lever la caméra affiche ces actifs à leur place via le moteur AR."
+          },
+          {
+            "kind": "h",
+            "text": "Ce que fait l'application"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Découvrir**, une carte en direct des drops, quêtes et événements à distance de marche, filtrée selon ce qui vous intéresse vraiment.",
+              "**Récupérer**, où vous pointez la caméra, voyez l'actif ancré dans le monde, tendez la main et le prenez. Le règlement se fait en arrière-plan.",
+              "**Guider**, un compagnon IA qui lit vos environs à travers la caméra, propose des itinéraires, explique ce que vous regardez et s'adapte à votre façon de jouer.",
+              "**Détenir**, un portefeuille intégré créé depuis une connexion sociale, pour qu'un nouvel utilisateur n'ait pas à noter une phrase de récupération avant de pouvoir ramasser quoi que ce soit."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "La contrainte d'entrée guide plus de décisions de conception que n'importe quelle autre. La plupart des gens qui utiliseront SeekAR n'ont jamais tenu de clé privée. Si les trente premières secondes contiennent le mot « mnémonique », ils partent. Le portefeuille est donc créé en silence et peut être exporté ensuite par qui veut en avoir la garde."
+          },
+          {
+            "kind": "h",
+            "text": "La marche jusqu'au drop"
+          },
+          {
+            "kind": "p",
+            "text": "Les actifs se trouvent à quelques dizaines ou centaines de mètres, une distance où une carte suffit et où un itinéraire est superflu. Marquer un spawn trace une ligne droite de vous à lui. La ligne est volontairement pointillée : c'est un cap, pas un itinéraire, elle ignore les bâtiments, et sur cette distance le cap est généralement le chemin. Elle s'efface d'elle-même dès que vous êtes à portée de capture, où l'anneau prend le relais."
+          },
+          {
+            "kind": "p",
+            "text": "Les spawns expirent en moins d'une heure. C'est une décision de jeu avec une conséquence protocolaire : un marqueur restauré au lancement suivant pointerait vers rien, l'application n'en conserve donc aucun."
+          },
+          {
+            "kind": "h",
+            "text": "L'ancrage, et à quoi sert l'AR ici"
+          },
+          {
+            "kind": "p",
+            "text": "Le passage caméra n'est pas décoratif et ce n'est pas non plus la vérification. Il fait deux choses. Il place l'actif à un endroit crédible du monde, de sorte que tendre la main soit un geste plutôt qu'un appui sur un bouton, et il donne au signal de mouvement quelque chose avec quoi être cohérent, car une personne qui tourne autour d'un objet ancré bouge comme une personne, et un falsificateur qui tient son téléphone immobile, non."
+          }
+        ]
+      },
+      "play": {
+        "index": "07",
+        "eyebrow": "La boucle",
+        "title": "Ce qui fait continuer à marcher",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Un protocole qui paie l'arrivée a quand même besoin d'une raison pour la première arrivée. Personne ne marche quatre rues pour un mécanisme. La couche de jeu est le côté demande du réseau, et elle est conçue avec la même honnêteté que la vérification : les probabilités sont publiées, elles sont calculées côté serveur, et on ne demande jamais au client ce qui s'est passé."
+          },
+          {
+            "kind": "h",
+            "text": "La capture"
+          },
+          {
+            "kind": "p",
+            "text": "Atteindre un actif ne vous le donne pas. Un anneau de charge se remplit tant que vous maintenez l'appui, et la qualité de cette charge alimente un multiplicateur. Ensuite le serveur tire. Vous avez deux tentatives par spawn, et la seconde vaut 0,65 de la première, le chiffre qui fait qu'une seconde chance ressemble à une seconde chance plutôt qu'à un lot de consolation."
+          },
+          {
+            "kind": "catch"
+          },
+          {
+            "kind": "h",
+            "text": "Les termes que personne ne publie d'habitude"
+          },
+          {
+            "kind": "p",
+            "text": "La plupart des jeux cachent les modificateurs. Il n'y a aucune raison de le faire ici, car la propriété intéressante est que l'adresse pousse et ne décide jamais. L'anneau de charge est un multiplicateur entre 0,85 et 1,0 : une frappe parfaite sur un légendaire reste un légendaire, et une frappe ratée sur un commun reste probablement un commun."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Bonus de niveau**, 0,3 point de chance fixe par niveau de joueur, sur dix niveaux de Seeker à Legend.",
+              "**Série froide**, un compteur de compensation de 2 points par échec consécutif, plafonné à 12, appliqué aussi à la seconde tentative et d'une pièce à l'autre.",
+              "**Pénalité de série**, 4 points par réussite consécutive sur la même pièce, plafonnée à 20, pour que farmer un point de spawn empire au lieu de s'améliorer.",
+              "**Bonus de clan**, plafonné à 5 points, gagné par le clan et non par le joueur.",
+              "**Power-ups**, achetés ou gagnés, qui multiplient la chance de base avant l'ajout de tous les autres termes."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Le plancher est à 5 % et le plafond à 95 %. Rien ne s'empile jusqu'à la garantie, et rien ne s'empile jusqu'au mur."
+          },
+          {
+            "kind": "h",
+            "text": "La progression, et à quoi elle sert"
+          },
+          {
+            "kind": "p",
+            "text": "Niveaux, badges, clans, défis de douze heures et objectifs hebdomadaires existent pour donner à la marche une forme plus longue qu'un seul drop. Ils font aussi un travail de protocole : un joueur avec un niveau, un clan et une série a un compte avec une histoire, et une histoire coûte cher à fabriquer à grande échelle. La progression est un second coût imposé au farmeur, qui ne coûte rien au joueur honnête, puisqu'il allait jouer de toute façon."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Tentatives par spawn",
+                "value": "2"
+              },
+              {
+                "label": "Multiplicateur de la seconde tentative",
+                "value": "×0,65"
+              },
+              {
+                "label": "Plage de l'anneau de charge",
+                "value": "×0,85 à ×1,00"
+              },
+              {
+                "label": "Plancher et plafond de chance",
+                "value": "5 % et 95 %"
+              },
+              {
+                "label": "XP sur une capture",
+                "value": "30 à 140"
+              },
+              {
+                "label": "XP sur un échec",
+                "value": "5 à 15"
+              },
+              {
+                "label": "Niveaux",
+                "value": "Dix, de Seeker à Legend"
+              }
+            ]
+          }
+        ]
+      },
+      "creators": {
+        "index": "08",
+        "eyebrow": "Côté offre",
+        "title": "Qui dépose les actifs",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Un réseau fondé sur les lieux ne vaut rien si les lieux sont vides. Le protocole traite donc le dépôt d'actifs comme un produit à part entière, pas comme un outil interne."
+          },
+          {
+            "kind": "h",
+            "text": "Trois types d'éditeurs"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Les marques et les lieux** utilisent le portail entreprise pour déposer des offres devant leurs propres locaux et mesurer qui est réellement venu. Ce qu'ils achètent est une visite vérifiée, pas une impression.",
+              "**Les projets de tokens et les communautés NFT** distribuent à des personnes plutôt qu'à des portefeuilles, avec la géographie comme filtre que le farming ne peut pas contourner à bas coût.",
+              "**Les organisateurs d'événements** transforment un festival, un match ou une conférence en carte à réclamer pour la durée de l'événement, avec des actifs qui expirent avec lui."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Les trois utilisent le même créateur de campagnes : poser une épingle, régler le rayon, choisir l'actif et la quantité, fixer le seuil de confiance et la fenêtre, financer, publier. Aucun travail d'intégration, et aucun contrat à écrire."
+          },
+          {
+            "kind": "callout",
+            "text": "Pour un lieu, la métrique qui compte est le coût par arrivée vérifiée. C'est le premier chiffre de fréquentation du marketing numérique qui se mesure à la porte au lieu d'être déduit d'un sondage."
+          },
+          {
+            "kind": "calculator"
+          },
+          {
+            "kind": "h",
+            "text": "Le problème de la densité"
+          },
+          {
+            "kind": "p",
+            "text": "Ici l'offre et la demande sont géographiques, ce qui rend inutiles les conseils habituels de place de marché. Mille actifs répartis uniformément sur un pays, c'est une carte vide partout. Les mêmes mille dans une seule ville, c'est une raison de sortir. Le prix du dépôt est donc pondéré par la demande dans la zone plutôt que forfaitaire, si bien qu'une rue commerçante saturée coûte plus cher à tenir qu'une rue calme, et le protocole subventionne les rues qui ont besoin de passage plutôt que celles qui en ont déjà."
+          }
+        ]
+      },
+      "token": {
+        "index": "09",
+        "eyebrow": "Token",
+        "title": "$SEEK et à quoi il sert",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "$SEEK est l'actif de règlement et de coordination du protocole. Il existe parce que le réseau doit déplacer de la valeur entre des parties qui ne se connaissent pas, une marque dans un pays finançant une récompense réclamée par un inconnu dans un autre, et parce que le coût du dépôt d'actifs doit suivre la demande pour les lieux utilisés."
+          },
+          {
+            "kind": "h",
+            "text": "Utilité"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Financement de campagne**, où les éditeurs libellent et financent les récompenses en $SEEK.",
+              "**Frais de dépôt**, un frais par actif déposé, pondéré par le rayon, la durée et la demande pour la zone.",
+              "**Staking pour la priorité**, où le $SEEK staké relève la priorité de dépôt d'un éditeur quand plusieurs campagnes se disputent les mêmes coordonnées.",
+              "**Récompenses**, avec la majorité des frais du protocole qui revient à ceux qui font la marche.",
+              "**Gouvernance**, sur les changements de paramètres, l'allocation de la trésorerie et les seuils de confiance des réclamations de forte valeur."
+            ]
+          },
+          {
+            "kind": "economy"
+          },
+          {
+            "kind": "tokenomics"
+          },
+          {
+            "kind": "h",
+            "text": "L'offre dans le temps"
+          },
+          {
+            "kind": "p",
+            "text": "Un graphique de répartition dit qui détient quoi et rien sur le quand. Le calendrier ci-dessous est la figure la plus utile, car le risque d'un token est rarement dans le partage, il est dans le cliff."
+          },
+          {
+            "kind": "vesting"
+          },
+          {
+            "kind": "p",
+            "text": "L'intention de conception est que le flux de frais suive l'activité réelle plutôt que la spéculation : le protocole gagne quand des actifs sont déposés et réclamés, ce qui n'arrive que si quelqu'un accepte de payer pour une visite vérifiée."
+          },
+          {
+            "kind": "h",
+            "text": "Ce que le token ne fait délibérément pas"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Il ne fixe pas de taux entre une unité de jeu capturée et un token. Le jeu valorise une capture, le marché valorise le token, et le protocole ne prétend pas faire le pont entre les deux.",
+              "Il n'est pas nécessaire pour jouer. Capturer, l'XP et les défis sont gratuits, et un joueur qui ne touche jamais au token génère quand même les arrivées que paie un éditeur.",
+              "Il ne conditionne pas le dépôt à une détention minimale. Le staking achète une priorité quand des campagnes se concurrencent, pas le droit de publier."
+            ]
+          }
+        ]
+      },
+      "revenue": {
+        "index": "10",
+        "eyebrow": "Modèle économique",
+        "title": "Comment le protocole gagne, et auprès de qui",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Un whitepaper qui décrit un token et pas une activité décrit la moitié d'un système. Il y a deux sources de revenus et elles viennent de côtés opposés du réseau, ce qui est voulu : ni l'une ni l'autre ne suffirait à le faire tenir."
+          },
+          {
+            "kind": "h",
+            "text": "Le dépôt, payé par les éditeurs"
+          },
+          {
+            "kind": "p",
+            "text": "La source principale. Un éditeur finance les récompenses et paie en plus un frais de dépôt, pondéré par la surface que l'actif occupe, pour combien de temps, et à quel point cette surface est disputée. C'est le frais qui croît avec la valeur créée par le réseau, parce qu'il porte sur ce que les éditeurs achètent réellement : l'arrivée."
+          },
+          {
+            "kind": "h",
+            "text": "Le pass et la boutique, payés par les joueurs"
+          },
+          {
+            "kind": "p",
+            "text": "Optionnels, et bornés à dessein. Un pass saisonnier court sur quatre-vingt-dix jours et oriente la pondération des spawns vers des pièces plus rares, avec une réclamation rare hebdomadaire et un boost inclus. Les boosts individuels sont vendus à part : un boost de rareté, un aimant à spawns, un multiplicateur d'XP, ou un lot des trois."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "SeekAR Pass",
+                "value": "8,99 € par saison de 90 jours"
+              },
+              {
+                "label": "Boost de rareté, aimant à spawns",
+                "value": "1,99 € chacun, 30 minutes"
+              },
+              {
+                "label": "Boost d'XP",
+                "value": "0,99 €, 30 minutes"
+              },
+              {
+                "label": "Lot de boosts",
+                "value": "4,99 €, un de chaque"
+              }
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "La capture, l'XP, les défis et les succès de plateforme restent gratuits, définitivement. Un palier payant qui verrouillerait la boucle casserait la seule chose que les éditeurs achètent : que des gens se déplacent."
+          },
+          {
+            "kind": "h",
+            "text": "Pourquoi ce partage a la bonne forme"
+          },
+          {
+            "kind": "p",
+            "text": "Les dépenses des joueurs sont élastiques, saisonnières et plafonnées par ce qu'une personne consacre à un loisir. Les dépenses des éditeurs sont une ligne marketing, jugée face à un coût par arrivée qui a une vraie alternative de comparaison. La première garde la lumière allumée au début, quand il y a plus de joueurs que de campagnes. La seconde est ce que devient l'activité, et cela ne marche que si la première ne dégénère jamais en pay-to-win, car un réseau de joueurs payants qui capturent tout rapporte des arrivées sans valeur pour le lieu."
+          }
+        ]
+      },
+      "governance": {
+        "index": "11",
+        "eyebrow": "Gouvernance",
+        "title": "Qui décide des chiffres",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ce protocole comporte un nombre inhabituel de constantes réglables : bornes de rayon, seuils de confiance, pondération des frais de dépôt, part des frais rendue aux seekers, et l'échelle de capture elle-même. Chacune est une décision de politique déguisée en valeur de configuration, et prétendre le contraire, c'est ainsi que des protocoles finissent gouvernés par la dernière personne à avoir modifié un fichier."
+          },
+          {
+            "kind": "h",
+            "text": "La position par étapes, dite franchement"
+          },
+          {
+            "kind": "p",
+            "text": "La gouvernance n'est pas active. Les paramètres sont aujourd'hui fixés par l'équipe centrale et modifiés via des migrations consignées et vérifiables. Nous n'allons pas appeler cela décentralisé, parce que ça ne l'est pas."
+          },
+          {
+            "kind": "p",
+            "text": "La raison du délai n'est pas la réticence. Voter sur une économie sans volume relève du théâtre : la participation est faible, une poignée de détenteurs décide, et les décisions portent sur des paramètres que personne n'a assez de données pour juger. La gouvernance prend son sens quand il existe un vrai flux de frais, car un changement de paramètre a alors une conséquence mesurable dont on peut débattre."
+          },
+          {
+            "kind": "h",
+            "text": "Ce qui sera gouverné, et ce qui ne le sera pas"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Gouverné** : la pondération des frais, la part des frais du protocole revenant aux seekers, l'allocation de la trésorerie, les bornes de rayon et les seuils de confiance ouverts aux actifs de forte valeur.",
+              "**Gouverné avec délai** : tout ce qui change la valeur d'actifs déjà déposés. Une campagne financée sous une grille de frais devrait s'achever sous celle-ci.",
+              "**Non gouverné** : les engagements de confidentialité du chapitre treize. Les limites de conservation et le refus de publier des données de déplacement ne sont pas des paramètres, et un vote n'est pas un moyen légitime de les affaiblir.",
+              "**Non gouverné** : les issues de réclamations individuelles. Une réclamation refusée relève du règlement des litiges, pas d'un scrutin."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Un système de gouvernance capable de voter la disparition de la vie privée de ses propres utilisateurs n'est pas une garantie, c'est une surface d'attaque avec quorum."
+          }
+        ]
+      },
+      "security": {
+        "index": "12",
+        "eyebrow": "Risque",
+        "title": "Attaques, limites, et ce que nous ne prétendons pas",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Un protocole qui paie des gens pour être quelque part invite des gens à mentir sur l'endroit où ils sont. Être précis sur les attaques est plus utile que d'affirmer que le système est sûr."
+          },
+          {
+            "kind": "h",
+            "text": "Attaques contre lesquelles nous nous défendons"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Falsification du GPS**, atténuée en exigeant que l'environnement radio et la trace de mouvement corroborent le point, et par une attestation d'appareil qui détecte les systèmes modifiés.",
+              "**Farming Sybil**, atténué par le coût physique du déplacement et par des limites de réclamation par appareil dans un rayon et une fenêtre de temps.",
+              "**Attaques par relais**, où un vrai appareil sur place signe pour un utilisateur distant, atténuées en liant l'attestation à l'instance de l'application et à la session, et en limitant le débit de réclamations par appareil.",
+              "**Fermes d'émulateurs**, atténuées par l'attestation, à laquelle les émulateurs échouent, et par des traces de mouvement statistiquement distinguables d'une vraie marche.",
+              "**Spawns déclarés par le client**, empêchés plutôt qu'atténués : seul le serveur annonce ce qui existe et où, un client modifié peut donc mentir sur ce qu'il voit sans rien y gagner.",
+              "**Réclamations en double**, empêchées en prenant un verrou avant l'évaluation, pour que deux personnes visant la dernière unité ne s'entendent pas toutes deux dire qu'elles l'ont."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Limites que nous acceptons"
+          },
+          {
+            "kind": "p",
+            "text": "Un attaquant suffisamment déterminé, avec du matériel modifié et une présence physique sur un site, peut extraire de ce site plus de valeur qu'un utilisateur honnête. Nous bornons les dégâts par des plafonds par lieu plutôt que de prétendre que c'est impossible. Le positionnement en intérieur reste nettement moins précis qu'en extérieur, les actifs intérieurs utilisent donc des rayons plus larges et s'appuient davantage sur l'empreinte radio. Et aucun appareil grand public ne peut prouver qu'un humain plutôt qu'un appareil était présent : un téléphone dans une camionnette de livraison bouge encore comme un téléphone dans une poche."
+          },
+          {
+            "kind": "h",
+            "text": "Risques qui ne sont pas des attaques"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Dépendance aux plateformes**. L'attestation appartient à Apple et Google. Un changement de politique chez l'un ou l'autre pourrait affaiblir du jour au lendemain le signal le plus fort de la pile, et il n'existe pas de version de ceci qui contourne le système d'exploitation.",
+              "**Disponibilité de la chaîne**. Une chaîne arrêtée, ce sont des réclamations en file. Le protocole relance plutôt que d'abandonner, mais une personne debout dans la rue ne vit pas une relance comme une réussite.",
+              "**Sécurité physique**. Récompenser les gens pour aller quelque part met des gens quelque part. Les actifs sont posés aux carrefours plutôt qu'à l'intérieur des emprises de bâtiments, les drops de forte valeur évitent les propriétés privées, et l'application affiche un avertissement de sécurité. C'est une contrainte de conception, pas une clause de non-responsabilité."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Nous construisons une dissuasion économique, pas une garantie cryptographique. Là où les deux sont confondues, ce sont les utilisateurs qui en pâtissent."
+          }
+        ]
+      },
+      "privacy": {
+        "index": "13",
+        "eyebrow": "Vie privée",
+        "title": "Les données de localisation sont les plus sensibles qui soient",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Un relevé des endroits où quelqu'un se rend révèle son domicile, son travail, sa santé, sa religion et ses relations. Bâtir un réseau sur des réclamations de localisation, c'est accepter cette responsabilité, et la conception responsable consiste à en garder le moins possible."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Le suivi continu n'est jamais nécessaire. L'application demande une position quand vous tentez une réclamation, pas en arrière-plan.",
+              "Les données brutes de capteurs et de radio servent à noter une réclamation puis sont écartées après une courte durée de conservation.",
+              "Ce qui est écrit on-chain, c'est qu'une réclamation à une coordonnée publique a abouti, la même information qu'un commerce sachant qu'un bon a été utilisé.",
+              "Votre historique de déplacements reste sur votre appareil. Le protocole n'en a pas besoin et n'en veut pas.",
+              "Les éditeurs reçoivent des décomptes agrégés, jamais des traces individuelles."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Le problème que nous n'avons pas résolu"
+          },
+          {
+            "kind": "p",
+            "text": "Comme les enregistrements de réclamation sont publics et permanents par nature de la chaîne, un observateur déterminé peut corréler les réclamations faites par un même portefeuille à travers plusieurs lieux. C'est une vraie faiblesse, inhérente au règlement sur un registre public. Qui veut l'éviter devrait utiliser des portefeuilles distincts pour des contextes distincts, et l'application le rend facile au lieu de l'enfouir, mais un réglage par défaut qui suppose que l'utilisateur connaisse le problème n'est pas un correctif."
+          },
+          {
+            "kind": "callout",
+            "text": "Le résumé honnête : nous minimisons ce que nous gardons, nous ne vendons pas ce que nous gardons, et il existe une attaque par corrélation contre le registre public que nous pouvons réduire sans l'éliminer."
+          }
+        ]
+      },
+      "compliance": {
+        "index": "14",
+        "eyebrow": "Juridiction",
+        "title": "Réglementation, et où cela se situe",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Trois régimes touchent ce protocole en même temps, ce qui est inhabituel et mérite d'être dit explicitement plutôt que renvoyé en note de bas de page."
+          },
+          {
+            "kind": "h",
+            "text": "Protection des données"
+          },
+          {
+            "kind": "p",
+            "text": "Dans la plupart des droits modernes de la protection des données, la localisation frôle les catégories particulières, et le protocole est bâti selon la lecture la plus stricte plutôt que la plus commode. La position est collectée pour une finalité annoncée au moment d'une réclamation, conservée seulement le temps qu'exigent la notation et le règlement des litiges, et jamais agrégée en profil de déplacement. Là où un régime accorde un droit d'effacement, l'enregistrement off-chain peut être supprimé ; l'enregistrement de réclamation on-chain non, ce qui est une limite du registre et est divulgué plutôt qu'enjolivé."
+          },
+          {
+            "kind": "h",
+            "text": "Qualification du token"
+          },
+          {
+            "kind": "p",
+            "text": "$SEEK est conçu comme un actif d'usage et de coordination, et l'utilité décrite au chapitre neuf est réelle et non décorative. C'est une position de conception, pas une conclusion juridique. La qualification varie selon la juridiction, évolue dans le temps, et n'est pas quelque chose qu'un whitepaper peut trancher en l'affirmant. La disponibilité est donc restreinte là où les règles locales l'exigent."
+          },
+          {
+            "kind": "h",
+            "text": "Récompenses, hasard et la frontière avec le jeu d'argent"
+          },
+          {
+            "kind": "p",
+            "text": "La capture comporte un tirage, ce qui la place près d'une frontière qui varie selon les pays. Deux propriétés la maintiennent du bon côté dans la plupart des régimes et sont tenues volontairement : la participation ne coûte rien, et les articles payants ajustent des probabilités et des cadences au lieu d'être des mises à gain variable. Un pass achète une pondération et un boost achète un multiplicateur ; ni l'un ni l'autre n'est une mise qui peut être perdue. Là où une juridiction le lit autrement, le palier payant est retiré plutôt que discuté."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Données personnelles off-chain",
+                "value": "Supprimables sur demande"
+              },
+              {
+                "label": "Enregistrement de réclamation on-chain",
+                "value": "Permanent, annoncé comme tel"
+              },
+              {
+                "label": "Contrôle de l'âge",
+                "value": "À l'inscription, imposé pour les articles payants"
+              },
+              {
+                "label": "Articles payants",
+                "value": "Retirés dans les juridictions qui les qualifient de paris"
+              }
+            ]
+          }
+        ]
+      },
+      "roadmap": {
+        "index": "15",
+        "eyebrow": "Direction",
+        "title": "Ce qui est construit et ce qui vient",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "SeekAR est en ligne sur iOS et Android avec les drops géolocalisés, le rendu AR et le portefeuille social. La pile de vérification exécute aujourd'hui les signaux GNSS, attestation et continuité du mouvement ; l'empreinte radio est en déploiement progressif. L'attestation est imposée derrière un drapeau, et c'est son état honnête : la voie de refus est construite et l'interrupteur n'a pas été basculé pour chaque surface."
+          },
+          {
+            "kind": "p",
+            "text": "Le créateur de campagnes en glisser-déposer est terminé. Vient ensuite le portail en libre-service qui ouvre le dépôt au-delà des partenariats accompagnés, et l'analytique des arrivées qui va avec. À côté figurent l'événement de génération du token, le mode événement en direct, les saisons et le scan d'objets. La gouvernance suit dès qu'il y aura assez de flux de frais réel pour que les décisions de paramètres aient du sens, pour les raisons exposées au chapitre onze."
+          },
+          {
+            "kind": "h",
+            "text": "Ce que nous ne promettons pas"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Une date pour la gouvernance. Elle dépend du volume, et le volume n'est pas une date.",
+              "Une précision équivalente en intérieur. C'est un problème difficile et la réponse honnête, ce sont des rayons plus larges en intérieur pour un bon moment.",
+              "Un déploiement multi-chaînes. Les exigences de latence et de coût du chapitre cinq sont étroites, et une seconde chaîne qui ne les remplirait pas serait une décision marketing plutôt que technique."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Le détail phase par phase se trouve sur la page roadmap, tenue à jour au fil des livraisons."
+          }
+        ]
+      },
+      "glossary": {
+        "index": "16",
+        "eyebrow": "Référence",
+        "title": "Glossaire",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Les termes employés dans ce document, avec le sens qu'ils ont ici plutôt que celui qu'ils ont en général."
+          },
+          {
+            "kind": "glossary"
+          }
+        ]
+      }
+    }
+  },
+  "allocations": {
+    "community": {
+      "label": "Récompenses de la communauté",
+      "note": "Gagnées par les seekers en collectant et en faisant des quêtes"
+    },
+    "ecosystem": {
+      "label": "Écosystème et partenaires",
+      "note": "Subventions de campagne, intégration des lieux, intégrations techniques"
+    },
+    "team": {
+      "label": "Équipe et contributeurs",
+      "note": "4 ans de vesting, 12 mois de cliff"
+    },
+    "treasury": {
+      "label": "Trésorerie",
+      "note": "Réserve gouvernée pour le développement du protocole"
+    },
+    "liquidity": {
+      "label": "Liquidité",
+      "note": "Places de marché et profondeur on-chain"
+    },
+    "backers": {
+      "label": "Premiers investisseurs",
+      "note": "2 ans de vesting, 6 mois de cliff"
+    }
+  },
+  "tokenFacts": {
+    "ticker": {
+      "label": "Symbole",
+      "value": "$SEEK"
+    },
+    "chain": {
+      "label": "Chaîne",
+      "value": "Solana (SPL)"
+    },
+    "supply": {
+      "label": "Offre totale",
+      "value": "1 000 000 000"
+    },
+    "emission": {
+      "label": "Émission",
+      "value": "Fixe, aucune création supplémentaire"
+    }
+  },
+  "glossary": {
+    "proof-of-location": {
+      "term": "Preuve de localisation",
+      "definition": "L'affirmation qu'un appareil se trouvait dans un rayon donné pendant une fenêtre donnée, notée sur plusieurs signaux indépendants et assez crédible pour libérer de la valeur. Probabiliste, jamais absolue."
+    },
+    "confidence-score": {
+      "term": "Score de confiance",
+      "definition": "Le résultat combiné de la notation des signaux d'une réclamation. Chaque actif fixe le score qu'il exige, si bien qu'une récompense de quête et un drop à billetterie peuvent partager un vérificateur sans partager la barre."
+    },
+    "claim-radius": {
+      "term": "Rayon de réclamation",
+      "definition": "La distance depuis les coordonnées d'un actif à l'intérieur de laquelle il peut être pris. 30 m par défaut, réglable de 5 m à 500 m, et le plus grand levier dont dispose un éditeur, à la fois sur le coût et sur le sens."
+    },
+    "drop": {
+      "term": "Drop",
+      "definition": "Un actif posé à des coordonnées, en attente d'être réclamé. Porte une quantité, une fenêtre, un seuil de confiance et un rayon."
+    },
+    "spawn": {
+      "term": "Spawn",
+      "definition": "Un drop tel que le jeu le présente : annoncé par le serveur, visible sur la carte, expirant en moins d'une heure, et valant deux tentatives de capture."
+    },
+    "attestation": {
+      "term": "Attestation",
+      "definition": "Une déclaration signée du système d'exploitation confirmant que l'application est authentique et l'appareil non altéré. Play Integrity sur Android, App Attest sur iOS. Le signal le plus fort de la pile et le seul que le protocole ne contrôle pas."
+    },
+    "radio-fingerprint": {
+      "term": "Empreinte radio",
+      "definition": "L'ensemble des réseaux Wi-Fi et des antennes visibles depuis une position, comparé à ce qui devrait y être visible. Lente à changer et difficile à fabriquer, ce qui la rend utile."
+    },
+    "motion-continuity": {
+      "term": "Continuité du mouvement",
+      "definition": "La trace de l'accéléromètre entre une position confirmée et la suivante. Attrape la réclamation qui se téléporte, car 400 km en 90 secondes ne laissent aucun profil de mouvement correspondant."
+    },
+    "verified-arrival": {
+      "term": "Arrivée vérifiée",
+      "definition": "Une réclamation ayant atteint son seuil dans le rayon d'un éditeur. L'unité qu'achète un éditeur, et la raison pour laquelle le coût d'une campagne est compté plutôt que modélisé."
+    },
+    "placement-fee": {
+      "term": "Frais de dépôt",
+      "definition": "Ce qu'un éditeur paie pour tenir du terrain, pondéré par le rayon, la durée et la demande sur la zone. Distinct de la récompense, qui est ce que reçoit le seeker."
+    },
+    "cold-streak": {
+      "term": "Série froide",
+      "definition": "Le compteur de compensation. Deux points de chance de capture par échec consécutif, plafonnés à douze, appliqués aussi à la seconde tentative et d'une pièce à l'autre."
+    },
+    "streak-penalty": {
+      "term": "Pénalité de série",
+      "definition": "Le levier inverse. Quatre points en moins par réussite consécutive sur la même pièce, plafonnés à vingt, pour qu'un point de spawn unique devienne moins bon à farmer plutôt que meilleur."
+    },
+    "seeker": {
+      "term": "Seeker",
+      "definition": "Une personne qui marche jusqu'aux actifs et les réclame. Aussi le premier de dix niveaux de joueur, le dernier étant Legend."
+    },
+    "seek": {
+      "term": "$SEEK",
+      "definition": "L'actif de règlement et de coordination. Finance les campagnes, paie les frais de dépôt, achète une priorité de dépôt par le staking, et porte le vote de gouvernance une fois la gouvernance active."
+    }
+  },
+  "whitepaperFigures": {
+    "draft": "Chiffres provisoires, pas la tokenomique définitive",
+    "totalSupply": "Offre totale",
+    "donutAria": "Répartition du token en part de l'offre totale",
+    "terms": "{count} termes",
+    "filterTerms": "Filtrer les termes",
+    "filter": "Filtrer",
+    "noMatch": "Rien ne correspond. Le document lui-même se cherche avec la fonction de recherche de votre navigateur.",
+    "stackCaption": "Les réclamations descendent la pile, la valeur remonte. Choisissez une couche pour le détail.",
+    "liveModel": "Modèle en direct",
+    "interactive": "Interactif",
+    "confidenceTitle": "Essayez de faire refuser une réclamation",
+    "thresholdLabel": "Seuil de l'actif",
+    "confidenceThreshold": "confiance · seuil {threshold}",
+    "claimAccepted": "Réclamation acceptée",
+    "claimRefused": "Réclamation refusée",
+    "shortBy": "Il manque {short} points. Des refus répétés depuis un appareil relèvent encore son seuil.",
+    "confidenceCaption": "Les poids sont illustratifs. Ce qui compte, c'est la forme : aucun signal seul ne passe une campagne financée, et falsifier les quatre à la fois coûte plus cher que le drop.",
+    "economyLabel": "Boucle économique",
+    "stageOf": "Étape {step} sur {total}",
+    "timelineTitle": "Une réclamation, étape par étape",
+    "stop": "Arrêter",
+    "runReal": "Lire à vitesse réelle",
+    "claimStages": "Étapes de la réclamation",
+    "segAria": "{label}, {ms} millisecondes, {where}",
+    "endToEnd": "{seconds} s de bout en bout",
+    "takes": "Durée",
+    "elapsed": "Écoulé",
+    "whatMoves": "Ce qui circule",
+    "timelineWhere": {
+      "device": "Sur votre téléphone",
+      "verifier": "Vérificateur",
+      "chain": "Solana"
+    },
+    "timelineCaption": "Ce sont des budgets, pas des mesures. La fenêtre de capteurs et le règlement bougent avec les conditions, et tout ce qui est entre les deux est un calcul qui ne bouge pas. Notez où passe la frontière : les données brutes des capteurs ne quittent jamais les trois premières étapes.",
+    "vestingTitle": "Offre en circulation, mois par mois",
+    "vestingAria": "Offre en circulation par allocation sur 48 mois",
+    "circulatingMonth": "en circulation au mois {month}",
+    "circulatingLaunch": "en circulation au lancement",
+    "axisLaunch": "Lancement",
+    "axisYear": "Année {year}",
+    "month": "Mois",
+    "vestingCaption": "Lisez les marches, pas la courbe. Un palier suivi d'un saut est un cliff, et c'est à un cliff qu'un calendrier tient ou ne tient pas. Les allocations à l'équipe et aux investisseurs sont celles à vérifier, car ce sont les deux qui se libèrent vers un marché plutôt que vers les gens qui utilisent le réseau.",
+    "calcTitle": "Ce qu'un budget achète",
+    "calcBudget": "Budget de campagne",
+    "calcReward": "Récompense par réclamation",
+    "calcRadius": "Rayon de réclamation",
+    "calcFee": "Frais de dépôt à ce rayon : {fee} $ par drop",
+    "calcArrivals": "Arrivées vérifiées",
+    "calcPerPerson": "{cost} $ par personne devant la porte",
+    "calcDisplay": "Même budget en display",
+    "calcInferred": "impressions, dont environ {visits} deviennent une visite déduite à {cost} $ pièce",
+    "calcCaption": "Les chiffres display partent d'un CPM de {cpm} $ et d'un taux impression-visite de {rate} %, deux règles empiriques du secteur. La différence qui compte : une colonne est mesurée à la porte, l'autre est déduite.",
+    "contents": "Sommaire · {count} chapitres",
+    "chaptersLabel": "Chapitres",
+    "close": "Fermer",
+    "ladderTitle": "Le tirage de capture, tel que le serveur le calcule",
+    "rarityLabel": "Rareté",
+    "playerLevel": "Niveau du joueur",
+    "chargeRing": "Anneau de charge",
+    "missed": "Manqué",
+    "clanBonus": "Bonus de clan",
+    "points": "+{points} pts",
+    "baseChance": "Chance de base",
+    "levelBonus": "Bonus de niveau",
+    "ringMultiplier": "Multiplicateur de l'anneau",
+    "retryMultiplier": "Multiplicateur de la seconde tentative",
+    "firstAttempt": "Première tentative",
+    "retry": "Seconde tentative",
+    "acrossSpawn": "Sur tout le spawn",
+    "youCaught": "Vous avez attrapé",
+    "notYet": "pas encore",
+    "ladderHint": "Un spawn ne dit presque rien. Lancez-en mille et regardez les deux barres se rejoindre.",
+    "ladderTally": "{caught} attrapés sur {spawns} spawns, {gap} points d'écart avec le modèle.",
+    "runOne": "Lancer un spawn",
+    "runThousand": "En lancer mille",
+    "reset": "Réinitialiser",
+    "ladderCaption": "La migration publie {rarity} à {first} % puis {second} %, soit {overall} % sur tout le spawn. C'est ce modèle au niveau 5, anneau plein et sans clan, exactement là où démarrent les curseurs. Une unité capturée est une unité de jeu, et ce qu'elle vaut en tokens regarde le marché, pas le jeu."
+  },
+  "stackLayers": {
+    "app": {
+      "label": "Application",
+      "sub": "SeekAR · portail entreprise · créateur de campagnes",
+      "detail": "Ce que les gens touchent. L'application mobile affiche les actifs en AR et gère la collecte ; le portail est l'endroit où les éditeurs les déposent. Les deux sont des clients ordinaires des couches inférieures et n'ont aucun accès privilégié."
+    },
+    "intelligence": {
+      "label": "Intelligence",
+      "sub": "compagnon IA · génération de quêtes · itinéraires",
+      "detail": "Lit le flux caméra et votre historique de jeu pour proposer où aller ensuite et expliquer ce que vous regardez. Tourne sur l'appareil quand c'est possible, et ne voit jamais d'historique de positions brut dont elle n'a pas besoin."
+    },
+    "location": {
+      "label": "Vérification de localisation",
+      "sub": "GNSS · empreinte radio · attestation · mouvement",
+      "detail": "Note une réclamation sur des signaux indépendants et émet une attestation signée quand le score dépasse le seuil de l'actif. Off-chain par conception : les données de capteurs qui font marcher la vérification sont exactement celles qui ne devraient pas être publiques."
+    },
+    "settlement": {
+      "label": "Règlement",
+      "sub": "Solana · actifs SPL · enregistrements de réclamation",
+      "detail": "Conserve les définitions d'actifs, les coordonnées et les enregistrements de réclamation, et déplace la valeur quand une réclamation est acceptée. Choisie pour des frais assez bas pour que ramasser une petite récompense ne soit pas dominé par le coût du ramassage."
+    }
+  },
+  "confidenceSignals": {
+    "gnss": {
+      "label": "Point GNSS",
+      "detail": "Position satellite et précision annoncée, plus constellation et nombre de satellites.",
+      "spoofable": "Falsifié sans effort sur un appareil rooté."
+    },
+    "radio": {
+      "label": "Environnement radio",
+      "detail": "SSID Wi-Fi et antennes proches, comparés à ce qui devrait être visible ici.",
+      "spoofable": "Difficile à fabriquer ; les environnements radio changent lentement."
+    },
+    "attest": {
+      "label": "Attestation de l'appareil",
+      "detail": "Play Integrity ou App Attest confirmant une application authentique sur un système non altéré.",
+      "spoofable": "Les fermes d'émulateurs échouent d'emblée."
+    },
+    "motion": {
+      "label": "Continuité du mouvement",
+      "detail": "La trace de l'accéléromètre entre votre dernière position confirmée et celle-ci.",
+      "spoofable": "Un saut de 400 km en 90 secondes n'a aucun profil de mouvement correspondant."
+    }
+  },
+  "confidenceTiers": {
+    "low": {
+      "label": "Récompense de quête",
+      "note": "Faible valeur, barre basse."
+    },
+    "mid": {
+      "label": "Drop partenaire",
+      "note": "Le réglage par défaut des campagnes financées."
+    },
+    "high": {
+      "label": "Événement à billetterie",
+      "note": "Forte valeur, tout doit concorder."
+    }
+  },
+  "economyStages": {
+    "fund": {
+      "label": "L'éditeur finance",
+      "actor": "Marque · projet · lieu",
+      "body": "Une campagne est libellée et financée en $SEEK, avec des frais de dépôt pondérés par le rayon, la durée et le niveau de concurrence sur la zone.",
+      "flow": "$SEEK entrant"
+    },
+    "place": {
+      "label": "L'actif est déposé",
+      "actor": "Protocole",
+      "body": "Le drop est écrit sur ses coordonnées avec un rayon de réclamation, une fenêtre et le seuil de confiance qu'il exige.",
+      "flow": "Frais vers la trésorerie"
+    },
+    "walk": {
+      "label": "Quelqu'un s'y rend",
+      "actor": "Seeker",
+      "body": "La seule étape qui ne peut pas être automatisée. Le déplacement est le coût qui rend le farming cher.",
+      "flow": "Temps et distance"
+    },
+    "verify": {
+      "label": "La présence est vérifiée",
+      "actor": "Couche de vérification",
+      "body": "Quatre signaux sont notés off-chain. Ce qui atteint la chaîne est une attestation signée, pas vos données de capteurs.",
+      "flow": "Attestation"
+    },
+    "settle": {
+      "label": "Cela se règle",
+      "actor": "Solana",
+      "body": "Le transfert se confirme en moins d'une seconde pour une fraction de centime, et l'enregistrement de la réclamation est public.",
+      "flow": "Récompense sortante"
+    },
+    "split": {
+      "label": "Les frais reviennent",
+      "actor": "Protocole",
+      "body": "La majorité des frais du protocole va aux gens qui font la marche ; le reste finance la trésorerie et l'écosystème.",
+      "flow": "Majorité aux seekers"
+    }
+  },
+  "timelineStages": {
+    "open": {
+      "label": "Drop ouvert",
+      "detail": "Vous touchez un actif sur la carte ou le visez avec la caméra. L'application reprend la position qu'elle détient déjà et ouvre une nouvelle fenêtre de capteurs.",
+      "payload": "Id de l'actif, dernier point connu"
+    },
+    "window": {
+      "label": "Fenêtre de capteurs",
+      "detail": "De loin l'étape la plus longue, et celle qui décide de tout le reste : un nouveau point GNSS avec sa précision, un balayage de l'environnement radio, et la trace de mouvement depuis la dernière position confirmée.",
+      "payload": "Point GNSS, nombre de satellites, ensemble Wi-Fi et cellules, trace de l'accéléromètre"
+    },
+    "attest": {
+      "label": "Attestation et signature",
+      "detail": "Play Integrity ou App Attest confirme que l'application est authentique et le système non altéré. La réclamation est signée par la clé liée à cette instance de l'application, ce qui rend une réclamation relayée coûteuse.",
+      "payload": "Jeton d'attestation, réclamation signée"
+    },
+    "score": {
+      "label": "Notation",
+      "detail": "Off-chain, parce qu'elle dépend de données de capteurs qui n'ont rien à faire en public. Chaque signal est comparé à ce à quoi la coordonnée devrait ressembler et les résultats sont combinés en un seul chiffre de confiance.",
+      "payload": "Score de confiance, détail par signal"
+    },
+    "threshold": {
+      "label": "Vérification du seuil",
+      "detail": "Le score atteint le seuil de l'actif ou non. Un refus est consigné au compte de l'appareil, et des refus répétés relèvent la barre pour cet appareil au lieu de simplement échouer de nouveau.",
+      "payload": "Accepter ou refuser, attestation signée"
+    },
+    "settle": {
+      "label": "Règlement",
+      "detail": "L'enregistrement de la réclamation et le transfert arrivent sur Solana en une transaction. C'est la seule étape que d'autres peuvent voir, et elle dit seulement qu'une réclamation à une coordonnée publique a abouti.",
+      "payload": "Enregistrement de réclamation, transfert de token"
+    },
+    "confirm": {
+      "label": "Dans votre portefeuille",
+      "detail": "Le portefeuille se met à jour et l'actif disparaît de la carte pour vous. Du toucher à la détention, moins de deux secondes sur une bonne connexion.",
+      "payload": "Mise à jour du solde, état de la carte"
+    }
   }
 }

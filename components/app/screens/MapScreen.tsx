@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { COLLECTIBLES, RARITY_LADDER, type Collectible } from "@/content/collectibles";
 
@@ -20,6 +21,8 @@ export default function MapScreen({
 }: {
   onPick?: (coin: Collectible) => void;
 }) {
+  const t = useTranslations("appChrome");
+  const rarity = useTranslations("rarity");
   const spawns = PLACEMENTS.map((p) => ({
     ...p,
     coin: COLLECTIBLES.find((c) => c.key === p.key)!,
@@ -102,7 +105,7 @@ export default function MapScreen({
         <img src={WIF.image} alt="" className="map-banner-coin" />
         <span className="map-banner-text">
           <b>{spawns[0]?.coin.name}</b>
-          <i>84 m away</i>
+          <i>{t("distanceAway", { metres: 84 })}</i>
         </span>
         <span className="map-banner-x">✕</span>
       </div>
@@ -121,7 +124,7 @@ export default function MapScreen({
             ["--rarity" as string]: RARITY_LADDER[spawn.coin.rarity].colour,
           }}
           onClick={() => onPick?.(spawn.coin)}
-          aria-label={`${spawn.coin.name}, ${RARITY_LADDER[spawn.coin.rarity].label}`}
+          aria-label={`${spawn.coin.name}, ${rarity(spawn.coin.rarity)}`}
         >
           <img src={spawn.coin.image} alt="" />
           <span className="map-spawn-shadow" />
@@ -155,18 +158,13 @@ export default function MapScreen({
         </div>
       </div>
 
-      {onPick && <p className="map-hint">Tap a coin</p>}
+      {onPick && <p className="map-hint">{t("tapCoin")}</p>}
 
       <nav className="tabbar" aria-hidden="true">
-        {[
-          { label: "Home", icon: "home", active: false },
-          { label: "Map", icon: "map", active: true },
-          { label: "Quests", icon: "quest", active: false },
-          { label: "Wallet", icon: "wallet", active: false },
-        ].map((tab) => (
-          <span key={tab.label} className="tabbar-item" data-active={tab.active || undefined}>
-            <TabIcon name={tab.icon} />
-            <em>{tab.label}</em>
+        {["home", "map", "quests", "wallet"].map((tab) => (
+          <span key={tab} className="tabbar-item" data-active={tab === "map" || undefined}>
+            <TabIcon name={tab === "quests" ? "quest" : tab} />
+            <em>{t(tab)}</em>
           </span>
         ))}
       </nav>

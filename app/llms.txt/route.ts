@@ -1,8 +1,9 @@
 import { routing } from "@/i18n/routing";
 import { baseUrl } from "@/lib/seo";
 import { blogPosts } from "@/lib/blog-data";
-import { CHAPTERS, WHITEPAPER_META } from "@/content/whitepaper";
-import { PARTICIPANTS, CAPABILITIES, FAQ } from "@/content/ecosystem";
+import { CHAPTER_IDS, WHITEPAPER_META } from "@/content/whitepaper";
+import { PARTICIPANTS, CAPABILITIES, FAQ_IDS } from "@/content/ecosystem";
+import messages from "@/messages/en.json";
 import { PHASES } from "@/content/roadmap";
 
 /**
@@ -45,14 +46,13 @@ export async function GET() {
     `whitepaper documents the attacks and the limits.`,
     ``,
     `The site is served at eight locales under a path prefix (${routing.locales.join(", ")}).`,
-    `Only the homepage, about, blog index, contact and legal pages are translated.`,
-    `The ecosystem, whitepaper, roadmap and business pages, and every article, are`,
-    `English only and canonicalise to their /${routing.defaultLocale} URL.`,
+    `Every page is translated into all eight. The articles are English only and`,
+    `canonicalise to their /${routing.defaultLocale} URL. This file describes the English site.`,
     ``,
     section("Core pages", [
       `- [Home](${en}): what the protocol does, the app walkthrough, and how collecting works.`,
       `- [Ecosystem](${en}/ecosystem): the three parties and the loop between them, plus an FAQ.`,
-      `- [Whitepaper](${en}/whitepaper): the technical account. ${WHITEPAPER_META.version}, updated ${WHITEPAPER_META.updated}, ${WHITEPAPER_META.readingTime} read.`,
+      `- [Whitepaper](${en}/whitepaper): the technical account. ${WHITEPAPER_META.version}, updated ${WHITEPAPER_META.updated}, ${WHITEPAPER_META.readingMinutes} min read.`,
       `- [Roadmap](${en}/roadmap): ${shipped} of ${total} milestones shipped across ${PHASES.length} phases.`,
       `- [For business](${en}/business): placing campaigns and paying for verified arrivals rather than impressions.`,
       `- [About](${en}/about): the team and why the protocol exists.`,
@@ -61,28 +61,46 @@ export async function GET() {
     ]),
     section(
       "Who takes part",
-      PARTICIPANTS.map((p) => `- **${p.label}** (${p.tag}): ${p.title}. ${p.body}`),
+      PARTICIPANTS.map((party) => {
+        const p = messages.participants[party.id as keyof typeof messages.participants];
+        return `- **${p.label}** (${p.tag}): ${p.title}. ${p.body}`;
+      }),
     ),
     section(
       "What the protocol provides",
-      CAPABILITIES.map((c) => `- **${c.title}**: ${c.body}`),
+      CAPABILITIES.map((capability) => {
+        const c = messages.capabilities[capability.id as keyof typeof messages.capabilities];
+        return `- **${c.title}**: ${c.body}`;
+      }),
     ),
     section(
       "Whitepaper contents",
-      CHAPTERS.map(
-        (c) => `- [${c.index}. ${c.title}](${en}/whitepaper#${c.id}): ${c.eyebrow}.`,
-      ),
+      CHAPTER_IDS.map((id) => {
+        const c = messages.whitepaper.chapters[
+          id as keyof typeof messages.whitepaper.chapters
+        ];
+        return `- [${c.index}. ${c.title}](${en}/whitepaper#${id}): ${c.eyebrow}.`;
+      }),
     ),
     section(
       "Roadmap",
-      PHASES.map(
-        (p) =>
-          `- **${p.title}** (${p.period}, ${p.status === "done" ? "shipped" : p.status === "active" ? "in progress" : "planned"}): ${p.summary}`,
-      ),
+      PHASES.map((phase) => {
+        const p = messages.roadmapPhases[phase.id as keyof typeof messages.roadmapPhases];
+        const status =
+          phase.status === "done"
+            ? "shipped"
+            : phase.status === "active"
+              ? "in progress"
+              : "planned";
+        return `- **${p.title}** (${phase.period}, ${status}): ${p.summary}`;
+      }),
     ),
     section(
       "Common questions",
-      FAQ.flatMap((f) => [`- **${f.question}**`, `  ${f.answer}`]),
+      FAQ_IDS.flatMap((id) => {
+        const f = messages.ecosystemFaq[id as keyof typeof messages.ecosystemFaq];
+        return [`- **${f.question}**`, `  ${f.answer}`];
+      }),
     ),
     section(
       "Articles",

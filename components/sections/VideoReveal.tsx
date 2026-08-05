@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 /**
  * The product film, acquired rather than simply shown.
@@ -17,6 +18,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
  * clock, not a decoration.
  */
 export default function VideoReveal() {
+  const t = useTranslations("videoReveal");
   const hostRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [sound, setSound] = useState(false);
@@ -140,7 +142,7 @@ export default function VideoReveal() {
           aria-pressed={sound}
         >
           <SoundIcon on={sound} />
-          <span className="sr-only">{sound ? "Mute the film" : "Play the film with sound"}</span>
+          <span className="sr-only">{sound ? t("mute") : t("unmute")}</span>
         </button>
       </div>
     </div>

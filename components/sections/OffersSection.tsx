@@ -1,7 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { OFFERS, type Offer } from "@/content/offers";
+import { useTranslations } from "next-intl";
+import { withCopy } from "@/lib/content-i18n";
+import { OFFER_COPY, OFFER_SHAPES, type Offer } from "@/content/offers";
 
 /**
  * The formats a drop can take.
@@ -17,8 +19,10 @@ import { OFFERS, type Offer } from "@/content/offers";
  * someone redeeming it who was never there.
  */
 export default function OffersSection() {
+  const t = useTranslations("offers");
+  const offers = withCopy(t, OFFER_SHAPES, OFFER_COPY) as Offer[];
   const [active, setActive] = useState<Offer["id"]>("voucher");
-  const current = OFFERS.find((offer) => offer.id === active) ?? OFFERS[0];
+  const current = offers.find((offer) => offer.id === active) ?? offers[0];
 
   const railRef = useRef<HTMLDivElement>(null);
   /** Set once someone drags, taps or focuses. The rail never resumes after. */
@@ -63,9 +67,11 @@ export default function OffersSection() {
     const id = window.setInterval(() => {
       if (!onScreen || takenOver.current) return;
       setActive((prev) => {
-        const at = OFFERS.findIndex((offer) => offer.id === prev);
-        const next = OFFERS[(at + 1) % OFFERS.length];
-        const card = rail.children[(at + 1) % OFFERS.length] as HTMLElement | undefined;
+        // Ids only, so the cycle does not depend on the translated array
+        // being a fresh object on every render.
+        const at = OFFER_SHAPES.findIndex((offer) => offer.id === prev);
+        const next = OFFER_SHAPES[(at + 1) % OFFER_SHAPES.length];
+        const card = rail.children[(at + 1) % OFFER_SHAPES.length] as HTMLElement | undefined;
         card?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
         return next.id;
       });
@@ -82,8 +88,8 @@ export default function OffersSection() {
 
   return (
     <div className="offers">
-      <div className="offers-rail" role="tablist" aria-label="Drop formats" ref={railRef}>
-        {OFFERS.map((offer) => (
+      <div className="offers-rail" role="tablist" aria-label={t("railLabel")} ref={railRef}>
+        {offers.map((offer) => (
           <button
             key={offer.id}
             type="button"
@@ -118,11 +124,11 @@ export default function OffersSection() {
 
         <dl className="offers-detail-body">
           <div>
-            <dt className="t-mono-sm">How it redeems</dt>
+            <dt className="t-mono-sm">{t("redeemLabel")}</dt>
             <dd className="t-body">{current.redeem}</dd>
           </div>
           <div>
-            <dt className="t-mono-sm">What makes it valid</dt>
+            <dt className="t-mono-sm">{t("proofLabel")}</dt>
             <dd className="t-body">{current.proof}</dd>
           </div>
         </dl>

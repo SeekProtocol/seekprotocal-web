@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useFormatter, useTranslations } from "next-intl";
 
 /**
  * The marketing argument, drawn.
@@ -28,6 +29,8 @@ const WALK_RATE = 0.18; // people who open a drop and go to it
 const OPEN_RATE = 0.22; // people who see a pin nearby and open it
 
 export default function AttentionFunnel() {
+  const t = useTranslations("funnel");
+  const format = useFormatter();
   const [budget, setBudget] = useState(5000);
 
   const model = useMemo(() => {
@@ -43,16 +46,16 @@ export default function AttentionFunnel() {
 
     return {
       display: [
-        { label: "Impressions served", value: impressions, measured: true },
-        { label: "Rendered in view", value: viewable, measured: true },
-        { label: "Clicks", value: clicks, measured: true },
-        { label: "Store visits", value: modelled, measured: false },
+        { id: "impressions", value: impressions, measured: true },
+        { id: "viewable", value: viewable, measured: true },
+        { id: "clicks", value: clicks, measured: true },
+        { id: "visits", value: modelled, measured: false },
       ],
       seek: [
-        { label: "Saw the pin nearby", value: seen, measured: true },
-        { label: "Opened the drop", value: opened, measured: true },
-        { label: "Walked to it", value: walked, measured: true },
-        { label: "Claimed at the door", value: arrivals, measured: true },
+        { id: "saw", value: seen, measured: true },
+        { id: "opened", value: opened, measured: true },
+        { id: "walked", value: walked, measured: true },
+        { id: "claimed", value: arrivals, measured: true },
       ],
       costDisplay: budget / modelled,
       costSeek: COST_PER_ARRIVAL,
@@ -64,8 +67,8 @@ export default function AttentionFunnel() {
       <div className="funnel-head">
         <label className="calc-field funnel-budget">
           <span className="calc-field-head">
-            <span className="t-mono-sm">Campaign budget</span>
-            <b>${budget.toLocaleString("en-US")}</b>
+            <span className="t-mono-sm">{t("budget")}</span>
+            <b>${format.number(budget)}</b>
           </span>
           <input
             type="range"
@@ -82,29 +85,28 @@ export default function AttentionFunnel() {
 
       <div className="funnel-cols">
         <Column
-          title="Bought as display"
+          title={t("displayTitle")}
           stages={model.display}
           cost={`$${model.costDisplay.toFixed(2)}`}
-          costLabel="per modelled visit"
+          costLabel={t("displayCost")}
           tone="quiet"
         />
         <Column
-          title="Bought as arrivals"
+          title={t("seekTitle")}
           stages={model.seek}
           cost={`$${model.costSeek.toFixed(2)}`}
-          costLabel="per verified arrival"
+          costLabel={t("seekCost")}
           tone="brand"
         />
       </div>
 
       <p className="t-mono-sm funnel-caption">
-        Display uses a ${CPM.toFixed(2)} CPM, {Math.round(VIEWABLE * 100)}%
-        viewability, a {(CTR * 100).toFixed(2)}% click rate and the{" "}
-        {(MODELLED_VISIT * 100).toFixed(2)}% impression-to-visit figure ad
-        platforms model. That last row is the one to look at: it is not counted,
-        it is estimated, and it does not follow from the clicks above it. In the
-        right-hand column every row is a thing that happened on a device inside
-        your radius.
+        {t("caption", {
+          cpm: CPM.toFixed(2),
+          viewability: Math.round(VIEWABLE * 100),
+          ctr: (CTR * 100).toFixed(2),
+          modelled: (MODELLED_VISIT * 100).toFixed(2),
+        })}
       </p>
     </div>
   );
@@ -118,11 +120,13 @@ function Column({
   tone,
 }: {
   title: string;
-  stages: { label: string; value: number; measured: boolean }[];
+  stages: { id: string; value: number; measured: boolean }[];
   cost: string;
   costLabel: string;
   tone: "quiet" | "brand";
 }) {
+  const t = useTranslations("funnel");
+  const format = useFormatter();
   const top = Math.max(...stages.map((s) => s.value));
 
   return (
@@ -131,10 +135,10 @@ function Column({
 
       <ol className="funnel-stages">
         {stages.map((stage) => (
-          <li key={stage.label} data-modelled={!stage.measured || undefined}>
+          <li key={stage.id} data-modelled={!stage.measured || undefined}>
             <span className="funnel-stage-head">
-              <span className="t-small">{stage.label}</span>
-              <b className="t-num">{stage.value.toLocaleString("en-US")}</b>
+              <span className="t-small">{t(`stages.${stage.id}`)}</span>
+              <b className="t-num">{format.number(stage.value)}</b>
             </span>
             <span className="funnel-bar">
               <i
@@ -146,7 +150,7 @@ function Column({
               />
             </span>
             <span className="t-mono-sm funnel-stage-tag">
-              {stage.measured ? "Counted" : "Estimated"}
+              {stage.measured ? t("counted") : t("estimated")}
             </span>
           </li>
         ))}

@@ -176,16 +176,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               ))}
             </div>
 
-            <nav className="article-links" aria-label="Related pages">
-              <h2 className="t-mono article-links-title">Keep reading</h2>
-              <ul>
-                <li><Link href="/ecosystem" className="chip">Ecosystem</Link></li>
-                <li><Link href="/whitepaper" className="chip">Whitepaper</Link></li>
-                <li><Link href="/roadmap" className="chip">Roadmap</Link></li>
-                <li><Link href="/blog" className="chip">All articles</Link></li>
-                <li><Link href="/contact" className="chip">Contact</Link></li>
-              </ul>
-            </nav>
+            <ArticleLinks />
 
             <BlogArticleCta />
           </div>
@@ -196,6 +187,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <BlogRelatedSection relatedPosts={relatedPosts} />
       )}
     </>
+  );
+}
+
+function ArticleLinks() {
+  const t = useTranslations("blog");
+  const nav = useTranslations("nav");
+
+  return (
+    <nav className="article-links" aria-label={t("relatedPages")}>
+      <h2 className="t-mono article-links-title">{t("keepReading")}</h2>
+      <ul>
+        <li><Link href="/ecosystem" className="chip">{nav("ecosystem")}</Link></li>
+        <li><Link href="/whitepaper" className="chip">{nav("whitepaper")}</Link></li>
+        <li><Link href="/roadmap" className="chip">{nav("roadmap")}</Link></li>
+        <li><Link href="/blog" className="chip">{t("allArticles")}</Link></li>
+        <li><Link href="/contact" className="chip">{nav("contact")}</Link></li>
+      </ul>
+    </nav>
   );
 }
 

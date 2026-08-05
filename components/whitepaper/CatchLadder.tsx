@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useMemo, useState } from "react";
+import { useFormatter, useTranslations } from "next-intl";
 import {
   GAME_CONFIG as G,
   MAX_ATTEMPTS,
@@ -52,6 +53,9 @@ function finalChance({ base, level, clan, coldStreak, tap, attempt }: Inputs) {
 }
 
 export default function CatchLadder() {
+  const t = useTranslations("whitepaperFigures");
+  const format = useFormatter();
+  const rarityLabel = useTranslations("rarity");
   const [rarity, setRarity] = useState<Rarity>("rare");
   const [level, setLevel] = useState(5);
   const [tap, setTap] = useState(1);
@@ -144,12 +148,12 @@ export default function CatchLadder() {
     <div className="wp-figure ladder" style={{ ["--rarity" as string]: ladder.colour }}>
       <div className="ladder-head">
         <div>
-          <p className="t-mono">Live model</p>
+          <p className="t-mono">{t("liveModel")}</p>
           <h3 className="t-h4" style={{ marginTop: "0.4rem" }}>
-            The catch roll, as the server computes it
+            {t("ladderTitle")}
           </h3>
         </div>
-        <div className="ladder-rarities" role="group" aria-label="Rarity">
+        <div className="ladder-rarities" role="group" aria-label={t("rarityLabel")}>
           {RARITIES.map((r) => (
             <button
               key={r}
@@ -162,7 +166,7 @@ export default function CatchLadder() {
                 reset();
               }}
             >
-              {RARITY_LADDER[r].label}
+              {rarityLabel(r)}
             </button>
           ))}
         </div>
@@ -172,7 +176,7 @@ export default function CatchLadder() {
         {/* ------------------------------------------------------- terms */}
         <div className="ladder-terms">
           <Slider
-            label="Player level"
+            label={t("playerLevel")}
             value={String(level)}
             min={1}
             max={10}
@@ -184,8 +188,8 @@ export default function CatchLadder() {
             }}
           />
           <Slider
-            label="Charge ring"
-            value={tap === 0 ? "Missed" : `${Math.round(tap * 100)}%`}
+            label={t("chargeRing")}
+            value={tap === 0 ? t("missed") : `${Math.round(tap * 100)}%`}
             min={0}
             max={1}
             step={0.05}
@@ -196,8 +200,8 @@ export default function CatchLadder() {
             }}
           />
           <Slider
-            label="Clan bonus"
-            value={`+${(clan * 100).toFixed(1)} pts`}
+            label={t("clanBonus")}
+            value={t("points", { points: (clan * 100).toFixed(1) })}
             min={0}
             max={G.clanBonusCap}
             step={0.005}
@@ -210,19 +214,19 @@ export default function CatchLadder() {
 
           <ul className="ladder-breakdown">
             <li>
-              <span>Base chance</span>
+              <span>{t("baseChance")}</span>
               <b>{(ladder.base * 100).toFixed(0)}%</b>
             </li>
             <li>
-              <span>Level bonus</span>
-              <b>+{(level * G.levelBonusPerLevel * 100).toFixed(1)} pts</b>
+              <span>{t("levelBonus")}</span>
+              <b>{t("points", { points: (level * G.levelBonusPerLevel * 100).toFixed(1) })}</b>
             </li>
             <li>
-              <span>Ring multiplier</span>
+              <span>{t("ringMultiplier")}</span>
               <b>×{(G.tapFloor + G.tapSpan * tap).toFixed(3)}</b>
             </li>
             <li>
-              <span>Retry multiplier</span>
+              <span>{t("retryMultiplier")}</span>
               <b>×{RETRY_DECAY}</b>
             </li>
           </ul>
@@ -240,7 +244,7 @@ export default function CatchLadder() {
                 }
               >
                 <span className="t-mono-sm">
-                  {attempt.n === 1 ? "First attempt" : "Retry"}
+                  {attempt.n === 1 ? t("firstAttempt") : t("retry")}
                 </span>
                 <span className="t-num ladder-chance">
                   {(attempt.chance * 100).toFixed(1)}%
@@ -254,13 +258,13 @@ export default function CatchLadder() {
 
           <div className="ladder-figures">
             <div>
-              <span className="t-mono-sm">Across the spawn</span>
+              <span className="t-mono-sm">{t("acrossSpawn")}</span>
               <span className="t-num ladder-figure">{(across * 100).toFixed(1)}%</span>
             </div>
             <div>
-              <span className="t-mono-sm">You have caught</span>
+              <span className="t-mono-sm">{t("youCaught")}</span>
               <span className="t-num ladder-figure">
-                {run.spawns > 0 ? `${(observed * 100).toFixed(1)}%` : "not yet"}
+                {run.spawns > 0 ? `${(observed * 100).toFixed(1)}%` : t("notYet")}
               </span>
             </div>
           </div>
@@ -276,20 +280,24 @@ export default function CatchLadder() {
 
           <p className="t-small ladder-tally">
             {run.spawns === 0
-              ? "One spawn tells you almost nothing. Run a thousand and watch the two bars close."
-              : `${run.caught.toLocaleString("en-US")} caught from ${run.spawns.toLocaleString("en-US")} spawns, ${gap.toFixed(1)} points off the model.`}
+              ? t("ladderHint")
+              : t("ladderTally", {
+                  caught: format.number(run.caught),
+                  spawns: format.number(run.spawns),
+                  gap: gap.toFixed(1),
+                })}
           </p>
 
           <div className="ladder-controls">
             <button type="button" className="btn btn-brand btn-sm" onClick={runOne}>
-              Run one spawn
+              {t("runOne")}
             </button>
             <button type="button" className="btn btn-outline btn-sm" onClick={runMany}>
-              Run a thousand
+              {t("runThousand")}
             </button>
             {run.spawns > 0 && (
               <button type="button" className="btn btn-ghost btn-sm" onClick={reset}>
-                Reset
+                {t("reset")}
               </button>
             )}
           </div>
@@ -297,12 +305,12 @@ export default function CatchLadder() {
       </div>
 
       <p className="t-mono-sm wp-figure-caption">
-        The migration publishes {ladder.label.toLowerCase()} at{" "}
-        {(published[0] * 100).toFixed(0)}% then {(published[1] * 100).toFixed(0)}%,{" "}
-        {Math.round(ladder.overall * 100)}% across the spawn. That is this model
-        at level 5 with the ring filled and no clan, which is what the sliders
-        start on. A caught unit is a game unit, and what it is worth in tokens is
-        the market&apos;s business rather than the game&apos;s.
+        {t("ladderCaption", {
+          rarity: rarityLabel(rarity).toLowerCase(),
+          first: (published[0] * 100).toFixed(0),
+          second: (published[1] * 100).toFixed(0),
+          overall: Math.round(ladder.overall * 100),
+        })}
       </p>
     </div>
   );

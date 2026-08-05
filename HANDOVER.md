@@ -175,9 +175,13 @@ each site.
 - **Tokenomics figures are placeholders.** `content/whitepaper.ts` carries a
   `DRAFT_FIGURES` flag and the page renders a visible notice. Replace the
   allocation, vesting and supply with the real ones, then set it to `false`.
-- **The new pages are English only.** Navigation, footer and globe chrome are
-  translated across all eight locales; the long-form content lives in
-  `content/*.ts` in English. Translating it needs no rebuild.
+- **Every page is now translated into all eight locales.** The copy lives in
+  `messages/<locale>.json`; `content/*.ts` holds only the structure (ids,
+  artwork, numbers, colours) and the components pull the words in by id
+  through `lib/content-i18n.ts`. Ecosystem, roadmap, business and whitepaper
+  moved from `getSingleLanguageAlternates` to `getMultilingualAlternates`, so
+  they self-canonicalise per locale. The blog articles are still English and
+  still canonicalise to their `/en` URL.
 - **The app screens are reconstructions.** See above.
 - **Two press logos need cut-outs.** See above.
 - **The copy-protection script is still in `app/[locale]/layout.tsx`.** It

@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
+import { withCopy } from "@/lib/content-i18n";
 import { DRAFT_FIGURES, VESTING } from "@/content/whitepaper";
 
 /**
@@ -26,6 +28,8 @@ function unlocked(entry: (typeof VESTING)[number], month: number) {
 }
 
 export default function VestingSchedule() {
+  const t = useTranslations("whitepaperFigures");
+  const labels = useTranslations("allocations");
   const [month, setMonth] = useState(12);
 
   /**
@@ -57,11 +61,11 @@ export default function VestingSchedule() {
 
   const atMonth = useMemo(
     () =>
-      VESTING.map((entry) => ({
+      withCopy(labels, VESTING, ["label"]).map((entry) => ({
         ...entry,
         live: entry.share * unlocked(entry, month),
       })),
-    [month]
+    [labels, month]
   );
 
   const circulating = atMonth.reduce((sum, entry) => sum + entry.live, 0);
@@ -69,27 +73,26 @@ export default function VestingSchedule() {
   return (
     <div className="wp-figure vesting">
       {DRAFT_FIGURES && (
-        <p className="chip wp-draft-chip">Draft figures, not final tokenomics</p>
+        <p className="chip wp-draft-chip">{t("draft")}</p>
       )}
 
       <div className="vesting-head">
         <div>
-          <p className="t-mono">Interactive</p>
+          <p className="t-mono">{t("interactive")}</p>
           <h3 className="t-h4" style={{ marginTop: "0.4rem" }}>
-            Circulating supply, month by month
+            {t("vestingTitle")}
           </h3>
         </div>
         <div className="vesting-readout">
           <span className="t-num vesting-figure">{circulating.toFixed(1)}%</span>
           <span className="t-mono-sm">
-            circulating at month {month}
-            {month === 0 ? ", at launch" : ""}
+            {month === 0 ? t("circulatingLaunch") : t("circulatingMonth", { month })}
           </span>
         </div>
       </div>
 
       <div className="vesting-chart">
-        <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Circulating supply by allocation over 48 months">
+        <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={t("vestingAria")}>
           {/* Quarter grid, so the cliffs can be read off rather than guessed. */}
           <g className="vesting-grid">
             {[25, 50, 75].map((pct) => (
@@ -98,7 +101,7 @@ export default function VestingSchedule() {
           </g>
 
           {bands.map((band) => (
-            <path key={band.label} d={band.path} fill={band.color} fillOpacity="0.85" />
+            <path key={band.id} d={band.path} fill={band.color} fillOpacity="0.85" />
           ))}
 
           <line
@@ -111,17 +114,17 @@ export default function VestingSchedule() {
         </svg>
 
         <div className="vesting-axis t-mono-sm">
-          <span>Launch</span>
-          <span>Year 1</span>
-          <span>Year 2</span>
-          <span>Year 3</span>
-          <span>Year 4</span>
+          <span>{t("axisLaunch")}</span>
+          <span>{t("axisYear", { year: 1 })}</span>
+          <span>{t("axisYear", { year: 2 })}</span>
+          <span>{t("axisYear", { year: 3 })}</span>
+          <span>{t("axisYear", { year: 4 })}</span>
         </div>
       </div>
 
       <label className="calc-field vesting-slider">
         <span className="calc-field-head">
-          <span className="t-mono-sm">Month</span>
+          <span className="t-mono-sm">{t("month")}</span>
           <b>{month}</b>
         </span>
         <input
@@ -138,7 +141,7 @@ export default function VestingSchedule() {
 
       <div className="vesting-legend">
         {atMonth.map((entry) => (
-          <div key={entry.label} className="vesting-row">
+          <div key={entry.id} className="vesting-row">
             <span className="legend-swatch" style={{ background: entry.color }} />
             <span className="vesting-row-label">{entry.label}</span>
             <span className="vesting-row-bar">
@@ -156,13 +159,7 @@ export default function VestingSchedule() {
         ))}
       </div>
 
-      <p className="t-mono-sm wp-figure-caption">
-        Read the steps, not the curve. A flat stretch followed by a jump is a
-        cliff, and a cliff is where a schedule either holds or does not. Team and
-        backer allocations are the ones worth checking, because they are the two
-        that unlock into a market rather than out to the people using the
-        network.
-      </p>
+      <p className="t-mono-sm wp-figure-caption">{t("vestingCaption")}</p>
     </div>
   );
 }

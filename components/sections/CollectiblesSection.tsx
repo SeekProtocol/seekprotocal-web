@@ -1,12 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { withCopy } from "@/lib/content-i18n";
 import { COLLECTIBLES, POWERUPS, RARITY_LADDER, type Rarity } from "@/content/collectibles";
 
 const ORDER: Rarity[] = ["legendary", "epic", "rare", "uncommon", "common"];
 
 /** What you can actually catch, and what the ladder says it is worth. */
 export default function CollectiblesSection() {
+  const t = useTranslations("collectiblesSection");
+  const rarity = useTranslations("rarity");
+  const powerups = withCopy(useTranslations("powerups"), POWERUPS, ["label", "effect"]);
   const [filter, setFilter] = useState<Rarity | "all">("all");
 
   const shown =
@@ -18,34 +23,32 @@ export default function CollectiblesSection() {
     <div className="collectibles">
       <div className="collectibles-head">
         <div className="sec-head reveal">
-          <p className="eyebrow">Collectibles</p>
-          <h2 className="t-h2">These are the coins out there</h2>
+          <p className="eyebrow">{t("eyebrow")}</p>
+          <h2 className="t-h2">{t("title")}</h2>
           <p className="t-lead" style={{ marginTop: "1.25rem" }}>
-            Rarity decides how often one spawns and how likely you are to keep
-            it. A caught unit is a game unit. What it pays out in real tokens
-            is the market's business.
+            {t("lead")}
           </p>
         </div>
 
-        <div className="collectibles-filters" role="group" aria-label="Filter by rarity">
+        <div className="collectibles-filters" role="group" aria-label={t("filterLabel")}>
           <button
             type="button"
             className="collectibles-filter"
             data-active={filter === "all" || undefined}
             onClick={() => setFilter("all")}
           >
-            All
+            {t("all")}
           </button>
-          {ORDER.map((rarity) => (
+          {ORDER.map((tier) => (
             <button
-              key={rarity}
+              key={tier}
               type="button"
               className="collectibles-filter"
-              data-active={filter === rarity || undefined}
-              style={{ ["--rarity" as string]: RARITY_LADDER[rarity].colour }}
-              onClick={() => setFilter(rarity)}
+              data-active={filter === tier || undefined}
+              style={{ ["--rarity" as string]: RARITY_LADDER[tier].colour }}
+              onClick={() => setFilter(tier)}
             >
-              {RARITY_LADDER[rarity].label}
+              {rarity(tier)}
             </button>
           ))}
         </div>
@@ -64,21 +67,21 @@ export default function CollectiblesSection() {
                 <span className="collectible-glow" aria-hidden="true" />
                 <img src={coin.image} alt={coin.name} loading="lazy" />
               </div>
-              <span className="collectible-rarity">{ladder.label}</span>
+              <span className="collectible-rarity">{rarity(coin.rarity)}</span>
               <h3 className="collectible-name">{coin.name}</h3>
               <p className="collectible-symbol t-mono-sm">${coin.symbol}</p>
 
               <dl className="collectible-stats">
                 <div>
-                  <dt>Catch chance</dt>
+                  <dt>{t("catchChance")}</dt>
                   <dd>{Math.round(ladder.base * 100)}%</dd>
                 </div>
                 <div>
-                  <dt>Over 3 tries</dt>
+                  <dt>{t("overThree")}</dt>
                   <dd>{Math.round(ladder.overall * 100)}%</dd>
                 </div>
                 <div>
-                  <dt>Per unit</dt>
+                  <dt>{t("perUnit")}</dt>
                   <dd>${ladder.value.toFixed(2)}</dd>
                 </div>
               </dl>
@@ -88,9 +91,9 @@ export default function CollectiblesSection() {
       </div>
 
       <div className="powerups reveal">
-        <h3 className="t-h4 powerups-title">Power-ups that change the round</h3>
+        <h3 className="t-h4 powerups-title">{t("powerupsTitle")}</h3>
         <ul className="powerups-list">
-          {POWERUPS.map((p) => (
+          {powerups.map((p) => (
             <li key={p.key} className="powerup-chip">
               <b>{p.label}</b>
               <em>{p.effect}</em>

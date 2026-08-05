@@ -31,16 +31,15 @@ export const RARITY_LADDER: Record<
     base: number;
     overall: number;
     value: number;
-    label: string;
     colour: string;
     colourEnd: string;
   }
 > = {
-  common: { base: 0.58, overall: 0.76, value: 0.02, label: "Common", colour: "#a0a0b8", colourEnd: "#70708a" },
-  uncommon: { base: 0.44, overall: 0.62, value: 0.05, label: "Uncommon", colour: "#00e676", colourEnd: "#00c853" },
-  rare: { base: 0.27, overall: 0.43, value: 0.12, label: "Rare", colour: "#00d2ff", colourEnd: "#0091ea" },
-  epic: { base: 0.17, overall: 0.29, value: 0.3, label: "Epic", colour: "#6c5ce7", colourEnd: "#a29bfe" },
-  legendary: { base: 0.1, overall: 0.19, value: 0.75, label: "Legendary", colour: "#ffd740", colourEnd: "#ffa000" },
+  common: { base: 0.58, overall: 0.76, value: 0.02, colour: "#a0a0b8", colourEnd: "#70708a" },
+  uncommon: { base: 0.44, overall: 0.62, value: 0.05, colour: "#00e676", colourEnd: "#00c853" },
+  rare: { base: 0.27, overall: 0.43, value: 0.12, colour: "#00d2ff", colourEnd: "#0091ea" },
+  epic: { base: 0.17, overall: 0.29, value: 0.3, colour: "#6c5ce7", colourEnd: "#a29bfe" },
+  legendary: { base: 0.1, overall: 0.19, value: 0.75, colour: "#ffd740", colourEnd: "#ffa000" },
 };
 
 /** Two attempts per spawn, the retry worth 0.65 of the first. */
@@ -89,12 +88,12 @@ export const COLLECTIBLES: Collectible[] = [
   { key: "fartcoin", name: "Fartcoin", symbol: "FARTCOIN", rarity: "common", image: "/images/fartcoin-cryptocurrency-14325725-11625815.webp", xp: 80 },
 ];
 
-/** Power-ups, from the app's own manifest. */
+/** Power-ups, from the app's own manifest. Names and effects live in `powerups`. */
 export const POWERUPS = [
-  { key: "coin_magnet", label: "Coin magnet", effect: "Pulls nearby drops into range" },
-  { key: "diamond_hands", label: "Diamond hands", effect: "Keeps the charge you earned" },
-  { key: "pump_it", label: "Pump it", effect: "Every tap counts double" },
-  { key: "to_the_moon", label: "To the moon", effect: "Raises the catch chance one tier" },
-  { key: "whale", label: "Whale", effect: "Doubles the units on a catch" },
-  { key: "this_is_fine", label: "This is fine", effect: "Survives one failed attempt" },
+  { key: "coin_magnet" },
+  { key: "diamond_hands" },
+  { key: "pump_it" },
+  { key: "to_the_moon" },
+  { key: "whale" },
+  { key: "this_is_fine" },
 ];

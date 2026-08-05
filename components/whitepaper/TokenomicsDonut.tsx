@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
+import { withCopy } from "@/lib/content-i18n";
 import { DRAFT_FIGURES, TOKENOMICS, TOKEN_FACTS } from "@/content/whitepaper";
 
 const SIZE = 200;
@@ -12,6 +14,9 @@ const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
  * legend and the chart are one control rather than two things to compare.
  */
 export default function TokenomicsDonut() {
+  const t = useTranslations("whitepaperFigures");
+  const allocations = withCopy(useTranslations("allocations"), TOKENOMICS, ["label", "note"]);
+  const facts = withCopy(useTranslations("tokenFacts"), TOKEN_FACTS, ["label", "value"]);
   const [active, setActive] = useState<number | null>(null);
   const [drawn, setDrawn] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -36,11 +41,11 @@ export default function TokenomicsDonut() {
     return () => observer.disconnect();
   }, []);
 
-  const total = TOKENOMICS.reduce((sum, slice) => sum + slice.value, 0);
-  const shown = active !== null ? TOKENOMICS[active] : null;
+  const total = allocations.reduce((sum, slice) => sum + slice.value, 0);
+  const shown = active !== null ? allocations[active] : null;
 
   let offset = 0;
-  const slices = TOKENOMICS.map((slice, i) => {
+  const slices = allocations.map((slice, i) => {
     const fraction = slice.value / total;
     const length = fraction * CIRCUMFERENCE;
     const node = { ...slice, i, length, offset };
@@ -51,7 +56,7 @@ export default function TokenomicsDonut() {
   return (
     <div className="wp-figure" ref={ref}>
       {DRAFT_FIGURES && (
-        <p className="chip wp-draft-chip">Draft figures, not final tokenomics</p>
+        <p className="chip wp-draft-chip">{t("draft")}</p>
       )}
 
       <div className="tokenomics-layout">
@@ -60,11 +65,11 @@ export default function TokenomicsDonut() {
             className="donut"
             viewBox={`0 0 ${SIZE} ${SIZE}`}
             role="img"
-            aria-label="Token allocation by share of total supply"
+            aria-label={t("donutAria")}
           >
             {slices.map((slice) => (
               <circle
-                key={slice.label}
+                key={slice.id}
                 className="donut-slice"
                 cx={SIZE / 2}
                 cy={SIZE / 2}
@@ -90,7 +95,7 @@ export default function TokenomicsDonut() {
             ) : (
               <>
                 <span className="t-num donut-center-value">100%</span>
-                <span className="t-mono-sm">Total supply</span>
+                <span className="t-mono-sm">{t("totalSupply")}</span>
               </>
             )}
           </div>
@@ -98,9 +103,9 @@ export default function TokenomicsDonut() {
 
         <div>
           <div className="legend">
-            {TOKENOMICS.map((slice, i) => (
+            {allocations.map((slice, i) => (
               <button
-                key={slice.label}
+                key={slice.id}
                 type="button"
                 className="legend-row"
                 data-dim={active !== null && active !== i ? "" : undefined}
@@ -121,8 +126,8 @@ export default function TokenomicsDonut() {
           </div>
 
           <dl className="token-facts">
-            {TOKEN_FACTS.map((fact) => (
-              <div key={fact.label} className="token-fact">
+            {facts.map((fact) => (
+              <div key={fact.id} className="token-fact">
                 <dt className="t-mono-sm">{fact.label}</dt>
                 <dd className="token-fact-value">{fact.value}</dd>
               </div>

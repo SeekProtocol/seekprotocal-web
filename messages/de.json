@@ -87,7 +87,17 @@
     "getReady": "Mach dich bereit zum Suchen!",
     "ctaDesc": "Betritt eine neue Realität, in der die Welt dein Spielplatz wird. SeekAR verwandelt deine Umgebung in ein interaktives Abenteuer, das neueste AR-Technologie mit Echtwelt-Erkundung verbindet. Spüre verborgene Schätze auf, sammle wertvolle digitale Belohnungen und meistere dynamische Quests!",
     "coinReadoutLabel": "Signalfixierung",
-    "coinReadoutAccuracy": "Genauigkeit {meters} m"
+    "coinReadoutAccuracy": "Genauigkeit {meters} m",
+    "beyondEyebrow": "Mehr als Coins",
+    "beyondTitle": "Ein Drop muss kein Token sein",
+    "beyondLead": "Alles, was an eine Person ausgegeben werden kann, lässt sich auch an einen Ort ausgeben. Rabatt an der Kasse, ein physisches Ding, das im Laden bereitliegt, ein Pass, den es nur am Veranstaltungsort gibt. Für eine Einkaufsstraße ist der Coin davon meist das Uninteressanteste.",
+    "howEyebrow": "So funktioniert es",
+    "howTitle": "Drei Schritte, und der dritte zahlt aus",
+    "liveEyebrow": "Live-Netzwerk",
+    "liveTitle": "Wähle eine Stadt und versuch dein Glück",
+    "liveLead": "Spring zu jedem Hub, tippe auf einen Coin, um zu sehen, wer ihn eingesammelt hat, und versuche selbst einen zu fangen, ausgewürfelt mit den echten Chancen aus der App.",
+    "foundationsEyebrow": "Grundlagen",
+    "readWhitepaper": "Technisches Whitepaper lesen"
   },
   "about": {
     "heroTitle": "Entdecke die Zukunft standortbasierter digitaler Erlebnisse",
@@ -205,7 +215,10 @@
     "backToBlog": "← Zurück zum Blog",
     "readyToSeek": "Bereit mit dem Suchen zu beginnen?",
     "readyToSeekDesc": "Lade SeekAR herunter und verwandle deine Welt in einen Blockchain-gestützten Spielplatz.",
-    "moreArticles": "Weitere Artikel"
+    "moreArticles": "Weitere Artikel",
+    "keepReading": "Weiterlesen",
+    "allArticles": "Alle Artikel",
+    "relatedPages": "Verwandte Seiten"
   },
   "forms": {
     "emailPlaceholder": "E-Mail-Adresse",
@@ -370,6 +383,2096 @@
     "seekerLabel": "Seeker",
     "xpGained": "XP erhalten",
     "coordsLabel": "Koordinaten",
-    "verified": "Anwesenheit on-chain verifiziert"
+    "verified": "Anwesenheit on-chain verifiziert",
+    "all": "Alle",
+    "yourHaul": "Deine Beute",
+    "filterLabel": "Nach Seltenheit filtern",
+    "waitingRarity": "Noch keine {rarity} Fänge",
+    "catchChance": "Fangchance",
+    "close": "Schließen",
+    "secondsAgo": "vor {seconds} s",
+    "zoomIn": "Heranzoomen",
+    "zoomOut": "Herauszoomen"
+  },
+  "homeSteps": {
+    "placed": {
+      "title": "Etwas wird platziert",
+      "meta": "Publisher · überall auf der Erde",
+      "body": "Eine Marke, ein Projekt oder ein Event heftet ein Asset an einen Satz Koordinaten und legt den Radius fest, aus dem es beansprucht werden kann. Dort bleibt es liegen, sichtbar auf der Karte, bis jemand es holt."
+    },
+    "arrive": {
+      "title": "Du kommst in Reichweite",
+      "meta": "30 m Standardradius",
+      "body": "Dein Telefon bestätigt, dass du wirklich dort bist: Satellitenfix, Funkumgebung, Geräteattestierung und deine Bewegungsspur müssen alle übereinstimmen. Ein Signal zu fälschen ist leicht; alle gleichzeitig zu fälschen nicht."
+    },
+    "collect": {
+      "title": "Du sammelst es ein",
+      "meta": "Abwicklung auf Solana in unter einer Sekunde",
+      "body": "Kamera hoch, das Asset in der Straße vor dir verankert sehen und nehmen. Die Übertragung wird on-chain für den Bruchteil eines Cents abgewickelt, und es gehört dir."
+    }
+  },
+  "homeStats": {
+    "accuracy": {
+      "label": "Claim-Genauigkeit"
+    },
+    "languages": {
+      "label": "Sprachen"
+    },
+    "stores": {
+      "label": "App Stores live"
+    }
+  },
+  "worldDescent": {
+    "hint": "Weiterscrollen",
+    "bannerDistance": "84 m entfernt",
+    "orbit": {
+      "label": "Orbit",
+      "title": "Jeder Drop ist eine Koordinate",
+      "body": "Assets werden auf Punkte des Planeten veröffentlicht, nicht in einen Feed. Von hier oben ist das Netzwerk genau das: ein paar tausend Orte, an denen etwas wartet."
+    },
+    "descent": {
+      "label": "Abstieg",
+      "title": "Im Sinkflug auf einen davon",
+      "body": "Such dir einen dieser Punkte aus und geh hin. Dem Protokoll ist egal, welcher, nur dass du dort stehst, wenn du ihn beanspruchst."
+    },
+    "street": {
+      "label": "Straßenebene",
+      "title": "Dies ist dieselbe Karte, vierhundert Kilometer näher",
+      "body": "Die Gebäude, über die du fliegst, sind die zwischen dir und dem Drop. Entfernung ist die ganze Mechanik, also muss die Karte die echte sein."
+    },
+    "hand": {
+      "label": "In deiner Hand",
+      "title": "Und es passt in ein Telefon",
+      "body": "Nichts wurde ausgetauscht. Die Ansicht, durch die du gerade geflogen bist, ist das, was die App rendert, mit ihren eigenen Bedienelementen darüber."
+    }
+  },
+  "appChrome": {
+    "home": "Start",
+    "map": "Karte",
+    "quests": "Quests",
+    "wallet": "Wallet",
+    "backToMap": "‹ Karte",
+    "tapCoin": "Tippe auf einen Coin",
+    "distanceAway": "{metres} m entfernt"
+  },
+  "arSection": {
+    "eyebrow": "Augmented Reality",
+    "hint": "Weiterscrollen",
+    "see": {
+      "label": "Die Kamera schaut",
+      "title": "Eine Kamera sieht keine Straße",
+      "body": "Sie sieht Helligkeit, die sich über ein Raster verändert. Bevor irgendwo etwas platziert werden kann, muss die Szene erst zu etwas mit Struktur werden, und die gibt es an diesem Punkt nicht.",
+      "readout": "FRAME 1/60 · KEIN TRACKING"
+    },
+    "track": {
+      "label": "Merkmale lösen sich heraus",
+      "title": "Ecken sind der Stoff, aus dem die Welt ist",
+      "body": "Punkte, an denen sich die Helligkeit in zwei Richtungen gleichzeitig ändert, überstehen Bewegung, also behält die Engine sie und wirft den Rest weg. Verfolge genug davon über genug Frames, und das Telefon weiß, wie es sich bewegt hat.",
+      "readout": "TRACKING · 2.412 MERKMALE"
+    },
+    "plane": {
+      "label": "Eine Ebene wird gefunden",
+      "title": "Etwas zum Draufstehen",
+      "body": "Merkmale, die sich eine Fläche teilen, werden zu einer Ebene gruppiert. Das ist der Moment, in dem ein Drop aufhört, ein Bild auf deinem Bildschirm zu sein, und zu einem Objekt mit einem Platz wird.",
+      "readout": "EBENE ERKANNT · 6,0 × 6,0 M"
+    },
+    "anchor": {
+      "label": "Der Anker setzt",
+      "title": "An die Welt geheftet, nicht ans Telefon",
+      "body": "Der Drop wird an dieses Stück Geometrie und an die Koordinate gebunden, auf der er veröffentlicht wurde. Geh drumherum, und er bleibt, wo er war. Zwei Menschen, die am selben Ort stehen, sehen ihn an derselben Stelle.",
+      "readout": "ANKER FIXIERT · 52,3702 N 4,8952 O"
+    },
+    "persist": {
+      "label": "Er bleibt bestehen",
+      "title": "Morgen immer noch da",
+      "body": "Der Anker wird am Ort statt an der Sitzung gespeichert, die App zu schließen verschiebt ihn also nicht. Diese Beständigkeit trennt ein AR-Spielzeug von einem AR-Protokoll.",
+      "readout": "ANKER GESPEICHERT · SITZUNGSUNABHÄNGIG"
+    }
+  },
+  "mobiSection": {
+    "title": "Der Begleiter, der sehen kann, was du siehst",
+    "lead": "Frag laut, und Mobi liest die Straße durch die Kamera: Orientierungspunkte, Öffnungszeiten, in welche Richtung der Drop liegt. Er läuft auf dem Gerät selbst, wo immer das geht, und behält nie eine Spur davon, wo du warst.",
+    "tapHint": "Tippe auf Mobi",
+    "tapAgain": "{label} · nochmal tippen",
+    "tapAria": "Mobi ist {state}. Zum Fortfahren tippen.",
+    "points": [
+      "Sprechen und hören, freihändig während du läufst",
+      "Liest Orientierungspunkte und Schilder aus dem Live-Bild",
+      "Quests, die sich anpassen, wie und wo du spielst"
+    ],
+    "listening": {
+      "label": "Hört zu",
+      "line": "Wohin lohnt es sich hier zu laufen?"
+    },
+    "thinking": {
+      "label": "Liest die Straße",
+      "line": "Gleicht ab, was die Kamera sieht, mit Spawns in der Nähe …"
+    },
+    "answering": {
+      "label": "Antwortet",
+      "line": "Zwei Straßen weiter steht ein Legendärer, hinter dem Markt. Sechs Minuten in deinem Tempo, und um sechs macht er zu."
+    },
+    "idle": {
+      "label": "Inaktiv",
+      "line": "Wartet. Es wird nichts aufgezeichnet."
+    }
+  },
+  "socialSection": {
+    "eyebrow": "Gemeinsam",
+    "title": "Die Hälfte ist, mit wem du losziehst",
+    "lead": "Clans bündeln, was alle einsammeln. Der Chat ist Ende-zu-Ende-verschlüsselt, mit verschwindenden Nachrichten, wenn ein Gespräch sich selbst nicht überdauern soll. Und wer jemanden mitbringt, verdient an dem mit, was diese Person findet.",
+    "points": [
+      "Direkt- und Clan-Nachrichten, Ende-zu-Ende verschlüsselt",
+      "Power-ups und Tipps, die zwischen Freunden weitergehen",
+      "Empfehlungsprämien, die zahlen, während die anderen spielen"
+    ],
+    "online": "{count} online",
+    "encrypted": "Verschlüsselt",
+    "composer": "Nachricht",
+    "disappearing": "Verschwindende Nachrichten",
+    "yourCode": "Dein Code",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "spot": {
+      "text": "Gerade ist ein Legendärer beim Markt gespawnt. Zwei Straßen von der Tramhaltestelle."
+    },
+    "coming": {
+      "text": "Bin unterwegs. Hat noch jemand einen Magneten übrig?"
+    },
+    "sent": {
+      "text": "Hab dir zwei geschickt. Heb die Diamond Hands fürs Leck auf."
+    },
+    "missed": {
+      "text": "Voller Ring und er ist trotzdem entwischt. Noch zwei Versuche."
+    },
+    "invited": {
+      "label": "Eingeladen"
+    },
+    "active": {
+      "label": "Aktiv"
+    },
+    "share": {
+      "label": "Dein Anteil"
+    }
+  },
+  "videoReveal": {
+    "mute": "Film stummschalten",
+    "unmute": "Film mit Ton abspielen"
+  },
+  "featureGroups": {
+    "eyebrow": "Was drinsteckt",
+    "title": "Mehr als eine Karte mit Coins darauf",
+    "tablist": "Funktionsgruppen",
+    "hunt": {
+      "label": "Jagen",
+      "items": [
+        {
+          "title": "Spawns auf echten Koordinaten",
+          "body": "Drops erscheinen an festen Punkten um dich herum und bleiben dort, bis jemand sie beansprucht. Markiere einen, und die App zählt die Entfernung herunter, während du läufst."
+        },
+        {
+          "title": "Bleibende AR-Fänge",
+          "body": "Der Coin verankert sich am Boden vor dir und bleibt zwischen Sitzungen verankert, steht also für alle, die hinkommen, an derselben Stelle."
+        },
+        {
+          "title": "Power-ups und Timing",
+          "body": "Magnet, Doppel und Freeze stapeln sich auf einem Fang. Eine Timing-Leiste entscheidet, wie viel vom Drop du behältst, denn ein schlecht gefangener Legendärer bleibt ein schlecht gefangener Legendärer."
+        },
+        {
+          "title": "Seltenheit, die etwas bedeutet",
+          "body": "Von gewöhnlich bis legendär, wobei die Seltenheit die Ringfarbe auf der Karte bestimmt, lange bevor du in die Nähe kommst."
+        }
+      ]
+    },
+    "progress": {
+      "label": "Fortschritt",
+      "items": [
+        {
+          "title": "Zehn Ränge, erlaufen",
+          "body": "Von Seeker bis Legend. Der Rang kommt aus zurückgelegter Strecke und besuchten Orten, nicht aus dem, was du ausgegeben hast."
+        },
+        {
+          "title": "Einundsechzig Abzeichen",
+          "body": "Ein vollständiger Sammelsatz, von Diamond Hands bis On-Chain Detective, jedes mit seiner eigenen Freischaltbedingung."
+        },
+        {
+          "title": "Game Center und Play Games",
+          "body": "Erfolge synchronisieren mit der Plattform, die du ohnehin nutzt, sodass Serien und Meilensteine neben deinen anderen Spielen stehen."
+        },
+        {
+          "title": "Serien und tägliche Quests",
+          "body": "Missionen, die sich anpassen, wo du bist und wie du spielst, mit einer Belohnung, die mitwächst, solange die Serie hält."
+        }
+      ]
+    },
+    "together": {
+      "label": "Gemeinsam",
+      "items": [
+        {
+          "title": "Clans",
+          "body": "Tritt einem bei oder gründe einen, bündelt eure Beiträge und klettert in der Clan-Tabelle. Embleme, Ränge und gemeinsame Belohnungstöpfe inklusive."
+        },
+        {
+          "title": "Verschlüsselter Chat",
+          "body": "Direkt- und Clan-Nachrichten, Ende-zu-Ende verschlüsselt, mit verschwindenden Nachrichten, wenn ein Gespräch sich selbst nicht überdauern soll."
+        },
+        {
+          "title": "Bestenlisten",
+          "body": "Weltweit, national und auf Clan-Ebene, mit Medaillen für die ersten drei und einer Tabelle, die sich aktualisiert, während Leute laufen."
+        },
+        {
+          "title": "Empfehlungen",
+          "body": "Bring Leute dazu und verdiene an dem mit, was sie einsammeln. Dein Code steht ganz oben auf dem Bildschirm, denn dafür bist du gekommen."
+        }
+      ]
+    },
+    "own": {
+      "label": "Besitzen",
+      "items": [
+        {
+          "title": "Eine Wallet ohne Seed Phrase",
+          "body": "Aus einem Social Login erstellt, sodass du innerhalb einer Minute nach der Installation sammeln kannst. Exportiere den Schlüssel, wann immer du die Verwahrung selbst willst."
+        },
+        {
+          "title": "SeekAR Pass",
+          "body": "Ein saisonaler Belohnungspfad, der neben dem normalen Spiel läuft, mit einer kostenlosen und einer bezahlten Stufe."
+        },
+        {
+          "title": "Shop",
+          "body": "Power-ups, Kosmetik und Avatarteile, bezahlt mit dem, was du gesammelt hast, statt nur mit dem, was du kaufen kannst."
+        },
+        {
+          "title": "3D-Avatare",
+          "body": "Vollständige, Decentraland-kompatible Avatare mit Animationen und Emotes, kein zugeschnittenes Profilfoto."
+        }
+      ]
+    }
+  },
+  "progression": {
+    "eyebrow": "Fortschritt",
+    "title": "Zehn Ränge, einundsechzig Abzeichen, und beides nicht käuflich",
+    "lead": "Der Rang kommt aus zurückgelegter Strecke und besuchten Orten. Alles an dieser Wand verdient man, indem man rausgeht.",
+    "badgeAlt": "Rangabzeichen {name}",
+    "rankOf": "Rang {tier} von {total}",
+    "rankTablist": "Rangstufen",
+    "badgesTitle": "Sammelabzeichen",
+    "badgesShown": "{shown} von {total} gezeigt",
+    "achievementsTitle": "Erfolge"
+  },
+  "ranks": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "scout": {
+      "name": "Scout"
+    },
+    "tracker": {
+      "name": "Tracker"
+    },
+    "hunter": {
+      "name": "Hunter"
+    },
+    "pathfinder": {
+      "name": "Pathfinder"
+    },
+    "ranger": {
+      "name": "Ranger"
+    },
+    "sentinel": {
+      "name": "Sentinel"
+    },
+    "apex": {
+      "name": "Apex"
+    },
+    "mythic": {
+      "name": "Mythic"
+    },
+    "legend": {
+      "name": "Legend"
+    }
+  },
+  "badges": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "web3Wizard": {
+      "name": "Web3 Wizard"
+    },
+    "whale": {
+      "name": "Whale"
+    },
+    "bull": {
+      "name": "Bull"
+    },
+    "detective": {
+      "name": "On-Chain Detective"
+    },
+    "samurai": {
+      "name": "Degen Samurai"
+    },
+    "liquidityKing": {
+      "name": "Liquidity King"
+    }
+  },
+  "achievements": {
+    "firstCatch": {
+      "name": "Erster Fang",
+      "detail": "Sammle deinen ersten Drop ein"
+    },
+    "explorer": {
+      "name": "Entdecker",
+      "detail": "Sammle an 50 verschiedenen Orten"
+    },
+    "legendary": {
+      "name": "Legendär",
+      "detail": "Fange einen legendären Spawn"
+    },
+    "rareHunter": {
+      "name": "Seltenheitsjäger",
+      "detail": "250 seltene Fänge"
+    },
+    "streak": {
+      "name": "Dreißig-Tage-Serie",
+      "detail": "Spiele 30 Tage am Stück"
+    },
+    "clanFounder": {
+      "name": "Clan-Gründer",
+      "detail": "Gründe deinen eigenen Clan"
+    }
+  },
+  "clans": {
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "laserEyes": {
+      "name": "Laser Eyes"
+    },
+    "megaWhales": {
+      "name": "Mega Whales"
+    },
+    "moonSquad": {
+      "name": "Moon Squad"
+    },
+    "alphaWolves": {
+      "name": "Alpha Wolves"
+    },
+    "yieldFarmers": {
+      "name": "Yield Farmers"
+    },
+    "anonCabal": {
+      "name": "Anon Cabal"
+    },
+    "bullRunners": {
+      "name": "Bull Runners"
+    }
+  },
+  "clansSection": {
+    "eyebrow": "Clans",
+    "title": "Eine Stadt deckt niemand allein ab",
+    "lead": "Gründe einen Clan oder tritt einem bei, bündelt, was alle einsammeln, und klettert gemeinsam in der Tabelle. Der Chat ist Ende-zu-Ende-verschlüsselt, und Nachrichten lassen sich so einstellen, dass sie verschwinden, wenn ein Gespräch sich selbst nicht überdauern soll.",
+    "statClans": "Gründungsclans",
+    "statChat": "Verschlüsselter Chat",
+    "statRanks": "Clan-Ränge",
+    "tableTitle": "Clan-Tabelle",
+    "thisSeason": "Diese Saison",
+    "rankAlt": "Platz {rank}"
+  },
+  "rarity": {
+    "common": "Gewöhnlich",
+    "uncommon": "Ungewöhnlich",
+    "rare": "Selten",
+    "epic": "Episch",
+    "legendary": "Legendär"
+  },
+  "powerups": {
+    "coin_magnet": {
+      "label": "Coin-Magnet",
+      "effect": "Zieht Drops in der Nähe in Reichweite"
+    },
+    "diamond_hands": {
+      "label": "Diamond Hands",
+      "effect": "Behält die Ladung, die du erarbeitet hast"
+    },
+    "pump_it": {
+      "label": "Pump it",
+      "effect": "Jedes Tippen zählt doppelt"
+    },
+    "to_the_moon": {
+      "label": "To the moon",
+      "effect": "Hebt die Fangchance um eine Stufe"
+    },
+    "whale": {
+      "label": "Whale",
+      "effect": "Verdoppelt die Einheiten bei einem Fang"
+    },
+    "this_is_fine": {
+      "label": "This is fine",
+      "effect": "Übersteht einen Fehlversuch"
+    }
+  },
+  "collectiblesSection": {
+    "eyebrow": "Sammelobjekte",
+    "title": "Das sind die Coins da draußen",
+    "lead": "Die Seltenheit entscheidet, wie oft einer spawnt und wie wahrscheinlich du ihn behältst. Eine gefangene Einheit ist eine Spieleinheit. Was sie in echten Token einbringt, ist Sache des Marktes.",
+    "filterLabel": "Nach Seltenheit filtern",
+    "all": "Alle",
+    "catchChance": "Fangchance",
+    "overThree": "Über 3 Versuche",
+    "perUnit": "Pro Einheit",
+    "powerupsTitle": "Power-ups, die die Runde verändern"
+  },
+  "offers": {
+    "railLabel": "Drop-Formate",
+    "redeemLabel": "Wie er eingelöst wird",
+    "proofLabel": "Was ihn gültig macht",
+    "voucher": {
+      "label": "Rabattgutschein",
+      "headline": "Rabatt, an der Tür, die ihn gegeben hat",
+      "face": "25 % Rabatt",
+      "fine": "Einer pro Person · 14 Tage gültig · Nur im Laden",
+      "redeem": "Der Code wird an der Kasse gezeigt und als benutzt markiert. Weiterleiten geht nicht, denn er wurde an das Gerät ausgegeben, das im Radius stand.",
+      "proof": "Der Claim liegt on-chain mit der Koordinate, an der er geholt wurde, eine Einlösung lässt sich also an einer echten Ankunft prüfen statt an einem Screenshot.",
+      "placedBy": "Handel und Gastronomie"
+    },
+    "asset": {
+      "label": "Reales Objekt",
+      "headline": "Etwas Physisches, das an einem Ort wartet",
+      "face": "Paar Sneaker",
+      "fine": "1 von 250 · Abholung im Laden · Verfällt mit dem Bestand",
+      "redeem": "Der Inhaber holt den Artikel selbst ab. Der Token ist der Anspruch darauf, und er verbrennt bei der Übergabe, damit dasselbe Paar nicht zweimal abgeholt werden kann.",
+      "proof": "Der Bestand ist endlich und der Claim ist eine Sperre, keine Abfrage, also können zwei Leute, die nach dem letzten greifen, nicht beide bestätigt bekommen, dass sie ihn haben.",
+      "placedBy": "Marken mit etwas zu verschenken"
+    },
+    "access": {
+      "label": "Zugangspass",
+      "headline": "Das Ticket ist, am Veranstaltungsort zu sein",
+      "face": "Tor B · 19:00",
+      "fine": "Nicht übertragbar · Verfällt am Ende der Veranstaltung",
+      "redeem": "Wird am Einlass gescannt wie jeder andere Pass. Der Unterschied ist, dass es ihn nur vor Ort gab, und genau das macht ihn ausgabewürdig.",
+      "proof": "Drops mit hohem Wert setzen eine strenge Vertrauensschwelle, die Funkumgebung muss der Position also zustimmen, bevor er freigegeben wird.",
+      "placedBy": "Events, Venues und Festivals"
+    },
+    "token": {
+      "label": "Token-Drop",
+      "headline": "Verteilung, deren Farmen etwas kostet",
+      "face": "40 $SEEK",
+      "fine": "Ein Claim pro Gerät · Abwicklung auf Solana",
+      "redeem": "Er landet in der Wallet, die die App für dich angelegt hat, und gehört dir zum Halten, Bewegen oder Verkaufen. Nichts einzulösen und niemanden zu fragen.",
+      "proof": "Eine Wallet zu erstellen ist kostenlos, ein Fußweg nicht. Geografie ist der Filter, durch den sich ein Airdrop nicht billig farmen lässt.",
+      "placedBy": "Token-Projekte und Communities"
+    },
+    "collectible": {
+      "label": "Sammelobjekt",
+      "headline": "Etwas, das es nur dort gibt, wo es platziert wurde",
+      "face": "Selten",
+      "fine": "Serie von 500 · Handelbar · Seltenheit bei Ausgabe festgelegt",
+      "redeem": "Nichts einzulösen. Es ist der Beleg dafür, irgendwo gewesen zu sein, und das ist der älteste Grund, aus dem je jemand etwas aufbewahrt hat.",
+      "proof": "Jedes trägt die Koordinate, an der es geholt wurde, die Sammlung von jemandem ist also eine Karte der Orte, an denen diese Person wirklich war.",
+      "placedBy": "Städte, Tourismusverbände, Künstler"
+    }
+  },
+  "walkthrough": {
+    "eyebrow": "Geh es durch",
+    "title": "Das ist die ganze Schleife",
+    "lead": "Kein Video der App. Das sind ihre eigenen Regeln, die hier laufen. Tippe auf einen Spawn auf der Karte und mach von dort weiter.",
+    "startOver": "Neu anfangen",
+    "map": {
+      "label": "Die Karte",
+      "title": "Alles in der Nähe, genau dort, wo es wirklich steht",
+      "body": "Spawns sitzen auf festen Koordinaten und bleiben dort, bis jemand sie beansprucht. Tippe einen an, um zu sehen, was er ist und wie weit du laufen musst."
+    },
+    "spawn": {
+      "label": "Der Spawn",
+      "title": "Die Seltenheit sagt dir, worauf du zuläufst",
+      "body": "Von gewöhnlich bis legendär, jeder mit seiner eigenen Fangchance. Du hast zwei Versuche, und der zweite ist 0,65 des ersten wert, das erste Tippen wiegt also am schwersten."
+    },
+    "catch": {
+      "label": "Der Fang",
+      "title": "Tippen zum Laden, und Nerven behalten",
+      "body": "Der Ring füllt sich, während du tippst. Alle ein bis zwei Runden kommt etwas dazwischen: Die Kugel friert ein, die Ladung bekommt ein Leck, oder es öffnet sich ein Surge, in dem Tippen doppelt zählt."
+    },
+    "result": {
+      "label": "Der Wurf",
+      "title": "Ladung kauft Chance, keine Sicherheit",
+      "body": "Ein voller Ring auf einem Legendären bleibt eins zu fünf. Genau das macht einen Legendären wertvoll, und genau das lässt das Tippen etwas entscheiden."
+    },
+    "wallet": {
+      "label": "Deins",
+      "title": "Es landet in einer Wallet, die du nie einrichten musstest",
+      "body": "Aus einem Social Login erstellt, sodass ein neuer Spieler innerhalb einer Minute etwas einsammelt. Exportiere den Schlüssel, wann immer du die Verwahrung selbst willst."
+    }
+  },
+  "spawnScreen": {
+    "back": "‹ Karte",
+    "distance": "Entfernung",
+    "inRange": "In Reichweite",
+    "thisAttempt": "Dieser Versuch",
+    "attemptsLeft": "Versuche übrig",
+    "attemptsOf": "{left} von {total}",
+    "note": "Den Ring zu laden hebt diesen Wert. Der Versuch danach ist 0,65 des ersten wert.",
+    "cta": "Fang ihn"
+  },
+  "catchScreen": {
+    "attempt": "Versuch {attempt} von {total}",
+    "tapAria": "Zum Laden tippen",
+    "sealAria": "Das Leck schließen",
+    "ringFull": "Ring voll, halt ihn",
+    "tapPrompt": "Tippe auf den Coin",
+    "mechanic": {
+      "freeze": "Eingefroren, tippe weiter, um ihn aufzutauen",
+      "leak": "Leck, schließ die Lücken",
+      "surge": "Surge, jedes Tippen zählt doppelt"
+    }
+  },
+  "resultScreen": {
+    "caught": "Gefangen",
+    "escaped": "Er ist entwischt",
+    "ringCharged": "Ring geladen",
+    "chance": "Chance in diesem Versuch",
+    "xp": "XP",
+    "gameValue": "Spielwert",
+    "noteCaught": "Eine gefangene Einheit ist eine Spieleinheit. Was sie in echten Token einbringt, ist Sache des Marktes.",
+    "noteRetry": "Noch ein Versuch, 0,65 des ersten wert.",
+    "noteGone": "Dieser Spawn ist weg. Der nächste kommt.",
+    "openWallet": "Wallet öffnen",
+    "tryAgain": "Nochmal versuchen",
+    "backToMap": "Zurück zur Karte"
+  },
+  "walletScreen": {
+    "totalBalance": "Gesamtguthaben",
+    "delta": "+ {amount} heute",
+    "send": "Senden",
+    "receive": "Empfangen",
+    "swap": "Tauschen",
+    "stake": "Staken",
+    "justCaught": "Gerade gefangen",
+    "assets": "Assets",
+    "recentBadges": "Neueste Abzeichen"
+  },
+  "dropKinds": {
+    "airdrop": "Airdrop",
+    "quest": "Quest-Belohnung",
+    "partner": "Partner-Drop",
+    "event": "Event-Token",
+    "cache": "Straßen-Cache"
+  },
+  "ecosystemPage": {
+    "metaTitle": "Ökosystem: Seeker, Publisher, Protokoll",
+    "metaDescription": "Wie das Ökosystem von Seek Protocol zusammenpasst: Seeker, die einsammeln, Publisher, die platzieren, und das Protokoll, das Anwesenheit prüft und auf Solana abwickelt.",
+    "ogTitle": "Drei Parteien, eine Koordinate",
+    "eyebrow": "Ökosystem",
+    "titleStart": "Drei Parteien, eine",
+    "titleAccent": "Koordinate",
+    "lead": "Jemand platziert ein Asset. Jemand geht hin. Das Protokoll bestätigt, dass diese Person wirklich dort war, und wickelt ab. Alles andere ist Detail auf dieser Schleife.",
+    "networkEyebrow": "Das Netzwerk",
+    "networkTitle": "Jeder Pin ist ein echter Ort",
+    "networkLead": "Dreh den Globus. Die Koordinaten sind echte Stadtpositionen, und jeder Bogen ist ein Drop, der zwischen ihnen unterwegs ist.",
+    "capabilitiesEyebrow": "Fähigkeiten",
+    "capabilitiesTitle": "Was das Protokoll tatsächlich liefert",
+    "faqEyebrow": "Fragen",
+    "faqTitle": "Die, die sich zu stellen lohnen",
+    "faqLead": "Auch die mit unbequemen Antworten.",
+    "ctaEyebrow": "Tiefer einsteigen",
+    "ctaTitle": "Die technische Darstellung",
+    "ctaBody": "Proof of Location, die Architektur, das Token-Design und eine ehrliche Liste der Angriffe, gegen die wir uns wehren, und der Grenzen, die wir akzeptieren.",
+    "ctaWhitepaper": "Whitepaper lesen",
+    "ctaBusiness": "Eigene Assets platzieren"
+  },
+  "participants": {
+    "seekers": {
+      "label": "Seeker",
+      "tag": "Nachfrage",
+      "title": "Menschen, die hingehen und es holen",
+      "body": "Alle mit der App. Sie laufen, sie finden Dinge, und sie behalten, was sie einsammeln. Vorkenntnisse in Krypto werden nicht vorausgesetzt: Die Wallet entsteht aus einem Social Login und lässt sich später von allen exportieren, die die Verwahrung selbst wollen.",
+      "gets": [
+        "Token, NFTs und Partnerbelohnungen",
+        "Quests, die sich an den Aufenthaltsort anpassen",
+        "Eine Wallet, die man nicht erst verstehen musste"
+      ]
+    },
+    "publishers": {
+      "label": "Publisher",
+      "tag": "Angebot",
+      "title": "Wer es dort hingelegt hat",
+      "body": "Marken, Venues, Token-Projekte und Veranstalter. Sie platzieren Assets an Koordinaten, die ihnen wichtig sind, und zahlen pro Platzierung, gewichtet nach Radius, Laufzeit und wie umkämpft die Gegend ist.",
+      "gets": [
+        "Verifizierte Ankünfte statt Impressions",
+        "Geografische Verteilung, die Farming standhält",
+        "Ein Kampagnen-Builder ohne Integrationsaufwand"
+      ]
+    },
+    "protocol": {
+      "label": "Protokoll",
+      "tag": "Abwicklung",
+      "title": "Der Teil, der alle ehrlich hält",
+      "body": "Bewertung der Verifizierung, Verwahrung der Assets und Abwicklung. Es nimmt eine Gebühr auf die Platzierung, leitet den Großteil davon an die Seeker zurück und führt den Nachweis darüber, was wo beansprucht wurde.",
+      "gets": [
+        "Gebühren, die echter Aktivität folgen",
+        "Ein öffentliches Claim-Register",
+        "Parameter, die mit der Zeit an die Governance übergehen"
+      ]
+    }
+  },
+  "capabilities": {
+    "placement": {
+      "title": "Geofencing-Platzierung",
+      "meta": "5 m bis 500 m",
+      "body": "Assets werden mit einem einstellbaren Claim-Radius an Koordinaten geheftet. Eine Ladentür nutzt einen engen Radius, ein Festivalgelände einen weiten."
+    },
+    "verification": {
+      "title": "Verifizierung über mehrere Signale",
+      "meta": "4 unabhängige Signale",
+      "body": "Satellitenfix, Funkumgebung, Geräteattestierung und Bewegungskontinuität müssen alle übereinstimmen, bevor ein Claim akzeptiert wird."
+    },
+    "anchoring": {
+      "title": "AR-Verankerung",
+      "meta": "Beständig",
+      "body": "Assets bleiben zwischen Sitzungen und zwischen Nutzern an Ort und Stelle. Zwei Menschen am selben Ort sehen dasselbe an derselben Stelle."
+    },
+    "companion": {
+      "title": "KI-Begleiter",
+      "meta": "Zuerst auf dem Gerät",
+      "body": "Liest die Kamera, um zu erklären, was du gerade siehst, und schlägt vor, wohin es weitergeht, ohne deine Bewegungshistorie irgendwohin zu schicken."
+    },
+    "wallet": {
+      "title": "Social Wallet",
+      "meta": "Keine Seed Phrase",
+      "body": "Aus einem Social Login erstellt, damit ein neuer Nutzer innerhalb einer Minute etwas einsammeln kann, mit Export in Selbstverwahrung, wann immer er will."
+    },
+    "settlement": {
+      "title": "Abwicklung auf Solana",
+      "meta": "Unter einer Sekunde",
+      "body": "Günstig genug, dass das Einsammeln einer kleinen Belohnung nicht mehr kostet, als die Belohnung wert ist, und genau deshalb zählt die Wahl der Chain."
+    }
+  },
+  "ecosystemFaq": {
+    "spoofing": {
+      "question": "Kann ich meinen Standort fälschen und einsammeln, ohne hinzugehen?",
+      "answer": "Nicht billig. Ein reiner GPS-Fix lässt sich leicht fälschen, deshalb ist er nur eines von vier Signalen. Funkumgebung, Geräteattestierung und deine Bewegungsspur müssen ihn alle bestätigen, und ein Gerät, das wiederholt durchfällt, bekommt eine höhere Schwelle. Ziel ist, Fälschung teurer zu machen als die Belohnung wert ist, nicht zu behaupten, sie sei unmöglich."
+    },
+    "crypto": {
+      "question": "Muss ich etwas über Krypto wissen, um SeekAR zu nutzen?",
+      "answer": "Nein. Die Wallet entsteht aus einem Social Login, und du siehst nie eine Seed Phrase, außer du suchst danach. Willst du später Selbstverwahrung, kannst du den Schlüssel jederzeit exportieren."
+    },
+    "tracking": {
+      "question": "Verfolgt Seek Protocol, wo ich hingehe?",
+      "answer": "Nein. Die App fragt nach einer Position, wenn du einen Claim versuchst, nicht dauerhaft im Hintergrund. Rohe Sensordaten bewerten diesen einen Claim und werden danach verworfen, und deine Bewegungshistorie bleibt auf deinem Gerät."
+    },
+    "farming": {
+      "question": "Was hindert eine Person daran, einen Ort mit vielen Wallets zu farmen?",
+      "answer": "Claim-Limits pro Gerät innerhalb von Radius und Zeitfenster, dazu Geräteattestierung, an der Emulator-Farmen scheitern. Wallets sind kostenlos, Reisen ist es nicht, und genau darum hängt die Verteilung überhaupt an der Geografie."
+    },
+    "chain": {
+      "question": "Warum Solana und keine andere Chain?",
+      "answer": "Transaktionskosten. Eine Belohnung im Wert weniger Cent einzusammeln, muss einen Bruchteil eines Cents kosten, sonst geht die Rechnung nicht auf. Bestätigung unter einer Sekunde zählt außerdem, wenn jemand an einer Straßenecke wartet."
+    },
+    "business": {
+      "question": "Kann mein Unternehmen heute schon Assets platzieren?",
+      "answer": "Über eine betreute Partnerschaft ja. Das Self-Service-Portal, das das Gespräch mit uns überflüssig macht, ist in Arbeit, und die Roadmap sagt, wo es steht."
+    }
+  },
+  "roadmapPage": {
+    "metaTitle": "Roadmap: Geliefert und was als Nächstes kommt",
+    "metaDescription": "Was Seek Protocol geliefert hat und was als Nächstes kommt, vom Proof-of-Location-Prototyp über den öffentlichen SeekAR-Start bis zum Self-Service-Portal und On-Chain-Governance.",
+    "ogTitle": "Roadmap von Seek Protocol",
+    "eyebrow": "Roadmap",
+    "titleStart": "Was steht, und was als",
+    "titleAccent": "Nächstes kommt",
+    "lead": "{phases} Phasen, gemessen an dem, was tatsächlich geliefert wurde. {shipped} von {total} Meilensteinen abgeschlossen.",
+    "status": {
+      "done": "Geliefert",
+      "active": "In Arbeit",
+      "next": "Geplant"
+    },
+    "datesTitle": "Zu diesen Daten",
+    "datesNote": "Daten beschreiben eine Absicht, keine Zusage. Alles, was noch nicht als abgeschlossen markiert ist, kann sich verschieben, und das sagen wir lieber, als die Übersicht still umzusortieren.",
+    "legendTitle": "Legende",
+    "ctaEyebrow": "Details",
+    "ctaTitle": "Die Begründung für die Reihenfolge",
+    "ctaBody": "Das Whitepaper erklärt, warum die Verifizierung vor der Skalierung kam und warum die Governance zuletzt kommt.",
+    "ctaWhitepaper": "Whitepaper lesen"
+  },
+  "roadmapPhases": {
+    "foundation": {
+      "title": "Fundament",
+      "summary": "Der Nachweis, dass die Grundidee überhaupt trägt: Kann ein Telefon bestätigen, dass jemand irgendwo war, zuverlässig genug, um etwas Wertvolles freizugeben?",
+      "groups": {},
+      "items": {
+        "prototype": "Proof-of-Location-Prototyp mit GNSS und Bewegungskontinuität",
+        "engine": "AR-Rendering-Engine mit beständiger Weltverankerung",
+        "settlement": "Abwicklungsschicht auf Solana und Asset-Definitionen",
+        "alpha": "Interne Alpha in drei Teststädten"
+      }
+    },
+    "launch": {
+      "title": "Öffentlicher Start",
+      "summary": "SeekAR in echte Hände bringen, in beiden App Stores, mit einem Onboarding, das nicht voraussetzt, dass jemand je einen privaten Schlüssel gehalten hat.",
+      "groups": {},
+      "items": {
+        "stores": "SeekAR für iOS und Android veröffentlicht",
+        "wallet": "Wallet per Social Login mit optionalem Export in Selbstverwahrung",
+        "drops": "Standortbasierte Drops und Questsystem",
+        "attestation": "Geräteattestierung über Play Integrity und App Attest",
+        "localisation": "Website und App in acht Sprachen lokalisiert"
+      }
+    },
+    "scale": {
+      "title": "Die Öffnung",
+      "summary": "Das Jahr, in dem das Netzwerk nicht mehr unsere Sache ist. Jede und jeder kann Assets platzieren, ohne vorher mit uns zu sprechen, der Token, der sie finanziert, geht an die Öffentlichkeit, und die Gründe wiederzukommen sind keine Dinge mehr, die man allein tut.",
+      "groups": {
+        "supply": "Angebotsseite",
+        "network": "Netzwerkeffekte"
+      },
+      "items": {
+        "companion": "KI-Begleiter mit kamerabewusster Kontextführung",
+        "radio": "Funk-Fingerprinting im Verifizierungsstapel ergänzt",
+        "builder": "Drag-and-drop-Kampagnen-Builder für kleinere Publisher",
+        "portal": "Self-Service-Portal für Venues und Marken",
+        "analytics": "Analytics zu verifizierten Ankünften und Kosten pro Besuch",
+        "tge": "Token Generation Event",
+        "partnerships": "Große Partnerschaften",
+        "liveEvents": "Live-Event-Modus für Festivals, Spiele und Konferenzen",
+        "seasons": "Saisons mit eigenen Ranglisten und Belohnungen",
+        "scanning": "Spielerisches Scannen von Objekten",
+        "guilds": "Gilden, Teamquests und gemeinsame Belohnungstöpfe",
+        "revenueShare": "Umsatzbeteiligung für Creator auf platzierten Assets"
+      }
+    },
+    "governance": {
+      "title": "Die Parameter übergeben",
+      "summary": "Governance folgt echten Gebührenflüssen, statt ihnen vorauszugehen. Über eine Ökonomie ohne Volumen abzustimmen ist Theater, deshalb kommt das bewusst zuletzt.",
+      "groups": {},
+      "items": {
+        "onChain": "On-Chain-Governance für Protokollparameter",
+        "treasury": "Zuteilung aus der Community-Treasury",
+        "providers": "Verifizierungsanbieter von Drittanbietern",
+        "sdk": "Offenes SDK für externe Anwendungen auf dem Protokoll"
+      }
+    }
+  },
+  "businessPage": {
+    "metaTitle": "Für Unternehmen: Ankünfte kaufen, keine Impressions",
+    "metaDescription": "Platziere Belohnungen an deinen eigenen Koordinaten und miss, wer tatsächlich angekommen ist. Seek Protocol macht aus digitalen Kampagnen verifizierte Besuche für Handel, Events, Token-Projekte und Städte.",
+    "ogTitle": "Ankünfte kaufen, keine Impressions",
+    "eyebrow": "Für Unternehmen",
+    "titleStart": "Ankünfte kaufen, keine",
+    "titleAccent": "Impressions",
+    "lead": "Digitale Werbung bringt dein Logo in Millisekunden vor Augen. Sie bringt niemanden drei Straßen weiter. Leg eine Belohnung an deine Tür und zahle für die Menschen, die sie erreichen.",
+    "ctaTalk": "Sprich mit uns",
+    "ctaVerification": "Wie die Verifizierung funktioniert",
+    "argumentEyebrow": "Das Argument",
+    "argumentTitle": "Wo das Zählen aufhört",
+    "argumentLead": "Gib dasselbe Geld auf zwei Wegen aus, und die Funnels sehen bis zur letzten Zeile vergleichbar aus. Der eine ist gezählt. Der andere ist ein Modell, und es ist die Zeile, an der jede Kampagne gemessen wird.",
+    "useCasesEyebrow": "Anwendungsfälle",
+    "useCasesTitle": "Vier Arten, wie Leute es nutzen",
+    "setupEyebrow": "Einrichtung",
+    "setupTitle": "Vier Entscheidungen, keine Entwicklung",
+    "setupLead": "Das ist der ganze Ablauf. Triff die vier Entscheidungen und veröffentliche, und sieh, was jede davon mit der Fläche macht, die du hältst, und mit dem Preis einer Person an deiner Tür.",
+    "measurementEyebrow": "Messung",
+    "measurementTitle": "Was du bekommst, und was nicht",
+    "measurementLead": "Standortdaten sind die sensibelste Kategorie überhaupt. Du bekommst die Zahlen, die du brauchst, um eine Kampagne zu beurteilen, und nichts, womit sich eine einzelne Person verfolgen ließe.",
+    "ctaEyebrow": "Loslegen",
+    "ctaTitle": "Leg etwas an deine Tür",
+    "ctaBody": "Das Self-Service-Portal ist in Arbeit. Bis es kommt, richten wir Kampagnen direkt mit dir ein. Sag uns den Ort und was du platzieren willst.",
+    "ctaStart": "Gespräch beginnen",
+    "ctaRoadmap": "Sehen, wann Self-Service kommt"
+  },
+  "useCases": {
+    "retail": {
+      "label": "Handel & Gastronomie",
+      "metric": "Kosten pro verifizierter Ankunft",
+      "title": "Mach aus einem Ort einen Grund vorbeizukommen",
+      "body": "Leg ein Angebot mit engem Claim-Radius an deine Tür. Nur wer dort steht, kann es nehmen, also ist die Einlösung, die du siehst, ein Mensch, der hereinkam, und keine Anzeige, an der jemand vorbeigescrollt ist.",
+      "points": [
+        "Radius auf die Tür abgestimmt statt auf die Postleitzahl",
+        "Einlösung im Moment der Ankunft erfasst",
+        "Funktioniert über eine ganze Kette ohne Integration je Filiale"
+      ]
+    },
+    "events": {
+      "label": "Events & Venues",
+      "metric": "Engagement vor Ort",
+      "title": "Eine beanspruchbare Karte für die Dauer der Veranstaltung",
+      "body": "Festivals, Spiele und Konferenzen werden zu einer temporären Schicht aus Assets, die mit dem Event ablaufen. Anwesenheit schaltet sie frei, also erreicht die Belohnung die Leute, die wirklich da waren.",
+      "points": [
+        "Zeitlich begrenzte Assets, die planmäßig ablaufen",
+        "Weite Radien für Gelände, enge für Bühnen und Tribünen",
+        "Höhere Verifizierungsschwellen für hochwertige Drops"
+      ]
+    },
+    "token": {
+      "label": "Token- & NFT-Projekte",
+      "metric": "Sybil-Resistenz",
+      "title": "An Menschen verteilen, nicht an Wallets",
+      "body": "Eine Wallet zu erstellen ist kostenlos, deshalb werden Airdrops gefarmt. Physische Anwesenheit zu verlangen legt echte Kosten auf jeden zusätzlichen Claim, denn niemand ist in vierzig Städten gleichzeitig.",
+      "points": [
+        "Geografische Verteilung über gewählte Märkte",
+        "Claim-Limits pro Gerät in Radius und Zeitfenster",
+        "Öffentliches Claim-Register auf Solana"
+      ]
+    },
+    "tourism": {
+      "label": "Städte & Tourismus",
+      "metric": "Verteilung der Besucherströme",
+      "title": "Führe Leute durch die Orte, die genutzt werden sollen",
+      "body": "Verkette Assets zu einer Route, damit Besucher sie der Reihe nach ablaufen. Ruhige Straßen, Nebenschauplätze und Randzeiten können die Belohnungen tragen, die belebte Wahrzeichen nicht brauchen.",
+      "points": [
+        "Aufeinanderfolgende Quests über mehrere Orte",
+        "Gewichtung auf Randzeiten, um die Nachfrage zu verteilen",
+        "Aggregierte Ankunftszahlen, nie einzelne Spuren"
+      ]
+    }
+  },
+  "measurement": {
+    "counted": {
+      "label": "Was gezählt wird",
+      "value": "Eine verifizierte Ankunft in deinem Radius"
+    },
+    "when": {
+      "label": "Wann gezählt wird",
+      "value": "Im Moment des Claims, nicht später abgeleitet"
+    },
+    "receive": {
+      "label": "Was du bekommst",
+      "value": "Aggregierte Zahlen nach Ort, Zeit und Kampagne"
+    },
+    "never": {
+      "label": "Was du nie bekommst",
+      "value": "Einzelne Bewegungsspuren oder Identitäten"
+    }
+  },
+  "funnel": {
+    "budget": "Kampagnenbudget",
+    "displayTitle": "Als Display gekauft",
+    "displayCost": "pro modelliertem Besuch",
+    "seekTitle": "Als Ankünfte gekauft",
+    "seekCost": "pro verifizierter Ankunft",
+    "counted": "Gezählt",
+    "estimated": "Geschätzt",
+    "stages": {
+      "impressions": "Ausgelieferte Impressions",
+      "viewable": "Tatsächlich sichtbar",
+      "clicks": "Klicks",
+      "visits": "Ladenbesuche",
+      "saw": "Sah den Pin in der Nähe",
+      "opened": "Öffnete den Drop",
+      "walked": "Ging hin",
+      "claimed": "Beanspruchte an der Tür"
+    },
+    "caption": "Display rechnet mit einem CPM von ${cpm}, {viewability}% Sichtbarkeit, einer Klickrate von {ctr}% und dem Wert von {modelled}% von Impression zu Besuch, den Werbeplattformen modellieren. Diese letzte Zeile ist die entscheidende: Sie ist nicht gezählt, sondern geschätzt, und sie folgt nicht aus den Klicks darüber. In der rechten Spalte ist jede Zeile etwas, das auf einem Gerät in deinem Radius passiert ist."
+  },
+  "deploy": {
+    "stepsLabel": "Schritte",
+    "steps": {
+      "location": "Ort",
+      "asset": "Asset",
+      "rules": "Regeln",
+      "publish": "Veröffentlichen"
+    },
+    "whereLegend": "Wo es liegt",
+    "whereNote": "Im Portal ist das ein Pin, den du ziehst. Die Koordinate ist die einzige Adresse, die das Asset je bekommt.",
+    "assetLegend": "Was du platzierst",
+    "assetNote": "Ein Claim pro Gerät innerhalb von Radius und Zeitfenster, die Menge ist also eine Personenzahl und keine Bestandsangabe.",
+    "rulesLegend": "Wer es nehmen darf",
+    "campaignLegend": "Die Kampagne",
+    "quantity": "Menge",
+    "claimRadius": "Claim-Radius",
+    "presets": {
+      "store": {
+        "label": "Ladenlokal",
+        "place": "Kalverstraat 92, Amsterdam",
+        "hint": "Eine Tür. Eng genug, dass nur jemand am Tresen beanspruchen kann."
+      },
+      "venue": {
+        "label": "Veranstaltungsgelände",
+        "place": "Johan Cruijff ArenA, Amsterdam",
+        "hint": "Ein ganzes Gelände für die Dauer des Events, das mit ihm abläuft."
+      },
+      "trail": {
+        "label": "Stadtroute",
+        "place": "Sechs Orte in Amsterdam-Noord",
+        "hint": "Verkettete Assets, der Reihe nach beanspruchbar, mit Gewicht auf ruhigen Straßen."
+      }
+    },
+    "assets": {
+      "token": "Token",
+      "nft": "Sammelobjekt",
+      "offer": "Angebotscode",
+      "ticket": "Zugangspass"
+    },
+    "tiers": {
+      "standard": {
+        "label": "Standardverifizierung",
+        "note": "GNSS, Attestierung und Bewegung müssen übereinstimmen."
+      },
+      "strict": {
+        "label": "Strenge Verifizierung",
+        "note": "Ergänzt den Funk-Fingerprint. Für hochwertige Drops."
+      }
+    },
+    "summaryLocation": "Ort",
+    "summaryAsset": "Asset",
+    "summaryRadius": "Radius",
+    "summaryVerification": "Verifizierung",
+    "summaryThreshold": "{tier}, Schwelle {threshold}",
+    "summaryBudget": "Budget",
+    "summaryBudgetValue": "${budget} bei ${cost} pro Ankunft",
+    "publish": "Kampagne veröffentlichen",
+    "sequence": {
+      "signing": "Kampagne wird signiert",
+      "writing": "Asset-Definition wird auf Solana geschrieben",
+      "indexing": "Koordinaten werden indexiert",
+      "live": "Live auf der Karte"
+    },
+    "again": "Noch eine einrichten",
+    "back": "Zurück",
+    "next": "Weiter",
+    "review": "Prüfen",
+    "verifiedArrivals": "Verifizierte Ankünfte",
+    "costPerArrival": "Kosten pro Ankunft",
+    "sawPin": "Sah den Pin in der Nähe",
+    "placementFee": "Platzierungsgebühr",
+    "perArrival": "Pro Ankunft",
+    "live": "Live",
+    "radiusOf": "{radius} m Radius",
+    "captionLive": "Ankünfte sind eine Projektion aus dem Radius und dem Kartenverkehr ringsum, keine Garantie. Jede davon wäre ein Claim, der on-chain in dem Moment festgehalten wird, in dem jemand dort steht.",
+    "captionIdle": "Der Ring ist maßstabsgetreu über den Plan gezeichnet. Hier braucht nichts eine Entwicklerin oder einen Entwickler: vier Entscheidungen, dann veröffentlichen."
+  },
+  "whitepaper": {
+    "metaTitle": "Whitepaper: Proof of Location auf Solana",
+    "metaDescription": "Wie Seek Protocol digitale Assets an reale Koordinaten ausgibt, prüft, dass jemand wirklich dort war, und auf Solana abwickelt. Proof of Location, Architektur, Token-Design und die Angriffe, gegen die wir uns wehren.",
+    "ogTitle": "Whitepaper von Seek Protocol",
+    "ogDescription": "Proof of Location, Architektur, Token-Design und eine ehrliche Darstellung der Angriffe und Grenzen.",
+    "eyebrow": "Whitepaper",
+    "titleStart": "Digitale Assets, die an",
+    "titleAccent": "einem Ort leben",
+    "lead": "Die technische Darstellung, wie Seek Protocol Assets an Koordinaten ausgibt, belegt, dass jemand dort stand, und es on-chain abwickelt, einschließlich dessen, was das System nicht kann.",
+    "readingTime": "{minutes} Min. Lesezeit",
+    "updated": "Aktualisiert {date}",
+    "updatedValue": "August 2026",
+    "gitbook": "Vollständige Doku auf GitBook",
+    "ctaEyebrow": "Weiter",
+    "ctaTitle": "Sieh es laufen",
+    "ctaBody": "Die Ökosystemseite zeigt das Live-Netzwerk, und die Roadmap hält fest, was geliefert ist und was als Nächstes kommt.",
+    "ctaEcosystem": "Ökosystem erkunden",
+    "ctaRoadmap": "Roadmap ansehen",
+    "chapters": {
+      "summary": {
+        "index": "01",
+        "eyebrow": "Zusammenfassung",
+        "title": "Ein Protokoll für Dinge, die an einem Ort existieren",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Das Internet hat jedes digitale Objekt überall gleichzeitig verfügbar gemacht. Das war der Sinn der Sache, und es hat funktioniert. Zugleich hat es digitalen Dingen die eine Eigenschaft genommen, die physische Dinge wertvoll erscheinen lässt: irgendwo Bestimmtes zu sein. Ein Konzertticket zählt, weil es dich in einen Raum lässt. Ein Wahrzeichen zählt, weil man hinreisen muss."
+          },
+          {
+            "kind": "p",
+            "text": "Seek Protocol bringt den Ort in digitale Assets zurück. Ein Token, ein NFT oder eine Belohnung kann an eine Reihe von Koordinaten statt an eine Wallet ausgegeben werden und bleibt dort, bis jemand physisch in ihrem Radius steht und das belegt. Das nennen wir Proof of Location, und es ist das Primitiv, auf dem der Rest des Protokolls aufbaut."
+          },
+          {
+            "kind": "p",
+            "text": "Die Oberfläche für Nutzer ist **SeekAR**, eine mobile App für iOS und Android, die diese Assets in Augmented Reality darstellt. Du gehst, dein Telefon zeigt, was in der Nähe ist, und du sammelst ein, was du findest. Darunter läuft die Abwicklung auf Solana, gewählt wegen Transaktionskosten, die niedrig genug sind, dass das Einsammeln einer kleinen Belohnung nicht mehr kostet, als sie wert ist."
+          },
+          {
+            "kind": "callout",
+            "text": "Die Kurzfassung: Wir machen digitale Assets, die sich nur von einem bestimmten Ort aus beanspruchen lassen, prüfen, dass jemand wirklich dort war, und wickeln das on-chain in unter einer Sekunde für den Bruchteil eines Cents ab."
+          },
+          {
+            "kind": "h",
+            "text": "Was dieses Dokument abdeckt"
+          },
+          {
+            "kind": "p",
+            "text": "Sechzehn Kapitel in vier Bewegungen. Die ersten drei stellen das Problem dar und das Primitiv, das darauf antwortet. Kapitel vier bis sieben sind die Maschine: wie ein Claim wandert, wie die Schichten zusammenpassen und was die App damit macht. Acht bis elf sind die Ökonomie, von der Frage, wer für Platzierung zahlt, bis dahin, wer über die Parameter entscheidet. Die letzten fünf sind die Dinge, die ein Whitepaper üblicherweise weglässt: die Angriffe, der Preis für die Privatsphäre, die regulatorische Lage und die ehrlichen Grenzen."
+          },
+          {
+            "kind": "p",
+            "text": "Mehrere Abbildungen sind bedienbar. Das Verifizierungsmodell, der Zeitstrahl eines Claims, der Fangwurf und der Budgetrechner rechnen alle das, was das Protokoll rechnet, mit denselben Konstanten, damit du mit dem Entwurf uneins sein kannst statt mit einem Bild davon."
+          }
+        ]
+      },
+      "problem": {
+        "index": "02",
+        "eyebrow": "Das Problem",
+        "title": "Aufmerksamkeit ist online billig und auf der Straße teuer",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Zwei Gruppen haben ein Problem, das sich als dasselbe Problem von zwei Seiten herausstellt."
+          },
+          {
+            "kind": "h",
+            "text": "Marken und Venues können keine Besuche kaufen"
+          },
+          {
+            "kind": "p",
+            "text": "Digitale Werbung kann in Millisekunden ein Bild vor jemanden setzen. Sie kann niemanden dazu bringen, drei Straßen weit zu gehen. Der Schritt von der Impression zum physischen Besuch ist das schwächste Glied im gesamten Handels- und Eventfunnel, und er wird schlecht gemessen, meist indem man Leute an der Kasse fragt, ob sie eine Anzeige gesehen haben."
+          },
+          {
+            "kind": "p",
+            "text": "Die Antwort der Branche heißt Modellierung. Panels aus teilnehmenden Geräten werden auf eine Bevölkerung hochgerechnet, und die daraus entstehende Ladenbesuchszahl wird neben Impressions und Klicks berichtet, als käme sie aus demselben Zähler. Tut sie nicht. Die eine Zahl ist ein Ereignis, die andere eine Schätzung, und beurteilt werden Kampagnen an der Schätzung."
+          },
+          {
+            "kind": "h",
+            "text": "Kryptoprojekte finden keine echten Nutzer"
+          },
+          {
+            "kind": "p",
+            "text": "Airdrops sind das Standardwerkzeug der Verteilung, und sie werden gefarmt. Eine Wallet zu erstellen kostet nichts, also wird jede Belohnung, die eine Wallet beanspruchen kann, von Tausenden Wallets beansprucht, die einer Handvoll Leute gehören. Projekte reagieren mit immer verzwickteren Zulassungsregeln, die vor allem gewöhnliche Nutzer aussieben, während versierte Farmer sich anpassen."
+          },
+          {
+            "kind": "p",
+            "text": "Beide Probleme lösen sich auf, wenn man belegen kann, dass ein Mensch zu einer bestimmten Zeit an einem bestimmten Ort war. Besucherzahlen werden messbar, weil die Ankunft das erfasste Ereignis ist. Airdrop-Farming wird teuer, weil eine Wallet kostenlos ist und Reisen nicht, und niemand ist in vierzig Städten gleichzeitig."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Kosten für eine Wallet",
+                "value": "Praktisch null"
+              },
+              {
+                "label": "Kosten, irgendwo zu sein",
+                "value": "Zeit, Entfernung, körperliche Anwesenheit"
+              },
+              {
+                "label": "Was dieser Unterschied bringt",
+                "value": "Sybil-Resistenz, die in der Physik verankert ist"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Warum das jetzt baubar ist und vorher nicht war"
+          },
+          {
+            "kind": "p",
+            "text": "Drei Dinge mussten zugleich eintreffen. Telefone mussten Dualfrequenz-GNSS, tiefenfähige Kameras und hardwaregestützte Attestierung serienmäßig mitbringen statt nur in Spitzenmodellen. Die Abwicklung musste billig genug werden, dass eine Belohnung im Wert weniger Cent den Transfer übersteht, was jede Chain ausschloss, bis die Gebühren unter einen Cent fielen. Und Leute mussten bereit sein, eine Kamera auf eine Straße zu richten und dort etwas eingerechnet zu sehen, was ein Jahrzehnt AR in Spielen still geklärt hat."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "03",
+        "eyebrow": "Kernprimitiv",
+        "title": "Proof of Location",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Proof of Location ist die Behauptung, dass ein bestimmtes Gerät während eines bestimmten Zeitfensters innerhalb eines bestimmten Radius war, glaubwürdig genug gemacht, um etwas Wertvolles darauf freizugeben."
+          },
+          {
+            "kind": "p",
+            "text": "Kein einzelnes Signal ist für sich vertrauenswürdig. Rohes GPS lässt sich von jedem gerooteten Gerät mit einem Mock-Location-Provider fälschen. Also bewertet das Protokoll einen Claim über mehrere unabhängige Signale und verlangt, dass die Kombination stimmig ist, denn ein Signal zu fälschen ist leicht und alle zusammen stimmig zu fälschen nicht."
+          },
+          {
+            "kind": "h",
+            "text": "Signale, die wir kombinieren"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GNSS-Fix**, die rohe Satellitenposition mit der angegebenen Genauigkeit, dazu Konstellation und Satellitenzahl, die Fälscher häufig falsch hinbekommen.",
+              "**Funkumgebung**, die Menge der nahen WLAN-SSIDs und Funkzellen, abgeglichen mit dem, was das Protokoll an diesen Koordinaten erwartet. Funkumgebungen sind schwer zu erfinden und ändern sich langsam.",
+              "**Geräteattestierung**, Play Integrity auf Android und DeviceCheck oder App Attest auf iOS, die bestätigen, dass die App echt und das Betriebssystem nicht kompromittiert ist.",
+              "**Bewegungskontinuität**, die Beschleunigungsspur zwischen der zuvor bestätigten Position und dieser. Ein Claim, du seist 400 km in 90 Sekunden gefahren, ohne passendes Bewegungsprofil, wird abgelehnt.",
+              "**Zeitliche Plausibilität**, bei der Ankunftszeiten gegen die Reisezeit geprüft werden, die deine letzte bestätigte Position nahelegt."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Jedes Signal trägt zu einem Vertrauenswert bei. Assets legen fest, welchen Wert sie verlangen: Eine geringwertige Questbelohnung nimmt einen mittleren Wert hin, während ein hochwertiger Drop bei einem Ticketevent Geräteattestierung und eine passende Funkumgebung fordern kann. Claims unterhalb der Schwelle werden abgelehnt, und wiederholte Ablehnungen von einem Gerät heben die Schwelle für dieses Gerät."
+          },
+          {
+            "kind": "confidence"
+          },
+          {
+            "kind": "callout",
+            "text": "Das Ziel ist kein perfekter Beweis, der auf Consumer-Hardware unerreichbar ist. Es ist, Fälschung teurer zu machen als die Belohnung wert ist, derselbe Maßstab, der Kartenzahlungen praktikabel hält."
+          },
+          {
+            "kind": "h",
+            "text": "Warum die Signale gewichtet und nicht verlangt werden"
+          },
+          {
+            "kind": "p",
+            "text": "Eine Regel, die jedes Signal verlangt, ist eine Regel, die ehrliche Nutzer abweist. In U-Bahn-Stationen bricht GNSS weg. Neubauten haben Funkumgebungen, die die Karte nie gesehen hat. Ein Telefon zwei Betriebssystemversionen hinterher kann die Attestierung aus Gründen verfehlen, die mit Betrug nichts zu tun haben. Gewichtung lässt ein Asset sagen, wie viel Nachweis sein Wert verdient, und lässt einen ehrlichen Claim ein schlechtes Signal überstehen, ohne dass ein gefälschter Claim vier übersteht."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Standard-Claim-Radius",
+                "value": "30 m"
+              },
+              {
+                "label": "Einstellbarer Bereich",
+                "value": "5 m bis 500 m je Asset"
+              },
+              {
+                "label": "Übliche Bestätigung",
+                "value": "Unter einer Sekunde auf Solana"
+              },
+              {
+                "label": "Attestierung",
+                "value": "Play Integrity, App Attest"
+              },
+              {
+                "label": "Umgang mit Ablehnungen",
+                "value": "Je Gerät erfasst, hebt die Schwelle dieses Geräts"
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "index": "04",
+        "eyebrow": "Mechanik",
+        "title": "Was tatsächlich passiert, wenn du etwas beanspruchst",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Das vorige Kapitel beschreibt die Belege. Dieses folgt einem einzelnen Claim vom Moment, in dem du nach einem Asset greifst, bis er in deiner Wallet liegt, denn in der Reihenfolge der Schritte stecken die meisten Entwurfsentscheidungen."
+          },
+          {
+            "kind": "timeline"
+          },
+          {
+            "kind": "h",
+            "text": "Die Grenze, auf die es ankommt"
+          },
+          {
+            "kind": "p",
+            "text": "Sieh dir an, wo die Stufen die Maschine wechseln. Alles Sensible passiert in den ersten drei: die Position, der Funkscan, die Bewegungsspur, die Attestierung. Nichts davon verlässt dein Telefon in roher Form. Zum Verifier geht ein signierter Claim, und vom Verifier zur Chain geht eine signierte Bestätigung, dass der Claim seine Schwelle erreicht hat."
+          },
+          {
+            "kind": "p",
+            "text": "Deshalb läuft die Verifizierung off-chain. Das ist kein Skalierungskompromiss. Die Bewertung on-chain zu legen hieße, die Eingaben zu veröffentlichen, und die Eingaben sind eine Beschreibung davon, wo du stehst und welche Funknetze dich umgeben."
+          },
+          {
+            "kind": "h",
+            "text": "Was passiert, wenn es schiefgeht"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Unter der Schwelle**: Der Claim wird abgelehnt, das Asset bleibt auf der Karte, und nichts wird auf die Chain geschrieben. Die Ablehnung wird beim Gerät vermerkt.",
+              "**Wiederholte Ablehnungen**: Der geforderte Wert für dieses Gerät steigt. Ein Gerät, das sechs Claims in einer Stunde verfehlt hat, wird nicht behandelt wie eines, das keinen verfehlt hat.",
+              "**Fehlgeschlagene Abwicklung**: Der Claim wird gehalten und erneut versucht statt verworfen. Ein gewonnenes und nicht geliefertes Asset ist ein Fehler, der Vertrauen kostet, also ist die Warteschlange so gebaut, dass sie eine hängende Auszahlung beiseiteschiebt, statt die dahinter zu blockieren.",
+              "**Ablauf mitten im Claim**: Assets tragen ein Zeitfenster, und ein Claim, der nach dessen Ende eintrifft, wird selbst bei perfektem Wert abgelehnt. Das Fenster gehört zum Asset, nicht zum Netzzustand."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Ein Claim ist eine Sperre, keine Abfrage. Zwei Leute, die im selben Moment nach der letzten Einheit eines Assets greifen, dürfen nicht beide bestätigt bekommen, dass sie es haben, also nimmt die Prüfung die Sperre, bevor sie irgendetwas entscheidet."
+          }
+        ]
+      },
+      "architecture": {
+        "index": "05",
+        "eyebrow": "Architektur",
+        "title": "Wie die Schichten zusammenpassen",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Das Protokoll besteht aus vier Schichten. Jede lässt sich für sich durchdenken und für sich ersetzen."
+          },
+          {
+            "kind": "stack"
+          },
+          {
+            "kind": "p",
+            "text": "Am meisten zählt die Trennung an der Grenze zwischen Ort und Abwicklung. Die Standortverifizierung ist probabilistisch und läuft off-chain, weil sie von Sensordaten abhängt, die in der Öffentlichkeit nichts zu suchen haben. Zur Chain gelangt eine signierte Bestätigung, dass ein Claim seine Schwelle erreicht hat, nicht deine Bewegungshistorie."
+          },
+          {
+            "kind": "h",
+            "text": "Was gespeichert wird, und wo"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**On-chain**: Asset-Definitionen, ihre Koordinaten und Radien, Claim-Datensätze und Token-Transfers. Öffentlich und dauerhaft.",
+              "**Off-chain**: rohe Sensorwerte, Funk-Fingerprints und Geräteattestierungen. Nur so lange aufbewahrt, wie Bewertung und Streitklärung es brauchen, danach verworfen.",
+              "**Auf dem Gerät**: deine Positionshistorie und die AR-Ankerdaten. Sie bleiben auf deinem Telefon, außer du teilst sie ausdrücklich."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Warum Solana"
+          },
+          {
+            "kind": "p",
+            "text": "Die Anforderung ist für eine Chain ungewöhnlich: sehr viele Transaktionen, sehr wenig Wert je Transaktion, und eine Bestätigung, die schnell genug ist, dass jemand auf der Straße sie nicht bemerkt. Wer eine Belohnung im Wert von zwanzig Cent abholt, kann nicht zehn Cent für den Empfang zahlen und wird keine dreißig Sekunden warten. Diese Kombination streicht den Großteil des Felds über die Kosten und den Rest über die Latenz."
+          },
+          {
+            "kind": "p",
+            "text": "Der Kompromiss ist real und gehört benannt. Solana hatte Ausfälle, und eine stehende Chain heißt Claims in der Warteschlange. Das Protokoll behandelt die Abwicklung als Schritt, der scheitern und wiederholt werden kann, statt als einen, der immer gelingt. Das ist unabhängig von der Chain der richtige Entwurf, auf dieser aber nicht optional."
+          },
+          {
+            "kind": "h",
+            "text": "Was wo läuft"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Position, Sensoren, AR-Anker",
+                "value": "Auf dem Gerät, nie roh hochgeladen"
+              },
+              {
+                "label": "Bewertung und Schwelle",
+                "value": "Protokoll-Verifier, off-chain"
+              },
+              {
+                "label": "Asset-Definitionen und Claims",
+                "value": "Solana, öffentlich"
+              },
+              {
+                "label": "Medien und Coin-Artwork",
+                "value": "Auf dem Gerät zwischengespeichert, aus dem Objektspeicher ausgeliefert"
+              },
+              {
+                "label": "Spawn-Ankündigungen",
+                "value": "Server entscheidet, nie vom Client gemeldet"
+              }
+            ]
+          }
+        ]
+      },
+      "seekar": {
+        "index": "06",
+        "eyebrow": "Anwendung",
+        "title": "SeekAR, die Seite für Nutzer",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "In SeekAR wird das Protokoll zu etwas, das man benutzen kann, ohne irgendetwas vom Obigen zu wissen. Es öffnet mit einer Karte dessen, was in der Nähe ist, und wer die Kamera hochhält, sieht diese Assets durch die AR-Engine an Ort und Stelle."
+          },
+          {
+            "kind": "h",
+            "text": "Was die App macht"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Entdecken**, eine Live-Karte von Drops, Quests und Events in Gehweite, gefiltert nach dem, was dich wirklich interessiert.",
+              "**Einsammeln**, wobei du die Kamera hältst, das Asset in der Welt verankert siehst, danach greifst und es nimmst. Die Abwicklung passiert im Hintergrund.",
+              "**Begleiten**, ein KI-Begleiter, der deine Umgebung durch die Kamera liest, Routen vorschlägt, erklärt, was du siehst, und sich anpasst, wie du spielst.",
+              "**Halten**, eine eingebaute Wallet aus einem Social Login, damit niemand beim ersten Mal eine Seed Phrase notieren muss, bevor er etwas aufheben darf."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Die Onboarding-Vorgabe treibt mehr Entwurfsentscheidungen als alles andere. Die meisten Menschen, die SeekAR je nutzen werden, haben nie einen privaten Schlüssel gehalten. Kommt in den ersten dreißig Sekunden das Wort 'Mnemonic' vor, sind sie weg. Also wird die Wallet still erstellt und kann später von allen exportiert werden, die die Verwahrung wollen."
+          },
+          {
+            "kind": "h",
+            "text": "Der Weg zum Drop"
+          },
+          {
+            "kind": "p",
+            "text": "Assets liegen zehn bis ein paar hundert Meter entfernt, eine Distanz, auf der eine Karte reicht und eine Route zu viel ist. Einen Spawn zu markieren zieht eine gerade Linie von dir zu ihm. Die Linie ist bewusst gestrichelt: Sie ist eine Peilung, keine Route, sie weiß nichts von Gebäuden, und auf dieser Distanz ist die Peilung meist der Weg. Sie verschwindet von selbst, sobald du in Fangreichweite bist, wo der Ring übernimmt."
+          },
+          {
+            "kind": "p",
+            "text": "Spawns laufen binnen einer Stunde ab. Das ist eine Spielentscheidung mit Protokollfolge: Eine Markierung, die beim nächsten Start wiederhergestellt würde, zeigte auf nichts, also speichert die App keine."
+          },
+          {
+            "kind": "h",
+            "text": "Verankerung, und wofür AR hier da ist"
+          },
+          {
+            "kind": "p",
+            "text": "Das Kamerabild ist keine Dekoration und auch nicht die Verifizierung. Es tut zwei Dinge. Es setzt das Asset an einen glaubwürdigen Ort in der Welt, sodass das Danachgreifen eine Handlung ist statt ein Knopfdruck, und es gibt dem Bewegungssignal etwas, womit es stimmig sein kann, denn wer um ein verankertes Objekt herumgeht, bewegt sich wie ein Mensch, und ein Fälscher, der sein Telefon stillhält, nicht."
+          }
+        ]
+      },
+      "play": {
+        "index": "07",
+        "eyebrow": "Die Schleife",
+        "title": "Was jemanden am Laufen hält",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ein Protokoll, das für Ankunft zahlt, braucht trotzdem einen Grund für die erste Ankunft. Niemand geht vier Straßen für einen Mechanismus. Die Spielschicht ist die Nachfrageseite des Netzwerks und ist mit derselben Ehrlichkeit entworfen wie die Verifizierung: Die Wahrscheinlichkeiten sind veröffentlicht, sie werden auf dem Server berechnet, und der Client wird nie gefragt, was passiert ist."
+          },
+          {
+            "kind": "h",
+            "text": "Der Fang"
+          },
+          {
+            "kind": "p",
+            "text": "Ein Asset zu erreichen heißt nicht, es zu bekommen. Ein Ladering füllt sich, während du gedrückt hältst, und die Güte dieser Ladung speist einen Multiplikator. Dann würfelt der Server. Du bekommst zwei Versuche pro Spawn, und der zweite ist 0,65 des ersten wert, die Zahl, die eine zweite Chance wie eine zweite Chance wirken lässt statt wie einen Trostpreis."
+          },
+          {
+            "kind": "catch"
+          },
+          {
+            "kind": "h",
+            "text": "Die Terme, die sonst niemand veröffentlicht"
+          },
+          {
+            "kind": "p",
+            "text": "Die meisten Spiele verbergen die Modifikatoren. Dafür gibt es hier keinen Grund, denn die interessante Eigenschaft ist, dass Geschick anschiebt und nie entscheidet. Der Ladering ist ein Multiplikator zwischen 0,85 und 1,0, ein perfekter Tap auf einen Legendären bleibt also ein Legendärer, und ein verpatzter Tap auf einen Gewöhnlichen bleibt wahrscheinlich ein Gewöhnlicher."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Levelbonus**, glatte 0,3 Prozentpunkte Chance je Spielerlevel, über zehn Level von Seeker bis Legend.",
+              "**Cold Streak**, ein Mitleidszähler von 2 Punkten je aufeinanderfolgendem Fehlschlag, gedeckelt bei 12, der auch für den zweiten Versuch und über Coins hinweg gilt.",
+              "**Serienstrafe**, 4 Punkte je aufeinanderfolgendem Erfolg auf demselben Coin, gedeckelt bei 20, damit das Abgrasen eines Spawnpunkts schlechter statt besser wird.",
+              "**Clanbonus**, gedeckelt bei 5 Punkten, vom Clan statt vom Spieler erarbeitet.",
+              "**Power-ups**, gekauft oder gewonnen, die die Grundchance multiplizieren, bevor alle anderen Terme dazukommen."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Der Boden liegt bei 5 % und die Decke bei 95 %. Nichts stapelt sich zu einer Garantie, und nichts stapelt sich zu einer Mauer."
+          },
+          {
+            "kind": "h",
+            "text": "Fortschritt, und wozu er da ist"
+          },
+          {
+            "kind": "p",
+            "text": "Level, Abzeichen, Clans, Zwölf-Stunden-Herausforderungen und Wochenziele geben dem Gehen eine Form, die länger reicht als ein Drop. Sie leisten auch Protokollarbeit: Ein Spieler mit Level, Clan und Serie hat ein Konto mit Geschichte, und Geschichte ist im großen Stil teuer zu fälschen. Fortschritt ist eine zweite Kostenstelle für den Farmer, die den ehrlichen Spieler nichts kostet, weil er ohnehin gespielt hätte."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Versuche je Spawn",
+                "value": "2"
+              },
+              {
+                "label": "Multiplikator des zweiten Versuchs",
+                "value": "×0,65"
+              },
+              {
+                "label": "Spanne des Laderings",
+                "value": "×0,85 bis ×1,00"
+              },
+              {
+                "label": "Boden und Decke der Chance",
+                "value": "5 % und 95 %"
+              },
+              {
+                "label": "XP bei einem Fang",
+                "value": "30 bis 140"
+              },
+              {
+                "label": "XP bei einem Fehlschlag",
+                "value": "5 bis 15"
+              },
+              {
+                "label": "Level",
+                "value": "Zehn, Seeker bis Legend"
+              }
+            ]
+          }
+        ]
+      },
+      "creators": {
+        "index": "08",
+        "eyebrow": "Angebotsseite",
+        "title": "Wer die Assets platziert",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ein ortsgebundenes Netzwerk ist wertlos, wenn die Orte leer sind. Das Protokoll behandelt Platzierung deshalb als vollwertiges Produkt, nicht als internes Werkzeug."
+          },
+          {
+            "kind": "h",
+            "text": "Drei Arten von Publishern"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Marken und Venues** nutzen das Businessportal, um Angebote an den eigenen Standorten zu platzieren und zu messen, wer wirklich kam. Was sie kaufen, ist ein verifizierter Besuch, keine Impression.",
+              "**Token-Projekte und NFT-Communities** verteilen an Menschen statt an Wallets und nutzen Geografie als Filter, den Farming nicht billig aushebelt.",
+              "**Veranstalter** machen aus Festival, Spiel oder Konferenz für die Dauer des Events eine beanspruchbare Karte, mit Assets, die mit ihm ablaufen."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Alle drei nutzen denselben Kampagnen-Builder: Pin setzen, Radius festlegen, Asset und Menge wählen, Vertrauensschwelle und Zeitfenster setzen, finanzieren, veröffentlichen. Keine Integrationsarbeit und kein Vertrag zu schreiben."
+          },
+          {
+            "kind": "callout",
+            "text": "Für ein Venue ist die entscheidende Kennzahl die Kosten je verifizierter Ankunft. Es ist die erste Besucherzahl im digitalen Marketing, die an der Tür gemessen statt aus einer Umfrage abgeleitet wird."
+          },
+          {
+            "kind": "calculator"
+          },
+          {
+            "kind": "h",
+            "text": "Das Dichteproblem"
+          },
+          {
+            "kind": "p",
+            "text": "Angebot und Nachfrage sind hier geografisch, was die üblichen Marktplatzratschläge nutzlos macht. Tausend Assets gleichmäßig über ein Land verteilt sind überall eine leere Karte. Dieselben tausend in einer Stadt sind ein Grund, das Haus zu verlassen. Die Platzierungspreise sind deshalb nach Nachfrage in der Gegend gewichtet statt pauschal, sodass eine gesättigte Einkaufsstraße teurer zu halten ist als eine ruhige, und das Protokoll die Straßen stützt, die Verkehr brauchen, statt jener, die ihn schon haben."
+          }
+        ]
+      },
+      "token": {
+        "index": "09",
+        "eyebrow": "Token",
+        "title": "$SEEK und wofür er da ist",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "$SEEK ist das Abwicklungs- und Koordinationsasset des Protokolls. Es existiert, weil das Netzwerk Werte zwischen Parteien bewegen muss, die einander nicht kennen, eine Marke in einem Land, die eine Belohnung finanziert, die eine fremde Person in einem anderen beansprucht, und weil die Kosten der Platzierung mit der Nachfrage nach den genutzten Orten skalieren sollen."
+          },
+          {
+            "kind": "h",
+            "text": "Nutzen"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Kampagnenfinanzierung**, bei der Publisher Belohnungen in $SEEK denominieren und finanzieren.",
+              "**Platzierungsgebühren**, eine Gebühr je platziertem Asset, gewichtet nach Radius, Dauer und Nachfrage in dieser Gegend.",
+              "**Staking für Priorität**, wobei gestaktes $SEEK die Platzierungspriorität eines Publishers hebt, wenn mehrere Kampagnen um dieselben Koordinaten konkurrieren.",
+              "**Belohnungen**, wobei der Großteil der Protokollgebühren zurück an die Leute fließt, die das Gehen erledigen.",
+              "**Governance**, für Parameteränderungen, Treasury-Zuteilung und die Vertrauensschwellen für hochwertige Claims."
+            ]
+          },
+          {
+            "kind": "economy"
+          },
+          {
+            "kind": "tokenomics"
+          },
+          {
+            "kind": "h",
+            "text": "Angebot im Zeitverlauf"
+          },
+          {
+            "kind": "p",
+            "text": "Ein Verteilungsdiagramm sagt, wer was hält, und nichts darüber, wann. Der Plan unten ist die nützlichere Abbildung, denn das Risiko eines Tokens liegt selten in der Aufteilung, es liegt im Cliff."
+          },
+          {
+            "kind": "vesting"
+          },
+          {
+            "kind": "p",
+            "text": "Die Entwurfsabsicht ist, dass der Gebührenfluss echter Aktivität folgt statt Spekulation: Das Protokoll verdient, wenn Assets platziert und beansprucht werden, und das passiert nur, wenn jemand bereit ist, für einen verifizierten Besuch zu zahlen."
+          },
+          {
+            "kind": "h",
+            "text": "Was der Token bewusst nicht tut"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Er legt keinen Kurs zwischen einer gefangenen Spieleinheit und einem Token fest. Das Spiel bewertet einen Fang, der Markt bewertet den Token, und das Protokoll tut nicht so, als überbrücke es beides.",
+              "Er wird zum Spielen nicht gebraucht. Fangen, XP und Herausforderungen sind kostenlos, und ein Spieler, der den Token nie anfasst, erzeugt trotzdem die Ankünfte, für die ein Publisher zahlt.",
+              "Er sperrt Platzierung nicht hinter einem Mindestbestand. Staking kauft Priorität, wenn Kampagnen konkurrieren, nicht das Recht, überhaupt zu veröffentlichen."
+            ]
+          }
+        ]
+      },
+      "revenue": {
+        "index": "10",
+        "eyebrow": "Geschäftsmodell",
+        "title": "Wie das Protokoll verdient, und bei wem",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ein Whitepaper, das einen Token beschreibt und kein Geschäft, beschreibt ein halbes System. Es gibt zwei Erlöslinien, und sie kommen von entgegengesetzten Seiten des Netzwerks. Das ist Absicht: Keine der beiden allein würde es am Laufen halten."
+          },
+          {
+            "kind": "h",
+            "text": "Platzierung, gezahlt von Publishern"
+          },
+          {
+            "kind": "p",
+            "text": "Die Hauptlinie. Ein Publisher finanziert die Belohnungen und zahlt obendrauf eine Platzierungsgebühr, gewichtet danach, wie viel Fläche das Asset hält, wie lange, und wie umkämpft diese Fläche ist. Das ist die Gebühr, die mit dem Wert wächst, den das Netzwerk schafft, weil sie auf das erhoben wird, was Publisher tatsächlich kaufen: die Ankunft."
+          },
+          {
+            "kind": "h",
+            "text": "Der Pass und der Shop, gezahlt von Spielern"
+          },
+          {
+            "kind": "p",
+            "text": "Optional und bewusst begrenzt. Ein Saisonpass läuft neunzig Tage und verschiebt die Spawn-Gewichtung zu selteneren Coins, mit einem wöchentlichen seltenen Claim und einem Boost inklusive. Einzelne Boosts werden separat verkauft: ein Seltenheitsboost, ein Spawn-Magnet, ein XP-Multiplikator oder ein Bündel mit allen dreien."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "SeekAR Pass",
+                "value": "8,99 € je 90-Tage-Saison"
+              },
+              {
+                "label": "Seltenheitsboost, Spawn-Magnet",
+                "value": "je 1,99 €, 30 Minuten"
+              },
+              {
+                "label": "XP-Boost",
+                "value": "0,99 €, 30 Minuten"
+              },
+              {
+                "label": "Boost-Bündel",
+                "value": "4,99 €, eines von jedem"
+              }
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Fangen, XP, Herausforderungen und Plattform-Erfolge bleiben dauerhaft kostenlos. Eine Bezahlstufe, die die Schleife absperrt, zerstört genau das, was Publisher kaufen: dass Leute auftauchen."
+          },
+          {
+            "kind": "h",
+            "text": "Warum die Aufteilung die richtige Form hat"
+          },
+          {
+            "kind": "p",
+            "text": "Spielerausgaben sind elastisch, saisonal und gedeckelt davon, was jemand für ein Hobby zahlt. Publisherausgaben sind ein Marketingposten, gemessen an Kosten je Ankunft, zu denen es eine echte Vergleichsalternative gibt. Das Erste hält früh das Licht an, wenn es mehr Spieler als Kampagnen gibt. Das Zweite ist das, was das Geschäft wird, und das geht nur, wenn das Erste nie zu Pay-to-win verkommt, denn ein Netzwerk zahlender Spieler, die alles fangen, meldet Ankünfte, die dem Venue nichts wert sind."
+          }
+        ]
+      },
+      "governance": {
+        "index": "11",
+        "eyebrow": "Governance",
+        "title": "Wer die Zahlen festlegt",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Dieses Protokoll hat ungewöhnlich viele einstellbare Konstanten: Radiusgrenzen, Vertrauensschwellen, die Gewichtung der Platzierungsgebühr, den Anteil der Gebühren, der an Seeker zurückgeht, und die Fangleiter selbst. Jede davon ist eine Politikentscheidung im Kostüm eines Konfigurationswerts, und so zu tun, als wäre es anders, ist genau der Weg, auf dem Protokolle von dem regiert werden, der zuletzt eine Datei bearbeitet hat."
+          },
+          {
+            "kind": "h",
+            "text": "Die gestufte Lage, ehrlich gesagt"
+          },
+          {
+            "kind": "p",
+            "text": "Governance ist nicht live. Parameter setzt heute das Kernteam, geändert über Migrationen, die festgehalten und nachvollziehbar sind. Wir werden das nicht dezentral nennen, denn das ist es nicht."
+          },
+          {
+            "kind": "p",
+            "text": "Der Grund für die Verzögerung ist nicht Widerwille. Über eine Ökonomie ohne Volumen abzustimmen ist Theater: Die Beteiligung ist niedrig, eine Handvoll Halter entscheidet, und entschieden wird über Parameter, für die niemand genug Daten hat. Governance wird sinnvoll, wenn es echten Gebührenfluss gibt, denn dann hat eine Parameteränderung eine messbare Folge, über die sich streiten lässt."
+          },
+          {
+            "kind": "h",
+            "text": "Was regiert wird und was nicht"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Regiert**: Gebührengewichtung, der Seeker-Anteil an den Protokollgebühren, Treasury-Zuteilung, Radiusgrenzen und die Vertrauensschwellen, die hochwertigen Assets zur Verfügung stehen.",
+              "**Regiert mit Verzögerung**: alles, was den Wert bereits platzierter Assets ändert. Eine Kampagne, die unter einem Gebührenplan finanziert wurde, sollte unter ihm zu Ende gehen.",
+              "**Nicht regiert**: die Datenschutzzusagen in Kapitel dreizehn. Aufbewahrungsgrenzen und die Weigerung, Bewegungsdaten zu veröffentlichen, sind keine Parameter, und eine Abstimmung ist kein legitimer Weg, sie zu schwächen.",
+              "**Nicht regiert**: einzelne Claim-Ergebnisse. Ein abgelehnter Claim ist Sache der Streitklärung, nicht einer Abstimmung."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Ein Governance-System, das die Privatsphäre der eigenen Nutzer wegstimmen kann, ist kein Schutz, sondern eine Angriffsfläche mit Quorum."
+          }
+        ]
+      },
+      "security": {
+        "index": "12",
+        "eyebrow": "Risiko",
+        "title": "Angriffe, Grenzen und was wir nicht behaupten",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ein Protokoll, das Leute dafür bezahlt, irgendwo zu sein, lädt Leute ein, darüber zu lügen. Bei den Angriffen konkret zu werden, nützt mehr als zu behaupten, das System sei sicher."
+          },
+          {
+            "kind": "h",
+            "text": "Angriffe, gegen die wir uns wehren"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GPS-Spoofing**, abgeschwächt dadurch, dass Funkumgebung und Bewegungsspur den Fix bestätigen müssen, und durch Geräteattestierung, die manipulierte Systembuilds erkennt.",
+              "**Sybil-Farming**, abgeschwächt durch die physischen Reisekosten und durch Claim-Limits je Gerät in Radius und Zeitfenster.",
+              "**Relay-Angriffe**, bei denen ein echtes Gerät vor Ort für eine entfernte Person signiert, abgeschwächt dadurch, dass die Attestierung an App-Instanz und Sitzung gebunden ist und Claims je Gerät begrenzt werden.",
+              "**Emulator-Farmen**, abgeschwächt durch Attestierung, an der Emulatoren scheitern, und durch Bewegungsspuren, die sich statistisch von echtem Gehen unterscheiden lassen.",
+              "**Vom Client gemeldete Spawns**, nicht abgeschwächt, sondern verhindert: Nur der Server kündigt an, was existiert und wo, ein manipulierter Client kann also über das lügen, was er sieht, und gewinnt nichts.",
+              "**Doppelte Claims**, verhindert dadurch, dass vor der Bewertung eine Sperre genommen wird, sodass zwei Leute, die nach der letzten Einheit greifen, nicht beide bestätigt bekommen, dass sie sie haben."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Grenzen, die wir akzeptieren"
+          },
+          {
+            "kind": "p",
+            "text": "Ein hinreichend entschlossener Angreifer mit modifizierter Hardware und physischer Anwesenheit an einem Ort kann aus diesem Ort mehr Wert ziehen als ein ehrlicher Nutzer. Wir begrenzen den Schaden mit Obergrenzen je Ort, statt so zu tun, als sei es unmöglich. Positionsbestimmung in Innenräumen bleibt deutlich ungenauer als draußen, also nutzen Assets drinnen weitere Radien und stützen sich stärker auf Funk-Fingerprinting. Und kein Consumer-Gerät kann belegen, dass ein Mensch statt eines Geräts anwesend war: Ein Telefon in einem Lieferwagen bewegt sich immer noch wie ein Telefon in der Tasche."
+          },
+          {
+            "kind": "h",
+            "text": "Risiken, die keine Angriffe sind"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Plattformabhängigkeit**. Die Attestierung liegt bei Apple und Google. Eine Richtlinienänderung bei einem der beiden könnte das stärkste Signal im Stapel über Nacht schwächen, und es gibt keine Variante, die am Betriebssystem vorbeiführt.",
+              "**Verfügbarkeit der Chain**. Eine gestoppte Chain heißt Claims in der Warteschlange. Das Protokoll wiederholt, statt zu verwerfen, aber wer auf der Straße steht, erlebt einen Wiederholungsversuch nicht als Erfolg.",
+              "**Körperliche Sicherheit**. Menschen dafür zu belohnen, an Orte zu gehen, bringt Menschen an Orte. Assets stehen an Straßenkreuzungen statt in Gebäudegrundrissen, hochwertige Drops meiden Privatgelände, und die App trägt einen Sicherheitshinweis. Das ist eine Entwurfsvorgabe, kein Haftungsausschluss."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Wir bauen eine wirtschaftliche Abschreckung, keine kryptografische Garantie. Wo beides verwechselt wird, nehmen Nutzer Schaden."
+          }
+        ]
+      },
+      "privacy": {
+        "index": "13",
+        "eyebrow": "Privatsphäre",
+        "title": "Standortdaten sind die sensibelsten Daten überhaupt",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Eine Aufzeichnung darüber, wohin jemand geht, verrät sein Zuhause, seine Arbeit, seine Gesundheit, seine Religion und seine Beziehungen. Ein Netzwerk auf Standort-Claims zu bauen heißt, dafür Verantwortung zu übernehmen, und der verantwortliche Entwurf ist, so wenig davon wie möglich zu halten."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Dauerhafte Ortung ist nie nötig. Die App fragt nach einer Position, wenn du einen Claim versuchst, nicht im Hintergrund.",
+              "Rohe Sensor- und Funkdaten dienen der Bewertung eines Claims und werden danach mit kurzer Frist gelöscht.",
+              "On-chain steht, dass ein Claim an einer öffentlichen Koordinate gelungen ist, dieselbe Information, die ein Laden hat, wenn jemand einen Gutschein einlöst.",
+              "Deine Bewegungshistorie bleibt auf deinem Gerät. Das Protokoll braucht sie nicht und will sie nicht.",
+              "Publisher erhalten aggregierte Zahlen, nie einzelne Spuren."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Das Problem, das wir nicht gelöst haben"
+          },
+          {
+            "kind": "p",
+            "text": "Weil Claim-Datensätze durch die Natur der Chain öffentlich und dauerhaft sind, kann ein entschlossener Beobachter Claims derselben Wallet über Orte hinweg verknüpfen. Das ist eine echte Schwäche und dem Abwickeln auf einem öffentlichen Ledger inhärent. Wer das vermeiden will, sollte getrennte Wallets für getrennte Kontexte nutzen, und die App macht das leicht statt es zu verstecken, aber eine Voreinstellung, die verlangt, dass Nutzer vom Problem wissen, ist keine Lösung."
+          },
+          {
+            "kind": "callout",
+            "text": "Die ehrliche Zusammenfassung: Wir halten so wenig wie möglich, wir verkaufen nicht, was wir halten, und es gibt einen Korrelationsangriff auf den öffentlichen Datensatz, den wir verringern, aber nicht beseitigen können."
+          }
+        ]
+      },
+      "compliance": {
+        "index": "14",
+        "eyebrow": "Rechtsraum",
+        "title": "Regulierung, und wo das hier steht",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Drei Regelwerke berühren dieses Protokoll gleichzeitig, was ungewöhnlich ist und es wert, ausdrücklich benannt statt in eine Fußnote geschoben zu werden."
+          },
+          {
+            "kind": "h",
+            "text": "Datenschutz"
+          },
+          {
+            "kind": "p",
+            "text": "Standort liegt in den meisten modernen Datenschutzregimen nahe an besonderen Kategorien, und das Protokoll ist nach der strengsten Lesart gebaut statt nach der bequemsten. Die Position wird zu einem genannten Zweck im Moment eines Claims erhoben, nur so lange aufbewahrt, wie Bewertung und Streitklärung es verlangen, und nie zu einem Bewegungsprofil zusammengeführt. Wo ein Regime Löschrechte gewährt, kann der Off-chain-Datensatz gelöscht werden; der On-chain-Claim-Datensatz nicht, was eine Grenze des Ledgers ist und offengelegt statt beschönigt wird."
+          },
+          {
+            "kind": "h",
+            "text": "Einordnung des Tokens"
+          },
+          {
+            "kind": "p",
+            "text": "$SEEK ist als Nutzungs- und Koordinationsasset entworfen, und der in Kapitel neun beschriebene Nutzen ist echt statt dekorativ. Das ist eine Entwurfsposition, keine rechtliche Schlussfolgerung. Die Einordnung unterscheidet sich je Rechtsraum, ändert sich über die Zeit und lässt sich von einem Whitepaper nicht durch Behauptung klären. Die Verfügbarkeit ist deshalb dort eingeschränkt, wo lokale Regeln es verlangen."
+          },
+          {
+            "kind": "h",
+            "text": "Belohnungen, Zufall und die Grenze zum Glücksspiel"
+          },
+          {
+            "kind": "p",
+            "text": "Der Fang enthält einen Wurf, was ihn nahe an eine Grenze bringt, die je nach Land verläuft. Zwei Eigenschaften halten ihn in den meisten Regimen auf der richtigen Seite und werden bewusst bewahrt: Die Teilnahme kostet nichts, und die bezahlten Gegenstände verschieben Wahrscheinlichkeiten und Raten, statt Einsätze mit variabler Auszahlung zu sein. Ein Pass kauft Gewichtung und ein Boost kauft einen Multiplikator; keines ist ein Einsatz, der verloren gehen kann. Wo ein Rechtsraum das anders liest, wird die Bezahlstufe zurückgehalten statt beredet."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Personenbezogene Daten off-chain",
+                "value": "Auf Anfrage löschbar"
+              },
+              {
+                "label": "Claim-Datensatz on-chain",
+                "value": "Dauerhaft, als solcher offengelegt"
+              },
+              {
+                "label": "Altersprüfung",
+                "value": "Bei der Anmeldung, durchgesetzt für bezahlte Gegenstände"
+              },
+              {
+                "label": "Bezahlte Gegenstände",
+                "value": "Zurückgehalten in Rechtsräumen, die sie als Wetten einstufen"
+              }
+            ]
+          }
+        ]
+      },
+      "roadmap": {
+        "index": "15",
+        "eyebrow": "Richtung",
+        "title": "Was gebaut ist und was als Nächstes kommt",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "SeekAR läuft live auf iOS und Android mit standortbasierten Drops, AR-Rendering und der Social Wallet. Der Verifizierungsstapel fährt derzeit die Signale GNSS, Attestierung und Bewegungskontinuität; das Funk-Fingerprinting wird gestaffelt ausgerollt. Die Attestierung wird hinter einem Flag durchgesetzt, und das ist der ehrliche Stand: Der Ablehnungspfad ist gebaut, und der Schalter ist noch nicht für jede Oberfläche umgelegt."
+          },
+          {
+            "kind": "p",
+            "text": "Der Drag-and-drop-Kampagnen-Builder steht. Als Nächstes kommt das Self-Service-Portal, das Platzierung über betreute Partnerschaften hinaus öffnet, samt der zugehörigen Ankunftsanalytik. Daneben stehen das Token Generation Event, der Live-Event-Modus, Saisons und das Objektscannen. Governance folgt, sobald es genug echten Gebührenfluss gibt, damit Parameterentscheidungen etwas bedeuten, aus den in Kapitel elf genannten Gründen."
+          },
+          {
+            "kind": "h",
+            "text": "Was wir nicht versprechen"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Ein Datum für Governance. Sie hängt am Volumen, und Volumen ist kein Datum.",
+              "Gleiche Genauigkeit drinnen wie draußen. Es ist ein schweres Problem, und die ehrliche Antwort sind auf absehbare Zeit weitere Radien in Innenräumen.",
+              "Ein Deployment auf mehreren Chains. Die Anforderungen an Latenz und Kosten in Kapitel fünf sind eng, und eine zweite Chain, die sie nicht erfüllt, wäre eine Marketingentscheidung statt einer technischen."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Die vollständige Aufschlüsselung nach Phasen steht auf der Roadmap-Seite, die aktuell gehalten wird, während Dinge ausgeliefert werden."
+          }
+        ]
+      },
+      "glossary": {
+        "index": "16",
+        "eyebrow": "Nachschlagen",
+        "title": "Glossar",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Begriffe, die in diesem Dokument vorkommen, mit der Bedeutung, die sie hier tragen, statt der, die sie allgemein haben."
+          },
+          {
+            "kind": "glossary"
+          }
+        ]
+      }
+    }
+  },
+  "allocations": {
+    "community": {
+      "label": "Community-Belohnungen",
+      "note": "Von Seekern durch Sammeln und Quests verdient"
+    },
+    "ecosystem": {
+      "label": "Ökosystem & Partner",
+      "note": "Kampagnenzuschüsse, Onboarding von Venues, Integrationen"
+    },
+    "team": {
+      "label": "Team & Mitwirkende",
+      "note": "4 Jahre Vesting, 12 Monate Cliff"
+    },
+    "treasury": {
+      "label": "Treasury",
+      "note": "Regierte Reserve für die Protokollentwicklung"
+    },
+    "liquidity": {
+      "label": "Liquidität",
+      "note": "Börsen und On-chain-Markttiefe"
+    },
+    "backers": {
+      "label": "Frühe Investoren",
+      "note": "2 Jahre Vesting, 6 Monate Cliff"
+    }
+  },
+  "tokenFacts": {
+    "ticker": {
+      "label": "Ticker",
+      "value": "$SEEK"
+    },
+    "chain": {
+      "label": "Chain",
+      "value": "Solana (SPL)"
+    },
+    "supply": {
+      "label": "Gesamtangebot",
+      "value": "1.000.000.000"
+    },
+    "emission": {
+      "label": "Emission",
+      "value": "Fest, keine weitere Ausgabe"
+    }
+  },
+  "glossary": {
+    "proof-of-location": {
+      "term": "Proof of Location",
+      "definition": "Die Behauptung, dass ein Gerät während eines bestimmten Zeitfensters innerhalb eines bestimmten Radius war, bewertet über mehrere unabhängige Signale und glaubwürdig genug, um Wert darauf freizugeben. Probabilistisch, nie absolut."
+    },
+    "confidence-score": {
+      "term": "Vertrauenswert",
+      "definition": "Das kombinierte Ergebnis der Signale eines Claims. Jedes Asset legt fest, welchen Wert es verlangt, sodass eine Questbelohnung und ein Ticketdrop denselben Verifier teilen können, ohne dieselbe Latte zu teilen."
+    },
+    "claim-radius": {
+      "term": "Claim-Radius",
+      "definition": "Die Entfernung von den Koordinaten eines Assets, innerhalb derer es genommen werden kann. Standard 30 m, einstellbar von 5 m bis 500 m, und der größte Hebel, den ein Publisher auf Kosten und Bedeutung hat."
+    },
+    "drop": {
+      "term": "Drop",
+      "definition": "Ein an Koordinaten platziertes Asset, das darauf wartet, beansprucht zu werden. Trägt eine Menge, ein Zeitfenster, eine Vertrauensschwelle und einen Radius."
+    },
+    "spawn": {
+      "term": "Spawn",
+      "definition": "Ein Drop, wie das Spiel ihn zeigt: vom Server angekündigt, auf der Karte sichtbar, binnen einer Stunde ablaufend und zwei Fangversuche wert."
+    },
+    "attestation": {
+      "term": "Attestierung",
+      "definition": "Eine signierte Aussage des Betriebssystems, dass die App echt und das Gerät unmanipuliert ist. Play Integrity auf Android, App Attest auf iOS. Das stärkste Signal im Stapel und das eine, das das Protokoll nicht kontrolliert."
+    },
+    "radio-fingerprint": {
+      "term": "Funk-Fingerprint",
+      "definition": "Die Menge der von einer Position sichtbaren WLAN-Netze und Funkzellen, abgeglichen mit dem, was dort sichtbar sein sollte. Ändert sich langsam und ist schwer zu erfinden, und genau das macht ihn nützlich."
+    },
+    "motion-continuity": {
+      "term": "Bewegungskontinuität",
+      "definition": "Die Beschleunigungsspur zwischen einer bestätigten Position und der nächsten. Fängt den Claim ab, der teleportiert, denn 400 km in 90 Sekunden hinterlassen kein passendes Bewegungsprofil."
+    },
+    "verified-arrival": {
+      "term": "Verifizierte Ankunft",
+      "definition": "Ein Claim, der seine Schwelle im Radius eines Publishers erreicht hat. Die Einheit, die ein Publisher kauft, und der Grund, warum die Kostenzahl einer Kampagne gezählt statt modelliert ist."
+    },
+    "placement-fee": {
+      "term": "Platzierungsgebühr",
+      "definition": "Was ein Publisher zahlt, um Fläche zu halten, gewichtet nach Radius, Dauer und Nachfrage in der Gegend. Getrennt von der Belohnung, die der Seeker erhält."
+    },
+    "cold-streak": {
+      "term": "Cold Streak",
+      "definition": "Der Mitleidszähler. Zwei Punkte Fangchance je aufeinanderfolgendem Fehlschlag, gedeckelt bei zwölf, angewandt auch auf den zweiten Versuch und über Coins hinweg."
+    },
+    "streak-penalty": {
+      "term": "Serienstrafe",
+      "definition": "Der Gegenhebel. Vier Punkte Abzug je aufeinanderfolgendem Erfolg auf demselben Coin, gedeckelt bei zwanzig, damit ein einzelner Spawnpunkt schlechter statt besser abzugrasen ist."
+    },
+    "seeker": {
+      "term": "Seeker",
+      "definition": "Eine Person, die zu Assets geht und sie beansprucht. Zugleich das erste von zehn Spielerleveln, das letzte ist Legend."
+    },
+    "seek": {
+      "term": "$SEEK",
+      "definition": "Das Abwicklungs- und Koordinationsasset. Finanziert Kampagnen, zahlt Platzierungsgebühren, kauft über Staking Platzierungspriorität und trägt die Governance-Stimme, sobald Governance läuft."
+    }
+  },
+  "whitepaperFigures": {
+    "draft": "Vorläufige Zahlen, keine endgültige Tokenomics",
+    "totalSupply": "Gesamtangebot",
+    "donutAria": "Token-Verteilung nach Anteil am Gesamtangebot",
+    "terms": "{count} Begriffe",
+    "filterTerms": "Begriffe filtern",
+    "filter": "Filter",
+    "noMatch": "Dazu passt nichts. Das Dokument selbst lässt sich mit der Suchfunktion deines Browsers durchsuchen.",
+    "stackCaption": "Claims wandern den Stapel hinunter, Wert wandert zurück hinauf. Wähle eine Schicht für Details.",
+    "liveModel": "Live-Modell",
+    "interactive": "Interaktiv",
+    "confidenceTitle": "Versuch, einen Claim ablehnen zu lassen",
+    "thresholdLabel": "Schwelle des Assets",
+    "confidenceThreshold": "Vertrauen · Schwelle {threshold}",
+    "claimAccepted": "Claim angenommen",
+    "claimRefused": "Claim abgelehnt",
+    "shortBy": "{short} Punkte zu wenig. Wiederholte Ablehnungen von einem Gerät heben dessen Schwelle weiter.",
+    "confidenceCaption": "Die Gewichte sind illustrativ. Es geht um die Form: Kein Signal allein schafft eine finanzierte Kampagne, und alle vier gleichzeitig zu fälschen kostet mehr als der Drop.",
+    "economyLabel": "Ökonomische Schleife",
+    "stageOf": "Schritt {step} von {total}",
+    "timelineTitle": "Ein Claim, Schritt für Schritt",
+    "stop": "Stopp",
+    "runReal": "In Echtzeit abspielen",
+    "claimStages": "Schritte eines Claims",
+    "segAria": "{label}, {ms} Millisekunden, {where}",
+    "endToEnd": "{seconds} s von Anfang bis Ende",
+    "takes": "Dauert",
+    "elapsed": "Vergangen",
+    "whatMoves": "Was sich bewegt",
+    "timelineWhere": {
+      "device": "Auf deinem Telefon",
+      "verifier": "Verifier",
+      "chain": "Solana"
+    },
+    "timelineCaption": "Das sind Budgets, keine Messungen. Das Sensorfenster und die Abwicklung bewegen sich mit den Bedingungen, und alles dazwischen ist Arithmetik, die das nicht tut. Achte darauf, wo die Grenze liegt: Rohe Sensordaten verlassen die ersten drei Schritte nie.",
+    "vestingTitle": "Umlaufendes Angebot, Monat für Monat",
+    "vestingAria": "Umlaufendes Angebot nach Zuteilung über 48 Monate",
+    "circulatingMonth": "im Umlauf in Monat {month}",
+    "circulatingLaunch": "im Umlauf beim Start",
+    "axisLaunch": "Start",
+    "axisYear": "Jahr {year}",
+    "month": "Monat",
+    "vestingCaption": "Lies die Stufen, nicht die Kurve. Ein flaches Stück gefolgt von einem Sprung ist ein Cliff, und an einem Cliff hält ein Plan oder eben nicht. Die Zuteilungen an Team und Investoren sind die, die man prüfen sollte, denn sie sind die beiden, die in einen Markt hinein freiwerden statt zu den Leuten, die das Netzwerk nutzen.",
+    "calcTitle": "Was ein Budget kauft",
+    "calcBudget": "Kampagnenbudget",
+    "calcReward": "Belohnung je Claim",
+    "calcRadius": "Claim-Radius",
+    "calcFee": "Platzierungsgebühr bei diesem Radius: {fee} $ je Drop",
+    "calcArrivals": "Verifizierte Ankünfte",
+    "calcPerPerson": "{cost} $ je Person an der Tür",
+    "calcDisplay": "Gleiches Budget als Display",
+    "calcInferred": "Impressions, von denen etwa {visits} zu einem abgeleiteten Besuch zu je {cost} $ werden",
+    "calcCaption": "Die Displayzahlen rechnen mit einem CPM von {cpm} $ und einer Impression-zu-Besuch-Rate von {rate} %, beides Branchendaumenregeln. Der Unterschied, auf den es ankommt: Die eine Spalte wird an der Tür gemessen, die andere abgeleitet.",
+    "contents": "Inhalt · {count} Kapitel",
+    "chaptersLabel": "Kapitel",
+    "close": "Schließen",
+    "ladderTitle": "Der Fangwurf, so wie der Server ihn rechnet",
+    "rarityLabel": "Seltenheit",
+    "playerLevel": "Spielerlevel",
+    "chargeRing": "Ladering",
+    "missed": "Verfehlt",
+    "clanBonus": "Clanbonus",
+    "points": "+{points} Pkt.",
+    "baseChance": "Grundchance",
+    "levelBonus": "Levelbonus",
+    "ringMultiplier": "Ring-Multiplikator",
+    "retryMultiplier": "Multiplikator des zweiten Versuchs",
+    "firstAttempt": "Erster Versuch",
+    "retry": "Zweiter Versuch",
+    "acrossSpawn": "Über den Spawn",
+    "youCaught": "Du hast gefangen",
+    "notYet": "noch nicht",
+    "ladderHint": "Ein Spawn sagt fast nichts. Lauf tausend durch und sieh zu, wie sich die beiden Balken schließen.",
+    "ladderTally": "{caught} gefangen aus {spawns} Spawns, {gap} Punkte neben dem Modell.",
+    "runOne": "Einen Spawn laufen lassen",
+    "runThousand": "Tausend laufen lassen",
+    "reset": "Zurücksetzen",
+    "ladderCaption": "Die Migration veröffentlicht {rarity} mit {first}% und dann {second}%, {overall}% über den Spawn. Das ist dieses Modell auf Level 5 mit vollem Ring und ohne Clan, also genau dort, wo die Regler starten. Eine gefangene Einheit ist eine Spieleinheit, und was sie in Token wert ist, ist Sache des Marktes und nicht des Spiels."
+  },
+  "stackLayers": {
+    "app": {
+      "label": "Anwendung",
+      "sub": "SeekAR · Businessportal · Kampagnen-Builder",
+      "detail": "Was Menschen anfassen. Die mobile App rendert Assets in AR und erledigt das Einsammeln; im Portal platzieren Publisher sie. Beide sind gewöhnliche Clients der Schichten darunter und haben keine Sonderrechte."
+    },
+    "intelligence": {
+      "label": "Intelligenz",
+      "sub": "KI-Begleiter · Questerzeugung · Routing",
+      "detail": "Liest den Kamerastream und deine Spielhistorie, um vorzuschlagen, wohin es weitergeht und was du gerade siehst. Läuft auf dem Gerät, wo es geht, und sieht nie rohe Positionshistorie, die es nicht braucht."
+    },
+    "location": {
+      "label": "Standortverifizierung",
+      "sub": "GNSS · Funk-Fingerprint · Attestierung · Bewegung",
+      "detail": "Bewertet einen Claim über unabhängige Signale und gibt eine signierte Bestätigung aus, sobald der Wert die Schwelle des Assets überschreitet. Off-chain by design: Die Sensordaten, die Verifizierung überhaupt möglich machen, sind genau die Daten, die nicht öffentlich sein sollten."
+    },
+    "settlement": {
+      "label": "Abwicklung",
+      "sub": "Solana · SPL-Assets · Claim-Datensätze",
+      "detail": "Hält Asset-Definitionen, Koordinaten und Claim-Datensätze und bewegt Wert, sobald ein Claim angenommen ist. Gewählt für Gebühren, die niedrig genug sind, dass das Einsammeln einer kleinen Belohnung nicht von den Kosten des Einsammelns überlagert wird."
+    }
+  },
+  "confidenceSignals": {
+    "gnss": {
+      "label": "GNSS-Fix",
+      "detail": "Satellitenposition mit der angegebenen Genauigkeit, dazu Konstellation und Satellitenzahl.",
+      "spoofable": "Auf einem gerooteten Gerät mühelos gefälscht."
+    },
+    "radio": {
+      "label": "Funkumgebung",
+      "detail": "Nahe WLAN-SSIDs und Funkzellen, abgeglichen mit dem, was hier sichtbar sein sollte.",
+      "spoofable": "Schwer zu erfinden; Funkumgebungen ändern sich langsam."
+    },
+    "attest": {
+      "label": "Geräteattestierung",
+      "detail": "Play Integrity oder App Attest bestätigt eine echte App auf einem unmanipulierten System.",
+      "spoofable": "Emulator-Farmen scheitern daran rundweg."
+    },
+    "motion": {
+      "label": "Bewegungskontinuität",
+      "detail": "Die Beschleunigungsspur zwischen deiner letzten bestätigten Position und dieser.",
+      "spoofable": "Ein Sprung von 400 km in 90 Sekunden hat kein passendes Bewegungsprofil."
+    }
+  },
+  "confidenceTiers": {
+    "low": {
+      "label": "Questbelohnung",
+      "note": "Geringer Wert, niedrige Latte."
+    },
+    "mid": {
+      "label": "Partner-Drop",
+      "note": "Der Standard für finanzierte Kampagnen."
+    },
+    "high": {
+      "label": "Ticketevent",
+      "note": "Hoher Wert, alles muss stimmen."
+    }
+  },
+  "economyStages": {
+    "fund": {
+      "label": "Publisher finanziert",
+      "actor": "Marke · Projekt · Venue",
+      "body": "Eine Kampagne wird in $SEEK denominiert und finanziert, mit einer Platzierungsgebühr, gewichtet nach Radius, Dauer und wie umkämpft die Gegend ist.",
+      "flow": "$SEEK hinein"
+    },
+    "place": {
+      "label": "Asset wird platziert",
+      "actor": "Protokoll",
+      "body": "Der Drop wird mit Claim-Radius, Zeitfenster und der geforderten Vertrauensschwelle auf seine Koordinaten geschrieben.",
+      "flow": "Gebühr an die Treasury"
+    },
+    "walk": {
+      "label": "Jemand geht hin",
+      "actor": "Seeker",
+      "body": "Der einzige Schritt, der sich nicht automatisieren lässt. Das Reisen ist der Kostenpunkt, der Farming teuer macht.",
+      "flow": "Zeit und Entfernung"
+    },
+    "verify": {
+      "label": "Anwesenheit wird geprüft",
+      "actor": "Verifizierungsschicht",
+      "body": "Vier Signale werden off-chain bewertet. Zur Chain gelangt eine signierte Bestätigung, nicht deine Sensordaten.",
+      "flow": "Bestätigung"
+    },
+    "settle": {
+      "label": "Es wickelt ab",
+      "actor": "Solana",
+      "body": "Der Transfer bestätigt in unter einer Sekunde für den Bruchteil eines Cents, und der Claim-Datensatz ist öffentlich.",
+      "flow": "Belohnung hinaus"
+    },
+    "split": {
+      "label": "Gebühren fließen zurück",
+      "actor": "Protokoll",
+      "body": "Der Großteil der Protokollgebühren geht an die Leute, die das Gehen erledigen; der Rest finanziert Treasury und Ökosystem.",
+      "flow": "Mehrheit an die Seeker"
+    }
+  },
+  "timelineStages": {
+    "open": {
+      "label": "Drop geöffnet",
+      "detail": "Du tippst ein Asset auf der Karte an oder greifst durch die Kamera danach. Die App nimmt die Position, die sie ohnehin hat, und startet ein frisches Sensorfenster.",
+      "payload": "Asset-ID, letzter bekannter Fix"
+    },
+    "window": {
+      "label": "Sensorfenster",
+      "detail": "Der mit Abstand längste Schritt und der, der alles danach entscheidet: ein neuer GNSS-Fix samt Genauigkeit, ein Scan der Funkumgebung und die Bewegungsspur seit der letzten bestätigten Position.",
+      "payload": "GNSS-Fix, Satellitenzahl, WLAN- und Zellmenge, Beschleunigungsspur"
+    },
+    "attest": {
+      "label": "Attestierung und Signatur",
+      "detail": "Play Integrity oder App Attest bestätigt, dass die App echt und das System unmanipuliert ist. Der Claim wird mit dem Schlüssel signiert, der an diese App-Instanz gebunden ist, und genau das macht einen weitergereichten Claim teuer.",
+      "payload": "Attestierungstoken, signierter Claim"
+    },
+    "score": {
+      "label": "Bewertung",
+      "detail": "Off-chain, weil sie von Sensordaten abhängt, die in der Öffentlichkeit nichts zu suchen haben. Jedes Signal wird daran gemessen, wie die Koordinate aussehen sollte, und die Ergebnisse werden zu einer Vertrauenszahl zusammengeführt.",
+      "payload": "Vertrauenswert, Aufschlüsselung je Signal"
+    },
+    "threshold": {
+      "label": "Schwellenprüfung",
+      "detail": "Der Wert erreicht die Schwelle des Assets oder nicht. Eine Ablehnung wird beim Gerät vermerkt, und wiederholte Ablehnungen heben die Latte für dieses Gerät, statt nur erneut zu scheitern.",
+      "payload": "Annehmen oder ablehnen, signierte Bestätigung"
+    },
+    "settle": {
+      "label": "Abwicklung",
+      "detail": "Claim-Datensatz und Transfer landen in einer Transaktion auf Solana. Das ist der einzige Schritt, den andere sehen können, und er sagt nur, dass ein Claim an einer öffentlichen Koordinate gelungen ist.",
+      "payload": "Claim-Datensatz, Token-Transfer"
+    },
+    "confirm": {
+      "label": "In deiner Wallet",
+      "detail": "Die Wallet aktualisiert sich, und das Asset ist für dich von der Karte verschwunden. Vom Tippen bis zum Halten unter zwei Sekunden bei guter Verbindung.",
+      "payload": "Guthaben-Update, Kartenzustand"
+    }
   }
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useFormatter, useTranslations } from "next-intl";
 
 /**
  * Publishing a campaign, played out rather than described.
@@ -17,74 +18,52 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
  * exists because arrival is the event being recorded.
  */
 
+/** Label, place and hint come from `deploy.presets`, keyed by id. */
 type Preset = {
   id: string;
-  label: string;
-  place: string;
-  hint: string;
   radius: number;
   /** People within walking distance who browse the map in a day. */
   nearby: number;
 };
 
 const PRESETS: Preset[] = [
-  {
-    id: "store",
-    label: "Storefront",
-    place: "Kalverstraat 92, Amsterdam",
-    hint: "A doorway. Tight enough that only someone at the counter can claim.",
-    radius: 25,
-    nearby: 4200,
-  },
-  {
-    id: "venue",
-    label: "Event ground",
-    place: "Johan Cruijff ArenA, Amsterdam",
-    hint: "A whole site for the length of the event, expiring when it ends.",
-    radius: 220,
-    nearby: 11500,
-  },
-  {
-    id: "trail",
-    label: "City trail",
-    place: "Six sites across Amsterdam Noord",
-    hint: "Chained assets, claimable in order, weighted towards quiet streets.",
-    radius: 60,
-    nearby: 7300,
-  },
+  { id: "store", radius: 25, nearby: 4200 },
+  { id: "venue", radius: 220, nearby: 11500 },
+  { id: "trail", radius: 60, nearby: 7300 },
 ];
 
 type AssetKind = {
   id: string;
-  label: string;
   unit: string;
   /** Typical per-claim value, in USD, used only for the projection. */
   value: number;
 };
 
 const ASSETS: AssetKind[] = [
-  { id: "token", label: "Token", unit: "$SEEK", value: 2 },
-  { id: "nft", label: "Collectible", unit: "NFT", value: 4 },
-  { id: "offer", label: "Offer code", unit: "code", value: 6 },
-  { id: "ticket", label: "Access pass", unit: "pass", value: 12 },
+  { id: "token", unit: "$SEEK", value: 2 },
+  { id: "nft", unit: "NFT", value: 4 },
+  { id: "offer", unit: "code", value: 6 },
+  { id: "ticket", unit: "pass", value: 12 },
 ];
 
 const TIERS = [
-  { id: "standard", label: "Standard", threshold: 70, note: "GNSS, attestation and motion must agree." },
-  { id: "strict", label: "Strict", threshold: 90, note: "Adds the radio fingerprint. For high-value drops." },
+  { id: "standard", threshold: 70 },
+  { id: "strict", threshold: 90 },
 ];
 
-const STEPS = ["Location", "Asset", "Rules", "Publish"];
+const STEPS = ["location", "asset", "rules", "publish"];
 
 /** The four lines the publish actually runs, in order. */
 const SEQUENCE = [
-  { at: 0, text: "Signing the campaign" },
-  { at: 700, text: "Writing the asset definition to Solana" },
-  { at: 1500, text: "Indexing the coordinates" },
-  { at: 2200, text: "Live on the map" },
+  { id: "signing", at: 0 },
+  { id: "writing", at: 700 },
+  { id: "indexing", at: 1500 },
+  { id: "live", at: 2200 },
 ];
 
 export default function DeployConsole() {
+  const t = useTranslations("deploy");
+  const format = useFormatter();
   const [step, setStep] = useState(0);
   const [preset, setPreset] = useState(PRESETS[0]);
   const [asset, setAsset] = useState(ASSETS[0]);
@@ -166,9 +145,9 @@ export default function DeployConsole() {
   return (
     <div className="deploy" data-phase={phase}>
       {/* ---------------------------------------------------------------- */}
-      <ol className="deploy-rail" aria-label="Steps">
-        {STEPS.map((label, i) => (
-          <li key={label}>
+      <ol className="deploy-rail" aria-label={t("stepsLabel")}>
+        {STEPS.map((id, i) => (
+          <li key={id}>
             <button
               type="button"
               className="deploy-step"
@@ -178,7 +157,7 @@ export default function DeployConsole() {
               disabled={phase !== "idle"}
             >
               <span className="t-mono-sm">{String(i + 1).padStart(2, "0")}</span>
-              {label}
+              {t(`steps.${id}`)}
             </button>
           </li>
         ))}
@@ -189,7 +168,7 @@ export default function DeployConsole() {
         <div className="deploy-controls">
           {step === 0 && (
             <fieldset className="deploy-field">
-              <legend className="t-mono">Where it sits</legend>
+              <legend className="t-mono">{t("whereLegend")}</legend>
               <div className="deploy-options">
                 {PRESETS.map((p) => (
                   <button
@@ -199,21 +178,18 @@ export default function DeployConsole() {
                     data-active={p.id === preset.id || undefined}
                     onClick={() => pickPreset(p)}
                   >
-                    <b>{p.label}</b>
-                    <span className="t-small">{p.hint}</span>
+                    <b>{t(`presets.${p.id}.label`)}</b>
+                    <span className="t-small">{t(`presets.${p.id}.hint`)}</span>
                   </button>
                 ))}
               </div>
-              <p className="deploy-note t-small">
-                In the portal this is a pin you drag. The coordinate is the
-                whole address the asset ever gets.
-              </p>
+              <p className="deploy-note t-small">{t("whereNote")}</p>
             </fieldset>
           )}
 
           {step === 1 && (
             <fieldset className="deploy-field">
-              <legend className="t-mono">What you place</legend>
+              <legend className="t-mono">{t("assetLegend")}</legend>
               <div className="deploy-chips">
                 {ASSETS.map((a) => (
                   <button
@@ -223,32 +199,29 @@ export default function DeployConsole() {
                     data-active={a.id === asset.id || undefined}
                     onClick={() => setAsset(a)}
                   >
-                    {a.label}
+                    {t(`assets.${a.id}`)}
                   </button>
                 ))}
               </div>
 
               <Slider
-                label="Quantity"
-                value={quantity.toLocaleString("en-US")}
+                label={t("quantity")}
+                value={format.number(quantity)}
                 min={50}
                 max={5000}
                 step={50}
                 current={quantity}
                 onChange={setQuantity}
               />
-              <p className="deploy-note t-small">
-                One claim per device inside the radius and window, so the
-                quantity is a headcount rather than a supply figure.
-              </p>
+              <p className="deploy-note t-small">{t("assetNote")}</p>
             </fieldset>
           )}
 
           {step === 2 && (
             <fieldset className="deploy-field">
-              <legend className="t-mono">Who can take it</legend>
+              <legend className="t-mono">{t("rulesLegend")}</legend>
               <Slider
-                label="Claim radius"
+                label={t("claimRadius")}
                 value={`${radius} m`}
                 min={5}
                 max={500}
@@ -257,67 +230,72 @@ export default function DeployConsole() {
                 onChange={setRadius}
               />
               <div className="deploy-chips">
-                {TIERS.map((t, i) => (
+                {TIERS.map((tier_, i) => (
                   <button
-                    key={t.id}
+                    key={tier_.id}
                     type="button"
                     className="deploy-chip"
                     data-active={i === tier || undefined}
                     onClick={() => setTier(i)}
                   >
-                    {t.label} verification
+                    {t(`tiers.${tier_.id}.label`)}
                   </button>
                 ))}
               </div>
-              <p className="deploy-note t-small">{TIERS[tier].note}</p>
+              <p className="deploy-note t-small">{t(`tiers.${TIERS[tier].id}.note`)}</p>
             </fieldset>
           )}
 
           {step === 3 && (
             <fieldset className="deploy-field">
-              <legend className="t-mono">The campaign</legend>
+              <legend className="t-mono">{t("campaignLegend")}</legend>
               <dl className="deploy-summary">
                 <div>
-                  <dt className="t-mono-sm">Location</dt>
-                  <dd>{preset.place}</dd>
+                  <dt className="t-mono-sm">{t("summaryLocation")}</dt>
+                  <dd>{t(`presets.${preset.id}.place`)}</dd>
                 </div>
                 <div>
-                  <dt className="t-mono-sm">Asset</dt>
+                  <dt className="t-mono-sm">{t("summaryAsset")}</dt>
                   <dd>
-                    {quantity.toLocaleString("en-US")} × {asset.label}
+                    {format.number(quantity)} × {t(`assets.${asset.id}`)}
                   </dd>
                 </div>
                 <div>
-                  <dt className="t-mono-sm">Radius</dt>
+                  <dt className="t-mono-sm">{t("summaryRadius")}</dt>
                   <dd>{radius} m</dd>
                 </div>
                 <div>
-                  <dt className="t-mono-sm">Verification</dt>
+                  <dt className="t-mono-sm">{t("summaryVerification")}</dt>
                   <dd>
-                    {TIERS[tier].label}, threshold {TIERS[tier].threshold}
+                    {t("summaryThreshold", {
+                      tier: t(`tiers.${TIERS[tier].id}.label`),
+                      threshold: TIERS[tier].threshold,
+                    })}
                   </dd>
                 </div>
                 <div>
-                  <dt className="t-mono-sm">Budget</dt>
+                  <dt className="t-mono-sm">{t("summaryBudget")}</dt>
                   <dd>
-                    ${Math.round(model.budget).toLocaleString("en-US")} at $
-                    {model.costPerArrival.toFixed(2)} per arrival
+                    {t("summaryBudgetValue", {
+                      budget: format.number(Math.round(model.budget)),
+                      cost: model.costPerArrival.toFixed(2),
+                    })}
                   </dd>
                 </div>
               </dl>
 
               {phase === "idle" && (
                 <button type="button" className="btn btn-brand deploy-publish" onClick={publish}>
-                  Publish campaign
+                  {t("publish")}
                 </button>
               )}
 
               {phase !== "idle" && (
                 <ol className="deploy-log" aria-live="polite">
                   {SEQUENCE.map((entry, i) => (
-                    <li key={entry.text} data-done={i <= line || undefined}>
+                    <li key={entry.id} data-done={i <= line || undefined}>
                       <span className="deploy-log-mark" aria-hidden="true" />
-                      {entry.text}
+                      {t(`sequence.${entry.id}`)}
                     </li>
                   ))}
                 </ol>
@@ -325,7 +303,7 @@ export default function DeployConsole() {
 
               {phase === "live" && (
                 <button type="button" className="btn btn-outline btn-sm deploy-reset" onClick={reset}>
-                  Set up another
+                  {t("again")}
                 </button>
               )}
             </fieldset>
@@ -339,14 +317,14 @@ export default function DeployConsole() {
                 onClick={() => setStep((s) => Math.max(0, s - 1))}
                 disabled={step === 0}
               >
-                Back
+                {t("back")}
               </button>
               <button
                 type="button"
                 className="btn btn-brand btn-sm"
                 onClick={() => setStep((s) => Math.min(3, s + 1))}
               >
-                {step === 2 ? "Review" : "Next"}
+                {step === 2 ? t("review") : t("next")}
               </button>
             </div>
           )}
@@ -354,36 +332,36 @@ export default function DeployConsole() {
 
         {/* ------------------------------------------------- preview ----- */}
         <div className="deploy-preview">
-          <StreetPlate radius={radius} label={preset.label} live={phase === "live"} />
+          <StreetPlate radius={radius} label={t(`presets.${preset.id}.label`)} live={phase === "live"} />
 
           <div className="deploy-readout">
             {phase === "live" ? (
               <>
                 <div className="deploy-metric deploy-metric-lead">
-                  <span className="t-mono-sm">Verified arrivals</span>
-                  <span className="t-num">{arrivals.toLocaleString("en-US")}</span>
+                  <span className="t-mono-sm">{t("verifiedArrivals")}</span>
+                  <span className="t-num">{format.number(arrivals)}</span>
                 </div>
                 <div className="deploy-metric">
-                  <span className="t-mono-sm">Cost per arrival</span>
+                  <span className="t-mono-sm">{t("costPerArrival")}</span>
                   <span className="t-num">${model.costPerArrival.toFixed(2)}</span>
                 </div>
                 <div className="deploy-metric">
-                  <span className="t-mono-sm">Saw the pin nearby</span>
-                  <span className="t-num">{model.seen.toLocaleString("en-US")}</span>
+                  <span className="t-mono-sm">{t("sawPin")}</span>
+                  <span className="t-num">{format.number(model.seen)}</span>
                 </div>
               </>
             ) : (
               <>
                 <div className="deploy-metric deploy-metric-lead">
-                  <span className="t-mono-sm">Claim radius</span>
+                  <span className="t-mono-sm">{t("claimRadius")}</span>
                   <span className="t-num">{radius} m</span>
                 </div>
                 <div className="deploy-metric">
-                  <span className="t-mono-sm">Placement fee</span>
+                  <span className="t-mono-sm">{t("placementFee")}</span>
                   <span className="t-num">${model.fee.toFixed(2)}</span>
                 </div>
                 <div className="deploy-metric">
-                  <span className="t-mono-sm">Per arrival</span>
+                  <span className="t-mono-sm">{t("perArrival")}</span>
                   <span className="t-num">${model.costPerArrival.toFixed(2)}</span>
                 </div>
               </>
@@ -391,9 +369,7 @@ export default function DeployConsole() {
           </div>
 
           <p className="t-mono-sm deploy-caption">
-            {phase === "live"
-              ? "Arrivals are a projection from the radius and the map traffic around it, not a guarantee. Every one of them would be a claim recorded on-chain at the moment someone stood there."
-              : "The ring is drawn to scale against the plate. Nothing here needs a developer: four decisions, then publish."}
+            {phase === "live" ? t("captionLive") : t("captionIdle")}
           </p>
         </div>
       </div>
@@ -422,6 +398,7 @@ const CLAIM_DOTS = [
 ];
 
 function StreetPlate({ radius, label, live }: { radius: number; label: string; live: boolean }) {
+  const t = useTranslations("deploy");
   // 500 m fills the plate, so the ring is comparable across every setting.
   // Square-rooted because what the reader is judging is ground covered, and
   // area goes as the square of the radius.
@@ -513,10 +490,10 @@ function StreetPlate({ radius, label, live }: { radius: number; label: string; l
 
       <span className="deploy-plate-tag t-mono-sm">
         {live && <span className="dot-live" />}
-        {live ? "Live" : label}
+        {live ? t("live") : label}
       </span>
 
-      <span className="deploy-plate-radius t-mono-sm">{radius} m radius</span>
+      <span className="deploy-plate-radius t-mono-sm">{t("radiusOf", { radius })}</span>
     </div>
   );
 }
