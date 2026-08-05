@@ -1,11 +1,31 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import SeekLogo from "@/components/brand/SeekLogo";
 import ThemeToggle from "@/components/theme/ThemeToggle";
 import LanguageSwitcher from "@/components/shared/LanguageSwitcher";
+
+/**
+ * The open state lives in a checkbox, not in React.
+ *
+ * It used to be useState behind an onClick, which meant the button did nothing
+ * at all until the page had hydrated. Time to interactive on a phone was
+ * measured at 35 seconds, so for half a minute the menu was not slow, it was
+ * inert: you tapped it, nothing happened, and you tapped it again.
+ *
+ * A checkbox and a label are wired together by the browser before a single line
+ * of our JavaScript runs, so the panel opens on the first tap of the first
+ * paint. CSS reads :checked to show the panel, turn the burger into a cross and
+ * lock the body. React still handles the parts that genuinely need it, closing
+ * on navigation and on Escape, and those simply start working once it arrives.
+ *
+ * Sibling combinators rather than :has() for the visibility itself. A browser
+ * without :has() would otherwise never open the menu at all, and failing closed
+ * is the one outcome worth designing against here.
+ */
+const TOGGLE_ID = "mobile-nav-toggle";
 
 const LINKS = [
   { href: "/ecosystem", key: "ecosystem" },
@@ -17,39 +37,46 @@ const LINKS = [
 ] as const;
 
 export default function SiteHeader() {
-  const [open, setOpen] = useState(false);
+  const toggleRef = useRef<HTMLInputElement>(null);
   const pathname = usePathname();
   const t = useTranslations("nav");
 
-  const close = useCallback(() => setOpen(false), []);
+  const close = useCallback(() => {
+    const toggle = toggleRef.current;
+    if (toggle) toggle.checked = false;
+  }, []);
 
-  // Close the mobile sheet on navigation.
+  // Close the sheet on navigation.
   useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [open]);
+    close();
+  }, [pathname, close]);
 
   useEffect(() => {
-    if (!open) return;
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape" && toggleRef.current?.checked) close();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [open]);
+  }, [close]);
 
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <>
-      <header className="site-header" data-open={open || undefined}>
+      {/* First, so the sibling combinators below can reach both the header and
+          the panel. Visually hidden but still focusable, so the label picks up a
+          focus ring from it. */}
+      <input
+        ref={toggleRef}
+        id={TOGGLE_ID}
+        type="checkbox"
+        className="nav-toggle"
+        aria-label={t("toggleMenu")}
+        aria-controls="mobile-nav"
+      />
+
+      <header className="site-header">
         <div className="site-header-inner shell-wide">
           <Link href="/" className="site-header-brand" aria-label="Seek Protocol">
             <SeekLogo markSize={42} />
@@ -77,17 +104,13 @@ export default function SiteHeader() {
             <Link href="/contact" className="btn btn-brand btn-sm site-header-cta">
               {t("getApp")}
             </Link>
-            <button
-              type="button"
-              className="site-burger"
-              onClick={() => setOpen((v) => !v)}
-              aria-label={t("toggleMenu")}
-              aria-expanded={open}
-              aria-controls="mobile-nav"
-            >
+            {/* A label rather than a button: the browser toggles the checkbox
+                for us, with no listener to wait for. The checkbox above carries
+                the accessible name and the state. */}
+            <label htmlFor={TOGGLE_ID} className="site-burger">
               <span />
               <span />
-            </button>
+            </label>
           </div>
         </div>
       </header>
@@ -100,12 +123,10 @@ export default function SiteHeader() {
           `inset: var(--nav-h) 0 0` resolved against the 72px bar rather than the
           viewport, so it collapsed to 72px and the page showed through below it.
           Desktop never caught it: the panel is display:none above 1080px. */}
-      <div
-        id="mobile-nav"
-        className="mobile-nav"
-        hidden={!open}
-        aria-hidden={!open}
-      >
+      {/* No hidden attribute: visibility is CSS, driven by :checked, so it works
+          before hydration. display:none keeps it out of the accessibility tree
+          while closed, which is what the hidden attribute was doing. */}
+      <div id="mobile-nav" className="mobile-nav">
         <nav className="mobile-nav-list" aria-label="Mobile">
           {LINKS.map((link, i) => (
             <Link

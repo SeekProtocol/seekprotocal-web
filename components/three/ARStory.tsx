@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
+import { useNearViewport } from "@/lib/use-near-viewport";
 import { useTheme } from "@/components/theme/ThemeProvider";
 
 /**
@@ -34,9 +35,13 @@ export default function ARStory({ progressRef, className = "" }: Props) {
     themeRef.current = theme;
   }, [theme]);
 
+  // Built one viewport out, not on mount. See useNearViewport.
+  const nearViewport = useNearViewport(hostRef);
+
   useEffect(() => {
     const host = hostRef.current;
     if (!host) return;
+    if (!nearViewport) return;
 
     let renderer: THREE.WebGLRenderer;
     try {
@@ -406,7 +411,7 @@ export default function ARStory({ progressRef, className = "" }: Props) {
       renderer.domElement.remove();
       delete host.dataset.ready;
     };
-  }, [progressRef]);
+  }, [progressRef, nearViewport]);
 
-  return <div ref={hostRef} className={`ar-canvas ${className}`} aria-hidden="true" />;
+  return <div ref={hostRef} className={`three-host ar-canvas ${className}`} aria-hidden="true" />;
 }

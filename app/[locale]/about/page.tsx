@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -291,7 +292,14 @@ function AboutContent() {
             {TEAM.map((member) => (
               <article key={member.name} className="team-card reveal">
                 <div className="team-card-photo">
-                  <img loading="lazy" src={`/images/${member.img}`} alt={member.name} />
+                  {/* fill: the sources run from 800x598 to 1888x2048, so there is no one
+                      ratio to state. .team-card-photo already squares the box. */}
+                  <Image
+                    src={`/images/${member.img}`}
+                    alt={member.name}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 200px"
+                  />
                 </div>
                 <div className="team-card-body">
                   <h3 className="team-card-name">{member.name}</h3>

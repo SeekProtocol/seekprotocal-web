@@ -87,7 +87,17 @@
     "getReady": "Bereid je voor om te zoeken!",
     "ctaDesc": "Stap in een nieuwe realiteit waar de wereld je speeltuin wordt. SeekAR transformeert je omgeving in een interactief avontuur, de nieuwste AR-technologie vermengend met verkenning in de echte wereld. Zoek verborgen schatten op, verzamel waardevolle digitale beloningen en overwin dynamische quests!",
     "coinReadoutLabel": "Signaalvergrendeling",
-    "coinReadoutAccuracy": "Nauwkeurigheid {meters} m"
+    "coinReadoutAccuracy": "Nauwkeurigheid {meters} m",
+    "beyondEyebrow": "Meer dan munten",
+    "beyondTitle": "Een drop hoeft geen token te zijn",
+    "beyondLead": "Alles wat aan een persoon uitgegeven kan worden, kan ook aan een plek uitgegeven worden. Korting aan de kassa, iets tastbaars dat in een winkel klaarligt, een pas die alleen op de locatie zelf bestaat. Voor een winkelstraat is de munt daarvan meestal het minst interessant.",
+    "howEyebrow": "Hoe het werkt",
+    "howTitle": "Drie stappen, en de derde levert op",
+    "liveEyebrow": "Live netwerk",
+    "liveTitle": "Kies een stad en waag een poging",
+    "liveLead": "Spring naar elke hub, tik op een munt om te zien wie hem opgepakt heeft, en probeer er zelf een te vangen, gerold tegen de echte kansen uit de app.",
+    "foundationsEyebrow": "Fundamenten",
+    "readWhitepaper": "Lees de technische whitepaper"
   },
   "about": {
     "heroTitle": "Ontdek de toekomst van locatie-gebaseerde digitale ervaringen",
@@ -205,7 +215,10 @@
     "backToBlog": "← Terug naar Blog",
     "readyToSeek": "Klaar om te beginnen met zoeken?",
     "readyToSeekDesc": "Download SeekAR en transformeer je wereld in een blockchain-aangedreven speeltuin.",
-    "moreArticles": "Meer artikelen"
+    "moreArticles": "Meer artikelen",
+    "keepReading": "Verder lezen",
+    "allArticles": "Alle artikelen",
+    "relatedPages": "Verwante pagina's"
   },
   "forms": {
     "emailPlaceholder": "E-mailadres",
@@ -370,6 +383,2096 @@
     "seekerLabel": "Seeker",
     "xpGained": "XP verdiend",
     "coordsLabel": "Coördinaten",
-    "verified": "Aanwezigheid on-chain geverifieerd"
+    "verified": "Aanwezigheid on-chain geverifieerd",
+    "all": "Alle",
+    "yourHaul": "Jouw buit",
+    "filterLabel": "Filter op zeldzaamheid",
+    "waitingRarity": "Nog geen {rarity} vangsten",
+    "catchChance": "Vangkans",
+    "close": "Sluiten",
+    "secondsAgo": "{seconds}s geleden",
+    "zoomIn": "Inzoomen",
+    "zoomOut": "Uitzoomen"
+  },
+  "homeSteps": {
+    "placed": {
+      "title": "Er wordt iets geplaatst",
+      "meta": "Uitgever · overal ter wereld",
+      "body": "Een merk, een project of een evenement pint een asset vast op een set coördinaten en bepaalt binnen welke straal hij geclaimd kan worden. Daar blijft hij staan, zichtbaar op de kaart, tot iemand hem komt halen."
+    },
+    "arrive": {
+      "title": "Je loopt binnen bereik",
+      "meta": "30 m standaardstraal",
+      "body": "Je telefoon bevestigt dat je er echt bent: satellietfix, radiosignalen uit de omgeving, device-attestatie en je bewegingsspoor moeten het allemaal met elkaar eens zijn. Eén signaal vervalsen is makkelijk; ze alle vier tegelijk vervalsen niet."
+    },
+    "collect": {
+      "title": "Je pakt hem op",
+      "meta": "Afwikkeling op Solana binnen een seconde",
+      "body": "Houd de camera omhoog, zie de asset verankerd in de straat voor je, en pak hem. De overdracht wordt on-chain afgewikkeld voor een fractie van een cent, en hij is van jou."
+    }
+  },
+  "homeStats": {
+    "accuracy": {
+      "label": "Claimnauwkeurigheid"
+    },
+    "languages": {
+      "label": "Talen"
+    },
+    "stores": {
+      "label": "App stores live"
+    }
+  },
+  "worldDescent": {
+    "hint": "Blijf scrollen",
+    "bannerDistance": "84 m verderop",
+    "orbit": {
+      "label": "Baan om de aarde",
+      "title": "Elke drop is een coördinaat",
+      "body": "Assets worden gepubliceerd op punten op de planeet, niet in een tijdlijn. Van hieraf is dat alles wat het netwerk is: een paar duizend plekken waar iets ligt te wachten."
+    },
+    "descent": {
+      "label": "Afdaling",
+      "title": "Op weg naar één ervan",
+      "body": "Kies een van die punten en ga erheen. Het protocol maakt niet uit welke, alleen dat je er staat op het moment dat je hem claimt."
+    },
+    "street": {
+      "label": "Straatniveau",
+      "title": "Dit is dezelfde kaart, vierhonderd kilometer dichterbij",
+      "body": "De gebouwen waar je overheen vliegt zijn de gebouwen tussen jou en de drop. Afstand is de hele mechaniek, dus de kaart moet de echte zijn."
+    },
+    "hand": {
+      "label": "In je hand",
+      "title": "En het past in een telefoon",
+      "body": "Er is niets omgewisseld. Het beeld waar je zojuist doorheen vloog is wat de app rendert, met zijn eigen bediening eroverheen."
+    }
+  },
+  "appChrome": {
+    "home": "Start",
+    "map": "Kaart",
+    "quests": "Quests",
+    "wallet": "Wallet",
+    "backToMap": "‹ Kaart",
+    "tapCoin": "Tik op een munt",
+    "distanceAway": "{metres} m verderop"
+  },
+  "arSection": {
+    "eyebrow": "Augmented reality",
+    "hint": "Blijf scrollen",
+    "see": {
+      "label": "De camera kijkt",
+      "title": "Een camera ziet geen straat",
+      "body": "Hij ziet helderheid die verandert over een raster. Voordat er ergens iets geplaatst kan worden, moet het beeld eerst iets met structuur worden, en op dit moment is die er niet.",
+      "readout": "FRAME 1/60 · GEEN TRACKING"
+    },
+    "track": {
+      "label": "Kenmerken komen vrij",
+      "title": "De wereld is gemaakt van hoeken",
+      "body": "Punten waar de helderheid in twee richtingen tegelijk verandert, overleven beweging, dus die houdt de engine vast en de rest gooit hij weg. Volg er genoeg over genoeg frames en de telefoon weet hoe hij bewogen heeft.",
+      "readout": "TRACKING · 2.412 KENMERKEN"
+    },
+    "plane": {
+      "label": "Er wordt een vlak gevonden",
+      "title": "Iets om op te staan",
+      "body": "Kenmerken die een oppervlak delen, worden samengevoegd tot een vlak. Dat is het moment waarop een drop ophoudt een plaatje op je scherm te zijn en een object wordt met een plek om te staan.",
+      "readout": "VLAK GEDETECTEERD · 6,0 × 6,0 M"
+    },
+    "anchor": {
+      "label": "Het anker zet zich vast",
+      "title": "Vastgezet aan de wereld, niet aan de telefoon",
+      "body": "De drop wordt gebonden aan dat stuk geometrie en aan de coördinaat waarop hij gepubliceerd is. Loop eromheen en hij blijft waar hij was. Twee mensen die op dezelfde plek staan, zien hem op dezelfde plek.",
+      "readout": "ANKER VAST · 52,3702 N 4,8952 O"
+    },
+    "persist": {
+      "label": "Het blijft staan",
+      "title": "Morgen nog steeds daar",
+      "body": "Het anker wordt opgeslagen bij de locatie in plaats van bij de sessie, dus de app afsluiten verplaatst hem niet. Die blijvendheid is wat een AR-speeltje van een AR-protocol scheidt.",
+      "readout": "ANKER BEWAARD · SESSIE-ONAFHANKELIJK"
+    }
+  },
+  "mobiSection": {
+    "title": "De metgezel die kan zien wat jij ziet",
+    "lead": "Vraag het hardop en Mobi leest de straat via de camera: herkenningspunten, openingstijden, welke kant de drop op ligt. Hij draait op je toestel zelf waar dat kan, en hij houdt nooit een spoor bij van waar je bent geweest.",
+    "tapHint": "Tik op Mobi",
+    "tapAgain": "{label} · tik nog eens",
+    "tapAria": "Mobi is {state}. Tik om verder te gaan.",
+    "points": [
+      "Praten en luisteren, handsfree terwijl je loopt",
+      "Leest herkenningspunten en borden uit het camerabeeld",
+      "Quests die zich aanpassen aan hoe en waar je speelt"
+    ],
+    "listening": {
+      "label": "Luistert",
+      "line": "Waar is het hier de moeite waard om naartoe te lopen?"
+    },
+    "thinking": {
+      "label": "Leest de straat",
+      "line": "Vergelijkt wat de camera ziet met spawns in de buurt…"
+    },
+    "answering": {
+      "label": "Antwoordt",
+      "line": "Er staat een legendarische twee straten verderop, achter de markt. Zes minuten in jouw tempo, en om zes uur sluit het."
+    },
+    "idle": {
+      "label": "Inactief",
+      "line": "Wacht af. Er wordt niets opgenomen."
+    }
+  },
+  "socialSection": {
+    "eyebrow": "Samen",
+    "title": "De helft is met wie je op pad gaat",
+    "lead": "Clans leggen samen wat iedereen verzamelt. De chat is end-to-end versleuteld, met berichten die verdwijnen als een gesprek zichzelf niet hoeft te overleven. En iemand binnenhalen levert je een deel op van wat diegene vindt.",
+    "points": [
+      "Directe berichten en clanberichten, end-to-end versleuteld",
+      "Power-ups en tips die je aan vrienden doorgeeft",
+      "Referralbeloningen die opbrengen terwijl zij spelen"
+    ],
+    "online": "{count} online",
+    "encrypted": "Versleuteld",
+    "composer": "Bericht",
+    "disappearing": "Verdwijnende berichten",
+    "yourCode": "Jouw code",
+    "copy": "Kopieer",
+    "copied": "Gekopieerd",
+    "spot": {
+      "text": "Er is net een legendarische gespawned bij de markt. Twee straten van de tramhalte."
+    },
+    "coming": {
+      "text": "Ik ben onderweg. Heeft iemand nog een magneet over?"
+    },
+    "sent": {
+      "text": "Ik heb je er twee gestuurd. Bewaar de diamond hands voor het lek."
+    },
+    "missed": {
+      "text": "Volle ring en hij ontsnapte alsnog. Nog twee pogingen."
+    },
+    "invited": {
+      "label": "Uitgenodigd"
+    },
+    "active": {
+      "label": "Actief"
+    },
+    "share": {
+      "label": "Jouw aandeel"
+    }
+  },
+  "videoReveal": {
+    "mute": "Zet de film uit",
+    "unmute": "Speel de film met geluid af"
+  },
+  "featureGroups": {
+    "eyebrow": "Wat erin zit",
+    "title": "Meer dan een kaart met munten erop",
+    "tablist": "Functiegroepen",
+    "hunt": {
+      "label": "Jagen",
+      "items": [
+        {
+          "title": "Spawns op echte coördinaten",
+          "body": "Drops verschijnen op vaste punten om je heen en blijven daar tot iemand ze claimt. Markeer er een en de app telt de afstand af terwijl je loopt."
+        },
+        {
+          "title": "Blijvende AR-vangsten",
+          "body": "De munt verankert zich aan de grond voor je en blijft verankerd tussen sessies, dus hij staat op dezelfde plek voor iedereen die erheen komt."
+        },
+        {
+          "title": "Power-ups en timing",
+          "body": "Magneet, dubbel en freeze stapelen op een vangst. Een timingbalk bepaalt hoeveel van de drop je houdt, want een legendarische die slecht gevangen is, blijft een legendarische die slecht gevangen is."
+        },
+        {
+          "title": "Zeldzaamheid die iets betekent",
+          "body": "Van gewoon tot legendarisch, waarbij de zeldzaamheid de ringkleur op de kaart bepaalt nog voor je in de buurt bent."
+        }
+      ]
+    },
+    "progress": {
+      "label": "Voortgang",
+      "items": [
+        {
+          "title": "Tien rangen, verdiend met lopen",
+          "body": "Van Seeker tot Legend. Je rang komt uit afgelegde afstand en bezochte plekken, niet uit wat je uitgegeven hebt."
+        },
+        {
+          "title": "Eenenzestig badges",
+          "body": "Een complete verzameling, van Diamond Hands tot On-Chain Detective, elk met zijn eigen voorwaarde om hem vrij te spelen."
+        },
+        {
+          "title": "Game Center en Play Games",
+          "body": "Prestaties synchroniseren met het platform dat je al gebruikt, zodat je reeksen en mijlpalen naast de rest van je games staan."
+        },
+        {
+          "title": "Reeksen en dagelijkse quests",
+          "body": "Missies die zich aanpassen aan waar je bent en hoe je speelt, waarbij de beloning meegroeit zolang de reeks staat."
+        }
+      ]
+    },
+    "together": {
+      "label": "Samen",
+      "items": [
+        {
+          "title": "Clans",
+          "body": "Sluit je aan of richt er een op, leg bijdragen samen en klim in de clanranglijst. Inclusief emblemen, rangen en gedeelde beloningspotten."
+        },
+        {
+          "title": "Versleutelde chat",
+          "body": "Directe berichten en clanberichten, end-to-end versleuteld, met verdwijnende berichten als een gesprek zichzelf niet hoeft te overleven."
+        },
+        {
+          "title": "Ranglijsten",
+          "body": "Wereldwijd, landelijk en op clanniveau, met medailles voor de top drie en een lijst die bijwerkt terwijl mensen lopen."
+        },
+        {
+          "title": "Referrals",
+          "body": "Haal mensen binnen en verdien een deel van wat zij verzamelen. Je code staat bovenaan het scherm, want daar kwam je voor."
+        }
+      ]
+    },
+    "own": {
+      "label": "Bezitten",
+      "items": [
+        {
+          "title": "Een wallet zonder seed phrase",
+          "body": "Aangemaakt vanuit een social login, zodat je binnen een minuut na installeren al kunt verzamelen. Exporteer de sleutel wanneer je zelf het beheer wilt."
+        },
+        {
+          "title": "SeekAR Pass",
+          "body": "Een seizoenstraject met beloningen dat naast het gewone spel meeloopt, met een gratis en een betaalde variant."
+        },
+        {
+          "title": "Shop",
+          "body": "Power-ups, cosmetica en avataronderdelen, afgerekend in wat je verzameld hebt in plaats van alleen in wat je kunt kopen."
+        },
+        {
+          "title": "3D-avatars",
+          "body": "Volledige avatars die met Decentraland werken, met animaties en emotes, geen uitgesneden profielfoto."
+        }
+      ]
+    }
+  },
+  "progression": {
+    "eyebrow": "Progressie",
+    "title": "Tien rangen, eenenzestig badges, en geen van beide te koop",
+    "lead": "Je rang komt uit afgelegde afstand en bezochte plekken. Alles aan deze muur verdien je door naar buiten te gaan.",
+    "badgeAlt": "Rangbadge {name}",
+    "rankOf": "Rang {tier} van {total}",
+    "rankTablist": "Rangniveaus",
+    "badgesTitle": "Verzamelbadges",
+    "badgesShown": "{shown} van {total} getoond",
+    "achievementsTitle": "Prestaties"
+  },
+  "ranks": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "scout": {
+      "name": "Scout"
+    },
+    "tracker": {
+      "name": "Tracker"
+    },
+    "hunter": {
+      "name": "Hunter"
+    },
+    "pathfinder": {
+      "name": "Pathfinder"
+    },
+    "ranger": {
+      "name": "Ranger"
+    },
+    "sentinel": {
+      "name": "Sentinel"
+    },
+    "apex": {
+      "name": "Apex"
+    },
+    "mythic": {
+      "name": "Mythic"
+    },
+    "legend": {
+      "name": "Legend"
+    }
+  },
+  "badges": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "web3Wizard": {
+      "name": "Web3 Wizard"
+    },
+    "whale": {
+      "name": "Whale"
+    },
+    "bull": {
+      "name": "Bull"
+    },
+    "detective": {
+      "name": "On-Chain Detective"
+    },
+    "samurai": {
+      "name": "Degen Samurai"
+    },
+    "liquidityKing": {
+      "name": "Liquidity King"
+    }
+  },
+  "achievements": {
+    "firstCatch": {
+      "name": "Eerste vangst",
+      "detail": "Verzamel je eerste drop"
+    },
+    "explorer": {
+      "name": "Ontdekkingsreiziger",
+      "detail": "Verzamel op 50 verschillende plekken"
+    },
+    "legendary": {
+      "name": "Legendarisch",
+      "detail": "Vang een legendarische spawn"
+    },
+    "rareHunter": {
+      "name": "Zeldzaamheidsjager",
+      "detail": "250 zeldzame vangsten"
+    },
+    "streak": {
+      "name": "Reeks van dertig dagen",
+      "detail": "Speel 30 dagen achter elkaar"
+    },
+    "clanFounder": {
+      "name": "Clanoprichter",
+      "detail": "Begin je eigen clan"
+    }
+  },
+  "clans": {
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "laserEyes": {
+      "name": "Laser Eyes"
+    },
+    "megaWhales": {
+      "name": "Mega Whales"
+    },
+    "moonSquad": {
+      "name": "Moon Squad"
+    },
+    "alphaWolves": {
+      "name": "Alpha Wolves"
+    },
+    "yieldFarmers": {
+      "name": "Yield Farmers"
+    },
+    "anonCabal": {
+      "name": "Anon Cabal"
+    },
+    "bullRunners": {
+      "name": "Bull Runners"
+    }
+  },
+  "clansSection": {
+    "eyebrow": "Clans",
+    "title": "Niemand dekt een stad in zijn eentje",
+    "lead": "Richt een clan op of sluit je aan, leg samen wat iedereen verzamelt en klim samen in de ranglijst. De chat is end-to-end versleuteld, en berichten kunnen zo ingesteld worden dat ze verdwijnen als een gesprek zichzelf niet hoeft te overleven.",
+    "statClans": "Oprichtende clans",
+    "statChat": "Versleutelde chat",
+    "statRanks": "Clanrangen",
+    "tableTitle": "Clanranglijst",
+    "thisSeason": "Dit seizoen",
+    "rankAlt": "Plaats {rank}"
+  },
+  "rarity": {
+    "common": "Gewoon",
+    "uncommon": "Ongewoon",
+    "rare": "Zeldzaam",
+    "epic": "Episch",
+    "legendary": "Legendarisch"
+  },
+  "powerups": {
+    "coin_magnet": {
+      "label": "Muntmagneet",
+      "effect": "Trekt drops in de buurt binnen bereik"
+    },
+    "diamond_hands": {
+      "label": "Diamond hands",
+      "effect": "Houdt de lading vast die je verdiend hebt"
+    },
+    "pump_it": {
+      "label": "Pump it",
+      "effect": "Elke tik telt dubbel"
+    },
+    "to_the_moon": {
+      "label": "To the moon",
+      "effect": "Tilt de vangkans een niveau omhoog"
+    },
+    "whale": {
+      "label": "Whale",
+      "effect": "Verdubbelt de eenheden bij een vangst"
+    },
+    "this_is_fine": {
+      "label": "This is fine",
+      "effect": "Overleeft één mislukte poging"
+    }
+  },
+  "collectiblesSection": {
+    "eyebrow": "Verzamelobjecten",
+    "title": "Dit zijn de munten die daarbuiten liggen",
+    "lead": "Zeldzaamheid bepaalt hoe vaak er een spawnt en hoe groot de kans is dat je hem houdt. Een gevangen eenheid is een spel-eenheid. Wat die in echte tokens opbrengt, is een zaak van de markt.",
+    "filterLabel": "Filter op zeldzaamheid",
+    "all": "Alle",
+    "catchChance": "Vangkans",
+    "overThree": "Over 3 pogingen",
+    "perUnit": "Per eenheid",
+    "powerupsTitle": "Power-ups die de ronde veranderen"
+  },
+  "offers": {
+    "railLabel": "Dropformats",
+    "redeemLabel": "Hoe je hem verzilvert",
+    "proofLabel": "Wat hem geldig maakt",
+    "voucher": {
+      "label": "Kortingsbon",
+      "headline": "Korting, aan de deur die hem gegeven heeft",
+      "face": "25% korting",
+      "fine": "Eén per persoon · 14 dagen geldig · Alleen in de winkel",
+      "redeem": "De code wordt aan de kassa getoond en als gebruikt gemarkeerd. Doorsturen kan niet, want hij is uitgegeven aan het toestel dat binnen de straal stond.",
+      "proof": "De claim staat on-chain met de coördinaat waarop hij opgehaald is, dus een verzilvering is te toetsen aan een echte aankomst in plaats van aan een screenshot.",
+      "placedBy": "Retail en horeca"
+    },
+    "asset": {
+      "label": "Fysiek object",
+      "headline": "Iets tastbaars, dat op een plek ligt te wachten",
+      "face": "Paar sneakers",
+      "fine": "1 van 250 · Ophalen in de winkel · Vervalt als de voorraad op is",
+      "redeem": "De houder haalt het artikel zelf op. De token is de aanspraak erop, en die verbrandt bij overdracht zodat hetzelfde paar niet twee keer opgehaald kan worden.",
+      "proof": "De voorraad is eindig en de claim is een slot, geen opzoeking, dus twee mensen die naar de laatste grijpen kunnen niet allebei te horen krijgen dat ze hem hebben.",
+      "placedBy": "Merken met iets weg te geven"
+    },
+    "access": {
+      "label": "Toegangspas",
+      "headline": "Het kaartje is dat je bij de locatie bent",
+      "face": "Poort B · 19:00",
+      "fine": "Niet overdraagbaar · Vervalt aan het eind van het evenement",
+      "redeem": "Wordt bij de poort gescand als elke andere pas. Het verschil is dat hij alleen ter plekke te krijgen was, en dat is wat hem de moeite van het uitgeven waard maakt.",
+      "proof": "Drops met hoge waarde krijgen een strengere drempel, dus de radio-omgeving moet het eens zijn met de positie voordat hij vrijgegeven wordt.",
+      "placedBy": "Evenementen, locaties en festivals"
+    },
+    "token": {
+      "label": "Tokendrop",
+      "headline": "Distributie die iets kost om te farmen",
+      "face": "40 $SEEK",
+      "fine": "Eén claim per toestel · Afgewikkeld op Solana",
+      "redeem": "Hij komt binnen in de wallet die de app voor je gemaakt heeft, en is van jou om te houden, te verplaatsen of te verkopen. Niets te verzilveren en niemand om iets aan te vragen.",
+      "proof": "Een wallet aanmaken is gratis, een wandeling niet. Geografie is het filter waar een airdrop niet goedkoop doorheen te farmen is.",
+      "placedBy": "Tokenprojecten en communities"
+    },
+    "collectible": {
+      "label": "Verzamelobject",
+      "headline": "Iets dat alleen bestaat waar het geplaatst is",
+      "face": "Zeldzaam",
+      "fine": "Serie van 500 · Verhandelbaar · Zeldzaamheid vastgelegd bij uitgifte",
+      "redeem": "Niets te verzilveren. Het is een bewijs dat je ergens geweest bent, en dat is de oudste reden die iemand ooit gehad heeft om iets te bewaren.",
+      "proof": "Elk exemplaar draagt de coördinaat waarop het opgehaald is, dus de verzameling die iemand heeft, is een kaart van waar diegene echt geweest is.",
+      "placedBy": "Steden, toerismebureaus, kunstenaars"
+    }
+  },
+  "walkthrough": {
+    "eyebrow": "Loop het door",
+    "title": "Dit is de hele lus",
+    "lead": "Geen video van de app. Dit zijn de eigen regels van de app, die hier draaien. Tik op een spawn op de kaart en ga vanaf daar verder.",
+    "startOver": "Opnieuw beginnen",
+    "map": {
+      "label": "De kaart",
+      "title": "Alles in de buurt, staand waar het echt staat",
+      "body": "Spawns staan op vaste coördinaten en blijven daar tot iemand ze claimt. Tik er een aan om te zien wat het is en hoe ver je moet lopen."
+    },
+    "spawn": {
+      "label": "De spawn",
+      "title": "Zeldzaamheid vertelt je waar je naartoe loopt",
+      "body": "Van gewoon tot legendarisch, elk met een eigen vangkans. Je krijgt twee pogingen, en de herkansing is 0,65 van de eerste waard, dus de eerste tik telt het zwaarst."
+    },
+    "catch": {
+      "label": "De vangst",
+      "title": "Tik om te laden, en houd je hoofd koel",
+      "body": "De ring vult zich terwijl je tikt. Om de ronde of twee komt er iets tussen: de orb bevriest, de lading springt lek, of er opent een surge waarin tikken dubbel tellen."
+    },
+    "result": {
+      "label": "De worp",
+      "title": "Lading koopt kans, geen zekerheid",
+      "body": "Een volle ring op een legendarische blijft één op vijf. Dat is wat een legendarische de moeite waard maakt, en wat die tik iets laat beslissen."
+    },
+    "wallet": {
+      "label": "Van jou",
+      "title": "Het landt in een wallet die je nooit hebt hoeven instellen",
+      "body": "Aangemaakt vanuit een social login, zodat een nieuwe speler binnen een minuut iets verzamelt. Exporteer de sleutel wanneer je zelf het beheer wilt."
+    }
+  },
+  "spawnScreen": {
+    "back": "‹ Kaart",
+    "distance": "Afstand",
+    "inRange": "Binnen bereik",
+    "thisAttempt": "Deze poging",
+    "attemptsLeft": "Pogingen over",
+    "attemptsOf": "{left} van {total}",
+    "note": "De ring laden tilt dit omhoog. De herkansing daarna is 0,65 van de eerste waard.",
+    "cta": "Vang hem"
+  },
+  "catchScreen": {
+    "attempt": "Poging {attempt} van {total}",
+    "tapAria": "Tik om te laden",
+    "sealAria": "Dicht het lek",
+    "ringFull": "Ring vol, houd hem vast",
+    "tapPrompt": "Tik op de munt",
+    "mechanic": {
+      "freeze": "Bevroren, blijf tikken om hem te ontdooien",
+      "leak": "Lekt, dicht de gaten",
+      "surge": "Surge, elke tik telt dubbel"
+    }
+  },
+  "resultScreen": {
+    "caught": "Gevangen",
+    "escaped": "Hij ontsnapte",
+    "ringCharged": "Ring geladen",
+    "chance": "Kans deze poging",
+    "xp": "XP",
+    "gameValue": "Spelwaarde",
+    "noteCaught": "Een gevangen eenheid is een spel-eenheid. Wat die in echte tokens opbrengt, is een zaak van de markt.",
+    "noteRetry": "Nog één poging, 0,65 van de eerste waard.",
+    "noteGone": "Die spawn is weg. Er komt een volgende.",
+    "openWallet": "Open wallet",
+    "tryAgain": "Probeer opnieuw",
+    "backToMap": "Terug naar de kaart"
+  },
+  "walletScreen": {
+    "totalBalance": "Totaal saldo",
+    "delta": "+ {amount} vandaag",
+    "send": "Verstuur",
+    "receive": "Ontvang",
+    "swap": "Wissel",
+    "stake": "Stake",
+    "justCaught": "Net gevangen",
+    "assets": "Assets",
+    "recentBadges": "Recente badges"
+  },
+  "dropKinds": {
+    "airdrop": "Airdrop",
+    "quest": "Questbeloning",
+    "partner": "Partnerdrop",
+    "event": "Evenementtoken",
+    "cache": "Straatcache"
+  },
+  "ecosystemPage": {
+    "metaTitle": "Ecosysteem: seekers, uitgevers, protocol",
+    "metaDescription": "Hoe het ecosysteem van Seek Protocol in elkaar zit: seekers die verzamelen, uitgevers die plaatsen, en het protocol dat aanwezigheid verifieert en afwikkelt op Solana.",
+    "ogTitle": "Drie partijen, één coördinaat",
+    "eyebrow": "Ecosysteem",
+    "titleStart": "Drie partijen, één",
+    "titleAccent": "coördinaat",
+    "lead": "Iemand plaatst een asset. Iemand reist ernaartoe. Het protocol bevestigt dat diegene er echt was en wikkelt het af. Al het andere is detail bovenop die lus.",
+    "networkEyebrow": "Het netwerk",
+    "networkTitle": "Elke pin is een echte plek",
+    "networkLead": "Draai aan de globe. De coördinaten zijn echte stadsposities, en elke boog is een drop die tussen twee ervan beweegt.",
+    "capabilitiesEyebrow": "Mogelijkheden",
+    "capabilitiesTitle": "Wat het protocol daadwerkelijk biedt",
+    "faqEyebrow": "Vragen",
+    "faqTitle": "De vragen die het stellen waard zijn",
+    "faqLead": "Inclusief die met een ongemakkelijk antwoord.",
+    "ctaEyebrow": "Dieper graven",
+    "ctaTitle": "Het technische verhaal",
+    "ctaBody": "Locatiebewijs, de architectuur, het tokenontwerp, en een eerlijke lijst van de aanvallen waartegen we ons verdedigen en de grenzen die we accepteren.",
+    "ctaWhitepaper": "Lees de whitepaper",
+    "ctaBusiness": "Plaats je eigen assets"
+  },
+  "participants": {
+    "seekers": {
+      "label": "Seekers",
+      "tag": "Vraag",
+      "title": "Mensen die het gaan halen",
+      "body": "Iedereen met de app. Ze lopen, ze vinden dingen, en ze houden wat ze verzamelen. Voorkennis van crypto is niet nodig: de wallet wordt aangemaakt vanuit een social login en kan later geëxporteerd worden door wie het beheer zelf wil.",
+      "gets": [
+        "Tokens, NFT's en beloningen van partners",
+        "Quests die zich aanpassen aan waar ze zijn",
+        "Een wallet die ze niet eerst hoefden te begrijpen"
+      ]
+    },
+    "publishers": {
+      "label": "Uitgevers",
+      "tag": "Aanbod",
+      "title": "Wie het daar neergelegd heeft",
+      "body": "Merken, locaties, tokenprojecten en evenementenorganisatoren. Zij plaatsen assets op coördinaten die voor hen tellen en betalen per plaatsing, gewogen naar straal, looptijd en hoe druk bevochten het gebied is.",
+      "gets": [
+        "Geverifieerde bezoeken, geen vertoningen",
+        "Geografische spreiding die farmen tegengaat",
+        "Een campagnebouwer zonder integratiewerk"
+      ]
+    },
+    "protocol": {
+      "label": "Protocol",
+      "tag": "Afwikkeling",
+      "title": "Het deel dat iedereen eerlijk houdt",
+      "body": "Verificatiescores, bewaring van assets en afwikkeling. Het rekent een fee op plaatsing, stuurt het grootste deel daarvan terug naar seekers, en houdt bij wat waar geclaimd is.",
+      "gets": [
+        "Fees die echte activiteit volgen",
+        "Een openbaar claimregister",
+        "Parameters die na verloop van tijd naar governance gaan"
+      ]
+    }
+  },
+  "capabilities": {
+    "placement": {
+      "title": "Geofenced plaatsing",
+      "meta": "5 m tot 500 m",
+      "body": "Assets worden op coördinaten vastgezet met een instelbare claimstraal. Een winkeldeur gebruikt een krappe straal, een festivalterrein een ruime."
+    },
+    "verification": {
+      "title": "Verificatie op meerdere signalen",
+      "meta": "4 onafhankelijke signalen",
+      "body": "Satellietfix, radiosignalen uit de omgeving, device-attestatie en bewegingscontinuïteit moeten het allemaal eens zijn voordat een claim geaccepteerd wordt."
+    },
+    "anchoring": {
+      "title": "AR-verankering",
+      "meta": "Blijvend",
+      "body": "Assets blijven staan tussen sessies en tussen gebruikers. Twee mensen die op dezelfde plek staan, zien hetzelfde op dezelfde plek."
+    },
+    "companion": {
+      "title": "AI-metgezel",
+      "meta": "Eerst op het toestel zelf",
+      "body": "Leest de camera om uit te leggen waar je naar kijkt en waar je heen kunt, zonder je bewegingsgeschiedenis ergens heen te sturen."
+    },
+    "wallet": {
+      "title": "Social wallet",
+      "meta": "Geen seed phrase",
+      "body": "Aangemaakt vanuit een social login, zodat een nieuwe gebruiker binnen een minuut iets kan verzamelen, met export naar eigen beheer wanneer die dat wil."
+    },
+    "settlement": {
+      "title": "Afwikkeling op Solana",
+      "meta": "Binnen een seconde",
+      "body": "Goedkoop genoeg dat een kleine beloning ophalen niet meer kost dan de beloning waard is, en dat is precies waarom de keuze voor de chain uitmaakt."
+    }
+  },
+  "ecosystemFaq": {
+    "spoofing": {
+      "question": "Kan ik mijn locatie vervalsen en verzamelen zonder erheen te gaan?",
+      "answer": "Niet goedkoop. Een kale GPS-fix is makkelijk te vervalsen, en daarom is het maar één van de vier signalen. De radio-omgeving, device-attestatie en je bewegingsspoor moeten het allemaal bevestigen, en een toestel dat er herhaaldelijk uitvalt, krijgt een hogere drempel. Het doel is vervalsing duurder maken dan de beloning waard is, niet beweren dat het onmogelijk is."
+    },
+    "crypto": {
+      "question": "Moet ik iets van crypto weten om SeekAR te gebruiken?",
+      "answer": "Nee. De wallet wordt aangemaakt vanuit een social login en je ziet nooit een seed phrase, tenzij je er zelf naar op zoek gaat. Wil je later zelf het beheer, dan kun je de sleutel op elk moment exporteren."
+    },
+    "tracking": {
+      "question": "Houdt Seek Protocol bij waar ik heen ga?",
+      "answer": "Nee. De app vraagt om een positie op het moment dat je iets claimt, niet doorlopend op de achtergrond. Ruwe sensordata wordt gebruikt om die ene claim te beoordelen en daarna weggegooid, en je bewegingsgeschiedenis blijft op je toestel."
+    },
+    "farming": {
+      "question": "Wat houdt iemand tegen die een locatie met veel wallets leegfarmt?",
+      "answer": "Claimlimieten per toestel binnen een straal en tijdvenster, plus device-attestatie waar emulatorfarms op stuklopen. Wallets zijn gratis, reizen niet, en dat is precies waarom distributie aan geografie gekoppeld is."
+    },
+    "chain": {
+      "question": "Waarom Solana en geen andere chain?",
+      "answer": "Transactiekosten. Een beloning van een paar cent ophalen moet een fractie van een cent kosten om af te wikkelen, anders klopt de economie niet. Bevestiging binnen een seconde telt ook, als iemand op een straathoek staat te wachten."
+    },
+    "business": {
+      "question": "Kan mijn bedrijf vandaag al assets plaatsen?",
+      "answer": "Via een begeleide samenwerking wel. Het selfserviceportaal dat het gesprek met ons overbodig maakt, is in ontwikkeling, en op de roadmap staat waar het zit."
+    }
+  },
+  "roadmapPage": {
+    "metaTitle": "Roadmap: opgeleverd en wat er volgt",
+    "metaDescription": "Wat Seek Protocol opgeleverd heeft en wat er volgt, van het prototype voor locatiebewijs via de publieke lancering van SeekAR tot het selfserviceportaal en on-chain governance.",
+    "ogTitle": "Roadmap van Seek Protocol",
+    "eyebrow": "Roadmap",
+    "titleStart": "Wat er staat, en wat er",
+    "titleAccent": "volgt",
+    "lead": "{phases} fases, afgezet tegen wat er echt opgeleverd is. {shipped} van de {total} mijlpalen compleet.",
+    "status": {
+      "done": "Opgeleverd",
+      "active": "Loopt",
+      "next": "Gepland"
+    },
+    "datesTitle": "Over deze data",
+    "datesNote": "Data beschrijven een intentie, geen toezegging. Alles wat nog niet als afgerond staat, kan schuiven, en dat zeggen we liever dan de grafiek stilletjes te herschikken.",
+    "legendTitle": "Legenda",
+    "ctaEyebrow": "Detail",
+    "ctaTitle": "De redenering achter de volgorde",
+    "ctaBody": "De whitepaper legt uit waarom verificatie vóór schaal kwam, en waarom governance als laatste komt.",
+    "ctaWhitepaper": "Lees de whitepaper"
+  },
+  "roadmapPhases": {
+    "foundation": {
+      "title": "Fundament",
+      "summary": "Bewijzen dat het kernidee überhaupt werkte: kon een telefoon bevestigen dat iemand ergens was, betrouwbaar genoeg om iets van waarde vrij te geven?",
+      "groups": {},
+      "items": {
+        "prototype": "Prototype voor locatiebewijs met GNSS en bewegingscontinuïteit",
+        "engine": "AR-renderengine met blijvende verankering in de wereld",
+        "settlement": "Afwikkelingslaag op Solana en assetdefinities",
+        "alpha": "Interne alpha in drie teststeden"
+      }
+    },
+    "launch": {
+      "title": "Publieke lancering",
+      "summary": "SeekAR in echte handen krijgen, in beide app stores, met een onboarding die er niet van uitgaat dat de gebruiker ooit een private key vastgehouden heeft.",
+      "groups": {},
+      "items": {
+        "stores": "SeekAR uitgebracht op iOS en Android",
+        "wallet": "Wallet via social login met optionele export naar eigen beheer",
+        "drops": "Locatiegebonden drops en questsysteem",
+        "attestation": "Device-attestatie via Play Integrity en App Attest",
+        "localisation": "Site en app vertaald naar acht talen"
+      }
+    },
+    "scale": {
+      "title": "Het opengooien",
+      "summary": "Het jaar waarin het netwerk niet langer aan ons is om te vullen. Iedereen kan assets plaatsen zonder ons eerst te spreken, de token die dat financiert gaat publiek, en de redenen om terug te komen zijn niet langer dingen die je alleen doet.",
+      "groups": {
+        "supply": "Aanbodkant",
+        "network": "Netwerkeffecten"
+      },
+      "items": {
+        "companion": "AI-metgezel met camerabewuste begeleiding in context",
+        "radio": "Radiofingerprinting toegevoegd aan de verificatiestapel",
+        "builder": "Campagnebouwer met slepen en neerzetten voor kleinere uitgevers",
+        "portal": "Selfserviceportaal voor locaties en merken",
+        "analytics": "Analytics op geverifieerde bezoeken en rapportage van kosten per bezoek",
+        "tge": "Token generation event",
+        "partnerships": "Grote samenwerkingen",
+        "liveEvents": "Live-eventmodus voor festivals, wedstrijden en congressen",
+        "seasons": "Seizoenen, met eigen ladders en beloningen",
+        "scanning": "Gamified objecten scannen",
+        "guilds": "Guilds, teamquests en gedeelde beloningspotten",
+        "revenueShare": "Omzetdeling voor creators op geplaatste assets"
+      }
+    },
+    "governance": {
+      "title": "De parameters overdragen",
+      "summary": "Governance volgt op echte feestromen in plaats van eraan vooraf te gaan. Stemmen over een economie zonder volume is theater, dus dit komt bewust als laatste.",
+      "groups": {},
+      "items": {
+        "onChain": "On-chain governance voor protocolparameters",
+        "treasury": "Toewijzing uit de community treasury",
+        "providers": "Verificatieaanbieders van derden",
+        "sdk": "Open SDK voor externe applicaties op het protocol"
+      }
+    }
+  },
+  "businessPage": {
+    "metaTitle": "Zakelijk: koop bezoeken, geen vertoningen",
+    "metaDescription": "Plaats beloningen op je eigen coördinaten en meet wie er echt gekomen is. Seek Protocol maakt van digitale campagnes geverifieerd bezoek voor retail, evenementen, tokenprojecten en steden.",
+    "ogTitle": "Koop bezoeken, geen vertoningen",
+    "eyebrow": "Zakelijk",
+    "titleStart": "Koop bezoeken, geen",
+    "titleAccent": "vertoningen",
+    "lead": "Digitale advertenties zetten je logo binnen milliseconden voor iemands neus. Ze krijgen die persoon niet drie straten verderop. Leg een beloning bij je deur en betaal voor de mensen die hem halen.",
+    "ctaTalk": "Neem contact op",
+    "ctaVerification": "Hoe verificatie werkt",
+    "argumentEyebrow": "Het argument",
+    "argumentTitle": "Waar het tellen ophoudt",
+    "argumentLead": "Geef hetzelfde bedrag op twee manieren uit en de trechters lijken vergelijkbaar tot de laatste regel. De ene is geteld. De andere is een model, en het is de regel waarop elke campagne beoordeeld wordt.",
+    "useCasesEyebrow": "Toepassingen",
+    "useCasesTitle": "Vier manieren waarop mensen het gebruiken",
+    "setupEyebrow": "Opzet",
+    "setupTitle": "Vier keuzes, geen engineering",
+    "setupLead": "Dit is de hele flow. Maak de vier keuzes en publiceer, en zie wat elke keuze doet met het gebied dat je vasthoudt en met de prijs van iemand aan je deur.",
+    "measurementEyebrow": "Meting",
+    "measurementTitle": "Wat je krijgt, en wat niet",
+    "measurementLead": "Locatiedata is de gevoeligste categorie die er is. Je krijgt de aantallen die je nodig hebt om een campagne te beoordelen, en niets waarmee je een individu kunt volgen.",
+    "ctaEyebrow": "Aan de slag",
+    "ctaTitle": "Leg iets bij je deur",
+    "ctaBody": "Het selfserviceportaal is in ontwikkeling. Tot het er is, zetten we campagnes samen met jou op. Vertel ons de locatie en wat je wilt plaatsen.",
+    "ctaStart": "Begin een gesprek",
+    "ctaRoadmap": "Zie wanneer selfservice komt"
+  },
+  "useCases": {
+    "retail": {
+      "label": "Retail en horeca",
+      "metric": "Kosten per geverifieerd bezoek",
+      "title": "Maak van een locatie een reden om langs te komen",
+      "body": "Leg een aanbieding bij je deur met een krappe claimstraal. Alleen wie daar staat kan hem pakken, dus de verzilvering die je ziet is iemand die binnenkwam, niet een advertentie waar iemand langs scrolde.",
+      "points": [
+        "Straal afgestemd op de deur, niet op de postcode",
+        "Verzilvering vastgelegd op het moment van aankomst",
+        "Werkt over een hele keten zonder integratie per vestiging"
+      ]
+    },
+    "events": {
+      "label": "Evenementen en locaties",
+      "metric": "Betrokkenheid op locatie",
+      "title": "Een claimbare kaart zolang het evenement duurt",
+      "body": "Festivals, wedstrijden en congressen worden een tijdelijke laag assets die verlopen zodra het evenement voorbij is. Aanwezigheid ontsluit ze, dus de beloning bereikt de mensen die er echt waren.",
+      "points": [
+        "Assets met een tijdvenster die volgens schema verlopen",
+        "Ruime stralen voor terreinen, krappe voor podia en tribunes",
+        "Strengere verificatiedrempels voor drops met hoge waarde"
+      ]
+    },
+    "token": {
+      "label": "Token- en NFT-projecten",
+      "metric": "Sybil-weerstand",
+      "title": "Verdeel onder mensen, niet onder wallets",
+      "body": "Een wallet aanmaken is gratis, en daarom worden airdrops leeggefarmd. Fysieke aanwezigheid eisen legt echte kosten op elke extra claim, want niemand is in veertig steden tegelijk.",
+      "points": [
+        "Geografische spreiding over gekozen markten",
+        "Claimlimieten per toestel binnen een straal en tijdvenster",
+        "Openbaar claimregister op Solana"
+      ]
+    },
+    "tourism": {
+      "label": "Steden en toerisme",
+      "metric": "Spreiding van bezoekersstromen",
+      "title": "Leid mensen langs de plekken die je gebruikt wilt zien",
+      "body": "Rijg assets aan elkaar tot een route zodat bezoekers hem op volgorde aflopen. Rustige straten, minder bekende locaties en daluren kunnen de beloningen dragen die drukke trekpleisters niet nodig hebben.",
+      "points": [
+        "Quests in volgorde over meerdere locaties",
+        "Weging op daluren om de drukte te spreiden",
+        "Bezoekersaantallen op totaalniveau, nooit individuele sporen"
+      ]
+    }
+  },
+  "measurement": {
+    "counted": {
+      "label": "Wat er geteld wordt",
+      "value": "Een geverifieerd bezoek binnen jouw straal"
+    },
+    "when": {
+      "label": "Wanneer het geteld wordt",
+      "value": "Op het moment van claimen, niet later afgeleid"
+    },
+    "receive": {
+      "label": "Wat je ontvangt",
+      "value": "Totalen per locatie, tijdstip en campagne"
+    },
+    "never": {
+      "label": "Wat je nooit ontvangt",
+      "value": "Individuele bewegingssporen of identiteiten"
+    }
+  },
+  "funnel": {
+    "budget": "Campagnebudget",
+    "displayTitle": "Gekocht als display",
+    "displayCost": "per gemodelleerd bezoek",
+    "seekTitle": "Gekocht als bezoeken",
+    "seekCost": "per geverifieerd bezoek",
+    "counted": "Geteld",
+    "estimated": "Geschat",
+    "stages": {
+      "impressions": "Vertoningen geleverd",
+      "viewable": "Daadwerkelijk in beeld",
+      "clicks": "Kliks",
+      "visits": "Winkelbezoeken",
+      "saw": "Zag de pin in de buurt",
+      "opened": "Opende de drop",
+      "walked": "Liep ernaartoe",
+      "claimed": "Claimde bij de deur"
+    },
+    "caption": "Display rekent met een CPM van ${cpm}, {viewability}% zichtbaarheid, een klikratio van {ctr}% en het cijfer van {modelled}% van vertoning naar bezoek dat advertentieplatforms modelleren. Die laatste regel is de regel om naar te kijken: hij is niet geteld maar geschat, en hij volgt niet uit de kliks erboven. In de rechterkolom is elke regel iets dat op een toestel binnen jouw straal gebeurd is."
+  },
+  "deploy": {
+    "stepsLabel": "Stappen",
+    "steps": {
+      "location": "Locatie",
+      "asset": "Asset",
+      "rules": "Regels",
+      "publish": "Publiceren"
+    },
+    "whereLegend": "Waar het ligt",
+    "whereNote": "In het portaal is dit een pin die je versleept. De coördinaat is het enige adres dat de asset ooit krijgt.",
+    "assetLegend": "Wat je plaatst",
+    "assetNote": "Eén claim per toestel binnen de straal en het tijdvenster, dus het aantal is een aantal mensen en geen voorraadcijfer.",
+    "rulesLegend": "Wie hem mag pakken",
+    "campaignLegend": "De campagne",
+    "quantity": "Aantal",
+    "claimRadius": "Claimstraal",
+    "presets": {
+      "store": {
+        "label": "Winkelpand",
+        "place": "Kalverstraat 92, Amsterdam",
+        "hint": "Een deuropening. Krap genoeg dat alleen iemand aan de balie kan claimen."
+      },
+      "venue": {
+        "label": "Evenemententerrein",
+        "place": "Johan Cruijff ArenA, Amsterdam",
+        "hint": "Een heel terrein zolang het evenement duurt, dat verloopt als het afgelopen is."
+      },
+      "trail": {
+        "label": "Stadsroute",
+        "place": "Zes locaties in Amsterdam-Noord",
+        "hint": "Geketende assets, op volgorde claimbaar, met nadruk op rustige straten."
+      }
+    },
+    "assets": {
+      "token": "Token",
+      "nft": "Verzamelobject",
+      "offer": "Aanbiedingscode",
+      "ticket": "Toegangspas"
+    },
+    "tiers": {
+      "standard": {
+        "label": "Standaardverificatie",
+        "note": "GNSS, attestatie en beweging moeten het eens zijn."
+      },
+      "strict": {
+        "label": "Strenge verificatie",
+        "note": "Voegt de radiofingerprint toe. Voor drops met hoge waarde."
+      }
+    },
+    "summaryLocation": "Locatie",
+    "summaryAsset": "Asset",
+    "summaryRadius": "Straal",
+    "summaryVerification": "Verificatie",
+    "summaryThreshold": "{tier}, drempel {threshold}",
+    "summaryBudget": "Budget",
+    "summaryBudgetValue": "${budget} bij ${cost} per bezoek",
+    "publish": "Publiceer campagne",
+    "sequence": {
+      "signing": "Campagne wordt ondertekend",
+      "writing": "Assetdefinitie wordt naar Solana geschreven",
+      "indexing": "Coördinaten worden geïndexeerd",
+      "live": "Live op de kaart"
+    },
+    "again": "Zet er nog een op",
+    "back": "Terug",
+    "next": "Volgende",
+    "review": "Nakijken",
+    "verifiedArrivals": "Geverifieerde bezoeken",
+    "costPerArrival": "Kosten per bezoek",
+    "sawPin": "Zag de pin in de buurt",
+    "placementFee": "Plaatsingskosten",
+    "perArrival": "Per bezoek",
+    "live": "Live",
+    "radiusOf": "Straal van {radius} m",
+    "captionLive": "Bezoeken zijn een projectie op basis van de straal en het kaartverkeer eromheen, geen garantie. Elk ervan zou een claim zijn die on-chain vastgelegd wordt op het moment dat iemand daar staat.",
+    "captionIdle": "De ring is op schaal getekend ten opzichte van de plattegrond. Hier is geen ontwikkelaar voor nodig: vier keuzes, dan publiceren."
+  },
+  "whitepaper": {
+    "metaTitle": "Whitepaper: locatiebewijs op Solana",
+    "metaDescription": "Hoe Seek Protocol digitale assets uitgeeft op echte coördinaten, verifieert dat iemand er daadwerkelijk was, en het afwikkelt op Solana. Locatiebewijs, architectuur, tokenontwerp en de aanvallen waartegen we ons verdedigen.",
+    "ogTitle": "Whitepaper van Seek Protocol",
+    "ogDescription": "Locatiebewijs, architectuur, tokenontwerp, en een eerlijk verslag van de aanvallen en de grenzen.",
+    "eyebrow": "Whitepaper",
+    "titleStart": "Digitale assets die",
+    "titleAccent": "ergens thuishoren",
+    "lead": "Het technische verhaal van hoe Seek Protocol assets uitgeeft op coördinaten, bewijst dat iemand daar stond, en het on-chain afwikkelt, inclusief wat het systeem niet kan.",
+    "readingTime": "{minutes} min leestijd",
+    "updated": "Bijgewerkt {date}",
+    "updatedValue": "augustus 2026",
+    "gitbook": "Volledige documentatie op GitBook",
+    "ctaEyebrow": "Verder",
+    "ctaTitle": "Zie het draaien",
+    "ctaBody": "De ecosysteempagina toont het live netwerk, en de roadmap houdt bij wat er opgeleverd is tegenover wat er nog komt.",
+    "ctaEcosystem": "Verken het ecosysteem",
+    "ctaRoadmap": "Bekijk de roadmap",
+    "chapters": {
+      "summary": {
+        "index": "01",
+        "eyebrow": "Samenvatting",
+        "title": "Een protocol voor dingen die ergens bestaan",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Het internet maakte elk digitaal object overal tegelijk beschikbaar. Dat was de bedoeling, en het werkte. Maar het ontnam digitale dingen ook de enige eigenschap die fysieke dingen waardevol laat voelen: ergens in het bijzonder zijn. Een concertkaartje telt omdat het je een zaal binnenlaat. Een monument telt omdat je ernaartoe moet reizen."
+          },
+          {
+            "kind": "p",
+            "text": "Seek Protocol zet locatie terug in digitale assets. Een token, een NFT of een beloning kan uitgegeven worden aan een set coördinaten in plaats van aan een wallet, en blijft daar tot iemand fysiek binnen de straal staat en dat bewijst. Dat noemen we locatiebewijs, en het is het grondbeginsel waarop de rest van het protocol gebouwd is."
+          },
+          {
+            "kind": "p",
+            "text": "De consumentenkant is **SeekAR**, een mobiele app op iOS en Android die deze assets in augmented reality toont. Je loopt, je telefoon laat zien wat er in de buurt is, en je pakt wat je vindt. Daaronder gebeurt de afwikkeling op Solana, gekozen om transactiekosten die laag genoeg zijn dat een kleine beloning ophalen niet meer kost dan de beloning waard is."
+          },
+          {
+            "kind": "callout",
+            "text": "De korte versie: we maken digitale assets die alleen vanaf een specifieke plek geclaimd kunnen worden, verifiëren dat iemand er echt was, en wikkelen het on-chain af binnen een seconde voor een fractie van een cent."
+          },
+          {
+            "kind": "h",
+            "text": "Wat dit document behandelt"
+          },
+          {
+            "kind": "p",
+            "text": "Zestien hoofdstukken, in vier bewegingen. De eerste drie zetten het probleem uiteen en het grondbeginsel dat erop antwoordt. Hoofdstuk vier tot en met zeven zijn de machine: hoe een claim reist, hoe de lagen in elkaar passen, en wat de app ermee doet. Acht tot en met elf zijn de economie, van wie voor plaatsing betaalt tot wie de parameters bepaalt. De laatste vijf zijn de dingen die een whitepaper meestal weglaat: de aanvallen, de privacykosten, de regelgeving en de eerlijke grenzen."
+          },
+          {
+            "kind": "p",
+            "text": "Verschillende figuren zijn speelbaar. Het verificatiemodel, de tijdlijn van een claim, de vangworp en de budgetcalculator draaien allemaal de rekensom die het protocol draait, met dezelfde constanten, zodat je het met het ontwerp oneens kunt zijn in plaats van met een plaatje ervan."
+          }
+        ]
+      },
+      "problem": {
+        "index": "02",
+        "eyebrow": "Het probleem",
+        "title": "Aandacht is goedkoop online en duur op straat",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Twee groepen hebben een probleem dat bij nader inzien hetzelfde probleem is, van twee kanten bekeken."
+          },
+          {
+            "kind": "h",
+            "text": "Merken en locaties kunnen geen bezoek kopen"
+          },
+          {
+            "kind": "p",
+            "text": "Digitale advertenties kunnen binnen milliseconden een beeld voor iemands neus zetten. Ze krijgen die persoon niet drie straten verderop. De stap van vertoning naar fysiek bezoek is de zwakste schakel in de hele retail- en evenemententrechter, en hij wordt slecht gemeten, meestal door mensen bij de kassa te vragen of ze een advertentie gezien hebben."
+          },
+          {
+            "kind": "p",
+            "text": "Het antwoord van de branche is modelleren. Panels van deelnemende toestellen worden geëxtrapoleerd naar een populatie, en het winkelbezoekcijfer dat daaruit rolt wordt naast vertoningen en kliks gerapporteerd alsof het uit dezelfde teller kwam. Dat kwam het niet. Het ene getal is een gebeurtenis en het andere een schatting, en campagnes worden op de schatting beoordeeld."
+          },
+          {
+            "kind": "h",
+            "text": "Cryptoprojecten vinden geen echte gebruikers"
+          },
+          {
+            "kind": "p",
+            "text": "Airdrops zijn het standaardgereedschap voor distributie, en ze worden leeggefarmd. Een wallet aanmaken kost niets, dus elke beloning die door een wallet geclaimd kan worden, wordt geclaimd door duizenden wallets die aan een handvol mensen toebehoren. Projecten reageren met steeds ingewikkeldere voorwaarden, die vooral gewone gebruikers uitsluiten terwijl doorgewinterde farmers zich aanpassen."
+          },
+          {
+            "kind": "p",
+            "text": "Beide problemen lossen op als je kunt bewijzen dat een mens op een bepaald moment op een bepaalde plek was. Bezoek wordt meetbaar omdat aankomst de gebeurtenis is die vastgelegd wordt. Airdrops leegfarmen wordt duur omdat een wallet gratis is en reizen niet, en niemand is in veertig steden tegelijk."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Kosten om een wallet te maken",
+                "value": "Praktisch nul"
+              },
+              {
+                "label": "Kosten om ergens te zijn",
+                "value": "Tijd, afstand, fysieke aanwezigheid"
+              },
+              {
+                "label": "Wat dat verschil oplevert",
+                "value": "Sybil-weerstand die in de natuurkunde geworteld is"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Waarom dit nu te bouwen is en eerder niet"
+          },
+          {
+            "kind": "p",
+            "text": "Drie dingen moesten tegelijk aankomen. Telefoons moesten dual-frequency GNSS, dieptebewuste camera's en hardwarematige attestatie standaard hebben in plaats van alleen in topmodellen. Afwikkeling moest goedkoop genoeg worden dat een beloning van een paar cent het verplaatsen overleeft, wat elke chain uitsloot tot de kosten onder een cent zakten. En mensen moesten bereid zijn een camera op een straat te richten en er iets in gerenderd te zien, iets wat tien jaar AR in games stilletjes beslecht heeft."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "03",
+        "eyebrow": "Grondbeginsel",
+        "title": "Locatiebewijs",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Locatiebewijs is de bewering dat een bepaald toestel binnen een bepaalde straal was gedurende een bepaald tijdvenster, geloofwaardig genoeg gemaakt om er iets van waarde op vrij te geven."
+          },
+          {
+            "kind": "p",
+            "text": "Geen enkel signaal is op zichzelf te vertrouwen. Ruwe GPS is te vervalsen door elk geroot toestel met een nep-locatieprovider. Daarom beoordeelt het protocol een claim op meerdere onafhankelijke signalen en eist het dat de combinatie samenhangend is, want één signaal vervalsen is makkelijk en ze allemaal consistent vervalsen niet."
+          },
+          {
+            "kind": "h",
+            "text": "Signalen die we combineren"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GNSS-fix**, de ruwe satellietpositie met de opgegeven nauwkeurigheid, plus de constellatie en het aantal satellieten, wat vervalsers regelmatig fout doen.",
+              "**Radio-omgeving**, de set wifi-netwerken en zendmasten in de buurt, vergeleken met wat het protocol op die coördinaten verwacht te zien. Radio-omgevingen zijn moeilijk te fabriceren en veranderen langzaam.",
+              "**Device-attestatie**, Play Integrity op Android en DeviceCheck of App Attest op iOS, die bevestigen dat de app echt is en het besturingssysteem niet gecompromitteerd.",
+              "**Bewegingscontinuïteit**, het versnellingsmeterspoor tussen de vorige bevestigde positie en deze. Een claim dat je 400 km in 90 seconden aflegde zonder passend bewegingsprofiel wordt geweigerd.",
+              "**Tijdsplausibiliteit**, waarbij aankomsttijden getoetst worden aan de reistijd die uit je laatste bevestigde locatie volgt."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Elk signaal draagt bij aan een vertrouwensscore. Assets bepalen zelf welke score ze eisen: een questbeloning met lage waarde neemt genoegen met een middelmatige score, terwijl een waardevolle drop bij een ticketevenement device-attestatie en een kloppende radio-omgeving kan eisen. Claims onder de drempel worden geweigerd, en herhaalde weigeringen vanaf één toestel verhogen de drempel voor dat toestel."
+          },
+          {
+            "kind": "confidence"
+          },
+          {
+            "kind": "callout",
+            "text": "Het doel is geen perfect bewijs, want dat is op consumentenhardware onbereikbaar. Het doel is vervalsing duurder maken dan de beloning waard is, dezelfde maatstaf die kaartbetalingen werkbaar houdt."
+          },
+          {
+            "kind": "h",
+            "text": "Waarom de signalen gewogen worden en niet verplicht zijn"
+          },
+          {
+            "kind": "p",
+            "text": "Een regel die elk signaal eist, is een regel die eerlijke gebruikers weigert. Metrostations verliezen GNSS. Nieuwbouw heeft radio-omgevingen die de kaart nooit gezien heeft. Een telefoon die twee versies achterloopt kan attestatie missen om redenen die niets met fraude te maken hebben. Weging laat een asset zeggen hoeveel bewijs zijn waarde verdient, en laat een eerlijke claim één slecht signaal overleven zonder dat een vervalste claim er vier overleeft."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Standaard claimstraal",
+                "value": "30 m"
+              },
+              {
+                "label": "Instelbaar bereik",
+                "value": "5 m tot 500 m per asset"
+              },
+              {
+                "label": "Gebruikelijke bevestiging",
+                "value": "Binnen een seconde op Solana"
+              },
+              {
+                "label": "Attestatie",
+                "value": "Play Integrity, App Attest"
+              },
+              {
+                "label": "Omgang met weigeringen",
+                "value": "Per toestel vastgelegd, verhoogt de lat voor dat toestel"
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "index": "04",
+        "eyebrow": "Mechaniek",
+        "title": "Wat er werkelijk gebeurt als je iets claimt",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Het vorige hoofdstuk beschrijft het bewijs. Dit hoofdstuk volgt één claim vanaf het moment dat je naar een asset reikt tot het moment dat hij in je wallet zit, want in de volgorde van handelingen zitten de meeste ontwerpbeslissingen."
+          },
+          {
+            "kind": "timeline"
+          },
+          {
+            "kind": "h",
+            "text": "De grens die ertoe doet"
+          },
+          {
+            "kind": "p",
+            "text": "Kijk waar de stappen van machine wisselen. Alles wat gevoelig is, gebeurt in de eerste drie: de positie, de radioscan, het bewegingsspoor, de attestatie. Niets daarvan verlaat je telefoon in ruwe vorm. Wat naar de verifier gaat is een ondertekende claim, en wat van de verifier naar de chain gaat is een ondertekende verklaring dat de claim zijn drempel haalde."
+          },
+          {
+            "kind": "p",
+            "text": "Daarom gebeurt verificatie off-chain. Het is geen schaalcompromis. De scoring on-chain zetten zou betekenen dat de invoer gepubliceerd wordt, en die invoer is een beschrijving van waar je staat en welke draadloze netwerken om je heen zijn."
+          },
+          {
+            "kind": "h",
+            "text": "Wat er gebeurt als het misgaat"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Onder de drempel**: de claim wordt geweigerd, de asset blijft op de kaart en er wordt niets naar de chain geschreven. De weigering wordt bij het toestel vastgelegd.",
+              "**Herhaalde weigeringen**: de vereiste score voor dat toestel gaat omhoog. Een toestel dat zes claims in een uur mislukte, wordt niet behandeld als een toestel dat er nul miste.",
+              "**Mislukte afwikkeling**: de claim wordt vastgehouden en opnieuw geprobeerd in plaats van weggegooid. Een asset die gewonnen maar niet geleverd is, is een bug die vertrouwen kost, dus de wachtrij is zo gebouwd dat een vastgelopen uitbetaling opzij gezet wordt in plaats van de rest te blokkeren.",
+              "**Verlopen tijdens het claimen**: assets dragen een tijdvenster, en een claim die na sluiting binnenkomt wordt geweigerd, zelfs bij een perfecte score. Het venster hoort bij de asset, niet bij de netwerkomstandigheden."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Een claim is een slot, geen opzoeking. Twee mensen die op hetzelfde moment naar de laatste eenheid van een asset reiken, mogen niet allebei te horen krijgen dat ze hem hebben, dus de controle neemt het slot voordat er iets beslist wordt."
+          }
+        ]
+      },
+      "architecture": {
+        "index": "05",
+        "eyebrow": "Architectuur",
+        "title": "Hoe de lagen in elkaar passen",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Het protocol bestaat uit vier lagen. Elke laag is op zichzelf te doorgronden, en op zichzelf te vervangen."
+          },
+          {
+            "kind": "stack"
+          },
+          {
+            "kind": "p",
+            "text": "De scheiding telt het zwaarst op de grens tussen locatie en afwikkeling. Locatieverificatie is probabilistisch en gebeurt off-chain, omdat ze afhangt van sensordata die niets in de openbaarheid te zoeken heeft. Wat de chain bereikt is een ondertekende verklaring dat een claim zijn drempel haalde, niet je bewegingsgeschiedenis."
+          },
+          {
+            "kind": "h",
+            "text": "Wat er opgeslagen wordt, en waar"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**On-chain**: assetdefinities, hun coördinaten en stralen, claimregistraties en tokenoverdrachten. Openbaar en permanent.",
+              "**Off-chain**: ruwe sensormetingen, radiofingerprints en device-attestaties. Alleen bewaard zolang nodig is om een claim te beoordelen en geschillen op te lossen, daarna weggegooid.",
+              "**Op het toestel**: je positiegeschiedenis en AR-ankerdata. Die blijft op je telefoon, tenzij je hem uitdrukkelijk deelt."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Waarom Solana"
+          },
+          {
+            "kind": "p",
+            "text": "De eis is ongebruikelijk voor een chain: heel veel transacties, heel weinig waarde per transactie, en een bevestiging die snel genoeg is dat iemand op straat er niets van merkt. Wie een beloning van twintig cent ophaalt, kan geen tien cent betalen om hem te ontvangen, en gaat geen dertig seconden staan wachten. Die combinatie schrapt het merendeel van het veld op kosten en de rest op vertraging."
+          },
+          {
+            "kind": "p",
+            "text": "De afweging is echt en het is eerlijk om die te noemen. Solana heeft storingen gehad, en een chain die stilvalt betekent claims die in de rij komen. Het protocol behandelt afwikkeling als een stap die kan mislukken en opnieuw geprobeerd wordt in plaats van een stap die altijd slaagt, wat sowieso het juiste ontwerp is maar op deze chain niet optioneel."
+          },
+          {
+            "kind": "h",
+            "text": "Wat waar draait"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Positie, sensoren, AR-ankers",
+                "value": "Op het toestel, nooit ruw geüpload"
+              },
+              {
+                "label": "Scoring en drempel",
+                "value": "Protocolverifier, off-chain"
+              },
+              {
+                "label": "Assetdefinities en claims",
+                "value": "Solana, openbaar"
+              },
+              {
+                "label": "Media en muntafbeeldingen",
+                "value": "Gecachet op het toestel, geserveerd vanuit objectopslag"
+              },
+              {
+                "label": "Spawnmeldingen",
+                "value": "Server bepaalt, nooit door de client opgegeven"
+              }
+            ]
+          }
+        ]
+      },
+      "seekar": {
+        "index": "06",
+        "eyebrow": "Applicatie",
+        "title": "SeekAR, de kant die mensen zien",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "SeekAR is waar het protocol iets wordt dat iemand kan gebruiken zonder ook maar iets van het bovenstaande te weten. Het opent met een kaart van wat er in de buurt is, en als je de camera omhoog houdt, rendert de AR-engine die assets op hun plek."
+          },
+          {
+            "kind": "h",
+            "text": "Wat de app doet"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Ontdekken**, een live kaart van drops, quests en evenementen op loopafstand, gefilterd op wat je echt interesseert.",
+              "**Verzamelen**, waarbij je de camera richt, de asset verankerd in de wereld ziet, en hem oppakt. De afwikkeling gebeurt op de achtergrond.",
+              "**Begeleiden**, een AI-metgezel die je omgeving via de camera leest, routes voorstelt, uitlegt waar je naar kijkt en zich aanpast aan hoe je speelt.",
+              "**Bewaren**, een ingebouwde wallet die uit een social login ontstaat, zodat een nieuwe gebruiker geen seed phrase hoeft op te schrijven voordat hij iets kan oppakken."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "De onboardingeis stuurt meer ontwerpbeslissingen dan wat dan ook. De meeste mensen die SeekAR ooit gaan gebruiken, hebben nog nooit een private key vastgehouden. Komt in de eerste dertig seconden het woord 'mnemonic' voorbij, dan haken ze af. Dus wordt de wallet stilletjes aangemaakt en kan hij later geëxporteerd worden door wie het beheer zelf wil."
+          },
+          {
+            "kind": "h",
+            "text": "De wandeling naar de drop"
+          },
+          {
+            "kind": "p",
+            "text": "Assets liggen tientallen tot een paar honderd meter verderop, een afstand waarop een kaart genoeg is en een route overdreven. Een spawn markeren trekt een rechte lijn van jou naar hem toe. Die lijn is bewust gestippeld: het is een peiling, geen route, hij weet niets van gebouwen, en over die afstand ís de peiling meestal de wandeling. Hij verdwijnt vanzelf zodra je binnen vangbereik bent, waar de ring het overneemt."
+          },
+          {
+            "kind": "p",
+            "text": "Spawns verlopen binnen het uur. Dat is een spelbeslissing met een protocolgevolg: een markering die bij de volgende keer opstarten hersteld wordt, zou naar niets wijzen, dus bewaart de app er geen."
+          },
+          {
+            "kind": "h",
+            "text": "Verankering, en waar AR hier voor is"
+          },
+          {
+            "kind": "p",
+            "text": "Het camerabeeld is geen versiering en het is ook niet de verificatie. Het doet twee dingen. Het zet de asset op een geloofwaardige plek in de wereld, zodat ernaar reiken een handeling is in plaats van een druk op de knop, en het geeft het bewegingssignaal iets om consistent mee te zijn, want iemand die om een verankerd object heen loopt beweegt als een mens en een vervalser die zijn telefoon stilhoudt niet."
+          }
+        ]
+      },
+      "play": {
+        "index": "07",
+        "eyebrow": "De lus",
+        "title": "Wat iemand aan het lopen houdt",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Een protocol dat voor aankomst betaalt, heeft nog steeds een reden nodig voor de eerste aankomst. Niemand loopt vier straten voor een mechanisme. De spellaag is de vraagkant van het netwerk, en is met dezelfde eerlijkheid ontworpen als de verificatie: de kansen zijn gepubliceerd, ze worden op de server berekend, en aan de client wordt nooit gevraagd wat er gebeurd is."
+          },
+          {
+            "kind": "h",
+            "text": "De vangst"
+          },
+          {
+            "kind": "p",
+            "text": "Een asset bereiken betekent niet dat je hem krijgt. Zolang je ingedrukt houdt, loopt een laadring vol, en de kwaliteit van die lading voedt een vermenigvuldiger. Daarna rolt de server. Je krijgt twee pogingen per spawn, en de herkansing is 0,65 van de eerste waard, het getal dat een tweede kans als een echte tweede kans laat aanvoelen in plaats van als een troostprijs."
+          },
+          {
+            "kind": "catch"
+          },
+          {
+            "kind": "h",
+            "text": "De termen die normaal niemand publiceert"
+          },
+          {
+            "kind": "p",
+            "text": "De meeste games verbergen de modificatoren. Daar is hier geen reden voor, want de interessante eigenschap is dat vaardigheid duwt en nooit beslist. De laadring is een vermenigvuldiger tussen 0,85 en 1,0, dus een perfecte tik op een legendarische blijft een legendarische, en een verprutste tik op een gewone blijft waarschijnlijk een gewone."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Levelbonus**, een vaste 0,3 punt kans per spelerniveau, over tien niveaus van Seeker tot Legend.",
+              "**Cold streak**, een pechteller van 2 punten per opeenvolgende misser, met een maximum van 12, die ook voor de herkansing geldt en over munten heen loopt.",
+              "**Streakstraf**, 4 punten per opeenvolgende vangst op dezelfde munt, met een maximum van 20, zodat één spawnplek leegfarmen slechter wordt in plaats van beter.",
+              "**Clanbonus**, met een maximum van 5 punten, verdiend door de clan in plaats van door de speler.",
+              "**Power-ups**, gekocht of gewonnen, die de basiskans vermenigvuldigen voordat elke andere term erbij komt."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "De bodem ligt op 5% en het plafond op 95%. Niets stapelt tot een garantie, en niets stapelt tot een muur."
+          },
+          {
+            "kind": "h",
+            "text": "Progressie, en waar die voor is"
+          },
+          {
+            "kind": "p",
+            "text": "Levels, badges, clans, uitdagingen van twaalf uur en weekdoelen bestaan om de wandeling een vorm te geven die langer duurt dan één drop. Ze doen ook protocolwerk: een speler met een level, een clan en een reeks heeft een account met een geschiedenis, en een geschiedenis is duur om op schaal te fabriceren. Progressie is een tweede kostenpost voor de farmer die de eerlijke speler niets kost, want die ging toch al spelen."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Pogingen per spawn",
+                "value": "2"
+              },
+              {
+                "label": "Vermenigvuldiger herkansing",
+                "value": "×0,65"
+              },
+              {
+                "label": "Bereik laadring",
+                "value": "×0,85 tot ×1,00"
+              },
+              {
+                "label": "Bodem en plafond van de kans",
+                "value": "5% en 95%"
+              },
+              {
+                "label": "XP bij een vangst",
+                "value": "30 tot 140"
+              },
+              {
+                "label": "XP bij een misser",
+                "value": "5 tot 15"
+              },
+              {
+                "label": "Levels",
+                "value": "Tien, Seeker tot Legend"
+              }
+            ]
+          }
+        ]
+      },
+      "creators": {
+        "index": "08",
+        "eyebrow": "Aanbodkant",
+        "title": "Wie de assets plaatst",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Een locatiegebonden netwerk is waardeloos als de locaties leeg zijn. Het protocol behandelt het plaatsen van assets daarom als een volwaardig product, niet als een intern hulpmiddel."
+          },
+          {
+            "kind": "h",
+            "text": "Drie soorten uitgevers"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Merken en locaties** gebruiken het zakelijke portaal om aanbiedingen bij hun eigen pand te plaatsen en te meten wie er daadwerkelijk kwam. Wat zij kopen is een geverifieerd bezoek, geen vertoning.",
+              "**Tokenprojecten en NFT-communities** verdelen onder mensen in plaats van onder wallets, met geografie als filter dat farmen niet goedkoop kan omzeilen.",
+              "**Evenementenorganisatoren** maken van een festival, wedstrijd of congres een claimbare kaart voor de duur van het evenement, met assets die verlopen zodra het afgelopen is."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Alle drie gebruiken dezelfde campagnebouwer: zet een pin, stel de straal in, kies de asset en het aantal, bepaal de vertrouwensdrempel en het tijdvenster, financier het en publiceer. Geen integratiewerk, en geen contract om te schrijven."
+          },
+          {
+            "kind": "callout",
+            "text": "Voor een locatie is de kosten per geverifieerd bezoek het cijfer dat telt. Het is het eerste bezoekcijfer in digitale marketing dat aan de deur gemeten wordt in plaats van uit een enquête afgeleid."
+          },
+          {
+            "kind": "calculator"
+          },
+          {
+            "kind": "h",
+            "text": "Het dichtheidsprobleem"
+          },
+          {
+            "kind": "p",
+            "text": "Vraag en aanbod zijn hier geografisch, waardoor de gebruikelijke marktplaatswijsheid niet opgaat. Duizend assets gelijkmatig over een land verdeeld is overal een lege kaart. Diezelfde duizend in één stad is een reden om de deur uit te gaan. De prijs van plaatsing wordt daarom gewogen naar de vraag in het gebied in plaats van vast te staan, zodat een verzadigde winkelstraat duurder is om vast te houden dan een rustige, en het protocol de straten subsidieert die verkeer nodig hebben in plaats van de straten die het al hebben."
+          }
+        ]
+      },
+      "token": {
+        "index": "09",
+        "eyebrow": "Token",
+        "title": "$SEEK en waar die voor is",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "$SEEK is de afwikkelings- en coördinatie-asset van het protocol. Hij bestaat omdat het netwerk waarde moet verplaatsen tussen partijen die elkaar niet kennen, een merk in het ene land dat een beloning financiert die een onbekende in een ander land claimt, en omdat de kosten van het plaatsen van assets moeten meebewegen met de vraag naar de plekken die gebruikt worden."
+          },
+          {
+            "kind": "h",
+            "text": "Nut"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Campagnefinanciering**, waarbij uitgevers beloningen in $SEEK uitdrukken en financieren.",
+              "**Plaatsingskosten**, een vergoeding per geplaatste asset, gewogen naar straal, looptijd en de vraag in dat gebied.",
+              "**Staken voor prioriteit**, waarbij gestakete $SEEK de plaatsingsprioriteit van een uitgever verhoogt als meerdere campagnes om dezelfde coördinaten strijden.",
+              "**Beloningen**, waarbij het merendeel van de protocolfees terugvloeit naar de mensen die het lopen doen.",
+              "**Governance**, over parameterwijzigingen, toewijzing uit de treasury en de vertrouwensdrempels voor claims met hoge waarde."
+            ]
+          },
+          {
+            "kind": "economy"
+          },
+          {
+            "kind": "tokenomics"
+          },
+          {
+            "kind": "h",
+            "text": "Aanbod door de tijd"
+          },
+          {
+            "kind": "p",
+            "text": "Een verdelingsgrafiek zegt wie wat houdt en niets over wanneer. Het schema hieronder is het nuttiger cijfer, want het risico in een token zit zelden in de verdeling, het zit in de cliff."
+          },
+          {
+            "kind": "vesting"
+          },
+          {
+            "kind": "p",
+            "text": "De ontwerpgedachte is dat de feestroom echte activiteit volgt in plaats van speculatie: het protocol verdient wanneer assets geplaatst en geclaimd worden, en dat gebeurt alleen als iemand bereid is voor een geverifieerd bezoek te betalen."
+          },
+          {
+            "kind": "h",
+            "text": "Wat de token bewust niet doet"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Hij legt geen koers vast tussen een gevangen spel-eenheid en een token. Het spel waardeert een vangst, de markt waardeert de token, en het protocol doet niet alsof het die twee overbrugt.",
+              "Hij is niet nodig om te spelen. Vangen, XP en uitdagingen zijn gratis, en een speler die de token nooit aanraakt levert nog steeds de bezoeken op waar een uitgever voor betaalt.",
+              "Hij zet geen minimumbezit voor plaatsing. Staken koopt prioriteit als campagnes botsen, niet het recht om überhaupt te publiceren."
+            ]
+          }
+        ]
+      },
+      "revenue": {
+        "index": "10",
+        "eyebrow": "Verdienmodel",
+        "title": "Hoe het protocol verdient, en aan wie",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Een whitepaper die een token beschrijft en geen bedrijf, beschrijft een half systeem. Er zijn twee inkomstenstromen en ze komen van tegenovergestelde kanten van het netwerk, en dat is opzet: geen van beide zou het alleen draaiende houden."
+          },
+          {
+            "kind": "h",
+            "text": "Plaatsing, betaald door uitgevers"
+          },
+          {
+            "kind": "p",
+            "text": "De belangrijkste stroom. Een uitgever financiert de beloningen en betaalt daarbovenop plaatsingskosten, gewogen naar hoeveel grond de asset vasthoudt, hoe lang, en hoe druk bevochten die grond is. Dit is de vergoeding die meegroeit met de waarde die het netwerk maakt, want ze wordt gerekend over datgene wat uitgevers werkelijk kopen: aankomst."
+          },
+          {
+            "kind": "h",
+            "text": "De pas en de shop, betaald door spelers"
+          },
+          {
+            "kind": "p",
+            "text": "Optioneel, en bewust begrensd. Een seizoenspas loopt negentig dagen en verschuift de spawnweging naar zeldzamere munten, met een wekelijkse zeldzame claim en een boost inbegrepen. Losse boosts worden apart verkocht: een zeldzaamheidsboost, een spawnmagneet, een XP-vermenigvuldiger, of een bundel met alle drie."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "SeekAR Pass",
+                "value": "€ 8,99 per seizoen van 90 dagen"
+              },
+              {
+                "label": "Zeldzaamheidsboost, spawnmagneet",
+                "value": "€ 1,99 per stuk, 30 minuten"
+              },
+              {
+                "label": "XP-boost",
+                "value": "€ 0,99, 30 minuten"
+              },
+              {
+                "label": "Boostbundel",
+                "value": "€ 4,99, één van elk"
+              }
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Vangen, XP, uitdagingen en platformprestaties blijven gratis, permanent. Een betaalde laag die de lus op slot zet, breekt het enige waar uitgevers voor betalen: dat mensen komen opdagen."
+          },
+          {
+            "kind": "h",
+            "text": "Waarom die verdeling de juiste vorm heeft"
+          },
+          {
+            "kind": "p",
+            "text": "Uitgaven van spelers zijn elastisch, seizoensgebonden en begrensd door wat iemand voor een hobby wil betalen. Uitgaven van uitgevers zijn een marketingpost, beoordeeld op kosten per bezoek waarvoor een echt alternatief bestaat om mee te vergelijken. Het eerste houdt de lampen aan in het begin, als er meer spelers zijn dan campagnes. Het tweede is wat het bedrijf wordt, en dat werkt alleen als het eerste nooit in pay-to-win verandert, want een netwerk van betalende spelers die alles vangen rapporteert bezoeken die voor de locatie niets waard zijn."
+          }
+        ]
+      },
+      "governance": {
+        "index": "11",
+        "eyebrow": "Governance",
+        "title": "Wie de getallen bepaalt",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Dit protocol heeft ongewoon veel instelbare constanten: grenzen aan de straal, vertrouwensdrempels, de weging van plaatsingskosten, het aandeel fees dat naar seekers terugvloeit, en de vangladder zelf. Stuk voor stuk zijn het beleidsbeslissingen vermomd als configuratiewaarde, en doen alsof dat niet zo is, is precies hoe protocollen bestuurd gaan worden door wie het laatst een bestand bewerkte."
+          },
+          {
+            "kind": "h",
+            "text": "De gefaseerde stand van zaken, eerlijk gezegd"
+          },
+          {
+            "kind": "p",
+            "text": "Governance is niet live. Parameters worden vandaag door het kernteam gezet en gewijzigd via migraties die vastgelegd en na te lezen zijn. We gaan dat niet gedecentraliseerd noemen, want dat is het niet."
+          },
+          {
+            "kind": "p",
+            "text": "De reden voor het uitstel is geen onwil. Stemmen over een economie zonder volume is theater: de opkomst is laag, een handvol houders beslist, en de beslissingen gaan over parameters waar niemand genoeg data voor heeft. Governance wordt betekenisvol zodra er echte feestromen zijn, want dan heeft een parameterwijziging een meetbaar gevolg waar iemand over kan twisten."
+          },
+          {
+            "kind": "h",
+            "text": "Wat er bestuurd wordt, en wat niet"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Bestuurd**: de weging van fees, het seekeraandeel in de protocolfees, toewijzing uit de treasury, grenzen aan de straal, en de vertrouwensdrempels die beschikbaar zijn voor waardevolle assets.",
+              "**Bestuurd met vertraging**: alles wat de waarde verandert van assets die al geplaatst zijn. Een campagne die onder het ene tarief gefinancierd is, hoort daar ook onder af te lopen.",
+              "**Niet bestuurd**: de privacytoezeggingen in hoofdstuk dertien. Bewaartermijnen en de weigering om bewegingsdata te publiceren zijn geen parameters, en een stemming is geen legitieme manier om ze te verzwakken.",
+              "**Niet bestuurd**: individuele claimuitkomsten. Een geweigerde claim is een zaak voor geschilbeslechting, niet voor een stembus."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Een governancesysteem dat de privacy van zijn eigen gebruikers kan wegstemmen, is geen waarborg maar een aanvalsvlak met een quorum."
+          }
+        ]
+      },
+      "security": {
+        "index": "12",
+        "eyebrow": "Risico",
+        "title": "Aanvallen, grenzen, en wat we niet beweren",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Een protocol dat mensen betaalt om ergens te zijn, nodigt mensen uit om te liegen over waar ze zijn. Concreet zijn over de aanvallen is nuttiger dan beweren dat het systeem veilig is."
+          },
+          {
+            "kind": "h",
+            "text": "Aanvallen waartegen we ons verdedigen"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GPS-spoofing**, tegengegaan door te eisen dat de radio-omgeving en het bewegingsspoor de fix bevestigen, en door device-attestatie die gemanipuleerde systeembuilds herkent.",
+              "**Sybil-farming**, tegengegaan door de fysieke kosten van reizen en door claimlimieten per toestel binnen een straal en tijdvenster.",
+              "**Relay-aanvallen**, waarbij een echt toestel op de locatie tekent voor iemand op afstand, tegengegaan door attestatie aan de app-instantie en de sessie te binden en door claims per toestel te beperken.",
+              "**Emulatorfarms**, tegengegaan door attestatie, waar emulators op stuklopen, en door bewegingssporen die statistisch te onderscheiden zijn van echt lopen.",
+              "**Door de client opgegeven spawns**, niet beperkt maar voorkomen: alleen de server maakt bekend wat er bestaat en waar, dus een aangepaste client kan liegen over wat hij ziet zonder er iets mee te winnen.",
+              "**Dubbele claims**, voorkomen door een slot te nemen voordat de claim beoordeeld wordt, zodat twee mensen die naar de laatste eenheid reiken niet allebei te horen krijgen dat ze hem hebben."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Grenzen die we accepteren"
+          },
+          {
+            "kind": "p",
+            "text": "Een voldoende vastberaden aanvaller met aangepaste hardware en fysieke aanwezigheid op één locatie kan uit die locatie meer waarde halen dan een eerlijke gebruiker. We begrenzen de schade met limieten per locatie in plaats van te doen alsof het onmogelijk is. Positiebepaling binnen gebouwen blijft aanmerkelijk minder nauwkeurig dan buiten, dus assets binnen gebruiken ruimere stralen en leunen zwaarder op radiofingerprinting. En geen enkel consumententoestel kan bewijzen dat er een mens aanwezig was in plaats van een apparaat: een telefoon in een bestelbus beweegt nog steeds als een telefoon in een broekzak."
+          },
+          {
+            "kind": "h",
+            "text": "Risico's die geen aanvallen zijn"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Platformafhankelijkheid**. Attestatie is van Apple en Google om te geven. Een beleidswijziging bij een van beide kan het sterkste signaal in de stapel van de ene dag op de andere verzwakken, en er is geen versie hiervan die om het besturingssysteem heen gaat.",
+              "**Beschikbaarheid van de chain**. Een stilgevallen chain betekent claims in de wachtrij. Het protocol probeert opnieuw in plaats van te laten vallen, maar iemand die op straat staat ervaart een herkansing niet als succes.",
+              "**Fysieke veiligheid**. Mensen belonen voor ergens naartoe gaan, zet mensen op plekken. Assets staan op kruispunten in plaats van binnen gebouwcontouren, waardevolle drops mijden privéterrein, en de app draagt een veiligheidsmelding. Dat is een ontwerpeis, geen disclaimer."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "We bouwen een economische drempel, geen cryptografische garantie. Waar die twee verward worden, lopen gebruikers schade op."
+          }
+        ]
+      },
+      "privacy": {
+        "index": "13",
+        "eyebrow": "Privacy",
+        "title": "Locatiedata is de gevoeligste data die er is",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Een register van waar iemand heen gaat, onthult zijn huis, zijn werk, zijn gezondheid, zijn geloof en zijn relaties. Een netwerk op locatieclaims bouwen betekent daar verantwoordelijkheid voor nemen, en het verantwoorde ontwerp is er zo min mogelijk van vast te houden."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Doorlopend volgen is nooit nodig. De app vraagt om een positie op het moment dat je iets claimt, niet op de achtergrond.",
+              "Ruwe sensor- en radiodata wordt gebruikt om een claim te beoordelen en daarna weggegooid op een korte bewaartermijn.",
+              "Wat er on-chain vastgelegd wordt, is dat een claim op een openbare coördinaat geslaagd is, dezelfde informatie als een winkel die weet dat iemand een bon verzilverd heeft.",
+              "Je bewegingsgeschiedenis blijft op je toestel. Het protocol heeft die niet nodig en wil die niet.",
+              "Uitgevers krijgen totalen, nooit individuele sporen."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Het probleem dat we niet opgelost hebben"
+          },
+          {
+            "kind": "p",
+            "text": "Omdat claimregistraties van nature openbaar en permanent zijn op de chain, kan een vastberaden waarnemer claims van dezelfde wallet over verschillende locaties aan elkaar knopen. Dat is een echte zwakte en ze is inherent aan afwikkelen op een openbaar grootboek. Wie dat wil vermijden, kan aparte wallets voor aparte contexten gebruiken, en de app maakt dat makkelijk in plaats van het te verstoppen, maar een standaard die van de gebruiker vraagt dat hij het probleem kent, is geen oplossing."
+          },
+          {
+            "kind": "callout",
+            "text": "De eerlijke samenvatting: we houden zo min mogelijk vast, we verkopen niet wat we vasthouden, en er is één correlatie-aanval op het openbare register die we kunnen beperken maar niet uitsluiten."
+          }
+        ]
+      },
+      "compliance": {
+        "index": "14",
+        "eyebrow": "Jurisdictie",
+        "title": "Regelgeving, en waar dit staat",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Drie regelgevende kaders raken dit protocol tegelijk, wat ongebruikelijk is en het waard is om expliciet te benoemen in plaats van in een voetnoot te laten."
+          },
+          {
+            "kind": "h",
+            "text": "Gegevensbescherming"
+          },
+          {
+            "kind": "p",
+            "text": "Locatie ligt onder de meeste moderne privacywetgeving tegen de bijzondere categorieën aan, en het protocol is gebouwd naar de strengste lezing in plaats van de handigste. Positie wordt verzameld voor een genoemd doel op het moment van een claim, alleen bewaard zolang beoordeling en geschilbeslechting dat vereisen, en nooit samengevoegd tot een bewegingsprofiel. Waar een kader een recht op verwijdering geeft, kan het off-chain register gewist worden; het on-chain claimregister niet, wat een beperking van het grootboek is en eerder benoemd dan verbloemd wordt."
+          },
+          {
+            "kind": "h",
+            "text": "Classificatie van de token"
+          },
+          {
+            "kind": "p",
+            "text": "$SEEK is ontworpen als nuts- en coördinatie-asset, en het nut dat in hoofdstuk negen beschreven staat is echt in plaats van decoratief. Dat is een ontwerpstandpunt, geen juridische conclusie. Classificatie verschilt per rechtsgebied, verandert in de tijd, en is niets wat een whitepaper kan beslechten door het te beweren. Beschikbaarheid is daarom beperkt waar lokale regels dat vereisen."
+          },
+          {
+            "kind": "h",
+            "text": "Beloningen, kans en de grens met gokken"
+          },
+          {
+            "kind": "p",
+            "text": "De vangst bevat een worp, en dat brengt het dicht bij een grens die per land verschilt. Twee eigenschappen houden het in de meeste rechtsgebieden aan de goede kant en worden bewust vastgehouden: meedoen kost niets, en de betaalde items sturen kansen en tempo bij in plaats van inzetten met een variabele uitbetaling te zijn. Een pas koopt weging en een boost koopt een vermenigvuldiger; geen van beide is een inzet die verloren kan gaan. Waar een rechtsgebied dat anders leest, wordt de betaalde laag ingehouden in plaats van bediscussieerd."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Persoonsgegevens off-chain",
+                "value": "Op verzoek te verwijderen"
+              },
+              {
+                "label": "On-chain claimregister",
+                "value": "Permanent, en als zodanig vermeld"
+              },
+              {
+                "label": "Leeftijdscontrole",
+                "value": "Bij aanmelding, afgedwongen voor betaalde items"
+              },
+              {
+                "label": "Betaalde items",
+                "value": "Ingehouden in rechtsgebieden die ze als weddenschap zien"
+              }
+            ]
+          }
+        ]
+      },
+      "roadmap": {
+        "index": "15",
+        "eyebrow": "Richting",
+        "title": "Wat er staat en wat er volgt",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "SeekAR draait live op iOS en Android met locatiegebonden drops, AR-rendering en de social wallet. De verificatiestapel draait momenteel de signalen GNSS, attestatie en bewegingscontinuïteit; radiofingerprinting wordt gefaseerd uitgerold. Attestatie wordt achter een vlag afgedwongen, en dat is de eerlijke stand van zaken: het weigerpad is gebouwd en de schakelaar is nog niet voor elk onderdeel omgezet."
+          },
+          {
+            "kind": "p",
+            "text": "De campagnebouwer met slepen en neerzetten is klaar. Daarna komt het selfserviceportaal dat plaatsing openzet buiten begeleide samenwerkingen om, plus de bezoekanalytics die daarbij horen. Daarnaast staan het token generation event, de live-eventmodus, seizoenen en objecten scannen. Governance volgt zodra er genoeg echte feestromen zijn om parameterbeslissingen betekenisvol te maken, om de redenen in hoofdstuk elf."
+          },
+          {
+            "kind": "h",
+            "text": "Wat we niet beloven"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Een datum voor governance. Die hangt af van volume, en volume is geen datum.",
+              "Even nauwkeurig binnen als buiten. Het is een lastig probleem en het eerlijke antwoord is voorlopig ruimere stralen binnen.",
+              "Een uitrol op meerdere chains. De eisen aan vertraging en kosten in hoofdstuk vijf zijn smal, en een tweede chain die er niet aan voldoet zou een marketingbeslissing zijn in plaats van een technische."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "De volledige uitsplitsing per fase staat op de roadmappagina, die bijgehouden wordt naarmate er dingen opgeleverd worden."
+          }
+        ]
+      },
+      "glossary": {
+        "index": "16",
+        "eyebrow": "Naslag",
+        "title": "Begrippenlijst",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Termen die in dit document gebruikt worden, met de betekenis die ze hier dragen in plaats van die ze in het algemeen hebben."
+          },
+          {
+            "kind": "glossary"
+          }
+        ]
+      }
+    }
+  },
+  "allocations": {
+    "community": {
+      "label": "Beloningen voor de community",
+      "note": "Verdiend door seekers met verzamelen en quests"
+    },
+    "ecosystem": {
+      "label": "Ecosysteem en partners",
+      "note": "Campagnesubsidies, onboarding van locaties, integraties"
+    },
+    "team": {
+      "label": "Team en bijdragers",
+      "note": "4 jaar vesting, 12 maanden cliff"
+    },
+    "treasury": {
+      "label": "Treasury",
+      "note": "Bestuurde reserve voor protocolontwikkeling"
+    },
+    "liquidity": {
+      "label": "Liquiditeit",
+      "note": "Beursnotering en marktdiepte on-chain"
+    },
+    "backers": {
+      "label": "Vroege investeerders",
+      "note": "2 jaar vesting, 6 maanden cliff"
+    }
+  },
+  "tokenFacts": {
+    "ticker": {
+      "label": "Ticker",
+      "value": "$SEEK"
+    },
+    "chain": {
+      "label": "Chain",
+      "value": "Solana (SPL)"
+    },
+    "supply": {
+      "label": "Totale voorraad",
+      "value": "1.000.000.000"
+    },
+    "emission": {
+      "label": "Uitgifte",
+      "value": "Vast, geen bijmunting"
+    }
+  },
+  "glossary": {
+    "proof-of-location": {
+      "term": "Locatiebewijs",
+      "definition": "De bewering dat een toestel binnen een bepaalde straal was gedurende een bepaald tijdvenster, beoordeeld op meerdere onafhankelijke signalen en geloofwaardig genoeg om er waarde op vrij te geven. Probabilistisch, nooit absoluut."
+    },
+    "confidence-score": {
+      "term": "Vertrouwensscore",
+      "definition": "De uitkomst van alle signalen van een claim bij elkaar. Elke asset bepaalt welke score hij eist, zodat een questbeloning en een ticketdrop dezelfde verifier kunnen delen zonder dezelfde lat te delen."
+    },
+    "claim-radius": {
+      "term": "Claimstraal",
+      "definition": "De afstand vanaf de coördinaten van een asset waarbinnen hij gepakt kan worden. Standaard 30 m, instelbaar van 5 m tot 500 m, en de grootste knop die een uitgever heeft op zowel de kosten als de betekenis."
+    },
+    "drop": {
+      "term": "Drop",
+      "definition": "Een asset die op coördinaten geplaatst is en op een claim wacht. Draagt een aantal, een tijdvenster, een vertrouwensdrempel en een straal."
+    },
+    "spawn": {
+      "term": "Spawn",
+      "definition": "Een drop zoals het spel hem toont: aangekondigd door de server, zichtbaar op de kaart, verlopend binnen het uur, en goed voor twee vangpogingen."
+    },
+    "attestation": {
+      "term": "Attestatie",
+      "definition": "Een ondertekende verklaring van het besturingssysteem dat de app echt is en het toestel onaangetast. Play Integrity op Android, App Attest op iOS. Het sterkste signaal in de stapel en het enige dat het protocol niet zelf in de hand heeft."
+    },
+    "radio-fingerprint": {
+      "term": "Radiofingerprint",
+      "definition": "De set wifi-netwerken en zendmasten die vanaf een positie zichtbaar zijn, vergeleken met wat daar zichtbaar hoort te zijn. Verandert langzaam en is moeilijk te fabriceren, en dat maakt hem bruikbaar."
+    },
+    "motion-continuity": {
+      "term": "Bewegingscontinuïteit",
+      "definition": "Het versnellingsmeterspoor tussen de ene bevestigde positie en de volgende. Vangt de claim die teleporteert, want 400 km in 90 seconden laat geen passend bewegingsprofiel achter."
+    },
+    "verified-arrival": {
+      "term": "Geverifieerd bezoek",
+      "definition": "Een claim die zijn drempel haalde binnen de straal van een uitgever. De eenheid die een uitgever koopt, en de reden dat het kostencijfer van een campagne geteld is in plaats van gemodelleerd."
+    },
+    "placement-fee": {
+      "term": "Plaatsingskosten",
+      "definition": "Wat een uitgever betaalt om grond vast te houden, gewogen naar straal, looptijd en de vraag naar het gebied. Los van de beloning, die is wat de seeker ontvangt."
+    },
+    "cold-streak": {
+      "term": "Cold streak",
+      "definition": "De pechteller. Twee punten vangkans per opeenvolgende misser, met een maximum van twaalf, ook toegepast op de herkansing en over munten heen."
+    },
+    "streak-penalty": {
+      "term": "Streakstraf",
+      "definition": "De tegenovergestelde knop. Vier punten eraf per opeenvolgende vangst op dezelfde munt, met een maximum van twintig, zodat één spawnplek slechter wordt om leeg te farmen in plaats van beter."
+    },
+    "seeker": {
+      "term": "Seeker",
+      "definition": "Iemand die naar assets loopt en ze claimt. Ook het eerste van tien spelerniveaus, waarvan Legend het laatste is."
+    },
+    "seek": {
+      "term": "$SEEK",
+      "definition": "De afwikkelings- en coördinatie-asset. Financiert campagnes, betaalt plaatsingskosten, koopt plaatsingsprioriteit via staken, en draagt de governancestem zodra governance live is."
+    }
+  },
+  "whitepaperFigures": {
+    "draft": "Voorlopige cijfers, geen definitieve tokenomics",
+    "totalSupply": "Totale voorraad",
+    "donutAria": "Tokenverdeling als aandeel van de totale voorraad",
+    "terms": "{count} termen",
+    "filterTerms": "Filter termen",
+    "filter": "Filter",
+    "noMatch": "Daar past niets bij. Het document zelf is te doorzoeken met de zoekfunctie van je browser.",
+    "stackCaption": "Claims reizen de stapel af, waarde reist terug omhoog. Kies een laag voor details.",
+    "liveModel": "Live model",
+    "interactive": "Interactief",
+    "confidenceTitle": "Probeer een claim te laten weigeren",
+    "thresholdLabel": "Drempel van de asset",
+    "confidenceThreshold": "vertrouwen · drempel {threshold}",
+    "claimAccepted": "Claim geaccepteerd",
+    "claimRefused": "Claim geweigerd",
+    "shortBy": "{short} punten tekort. Herhaalde weigeringen vanaf één toestel verhogen de drempel verder.",
+    "confidenceCaption": "De wegingen zijn illustratief. Het gaat om de vorm: geen enkel signaal haalt in zijn eentje een gefinancierde campagne, en alle vier tegelijk vervalsen kost meer dan de drop waard is.",
+    "economyLabel": "Economische lus",
+    "stageOf": "Stap {step} van {total}",
+    "timelineTitle": "Eén claim, stap voor stap",
+    "stop": "Stop",
+    "runReal": "Speel af op echte snelheid",
+    "claimStages": "Stappen van een claim",
+    "segAria": "{label}, {ms} milliseconden, {where}",
+    "endToEnd": "{seconds} s van begin tot eind",
+    "takes": "Duurt",
+    "elapsed": "Verstreken",
+    "whatMoves": "Wat er beweegt",
+    "timelineWhere": {
+      "device": "Op je telefoon",
+      "verifier": "Verifier",
+      "chain": "Solana"
+    },
+    "timelineCaption": "Dit zijn budgetten, geen metingen. Het sensorvenster en de afwikkeling bewegen mee met de omstandigheden, en alles daartussen is rekenwerk dat dat niet doet. Let op waar de grens ligt: ruwe sensordata verlaat de eerste drie stappen nooit.",
+    "vestingTitle": "Circulerende voorraad, maand voor maand",
+    "vestingAria": "Circulerende voorraad per toewijzing over 48 maanden",
+    "circulatingMonth": "in omloop in maand {month}",
+    "circulatingLaunch": "in omloop bij lancering",
+    "axisLaunch": "Lancering",
+    "axisYear": "Jaar {year}",
+    "month": "Maand",
+    "vestingCaption": "Lees de treden, niet de curve. Een vlak stuk gevolgd door een sprong is een cliff, en bij een cliff houdt een schema stand of niet. De toewijzingen aan team en investeerders zijn het nakijken waard, want dat zijn de twee die in een markt vrijkomen in plaats van naar de mensen die het netwerk gebruiken.",
+    "calcTitle": "Wat een budget koopt",
+    "calcBudget": "Campagnebudget",
+    "calcReward": "Beloning per claim",
+    "calcRadius": "Claimstraal",
+    "calcFee": "Plaatsingskosten bij deze straal: ${fee} per drop",
+    "calcArrivals": "Geverifieerde bezoeken",
+    "calcPerPerson": "${cost} per persoon aan de deur",
+    "calcDisplay": "Zelfde budget als display",
+    "calcInferred": "vertoningen, waarvan er ruwweg {visits} een afgeleid bezoek worden tegen ${cost} per stuk",
+    "calcCaption": "De displaycijfers rekenen met een CPM van ${cpm} en een verhouding van {rate}% van vertoning naar bezoek, beide vuistregels uit de branche. Het verschil dat telt, is dat de ene kolom aan de deur gemeten wordt en de andere afgeleid.",
+    "contents": "Inhoud · {count} hoofdstukken",
+    "chaptersLabel": "Hoofdstukken",
+    "close": "Sluiten",
+    "ladderTitle": "De vangworp, zoals de server hem berekent",
+    "rarityLabel": "Zeldzaamheid",
+    "playerLevel": "Spelerniveau",
+    "chargeRing": "Laadring",
+    "missed": "Gemist",
+    "clanBonus": "Clanbonus",
+    "points": "+{points} pnt",
+    "baseChance": "Basiskans",
+    "levelBonus": "Levelbonus",
+    "ringMultiplier": "Ringvermenigvuldiger",
+    "retryMultiplier": "Herkansingsvermenigvuldiger",
+    "firstAttempt": "Eerste poging",
+    "retry": "Herkansing",
+    "acrossSpawn": "Over de hele spawn",
+    "youCaught": "Jij ving",
+    "notYet": "nog niet",
+    "ladderHint": "Eén spawn zegt bijna niets. Doe er duizend en zie de twee balken naar elkaar toe kruipen.",
+    "ladderTally": "{caught} gevangen uit {spawns} spawns, {gap} punten van het model af.",
+    "runOne": "Doe één spawn",
+    "runThousand": "Doe er duizend",
+    "reset": "Opnieuw",
+    "ladderCaption": "De migratie publiceert {rarity} op {first}% en daarna {second}%, met {overall}% over de hele spawn. Dat is dit model bij level 5 met een volle ring en zonder clan, precies waar de schuifjes op beginnen. Een gevangen eenheid is een spel-eenheid, en wat die in tokens waard is, is een zaak van de markt en niet van het spel."
+  },
+  "stackLayers": {
+    "app": {
+      "label": "Applicatie",
+      "sub": "SeekAR · zakelijk portaal · campagnebouwer",
+      "detail": "Wat mensen aanraken. De mobiele app rendert assets in AR en handelt het verzamelen af; het portaal is waar uitgevers ze plaatsen. Allebei zijn ze gewone clients van de lagen eronder en hebben ze geen bijzondere rechten."
+    },
+    "intelligence": {
+      "label": "Intelligentie",
+      "sub": "AI-metgezel · questgeneratie · routering",
+      "detail": "Leest het camerabeeld en je speelgeschiedenis om voor te stellen waar je heen kunt en wat je ziet. Draait op het toestel zelf waar dat kan, en ziet nooit ruwe positiegeschiedenis die het niet nodig heeft."
+    },
+    "location": {
+      "label": "Locatieverificatie",
+      "sub": "GNSS · radiofingerprint · attestatie · beweging",
+      "detail": "Beoordeelt een claim op onafhankelijke signalen en geeft een ondertekende verklaring af zodra de score de drempel van de asset haalt. Off-chain bij ontwerp: de sensordata die verificatie laat werken, is precies de data die niet openbaar hoort te zijn."
+    },
+    "settlement": {
+      "label": "Afwikkeling",
+      "sub": "Solana · SPL-assets · claimregistraties",
+      "detail": "Houdt assetdefinities, coördinaten en claimregistraties vast, en verplaatst waarde zodra een claim geaccepteerd is. Gekozen om kosten die laag genoeg zijn dat een kleine beloning ophalen niet ondergesneeuwd raakt door de kosten van het ophalen."
+    }
+  },
+  "confidenceSignals": {
+    "gnss": {
+      "label": "GNSS-fix",
+      "detail": "Satellietpositie met de opgegeven nauwkeurigheid, plus constellatie en aantal satellieten.",
+      "spoofable": "Moeiteloos te vervalsen op een geroot toestel."
+    },
+    "radio": {
+      "label": "Radio-omgeving",
+      "detail": "Wifi-netwerken en zendmasten in de buurt, vergeleken met wat hier zichtbaar hoort te zijn.",
+      "spoofable": "Moeilijk te fabriceren; radio-omgevingen veranderen langzaam."
+    },
+    "attest": {
+      "label": "Device-attestatie",
+      "detail": "Play Integrity of App Attest bevestigt een echte app op een onaangetast systeem.",
+      "spoofable": "Emulatorfarms lopen hier meteen op stuk."
+    },
+    "motion": {
+      "label": "Bewegingscontinuïteit",
+      "detail": "Het versnellingsmeterspoor tussen je laatste bevestigde positie en deze.",
+      "spoofable": "Een sprong van 400 km in 90 seconden heeft geen passend bewegingsprofiel."
+    }
+  },
+  "confidenceTiers": {
+    "low": {
+      "label": "Questbeloning",
+      "note": "Lage waarde, lage lat."
+    },
+    "mid": {
+      "label": "Partnerdrop",
+      "note": "De standaard voor gefinancierde campagnes."
+    },
+    "high": {
+      "label": "Ticketevenement",
+      "note": "Hoge waarde, alles moet kloppen."
+    }
+  },
+  "economyStages": {
+    "fund": {
+      "label": "Uitgever financiert",
+      "actor": "Merk · project · locatie",
+      "body": "Een campagne wordt uitgedrukt en gefinancierd in $SEEK, met plaatsingskosten gewogen naar straal, looptijd en hoe druk bevochten het gebied is.",
+      "flow": "$SEEK erin"
+    },
+    "place": {
+      "label": "Asset wordt geplaatst",
+      "actor": "Protocol",
+      "body": "De drop wordt naar zijn coördinaten geschreven met een claimstraal, een tijdvenster en de vertrouwensdrempel die hij eist.",
+      "flow": "Fee naar treasury"
+    },
+    "walk": {
+      "label": "Iemand loopt ernaartoe",
+      "actor": "Seeker",
+      "body": "De enige stap die niet te automatiseren is. Reizen is de kostenpost die farmen duur maakt.",
+      "flow": "Tijd en afstand"
+    },
+    "verify": {
+      "label": "Aanwezigheid wordt geverifieerd",
+      "actor": "Verificatielaag",
+      "body": "Vier signalen worden off-chain beoordeeld. Wat de chain bereikt is een ondertekende verklaring, niet je sensordata.",
+      "flow": "Verklaring"
+    },
+    "settle": {
+      "label": "Het wikkelt af",
+      "actor": "Solana",
+      "body": "De overdracht bevestigt binnen een seconde voor een fractie van een cent, en de claimregistratie is openbaar.",
+      "flow": "Beloning eruit"
+    },
+    "split": {
+      "label": "Fees stromen terug",
+      "actor": "Protocol",
+      "body": "Het merendeel van de protocolfees gaat naar de mensen die het lopen doen; de rest financiert de treasury en het ecosysteem.",
+      "flow": "Grootste deel naar seekers"
+    }
+  },
+  "timelineStages": {
+    "open": {
+      "label": "Drop geopend",
+      "detail": "Je tikt een asset aan op de kaart of reikt ernaar via de camera. De app neemt de positie die hij al heeft en begint een nieuw sensorvenster.",
+      "payload": "Asset-id, laatst bekende fix"
+    },
+    "window": {
+      "label": "Sensorvenster",
+      "detail": "Veruit de langste stap, en degene die alles daarna bepaalt: een nieuwe GNSS-fix met de nauwkeurigheid ervan, een scan van de radio-omgeving, en het bewegingsspoor sinds de laatste bevestigde positie.",
+      "payload": "GNSS-fix, aantal satellieten, wifi- en celset, versnellingsmeterspoor"
+    },
+    "attest": {
+      "label": "Attestatie en handtekening",
+      "detail": "Play Integrity of App Attest bevestigt dat de app echt is en het systeem onaangetast. De claim wordt ondertekend met de sleutel die aan die app-instantie gebonden is, en dat maakt een doorgesluisde claim duur.",
+      "payload": "Attestatietoken, ondertekende claim"
+    },
+    "score": {
+      "label": "Beoordeling",
+      "detail": "Off-chain, omdat het afhangt van sensordata die niets in de openbaarheid te zoeken heeft. Elk signaal wordt getoetst aan hoe de coördinaat eruit hoort te zien en de uitkomsten worden samengevoegd tot één vertrouwenscijfer.",
+      "payload": "Vertrouwensscore, uitsplitsing per signaal"
+    },
+    "threshold": {
+      "label": "Drempeltoets",
+      "detail": "De score haalt de drempel van de asset of niet. Een weigering wordt bij het toestel vastgelegd, en herhaalde weigeringen leggen de lat hoger voor dat toestel in plaats van alleen opnieuw te mislukken.",
+      "payload": "Accepteren of weigeren, ondertekende verklaring"
+    },
+    "settle": {
+      "label": "Afwikkeling",
+      "detail": "De claimregistratie en de overdracht landen in één transactie op Solana. Dit is de enige stap die iemand anders kan zien, en het enige wat er staat is dat een claim op een openbare coördinaat geslaagd is.",
+      "payload": "Claimregistratie, tokenoverdracht"
+    },
+    "confirm": {
+      "label": "In je wallet",
+      "detail": "De wallet werkt bij en de asset is voor jou van de kaart verdwenen. Van tikken tot vasthouden, binnen twee seconden op een goede verbinding.",
+      "payload": "Saldo-update, kaartstatus"
+    }
   }
 }

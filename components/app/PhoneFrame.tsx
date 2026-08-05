@@ -1,4 +1,11 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
+
+/* The stylesheet for the whole phone mockup and the homepage sections around it,
+   scoped to this route by being imported here rather than from globals.css. See
+   the note there. PhoneFrame is only ever reached from the homepage, so this is
+   the narrowest place that still covers everything that needs it. */
+import "@/app/app-ui.css";
 
 /**
  * The device mockup. The screen aperture is punched out of the artwork, so the
@@ -45,10 +52,17 @@ export default function PhoneFrame({
         <span className="device-home" aria-hidden="true" />
       </div>
 
-      <img
+      {/* 1530x3036 and 350KB, the heaviest single asset on the homepage, and it
+          was being shipped at full size to every phone. .device-art already
+          sets width:100% and height:auto, so the intrinsic size is only here to
+          give the browser the ratio. */}
+      <Image
         src="/app/devices/iphone.png"
         alt=""
         className="device-art"
+        width={1530}
+        height={3036}
+        sizes="(max-width: 768px) 90vw, 380px"
         aria-hidden="true"
         draggable={false}
       />

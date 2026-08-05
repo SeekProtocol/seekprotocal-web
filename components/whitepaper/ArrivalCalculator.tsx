@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useFormatter, useTranslations } from "next-intl";
 
 /**
  * What a campaign costs per person who actually turns up, next to what the
@@ -12,6 +13,8 @@ const CPM = 6.5; // typical display cost per thousand impressions, USD
 const VISIT_RATE = 0.0009; // share of impressions that become a measurable visit
 
 export default function ArrivalCalculator() {
+  const t = useTranslations("whitepaperFigures");
+  const format = useFormatter();
   const [budget, setBudget] = useState(2500);
   const [reward, setReward] = useState(3);
   const [radius, setRadius] = useState(50);
@@ -33,17 +36,17 @@ export default function ArrivalCalculator() {
   return (
     <div className="wp-figure calc">
       <div className="calc-head">
-        <p className="t-mono">Interactive</p>
+        <p className="t-mono">{t("interactive")}</p>
         <h3 className="t-h4" style={{ marginTop: "0.4rem" }}>
-          What a budget buys
+          {t("calcTitle")}
         </h3>
       </div>
 
       <div className="calc-body">
         <div className="calc-controls">
           <Field
-            label="Campaign budget"
-            value={`$${budget.toLocaleString("en-US")}`}
+            label={t("calcBudget")}
+            value={`$${format.number(budget)}`}
             min={500}
             max={25000}
             step={500}
@@ -51,7 +54,7 @@ export default function ArrivalCalculator() {
             onChange={setBudget}
           />
           <Field
-            label="Reward per claim"
+            label={t("calcReward")}
             value={`$${reward.toFixed(2)}`}
             min={0.5}
             max={20}
@@ -60,7 +63,7 @@ export default function ArrivalCalculator() {
             onChange={setReward}
           />
           <Field
-            label="Claim radius"
+            label={t("calcRadius")}
             value={`${radius} m`}
             min={5}
             max={300}
@@ -69,40 +72,41 @@ export default function ArrivalCalculator() {
             onChange={setRadius}
           />
           <p className="t-mono-sm calc-fee">
-            Placement fee at this radius: ${model.feePerDrop.toFixed(2)} per drop
+            {t("calcFee", { fee: model.feePerDrop.toFixed(2) })}
           </p>
         </div>
 
         <div className="calc-results">
           <div className="calc-card calc-card-primary">
-            <span className="t-mono-sm">Verified arrivals</span>
+            <span className="t-mono-sm">{t("calcArrivals")}</span>
             <span className="t-num calc-figure">
-              {model.arrivals.toLocaleString("en-US")}
+              {format.number(model.arrivals)}
             </span>
             <span className="t-small">
-              ${model.costPerArrival.toFixed(2)} per person at the door
+              {t("calcPerPerson", { cost: model.costPerArrival.toFixed(2) })}
             </span>
           </div>
 
           <div className="calc-card">
-            <span className="t-mono-sm">Same budget as display</span>
+            <span className="t-mono-sm">{t("calcDisplay")}</span>
             <span className="t-num calc-figure calc-figure-quiet">
-              {model.impressions.toLocaleString("en-US")}
+              {format.number(model.impressions)}
             </span>
             <span className="t-small">
-              impressions, of which roughly{" "}
-              {model.inferredVisits.toLocaleString("en-US")} become an inferred
-              visit at ${model.displayCostPerVisit.toFixed(2)} each
+              {t("calcInferred", {
+                visits: format.number(model.inferredVisits),
+                cost: model.displayCostPerVisit.toFixed(2),
+              })}
             </span>
           </div>
         </div>
       </div>
 
       <p className="t-mono-sm wp-figure-caption">
-        Display figures use a ${CPM.toFixed(2)} CPM and a{" "}
-        {(VISIT_RATE * 100).toFixed(2)}% impression-to-visit rate, both
-        industry rules of thumb. The difference that matters is that one column
-        is measured at the door and the other is inferred.
+        {t("calcCaption", {
+          cpm: CPM.toFixed(2),
+          rate: (VISIT_RATE * 100).toFixed(2),
+        })}
       </p>
     </div>
   );

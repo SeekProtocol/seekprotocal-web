@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import PhoneFrame from "@/components/app/PhoneFrame";
 import MapScreen from "@/components/app/screens/MapScreen";
 import SpawnScreen from "@/components/app/screens/SpawnScreen";
@@ -26,33 +27,8 @@ export type CatchOutcome = {
   xp: number;
 };
 
-const COPY: Record<Step, { eyebrow: string; title: string; body: string }> = {
-  map: {
-    eyebrow: "01 · The map",
-    title: "Everything nearby, standing where it actually is",
-    body: "Spawns sit on fixed coordinates and stay there until someone claims them. Tap one to see what it is and how far you have to walk.",
-  },
-  spawn: {
-    eyebrow: "02 · The spawn",
-    title: "Rarity tells you what you are walking towards",
-    body: "Common through legendary, each with its own catch chance. You get two attempts, and the retry is worth 0.65 of the first, so the opening tap matters most.",
-  },
-  catch: {
-    eyebrow: "03 · The catch",
-    title: "Tap to charge, and hold your nerve",
-    body: "The ring fills as you tap. Something interrupts every round or two: the orb freezes, the charge springs a leak, or a surge opens where taps count double.",
-  },
-  result: {
-    eyebrow: "04 · The roll",
-    title: "Charge buys chance, it does not buy certainty",
-    body: "A full ring on a legendary is still a one-in-five. That is what makes a legendary worth having, and what makes the tap decide something.",
-  },
-  wallet: {
-    eyebrow: "05 · Yours",
-    title: "It lands in a wallet you never had to set up",
-    body: "Created from a social login, so a first-time player collects something within a minute. Export the key whenever you want custody.",
-  },
-};
+/** The five steps, in order. The copy for each is in `walkthrough`. */
+const STEPS: Step[] = ["map", "spawn", "catch", "result", "wallet"];
 
 /**
  * A clickable run through SeekAR. The odds, the two attempts, the decay and
@@ -60,6 +36,7 @@ const COPY: Record<Step, { eyebrow: string; title: string; body: string }> = {
  * dramatisation of it.
  */
 export default function AppWalkthrough() {
+  const t = useTranslations("walkthrough");
   const [step, setStep] = useState<Step>("map");
   const [target, setTarget] = useState<Collectible>(COLLECTIBLES[4]);
   const [attempt, setAttempt] = useState(1);
@@ -109,45 +86,40 @@ export default function AppWalkthrough() {
     setStep("map");
   }, []);
 
-  const copy = COPY[step];
-
   return (
     <div className="walkthrough" ref={hostRef}>
       <div className="walkthrough-copy">
-        <p className="eyebrow">Walk through it</p>
-        <h2 className="t-h2">This is the whole loop</h2>
+        <p className="eyebrow">{t("eyebrow")}</p>
+        <h2 className="t-h2">{t("title")}</h2>
         <p className="t-lead" style={{ marginTop: "1.25rem" }}>
-          Not a video of the app. These are its own rules, running here. Tap a
-          spawn on the map and take it from there.
+          {t("lead")}
         </p>
 
         <ol className="walkthrough-steps">
-          {(Object.keys(COPY) as Step[]).map((key, i) => (
+          {STEPS.map((key, i) => (
             <li
               key={key}
               className="walkthrough-step"
               data-active={key === step || undefined}
-              data-done={
-                (Object.keys(COPY) as Step[]).indexOf(step) > i || undefined
-              }
+              data-done={STEPS.indexOf(step) > i || undefined}
             >
               <span className="walkthrough-step-dot">{i + 1}</span>
-              <span className="walkthrough-step-label">
-                {COPY[key].eyebrow.split(" · ")[1]}
-              </span>
+              <span className="walkthrough-step-label">{t(`${key}.label`)}</span>
             </li>
           ))}
         </ol>
 
         <div key={step} className="walkthrough-detail">
-          <p className="t-mono">{copy.eyebrow}</p>
-          <h3 className="t-h3 walkthrough-detail-title">{copy.title}</h3>
-          <p className="t-body">{copy.body}</p>
+          <p className="t-mono">
+            {String(STEPS.indexOf(step) + 1).padStart(2, "0")} · {t(`${step}.label`)}
+          </p>
+          <h3 className="t-h3 walkthrough-detail-title">{t(`${step}.title`)}</h3>
+          <p className="t-body">{t(`${step}.body`)}</p>
         </div>
 
         {step !== "map" && (
           <button type="button" className="btn btn-ghost btn-sm walkthrough-reset" onClick={reset}>
-            Start over
+            {t("startOver")}
           </button>
         )}
       </div>

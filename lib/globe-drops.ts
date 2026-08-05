@@ -46,7 +46,7 @@ export type Drop = {
   seeker: string;
   coin: DropCoin;
   rarity: Rarity;
-  /** How it was distributed, which is separate from what it is. */
+  /** How it was distributed, which is separate from what it is. An id. */
   kind: string;
   amount: number;
   xp: number;
@@ -62,15 +62,14 @@ const HANDLES = [
 
 const SUFFIX = ["", "", "_", ".", "42", "77", "01", "xyz", "hq", "irl"];
 
-/** How a drop reached someone. The coin decides rarity; this decides route. */
-const KINDS = ["Airdrop", "Quest reward", "Partner drop", "Event token", "Street cache"];
+/**
+ * How a drop reached someone. The coin decides rarity; this decides route.
+ * These are ids into `dropKinds` in the message files.
+ */
+const KINDS = ["airdrop", "quest", "partner", "event", "cache"];
 
 export const RARITY_COLOUR: Record<Rarity, string> = Object.fromEntries(
   Object.entries(RARITY_LADDER).map(([k, v]) => [k, v.colour])
-) as Record<Rarity, string>;
-
-export const RARITY_LABEL: Record<Rarity, string> = Object.fromEntries(
-  Object.entries(RARITY_LADDER).map(([k, v]) => [k, v.label])
 ) as Record<Rarity, string>;
 
 const pick = <T,>(arr: T[]) => arr[Math.floor(Math.random() * arr.length)];

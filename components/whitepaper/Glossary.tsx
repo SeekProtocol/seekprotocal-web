@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { GLOSSARY } from "@/content/whitepaper";
+import { useTranslations } from "next-intl";
+import { withCopy } from "@/lib/content-i18n";
+import { GLOSSARY_IDS } from "@/content/whitepaper";
 
 /**
  * The terms, filterable.
@@ -12,29 +14,35 @@ import { GLOSSARY } from "@/content/whitepaper";
  * finds the cold streak.
  */
 export default function Glossary() {
+  const t = useTranslations("whitepaperFigures");
+  const entries = withCopy(
+    useTranslations("glossary"),
+    GLOSSARY_IDS.map((id) => ({ id })),
+    ["term", "definition"],
+  );
   const [query, setQuery] = useState("");
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return GLOSSARY;
-    return GLOSSARY.filter(
+    if (!q) return entries;
+    return entries.filter(
       (entry) =>
         entry.term.toLowerCase().includes(q) ||
         entry.definition.toLowerCase().includes(q)
     );
-  }, [query]);
+  }, [entries, query]);
 
   return (
     <div className="wp-figure glossary">
       <div className="glossary-head">
-        <p className="t-mono">{GLOSSARY.length} terms</p>
+        <p className="t-mono">{t("terms", { count: entries.length })}</p>
         <label className="glossary-search">
-          <span className="sr-only">Filter terms</span>
+          <span className="sr-only">{t("filterTerms")}</span>
           <SearchIcon />
           <input
             type="search"
             value={query}
-            placeholder="Filter"
+            placeholder={t("filter")}
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>
@@ -42,7 +50,7 @@ export default function Glossary() {
 
       <dl className="glossary-list">
         {shown.map((entry) => (
-          <div key={entry.term} className="glossary-entry">
+          <div key={entry.id} className="glossary-entry">
             <dt>{entry.term}</dt>
             <dd className="t-small">{entry.definition}</dd>
           </div>
@@ -50,10 +58,7 @@ export default function Glossary() {
       </dl>
 
       {shown.length === 0 && (
-        <p className="t-small glossary-empty">
-          Nothing matches that. The document itself is searchable with your
-          browser&apos;s own find.
-        </p>
+        <p className="t-small glossary-empty">{t("noMatch")}</p>
       )}
     </div>
   );

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
-import { CHAPTERS, WHITEPAPER_META, type Block } from "@/content/whitepaper";
+import { getMultilingualAlternates, OG_IMAGE, getBreadcrumbJsonLd } from "@/lib/seo";
+import { CHAPTER_IDS, WHITEPAPER_META, type Block, type Chapter } from "@/content/whitepaper";
 import ReaderChrome from "@/components/whitepaper/ReaderChrome";
 import TokenomicsDonut from "@/components/whitepaper/TokenomicsDonut";
 import StackDiagram from "@/components/whitepaper/StackDiagram";
@@ -15,27 +16,35 @@ import VestingSchedule from "@/components/whitepaper/VestingSchedule";
 import Glossary from "@/components/whitepaper/Glossary";
 import RichText from "@/components/whitepaper/RichText";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "whitepaper" });
+
   return {
-    title: "Whitepaper",
-    description:
-      "How Seek Protocol issues digital assets to real-world coordinates, verifies that someone was actually there, and settles it on Solana. Proof of location, architecture, token design and the attacks we defend against.",
-    alternates: getSingleLanguageAlternates("/whitepaper"),
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    alternates: getMultilingualAlternates("/whitepaper", locale),
     openGraph: {
-      title: "Seek Protocol Whitepaper",
-      description:
-        "Proof of location, architecture, token design, and an honest account of the attacks and limits.",
-      url: "/en/whitepaper",
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      url: `/${locale}/whitepaper`,
       images: [OG_IMAGE],
     },
     twitter: {
-      title: "Seek Protocol Whitepaper",
-      description:
-        "Proof of location, architecture, token design, and an honest account of the attacks and limits.",
+      title: t("ogTitle"),
+      description: t("ogDescription"),
       images: [OG_IMAGE],
     },
   };
 }
+
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "Whitepaper", path: "/whitepaper" },
+]);
 
 export default async function WhitepaperPage({
   params,
@@ -45,7 +54,18 @@ export default async function WhitepaperPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const entries = CHAPTERS.map((chapter) => ({
+  return <WhitepaperContent />;
+}
+
+function WhitepaperContent() {
+  const t = useTranslations("whitepaper");
+
+  const chapters: Chapter[] = CHAPTER_IDS.map((id) => ({
+    id,
+    ...(t.raw(`chapters.${id}`) as Omit<Chapter, "id">),
+  }));
+
+  const entries = chapters.map((chapter) => ({
     id: chapter.id,
     index: chapter.index,
     title: chapter.title,
@@ -53,30 +73,34 @@ export default async function WhitepaperPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />
         <div className="shell">
           <div className="page-head-inner">
-            <p className="eyebrow">Whitepaper · {WHITEPAPER_META.version}</p>
-            <h1 className="t-h1 page-head-title">
-              Digital assets that live in <span className="text-gradient">a place</span>
-            </h1>
-            <p className="t-lead">
-              The technical account of how Seek Protocol issues assets to
-              coordinates, proves someone stood there, and settles it on-chain,
-              including what the system cannot do.
+            <p className="eyebrow">
+              {t("eyebrow")} · {WHITEPAPER_META.version}
             </p>
+            <h1 className="t-h1 page-head-title">
+              {t("titleStart")} <span className="text-gradient">{t("titleAccent")}</span>
+            </h1>
+            <p className="t-lead">{t("lead")}</p>
             <div className="wp-meta-row">
-              <span className="chip">{WHITEPAPER_META.readingTime} read</span>
-              <span className="chip">Updated {WHITEPAPER_META.updated}</span>
+              <span className="chip">
+                {t("readingTime", { minutes: WHITEPAPER_META.readingMinutes })}
+              </span>
+              <span className="chip">{t("updated", { date: t("updatedValue") })}</span>
               <a
                 href="https://seekprotocol.gitbook.io/seekprotocol"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="arrow-link"
               >
-                Full docs on GitBook
+                {t("gitbook")}
                 <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
                   <path
                     d="M3 11L11 3M11 3H5M11 3v6"
@@ -99,7 +123,7 @@ export default async function WhitepaperPage({
             <ReaderChrome entries={entries} />
 
             <div className="wp-body" id="wp-body">
-              {CHAPTERS.map((chapter) => (
+              {chapters.map((chapter) => (
                 <article key={chapter.id} id={chapter.id} className="wp-chapter">
                   <header className="wp-chapter-head reveal">
                     <p className="t-mono">
@@ -117,18 +141,15 @@ export default async function WhitepaperPage({
 
               <div className="cta-band wp-end-cta">
                 <div className="cta-band-inner">
-                  <p className="eyebrow eyebrow-center">Next</p>
-                  <h2 className="t-h3 cta-band-title">See it running</h2>
-                  <p className="t-body">
-                    The ecosystem page shows the live network, and the roadmap
-                    tracks what has shipped against what is next.
-                  </p>
+                  <p className="eyebrow eyebrow-center">{t("ctaEyebrow")}</p>
+                  <h2 className="t-h3 cta-band-title">{t("ctaTitle")}</h2>
+                  <p className="t-body">{t("ctaBody")}</p>
                   <div className="btn-row">
                     <Link href="/ecosystem" className="btn btn-brand">
-                      Explore the ecosystem
+                      {t("ctaEcosystem")}
                     </Link>
                     <Link href="/roadmap" className="btn btn-outline">
-                      View roadmap
+                      {t("ctaRoadmap")}
                     </Link>
                   </div>
                 </div>

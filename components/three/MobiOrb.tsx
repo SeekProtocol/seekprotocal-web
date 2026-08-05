@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
+import { useNearViewport } from "@/lib/use-near-viewport";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
@@ -71,9 +72,13 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
     pulseRef.current = pulse;
   }, [pulse]);
 
+  // Built one viewport out, not on mount. See useNearViewport.
+  const nearViewport = useNearViewport(hostRef);
+
   useEffect(() => {
     const host = hostRef.current;
     if (!host) return;
+    if (!nearViewport) return;
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let renderer: THREE.WebGLRenderer;
@@ -90,6 +95,7 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.1;
+    host.dataset.ready = "true";
     host.appendChild(renderer.domElement);
     Object.assign(renderer.domElement.style, {
       width: "100%",
@@ -464,13 +470,14 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
       composer.dispose();
       renderer.dispose();
       renderer.domElement.remove();
+      delete host.dataset.ready;
     };
-  }, []);
+  }, [nearViewport]);
 
   return (
     <div className={`mobi ${className}`} data-loaded={loaded || undefined}>
       <span className="mobi-fallback" aria-hidden="true" />
-      <div ref={hostRef} className="mobi-canvas" aria-hidden="true" />
+      <div ref={hostRef} className="three-host mobi-canvas" aria-hidden="true" />
     </div>
   );
 }

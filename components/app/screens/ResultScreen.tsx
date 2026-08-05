@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { RARITY_LADDER, type Collectible } from "@/content/collectibles";
 import type { CatchOutcome } from "@/components/app/AppWalkthrough";
@@ -20,6 +23,7 @@ export default function ResultScreen({
   onContinue: () => void;
   onBack: () => void;
 }) {
+  const t = useTranslations("resultScreen");
   const ladder = RARITY_LADDER[coin.rarity];
 
   return (
@@ -42,28 +46,28 @@ export default function ResultScreen({
         <img src={coin.image} alt="" className="result-coin" />
       </div>
 
-      <p className="result-verdict">{outcome.caught ? "Caught" : "It got away"}</p>
+      <p className="result-verdict">{outcome.caught ? t("caught") : t("escaped")}</p>
       <h2 className="result-name">
         {outcome.caught ? `${outcome.units}× ${coin.symbol}` : coin.name}
       </h2>
 
       <div className="result-rows">
         <div>
-          <span>Ring charged</span>
+          <span>{t("ringCharged")}</span>
           <b>{Math.round(outcome.charge * 100)}%</b>
         </div>
         <div>
-          <span>Chance this attempt</span>
+          <span>{t("chance")}</span>
           <b>{Math.round(outcome.chance * 100)}%</b>
         </div>
         <div>
-          <span>XP</span>
+          <span>{t("xp")}</span>
           <b style={{ color: outcome.caught ? ladder.colour : undefined }}>
             {outcome.caught ? `+${outcome.xp}` : "0"}
           </b>
         </div>
         <div>
-          <span>Game value</span>
+          <span>{t("gameValue")}</span>
           <b>
             {outcome.caught
               ? `$${(outcome.units * ladder.value).toFixed(2)}`
@@ -74,23 +78,23 @@ export default function ResultScreen({
 
       <p className="result-note">
         {outcome.caught
-          ? "A caught unit is a game unit. What it pays out in real tokens is the market's business."
+          ? t("noteCaught")
           : canRetry
-            ? "One more attempt, worth 0.65 of the first."
-            : "That spawn is gone. Another will be along."}
+            ? t("noteRetry")
+            : t("noteGone")}
       </p>
 
       {outcome.caught ? (
         <button type="button" className="scr-cta" onClick={onContinue}>
-          Open wallet
+          {t("openWallet")}
         </button>
       ) : canRetry ? (
         <button type="button" className="scr-cta" onClick={onRetry}>
-          Try again
+          {t("tryAgain")}
         </button>
       ) : (
         <button type="button" className="scr-cta" onClick={onBack}>
-          Back to the map
+          {t("backToMap")}
         </button>
       )}
     </div>

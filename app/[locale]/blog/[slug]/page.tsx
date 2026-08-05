@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import { baseUrl, getSingleLanguageAlternates } from "@/lib/seo";
+import { baseUrl, getSingleLanguageAlternates, getBreadcrumbJsonLd } from "@/lib/seo";
 import { getBlogPost, blogPosts, getAllSlugs } from "@/lib/blog-data";
 
 interface BlogPostPageProps {
@@ -35,7 +36,11 @@ export async function generateMetadata({
   };
 
   return {
-    title: post.title,
+    /* Absolute, so the layout's "%s | Seek Protocol" template is not appended.
+       The headlines are 55 to 60 characters on their own; the 16-character
+       suffix pushed all six past 70 and Google cut them off mid-sentence. The
+       brand is already the first thing in the URL and the breadcrumb. */
+    title: { absolute: post.title },
     description: post.excerpt,
     openGraph: {
       title: post.title,
@@ -117,11 +122,20 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     inLanguage: "en-US",
   };
 
+  const breadcrumbJsonLd = getBreadcrumbJsonLd([
+    { name: "Blog", path: "/blog" },
+    { name: post.title, path: `/blog/${post.slug}` },
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <article className="section article-page">
         <div className="shell">
@@ -134,12 +148,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </header>
 
             <div className="article-media">
-              <img
+              {/* The article's own image, and the LCP element on this page, so
+                  it is priority rather than lazy: lazy-loading the LCP element
+                  is the one thing Google names outright as a mistake.
+
+                  Sized rather than filled, because .article-media has no
+                  aspect-ratio to fill. The dimensions come from the data rather
+                  than a constant: five of the six sources are square and one is
+                  1130x1014, so stating one ratio for all of them would reserve
+                  the wrong box and shift the page as the picture arrived.
+
+                  sizes matches .article, which is 44rem. Claiming 1024px made
+                  the browser ask for w=2048 for a 702px slot. */}
+              <Image
                 src={post.image}
-                srcSet={post.imageSrcSet}
-                sizes="(max-width: 1024px) 100vw, 1024px"
                 alt={post.imageAlt}
-                loading="eager"
+                width={post.imageWidth}
+                height={post.imageHeight}
+                sizes="(max-width: 44rem) 100vw, 704px"
+                priority
               />
             </div>
 
@@ -149,16 +176,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               ))}
             </div>
 
-            <nav className="article-links" aria-label="Related pages">
-              <h2 className="t-mono article-links-title">Keep reading</h2>
-              <ul>
-                <li><Link href="/ecosystem" className="chip">Ecosystem</Link></li>
-                <li><Link href="/whitepaper" className="chip">Whitepaper</Link></li>
-                <li><Link href="/roadmap" className="chip">Roadmap</Link></li>
-                <li><Link href="/blog" className="chip">All articles</Link></li>
-                <li><Link href="/contact" className="chip">Contact</Link></li>
-              </ul>
-            </nav>
+            <ArticleLinks />
 
             <BlogArticleCta />
           </div>
@@ -169,6 +187,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <BlogRelatedSection relatedPosts={relatedPosts} />
       )}
     </>
+  );
+}
+
+function ArticleLinks() {
+  const t = useTranslations("blog");
+  const nav = useTranslations("nav");
+
+  return (
+    <nav className="article-links" aria-label={t("relatedPages")}>
+      <h2 className="t-mono article-links-title">{t("keepReading")}</h2>
+      <ul>
+        <li><Link href="/ecosystem" className="chip">{nav("ecosystem")}</Link></li>
+        <li><Link href="/whitepaper" className="chip">{nav("whitepaper")}</Link></li>
+        <li><Link href="/roadmap" className="chip">{nav("roadmap")}</Link></li>
+        <li><Link href="/blog" className="chip">{t("allArticles")}</Link></li>
+        <li><Link href="/contact" className="chip">{nav("contact")}</Link></li>
+      </ul>
+    </nav>
   );
 }
 
@@ -249,12 +285,11 @@ function BlogRelatedSection({
           {relatedPosts.map((related) => (
             <Link key={related.slug} href={`/blog/${related.slug}`} className="card card-flush card-hover post-card reveal">
               <div className="post-card-media">
-                <img
+                <Image
                   src={related.image}
-                  srcSet={related.imageSrcSet}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  loading="lazy"
                   alt={related.imageAlt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="post-card-body">

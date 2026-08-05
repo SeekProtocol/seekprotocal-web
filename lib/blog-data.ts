@@ -4,6 +4,11 @@ export interface BlogPost {
   excerpt: string;
   content: string[];
   image: string;
+  /* Intrinsic size of `image`. Stated so the article page can reserve the
+     right box before the file arrives; five of these are square and one is
+     1130x1014, so a single hard-coded ratio would shift the layout. */
+  imageWidth: number;
+  imageHeight: number;
   imageSrcSet?: string;
   imageAlt: string;
   date: string;
@@ -26,6 +31,8 @@ export const blogPosts: BlogPost[] = [
       "The technology stack combines geospatial mapping with real-time location tracking, advanced AR rendering with spatial computing, blockchain-powered reward distribution, and instant sync across all users worldwide. This makes Seek Protocol not just a concept, but a fully functional platform transforming how we interact with the world around us.",
     ],
     image: "/images/Ontwerp-zonder-titel-11_1.avif",
+    imageWidth: 1024,
+    imageHeight: 1024,
     imageSrcSet:
       "/images/Ontwerp-zonder-titel-11_1Ontwerp-zonder-titel-(11).avif 500w, /images/Ontwerp-zonder-titel-11_1.avif 1024w",
     imageAlt: "Seek Protocol AR platform on Solana",
@@ -47,6 +54,8 @@ export const blogPosts: BlogPost[] = [
       "As the platform grows, so does the network of airdrop locations. With the Seek Panel, any project can deploy a location-based campaign in minutes, choosing exact coordinates, setting reward parameters, and tracking engagement in real-time. The future of crypto distribution is not digital-only. It is embedded in the physical world around us.",
     ],
     image: "/images/ChatGPT-Image-27-aug-2025-15_04_54.avif",
+    imageWidth: 1024,
+    imageHeight: 1024,
     imageSrcSet:
       "/images/ChatGPT-Image-27-aug-2025-15_04_54ChatGPT-Image-27-aug-2025,-15_04_53.avif 500w, /images/ChatGPT-Image-27-aug-2025-15_04_54.avif 1024w",
     imageAlt: "Location-based crypto airdrops with geofencing technology",
@@ -68,6 +77,8 @@ export const blogPosts: BlogPost[] = [
       "The future of Web3 gaming is not confined to screens. It extends into the world around us, turning every street corner, park bench, and landmark into a potential gaming arena. With Seek Protocol, that future is already here.",
     ],
     image: "/images/Ontwerp-zonder-titel-6_1.avif",
+    imageWidth: 1024,
+    imageHeight: 1024,
     imageSrcSet:
       "/images/Ontwerp-zonder-titel-6_1Ontwerp-zonder-titel-(6).avif 500w, /images/Ontwerp-zonder-titel-6_1.avif 1024w",
     imageAlt: "Augmented reality Web3 gaming experience",
@@ -89,6 +100,8 @@ export const blogPosts: BlogPost[] = [
       "The combination of AI, AR, and blockchain creates something truly unprecedented: a digital companion that understands your physical world, enhances it with personalized digital content, and rewards your every discovery with verifiable on-chain assets. This is not the future. It is happening now with SeekAR.",
     ],
     image: "/images/Ontwerp-zonder-titel-10_1.avif",
+    imageWidth: 1024,
+    imageHeight: 1024,
     imageSrcSet:
       "/images/Ontwerp-zonder-titel-10_1Ontwerp-zonder-titel-(10).avif 500w, /images/Ontwerp-zonder-titel-10_1.avif 1024w",
     imageAlt: "AI-powered personalization in SeekAR",
@@ -110,6 +123,8 @@ export const blogPosts: BlogPost[] = [
       "The combination of physical movement, social interaction, augmented reality, and blockchain rewards creates an engagement loop that is simply unmatched in the current landscape. As users refer friends, climb leaderboards, complete guild missions, and participate in streak challenges, the ecosystem grows stronger with every event.",
     ],
     image: "/images/Ontwerp-zonder-titel-13_1.avif",
+    imageWidth: 1024,
+    imageHeight: 1024,
     imageSrcSet:
       "/images/Ontwerp-zonder-titel-13_1Ontwerp-zonder-titel-(13).avif 500w, /images/Ontwerp-zonder-titel-13_1.avif 1024w",
     imageAlt: "Move-to-earn live events with AR rewards",
@@ -131,6 +146,8 @@ export const blogPosts: BlogPost[] = [
       "Every NFT, token, and in-game asset within Seek Protocol is secured on the Solana blockchain, meaning real ownership, provable fairness, and rewards you can actually use, both inside and outside of SeekAR. This is not just a new proof mechanism; it is a new paradigm for how we validate real-world human activity on-chain.",
     ],
     image: "/images/Three-Pillars_1Three-Pillars.avif",
+    imageWidth: 1130,
+    imageHeight: 1014,
     imageAlt: "Proof of location blockchain verification",
     date: "2025-09-18",
     readTime: "4 min",

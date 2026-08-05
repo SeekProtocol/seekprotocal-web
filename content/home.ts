@@ -20,30 +20,20 @@ export const PRESS_LOGOS = [
 ];
 
 /**
- * The homepage process. These are genuinely sequential — you cannot collect
- * before you arrive — which is what earns the numbering.
+ * The homepage process. These are genuinely sequential, you cannot collect
+ * before you arrive, which is what earns the numbering.
+ *
+ * The copy lives in `messages/<locale>.json` under `homeSteps`, keyed by id.
  */
 export const HOME_STEPS = [
-  {
-    title: "Something is placed",
-    meta: "Publisher · anywhere on earth",
-    body: "A brand, a project or an event pins an asset to a set of coordinates and sets the radius it can be claimed from. It sits there, visible on the map, until someone comes to get it.",
-  },
-  {
-    title: "You walk into range",
-    meta: "30 m default radius",
-    body: "Your phone confirms you are actually there: satellite fix, ambient radio, device attestation and your motion trace all have to agree. Spoofing one signal is easy; spoofing all of them at once is not.",
-  },
-  {
-    title: "You collect it",
-    meta: "Sub-second settlement on Solana",
-    body: "Hold up the camera, see the asset anchored in the street in front of you, and take it. The transfer settles on-chain for a fraction of a cent, and it is yours.",
-  },
-];
+  { id: "placed" },
+  { id: "arrive" },
+  { id: "collect" },
+] as const;
 
-/** Headline figures for the hero. */
+/** Headline figures for the hero. Labels come from `homeStats`. */
 export const HOME_STATS = [
-  { value: 30, suffix: " m", decimals: 0, label: "Claim accuracy" },
-  { value: 8, suffix: "", decimals: 0, label: "Languages" },
-  { value: 2, suffix: "", decimals: 0, label: "App stores live" },
+  { id: "accuracy", value: 30, suffix: " m", decimals: 0 },
+  { id: "languages", value: 8, suffix: "", decimals: 0 },
+  { id: "stores", value: 2, suffix: "", decimals: 0 },
 ];

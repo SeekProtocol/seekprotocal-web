@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Inter_Tight, JetBrains_Mono, Noto_Sans_SC, Noto_Sans_JP, Noto_Sans_KR } from "next/font/google";
+import { DM_Sans, Inter_Tight, JetBrains_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -32,26 +32,8 @@ const jetBrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const notoSansSC = Noto_Sans_SC({
-  subsets: ["latin"],
-  variable: "--font-noto-sans-sc",
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-});
 
-const notoSansJP = Noto_Sans_JP({
-  subsets: ["latin"],
-  variable: "--font-noto-sans-jp",
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-});
 
-const notoSansKR = Noto_Sans_KR({
-  subsets: ["latin"],
-  variable: "--font-noto-sans-kr",
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -164,11 +146,18 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-const cjkFontVar: Record<string, string> = {
-  zh: notoSansSC.variable,
-  ja: notoSansJP.variable,
-  ko: notoSansKR.variable,
-};
+/* The three Noto CJK families that used to be declared here were dead weight.
+   They were instantiated, their `variable` was set as a class on <html> for
+   zh/ja/ko, and no CSS rule ever read --font-noto-sans-sc/jp/kr: the base rules
+   resolve --font-body, --font-display and --font-mono, which map to DM Sans,
+   Inter Tight and JetBrains Mono. So three Google families at four weights each
+   were fetched and declared to style nothing.
+
+   They were also declared with subsets: ["latin"], which for a CJK face ships
+   no CJK glyphs at all, so even wired up they could not have done the job.
+   Chinese, Japanese and Korean fall back to the reader's system font today and
+   still do. Giving those locales real typography is a separate piece of work,
+   and it starts with the right subset. */
 
 export default async function LocaleLayout({
   children,
@@ -186,7 +175,6 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
-  const extraFont = cjkFontVar[locale] || "";
 
   return (
     <html
@@ -196,7 +184,7 @@ export default async function LocaleLayout({
          server and the first client render agree. */
       data-theme="dark"
       suppressHydrationWarning
-      className={`${dmSans.variable} ${interTight.variable} ${jetBrainsMono.variable} ${extraFont}`}
+      className={`${dmSans.variable} ${interTight.variable} ${jetBrainsMono.variable}`}
     >
       <head>
         {/* Sets the theme before first paint so there is no flash. */}

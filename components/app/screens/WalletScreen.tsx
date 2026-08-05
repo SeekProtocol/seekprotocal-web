@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { TabIcon } from "@/components/app/screens/MapScreen";
 import { RARITY_LADDER, type Collectible } from "@/content/collectibles";
@@ -23,13 +26,16 @@ export default function WalletScreen({
   caught?: Collectible[];
   onBack?: () => void;
 }) {
+  const t = useTranslations("walletScreen");
+  const chrome = useTranslations("appChrome");
+
   return (
     <div className="scr scr-wallet">
       <StatusBar />
 
       {onBack && (
         <button type="button" className="scr-back scr-back-over" onClick={onBack}>
-          ‹ Map
+          {chrome("backToMap")}
         </button>
       )}
 
@@ -45,24 +51,24 @@ export default function WalletScreen({
         />
         <span className="wallet-hero-fade" aria-hidden="true" />
         <div className="wallet-balance">
-          <span className="wallet-balance-label">Total balance</span>
+          <span className="wallet-balance-label">{t("totalBalance")}</span>
           <span className="wallet-balance-value">$2,493.44</span>
-          <span className="wallet-balance-delta">+ $184.20 today</span>
+          <span className="wallet-balance-delta">{t("delta", { amount: "$184.20" })}</span>
         </div>
       </div>
 
       <div className="wallet-actions">
-        {["Send", "Receive", "Swap", "Stake"].map((action) => (
+        {["send", "receive", "swap", "stake"].map((action) => (
           <span key={action} className="wallet-action">
             <b />
-            <em>{action}</em>
+            <em>{t(action)}</em>
           </span>
         ))}
       </div>
 
       {caught.length > 0 && (
         <div className="wallet-section">
-          <span className="wallet-section-title">Just caught</span>
+          <span className="wallet-section-title">{t("justCaught")}</span>
           <div className="wallet-caught">
             {caught.map((coin, i) => (
               <span
@@ -79,7 +85,7 @@ export default function WalletScreen({
       )}
 
       <div className="wallet-section">
-        <span className="wallet-section-title">Assets</span>
+        <span className="wallet-section-title">{t("assets")}</span>
         <ul className="wallet-list">
           {ASSETS.map((asset) => (
             <li key={asset.name} className="wallet-row">
@@ -100,7 +106,7 @@ export default function WalletScreen({
       </div>
 
       <div className="wallet-section">
-        <span className="wallet-section-title">Recent badges</span>
+        <span className="wallet-section-title">{t("recentBadges")}</span>
         <div className="wallet-badges">
           {BADGES.map((src) => (
             <img key={src} src={src} alt="" loading="lazy" />
@@ -109,15 +115,10 @@ export default function WalletScreen({
       </div>
 
       <nav className="tabbar" aria-hidden="true">
-        {[
-          { label: "Home", icon: "home", active: false },
-          { label: "Map", icon: "map", active: false },
-          { label: "Quests", icon: "quest", active: false },
-          { label: "Wallet", icon: "wallet", active: true },
-        ].map((tab) => (
-          <span key={tab.label} className="tabbar-item" data-active={tab.active || undefined}>
-            <TabIcon name={tab.icon} />
-            <em>{tab.label}</em>
+        {["home", "map", "quests", "wallet"].map((tab) => (
+          <span key={tab} className="tabbar-item" data-active={tab === "wallet" || undefined}>
+            <TabIcon name={tab === "quests" ? "quest" : tab} />
+            <em>{chrome(tab)}</em>
           </span>
         ))}
       </nav>

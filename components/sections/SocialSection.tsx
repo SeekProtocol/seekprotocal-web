@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import { listCopy, withCopy } from "@/lib/content-i18n";
 import PixelAvatar from "@/components/ui/PixelAvatar";
 
 /**
@@ -14,47 +16,36 @@ import PixelAvatar from "@/components/ui/PixelAvatar";
  */
 const THREAD = [
   {
+    id: "spot",
     who: "nova",
     rank: "PATHFINDER",
     // A 3D avatar from the app, the way most players actually appear.
     avatar: "/app/avatars/avatar-1.png",
     tone: 0,
     time: "18:04",
-    text: "Legendary just spawned by the market. Two streets from the tram stop.",
   },
+  { id: "coming", who: "pike", rank: "RANGER", avatar: null, tone: 1, time: "18:04" },
   {
-    who: "pike",
-    rank: "RANGER",
-    avatar: null,
-    tone: 1,
-    time: "18:04",
-    text: "On my way. Anyone got a magnet left?",
-  },
-  {
+    id: "sent",
     who: "wren",
     rank: "APEX",
     avatar: "/app/avatars/avatar-4.png",
     tone: 2,
     time: "18:05",
-    text: "Sent you two. Save the diamond hands for the leak.",
   },
-  {
-    who: "pike",
-    rank: "RANGER",
-    avatar: null,
-    tone: 1,
-    time: "18:09",
-    text: "Full ring and it still got away. Two attempts left.",
-  },
+  { id: "missed", who: "pike", rank: "RANGER", avatar: null, tone: 1, time: "18:09" },
 ];
 
 const REFERRAL_STATS = [
-  { label: "Invited", value: "24" },
-  { label: "Active", value: "17" },
-  { label: "Your share", value: "5%" },
+  { id: "invited", value: "24" },
+  { id: "active", value: "17" },
+  { id: "share", value: "5%" },
 ];
 
 export default function SocialSection() {
+  const t = useTranslations("socialSection");
+  const thread = withCopy(t, THREAD, ["text"]);
+  const stats = withCopy(t, REFERRAL_STATS, ["label"]);
   const [shown, setShown] = useState(1);
   const [copied, setCopied] = useState(false);
 
@@ -81,18 +72,16 @@ export default function SocialSection() {
   return (
     <div className="social">
       <div className="social-copy">
-        <p className="eyebrow">Together</p>
-        <h2 className="t-h2">Half of it is who you go with</h2>
+        <p className="eyebrow">{t("eyebrow")}</p>
+        <h2 className="t-h2">{t("title")}</h2>
         <p className="t-lead" style={{ marginTop: "1.25rem" }}>
-          Clans pool what everyone collects. Chat is end-to-end encrypted, with
-          disappearing messages when a conversation should not outlive itself.
-          And bringing someone in earns you a share of what they find.
+          {t("lead")}
         </p>
 
         <ul className="showcase-points" style={{ marginTop: "2rem" }}>
-          <li>Direct and clan messages, encrypted end to end</li>
-          <li>Power-ups and tips passed between friends</li>
-          <li>Referral rewards that pay while they play</li>
+          {listCopy(t, "points").map((point) => (
+            <li key={point}>{point}</li>
+          ))}
         </ul>
       </div>
 
@@ -102,19 +91,19 @@ export default function SocialSection() {
           <div className="chat-head">
             <span className="chat-head-title">
               <b>Laser Eyes</b>
-              <i>412 online</i>
+              <i>{t("online", { count: 412 })}</i>
             </span>
             <span className="chat-lock">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <rect x="4" y="10" width="16" height="11" rx="2.5" stroke="currentColor" strokeWidth="2.2" />
                 <path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" strokeWidth="2.2" />
               </svg>
-              Encrypted
+              {t("encrypted")}
             </span>
           </div>
 
           <ul className="chat-thread">
-            {THREAD.slice(0, shown).map((row, i) => (
+            {thread.slice(0, shown).map((row, i) => (
               <li key={i} className="chat-row">
                 <span className="chat-avatar">
                   {row.avatar ? (
@@ -141,8 +130,8 @@ export default function SocialSection() {
           </ul>
 
           <div className="chat-composer">
-            <span>Message</span>
-            <span className="chat-timer" title="Disappearing messages">
+            <span>{t("composer")}</span>
+            <span className="chat-timer" title={t("disappearing")}>
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <circle cx="12" cy="13" r="8" stroke="currentColor" strokeWidth="2.2" />
                 <path d="M12 9v4l2.5 2M9 2h6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
@@ -153,15 +142,15 @@ export default function SocialSection() {
         </div>
 
         <div className="social-referral glass">
-          <p className="t-mono">Your code</p>
+          <p className="t-mono">{t("yourCode")}</p>
           <button type="button" className="social-code" onClick={copy}>
             <span>SEEK-NOVA-24</span>
-            <em>{copied ? "Copied" : "Copy"}</em>
+            <em>{copied ? t("copied") : t("copy")}</em>
           </button>
 
           <dl className="social-referral-stats">
-            {REFERRAL_STATS.map((stat) => (
-              <div key={stat.label}>
+            {stats.map((stat) => (
+              <div key={stat.id}>
                 <dt className="t-mono-sm">{stat.label}</dt>
                 <dd className="t-num">{stat.value}</dd>
               </div>

@@ -2,9 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
-import { useTranslations } from "next-intl";
+import { useFormatter, useTranslations } from "next-intl";
 import { SeekMark } from "@/components/brand/SeekLogo";
-import { RARITY_COLOUR, RARITY_LABEL, type Drop, type Rarity } from "@/lib/globe-drops";
+import { RARITY_COLOUR, type Drop, type Rarity } from "@/lib/globe-drops";
 import { RARITY_LADDER, RETRY_DECAY } from "@/content/collectibles";
 
 const SeekGlobe = dynamic(() => import("@/components/three/SeekGlobe"), { ssr: false });
@@ -18,6 +18,8 @@ type Haul = { caught: number; missed: number; xp: number };
 
 export default function GlobeSection() {
   const t = useTranslations("globe");
+  const format = useFormatter();
+  const rarityLabel = useTranslations("rarity");
   const [feed, setFeed] = useState<Drop[]>([]);
   const [selected, setSelected] = useState<Drop | null>(null);
   const [total, setTotal] = useState(0);
@@ -134,7 +136,7 @@ export default function GlobeSection() {
             type="button"
             onClick={() => nudgeZoom(0.25)}
             disabled={zoom >= 1}
-            aria-label="Zoom in"
+            aria-label={t("zoomIn")}
           >
             +
           </button>
@@ -143,7 +145,7 @@ export default function GlobeSection() {
             type="button"
             onClick={() => nudgeZoom(-0.25)}
             disabled={zoom <= 0}
-            aria-label="Zoom out"
+            aria-label={t("zoomOut")}
           >
             −
           </button>
@@ -193,7 +195,6 @@ export default function GlobeSection() {
             rolling={rolling}
             onAttempt={() => attempt(selected)}
             onClose={closeDrop}
-            t={t}
           />
         ) : (
           <>
@@ -205,30 +206,30 @@ export default function GlobeSection() {
             <div className="globe-panel-metrics">
               <div>
                 <span className="t-mono-sm">{t("todayLabel")}</span>
-                <span className="t-num globe-metric">{total.toLocaleString("en-US")}</span>
+                <span className="t-num globe-metric">{format.number(total)}</span>
               </div>
               <div>
-                <span className="t-mono-sm">Your haul</span>
+                <span className="t-mono-sm">{t("yourHaul")}</span>
                 <span className="t-num globe-metric">
                   {haul.caught}
                   {haul.xp > 0 && (
                     <em className="globe-metric-sub">
                       {" · "}
-                      {haul.xp.toLocaleString("en-US")} XP
+                      {format.number(haul.xp)} XP
                     </em>
                   )}
                 </span>
               </div>
             </div>
 
-            <div className="globe-filters" role="group" aria-label="Filter by rarity">
+            <div className="globe-filters" role="group" aria-label={t("filterLabel")}>
               <button
                 type="button"
                 className="globe-filter"
                 data-active={filter === null || undefined}
                 onClick={() => setFilter(null)}
               >
-                All
+                {t("all")}
               </button>
               {RARITIES.map((rarity) => (
                 <button
@@ -239,7 +240,7 @@ export default function GlobeSection() {
                   style={{ ["--rarity" as string]: RARITY_LADDER[rarity].colour }}
                   onClick={() => setFilter(filter === rarity ? null : rarity)}
                 >
-                  {RARITY_LADDER[rarity].label}
+                  {rarityLabel(rarity)}
                 </button>
               ))}
             </div>
@@ -247,7 +248,9 @@ export default function GlobeSection() {
             <ul className="globe-feed" aria-live="polite" aria-relevant="additions">
               {shown.length === 0 && (
                 <li className="globe-feed-empty t-small">
-                  {filter ? `No ${RARITY_LADDER[filter].label.toLowerCase()} pickups yet` : t("waiting")}
+                  {filter
+                    ? t("waitingRarity", { rarity: rarityLabel(filter).toLowerCase() })
+                    : t("waiting")}
                 </li>
               )}
               {shown.map((drop) => (
@@ -283,24 +286,26 @@ function DropCard({
   rolling,
   onAttempt,
   onClose,
-  t,
 }: {
   drop: Drop;
   rolling: null | "win" | "lose";
   onAttempt: () => void;
   onClose: () => void;
-  t: (key: string) => string;
 }) {
+  const t = useTranslations("globe");
+  const format = useFormatter();
+  const rarityLabel = useTranslations("rarity");
+  const kindLabel = useTranslations("dropKinds");
   const colour = RARITY_COLOUR[drop.rarity];
   const ladder = RARITY_LADDER[drop.rarity];
 
   return (
     <div className="drop-card" style={{ ["--rarity" as string]: colour }}>
-      <button type="button" className="drop-card-close" onClick={onClose} aria-label="Close">
+      <button type="button" className="drop-card-close" onClick={onClose} aria-label={t("close")}>
         ✕
       </button>
 
-      <span className="drop-card-rarity">{RARITY_LABEL[drop.rarity]}</span>
+      <span className="drop-card-rarity">{rarityLabel(drop.rarity)}</span>
 
       <div className="drop-card-hero" data-state={rolling ?? undefined}>
         {/* The coin the pin was actually carrying. */}
@@ -310,7 +315,8 @@ function DropCard({
 
       <h3 className="t-h3 drop-card-kind">{drop.coin.name}</h3>
       <p className="t-small drop-card-where">
-        {drop.kind} · {drop.city.name}, {drop.city.country} · {drop.ago}s ago
+        {kindLabel(drop.kind)} · {drop.city.name}, {drop.city.country} ·{" "}
+        {t("secondsAgo", { seconds: drop.ago })}
       </p>
 
       <dl className="drop-card-stats">
@@ -320,10 +326,10 @@ function DropCard({
         </div>
         <div>
           <dt className="t-mono-sm">{t("xpGained")}</dt>
-          <dd className="drop-card-xp">+{drop.xp.toLocaleString("en-US")}</dd>
+          <dd className="drop-card-xp">+{format.number(drop.xp)}</dd>
         </div>
         <div>
-          <dt className="t-mono-sm">Catch chance</dt>
+          <dt className="t-mono-sm">{t("catchChance")}</dt>
           <dd>{Math.round(ladder.base * 100)}%</dd>
         </div>
         <div>
@@ -337,7 +343,7 @@ function DropCard({
       {rolling ? (
         <p className="drop-card-outcome" data-win={rolling === "win" || undefined}>
           {rolling === "win"
-            ? `Caught it · +${drop.xp.toLocaleString("en-US")} XP`
+            ? `Caught it · +${format.number(drop.xp)} XP`
             : `It got away · ${Math.round(ladder.base * RETRY_DECAY * 100)}% on a retry`}
         </p>
       ) : (

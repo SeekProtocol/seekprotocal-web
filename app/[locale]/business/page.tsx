@@ -1,34 +1,43 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getBreadcrumbJsonLd } from "@/lib/seo";
 import { MEASUREMENT, USE_CASES } from "@/content/business";
+import { listCopy, withCopy } from "@/lib/content-i18n";
 import DeployConsole from "@/components/business/DeployConsole";
 import AttentionFunnel from "@/components/business/AttentionFunnel";
 
-const DESCRIPTION =
-  "Place rewards at your own coordinates and measure who actually arrived. Seek Protocol turns digital campaigns into verified footfall for retail, events, token projects and cities.";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "businessPage" });
+  const description = t("metaDescription");
 
-export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "For business",
-    description: DESCRIPTION,
-    // English only, so this canonicalises to /en rather than claiming eight
-    // translations of the same copy. See getSingleLanguageAlternates.
-    alternates: getSingleLanguageAlternates("/business"),
+    title: t("metaTitle"),
+    description,
+    alternates: getMultilingualAlternates("/business", locale),
     openGraph: {
-      title: "Buy arrivals, not impressions",
-      description: DESCRIPTION,
-      url: "/en/business",
+      title: t("ogTitle"),
+      description,
+      url: `/${locale}/business`,
       images: [OG_IMAGE],
     },
     twitter: {
-      title: "Buy arrivals, not impressions",
-      description: DESCRIPTION,
+      title: t("ogTitle"),
+      description,
       images: [OG_IMAGE],
     },
   };
 }
+
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "For business", path: "/business" },
+]);
 
 export default async function BusinessPage({
   params,
@@ -38,28 +47,40 @@ export default async function BusinessPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  return <BusinessContent />;
+}
+
+function BusinessContent() {
+  const t = useTranslations("businessPage");
+  const cases = useTranslations("useCases");
+  const useCases = withCopy(cases, USE_CASES, ["label", "metric", "title", "body"]);
+  const measurement = withCopy(useTranslations("measurement"), MEASUREMENT, [
+    "label",
+    "value",
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />
         <div className="shell">
           <div className="page-head-inner">
-            <p className="eyebrow">For business</p>
+            <p className="eyebrow">{t("eyebrow")}</p>
             <h1 className="t-h1 page-head-title">
-              Buy arrivals, not <span className="text-gradient">impressions</span>
+              {t("titleStart")} <span className="text-gradient">{t("titleAccent")}</span>
             </h1>
-            <p className="t-lead">
-              Digital advertising can put your logo in front of someone in
-              milliseconds. It cannot get them to walk three streets over. Place
-              a reward at your door and pay for the people who reach it.
-            </p>
+            <p className="t-lead">{t("lead")}</p>
             <div className="btn-row" style={{ marginTop: "2rem" }}>
               <Link href="/contact" className="btn btn-brand btn-lg">
-                Talk to us
+                {t("ctaTalk")}
               </Link>
               <Link href="/whitepaper" className="btn btn-outline btn-lg">
-                How verification works
+                {t("ctaVerification")}
               </Link>
             </div>
           </div>
@@ -70,12 +91,10 @@ export default async function BusinessPage({
       <section className="section">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow">The argument</p>
-            <h2 className="t-h2">Where the counting stops</h2>
+            <p className="eyebrow">{t("argumentEyebrow")}</p>
+            <h2 className="t-h2">{t("argumentTitle")}</h2>
             <p className="t-lead" style={{ marginTop: "1.25rem" }}>
-              Spend the same money two ways and the funnels look comparable
-              until the last row. One of them is counted. The other is a model,
-              and it is the row every campaign is judged on.
+              {t("argumentLead")}
             </p>
           </div>
 
@@ -89,12 +108,12 @@ export default async function BusinessPage({
       <section className="section section-sunken">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow">Use cases</p>
-            <h2 className="t-h2">Four ways people use it</h2>
+            <p className="eyebrow">{t("useCasesEyebrow")}</p>
+            <h2 className="t-h2">{t("useCasesTitle")}</h2>
           </div>
 
           <div className="usecase-grid">
-            {USE_CASES.map((useCase) => (
+            {useCases.map((useCase) => (
               <article key={useCase.id} className="card card-hover usecase reveal">
                 <div className="usecase-head">
                   <span className="t-mono">{useCase.label}</span>
@@ -103,7 +122,7 @@ export default async function BusinessPage({
                 <h3 className="t-h3 usecase-title">{useCase.title}</h3>
                 <p className="t-body">{useCase.body}</p>
                 <ul className="usecase-list">
-                  {useCase.points.map((point) => (
+                  {listCopy(cases, `${useCase.id}.points`).map((point) => (
                     <li key={point}>{point}</li>
                   ))}
                 </ul>
@@ -117,12 +136,10 @@ export default async function BusinessPage({
       <section className="section">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow">Setup</p>
-            <h2 className="t-h2">Four decisions, no engineering</h2>
+            <p className="eyebrow">{t("setupEyebrow")}</p>
+            <h2 className="t-h2">{t("setupTitle")}</h2>
             <p className="t-lead" style={{ marginTop: "1.25rem" }}>
-              This is the whole flow. Make the four choices and publish, and see
-              what each one does to the ground you are holding and the price of
-              a person at your door.
+              {t("setupLead")}
             </p>
           </div>
 
@@ -137,18 +154,16 @@ export default async function BusinessPage({
         <div className="shell">
           <div className="measure-layout">
             <div className="sec-head reveal">
-              <p className="eyebrow">Measurement</p>
-              <h2 className="t-h2">What you get, and what you do not</h2>
+              <p className="eyebrow">{t("measurementEyebrow")}</p>
+              <h2 className="t-h2">{t("measurementTitle")}</h2>
               <p className="t-body" style={{ marginTop: "1.25rem" }}>
-                Location data is the most sensitive category there is. You
-                receive the counts you need to judge a campaign, and nothing
-                that would let you follow an individual around.
+                {t("measurementLead")}
               </p>
             </div>
 
             <div className="wp-specs reveal">
-              {MEASUREMENT.map((row) => (
-                <div key={row.label} className="wp-spec-row">
+              {measurement.map((row) => (
+                <div key={row.id} className="wp-spec-row">
                   <span className="t-mono">{row.label}</span>
                   <span className="wp-spec-value">{row.value}</span>
                 </div>
@@ -163,19 +178,15 @@ export default async function BusinessPage({
         <div className="shell">
           <div className="cta-band reveal">
             <div className="cta-band-inner">
-              <p className="eyebrow eyebrow-center">Get started</p>
-              <h2 className="t-h2 cta-band-title">Put something at your door</h2>
-              <p className="t-body">
-                The self-serve portal is in progress. Until it lands, we set
-                campaigns up with you directly. Tell us the location and what
-                you want to place.
-              </p>
+              <p className="eyebrow eyebrow-center">{t("ctaEyebrow")}</p>
+              <h2 className="t-h2 cta-band-title">{t("ctaTitle")}</h2>
+              <p className="t-body">{t("ctaBody")}</p>
               <div className="btn-row">
                 <Link href="/contact" className="btn btn-brand btn-lg">
-                  Start a conversation
+                  {t("ctaStart")}
                 </Link>
                 <Link href="/roadmap" className="btn btn-outline btn-lg">
-                  See when self-serve ships
+                  {t("ctaRoadmap")}
                 </Link>
               </div>
             </div>
