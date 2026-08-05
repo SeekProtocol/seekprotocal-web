@@ -24,34 +24,20 @@ export default function VideoReveal() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [sound, setSound] = useState(false);
   const [clock, setClock] = useState("00:00 / 00:00");
-  /* The film is 16 MB. On a desktop it starts itself when it scrolls into
-     view; on a phone that is 16 MB of somebody's data plan and a decoder held
-     open next to five WebGL contexts, so there it waits to be asked. */
+  /* A phone gets its own encode: 854x480 at 350 kb/s, 2.3 MB against the
+     desktop file's 16 MB. That is what makes autoplay affordable there. At the
+     size the frame is drawn on a handheld the two are hard to tell apart, and
+     a film that starts by itself is the point of the section. */
   const [handheld, setHandheld] = useState(false);
-  const [started, setStarted] = useState(false);
-
-  /* The scroll effect below runs once and reads both of these from inside an
-     observer callback, so they are mirrored into refs rather than listed as
-     dependencies: re-running that effect would tear down the scroll listener
-     and the clock along with it. */
-  const handheldRef = useRef(false);
-  const startedRef = useRef(false);
 
   useEffect(() => {
     const phone = isHandheld();
-    handheldRef.current = phone;
-    /* One pass, on mount, to swap the poster for the start control. The rule
+    /* One pass, on mount, to point the element at the lighter file. The rule
        warns about cascading renders; this is the one render that cascade is
        for, and it cannot be decided before hydration because it reads the
        pointer type. */
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setHandheld(phone);
-  }, []);
-
-  const start = useCallback(() => {
-    startedRef.current = true;
-    setStarted(true);
-    videoRef.current?.play().catch(() => {});
   }, []);
 
   const toggleSound = useCallback(() => {
@@ -100,16 +86,12 @@ export default function VideoReveal() {
       window.addEventListener("resize", onScroll);
     }
 
-    /* Only play while it is actually on screen, and on a handheld only once
-       somebody has pressed play: autoplaying there is what fetches the whole
-       file. */
+    // Only play while it is actually on screen.
     const observer = video
       ? new IntersectionObserver(
           ([entry]) => {
-            if (!entry.isIntersecting) video.pause();
-            else if (!handheldRef.current || startedRef.current) {
-              video.play().catch(() => {});
-            }
+            if (entry.isIntersecting) video.play().catch(() => {});
+            else video.pause();
           },
           { threshold: 0.15 }
         )
@@ -142,12 +124,12 @@ export default function VideoReveal() {
         <div className="video-reveal-aperture">
           <video
             ref={videoRef}
-            src="/videos/Seekr.mp4"
+            src={handheld ? "/videos/Seekr-mobile.mp4" : "/videos/Seekr.mp4"}
             poster="/videos/Seekr-poster.jpg"
             loop
             muted
             playsInline
-            preload={handheld ? "none" : "metadata"}
+            preload="metadata"
           />
           <span className="video-reveal-scanlines" aria-hidden="true" />
           <span className="video-reveal-vignette" aria-hidden="true" />
@@ -169,13 +151,6 @@ export default function VideoReveal() {
           <span className="video-reveal-hud-clock">{clock}</span>
         </div>
 
-        {handheld && !started && (
-          <button type="button" className="video-reveal-play" onClick={start}>
-            <PlayIcon />
-            {t("play")}
-          </button>
-        )}
-
         <button
           type="button"
           className="video-reveal-sound"
@@ -187,14 +162,6 @@ export default function VideoReveal() {
         </button>
       </div>
     </div>
-  );
-}
-
-function PlayIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M8 5.2v13.6L19 12z" />
-    </svg>
   );
 }
 

@@ -575,8 +575,7 @@
   },
   "videoReveal": {
     "mute": "Silenciar el vídeo",
-    "unmute": "Reproducir el vídeo con sonido",
-    "play": "Reproducir el vídeo"
+    "unmute": "Reproducir el vídeo con sonido"
   },
   "featureGroups": {
     "eyebrow": "Qué hay dentro",

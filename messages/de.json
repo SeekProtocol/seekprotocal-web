@@ -575,8 +575,7 @@
   },
   "videoReveal": {
     "mute": "Film stummschalten",
-    "unmute": "Film mit Ton abspielen",
-    "play": "Film abspielen"
+    "unmute": "Film mit Ton abspielen"
   },
   "featureGroups": {
     "eyebrow": "Was drinsteckt",
