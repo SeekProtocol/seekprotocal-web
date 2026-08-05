@@ -216,7 +216,18 @@
   padding: 2rem var(--gutter) 2.5rem;
   background: var(--bg);
   overflow-y: auto;
-  animation: rise 0.35s var(--ease-out) both;
+  /* Fades only.
+     It used to borrow `rise`, which carries a translate and a slight scale.
+     Those are right for a card arriving in a column and wrong for a panel that
+     is meant to cover the screen: at the first frame it sat 32px low and 6px
+     narrow, so the page showed through along the top and both edges while the
+     menu opened. The staggered links below carry the movement instead. */
+  animation: nav-fade 0.28s var(--ease-out) both;
+}
+
+@keyframes nav-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .mobile-nav[hidden] { display: none; }
