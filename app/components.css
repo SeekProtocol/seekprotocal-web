@@ -1275,14 +1275,30 @@
 
 .wp-end-cta { margin-top: 1rem; }
 
-.wp-draft-chip {
+/* A notice, not a tag.
+   It inherited `.chip`'s pill shape and `white-space: nowrap`, so at 440px it
+   ran a good 90px past its own card and off the screen. The page's
+   `overflow-x: clip` swallowed it, which is why nothing showed up as a
+   horizontal scroll: it was simply cut off mid-word. It wraps now, and a
+   warning that can run to two lines should be a block rather than a pill.
+
+   Two classes deep, because `.chip` lives in globals.css and globals.css
+   imports this file at the top: a single-class rule here loses the cascade to
+   it every time. That is the third thing on this site to be caught by it. */
+.chip.wp-draft-chip {
+  display: block;
+  max-width: 100%;
   margin-bottom: 1.5rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-sm);
   border-color: rgba(234, 179, 8, 0.45);
   background: rgba(234, 179, 8, 0.1);
   color: #a16207;
+  white-space: normal;
+  line-height: 1.6;
 }
 
-[data-theme="dark"] .wp-draft-chip { color: #fbbf24; }
+[data-theme="dark"] .chip.wp-draft-chip { color: #fbbf24; }
 
 /* --------------------------------------------------------------------------
    ARCHITECTURE STACK
