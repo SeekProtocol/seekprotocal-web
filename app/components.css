@@ -206,9 +206,23 @@
 .site-header[data-open] .site-burger span:first-child { transform: translateY(3.25px) rotate(45deg); }
 .site-header[data-open] .site-burger span:last-child { transform: translateY(-3.25px) rotate(-45deg); }
 
+/* Must stay a sibling of .site-header in the markup, never a descendant. The
+   open header carries a backdrop-filter, which would make it the containing
+   block for this fixed panel and collapse it to the height of the bar. See the
+   note in SiteHeader.tsx.
+
+   Sized by height rather than by a bottom offset, so that if it ever does end up
+   nested again it is merely misplaced instead of invisible. dvh also tracks the
+   dynamic viewport, which keeps the footer CTA clear of a phone browser's
+   bottom bar; a bottom offset of 0 resolves against the large viewport and put
+   the button underneath it. */
 .mobile-nav {
   position: fixed;
-  inset: var(--nav-h) 0 0;
+  top: var(--nav-h);
+  left: 0;
+  right: 0;
+  height: calc(100vh - var(--nav-h));
+  height: calc(100dvh - var(--nav-h));
   z-index: 89;
   display: flex;
   flex-direction: column;
