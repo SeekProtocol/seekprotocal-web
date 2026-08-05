@@ -55,6 +55,36 @@ export function getSingleLanguageAlternates(path: string) {
   };
 }
 
+/**
+ * BreadcrumbList for a page below the root.
+ *
+ * Google replaces the URL line in a result with the breadcrumb trail when this
+ * is present, which is worth more than it sounds on a site where every path
+ * starts with a locale code: "seekprotocol.ai > Blog > Proof of Location" reads
+ * as a place in a structure, where "seekprotocol.ai/en/blog/proof-of-location.."
+ * reads as a string.
+ *
+ * Trails are built against the default locale, matching the canonical the
+ * English-only pages declare.
+ */
+export function getBreadcrumbJsonLd(
+  trail: { name: string; path: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { name: "Seek Protocol", path: "/" },
+      ...trail,
+    ].map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.name,
+      item: `${baseUrl}/${routing.defaultLocale}${crumb.path === "/" ? "" : crumb.path}`,
+    })),
+  };
+}
+
 /** Absolute-URL hreflang cluster for translated sitemap entries. */
 export function getSitemapAlternates(path: string) {
   const normalizedPath = path === "/" ? "" : path;

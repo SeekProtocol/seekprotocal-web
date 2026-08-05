@@ -4,7 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import { baseUrl, getSingleLanguageAlternates } from "@/lib/seo";
+import { baseUrl, getSingleLanguageAlternates, getBreadcrumbJsonLd } from "@/lib/seo";
 import { getBlogPost, blogPosts, getAllSlugs } from "@/lib/blog-data";
 
 interface BlogPostPageProps {
@@ -35,7 +35,11 @@ export async function generateMetadata({
   };
 
   return {
-    title: post.title,
+    /* Absolute, so the layout's "%s | Seek Protocol" template is not appended.
+       The headlines are 55 to 60 characters on their own; the 16-character
+       suffix pushed all six past 70 and Google cut them off mid-sentence. The
+       brand is already the first thing in the URL and the breadcrumb. */
+    title: { absolute: post.title },
     description: post.excerpt,
     openGraph: {
       title: post.title,
@@ -117,11 +121,20 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     inLanguage: "en-US",
   };
 
+  const breadcrumbJsonLd = getBreadcrumbJsonLd([
+    { name: "Blog", path: "/blog" },
+    { name: post.title, path: `/blog/${post.slug}` },
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <article className="section article-page">
         <div className="shell">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
+import { getSingleLanguageAlternates, OG_IMAGE, getBreadcrumbJsonLd } from "@/lib/seo";
 import { MEASUREMENT, USE_CASES } from "@/content/business";
 import DeployConsole from "@/components/business/DeployConsole";
 import AttentionFunnel from "@/components/business/AttentionFunnel";
@@ -11,7 +11,7 @@ const DESCRIPTION =
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "For business",
+    title: "For Business: Buy Arrivals, Not Impressions",
     description: DESCRIPTION,
     // English only, so this canonicalises to /en rather than claiming eight
     // translations of the same copy. See getSingleLanguageAlternates.
@@ -30,6 +30,10 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "For business", path: "/business" },
+]);
+
 export default async function BusinessPage({
   params,
 }: {
@@ -40,6 +44,10 @@ export default async function BusinessPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />

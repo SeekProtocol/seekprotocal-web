@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
+import { getSingleLanguageAlternates, OG_IMAGE, getBreadcrumbJsonLd } from "@/lib/seo";
 import { CHAPTERS, WHITEPAPER_META, type Block } from "@/content/whitepaper";
 import ReaderChrome from "@/components/whitepaper/ReaderChrome";
 import TokenomicsDonut from "@/components/whitepaper/TokenomicsDonut";
@@ -17,7 +17,7 @@ import RichText from "@/components/whitepaper/RichText";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Whitepaper",
+    title: "Whitepaper: Proof of Location on Solana",
     description:
       "How Seek Protocol issues digital assets to real-world coordinates, verifies that someone was actually there, and settles it on Solana. Proof of location, architecture, token design and the attacks we defend against.",
     alternates: getSingleLanguageAlternates("/whitepaper"),
@@ -37,6 +37,10 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "Whitepaper", path: "/whitepaper" },
+]);
+
 export default async function WhitepaperPage({
   params,
 }: {
@@ -53,6 +57,10 @@ export default async function WhitepaperPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />

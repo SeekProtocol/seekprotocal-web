@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
+import { getSingleLanguageAlternates, OG_IMAGE, getBreadcrumbJsonLd } from "@/lib/seo";
 import { PHASES, ROADMAP_NOTE } from "@/content/roadmap";
 
 const DESCRIPTION =
@@ -9,7 +9,7 @@ const DESCRIPTION =
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Roadmap",
+    title: "Roadmap: Shipped and What Comes Next",
     description: DESCRIPTION,
     alternates: getSingleLanguageAlternates("/roadmap"),
     openGraph: {
@@ -37,6 +37,10 @@ const STATUS_LABEL: Record<string, string> = {
   next: "Planned",
 };
 
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "Roadmap", path: "/roadmap" },
+]);
+
 export default async function RoadmapPage({
   params,
 }: {
@@ -50,6 +54,10 @@ export default async function RoadmapPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />

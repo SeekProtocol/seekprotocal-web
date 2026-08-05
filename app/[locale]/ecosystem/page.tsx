@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { baseUrl, getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
+import { baseUrl, getSingleLanguageAlternates, OG_IMAGE, getBreadcrumbJsonLd } from "@/lib/seo";
 import { CAPABILITIES, FAQ, PARTICIPANTS } from "@/content/ecosystem";
 import GlobeSection from "@/components/sections/GlobeSection";
 import Accordion from "@/components/ui/Accordion";
@@ -11,7 +11,9 @@ const DESCRIPTION =
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Ecosystem",
+    // 56 characters with the template suffix. "Ecosystem" alone was 25 and
+    // said nothing a searcher would type.
+    title: "Ecosystem: Seekers, Publishers, Protocol",
     description: DESCRIPTION,
     alternates: getSingleLanguageAlternates("/ecosystem"),
     openGraph: {
@@ -47,6 +49,10 @@ const faqJsonLd = {
   })),
 };
 
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "Ecosystem", path: "/ecosystem" },
+]);
+
 export default async function EcosystemPage({
   params,
 }: {
@@ -57,6 +63,10 @@ export default async function EcosystemPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
