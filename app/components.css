@@ -1825,6 +1825,11 @@
 .article-head { margin-bottom: 2.5rem; }
 .article-title { margin-block: 1.25rem; }
 .article-media { border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 2.5rem; border: 1px solid var(--line); }
+/* The article image now carries width and height attributes, which is what
+   gives the browser the aspect ratio up front. Without height:auto the global
+   `max-width: 100%` would shrink the width and hold the height at 1024, and the
+   picture would stretch. */
+.article-media img { width: 100%; height: auto; }
 .article-body > p { font-size: 1.0625rem; line-height: 1.8; color: var(--fg-muted); }
 .article-body > p + p { margin-top: 1.5rem; }
 
@@ -2017,7 +2022,7 @@
   box-shadow: var(--shadow-lg);
 }
 
-.team-card-photo { aspect-ratio: 1; overflow: hidden; background: var(--bg-sunken); }
+.team-card-photo { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--bg-sunken); }
 
 .team-card-photo img {
   width: 100%;

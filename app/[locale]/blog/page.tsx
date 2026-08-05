@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -79,12 +80,19 @@ function BlogPageContent({ locale }: { locale: string }) {
                 }`}
               >
                 <div className="post-card-media">
-                  <img
+                  {/* fill, because .post-card-media already fixes the box at
+                      16/10 and crops to it. The hand-written srcSet offered two
+                      widths, 500 and 1024; next/image derives the ladder from
+                      sizes instead, so a phone stops fetching a 1024px file for
+                      a card a third that wide. Only the first card is priority:
+                      it is the LCP candidate, and preloading the rest would
+                      compete with it. */}
+                  <Image
                     src={post.image}
-                    srcSet={post.imageSrcSet}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    loading={index < 3 ? "eager" : "lazy"}
                     alt={post.imageAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    priority={index === 0}
                   />
                 </div>
                 <div className="post-card-body">

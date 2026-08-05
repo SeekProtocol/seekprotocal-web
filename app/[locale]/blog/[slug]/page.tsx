@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -147,12 +148,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </header>
 
             <div className="article-media">
-              <img
+              {/* The article's own image, and the LCP element on this page, so
+                  it is priority rather than lazy: lazy-loading the LCP element
+                  is the one thing Google names outright as a mistake.
+
+                  Sized rather than filled, because .article-media has no
+                  aspect-ratio to fill. The dimensions come from the data rather
+                  than a constant: five of the six sources are square and one is
+                  1130x1014, so stating one ratio for all of them would reserve
+                  the wrong box and shift the page as the picture arrived.
+
+                  sizes matches .article, which is 44rem. Claiming 1024px made
+                  the browser ask for w=2048 for a 702px slot. */}
+              <Image
                 src={post.image}
-                srcSet={post.imageSrcSet}
-                sizes="(max-width: 1024px) 100vw, 1024px"
                 alt={post.imageAlt}
-                loading="eager"
+                width={post.imageWidth}
+                height={post.imageHeight}
+                sizes="(max-width: 44rem) 100vw, 704px"
+                priority
               />
             </div>
 
@@ -262,12 +276,11 @@ function BlogRelatedSection({
           {relatedPosts.map((related) => (
             <Link key={related.slug} href={`/blog/${related.slug}`} className="card card-flush card-hover post-card reveal">
               <div className="post-card-media">
-                <img
+                <Image
                   src={related.image}
-                  srcSet={related.imageSrcSet}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  loading="lazy"
                   alt={related.imageAlt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="post-card-body">

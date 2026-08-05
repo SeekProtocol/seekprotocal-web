@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 /**
@@ -45,10 +46,17 @@ export default function PhoneFrame({
         <span className="device-home" aria-hidden="true" />
       </div>
 
-      <img
+      {/* 1530x3036 and 350KB, the heaviest single asset on the homepage, and it
+          was being shipped at full size to every phone. .device-art already
+          sets width:100% and height:auto, so the intrinsic size is only here to
+          give the browser the ratio. */}
+      <Image
         src="/app/devices/iphone.png"
         alt=""
         className="device-art"
+        width={1530}
+        height={3036}
+        sizes="(max-width: 768px) 90vw, 380px"
         aria-hidden="true"
         draggable={false}
       />
