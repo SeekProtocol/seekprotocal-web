@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import styles from "../privacy-policy/privacy-policy.module.css";
 
 export async function generateMetadata({
@@ -20,27 +20,13 @@ export async function generateMetadata({
       description:
         "Terms and conditions for using the Seek Protocol platform and SeekAR application.",
       url: `/${locale}/terms-conditions`,
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "Seek Protocol Terms & Conditions",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     twitter: {
       title: "Terms & Conditions - Seek Protocol",
       description:
         "Terms and conditions for using the Seek Protocol platform and SeekAR application.",
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "Seek Protocol Terms & Conditions",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     robots: {
       index: true,

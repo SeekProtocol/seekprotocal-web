@@ -4,7 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { baseUrl, getSingleLanguageAlternates } from "@/lib/seo";
 import { getBlogPost, blogPosts, getAllSlugs } from "@/lib/blog-data";
 
 interface BlogPostPageProps {
@@ -20,9 +20,19 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
-  const { locale, slug } = await params;
+  const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
+
+  /* The article's own artwork is AVIF, which no major scraper decodes, so
+     sharing a post produced a blank card. This is a generated PNG of the
+     headline at the 1200x630 they all expect. */
+  const card = {
+    url: `${baseUrl}/og/blog/${post.slug}`,
+    width: 1200,
+    height: 630,
+    alt: post.title,
+  };
 
   return {
     title: post.title,
@@ -30,29 +40,19 @@ export async function generateMetadata({
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `/${locale}/blog/${post.slug}`,
+      // Articles are English only, so the share URL is the canonical one.
+      url: `/en/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
-      images: [
-        {
-          url: `https://www.seekprotocol.ai${post.image}`,
-          width: 1024,
-          height: 576,
-          alt: post.imageAlt,
-        },
-      ],
+      section: post.category,
+      images: [card],
     },
     twitter: {
       title: post.title,
       description: post.excerpt,
-      images: [
-        {
-          url: `https://www.seekprotocol.ai${post.image}`,
-          alt: post.imageAlt,
-        },
-      ],
+      images: [card],
     },
-    alternates: getMultilingualAlternates(`/blog/${post.slug}`, locale),
+    alternates: getSingleLanguageAlternates(`/blog/${post.slug}`),
   };
 }
 
@@ -84,25 +84,33 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: `https://www.seekprotocol.ai${post.image}`,
+    /* The generated PNG card, not post.image: post.image is AVIF, which Google
+       does not accept for article structured data. */
+    image: `${baseUrl}/og/blog/${post.slug}`,
+    url: `${baseUrl}/en/blog/${post.slug}`,
     datePublished: post.date,
     dateModified: post.date,
     author: {
       "@type": "Organization",
       name: "Seek Protocol",
-      url: "https://www.seekprotocol.ai",
+      url: baseUrl,
     },
     publisher: {
+      "@id": `${baseUrl}/#organization`,
       "@type": "Organization",
       name: "Seek Protocol",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.seekprotocol.ai/images/favicon.png",
+        url: `${baseUrl}/images/webclip.png`,
+        width: 256,
+        height: 256,
       },
     },
+    /* Was /blog/<slug>, which is not a page: it is a redirect to the prefixed
+       URL, so the reference resolved to nothing. */
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.seekprotocol.ai/blog/${post.slug}`,
+      "@id": `${baseUrl}/en/blog/${post.slug}`,
     },
     articleSection: post.category,
     wordCount: post.content.join(" ").split(/\s+/).length,

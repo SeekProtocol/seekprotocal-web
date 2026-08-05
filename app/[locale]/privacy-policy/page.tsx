@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import styles from "./privacy-policy.module.css";
 
 export async function generateMetadata({
@@ -20,27 +20,13 @@ export async function generateMetadata({
       description:
         "Seek Protocol's privacy policy. How we handle your data, location info, and wallet details in SeekAR.",
       url: `/${locale}/privacy-policy`,
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "Seek Protocol Privacy Policy",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     twitter: {
       title: "Privacy Policy - Seek Protocol",
       description:
         "How Seek Protocol handles your data, location info, and wallet details in the SeekAR app.",
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "Seek Protocol Privacy Policy",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     robots: {
       index: true,

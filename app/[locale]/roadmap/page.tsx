@@ -1,22 +1,35 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
 import { PHASES, ROADMAP_NOTE } from "@/content/roadmap";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
+const DESCRIPTION =
+  "What Seek Protocol has shipped and what comes next, from the proof-of-location prototype through the public SeekAR launch to the self-serve business portal and on-chain governance.";
+
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Roadmap",
-    description:
-      "What Seek Protocol has shipped and what comes next, from the proof-of-location prototype through the public SeekAR launch to the self-serve business portal and on-chain governance.",
-    alternates: getMultilingualAlternates("/roadmap", locale),
+    description: DESCRIPTION,
+    alternates: getSingleLanguageAlternates("/roadmap"),
+    openGraph: {
+      title: "Seek Protocol roadmap",
+      description: DESCRIPTION,
+      url: "/en/roadmap",
+      images: [OG_IMAGE],
+    },
+    twitter: {
+      title: "Seek Protocol roadmap",
+      description: DESCRIPTION,
+      images: [OG_IMAGE],
+    },
   };
 }
+
+/* Read off PHASES rather than written out, because the copy said "Five phases"
+   while the timeline rendered four. */
+const PHASE_WORDS = ["No", "One", "Two", "Three", "Four", "Five", "Six", "Seven"];
+const PHASE_COUNT_WORD = PHASE_WORDS[PHASES.length] ?? String(PHASES.length);
 
 const STATUS_LABEL: Record<string, string> = {
   done: "Shipped",
@@ -47,8 +60,8 @@ export default async function RoadmapPage({
               What is built, and what is <span className="text-gradient">next</span>
             </h1>
             <p className="t-lead">
-              Five phases, tracked against what has actually shipped. {shipped} of{" "}
-              {total} milestones complete.
+              {PHASE_COUNT_WORD} phases, tracked against what has actually
+              shipped. {shipped} of {total} milestones complete.
             </p>
           </div>
         </div>

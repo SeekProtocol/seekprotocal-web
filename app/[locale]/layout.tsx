@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, baseUrl } from "@/lib/seo";
 import SiteEffects from "@/components/shared/SiteEffects";
 import CookieConsent from "@/components/shared/CookieConsent";
 import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
@@ -81,10 +81,11 @@ export async function generateMetadata({
   const { locale } = await params;
 
   return {
-    metadataBase: new URL("https://www.seekprotocol.ai"),
+    metadataBase: new URL(baseUrl),
+    // Google truncates the SERP title around 60 characters. The previous
+    // default ran to 76, so "Redefining Innovation" was never shown.
     title: {
-      default:
-        "Seek Protocol | The First AR & AI Platform on Solana - Redefining Innovation",
+      default: "Seek Protocol | The First AR & AI Platform on Solana",
       template: "%s | Seek Protocol",
     },
     description:
@@ -121,16 +122,12 @@ export async function generateMetadata({
         "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The first AR & AI platform on Solana transforming real-world exploration into crypto rewards.",
       type: "website",
       locale: localeToOgLocale[locale] || "en_US",
-      url: "/",
+      alternateLocale: Object.entries(localeToOgLocale)
+        .filter(([loc]) => loc !== locale)
+        .map(([, ogLocale]) => ogLocale),
+      url: `/${locale}`,
       siteName: "Seek Protocol",
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "Seek Protocol - The First AR & AI Platform on Solana",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
@@ -139,14 +136,7 @@ export async function generateMetadata({
       title: "Seek Protocol | The First AR & AI Platform on Solana",
       description:
         "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The first AR & AI platform on Solana transforming real-world exploration into crypto rewards.",
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "Seek Protocol - The First AR & AI Platform on Solana",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     robots: {
       index: true,
@@ -227,10 +217,15 @@ export default async function LocaleLayout({
                     name: "Seek Protocol",
                     alternateName: "SeekAR",
                     url: "https://www.seekprotocol.ai",
+                    /* Google requires a logo of at least 112px on its shortest
+                       side. The favicon is 32px, so it was being discarded. */
                     logo: {
                       "@type": "ImageObject",
-                      url: "https://www.seekprotocol.ai/images/favicon.png",
+                      url: "https://www.seekprotocol.ai/images/webclip.png",
+                      width: 256,
+                      height: 256,
                     },
+                    legalName: "Block Protocol L.L.C-FZ",
                     description:
                       "The first AR and AI platform on Solana. Hunt location-based airdrops, collect NFTs, and explore with AI companions.",
                     sameAs: [
@@ -238,6 +233,13 @@ export default async function LocaleLayout({
                       "https://t.me/seekprotocol",
                       "https://discord.gg/seekprotocol",
                     ],
+                    contactPoint: {
+                      "@type": "ContactPoint",
+                      contactType: "customer support",
+                      email: "support@seekprotocol.ai",
+                      url: "https://www.seekprotocol.ai/en/contact",
+                      availableLanguage: routing.locales.map((loc) => loc),
+                    },
                     foundingLocation: {
                       "@type": "Place",
                       name: "Dubai, UAE",

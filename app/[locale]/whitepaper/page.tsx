@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getSingleLanguageAlternates, OG_IMAGE } from "@/lib/seo";
 import { CHAPTERS, WHITEPAPER_META, type Block } from "@/content/whitepaper";
 import ReaderChrome from "@/components/whitepaper/ReaderChrome";
 import TokenomicsDonut from "@/components/whitepaper/TokenomicsDonut";
@@ -15,22 +15,24 @@ import VestingSchedule from "@/components/whitepaper/VestingSchedule";
 import Glossary from "@/components/whitepaper/Glossary";
 import RichText from "@/components/whitepaper/RichText";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Whitepaper",
     description:
       "How Seek Protocol issues digital assets to real-world coordinates, verifies that someone was actually there, and settles it on Solana. Proof of location, architecture, token design and the attacks we defend against.",
-    alternates: getMultilingualAlternates("/whitepaper", locale),
+    alternates: getSingleLanguageAlternates("/whitepaper"),
     openGraph: {
       title: "Seek Protocol Whitepaper",
       description:
         "Proof of location, architecture, token design, and an honest account of the attacks and limits.",
-      url: `/${locale}/whitepaper`,
+      url: "/en/whitepaper",
+      images: [OG_IMAGE],
+    },
+    twitter: {
+      title: "Seek Protocol Whitepaper",
+      description:
+        "Proof of location, architecture, token design, and an honest account of the attacks and limits.",
+      images: [OG_IMAGE],
     },
   };
 }

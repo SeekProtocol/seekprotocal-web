@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import ContactForm from "@/components/shared/ContactForm";
 
 export async function generateMetadata({
@@ -20,27 +20,13 @@ export async function generateMetadata({
       description:
         "Get in touch with the Seek Protocol team for partnerships, beta access, and collaboration on AR & AI experiences on Solana.",
       url: `/${locale}/contact`,
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "Contact Seek Protocol",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     twitter: {
       title: "Contact Seek Protocol",
       description:
         "Reach out to the Seek Protocol team for partnerships, beta access, and collaboration opportunities.",
-      images: [
-        {
-          url: "https://cdn.prod.website-files.com/689dda35eca0c273668f15aa/68b7ea7afbe50cfcdef0c342_SeekAR%20(30).png",
-          width: 1200,
-          height: 630,
-          alt: "Contact Seek Protocol",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     alternates: getMultilingualAlternates("/contact", locale),
   };

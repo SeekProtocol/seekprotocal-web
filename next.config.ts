@@ -1,7 +1,67 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import { routing } from "./i18n/routing";
 
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
+
+const LOCALE_GROUP = routing.locales.join("|");
+const DEFAULT = `/${routing.defaultLocale}`;
+
+/**
+ * The site has had three URL shapes. Everything still in Google's index from the
+ * first two has to land on a live page, or those URLs bleed away as soft 404s.
+ *
+ *   1. Webflow export      /about, /services.html, /contact-us
+ *   2. Next without i18n   /about, /blog/<slug>, /services
+ *   3. Next with i18n      /en/about, /en/blog/<slug>, /en/business   <- canonical
+ *
+ * The locale prefix is always on (next-intl localePrefix defaults to "always"),
+ * so an unprefixed path has no route to match and 404s. next-intl's proxy only
+ * matches "/" and "/<locale>/...", so it never rescues those either. Hence the
+ * explicit map below rather than relying on locale detection.
+ *
+ * Legacy URLs go straight to the default locale on purpose: a single permanent
+ * hop consolidates link signals on the canonical, which locale sniffing (a 307
+ * that varies by visitor) would not do.
+ *
+ * These compile into Vercel's edge routing table, so none of them wakes a
+ * function.
+ */
+
+// Pages that lived at the root before the locale prefix landed, and now also
+// catch anyone linking the newer pages without a prefix.
+const UNPREFIXED_PAGES = [
+  "about",
+  "blog",
+  "contact",
+  "privacy-policy",
+  "terms-conditions",
+  "business",
+  "ecosystem",
+  "roadmap",
+  "whitepaper",
+];
+
+// Webflow-era paths whose content has no direct successor.
+const RETIRED_PATHS: Record<string, string> = {
+  "/index": DEFAULT,
+  "/index.html": DEFAULT,
+  "/about.html": `${DEFAULT}/about`,
+  "/blog.html": `${DEFAULT}/blog`,
+  "/contact-us": `${DEFAULT}/contact`,
+  "/contact-us.html": `${DEFAULT}/contact`,
+  "/privacy-policy.html": `${DEFAULT}/privacy-policy`,
+  "/terms-conditions.html": `${DEFAULT}/terms-conditions`,
+  // The agency pages all described services the product never had. /business is
+  // the closest live equivalent for anyone arriving on them.
+  "/services.html": `${DEFAULT}/business`,
+  "/consulting": `${DEFAULT}/business`,
+  "/consulting.html": `${DEFAULT}/business`,
+  "/pricing": `${DEFAULT}/business`,
+  "/pricing.html": `${DEFAULT}/business`,
+  "/project": `${DEFAULT}/ecosystem`,
+  "/project.html": `${DEFAULT}/ecosystem`,
+};
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -12,10 +72,28 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // /services carried generic agency boilerplate that never described the
-      // product. The B2B story now lives on /business; keep the old URL alive
-      // for anything already indexed or linked.
-      { source: "/services", destination: "/business", permanent: true },
-      { source: "/:locale(en|nl|de|es|fr|zh|ja|ko)/services", destination: "/:locale/business", permanent: true },
+      // product. The B2B story now lives on /business.
+      { source: "/services", destination: `${DEFAULT}/business`, permanent: true },
+      {
+        source: `/:locale(${LOCALE_GROUP})/services`,
+        destination: "/:locale/business",
+        permanent: true,
+      },
+
+      // Blog posts kept their slugs across the rebuild, only the prefix is new.
+      { source: "/blog/:slug", destination: `${DEFAULT}/blog/:slug`, permanent: true },
+
+      ...UNPREFIXED_PAGES.map((page) => ({
+        source: `/${page}`,
+        destination: `${DEFAULT}/${page}`,
+        permanent: true,
+      })),
+
+      ...Object.entries(RETIRED_PATHS).map(([source, destination]) => ({
+        source,
+        destination,
+        permanent: true,
+      })),
     ];
   },
 };

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
 import CoinStage from "@/components/sections/CoinStage";
 import WorldDescent from "@/components/sections/WorldDescent";
 import GlobeSection from "@/components/sections/GlobeSection";
@@ -29,8 +29,9 @@ export async function generateMetadata({
   const { locale } = await params;
 
   return {
-    title:
-      "Seek Protocol | The First AR & AI Platform on Solana - Redefining Innovation",
+    // 52 characters, inside the ~60 Google will render. The trailing
+    // "- Redefining Innovation" was always truncated away.
+    title: "Seek Protocol | The First AR & AI Platform on Solana",
     description:
       "Explore a new reality with Seek Protocol ($SEEK). Hunt location-based airdrops, collect NFTs in augmented reality, earn crypto rewards, and explore the world with AI companions on Solana.",
     openGraph: {
@@ -38,6 +39,7 @@ export async function generateMetadata({
       description:
         "The first AR and AI platform on Solana. Transform your world into a blockchain-powered playground. Hunt airdrops, collect NFTs, and explore with AI companions.",
       url: `/${locale}`,
+      images: [OG_IMAGE],
     },
     alternates: getMultilingualAlternates("/", locale),
   };
