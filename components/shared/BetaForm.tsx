@@ -27,7 +27,7 @@ export default function BetaForm() {
           callback: (token: string) => setTurnstileToken(token),
           "expired-callback": () => setTurnstileToken(""),
           "error-callback": () => setTurnstileToken(""),
-          theme: "dark",
+          theme: "auto",
         });
       }
     };
@@ -121,54 +121,55 @@ export default function BetaForm() {
     }
   };
 
+  if (status === "success") {
+    return (
+      <p className="form-status form-status-success beta-form-status" role="status">
+        {t("successMessage")}
+      </p>
+    );
+  }
+
   return (
-    <div className="form-block-2 w-form">
-      {(status === "idle" || status === "submitting" || status === "error") && (
-        <form onSubmit={handleSubmit} noValidate>
-          <div className="form-3">
-            <div style={{ flex: 1 }}>
-              <input
-                className={`cta-text-field w-input ${emailTouched && emailError ? "field-error" : ""}`}
-                maxLength={256}
-                name="email"
-                placeholder={t("emailPlaceholder")}
-                type="email"
-                value={email}
-                onChange={(e) => handleChange(e.target.value)}
-                onBlur={handleBlur}
-              />
-              {emailTouched && emailError && (
-                <p className="field-error-message">{emailError}</p>
-              )}
-            </div>
-            <div>
-              <input
-                type="submit"
-                className="normal-submit-button w-button"
-                value={status === "submitting" ? t("sending") : t("sendNow")}
-                disabled={status === "submitting"}
-              />
-            </div>
-          </div>
-          <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
-            <div ref={turnstileRef} className="cf-turnstile" />
-          </div>
-          {status === "error" && errorMessage && (
-            <div className="w-form-fail" style={{ display: "block", marginTop: "0.75rem", textAlign: "center" }}>
-              <div>{errorMessage}</div>
-            </div>
-          )}
-        </form>
-      )}
-      {status === "success" && (
-        <div className="success-message-wrapper w-form-done" style={{ display: "block" }}>
-          <div className="success-message-wrap">
-            <div className="success-message">
-              <div className="paragraph-01 text-black">{t("successMessage")}</div>
-            </div>
-          </div>
+    <form onSubmit={handleSubmit} noValidate className="beta-form">
+      <div className="beta-form-row">
+        <div className="beta-form-field">
+          <label htmlFor="beta-email" className="sr-only">
+            {t("emailPlaceholder")}
+          </label>
+          <input
+            id="beta-email"
+            className={`input ${emailTouched && emailError ? "field-error" : ""}`}
+            maxLength={256}
+            name="email"
+            placeholder={t("emailPlaceholder")}
+            type="email"
+            value={email}
+            onChange={(e) => handleChange(e.target.value)}
+            onBlur={handleBlur}
+            aria-invalid={emailTouched && Boolean(emailError)}
+            aria-describedby={emailTouched && emailError ? "beta-email-error" : undefined}
+          />
         </div>
+        <button type="submit" className="btn btn-brand" disabled={status === "submitting"}>
+          {status === "submitting" ? t("sending") : t("sendNow")}
+        </button>
+      </div>
+
+      {emailTouched && emailError && (
+        <p id="beta-email-error" className="field-error-message">
+          {emailError}
+        </p>
       )}
-    </div>
+
+      <div className="beta-form-turnstile">
+        <div ref={turnstileRef} className="cf-turnstile" />
+      </div>
+
+      {status === "error" && errorMessage && (
+        <p className="form-status form-status-error" role="alert">
+          {errorMessage}
+        </p>
+      )}
+    </form>
   );
 }

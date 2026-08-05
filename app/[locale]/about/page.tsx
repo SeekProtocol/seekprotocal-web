@@ -3,10 +3,13 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getMultilingualAlternates } from "@/lib/seo";
-import Navigation from "@/components/layout/Navigation";
-import Footer from "@/components/layout/Footer";
-import SplineScene from "@/components/shared/SplineScene";
 import BetaForm from "@/components/shared/BetaForm";
+import {
+  ARIcon,
+  GeospatialIcon,
+  RewardsIcon,
+  SyncIcon,
+} from "@/components/brand/TechIcons";
 
 export async function generateMetadata({
   params,
@@ -75,7 +78,7 @@ const aboutFaqJsonLd = {
       name: "How does Proof of Location work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Proof of Location is a verification system that confirms your real-world location on-chain to unlock tokens, NFTs, and digital assets. It uses GPS-based precision with blockchain verification to ensure no cheating or spoofing — only real rewards for real engagement.",
+        text: "Proof of Location is a verification system that confirms your real-world location on-chain to unlock tokens, NFTs, and digital assets. It uses GPS-based precision with blockchain verification to ensure no cheating or spoofing, only real rewards for real engagement.",
       },
     },
     {
@@ -99,8 +102,54 @@ export default async function AboutPage({
   return <AboutContent />;
 }
 
+
+const TEAM = [
+  { name: "Don Reijke", role: "Founder & CTO", img: "Don-Reijke.avif", linkedin: "https://www.linkedin.com/in/don-reijke-09630921b/" },
+  { name: "Lukas Novotny", role: "COO", img: "Lukas-Novotny.avif", linkedin: "" },
+  { name: "Senna Kabbaj", role: "CCO", img: "Senna-Kabbaj.avif", linkedin: "https://www.linkedin.com/in/sennakabbaj/" },
+  { name: "Tristan Wesenhagen", role: "Business Development & Strategy Lead", img: "Tristan-Wesenhagen_1.avif", linkedin: "https://www.linkedin.com/in/sdewansingh/" },
+  { name: "Jonathan Ladislas", role: "Strategic Advisor", img: "Jonathan-Ladislas_1.avif", linkedin: "" },
+  { name: "Martin Patzer", role: "Community Manager", img: "Martin-Patzer.avif", linkedin: "https://www.linkedin.com/in/martin-patzer-92885a295/" },
+  { name: "Vitor Souza", role: "Lead AI Engineer & Game Development", img: "Vitor-Souza.avif", linkedin: "" },
+  { name: "Wilson Bueres", role: "3D Design & Animations", img: "Wilson-Bueres.avif", linkedin: "" },
+  { name: "Samuel Pinheiro", role: "Blockchain & Game Development", img: "Samuel-Pinheiro.avif", linkedin: "" },
+  { name: "Mateus Henrique", role: "Game Development", img: "Mateus-Henrique.avif", linkedin: "" },
+  { name: "Twan Kersting", role: "Innovation Strategist", img: "Twan-Kersting.avif", linkedin: "" },
+];
+
 function AboutContent() {
   const t = useTranslations("about");
+
+  const values = [
+    { title: t("valueLocationIntelligence"), desc: t("valueLocationIntelligenceDesc") },
+    { title: t("valueARInnovation"), desc: t("valueARInnovationDesc") },
+    { title: t("valueSocialDiscovery"), desc: t("valueSocialDiscoveryDesc") },
+    { title: t("valueCrossChainRewards"), desc: t("valueCrossChainRewardsDesc") },
+    { title: t("valueProofOfExploration"), desc: t("valueProofOfExplorationDesc") },
+  ];
+
+  const tech = [
+    { Icon: GeospatialIcon, title: t("techGeospatial"), desc: t("techGeospatialDesc") },
+    { Icon: ARIcon, title: t("techAR"), desc: t("techARDesc") },
+    { Icon: RewardsIcon, title: t("techBlockchain"), desc: t("techBlockchainDesc") },
+    { Icon: SyncIcon, title: t("techSync"), desc: t("techSyncDesc") },
+  ];
+
+  const pillars = [
+    { title: t("pillarAR"), desc: t("pillarARDesc") },
+    { title: t("pillarLocation"), desc: t("pillarLocationDesc") },
+    { title: t("pillarReward"), desc: t("pillarRewardDesc") },
+  ];
+
+  const approach = [
+    { title: t("approachTreasureHunts"), desc: t("approachTreasureHuntsDesc") },
+    { title: t("approachARExperiences"), desc: t("approachARExperiencesDesc") },
+    { title: t("approachRewardPools"), desc: t("approachRewardPoolsDesc") },
+    { title: t("approachSocial"), desc: t("approachSocialDesc") },
+    { title: t("approachAnalytics"), desc: t("approachAnalyticsDesc") },
+    { title: t("approachEvents"), desc: t("approachEventsDesc") },
+    { title: t("approachCollaborations"), desc: t("approachCollaborationsDesc") },
+  ];
 
   return (
     <>
@@ -108,282 +157,185 @@ function AboutContent() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutFaqJsonLd) }}
       />
-      <div className="page-bg">
-        <SplineScene
-          url="https://prod.spline.design/XOzWv5kao0gKP7SK/scene.splinecode"
-          className="hero-background-video"
-        />
-        <div className="hero-background-overlay"></div>
-      </div>
-      <div className="page-wrapper">
-        <Navigation />
 
-        {/* Hero */}
-        <section className="about-hero">
-          <div className="container">
-            <div className="about-hero-wrap">
-              <div className="hero-top-wrap">
-                <div className="hero-01-text-wrap">
-                  <h1
-                    data-w-id="about-hero-title"
-                    style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }}
-                    className="h1 front-size-22"
+      <section className="page-head">
+        <div className="grid-field" aria-hidden="true" />
+        <div className="noise-layer" aria-hidden="true" />
+        <div className="shell">
+          <div className="page-head-inner">
+            <p className="eyebrow">About</p>
+            <h1 className="t-h1 page-head-title">{t("heroTitle")}</h1>
+            <p className="t-lead">{t("heroDesc")}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why -------------------------------------------------------------- */}
+      <section className="section">
+        <div className="shell">
+          <div className="about-why reveal">
+            <div>
+              <p className="eyebrow">Why we build this</p>
+              <h2 className="t-h2">{t("whySeekProtocol")}</h2>
+            </div>
+            <div>
+              <p className="t-lead">{t("whyDesc")}</p>
+              <div className="btn-row" style={{ marginTop: "2rem" }}>
+                <Link href="/contact" className="btn btn-brand">
+                  {t("letsConnect")}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values ----------------------------------------------------------- */}
+      <section className="section section-sunken">
+        <div className="shell">
+          <div className="sec-head reveal">
+            <p className="eyebrow">{t("ourValues")}</p>
+            <h2 className="t-h2">{t("whatDrivesUs")}</h2>
+          </div>
+
+          <div className="grid-3" style={{ marginTop: "3rem" }}>
+            {values.map((value) => (
+              <article key={value.title} className="card card-hover card-spotlight reveal">
+                <div className="feature-card">
+                  <h3 className="t-h4">{value.title}</h3>
+                  <p className="t-small">{value.desc}</p>
+                </div>
+              </article>
+            ))}
+            <article className="card about-values-cta reveal">
+              <h3 className="t-h4">{t("readyToSeek")}</h3>
+              <Link href="/contact" className="btn btn-brand btn-sm mt-auto">
+                {t("startExploring")}
+              </Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Core technologies ------------------------------------------------ */}
+      <section className="section">
+        <div className="shell">
+          <div className="sec-head reveal">
+            <p className="eyebrow">Technology</p>
+            <h2 className="t-h2">{t("coreTechnologies")}</h2>
+            <p className="t-lead" style={{ marginTop: "1.25rem" }}>{t("coreTechDesc")}</p>
+          </div>
+
+          <div className="grid-4" style={{ marginTop: "3rem" }}>
+            {tech.map((item) => (
+              <article key={item.title} className="card card-hover reveal">
+                <div className="feature-card">
+                  <span className="feature-card-icon feature-card-icon-lit">
+                    <item.Icon />
+                  </span>
+                  <h3 className="t-h4">{item.title}</h3>
+                  <p className="t-small">{item.desc}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Three pillars ---------------------------------------------------- */}
+      <section className="section section-sunken">
+        <div className="shell">
+          <div className="sec-head reveal">
+            <p className="eyebrow">Pillars</p>
+            <h2 className="t-h2">{t("threePillars")}</h2>
+            <p className="t-lead" style={{ marginTop: "1.25rem" }}>{t("threePillarsDesc")}</p>
+          </div>
+
+          <div className="grid-3" style={{ marginTop: "3rem" }}>
+            {pillars.map((pillar, i) => (
+              <article key={pillar.title} className="card pillar-card reveal">
+                <span className="t-mono pillar-card-index">{String(i + 1).padStart(2, "0")}</span>
+                <h3 className="t-h3 pillar-card-title">{pillar.title}</h3>
+                <p className="t-body">{pillar.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Approach --------------------------------------------------------- */}
+      <section className="section">
+        <div className="shell">
+          <div className="sec-head reveal">
+            <p className="eyebrow">{t("ourApproach")}</p>
+            <h2 className="t-h2">{t("approachTitle")}</h2>
+            <p className="t-lead" style={{ marginTop: "1.25rem" }}>{t("approachDesc")}</p>
+          </div>
+
+          <div className="steps" style={{ marginTop: "3rem" }}>
+            {approach.map((item, i) => (
+              <div key={item.title} className="step reveal">
+                <span className="t-mono step-index">{String(i + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3 className="t-h3 step-title">{item.title}</h3>
+                </div>
+                <p className="t-body step-body">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team ------------------------------------------------------------- */}
+      <section className="section section-sunken">
+        <div className="shell">
+          <div className="sec-head reveal">
+            <p className="eyebrow">Team</p>
+            <h2 className="t-h2">{t("ourTeam")}</h2>
+          </div>
+
+          <div className="team-grid">
+            {TEAM.map((member) => (
+              <article key={member.name} className="team-card reveal">
+                <div className="team-card-photo">
+                  <img loading="lazy" src={`/images/${member.img}`} alt={member.name} />
+                </div>
+                <div className="team-card-body">
+                  <h3 className="team-card-name">{member.name}</h3>
+                  <p className="t-mono-sm team-card-role">{member.role}</p>
+                </div>
+                {member.linkedin && (
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="team-card-social"
+                    aria-label={`${member.name} on LinkedIn`}
                   >
-                    {t("heroTitle")}
-                  </h1>
-                  <p
-                    data-w-id="about-hero-desc"
-                    style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }}
-                    className="paragraph-03 text-gray-color"
-                  >
-                    {t("heroDesc")}
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <img loading="lazy" src="/images/Linkdin-Image.svg" alt="" width={16} height={16} />
+                  </a>
+                )}
+              </article>
+            ))}
           </div>
-          <div className="about-hero-bottom-wrap">
-            <img
-              className="about-bg"
-              src="/images/ChatGPT-Image-10-sep-2025-02_18_11.png"
-              alt="Seek Protocol augmented reality experience"
-              sizes="(max-width: 1536px) 100vw, 1536px"
-              loading="lazy"
-              srcSet="/images/ChatGPT-Image-10-sep-2025-02_18_11-p-500.png 500w, /images/ChatGPT-Image-10-sep-2025-02_18_11-p-800.png 800w, /images/ChatGPT-Image-10-sep-2025-02_18_11-p-1080.png 1080w, /images/ChatGPT-Image-10-sep-2025-02_18_11.png 1536w"
-            />
-            <div className="container about-into-card-wrap">
-              <div
-                data-w-id="about-card"
-                style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }}
-                className="about-into-card"
-              >
-                <div className="heading-about">
-                  <h2 className="h2 text-black _02">{t("whySeekProtocol")}</h2>
-                </div>
-                <div className="details-about">
-                  <p className="paragraph-03 text-black _01">{t("whyDesc")}</p>
-                </div>
-                <div className="about-button-wrap">
-                  <Link href="/contact" className="button-01 w-variant-ae89c003-9ca6-5eb5-7340-85db27fb3748 w-inline-block">
-                    <div className="button-text-icon-wrap">
-                      <div className="button-text-wrapper">
-                        <div className="paragraph-02 text-black">{t("letsConnect")}</div>
-                        <div className="paragraph-02 text-black">{t("letsConnect")}</div>
-                      </div>
-                      <div className="button-icon-wrapper">
-                        <img src="/images/Button-Icon-1.svg" loading="lazy" alt="" className="button-icon" />
-                      </div>
-                    </div>
-                    <div className="hover-color"></div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Values */}
-        <section className="values">
-          <div className="container">
-            <div className="values-wrap">
-              <div className="values-top-wrap">
-                <p data-w-id="values-label" style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }} className="paragraph-03 text-primary">{t("ourValues")}</p>
-                <h2 data-w-id="values-title" style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }} className="h2">{t("whatDrivesUs")}</h2>
-              </div>
-              <div className="values-bottom-wrap">
-                {[
-                  { title: t("valueLocationIntelligence"), descKey: "valueLocationIntelligenceDesc" },
-                  { title: t("valueARInnovation"), descKey: "valueARInnovationDesc" },
-                  { title: t("valueSocialDiscovery"), descKey: "valueSocialDiscoveryDesc" },
-                  { title: t("valueCrossChainRewards"), descKey: "valueCrossChainRewardsDesc" },
-                  { title: t("valueProofOfExploration"), descKey: "valueProofOfExplorationDesc" },
-                ].map((item) => (
-                  <div key={item.descKey} className="values-card">
-                    <h4 className="h4"><strong>{item.title}</strong></h4>
-                    <p className="paragraph-03 text-gray-color">{t(item.descKey as "valueLocationIntelligenceDesc")}</p>
-                    <div className="glow-main-block"><div style={{ opacity: 0 }} className="glow-block"></div></div>
-                  </div>
-                ))}
-                <div className="values-card _01">
-                  <h4 className="h4">{t("readyToSeek")}</h4>
-                  <div className="glow-main-block"><div style={{ opacity: 0 }} className="glow-block"></div></div>
-                  <Link href="/contact" className="button-01 w-inline-block">
-                    <div className="button-text-icon-wrap">
-                      <div className="button-text-wrapper">
-                        <div className="paragraph-02 text-black">{t("startExploring")}</div>
-                        <div className="paragraph-02 text-black">{t("startExploring")}</div>
-                      </div>
-                      <div className="button-icon-wrapper"><img src="/images/Button-Icon-1.svg" loading="lazy" alt="" className="button-icon" /></div>
-                    </div>
-                    <div className="hover-color"></div>
-                  </Link>
-                </div>
+      {/* CTA -------------------------------------------------------------- */}
+      <section className="section">
+        <div className="shell">
+          <div className="cta-band reveal">
+            <div className="cta-band-inner">
+              <p className="eyebrow eyebrow-center">{t("joinBeta")}</p>
+              <h2 className="t-h2 cta-band-title">{t("getReady")}</h2>
+              <p className="t-body">{t("ctaDesc")}</p>
+              <div style={{ marginTop: "2rem" }}>
+                <BetaForm />
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Core Technologies */}
-        <section className="marketing">
-          <div className="container">
-            <div className="marketing-wrap">
-              <div className="marketing-top-wrap">
-                <div className="marketing-heading-text">
-                  <div className="heading-wrap marketing-heading-wrap"><h2 className="h2">{t("coreTechnologies")}</h2></div>
-                  <div className="sub-heading-wrap marketing-sub-heading-wrap">
-                    <p className="paragraph-03 text-gray-color">{t("coreTechDesc")}</p>
-                  </div>
-                </div>
-              </div>
-              <div className="marketing-bottom-wrap">
-                {[
-                  { icon: "Marketing-Icon--4.svg", title: t("techGeospatial"), descKey: "techGeospatialDesc" },
-                  { icon: "Marketing-Icon--3.svg", title: t("techAR"), descKey: "techARDesc" },
-                  { icon: "Marketing-Icon--1.svg", title: t("techBlockchain"), descKey: "techBlockchainDesc" },
-                  { icon: "Marketing-Icon--2.svg", title: t("techSync"), descKey: "techSyncDesc" },
-                ].map((item) => (
-                  <div key={item.descKey} className="marketing-box-list">
-                    <div className="marketing-icon-wrap"><img src={`/images/${item.icon}`} loading="lazy" alt="" className="fit-cover" /></div>
-                    <div className="marketing-details">
-                      <h3 className="h3">{item.title}</h3>
-                      <p className="paragraph-03 text-gray-color">{t(item.descKey as "techGeospatialDesc")}</p>
-                    </div>
-                    <div className="glow-main-block"><div style={{ opacity: 0 }} className="glow-block"></div></div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Three Pillars */}
-        <section className="three-pillars">
-          <div className="container">
-            <div className="three-pillars-wrap">
-              <div className="three-pillars-top-wrap">
-                <h1 data-w-id="pillars-title" style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }} className="h1">{t("threePillars")}</h1>
-                <p data-w-id="pillars-desc" style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }} className="paragraph-03 text-gray-color">{t("threePillarsDesc")}</p>
-              </div>
-              <div className="three-pillars-bottom-wrap">
-                <div className="three-pillars-image-wrap"><img src="/images/Three-Pillars_1Three-Pillars.avif" loading="lazy" alt="Three Pillars" className="fit-cover _01" /></div>
-                <div className="three-pillars-text-wrap">
-                  <div className="three-pillars-card absolute-pillars">
-                    <h2 className="h4">{t("pillarAR")}</h2>
-                    <p className="paragraph-03 text-gray-color text-mobile-white">{t("pillarARDesc")}</p>
-                  </div>
-                  <div className="absolute-path absolute-pillars-03">
-                    <h2 className="h4 text-black">{t("pillarLocation")}</h2>
-                    <p className="paragraph-03 text-black">{t("pillarLocationDesc")}</p>
-                    <img src="/images/Subtract.svg" loading="lazy" alt="" className="image-path" />
-                  </div>
-                  <div className="three-pillars-card absolute-pillars-01">
-                    <h3 className="h4">{t("pillarReward")}</h3>
-                    <p className="paragraph-03 text-gray-color text-mobile-white">{t("pillarRewardDesc")}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Approach */}
-        <section className="approach">
-          <div className="container">
-            <div className="approach-wrap">
-              <div data-w-id="approach-left" style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }} className="approach-left-wrap">
-                <div className="approach-left-text-wrap">
-                  <p className="paragraph-03 text-primary">{t("ourApproach")}</p>
-                  <div className="approach-heading">
-                    <h2 className="h2">{t("approachTitle")}</h2>
-                    <p className="paragraph-03 text-gray-color">{t("approachDesc")}</p>
-                  </div>
-                </div>
-              </div>
-              <div className="approach-bottom-wrap">
-                <div className="approach-line-wrap"><div className="approach-line"></div></div>
-                <div className="approach-text-wrap">
-                  {[
-                    { titleKey: "approachTreasureHunts", descKey: "approachTreasureHuntsDesc", point: "_01" },
-                    { titleKey: "approachARExperiences", descKey: "approachARExperiencesDesc", point: "_02" },
-                    { titleKey: "approachRewardPools", descKey: "approachRewardPoolsDesc", point: "_03" },
-                    { titleKey: "approachSocial", descKey: "approachSocialDesc", point: "_04" },
-                    { titleKey: "approachAnalytics", descKey: "approachAnalyticsDesc", point: "_05" },
-                    { titleKey: "approachEvents", descKey: "approachEventsDesc", point: "_06" },
-                    { titleKey: "approachCollaborations", descKey: "approachCollaborationsDesc", point: "_07" },
-                  ].map((item) => (
-                    <div key={item.titleKey} className="approach-text-list">
-                      <h4 className="h4">{t(item.titleKey as "approachTreasureHunts")}</h4>
-                      <div className="point-text-wrap">
-                        <p className="paragraph-03 text-gray-color">{t(item.descKey as "approachTreasureHuntsDesc")}</p>
-                        <div className={`point-wrap ${item.point}`}></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Team */}
-        <section className="section team-one">
-          <div className="w-layout-blockcontainer container w-container">
-            <div className="team-wrapper">
-              <div className="secondary-title-wrap team">
-                <h2 data-w-id="team-title" style={{ opacity: 0 }} className="h2 max-width">{t("ourTeam")}</h2>
-              </div>
-              <div className="team-v1-grid">
-                {[
-                  { name: "Don Reijke", role: "Founder & CTO", img: "Don-Reijke.avif", linkedin: "https://www.linkedin.com/in/don-reijke-09630921b/" },
-                  { name: "Lukas Novotny", role: "COO", img: "Lukas-Novotny.avif", linkedin: "#" },
-                  { name: "Senna Kabbaj", role: "CCO", img: "Senna-Kabbaj.avif", linkedin: "https://www.linkedin.com/in/sennakabbaj/" },
-                  { name: "Tristan Wesenhagen", role: "Business Development & Strategy Lead", img: "Tristan-Wesenhagen_1.avif", linkedin: "https://www.linkedin.com/in/sdewansingh/" },
-                  { name: "Jonathan Ladislas", role: "Strategic Advisor", img: "Jonathan-Ladislas_1.avif", linkedin: "https://www.linkedin.com/in/martin-patzer-92885a295/" },
-                  { name: "Martin Patzer", role: "Community Manager", img: "Martin-Patzer.avif", linkedin: "https://www.linkedin.com/in/martin-patzer-92885a295/" },
-                  { name: "Vitor Souza", role: "Lead AI Engineer & Game Development", img: "Vitor-Souza.avif", linkedin: "#" },
-                  { name: "Wilson Bueres", role: "3D Design & Animations", img: "Wilson-Bueres.avif", linkedin: "#" },
-                  { name: "Samuel Pinheiro", role: "Blockchain & Game Development", img: "Samuel-Pinheiro.avif", linkedin: "#" },
-                  { name: "Mateus Henrique", role: "Game Development", img: "Mateus-Henrique.avif", linkedin: "#" },
-                  { name: "Twan Kersting", role: "Innovation Strategist", img: "Twan-Kersting.avif", linkedin: "#" },
-                ].map((member) => (
-                  <div key={member.name} className="team-v1-wrap">
-                    <div className="team-v1-img-wrap"><img loading="lazy" src={`/images/${member.img}`} alt={member.name} className="team-v1-img" /></div>
-                    <div className="team-v1-author-wrap">
-                      <div className="team-v1-author-inner-wrap">
-                        <div className="team-v1-author-name">{member.name}</div>
-                        <div className="team-v1-author-bio">{member.role}</div>
-                      </div>
-                      <div className="team-v1-social-wrap">
-                        <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="team-v1-social-link w-inline-block">
-                          <img loading="lazy" src="/images/Linkdin-Image.svg" alt="LinkedIn" className="team-v1-social-img" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA / Beta Form */}
-        <section className="cta-v2">
-          <div className="container">
-            <div className="cta-v2-wrap">
-              <div className="cta-v2-top-wrap align-center">
-                <p className="paragraph-03 text-primary">{t("joinBeta")}</p>
-                <div className="heading-wrap cta-v2-heading"><h3 className="h2">{t("getReady")}</h3></div>
-                <div className="sub-heading-wrap cta-v2-sub-heading">
-                  <p className="paragraph-03 text-gray-color">{t("ctaDesc")}</p>
-                </div>
-              </div>
-              <div className="cta-v2-bottom-wrap"><BetaForm /></div>
-            </div>
-          </div>
-        </section>
-
-        <Footer />
-      </div>
+        </div>
+      </section>
     </>
   );
 }

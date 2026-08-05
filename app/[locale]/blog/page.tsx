@@ -3,9 +3,6 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getMultilingualAlternates } from "@/lib/seo";
-import Navigation from "@/components/layout/Navigation";
-import Footer from "@/components/layout/Footer";
-import SplineScene from "@/components/shared/SplineScene";
 import { blogPosts } from "@/lib/blog-data";
 
 export async function generateMetadata({
@@ -65,95 +62,68 @@ function BlogPageContent({ locale }: { locale: string }) {
 
   return (
     <>
-      <div className="page-bg">
-        <SplineScene
-          url="https://prod.spline.design/XOzWv5kao0gKP7SK/scene.splinecode"
-          className="hero-background-video"
-        />
-        <div className="hero-background-overlay"></div>
-      </div>
-      <div className="page-wrapper">
-        <Navigation />
+      <section className="page-head">
+        <div className="grid-field" aria-hidden="true" />
+        <div className="noise-layer" aria-hidden="true" />
+        <div className="shell">
+          <div className="page-head-inner">
+            <p className="eyebrow">Blog</p>
+            <h1 className="t-h1 page-head-title">{t("title")}</h1>
+            <p className="t-lead">{t("desc")}</p>
+          </div>
+        </div>
+      </section>
 
-        <section className="about-hero">
-          <div className="container">
-            <div className="about-hero-wrap">
-              <div className="hero-top-wrap">
-                <div className="hero-01-text-wrap">
-                  <h1
-                    data-w-id="blog-hero-title"
-                    style={{
-                      opacity: 0,
-                      transform: "translate3d(0, 20%, 0)",
-                      filter: "blur(3px)",
-                    }}
-                    className="h1 front-size-22"
-                  >
-                    {t("title")}
-                  </h1>
-                  <p
-                    data-w-id="blog-hero-desc"
-                    style={{
-                      opacity: 0,
-                      transform: "translate3d(0, 20%, 0)",
-                      filter: "blur(3px)",
-                    }}
-                    className="paragraph-03 text-gray-color"
-                  >
-                    {t("desc")}
-                  </p>
+      <section className="section">
+        <div className="shell">
+          <div className="post-grid">
+            {blogPosts.map((post, index) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className={`card card-flush card-hover post-card reveal ${
+                  index === 0 ? "post-card-featured" : ""
+                }`}
+              >
+                <div className="post-card-media">
+                  <img
+                    src={post.image}
+                    srcSet={post.imageSrcSet}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    loading={index < 3 ? "eager" : "lazy"}
+                    alt={post.imageAlt}
+                  />
                 </div>
-              </div>
-            </div>
+                <div className="post-card-body">
+                  <div className="post-card-meta">
+                    <span className="chip chip-brand">{post.category}</span>
+                    <span className="t-mono-sm">{formatDate(post.date, locale)}</span>
+                  </div>
+                  <h2 className="t-h4 post-card-title">{post.title}</h2>
+                  <p className="t-small post-card-excerpt">{post.excerpt}</p>
+                  <div className="post-card-foot">
+                    <span className="t-mono-sm">
+                      {post.readTime} {t("read")}
+                    </span>
+                    <span className="arrow-link" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16">
+                        <path
+                          d="M3 8h10m0 0l-4-4m4 4l-4 4"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          fill="none"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
-        </section>
-
-        <section className="blog-grid-section">
-          <div className="container">
-            <div className="blog-grid">
-              {blogPosts.map((post, index) => (
-                <Link
-                  key={post.slug}
-                  href={`/blog/${post.slug}`}
-                  className={`blog-card ${index === 0 ? "blog-card-featured" : ""}`}
-                >
-                  <div className="blog-card-image-wrap">
-                    <img
-                      src={post.image}
-                      srcSet={post.imageSrcSet}
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading={index < 3 ? "eager" : "lazy"}
-                      alt={post.imageAlt}
-                      className="blog-card-image"
-                    />
-                  </div>
-                  <div className="blog-card-content">
-                    <div className="blog-card-meta">
-                      <span className="blog-card-category">{post.category}</span>
-                      <span className="blog-card-date">
-                        {formatDate(post.date, locale)}
-                      </span>
-                    </div>
-                    <h2 className="blog-card-title">{post.title}</h2>
-                    <p className="blog-card-excerpt">{post.excerpt}</p>
-                    <div className="blog-card-footer">
-                      <span className="blog-card-read-time">
-                        {post.readTime} {t("read")}
-                      </span>
-                      <span className="blog-card-arrow">→</span>
-                    </div>
-                  </div>
-                  <div className="glow-main-block">
-                    <div style={{ opacity: 0 }} className="glow-block"></div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <Footer />
-      </div>
+        </div>
+      </section>
     </>
   );
 }

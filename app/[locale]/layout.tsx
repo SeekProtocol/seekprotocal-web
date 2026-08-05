@@ -5,9 +5,12 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { getMultilingualAlternates } from "@/lib/seo";
-import ScrollAnimations from "@/components/shared/ScrollAnimations";
+import SiteEffects from "@/components/shared/SiteEffects";
 import CookieConsent from "@/components/shared/CookieConsent";
 import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
+import SiteHeader from "@/components/layout/SiteHeader";
+import SiteFooter from "@/components/layout/SiteFooter";
+import { ThemeProvider, themeInitScript } from "@/components/theme/ThemeProvider";
 import "../globals.css";
 
 const dmSans = DM_Sans({
@@ -53,7 +56,10 @@ const notoSansKR = Noto_Sans_KR({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#5d74f9",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#05070e" },
+  ],
 };
 
 const localeToOgLocale: Record<string, string> = {
@@ -195,16 +201,16 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`w-mod-js ${dmSans.variable} ${interTight.variable} ${jetBrainsMono.variable} ${extraFont}`}
+      /* The pre-paint script in <head> overwrites this before anything is
+         drawn. It only has to match the provider's own initial state so the
+         server and the first client render agree. */
+      data-theme="dark"
+      suppressHydrationWarning
+      className={`${dmSans.variable} ${interTight.variable} ${jetBrainsMono.variable} ${extraFont}`}
     >
       <head>
-        <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
-        <link href="/css/webflow.css" rel="stylesheet" type="text/css" />
-        <link
-          href="/css/seekprotocolai.webflow.css"
-          rel="stylesheet"
-          type="text/css"
-        />
+        {/* Sets the theme before first paint so there is no flash. */}
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
@@ -279,16 +285,17 @@ export default async function LocaleLayout({
               __html: `document.addEventListener('contextmenu',function(e){e.preventDefault()});document.addEventListener('copy',function(e){e.preventDefault()});document.addEventListener('cut',function(e){e.preventDefault()});document.addEventListener('selectstart',function(e){e.preventDefault()});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.key==='c'||e.key==='x'||e.key==='a'||e.key==='u'||e.key==='s')){e.preventDefault()}});`,
             }}
           />
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-black"
-          >
-            Skip to main content
-          </a>
-          <CookieConsent>
-            <main id="main-content">{children}</main>
-          </CookieConsent>
-          <ScrollAnimations />
+          <ThemeProvider>
+            <a href="#main-content" className="skip-link">
+              Skip to main content
+            </a>
+            <SiteHeader />
+            <CookieConsent>
+              <main id="main-content">{children}</main>
+            </CookieConsent>
+            <SiteFooter />
+            <SiteEffects />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

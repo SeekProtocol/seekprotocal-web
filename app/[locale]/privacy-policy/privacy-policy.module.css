@@ -42,15 +42,7 @@
   margin-bottom: 2em;
 }
 
-.pageTitle {
-  font-size: 40px;
-}
-
 @media screen and (max-width: 991px) {
-  .pageTitle {
-    font-size: 34px;
-  }
-
   .content h2 {
     font-size: 20px;
   }
@@ -61,10 +53,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .pageTitle {
-    font-size: 28px;
-  }
-
   .content h2 {
     font-size: 18px;
     margin-top: 1.75em;

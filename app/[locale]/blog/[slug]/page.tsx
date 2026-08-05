@@ -5,9 +5,6 @@ import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { getMultilingualAlternates } from "@/lib/seo";
-import Navigation from "@/components/layout/Navigation";
-import Footer from "@/components/layout/Footer";
-import SplineScene from "@/components/shared/SplineScene";
 import { getBlogPost, blogPosts, getAllSlugs } from "@/lib/blog-data";
 
 interface BlogPostPageProps {
@@ -118,102 +115,51 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
-      <div className="page-bg">
-        <SplineScene
-          url="https://prod.spline.design/XOzWv5kao0gKP7SK/scene.splinecode"
-          className="hero-background-video"
-        />
-        <div className="hero-background-overlay"></div>
-      </div>
-      <div className="page-wrapper">
-        <Navigation />
-
-        <article className="blog-article">
-          <div className="container">
-            <div className="blog-article-header">
+      <article className="section article-page">
+        <div className="shell">
+          <div className="article">
+            <header className="article-head">
               <BlogBackLink />
               <BlogArticleMeta post={post} />
-              <h1
-                data-w-id="blog-post-title"
-                style={{
-                  opacity: 0,
-                  transform: "translate3d(0, 20%, 0)",
-                  filter: "blur(3px)",
-                }}
-                className="h1 blog-article-title"
-              >
-                {post.title}
-              </h1>
-              <p
-                data-w-id="blog-post-excerpt"
-                style={{
-                  opacity: 0,
-                  transform: "translate3d(0, 20%, 0)",
-                  filter: "blur(3px)",
-                }}
-                className="paragraph-03 text-gray-color blog-article-excerpt"
-              >
-                {post.excerpt}
-              </p>
-            </div>
+              <h1 className="t-h1 article-title">{post.title}</h1>
+              <p className="t-lead">{post.excerpt}</p>
+            </header>
 
-            <div className="blog-article-image-wrap">
+            <div className="article-media">
               <img
                 src={post.image}
                 srcSet={post.imageSrcSet}
                 sizes="(max-width: 1024px) 100vw, 1024px"
                 alt={post.imageAlt}
-                className="blog-article-image"
                 loading="eager"
               />
             </div>
 
-            <div className="blog-article-body">
+            <div className="article-body">
               {post.content.map((paragraph, index) => (
-                <p key={index} className="paragraph-03 blog-paragraph">
-                  {paragraph}
-                </p>
+                <p key={index}>{paragraph}</p>
               ))}
             </div>
 
-            <nav className="blog-internal-links" aria-label="Related pages">
-              <h3 className="h4" style={{ marginBottom: "1rem" }}>
-                Learn More About Seek Protocol
-              </h3>
-              <ul style={{ listStyle: "none", padding: 0, display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
-                <li>
-                  <Link href="/about" className="button-04 w-inline-block" style={{ display: "inline-block", padding: "0.5rem 1rem" }}>
-                    About Our Team
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="button-04 w-inline-block" style={{ display: "inline-block", padding: "0.5rem 1rem" }}>
-                    Our Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog" className="button-04 w-inline-block" style={{ display: "inline-block", padding: "0.5rem 1rem" }}>
-                    All Articles
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="button-04 w-inline-block" style={{ display: "inline-block", padding: "0.5rem 1rem" }}>
-                    Contact Us
-                  </Link>
-                </li>
+            <nav className="article-links" aria-label="Related pages">
+              <h2 className="t-mono article-links-title">Keep reading</h2>
+              <ul>
+                <li><Link href="/ecosystem" className="chip">Ecosystem</Link></li>
+                <li><Link href="/whitepaper" className="chip">Whitepaper</Link></li>
+                <li><Link href="/roadmap" className="chip">Roadmap</Link></li>
+                <li><Link href="/blog" className="chip">All articles</Link></li>
+                <li><Link href="/contact" className="chip">Contact</Link></li>
               </ul>
             </nav>
 
             <BlogArticleCta />
           </div>
-        </article>
+        </div>
+      </article>
 
-        {relatedPosts.length > 0 && (
-          <BlogRelatedSection relatedPosts={relatedPosts} />
-        )}
-
-        <Footer />
-      </div>
+      {relatedPosts.length > 0 && (
+        <BlogRelatedSection relatedPosts={relatedPosts} />
+      )}
     </>
   );
 }
@@ -221,7 +167,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 function BlogBackLink() {
   const t = useTranslations("blog");
   return (
-    <Link href="/blog" className="blog-back-link">
+    <Link href="/blog" className="arrow-link article-back">
       {t("backToBlog")}
     </Link>
   );
@@ -230,10 +176,10 @@ function BlogBackLink() {
 function BlogArticleMeta({ post }: { post: { category: string; date: string; readTime: string } }) {
   const t = useTranslations("blog");
   return (
-    <div className="blog-article-meta">
-      <span className="blog-card-category">{post.category}</span>
-      <span className="blog-article-date">{formatDate(post.date)}</span>
-      <span className="blog-article-read-time">
+    <div className="article-meta">
+      <span className="chip chip-brand">{post.category}</span>
+      <span className="t-mono-sm">{formatDate(post.date)}</span>
+      <span className="t-mono-sm">
         {post.readTime} {t("read")}
       </span>
     </div>
@@ -243,42 +189,28 @@ function BlogArticleMeta({ post }: { post: { category: string; date: string; rea
 function BlogArticleCta() {
   const t = useTranslations("blog");
   return (
-    <div className="blog-article-cta">
-      <div className="blog-cta-inner">
-        <h3 className="h3">{t("readyToSeek")}</h3>
-        <p className="paragraph-03 text-gray-color">{t("readyToSeekDesc")}</p>
-        <div className="app-buttons">
+    <div className="cta-band article-cta">
+      <div className="cta-band-inner">
+        <h2 className="t-h3 cta-band-title">{t("readyToSeek")}</h2>
+        <p className="t-body">{t("readyToSeekDesc")}</p>
+        <div className="store-buttons article-cta-stores">
           <a
             href="https://apps.apple.com/app/seekar/id6752813761"
             target="_blank"
             rel="noopener noreferrer"
-            className="app-link w-inline-block"
+            className="store-button"
+            aria-label="Download on the App Store"
           >
-            <div className="app-link_gradient"></div>
-            <div className="app-link_wrap">
-              <img
-                src="/images/app-store.svg"
-                loading="lazy"
-                alt="Download on App Store"
-                className="app-link_image"
-              />
-            </div>
+            <img src="/images/app-store.svg" alt="" loading="lazy" />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.seekar.seekar&pcampaignid=web_share"
             target="_blank"
             rel="noopener noreferrer"
-            className="app-link w-inline-block"
+            className="store-button"
+            aria-label="Get it on Google Play"
           >
-            <div className="app-link_gradient is-blue"></div>
-            <div className="app-link_wrap">
-              <img
-                src="/images/google-play.svg"
-                loading="lazy"
-                alt="Get it on Google Play"
-                className="app-link_image"
-              />
-            </div>
+            <img src="/images/google-play.svg" alt="" loading="lazy" />
           </a>
         </div>
       </div>
@@ -302,34 +234,28 @@ function BlogRelatedSection({
 }) {
   const t = useTranslations("blog");
   return (
-    <section className="blog-related-section">
-      <div className="container">
-        <h2 className="h2 blog-related-title">{t("moreArticles")}</h2>
-        <div className="blog-related-grid">
+    <section className="section section-sunken">
+      <div className="shell">
+        <h2 className="t-h2" style={{ marginBottom: "2.5rem" }}>{t("moreArticles")}</h2>
+        <div className="post-grid">
           {relatedPosts.map((related) => (
-            <Link key={related.slug} href={`/blog/${related.slug}`} className="blog-card">
-              <div className="blog-card-image-wrap">
+            <Link key={related.slug} href={`/blog/${related.slug}`} className="card card-flush card-hover post-card reveal">
+              <div className="post-card-media">
                 <img
                   src={related.image}
                   srcSet={related.imageSrcSet}
                   sizes="(max-width: 768px) 100vw, 33vw"
                   loading="lazy"
                   alt={related.imageAlt}
-                  className="blog-card-image"
                 />
               </div>
-              <div className="blog-card-content">
-                <div className="blog-card-meta">
-                  <span className="blog-card-category">{related.category}</span>
-                  <span className="blog-card-date">
-                    {formatDate(related.date)}
-                  </span>
+              <div className="post-card-body">
+                <div className="post-card-meta">
+                  <span className="chip chip-brand">{related.category}</span>
+                  <span className="t-mono-sm">{formatDate(related.date)}</span>
                 </div>
-                <h3 className="blog-card-title">{related.title}</h3>
-                <p className="blog-card-excerpt">{related.excerpt}</p>
-              </div>
-              <div className="glow-main-block">
-                <div style={{ opacity: 0 }} className="glow-block"></div>
+                <h3 className="t-h4 post-card-title">{related.title}</h3>
+                <p className="t-small post-card-excerpt">{related.excerpt}</p>
               </div>
             </Link>
           ))}

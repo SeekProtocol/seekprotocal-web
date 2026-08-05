@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { getMultilingualAlternates } from "@/lib/seo";
-import Navigation from "@/components/layout/Navigation";
-import Footer from "@/components/layout/Footer";
 import styles from "../privacy-policy/privacy-policy.module.css";
 
 export async function generateMetadata({
@@ -56,7 +54,7 @@ function TermsContent() {
   const t = useTranslations("termsPage");
 
   return (
-    <div className={`rich-text-block w-richtext ${styles.content}`}>
+    <div className={styles.content}>
       <p className={styles.subtitle}>
         {t("subtitle1")}
         <br />
@@ -116,25 +114,25 @@ function TermsPageContent() {
   const t = useTranslations("termsPage");
 
   return (
-    <div className="page-wrapper">
-      <Navigation />
-      <section className="change-log">
-        <div className="container">
-          <div className="change-log-wrap">
-            <div className="change-log-top">
-              <div className="hero-top-wrap">
-                <div className="hero-01-text-wrap">
-                  <h1 className={`h1 ${styles.pageTitle}`}>{t("title")}</h1>
-                </div>
-              </div>
-            </div>
-            <div className="change-log-bottom">
-              <TermsContent />
-            </div>
+    <>
+      <section className="page-head">
+        <div className="grid-field" aria-hidden="true" />
+        <div className="noise-layer" aria-hidden="true" />
+        <div className="shell">
+          <div className="page-head-inner">
+            <p className="eyebrow">Legal</p>
+            <h1 className="t-h1 page-head-title">{t("title")}</h1>
           </div>
         </div>
       </section>
-      <Footer />
-    </div>
+
+      <section className="section">
+        <div className="shell">
+          <div className="legal-body">
+            <TermsContent />
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

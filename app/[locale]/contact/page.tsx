@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { getMultilingualAlternates } from "@/lib/seo";
-import Navigation from "@/components/layout/Navigation";
-import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/shared/ContactForm";
 
 export async function generateMetadata({
@@ -62,36 +60,80 @@ function ContactContent() {
   const t = useTranslations("contact");
 
   return (
-    <div className="page-wrapper">
-      <Navigation />
-      <section className="contact-us">
-        <div className="container is-small">
-          <div className="contact-us-wrap">
-            <div className="contact-top-wrap">
-              <h1
-                data-w-id="contact-title"
-                style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }}
-                className="h1 _01"
-              >
-                {t("getInTouch")}
-              </h1>
-            </div>
-            <div className="contact-bottom-wrap">
-              <div
-                data-w-id="contact-form"
-                style={{ opacity: 0, transform: "translate3d(0, 20%, 0)", filter: "blur(3px)" }}
-                className="contact-bottom-right-wrap"
-              >
-                <div className="from-heading">
-                  <p className="paragraph-03 text-gray-color">{t("formDesc")}</p>
-                </div>
-                <ContactForm />
-              </div>
-            </div>
+    <>
+      <section className="page-head">
+        <div className="grid-field" aria-hidden="true" />
+        <div className="noise-layer" aria-hidden="true" />
+        <div className="shell">
+          <div className="page-head-inner">
+            <p className="eyebrow">Contact</p>
+            <h1 className="t-h1 page-head-title">{t("getInTouch")}</h1>
+            <p className="t-lead">{t("formDesc")}</p>
           </div>
         </div>
       </section>
-      <Footer />
-    </div>
+
+      <section className="section">
+        <div className="shell">
+          <div className="contact-layout">
+            <div className="contact-form-wrap reveal">
+              <ContactForm />
+            </div>
+
+            <aside className="contact-aside reveal">
+              <div className="card">
+                <p className="t-mono" style={{ marginBottom: "0.75rem" }}>
+                  Elsewhere
+                </p>
+                <ul className="contact-links">
+                  <li>
+                    <a
+                      href="https://x.com/seekprotocol"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      X / Twitter
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://t.me/+Nrn7K1pRN9M3OTU0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Telegram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://seekprotocol.gitbook.io/seekprotocol"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Documentation
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <p className="t-mono" style={{ marginBottom: "0.75rem" }}>
+                  Registered office
+                </p>
+                <p className="t-small">
+                  Block Protocol L.L.C-FZ
+                  <br />
+                  Meydan Grandstand, 6th floor
+                  <br />
+                  Meydan Road, Nad Al Sheba
+                  <br />
+                  Dubai, U.A.E.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

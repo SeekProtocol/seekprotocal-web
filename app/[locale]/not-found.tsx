@@ -2,52 +2,35 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { SeekMark } from "@/components/brand/SeekLogo";
 
 export default function NotFound() {
   const t = useTranslations("notFound");
 
   return (
-    <div className="utility-page-wrap">
-      <div className="utility-page-content">
-        <img
-          src="https://d3e54v103j8qbb.cloudfront.net/static/page-not-found.211a85e40c.svg"
-          alt="Page not found"
-        />
-        <h2>{t("pageNotFound")}</h2>
-        <div>{t("pageNotFoundDesc")}</div>
-      </div>
-      <div className="_404-page-wrap">
-        <div className="_404-image">
-          <img
-            src="/images/404_1404.avif"
-            loading="lazy"
-            alt="404"
-            className="fit-cover"
-          />
+    <section className="notfound">
+      <div className="grid-field grid-field-full" aria-hidden="true" />
+        <div className="noise-layer" aria-hidden="true" />
+      <div className="shell notfound-inner">
+        <div className="notfound-mark" aria-hidden="true">
+          <span className="radar-static notfound-ring" style={{ width: "100%" }} />
+          <span className="radar-static notfound-ring" style={{ width: "66%" }} />
+          <SeekMark size={56} gradientId="notfound-mark" />
         </div>
-        <div className="_404-text-wrap">
-          <h4 className="h4 text-gray">{t("oops")}</h4>
-          <div className="_404-button-wrap">
-            <Link href="/" className="button-01 w-inline-block">
-              <div className="button-text-icon-wrap">
-                <div className="button-text-wrapper">
-                  <div className="paragraph-02 text-black">{t("backToHome")}</div>
-                  <div className="paragraph-02 text-black">{t("backToHome")}</div>
-                </div>
-                <div className="button-icon-wrapper">
-                  <img
-                    src="/images/Button-Icon-1.svg"
-                    loading="lazy"
-                    alt=""
-                    className="button-icon"
-                  />
-                </div>
-              </div>
-              <div className="hover-color"></div>
-            </Link>
-          </div>
+
+        <p className="t-mono notfound-code">Error 404 · No signal at this coordinate</p>
+        <h1 className="t-h1 notfound-title">{t("pageNotFound")}</h1>
+        <p className="t-lead notfound-desc">{t("pageNotFoundDesc")}</p>
+
+        <div className="btn-row notfound-actions">
+          <Link href="/" className="btn btn-brand btn-lg">
+            {t("backToHome")}
+          </Link>
+          <Link href="/ecosystem" className="btn btn-outline btn-lg">
+            {t("oops")}
+          </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

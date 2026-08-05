@@ -47,7 +47,7 @@ export default function ContactForm() {
           callback: (token: string) => setTurnstileToken(token),
           "expired-callback": () => setTurnstileToken(""),
           "error-callback": () => setTurnstileToken(""),
-          theme: "dark",
+          theme: "auto",
         });
       }
     };
@@ -161,15 +161,15 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="contact-form-block w-form">
+    <>
       {(status === "idle" || status === "submitting" || status === "error") && (
-        <form onSubmit={handleSubmit} className="form-2" noValidate>
-          <div className="filed-wrap">
-            <label htmlFor="name" className="text-field-label paragraph-02">
+        <form onSubmit={handleSubmit} className="contact-form" noValidate>
+          <div className="field">
+            <label htmlFor="name" className="field-label">
               {t("yourName")} <span className="field-required">*</span>
             </label>
             <input
-              className={`text-field-option w-input ${touched.name && fieldErrors.name ? "field-error" : ""}`}
+              className={`input ${touched.name && fieldErrors.name ? "field-error" : ""}`}
               maxLength={256}
               name="name"
               placeholder={t("namePlaceholder")}
@@ -183,12 +183,12 @@ export default function ContactForm() {
               <p className="field-error-message">{fieldErrors.name}</p>
             )}
           </div>
-          <div className="filed-wrap">
-            <label htmlFor="Email" className="text-field-label paragraph-02">
+          <div className="field">
+            <label htmlFor="Email" className="field-label">
               {t("yourEmail")} <span className="field-required">*</span>
             </label>
             <input
-              className={`text-field-option w-input ${touched.email && fieldErrors.email ? "field-error" : ""}`}
+              className={`input ${touched.email && fieldErrors.email ? "field-error" : ""}`}
               maxLength={256}
               name="Email"
               placeholder={t("emailInputPlaceholder")}
@@ -202,12 +202,12 @@ export default function ContactForm() {
               <p className="field-error-message">{fieldErrors.email}</p>
             )}
           </div>
-          <div className="filed-wrap">
-            <label htmlFor="phone" className="text-field-label paragraph-02">
+          <div className="field">
+            <label htmlFor="phone" className="field-label">
               {t("yourPhone")} <span className="field-optional">({t("optional")})</span>
             </label>
             <input
-              className={`text-field-option w-input ${touched.phone && fieldErrors.phone ? "field-error" : ""}`}
+              className={`input ${touched.phone && fieldErrors.phone ? "field-error" : ""}`}
               maxLength={20}
               name="phone"
               placeholder={t("phonePlaceholder")}
@@ -221,8 +221,8 @@ export default function ContactForm() {
               <p className="field-error-message">{fieldErrors.phone}</p>
             )}
           </div>
-          <div className="filed-wrap _01">
-            <label htmlFor="message" className="text-field-label paragraph-02">
+          <div className="field field-full">
+            <label htmlFor="message" className="field-label">
               {t("message")} <span className="field-required">*</span>
             </label>
             <textarea
@@ -230,7 +230,7 @@ export default function ContactForm() {
               name="message"
               maxLength={5000}
               placeholder={t("messagePlaceholder")}
-              className={`textarea w-input ${touched.message && fieldErrors.message ? "field-error" : ""}`}
+              className={`textarea ${touched.message && fieldErrors.message ? "field-error" : ""}`}
               value={formData.message}
               onChange={(e) => handleChange("message", e.target.value)}
               onBlur={() => handleBlur("message")}
@@ -239,25 +239,26 @@ export default function ContactForm() {
               <p className="field-error-message">{fieldErrors.message}</p>
             )}
           </div>
-          <div ref={turnstileRef} className="cf-turnstile" style={{ marginBottom: "1rem" }} />
+          <div ref={turnstileRef} className="cf-turnstile contact-form-turnstile" />
           {status === "error" && errorMessage && (
-            <div className="w-form-fail" style={{ display: "block", marginBottom: "1rem" }}>
-              <div>{errorMessage}</div>
-            </div>
+            <p className="form-status form-status-error contact-form-full" role="alert">
+              {errorMessage}
+            </p>
           )}
-          <input
+          <button
             type="submit"
-            className="normal-submit-button _03 w-button"
-            value={status === "submitting" ? t("sending") : t("sendNow")}
+            className="btn btn-brand btn-lg contact-form-submit"
             disabled={status === "submitting"}
-          />
+          >
+            {status === "submitting" ? t("sending") : t("sendNow")}
+          </button>
         </form>
       )}
       {status === "success" && (
-        <div className="success-message w-form-done" style={{ display: "block" }}>
-          <div className="paragraph-02 text-black">{t("successMessage")}</div>
-        </div>
+        <p className="form-status form-status-success" role="status">
+          {t("successMessage")}
+        </p>
       )}
-    </div>
+    </>
   );
 }
