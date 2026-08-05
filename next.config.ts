@@ -68,6 +68,25 @@ const nextConfig: NextConfig = {
   compress: true,
   images: {
     formats: ["image/avif", "image/webp"],
+
+    /* The default ladder ends at 3840. Nothing on this site asks for it: the
+       widest slot any `sizes` implies is a full-bleed section, and those are
+       still plain img tags that never reach the optimiser. Every image that does
+       go through it today tops out at a 1888px source. Asking for 3840 there
+       returns the source width again, so it produces a duplicate file under a
+       fresh cache key.
+       Restore 3840 when the full-bleed background images move to next/image:
+       there are 2880px sources behind them, and a 4x display would want it. */
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+
+    /* Four hours is the Next 16 default, and it is short for these files. Every
+       expiry re-runs the optimiser: it costs a transform, and the first visitor
+       after it waits for one. The sources are effectively immutable, and
+       vercel.json already serves /images/ with a one-year immutable header, so
+       the optimiser was the only layer still treating them as fresh-ish. Thirty
+       days. Anything that genuinely changes needs a new filename either way,
+       because of that same immutable header. */
+    minimumCacheTTL: 2592000,
   },
   async redirects() {
     return [
