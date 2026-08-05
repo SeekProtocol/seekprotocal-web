@@ -25,13 +25,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
     { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
     { path: "/terms-conditions", priority: 0.3, changeFrequency: "yearly" },
-  ];
 
-  const englishOnly: { path: string; priority: number }[] = [
-    { path: "/ecosystem", priority: 0.9 },
-    { path: "/whitepaper", priority: 0.9 },
-    { path: "/roadmap", priority: 0.8 },
-    { path: "/business", priority: 0.8 },
+    /* These four were English-only and listed without an hreflang cluster. They
+       are translated as of ad9703b, and their pages moved back to
+       getMultilingualAlternates, so leaving them out here left the sitemap
+       claiming one URL for a page that declares eight. Contradicting the page is
+       worse than saying nothing: the twenty-eight translated URLs would simply
+       not be offered for crawling. */
+    { path: "/ecosystem", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/whitepaper", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/roadmap", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/business", priority: 0.8, changeFrequency: "monthly" },
   ];
 
   const translatedEntries: MetadataRoute.Sitemap = translated.map((page) => ({
@@ -43,14 +47,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     images: [ogImage],
   }));
 
-  const englishOnlyEntries: MetadataRoute.Sitemap = englishOnly.map((page) => ({
-    url: `${baseUrl}/${defaultLocale}${page.path}`,
-    lastModified: lastUpdated,
-    changeFrequency: "monthly",
-    priority: page.priority,
-    images: [ogImage],
-  }));
-
+  /* The articles are the only single-language content left: their bodies live in
+     lib/blog-data.ts in English and are not in the message files, which is why
+     the article page still declares getSingleLanguageAlternates. One entry each,
+     no cluster, matching what the page says. */
   const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${baseUrl}/${defaultLocale}/blog/${post.slug}`,
     lastModified: new Date(post.date),
@@ -59,5 +59,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     images: [`${baseUrl}/og/blog/${post.slug}`],
   }));
 
-  return [...translatedEntries, ...englishOnlyEntries, ...blogEntries];
+  return [...translatedEntries, ...blogEntries];
 }
