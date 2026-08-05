@@ -73,7 +73,7 @@ export default function WorldDescent() {
   const current = stages[stage];
 
   return (
-    <section className="wtp" ref={sectionRef} data-stage={stage}>
+    <section className="wtp scene-scrubbed" ref={sectionRef} data-stage={stage}>
       <div
         className="wtp-stage"
         ref={stageRef}

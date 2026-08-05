@@ -90,7 +90,17 @@ export function useNearViewport(
        anything that stops callbacks arriving. */
     const box = el.getBoundingClientRect();
     const reach = window.innerHeight; // mirrors the 100% default rootMargin
-    if (box.top < window.innerHeight + reach && box.bottom > -reach) {
+
+    /* A display: none element has no layout box, so every edge reads zero and
+       the range test would call it visible and build a scene nobody can see.
+       The two scrubbed sections are hidden exactly that way on a handheld (see
+       .scene-scrubbed), which is the whole point of hiding them.
+
+       Skipping only the shortcut and still observing is deliberate: a tablet
+       rotated from portrait into landscape crosses the 1024px edge, the
+       section gains a box, and the observer is there to notice. */
+    const hasBox = box.width > 0 || box.height > 0;
+    if (hasBox && box.top < window.innerHeight + reach && box.bottom > -reach) {
       /* A one-time latch read off geometry. The extra render the rule warns
          about is the intent, and it costs one pass per scene instead of a
          spinner frame the reader did not need to see. */

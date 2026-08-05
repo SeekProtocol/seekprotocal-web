@@ -4082,3 +4082,29 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   /* The article needs room to clear the bar at its end. */
   .wp-body { padding-bottom: 4.5rem; }
 }
+
+/* --------------------------------------------------------------------------
+   SCENES A PHONE DOES NOT GET
+   -------------------------------------------------------------------------- */
+
+/* Two of the five WebGL scenes are scrubbed by scroll position: the AR story
+   and the descent from orbit into the phone. Being scrubbed is what makes them
+   expensive. They cannot be released while they are anywhere near the viewport,
+   because the frame they would be rebuilding is the frame the reader is
+   scrolling through, and they do work on the main thread on every one of those
+   frames. On a phone that is the difference between a page that scrolls and a
+   tab that gets killed.
+
+   Hidden here rather than dropped in the component on purpose. display: none
+   leaves no layout box, so the IntersectionObserver inside never fires, the
+   scene never builds, and the 603 KB three.js chunk is never fetched. The
+   markup stays in the document, which matters because the two sections carry
+   about 380 words of the homepage's copy and Google indexes on the mobile
+   rendering: removing the nodes would remove the words from the page it reads.
+
+   Same test as isHandheld() in lib/render-budget.ts. Keep the two in step. */
+@media (pointer: coarse) and (max-width: 1024px) {
+  .scene-scrubbed {
+    display: none;
+  }
+}

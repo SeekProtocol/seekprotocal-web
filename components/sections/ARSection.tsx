@@ -44,7 +44,7 @@ export default function ARSection() {
   const current = stages[stage];
 
   return (
-    <section className="ar-section section-inverse" ref={sectionRef}>
+    <section className="ar-section section-inverse scene-scrubbed" ref={sectionRef}>
       <div className="ar-sticky">
         {nearScene && <ARStory progressRef={progressRef} />}
 
