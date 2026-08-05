@@ -1,6 +1,12 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 
+/* The stylesheet for the whole phone mockup and the homepage sections around it,
+   scoped to this route by being imported here rather than from globals.css. See
+   the note there. PhoneFrame is only ever reached from the homepage, so this is
+   the narrowest place that still covers everything that needs it. */
+import "@/app/app-ui.css";
+
 /**
  * The device mockup. The screen aperture is punched out of the artwork, so the
  * app screen sits behind it and shows through the hole — bezel, Dynamic Island

@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import "./components.css";
-@import "./app-ui.css";
+
+/* app-ui.css is deliberately NOT imported here.
+   It is 91KB and it styles one thing: the phone mockup and the homepage
+   sections around it. Imported globally it was a render-blocking stylesheet on
+   all eleven routes, including the nine that contain none of those classes.
+   PhoneFrame imports it instead, which puts it in the homepage's route CSS and
+   nowhere else. 306 of its 314 selectors appear only in that file, and the eight
+   shared names are all scoped descendants like `.wtp-copy .eyebrow`, so they win
+   on specificity and do not depend on load order.
+   If a non-homepage route ever needs those classes, import it there too. */
 
 /* ==========================================================================
    SEEK PROTOCOL — DESIGN SYSTEM
