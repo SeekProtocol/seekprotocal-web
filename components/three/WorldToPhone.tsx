@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
 import { COLLECTIBLES, RARITY_LADDER } from "@/content/collectibles";
 
 /**
@@ -115,11 +116,7 @@ export default function WorldToPhone({ progressRef, className = "" }: Props) {
     try {
       // Logarithmic depth: the scene now spans from a 10cm kerb to a planet
       // 2,500 units away, and a linear buffer cannot hold both.
-      renderer = new THREE.WebGLRenderer({
-        alpha: true,
-        antialias: true,
-        logarithmicDepthBuffer: true,
-      });
+      renderer = new THREE.WebGLRenderer(rendererOptions({ logarithmicDepthBuffer: true }));
     } catch {
       return;
     }
@@ -562,7 +559,7 @@ export default function WorldToPhone({ progressRef, className = "" }: Props) {
       if (Math.abs(w - lastW) < 4 && Math.abs(h - lastH) < 4) return;
       lastW = w;
       lastH = h;
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setPixelRatio(pixelRatio());
       renderer.setSize(w, h, false);
       camera.aspect = w / h;
       camera.updateProjectionMatrix();

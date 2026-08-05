@@ -75,6 +75,25 @@
   border-bottom-color: var(--line);
 }
 
+/* No backdrop-filter while the menu is open, and this is not cosmetic.
+ *
+ * `backdrop-filter` makes an element a containing block for its
+ * position: fixed descendants. `.mobile-nav` is a child of this header and is
+ * fixed with `inset: var(--nav-h) 0 0`, so the moment the header gained a
+ * filter those offsets started resolving against a 72px-tall bar instead of
+ * the viewport, and the menu opened into a sliver.
+ *
+ * Safari implements that rule; Chrome does not, which is exactly why the menu
+ * worked in device emulation and failed on an actual iPhone. Behind an opaque
+ * full-screen menu there is nothing to blur anyway.
+ *
+ * Same specificity as the rule above, so it has to come after it. */
+.site-header[data-open] {
+  background: var(--bg);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
 /* Browsers without backdrop-filter get a solid bar rather than see-through
    text behind the nav. */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
+import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
@@ -77,7 +78,7 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let renderer: THREE.WebGLRenderer;
     try {
-      renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+      renderer = new THREE.WebGLRenderer(rendererOptions());
     } catch {
       return;
     }
@@ -110,8 +111,15 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
     key.position.set(-2, 3, 4);
     scene.add(key);
 
-    // Bloom is what turns eight discrete blobs into one iridescent mass — the
-    // model alone renders as separate spheres.
+    /* Bloom is what turns eight discrete blobs into one iridescent mass: the
+       model alone renders as separate spheres.
+       `UnrealBloomPass` keeps a mip chain of render targets, five levels of
+       them, on top of the composer's own two. On a phone, where five WebGL
+       contexts are already close to what Safari will tolerate, those are the
+       cheapest megabytes on the page to give back. The pass runs at half
+       resolution there, which on a small screen is not a difference anyone can
+       point at. */
+    const bloomScale = isHandheld() ? 0.5 : 1;
     const composer = new EffectComposer(renderer);
     composer.addPass(new RenderPass(scene, camera));
     const bloom = new UnrealBloomPass(
@@ -285,12 +293,12 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
     const resize = () => {
       const { clientWidth: w, clientHeight: h } = host;
       if (!w || !h) return;
-      const dpr = Math.min(window.devicePixelRatio, 2);
+      const dpr = pixelRatio();
       renderer.setPixelRatio(dpr);
       renderer.setSize(w, h, false);
-      composer.setPixelRatio(dpr);
+      composer.setPixelRatio(dpr * bloomScale);
       composer.setSize(w, h);
-      bloom.setSize(w, h);
+      bloom.setSize(w * bloomScale, h * bloomScale);
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
     };

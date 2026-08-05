@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
 import { useTheme } from "@/components/theme/ThemeProvider";
 
 /**
@@ -39,7 +40,7 @@ export default function ARStory({ progressRef, className = "" }: Props) {
 
     let renderer: THREE.WebGLRenderer;
     try {
-      renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+      renderer = new THREE.WebGLRenderer(rendererOptions());
     } catch {
       return;
     }
@@ -263,7 +264,7 @@ export default function ARStory({ progressRef, className = "" }: Props) {
     const resize = () => {
       const { clientWidth: w, clientHeight: h } = host;
       if (!w || !h) return;
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setPixelRatio(pixelRatio());
       renderer.setSize(w, h, false);
       camera.aspect = w / h;
       camera.fov =

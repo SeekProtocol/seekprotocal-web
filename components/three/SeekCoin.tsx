@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
 import { MARK_HOLES, MARK_OUTLINE } from "@/lib/seek-mark";
 import { useTheme } from "@/components/theme/ThemeProvider";
 
@@ -221,11 +222,7 @@ export default function SeekCoin({ className = "", scale = 1, spin = 0.35 }: Pro
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let renderer: THREE.WebGLRenderer;
     try {
-      renderer = new THREE.WebGLRenderer({
-        alpha: true,
-        antialias: true,
-        powerPreference: "high-performance",
-      });
+      renderer = new THREE.WebGLRenderer(rendererOptions());
     } catch {
       return; // No WebGL — the static fallback image stays visible.
     }
@@ -316,7 +313,7 @@ export default function SeekCoin({ className = "", scale = 1, spin = 0.35 }: Pro
     const resize = () => {
       const { clientWidth: w, clientHeight: h } = host;
       if (!w || !h) return;
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setPixelRatio(pixelRatio());
       renderer.setSize(w, h, false);
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
