@@ -402,6 +402,29 @@ a {
 
 [data-theme="dark"] .grid-field { opacity: 0.5; }
 
+/* The drifting blobs hold still on a phone.
+ *
+ * Each is a 90px blur on a promoted layer running a 26 second animation that
+ * never ends and never checks whether anyone can see it. Off screen, in another
+ * section, tab in the background: it keeps compositing. There are two grid
+ * fields on the homepage and each carries two of these, so that is four large
+ * blurred layers a phone pays for continuously to produce ambient motion behind
+ * something the reader has already scrolled past.
+ *
+ * Dropping the animation drops the reason for the layer with it: a gradient
+ * that does not move is painted once, into whatever is already being painted.
+ * The blur stays, so the look at rest is unchanged — it is the drift that goes,
+ * and only where it costs the most.
+ *
+ * Same test as .scene-scrubbed and isHandheld(). Keep the three in step. */
+@media (pointer: coarse) and (max-width: 1024px) {
+  .grid-field::before,
+  .grid-field::after {
+    animation: none;
+    will-change: auto;
+  }
+}
+
 /* Grain, from the app's own noise texture. */
 .grid-field-full::before,
 .grid-field-full::after { filter: blur(110px); }
@@ -678,6 +701,23 @@ a {
 .reveal.is-in {
   opacity: 1;
   transform: none;
+
+  /* Give the layer back.
+   *
+   * `will-change` above is a promise that this element is about to move, and
+   * the browser keeps a compositing layer allocated against it for as long as
+   * the promise stands. These animate once, on the way in, and then never
+   * again — so left in the rule above it is a promise that is always standing
+   * and never called in. Measured on the live homepage: 28 .reveal elements,
+   * all 28 still
+   * promoted long after they had finished, each holding a texture the size of
+   * its own box at three device pixels to the CSS pixel.
+   *
+   * Dropping the hint here is safe for the entrance itself. Opacity and
+   * transform transitions are composited on their own while they run, so the
+   * layer this needs still exists for the 0.9s it is moving; what goes is the
+   * one it was holding for the rest of the page's life. */
+  will-change: auto;
 }
 
 /* The hero entrance, and the only thing .enter is used for.
