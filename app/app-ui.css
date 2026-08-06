@@ -3556,6 +3556,29 @@
 }
 
 /* --------------------------------------------------------------------------
+   HANDHELD LAYER BUDGET — second copy, and duplicated for the same reason as
+   the bisect block below it.
+
+   This file is the phone mockup and the sections around it, and it declares
+   about twenty of the site's backdrop-filters: the map banner, the tab bar,
+   the HUD buttons, the catch chip, the film's readout. It is its own route
+   stylesheet rather than an import of globals.css, so it loads after it and
+   the reset there never reaches any of them.
+
+   The rest of that block — glass, the ambient blobs, the grain — styles
+   classes that only exist in globals.css and needs no copy. See the long note
+   there for what this is buying. If you edit one, edit both. */
+@media (pointer: coarse) and (max-width: 1024px) {
+  *,
+  *::before,
+  *::after {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    will-change: auto !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
    BISECT SWITCHES — second copy, and deliberately duplicated.
 
    The same block sits at the end of globals.css. It has to exist here too

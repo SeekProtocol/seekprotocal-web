@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates, OG_IMAGE, getOpenGraph } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getOpenGraph, getBreadcrumbJsonLd } from "@/lib/seo";
 import { blogPosts } from "@/lib/blog-data";
 
 export async function generateMetadata({
@@ -41,6 +41,13 @@ function formatDate(dateString: string, locale?: string): string {
   });
 }
 
+/* Google draws the breadcrumb trail in place of the URL line. Worth more
+   than it sounds where every path opens with a locale code: a reader sees
+   "seekprotocol.ai > Blog" instead of a string. */
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "Blog", path: "/blog" },
+]);
+
 export default async function BlogPage({
   params,
 }: {
@@ -56,6 +63,10 @@ function BlogPageContent({ locale }: { locale: string }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />

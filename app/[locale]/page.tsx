@@ -33,9 +33,17 @@ export async function generateMetadata({
   const description = t("metaDescription");
 
   return {
-    // 52 characters in English, inside the ~60 Google will render. The trailing
-    // "- Redefining Innovation" was always truncated away.
-    title: t("metaTitle"),
+    /* The brand is appended here rather than left to the layout's
+       `title.template`, because that template never reached this page.
+       `%s | Seek Protocol` applies to *child* segments, and this page sits in
+       the same segment as the layout that declares it — which is why every
+       other page carries the suffix and the homepage did not. The comment that
+       used to sit here claimed 52 characters in English; what Google was
+       actually served was 36, with no brand on the site's most linked page.
+
+       Longest of the eight is French at 59, so all of them stay inside the ~60
+       Google renders. Written out rather than translated: the brand is a name. */
+    title: `${t("metaTitle")} | Seek Protocol`,
     description,
     openGraph: getOpenGraph({
       title: t("ogTitle"),

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { getMultilingualAlternates, OG_IMAGE, getOpenGraph } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getOpenGraph, getBreadcrumbJsonLd } from "@/lib/seo";
 import styles from "./privacy-policy.module.css";
 
 export async function generateMetadata({
@@ -179,6 +179,13 @@ function PrivacyPolicyContent() {
   );
 }
 
+/* Google draws the breadcrumb trail in place of the URL line. Worth more
+   than it sounds where every path opens with a locale code: a reader sees
+   "seekprotocol.ai > Privacy Policy" instead of a string. */
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "Privacy Policy", path: "/privacy-policy" },
+]);
+
 export default async function PrivacyPolicyPage({
   params,
 }: {
@@ -194,6 +201,10 @@ function PrivacyPolicyPageContent() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />

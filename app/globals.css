@@ -848,7 +848,66 @@ a {
 .full-bleed-line { border-top: 1px solid var(--line); }
 
 /* --------------------------------------------------------------------------
-   9. BISECT SWITCHES
+   9. HANDHELD LAYER BUDGET
+   --------------------------------------------------------------------------
+
+   What a phone pays for before a single scene has been built: 51
+   backdrop-filters across the three stylesheets, and four large blurs behind
+   the two grid fields. Each one is its own compositing layer, and a backdrop
+   filter needs two buffers rather than one — a snapshot of what sits behind it
+   and the blurred result. At the 3x device pixel ratio of a current iPhone one
+   full-width band is around 12MB of backing store, and the homepage is
+   25,000px of them.
+
+   That bill is paid whether or not a WebGL context is alive, which is what the
+   crash log kept saying and what neither render-budget.ts nor
+   use-near-viewport.ts could answer: tabs killed at scroll positions with no
+   canvas on the page at all, one of them 295px from the top. Those two files
+   took the scenes down to one context on a handheld. This is the rest of it.
+
+   So on a handheld the blur goes and the surface stays. Glass takes an opaque
+   fill, because 5.5% white over arbitrary content is only a pane while
+   something is blurring behind it. The ambient blobs keep the radial falloff
+   that was always doing most of the softening and lose the filter. The grain
+   is 0.05 opacity through a blend mode — a full-bleed layer per section for
+   something nobody can point to — so it is not drawn.
+
+   `filter` is deliberately left alone. It carries the drop shadows the
+   collectibles, the map spawns and the device art are drawn with; blanking
+   those changes what the page is rather than what it costs.
+
+   Same test as .scene-scrubbed and isHandheld(). Keep the three in step. The
+   blanket reset is repeated at the end of app-ui.css, which is its own route
+   stylesheet and out of this one's reach — if you edit one, edit both. */
+@media (pointer: coarse) and (max-width: 1024px) {
+  *,
+  *::before,
+  *::after {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    will-change: auto !important;
+  }
+
+  /* Opaque, because there is no longer anything blurring behind it. The dark
+     and inverse variants are named too: they set the same custom property at a
+     higher specificity, so a bare `.glass` here would lose to them on the
+     default theme. */
+  .glass,
+  [data-theme="dark"] .glass,
+  .section-inverse .glass { --glass-fill: var(--bg-raised); }
+
+  /* The radial gradient already fades to nothing at 70%, so the blur was
+     softening an edge that was not there. */
+  .grid-field::before,
+  .grid-field::after,
+  .grid-field-full::before,
+  .grid-field-full::after { filter: none; }
+
+  .noise-layer { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   10. BISECT SWITCHES
    --------------------------------------------------------------------------
 
    Diagnostic only, and inert unless the URL asks for them. See lib/bisect.ts

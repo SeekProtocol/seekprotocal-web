@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { getMultilingualAlternates, OG_IMAGE, getOpenGraph } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getOpenGraph, getBreadcrumbJsonLd } from "@/lib/seo";
 import ContactForm from "@/components/shared/ContactForm";
 
 export async function generateMetadata({
@@ -31,6 +31,13 @@ export async function generateMetadata({
   };
 }
 
+/* Google draws the breadcrumb trail in place of the URL line. Worth more
+   than it sounds where every path opens with a locale code: a reader sees
+   "seekprotocol.ai > Contact" instead of a string. */
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "Contact", path: "/contact" },
+]);
+
 export default async function ContactPage({
   params,
 }: {
@@ -46,6 +53,10 @@ function ContactContent() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />

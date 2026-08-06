@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates, OG_IMAGE, getOpenGraph } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getOpenGraph, getBreadcrumbJsonLd } from "@/lib/seo";
 import BetaForm from "@/components/shared/BetaForm";
 import {
   ARIcon,
@@ -86,6 +86,13 @@ const aboutFaqJsonLd = {
   ],
 };
 
+/* Google draws the breadcrumb trail in place of the URL line. Worth more
+   than it sounds where every path opens with a locale code: a reader sees
+   "seekprotocol.ai > About" instead of a string. */
+const breadcrumbJsonLd = getBreadcrumbJsonLd([
+  { name: "About", path: "/about" },
+]);
+
 export default async function AboutPage({
   params,
 }: {
@@ -147,6 +154,10 @@ function AboutContent() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutFaqJsonLd) }}
