@@ -103,9 +103,17 @@ function loadGoogleAnalytics() {
     w.dataLayer.push(args);
   }
   gtag('js', new Date());
+  /* SameSite=Lax, not None.
+     None means "send this cookie on every cross-site request", which is for
+     measurement spanning more than one domain. There is one domain here, so
+     None only widened where the cookie travels without buying anything, and a
+     consent banner that has just been told "analytics only" should not be
+     handing out a cookie more freely than it needs to. Change it back to
+     None;Secure if cross-domain measurement is ever set up — it will not work
+     without it. */
   gtag('config', GA_ID, {
     anonymize_ip: true,
-    cookie_flags: 'SameSite=None;Secure',
+    cookie_flags: 'SameSite=Lax;Secure',
   });
 }
 
