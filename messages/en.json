@@ -1094,7 +1094,7 @@
   },
   "roadmapPage": {
     "metaTitle": "Roadmap: Shipped and What Comes Next",
-    "metaDescription": "What Seek Protocol has shipped and what comes next, from the proof-of-location prototype through the public SeekAR launch to the self-serve business portal and on-chain governance.",
+    "metaDescription": "What Seek Protocol has shipped and what comes next, from the proof-of-location prototype and the public SeekAR launch to the self-serve portal and governance.",
     "ogTitle": "Seek Protocol roadmap",
     "eyebrow": "Roadmap",
     "titleStart": "What is built, and what is",
@@ -1173,7 +1173,7 @@
   },
   "businessPage": {
     "metaTitle": "Geofencing Marketing, Paid Per Arrival",
-    "metaDescription": "Location-based marketing that counts arrivals instead of modelling them. Place a reward at your own coordinates and pay per verified visit, measured at the door.",
+    "metaDescription": "Location-based marketing that counts arrivals instead of modelling them. Place a reward at your coordinates and pay per verified visit.",
     "ogTitle": "Pay per verified arrival",
     "eyebrow": "For business",
     "titleStart": "Buy arrivals, not",
@@ -1361,7 +1361,7 @@
   },
   "whitepaper": {
     "metaTitle": "Whitepaper: Proof of Location on Solana",
-    "metaDescription": "How Seek Protocol issues digital assets to real-world coordinates, verifies that someone was actually there, and settles it on Solana. Proof of location, architecture, token design and the attacks we defend against.",
+    "metaDescription": "How Seek Protocol issues digital assets to real coordinates, verifies someone was actually there, and settles on Solana. Architecture, token design, attacks.",
     "ogTitle": "Seek Protocol Whitepaper",
     "ogDescription": "Proof of location, architecture, token design, and an honest account of the attacks and limits.",
     "eyebrow": "Whitepaper",

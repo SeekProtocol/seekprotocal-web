@@ -99,7 +99,7 @@
     "foundationsEyebrow": "Fundamenten",
     "readWhitepaper": "Lees de technische whitepaper",
     "metaTitle": "Het eerste AR- en AI-platform op Solana",
-    "metaDescription": "Jaag op locatiegebonden airdrops, verzamel NFT's in augmented reality en verken met AI-metgezellen. SeekAR maakt van echte plekken op te halen beloningen op Solana.",
+    "metaDescription": "Jaag op locatiegebonden airdrops, verzamel NFT's in AR en verken met AI-metgezellen. SeekAR maakt van echte plekken beloningen op Solana.",
     "ogTitle": "Seek Protocol | AR en AI op Solana"
   },
   "about": {
@@ -354,7 +354,7 @@
     "contactP1": "Indien u vragen heeft over uw privacy tijdens het gebruik van de Applicatie, of indien u vragen heeft over de gegevenspraktijken die in dit beleid worden beschreven, neem dan contact op met de Dienstverlener via:",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "Privacybeleid",
-    "metaDescription": "Hoe Seek Protocol en SeekAR omgaan met locatiedata, sensormetingen en walletgegevens: wat er verzameld wordt, hoe lang het bewaard blijft en wat nooit gedeeld wordt.",
+    "metaDescription": "Hoe Seek Protocol en SeekAR omgaan met locatiedata, sensormetingen en walletgegevens: wat er verzameld wordt en wat nooit gedeeld wordt.",
     "ogTitle": "Privacy bij Seek Protocol"
   },
   "termsPage": {
@@ -979,7 +979,7 @@
   },
   "ecosystemPage": {
     "metaTitle": "Ecosysteem: seekers, uitgevers, protocol",
-    "metaDescription": "Hoe het ecosysteem van Seek Protocol in elkaar zit: seekers die verzamelen, uitgevers die plaatsen, en het protocol dat aanwezigheid verifieert en afwikkelt op Solana.",
+    "metaDescription": "Hoe het ecosysteem van Seek Protocol in elkaar zit: seekers die verzamelen, uitgevers die plaatsen, en het protocol dat afwikkelt op Solana.",
     "ogTitle": "Drie partijen, één coördinaat",
     "eyebrow": "Ecosysteem",
     "titleStart": "Drie partijen, één",
@@ -1094,7 +1094,7 @@
   },
   "roadmapPage": {
     "metaTitle": "Roadmap: opgeleverd en wat er volgt",
-    "metaDescription": "Wat Seek Protocol opgeleverd heeft en wat er volgt, van het prototype voor locatiebewijs via de publieke lancering van SeekAR tot het selfserviceportaal en on-chain governance.",
+    "metaDescription": "Wat Seek Protocol opgeleverd heeft en wat er volgt, van het prototype voor locatiebewijs en de lancering van SeekAR tot het selfserviceportaal en governance.",
     "ogTitle": "Roadmap van Seek Protocol",
     "eyebrow": "Roadmap",
     "titleStart": "Wat er staat, en wat er",
@@ -1173,7 +1173,7 @@
   },
   "businessPage": {
     "metaTitle": "Geofencing-marketing, betaald per bezoek",
-    "metaDescription": "Locatiegebonden marketing die bezoeken telt in plaats van ze te modelleren. Leg een beloning op je eigen coördinaten en betaal per geverifieerd bezoek, gemeten aan de deur.",
+    "metaDescription": "Locatiegebonden marketing die bezoeken telt in plaats van ze te modelleren. Leg een beloning op je coördinaten en betaal per geverifieerd bezoek.",
     "ogTitle": "Betaal per geverifieerd bezoek",
     "eyebrow": "Zakelijk",
     "titleStart": "Koop bezoeken, geen",
@@ -1361,7 +1361,7 @@
   },
   "whitepaper": {
     "metaTitle": "Whitepaper: locatiebewijs op Solana",
-    "metaDescription": "Hoe Seek Protocol digitale assets uitgeeft op echte coördinaten, verifieert dat iemand er daadwerkelijk was, en het afwikkelt op Solana. Locatiebewijs, architectuur, tokenontwerp en de aanvallen waartegen we ons verdedigen.",
+    "metaDescription": "Hoe Seek Protocol digitale assets uitgeeft op echte coördinaten, verifieert dat iemand er was, en afwikkelt op Solana. Architectuur, tokenontwerp, aanvallen.",
     "ogTitle": "Whitepaper van Seek Protocol",
     "ogDescription": "Locatiebewijs, architectuur, tokenontwerp, en een eerlijk verslag van de aanvallen en de grenzen.",
     "eyebrow": "Whitepaper",

@@ -99,7 +99,7 @@
     "foundationsEyebrow": "기반",
     "readWhitepaper": "기술 백서 읽기",
     "metaTitle": "Solana 최초의 AR·AI 플랫폼",
-    "metaDescription": "실제 장소에서 에어드롭을 찾고, 증강현실로 NFT를 모으고, AI 동반자와 함께 탐험하세요. SeekAR는 실제 장소를 Solana에서 받는 보상으로 바꿉니다.",
+    "metaDescription": "실제 장소에서 에어드롭을 찾고, AR로 NFT를 모으고, AI 동반자와 탐험하세요. SeekAR는 장소를 보상으로 바꿉니다.",
     "ogTitle": "Seek Protocol | Solana 위의 AR·AI"
   },
   "about": {
@@ -354,7 +354,7 @@
     "contactP1": "본 애플리케이션 사용 중 개인정보에 관한 문의사항이 있으시거나, 본 정책에 기술된 데이터 처리 관행에 대해 질문이 있으시면, 아래 연락처로 서비스 제공자에게 문의해 주십시오:",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "개인정보 처리방침",
-    "metaDescription": "Seek Protocol과 SeekAR가 위치 데이터와 센서 값, 지갑 정보를 다루는 방식. 무엇을 모으고, 얼마나 보관하며, 무엇을 절대 공유하지 않는지.",
+    "metaDescription": "Seek Protocol과 SeekAR가 위치 데이터와 센서 값, 지갑 정보를 다루는 방식과 공유하지 않는 것.",
     "ogTitle": "Seek Protocol의 개인정보 보호"
   },
   "termsPage": {
@@ -1094,7 +1094,7 @@
   },
   "roadmapPage": {
     "metaTitle": "로드맵: 나온 것과 다음에 올 것",
-    "metaDescription": "Seek Protocol이 내놓은 것과 다음에 올 것. 위치 증명 프로토타입에서 SeekAR 정식 출시, 셀프서비스 비즈니스 포털과 온체인 거버넌스까지.",
+    "metaDescription": "Seek Protocol이 내놓은 것과 다음에 올 것. 위치 증명 프로토타입에서 SeekAR 출시와 비즈니스 포털까지.",
     "ogTitle": "Seek Protocol 로드맵",
     "eyebrow": "로드맵",
     "titleStart": "지금까지 만든 것과, 이제",
@@ -1361,7 +1361,7 @@
   },
   "whitepaper": {
     "metaTitle": "백서: Solana 위의 위치 증명",
-    "metaDescription": "Seek Protocol이 디지털 자산을 실제 좌표에 발행하고, 누군가 정말로 그곳에 있었는지 검증하며, Solana에서 정산하는 방식. 위치 증명, 아키텍처, 토큰 설계, 그리고 우리가 방어하는 공격들.",
+    "metaDescription": "Seek Protocol이 디지털 자산을 실제 좌표에 발행하고, 방문을 검증하며, Solana에서 정산하는 방식. 아키텍처와 토큰 설계.",
     "ogTitle": "Seek Protocol 백서",
     "ogDescription": "위치 증명, 아키텍처, 토큰 설계, 그리고 공격과 한계에 대한 솔직한 설명.",
     "eyebrow": "백서",

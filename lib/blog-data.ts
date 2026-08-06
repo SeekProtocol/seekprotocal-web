@@ -136,7 +136,7 @@ export const blogPosts: BlogPost[] = [
     slug: "proof-of-location-blockchain-verified-discovery",
     title: "Proof of Location: Blockchain-Verified Real-World Discovery",
     excerpt:
-      "Every step you take is proof. Learn how Seek Protocol's on-chain verification system confirms your real-world location to unlock tokens, NFTs, and digital assets.",
+      "Every step you take is proof. How Seek Protocol's on-chain verification confirms your real-world location to unlock tokens, NFTs and digital assets.",
     content: [
       "In the world of blockchain, proof mechanisms are everything. Bitcoin has proof of work, Ethereum moved to proof of stake, and now Seek Protocol introduces proof of location, a revolutionary verification system that bridges the physical and digital worlds.",
       "The concept is elegant in its simplicity: every step you take is proof. The system confirms your real-world location to unlock tokens, NFTs, and other digital assets. No cheating, no spoofing, just real rewards for real engagement in real locations.",

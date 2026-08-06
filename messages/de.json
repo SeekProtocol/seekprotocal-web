@@ -979,7 +979,7 @@
   },
   "ecosystemPage": {
     "metaTitle": "Ökosystem: Seeker, Publisher, Protokoll",
-    "metaDescription": "Wie das Ökosystem von Seek Protocol zusammenpasst: Seeker, die einsammeln, Publisher, die platzieren, und das Protokoll, das Anwesenheit prüft und auf Solana abwickelt.",
+    "metaDescription": "Wie das Ökosystem von Seek Protocol zusammenpasst: Seeker sammeln ein, Publisher platzieren, das Protokoll prüft und wickelt auf Solana ab.",
     "ogTitle": "Drei Parteien, eine Koordinate",
     "eyebrow": "Ökosystem",
     "titleStart": "Drei Parteien, eine",
@@ -1093,8 +1093,8 @@
     }
   },
   "roadmapPage": {
-    "metaTitle": "Roadmap: Geliefert und was als Nächstes kommt",
-    "metaDescription": "Was Seek Protocol geliefert hat und was als Nächstes kommt, vom Proof-of-Location-Prototyp über den öffentlichen SeekAR-Start bis zum Self-Service-Portal und On-Chain-Governance.",
+    "metaTitle": "Roadmap: Was geliefert ist und was kommt",
+    "metaDescription": "Was Seek Protocol geliefert hat und was als Nächstes kommt, vom Proof-of-Location-Prototyp über den SeekAR-Start bis zum Self-Service-Portal und Governance.",
     "ogTitle": "Roadmap von Seek Protocol",
     "eyebrow": "Roadmap",
     "titleStart": "Was steht, und was als",
@@ -1173,7 +1173,7 @@
   },
   "businessPage": {
     "metaTitle": "Geofencing-Marketing, pro Ankunft bezahlt",
-    "metaDescription": "Standortbasiertes Marketing, das Ankünfte zählt statt sie zu modellieren. Platziere eine Belohnung an deinen Koordinaten und zahle je verifiziertem Besuch, gemessen an der Tür.",
+    "metaDescription": "Standortbasiertes Marketing, das Ankünfte zählt statt sie zu modellieren. Belohnung an deinen Koordinaten, Bezahlung je verifiziertem Besuch.",
     "ogTitle": "Zahle je verifizierter Ankunft",
     "eyebrow": "Für Unternehmen",
     "titleStart": "Ankünfte kaufen, keine",
@@ -1361,7 +1361,7 @@
   },
   "whitepaper": {
     "metaTitle": "Whitepaper: Proof of Location auf Solana",
-    "metaDescription": "Wie Seek Protocol digitale Assets an reale Koordinaten ausgibt, prüft, dass jemand wirklich dort war, und auf Solana abwickelt. Proof of Location, Architektur, Token-Design und die Angriffe, gegen die wir uns wehren.",
+    "metaDescription": "Wie Seek Protocol digitale Assets an reale Koordinaten ausgibt, prüft, dass jemand dort war, und auf Solana abwickelt. Architektur, Token-Design, Angriffe.",
     "ogTitle": "Whitepaper von Seek Protocol",
     "ogDescription": "Proof of Location, Architektur, Token-Design und eine ehrliche Darstellung der Angriffe und Grenzen.",
     "eyebrow": "Whitepaper",

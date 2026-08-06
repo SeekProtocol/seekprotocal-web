@@ -99,7 +99,7 @@
     "foundationsEyebrow": "Fondations",
     "readWhitepaper": "Lire le whitepaper technique",
     "metaTitle": "La première plateforme AR et IA sur Solana",
-    "metaDescription": "Chassez des airdrops géolocalisés, collectionnez des NFT en réalité augmentée et explorez avec des compagnons IA. SeekAR transforme les lieux réels en récompenses sur Solana.",
+    "metaDescription": "Chassez des airdrops géolocalisés, collectionnez des NFT en AR et explorez avec des compagnons IA. SeekAR transforme les lieux réels en récompenses.",
     "ogTitle": "Seek Protocol | AR et IA sur Solana"
   },
   "about": {
@@ -162,7 +162,7 @@
     "getReady": "Préparez-vous à chercher !",
     "ctaDesc": "Plongez dans une nouvelle réalité où le monde devient votre terrain de jeu. SeekAR transforme votre environnement en une aventure interactive, alliant la dernière technologie AR à l'exploration du monde réel.",
     "metaTitle": "L'équipe derrière SeekAR",
-    "metaDescription": "Rencontrez l'équipe qui construit l'AR géolocalisée sur Solana : l'idée derrière la preuve de localisation, la technique de SeekAR et les personnes derrière $SEEK.",
+    "metaDescription": "Rencontrez l'équipe qui construit l'AR géolocalisée sur Solana : l'idée derrière la preuve de localisation et les personnes derrière $SEEK.",
     "ogTitle": "L'équipe derrière SeekAR"
   },
   "contact": {
@@ -354,7 +354,7 @@
     "contactP1": "Si vous avez des questions concernant votre vie privée lors de l'utilisation de l'Application, ou si vous avez des questions sur les pratiques en matière de données décrites dans cette politique, veuillez contacter le Prestataire de Services à :",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "Politique de confidentialité",
-    "metaDescription": "Comment Seek Protocol et SeekAR traitent les données de localisation, les relevés de capteurs et les informations de portefeuille : ce qui est collecté, conservé et jamais partagé.",
+    "metaDescription": "Comment Seek Protocol et SeekAR traitent les données de localisation, les capteurs et le portefeuille : ce qui est collecté et jamais partagé.",
     "ogTitle": "Confidentialité chez Seek Protocol"
   },
   "termsPage": {
@@ -376,7 +376,7 @@
     "contactTitle": "Nous contacter",
     "contactP1": "Si vous avez des questions ou des suggestions concernant les Conditions générales d'utilisation, n'hésitez pas à contacter le Prestataire de Services à <email>support@seekprotocol.ai</email>.",
     "metaTitle": "Conditions générales",
-    "metaDescription": "Les conditions d'utilisation de SeekAR et de la plateforme Seek Protocol : vos droits, les règles de réclamation des actifs et le fonctionnement des articles payants.",
+    "metaDescription": "Les conditions d'utilisation de SeekAR et de Seek Protocol : vos droits, les règles de réclamation des actifs et les articles payants.",
     "ogTitle": "Conditions de Seek Protocol"
   },
   "languageSwitcher": {
@@ -979,7 +979,7 @@
   },
   "ecosystemPage": {
     "metaTitle": "Écosystème : seekers, éditeurs, protocole",
-    "metaDescription": "Comment l'écosystème Seek Protocol s'articule : les seekers qui récupèrent, les éditeurs qui déposent, et le protocole qui vérifie la présence et règle sur Solana.",
+    "metaDescription": "Comment l'écosystème Seek Protocol s'articule : les seekers récupèrent, les éditeurs déposent, le protocole vérifie et règle sur Solana.",
     "ogTitle": "Trois parties, une coordonnée",
     "eyebrow": "Écosystème",
     "titleStart": "Trois parties, une",
@@ -1094,7 +1094,7 @@
   },
   "roadmapPage": {
     "metaTitle": "Roadmap : livré et à venir",
-    "metaDescription": "Ce que Seek Protocol a livré et ce qui vient ensuite, du prototype de preuve de localisation au lancement public de SeekAR, jusqu'au portail en libre-service et à la gouvernance on-chain.",
+    "metaDescription": "Ce que Seek Protocol a livré et ce qui vient ensuite, du prototype de preuve de localisation au lancement de SeekAR, jusqu'au portail en libre-service.",
     "ogTitle": "Roadmap de Seek Protocol",
     "eyebrow": "Roadmap",
     "titleStart": "Ce qui est fait, et ce qui",
@@ -1173,7 +1173,7 @@
   },
   "businessPage": {
     "metaTitle": "Marketing géolocalisé, payé à l'arrivée",
-    "metaDescription": "Un marketing de proximité qui compte les arrivées au lieu de les modéliser. Déposez une récompense à vos coordonnées et payez par visite vérifiée, mesurée à la porte.",
+    "metaDescription": "Un marketing de proximité qui compte les arrivées au lieu de les modéliser. Déposez une récompense et payez par visite vérifiée.",
     "ogTitle": "Payez par arrivée vérifiée",
     "eyebrow": "Entreprises",
     "titleStart": "Achetez des arrivées, pas des",
@@ -1360,8 +1360,8 @@
     "captionIdle": "L'anneau est dessiné à l'échelle sur le plan. Rien ici ne demande de développeur : quatre décisions, puis on publie."
   },
   "whitepaper": {
-    "metaTitle": "Whitepaper : preuve de localisation sur Solana",
-    "metaDescription": "Comment Seek Protocol émet des actifs numériques sur des coordonnées réelles, vérifie que quelqu'un s'y trouvait vraiment et règle sur Solana. Preuve de localisation, architecture, conception du token et les attaques contre lesquelles nous nous défendons.",
+    "metaTitle": "Whitepaper : la preuve de localisation",
+    "metaDescription": "Comment Seek Protocol émet des actifs numériques sur des coordonnées réelles, vérifie la présence et règle sur Solana. Architecture, token et attaques.",
     "ogTitle": "Whitepaper de Seek Protocol",
     "ogDescription": "Preuve de localisation, architecture, conception du token, et un compte rendu honnête des attaques et des limites.",
     "eyebrow": "Whitepaper",

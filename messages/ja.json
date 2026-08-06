@@ -978,7 +978,7 @@
     "cache": "ストリートキャッシュ"
   },
   "ecosystemPage": {
-    "metaTitle": "エコシステム：シーカー、パブリッシャー、プロトコル",
+    "metaTitle": "エコシステム：シーカー、発行者、プロトコル",
     "metaDescription": "Seek Protocolのエコシステムの成り立ち。集めるシーカー、置くパブリッシャー、そして到達を検証しSolana上で決済するプロトコル。",
     "ogTitle": "三者、ひとつの座標",
     "eyebrow": "エコシステム",
@@ -1094,7 +1094,7 @@
   },
   "roadmapPage": {
     "metaTitle": "ロードマップ：出したものと、次に来るもの",
-    "metaDescription": "Seek Protocolが出したものと次に来るもの。位置証明のプロトタイプからSeekARの一般公開、セルフサービスの法人ポータルとオンチェーンガバナンスまで。",
+    "metaDescription": "Seek Protocolが出したものと次に来るもの。位置証明のプロトタイプからSeekARの一般公開、法人ポータルまで。",
     "ogTitle": "Seek Protocolのロードマップ",
     "eyebrow": "ロードマップ",
     "titleStart": "できているものと、",
@@ -1361,7 +1361,7 @@
   },
   "whitepaper": {
     "metaTitle": "ホワイトペーパー：Solana上の位置証明",
-    "metaDescription": "Seek Protocolがデジタルアセットを現実の座標に発行し、その人が本当にそこにいたことを検証し、Solanaで決済する仕組み。位置証明、アーキテクチャ、トークン設計、そして防いでいる攻撃について。",
+    "metaDescription": "Seek Protocolがデジタルアセットを現実の座標に発行し、本人がそこにいたことを検証し、Solanaで決済する仕組み。",
     "ogTitle": "Seek Protocol ホワイトペーパー",
     "ogDescription": "位置証明、アーキテクチャ、トークン設計、そして攻撃と限界についての率直な説明。",
     "eyebrow": "ホワイトペーパー",

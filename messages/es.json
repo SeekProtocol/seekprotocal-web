@@ -354,7 +354,7 @@
     "contactP1": "Si tiene alguna pregunta sobre su privacidad al usar la Aplicación, o si tiene preguntas sobre las prácticas de datos descritas en esta política, comuníquese con el Proveedor de Servicios en:",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "Política de privacidad",
-    "metaDescription": "Cómo tratan Seek Protocol y SeekAR los datos de ubicación, las lecturas de sensores y los datos de la cartera: qué se recoge, cuánto se guarda y qué nunca se comparte.",
+    "metaDescription": "Cómo tratan Seek Protocol y SeekAR los datos de ubicación, los sensores y la cartera: qué se recoge y qué nunca se comparte.",
     "ogTitle": "Privacidad en Seek Protocol"
   },
   "termsPage": {
@@ -1094,7 +1094,7 @@
   },
   "roadmapPage": {
     "metaTitle": "Hoja de ruta: entregado y lo que viene",
-    "metaDescription": "Lo que Seek Protocol ha entregado y lo que viene, desde el prototipo de prueba de ubicación y el lanzamiento público de SeekAR hasta el portal de autoservicio y la gobernanza on-chain.",
+    "metaDescription": "Lo que Seek Protocol ha entregado y lo que viene, desde el prototipo de prueba de ubicación y el lanzamiento de SeekAR hasta el portal de autoservicio.",
     "ogTitle": "Hoja de ruta de Seek Protocol",
     "eyebrow": "Hoja de ruta",
     "titleStart": "Lo que está hecho, y lo que",
@@ -1361,7 +1361,7 @@
   },
   "whitepaper": {
     "metaTitle": "Whitepaper: prueba de ubicación en Solana",
-    "metaDescription": "Cómo Seek Protocol emite activos digitales en coordenadas reales, verifica que alguien estuvo allí de verdad y lo liquida en Solana. Prueba de ubicación, arquitectura, diseño del token y los ataques de los que nos defendemos.",
+    "metaDescription": "Cómo Seek Protocol emite activos digitales en coordenadas reales, verifica que alguien estuvo allí y lo liquida en Solana. Arquitectura, token y ataques.",
     "ogTitle": "Whitepaper de Seek Protocol",
     "ogDescription": "Prueba de ubicación, arquitectura, diseño del token y un relato honesto de los ataques y los límites.",
     "eyebrow": "Whitepaper",
