@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { withCopy } from "@/lib/content-i18n";
@@ -160,8 +161,10 @@ function OfferArtefact({ offer }: { offer: Offer }) {
       {offer.id === "collectible" && <span className="offer-ribbon" aria-hidden="true" />}
       {offer.id === "asset" && <span className="offer-serial t-mono-sm" aria-hidden="true">1 / 250</span>}
       {offer.id === "token" && (
-        <img
+        <Image
           className="offer-coin"
+          width={200}
+          height={200}
           src="/app/seek-coin-3d.png"
           alt=""
           aria-hidden="true"

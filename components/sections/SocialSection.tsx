@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { listCopy, withCopy } from "@/lib/content-i18n";
@@ -107,7 +108,7 @@ export default function SocialSection() {
               <li key={i} className="chat-row">
                 <span className="chat-avatar">
                   {row.avatar ? (
-                    <img src={row.avatar} alt="" loading="lazy" />
+                    <Image src={row.avatar} alt="" width={36} height={36} />
                   ) : (
                     <PixelAvatar seed={row.who} size={36} />
                   )}

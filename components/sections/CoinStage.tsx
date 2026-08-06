@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
@@ -74,18 +75,21 @@ export default function CoinStage({ className = "" }: { className?: string }) {
         <span />
       </div>
 
+      {/* The still is the LCP candidate until the WebGL scene takes over, so it
+          is priority rather than lazy. The source is 420x420 and 320 is the
+          widest it is ever drawn, which is all next/image needs to pick a
+          variant; .coin-stage-still keeps sizing it. */}
       {live ? (
         <SeekCoin className="coin-stage-canvas" />
       ) : (
-        <img
+        <Image
           src="/app/seek-coin-3d.png"
           alt=""
           aria-hidden="true"
           className="coin-stage-still"
-          width={640}
-          height={640}
-          fetchPriority="high"
-          decoding="async"
+          width={320}
+          height={320}
+          priority
         />
       )}
 

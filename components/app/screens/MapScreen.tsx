@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { COLLECTIBLES, RARITY_LADDER, type Collectible } from "@/content/collectibles";
@@ -102,7 +103,7 @@ export default function MapScreen({
       </svg>
 
       <div className="map-banner">
-        <img src={WIF.image} alt="" className="map-banner-coin" loading="lazy" decoding="async" />
+        <Image src={WIF.image} alt="" width={30} height={30} className="map-banner-coin" />
         <span className="map-banner-text">
           <b>{spawns[0]?.coin.name}</b>
           <i>{t("distanceAway", { metres: 84 })}</i>
@@ -126,7 +127,7 @@ export default function MapScreen({
           onClick={() => onPick?.(spawn.coin)}
           aria-label={`${spawn.coin.name}, ${rarity(spawn.coin.rarity)}`}
         >
-          <img src={spawn.coin.image} alt="" loading="lazy" decoding="async" />
+          <Image src={spawn.coin.image} alt="" width={56} height={56} />
           <span className="map-spawn-shadow" />
         </button>
       ))}

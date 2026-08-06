@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
@@ -179,7 +180,7 @@ export default function CatchScreen({
             style={{ strokeDashoffset: 339.3 * (1 - charge) }}
           />
         </svg>
-        <img key={pulse} src={coin.image} alt="" className="catch-orb-coin" decoding="async" />
+        <Image key={pulse} src={coin.image} alt="" width={132} height={132} className="catch-orb-coin" />
         {active && mechanic === "freeze" && <span className="catch-frost" aria-hidden="true" />}
       </button>
 

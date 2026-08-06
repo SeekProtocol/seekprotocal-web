@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { withCopy } from "@/lib/content-i18n";
@@ -65,7 +66,7 @@ export default function CollectiblesSection() {
             >
               <div className="collectible-art">
                 <span className="collectible-glow" aria-hidden="true" />
-                <img src={coin.image} alt={coin.name} loading="lazy" />
+                <Image src={coin.image} alt={coin.name} width={104} height={104} />
               </div>
               <span className="collectible-rarity">{rarity(coin.rarity)}</span>
               <h3 className="collectible-name">{coin.name}</h3>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import {
@@ -34,7 +35,7 @@ export default function SpawnScreen({
 
       <div className="spawn-hero">
         <span className="spawn-hero-glow" aria-hidden="true" />
-        <img src={coin.image} alt="" className="spawn-hero-coin" loading="lazy" decoding="async" />
+        <Image src={coin.image} alt="" width={148} height={148} className="spawn-hero-coin" />
       </div>
 
       <div className="spawn-head">

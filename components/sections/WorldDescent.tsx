@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useRef } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
@@ -93,7 +94,7 @@ export default function WorldDescent() {
             <StatusBar />
 
             <div className="map-banner wtp-banner">
-              <img src={WIF.image} alt="" className="map-banner-coin" loading="lazy" decoding="async" />
+              <Image src={WIF.image} alt="" width={30} height={30} className="map-banner-coin" />
               <span className="map-banner-text">
                 <b>dogwifhat</b>
                 <i>{t("bannerDistance")}</i>
@@ -132,7 +133,10 @@ export default function WorldDescent() {
         </div>
 
         {/* The device, drawn around the closed frame. */}
-        <img
+        <Image
+          width={1530}
+          height={3036}
+          sizes="(max-width: 1024px) 60vw, 420px"
           src="/app/devices/iphone.png"
           alt=""
           loading="lazy"

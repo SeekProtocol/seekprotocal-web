@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { TabIcon } from "@/components/app/screens/MapScreen";
@@ -76,7 +77,7 @@ export default function WalletScreen({
                 className="wallet-caught-item"
                 style={{ ["--rarity" as string]: RARITY_LADDER[coin.rarity].colour }}
               >
-                <img src={coin.image} alt="" loading="lazy" decoding="async" />
+                <Image src={coin.image} alt="" width={38} height={38} />
                 <em>{coin.symbol}</em>
               </span>
             ))}
@@ -90,7 +91,7 @@ export default function WalletScreen({
           {ASSETS.map((asset) => (
             <li key={asset.name} className="wallet-row">
               <span className="wallet-row-icon">
-                {asset.badge ? <img src={asset.badge} alt="" /> : <b>{asset.name.slice(0, 1)}</b>}
+                {asset.badge ? <Image src={asset.badge} alt="" width={38} height={38} /> : <b>{asset.name.slice(0, 1)}</b>}
               </span>
               <span className="wallet-row-main">
                 <b>{asset.name}</b>
@@ -109,7 +110,7 @@ export default function WalletScreen({
         <span className="wallet-section-title">{t("recentBadges")}</span>
         <div className="wallet-badges">
           {BADGES.map((src) => (
-            <img key={src} src={src} alt="" loading="lazy" />
+            <Image key={src} src={src} alt="" width={38} height={38} />
           ))}
         </div>
       </div>
