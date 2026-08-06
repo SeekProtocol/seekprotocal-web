@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -119,7 +120,7 @@ function HomeContent() {
         <Marquee speed={54}>
           {PRESS_LOGOS.map((logo) => (
             <span key={logo.src} className="logo-wall-item">
-              <img src={`/images/${logo.src}`} alt={logo.alt} loading="lazy" />
+              <Image src={`/images/${logo.src}`} alt={logo.alt} width={120} height={40} style={{ height: "auto" }} />
             </span>
           ))}
         </Marquee>

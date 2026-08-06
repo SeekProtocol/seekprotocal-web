@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { RARITY_LADDER, type Collectible } from "@/content/collectibles";
@@ -43,7 +44,7 @@ export default function ResultScreen({
           </span>
         )}
         <span className="result-glow" aria-hidden="true" />
-        <img src={coin.image} alt="" className="result-coin" loading="lazy" decoding="async" />
+        <Image src={coin.image} alt="" width={130} height={130} className="result-coin" />
       </div>
 
       <p className="result-verdict">{outcome.caught ? t("caught") : t("escaped")}</p>

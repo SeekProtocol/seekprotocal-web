@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { useFormatter, useTranslations } from "next-intl";
@@ -264,7 +265,7 @@ export default function GlobeSection() {
               )}
               {shown.map((drop) => (
                 <li key={drop.id} className="globe-feed-row">
-                  <img className="globe-feed-coin" src={drop.coin.image} alt="" />
+                  <Image className="globe-feed-coin" src={drop.coin.image} alt="" width={22} height={22} />
                   <span className="globe-feed-place">
                     {drop.city.name}
                     <span className="t-mono-sm globe-feed-country">{drop.city.country}</span>
@@ -324,7 +325,7 @@ function DropCard({
 
       <div className="drop-card-hero" data-state={rolling ?? undefined}>
         {/* The coin the pin was actually carrying. */}
-        <img src={drop.coin.image} alt="" className="drop-card-coin" />
+        <Image src={drop.coin.image} alt="" width={96} height={96} className="drop-card-coin" />
         <span className="drop-card-halo" aria-hidden="true" />
       </div>
 
