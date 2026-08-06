@@ -6,26 +6,55 @@ import { routing } from "@/i18n/routing";
 const defaultLocale = routing.defaultLocale;
 
 /**
- * Only canonical URLs belong here, and only one entry per canonical.
+ * Only canonical URLs belong here, and one entry per canonical.
  *
- * Every page except the articles is translated now, so each entry lists its /en
- * URL once and carries the hreflang cluster beside it. The articles are the
- * exception and list /en alone, matching the canonical they declare. Advertising
- * /nl/blog/<slug> with a cluster while the page canonicalises to /en would
- * contradict the page and spend crawl budget on URLs we are asking Google not
- * to index.
+ * The rule was right and the arithmetic under it was wrong. It used to emit the
+ * /en URL alone for each translated page, on the reading that a page has one
+ * canonical. These pages have eight: every locale self-canonicalises, so
+ * /nl/business declares itself canonical and is not a duplicate of anything.
+ * "One entry per canonical" therefore means eighty entries for ten pages, not
+ * ten. Measured before the change: the site declared 86 canonical URLs and the
+ * sitemap offered 16.
+ *
+ * The seventy that were missing were still reachable — the hreflang cluster
+ * beside each entry names them, and so does every page's own head — but reach
+ * is not submission. They carried no lastmod of their own and never appeared in
+ * Search Console's coverage as URLs we had asked for, which is the thing worth
+ * having while the site is new and ranking for almost nothing.
+ *
+ * The articles remain the exception and list /en alone, matching the canonical
+ * they declare. Advertising /nl/blog/<slug> with a cluster while the page
+ * canonicalises to /en would contradict the page and spend crawl budget on URLs
+ * we are asking Google not to index.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastUpdated = new Date("2026-08-05");
   const ogImage = OG_IMAGE.url;
 
-  const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly" }[] = [
-    { path: "/", priority: 1, changeFrequency: "weekly" },
-    { path: "/about", priority: 0.8, changeFrequency: "monthly" },
-    { path: "/blog", priority: 0.8, changeFrequency: "weekly" },
-    { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
-    { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
-    { path: "/terms-conditions", priority: 0.3, changeFrequency: "yearly" },
+  /**
+   * `lastModified` is per page, and it is maintained by hand.
+   *
+   * It was one shared constant, which was accurate on the day the rebuild
+   * landed and becomes a lie the moment any single page changes. Per page it
+   * can at least be told the truth.
+   *
+   * Deliberately not the build time. Every deploy would then claim every page
+   * had just changed, including the eight deploys in an hour this codebase saw
+   * on 6 August; a lastmod that always says "just now" carries no information
+   * and Google is entitled to stop believing it. Deliberately not the git mtime
+   * either: Vercel builds from a shallow clone, and half of what a page renders
+   * lives in messages/ and content/ rather than in the page file.
+   *
+   * So: change a page, change its date here.
+   */
+  const REBUILT = new Date("2026-08-05");
+
+  const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly"; lastModified: Date }[] = [
+    { path: "/", priority: 1, changeFrequency: "weekly", lastModified: REBUILT },
+    { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
+    { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: REBUILT },
+    { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: REBUILT },
+    { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
+    { path: "/terms-conditions", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
 
     /* These four were English-only and listed without an hreflang cluster. They
        are translated as of ad9703b, and their pages moved back to
@@ -33,20 +62,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
        claiming one URL for a page that declares eight. Contradicting the page is
        worse than saying nothing: the twenty-eight translated URLs would simply
        not be offered for crawling. */
-    { path: "/ecosystem", priority: 0.9, changeFrequency: "monthly" },
-    { path: "/whitepaper", priority: 0.9, changeFrequency: "monthly" },
-    { path: "/roadmap", priority: 0.8, changeFrequency: "monthly" },
-    { path: "/business", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/ecosystem", priority: 0.9, changeFrequency: "monthly", lastModified: REBUILT },
+    { path: "/whitepaper", priority: 0.9, changeFrequency: "monthly", lastModified: REBUILT },
+    { path: "/roadmap", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
+    { path: "/business", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
   ];
 
-  const translatedEntries: MetadataRoute.Sitemap = translated.map((page) => ({
-    url: `${baseUrl}/${defaultLocale}${page.path === "/" ? "" : page.path}`,
-    lastModified: lastUpdated,
-    changeFrequency: page.changeFrequency,
-    priority: page.priority,
-    alternates: getSitemapAlternates(page.path),
-    images: [ogImage],
-  }));
+  /* One entry per locale, each pointing at itself and each carrying the same
+     cluster. The cluster does not vary by locale — it names all eight versions
+     plus x-default whichever one you are looking at — which is exactly what
+     makes them a set rather than eight pages that happen to be similar.
+
+     `priority` is not lowered for the non-default locales. It says how the
+     pages rank against each other within this file, not how they rank against
+     the world, and a Dutch reader's homepage is no less the homepage. Google
+     has ignored the field for years in any case; keeping it consistent costs
+     nothing and misstating it would be the only way to get it wrong. */
+  const translatedEntries: MetadataRoute.Sitemap = translated.flatMap((page) =>
+    routing.locales.map((locale) => ({
+      url: `${baseUrl}/${locale}${page.path === "/" ? "" : page.path}`,
+      lastModified: page.lastModified,
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+      alternates: getSitemapAlternates(page.path),
+      images: [ogImage],
+    })),
+  );
 
   /* The articles are the only single-language content left: their bodies live in
      lib/blog-data.ts in English and are not in the message files, which is why
