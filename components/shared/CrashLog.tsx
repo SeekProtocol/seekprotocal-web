@@ -44,12 +44,27 @@ export default function CrashLog() {
     window.addEventListener("unhandledrejection", onRejection);
 
     let last = 0;
+    let queued = false;
+    /* localStorage.setItem is synchronous, and a diagnostic has no business
+       landing in a scroll frame on the device it is diagnosing. Deferred to an
+       idle slot, so the write happens between frames rather than inside one.
+       requestIdleCallback is missing on older Safari; a timeout gets it out of
+       the current task there, which is the part that matters. */
+    const defer =
+      typeof requestIdleCallback === "function"
+        ? (fn: () => void) => requestIdleCallback(fn, { timeout: 1000 })
+        : (fn: () => void) => window.setTimeout(fn, 0);
+
     const tick = () => {
       if (document.visibilityState !== "visible") return;
       const now = Date.now();
-      if (now - last < 2000) return;
+      if (now - last < 2000 || queued) return;
       last = now;
-      recordBreadcrumb();
+      queued = true;
+      defer(() => {
+        queued = false;
+        recordBreadcrumb();
+      });
     };
     /* scroll rather than an interval: the failure is bound to scrolling, and an
        idle tab has nothing worth recording. passive so it never delays a frame. */

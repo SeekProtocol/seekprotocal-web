@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type RefObject } from "react";
+import { isHandheld } from "@/lib/render-budget";
 
 /**
  * The scroll position is the target, not the value.
@@ -56,9 +57,30 @@ export function useScrubbedSection({
     stopsRef.current = stops;
   }, [stops]);
 
+  /* Both sections this drives are display: none on a handheld (.scene-scrubbed),
+     so everything below is work done for something nobody can see. Tracked as
+     state rather than read once, because an iPad rotated into landscape crosses
+     the 1024px edge and the section becomes real: the listener is what notices.
+     Only the listener sets it — the initial value is already known here. */
+  const [handheld, setHandheld] = useState(isHandheld);
+  useEffect(() => {
+    const check = () => setHandheld(isHandheld());
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
+
+    /* Nothing to scrub, and more to the point nothing to measure. Left running,
+       this attaches a scroll listener that calls getBoundingClientRect on every
+       event, for each of the two sections, on the one device that cannot afford
+       it. The rect on a display: none element is all zeros, so `scrollable`
+       comes out negative and measure() returns having done nothing but force
+       the layout — and it forces a full one, because SiteEffects writes
+       --scroll-progress to the document element on the frame before it. */
+    if (handheld) return;
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       progressRef.current = restingProgress;
@@ -144,7 +166,7 @@ export function useScrubbedSection({
       window.removeEventListener("scroll", measure);
       window.removeEventListener("resize", measure);
     };
-  }, [sectionRef, progressRef, restingProgress, restingStage, follow]);
+  }, [sectionRef, progressRef, restingProgress, restingStage, follow, handheld]);
 
   return stage;
 }
