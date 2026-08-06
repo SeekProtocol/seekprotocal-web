@@ -96,7 +96,8 @@ ${e.message}
 ${e.source ? `at ${e.source}\n` : ""}url        ${e.url}
 scrollY    ${e.scrollY}
 viewport   ${e.viewport} @ ${e.dpr}x
-canvases   ${e.canvases}  (${e.megapixels} MP of drawing buffer)${
+canvases   ${e.canvases}  (${e.megapixels} MP of drawing buffer)
+exit       ${e.exit ?? "not recorded"}${
   e.memoryMB !== undefined ? `\nJS heap    ${e.memoryMB} MB` : ""
 }${e.stack ? `\n\n${e.stack}` : ""}`}
                 </pre>

@@ -69,16 +69,22 @@ export default function CrashLog() {
     /* scroll rather than an interval: the failure is bound to scrolling, and an
        idle tab has nothing worth recording. passive so it never delays a frame. */
     window.addEventListener("scroll", tick, { passive: true });
-    /* pagehide fires on a normal navigation away, which a kill does not, so it is
-       a bonus rather than the mechanism. */
-    window.addEventListener("pagehide", recordBreadcrumb);
+    /* pagehide is the mechanism, not a bonus. It fires when the document is told
+       it is going — a refresh, a back tap, a link — and does not fire when the
+       tab is killed. Stamping which one happened is the only way to tell a crash
+       from a reader pressing refresh, because the navigation type that follows
+       reads the same either way. Written synchronously on purpose: there is no
+       idle slot left once this fires. */
+    const onPageHide = (event: PageTransitionEvent) =>
+      recordBreadcrumb(event.persisted ? "bfcache" : "unload");
+    window.addEventListener("pagehide", onPageHide);
     tick();
 
     return () => {
       window.removeEventListener("error", onError);
       window.removeEventListener("unhandledrejection", onRejection);
       window.removeEventListener("scroll", tick);
-      window.removeEventListener("pagehide", recordBreadcrumb);
+      window.removeEventListener("pagehide", onPageHide);
     };
   }, []);
 

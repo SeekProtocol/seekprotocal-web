@@ -34,6 +34,23 @@ export type CrashEntry = {
   canvases: number;
   megapixels: number;
   memoryMB?: number;
+  /**
+   * How the document this was written in left, which is the whole difference
+   * between a crash and a reader pressing refresh.
+   *
+   * `live` is the default a scroll breadcrumb carries: still running, no exit
+   * seen. If a breadcrumb is still saying `live` when the next document starts,
+   * the one before it went without being asked — nothing ran, `pagehide` never
+   * fired, and that is what a memory kill looks like from in here.
+   *
+   * `unload` and `bfcache` are both orderly. `pagehide` fired, so the document
+   * was told it was going: a refresh, a tap on back, a link. Those are not
+   * crashes, and until this field existed there was no way to tell them apart
+   * from one — `performance.navigation.type` reports "reload" for a deliberate
+   * pull-to-refresh and "back_forward" for an ordinary back tap, exactly as it
+   * does after a kill.
+   */
+  exit?: "live" | "unload" | "bfcache";
 };
 
 function snapshot() {
@@ -137,12 +154,25 @@ export function recordReload() {
     const crumb = log.find((e) => e.kind === "breadcrumb");
     if (!crumb) return;
 
+    /* Whether the document before this one was told it was going.
+       `pagehide` writes unload or bfcache into the breadcrumb; a breadcrumb
+       still reading `live` means nothing ran on the way out. Entries written
+       before this field existed have no `exit` at all, and those stay
+       "unknown" rather than being counted either way. */
+    const exit = crumb.exit;
+    const verdict =
+      exit === undefined
+        ? `came back as "${nav.type}" — no exit was recorded, so this one cannot be called either way`
+        : exit === "live"
+          ? `KILLED — the page before this went without notice (nav "${nav.type}", no pagehide). Fields below are its last state.`
+          : `left cleanly (${exit}) — a refresh or a back tap, not a crash. Fields below are its last state.`;
+
     /* The snapshot and the timestamp are the breadcrumb's, not now's: the point
        of the entry is where the page was before it went, not where it is after. */
     const entry: CrashEntry = {
       ...crumb,
       kind: "reload",
-      message: `page came back as "${nav.type}" — fields below are the last state before it`,
+      message: verdict,
     };
     window.localStorage.setItem(KEY, JSON.stringify([entry, ...log].slice(0, MAX_ENTRIES)));
   } catch {
@@ -150,15 +180,16 @@ export function recordReload() {
   }
 }
 
-export function recordBreadcrumb() {
+export function recordBreadcrumb(exit: CrashEntry["exit"] = "live") {
   if (typeof window === "undefined") return;
   try {
     const rest = readCrashLog().filter((e) => e.kind !== "breadcrumb");
     const entry: CrashEntry = {
       at: new Date().toISOString(),
       kind: "breadcrumb",
-      message: "last known state",
+      message: exit === "live" ? "last known state" : `left cleanly (${exit})`,
       ...snapshot(),
+      exit,
     };
     window.localStorage.setItem(
       KEY,
