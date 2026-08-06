@@ -880,11 +880,15 @@ a {
    blanket reset is repeated at the end of app-ui.css, which is its own route
    stylesheet and out of this one's reach — if you edit one, edit both. */
 @media (pointer: coarse) and (max-width: 1024px) {
+  /* Unprefixed only, and that is not an oversight. Writing the -webkit- pair by
+     hand here made the minifier treat the two as one declaration and keep only
+     the prefixed half, which left every unprefixed blur standing — .map-hint
+     kept its 12px through the whole of this block. Autoprefixing emits both.
+     The bisect switches below have always relied on the same thing. */
   *,
   *::before,
   *::after {
     backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
     will-change: auto !important;
   }
 
