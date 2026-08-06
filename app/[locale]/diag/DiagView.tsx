@@ -97,7 +97,8 @@ ${e.source ? `at ${e.source}\n` : ""}url        ${e.url}
 scrollY    ${e.scrollY}
 viewport   ${e.viewport} @ ${e.dpr}x
 canvases   ${e.canvases}  (${e.megapixels} MP of drawing buffer)
-exit       ${e.exit ?? "not recorded"}${
+exit       ${e.exit ?? "not recorded"}
+build      ${e.deployment ?? "not recorded"}${
   e.memoryMB !== undefined ? `\nJS heap    ${e.memoryMB} MB` : ""
 }${e.stack ? `\n\n${e.stack}` : ""}`}
                 </pre>

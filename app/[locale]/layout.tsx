@@ -14,6 +14,7 @@ import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import { ThemeProvider, themeInitScript } from "@/components/theme/ThemeProvider";
 import { bisectInitScript } from "@/lib/bisect";
+import { deploymentInitScript } from "@/lib/crash-log";
 import "../globals.css";
 
 const dmSans = DM_Sans({
@@ -195,6 +196,9 @@ export default async function LocaleLayout({
         {/* Diagnostic switches (?fx=off, ?anim=off, ?img=off, ?3d=off). Before
             first paint for the same reason: a flag has to hold for frame one. */}
         <script dangerouslySetInnerHTML={{ __html: bisectInitScript }} />
+        {/* Reads the build id off <html> before React hydrates it away, so the
+            crash log can tell a deploy-triggered reload from a reader's. */}
+        <script dangerouslySetInnerHTML={{ __html: deploymentInitScript }} />
       </head>
       <body>
         <NextIntlClientProvider messages={clientMessages(messages)}>

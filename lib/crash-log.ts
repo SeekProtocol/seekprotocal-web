@@ -51,7 +51,41 @@ export type CrashEntry = {
    * does after a kill.
    */
   exit?: "live" | "unload" | "bfcache";
+  /**
+   * Which build of the site this document was served by.
+   *
+   * Vercel stamps it on <html> and returns it on every RSC response as
+   * `x-nextjs-deployment-id`. Next compares the two, and when they disagree —
+   * which happens the moment a deploy lands while someone has the page open —
+   * it reloads the whole document so the reader is not left running half of one
+   * build and half of another. Scrolling is enough to trigger the check: links
+   * entering the viewport are prefetched, and the prefetch is what carries the
+   * newer id back.
+   *
+   * That reload is indistinguishable from a reader pressing refresh. Both fire
+   * pagehide, both come back as navigation type "reload". The only thing that
+   * separates them is that the build changed underneath, which is exactly what
+   * this field records. Two entries 4 seconds apart in the log were read as a
+   * reader refreshing twice; with this they would have named themselves.
+   */
+  deployment?: string;
 };
+
+/**
+ * Reads the build id before React can take it off.
+ *
+ * Vercel writes `data-dpl-id` on <html>, and React removes attributes it did
+ * not render when it hydrates the root — the bisect flags were lost exactly
+ * this way and had to be reapplied on mount. This runs in <head>, before the
+ * body is parsed, so it reads the value while it is still there and parks it
+ * somewhere hydration does not touch.
+ */
+export const deploymentInitScript = `(function(){try{window.__seekDeployment=document.documentElement.getAttribute("data-dpl-id")||"";}catch(e){}})();`;
+
+function deployment(): string | undefined {
+  const id = (window as unknown as { __seekDeployment?: string }).__seekDeployment;
+  return id || undefined;
+}
 
 function snapshot() {
   const canvases = Array.from(document.querySelectorAll("canvas"));
@@ -67,6 +101,7 @@ function snapshot() {
     canvases: canvases.length,
     megapixels: Number(mp.toFixed(2)),
     ...(mem ? { memoryMB: Math.round(mem.usedJSHeapSize / 1048576) } : {}),
+    ...(deployment() ? { deployment: deployment() } : {}),
   };
 }
 
@@ -160,12 +195,24 @@ export function recordReload() {
        before this field existed have no `exit` at all, and those stay
        "unknown" rather than being counted either way. */
     const exit = crumb.exit;
-    const verdict =
-      exit === undefined
+
+    /* A build that changed underneath the reader outranks every other reading.
+       Next reloads the whole document when the deployment it fetches does not
+       match the one it was served, so an orderly exit at that moment is the
+       framework doing it, not the reader — and it looks identical from every
+       other angle. Checked first for that reason. */
+    const wasRedeployed =
+      crumb.deployment !== undefined &&
+      deployment() !== undefined &&
+      crumb.deployment !== deployment();
+
+    const verdict = wasRedeployed
+      ? `REDEPLOYED — the site shipped a new build while this page was open, so Next reloaded the whole document. Not a crash. Fields below are its last state.`
+      : exit === undefined
         ? `came back as "${nav.type}" — no exit was recorded, so this one cannot be called either way`
         : exit === "live"
           ? `KILLED — the page before this went without notice (nav "${nav.type}", no pagehide). Fields below are its last state.`
-          : `left cleanly (${exit}) — a refresh or a back tap, not a crash. Fields below are its last state.`;
+          : `left cleanly (${exit}) — a refresh or a back tap, and the build did not change. Fields below are its last state.`;
 
     /* The snapshot and the timestamp are the breadcrumb's, not now's: the point
        of the entry is where the page was before it went, not where it is after. */
