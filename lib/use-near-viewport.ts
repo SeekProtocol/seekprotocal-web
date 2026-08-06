@@ -58,6 +58,52 @@ const RELEASE_GAP = 0.5;
 const margin = (reach: number) => `${reach * 100}% 0px`;
 
 /**
+ * The second half of the hysteresis, in time rather than in distance.
+ *
+ * Distance alone says nothing about how fast the reader is crossing it. Flick
+ * the homepage from the hero to the footer and back and every gate on the way
+ * enters build reach, latches, and is evicted again by the next one, a few
+ * times a second. Each of those cycles creates a WebGL context, compiles its
+ * shaders, uploads its models and then throws all of it away, for a scene
+ * nobody saw. It is the most expensive possible response to the cheapest
+ * possible gesture, and on an iPhone it is what takes the tab down: Safari
+ * reclaims a released context on its own schedule, so a fast scroll can have
+ * several of them outstanding at once no matter how promptly they are dropped.
+ *
+ * So a scene waits for the page to be still before it builds. SETTLE is short
+ * enough to feel immediate when scrolling stops and long enough that nothing
+ * builds mid-flick.
+ *
+ * LINGER is the same idea on the way out. A scene that has gone out of range
+ * is not torn down at once, because scrolling a little too far and coming back
+ * is an ordinary thing to do and rebuilding is dear. Anything that returns
+ * inside the grace period keeps what it had.
+ */
+const SETTLE_MS = 180;
+const LINGER_MS = 500;
+
+/**
+ * When the page last moved. One passive listener for every gate on the page,
+ * registered once, rather than one per scene.
+ */
+let lastScrollAt = 0;
+if (typeof window !== "undefined") {
+  window.addEventListener("scroll", () => { lastScrollAt = Date.now(); }, { passive: true });
+}
+
+/** Runs `then` once the page has been still for SETTLE_MS. Returns a canceller. */
+function whenSettled(then: () => void) {
+  let timer = 0;
+  const tick = () => {
+    const still = Date.now() - lastScrollAt;
+    if (still >= SETTLE_MS) return then();
+    timer = window.setTimeout(tick, SETTLE_MS - still);
+  };
+  tick();
+  return () => window.clearTimeout(timer);
+}
+
+/**
  * Every scene currently holding itself built on a handheld.
  *
  * Distance alone has never been able to promise how many of these are alive at
@@ -135,14 +181,24 @@ export function useNearViewport(
       const holder: Holder = { el, release: () => setNear(false) };
       claim(holder);
 
+      /* Out of range is not torn down at once. Scrolling a shade too far and
+         coming straight back is ordinary, and a rebuild is dear; anything that
+         returns inside the grace period keeps what it had. */
+      let linger = 0;
       const release = new IntersectionObserver(
         (entries) => {
-          if (entries.every((entry) => !entry.isIntersecting)) setNear(false);
+          if (entries.every((entry) => !entry.isIntersecting)) {
+            window.clearTimeout(linger);
+            linger = window.setTimeout(() => setNear(false), LINGER_MS);
+          } else {
+            window.clearTimeout(linger);
+          }
         },
         { rootMargin: margin(buildReach + RELEASE_GAP) },
       );
       release.observe(el);
       return () => {
+        window.clearTimeout(linger);
         release.disconnect();
         live.delete(holder);
       };
@@ -171,23 +227,37 @@ export function useNearViewport(
        section gains a box, and the observer is there to notice. */
     const hasBox = box.width > 0 || box.height > 0;
     if (hasBox && box.top < window.innerHeight + reach && box.bottom > -reach) {
-      /* A one-time latch read off geometry. The extra render the rule warns
-         about is the intent, and it costs one pass per scene instead of a
-         spinner frame the reader did not need to see. */
-      // eslint-disable-next-line react-hooks/set-state-in-effect
+      /* A one-time latch read off geometry, and the one build that does not
+         wait for the page to be still. It cannot fire mid-flick: a scene only
+         mounts when the gate above it has already settled, so by the time this
+         runs the page is at rest and the extra 180ms would just be a spinner
+         the reader did not need to see. */
       setNear(true);
       return;
     }
 
+    /* In range is not built at once either. A flick down the page and back puts
+       every gate on the way into range for a few frames each, and building on
+       that is how a gesture that costs the reader nothing comes to cost the tab
+       everything. Nothing is constructed until the page is still. */
+    let cancelSettle: (() => void) | null = null;
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) setNear(true);
+        if (entries.some((entry) => entry.isIntersecting)) {
+          cancelSettle ??= whenSettled(() => setNear(true));
+        } else {
+          cancelSettle?.();
+          cancelSettle = null;
+        }
       },
       { rootMargin: margin(buildReach) },
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      cancelSettle?.();
+      observer.disconnect();
+    };
   }, [ref, buildReach, near]);
 
   return near;
