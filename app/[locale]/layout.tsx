@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { getMultilingualAlternates, OG_IMAGE, baseUrl } from "@/lib/seo";
 import SiteEffects from "@/components/shared/SiteEffects";
+import CrashLog from "@/components/shared/CrashLog";
 import CookieConsent from "@/components/shared/CookieConsent";
 import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
 import SiteHeader from "@/components/layout/SiteHeader";
@@ -193,6 +194,9 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={clientMessages(messages)}>
+          {/* First in the tree so its listeners are attached before anything
+              below it has had a chance to throw. Renders nothing. */}
+          <CrashLog />
           <GoogleAnalytics />
           <script
             type="application/ld+json"

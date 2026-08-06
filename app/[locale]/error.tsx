@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { record } from "@/lib/crash-log";
 
 /**
  * Route-level error boundary.
@@ -33,6 +34,12 @@ export default function RouteError({
   useEffect(() => {
     // Goes to the browser console, and to Vercel's log drain if one is attached.
     console.error("[route error]", error.digest ?? "", error.message, error.stack);
+    /* And to local storage, which is the only one of the three that survives a
+       tap on "try again" or a swipe away. Read it back at /en/diag. */
+    record("boundary", error.message || "route error", {
+      source: error.digest ? `digest ${error.digest}` : undefined,
+      stack: error.stack,
+    });
   }, [error]);
 
   return (

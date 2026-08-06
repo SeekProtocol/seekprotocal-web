@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { record } from "@/lib/crash-log";
 
 /**
  * The last boundary, for errors thrown by the root layout itself.
@@ -24,6 +25,13 @@ export default function GlobalError({
 }) {
   useEffect(() => {
     console.error("[global error]", error.digest ?? "", error.message, error.stack);
+    /* Written to local storage as well. This boundary replaces the document, so
+       the console is the only other record and it does not survive the reload
+       the reader is about to do. Read it back at /en/diag. */
+    record("boundary", error.message || "global error", {
+      source: error.digest ? `digest ${error.digest}` : undefined,
+      stack: error.stack,
+    });
   }, [error]);
 
   return (
