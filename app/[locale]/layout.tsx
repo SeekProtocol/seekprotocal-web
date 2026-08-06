@@ -9,7 +9,7 @@ import { getMultilingualAlternates, OG_IMAGE, baseUrl } from "@/lib/seo";
 import SiteEffects from "@/components/shared/SiteEffects";
 import CrashLog from "@/components/shared/CrashLog";
 import CookieConsent from "@/components/shared/CookieConsent";
-import GoogleAnalytics, { GoogleTagManagerNoScript } from "@/components/shared/GoogleAnalytics";
+import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import { ThemeProvider, themeInitScript } from "@/components/theme/ThemeProvider";
@@ -199,15 +199,13 @@ export default async function LocaleLayout({
         {/* Reads the build id off <html> before React hydrates it away, so the
             crash log can tell a deploy-triggered reload from a reader's. */}
         <script dangerouslySetInnerHTML={{ __html: deploymentInitScript }} />
-        {/* Consent Mode defaults, then GA4 and Tag Manager. In <head> and last
-            among these, because the defaults have to reach the dataLayer before
-            either tag reads it — that ordering is what keeps Google from
-            writing anything to the device before the banner is answered. */}
+        {/* Consent Mode defaults, then GA4. In <head> and last among these,
+            because the defaults have to reach the dataLayer before the tag
+            reads it — that ordering is what keeps Google from writing anything
+            to the device before the banner is answered. */}
         <GoogleAnalytics />
       </head>
       <body>
-        {/* Immediately after <body>, where Tag Manager's fallback belongs. */}
-        <GoogleTagManagerNoScript />
         <NextIntlClientProvider messages={clientMessages(messages)}>
           {/* First in the tree so its listeners are attached before anything
               below it has had a chance to throw. Renders nothing. */}
