@@ -5,7 +5,7 @@ import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import { baseUrl, getSingleLanguageAlternates, getBreadcrumbJsonLd } from "@/lib/seo";
+import { baseUrl, getSingleLanguageAlternates, getBreadcrumbJsonLd, getOpenGraph } from "@/lib/seo";
 import { getBlogPost, blogPosts, getAllSlugs } from "@/lib/blog-data";
 
 interface BlogPostPageProps {
@@ -42,16 +42,18 @@ export async function generateMetadata({
        brand is already the first thing in the URL and the breadcrumb. */
     title: { absolute: post.title },
     description: post.excerpt,
-    openGraph: {
+    openGraph: getOpenGraph({
       title: post.title,
       description: post.excerpt,
-      // Articles are English only, so the share URL is the canonical one.
-      url: `/en/blog/${post.slug}`,
+      // Articles are English only, so the share URL is the canonical one and the
+      // OG locale is en whichever prefix was requested.
+      path: `/en/blog/${post.slug}`,
+      locale: "en",
       type: "article",
       publishedTime: post.date,
       section: post.category,
       images: [card],
-    },
+    }),
     twitter: {
       title: post.title,
       description: post.excerpt,

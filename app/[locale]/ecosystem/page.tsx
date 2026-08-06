@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { baseUrl, getMultilingualAlternates, OG_IMAGE, getBreadcrumbJsonLd } from "@/lib/seo";
+import { baseUrl, getMultilingualAlternates, OG_IMAGE, getBreadcrumbJsonLd, getOpenGraph } from "@/lib/seo";
 import { CAPABILITIES, FAQ_IDS, PARTICIPANTS } from "@/content/ecosystem";
 import { listCopy, withCopy } from "@/lib/content-i18n";
 import en from "@/messages/en.json";
@@ -24,12 +24,12 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description,
     alternates: getMultilingualAlternates("/ecosystem", locale),
-    openGraph: {
+    openGraph: getOpenGraph({
       title: t("ogTitle"),
       description,
-      url: `/${locale}/ecosystem`,
-      images: [OG_IMAGE],
-    },
+      path: `/${locale}/ecosystem`,
+      locale,
+    }),
     twitter: {
       title: t("ogTitle"),
       description,

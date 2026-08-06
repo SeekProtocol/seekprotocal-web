@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getOpenGraph } from "@/lib/seo";
 import BetaForm from "@/components/shared/BetaForm";
 import {
   ARIcon,
@@ -24,12 +24,12 @@ export async function generateMetadata({
   return {
     title: t("metaTitle"),
     description,
-    openGraph: {
+    openGraph: getOpenGraph({
       title: t("ogTitle"),
       description,
-      url: `/${locale}/about`,
-      images: [OG_IMAGE],
-    },
+      path: `/${locale}/about`,
+      locale,
+    }),
     twitter: {
       title: t("ogTitle"),
       description,

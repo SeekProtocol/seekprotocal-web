@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getOpenGraph } from "@/lib/seo";
 import ContactForm from "@/components/shared/ContactForm";
 
 export async function generateMetadata({
@@ -16,12 +16,12 @@ export async function generateMetadata({
   return {
     title: t("metaTitle"),
     description,
-    openGraph: {
+    openGraph: getOpenGraph({
       title: t("ogTitle"),
       description,
-      url: `/${locale}/contact`,
-      images: [OG_IMAGE],
-    },
+      path: `/${locale}/contact`,
+      locale,
+    }),
     twitter: {
       title: t("ogTitle"),
       description,

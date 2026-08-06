@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getOpenGraph } from "@/lib/seo";
 import styles from "./privacy-policy.module.css";
 
 export async function generateMetadata({
@@ -16,12 +16,12 @@ export async function generateMetadata({
   return {
     title: t("metaTitle"),
     description,
-    openGraph: {
+    openGraph: getOpenGraph({
       title: t("ogTitle"),
       description,
-      url: `/${locale}/privacy-policy`,
-      images: [OG_IMAGE],
-    },
+      path: `/${locale}/privacy-policy`,
+      locale,
+    }),
     twitter: {
       title: t("ogTitle"),
       description,

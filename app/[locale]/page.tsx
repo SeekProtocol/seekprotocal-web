@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates, OG_IMAGE } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getOpenGraph } from "@/lib/seo";
 import CoinStage from "@/components/sections/CoinStage";
 import WorldDescent from "@/components/sections/WorldDescent";
 import GlobeSection from "@/components/sections/GlobeSection";
@@ -37,12 +37,12 @@ export async function generateMetadata({
     // "- Redefining Innovation" was always truncated away.
     title: t("metaTitle"),
     description,
-    openGraph: {
+    openGraph: getOpenGraph({
       title: t("ogTitle"),
       description,
-      url: `/${locale}`,
-      images: [OG_IMAGE],
-    },
+      path: `/${locale}`,
+      locale,
+    }),
     twitter: {
       title: t("ogTitle"),
       description,

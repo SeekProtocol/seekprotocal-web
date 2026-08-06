@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates, OG_IMAGE, getBreadcrumbJsonLd } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getBreadcrumbJsonLd, getOpenGraph } from "@/lib/seo";
 import { CHAPTER_IDS, WHITEPAPER_META, type Block, type Chapter } from "@/content/whitepaper";
 import ReaderChrome from "@/components/whitepaper/ReaderChrome";
 import TokenomicsDonut from "@/components/whitepaper/TokenomicsDonut";
@@ -28,12 +28,12 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description: t("metaDescription"),
     alternates: getMultilingualAlternates("/whitepaper", locale),
-    openGraph: {
+    openGraph: getOpenGraph({
       title: t("ogTitle"),
       description: t("ogDescription"),
-      url: `/${locale}/whitepaper`,
-      images: [OG_IMAGE],
-    },
+      path: `/${locale}/whitepaper`,
+      locale,
+    }),
     twitter: {
       title: t("ogTitle"),
       description: t("ogDescription"),

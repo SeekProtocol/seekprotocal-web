@@ -14,6 +14,72 @@ export const OG_IMAGE = {
   alt: "Seek Protocol, digital assets anchored to real-world coordinates on Solana",
 } as const;
 
+/** OG locale codes, keyed by the routing locale. */
+const OG_LOCALE: Record<string, string> = {
+  en: "en_US",
+  nl: "nl_NL",
+  de: "de_DE",
+  es: "es_ES",
+  fr: "fr_FR",
+  zh: "zh_CN",
+  ja: "ja_JP",
+  ko: "ko_KR",
+};
+
+/**
+ * A complete Open Graph block for a page.
+ *
+ * This exists because Next merges metadata shallowly: a page that declares its
+ * own `openGraph` replaces the parent's object outright rather than adding to
+ * it. The layout was declaring type, siteName, locale and alternateLocale, and
+ * every page then quietly dropped all four by declaring an openGraph of its own.
+ * Measured on production: og:type, og:site_name and og:locale were absent from
+ * every page except the one article, which sets type itself.
+ *
+ * The consequence is not cosmetic. Without og:site_name a share card has no
+ * brand line under the title, and without og:locale a crawler has nothing but
+ * the html lang attribute to tell it which of eight versions it is holding.
+ *
+ * Pass only what is specific to the page; the site-wide fields are filled in
+ * here so they cannot be forgotten again.
+ */
+export function getOpenGraph({
+  title,
+  description,
+  path,
+  locale,
+  type = "website",
+  publishedTime,
+  section,
+  images,
+}: {
+  title: string;
+  description: string;
+  /** Locale-prefixed path, e.g. "/en/business". */
+  path: string;
+  locale: string;
+  type?: "website" | "article";
+  publishedTime?: string;
+  section?: string;
+  /** Overrides the site card. The articles each generate their own. */
+  images?: { url: string; width: number; height: number; alt: string }[];
+}) {
+  return {
+    title,
+    description,
+    type,
+    url: path,
+    siteName: "Seek Protocol",
+    locale: OG_LOCALE[locale] ?? "en_US",
+    alternateLocale: Object.entries(OG_LOCALE)
+      .filter(([loc]) => loc !== locale)
+      .map(([, og]) => og),
+    images: images ?? [OG_IMAGE],
+    ...(publishedTime ? { publishedTime } : {}),
+    ...(section ? { section } : {}),
+  };
+}
+
 /**
  * Canonical + hreflang for a page that genuinely exists in every locale.
  * Each locale self-canonicalises and the cluster points at all the others,

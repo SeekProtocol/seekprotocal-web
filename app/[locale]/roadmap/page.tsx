@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMultilingualAlternates, OG_IMAGE, getBreadcrumbJsonLd } from "@/lib/seo";
+import { getMultilingualAlternates, OG_IMAGE, getBreadcrumbJsonLd, getOpenGraph } from "@/lib/seo";
 import { PHASES } from "@/content/roadmap";
 
 export async function generateMetadata({
@@ -18,12 +18,12 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description,
     alternates: getMultilingualAlternates("/roadmap", locale),
-    openGraph: {
+    openGraph: getOpenGraph({
       title: t("ogTitle"),
       description,
-      url: `/${locale}/roadmap`,
-      images: [OG_IMAGE],
-    },
+      path: `/${locale}/roadmap`,
+      locale,
+    }),
     twitter: {
       title: t("ogTitle"),
       description,
