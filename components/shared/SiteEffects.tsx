@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { isOff } from "@/lib/bisect";
 
 /**
  * Page-wide micro-interactions, run from one place so pages can stay server
@@ -15,6 +16,14 @@ export default function SiteEffects() {
   const pathname = usePathname();
 
   useEffect(() => {
+    /* ?effects=off. Everything this component owns is observers and listeners
+       that live for the life of the page: an IntersectionObserver per reveal, a
+       MutationObserver over the whole body subtree, a ResizeObserver, and
+       pointermove and scroll on the window. This is the switch that asks
+       whether any of that is what the page cannot afford. Reveals are forced
+       visible by the same flag in CSS, so the page still reads. */
+    if (isOff("effects")) return;
+
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     // --- reveal on scroll -------------------------------------------------

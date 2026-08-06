@@ -12,12 +12,27 @@
  * cleared. Four tests of a couple of minutes each settle what no amount of
  * reasoning from a desktop has managed all day.
  *
- *   ?fx=off     no filter, backdrop-filter or blend mode
- *   ?anim=off   no animation, transition or will-change
- *   ?img=off    images take their space but are not painted
- *   ?3d=off     no WebGL scene is built at all
+ *   ?fx=off       no filter, backdrop-filter or blend mode
+ *   ?anim=off     no animation, transition or will-change
+ *   ?img=off      images take their space but are not painted
+ *   ?3d=off       no WebGL scene is built at all
+ *   ?effects=off  SiteEffects mounts nothing: no observers, no listeners
+ *   ?tail=off     the back half of the page is not rendered, halving its height
+ *   ?cf=off       no Turnstile widget, and its script is never fetched
+ *
+ * `cf` was added last and should have been first. Turnstile is failing with a
+ * 401 in production and retrying on its own schedule, forever, inside an iframe
+ * on another origin — so it is the one thing on the page that none of the flags
+ * above could reach, and every one of those tests still had it running. Its
+ * console output is the loudest thing on the page and it was mistaken for noise
+ * twice, including by me.
  *
  * They combine: `?fx=off&anim=off` turns off both.
+ *
+ * `tail` is the odd one and the only one that changes the scroll under test.
+ * That is deliberate: once the things *on* the page have each been cleared, how
+ * much page there is becomes the suspect, and the only way to ask that question
+ * is to make it shorter.
  *
  * Applied before first paint, from an attribute on the document element, so a
  * flag is in force for the very first frame rather than arriving after one.
@@ -25,7 +40,15 @@
  * never uses it nothing but the attribute check.
  */
 
-export const BISECT_FLAGS = ["fx", "anim", "img", "3d"] as const;
+export const BISECT_FLAGS = [
+  "fx",
+  "anim",
+  "img",
+  "3d",
+  "effects",
+  "tail",
+  "cf",
+] as const;
 
 /**
  * Runs in <head> before the body is parsed. Kept to one statement per flag and

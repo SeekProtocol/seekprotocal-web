@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
+import { isOff } from "@/lib/bisect";
 import { useTranslations } from "next-intl";
 
 declare global {
@@ -37,6 +38,8 @@ export default function ContactForm() {
   const widgetIdRef = useRef<string | null>(null);
 
   useEffect(() => {
+    /* ?cf=off — skip the widget and its script entirely. See lib/bisect.ts. */
+    if (isOff("cf")) return;
     const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
     if (!siteKey) return;
 

@@ -892,3 +892,17 @@ a {
 [data-off-img] img {
   visibility: hidden !important;
 }
+
+/* ?effects=off — SiteEffects is what adds .is-in, so without it the reveals
+   would never arrive. Forced visible here instead. */
+[data-off-effects] .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* ?tail=off — drop the back half of the page. The only flag that deliberately
+   changes the scroll under test: once the things on the page have each been
+   cleared, how much page there is becomes the question. */
+[data-off-tail] main > *:nth-child(n + 9) {
+  display: none !important;
+}
