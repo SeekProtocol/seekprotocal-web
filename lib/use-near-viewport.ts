@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { isHandheld } from "@/lib/render-budget";
+import { isOff } from "@/lib/bisect";
 
 /**
  * Whether an element has come within reach of the viewport.
@@ -169,6 +170,9 @@ export function useNearViewport(
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    /* ?3d=off. One return covers every scene on the site, because they all
+       build through this gate. See lib/bisect.ts. */
+    if (isOff("3d")) return;
     if (typeof IntersectionObserver === "undefined") return;
 
     if (near) {

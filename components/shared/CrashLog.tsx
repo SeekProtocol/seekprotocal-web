@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { record, recordBreadcrumb, recordReload } from "@/lib/crash-log";
+import { applyBisectFlags } from "@/lib/bisect";
 
 /**
  * Writes uncaught errors and a position breadcrumb to local storage.
@@ -23,6 +24,11 @@ export default function CrashLog() {
        has just come back on its own, the breadcrumb still in storage is the
        last state before it went, and tick() is about to overwrite it. */
     recordReload();
+
+    /* React strips the bisect attributes off <html> during hydration, because
+       they are not among the ones it rendered. Put them back. Mounted first in
+       the tree, so this lands before anything below has drawn. */
+    applyBisectFlags();
 
     const onError = (event: ErrorEvent) => {
       record("error", event.message || "uncaught error", {

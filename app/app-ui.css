@@ -3554,3 +3554,37 @@
 
   .offer-card:hover, .offer-card[data-active] { transform: none; }
 }
+
+/* --------------------------------------------------------------------------
+   BISECT SWITCHES — second copy, and deliberately duplicated.
+
+   The same block sits at the end of globals.css. It has to exist here too
+   because this file is not imported from there: PhoneFrame imports it, so it
+   becomes its own route stylesheet, and a reset living only in the other chunk
+   never reaches the 18 backdrop-filters declared below. Verified by .map-hint,
+   which survived ?fx=off with its blur intact until this was added.
+
+   CSS has no way to say "and also apply that block over here" — @import is only
+   legal at the top of a file, which is where the rules being overridden are. So
+   the block is repeated. If you edit one, edit both. See lib/bisect.ts.
+   -------------------------------------------------------------------------- */
+
+[data-off-fx] *,
+[data-off-fx] *::before,
+[data-off-fx] *::after {
+  filter: none !important;
+  backdrop-filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+[data-off-anim] *,
+[data-off-anim] *::before,
+[data-off-anim] *::after {
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+
+[data-off-img] img {
+  visibility: hidden !important;
+}

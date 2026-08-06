@@ -13,6 +13,7 @@ import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import { ThemeProvider, themeInitScript } from "@/components/theme/ThemeProvider";
+import { bisectInitScript } from "@/lib/bisect";
 import "../globals.css";
 
 const dmSans = DM_Sans({
@@ -191,6 +192,9 @@ export default async function LocaleLayout({
       <head>
         {/* Sets the theme before first paint so there is no flash. */}
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        {/* Diagnostic switches (?fx=off, ?anim=off, ?img=off, ?3d=off). Before
+            first paint for the same reason: a flag has to hold for frame one. */}
+        <script dangerouslySetInnerHTML={{ __html: bisectInitScript }} />
       </head>
       <body>
         <NextIntlClientProvider messages={clientMessages(messages)}>

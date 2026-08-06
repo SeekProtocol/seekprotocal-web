@@ -846,3 +846,49 @@ a {
 
 .mt-auto { margin-top: auto; }
 .full-bleed-line { border-top: 1px solid var(--line); }
+
+/* --------------------------------------------------------------------------
+   9. BISECT SWITCHES
+   --------------------------------------------------------------------------
+
+   Diagnostic only, and inert unless the URL asks for them. See lib/bisect.ts
+   for what they are for: the crash log can prove the tab is being killed but
+   not what is costing, because iOS gives a page no way to ask how much memory
+   it is holding. These take suspects off the page one at a time so the answer
+   can be arrived at by subtraction instead of by argument.
+
+   !important throughout, on purpose. The whole point is to beat every rule in
+   the two stylesheets above without having to find them all first. */
+
+/* ?fx=off — every filter, backdrop and blend, which is what promotes an
+   element to its own compositing layer and what iOS pays for per layer. */
+[data-off-fx] *,
+[data-off-fx] *::before,
+[data-off-fx] *::after {
+  filter: none !important;
+  backdrop-filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* ?anim=off — everything that moves, and every standing promise that something
+   is about to. Reveals are forced visible so the page is still readable with
+   their entrance transition gone. */
+[data-off-anim] *,
+[data-off-anim] *::before,
+[data-off-anim] *::after {
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+
+[data-off-anim] .reveal,
+[data-off-anim] .enter {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* ?img=off — images keep their boxes, so the page is the same height and the
+   same scroll, and simply are not painted or decoded into memory. */
+[data-off-img] img {
+  visibility: hidden !important;
+}
