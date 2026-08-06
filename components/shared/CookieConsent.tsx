@@ -84,39 +84,6 @@ function updateGoogleConsent(prefs: CookiePreferences) {
   });
 }
 
-function loadGoogleAnalytics() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const GA_ID = typeof window !== 'undefined' ? (window as any).__GA_MEASUREMENT_ID : null;
-  if (!GA_ID || GA_ID === 'G-XXXXXXXXXX') return;
-
-  if (document.querySelector(`script[src*="googletagmanager.com/gtag/js?id=${GA_ID}"]`)) return;
-
-  const script = document.createElement('script');
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  script.async = true;
-  document.head.appendChild(script);
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const w = window as any;
-  w.dataLayer = w.dataLayer || [];
-  function gtag(...args: unknown[]) {
-    w.dataLayer.push(args);
-  }
-  gtag('js', new Date());
-  /* SameSite=Lax, not None.
-     None means "send this cookie on every cross-site request", which is for
-     measurement spanning more than one domain. There is one domain here, so
-     None only widened where the cookie travels without buying anything, and a
-     consent banner that has just been told "analytics only" should not be
-     handing out a cookie more freely than it needs to. Change it back to
-     None;Secure if cross-domain measurement is ever set up — it will not work
-     without it. */
-  gtag('config', GA_ID, {
-    anonymize_ip: true,
-    cookie_flags: 'SameSite=Lax;Secure',
-  });
-}
-
 function removeNonEssentialCookies() {
   const essentialPrefixes = [COOKIE_NAME, 'next', '__Host', '__Secure', 'NEXT_LOCALE'];
   document.cookie.split(';').forEach((c) => {
@@ -140,8 +107,9 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
     const saved = getSavedPreferences();
     if (saved) {
       setPreferences(saved);
+      /* The tags are already on the page and already holding at denied, so a
+         stored choice only has to be told. Nothing is loaded here any more. */
       updateGoogleConsent(saved);
-      if (saved.analytics) loadGoogleAnalytics();
     } else {
       const timer = setTimeout(() => setShowBanner(true), 800);
       return () => clearTimeout(timer);
@@ -156,9 +124,6 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
     setShowBanner(false);
     setShowDetails(false);
 
-    if (final.analytics) {
-      loadGoogleAnalytics();
-    }
     if (!final.analytics && !final.marketing) {
       removeNonEssentialCookies();
     }
