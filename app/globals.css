@@ -680,7 +680,26 @@ a {
   transform: none;
 }
 
-.enter { animation: rise 0.9s var(--ease-out) both; }
+/* The hero entrance, and the only thing .enter is used for.
+
+   Motion without opacity, deliberately. The <h1> in the hero is this page's LCP
+   element, because everything above the fold there is text. It used to borrow
+   `rise`, which starts at opacity 0 and runs for 0.9s behind an 80ms delay, and
+   a browser does not report an element as painted while it is transparent. So
+   the hero was holding its own Largest Contentful Paint back by most of a
+   second, for a fade the reader never asked to wait through. Measured at 8.4s
+   against a 2.5s target, with this as a part of it.
+
+   A transform costs nothing on that clock: the words are painted at once and
+   slide up from just below, so the stagger down the hero survives and the
+   measurement starts when the text actually appears. The reduced-motion rule
+   further down collapses the duration to nothing, as before. */
+@keyframes enter-slide {
+  from { transform: translate3d(0, 22px, 0); }
+  to { transform: none; }
+}
+
+.enter { animation: enter-slide 0.9s var(--ease-out) both; }
 
 /* Radar rings — the signature. Concentric pings expanding from the coin,
    the visual grammar of "something is findable within this radius". */
