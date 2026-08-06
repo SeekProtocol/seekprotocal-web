@@ -120,22 +120,26 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
     /* Bloom is what turns eight discrete blobs into one iridescent mass: the
        model alone renders as separate spheres.
        `UnrealBloomPass` keeps a mip chain of render targets, five levels of
-       them, on top of the composer's own two. On a phone, where five WebGL
-       contexts are already close to what Safari will tolerate, those are the
-       cheapest megabytes on the page to give back. The pass runs at half
-       resolution there, which on a small screen is not a difference anyone can
-       point at. */
-    const bloomScale = isHandheld() ? 0.5 : 1;
-    const composer = new EffectComposer(renderer);
-    composer.addPass(new RenderPass(scene, camera));
-    const bloom = new UnrealBloomPass(
-      new THREE.Vector2(1, 1),
-      0.62, // strength
-      0.72, // radius
-      0.28 // threshold — only the colour cluster and the eyes clear it
-    );
-    composer.addPass(bloom);
-    composer.addPass(new OutputPass());
+       them, on top of the composer's own two. On a phone that is the single
+       most expensive allocation this scene owns, and Safari kills the tab
+       under that pressure while scrolling. Handhelds skip the composer and
+       draw one plain pass — the orb stays readable without the glow. */
+    const handheld = isHandheld();
+    const bloomScale = 1;
+    let composer: EffectComposer | null = null;
+    let bloom: UnrealBloomPass | null = null;
+    if (!handheld) {
+      composer = new EffectComposer(renderer);
+      composer.addPass(new RenderPass(scene, camera));
+      bloom = new UnrealBloomPass(
+        new THREE.Vector2(1, 1),
+        0.62, // strength
+        0.72, // radius
+        0.28 // threshold — only the colour cluster and the eyes clear it
+      );
+      composer.addPass(bloom);
+      composer.addPass(new OutputPass());
+    }
 
     /* Shockwave. Three rings leave the orb on a tap, staggered, drawn sharp
        over the bloom so they read as an emitted signal rather than more glow.
@@ -302,9 +306,11 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
       const dpr = pixelRatio();
       renderer.setPixelRatio(dpr);
       renderer.setSize(w, h, false);
-      composer.setPixelRatio(dpr * bloomScale);
-      composer.setSize(w, h);
-      bloom.setSize(w * bloomScale, h * bloomScale);
+      if (composer && bloom) {
+        composer.setPixelRatio(dpr * bloomScale);
+        composer.setSize(w, h);
+        bloom.setSize(w * bloomScale, h * bloomScale);
+      }
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
     };
@@ -437,20 +443,26 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
         }
       }
 
-      // Speaking drives the glow, so the orb brightens as it talks, and a tap
-      // flashes it well past anything the states reach on their own.
-      bloom.strength = 0.55 + intensity * 0.5 + impulse * 1.1;
+      if (composer && bloom) {
+        // Speaking drives the glow, so the orb brightens as it talks, and a tap
+        // flashes it well past anything the states reach on their own.
+        bloom.strength = 0.55 + intensity * 0.5 + impulse * 1.1;
 
-      // Pass one: the colour cluster, bloomed.
-      camera.layers.set(BLOOM_LAYER);
-      composer.render();
+        // Pass one: the colour cluster, bloomed.
+        camera.layers.set(BLOOM_LAYER);
+        composer.render();
 
-      // Pass two: glass, eyes and halo drawn sharp over the top.
-      camera.layers.set(SHARP_LAYER);
-      renderer.autoClear = false;
-      renderer.clearDepth();
-      renderer.render(scene, camera);
-      renderer.autoClear = true;
+        // Pass two: glass, eyes and halo drawn sharp over the top.
+        camera.layers.set(SHARP_LAYER);
+        renderer.autoClear = false;
+        renderer.clearDepth();
+        renderer.render(scene, camera);
+        renderer.autoClear = true;
+      } else {
+        // Handheld: one pass, every layer, no composer targets.
+        camera.layers.enableAll();
+        renderer.render(scene, camera);
+      }
     };
     tick();
 
@@ -467,7 +479,7 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
       rings.forEach((ring) => ring.material.dispose());
       ringGeometry.dispose();
       disposables.forEach((d) => d.dispose());
-      composer.dispose();
+      composer?.dispose();
       renderer.dispose();
       /* dispose() releases what three.js allocated; it does not release the
          context itself. Safari keeps the drawing buffer of a detached canvas

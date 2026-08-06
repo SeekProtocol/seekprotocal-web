@@ -22,23 +22,9 @@ export default function VideoReveal() {
   const t = useTranslations("videoReveal");
   const hostRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const srcRef = useRef<string | null>(null);
   const [sound, setSound] = useState(false);
   const [clock, setClock] = useState("00:00 / 00:00");
-  /* A phone gets its own encode: 854x480 at 350 kb/s, 2.3 MB against the
-     desktop file's 16 MB. That is what makes autoplay affordable there. At the
-     size the frame is drawn on a handheld the two are hard to tell apart, and
-     a film that starts by itself is the point of the section. */
-  const [handheld, setHandheld] = useState(false);
-
-  useEffect(() => {
-    const phone = isHandheld();
-    /* One pass, on mount, to point the element at the lighter file. The rule
-       warns about cascading renders; this is the one render that cascade is
-       for, and it cannot be decided before hydration because it reads the
-       pointer type. */
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setHandheld(phone);
-  }, []);
 
   const toggleSound = useCallback(() => {
     const video = videoRef.current;
@@ -53,6 +39,14 @@ export default function VideoReveal() {
     const host = hostRef.current;
     const video = videoRef.current;
     if (!host) return;
+
+    /* Decide the encode before the element ever gets a src. Starting with the
+       desktop file and swapping after hydration lets Safari begin decoding
+       16 MB on a phone for one frame — enough to tip a scroll that is already
+       close to the edge. */
+    srcRef.current = isHandheld()
+      ? "/videos/Seekr-mobile.mp4"
+      : "/videos/Seekr.mp4";
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -86,12 +80,32 @@ export default function VideoReveal() {
       window.addEventListener("resize", onScroll);
     }
 
-    // Only play while it is actually on screen.
+    /* Pause is not enough on iOS. A paused <video> keeps its decoded frames in
+       GPU memory, and that buffer survives long after the section has left the
+       screen — often long enough to share the page with Mobi and the globe.
+       Dropping the src and calling load() is what actually frees it. */
+    const attach = () => {
+      if (!video || !srcRef.current) return;
+      if (video.getAttribute("src") !== srcRef.current) {
+        video.src = srcRef.current;
+        video.load();
+      }
+      video.play().catch(() => {});
+    };
+    const detach = () => {
+      if (!video) return;
+      video.pause();
+      if (video.getAttribute("src")) {
+        video.removeAttribute("src");
+        video.load();
+      }
+    };
+
     const observer = video
       ? new IntersectionObserver(
           ([entry]) => {
-            if (entry.isIntersecting) video.play().catch(() => {});
-            else video.pause();
+            if (entry.isIntersecting) attach();
+            else detach();
           },
           { threshold: 0.15 }
         )
@@ -114,6 +128,7 @@ export default function VideoReveal() {
       observer?.disconnect();
       video?.removeEventListener("timeupdate", onTime);
       video?.removeEventListener("loadedmetadata", onTime);
+      detach();
     };
   }, []);
 
@@ -124,12 +139,11 @@ export default function VideoReveal() {
         <div className="video-reveal-aperture">
           <video
             ref={videoRef}
-            src={handheld ? "/videos/Seekr-mobile.mp4" : "/videos/Seekr.mp4"}
             poster="/videos/Seekr-poster.jpg"
             loop
             muted
             playsInline
-            preload="metadata"
+            preload="none"
           />
           <span className="video-reveal-scanlines" aria-hidden="true" />
           <span className="video-reveal-vignette" aria-hidden="true" />

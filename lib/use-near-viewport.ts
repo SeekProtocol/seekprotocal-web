@@ -26,13 +26,18 @@ import { isHandheld } from "@/lib/render-budget";
 const BUILD_MARGIN = "100% 0px";
 
 /**
- * Two and a half viewports before a handheld gives one back.
+ * How far offscreen a handheld keeps a built scene before tearing it down.
  *
  * The gap between this and BUILD_MARGIN is the hysteresis. Releasing at the
  * same distance a scene builds at would rebuild it on every small scroll
  * around the boundary, which costs more than holding it ever did.
+ *
+ * 80% is tight on purpose. At 250% Mobi and the globe both stayed alive across
+ * most of the page, and Safari killed the tab under that. One viewport of
+ * reach either side is enough to avoid thrash without letting two heavy
+ * contexts overlap for long.
  */
-const RELEASE_MARGIN = "250% 0px";
+const RELEASE_MARGIN = "80% 0px";
 
 /**
  * The latch is one-way on a desktop and two-way on a handheld.
@@ -42,11 +47,8 @@ const RELEASE_MARGIN = "250% 0px";
  * frame the scene was meant to be showing. So a built scene stays built.
  *
  * A phone does not get that luxury. Scroll to the bottom of the homepage and
- * all five contexts are live at once; Safari does not degrade under that, it
- * kills the tab and the page reloads itself. Two and a half viewports away
- * nobody is scrubbing anything, so the frame that a rebuild would cost is a
- * frame nobody is looking at, and it buys the page a ceiling of roughly two
- * live contexts instead of five.
+ * Safari kills the tab under multiple live WebGL contexts. Offscreen scenes
+ * are released quickly so only the nearest one stays built.
  */
 export function useNearViewport(
   ref: React.RefObject<HTMLElement | null>,
