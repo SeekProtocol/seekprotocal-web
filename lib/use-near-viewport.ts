@@ -22,22 +22,32 @@ import { isHandheld } from "@/lib/render-budget";
  * browser gets every scene rather than none.
  */
 
-/** One viewport of reach before the scene is needed. */
-const BUILD_MARGIN = "100% 0px";
-
 /**
- * How far offscreen a handheld keeps a built scene before tearing it down.
+ * Build reach, then release reach, both in viewports, and RELEASE must be the
+ * larger of the two. It is written as an offset rather than a second literal so
+ * that the ordering is structural: the invariant cannot be inverted by editing
+ * one number.
  *
- * The gap between this and BUILD_MARGIN is the hysteresis. Releasing at the
- * same distance a scene builds at would rebuild it on every small scroll
- * around the boundary, which costs more than holding it ever did.
+ * Why it has to hold. A scene builds while its distance from the viewport edge
+ * is under BUILD, and a handheld releases it while that distance is over
+ * RELEASE. Set RELEASE below BUILD and the two tests are true at the same time
+ * for anything sitting between them, so the scene builds, is released, rebuilds,
+ * and so on for as long as the reader rests there. That loop creates and
+ * destroys a WebGL context, compiles its shaders and re-uploads its models every
+ * cycle, which costs far more than holding a second context ever did. It briefly
+ * shipped that way at BUILD 100% and RELEASE 80%, which left a band of about
+ * 170px on an iPhone where three scenes could each thrash.
  *
- * 80% is tight on purpose. At 250% Mobi and the globe both stayed alive across
- * most of the page, and Safari killed the tab under that. One viewport of
- * reach either side is enough to avoid thrash without letting two heavy
- * contexts overlap for long.
+ * The gap is the hysteresis. Half a viewport, roughly 420px on a phone, is more
+ * than any scroll settle needs. 250% was the other failure: valid ordering, but
+ * so wide that Mobi and the globe stayed alive across most of the page and
+ * Safari killed the tab under the two of them.
  */
-const RELEASE_MARGIN = "80% 0px";
+const BUILD_REACH = 1;
+const RELEASE_REACH = BUILD_REACH + 0.5;
+
+const BUILD_MARGIN = `${BUILD_REACH * 100}% 0px`;
+const RELEASE_MARGIN = `${RELEASE_REACH * 100}% 0px`;
 
 /**
  * The latch is one-way on a desktop and two-way on a handheld.
@@ -91,7 +101,8 @@ export function useNearViewport(
        one scene that is visible at load, so that scene cannot be held back by
        anything that stops callbacks arriving. */
     const box = el.getBoundingClientRect();
-    const reach = window.innerHeight; // mirrors the 100% default rootMargin
+    // Read off BUILD_REACH so the shortcut and the observer cannot disagree.
+    const reach = BUILD_REACH * window.innerHeight;
 
     /* A display: none element has no layout box, so every edge reads zero and
        the range test would call it visible and build a scene nobody can see.
