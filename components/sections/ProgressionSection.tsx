@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { withCopy } from "@/lib/content-i18n";
@@ -33,12 +35,12 @@ export default function ProgressionSection() {
       {/* Rank ladder ------------------------------------------------------ */}
       <div className="rank-ladder reveal">
         <div className="rank-display">
-          <img
+          <Image
             key={current.img}
             src={`/app/badges/${current.img}`}
             alt={t("badgeAlt", { name: current.name })}
-            loading="lazy"
-            decoding="async"
+            width={132}
+            height={132}
             className="rank-display-badge"
           />
           <div>
@@ -64,7 +66,7 @@ export default function ProgressionSection() {
               onClick={() => setRank(i)}
               title={entry.name}
             >
-              <img src={`/app/badges/${entry.img}`} alt="" loading="lazy" />
+              <Image src={`/app/badges/${entry.img}`} alt="" width={64} height={64} />
               <span className="t-mono-sm">{entry.name}</span>
             </button>
           ))}
@@ -81,7 +83,7 @@ export default function ProgressionSection() {
           <div className="badge-wall">
             {badges.map((badge) => (
               <figure key={badge.img} className="badge-tile">
-                <img src={`/app/badges/${badge.img}`} alt={badge.name} loading="lazy" />
+                <Image src={`/app/badges/${badge.img}`} alt={badge.name} width={76} height={76} />
                 <figcaption className="t-mono-sm">{badge.name}</figcaption>
               </figure>
             ))}
@@ -96,7 +98,9 @@ export default function ProgressionSection() {
           <ul className="achievement-list">
             {achievements.map((achievement) => (
               <li key={achievement.img} className="achievement-row">
-                <img
+                <Image
+                  width={46}
+                  height={46}
                   src={`/app/achievements/${achievement.img}`}
                   alt=""
                   loading="lazy"

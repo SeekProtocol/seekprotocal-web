@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useFormatter, useTranslations } from "next-intl";
 import { withCopy } from "@/lib/content-i18n";
 import { CLANS } from "@/content/app-features";
@@ -49,13 +50,15 @@ export default function ClansSection() {
             <li key={clan.id} className="clan-row" data-podium={i < 3 || undefined}>
               <span className="clan-rank">
                 {i < 3 ? (
-                  <img src={MEDALS[i]} alt={t("rankAlt", { rank: clan.rank })} loading="lazy" />
+                  <Image src={MEDALS[i]} alt={t("rankAlt", { rank: clan.rank })} width={28} height={28} />
                 ) : (
                   <span className="t-mono">{String(clan.rank).padStart(2, "0")}</span>
                 )}
               </span>
-              <img
+              <Image
                 className="clan-emblem"
+                width={38}
+                height={38}
                 src={`/app/clans/${clan.img}`}
                 alt=""
                 loading="lazy"
