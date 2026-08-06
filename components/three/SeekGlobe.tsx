@@ -670,6 +670,14 @@ export default function SeekGlobe({
     let appliedTheme = "";
     let zoomShown = 0;
     const cameraDir = new THREE.Vector3();
+    /* Scratch vectors for the render loop. Everything below used .clone() per
+       coin per frame, which on a phone meant a few thousand short-lived Vector3
+       allocations a second once a selection pushed the zoom up and every label
+       became a candidate. The garbage is small individually and constant, which
+       is the worst shape for it: it competes with scrolling for the same main
+       thread. */
+    const negCameraDir = new THREE.Vector3();
+    const lookTarget = new THREE.Vector3();
     const worldQuat = new THREE.Quaternion();
     const facingVec = new THREE.Vector3();
 
@@ -729,6 +737,7 @@ export default function SeekGlobe({
       camera.lookAt(0, 0, 0);
 
       camera.getWorldDirection(cameraDir);
+      negCameraDir.copy(cameraDir).negate();
       globe.getWorldQuaternion(worldQuat);
 
       for (const coin of coins) {
@@ -743,7 +752,7 @@ export default function SeekGlobe({
         );
 
         facingVec.copy(coin.anchor).applyQuaternion(worldQuat).normalize();
-        const facing = facingVec.dot(cameraDir.clone().negate());
+        const facing = facingVec.dot(negCameraDir);
         const fade = THREE.MathUtils.clamp((facing - 0.06) * 6, 0, 1);
         coin.material.opacity = fade;
         coin.sprite.visible = fade > 0.01;
@@ -754,7 +763,7 @@ export default function SeekGlobe({
       if (selected) {
         selectionRing.visible = selected.sprite.visible;
         selectionRing.position.copy(selected.anchor);
-        selectionRing.lookAt(selected.anchor.clone().multiplyScalar(2));
+        selectionRing.lookAt(lookTarget.copy(selected.anchor).multiplyScalar(2));
         const beat = 1 + Math.sin(elapsed * 3.4) * 0.12;
         selectionRing.scale.setScalar(beat);
         selectionMaterial.color.set(RARITY_COLOUR[selected.drop.rarity]);
