@@ -27,7 +27,7 @@ export default function GlobeSection() {
      its chunk, and all five scenes share one 603 KB bundle with three.js in
      it. Holding the render back holds the download back with it. */
   const stageRef = useRef<HTMLDivElement>(null);
-  const nearScene = useNearViewport(stageRef, "150% 0px");
+  const nearScene = useNearViewport(stageRef, 1.5);
   const [feed, setFeed] = useState<Drop[]>([]);
   const [selected, setSelected] = useState<Drop | null>(null);
   const [total, setTotal] = useState(0);
@@ -305,12 +305,6 @@ function DropCard({
   const t = useTranslations("globe");
   const format = useFormatter();
   const rarityLabel = useTranslations("rarity");
-  /* Gated at the section rather than inside the scene. The scene's own
-     useNearViewport stops it building, but a rendered dynamic() still fetches
-     its chunk, and all five scenes share one 603 KB bundle with three.js in
-     it. Holding the render back holds the download back with it. */
-  const stageRef = useRef<HTMLDivElement>(null);
-  const nearScene = useNearViewport(stageRef, "150% 0px");
   const kindLabel = useTranslations("dropKinds");
   const colour = RARITY_COLOUR[drop.rarity];
   const ladder = RARITY_LADDER[drop.rarity];

@@ -42,12 +42,55 @@ import { isHandheld } from "@/lib/render-budget";
  * than any scroll settle needs. 250% was the other failure: valid ordering, but
  * so wide that Mobi and the globe stayed alive across most of the page and
  * Safari killed the tab under the two of them.
+ *
+ * The invariant used to hold only for the default. The hook took a finished
+ * rootMargin string for the build side while the release side read a module
+ * constant, so a caller that passed its own margin moved one edge and not the
+ * other. All four section gates passed "150% 0px", which is exactly the release
+ * margin: build reach and release reach identical, hysteresis zero, the state
+ * flipping on either side of a single line. The reach is a number now, in
+ * viewports, and both margins are derived from it, so there is no longer a way
+ * to move one without the other.
  */
 const BUILD_REACH = 1;
-const RELEASE_REACH = BUILD_REACH + 0.5;
+const RELEASE_GAP = 0.5;
 
-const BUILD_MARGIN = `${BUILD_REACH * 100}% 0px`;
-const RELEASE_MARGIN = `${RELEASE_REACH * 100}% 0px`;
+const margin = (reach: number) => `${reach * 100}% 0px`;
+
+/**
+ * Every scene currently holding itself built on a handheld.
+ *
+ * Distance alone has never been able to promise how many of these are alive at
+ * once: that depends on how tall the sections between them happen to render,
+ * which changes with the copy, the locale and the phone. Both previous failures
+ * were attempts to get the number down to one by choosing a better reach, and
+ * both missed in a different direction.
+ *
+ * So the count is enforced instead of estimated. A scene that latches evicts
+ * every other one that is off screen, which makes "one context on a phone" a
+ * property of the page rather than a hope about its layout. Whatever the reader
+ * is actually looking at is never evicted, so this can only ever release
+ * something nobody can see.
+ *
+ * The cost is that scrolling back and forth across two scenes that sit close
+ * together rebuilds them, where before they would both have stayed up. That is
+ * the trade being made on purpose: a rebuild costs a stutter, and the thing it
+ * buys off is Safari killing the tab.
+ */
+type Holder = { el: HTMLElement; release: () => void };
+const live = new Set<Holder>();
+
+function onScreen(el: HTMLElement) {
+  const box = el.getBoundingClientRect();
+  return box.bottom > 0 && box.top < window.innerHeight;
+}
+
+function claim(holder: Holder) {
+  for (const other of live) {
+    if (other !== holder && !onScreen(other.el)) other.release();
+  }
+  live.add(holder);
+}
 
 /**
  * The latch is one-way on a desktop and two-way on a handheld.
@@ -59,10 +102,12 @@ const RELEASE_MARGIN = `${RELEASE_REACH * 100}% 0px`;
  * A phone does not get that luxury. Scroll to the bottom of the homepage and
  * Safari kills the tab under multiple live WebGL contexts. Offscreen scenes
  * are released quickly so only the nearest one stays built.
+ *
+ * `buildReach` is in viewports. The release reach follows it by RELEASE_GAP.
  */
 export function useNearViewport(
   ref: React.RefObject<HTMLElement | null>,
-  rootMargin = BUILD_MARGIN,
+  buildReach = BUILD_REACH,
 ) {
   /* Starts latched where there is no observer to latch it, so an unsupported
      browser builds every scene rather than none. Decided here rather than in
@@ -84,14 +129,23 @@ export function useNearViewport(
       // Built already. Only a handheld ever gives one back.
       if (!isHandheld()) return;
 
+      /* Take the slot, evicting whatever else is built and off screen. Done
+         here rather than at the moment of latching so that it also runs for the
+         scene that latched from geometry before any observer existed. */
+      const holder: Holder = { el, release: () => setNear(false) };
+      claim(holder);
+
       const release = new IntersectionObserver(
         (entries) => {
           if (entries.every((entry) => !entry.isIntersecting)) setNear(false);
         },
-        { rootMargin: RELEASE_MARGIN },
+        { rootMargin: margin(buildReach + RELEASE_GAP) },
       );
       release.observe(el);
-      return () => release.disconnect();
+      return () => {
+        release.disconnect();
+        live.delete(holder);
+      };
     }
 
     /* Anything already in range latches now, from geometry, without waiting on
@@ -101,8 +155,11 @@ export function useNearViewport(
        one scene that is visible at load, so that scene cannot be held back by
        anything that stops callbacks arriving. */
     const box = el.getBoundingClientRect();
-    // Read off BUILD_REACH so the shortcut and the observer cannot disagree.
-    const reach = BUILD_REACH * window.innerHeight;
+    /* Read off the same buildReach the observer below is given, so the shortcut
+       and the observer cannot disagree. It used to read the module constant
+       while the observer took the caller's margin, which meant a section gate
+       asking for 150% got a shortcut that only reached 100%. */
+    const reach = buildReach * window.innerHeight;
 
     /* A display: none element has no layout box, so every edge reads zero and
        the range test would call it visible and build a scene nobody can see.
@@ -126,12 +183,12 @@ export function useNearViewport(
       (entries) => {
         if (entries.some((entry) => entry.isIntersecting)) setNear(true);
       },
-      { rootMargin },
+      { rootMargin: margin(buildReach) },
     );
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [ref, rootMargin, near]);
+  }, [ref, buildReach, near]);
 
   return near;
 }

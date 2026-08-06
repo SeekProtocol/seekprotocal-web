@@ -31,7 +31,7 @@ export default function ARSection() {
      useNearViewport stops it building, but a rendered dynamic() still fetches
      its chunk, and all five scenes share one 603 KB bundle with three.js in
      it. Holding the render back holds the download back with it. */
-  const nearScene = useNearViewport(sectionRef, "150% 0px");
+  const nearScene = useNearViewport(sectionRef, 1.5);
   const progressRef = useRef(0);
 
   const stage = useScrubbedSection({
