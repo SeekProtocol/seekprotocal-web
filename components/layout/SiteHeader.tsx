@@ -78,7 +78,16 @@ export default function SiteHeader() {
 
       <header className="site-header">
         <div className="site-header-inner shell-wide">
-          <Link href="/" className="site-header-brand" aria-label="Seek Protocol">
+          {/* The brand is on screen from the first frame on every route, so it
+              prefetches the homepage everywhere — including on the homepage
+              itself, where it was four segment requests for the page the reader
+              is already looking at. */}
+          <Link
+            href="/"
+            prefetch={false}
+            className="site-header-brand"
+            aria-label="Seek Protocol"
+          >
             <SeekLogo markSize={42} />
           </Link>
 
@@ -128,10 +137,18 @@ export default function SiteHeader() {
           while closed, which is what the hidden attribute was doing. */}
       <div id="mobile-nav" className="mobile-nav">
         <nav className="mobile-nav-list" aria-label="Mobile">
+          {/* prefetch={false} on the sheet only. It is display:none while closed,
+              so nothing here prefetches until it opens — and then all seven go
+              at once, on a phone, in the same gesture that is already animating
+              the panel in. Note that `false` also gives up the touch-start
+              prefetch, so the tap itself pays for the fetch; see the note in
+              SiteFooter.tsx for why that is the cheaper side. The desktop nav
+              above keeps the default. */}
           {LINKS.map((link, i) => (
             <Link
               key={link.href}
               href={link.href}
+              prefetch={false}
               onClick={close}
               className="mobile-nav-link"
               data-active={isActive(link.href) || undefined}
@@ -145,7 +162,12 @@ export default function SiteHeader() {
           ))}
         </nav>
         <div className="mobile-nav-foot">
-          <Link href="/contact" onClick={close} className="btn btn-brand btn-lg">
+          <Link
+            href="/contact"
+            prefetch={false}
+            onClick={close}
+            className="btn btn-brand btn-lg"
+          >
             {t("getApp")}
           </Link>
           <div className="mobile-nav-lang">

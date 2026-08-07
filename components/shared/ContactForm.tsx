@@ -1,27 +1,11 @@
 "use client";
 
-import { useState, useEffect, useRef, FormEvent } from "react";
-import { isOff } from "@/lib/bisect";
+import { useState, FormEvent } from "react";
 import { useTranslations } from "next-intl";
+import { useTurnstile } from "@/lib/use-turnstile";
 
-declare global {
-  interface Window {
-    turnstile?: {
-      render: (
-        container: string | HTMLElement,
-        options: {
-          sitekey: string;
-          callback: (token: string) => void;
-          "expired-callback"?: () => void;
-          "error-callback"?: () => void;
-          theme?: "light" | "dark" | "auto";
-        }
-      ) => string;
-      reset: (widgetId: string) => void;
-      remove: (widgetId: string) => void;
-    };
-  }
-}
+/* The Window.turnstile declaration lives in lib/use-turnstile.ts, which is the
+   only thing that touches the global now. */
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_REGEX = /^[+]?[\d\s\-().]{7,20}$/;
@@ -33,52 +17,14 @@ export default function ContactForm() {
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
-  const [turnstileToken, setTurnstileToken] = useState("");
-  const turnstileRef = useRef<HTMLDivElement>(null);
-  const widgetIdRef = useRef<string | null>(null);
-
-  useEffect(() => {
-    /* ?cf=off — skip the widget and its script entirely. See lib/bisect.ts. */
-    if (isOff("cf")) return;
-    const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
-    if (!siteKey) return;
-
-    const renderWidget = () => {
-      if (window.turnstile && turnstileRef.current && !widgetIdRef.current) {
-        widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
-          sitekey: siteKey,
-          callback: (token: string) => setTurnstileToken(token),
-          "expired-callback": () => setTurnstileToken(""),
-          "error-callback": () => setTurnstileToken(""),
-          theme: "auto",
-        });
-      }
-    };
-
-    if (window.turnstile) {
-      renderWidget();
-    } else {
-      const existing = document.querySelector(
-        'script[src*="challenges.cloudflare.com/turnstile"]'
-      );
-      if (!existing) {
-        const script = document.createElement("script");
-        script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
-        script.async = true;
-        script.onload = renderWidget;
-        document.head.appendChild(script);
-      } else {
-        existing.addEventListener("load", renderWidget);
-      }
-    }
-
-    return () => {
-      if (widgetIdRef.current && window.turnstile) {
-        window.turnstile.remove(widgetIdRef.current);
-        widgetIdRef.current = null;
-      }
-    };
-  }, []);
+  /* Armed on the first focus anywhere in the form. See lib/use-turnstile.ts. */
+  const {
+    containerRef: turnstileRef,
+    token: turnstileToken,
+    armed: turnstileArmed,
+    arm: armTurnstile,
+    reset: resetTurnstile,
+  } = useTurnstile();
 
   const validateField = (name: string, value: string): string => {
     if (name === "name") {
@@ -126,6 +72,8 @@ export default function ContactForm() {
 
     if (!validateAll()) return;
     if (!turnstileToken) {
+      /* Also arms, for the autofill-and-Enter path that never focuses a field. */
+      armTurnstile();
       setErrorMessage(t("captchaError"));
       setStatus("error");
       return;
@@ -151,22 +99,27 @@ export default function ContactForm() {
       setFormData({ name: "", email: "", phone: "", message: "" });
       setFieldErrors({});
       setTouched({});
-      setTurnstileToken("");
+      resetTurnstile();
     } catch (err) {
       setErrorMessage(
         err instanceof Error ? err.message : t("genericErrorRetry")
       );
       setStatus("error");
-      if (widgetIdRef.current && window.turnstile) {
-        window.turnstile.reset(widgetIdRef.current);
-      }
+      resetTurnstile();
     }
   };
 
   return (
     <>
+      {/* onFocus on the form rather than one handler per field: React implements
+          it with focusin, which bubbles, so any of the four arms the widget. */}
       {(status === "idle" || status === "submitting" || status === "error") && (
-        <form onSubmit={handleSubmit} className="contact-form" noValidate>
+        <form
+          onSubmit={handleSubmit}
+          onFocus={armTurnstile}
+          className="contact-form"
+          noValidate
+        >
           <div className="field">
             <label htmlFor="name" className="field-label">
               {t("yourName")} <span className="field-required">*</span>
@@ -242,7 +195,11 @@ export default function ContactForm() {
               <p className="field-error-message">{fieldErrors.message}</p>
             )}
           </div>
-          <div ref={turnstileRef} className="cf-turnstile contact-form-turnstile" />
+          {/* In the tree only once armed. Refs are attached before effects run,
+              so the node exists by the time the widget renders into it. */}
+          {turnstileArmed && (
+            <div ref={turnstileRef} className="cf-turnstile contact-form-turnstile" />
+          )}
           {status === "error" && errorMessage && (
             <p className="form-status form-status-error contact-form-full" role="alert">
               {errorMessage}
