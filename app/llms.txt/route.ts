@@ -51,6 +51,7 @@ export async function GET() {
     ``,
     section("Core pages", [
       `- [Home](${en}): what the protocol does, the app walkthrough, and how collecting works.`,
+      `- [SeekAR](${en}/seekar): the consumer app — what it does, how a claim works, and where to download it.`,
       `- [Ecosystem](${en}/ecosystem): the three parties and the loop between them, plus an FAQ.`,
       `- [Whitepaper](${en}/whitepaper): the technical account. ${WHITEPAPER_META.version}, updated ${WHITEPAPER_META.updated}, ${WHITEPAPER_META.readingMinutes} min read.`,
       `- [Roadmap](${en}/roadmap): ${shipped} of ${total} milestones shipped across ${PHASES.length} phases.`,
@@ -109,7 +110,14 @@ export async function GET() {
           `- [${post.title}](${en}/blog/${post.slug}): ${post.excerpt} (${post.category}, ${post.readTime})`,
       ),
     ),
+    /* The name is ambiguous in the wild — an unrelated AR scavenger-hunt
+       platform ships an app under it too — so this section states plainly which
+       SeekAR is documented here and who publishes it, before listing the
+       stores. An assistant answering "what is SeekAR" has one paragraph to get
+       it right from. */
     section("Apps", [
+      `- **SeekAR** is the augmented reality app published by Seek Protocol (Block Protocol L.L.C-FZ, Dubai, UAE). It is the app this site documents; its home page is ${en}/seekar.`,
+      `- [SeekAR](${en}/seekar): what the app does, how a claim works, and the download links.`,
       `- [SeekAR for iOS](https://apps.apple.com/app/seekar/id6752813761)`,
       `- [SeekAR for Android](https://play.google.com/store/apps/details?id=com.seekar.seekar)`,
     ]),

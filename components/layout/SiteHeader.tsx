@@ -27,7 +27,12 @@ import LanguageSwitcher from "@/components/shared/LanguageSwitcher";
  */
 const TOGGLE_ID = "mobile-nav-toggle";
 
+/* SeekAR leads, and it is the one entry here whose label is a product name
+   rather than a section. That is the point: it puts "SeekAR" in an internal
+   link on every page of the site, which is the anchor text the app's own name
+   had nowhere before. */
 const LINKS = [
+  { href: "/seekar", key: "seekar" },
   { href: "/ecosystem", key: "ecosystem" },
   { href: "/whitepaper", key: "whitepaper" },
   { href: "/roadmap", key: "roadmap" },

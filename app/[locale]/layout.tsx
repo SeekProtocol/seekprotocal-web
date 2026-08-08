@@ -266,19 +266,39 @@ export default async function LocaleLayout({
                       name: loc,
                     })),
                   },
+                  /* The app is called SeekAR, and so is an unrelated AR
+                     scavenger-hunt platform at seekar.io whose own App Store
+                     listing outranks ours for the name. This node is where we
+                     say, in the one format Google reads without ambiguity,
+                     which SeekAR this is and who publishes it.
+
+                     It was a bare, unaddressable node before: no `@id`, so
+                     nothing else in the graph could point at it, and no `url`,
+                     so the app had no home on this site to be the answer for.
+                     Both are here now, and /seekar is that home. */
                   {
                     "@type": "SoftwareApplication",
+                    "@id": "https://www.seekprotocol.ai/#seekar",
                     name: "SeekAR",
+                    alternateName: ["SeekAR™", "Seek AR"],
+                    url: `https://www.seekprotocol.ai/${locale}/seekar`,
                     operatingSystem: "iOS, Android",
                     applicationCategory: "GameApplication",
                     description:
                       "AR-powered mobile app on Solana that transforms real-world locations into interactive treasure hunts with crypto rewards.",
+                    publisher: {
+                      "@id": "https://www.seekprotocol.ai/#organization",
+                    },
                     offers: {
                       "@type": "Offer",
                       price: "0",
                       priceCurrency: "USD",
                     },
                     installUrl: [
+                      "https://apps.apple.com/app/seekar/id6752813761",
+                      "https://play.google.com/store/apps/details?id=com.seekar.seekar",
+                    ],
+                    sameAs: [
                       "https://apps.apple.com/app/seekar/id6752813761",
                       "https://play.google.com/store/apps/details?id=com.seekar.seekar",
                     ],

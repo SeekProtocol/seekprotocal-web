@@ -7,6 +7,7 @@ const COLUMNS = [
   {
     key: "product",
     links: [
+      { href: "/seekar", key: "seekar" },
       { href: "/ecosystem", key: "ecosystem" },
       { href: "/whitepaper", key: "whitepaper" },
       { href: "/roadmap", key: "roadmap" },

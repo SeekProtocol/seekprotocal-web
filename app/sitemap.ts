@@ -48,8 +48,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
    */
   const REBUILT = new Date("2026-08-05");
 
+  /* The app page, added 8 August 2026. Its own date rather than REBUILT: it is
+     new, and telling Google it last changed three days before it existed is the
+     kind of small lie this file is otherwise careful not to tell. */
+  const SEEKAR_ADDED = new Date("2026-08-08");
+
   const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly"; lastModified: Date }[] = [
     { path: "/", priority: 1, changeFrequency: "weekly", lastModified: REBUILT },
+
+    /* Priority 0.9, level with /ecosystem and /whitepaper and below only the
+       homepage. It is the page for the product the whole site is about, and the
+       one carrying the app's name. */
+    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SEEKAR_ADDED },
     { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
     { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: REBUILT },
     { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: REBUILT },
