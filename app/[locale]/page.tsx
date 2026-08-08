@@ -283,7 +283,11 @@ function HomeContent() {
           </div>
 
           <div className="reveal" style={{ marginTop: "2.5rem" }}>
-            <Link href="/whitepaper" className="arrow-link">
+            {/* Sits about 18,000px down. Prefetching the whitepaper because it
+                scrolled past costs 132 KB across four segment requests, at the
+                depth where the tab was being killed. See SiteFooter.tsx for
+                what `false` does and does not keep. */}
+            <Link href="/whitepaper" prefetch={false} className="arrow-link">
               {t("readWhitepaper")}
               <ArrowRight />
             </Link>

@@ -3,6 +3,46 @@ import { Link } from "@/i18n/navigation";
 import SeekLogo from "@/components/brand/SeekLogo";
 import CookieConsentButton from "@/components/shared/CookieConsentButton";
 
+/**
+ * Every internal link here is `prefetch={false}`, and the reason is the whole
+ * footer's position on the page.
+ *
+ * A `<Link>` left on the default prefetches as soon as it enters the viewport,
+ * and Next 16 does not do that in one request: measured on production at
+ * 393x852, a single scroll to the bottom of the homepage fired **40 RSC
+ * requests, four per route across ten routes**, from the nine links below plus
+ * the one in the page body. There is only one visible link per route on a
+ * phone; the four are Next fetching the route's segments separately.
+ *
+ * Cold, that is about 3.3 MB of RSC payload — the whitepaper alone is 132 KB —
+ * fetched, parsed and then held in the client router cache. It buys nothing.
+ * The footer sits at the end of a 20,000px page, so anyone who reaches it has
+ * already read the site, and the odds that they then want all nine of these are
+ * low. Worse, the cost lands at exactly the scroll depth where the one crash
+ * the log could vouch for happened: scrollY 16928, with no canvas alive and
+ * nothing thrown.
+ *
+ * **`false` means no prefetch at all, not "prefetch later".** It is tempting to
+ * assume hover and touch still warm the link — they do not. In next@16.2,
+ * `app-dir/link.js` derives `prefetchEnabled = prefetchProp !== false`, and
+ * both `onMouseEnter` and `onTouchStart` return early on `!prefetchEnabled`.
+ * There is no intent-only mode: the prop is full prefetch, viewport prefetch,
+ * or nothing. Checked in the installed source rather than assumed, because the
+ * first version of this comment claimed the opposite.
+ *
+ * So the trade is real and is being made deliberately. A footer link now costs
+ * an ordinary client navigation — measured at about 1.3 s cold against a local
+ * production build, less in production behind the CDN — instead of resolving
+ * from cache. That is the price for taking 3.3 MB of fetching and parsing off
+ * the one gesture every reader performs, on the pass where the tab was dying.
+ * Nine links nobody has clicked yet do not get to cost that.
+ *
+ * The header's desktop nav is deliberately left prefetching. It is the primary
+ * navigation, it is on screen from the first frame rather than arriving under a
+ * scroll, and it is `display: none` on a handheld, so it never runs on the
+ * device this is about.
+ */
+
 const COLUMNS = [
   {
     key: "product",
@@ -72,7 +112,7 @@ export default function SiteFooter() {
       <div className="shell">
         <div className="site-footer-top">
           <div className="site-footer-brand">
-            <Link href="/" aria-label="Seek Protocol">
+            <Link href="/" prefetch={false} aria-label="Seek Protocol">
               <SeekLogo markSize={34} />
             </Link>
             <p className="t-body site-footer-blurb">{t("description")}</p>
@@ -115,7 +155,8 @@ export default function SiteFooter() {
                 <ul>
                   {column.links.map((link) => (
                     <li key={link.href}>
-                      <Link href={link.href} className="site-footer-link">
+                      {/* See the note on prefetch at the top of this file. */}
+                      <Link href={link.href} prefetch={false} className="site-footer-link">
                         {tn(link.key)}
                       </Link>
                     </li>
@@ -158,10 +199,18 @@ export default function SiteFooter() {
           <p className="t-mono-sm site-footer-legal-address">{t("address")}</p>
           <div className="site-footer-legal">
             <span className="t-mono-sm">{t("copyright")}</span>
-            <Link href="/privacy-policy" className="t-mono-sm site-footer-legal-link">
+            <Link
+              href="/privacy-policy"
+              prefetch={false}
+              className="t-mono-sm site-footer-legal-link"
+            >
               {t("privacyPolicy")}
             </Link>
-            <Link href="/terms-conditions" className="t-mono-sm site-footer-legal-link">
+            <Link
+              href="/terms-conditions"
+              prefetch={false}
+              className="t-mono-sm site-footer-legal-link"
+            >
               {t("termsOfService")}
             </Link>
             <CookieConsentButton className="t-mono-sm site-footer-legal-link" />
