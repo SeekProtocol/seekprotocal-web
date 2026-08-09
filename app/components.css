@@ -4418,26 +4418,55 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   left: 50%;
   display: flex;
   align-items: center;
-  gap: 0.22rem;
-  padding: 0.2rem 0.46rem;
+  gap: 0.3rem;
+  padding: 0.22rem 0.46rem 0.22rem 0.24rem;
   border-radius: 999px;
   font-family: var(--font-mono);
   font-size: 0.6rem;
   line-height: 1;
   white-space: nowrap;
   color: var(--fg);
-  /* The pill is the app's, and the app draws it as a bordered chip with the
-     gradient bolt inside rather than as a solid mint lozenge. A solid fill
-     would also have fought the bolt's own ramp. */
+  /* The app draws a reward as a bordered chip with the gradient bolt inside
+     rather than a solid lozenge, and a solid fill would fight both the bolt's
+     ramp and the coin's own artwork. The rim carries the drop's rarity, which
+     is where the collectibles section puts it too. */
   background: var(--bg-raised);
-  border: 1px solid color-mix(in srgb, var(--brand-3) 45%, transparent);
+  border: 1px solid color-mix(in srgb, var(--rarity, var(--brand-3)) 60%, transparent);
   box-shadow: var(--shadow-sm);
   opacity: 0;
   transform: translate(-50%, 4px);
   pointer-events: none;
+  z-index: 4;
 }
 
 .referral-xp svg { flex: none; }
+
+.referral-xp-coin {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.referral-xp-symbol {
+  color: var(--rarity, var(--fg));
+  font-weight: 500;
+  /* The longest symbol on the ladder is FARTCOIN at eight, which is wider than
+     the chip wants to be next to everything else it is carrying. */
+  max-width: 5.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.referral-xp-amount {
+  display: flex;
+  align-items: center;
+  gap: 0.14rem;
+  color: var(--fg-muted);
+  padding-left: 0.3rem;
+  border-left: 1px solid var(--line);
+}
 
 .referral-xp[data-paying] { animation: referral-xp-rise 0.62s var(--ease-out) both; }
 

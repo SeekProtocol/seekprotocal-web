@@ -8,13 +8,15 @@ import {
   BONUS_PER_ACTIVE,
   CODE_LENGTH,
   EXAMPLE_BASE_XP,
-  PAYOUT_XP,
+  CATCH_CYCLE,
   RULES,
   TEAM,
 } from "@/content/referrals";
 import { withCopy } from "@/lib/content-i18n";
 import PixelAvatar from "@/components/ui/PixelAvatar";
 import XpBolt from "@/components/brand/XpBolt";
+import Image from "next/image";
+import { RARITY_COLOUR } from "@/lib/globe-drops";
 
 /**
  * The referral mechanic, drawn as the thing it is.
@@ -117,7 +119,7 @@ export default function ReferralSection() {
    * particle effect, where one at a time reads as a friend having just caught
    * something.
    */
-  const [paying, setPaying] = useState(-1);
+  const [paying, setPaying] = useState<{ member: number; coin: number } | null>(null);
 
   const total = TEAM.length;
 
@@ -159,9 +161,15 @@ export default function ReferralSection() {
       (i) => i >= 0,
     );
 
+    /* Walks the coin list one step per payout, so a reader watching the loop
+       sees the range that is actually out there rather than the same drop over
+       and over. Kept outside cycle() so it carries across restarts and the
+       second pass does not open on the coin the first one did. */
+    let spin = 0;
+
     const cycle = () => {
       setArrived(0);
-      setPaying(-1);
+      setPaying(null);
 
       let n = 0;
       const step = () => {
@@ -171,8 +179,12 @@ export default function ReferralSection() {
            what ties the pill to the person rather than to the clock. */
         const index = n - 1;
         if (TEAM[index].caught >= ACTIVE_CATCHES) {
-          setPaying(index);
-          later(() => setPaying((c) => (c === index ? -1 : c)), STEP_MS - 60);
+          const coin = spin++ % CATCH_CYCLE.length;
+          setPaying({ member: index, coin });
+          later(
+            () => setPaying((c) => (c && c.member === index ? null : c)),
+            STEP_MS - 60,
+          );
         }
         if (n < total) later(step, STEP_MS);
         else later(hold, HOLD_MS);
@@ -185,10 +197,14 @@ export default function ReferralSection() {
         const pulse = () => {
           const index = actives[k % actives.length];
           k += 1;
-          setPaying(index);
-          later(() => setPaying((c) => (c === index ? -1 : c)), 620);
-          if (k <= actives.length * 2) later(pulse, 900);
-          else later(cycle, 900);
+          const coin = spin++ % CATCH_CYCLE.length;
+          setPaying({ member: index, coin });
+          later(
+            () => setPaying((c) => (c && c.member === index ? null : c)),
+            720,
+          );
+          if (k <= actives.length * 2) later(pulse, 980);
+          else later(cycle, 980);
         };
         pulse();
       };
@@ -204,7 +220,7 @@ export default function ReferralSection() {
                reader who asked for less motion gets the finished ring and no
                loop at all. */
             setArrived(total);
-            setPaying(-1);
+            setPaying(null);
             return;
           }
           clearAll();
@@ -313,7 +329,7 @@ export default function ReferralSection() {
                     {active && here && (
                       <g
                         className="referral-spark"
-                        data-paying={paying === i || undefined}
+                        data-paying={paying?.member === i || undefined}
                         /* offset-path rather than animateMotion. SMIL needs
                            beginElement() from script to fire and is on its way
                            out of the platform; a CSS animation restarts cleanly
@@ -336,7 +352,7 @@ export default function ReferralSection() {
             </svg>
 
             {/* You, and the code you are handing out. */}
-            <div className="referral-you" data-paid={paying >= 0 || undefined}>
+            <div className="referral-you" data-paid={paying !== null || undefined}>
               <span className="referral-you-label t-mono-sm">{t("youLabel")}</span>
               <span className="referral-code" aria-label={t("codeLabel")}>
                 {/* Drawn as characters rather than a string so the code reads as
@@ -412,14 +428,37 @@ export default function ReferralSection() {
                       an icon for XP would be inventing something the app does
                       not have. It rises off the friend and fades, once, when
                       that friend has just caught something. */}
-                  <span
-                    className="referral-xp"
-                    data-paying={paying === i || undefined}
-                    aria-hidden="true"
-                  >
-                    <XpBolt size={11} id={`xp-${member.id}`} />
-                    +{PAYOUT_XP} XP
-                  </span>
+                  {/* What this friend just caught, and what it was worth.
+                      A coin rather than a bare number: the range of drops is
+                      part of the point, and a legendary at 900 XP next to a
+                      common at 80 says more about the bonus than any single
+                      figure could. Both come from the app's own ladder.
+                      The rarity colour is on the chip's rim, which is where
+                      the collectibles section puts it too. */}
+                  {(() => {
+                    const drop = CATCH_CYCLE[(paying?.coin ?? 0) % CATCH_CYCLE.length];
+                    return (
+                      <span
+                        className="referral-xp"
+                        data-paying={paying?.member === i || undefined}
+                        style={{ ["--rarity" as string]: RARITY_COLOUR[drop.rarity] }}
+                        aria-hidden="true"
+                      >
+                        <Image
+                          src={drop.image}
+                          alt=""
+                          width={16}
+                          height={16}
+                          className="referral-xp-coin"
+                        />
+                        <span className="referral-xp-symbol">{drop.symbol}</span>
+                        <span className="referral-xp-amount">
+                          <XpBolt size={10} id={`xp-${member.id}`} />
+                          +{drop.xp}
+                        </span>
+                      </span>
+                    );
+                  })()}
 
                   <span className="referral-node-handle">@{member.handle}</span>
                   {/* Two forms, because one does not fit both. A friend past

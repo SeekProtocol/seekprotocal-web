@@ -1,3 +1,4 @@
+import { DROP_COINS } from "@/lib/globe-drops";
 /**
  * The referral mechanic, read out of the app rather than invented.
  *
@@ -80,15 +81,23 @@ export const TEAM: TeamMember[] = [
 export const EXAMPLE_BASE_XP = 220;
 
 /**
- * The figure on the pill that rises off a friend when they catch something.
+ * What a friend is seen catching, in the order the figure cycles through them.
  *
- * A common coin, roughly, rather than the legendary the worked example uses:
- * the pill is meant to read as an ordinary catch happening over and over, and
- * a legendary going off six times a minute would say the wrong thing about how
- * often those turn up. It is illustrative and carries no arithmetic — the sum
- * the section actually makes a claim about is the one under it.
+ * The coins are the app's own, and so are their XP values: a legendary pays 900
+ * and a common 80, from `content/collectibles.ts`, which in turn comes from the
+ * app's `game_value_per_coin`. So the pill that rises off a friend is not a
+ * decoration with a number on it — it is a real coin worth a real amount, and
+ * the variety in the loop is the variety that is actually out there.
+ *
+ * SEEK is included because SEEK spawns too; it is the one drop that is not a
+ * collectible. DROP_COINS is the same list the globe fires, so the two sections
+ * cannot end up showing different worlds.
+ *
+ * Ordered rather than random. The loop has to look the same on every machine
+ * and on the server, and a figure that reshuffles itself between a reader's two
+ * visits is a figure that cannot be pointed at.
  */
-export const PAYOUT_XP = 80;
+export const CATCH_CYCLE = DROP_COINS;
 
 /**
  * The four rules that decide who may join a team and what it is worth. Each is
