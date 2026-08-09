@@ -90,6 +90,13 @@ export type SceneBuilder = (ctx: {
   height: number;
   /** The slot element, for pointer geometry and data attributes. */
   host: HTMLElement;
+  /**
+   * The visible canvas. A scene that wants pointer events binds them here
+   * rather than to the renderer's canvas, which is offscreen and would never
+   * see one. It is also the element whose bounding box the globe's raycaster
+   * needs, since that is what the reader is actually pointing at.
+   */
+  view: HTMLCanvasElement;
 }) => SceneModule | null;
 
 export type SlotOptions = {
@@ -166,9 +173,13 @@ class Stage {
         antialias: false,
         powerPreference: "high-performance",
         logarithmicDepthBuffer: this.logDepth,
-        /* The canvas is never in the document and is read back by drawImage
-           every frame, so the buffer has to survive the compositor. */
-        preserveDrawingBuffer: true,
+        /* Deliberately NOT preserveDrawingBuffer.
+           It was set at first, on the theory that a buffer read back by
+           drawImage has to survive. It does not: the buffer is only cleared
+           before the next *compositing* step, this canvas is never in the
+           document and so is never composited, and the blit happens in the same
+           task as the render. Asking for preservation costs a driver-side copy
+           on every frame for a guarantee that is not needed. */
       });
     } catch {
       return null; // No WebGL. Every slot keeps whatever fallback it renders.
@@ -327,6 +338,7 @@ class Stage {
           width: slot.width,
           height: slot.height,
           host: slot.host,
+          view: slot.view,
         });
         slot.built = true;
         slot.bornAt = now;

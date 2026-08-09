@@ -295,7 +295,7 @@ function buildCoin(scale: number, spin: number): SceneBuilder {
 
     let elapsed = 0;
 
-    const module: SceneModule = {
+    const built: SceneModule = {
       scene,
       camera,
       /* Read fresh by the stage after update() runs, so the exposure written
@@ -333,7 +333,7 @@ function buildCoin(scale: number, spin: number): SceneBuilder {
         /* Read off the document rather than through useTheme. The scene is not
            a React component any more, and the attribute is what the theme
            actually is — ThemeProvider writes it to <html>. */
-        module.state!.toneMappingExposure =
+        built.state!.toneMappingExposure =
           document.documentElement.dataset.theme === "dark" ? 1.32 : 1.12;
       },
       dispose() {
@@ -348,7 +348,7 @@ function buildCoin(scale: number, spin: number): SceneBuilder {
         envMap.dispose();
       },
     };
-    return module;
+    return built;
   };
 }
 
