@@ -2537,16 +2537,15 @@
     "eyebrow": "Invitaciones",
     "title": "Cada amigo que juega te hace más fuerte",
     "lead": "Comparte tu código de invitación y te quedas con un 5% más de XP en cada captura tuya, mientras esa persona siga jugando. Sin límite, y nunca sale de su parte.",
-    "youLabel": "Tu código",
     "codeLabel": "Tu código de invitación de ocho caracteres",
-    "multiplierLabel": "XP en cada captura",
-    "activeLabel": "Jugando",
-    "dormantLabel": "Inactivo",
-    "catchCount": "{caught} de {needed}",
+    "activeLabel": "ACTIVOS",
     "exampleLabel": "Una captura legendaria, antes y después",
     "exampleBody": "El bono se aplica en el servidor cuando la captura se contabiliza, y queda registrado por separado del rango de clan para poder distinguirlos después.",
-    "catchCountActive": "{caught} capturas",
-    "activeRule": "Activo significa {needed} capturas en los últimos {days} días"
+    "activeRule": "Activo significa {needed} capturas en los últimos {days} días",
+    "panelTitle": "TU EQUIPO",
+    "rateLabel": "TU TASA",
+    "idle": "inactivo",
+    "levelShort": "NV"
   },
   "referralRules": {
     "once": {

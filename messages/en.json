@@ -2537,16 +2537,15 @@
     "eyebrow": "Referrals",
     "title": "Every friend who plays makes you stronger",
     "lead": "Hand a friend your invite code and you keep 5% more XP on every catch you make, for as long as they keep playing. No cap, and it never comes out of their side.",
-    "youLabel": "Your code",
     "codeLabel": "Your eight character invite code",
-    "multiplierLabel": "XP on every catch",
-    "activeLabel": "Playing",
-    "dormantLabel": "Dormant",
-    "catchCount": "{caught} of {needed}",
+    "activeLabel": "ACTIVE",
     "exampleLabel": "One legendary catch, before and after",
     "exampleBody": "The bonus is applied when the catch is scored, on the server, and written into the record alongside your clan rank so the two can be told apart later.",
-    "catchCountActive": "{caught} catches",
-    "activeRule": "Active means {needed} catches in the last {days} days"
+    "activeRule": "Active means {needed} catches in the last {days} days",
+    "panelTitle": "YOUR TEAM",
+    "rateLabel": "YOUR RATE",
+    "idle": "dormant",
+    "levelShort": "LV"
   },
   "referralRules": {
     "once": {

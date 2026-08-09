@@ -2537,16 +2537,15 @@
     "eyebrow": "Einladungen",
     "title": "Jede Freundin und jeder Freund, der spielt, macht dich stärker",
     "lead": "Gib deinen Einladungscode weiter und du behältst 5% mehr XP bei jedem eigenen Fang, solange die andere Seite weiterspielt. Ohne Obergrenze, und es geht nie von deren Seite ab.",
-    "youLabel": "Dein Code",
     "codeLabel": "Dein achtstelliger Einladungscode",
-    "multiplierLabel": "XP bei jedem Fang",
-    "activeLabel": "Spielt",
-    "dormantLabel": "Ruht",
-    "catchCount": "{caught} von {needed}",
+    "activeLabel": "AKTIV",
     "exampleLabel": "Ein legendärer Fang, vorher und nachher",
     "exampleBody": "Der Bonus wird auf dem Server vergeben, sobald der Fang gewertet wird, und getrennt vom Clanrang gespeichert, damit beide später auseinandergehalten werden können.",
-    "catchCountActive": "{caught} Fänge",
-    "activeRule": "Aktiv heißt {needed} Fänge in den letzten {days} Tagen"
+    "activeRule": "Aktiv heißt {needed} Fänge in den letzten {days} Tagen",
+    "panelTitle": "DEIN TEAM",
+    "rateLabel": "DEIN SATZ",
+    "idle": "ruht",
+    "levelShort": "LV"
   },
   "referralRules": {
     "once": {

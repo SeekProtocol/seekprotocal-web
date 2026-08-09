@@ -4125,430 +4125,240 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
    REFERRALS
    --------------------------------------------------------------------------
 
-   A team assembling around you, with the multiplier climbing as it fills.
+   A terminal, not a diagram. What replaced a dial here was accurate and read
+   as a schematic: it drew the shape of a referral tree, which nobody needs
+   explaining, and left the thing that matters to a caption. What matters is
+   that a team pays out continuously and only while its members are playing,
+   and that is a feed.
 
-   Nothing here uses `filter: blur()` or `backdrop-filter`, and that is a
-   decision rather than an omission. Each one is its own compositing surface on
-   iOS, expanded beyond the element's own box to hold the blur's spread, and the
-   thirteen already on the homepage are the largest cost on it that nothing has
-   yet accounted for. A diagram is not worth adding to that bill. Glows are
-   painted as radial gradients, which cost a fill in a layer that already
-   exists — the same treatment `.grid-field` was given on handhelds.
-
-   Everything that moves does so on transform and opacity only. `rise` and
-   `.reveal` once animated a blur and Chrome refused to composite either,
-   dropping both onto the main thread; that is the trap this avoids by never
-   animating anything else.
+   So this is the panel the globe section already speaks in. Nothing in it uses
+   `filter: blur()` or `backdrop-filter`: each is a compositing surface on iOS,
+   and the ones already on this page are the largest cost on it that nothing has
+   accounted for. Everything that moves does so on transform and opacity, which
+   the compositor carries alone.
    -------------------------------------------------------------------------- */
 
-.referral-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 3rem;
-  align-items: center;
+.referral-term {
   margin-top: 3rem;
-}
-
-/* --- the figure --------------------------------------------------------- */
-
-.referral-stage {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1;
-  max-width: 600px;
-  margin-inline: auto;
-  isolation: isolate;
-}
-
-/* The ring the team sits on. A gradient rather than a blurred disc: it fades
-   to nothing at 70% on its own, so there was never an edge for a blur to
-   soften. */
-.referral-stage::before {
-  content: "";
-  position: absolute;
-  inset: 4%;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    color-mix(in srgb, var(--brand) 7%, transparent),
-    transparent 68%
-  );
-  z-index: 0;
-}
-
-.referral-stage::after {
-  content: "";
-  position: absolute;
-  inset: 12%;
-  border-radius: 50%;
-  border: 1px dashed color-mix(in srgb, var(--line-strong) 70%, transparent);
-  z-index: 0;
-}
-
-/* The sweep. A conic wedge rotating under the threads, animated on transform
-   alone so the compositor carries it and the main thread never sees it. Slow on
-   purpose: this is a pulse, not a spinner. */
-.referral-sweep {
-  position: absolute;
-  inset: 12%;
-  border-radius: 50%;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg,
-    color-mix(in srgb, var(--brand-3) 12%, transparent) 26deg,
-    transparent 58deg
-  );
-  z-index: 0;
-  animation: referral-sweep-turn 9s linear infinite;
-}
-
-@keyframes referral-sweep-turn { to { transform: rotate(360deg); } }
-
-.referral-tick {
-  stroke: var(--line-strong);
-  stroke-width: 1;
-  vector-effect: non-scaling-stroke;
-  opacity: 0.5;
-}
-
-.referral-web {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  overflow: visible;
-}
-
-/* The thread from the hub to a friend.
-   Non-scaling-stroke because the viewBox is in per cent: without it the stroke
-   would thin on one axis and thicken on the other as the stage reflows.
-   The stroke is a gradient rather than a colour, lit at the friend's end and
-   almost gone by the hub, so the ring reads as where the earning happens. */
-.referral-link {
-  stroke: url(#referral-thread-dim);
-  stroke-width: 1.25;
-  stroke-linecap: round;
-  vector-effect: non-scaling-stroke;
-  opacity: 0;
-  transition: opacity 0.6s var(--ease-out);
-}
-
-.referral-link[data-here] { opacity: 1; }
-
-/* Mint is kept for states that mean something, and "this friend is playing" is
-   one. A dormant member's thread arrives and stays grey, which is the whole
-   distinction the figure exists to draw. */
-.referral-link[data-here][data-active] { stroke: url(#referral-thread); }
-
-/* The unstroked twin, kept for measuring against and never painted. */
-.referral-link-ghost { stroke: none; fill: none; }
-
-/* The payout, running the thread.
-   `offset-path` puts the mark on the same curve the thread is stroked with, so
-   it can never drift off it, and `offset-distance` is a compositor property the
-   way transform is. `offset-rotate: 0deg` keeps the head round rather than
-   letting it bank into the curve, which on a mark this small only reads as a
-   wobble. */
-.referral-spark {
-  offset-distance: 0%;
-  offset-rotate: 0deg;
-  opacity: 0;
-}
-
-.referral-spark[data-paying] { animation: referral-spark-run 0.62s var(--ease-out) both; }
-
-.referral-spark-head { fill: var(--brand-3); }
-.referral-spark-halo { fill: var(--brand-3); opacity: 0.22; }
-
-@keyframes referral-spark-run {
-  0%   { offset-distance: 0%;   opacity: 0; }
-  12%  { opacity: 1; }
-  82%  { opacity: 1; }
-  100% { offset-distance: 100%; opacity: 0; }
-}
-
-/* --- you, at the centre ------------------------------------------------- */
-
-.referral-you {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  display: grid;
-  justify-items: center;
-  gap: 0.4rem;
-  padding: 1rem 1rem 0.9rem;
+  border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--bg-raised);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-md);
-  text-align: center;
-  /* The brand ramp painted into the border box, which is the idiom the store
-     buttons already use. A hairline in --line read as a dialog on black; the
-     ramp says the hub belongs to the same family as the bolt travelling into
-     it. */
-  border-color: transparent;
-  background-image:
-    linear-gradient(var(--bg-raised), var(--bg-raised)),
-    linear-gradient(135deg, var(--brand-3), var(--brand), var(--brand-2));
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  /* Narrow on purpose. The count under a node is the widest thing in the ring
-     ("11 catches this week" at the left and right seats), and it is what the
-     card's own width has to make room for: measured at 600px, a card any wider
-     than this ran under @flinthq's line and the card wins on z-index. */
-  min-width: 9.25rem;
+  overflow: hidden;
 }
 
-.referral-you-label { color: var(--fg-subtle); }
+/* --- head --------------------------------------------------------------- */
 
-/* The centre takes the payment. A border that brightens for the length of the
-   arrival, so the far end of the line has somewhere to land. */
-.referral-you[data-paid] { border-color: color-mix(in srgb, var(--brand-3) 45%, var(--line)); }
-.referral-you[data-paid] .referral-mult-value { transform: scale(1.04); }
-.referral-mult-value { transition: transform 0.3s var(--ease-out); display: inline-block; }
-
-.referral-code {
+.referral-term-head {
+  position: relative;
   display: flex;
-  gap: 2px;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-sunken);
 }
 
-.referral-code-char {
+.referral-term-title { color: var(--fg-subtle); }
+
+.referral-term-code {
+  margin-left: auto;
+  margin-right: 2rem;
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  line-height: 1;
-  padding: 0.34rem 0.28rem;
-  min-width: 1.15rem;
-  border-radius: var(--radius-xs);
-  background: var(--bg-sunken);
-  border: 1px solid var(--line);
+  letter-spacing: 0.22em;
   color: var(--fg);
 }
 
-.referral-mult {
-  display: flex;
+/* --- rows --------------------------------------------------------------- */
+
+.referral-term-rows { display: grid; }
+
+.referral-row {
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr) 3.6rem 8.5rem 5.5rem 3rem;
   align-items: center;
-  gap: 0.22rem;
-  margin-top: 0.35rem;
-  font-family: var(--font-display);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--brand-3);
-}
-
-.referral-mult-value { font-size: 2rem; line-height: 1; }
-.referral-mult-bolt { margin-right: 0.05rem; }
-.referral-mult-x { font-size: 1.1rem; opacity: 0.7; }
-.referral-mult-label { color: var(--fg-subtle); }
-
-/* --- the team ----------------------------------------------------------- */
-
-.referral-node {
-  position: absolute;
-  z-index: 2;
-  display: grid;
-  justify-items: center;
-  gap: 0.3rem;
-  width: 7.5rem;
-  /* The seat is the node's centre, so it is pulled back by half of itself.
-     scale() composes out in page pixels here rather than scaling the
-     translation, which is why the two are written in this order. */
-  transform: translate(-50%, -50%) scale(0.82);
+  gap: 0.9rem;
+  padding: 0.7rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+  /* Arrives from the left, which is the direction a log fills in. */
   opacity: 0;
+  transform: translateX(-8px);
   transition:
-    opacity 0.45s var(--ease-out) var(--delay, 0ms),
-    transform 0.45s var(--ease-out) var(--delay, 0ms);
+    opacity 0.4s var(--ease-out),
+    transform 0.4s var(--ease-out),
+    background-color 0.5s var(--ease-out);
 }
 
-.referral-node[data-here] {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+.referral-row:last-child { border-bottom: 0; }
+.referral-row[data-here] { opacity: 1; transform: none; }
+
+/* The row a catch has just landed on. It fades back down rather than snapping,
+   so a reader glancing at the panel can still tell which line moved. */
+.referral-row[data-fresh] {
+  background: color-mix(in srgb, var(--brand-3) 7%, transparent);
+  transition-duration: 0.12s;
 }
 
-/* The face, inside the arc that says how far this friend is toward the bar.
-   The ring replaced a flat bar under the node: it reads at a glance as "this
-   one is full", needs no label, and puts the state on the person rather than
-   beside them. */
-.referral-node-face {
-  position: relative;
-  display: grid;
-  place-items: center;
-  width: 46px;
-  height: 46px;
+.referral-row-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  transition: background-color 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
 }
 
-.referral-node-arc {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  /* Twelve o'clock, clockwise, which is where a reader expects a dial to start. */
-  transform: rotate(-90deg);
-  overflow: visible;
+.referral-row[data-active] .referral-row-dot {
+  background: var(--brand-3);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-3) 18%, transparent);
 }
 
-.referral-node-arc-track {
-  fill: none;
-  stroke: var(--line);
-  stroke-width: 2;
-}
+.referral-row-who { display: flex; align-items: center; gap: 0.65rem; min-width: 0; }
 
-.referral-node-arc-fill {
-  fill: none;
-  stroke: var(--line-strong);
-  stroke-width: 2;
-  stroke-linecap: round;
-  transition: stroke-dashoffset 0.7s var(--ease-out), stroke 0.5s var(--ease-out);
-}
-
-.referral-node[data-active] .referral-node-arc-fill { stroke: var(--brand-3); }
-
-/* Dormant portraits are desaturated rather than hidden: the figure has to show
-   that they are there and not counting. */
-.referral-node-portrait {
-  display: block;
-  width: 34px;
-  height: 34px;
+.referral-row-face {
+  flex: none;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   overflow: hidden;
   background: var(--bg-sunken);
-  filter: saturate(0.2) brightness(0.62);
+  /* Dormant members are desaturated rather than hidden: the panel has to show
+     that they are there and not counting. */
+  filter: saturate(0.2) brightness(0.6);
   transition: filter 0.5s var(--ease-out);
 }
 
-.referral-node-portrait svg { display: block; width: 100%; height: 100%; }
+.referral-row-face svg { display: block; width: 100%; height: 100%; }
+.referral-row[data-active] .referral-row-face { filter: none; }
 
-.referral-node[data-active] .referral-node-portrait { filter: none; }
-
-/* The payout, written the way the app writes it. It rises off the friend and
-   fades, and it is out of flow so its arrival never moves the handle under it. */
-.referral-xp {
-  position: absolute;
-  bottom: calc(100% - 2px);
-  left: 50%;
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.22rem 0.46rem 0.22rem 0.24rem;
-  border-radius: 999px;
+.referral-row-handle {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
-  line-height: 1;
-  white-space: nowrap;
-  color: var(--fg);
-  /* The app draws a reward as a bordered chip with the gradient bolt inside
-     rather than a solid lozenge, and a solid fill would fight both the bolt's
-     ramp and the coin's own artwork. The rim carries the drop's rarity, which
-     is where the collectibles section puts it too. */
-  background: var(--bg-raised);
-  border: 1px solid color-mix(in srgb, var(--rarity, var(--brand-3)) 60%, transparent);
-  box-shadow: var(--shadow-sm);
-  opacity: 0;
-  transform: translate(-50%, 4px);
-  pointer-events: none;
-  z-index: 4;
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.referral-xp svg { flex: none; }
+.referral-row[data-active] .referral-row-handle { color: var(--fg); }
 
-.referral-xp-coin {
-  width: 16px;
-  height: 16px;
+.referral-row-level {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--fg-subtle);
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}
+
+.referral-row-coin { display: flex; align-items: center; gap: 0.45rem; min-width: 0; }
+
+.referral-row-coin img {
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   object-fit: cover;
   flex: none;
 }
 
-.referral-xp-symbol {
-  color: var(--rarity, var(--fg));
-  font-weight: 500;
-  /* The longest symbol on the ladder is FARTCOIN at eight, which is wider than
-     the chip wants to be next to everything else it is carrying. */
-  max-width: 5.2rem;
+.referral-row-symbol {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--rarity, var(--fg-muted));
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.referral-xp-amount {
-  display: flex;
-  align-items: center;
-  gap: 0.14rem;
-  color: var(--fg-muted);
-  padding-left: 0.3rem;
-  border-left: 1px solid var(--line);
-}
-
-.referral-xp[data-paying] { animation: referral-xp-rise 0.62s var(--ease-out) both; }
-
-@keyframes referral-xp-rise {
-  0%   { opacity: 0; transform: translate(-50%, 4px) scale(0.9); }
-  22%  { opacity: 1; transform: translate(-50%, -4px) scale(1); }
-  70%  { opacity: 1; transform: translate(-50%, -10px) scale(1); }
-  100% { opacity: 0; transform: translate(-50%, -18px) scale(0.96); }
-}
-
-.referral-node-handle {
+/* The two idle states share the coin column, because it is the same question
+   being answered either way: what has this friend done lately. */
+.referral-row-idle {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: var(--fg-muted);
-  white-space: nowrap;
-}
-
-.referral-node[data-active] .referral-node-handle { color: var(--fg); }
-
-.referral-node-count {
   color: var(--fg-subtle);
-  font-size: 0.58rem;
-  white-space: nowrap;
+  opacity: 0.75;
 }
 
-/* --- the readout -------------------------------------------------------- */
-
-.referral-side { display: grid; gap: 1.75rem; }
-
-.referral-tally {
-  display: grid;
-  gap: 0.9rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.referral-tally-counts { display: flex; gap: 2.5rem; }
-.referral-tally-rule { color: var(--fg-subtle); }
-
-.referral-tally-row { display: grid; gap: 0.2rem; }
-.referral-tally-row .t-mono-sm { color: var(--fg-subtle); }
-
-.referral-tally-value {
-  font-family: var(--font-display);
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.03em;
+.referral-row-xp {
+  display: flex;
+  align-items: center;
+  gap: 0.28rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
   color: var(--brand-3);
 }
 
-.referral-tally-dim { color: var(--fg-subtle); }
+.referral-row-xp svg { flex: none; }
 
-.referral-example-label { color: var(--fg-subtle); }
+.referral-row-short { color: var(--fg-subtle); }
 
-.referral-example-sum {
+.referral-row-age {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--fg-subtle);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- foot --------------------------------------------------------------- */
+
+.referral-term-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  border-top: 1px solid var(--line);
+  background: var(--bg-sunken);
+}
+
+.referral-term-foot .t-mono-sm { color: var(--fg-subtle); }
+.referral-term-foot b { font-weight: 500; color: var(--fg-muted); }
+.referral-term-foot b[data-lit] { color: var(--brand-3); }
+
+.referral-term-rate { display: flex; align-items: center; gap: 0.75rem; }
+
+.referral-term-mult {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--brand-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- what the panel is saying ------------------------------------------- */
+
+.referral-under {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.referral-sum-label, .referral-sum-rule { color: var(--fg-subtle); }
+
+.referral-sum-line {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin: 0.5rem 0 0.75rem;
+  margin: 0.5rem 0 0.9rem;
   font-family: var(--font-display);
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
-.referral-example-sum svg { color: var(--fg-subtle); flex: none; }
-.referral-example-base { font-size: 1.35rem; color: var(--fg-subtle); }
-.referral-example-out { font-size: 1.8rem; color: var(--brand-3); }
+.referral-sum-line svg { color: var(--fg-subtle); flex: none; }
+.referral-sum-base { font-size: 1.35rem; color: var(--fg-subtle); }
+.referral-sum-out {
+  font-size: 1.9rem;
+  color: var(--brand-3);
+  font-variant-numeric: tabular-nums;
+}
 
-.referral-rules { display: grid; gap: 1.1rem; }
+.referral-sum-rule { margin-top: 1rem; }
+
+.referral-rules { display: grid; gap: 1.25rem; align-content: start; }
 
 .referral-rule {
   display: grid;
@@ -4574,62 +4384,39 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
 /* --- narrow ------------------------------------------------------------- */
 
-@media (max-width: 980px) {
-  .referral-layout { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+@media (max-width: 900px) {
+  .referral-under { grid-template-columns: minmax(0, 1fr); gap: 2.25rem; }
 }
 
-@media (max-width: 560px) {
-  /* The nodes carry a handle, a bar and a count, and six of those around a
-     ring on a 360px screen collide with each other and with the centre. The
-     ring stays, tighter, and the node loses everything but its dot and handle;
-     the counts are what the tally beside it is for. */
-  .referral-stage { max-width: 340px; }
-  .referral-node { width: 5rem; }
-  .referral-node-count { display: none; }
-  /* The face and the portrait scale together: the arc is drawn on a viewBox so
-     it follows its box, but the portrait inside is a fixed pixel size and would
-     otherwise burst out of a smaller ring. */
-  .referral-node-face { width: 38px; height: 38px; }
-  .referral-node-portrait { width: 28px; height: 28px; }
-  .referral-node-arc-track, .referral-node-arc-fill { stroke-width: 2.6; }
-  .referral-node-handle { font-size: 0.62rem; }
+@media (max-width: 640px) {
+  /* Five columns do not fit a 393px screen, and the one that goes is the age:
+     it is the least of what a row says, and the feed still reads as live
+     because rows flash as they land. The symbol goes with it, since the coin's
+     own artwork already names the drop. */
+  .referral-row {
+    grid-template-columns: 8px minmax(0, 1fr) auto auto;
+    gap: 0.6rem;
+    padding: 0.65rem 0.9rem;
+  }
 
-  /* The centre loses its two labels rather than the ring losing its radius.
-     Measured at 393px: with them the card was tall enough that the four
-     diagonal seats clipped its corners, and pushing the ring outwards instead
-     would have run the nodes off the edge of a 340px stage. The chips still
-     read as a code and the multiplier still carries its own ×, so what goes is
-     the part that was only naming them. The tally beside the figure says
-     "playing" and "dormant" in full anyway. */
-  .referral-you-label, .referral-mult-label { display: none; }
-  .referral-you { min-width: 0; padding: 0.7rem 0.8rem; gap: 0.3rem; }
-  .referral-code-char { font-size: 0.66rem; min-width: 0.95rem; padding: 0.26rem 0.2rem; }
-  .referral-mult { margin-top: 0.1rem; }
-  .referral-mult-value { font-size: 1.5rem; }
-  .referral-tally { gap: 1.75rem; }
-  .referral-tally-value { font-size: 2rem; }
+  .referral-row-age { display: none; }
+  .referral-row-symbol { display: none; }
+  .referral-row-level { display: none; }
+  .referral-row-handle { font-size: 0.72rem; }
+  .referral-row-xp { font-size: 0.72rem; }
+
+  .referral-term-head, .referral-term-foot { padding: 0.75rem 0.9rem; }
+  .referral-term-code { margin-right: 1.75rem; font-size: 0.72rem; letter-spacing: 0.16em; }
+  .referral-term-mult { font-size: 1.25rem; }
 }
 
-/* The figure is an arrangement, not a performance. A reader who asked for less
-   motion is shown the finished state (the component sets it) and nothing here
-   transitions into place. */
+/* The panel is a reading of a state, not a performance. A reader who asked for
+   less motion gets it already populated (the component sees the query too) and
+   nothing here transitions into place. */
 @media (prefers-reduced-motion: reduce) {
-  .referral-node,
-  .referral-link,
-  .referral-node-portrait,
-  .referral-node-arc-fill,
-  .referral-mult-value {
-    transition: none;
-  }
-  /* The loop does not run at all here (the component sees the query too), but
-     the payout marks are declared as animations rather than as state, so they
-     are silenced in CSS as well rather than relying on that. */
-  .referral-xp,
-  .referral-spark {
-    animation: none;
-    opacity: 0;
-  }
-  .referral-sweep { animation: none; }
+  .referral-row,
+  .referral-row-dot,
+  .referral-row-face { transition: none; }
 }
 
 /* --------------------------------------------------------------------------

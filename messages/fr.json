@@ -2537,16 +2537,15 @@
     "eyebrow": "Invitations",
     "title": "Chaque ami qui joue vous rend plus fort",
     "lead": "Partagez votre code d'invitation et vous gardez 5% d'XP en plus sur chacune de vos captures, tant que cette personne continue de jouer. Sans plafond, et jamais prélevé sur sa part.",
-    "youLabel": "Votre code",
     "codeLabel": "Votre code d'invitation de huit caractères",
-    "multiplierLabel": "XP sur chaque capture",
-    "activeLabel": "Actif",
-    "dormantLabel": "En pause",
-    "catchCount": "{caught} sur {needed}",
+    "activeLabel": "ACTIFS",
     "exampleLabel": "Une capture légendaire, avant et après",
     "exampleBody": "Le bonus est appliqué sur le serveur au moment où la capture est comptée, et enregistré séparément du rang de clan pour que les deux restent distinguables.",
-    "catchCountActive": "{caught} captures",
-    "activeRule": "Actif signifie {needed} captures sur les {days} derniers jours"
+    "activeRule": "Actif signifie {needed} captures sur les {days} derniers jours",
+    "panelTitle": "VOTRE ÉQUIPE",
+    "rateLabel": "VOTRE TAUX",
+    "idle": "en pause",
+    "levelShort": "NV"
   },
   "referralRules": {
     "once": {

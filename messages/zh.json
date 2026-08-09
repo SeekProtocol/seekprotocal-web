@@ -2537,16 +2537,15 @@
     "eyebrow": "邀请",
     "title": "每一位在玩的好友都让你更强",
     "lead": "把邀请码交给好友，只要对方持续游玩，你自己的每一次捕获就多保留 5% 经验。没有上限，而且从不占用对方的收益。",
-    "youLabel": "你的邀请码",
     "codeLabel": "你的八位邀请码",
-    "multiplierLabel": "每次捕获的经验",
-    "activeLabel": "活跃中",
-    "dormantLabel": "已沉寂",
-    "catchCount": "{caught}/{needed}",
+    "activeLabel": "活跃",
     "exampleLabel": "一次传说级捕获，前后对比",
     "exampleBody": "加成在服务器端于捕获计分时生效，并与战队等级分开记录，以便日后区分两者。",
-    "catchCountActive": "{caught} 次捕获",
-    "activeRule": "活跃指最近 {days} 天内完成 {needed} 次捕获"
+    "activeRule": "活跃指最近 {days} 天内完成 {needed} 次捕获",
+    "panelTitle": "你的队伍",
+    "rateLabel": "你的倍率",
+    "idle": "沉寂",
+    "levelShort": "等级"
   },
   "referralRules": {
     "once": {

@@ -2537,16 +2537,15 @@
     "eyebrow": "招待",
     "title": "遊んでいる仲間が増えるほど、あなたは強くなる",
     "lead": "招待コードを友だちに渡すと、その人が遊び続けているあいだ、あなた自身の捕獲ごとに経験値が 5% 多く残ります。上限はなく、相手の取り分から引かれることもありません。",
-    "youLabel": "あなたのコード",
     "codeLabel": "8文字の招待コード",
-    "multiplierLabel": "捕獲ごとの経験値",
-    "activeLabel": "プレイ中",
-    "dormantLabel": "休止中",
-    "catchCount": "{caught}/{needed}",
+    "activeLabel": "アクティブ",
     "exampleLabel": "レジェンダリー1回、前と後",
     "exampleBody": "ボーナスは捕獲が集計される時点でサーバー側に適用され、クランランクとは別に記録されるため、後から両者を切り分けられます。",
-    "catchCountActive": "{caught} 回",
-    "activeRule": "アクティブとは直近 {days} 日で {needed} 回の捕獲"
+    "activeRule": "アクティブとは直近 {days} 日で {needed} 回の捕獲",
+    "panelTitle": "あなたのチーム",
+    "rateLabel": "あなたの倍率",
+    "idle": "休止中",
+    "levelShort": "LV"
   },
   "referralRules": {
     "once": {

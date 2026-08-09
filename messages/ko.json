@@ -2537,16 +2537,15 @@
     "eyebrow": "초대",
     "title": "함께 플레이하는 친구가 늘수록 강해집니다",
     "lead": "초대 코드를 친구에게 건네면, 그 친구가 계속 플레이하는 동안 내가 잡는 모든 포획에서 경험치를 5% 더 가져갑니다. 상한은 없고, 친구 몫에서 떼어오는 것도 아닙니다.",
-    "youLabel": "내 코드",
     "codeLabel": "여덟 자리 초대 코드",
-    "multiplierLabel": "포획마다 받는 경험치",
-    "activeLabel": "플레이 중",
-    "dormantLabel": "휴면",
-    "catchCount": "{caught}/{needed}",
+    "activeLabel": "활성",
     "exampleLabel": "레전더리 포획 한 번, 전과 후",
     "exampleBody": "보너스는 포획이 집계되는 시점에 서버에서 적용되며, 클랜 등급과 따로 기록되어 나중에 둘을 구분할 수 있습니다.",
-    "catchCountActive": "{caught}회",
-    "activeRule": "활성은 최근 {days}일 동안 {needed}회 포획"
+    "activeRule": "활성은 최근 {days}일 동안 {needed}회 포획",
+    "panelTitle": "내 팀",
+    "rateLabel": "내 배수",
+    "idle": "휴면",
+    "levelShort": "LV"
   },
   "referralRules": {
     "once": {

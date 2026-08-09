@@ -2537,16 +2537,15 @@
     "eyebrow": "Uitnodigingen",
     "title": "Elke vriend die speelt maakt jou sterker",
     "lead": "Geef een vriend je uitnodigingscode en je houdt 5% meer XP over aan elke vangst die je doet, zolang zij blijven spelen. Geen limiet, en het gaat nooit van hun kant af.",
-    "youLabel": "Jouw code",
     "codeLabel": "Jouw uitnodigingscode van acht tekens",
-    "multiplierLabel": "XP op elke vangst",
-    "activeLabel": "Speelt",
-    "dormantLabel": "Stil",
-    "catchCount": "{caught} van {needed}",
+    "activeLabel": "ACTIEF",
     "exampleLabel": "Eén legendarische vangst, voor en na",
     "exampleBody": "De bonus wordt toegekend op het moment dat de vangst geteld wordt, op de server, en apart van je clanrang vastgelegd zodat de twee later uit elkaar te houden zijn.",
-    "catchCountActive": "{caught} vangsten",
-    "activeRule": "Actief is {needed} vangsten in de laatste {days} dagen"
+    "activeRule": "Actief is {needed} vangsten in de laatste {days} dagen",
+    "panelTitle": "JOUW TEAM",
+    "rateLabel": "JOUW TARIEF",
+    "idle": "stil",
+    "levelShort": "LV"
   },
   "referralRules": {
     "once": {
