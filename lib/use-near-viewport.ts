@@ -85,27 +85,25 @@ export function useNearViewport(
     if (isOff("3d")) return;
     if (typeof IntersectionObserver === "undefined") return;
 
-    /* Anything already in range latches now, from geometry, without waiting on
-       the observer. The observer's first callback is async, so the section
-       above the fold would otherwise hold a spinner for a frame it did not
-       need to. */
-    const box = el.getBoundingClientRect();
-    const reach = buildReach * window.innerHeight;
+    /* There was a geometry shortcut here, latching straight from
+       getBoundingClientRect so that a section already in range did not wait a
+       frame on the observer's first callback. It has gone, for two reasons.
 
-    /* A display: none element has no layout box, so every edge reads zero and
-       the range test would call it visible and mount a scene nobody can see.
-       The two scrubbed sections are hidden exactly that way on a handheld (see
-       .scene-scrubbed), which is the whole point of hiding them.
+       It called setState synchronously from an effect body, which cascades a
+       second render and is what react-hooks/set-state-in-effect is for. And it
+       was buying a single frame of spinner, which mattered when latching meant
+       building a scene right there — it does not any more. The stage builds a
+       whole viewport ahead of the reader, so a frame either way at the moment
+       of mounting changes nothing anyone can see.
 
-       Skipping only the shortcut and still observing is deliberate: a tablet
-       rotated from portrait into landscape crosses the 1024px edge, the
-       section gains a box, and the observer is there to notice. */
-    const hasBox = box.width > 0 || box.height > 0;
-    if (hasBox && box.top < window.innerHeight + reach && box.bottom > -reach) {
-      setNear(true);
-      return;
-    }
+       An IntersectionObserver reports every element it is given on its first
+       callback, in range or not, so nothing is lost: the section above the fold
+       still latches on the next tick rather than needing to be told.
 
+       A display: none element has no layout box, which is how the two scrubbed
+       sections are hidden on a handheld — and the observer handles that
+       correctly on its own, where the old geometry test needed a guard for it,
+       since every edge of a box that is not there reads as zero. */
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries.some((entry) => entry.isIntersecting)) setNear(true);
