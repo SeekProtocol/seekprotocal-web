@@ -2565,5 +2565,35 @@
       "title": "Je vriend verliest niets",
       "body": "De bonus komt bovenop je eigen vangsten. Het is geen deel van die van hen, dus wat jij wint gaat bij niemand af."
     }
+  },
+  "referralInfo": {
+    "openLabel": "Hoe uitnodigingen precies werken",
+    "close": "Sluiten",
+    "eyebrow": "Uitnodigingen, volledig",
+    "title": "Wat een team waard is, en wanneer het begint te tellen",
+    "lead": "Twee dingen worden hier makkelijk verkeerd begrepen. De bonus heeft geen plafond, en een vriend gaat niet uitbetalen op het moment dat hij installeert. Allebei zijn ze beter te zien dan te horen.",
+    "ladderLabel": "Actieve vrienden, en wat jouw vangsten opleveren",
+    "ladderFriends": "{count} spelen er",
+    "noCap": "Er is geen limiet. Twintig actieve vrienden is een verdubbeling, en er staat niets in de som dat daar stopt.",
+    "lifecycleLabel": "Hoe een vriend een referral wordt",
+    "foot": "Een vriend telt zodra hij {needed} echte vangsten binnen {days} dagen heeft. Komt hij eronder, dan telt hij niet meer; speelt hij weer, dan telt hij weer. Er gaat niets verloren."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "Jij geeft je code",
+      "body": "Elke seeker krijgt bij aanmelden een code van acht tekens. Die is voorgoed van jou en er valt niets aan te claimen of te genereren."
+    },
+    "redeem": {
+      "title": "Hij vult hem in op een nieuw account",
+      "body": "Een code werkt alleen op een account zonder XP en zonder verzamelde munten. Hij wordt één keer vastgelegd en is daarna onwijzigbaar, dus niemand kan tussen teams verplaatst worden."
+    },
+    "play": {
+      "title": "Hij gaat erop uit en speelt",
+      "body": "Alleen echte vangsten tellen. Pogingen in een simulator worden apart vastgelegd en tellen niet mee."
+    },
+    "count": {
+      "title": "Hij gaat uitbetalen, en blijft dat doen",
+      "body": "Dit is de stap die mensen missen. Installeren is niet genoeg: de vriend moet echt buiten zijn voordat jouw multiplier beweegt."
+    }
   }
 }

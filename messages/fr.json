@@ -2565,5 +2565,35 @@
       "title": "Votre ami ne perd rien",
       "body": "Le bonus s'ajoute à vos propres captures. Ce n'est pas une part des siennes, donc ce que vous gagnez n'est retiré à personne."
     }
+  },
+  "referralInfo": {
+    "openLabel": "Comment fonctionnent les invitations, en détail",
+    "close": "Fermer",
+    "eyebrow": "Les invitations en détail",
+    "title": "Ce que vaut une équipe, et à partir de quand elle compte",
+    "lead": "Deux choses se comprennent mal ici. Le bonus n'a pas de plafond, et un ami ne commence pas à rapporter au moment où il installe. Les deux se voient mieux qu'elles ne se lisent.",
+    "ladderLabel": "Amis actifs, et ce que valent vos captures",
+    "ladderFriends": "{count} en jeu",
+    "noCap": "Il n'y a pas de plafond. Vingt amis actifs, c'est un doublement, et rien dans le calcul ne s'arrête là.",
+    "lifecycleLabel": "Comment un ami devient un parrainage",
+    "foot": "Un ami compte dès qu'il a {needed} captures réelles en {days} jours. En dessous il cesse de compter ; s'il rejoue, il recompte. Rien n'est perdu."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "Vous transmettez votre code",
+      "body": "Chaque seeker reçoit un code de huit caractères à l'inscription. Il est à vous pour de bon, il n'y a rien à réclamer ni à générer."
+    },
+    "redeem": {
+      "title": "Il le saisit sur un compte neuf",
+      "body": "Un code ne prend que sur un compte sans XP et sans rien de collecté. Il s'inscrit une fois et ne change plus, donc personne ne peut passer d'une équipe à une autre."
+    },
+    "play": {
+      "title": "Il sort et il joue",
+      "body": "Seules les captures réelles comptent. Les tentatives faites en simulateur sont enregistrées à part et n'entrent pas dans le total."
+    },
+    "count": {
+      "title": "Il rapporte, et continue de rapporter",
+      "body": "C'est l'étape que l'on saute. Installer ne suffit pas : la personne doit vraiment être dehors avant que votre multiplicateur ne bouge."
+    }
   }
 }

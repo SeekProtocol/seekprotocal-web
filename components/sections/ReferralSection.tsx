@@ -15,6 +15,7 @@ import {
 import { withCopy } from "@/lib/content-i18n";
 import PixelAvatar from "@/components/ui/PixelAvatar";
 import XpBolt from "@/components/brand/XpBolt";
+import ReferralInfo from "@/components/sections/ReferralInfo";
 import Image from "next/image";
 import { RARITY_COLOUR } from "@/lib/globe-drops";
 
@@ -353,6 +354,10 @@ export default function ReferralSection() {
 
             {/* You, and the code you are handing out. */}
             <div className="referral-you" data-paid={paying !== null || undefined}>
+              {/* The long version, for the two things the figure cannot carry
+                  at a glance: that the bonus has no ceiling, and that a friend
+                  does not start counting when they install. */}
+              <ReferralInfo />
               <span className="referral-you-label t-mono-sm">{t("youLabel")}</span>
               <span className="referral-code" aria-label={t("codeLabel")}>
                 {/* Drawn as characters rather than a string so the code reads as

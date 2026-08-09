@@ -110,3 +110,34 @@ export const RULES = [
   { id: "oneLevel" },
   { id: "friendKeeps" },
 ] as const;
+
+/**
+ * The rungs the modal's ladder walks, in active friends.
+ *
+ * It runs past any number a reader is likely to reach on purpose, because the
+ * point being made is that nothing stops it: `get_active_referral_count` is a
+ * plain `0.05 * count(*)` with no LEAST() anywhere, so twenty active friends is
+ * a straight doubling. Showing five and stopping would have illustrated the
+ * arithmetic and hidden the claim.
+ */
+export const LADDER = [0, 1, 3, 5, 10, 20];
+
+/**
+ * The lifecycle a referral goes through, as the modal steps it.
+ *
+ * Each id is a stage the database can actually be in, not a marketing beat:
+ *
+ *   share    the inviter has a share_code, generated at signup
+ *   redeem   set_referrer() writes referred_by, once, on a new account only
+ *   play     the friend makes non-simulator collection attempts
+ *   count    five of them inside seven days, and the friend starts paying
+ *
+ * The fourth is the one worth drawing, because it is the one people assume
+ * happens at the second.
+ */
+export const LIFECYCLE = [
+  { id: "share" },
+  { id: "redeem" },
+  { id: "play" },
+  { id: "count" },
+] as const;

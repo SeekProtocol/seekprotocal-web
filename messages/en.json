@@ -2565,5 +2565,35 @@
       "title": "Your friend loses nothing",
       "body": "The bonus is added to your own catches. It is not a cut of theirs, so nothing you gain is taken off anyone."
     }
+  },
+  "referralInfo": {
+    "openLabel": "How referrals work, in full",
+    "close": "Close",
+    "eyebrow": "Referrals in full",
+    "title": "What a team is worth, and when it starts counting",
+    "lead": "Two things are easy to get wrong here. The bonus has no ceiling, and a friend does not start paying the moment they install. Both are worth seeing rather than being told.",
+    "ladderLabel": "Active friends, and what your catches are worth",
+    "ladderFriends": "{count} playing",
+    "noCap": "There is no cap. Twenty active friends is a straight doubling, and nothing in the sum stops there.",
+    "lifecycleLabel": "How a friend becomes a referral",
+    "foot": "A friend counts once they have {needed} real catches inside {days} days. Fall short and they stop counting; play again and they are back. Nothing is lost either way."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "You hand over your code",
+      "body": "Every seeker gets an eight character code at signup. It is yours for good and there is nothing to claim or generate."
+    },
+    "redeem": {
+      "title": "They enter it on a fresh account",
+      "body": "A code only takes on an account with no XP and nothing collected. It is written once and cannot be changed after, so nobody can be moved between teams."
+    },
+    "play": {
+      "title": "They go out and play",
+      "body": "Only real catches count. Attempts made in a simulator are recorded separately and are not part of the total."
+    },
+    "count": {
+      "title": "They start paying, and keep paying",
+      "body": "This is the step people miss. Installing is not enough: the friend has to actually be out there before your multiplier moves."
+    }
   }
 }

@@ -2565,5 +2565,35 @@
       "title": "Tu amigo no pierde nada",
       "body": "El bono se suma a tus propias capturas. No es una parte de las suyas, así que lo que ganas no se le resta a nadie."
     }
+  },
+  "referralInfo": {
+    "openLabel": "Cómo funcionan las invitaciones, en detalle",
+    "close": "Cerrar",
+    "eyebrow": "Invitaciones al detalle",
+    "title": "Cuánto vale un equipo, y cuándo empieza a contar",
+    "lead": "Aquí hay dos cosas que se malinterpretan con facilidad. El bono no tiene techo, y un amigo no empieza a pagar en el momento de instalar. Las dos se entienden mejor viéndolas.",
+    "ladderLabel": "Amigos activos, y cuánto valen tus capturas",
+    "ladderFriends": "{count} jugando",
+    "noCap": "No hay límite. Veinte amigos activos es duplicar, y en la cuenta no hay nada que se detenga ahí.",
+    "lifecycleLabel": "Cómo un amigo se convierte en referido",
+    "foot": "Un amigo cuenta en cuanto lleva {needed} capturas reales en {days} días. Si baja de ahí deja de contar; si vuelve a jugar, vuelve a contar. No se pierde nada."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "Compartes tu código",
+      "body": "Cada seeker recibe un código de ocho caracteres al registrarse. Es tuyo para siempre y no hay nada que reclamar ni generar."
+    },
+    "redeem": {
+      "title": "Lo usa en una cuenta nueva",
+      "body": "Un código solo prende en una cuenta sin XP y sin nada recogido. Se escribe una vez y ya no cambia, así que nadie puede pasar de un equipo a otro."
+    },
+    "play": {
+      "title": "Sale a jugar",
+      "body": "Solo cuentan las capturas reales. Los intentos hechos en un simulador se registran aparte y no entran en el total."
+    },
+    "count": {
+      "title": "Empieza a pagar, y sigue haciéndolo",
+      "body": "Este es el paso que se salta la gente. Instalar no basta: esa persona tiene que estar realmente en la calle antes de que tu multiplicador se mueva."
+    }
   }
 }

@@ -4631,3 +4631,297 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   }
   .referral-sweep { animation: none; }
 }
+
+/* --------------------------------------------------------------------------
+   REFERRALS — THE LONG VERSION
+   --------------------------------------------------------------------------
+
+   Same shape as the whitepaper's chapter sheet: a scrim button under a
+   role="dialog" panel, rather than a second dialog idiom invented for one
+   section. What differs is the scrim itself, which is a plain wash here and not
+   a backdrop-filter — see the note on the handheld layer budget in globals.css
+   for why blur is avoided on a page this tall.
+   -------------------------------------------------------------------------- */
+
+/* The opener, in the corner of the hub. */
+.referral-info-open {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--fg-subtle);
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.referral-info-open:hover,
+.referral-info-open:focus-visible {
+  color: var(--brand-3);
+  background: color-mix(in srgb, var(--brand-3) 12%, transparent);
+}
+
+/* A 24px glyph is a fine target for a cursor and a poor one for a thumb, and
+   the hub card on a phone has no room to grow the visible button without
+   running into the code chips. So the hit area is extended past the box
+   instead, which changes nothing about the layout.
+
+   The site rejected exactly this trick for the mono chips, where wrapped rows
+   sat close enough that overlapping hit areas stole each other's taps. That
+   objection does not apply to one button alone in a corner with the nearest
+   other target a ring away. */
+@media (pointer: coarse) {
+  .referral-info-open::after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+  }
+}
+
+.referral-info { position: fixed; inset: 0; z-index: 200; }
+.referral-info[hidden] { display: none; }
+
+.referral-info-scrim {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  /* A literal black wash, not --bg-inverse. That token is the *opposite* of
+     the current surface, so in dark mode it resolves to white and the scrim
+     brightened the page instead of dimming it. A dialog scrim wants one colour
+     in both themes. */
+  background: rgba(0, 0, 0, 0.72);
+  cursor: pointer;
+  animation: referral-info-fade 0.25s var(--ease-out) both;
+}
+
+@keyframes referral-info-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.referral-info-panel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(46rem, calc(100vw - 2 * var(--gutter)));
+  max-height: min(84vh, 52rem);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  animation: referral-info-rise 0.32s var(--ease-out) both;
+}
+
+/* The panel takes focus on open so the keyboard lands inside it, which trips
+   the global :focus-visible ring in globals.css and drew a 2px band around the
+   whole dialog. Written at this specificity because a bare `outline: none` in
+   the rule above loses to it. The ring is meant for a control a reader has
+   tabbed to; a dialog container that took focus programmatically is already
+   announced by its role and its label. Controls inside it keep theirs. */
+.referral-info-panel:focus,
+.referral-info-panel:focus-visible { outline: none; }
+
+@keyframes referral-info-rise {
+  from { opacity: 0; transform: translate(-50%, calc(-50% + 14px)) scale(0.985); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+.referral-info-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.5rem 1.5rem 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.referral-info-title { margin-top: 0.4rem; }
+
+.referral-info-close {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--fg-muted);
+  cursor: pointer;
+  line-height: 1;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.referral-info-close:hover { border-color: var(--brand); color: var(--brand); }
+
+.referral-info-body {
+  display: grid;
+  gap: 2rem;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+/* --- the ladder --------------------------------------------------------- */
+
+.referral-ladder-label,
+.referral-life-label { color: var(--fg-subtle); margin-bottom: 0.9rem; }
+
+.referral-ladder-rows { display: grid; gap: 0.5rem; }
+
+.referral-ladder-row {
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr) 3.4rem;
+  align-items: center;
+  gap: 0.75rem;
+  opacity: 0.35;
+  transition: opacity 0.4s var(--ease-out);
+}
+
+.referral-ladder-row[data-on] { opacity: 1; }
+
+.referral-ladder-n { color: var(--fg-subtle); text-align: right; }
+
+.referral-ladder-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bg-sunken);
+  overflow: hidden;
+}
+
+.referral-ladder-bar {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  /* The ramp rather than a flat mint, so a long bar reads as a range and not as
+     a single quantity. */
+  background: linear-gradient(90deg, var(--brand-3), var(--brand));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.55s var(--ease-out);
+}
+
+.referral-ladder-row[data-on] .referral-ladder-bar { transform: scaleX(1); }
+
+.referral-ladder-mult {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+}
+
+.referral-ladder-row[data-now] .referral-ladder-mult { color: var(--brand-3); }
+
+.referral-ladder-sum {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 1.1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line);
+}
+
+.referral-ladder-sum .t-mono-sm { color: var(--fg-subtle); }
+
+.referral-ladder-xp {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--brand-3);
+}
+
+.referral-ladder-note { color: var(--fg-subtle); margin-top: 0.6rem; }
+
+/* --- the lifecycle ------------------------------------------------------ */
+
+.referral-life-steps { display: grid; gap: 1.1rem; }
+
+.referral-life-step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  opacity: 0.4;
+  transition: opacity 0.45s var(--ease-out);
+}
+
+.referral-life-step[data-on] { opacity: 1; }
+
+.referral-life-mark {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--fg-subtle);
+  transition: border-color 0.35s, color 0.35s, background-color 0.35s;
+}
+
+.referral-life-step[data-on] .referral-life-mark {
+  border-color: color-mix(in srgb, var(--brand-3) 50%, transparent);
+  color: var(--brand-3);
+}
+
+.referral-life-step[data-now] .referral-life-mark {
+  background: var(--brand-3);
+  border-color: var(--brand-3);
+  color: var(--bg);
+}
+
+.referral-life-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.referral-info-foot {
+  color: var(--fg-subtle);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 640px) {
+  .referral-info-panel {
+    /* A sheet from the bottom on a phone, which is where a thumb is. */
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    width: 100%;
+    max-height: 88vh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    animation: referral-info-slide 0.32s var(--ease-out) both;
+  }
+
+  @keyframes referral-info-slide {
+    from { transform: translate(-50%, 22px); opacity: 0; }
+    to   { transform: translate(-50%, 0); opacity: 1; }
+  }
+
+  .referral-info-body { padding-bottom: calc(1.5rem + env(safe-area-inset-bottom)); }
+  .referral-ladder-row { grid-template-columns: 1.8rem minmax(0, 1fr) 3rem; gap: 0.6rem; }
+  .referral-ladder-xp { font-size: 1.25rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .referral-info-scrim,
+  .referral-info-panel { animation: none; }
+  .referral-ladder-row,
+  .referral-ladder-bar,
+  .referral-life-step,
+  .referral-life-mark { transition: none; }
+}

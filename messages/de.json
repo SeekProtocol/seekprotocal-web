@@ -2565,5 +2565,35 @@
       "title": "Die andere Seite verliert nichts",
       "body": "Der Bonus kommt zu deinen eigenen Fängen hinzu. Er ist kein Anteil an ihren, also geht dein Gewinn niemandem ab."
     }
+  },
+  "referralInfo": {
+    "openLabel": "Wie Einladungen genau funktionieren",
+    "close": "Schließen",
+    "eyebrow": "Einladungen im Detail",
+    "title": "Was ein Team wert ist, und ab wann es zählt",
+    "lead": "Zwei Dinge werden hier leicht falsch verstanden. Der Bonus hat keine Obergrenze, und eine Freundin zahlt nicht ab dem Moment der Installation. Beides sieht man besser, als man es liest.",
+    "ladderLabel": "Aktive Freunde, und was deine Fänge wert sind",
+    "ladderFriends": "{count} spielen",
+    "noCap": "Es gibt keine Obergrenze. Zwanzig aktive Freunde sind eine glatte Verdopplung, und in der Rechnung steht nichts, das dort aufhört.",
+    "lifecycleLabel": "Wie aus einer Einladung eine Referral wird",
+    "foot": "Eine Freundin zählt, sobald sie {needed} echte Fänge in {days} Tagen hat. Bleibt sie darunter, zählt sie nicht mehr; spielt sie wieder, zählt sie wieder. Verloren geht dabei nichts."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "Du gibst deinen Code weiter",
+      "body": "Jede Seekerin bekommt bei der Anmeldung einen achtstelligen Code. Er gehört dauerhaft dir, es gibt nichts zu beanspruchen oder zu erzeugen."
+    },
+    "redeem": {
+      "title": "Sie gibt ihn auf einem neuen Konto ein",
+      "body": "Ein Code greift nur auf einem Konto ohne XP und ohne gesammelte Münzen. Er wird einmal gesetzt und ist danach unveränderlich, also lässt sich niemand zwischen Teams verschieben."
+    },
+    "play": {
+      "title": "Sie geht raus und spielt",
+      "body": "Nur echte Fänge zählen. Versuche im Simulator werden getrennt erfasst und gehen nicht in die Summe ein."
+    },
+    "count": {
+      "title": "Sie zahlt aus, und bleibt dabei",
+      "body": "Das ist der Schritt, den die meisten überspringen. Installieren reicht nicht: die andere Seite muss tatsächlich unterwegs sein, bevor dein Multiplikator sich bewegt."
+    }
   }
 }
