@@ -1,11 +1,9 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
-import { useNearViewport } from "@/lib/use-near-viewport";
 import { MARK_HOLES, MARK_OUTLINE } from "@/lib/seek-mark";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useSceneSlot } from "@/lib/use-scene-slot";
+import type { SceneBuilder, SceneModule } from "@/lib/three-stage";
 
 type Props = {
   className?: string;
@@ -210,42 +208,24 @@ function buildEnvironment(renderer: THREE.WebGLRenderer) {
   return envMap;
 }
 
-export default function SeekCoin({ className = "", scale = 1, spin = 0.35 }: Props) {
-  const hostRef = useRef<HTMLDivElement>(null);
-  const { theme } = useTheme();
-  const themeRef = useRef(theme);
-  themeRef.current = theme;
-
-  // Built one viewport out, not on mount. See useNearViewport.
-  const nearViewport = useNearViewport(hostRef);
-
-  useEffect(() => {
-    const host = hostRef.current;
-    if (!host) return;
-    if (!nearViewport) return;
-
+/**
+ * The coin, as a scene the shared stage can draw.
+ *
+ * Everything above this line is unchanged: the same lathe profile, the same
+ * injected gradient, the same studio environment. What is gone is the renderer,
+ * the animation loop and the ResizeObserver, which the stage now owns once for
+ * the whole page rather than five times over. See lib/three-stage.ts.
+ */
+function buildCoin(scale: number, spin: number): SceneBuilder {
+  return ({ renderer, width, height, host }) => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    let renderer: THREE.WebGLRenderer;
-    try {
-      renderer = new THREE.WebGLRenderer(rendererOptions());
-    } catch {
-      return; // No WebGL — the static fallback image stays visible.
-    }
-
-    host.dataset.ready = "true";
-    renderer.setClearAlpha(0);
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.15;
-    renderer.outputColorSpace = THREE.SRGBColorSpace;
-    host.appendChild(renderer.domElement);
-    renderer.domElement.style.width = "100%";
-    renderer.domElement.style.height = "100%";
-    renderer.domElement.style.display = "block";
 
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 100);
+    const camera = new THREE.PerspectiveCamera(32, width / height || 1, 0.1, 100);
     camera.position.set(0, 0, 6.4);
 
+    /* PMREM needs a renderer to prefilter into, which is why the builder is
+       handed one. It is borrowed for the length of this call and not kept. */
     const envMap = buildEnvironment(renderer);
     scene.environment = envMap;
 
@@ -263,8 +243,7 @@ export default function SeekCoin({ className = "", scale = 1, spin = 0.35 }: Pro
       envMapIntensity: 1.1,
     });
     const bodyGeometry = buildBodyGeometry();
-    const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
-    coin.add(body);
+    coin.add(new THREE.Mesh(bodyGeometry, bodyMaterial));
 
     // Gradient ring seated in the recess.
     const ringGeometry = buildRingGeometry(0.68, 0.75);
@@ -314,91 +293,71 @@ export default function SeekCoin({ className = "", scale = 1, spin = 0.35 }: Pro
     window.addEventListener("pointermove", onPointerMove, { passive: true });
     host.addEventListener("pointerleave", onPointerLeave);
 
-    // --- sizing -----------------------------------------------------------
-    const resize = () => {
-      const { clientWidth: w, clientHeight: h } = host;
-      if (!w || !h) return;
-      renderer.setPixelRatio(pixelRatio());
-      renderer.setSize(w, h, false);
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-    };
-    resize();
-    const resizeObserver = new ResizeObserver(resize);
-    resizeObserver.observe(host);
+    let elapsed = 0;
 
-    // --- render loop, paused while offscreen ------------------------------
-    let visible = true;
-    const intersectionObserver = new IntersectionObserver(
-      ([entry]) => {
-        visible = entry.isIntersecting;
+    const built: SceneModule = {
+      scene,
+      camera,
+      /* Read fresh by the stage after update() runs, so the exposure written
+         below lands on the frame that follows it rather than the next one. */
+      state: {
+        clearAlpha: 0,
+        toneMapping: THREE.ACESFilmicToneMapping,
+        toneMappingExposure: 1.15,
       },
-      { rootMargin: "120px" }
-    );
-    intersectionObserver.observe(host);
+      resize(w, h) {
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+      },
+      update({ dt }) {
+        elapsed += dt;
 
-    // Manual timing — THREE.Clock is deprecated and Timer buys nothing here.
-    let last = performance.now();
-    let elapsedTotal = 0;
-    let frame = 0;
+        pointer.x += (target.x - pointer.x) * 0.055;
+        pointer.y += (target.y - pointer.y) * 0.055;
 
-    const tick = () => {
-      frame = requestAnimationFrame(tick);
-      if (!visible) return;
+        if (reduced) {
+          coin.rotation.set(-0.12, -0.42, 0.06);
+        } else {
+          // Rock around a three-quarter view. The combined swing and pointer
+          // tilt is capped well short of 90° so the coin never turns edge-on.
+          coin.rotation.y = THREE.MathUtils.clamp(
+            -0.42 + Math.sin(elapsed * spin) * 0.4 + pointer.x * 0.2,
+            -0.95,
+            0.18
+          );
+          coin.rotation.x = -pointer.y * 0.3 + Math.sin(elapsed * 0.6) * 0.06;
+          coin.rotation.z = Math.cos(elapsed * 0.45) * 0.04;
+          coin.position.y = Math.sin(elapsed * 0.9) * 0.07;
+        }
 
-      const now = performance.now();
-      const delta = Math.min((now - last) / 1000, 0.05);
-      last = now;
-      elapsedTotal += delta;
-      const elapsed = elapsedTotal;
-
-      pointer.x += (target.x - pointer.x) * 0.055;
-      pointer.y += (target.y - pointer.y) * 0.055;
-
-      if (reduced) {
-        coin.rotation.set(-0.12, -0.42, 0.06);
-      } else {
-        // Rock around a three-quarter view. The combined swing and pointer
-        // tilt is capped well short of 90° so the coin never turns edge-on.
-        coin.rotation.y = THREE.MathUtils.clamp(
-          -0.42 + Math.sin(elapsed * spin) * 0.4 + pointer.x * 0.2,
-          -0.95,
-          0.18
-        );
-        coin.rotation.x = -pointer.y * 0.3 + Math.sin(elapsed * 0.6) * 0.06;
-        coin.rotation.z = Math.cos(elapsed * 0.45) * 0.04;
-        coin.position.y = Math.sin(elapsed * 0.9) * 0.07;
-      }
-
-      renderer.toneMappingExposure = themeRef.current === "dark" ? 1.32 : 1.12;
-      renderer.render(scene, camera);
+        /* Read off the document rather than through useTheme. The scene is not
+           a React component any more, and the attribute is what the theme
+           actually is — ThemeProvider writes it to <html>. */
+        built.state!.toneMappingExposure =
+          document.documentElement.dataset.theme === "dark" ? 1.32 : 1.12;
+      },
+      dispose() {
+        window.removeEventListener("pointermove", onPointerMove);
+        host.removeEventListener("pointerleave", onPointerLeave);
+        bodyGeometry.dispose();
+        ringGeometry.dispose();
+        markGeometry.dispose();
+        bodyMaterial.dispose();
+        ringMaterial.dispose();
+        markMaterial.dispose();
+        envMap.dispose();
+      },
     };
-    tick();
+    return built;
+  };
+}
 
-    return () => {
-      cancelAnimationFrame(frame);
-      resizeObserver.disconnect();
-      intersectionObserver.disconnect();
-      window.removeEventListener("pointermove", onPointerMove);
-      host.removeEventListener("pointerleave", onPointerLeave);
-      bodyGeometry.dispose();
-      ringGeometry.dispose();
-      markGeometry.dispose();
-      bodyMaterial.dispose();
-      ringMaterial.dispose();
-      markMaterial.dispose();
-      envMap.dispose();
-      renderer.dispose();
-      /* dispose() releases what three.js allocated; it does not release the
-         context itself. Safari keeps the drawing buffer of a detached canvas
-         until it feels like collecting it, which on a phone is usually after
-         the next scene has already allocated its own. Asking for the loss
-         explicitly frees it now. */
-      renderer.forceContextLoss();
-      renderer.domElement.remove();
-      delete host.dataset.ready;
-    };
-  }, [scale, spin, nearViewport]);
+export default function SeekCoin({ className = "", scale = 1, spin = 0.35 }: Props) {
+  const { hostRef, viewRef } = useSceneSlot(buildCoin(scale, spin));
 
-  return <div ref={hostRef} className={`three-host coin-canvas ${className}`} aria-hidden="true" />;
+  return (
+    <div ref={hostRef} className={`three-host coin-canvas ${className}`} aria-hidden="true">
+      <canvas ref={viewRef} className="three-view" />
+    </div>
+  );
 }

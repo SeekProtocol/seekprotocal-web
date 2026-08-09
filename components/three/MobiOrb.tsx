@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import * as THREE from "three";
-import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
-import { useNearViewport } from "@/lib/use-near-viewport";
+import { isHandheld } from "@/lib/render-budget";
+import { useSceneSlot } from "@/lib/use-scene-slot";
+import type { SceneBuilder, SceneModule } from "@/lib/three-stage";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
@@ -55,53 +56,33 @@ function colourFor(name: string) {
   return null;
 }
 
-export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: Props) {
-  const hostRef = useRef<HTMLDivElement>(null);
-  const [loaded, setLoaded] = useState(false);
-
-  /* The render loop is set up once and reads both of these every frame, so the
-     props are mirrored into refs rather than being closed over. Written from an
-     effect rather than during render: assigning to a ref while rendering is the
-     thing React tells you not to do, and the loop cannot see the difference. */
-  const stateRef = useRef(state);
-  const pulseRef = useRef(pulse);
-  useEffect(() => {
-    stateRef.current = state;
-  }, [state]);
-  useEffect(() => {
-    pulseRef.current = pulse;
-  }, [pulse]);
-
-  // Built one viewport out, not on mount. See useNearViewport.
-  const nearViewport = useNearViewport(hostRef);
-
-  useEffect(() => {
-    const host = hostRef.current;
-    if (!host) return;
-    if (!nearViewport) return;
-
+/**
+ * Mobi, as a scene the shared stage can draw.
+ *
+ * This is the one scene that cannot use the stage's default single render, and
+ * the reason is the selective bloom. The colour cluster is bloomed on its own
+ * layer and the glass and eyes are drawn sharp over the top; blooming the eyes
+ * with the rest is what once turned him into a white smear. Two passes, so the
+ * module supplies its own `render` and the stage stands back.
+ *
+ * `EffectComposer` owns render targets, and left alone it sizes them to the
+ * whole canvas. On a shared buffer sized to the largest slot on the page that
+ * would be a mip chain far bigger than Mobi needs. They are sized to the slot
+ * instead, and because the stage has already set the viewport and the scissor
+ * to that slot, the output pass's full-coverage quad lands exactly inside it.
+ *
+ * The handheld path is unchanged: no composer at all, one plain pass with every
+ * layer enabled. UnrealBloomPass keeps five mip levels on top of the composer's
+ * own two, and that was the single most expensive thing this scene allocated on
+ * a phone.
+ */
+function buildMobiOrb(
+  stateRef: React.MutableRefObject<MobiState>,
+  pulseRef: React.MutableRefObject<number>,
+  onLoaded: () => void,
+): SceneBuilder {
+  return ({ renderer, width, height, host }) => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    let renderer: THREE.WebGLRenderer;
-    try {
-      renderer = new THREE.WebGLRenderer(rendererOptions());
-    } catch {
-      return;
-    }
-
-    // Opaque black rather than a transparent canvas: the bloom composite
-    // writes a full-coverage quad, so alpha cannot survive the pass chain.
-    // The section behind this is black in both themes, so it joins seamlessly.
-    renderer.setClearColor(0x000000, 1);
-    renderer.outputColorSpace = THREE.SRGBColorSpace;
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.1;
-    host.dataset.ready = "true";
-    host.appendChild(renderer.domElement);
-    Object.assign(renderer.domElement.style, {
-      width: "100%",
-      height: "100%",
-      display: "block",
-    });
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 100);
@@ -292,7 +273,10 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
         wrapper.scale.setScalar(2.6 / (size || 1));
         body.add(wrapper);
 
-        setLoaded(true);
+        /* Told through a callback rather than a setState the scene closes over,
+           because the scene is not a React component any more. It still drives
+           `data-loaded`, which is what fades the CSS fallback orb out. */
+        onLoaded();
       },
       undefined,
       () => {
@@ -300,30 +284,6 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
       }
     );
 
-    const resize = () => {
-      const { clientWidth: w, clientHeight: h } = host;
-      if (!w || !h) return;
-      const dpr = pixelRatio();
-      renderer.setPixelRatio(dpr);
-      renderer.setSize(w, h, false);
-      if (composer && bloom) {
-        composer.setPixelRatio(dpr * bloomScale);
-        composer.setSize(w, h);
-        bloom.setSize(w * bloomScale, h * bloomScale);
-      }
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-    };
-    resize();
-    const resizeObserver = new ResizeObserver(resize);
-    resizeObserver.observe(host);
-
-    let visible = true;
-    const intersectionObserver = new IntersectionObserver(
-      ([entry]) => (visible = entry.isIntersecting),
-      { rootMargin: "150px" }
-    );
-    intersectionObserver.observe(host);
 
     /* Pointer makes Mobi look toward the cursor.
      *
@@ -351,7 +311,6 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
     };
     host.addEventListener("pointerleave", onPointerLeave);
 
-    let last = performance.now();
     let elapsed = 0;
     let blinkTimer = 60 / BLINK_RATE;
     let blinkLeft = 0;
@@ -361,141 +320,179 @@ export default function MobiOrb({ className = "", state = "idle", pulse = 0 }: P
     let seenPulse = pulseRef.current;
     const look = { x: 0, y: 0 };
 
-    const tick = () => {
-      frame = requestAnimationFrame(tick);
-      if (!visible) return;
-
-      const now = performance.now();
-      const delta = Math.min((now - last) / 1000, 0.05);
-      last = now;
-      elapsed += delta;
-
-      const targetIntensity =
-        stateRef.current === "speaking" ? 1 : stateRef.current === "thinking" ? 0.6 : stateRef.current === "listening" ? 0.35 : 0.12;
-      intensity += (targetIntensity - intensity) * 0.06;
-
-      // ---- tap impulse ---------------------------------------------------
-      if (pulseRef.current !== seenPulse) {
-        seenPulse = pulseRef.current;
-        impulse = 1;
-        rings.forEach((ring) => (ring.t = -ring.delay));
-      }
-      // Frame-rate independent decay, so a 120 Hz screen sees the same curve.
-      impulse *= Math.pow(0.012, delta);
-      if (impulse < 0.001) impulse = 0;
-
-      for (const ring of rings) {
-        if (ring.t === Infinity) continue;
-        ring.t += delta / 1.05;
-        if (ring.t >= 1) {
-          ring.t = Infinity;
-          ring.mesh.visible = false;
-          continue;
+    const built: SceneModule = {
+      scene,
+      camera,
+      /* Opaque black rather than a transparent slot: the bloom composite writes
+         a full-coverage quad, so alpha cannot survive the pass chain. The
+         section behind this is black in both themes, so it joins seamlessly. */
+      state: {
+        clearColor: 0x000000,
+        clearAlpha: 1,
+        toneMapping: THREE.ACESFilmicToneMapping,
+        toneMappingExposure: 1.1,
+      },
+      resize(w, h) {
+        if (composer && bloom) {
+          /* Sized to the slot, not to the shared buffer. setPixelRatio is left
+             to match the renderer's own so the chain is not resampled twice. */
+          composer.setPixelRatio(renderer.getPixelRatio() * bloomScale);
+          composer.setSize(w, h);
+          bloom.setSize(w * bloomScale, h * bloomScale);
         }
-        if (ring.t < 0) continue;
-        ring.mesh.visible = true;
-        // Out fast, then easing to a stop, the way a shockwave loses energy.
-        // Kept inside the frustum: the camera sees 1.34 units either side
-        // of centre, so anything past that leaves the shot before it is read.
-        const eased = 1 - Math.pow(1 - ring.t, 2.4);
-        ring.mesh.scale.setScalar(0.58 + eased * 0.72);
-        ring.material.opacity = Math.pow(1 - ring.t, 1.6);
-      }
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+      },
+      update({ dt }) {
+        const delta = dt;
+        elapsed += delta;
 
-      look.x += (target.x - look.x) * 0.05;
-      look.y += (target.y - look.y) * 0.05;
+        const targetIntensity =
+          stateRef.current === "speaking" ? 1 : stateRef.current === "thinking" ? 0.6 : stateRef.current === "listening" ? 0.35 : 0.12;
+        intensity += (targetIntensity - intensity) * 0.06;
 
-      if (!reduced) {
-        root.rotation.y = look.x * 0.42 + Math.sin(elapsed * 0.4) * 0.06;
-        root.rotation.x = -look.y * 0.3 + Math.sin(elapsed * 0.55) * 0.04;
-        root.position.y = Math.sin(elapsed * 0.9) * 0.07;
+        // ---- tap impulse ---------------------------------------------------
+        if (pulseRef.current !== seenPulse) {
+          seenPulse = pulseRef.current;
+          impulse = 1;
+          rings.forEach((ring) => (ring.t = -ring.delay));
+        }
+        // Frame-rate independent decay, so a 120 Hz screen sees the same curve.
+        impulse *= Math.pow(0.012, delta);
+        if (impulse < 0.001) impulse = 0;
 
-        // Speaking squashes the body slightly on each beat. A tap punches it
-        // outward on top of that and lets it settle back with a small bounce.
-        const squash = 1 + Math.sin(elapsed * 7) * 0.03 * intensity;
-        const punch = 1 + impulse * 0.18 - Math.pow(impulse, 3) * 0.09;
-        body.scale.set((1 / squash) * punch, squash * punch, (1 / squash) * punch);
-
-        // The colour cluster only churns while thinking, and spins up hard for
-        // the moment after a tap whatever state it is in.
-        const churn = stateRef.current === "thinking" ? 0.5 : 0.08;
-        if (colourRoot) {
-          colourRoot.rotation.y += delta * (churn + impulse * 5.5);
-          colourRoot.rotation.z += delta * (churn * 0.5 + impulse * 2.2);
+        for (const ring of rings) {
+          if (ring.t === Infinity) continue;
+          ring.t += delta / 1.05;
+          if (ring.t >= 1) {
+            ring.t = Infinity;
+            ring.mesh.visible = false;
+            continue;
+          }
+          if (ring.t < 0) continue;
+          ring.mesh.visible = true;
+          // Out fast, then easing to a stop, the way a shockwave loses energy.
+          // Kept inside the frustum: the camera sees 1.34 units either side
+          // of centre, so anything past that leaves the shot before it is read.
+          const eased = 1 - Math.pow(1 - ring.t, 2.4);
+          ring.mesh.scale.setScalar(0.58 + eased * 0.72);
+          ring.material.opacity = Math.pow(1 - ring.t, 1.6);
         }
 
-        // Blink
-        blinkTimer -= delta;
-        if (blinkTimer <= 0) {
-          blinkLeft = BLINK_DURATION;
-          blinkTimer = 60 / BLINK_RATE;
+        look.x += (target.x - look.x) * 0.05;
+        look.y += (target.y - look.y) * 0.05;
+
+        if (!reduced) {
+          root.rotation.y = look.x * 0.42 + Math.sin(elapsed * 0.4) * 0.06;
+          root.rotation.x = -look.y * 0.3 + Math.sin(elapsed * 0.55) * 0.04;
+          root.position.y = Math.sin(elapsed * 0.9) * 0.07;
+
+          // Speaking squashes the body slightly on each beat. A tap punches it
+          // outward on top of that and lets it settle back with a small bounce.
+          const squash = 1 + Math.sin(elapsed * 7) * 0.03 * intensity;
+          const punch = 1 + impulse * 0.18 - Math.pow(impulse, 3) * 0.09;
+          body.scale.set((1 / squash) * punch, squash * punch, (1 / squash) * punch);
+
+          // The colour cluster only churns while thinking, and spins up hard for
+          // the moment after a tap whatever state it is in.
+          const churn = stateRef.current === "thinking" ? 0.5 : 0.08;
+          if (colourRoot) {
+            colourRoot.rotation.y += delta * (churn + impulse * 5.5);
+            colourRoot.rotation.z += delta * (churn * 0.5 + impulse * 2.2);
+          }
+
+          // Blink
+          blinkTimer -= delta;
+          if (blinkTimer <= 0) {
+            blinkLeft = BLINK_DURATION;
+            blinkTimer = 60 / BLINK_RATE;
+          }
+          // A tap widens the eyes for a moment, which is most of what makes the
+          // orb read as having noticed you rather than merely lit up.
+          const startle = 1 + impulse * 0.4;
+          if (blinkLeft > 0) {
+            blinkLeft -= delta;
+            const t = Math.max(0, blinkLeft / BLINK_DURATION);
+            const openness = Math.max(0.06, Math.abs(t - 0.5) * 2);
+            eyes.forEach((eye) => eye.mesh.scale.setY(eye.baseY * openness * startle));
+          } else {
+            eyes.forEach((eye) => eye.mesh.scale.setY(eye.baseY * startle));
+          }
         }
-        // A tap widens the eyes for a moment, which is most of what makes the
-        // orb read as having noticed you rather than merely lit up.
-        const startle = 1 + impulse * 0.4;
-        if (blinkLeft > 0) {
-          blinkLeft -= delta;
-          const t = Math.max(0, blinkLeft / BLINK_DURATION);
-          const openness = Math.max(0.06, Math.abs(t - 0.5) * 2);
-          eyes.forEach((eye) => eye.mesh.scale.setY(eye.baseY * openness * startle));
+
+        if (bloom) {
+          // Speaking drives the glow, so the orb brightens as it talks, and a tap
+          // flashes it well past anything the states reach on their own.
+          bloom.strength = 0.55 + intensity * 0.5 + impulse * 1.1;
+        }
+      },
+      render(r) {
+        if (composer) {
+          // Pass one: the colour cluster, bloomed.
+          camera.layers.set(BLOOM_LAYER);
+          composer.render();
+
+          // Pass two: glass, eyes and halo drawn sharp over the top.
+          camera.layers.set(SHARP_LAYER);
+          r.clearDepth();
+          r.render(scene, camera);
         } else {
-          eyes.forEach((eye) => eye.mesh.scale.setY(eye.baseY * startle));
+          // Handheld: one pass, every layer, no composer targets.
+          camera.layers.enableAll();
+          r.render(scene, camera);
         }
-      }
-
-      if (composer && bloom) {
-        // Speaking drives the glow, so the orb brightens as it talks, and a tap
-        // flashes it well past anything the states reach on their own.
-        bloom.strength = 0.55 + intensity * 0.5 + impulse * 1.1;
-
-        // Pass one: the colour cluster, bloomed.
-        camera.layers.set(BLOOM_LAYER);
-        composer.render();
-
-        // Pass two: glass, eyes and halo drawn sharp over the top.
-        camera.layers.set(SHARP_LAYER);
-        renderer.autoClear = false;
-        renderer.clearDepth();
-        renderer.render(scene, camera);
-        renderer.autoClear = true;
-      } else {
-        // Handheld: one pass, every layer, no composer targets.
-        camera.layers.enableAll();
-        renderer.render(scene, camera);
-      }
+      },
+      dispose() {
+        disposed = true;
+        window.removeEventListener("pointermove", onPointerMove);
+        host.removeEventListener("pointerleave", onPointerLeave);
+        scene.traverse((child) => {
+          if (child instanceof THREE.Mesh) child.geometry?.dispose();
+        });
+        rings.forEach((ring) => ring.material.dispose());
+        ringGeometry.dispose();
+        disposables.forEach((d) => d.dispose());
+        composer?.dispose();
+      },
     };
-    tick();
 
-    return () => {
-      disposed = true;
-      cancelAnimationFrame(frame);
-      resizeObserver.disconnect();
-      intersectionObserver.disconnect();
-      window.removeEventListener("pointermove", onPointerMove);
-      host.removeEventListener("pointerleave", onPointerLeave);
-      scene.traverse((child) => {
-        if (child instanceof THREE.Mesh) child.geometry?.dispose();
-      });
-      rings.forEach((ring) => ring.material.dispose());
-      ringGeometry.dispose();
-      disposables.forEach((d) => d.dispose());
-      composer?.dispose();
-      renderer.dispose();
-      /* dispose() releases what three.js allocated; it does not release the
-         context itself. Safari keeps the drawing buffer of a detached canvas
-         until it feels like collecting it, which on a phone is usually after
-         the next scene has already allocated its own. Asking for the loss
-         explicitly frees it now. */
-      renderer.forceContextLoss();
-      renderer.domElement.remove();
-      delete host.dataset.ready;
-    };
-  }, [nearViewport]);
+    built.resize!(width, height);
+    return built;
+  };
+}
+
+export default function MobiOrb({ state = "idle", pulse = 0, className = "" }: Props) {
+  const [loaded, setLoaded] = useState(false);
+
+  /* The scene reads both of these every frame, so the props are mirrored into
+     refs rather than closed over. Written from an effect rather than during
+     render: assigning to a ref while rendering is the thing React tells you not
+     to do, and the loop cannot see the difference. Unchanged from before the
+     move to the shared stage. */
+  const stateRef = useRef(state);
+  const pulseRef = useRef(pulse);
+  useEffect(() => {
+    stateRef.current = state;
+  }, [state]);
+  useEffect(() => {
+    pulseRef.current = pulse;
+  }, [pulse]);
+
+  const onLoaded = useCallback(() => setLoaded(true), []);
+
+  /* Built inside the callback rather than at render time, so the refs are read
+     when the stage actually builds the scene and not on every render that
+     happens to pass through here. */
+  const { hostRef, viewRef } = useSceneSlot((ctx) =>
+    buildMobiOrb(stateRef, pulseRef, onLoaded)(ctx)
+  );
 
   return (
     <div className={`mobi ${className}`} data-loaded={loaded || undefined}>
       <span className="mobi-fallback" aria-hidden="true" />
-      <div ref={hostRef} className="three-host mobi-canvas" aria-hidden="true" />
+      <div ref={hostRef} className="three-host mobi-canvas" aria-hidden="true">
+        <canvas ref={viewRef} className="three-view" />
+      </div>
     </div>
   );
 }

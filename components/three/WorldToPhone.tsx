@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
-import { useNearViewport } from "@/lib/use-near-viewport";
+import { useSceneSlot } from "@/lib/use-scene-slot";
+import type { SceneBuilder, SceneModule } from "@/lib/three-stage";
 import { COLLECTIBLES, RARITY_LADDER } from "@/content/collectibles";
 
 /**
@@ -103,39 +102,25 @@ function dotTexture() {
   return t;
 }
 
-export default function WorldToPhone({ progressRef, className = "" }: Props) {
-  const hostRef = useRef<HTMLDivElement>(null);
-  /* No theme subscription here on purpose. The scene is night in both themes,
-     the section it sits in is `.section-inverse`, and the ref this used to
-     mirror the theme into was never read by anything. */
-
-  // Built one viewport out, not on mount. See useNearViewport.
-  const nearViewport = useNearViewport(hostRef);
-
-  useEffect(() => {
-    const host = hostRef.current;
-    if (!host) return;
-    if (!nearViewport) return;
-
-    let renderer: THREE.WebGLRenderer;
-    try {
-      // Logarithmic depth: the scene now spans from a 10cm kerb to a planet
-      // 2,500 units away, and a linear buffer cannot hold both.
-      renderer = new THREE.WebGLRenderer(rendererOptions({ logarithmicDepthBuffer: true }));
-    } catch {
-      return;
-    }
-
-    host.dataset.ready = "true";
-    renderer.setClearAlpha(0);
-    renderer.outputColorSpace = THREE.SRGBColorSpace;
-    host.appendChild(renderer.domElement);
-    Object.assign(renderer.domElement.style, {
-      width: "100%",
-      height: "100%",
-      display: "block",
-    });
-
+/**
+ * The descent, as a scene the shared stage can draw.
+ *
+ * The flight is untouched: the same exponential altitude curve, the same
+ * planet of 620 city units with its pole under the ground plane, the same fog
+ * density of 0.28/altitude, the same guards that stop the 147 instance
+ * matrices being re-uploaded on a settled frame.
+ *
+ * One thing did have to move out. This scene needs a logarithmic depth buffer —
+ * it spans a 10cm kerb and a planet 2,500 units away — and that is a *renderer*
+ * setting, not a scene one: three.js reads it into WebGLCapabilities and
+ * compiles it into every shader the renderer builds. With one shared renderer
+ * there is one answer for all five scenes, so the request is declared on the
+ * slot and the stage decides. See logDepthWanted() in lib/three-stage.ts, which
+ * turns it on wherever this scene can run and shouts in development if that
+ * ever stops being true.
+ */
+function buildWorldToPhone(progressRef: React.MutableRefObject<number>): SceneBuilder {
+  return ({ width, height }) => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(42, 1, 0.4, 9000);
 
@@ -552,34 +537,6 @@ export default function WorldToPhone({ progressRef, className = "" }: Props) {
     cityGroup.add(scan);
 
     // =====================================================================
-    // SIZING
-    // =====================================================================
-    let lastW = 0;
-    let lastH = 0;
-    const resize = () => {
-      const { clientWidth: w, clientHeight: h } = host;
-      if (!w || !h) return;
-      // The frame animates every frame while it closes; only rebuild the
-      // drawing buffer when the change is worth the reallocation.
-      if (Math.abs(w - lastW) < 4 && Math.abs(h - lastH) < 4) return;
-      lastW = w;
-      lastH = h;
-      renderer.setPixelRatio(pixelRatio());
-      renderer.setSize(w, h, false);
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-    };
-    resize();
-    const resizeObserver = new ResizeObserver(resize);
-    resizeObserver.observe(host);
-
-    let visible = true;
-    const intersectionObserver = new IntersectionObserver(
-      ([e]) => (visible = e.isIntersecting),
-      { rootMargin: "150px" }
-    );
-    intersectionObserver.observe(host);
-
     // =====================================================================
     // LOOP
     // =====================================================================
@@ -596,158 +553,165 @@ export default function WorldToPhone({ progressRef, className = "" }: Props) {
     /** The descent itself is over before the frame starts closing. */
     const DIVE_TO = 0.8;
 
-    let last = performance.now();
     let elapsed = 0;
-    let frame = 0;
     /** Cheap guards: neither of these is worth redoing on a settled frame. */
     let lastGrow = -1;
     let lastCityIn = -1;
 
     const lookTarget = new THREE.Vector3();
 
-    const tick = () => {
-      frame = requestAnimationFrame(tick);
-      if (!visible) return;
+    const built: SceneModule = {
+      scene,
+      camera,
+      state: { clearAlpha: 0 },
+      resize(w, h) {
+        /* The 4px deadband the old ResizeObserver used is gone, and it is not
+           missed: it existed because a resize reallocated the drawing buffer,
+           and the frame closing on every scroll frame made that ruinous. The
+           shared buffer is sized by the stage now, so this only updates the
+           projection — which is a matrix, not an allocation. */
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+      },
+      update({ dt }) {
+        elapsed += dt;
+        const delta = dt;
 
-      const now = performance.now();
-      const delta = Math.min((now - last) / 1000, 0.05);
-      last = now;
-      elapsed += delta;
+        const p = clamp01(progressRef.current);
 
-      const p = clamp01(progressRef.current);
+        // ---- the descent ---------------------------------------------------
+        // One exponential fall. Equal scroll buys equal proportion of the height
+        // that is left, which is what a descent actually feels like.
+        const dive = ease(between(p, 0, DIVE_TO));
+        const framed = ease(between(p, FRAME_FROM, FRAME_TO));
+        const alt = ALT_TOP * Math.pow(ALT_STREET / ALT_TOP, dive);
 
-      // ---- the descent ---------------------------------------------------
-      // One exponential fall. Equal scroll buys equal proportion of the height
-      // that is left, which is what a descent actually feels like.
-      const dive = ease(between(p, 0, DIVE_TO));
-      const framed = ease(between(p, FRAME_FROM, FRAME_TO));
-      const alt = ALT_TOP * Math.pow(ALT_STREET / ALT_TOP, dive);
+        /* The camera tips from straight down to a three-quarter view as it falls.
+           Straight down at the top is what lets the planet read as a ball rather
+           than as a wall, and it is also why there is no join: from directly
+           above, a sphere and a plane look the same once you are close enough. */
+        const tip = ease(dive);
+        const back = alt * (0.05 + tip * 2.1);
+        // A slow drift across the target, and a bank into it. Banking is most of
+        // what separates a camera move from a slider.
+        const drift = Math.sin(elapsed * 0.09) * (0.06 + tip * 0.02);
+        const bank = drift * 0.35 * (1 - framed);
 
-      /* The camera tips from straight down to a three-quarter view as it falls.
-         Straight down at the top is what lets the planet read as a ball rather
-         than as a wall, and it is also why there is no join: from directly
-         above, a sphere and a plane look the same once you are close enough. */
-      const tip = ease(dive);
-      const back = alt * (0.05 + tip * 2.1);
-      // A slow drift across the target, and a bank into it. Banking is most of
-      // what separates a camera move from a slider.
-      const drift = Math.sin(elapsed * 0.09) * (0.06 + tip * 0.02);
-      const bank = drift * 0.35 * (1 - framed);
+        camera.up.set(Math.sin(bank), Math.cos(bank), 0);
+        camera.position.set(
+          drift * alt * 0.9,
+          alt + framed * 2,
+          back
+        );
+        lookTarget.set(0, tip * 4.6 + framed * -3.4, tip * -6.5 + framed * 1.5);
+        camera.lookAt(lookTarget);
+        camera.fov = 42 - tip * 9 + framed * 4;
+        camera.updateProjectionMatrix();
 
-      camera.up.set(Math.sin(bank), Math.cos(bank), 0);
-      camera.position.set(
-        drift * alt * 0.9,
-        alt + framed * 2,
-        back
-      );
-      lookTarget.set(0, tip * 4.6 + framed * -3.4, tip * -6.5 + framed * 1.5);
-      camera.lookAt(lookTarget);
-      camera.fov = 42 - tip * 9 + framed * 4;
-      camera.updateProjectionMatrix();
+        /* Haze is a depth cue, not a curtain.
+         *
+         * The camera's distance to the city is roughly proportional to altitude,
+         * so a density proportional to 1/altitude holds the *amount* of haze
+         * steady across the whole flight: the far blocks always sit a little
+         * back from the near ones, whether you are fifteen units up or fifteen
+         * hundred.
+         *
+         * The first version capped the density, and the cap, tuned at street
+         * level, buried the city completely from a hundred units up. Hiding the
+         * city from orbit is `cityIn`'s job. This only has to give depth. */
+        fog.density = 0.28 / Math.max(alt, 18);
 
-      /* Haze is a depth cue, not a curtain.
-       *
-       * The camera's distance to the city is roughly proportional to altitude,
-       * so a density proportional to 1/altitude holds the *amount* of haze
-       * steady across the whole flight: the far blocks always sit a little
-       * back from the near ones, whether you are fifteen units up or fifteen
-       * hundred.
-       *
-       * The first version capped the density, and the cap, tuned at street
-       * level, buried the city completely from a hundred units up. Hiding the
-       * city from orbit is `cityIn`'s job. This only has to give depth. */
-      fog.density = 0.28 / Math.max(alt, 18);
+        // ---- the planet ----------------------------------------------------
+        // It never switches off; it simply ends up under the ground.
+        const orbital = 1 - clamp01((ALT_TOP * 0.32 - alt) / (ALT_TOP * 0.28));
+        spinner.rotation.y += delta * 0.05 * orbital;
+        landMaterial.opacity = 0.9 * clamp01((alt - 190) / 420);
+        landMaterial.size = 2.4;
+        /* The sky goes as the frame closes.
+         *
+         * Once the viewport is a phone screen, the top of that portrait strip was
+         * filled with the horizon glow, which put a blue band above the map. The
+         * app does not render sky, so neither does this. */
+        atmosphere.uniforms.uFade.value = 1 - framed;
 
-      // ---- the planet ----------------------------------------------------
-      // It never switches off; it simply ends up under the ground.
-      const orbital = 1 - clamp01((ALT_TOP * 0.32 - alt) / (ALT_TOP * 0.28));
-      spinner.rotation.y += delta * 0.05 * orbital;
-      landMaterial.opacity = 0.9 * clamp01((alt - 190) / 420);
-      landMaterial.size = 2.4;
-      /* The sky goes as the frame closes.
-       *
-       * Once the viewport is a phone screen, the top of that portrait strip was
-       * filled with the horizon glow, which put a blue band above the map. The
-       * app does not render sky, so neither does this. */
-      atmosphere.uniforms.uFade.value = 1 - framed;
+        // ---- the city ------------------------------------------------------
+        // Emerges out of the haze as the haze thins. There is no threshold at
+        // which it appears, only an altitude at which you can see it.
+        const cityIn = ease(clamp01((CITY_FROM - alt) / (CITY_FROM - CITY_TO)));
+        cityGroup.visible = cityIn > 0.001;
 
-      // ---- the city ------------------------------------------------------
-      // Emerges out of the haze as the haze thins. There is no threshold at
-      // which it appears, only an altitude at which you can see it.
-      const cityIn = ease(clamp01((CITY_FROM - alt) / (CITY_FROM - CITY_TO)));
-      cityGroup.visible = cityIn > 0.001;
-
-      if (cityIn > 0.001) {
-        if (Math.abs(cityIn - lastCityIn) > 0.001) {
-          lastCityIn = cityIn;
-          buildingMaterial.opacity = cityIn;
-          roadMaterial.opacity = 0.55 * cityIn;
-          groundMaterial.opacity = cityIn;
-          if (windowShader) windowShader.uniforms.uWindow.value = cityIn * 1.25;
-        }
-
-        /* Buildings grow out of the ground as the city arrives. This used to
-           decompose and re-upload all 147 instance matrices on every frame for
-           the whole rest of the section, long after they had finished growing.
-           It runs while the value is actually moving and then stops. */
-        const grow = cityIn;
-        if (Math.abs(grow - lastGrow) > 0.002) {
-          lastGrow = grow;
-          for (let i = 0; i < buildingCount; i++) {
-            buildings.getMatrixAt(i, dummy.matrix);
-            dummy.matrix.decompose(dummy.position, dummy.quaternion, dummy.scale);
-            const h = heights[i] * Math.max(0.02, grow);
-            dummy.scale.y = h;
-            dummy.position.y = h / 2;
-            dummy.updateMatrix();
-            buildings.setMatrixAt(i, dummy.matrix);
+        if (cityIn > 0.001) {
+          if (Math.abs(cityIn - lastCityIn) > 0.001) {
+            lastCityIn = cityIn;
+            buildingMaterial.opacity = cityIn;
+            roadMaterial.opacity = 0.55 * cityIn;
+            groundMaterial.opacity = cityIn;
+            if (windowShader) windowShader.uniforms.uWindow.value = cityIn * 1.25;
           }
-          buildings.instanceMatrix.needsUpdate = true;
+
+          /* Buildings grow out of the ground as the city arrives. This used to
+             decompose and re-upload all 147 instance matrices on every frame for
+             the whole rest of the section, long after they had finished growing.
+             It runs while the value is actually moving and then stops. */
+          const grow = cityIn;
+          if (Math.abs(grow - lastGrow) > 0.002) {
+            lastGrow = grow;
+            for (let i = 0; i < buildingCount; i++) {
+              buildings.getMatrixAt(i, dummy.matrix);
+              dummy.matrix.decompose(dummy.position, dummy.quaternion, dummy.scale);
+              const h = heights[i] * Math.max(0.02, grow);
+              dummy.scale.y = h;
+              dummy.position.y = h / 2;
+              dummy.updateMatrix();
+              buildings.setMatrixAt(i, dummy.matrix);
+            }
+            buildings.instanceMatrix.needsUpdate = true;
+          }
+
+          citySprites.forEach((entry, i) => {
+            const bob = Math.sin(elapsed * 1.5 + entry.phase) * 0.3;
+            entry.sprite.position.y = 3.2 + bob;
+            entry.glow.position.y = 3.2 + bob;
+            entry.sprite.material.opacity = cityIn;
+            entry.glowMaterial.opacity = (0.55 + Math.sin(elapsed * 2 + entry.phase) * 0.15) * cityIn;
+            entry.stemMaterial.opacity = 0.35 * cityIn;
+            const pulse = (elapsed * 0.55 + i * 0.2) % 1;
+            entry.ring.scale.setScalar(1 + pulse * 2.2);
+            entry.ringMaterial.opacity = (1 - pulse) * 0.85 * cityIn;
+          });
+
+          meMaterial.opacity = 0.22 * cityIn;
+          meDotMaterial.opacity = cityIn;
+          meHalo.scale.setScalar(1 + Math.sin(elapsed * 1.6) * 0.12);
+
+          scanMaterial.opacity = 0.07 * cityIn;
+          scan.position.z = ((elapsed * 9) % (span * 2)) - span;
+          scan.position.y = 0.04;
         }
-
-        citySprites.forEach((entry, i) => {
-          const bob = Math.sin(elapsed * 1.5 + entry.phase) * 0.3;
-          entry.sprite.position.y = 3.2 + bob;
-          entry.glow.position.y = 3.2 + bob;
-          entry.sprite.material.opacity = cityIn;
-          entry.glowMaterial.opacity = (0.55 + Math.sin(elapsed * 2 + entry.phase) * 0.15) * cityIn;
-          entry.stemMaterial.opacity = 0.35 * cityIn;
-          const pulse = (elapsed * 0.55 + i * 0.2) % 1;
-          entry.ring.scale.setScalar(1 + pulse * 2.2);
-          entry.ringMaterial.opacity = (1 - pulse) * 0.85 * cityIn;
-        });
-
-        meMaterial.opacity = 0.22 * cityIn;
-        meDotMaterial.opacity = cityIn;
-        meHalo.scale.setScalar(1 + Math.sin(elapsed * 1.6) * 0.12);
-
-        scanMaterial.opacity = 0.07 * cityIn;
-        scan.position.z = ((elapsed * 9) % (span * 2)) - span;
-        scan.position.y = 0.04;
-      }
-
-      renderer.render(scene, camera);
+      },
+      dispose() {
+        cancelled = true;
+        buildings.dispose();
+        disposables.forEach((d) => d.dispose());
+      },
     };
-    tick();
 
-    return () => {
-      cancelled = true;
-      cancelAnimationFrame(frame);
-      resizeObserver.disconnect();
-      intersectionObserver.disconnect();
-      buildings.dispose();
-      disposables.forEach((d) => d.dispose());
-      renderer.dispose();
-      /* dispose() releases what three.js allocated; it does not release the
-         context itself. Safari keeps the drawing buffer of a detached canvas
-         until it feels like collecting it, which on a phone is usually after
-         the next scene has already allocated its own. Asking for the loss
-         explicitly frees it now. */
-      renderer.forceContextLoss();
-      renderer.domElement.remove();
-      delete host.dataset.ready;
-    };
-  }, [progressRef, nearViewport]);
+    built.resize!(width, height);
+    return built;
+  };
+}
 
-  return <div ref={hostRef} className={`three-host wtp-canvas ${className}`} aria-hidden="true" />;
+export default function WorldToPhone({ progressRef, className = "" }: Props) {
+  /* needsLogDepth is a declaration, not a request the stage can grant late: the
+     renderer is built before this slot is, so the flag is there to be checked
+     against what the stage already decided. See lib/three-stage.ts. */
+  const { hostRef, viewRef } = useSceneSlot(buildWorldToPhone(progressRef), {
+    needsLogDepth: true,
+  });
+
+  return (
+    <div ref={hostRef} className={`three-host wtp-canvas ${className}`} aria-hidden="true">
+      <canvas ref={viewRef} className="three-view" />
+    </div>
+  );
 }

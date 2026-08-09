@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import * as THREE from "three";
-import { isHandheld, pixelRatio, rendererOptions } from "@/lib/render-budget";
-import { useNearViewport } from "@/lib/use-near-viewport";
+import { useSceneSlot } from "@/lib/use-scene-slot";
+import type { SceneBuilder, SceneModule } from "@/lib/three-stage";
 import { CITIES, type City } from "@/lib/seek-cities";
 import {
   DROP_COINS,
@@ -107,53 +107,37 @@ function buildArc(from: THREE.Vector3, to: THREE.Vector3, segments = 72) {
   return { geometry, curve };
 }
 
-export default function SeekGlobe({
-  className = "",
-  onCollect,
-  onSelect,
-  zoomRef,
-  zoomDepth = 1,
-  focusRef,
-}: Props) {
-  const hostRef = useRef<HTMLDivElement>(null);
-  const labelLayerRef = useRef<HTMLDivElement>(null);
-  const { theme } = useTheme();
-  const themeRef = useRef(theme);
-  themeRef.current = theme;
-  const collectRef = useRef(onCollect);
-  collectRef.current = onCollect;
-  const selectRef = useRef(onSelect);
-  selectRef.current = onSelect;
-
-  // Built one viewport out, not on mount. See useNearViewport.
-  const nearViewport = useNearViewport(hostRef);
-
-  useEffect(() => {
-    const host = hostRef.current;
-    const labelLayer = labelLayerRef.current;
-    if (!host || !labelLayer) return;
-    if (!nearViewport) return;
-
+/**
+ * The globe, as a scene the shared stage can draw.
+ *
+ * Unchanged: the real geography, the fifty cities, the arc emitters, the
+ * declutter that keeps labels off each other and off the chrome, and the
+ * scratch vectors that stopped this allocating a few thousand short-lived
+ * Vector3s a second once a selection pushed the zoom up.
+ *
+ * One thing had to move. Every pointer handler was bound to the renderer's own
+ * canvas, and that canvas is offscreen now — it would never see an event. They
+ * bind to the slot's visible canvas instead, which is also the box the
+ * raycaster has to measure against, because it is what the reader is pointing
+ * at. The stage hands it to the builder for exactly this.
+ */
+function buildSeekGlobe(
+  zoomDepth: number,
+  zoomRef: React.MutableRefObject<number> | undefined,
+  collectRef: React.MutableRefObject<((drop: Drop) => void) | undefined>,
+  selectRef: React.MutableRefObject<((drop: Drop | null) => void) | undefined>,
+  focusRef: React.MutableRefObject<string | null> | undefined,
+  labelLayer: HTMLElement,
+): SceneBuilder {
+  return ({ width, height, host, view }) => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    let renderer: THREE.WebGLRenderer;
-    try {
-      renderer = new THREE.WebGLRenderer(rendererOptions());
-    } catch {
-      return;
-    }
 
-    host.dataset.ready = "true";
-    renderer.setClearAlpha(0);
-    renderer.outputColorSpace = THREE.SRGBColorSpace;
-    host.appendChild(renderer.domElement);
-    Object.assign(renderer.domElement.style, {
-      width: "100%",
-      height: "100%",
-      display: "block",
-      cursor: "grab",
-      touchAction: "pan-y",
-    });
-
+    /* The grab cursor and the touch-action used to be written onto the
+       renderer's canvas. That canvas is offscreen now, so they belong to the
+       one the reader actually touches. pan-y keeps a vertical scroll working
+       over a globe that swallows horizontal drags. */
+    view.style.cursor = "grab";
+    view.style.touchAction = "pan-y";
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
     camera.position.set(0, 0.3, 4.35);
@@ -516,7 +500,7 @@ export default function SeekGlobe({
     let hovered: CoinNode | null = null;
 
     const setNdc = (event: PointerEvent) => {
-      const rect = renderer.domElement.getBoundingClientRect();
+      const rect = view.getBoundingClientRect();
       pointerNdc.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
       pointerNdc.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
     };
@@ -536,8 +520,8 @@ export default function SeekGlobe({
       moved = 0;
       lastX = event.clientX;
       lastY = event.clientY;
-      renderer.domElement.style.cursor = "grabbing";
-      renderer.domElement.setPointerCapture(event.pointerId);
+      view.style.cursor = "grabbing";
+      view.setPointerCapture(event.pointerId);
     };
 
     const onPointerMove = (event: PointerEvent) => {
@@ -557,16 +541,16 @@ export default function SeekGlobe({
       const hit = pickCoin();
       if (hit !== hovered) {
         hovered = hit;
-        renderer.domElement.style.cursor = hit ? "pointer" : "grab";
+        view.style.cursor = hit ? "pointer" : "grab";
       }
     };
 
     const onPointerUp = (event: PointerEvent) => {
       const wasDragging = dragging;
       dragging = false;
-      renderer.domElement.style.cursor = hovered ? "pointer" : "grab";
+      view.style.cursor = hovered ? "pointer" : "grab";
       try {
-        renderer.domElement.releasePointerCapture(event.pointerId);
+        view.releasePointerCapture(event.pointerId);
       } catch {
         /* already released */
       }
@@ -586,10 +570,10 @@ export default function SeekGlobe({
       }
     };
 
-    renderer.domElement.addEventListener("pointerdown", onPointerDown);
-    renderer.domElement.addEventListener("pointermove", onPointerMove);
-    renderer.domElement.addEventListener("pointerup", onPointerUp);
-    renderer.domElement.addEventListener("pointercancel", onPointerUp);
+    view.addEventListener("pointerdown", onPointerDown);
+    view.addEventListener("pointermove", onPointerMove);
+    view.addEventListener("pointerup", onPointerUp);
+    view.addEventListener("pointercancel", onPointerUp);
 
     // --- sizing -----------------------------------------------------------
     /* Chrome the labels have to keep out of.
@@ -623,26 +607,6 @@ export default function SeekGlobe({
       });
     };
 
-    const resize = () => {
-      const { clientWidth: w, clientHeight: h } = host;
-      if (!w || !h) return;
-      renderer.setPixelRatio(pixelRatio());
-      renderer.setSize(w, h, false);
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-      measureChrome();
-    };
-    resize();
-    const resizeObserver = new ResizeObserver(resize);
-    resizeObserver.observe(host);
-
-    let visible = true;
-    const intersectionObserver = new IntersectionObserver(
-      ([entry]) => (visible = entry.isIntersecting),
-      { rootMargin: "120px" }
-    );
-    intersectionObserver.observe(host);
-
     // --- spin to a city ---------------------------------------------------
     // Solve the two rotations that put a point on the sphere facing the
     // camera: the spin that zeroes its x, then the tilt that zeroes its y.
@@ -664,9 +628,7 @@ export default function SeekGlobe({
     };
 
     // --- loop -------------------------------------------------------------
-    let last = performance.now();
     let elapsed = 0;
-    let frame = 0;
     let appliedTheme = "";
     let zoomShown = 0;
     const cameraDir = new THREE.Vector3();
@@ -681,17 +643,26 @@ export default function SeekGlobe({
     const worldQuat = new THREE.Quaternion();
     const facingVec = new THREE.Vector3();
 
-    const tick = () => {
-      frame = requestAnimationFrame(tick);
-      if (!visible) return;
+    const built: SceneModule = {
+      scene,
+      camera,
+      state: { clearAlpha: 0 },
+      resize(w, h) {
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        measureChrome();
+      },
+      update({ dt }) {
+        const delta = dt;
+        elapsed += delta;
 
-      const now = performance.now();
-      const delta = Math.min((now - last) / 1000, 0.05);
-      last = now;
-      elapsed += delta;
+        /* Read off the document rather than through useTheme: this is not a
+           React component any more. ThemeProvider writes the attribute, so it
+           is what the theme actually is. */
+        const theme = document.documentElement.dataset.theme ?? "";
 
-      if (appliedTheme !== themeRef.current) {
-        appliedTheme = themeRef.current;
+      if (appliedTheme !== theme) {
+        appliedTheme = theme;
         applyPalette(appliedTheme === "dark" ? palette.dark : palette.light);
         labelLayer.dataset.theme = appliedTheme;
       }
@@ -855,61 +826,80 @@ export default function SeekGlobe({
           pulses.splice(i, 1);
         }
       }
-
-      renderer.render(scene, camera);
+      },
+      dispose() {
+        cancelled = true;
+        window.clearInterval(emitTimer);
+        window.clearInterval(arcTimer);
+        view.removeEventListener("pointerdown", onPointerDown);
+        view.removeEventListener("pointermove", onPointerMove);
+        view.removeEventListener("pointerup", onPointerUp);
+        view.removeEventListener("pointercancel", onPointerUp);
+        labelNodes.forEach((l) => l.el.remove());
+        arcs.forEach((arc) => {
+          arc.geometry.dispose();
+          arc.material.dispose();
+          (arc.head.material as THREE.Material).dispose();
+        });
+        pulses.forEach((p) => p.material.dispose());
+        coins.forEach((c) => c.material.dispose());
+        landGeometry?.dispose();
+        coastGeometry?.dispose();
+        bodyGeometry.dispose();
+        graticuleGeometry.dispose();
+        glowGeometry.dispose();
+        pulseGeometry.dispose();
+        stemGeometry.dispose();
+        baseGeometry.dispose();
+        headGeometry.dispose();
+        selectionGeometry.dispose();
+        bodyMaterial.dispose();
+        graticuleMaterial.dispose();
+        glowMaterial.dispose();
+        landMaterial.dispose();
+        coastMaterial.dispose();
+        stemMaterial.dispose();
+        baseMaterial.dispose();
+        selectionMaterial.dispose();
+        landTexture.dispose();
+        coinTextures.forEach((t) => t.dispose());
+      },
     };
-    tick();
 
-    return () => {
-      cancelled = true;
-      cancelAnimationFrame(frame);
-      window.clearInterval(emitTimer);
-      window.clearInterval(arcTimer);
-      resizeObserver.disconnect();
-      intersectionObserver.disconnect();
-      renderer.domElement.removeEventListener("pointerdown", onPointerDown);
-      renderer.domElement.removeEventListener("pointermove", onPointerMove);
-      renderer.domElement.removeEventListener("pointerup", onPointerUp);
-      renderer.domElement.removeEventListener("pointercancel", onPointerUp);
-      labelNodes.forEach((l) => l.el.remove());
-      arcs.forEach((arc) => {
-        arc.geometry.dispose();
-        arc.material.dispose();
-        (arc.head.material as THREE.Material).dispose();
-      });
-      pulses.forEach((p) => p.material.dispose());
-      coins.forEach((c) => c.material.dispose());
-      landGeometry?.dispose();
-      coastGeometry?.dispose();
-      bodyGeometry.dispose();
-      graticuleGeometry.dispose();
-      glowGeometry.dispose();
-      pulseGeometry.dispose();
-      stemGeometry.dispose();
-      baseGeometry.dispose();
-      headGeometry.dispose();
-      selectionGeometry.dispose();
-      bodyMaterial.dispose();
-      graticuleMaterial.dispose();
-      glowMaterial.dispose();
-      landMaterial.dispose();
-      coastMaterial.dispose();
-      stemMaterial.dispose();
-      baseMaterial.dispose();
-      selectionMaterial.dispose();
-      landTexture.dispose();
-      coinTextures.forEach((t) => t.dispose());
-      renderer.dispose();
-      /* dispose() releases what three.js allocated; it does not release the
-         context itself. Safari keeps the drawing buffer of a detached canvas
-         until it feels like collecting it, which on a phone is usually after
-         the next scene has already allocated its own. Asking for the loss
-         explicitly frees it now. */
-      renderer.forceContextLoss();
-      renderer.domElement.remove();
-      delete host.dataset.ready;
-    };
-  }, [zoomDepth, nearViewport]);
+    built.resize!(width, height);
+    return built;
+  };
+}
+
+export default function SeekGlobe({
+  className = "",
+  onCollect,
+  onSelect,
+  zoomRef,
+  zoomDepth = 1,
+  focusRef,
+}: Props) {
+  const labelLayerRef = useRef<HTMLDivElement>(null);
+  const collectRef = useRef(onCollect);
+  collectRef.current = onCollect;
+  const selectRef = useRef(onSelect);
+  selectRef.current = onSelect;
+
+  /* The label layer has to exist before the scene is built, and the stage builds
+     on its own schedule rather than on mount. Reading it out of the ref inside
+     the builder keeps the two in step: by the time the builder runs, React has
+     attached every ref in this tree. */
+  const { hostRef, viewRef } = useSceneSlot(({ renderer, width, height, host, view }) => {
+    const labelLayer = labelLayerRef.current;
+    if (!labelLayer) return null;
+    return buildSeekGlobe(zoomDepth, zoomRef, collectRef, selectRef, focusRef, labelLayer)({
+      renderer,
+      width,
+      height,
+      host,
+      view,
+    });
+  });
 
   return (
     <div
@@ -918,6 +908,7 @@ export default function SeekGlobe({
       role="img"
       aria-label="Interactive globe showing SeekAR collection activity worldwide"
     >
+      <canvas ref={viewRef} className="three-view" />
       <div ref={labelLayerRef} className="globe-labels" aria-hidden="true" />
     </div>
   );

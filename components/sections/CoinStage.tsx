@@ -38,7 +38,13 @@ export default function CoinStage({ className = "" }: { className?: string }) {
      only thing that pulls it before anybody scrolls. Keeping it out of the
      critical path on a handheld takes that download, its parse and a WebGL
      context off the load entirely; the scenes further down still build when
-     they are approached. Measured LCP on mobile before this was 17.7 s. */
+     they are approached. Measured LCP on mobile before this was 17.7 s.
+
+     Unchanged by the move to the shared stage, deliberately. The stage removes
+     the cost of a *second* context, not the cost of the chunk that has to
+     arrive before any scene can be built, and that download is what the 17.7 s
+     was. This gate is about the critical path; the stage is about what happens
+     after it. */
   const [live, setLive] = useState<boolean | null>(null);
 
   useEffect(() => {
