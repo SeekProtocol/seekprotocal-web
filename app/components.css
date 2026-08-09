@@ -450,6 +450,18 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
    placeholder that changed the geometry would be the thing that broke it. */
 .three-host { position: relative; }
 
+/* The slot's own canvas.
+   Scenes no longer each own a WebGL context. One shared renderer draws them all
+   into an offscreen buffer and blits each slot's pixels here, which is why this
+   is a plain 2D canvas and why there can be as many of them as the page likes.
+   See lib/three-stage.ts for why the shared canvas is not simply laid behind
+   the page: every 3D section sits on an opaque background. */
+.three-view {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .three-host:not([data-ready])::after {
   content: "";
   position: absolute;
