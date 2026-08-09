@@ -58,6 +58,8 @@ export const CLIENT_NAMESPACES = [
   "progression",
   "ranks",
   "rarity",
+  "referralRules",
+  "referrals",
   "resultScreen",
   "socialSection",
   "stackLayers",

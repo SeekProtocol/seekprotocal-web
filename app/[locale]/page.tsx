@@ -15,6 +15,7 @@ import MobiSection from "@/components/sections/MobiSection";
 import ARSection from "@/components/sections/ARSection";
 import ProgressionSection from "@/components/sections/ProgressionSection";
 import ClansSection from "@/components/sections/ClansSection";
+import ReferralSection from "@/components/sections/ReferralSection";
 import SocialSection from "@/components/sections/SocialSection";
 import FeatureGroups from "@/components/sections/FeatureGroups";
 import BetaForm from "@/components/shared/BetaForm";
@@ -254,6 +255,14 @@ function HomeContent() {
           <ClansSection />
         </div>
       </section>
+
+      {/* ── Referrals ───────────────────────────────────────────────────────
+          Sits after clans and before social on purpose. Clans are the group you
+          join; this is the group you build. Both are about playing with other
+          people, and the two together are what the social band underneath is
+          then talking about. It brings its own <section>, since the figure
+          wants the full width rather than the shell. */}
+      <ReferralSection />
 
       {/* ── Social ──────────────────────────────────────────────────────── */}
       <section className="section section-sunken">
