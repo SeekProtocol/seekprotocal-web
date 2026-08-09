@@ -4173,6 +4173,32 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   z-index: 0;
 }
 
+/* The sweep. A conic wedge rotating under the threads, animated on transform
+   alone so the compositor carries it and the main thread never sees it. Slow on
+   purpose: this is a pulse, not a spinner. */
+.referral-sweep {
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    color-mix(in srgb, var(--brand-3) 12%, transparent) 26deg,
+    transparent 58deg
+  );
+  z-index: 0;
+  animation: referral-sweep-turn 9s linear infinite;
+}
+
+@keyframes referral-sweep-turn { to { transform: rotate(360deg); } }
+
+.referral-tick {
+  stroke: var(--line-strong);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.5;
+}
+
 .referral-web {
   position: absolute;
   inset: 0;
@@ -4182,49 +4208,52 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   overflow: visible;
 }
 
-/* Non-scaling-stroke, because the viewBox is in per cent and the box is not
-   square at every breakpoint: without it a line thins on one axis and thickens
-   on the other as the stage reflows. */
+/* The thread from the hub to a friend.
+   Non-scaling-stroke because the viewBox is in per cent: without it the stroke
+   would thin on one axis and thicken on the other as the stage reflows.
+   The stroke is a gradient rather than a colour, lit at the friend's end and
+   almost gone by the hub, so the ring reads as where the earning happens. */
 .referral-link {
-  stroke: var(--line-strong);
-  stroke-width: 1;
+  stroke: url(#referral-thread-dim);
+  stroke-width: 1.25;
+  stroke-linecap: round;
   vector-effect: non-scaling-stroke;
   opacity: 0;
-  transition: opacity 0.5s var(--ease-out), stroke 0.5s var(--ease-out);
+  transition: opacity 0.6s var(--ease-out);
 }
 
-.referral-link[data-here] { opacity: 0.55; }
+.referral-link[data-here] { opacity: 1; }
 
 /* Mint is kept for states that mean something, and "this friend is playing" is
-   one. A dormant member's line arrives and stays grey, which is the whole
+   one. A dormant member's thread arrives and stays grey, which is the whole
    distinction the figure exists to draw. */
-.referral-link[data-here][data-active] {
-  stroke: var(--brand-3);
-  opacity: 0.75;
-}
+.referral-link[data-here][data-active] { stroke: url(#referral-thread); }
 
-/* The payout travelling in.
-   One long dash and one long gap, offset from the far end to nothing, which
-   walks a single segment from the friend to you. `pathLength` is not needed:
-   the dash array is in user units and the viewBox is 100 wide, so 100 covers
-   any line in it whatever its angle. */
+/* The unstroked twin, kept for measuring against and never painted. */
+.referral-link-ghost { stroke: none; fill: none; }
+
+/* The payout, running the thread.
+   `offset-path` puts the mark on the same curve the thread is stroked with, so
+   it can never drift off it, and `offset-distance` is a compositor property the
+   way transform is. `offset-rotate: 0deg` keeps the head round rather than
+   letting it bank into the curve, which on a mark this small only reads as a
+   wobble. */
 .referral-spark {
-  stroke: var(--brand-3);
-  stroke-width: 2;
-  vector-effect: non-scaling-stroke;
-  stroke-linecap: round;
-  stroke-dasharray: 14 200;
-  stroke-dashoffset: 14;
+  offset-distance: 0%;
+  offset-rotate: 0deg;
   opacity: 0;
 }
 
-.referral-spark[data-paying] { animation: referral-spark-run 0.62s linear both; }
+.referral-spark[data-paying] { animation: referral-spark-run 0.62s var(--ease-out) both; }
+
+.referral-spark-head { fill: var(--brand-3); }
+.referral-spark-halo { fill: var(--brand-3); opacity: 0.22; }
 
 @keyframes referral-spark-run {
-  0%   { opacity: 0; stroke-dashoffset: 14; }
-  15%  { opacity: 0.95; }
-  85%  { opacity: 0.95; }
-  100% { opacity: 0; stroke-dashoffset: -100; }
+  0%   { offset-distance: 0%;   opacity: 0; }
+  12%  { opacity: 1; }
+  82%  { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; }
 }
 
 /* --- you, at the centre ------------------------------------------------- */
@@ -4244,6 +4273,16 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   border: 1px solid var(--line);
   box-shadow: var(--shadow-md);
   text-align: center;
+  /* The brand ramp painted into the border box, which is the idiom the store
+     buttons already use. A hairline in --line read as a dialog on black; the
+     ramp says the hub belongs to the same family as the bolt travelling into
+     it. */
+  border-color: transparent;
+  background-image:
+    linear-gradient(var(--bg-raised), var(--bg-raised)),
+    linear-gradient(135deg, var(--brand-3), var(--brand), var(--brand-2));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   /* Narrow on purpose. The count under a node is the widest thing in the ring
      ("11 catches this week" at the left and right seats), and it is what the
      card's own width has to make room for: measured at 600px, a card any wider
@@ -4278,8 +4317,8 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
 .referral-mult {
   display: flex;
-  align-items: baseline;
-  gap: 0.1rem;
+  align-items: center;
+  gap: 0.22rem;
   margin-top: 0.35rem;
   font-family: var(--font-display);
   font-weight: 600;
@@ -4288,6 +4327,7 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 }
 
 .referral-mult-value { font-size: 2rem; line-height: 1; }
+.referral-mult-bolt { margin-right: 0.05rem; }
 .referral-mult-x { font-size: 1.1rem; opacity: 0.7; }
 .referral-mult-label { color: var(--fg-subtle); }
 
@@ -4315,30 +4355,60 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* The face. A ring rather than a glow around it: a box-shadow spread is painted
-   into the layer the node already has, where a blurred pseudo would want one of
-   its own. Dormant members are desaturated rather than hidden, because the
-   figure has to show that they are there and not counting. */
+/* The face, inside the arc that says how far this friend is toward the bar.
+   The ring replaced a flat bar under the node: it reads at a glance as "this
+   one is full", needs no label, and puts the state on the person rather than
+   beside them. */
 .referral-node-face {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+}
+
+.referral-node-arc {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* Twelve o'clock, clockwise, which is where a reader expects a dial to start. */
+  transform: rotate(-90deg);
+  overflow: visible;
+}
+
+.referral-node-arc-track {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 2;
+}
+
+.referral-node-arc-fill {
+  fill: none;
+  stroke: var(--line-strong);
+  stroke-width: 2;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.7s var(--ease-out), stroke 0.5s var(--ease-out);
+}
+
+.referral-node[data-active] .referral-node-arc-fill { stroke: var(--brand-3); }
+
+/* Dormant portraits are desaturated rather than hidden: the figure has to show
+   that they are there and not counting. */
+.referral-node-portrait {
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   overflow: hidden;
   background: var(--bg-sunken);
-  box-shadow: 0 0 0 2px var(--bg), 0 0 0 3px var(--line);
-  filter: saturate(0.25) brightness(0.7);
-  transition: filter 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+  filter: saturate(0.2) brightness(0.62);
+  transition: filter 0.5s var(--ease-out);
 }
 
-.referral-node-face svg { display: block; width: 100%; height: 100%; }
+.referral-node-portrait svg { display: block; width: 100%; height: 100%; }
 
-.referral-node[data-active] .referral-node-face {
-  filter: none;
-  box-shadow:
-    0 0 0 2px var(--bg),
-    0 0 0 3px color-mix(in srgb, var(--brand-3) 55%, transparent);
-}
+.referral-node[data-active] .referral-node-portrait { filter: none; }
 
 /* The payout, written the way the app writes it. It rises off the friend and
    fades, and it is out of flow so its arrival never moves the handle under it. */
@@ -4346,18 +4416,28 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   position: absolute;
   bottom: calc(100% - 2px);
   left: 50%;
-  padding: 0.16rem 0.42rem;
+  display: flex;
+  align-items: center;
+  gap: 0.22rem;
+  padding: 0.2rem 0.46rem;
   border-radius: 999px;
   font-family: var(--font-mono);
   font-size: 0.6rem;
   line-height: 1;
   white-space: nowrap;
-  color: var(--bg);
-  background: var(--brand-3);
+  color: var(--fg);
+  /* The pill is the app's, and the app draws it as a bordered chip with the
+     gradient bolt inside rather than as a solid mint lozenge. A solid fill
+     would also have fought the bolt's own ramp. */
+  background: var(--bg-raised);
+  border: 1px solid color-mix(in srgb, var(--brand-3) 45%, transparent);
+  box-shadow: var(--shadow-sm);
   opacity: 0;
   transform: translate(-50%, 4px);
   pointer-events: none;
 }
+
+.referral-xp svg { flex: none; }
 
 .referral-xp[data-paying] { animation: referral-xp-rise 0.62s var(--ease-out) both; }
 
@@ -4376,24 +4456,6 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 }
 
 .referral-node[data-active] .referral-node-handle { color: var(--fg); }
-
-.referral-node-bar {
-  width: 3.4rem;
-  height: 3px;
-  border-radius: 999px;
-  background: var(--line);
-  overflow: hidden;
-}
-
-.referral-node-bar > span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: var(--line-strong);
-  transition: width 0.6s var(--ease-out);
-}
-
-.referral-node[data-active] .referral-node-bar > span { background: var(--brand-3); }
 
 .referral-node-count {
   color: var(--fg-subtle);
@@ -4482,8 +4544,13 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
      the counts are what the tally beside it is for. */
   .referral-stage { max-width: 340px; }
   .referral-node { width: 5rem; }
-  .referral-node-bar, .referral-node-count { display: none; }
-  .referral-node-face { width: 30px; height: 30px; }
+  .referral-node-count { display: none; }
+  /* The face and the portrait scale together: the arc is drawn on a viewBox so
+     it follows its box, but the portrait inside is a fixed pixel size and would
+     otherwise burst out of a smaller ring. */
+  .referral-node-face { width: 38px; height: 38px; }
+  .referral-node-portrait { width: 28px; height: 28px; }
+  .referral-node-arc-track, .referral-node-arc-fill { stroke-width: 2.6; }
   .referral-node-handle { font-size: 0.62rem; }
 
   /* The centre loses its two labels rather than the ring losing its radius.
@@ -4508,9 +4575,9 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .referral-node,
   .referral-link,
-  .referral-node-face,
-  .referral-mult-value,
-  .referral-node-bar > span {
+  .referral-node-portrait,
+  .referral-node-arc-fill,
+  .referral-mult-value {
     transition: none;
   }
   /* The loop does not run at all here (the component sees the query too), but
@@ -4521,4 +4588,5 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
     animation: none;
     opacity: 0;
   }
+  .referral-sweep { animation: none; }
 }

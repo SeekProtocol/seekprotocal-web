@@ -14,6 +14,7 @@ import {
 } from "@/content/referrals";
 import { withCopy } from "@/lib/content-i18n";
 import PixelAvatar from "@/components/ui/PixelAvatar";
+import XpBolt from "@/components/brand/XpBolt";
 
 /**
  * The referral mechanic, drawn as the thing it is.
@@ -60,6 +61,38 @@ function seatFor(index: number, total: number) {
   return {
     x: 50 + Math.cos(angle) * SEAT_RX,
     y: 50 + Math.sin(angle) * SEAT_RY,
+  };
+}
+
+/**
+ * The connector from the centre to a seat, as a curve rather than a spoke.
+ *
+ * Six straight radial lines is what a diagram of a hub looks like, and it read
+ * as one: flat, even, and cheap. A quadratic bowed off the chord gives the same
+ * connection a hand, and six of them bowing the same way around the ring turn a
+ * wheel into an orbit.
+ *
+ * The control point is the midpoint pushed along the chord's normal, so the bow
+ * is proportional to the distance and every connector curves by the same amount
+ * whatever angle it leaves at.
+ */
+const BOW = 0.16;
+
+function connectorFor(index: number, total: number) {
+  const seat = seatFor(index, total);
+  const cx = 50;
+  const cy = 50;
+  const dx = seat.x - cx;
+  const dy = seat.y - cy;
+  /* Normal to the chord, consistently to one side, so all six bow clockwise. */
+  const mx = cx + dx / 2 - dy * BOW;
+  const my = cy + dy / 2 + dx * BOW;
+  return {
+    seat,
+    /** Centre to seat, which is the direction the eye reads the team in. */
+    out: `M ${cx} ${cy} Q ${mx} ${my} ${seat.x} ${seat.y}`,
+    /** Seat to centre, which is the direction the XP travels. */
+    back: `M ${seat.x} ${seat.y} Q ${mx} ${my} ${cx} ${cy}`,
   };
 }
 
@@ -209,6 +242,12 @@ export default function ReferralSection() {
         <div className="referral-layout" ref={hostRef}>
           {/* ── The figure ───────────────────────────────────────────────── */}
           <div className="referral-stage" data-running={arrived < total || undefined}>
+            {/* A slow sweep around the ring, which is the idiom the hero's
+                radar and the business page's claim plate already use. It gives
+                the figure a pulse between payouts, so it is never a still
+                picture, and it costs one rotating element rather than anything
+                per frame. */}
+            <span className="referral-sweep" aria-hidden="true" />
             {/* The lines are drawn under the nodes, in their own layer, so a
                 node never has a seam across it. viewBox units are per cent,
                 which lets the seats below share one coordinate system with the
@@ -219,35 +258,78 @@ export default function ReferralSection() {
               preserveAspectRatio="none"
               aria-hidden="true"
             >
+              <defs>
+                {/* A connector fades as it reaches the centre rather than
+                    running at one weight the whole way. The eye then reads the
+                    ring as the lit part and the hub as where it all arrives,
+                    which is what the section is about. */}
+                <linearGradient id="referral-thread" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stopColor="var(--brand-3)" stopOpacity="0.85" />
+                  <stop offset="100%" stopColor="var(--brand-3)" stopOpacity="0.2" />
+                </linearGradient>
+                <linearGradient id="referral-thread-dim" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stopColor="var(--line-strong)" stopOpacity="0.7" />
+                  <stop offset="100%" stopColor="var(--line-strong)" stopOpacity="0.08" />
+                </linearGradient>
+              </defs>
+
+              {/* Ticks where the ring meets each seat. They mark the six places
+                  a friend can stand whether or not one is standing there, which
+                  is what turns a plain dashed circle into a dial. */}
               {TEAM.map((member, i) => {
                 const seat = seatFor(i, total);
+                const a = (-90 + (360 / total) * i) * (Math.PI / 180);
+                return (
+                  <line
+                    key={`tick-${member.id}`}
+                    className="referral-tick"
+                    x1={seat.x - Math.cos(a) * 1.6}
+                    y1={seat.y - Math.sin(a) * 1.8}
+                    x2={seat.x + Math.cos(a) * 1.6}
+                    y2={seat.y + Math.sin(a) * 1.8}
+                  />
+                );
+              })}
+
+              {TEAM.map((member, i) => {
+                const { out, back } = connectorFor(i, total);
                 const here = i < arrived;
                 const active = member.caught >= ACTIVE_CATCHES;
                 return (
                   <g key={member.id}>
-                    <line
-                      x1="50"
-                      y1="50"
-                      x2={seat.x}
-                      y2={seat.y}
+                    {/* Drawn seat to centre so the gradient's lit end is at the
+                        friend, where the XP comes from. */}
+                    <path
+                      d={back}
                       className="referral-link"
                       data-here={here || undefined}
                       data-active={active || undefined}
+                      fill="none"
                     />
-                    {/* The payout travelling in. Drawn seat to centre rather
-                        than centre to seat, so the dash runs the way the XP
-                        does: off the friend who earned it and toward you. It is
-                        a second stroke over the first rather than the first
-                        changing, because a dash pattern on the line itself
-                        would break it into pieces while it is at rest. */}
-                    <line
-                      x1={seat.x}
-                      y1={seat.y}
-                      x2="50"
-                      y2="50"
-                      className="referral-spark"
-                      data-paying={paying === i || undefined}
-                    />
+                    {/* The payout, running the curve itself rather than a
+                        straight line laid over it. animateMotion follows the
+                        same path element, so the mark cannot drift off the
+                        thread however the stage is resized. */}
+                    {active && here && (
+                      <g
+                        className="referral-spark"
+                        data-paying={paying === i || undefined}
+                        /* offset-path rather than animateMotion. SMIL needs
+                           beginElement() from script to fire and is on its way
+                           out of the platform; a CSS animation restarts cleanly
+                           when the attribute below flips, and the compositor
+                           can carry it. The path is the same curve the thread
+                           is stroked with, so the mark cannot drift off it. */
+                        style={{ offsetPath: `path("${back}")` } as React.CSSProperties}
+                      >
+                        <circle r="3.4" className="referral-spark-halo" />
+                        <circle r="1.5" className="referral-spark-head" />
+                      </g>
+                    )}
+                    {/* Kept out of the paint: the unstroked twin the ring's
+                        tick marks and the arriving animation both measure
+                        against. */}
+                    <path d={out} className="referral-link-ghost" fill="none" />
                   </g>
                 );
               })}
@@ -267,6 +349,7 @@ export default function ReferralSection() {
                 ))}
               </span>
               <span className="referral-mult" aria-live="polite">
+                <XpBolt size={15} id="xp-hub" className="referral-mult-bolt" />
                 <span className="referral-mult-value">{multiplier.toFixed(2)}</span>
                 <span className="referral-mult-x">×</span>
               </span>
@@ -297,8 +380,31 @@ export default function ReferralSection() {
                       them from the handle, so the same seeker is the same face
                       wherever the site draws them — the social band below uses
                       the same component. */}
+                  {/* The face, inside the ring that says how far this friend
+                      is toward the bar. An arc around the portrait rather than
+                      a bar under it: it reads at a glance as "this one is
+                      full", it needs no label, and it puts the state on the
+                      person instead of beside them. */}
                   <span className="referral-node-face" aria-hidden="true">
-                    <PixelAvatar seed={member.handle} size={38} />
+                    <svg className="referral-node-arc" viewBox="0 0 44 44">
+                      <circle className="referral-node-arc-track" cx="22" cy="22" r="20" />
+                      <circle
+                        className="referral-node-arc-fill"
+                        cx="22"
+                        cy="22"
+                        r="20"
+                        /* 2πr, so the dash is in per cent of the circle without
+                           anyone having to know the radius twice. */
+                        strokeDasharray={2 * Math.PI * 20}
+                        strokeDashoffset={2 * Math.PI * 20 * (1 - pct)}
+                      />
+                    </svg>
+                    <span className="referral-node-portrait">
+                      {/* Sized generously and scaled down by the box: the portrait is
+                          28px on a phone and 34 on a desktop, and a single raster at
+                          the larger size stays crisp at both. */}
+                      <PixelAvatar seed={member.handle} size={34} />
+                    </span>
                   </span>
 
                   {/* The payout. Written the way the app writes it, as a pill
@@ -311,15 +417,11 @@ export default function ReferralSection() {
                     data-paying={paying === i || undefined}
                     aria-hidden="true"
                   >
+                    <XpBolt size={11} id={`xp-${member.id}`} />
                     +{PAYOUT_XP} XP
                   </span>
 
                   <span className="referral-node-handle">@{member.handle}</span>
-                  {/* The bar is the rule. A friend is active because of what is
-                      on it, not because a label says so. */}
-                  <span className="referral-node-bar" aria-hidden="true">
-                    <span style={{ width: `${pct * 100}%` }} />
-                  </span>
                   {/* Two forms, because one does not fit both. A friend past
                       the bar is at "14 catches this week"; writing that as
                       "14 of 5" reads as a broken counter. Only someone short of
