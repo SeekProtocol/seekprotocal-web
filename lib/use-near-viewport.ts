@@ -42,38 +42,25 @@ import { isOff } from "@/lib/bisect";
 /** How far ahead a section starts fetching its chunk, in viewports. */
 const BUILD_REACH = 1;
 
-/**
- * A scene waits for the page to be still before it mounts.
+/*
+ * There used to be a settle delay here, so that nothing mounted mid-flick. It
+ * has gone, and it is worth saying why rather than leaving a gap.
  *
- * Flick the homepage from the hero to the footer and every section on the way
- * passes through reach for a few frames. Kicking off a chunk fetch and a scene
- * graph for each of them is the most expensive possible answer to the cheapest
- * possible gesture. SETTLE_MS is short enough to feel immediate when scrolling
- * stops and long enough that nothing starts mid-flick.
+ * Two things happen when this latches: a chunk is fetched, and — before the
+ * shared stage existed — a scene was built. The second is the expensive one,
+ * and it is not this file's any more. lib/three-stage.ts decides when to build,
+ * and it gates on scroll *speed*, which is the thing the settle delay was
+ * standing in for.
+ *
+ * Leaving the delay here as well made two gates in series, and the pair failed
+ * in a way neither did alone: a reader scrolling steadily down the page never
+ * stops for 180ms, so the section never mounted, so the stage never saw a slot
+ * to build, and every scroll-driven section arrived empty. That was a
+ * regression against the old behaviour and it was reported as one.
+ *
+ * What is left is a network fetch, which does not compete for the main thread
+ * and is worth starting early in any case.
  */
-const SETTLE_MS = 180;
-
-/**
- * When the page last moved. One passive listener for every gate on the page,
- * registered once, rather than one per section.
- */
-let lastScrollAt = 0;
-if (typeof window !== "undefined") {
-  window.addEventListener("scroll", () => { lastScrollAt = Date.now(); }, { passive: true });
-}
-
-/** Runs `then` once the page has been still for SETTLE_MS. Returns a canceller. */
-function whenSettled(then: () => void) {
-  let timer = 0;
-  const tick = () => {
-    const still = Date.now() - lastScrollAt;
-    if (still >= SETTLE_MS) return then();
-    timer = window.setTimeout(tick, SETTLE_MS - still);
-  };
-  tick();
-  return () => window.clearTimeout(timer);
-}
-
 export function useNearViewport(
   ref: React.RefObject<HTMLElement | null>,
   buildReach = BUILD_REACH,
@@ -119,24 +106,15 @@ export function useNearViewport(
       return;
     }
 
-    let cancelSettle: (() => void) | null = null;
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          cancelSettle ??= whenSettled(() => setNear(true));
-        } else {
-          cancelSettle?.();
-          cancelSettle = null;
-        }
+        if (entries.some((entry) => entry.isIntersecting)) setNear(true);
       },
       { rootMargin: `${buildReach * 100}% 0px` },
     );
 
     observer.observe(el);
-    return () => {
-      cancelSettle?.();
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, [ref, buildReach, near]);
 
   return near;

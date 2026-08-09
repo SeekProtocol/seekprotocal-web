@@ -121,13 +121,65 @@ type Slot = {
   build: SceneBuilder;
   options: SlotOptions;
   module: SceneModule | null;
-  /** Built lazily, the first time the slot is actually on screen. */
+  /** Built lazily, the first time the slot comes within build reach. */
   built: boolean;
   width: number;
   height: number;
   bornAt: number;
+  /** Close enough to draw this frame. */
   visible: boolean;
+  /** Close enough to be worth building, which reaches further. */
+  inBuildRange: boolean;
 };
+
+/**
+ * How fast the page is being scrolled, in viewports per second.
+ *
+ * Distance says nothing about speed. Flick the homepage from the hero to the
+ * footer and every slot on the way passes through build reach for a few frames,
+ * and the first version of this file built each one as it went: five scene
+ * graphs, five sets of textures, thousands of points, for scenes nobody saw. It
+ * is the most expensive possible answer to the cheapest possible gesture, and
+ * on a phone it is what pushes the tab over.
+ *
+ * The first fix for that was to wait for the page to be still, which is what
+ * use-near-viewport does. It was wrong here, and measurably: a reader scrolling
+ * steadily down the page never stops for 180ms either, so nothing ever built
+ * and every section arrived empty. Stillness is a proxy for the thing that
+ * actually matters, and it is a bad one.
+ *
+ * Speed is the real discriminator. A reading-pace scroll runs at a couple of
+ * thousand pixels a second; the flick that used to build all five ran at ninety
+ * thousand. Anything under the threshold builds, so a reader is never made to
+ * watch a scene arrive, and a flick builds nothing.
+ */
+const MAX_BUILD_SPEED = 4; // viewports per second
+let scrollSpeed = 0;
+if (typeof window !== "undefined") {
+  let lastY = window.scrollY;
+  let lastT = performance.now();
+  window.addEventListener(
+    "scroll",
+    () => {
+      const now = performance.now();
+      const dt = now - lastT;
+      /* Sampled rather than measured per event: scroll fires far more often
+         than it needs to be read, and a very short interval turns rounding
+         into noise that reads as a spike. */
+      if (dt < 40) return;
+      const y = window.scrollY;
+      scrollSpeed = Math.abs(y - lastY) / (dt / 1000) / Math.max(1, window.innerHeight);
+      lastY = y;
+      lastT = now;
+    },
+    { passive: true },
+  );
+  /* Scroll stops firing when the page stops, and the last sample would stand
+     for ever. Decayed on a timer so a stopped page reads as stopped. */
+  window.setInterval(() => {
+    if (performance.now() - lastT > 120) scrollSpeed = 0;
+  }, 120);
+}
 
 /**
  * Whether the shared renderer is created with a logarithmic depth buffer.
@@ -254,6 +306,7 @@ class Stage {
       height: 0,
       bornAt: performance.now(),
       visible: false,
+      inBuildRange: false,
     };
     this.slots.add(slot);
     this.start();
@@ -284,18 +337,35 @@ class Stage {
        again is the exact cost this file exists to remove. */
   }
 
-  /** Whether a slot is close enough to the viewport to be worth drawing. */
+  /**
+   * How near a slot has to be to be built, and to be drawn. They are not the
+   * same number and the first version's mistake was making them one.
+   *
+   * With a single reach of a quarter of a viewport, a scene started building
+   * when it was almost on screen and the reader watched it arrive. The scenes
+   * used to build a whole viewport ahead — that is what use-near-viewport's
+   * BUILD_REACH was — so by the time you got there it was already running.
+   * Drawing, on the other hand, is per frame and wasted on anything off screen,
+   * so it keeps the tight margin.
+   */
+  private static BUILD_REACH = 1;
+  private static DRAW_REACH = 0.15;
+
   private measure(slot: Slot) {
     const box = slot.host.getBoundingClientRect();
     /* A display:none host has no box at all, which is how the two scrubbed
        sections are hidden on a handheld. Zero width is not "at the origin", it
        is "not on the page", and it must not read as visible. */
     if (box.width <= 0 || box.height <= 0) {
+      slot.inBuildRange = false;
       slot.visible = false;
       return;
     }
-    const margin = window.innerHeight * 0.25;
-    slot.visible = box.bottom > -margin && box.top < window.innerHeight + margin;
+    const vh = window.innerHeight;
+    const build = vh * Stage.BUILD_REACH;
+    const draw = vh * Stage.DRAW_REACH;
+    slot.inBuildRange = box.bottom > -build && box.top < vh + build;
+    slot.visible = box.bottom > -draw && box.top < vh + draw;
     slot.width = Math.round(box.width);
     slot.height = Math.round(box.height);
   }
@@ -310,8 +380,33 @@ class Stage {
 
     for (const slot of this.slots) this.measure(slot);
 
+    /* Building runs on the wide reach and only below the speed threshold, so a
+       scene is ready before the reader arrives and a flick past it builds
+       nothing. At most one per frame: five scene graphs in a single task is the
+       stutter, whether it happens mid-flick or not, and spreading them over
+       consecutive frames costs nothing anyone can see. */
+    if (scrollSpeed < MAX_BUILD_SPEED) {
+      for (const slot of this.slots) {
+        if (slot.built || !slot.inBuildRange) continue;
+        slot.module = slot.build({
+          renderer,
+          width: slot.width,
+          height: slot.height,
+          host: slot.host,
+          view: slot.view,
+        });
+        slot.built = true;
+        slot.bornAt = now;
+        if (slot.module) {
+          slot.module.resize?.(slot.width, slot.height);
+          slot.host.dataset.ready = "true";
+        }
+        break;
+      }
+    }
+
     const live = [...this.slots]
-      .filter((s) => s.visible)
+      .filter((s) => s.visible && s.built)
       .sort((a, b) => (a.options.order ?? 0) - (b.options.order ?? 0));
     if (live.length === 0) return;
 
@@ -332,21 +427,6 @@ class Stage {
     }
 
     for (const slot of live) {
-      if (!slot.built) {
-        slot.module = slot.build({
-          renderer,
-          width: slot.width,
-          height: slot.height,
-          host: slot.host,
-          view: slot.view,
-        });
-        slot.built = true;
-        slot.bornAt = now;
-        if (slot.module) {
-          slot.module.resize?.(slot.width, slot.height);
-          slot.host.dataset.ready = "true";
-        }
-      }
       const mod = slot.module;
       if (!mod) continue;
 
