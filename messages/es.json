@@ -2542,11 +2542,11 @@
     "multiplierLabel": "XP en cada captura",
     "activeLabel": "Jugando",
     "dormantLabel": "Inactivo",
-    "catchCount": "{caught} de {needed} capturas",
+    "catchCount": "{caught} de {needed}",
     "exampleLabel": "Una captura legendaria, antes y después",
     "exampleBody": "El bono se aplica en el servidor cuando la captura se contabiliza, y queda registrado por separado del rango de clan para poder distinguirlos después.",
-    "replay": "Reproducir otra vez",
-    "catchCountActive": "{caught} capturas esta semana"
+    "catchCountActive": "{caught} capturas",
+    "activeRule": "Activo significa {needed} capturas en los últimos {days} días"
   },
   "referralRules": {
     "once": {

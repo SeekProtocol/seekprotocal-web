@@ -80,6 +80,17 @@ export const TEAM: TeamMember[] = [
 export const EXAMPLE_BASE_XP = 220;
 
 /**
+ * The figure on the pill that rises off a friend when they catch something.
+ *
+ * A common coin, roughly, rather than the legendary the worked example uses:
+ * the pill is meant to read as an ordinary catch happening over and over, and
+ * a legendary going off six times a minute would say the wrong thing about how
+ * often those turn up. It is illustrative and carries no arithmetic — the sum
+ * the section actually makes a claim about is the one under it.
+ */
+export const PAYOUT_XP = 80;
+
+/**
  * The four rules that decide who may join a team and what it is worth. Each is
  * enforced in the database rather than in the app, which is the point worth
  * making: none of them is a policy the client could be talked out of.

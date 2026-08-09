@@ -2542,11 +2542,11 @@
     "multiplierLabel": "捕獲ごとの経験値",
     "activeLabel": "プレイ中",
     "dormantLabel": "休止中",
-    "catchCount": "{needed} 回中 {caught} 回",
+    "catchCount": "{caught}/{needed}",
     "exampleLabel": "レジェンダリー1回、前と後",
     "exampleBody": "ボーナスは捕獲が集計される時点でサーバー側に適用され、クランランクとは別に記録されるため、後から両者を切り分けられます。",
-    "replay": "もう一度再生",
-    "catchCountActive": "今週 {caught} 回"
+    "catchCountActive": "{caught} 回",
+    "activeRule": "アクティブとは直近 {days} 日で {needed} 回の捕獲"
   },
   "referralRules": {
     "once": {

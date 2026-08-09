@@ -2542,11 +2542,11 @@
     "multiplierLabel": "每次捕获的经验",
     "activeLabel": "活跃中",
     "dormantLabel": "已沉寂",
-    "catchCount": "{needed} 次中已完成 {caught} 次",
+    "catchCount": "{caught}/{needed}",
     "exampleLabel": "一次传说级捕获，前后对比",
     "exampleBody": "加成在服务器端于捕获计分时生效，并与战队等级分开记录，以便日后区分两者。",
-    "replay": "再播放一次",
-    "catchCountActive": "本周 {caught} 次捕获"
+    "catchCountActive": "{caught} 次捕获",
+    "activeRule": "活跃指最近 {days} 天内完成 {needed} 次捕获"
   },
   "referralRules": {
     "once": {

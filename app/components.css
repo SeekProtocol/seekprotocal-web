@@ -4203,6 +4203,30 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   opacity: 0.75;
 }
 
+/* The payout travelling in.
+   One long dash and one long gap, offset from the far end to nothing, which
+   walks a single segment from the friend to you. `pathLength` is not needed:
+   the dash array is in user units and the viewBox is 100 wide, so 100 covers
+   any line in it whatever its angle. */
+.referral-spark {
+  stroke: var(--brand-3);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-dasharray: 14 200;
+  stroke-dashoffset: 14;
+  opacity: 0;
+}
+
+.referral-spark[data-paying] { animation: referral-spark-run 0.62s linear both; }
+
+@keyframes referral-spark-run {
+  0%   { opacity: 0; stroke-dashoffset: 14; }
+  15%  { opacity: 0.95; }
+  85%  { opacity: 0.95; }
+  100% { opacity: 0; stroke-dashoffset: -100; }
+}
+
 /* --- you, at the centre ------------------------------------------------- */
 
 .referral-you {
@@ -4214,16 +4238,26 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   display: grid;
   justify-items: center;
   gap: 0.4rem;
-  padding: 1.1rem 1.25rem 1rem;
+  padding: 1rem 1rem 0.9rem;
   border-radius: var(--radius-md);
   background: var(--bg-raised);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-md);
   text-align: center;
-  min-width: 10.5rem;
+  /* Narrow on purpose. The count under a node is the widest thing in the ring
+     ("11 catches this week" at the left and right seats), and it is what the
+     card's own width has to make room for: measured at 600px, a card any wider
+     than this ran under @flinthq's line and the card wins on z-index. */
+  min-width: 9.25rem;
 }
 
 .referral-you-label { color: var(--fg-subtle); }
+
+/* The centre takes the payment. A border that brightens for the length of the
+   arrival, so the far end of the line has somewhere to land. */
+.referral-you[data-paid] { border-color: color-mix(in srgb, var(--brand-3) 45%, var(--line)); }
+.referral-you[data-paid] .referral-mult-value { transform: scale(1.04); }
+.referral-mult-value { transition: transform 0.3s var(--ease-out); display: inline-block; }
 
 .referral-code {
   display: flex;
@@ -4281,19 +4315,57 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   transform: translate(-50%, -50%) scale(1);
 }
 
-.referral-node-dot {
-  width: 12px;
-  height: 12px;
+/* The face. A ring rather than a glow around it: a box-shadow spread is painted
+   into the layer the node already has, where a blurred pseudo would want one of
+   its own. Dormant members are desaturated rather than hidden, because the
+   figure has to show that they are there and not counting. */
+.referral-node-face {
+  display: block;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: var(--line-strong);
-  box-shadow: 0 0 0 4px var(--bg);
+  overflow: hidden;
+  background: var(--bg-sunken);
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 3px var(--line);
+  filter: saturate(0.25) brightness(0.7);
+  transition: filter 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
 }
 
-.referral-node[data-active] .referral-node-dot {
+.referral-node-face svg { display: block; width: 100%; height: 100%; }
+
+.referral-node[data-active] .referral-node-face {
+  filter: none;
+  box-shadow:
+    0 0 0 2px var(--bg),
+    0 0 0 3px color-mix(in srgb, var(--brand-3) 55%, transparent);
+}
+
+/* The payout, written the way the app writes it. It rises off the friend and
+   fades, and it is out of flow so its arrival never moves the handle under it. */
+.referral-xp {
+  position: absolute;
+  bottom: calc(100% - 2px);
+  left: 50%;
+  padding: 0.16rem 0.42rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--bg);
   background: var(--brand-3);
-  /* A ring rather than a glow: a box-shadow spread is painted into the layer
-     the node already has, where a blurred pseudo would want its own. */
-  box-shadow: 0 0 0 4px var(--bg), 0 0 0 7px color-mix(in srgb, var(--brand-3) 28%, transparent);
+  opacity: 0;
+  transform: translate(-50%, 4px);
+  pointer-events: none;
+}
+
+.referral-xp[data-paying] { animation: referral-xp-rise 0.62s var(--ease-out) both; }
+
+@keyframes referral-xp-rise {
+  0%   { opacity: 0; transform: translate(-50%, 4px) scale(0.9); }
+  22%  { opacity: 1; transform: translate(-50%, -4px) scale(1); }
+  70%  { opacity: 1; transform: translate(-50%, -10px) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -18px) scale(0.96); }
 }
 
 .referral-node-handle {
@@ -4325,7 +4397,7 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
 .referral-node-count {
   color: var(--fg-subtle);
-  font-size: 0.62rem;
+  font-size: 0.58rem;
   white-space: nowrap;
 }
 
@@ -4334,11 +4406,14 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 .referral-side { display: grid; gap: 1.75rem; }
 
 .referral-tally {
-  display: flex;
-  gap: 2.5rem;
+  display: grid;
+  gap: 0.9rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--line);
 }
+
+.referral-tally-counts { display: flex; gap: 2.5rem; }
+.referral-tally-rule { color: var(--fg-subtle); }
 
 .referral-tally-row { display: grid; gap: 0.2rem; }
 .referral-tally-row .t-mono-sm { color: var(--fg-subtle); }
@@ -4394,19 +4469,6 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   margin-bottom: 0.2rem;
 }
 
-.referral-replay {
-  justify-self: start;
-  padding: 0.55rem 1rem;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: transparent;
-  color: var(--fg-muted);
-  cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
-}
-
-.referral-replay:hover { border-color: var(--brand); color: var(--brand); }
-
 /* --- narrow ------------------------------------------------------------- */
 
 @media (max-width: 980px) {
@@ -4421,6 +4483,7 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   .referral-stage { max-width: 340px; }
   .referral-node { width: 5rem; }
   .referral-node-bar, .referral-node-count { display: none; }
+  .referral-node-face { width: 30px; height: 30px; }
   .referral-node-handle { font-size: 0.62rem; }
 
   /* The centre loses its two labels rather than the ring losing its radius.
@@ -4445,7 +4508,17 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .referral-node,
   .referral-link,
+  .referral-node-face,
+  .referral-mult-value,
   .referral-node-bar > span {
     transition: none;
+  }
+  /* The loop does not run at all here (the component sees the query too), but
+     the payout marks are declared as animations rather than as state, so they
+     are silenced in CSS as well rather than relying on that. */
+  .referral-xp,
+  .referral-spark {
+    animation: none;
+    opacity: 0;
   }
 }

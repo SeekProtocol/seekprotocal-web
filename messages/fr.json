@@ -2542,11 +2542,11 @@
     "multiplierLabel": "XP sur chaque capture",
     "activeLabel": "Actif",
     "dormantLabel": "En pause",
-    "catchCount": "{caught} captures sur {needed}",
+    "catchCount": "{caught} sur {needed}",
     "exampleLabel": "Une capture légendaire, avant et après",
     "exampleBody": "Le bonus est appliqué sur le serveur au moment où la capture est comptée, et enregistré séparément du rang de clan pour que les deux restent distinguables.",
-    "replay": "Rejouer",
-    "catchCountActive": "{caught} captures cette semaine"
+    "catchCountActive": "{caught} captures",
+    "activeRule": "Actif signifie {needed} captures sur les {days} derniers jours"
   },
   "referralRules": {
     "once": {

@@ -2542,11 +2542,11 @@
     "multiplierLabel": "XP op elke vangst",
     "activeLabel": "Speelt",
     "dormantLabel": "Stil",
-    "catchCount": "{caught} van {needed} vangsten",
+    "catchCount": "{caught} van {needed}",
     "exampleLabel": "Eén legendarische vangst, voor en na",
     "exampleBody": "De bonus wordt toegekend op het moment dat de vangst geteld wordt, op de server, en apart van je clanrang vastgelegd zodat de twee later uit elkaar te houden zijn.",
-    "replay": "Speel opnieuw af",
-    "catchCountActive": "{caught} vangsten deze week"
+    "catchCountActive": "{caught} vangsten",
+    "activeRule": "Actief is {needed} vangsten in de laatste {days} dagen"
   },
   "referralRules": {
     "once": {

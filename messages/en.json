@@ -2542,11 +2542,11 @@
     "multiplierLabel": "XP on every catch",
     "activeLabel": "Playing",
     "dormantLabel": "Dormant",
-    "catchCount": "{caught} of {needed} catches",
+    "catchCount": "{caught} of {needed}",
     "exampleLabel": "One legendary catch, before and after",
     "exampleBody": "The bonus is applied when the catch is scored, on the server, and written into the record alongside your clan rank so the two can be told apart later.",
-    "replay": "Play it again",
-    "catchCountActive": "{caught} catches this week"
+    "catchCountActive": "{caught} catches",
+    "activeRule": "Active means {needed} catches in the last {days} days"
   },
   "referralRules": {
     "once": {
