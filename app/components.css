@@ -4108,3 +4108,344 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
     display: none;
   }
 }
+
+/* --------------------------------------------------------------------------
+   REFERRALS
+   --------------------------------------------------------------------------
+
+   A team assembling around you, with the multiplier climbing as it fills.
+
+   Nothing here uses `filter: blur()` or `backdrop-filter`, and that is a
+   decision rather than an omission. Each one is its own compositing surface on
+   iOS, expanded beyond the element's own box to hold the blur's spread, and the
+   thirteen already on the homepage are the largest cost on it that nothing has
+   yet accounted for. A diagram is not worth adding to that bill. Glows are
+   painted as radial gradients, which cost a fill in a layer that already
+   exists — the same treatment `.grid-field` was given on handhelds.
+
+   Everything that moves does so on transform and opacity only. `rise` and
+   `.reveal` once animated a blur and Chrome refused to composite either,
+   dropping both onto the main thread; that is the trap this avoids by never
+   animating anything else.
+   -------------------------------------------------------------------------- */
+
+.referral-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* --- the figure --------------------------------------------------------- */
+
+.referral-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 600px;
+  margin-inline: auto;
+  isolation: isolate;
+}
+
+/* The ring the team sits on. A gradient rather than a blurred disc: it fades
+   to nothing at 70% on its own, so there was never an edge for a blur to
+   soften. */
+.referral-stage::before {
+  content: "";
+  position: absolute;
+  inset: 4%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--brand) 7%, transparent),
+    transparent 68%
+  );
+  z-index: 0;
+}
+
+.referral-stage::after {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  border: 1px dashed color-mix(in srgb, var(--line-strong) 70%, transparent);
+  z-index: 0;
+}
+
+.referral-web {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: visible;
+}
+
+/* Non-scaling-stroke, because the viewBox is in per cent and the box is not
+   square at every breakpoint: without it a line thins on one axis and thickens
+   on the other as the stage reflows. */
+.referral-link {
+  stroke: var(--line-strong);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  opacity: 0;
+  transition: opacity 0.5s var(--ease-out), stroke 0.5s var(--ease-out);
+}
+
+.referral-link[data-here] { opacity: 0.55; }
+
+/* Mint is kept for states that mean something, and "this friend is playing" is
+   one. A dormant member's line arrives and stays grey, which is the whole
+   distinction the figure exists to draw. */
+.referral-link[data-here][data-active] {
+  stroke: var(--brand-3);
+  opacity: 0.75;
+}
+
+/* --- you, at the centre ------------------------------------------------- */
+
+.referral-you {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: grid;
+  justify-items: center;
+  gap: 0.4rem;
+  padding: 1.1rem 1.25rem 1rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  min-width: 10.5rem;
+}
+
+.referral-you-label { color: var(--fg-subtle); }
+
+.referral-code {
+  display: flex;
+  gap: 2px;
+}
+
+.referral-code-char {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0.34rem 0.28rem;
+  min-width: 1.15rem;
+  border-radius: var(--radius-xs);
+  background: var(--bg-sunken);
+  border: 1px solid var(--line);
+  color: var(--fg);
+}
+
+.referral-mult {
+  display: flex;
+  align-items: baseline;
+  gap: 0.1rem;
+  margin-top: 0.35rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--brand-3);
+}
+
+.referral-mult-value { font-size: 2rem; line-height: 1; }
+.referral-mult-x { font-size: 1.1rem; opacity: 0.7; }
+.referral-mult-label { color: var(--fg-subtle); }
+
+/* --- the team ----------------------------------------------------------- */
+
+.referral-node {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  gap: 0.3rem;
+  width: 7.5rem;
+  /* The seat is the node's centre, so it is pulled back by half of itself.
+     scale() composes out in page pixels here rather than scaling the
+     translation, which is why the two are written in this order. */
+  transform: translate(-50%, -50%) scale(0.82);
+  opacity: 0;
+  transition:
+    opacity 0.45s var(--ease-out) var(--delay, 0ms),
+    transform 0.45s var(--ease-out) var(--delay, 0ms);
+}
+
+.referral-node[data-here] {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.referral-node-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  box-shadow: 0 0 0 4px var(--bg);
+}
+
+.referral-node[data-active] .referral-node-dot {
+  background: var(--brand-3);
+  /* A ring rather than a glow: a box-shadow spread is painted into the layer
+     the node already has, where a blurred pseudo would want its own. */
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 7px color-mix(in srgb, var(--brand-3) 28%, transparent);
+}
+
+.referral-node-handle {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--fg-muted);
+  white-space: nowrap;
+}
+
+.referral-node[data-active] .referral-node-handle { color: var(--fg); }
+
+.referral-node-bar {
+  width: 3.4rem;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.referral-node-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--line-strong);
+  transition: width 0.6s var(--ease-out);
+}
+
+.referral-node[data-active] .referral-node-bar > span { background: var(--brand-3); }
+
+.referral-node-count {
+  color: var(--fg-subtle);
+  font-size: 0.62rem;
+  white-space: nowrap;
+}
+
+/* --- the readout -------------------------------------------------------- */
+
+.referral-side { display: grid; gap: 1.75rem; }
+
+.referral-tally {
+  display: flex;
+  gap: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.referral-tally-row { display: grid; gap: 0.2rem; }
+.referral-tally-row .t-mono-sm { color: var(--fg-subtle); }
+
+.referral-tally-value {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--brand-3);
+}
+
+.referral-tally-dim { color: var(--fg-subtle); }
+
+.referral-example-label { color: var(--fg-subtle); }
+
+.referral-example-sum {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.5rem 0 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.referral-example-sum svg { color: var(--fg-subtle); flex: none; }
+.referral-example-base { font-size: 1.35rem; color: var(--fg-subtle); }
+.referral-example-out { font-size: 1.8rem; color: var(--brand-3); }
+
+.referral-rules { display: grid; gap: 1.1rem; }
+
+.referral-rule {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.referral-rule-mark {
+  width: 7px;
+  height: 7px;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  background: var(--brand);
+}
+
+.referral-rule-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.referral-replay {
+  justify-self: start;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--fg-muted);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.referral-replay:hover { border-color: var(--brand); color: var(--brand); }
+
+/* --- narrow ------------------------------------------------------------- */
+
+@media (max-width: 980px) {
+  .referral-layout { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+}
+
+@media (max-width: 560px) {
+  /* The nodes carry a handle, a bar and a count, and six of those around a
+     ring on a 360px screen collide with each other and with the centre. The
+     ring stays, tighter, and the node loses everything but its dot and handle;
+     the counts are what the tally beside it is for. */
+  .referral-stage { max-width: 340px; }
+  .referral-node { width: 5rem; }
+  .referral-node-bar, .referral-node-count { display: none; }
+  .referral-node-handle { font-size: 0.62rem; }
+
+  /* The centre loses its two labels rather than the ring losing its radius.
+     Measured at 393px: with them the card was tall enough that the four
+     diagonal seats clipped its corners, and pushing the ring outwards instead
+     would have run the nodes off the edge of a 340px stage. The chips still
+     read as a code and the multiplier still carries its own ×, so what goes is
+     the part that was only naming them. The tally beside the figure says
+     "playing" and "dormant" in full anyway. */
+  .referral-you-label, .referral-mult-label { display: none; }
+  .referral-you { min-width: 0; padding: 0.7rem 0.8rem; gap: 0.3rem; }
+  .referral-code-char { font-size: 0.66rem; min-width: 0.95rem; padding: 0.26rem 0.2rem; }
+  .referral-mult { margin-top: 0.1rem; }
+  .referral-mult-value { font-size: 1.5rem; }
+  .referral-tally { gap: 1.75rem; }
+  .referral-tally-value { font-size: 2rem; }
+}
+
+/* The figure is an arrangement, not a performance. A reader who asked for less
+   motion is shown the finished state (the component sets it) and nothing here
+   transitions into place. */
+@media (prefers-reduced-motion: reduce) {
+  .referral-node,
+  .referral-link,
+  .referral-node-bar > span {
+    transition: none;
+  }
+}

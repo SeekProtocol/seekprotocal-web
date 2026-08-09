@@ -2532,5 +2532,38 @@
       "detail": "The wallet updates and the asset is gone from the map for you. From tapping to holding, under two seconds on a good connection.",
       "payload": "Balance update, map state"
     }
+  },
+  "referrals": {
+    "eyebrow": "Referrals",
+    "title": "Every friend who plays makes you stronger",
+    "lead": "Hand a friend your invite code and you keep 5% more XP on every catch you make, for as long as they keep playing. No cap, and it never comes out of their side.",
+    "youLabel": "Your code",
+    "codeLabel": "Your eight character invite code",
+    "multiplierLabel": "XP on every catch",
+    "activeLabel": "Playing",
+    "dormantLabel": "Dormant",
+    "catchCount": "{caught} of {needed} catches",
+    "exampleLabel": "One legendary catch, before and after",
+    "exampleBody": "The bonus is applied when the catch is scored, on the server, and written into the record alongside your clan rank so the two can be told apart later.",
+    "replay": "Play it again",
+    "catchCountActive": "{caught} catches this week"
+  },
+  "referralRules": {
+    "once": {
+      "title": "One inviter, chosen once",
+      "body": "A code can be redeemed a single time and never changed after. The database refuses the second attempt, so it is not a rule the app can be talked out of."
+    },
+    "newOnly": {
+      "title": "New accounts only",
+      "body": "A code only works on an account with no XP and nothing collected yet. An established seeker cannot attach itself to a team afterwards and be counted as fresh."
+    },
+    "oneLevel": {
+      "title": "One level deep",
+      "body": "You earn from the friends you brought in, not from the friends they bring in. Those seekers build their own team, and keep all of it."
+    },
+    "friendKeeps": {
+      "title": "Your friend loses nothing",
+      "body": "The bonus is added to your own catches. It is not a cut of theirs, so nothing you gain is taken off anyone."
+    }
   }
 }

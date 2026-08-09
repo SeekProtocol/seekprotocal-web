@@ -2532,5 +2532,38 @@
       "detail": "Le portefeuille se met à jour et l'actif disparaît de la carte pour vous. Du toucher à la détention, moins de deux secondes sur une bonne connexion.",
       "payload": "Mise à jour du solde, état de la carte"
     }
+  },
+  "referrals": {
+    "eyebrow": "Invitations",
+    "title": "Chaque ami qui joue vous rend plus fort",
+    "lead": "Partagez votre code d'invitation et vous gardez 5% d'XP en plus sur chacune de vos captures, tant que cette personne continue de jouer. Sans plafond, et jamais prélevé sur sa part.",
+    "youLabel": "Votre code",
+    "codeLabel": "Votre code d'invitation de huit caractères",
+    "multiplierLabel": "XP sur chaque capture",
+    "activeLabel": "Actif",
+    "dormantLabel": "En pause",
+    "catchCount": "{caught} captures sur {needed}",
+    "exampleLabel": "Une capture légendaire, avant et après",
+    "exampleBody": "Le bonus est appliqué sur le serveur au moment où la capture est comptée, et enregistré séparément du rang de clan pour que les deux restent distinguables.",
+    "replay": "Rejouer",
+    "catchCountActive": "{caught} captures cette semaine"
+  },
+  "referralRules": {
+    "once": {
+      "title": "Un parrain, choisi une seule fois",
+      "body": "Un code s'utilise une fois et ne change plus ensuite. La base de données refuse la seconde tentative, ce n'est donc pas une règle que l'application peut contourner."
+    },
+    "newOnly": {
+      "title": "Nouveaux comptes uniquement",
+      "body": "Un code ne fonctionne que sur un compte sans XP et sans rien de collecté. Un compte déjà établi ne peut pas s'y rattacher après coup et compter comme nouveau."
+    },
+    "oneLevel": {
+      "title": "Un seul niveau",
+      "body": "Vous gagnez sur les amis que vous amenez, pas sur ceux qu'ils amènent. Ces personnes construisent leur propre équipe et la gardent entièrement."
+    },
+    "friendKeeps": {
+      "title": "Votre ami ne perd rien",
+      "body": "Le bonus s'ajoute à vos propres captures. Ce n'est pas une part des siennes, donc ce que vous gagnez n'est retiré à personne."
+    }
   }
 }

@@ -2532,5 +2532,38 @@
       "detail": "La cartera se actualiza y el activo desaparece del mapa para ti. Desde el toque hasta tenerlo, menos de dos segundos con buena conexión.",
       "payload": "Actualización de saldo, estado del mapa"
     }
+  },
+  "referrals": {
+    "eyebrow": "Invitaciones",
+    "title": "Cada amigo que juega te hace más fuerte",
+    "lead": "Comparte tu código de invitación y te quedas con un 5% más de XP en cada captura tuya, mientras esa persona siga jugando. Sin límite, y nunca sale de su parte.",
+    "youLabel": "Tu código",
+    "codeLabel": "Tu código de invitación de ocho caracteres",
+    "multiplierLabel": "XP en cada captura",
+    "activeLabel": "Jugando",
+    "dormantLabel": "Inactivo",
+    "catchCount": "{caught} de {needed} capturas",
+    "exampleLabel": "Una captura legendaria, antes y después",
+    "exampleBody": "El bono se aplica en el servidor cuando la captura se contabiliza, y queda registrado por separado del rango de clan para poder distinguirlos después.",
+    "replay": "Reproducir otra vez",
+    "catchCountActive": "{caught} capturas esta semana"
+  },
+  "referralRules": {
+    "once": {
+      "title": "Un invitador, elegido una vez",
+      "body": "Un código se canjea una sola vez y ya no se cambia. La base de datos rechaza el segundo intento, así que no es una regla que la aplicación pueda esquivar."
+    },
+    "newOnly": {
+      "title": "Solo cuentas nuevas",
+      "body": "Un código solo funciona en una cuenta sin XP y sin nada recogido todavía. Una cuenta veterana no puede sumarse después y contar como nueva."
+    },
+    "oneLevel": {
+      "title": "Un nivel de profundidad",
+      "body": "Ganas por los amigos que traes tú, no por los que traen ellos. Esas personas forman su propio equipo y se lo quedan entero."
+    },
+    "friendKeeps": {
+      "title": "Tu amigo no pierde nada",
+      "body": "El bono se suma a tus propias capturas. No es una parte de las suyas, así que lo que ganas no se le resta a nadie."
+    }
   }
 }

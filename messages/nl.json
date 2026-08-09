@@ -2532,5 +2532,38 @@
       "detail": "De wallet werkt bij en de asset is voor jou van de kaart verdwenen. Van tikken tot vasthouden, binnen twee seconden op een goede verbinding.",
       "payload": "Saldo-update, kaartstatus"
     }
+  },
+  "referrals": {
+    "eyebrow": "Uitnodigingen",
+    "title": "Elke vriend die speelt maakt jou sterker",
+    "lead": "Geef een vriend je uitnodigingscode en je houdt 5% meer XP over aan elke vangst die je doet, zolang zij blijven spelen. Geen limiet, en het gaat nooit van hun kant af.",
+    "youLabel": "Jouw code",
+    "codeLabel": "Jouw uitnodigingscode van acht tekens",
+    "multiplierLabel": "XP op elke vangst",
+    "activeLabel": "Speelt",
+    "dormantLabel": "Stil",
+    "catchCount": "{caught} van {needed} vangsten",
+    "exampleLabel": "Eén legendarische vangst, voor en na",
+    "exampleBody": "De bonus wordt toegekend op het moment dat de vangst geteld wordt, op de server, en apart van je clanrang vastgelegd zodat de twee later uit elkaar te houden zijn.",
+    "replay": "Speel opnieuw af",
+    "catchCountActive": "{caught} vangsten deze week"
+  },
+  "referralRules": {
+    "once": {
+      "title": "Eén uitnodiger, één keer gekozen",
+      "body": "Een code kan één keer gebruikt worden en daarna nooit meer veranderd. De database weigert de tweede poging, dus het is geen regel waar de app omheen gepraat kan worden."
+    },
+    "newOnly": {
+      "title": "Alleen nieuwe accounts",
+      "body": "Een code werkt alleen op een account zonder XP en zonder verzamelde munten. Een gevestigde seeker kan zich er achteraf niet aan hangen en als nieuw geteld worden."
+    },
+    "oneLevel": {
+      "title": "Eén niveau diep",
+      "body": "Je verdient aan de vrienden die jij binnenhaalt, niet aan de vrienden die zij binnenhalen. Die seekers bouwen hun eigen team en houden dat helemaal zelf."
+    },
+    "friendKeeps": {
+      "title": "Je vriend verliest niets",
+      "body": "De bonus komt bovenop je eigen vangsten. Het is geen deel van die van hen, dus wat jij wint gaat bij niemand af."
+    }
   }
 }

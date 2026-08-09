@@ -2532,5 +2532,38 @@
       "detail": "Die Wallet aktualisiert sich, und das Asset ist für dich von der Karte verschwunden. Vom Tippen bis zum Halten unter zwei Sekunden bei guter Verbindung.",
       "payload": "Guthaben-Update, Kartenzustand"
     }
+  },
+  "referrals": {
+    "eyebrow": "Einladungen",
+    "title": "Jede Freundin und jeder Freund, der spielt, macht dich stärker",
+    "lead": "Gib deinen Einladungscode weiter und du behältst 5% mehr XP bei jedem eigenen Fang, solange die andere Seite weiterspielt. Ohne Obergrenze, und es geht nie von deren Seite ab.",
+    "youLabel": "Dein Code",
+    "codeLabel": "Dein achtstelliger Einladungscode",
+    "multiplierLabel": "XP bei jedem Fang",
+    "activeLabel": "Spielt",
+    "dormantLabel": "Ruht",
+    "catchCount": "{caught} von {needed} Fängen",
+    "exampleLabel": "Ein legendärer Fang, vorher und nachher",
+    "exampleBody": "Der Bonus wird auf dem Server vergeben, sobald der Fang gewertet wird, und getrennt vom Clanrang gespeichert, damit beide später auseinandergehalten werden können.",
+    "replay": "Noch einmal abspielen",
+    "catchCountActive": "{caught} Fänge diese Woche"
+  },
+  "referralRules": {
+    "once": {
+      "title": "Eine Einladung, einmal gewählt",
+      "body": "Ein Code lässt sich genau einmal einlösen und danach nie mehr ändern. Die Datenbank weist den zweiten Versuch ab, also ist es keine Regel, die sich in der App umgehen lässt."
+    },
+    "newOnly": {
+      "title": "Nur neue Konten",
+      "body": "Ein Code wirkt nur auf einem Konto ohne XP und ohne gesammelte Münzen. Ein etabliertes Konto kann sich nicht nachträglich anhängen und als neu gezählt werden."
+    },
+    "oneLevel": {
+      "title": "Eine Ebene tief",
+      "body": "Du verdienst an denen, die du geworben hast, nicht an denen, die diese werben. Jene bauen ihr eigenes Team auf und behalten es ganz."
+    },
+    "friendKeeps": {
+      "title": "Die andere Seite verliert nichts",
+      "body": "Der Bonus kommt zu deinen eigenen Fängen hinzu. Er ist kein Anteil an ihren, also geht dein Gewinn niemandem ab."
+    }
   }
 }
