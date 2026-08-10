@@ -160,7 +160,7 @@ export default function VideoReveal() {
         <div className="video-reveal-hud" aria-hidden="true">
           <span className="video-reveal-hud-tag">
             <span className="dot-live" />
-            SeekAR
+            Seekprotocol
           </span>
           <span className="video-reveal-hud-clock">{clock}</span>
         </div>

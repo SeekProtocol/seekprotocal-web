@@ -2,8 +2,8 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Seek Protocol",
-    short_name: "SeekProtocol",
+    name: "Seekprotocol",
+    short_name: "Seekprotocol",
     description:
       "The first AR and AI platform on Solana - Redefining Innovation",
     start_url: "/",

@@ -7,7 +7,7 @@ import { TabIcon } from "@/components/app/screens/MapScreen";
 import { RARITY_LADDER, type Collectible } from "@/content/collectibles";
 
 const ASSETS = [
-  { name: "SEEK", sub: "Seek Protocol", amount: "12,480", fiat: "$1,842.10", up: true, badge: "/app/seek-coin-3d.png" },
+  { name: "SEEK", sub: "Seekprotocol", amount: "12,480", fiat: "$1,842.10", up: true, badge: "/app/seek-coin-3d.png" },
   { name: "SOL", sub: "Solana", amount: "4.28", fiat: "$612.44", up: true },
   { name: "BONK", sub: "Bonk", amount: "1.2M", fiat: "$38.90", up: false },
 ];

@@ -4122,6 +4122,66 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 }
 
 /* --------------------------------------------------------------------------
+   THE RENAME NOTICE
+   --------------------------------------------------------------------------
+
+   Sits above the eyebrow on /seekar, which is where anyone searching the old
+   name lands. The first thing they need is not the pitch but confirmation that
+   they are in the right place, so it is the first thing on the page rather
+   than a strip under the hero.
+
+   Loud enough to be read and quiet enough not to be the hero: the title is
+   display type at the size of an h3, and the panel takes a tint of the brand
+   rather than a fill, so it reads as a notice attached to the page and not as
+   a second headline competing with the one below it.
+   -------------------------------------------------------------------------- */
+
+.rename-notice {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  max-width: 44rem;
+  margin-bottom: 2rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--brand) 30%, transparent);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--brand) 7%, transparent);
+}
+
+.rename-notice-mark {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  margin-top: 0.1rem;
+  border-radius: 50%;
+  color: var(--brand);
+  background: color-mix(in srgb, var(--brand) 14%, transparent);
+}
+
+.rename-notice-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.rename-notice-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--fg-muted);
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 560px) {
+  .rename-notice { padding: 0.95rem 1rem; gap: 0.7rem; }
+  .rename-notice-body { font-size: 0.9rem; }
+}
+
+/* --------------------------------------------------------------------------
    REFERRALS
    --------------------------------------------------------------------------
 

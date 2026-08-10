@@ -31,7 +31,7 @@ export type CatchOutcome = {
 const STEPS: Step[] = ["map", "spawn", "catch", "result", "wallet"];
 
 /**
- * A clickable run through SeekAR. The odds, the two attempts, the decay and
+ * A clickable run through Seekprotocol. The odds, the two attempts, the decay and
  * the interrupting mechanics are the app's own — this is the real loop, not a
  * dramatisation of it.
  */

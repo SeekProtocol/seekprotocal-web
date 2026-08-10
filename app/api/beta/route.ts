@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
 
     const resend = getResendClient();
     const { error } = await resend.emails.send({
-      from: "Seek Protocol <noreply@seekprotocol.ai>",
+      from: "Seekprotocol <noreply@seekprotocol.ai>",
       to: ["support@seekprotocol.ai"],
       subject: "New Beta Signup",
       html: `

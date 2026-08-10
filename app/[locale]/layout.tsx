@@ -71,15 +71,15 @@ export async function generateMetadata({
     // Google truncates the SERP title around 60 characters. The previous
     // default ran to 76, so "Redefining Innovation" was never shown.
     title: {
-      default: "Seek Protocol | The First AR & AI Platform on Solana",
-      template: "%s | Seek Protocol",
+      default: "Seekprotocol | The First AR & AI Platform on Solana",
+      template: "%s | Seekprotocol",
     },
     description:
       "Experience the future with $SEEK, the first AR and AI platform on Solana. Hunt location-based airdrops, collect NFTs, explore with AI companions, and earn real crypto rewards through immersive augmented reality experiences.",
     keywords: [
-      "Seek Protocol",
+      "Seekprotocol",
       "$SEEK",
-      "SeekAR",
+      "Seekprotocol",
       "augmented reality",
       "AR platform",
       "Solana",
@@ -98,12 +98,12 @@ export async function generateMetadata({
       "Solana NFT",
       "crypto gaming",
     ],
-    authors: [{ name: "Seek Protocol", url: "https://www.seekprotocol.ai" }],
-    creator: "Seek Protocol",
+    authors: [{ name: "Seekprotocol", url: "https://www.seekprotocol.ai" }],
+    creator: "Seekprotocol",
     publisher: "Block Protocol L.L.C-FZ",
     category: "Technology",
     openGraph: {
-      title: "Seek Protocol | The First AR & AI Platform on Solana",
+      title: "Seekprotocol | The First AR & AI Platform on Solana",
       description:
         "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The first AR & AI platform on Solana transforming real-world exploration into crypto rewards.",
       type: "website",
@@ -112,14 +112,14 @@ export async function generateMetadata({
         .filter(([loc]) => loc !== locale)
         .map(([, ogLocale]) => ogLocale),
       url: `/${locale}`,
-      siteName: "Seek Protocol",
+      siteName: "Seekprotocol",
       images: [OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
-      site: "@SeekProtocol",
-      creator: "@SeekProtocol",
-      title: "Seek Protocol | The First AR & AI Platform on Solana",
+      site: "@Seekprotocol",
+      creator: "@Seekprotocol",
+      title: "Seekprotocol | The First AR & AI Platform on Solana",
       description:
         "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The first AR & AI platform on Solana transforming real-world exploration into crypto rewards.",
       images: [OG_IMAGE],
@@ -141,7 +141,7 @@ export async function generateMetadata({
       apple: "/images/webclip.png",
     },
     other: {
-      "application-name": "Seek Protocol",
+      "application-name": "Seekprotocol",
     },
   };
 }
@@ -219,8 +219,10 @@ export default async function LocaleLayout({
                   {
                     "@type": "Organization",
                     "@id": "https://www.seekprotocol.ai/#organization",
-                    name: "Seek Protocol",
-                    alternateName: "SeekAR",
+                    name: "Seekprotocol",
+                    /* No alternateName. It held the app's old name, which was a
+                       useful thing to tell Google while the two differed and is
+                       a claim on a mark we do not hold now that they do not. */
                     url: "https://www.seekprotocol.ai",
                     /* Google requires a logo of at least 112px on its shortest
                        side. The favicon is 32px, so it was being discarded. */
@@ -234,7 +236,7 @@ export default async function LocaleLayout({
                     description:
                       "The first AR and AI platform on Solana. Hunt location-based airdrops, collect NFTs, and explore with AI companions.",
                     sameAs: [
-                      "https://x.com/SeekProtocol",
+                      "https://x.com/Seekprotocol",
                       "https://t.me/seekprotocol",
                       "https://discord.gg/seekprotocol",
                     ],
@@ -254,7 +256,7 @@ export default async function LocaleLayout({
                     "@type": "WebSite",
                     "@id": "https://www.seekprotocol.ai/#website",
                     url: `https://www.seekprotocol.ai/${locale}`,
-                    name: "Seek Protocol",
+                    name: "Seekprotocol",
                     publisher: {
                       "@id": "https://www.seekprotocol.ai/#organization",
                     },
@@ -266,21 +268,22 @@ export default async function LocaleLayout({
                       name: loc,
                     })),
                   },
-                  /* The app is called SeekAR, and so is an unrelated AR
-                     scavenger-hunt platform at seekar.io whose own App Store
-                     listing outranks ours for the name. This node is where we
-                     say, in the one format Google reads without ambiguity,
-                     which SeekAR this is and who publishes it.
+                  /* The app node: what the thing is, and who publishes it.
+                     Named, addressable and pointed at its own page, so the
+                     graph has somewhere to send a reader looking for the app
+                     rather than the protocol.
 
-                     It was a bare, unaddressable node before: no `@id`, so
-                     nothing else in the graph could point at it, and no `url`,
-                     so the app had no home on this site to be the answer for.
-                     Both are here now, and /seekar is that home. */
+                     It used to carry `alternateName` variants of the old name,
+                     including one with a trademark symbol on it. Those are gone
+                     with the rename. Asserting a mark we do not hold would be a
+                     claim rather than a description, and structured data is
+                     read as a statement of fact about the thing it describes.
+                     The old name is explained once, in the announcement post,
+                     and is not carried as a name anywhere on the site. */
                   {
                     "@type": "SoftwareApplication",
                     "@id": "https://www.seekprotocol.ai/#seekar",
-                    name: "SeekAR",
-                    alternateName: ["SeekAR™", "Seek AR"],
+                    name: "Seekprotocol",
                     url: `https://www.seekprotocol.ai/${locale}/seekar`,
                     operatingSystem: "iOS, Android",
                     applicationCategory: "GameApplication",

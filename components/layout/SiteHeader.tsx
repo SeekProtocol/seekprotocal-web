@@ -27,11 +27,16 @@ import LanguageSwitcher from "@/components/shared/LanguageSwitcher";
  */
 const TOGGLE_ID = "mobile-nav-toggle";
 
-/* SeekAR leads, and it is the one entry here whose label is a product name
-   rather than a section. That is the point: it puts "SeekAR" in an internal
+/* Seekprotocol leads, and it is the one entry here whose label is a product name
+   rather than a section. That is the point: it puts "Seekprotocol" in an internal
    link on every page of the site, which is the anchor text the app's own name
    had nowhere before. */
 const LINKS = [
+  /* Labelled "the app" rather than by name. It used to carry the app's own
+     name, which was the point when that differed from the site's; now that
+     they are the same word, a nav item repeating the logo beside it tells a
+     reader nothing about where it goes. The slug stays for the links already
+     out in the world. */
   { href: "/seekar", key: "seekar" },
   { href: "/ecosystem", key: "ecosystem" },
   { href: "/whitepaper", key: "whitepaper" },
@@ -91,7 +96,7 @@ export default function SiteHeader() {
             href="/"
             prefetch={false}
             className="site-header-brand"
-            aria-label="Seek Protocol"
+            aria-label="Seekprotocol"
           >
             <SeekLogo markSize={42} />
           </Link>

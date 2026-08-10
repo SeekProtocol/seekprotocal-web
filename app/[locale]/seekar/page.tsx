@@ -16,21 +16,25 @@ import {
 } from "@/components/brand/TechIcons";
 
 /**
- * The page for the app, and the page that carries its name.
+ * The page for the app.
  *
- * The app is called SeekAR. Until this file existed the site said so nowhere a
- * search engine weighs: the title, the H1 and the domain all said "Seek
- * Protocol", the word SeekAR appeared only mid-sentence, and there was no
- * single URL whose subject was the app. So the site ranked for its own app's
- * name nowhere at all, and an unrelated seekar.io — an AR scavenger-hunt
- * platform out of Texas, plus its own App Store listing — took the result
- * instead. Somebody who hears the name and searches for it does not find us.
+ * It was written when the app and the site had different names, to give the
+ * app's own name a URL that was about it — the site ranked for the app
+ * nowhere, and an unrelated platform on a similar domain took the result. The
+ * app carries the site's name now, so that particular problem has been solved
+ * by the rename rather than by this page.
  *
- * Everything on this page is pointed at that one problem: the name is the H1,
- * the FAQ answers "What is SeekAR?" and "Who makes SeekAR?" in the format
- * Google lifts into a rich result, and the site-wide SoftwareApplication node
- * in the layout names this URL as the app's home.
+ * The page stays, and so does its slug. Two reasons, and neither is
+ * sentimental. Anyone who searches the old name, or follows a link that has
+ * been out in the world for months, lands here rather than on a 404 — and this
+ * is where the announcement post sends them. And the site-wide
+ * SoftwareApplication node names this URL as the app's home, so it has to keep
+ * resolving for the graph to be true.
+ *
+ * The FAQ still answers "What is Seekprotocol?" and "Who makes Seekprotocol?"
+ * in the format Google lifts into a rich result. Only the name in them changed.
  */
+
 
 export async function generateMetadata({
   params,
@@ -60,7 +64,7 @@ export async function generateMetadata({
 }
 
 const breadcrumbJsonLd = getBreadcrumbJsonLd([
-  { name: "SeekAR", path: "/seekar" },
+  { name: "Seekprotocol", path: "/seekar" },
 ]);
 
 /* English regardless of locale, matching the about page. Structured data is
@@ -72,31 +76,31 @@ const seekarFaqJsonLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is SeekAR?",
+      name: "What is Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "SeekAR is the augmented reality app by Seek Protocol, free on iOS and Android. It anchors tokens, NFTs and rewards to real-world coordinates on Solana: you walk to the spot, open the camera, and claim what has been placed there. Proof of Location verifies on-chain that you were physically present.",
+        text: "Seekprotocol is the augmented reality app by Seekprotocol, free on iOS and Android. It anchors tokens, NFTs and rewards to real-world coordinates on Solana: you walk to the spot, open the camera, and claim what has been placed there. Proof of Location verifies on-chain that you were physically present.",
       },
     },
     {
       "@type": "Question",
-      name: "Who makes SeekAR?",
+      name: "Who makes Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "SeekAR is built by Seek Protocol, a product of Block Protocol L.L.C-FZ in Dubai, UAE. The app is published on the App Store and Google Play and the project's home is seekprotocol.ai.",
+        text: "Seekprotocol is built by Seekprotocol, a product of Block Protocol L.L.C-FZ in Dubai, UAE. The app is published on the App Store and Google Play and the project's home is seekprotocol.ai.",
       },
     },
     {
       "@type": "Question",
-      name: "Is SeekAR free?",
+      name: "Is Seekprotocol free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. SeekAR is free to download on iOS and Android. Some in-app items are paid, but hunting and claiming are not.",
+        text: "Yes. Seekprotocol is free to download on iOS and Android. Some in-app items are paid, but hunting and claiming are not.",
       },
     },
     {
       "@type": "Question",
-      name: "Do I need to know anything about crypto to use SeekAR?",
+      name: "Do I need to know anything about crypto to use Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "No. A wallet is created for you when you first open the app, and you can collect and hold assets without ever handling a seed phrase yourself.",
@@ -104,7 +108,7 @@ const seekarFaqJsonLd = {
     },
     {
       "@type": "Question",
-      name: "Can I fake my location in SeekAR?",
+      name: "Can I fake my location in Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "No. Proof of Location verifies your real presence on-chain, which is what makes a claim worth anything to the publisher who placed the reward.",
@@ -117,12 +121,12 @@ const STORES = [
   {
     href: "https://apps.apple.com/app/seekar/id6752813761",
     img: "/images/app-store.svg",
-    alt: "Download SeekAR on the App Store",
+    alt: "Download Seekprotocol on the App Store",
   },
   {
     href: "https://play.google.com/store/apps/details?id=com.seekar.seekar",
     img: "/images/google-play.svg",
-    alt: "Get SeekAR on Google Play",
+    alt: "Get Seekprotocol on Google Play",
   },
 ] as const;
 
@@ -177,6 +181,27 @@ function SeekarContent() {
         <div className="noise-layer" aria-hidden="true" />
         <div className="shell">
           <div className="page-head-inner">
+            {/* The rename, said first and said large.
+                This URL is where anyone searching the old name lands, and the
+                first thing they need is not the pitch — it is confirmation that
+                they are in the right place and that the product they were
+                looking for still exists under another word. Above the eyebrow
+                rather than below the hero for that reason: a notice under the
+                fold answers a question the reader has already given up on. */}
+            <aside className="rename-notice" role="note">
+              <span className="rename-notice-mark" aria-hidden="true">
+                <InfoIcon />
+              </span>
+              <div>
+                <p className="rename-notice-title">{t("renameTitle")}</p>
+                <p className="rename-notice-body">{t("renameBody")}</p>
+                <Link href="/blog/seekar-is-now-seekprotocol" className="arrow-link">
+                  {t("renameLink")}
+                  <ArrowRight />
+                </Link>
+              </div>
+            </aside>
+
             <p className="eyebrow">{t("eyebrow")}</p>
             <h1 className="t-h1 page-head-title">{t("heroTitle")}</h1>
             <p className="t-lead">{t("heroDesc")}</p>
@@ -198,12 +223,12 @@ function SeekarContent() {
         </div>
       </section>
 
-      {/* What is SeekAR --------------------------------------------------- */}
+      {/* What is Seekprotocol --------------------------------------------------- */}
       <section className="section">
         <div className="shell">
           <div className="about-why reveal">
             <div>
-              <p className="eyebrow">Seek Protocol</p>
+              <p className="eyebrow">Seekprotocol</p>
               <h2 className="t-h2">{t("whatTitle")}</h2>
             </div>
             <div>
@@ -222,7 +247,7 @@ function SeekarContent() {
       <section className="section section-sunken">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow eyebrow-center">SeekAR</p>
+            <p className="eyebrow eyebrow-center">Seekprotocol</p>
             <h2 className="t-h2">{t("featuresTitle")}</h2>
           </div>
           <div className="grid-4">
@@ -304,5 +329,30 @@ function SeekarContent() {
         </div>
       </section>
     </>
+  );
+}
+
+function InfoIcon() {
+  return (
+    <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="9.25" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="12" cy="7.6" r="1.15" fill="currentColor" />
+      <path d="M12 10.9v6.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function ArrowRight() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path
+        d="M3 8h10m0 0l-4-4m4 4l-4 4"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+    </svg>
   );
 }

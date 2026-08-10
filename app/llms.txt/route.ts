@@ -9,7 +9,7 @@ import { PHASES } from "@/content/roadmap";
 /**
  * llms.txt, following the llmstxt.org convention: one Markdown file at the root
  * that tells a language model what this site is and where the substance lives,
- * so an assistant answering "what is Seek Protocol" does not have to infer it
+ * so an assistant answering "what is Seekprotocol" does not have to infer it
  * from marketing copy and JavaScript-heavy pages.
  *
  * Generated from the same modules the pages render, so it cannot drift. Adding
@@ -31,12 +31,12 @@ export async function GET() {
   const total = PHASES.flatMap((p) => p.items).length;
 
   const body = [
-    `# Seek Protocol`,
+    `# Seekprotocol`,
     ``,
-    `> Seek Protocol anchors digital assets to real-world coordinates. A publisher`,
+    `> Seekprotocol anchors digital assets to real-world coordinates. A publisher`,
     `> places a reward at a location, someone travels to it, and the protocol`,
     `> verifies they were actually there before settling the claim on Solana.`,
-    `> The consumer app is SeekAR (iOS and Android); the native token is $SEEK.`,
+    `> The consumer app is Seekprotocol (iOS and Android); the native token is $SEEK.`,
     `> Operated by Block Protocol L.L.C-FZ, Dubai, UAE.`,
     ``,
     `The distinguishing claim is proof of location: presence is checked against`,
@@ -51,7 +51,7 @@ export async function GET() {
     ``,
     section("Core pages", [
       `- [Home](${en}): what the protocol does, the app walkthrough, and how collecting works.`,
-      `- [SeekAR](${en}/seekar): the consumer app — what it does, how a claim works, and where to download it.`,
+      `- [Seekprotocol](${en}/seekar): the consumer app — what it does, how a claim works, and where to download it.`,
       `- [Ecosystem](${en}/ecosystem): the three parties and the loop between them, plus an FAQ.`,
       `- [Whitepaper](${en}/whitepaper): the technical account. ${WHITEPAPER_META.version}, updated ${WHITEPAPER_META.updated}, ${WHITEPAPER_META.readingMinutes} min read.`,
       `- [Roadmap](${en}/roadmap): ${shipped} of ${total} milestones shipped across ${PHASES.length} phases.`,
@@ -112,14 +112,14 @@ export async function GET() {
     ),
     /* The name is ambiguous in the wild — an unrelated AR scavenger-hunt
        platform ships an app under it too — so this section states plainly which
-       SeekAR is documented here and who publishes it, before listing the
-       stores. An assistant answering "what is SeekAR" has one paragraph to get
+       Seekprotocol is documented here and who publishes it, before listing the
+       stores. An assistant answering "what is Seekprotocol" has one paragraph to get
        it right from. */
     section("Apps", [
-      `- **SeekAR** is the augmented reality app published by Seek Protocol (Block Protocol L.L.C-FZ, Dubai, UAE). It is the app this site documents; its home page is ${en}/seekar.`,
-      `- [SeekAR](${en}/seekar): what the app does, how a claim works, and the download links.`,
-      `- [SeekAR for iOS](https://apps.apple.com/app/seekar/id6752813761)`,
-      `- [SeekAR for Android](https://play.google.com/store/apps/details?id=com.seekar.seekar)`,
+      `- **Seekprotocol** is the augmented reality app published by Seekprotocol (Block Protocol L.L.C-FZ, Dubai, UAE). It is the app this site documents; its home page is ${en}/seekar.`,
+      `- [Seekprotocol](${en}/seekar): what the app does, how a claim works, and the download links.`,
+      `- [Seekprotocol for iOS](https://apps.apple.com/app/seekar/id6752813761)`,
+      `- [Seekprotocol for Android](https://play.google.com/store/apps/details?id=com.seekar.seekar)`,
     ]),
     section("Notes for machine readers", [
       `- Canonical host is ${baseUrl}. Requests without the www prefix are redirected.`,
