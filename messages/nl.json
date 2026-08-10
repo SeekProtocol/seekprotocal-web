@@ -140,7 +140,10 @@
     "q5": "Kan ik mijn locatie vervalsen?",
     "a5": "Nee. Proof of Location verifieert je echte aanwezigheid on-chain, en dat is precies wat een claim waarde geeft voor de uitgever die hem heeft neergelegd.",
     "ctaTitle": "Download Seekprotocol",
-    "ctaDesc": "Gratis voor iOS en Android. Je stad ligt al vol met dingen die het vinden waard zijn."
+    "ctaDesc": "Gratis voor iOS en Android. Je stad ligt al vol met dingen die het vinden waard zijn.",
+    "renameTitle": "SeekAR heet nu Seekprotocol",
+    "renameBody": "Dezelfde app, hetzelfde account, dezelfde kaart. Alleen de naam is veranderd. Een ander bedrijf diende een merkaanvraag in op de oude naam, dus zijn we overgestapt op de naam die altijd al van ons was.",
+    "renameLink": "Lees de aankondiging"
   },
   "about": {
     "heroTitle": "Ontdek de toekomst van locatie-gebaseerde digitale ervaringen",

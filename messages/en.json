@@ -140,7 +140,10 @@
     "q5": "Can I fake my location?",
     "a5": "No. Proof of Location verifies your real presence on-chain, which is what makes a claim worth anything to the publisher who placed it.",
     "ctaTitle": "Download Seekprotocol",
-    "ctaDesc": "Free on iOS and Android. Your city is already full of things worth finding."
+    "ctaDesc": "Free on iOS and Android. Your city is already full of things worth finding.",
+    "renameTitle": "SeekAR is now Seekprotocol",
+    "renameBody": "Same app, same account, same map. Only the name changed. A separate company filed a trademark application covering the old name, so we moved to the one we have always owned.",
+    "renameLink": "Read the announcement"
   },
   "about": {
     "heroTitle": "Discover the Future of Location-Based Digital Experiences",

@@ -140,7 +140,10 @@
     "q5": "我可以伪造位置吗？",
     "a5": "不可以。Proof of Location 会在链上验证你真实的到场，而这正是一次领取对投放奖励的发布方而言有价值的原因。",
     "ctaTitle": "下载 Seekprotocol",
-    "ctaDesc": "iOS 与 Android 免费下载。你的城市里早就藏满了值得一找的东西。"
+    "ctaDesc": "iOS 与 Android 免费下载。你的城市里早就藏满了值得一找的东西。",
+    "renameTitle": "SeekAR 现已更名为 Seekprotocol",
+    "renameBody": "同一个应用、同一个账号、同一张地图，只有名称变了。另一家公司就旧名称提交了商标申请，因此我们改用一直属于我们自己的名称。",
+    "renameLink": "阅读公告"
   },
   "about": {
     "heroTitle": "发现基于位置的数字体验的未来",

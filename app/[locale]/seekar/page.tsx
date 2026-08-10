@@ -181,6 +181,27 @@ function SeekarContent() {
         <div className="noise-layer" aria-hidden="true" />
         <div className="shell">
           <div className="page-head-inner">
+            {/* The rename, said first and said large.
+                This URL is where anyone searching the old name lands, and the
+                first thing they need is not the pitch — it is confirmation that
+                they are in the right place and that the product they were
+                looking for still exists under another word. Above the eyebrow
+                rather than below the hero for that reason: a notice under the
+                fold answers a question the reader has already given up on. */}
+            <aside className="rename-notice" role="note">
+              <span className="rename-notice-mark" aria-hidden="true">
+                <InfoIcon />
+              </span>
+              <div>
+                <p className="rename-notice-title">{t("renameTitle")}</p>
+                <p className="rename-notice-body">{t("renameBody")}</p>
+                <Link href="/blog/seekar-is-now-seekprotocol" className="arrow-link">
+                  {t("renameLink")}
+                  <ArrowRight />
+                </Link>
+              </div>
+            </aside>
+
             <p className="eyebrow">{t("eyebrow")}</p>
             <h1 className="t-h1 page-head-title">{t("heroTitle")}</h1>
             <p className="t-lead">{t("heroDesc")}</p>
@@ -308,5 +329,30 @@ function SeekarContent() {
         </div>
       </section>
     </>
+  );
+}
+
+function InfoIcon() {
+  return (
+    <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="9.25" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="12" cy="7.6" r="1.15" fill="currentColor" />
+      <path d="M12 10.9v6.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function ArrowRight() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path
+        d="M3 8h10m0 0l-4-4m4 4l-4 4"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+    </svg>
   );
 }

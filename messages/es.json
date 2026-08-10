@@ -140,7 +140,10 @@
     "q5": "¿Puedo falsear mi ubicación?",
     "a5": "No. Proof of Location verifica tu presencia real on-chain, y eso es justo lo que da valor a un hallazgo para quien dejó la recompensa.",
     "ctaTitle": "Descarga Seekprotocol",
-    "ctaDesc": "Gratis en iOS y Android. Tu ciudad ya está llena de cosas que merece la pena encontrar."
+    "ctaDesc": "Gratis en iOS y Android. Tu ciudad ya está llena de cosas que merece la pena encontrar.",
+    "renameTitle": "SeekAR ahora se llama Seekprotocol",
+    "renameBody": "La misma app, la misma cuenta, el mismo mapa. Solo cambió el nombre. Otra empresa presentó una solicitud de marca sobre el nombre anterior, así que pasamos al que siempre ha sido nuestro.",
+    "renameLink": "Leer el anuncio"
   },
   "about": {
     "heroTitle": "Descubre el futuro de las experiencias digitales basadas en ubicación",

@@ -140,7 +140,10 @@
     "q5": "위치를 속일 수 있나요",
     "a5": "없습니다. Proof of Location이 실제 방문을 온체인으로 검증하며, 바로 그것이 보상을 놓아둔 게시자에게 수령이 의미를 갖게 하는 이유입니다.",
     "ctaTitle": "Seekprotocol 내려받기",
-    "ctaDesc": "iOS와 Android에서 무료. 여러분의 도시에는 이미 찾아볼 만한 것들이 가득합니다."
+    "ctaDesc": "iOS와 Android에서 무료. 여러분의 도시에는 이미 찾아볼 만한 것들이 가득합니다.",
+    "renameTitle": "SeekAR는 이제 Seekprotocol입니다",
+    "renameBody": "같은 앱, 같은 계정, 같은 지도입니다. 이름만 바뀌었습니다. 다른 회사가 이전 이름에 대해 상표를 출원해, 처음부터 저희 것이었던 이름으로 옮겼습니다.",
+    "renameLink": "공지 읽기"
   },
   "about": {
     "heroTitle": "위치 기반 디지털 경험의 미래를 발견하세요",
