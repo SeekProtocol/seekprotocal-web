@@ -34,23 +34,17 @@ export async function generateMetadata({
   const description = t("metaDescription");
 
   return {
-    /* `metaTitle` is the whole title, and it leads with SeekAR.
+    /* `metaTitle` is the whole title, with no brand suffix appended.
 
-       The layout's `%s | Seek Protocol` template never reaches this page — it
+       The layout's `%s | Seekprotocol` template never reaches this page — it
        applies to *child* segments, and this page sits in the same segment as
-       the layout that declares it — so the suffix used to be appended here by
-       hand. It is gone on purpose.
-
-       SeekAR is the name of the app, and therefore the name people type. The
-       site said "Seek Protocol" in the title, the H1 and the domain and said
-       SeekAR nowhere Google weighs heavily, so it ranked for the app's own name
-       nowhere at all while an unrelated seekar.io took the result. The parent
-       brand is not lost: it stays in og:site_name, the Organization schema, the
-       breadcrumbs, the footer and the legal pages.
+       the layout that declares it — so the suffix used to be added here by
+       hand. It is gone, and now that the app and the site share one name there
+       is nothing for it to add: "Seekprotocol | ... | Seekprotocol" would say
+       the name twice inside a limit that already has no room for it.
 
        Longest of the eight is Spanish at 48, well inside the ~60 Google
-       renders. There is no room for both names — "SeekAR | The First AR & AI
-       Platform on Solana | Seek Protocol" is 61 in English and 67 in French. */
+       renders. */
     title: t("metaTitle"),
     description,
     openGraph: getOpenGraph({

@@ -906,7 +906,7 @@ export default function SeekGlobe({
       ref={hostRef}
       className={`three-host globe-canvas ${className}`}
       role="img"
-      aria-label="Interactive globe showing SeekAR collection activity worldwide"
+      aria-label="Interactive globe showing Seekprotocol collection activity worldwide"
     >
       <canvas ref={viewRef} className="three-view" />
       <div ref={labelLayerRef} className="globe-labels" aria-hidden="true" />

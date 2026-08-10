@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "首页",
-    "seekar": "SeekAR",
+    "seekar": "应用",
     "about": "关于我们",
     "whitepaper": "白皮书",
     "contact": "联系我们",
@@ -22,7 +22,7 @@
     "whitepaper": "白皮书",
     "tokenDashboard": "代币仪表板",
     "address": "Block Protocol L.L.C-FZ Meydan Grandstand, 6th floor, Meydan Road, Nad AlSheba, Dubai, U.A.E.",
-    "description": "Seek Protocol 是由 Block Protocol L.L.C-FZ 开发的下一代平台，结合增强现实、人工智能和区块链技术，打造真实世界的游戏化体验。",
+    "description": "Seekprotocol 是由 Block Protocol L.L.C-FZ 开发的下一代平台，结合增强现实、人工智能和区块链技术，打造真实世界的游戏化体验。",
     "copyright": "© 2024-2026 Block Protocol 版权所有",
     "privacyPolicy": "隐私政策",
     "termsOfService": "服务条款",
@@ -35,7 +35,7 @@
   },
   "home": {
     "heroTitle": "探索新现实",
-    "heroTitleHighlight": "SeekAR",
+    "heroTitleHighlight": "Seekprotocol",
     "heroSubtitle": "首个基于 Solana 的 AR 和 AI 平台，将您的世界变成区块链驱动的游乐场。寻找空投、收集 NFT，并在真实地点与 AI 伙伴一起探索。",
     "downloadAppStore": "在 App Store 下载",
     "downloadGooglePlay": "在 Google Play 获取",
@@ -65,13 +65,13 @@
     "serviceMoveToEarnDesc": "加入大型直播 AR 活动，数千名玩家汇聚在真实世界的聚会中获取数字奖励。想象音乐节上独家奖励空投给参与者，体育赛事中有位置锁定的收藏品，或有奖池的全城寻宝活动。",
     "threePathsTitle": "三条进步之路",
     "pathBlockchain": "区块链驱动",
-    "pathBlockchainDesc": "每个 NFT、代币和游戏内资产都在区块链上得到保障。这意味着真正的所有权、可证明的公平性，以及您可以在 SeekAR 内外实际使用的奖励。",
+    "pathBlockchainDesc": "每个 NFT、代币和游戏内资产都在区块链上得到保障。这意味着真正的所有权、可证明的公平性，以及您可以在 Seekprotocol 内外实际使用的奖励。",
     "pathAI": "AI 驱动",
     "pathAIDesc": "我们的 AI 了解您的探索和游戏方式，为您提供更智能的位置提示、个性化任务和真正有意义的奖励。您移动得越多，它就越出色。",
     "pathProofOfLocation": "位置证明",
     "pathProofOfLocationDesc": "您迈出的每一步都是证明。我们的系统确认您的真实世界位置以解锁代币、NFT 和其他数字资产，没有作弊，只有真正参与的真正奖励。",
     "builtToScale": "与您一起扩展",
-    "builtToScaleDesc": "无论您是启动项目还是探索城市，Seek Protocol 都以沉浸式技术、验证存在和真实奖励推动您的旅程。",
+    "builtToScaleDesc": "无论您是启动项目还是探索城市，Seekprotocol 都以沉浸式技术、验证存在和真实奖励推动您的旅程。",
     "interested": "感兴趣？",
     "scaleOnboarding": "无缝入门",
     "scaleOnboardingDesc": "为用户、创作者和企业提供快速通道。从创建社交钱包到首次 AR 活动，我们让入门感觉像游戏，而非繁琐流程。",
@@ -86,7 +86,7 @@
     "featuredOn": "媒体报道：",
     "joinBeta": "加入我们的测试版",
     "getReady": "准备好寻找了！",
-    "ctaDesc": "走进一个全新的现实，让世界成为您的游乐场。SeekAR 将您的周围变成互动冒险，融合最新的 AR 技术与真实世界探索。追踪隐藏宝藏，收集有价值的数字奖励，征服动态任务！",
+    "ctaDesc": "走进一个全新的现实，让世界成为您的游乐场。Seekprotocol 将您的周围变成互动冒险，融合最新的 AR 技术与真实世界探索。追踪隐藏宝藏，收集有价值的数字奖励，征服动态任务！",
     "coinReadoutLabel": "信号锁定",
     "coinReadoutAccuracy": "精度 {meters} 米",
     "beyondEyebrow": "不只是代币",
@@ -99,19 +99,19 @@
     "liveLead": "跳到任意枢纽城市，点一枚币看看是谁捡走的，也可以自己试着抓一枚，按应用里真实的概率来掷。",
     "foundationsEyebrow": "底层基础",
     "readWhitepaper": "阅读技术白皮书",
-    "metaTitle": "SeekAR | Solana 上的 AR 寻宝应用",
-    "metaDescription": "在真实地点捕捉空投、用增强现实收集 NFT，并与 AI 伙伴一同探索。SeekAR 把现实中的地点变成可在 Solana 上领取的奖励。",
-    "ogTitle": "SeekAR by Seek Protocol｜Solana 上的 AR 与 AI"
+    "metaTitle": "Seekprotocol | Solana 上的 AR 寻宝应用",
+    "metaDescription": "在真实地点捕捉空投、用增强现实收集 NFT，并与 AI 伙伴一同探索。Seekprotocol 把现实中的地点变成可在 Solana 上领取的奖励。",
+    "ogTitle": "Seekprotocol by Seekprotocol｜Solana 上的 AR 与 AI"
   },
   "seekarPage": {
-    "metaTitle": "SeekAR — AR 寻宝应用",
-    "metaDescription": "SeekAR 是 Seek Protocol 推出的增强现实应用。在真实坐标上猎取空投、收集 NFT，并在 Solana 上赚取加密奖励。iOS 与 Android 免费下载。",
-    "ogTitle": "SeekAR — AR 寻宝应用",
+    "metaTitle": "Seekprotocol — AR 寻宝应用",
+    "metaDescription": "Seekprotocol 是 Seekprotocol 推出的增强现实应用。在真实坐标上猎取空投、收集 NFT，并在 Solana 上赚取加密奖励。iOS 与 Android 免费下载。",
+    "ogTitle": "Seekprotocol — AR 寻宝应用",
     "eyebrow": "应用",
-    "heroTitle": "SeekAR",
-    "heroDesc": "Seek Protocol 推出的增强现实应用。用手机对准这个世界，找到别人留在那里的东西：锚定在 Solana 真实坐标上的代币、NFT 与奖励。",
-    "whatTitle": "什么是 SeekAR？",
-    "whatBody": "SeekAR 是 Seek Protocol 的旗舰移动应用，在 iOS 和 Android 上免费提供。它让任何一条街道、一座公园、一个场所都能成为藏匿和领取数字资产的地方。发布方把奖励放在某个坐标上；你必须亲自到场才能领取，而协议会证明你确实到过。没有模拟器，没有位置伪造，没有捷径。",
+    "heroTitle": "Seekprotocol",
+    "heroDesc": "Seekprotocol 推出的增强现实应用。用手机对准这个世界，找到别人留在那里的东西：锚定在 Solana 真实坐标上的代币、NFT 与奖励。",
+    "whatTitle": "什么是 Seekprotocol？",
+    "whatBody": "Seekprotocol 是 Seekprotocol 的旗舰移动应用，在 iOS 和 Android 上免费提供。它让任何一条街道、一座公园、一个场所都能成为藏匿和领取数字资产的地方。发布方把奖励放在某个坐标上；你必须亲自到场才能领取，而协议会证明你确实到过。没有模拟器，没有位置伪造，没有捷径。",
     "featuresTitle": "你可以做什么",
     "f1Title": "猎取基于位置的空投",
     "f1Desc": "代币和 NFT 锚定在真实坐标上。走到那个位置，打开相机，领取等待着你的东西。",
@@ -129,24 +129,24 @@
     "s3Title": "证明你在场并领取",
     "s3Desc": "Proof of Location 在链上验证你的到场，资产随即进入你的钱包。",
     "faqTitle": "常见问题",
-    "q1": "SeekAR 免费吗？",
-    "a1": "免费。SeekAR 在 iOS 和 Android 上均可免费下载。应用内有部分付费道具，但寻找和领取本身不收费。",
-    "q2": "SeekAR 是谁开发的？",
-    "a2": "SeekAR 由 Seek Protocol 开发，隶属于迪拜的 Block Protocol L.L.C-FZ。它是 Solana 上的 AR 与 AI 应用，可在 App Store 和 Google Play 获取。",
+    "q1": "Seekprotocol 免费吗？",
+    "a1": "免费。Seekprotocol 在 iOS 和 Android 上均可免费下载。应用内有部分付费道具，但寻找和领取本身不收费。",
+    "q2": "Seekprotocol 是谁开发的？",
+    "a2": "Seekprotocol 由 Seekprotocol 开发，隶属于迪拜的 Block Protocol L.L.C-FZ。它是 Solana 上的 AR 与 AI 应用，可在 App Store 和 Google Play 获取。",
     "q3": "我需要懂加密货币吗？",
     "a3": "不需要。打开应用时会自动为你创建钱包，你可以收集和保存资产，全程无需自己处理助记词。",
-    "q4": "SeekAR 支持哪些手机？",
+    "q4": "Seekprotocol 支持哪些手机？",
     "a4": "支持较新的 iPhone 以及支持 AR 的 Android 设备。两个版本功能相同。",
     "q5": "我可以伪造位置吗？",
     "a5": "不可以。Proof of Location 会在链上验证你真实的到场，而这正是一次领取对投放奖励的发布方而言有价值的原因。",
-    "ctaTitle": "下载 SeekAR",
+    "ctaTitle": "下载 Seekprotocol",
     "ctaDesc": "iOS 与 Android 免费下载。你的城市里早就藏满了值得一找的东西。"
   },
   "about": {
     "heroTitle": "发现基于位置的数字体验的未来",
-    "heroDesc": "SeekProtocol 通过先进的增强现实和区块链技术，将真实世界的探索转化为有回报的冒险。",
-    "whySeekProtocol": "为什么选择 Seek Protocol？",
-    "whyDesc": "当其他人在开发应用时，我们在引领一场革命。SeekProtocol 通过基于位置的 AR 技术弥合物理世界和数字世界之间的鸿沟，将每一步都变成机会。我们的去中心化奖励系统确保探索得到回报，真正的回报。我们不仅仅是在创造体验；我们正在开创一种新经济，让真实世界的发现产生真正的价值。凭借亚米级精度追踪、令人惊叹的 AR 可视化和区块链奖励，我们让不可见的变得可见，让不可能的变得有利可图。",
+    "heroDesc": "Seekprotocol 通过先进的增强现实和区块链技术，将真实世界的探索转化为有回报的冒险。",
+    "whySeekprotocol": "为什么选择 Seekprotocol？",
+    "whyDesc": "当其他人在开发应用时，我们在引领一场革命。Seekprotocol 通过基于位置的 AR 技术弥合物理世界和数字世界之间的鸿沟，将每一步都变成机会。我们的去中心化奖励系统确保探索得到回报，真正的回报。我们不仅仅是在创造体验；我们正在开创一种新经济，让真实世界的发现产生真正的价值。凭借亚米级精度追踪、令人惊叹的 AR 可视化和区块链奖励，我们让不可见的变得可见，让不可能的变得有利可图。",
     "letsConnect": "联系我们",
     "ourValues": "我们的价值观",
     "whatDrivesUs": "驱动我们前行的力量",
@@ -163,7 +163,7 @@
     "readyToSeek": "准备好寻找了吗？",
     "startExploring": "开始探索",
     "coreTechnologies": "我们部署的核心技术",
-    "coreTechDesc": "在 SeekProtocol，我们理解探索需要目标。我们不提供一刀切的体验，我们为每位用户创建动态的、感知位置的冒险。",
+    "coreTechDesc": "在 Seekprotocol，我们理解探索需要目标。我们不提供一刀切的体验，我们为每位用户创建动态的、感知位置的冒险。",
     "techGeospatial": "地理空间映射",
     "techGeospatialDesc": "实时位置追踪与动态地理围栏，创建感知上下文的体验。",
     "techAR": "AR 渲染",
@@ -173,13 +173,13 @@
     "techSync": "即时同步",
     "techSyncDesc": "所有玩家实时更新，发现全球同步发生。",
     "threePillars": "成功的三大支柱",
-    "threePillarsDesc": "SeekProtocol 的核心是三种革命性技术，改变我们与世界互动的方式。",
+    "threePillarsDesc": "Seekprotocol 的核心是三种革命性技术，改变我们与世界互动的方式。",
     "pillarAR": "增强现实",
     "pillarARDesc": "尖端 AR 技术揭示肉眼不可见的隐藏数字层。",
     "pillarLocation": "位置精度",
     "pillarLocationDesc": "亚米级精度 GPS 与动态地理围栏，精确知道空投的放置位置。",
     "pillarReward": "奖励分配",
-    "pillarRewardDesc": "去中心化池确保每位 SeekAR 用户获得公平、即时和透明的收益。",
+    "pillarRewardDesc": "去中心化池确保每位 Seekprotocol 用户获得公平、即时和透明的收益。",
     "ourApproach": "我们的方法",
     "approachTitle": "探索与奖励的交汇",
     "approachDesc": "每个地点都有未被发掘的价值。我们的使命？以吸引人的方式解锁它，奖励探索者，并让他们不断回来寻找更多。",
@@ -200,21 +200,21 @@
     "ourTeam": "我们出色的团队",
     "joinBeta": "加入我们的测试版",
     "getReady": "准备好寻找了！",
-    "ctaDesc": "走进一个全新的现实，让世界成为您的游乐场。SeekAR 将您的周围变成互动冒险，融合最新的 AR 技术与真实世界探索。",
-    "metaTitle": "关于 SeekAR 背后的团队",
-    "metaDescription": "认识在 Solana 上构建位置增强现实的团队：位置证明背后的想法、SeekAR 的技术，以及 $SEEK 背后的人。",
-    "ogTitle": "SeekAR 背后的团队"
+    "ctaDesc": "走进一个全新的现实，让世界成为您的游乐场。Seekprotocol 将您的周围变成互动冒险，融合最新的 AR 技术与真实世界探索。",
+    "metaTitle": "关于 Seekprotocol 背后的团队",
+    "metaDescription": "认识在 Solana 上构建位置增强现实的团队：位置证明背后的想法、Seekprotocol 的技术，以及 $SEEK 背后的人。",
+    "ogTitle": "Seekprotocol 背后的团队"
   },
   "contact": {
     "getInTouch": "联系我们",
     "formDesc": "填写下方表单，我们会尽快回复您。",
     "metaTitle": "联系我们：合作与投放",
-    "metaDescription": "就在你自己的坐标上投放活动、商务合作、内测资格或媒体采访，联系 Seek Protocol 团队。",
-    "ogTitle": "联系 Seek Protocol"
+    "metaDescription": "就在你自己的坐标上投放活动、商务合作、内测资格或媒体采访，联系 Seekprotocol 团队。",
+    "ogTitle": "联系 Seekprotocol"
   },
   "services": {
     "heroTitle": "我们的专业，您的增长",
-    "heroDesc": "Seek Protocol 在 Solana 上提供尖端的 AR、AI 和区块链解决方案。我们不仅仅是在构建技术，我们是您转变真实世界参与度的合作伙伴。",
+    "heroDesc": "Seekprotocol 在 Solana 上提供尖端的 AR、AI 和区块链解决方案。我们不仅仅是在构建技术，我们是您转变真实世界参与度的合作伙伴。",
     "letsContact": "联系我们",
     "businessStrategy": "商业策略",
     "businessStrategyDesc": "量身定制的策略，将商业目标与数字增长相结合。",
@@ -258,19 +258,19 @@
     "ctaTitle": "有想法或需要启动项目？"
   },
   "blog": {
-    "title": "Seek Protocol 博客",
+    "title": "Seekprotocol 博客",
     "desc": "关于增强现实、人工智能、区块链技术和基于位置体验未来的洞察、更新和深度分析。",
     "read": "阅读",
     "backToBlog": "← 返回博客",
     "readyToSeek": "准备好开始寻找了吗？",
-    "readyToSeekDesc": "下载 SeekAR，将您的世界变成区块链驱动的游乐场。",
+    "readyToSeekDesc": "下载 Seekprotocol，将您的世界变成区块链驱动的游乐场。",
     "moreArticles": "更多文章",
     "keepReading": "继续阅读",
     "allArticles": "全部文章",
     "relatedPages": "相关页面",
     "metaTitle": "博客：AR、AI 与基于位置的奖励",
-    "metaDescription": "关于增强现实、AI 伙伴、地理围栏空投与位置证明的文章，来自在 Solana 上构建 SeekAR 的团队。",
-    "ogTitle": "Seek Protocol 博客"
+    "metaDescription": "关于增强现实、AI 伙伴、地理围栏空投与位置证明的文章，来自在 Solana 上构建 Seekprotocol 的团队。",
+    "ogTitle": "Seekprotocol 博客"
   },
   "forms": {
     "emailPlaceholder": "电子邮件地址",
@@ -327,11 +327,11 @@
   },
   "privacyPolicyPage": {
     "title": "隐私政策",
-    "subtitle1": "SeekAR · Block Protocol LLC",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
     "subtitle2": "生效日期：2025年8月12日",
     "introTitle": "引言",
-    "introP1": "本隐私政策适用于 SeekAR 移动应用程序（在本文件中简称“本应用”），由 Block Protocol LLC（简称“服务提供商”）开发和维护，作为面向移动设备的免费服务提供。本应用按“现状”提供。",
-    "introP2": "SeekAR 是一个新一代增强现实、AI 驱动、区块链集成的平台，为用户创造游戏化的真实世界体验。鉴于这些体验的性质，本应用会与多个类别的个人数据进行交互，以完整、安全地提供其功能。本政策详细描述了收集哪些数据、为何收集、如何处理、可能与谁共享，以及用户就其个人信息所享有的权利。",
+    "introP1": "本隐私政策适用于 Seekprotocol 移动应用程序（在本文件中简称“本应用”），由 Block Protocol LLC（简称“服务提供商”）开发和维护，作为面向移动设备的免费服务提供。本应用按“现状”提供。",
+    "introP2": "Seekprotocol 是一个新一代增强现实、AI 驱动、区块链集成的平台，为用户创造游戏化的真实世界体验。鉴于这些体验的性质，本应用会与多个类别的个人数据进行交互，以完整、安全地提供其功能。本政策详细描述了收集哪些数据、为何收集、如何处理、可能与谁共享，以及用户就其个人信息所享有的权利。",
     "introP3": "下载并使用本应用即表示您同意本隐私政策中所述的数据处理规范。本政策可能不时更新，以反映数据处理规范、适用法律或应用功能的变化，建议您定期查阅。",
     "part1Title": "第一部分: 信息收集与使用",
     "part1P1": "本应用在您下载和使用时收集相关信息。这包括使用过程中自动收集的技术数据，例如您设备的互联网协议（IP）地址、您访问的本应用页面或功能区域、您的访问时间和日期、在这些页面上花费的时间，以及您移动设备所运行操作系统的相关信息。",
@@ -347,7 +347,7 @@
     "part1s3Title": "3. 位置数据",
     "part1s3P1": "本应用需要访问您设备的大致位置数据和精确位置数据。位置访问为强制性要求，用户不能在不影响核心应用功能的情况下禁用。",
     "part1s3P2": "大致位置数据，识别您的大致地理区域而不精确定位您的确切位置，既被收集也被共享。其收集目的是支持核心应用功能，以及就用户在不同地理区域如何使用基于位置功能的情况进行内部分析。大致位置数据还与第三方共享，用于支持应用功能以及基于地理环境提供个性化内容和体验。",
-    "part1s3P3": "精确位置数据，通过 GPS 或同等技术获取的确切地理坐标，既被收集也被共享，其在本应用中的使用目的最为广泛。这反映了 SeekAR 的核心体验是围绕真实世界、基于位置锚定的增强现实而构建的事实。精确位置数据的收集用于支持依赖于精确现实世界定位的 AR 功能及其他核心功能、进行详细的使用情况分析、发送与您具体位置相关的开发者通信、实施与地理活动模式相关的安全和防欺诈措施、根据您的精确环境个性化内容和功能，以及管理依赖地理参数的账户功能或服务条件。此类数据同样会因上述所有目的与第三方服务提供商共享。",
+    "part1s3P3": "精确位置数据，通过 GPS 或同等技术获取的确切地理坐标，既被收集也被共享，其在本应用中的使用目的最为广泛。这反映了 Seekprotocol 的核心体验是围绕真实世界、基于位置锚定的增强现实而构建的事实。精确位置数据的收集用于支持依赖于精确现实世界定位的 AR 功能及其他核心功能、进行详细的使用情况分析、发送与您具体位置相关的开发者通信、实施与地理活动模式相关的安全和防欺诈措施、根据您的精确环境个性化内容和功能，以及管理依赖地理参数的账户功能或服务条件。此类数据同样会因上述所有目的与第三方服务提供商共享。",
     "part1s4Title": "4. 消息",
     "part1s4P1": "本应用收集三种形式的消息数据：电子邮件、短信或彩信，以及其他应用内消息。这三种类型均为必需项，用户不能禁用。",
     "part1s4P2": "电子邮件的收集仅用于支持核心应用功能，包括用户与平台之间的通信以及服务相关通知的发送。",
@@ -357,8 +357,8 @@
     "part1s5P1": "本应用需要访问您设备上的照片和视频。这两类数据仅被收集，且仅用于支持核心应用功能，尤其是在增强现实功能的场景下，这些功能需要访问设备摄像头和媒体库，以便将数字内容叠加到物理环境中或在本应用的互动会话中捕捉体验。",
     "part1s6Title": "6. 健康与健身信息",
     "part1s6P1": "本应用收集健康相关信息和健身相关信息。这两类数据均为必需项，仅用于支持核心应用功能。此数据不会与第三方共享。",
-    "part1s6P2": "健康信息使本应用能够在相关场景中将健康背景融入其体验，支持响应用户一般身体状况的功能，作为 SeekAR 更广泛的游戏化参与模式的一部分。",
-    "part1s6P3": "健身信息与本应用的挑战和奖励系统配合使用。本应用请求 Android ACTIVITY_RECOGNITION 权限，以通过您设备的传感器直接检测和监控步行、跑步或骑行等体力活动。该权限驱动本应用的挑战和奖励功能，旨在将真实世界的体力活动识别为 SeekAR 游戏化体验的一部分。通过检测运动模式，本应用能够触发应用内事件、验证挑战完成情况，并归因于与现实世界体力参与相关的奖励。活动识别数据不会用于广告目的，也不会与第三方共享。此权限可随时通过您设备的应用设置撤销，但这样做将禁用依赖此权限的基于活动的挑战和奖励。",
+    "part1s6P2": "健康信息使本应用能够在相关场景中将健康背景融入其体验，支持响应用户一般身体状况的功能，作为 Seekprotocol 更广泛的游戏化参与模式的一部分。",
+    "part1s6P3": "健身信息与本应用的挑战和奖励系统配合使用。本应用请求 Android ACTIVITY_RECOGNITION 权限，以通过您设备的传感器直接检测和监控步行、跑步或骑行等体力活动。该权限驱动本应用的挑战和奖励功能，旨在将真实世界的体力活动识别为 Seekprotocol 游戏化体验的一部分。通过检测运动模式，本应用能够触发应用内事件、验证挑战完成情况，并归因于与现实世界体力参与相关的奖励。活动识别数据不会用于广告目的，也不会与第三方共享。此权限可随时通过您设备的应用设置撤销，但这样做将禁用依赖此权限的基于活动的挑战和奖励。",
     "part1s7Title": "7. 应用性能与诊断数据",
     "part1s7P1": "本应用收集与其自身性能相关的技术数据。这包括崩溃日志、诊断信息和其他应用性能指标。",
     "part1s7P2": "崩溃日志为必需项，默认自动收集，用于支持核心应用功能，具体而言，用于识别、诊断和解决影响用户体验的技术故障。",
@@ -384,7 +384,7 @@
     "part6Title": "第六部分: 安全",
     "part6P1": "服务提供商致力于保护您信息的机密性和完整性。本应用收集的所有数据均在传输过程中加密。服务提供商维护物理、电子和程序性安全措施来保护其处理和保留的信息。当数据传输至第三方服务提供商时，服务提供商会合理努力确保此类共享是有限的、目的明确的，并受适当的数据处理协议约束。",
     "part7Title": "第七部分: 数据删除请求",
-    "part7P1": "希望请求删除其账户及所有相关数据的用户可通过 SeekAR 网站提交请求：",
+    "part7P1": "希望请求删除其账户及所有相关数据的用户可通过 Seekprotocol 网站提交请求：",
     "part7P2": "或者，也可通过直接联系服务提供商（<email>support@seekprotocol.ai</email>）提交删除请求。服务提供商将在合理时间内处理所有删除请求。",
     "part8Title": "第八部分: 本政策的变更",
     "part8P1": "本隐私政策可能因任何原因不时更新。服务提供商将通过在本页面发布新的隐私政策并修改文件顶部显示的生效日期来通知您任何变更。如变更为重大变更，服务提供商也可能通过本应用内的通知告知用户。建议您定期查阅本隐私政策。在变更发布后继续使用本应用即表示您接受这些变更。",
@@ -394,14 +394,14 @@
     "contactP1": "如果您在使用本应用时对隐私保护有任何疑问，或对本政策中描述的数据处理规范有任何问题，请通过以下方式联系服务提供商：",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "隐私政策",
-    "metaDescription": "Seek Protocol 与 SeekAR 如何处理位置数据、传感器读数与钱包信息：收集什么、保留多久，以及什么绝不共享。",
-    "ogTitle": "Seek Protocol 的隐私做法"
+    "metaDescription": "Seekprotocol 与 Seekprotocol 如何处理位置数据、传感器读数与钱包信息：收集什么、保留多久，以及什么绝不共享。",
+    "ogTitle": "Seekprotocol 的隐私做法"
   },
   "termsPage": {
     "title": "条款与条件",
-    "subtitle1": "SeekAR · Block Protocol LLC",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
     "subtitle2": "生效日期：2025年8月12日",
-    "p1": "本条款与条件适用于由 Block Protocol LLC（以下简称“服务提供商”）创建的 SeekAR 应用程序（以下简称“本应用”），作为面向移动设备的免费服务提供。",
+    "p1": "本条款与条件适用于由 Block Protocol LLC（以下简称“服务提供商”）创建的 Seekprotocol 应用程序（以下简称“本应用”），作为面向移动设备的免费服务提供。",
     "p2": "下载或使用本应用即表示您自动同意以下条款。强烈建议您在使用本应用之前仔细阅读并理解这些条款。未经授权复制、修改本应用、本应用的任何部分或我们的商标均被严格禁止。任何试图提取本应用源代码、将本应用翻译成其他语言或创建衍生版本的行为均不被允许。与本应用相关的所有商标、版权、数据库权利及其他知识产权仍归服务提供商所有。",
     "p3": "服务提供商致力于确保本应用尽可能地实用和高效。因此，服务提供商保留随时以任何理由修改本应用或对其服务收费的权利。服务提供商保证，对本应用或其服务的任何收费都将清楚地告知您。",
     "p4": "本应用存储和处理您向服务提供商提供的个人数据，以提供相应服务。维护手机安全和本应用的访问权限是您的责任。服务提供商强烈建议您不要对手机进行越狱或获取 root 权限，即移除设备官方操作系统施加的软件限制。此类操作可能使您的手机暴露于恶意软件、病毒和恶意程序之下，损害手机的安全功能，并可能导致本应用无法正常运行或完全无法运行。",
@@ -416,8 +416,8 @@
     "contactTitle": "联系我们",
     "contactP1": "如果您对本条款与条件有任何疑问或建议，请随时通过 <email>support@seekprotocol.ai</email> 联系服务提供商。",
     "metaTitle": "条款与条件",
-    "metaDescription": "使用 SeekAR 与 Seek Protocol 平台的条款：你的权利、领取资产的规则，以及付费项目的运作方式。",
-    "ogTitle": "Seek Protocol 使用条款"
+    "metaDescription": "使用 Seekprotocol 与 Seekprotocol 平台的条款：你的权利、领取资产的规则，以及付费项目的运作方式。",
+    "ogTitle": "Seekprotocol 使用条款"
   },
   "languageSwitcher": {
     "en": "English",
@@ -692,7 +692,7 @@
           "body": "由社交账号登录创建，装好应用一分钟内就能开始收集。想自己保管私钥，随时可以导出。"
         },
         {
-          "title": "SeekAR Pass",
+          "title": "Seekprotocol Pass",
           "body": "与常规玩法并行的赛季奖励线，分免费档和付费档。"
         },
         {
@@ -1019,7 +1019,7 @@
   },
   "ecosystemPage": {
     "metaTitle": "生态：探寻者、发布方、协议",
-    "metaDescription": "Seek Protocol 的生态如何咬合：探寻者负责收集，发布方负责投放，协议负责验证到场并在 Solana 上完成结算。",
+    "metaDescription": "Seekprotocol 的生态如何咬合：探寻者负责收集，发布方负责投放，协议负责验证到场并在 Solana 上完成结算。",
     "ogTitle": "三方，一个坐标",
     "eyebrow": "生态",
     "titleStart": "三方，一个",
@@ -1112,11 +1112,11 @@
       "answer": "代价不低。单纯的 GPS 定位很容易伪造，所以它只是四路信号中的一路。周边无线电环境、设备认证和你的运动轨迹都必须互相印证，反复失败的设备还会面临更高门槛。目标是让伪造的成本高于奖励的价值，而不是声称它绝无可能。"
     },
     "crypto": {
-      "question": "使用 SeekAR 需要懂加密货币吗？",
+      "question": "使用 Seekprotocol 需要懂加密货币吗？",
       "answer": "不需要。钱包由社交账号登录创建，除非你主动去找，否则永远不会看到助记词。如果日后想自行保管，随时可以导出私钥。"
     },
     "tracking": {
-      "question": "Seek Protocol 会记录我去过哪里吗？",
+      "question": "Seekprotocol 会记录我去过哪里吗？",
       "answer": "不会。应用只在你尝试领取时请求一次位置，而不是在后台持续获取。原始传感器数据仅用于给这一次领取评分，随后即被丢弃，你的行动记录留在你自己的设备上。"
     },
     "farming": {
@@ -1134,8 +1134,8 @@
   },
   "roadmapPage": {
     "metaTitle": "路线图：已交付与接下来的计划",
-    "metaDescription": "Seek Protocol 已经交付了什么、接下来要做什么：从位置证明原型、SeekAR 公开上线，到自助商业后台与链上治理。",
-    "ogTitle": "Seek Protocol 路线图",
+    "metaDescription": "Seekprotocol 已经交付了什么、接下来要做什么：从位置证明原型、Seekprotocol 公开上线，到自助商业后台与链上治理。",
+    "ogTitle": "Seekprotocol 路线图",
     "eyebrow": "路线图",
     "titleStart": "已经建成的，和",
     "titleAccent": "接下来的",
@@ -1167,10 +1167,10 @@
     },
     "launch": {
       "title": "公开上线",
-      "summary": "把 SeekAR 交到真实用户手里，两大应用商店同时上线，且引导流程不假设用户拿过私钥。",
+      "summary": "把 Seekprotocol 交到真实用户手里，两大应用商店同时上线，且引导流程不假设用户拿过私钥。",
       "groups": {},
       "items": {
-        "stores": "SeekAR 在 iOS 与 Android 发布",
+        "stores": "Seekprotocol 在 iOS 与 Android 发布",
         "wallet": "社交登录钱包，可选导出自行保管",
         "drops": "基于位置的投放与任务系统",
         "attestation": "通过 Play Integrity 与 App Attest 进行设备认证",
@@ -1401,13 +1401,13 @@
   },
   "whitepaper": {
     "metaTitle": "白皮书：Solana 上的位置证明",
-    "metaDescription": "Seek Protocol 如何把数字资产发行到真实坐标上、验证有人确实到过，并在 Solana 上完成结算。位置证明、架构、代币设计，以及我们所防御的攻击。",
-    "ogTitle": "Seek Protocol 白皮书",
+    "metaDescription": "Seekprotocol 如何把数字资产发行到真实坐标上、验证有人确实到过，并在 Solana 上完成结算。位置证明、架构、代币设计，以及我们所防御的攻击。",
+    "ogTitle": "Seekprotocol 白皮书",
     "ogDescription": "位置证明、架构、代币设计，以及对攻击与局限的坦白说明。",
     "eyebrow": "白皮书",
     "titleStart": "属于某个地方的",
     "titleAccent": "数字资产",
-    "lead": "关于 Seek Protocol 如何把资产发行到坐标上、如何证明有人站在那里、又如何在链上结算的技术说明，也包括这个系统做不到的事。",
+    "lead": "关于 Seekprotocol 如何把资产发行到坐标上、如何证明有人站在那里、又如何在链上结算的技术说明，也包括这个系统做不到的事。",
     "readingTime": "阅读约 {minutes} 分钟",
     "updated": "更新于 {date}",
     "updatedValue": "2026 年 8 月",
@@ -1429,11 +1429,11 @@
           },
           {
             "kind": "p",
-            "text": "Seek Protocol 把位置放回数字资产之中。代币、NFT 或奖励可以发行给一组坐标而不是一个钱包，并停留在那里，直到有人实际站进它的半径之内并加以证明。我们称之为位置证明，协议的其余部分都建立在这一原语之上。"
+            "text": "Seekprotocol 把位置放回数字资产之中。代币、NFT 或奖励可以发行给一组坐标而不是一个钱包，并停留在那里，直到有人实际站进它的半径之内并加以证明。我们称之为位置证明，协议的其余部分都建立在这一原语之上。"
           },
           {
             "kind": "p",
-            "text": "面向用户的一面是 **SeekAR**，一款 iOS 与 Android 上的移动应用，用增强现实呈现这些资产。你走动，手机显示附近有什么，你把找到的收下。在底层，结算发生在 Solana 上，选择它是因为交易成本低到领取一份小额奖励不会比奖励本身还贵。"
+            "text": "面向用户的一面是 **Seekprotocol**，一款 iOS 与 Android 上的移动应用，用增强现实呈现这些资产。你走动，手机显示附近有什么，你把找到的收下。在底层，结算发生在 Solana 上，选择它是因为交易成本低到领取一份小额奖励不会比奖励本身还贵。"
           },
           {
             "kind": "callout",
@@ -1703,11 +1703,11 @@
       "seekar": {
         "index": "06",
         "eyebrow": "应用",
-        "title": "SeekAR，面向用户的那一面",
+        "title": "Seekprotocol，面向用户的那一面",
         "blocks": [
           {
             "kind": "p",
-            "text": "在 SeekAR 里，协议变成了不需要懂上面任何一段也能用的东西。打开就是一张附近有什么的地图，举起相机，AR 引擎便把这些资产渲染在它们所在的位置上。"
+            "text": "在 Seekprotocol 里，协议变成了不需要懂上面任何一段也能用的东西。打开就是一张附近有什么的地图，举起相机，AR 引擎便把这些资产渲染在它们所在的位置上。"
           },
           {
             "kind": "h",
@@ -1724,7 +1724,7 @@
           },
           {
             "kind": "p",
-            "text": "上手门槛这一条，比任何其他因素都更能左右设计决定。将来会用 SeekAR 的人里，大多数从没拿过私钥。如果头三十秒里出现「助记词」这三个字，他们就走了。所以钱包是悄悄创建的，日后想自己保管的人可以导出。"
+            "text": "上手门槛这一条，比任何其他因素都更能左右设计决定。将来会用 Seekprotocol 的人里，大多数从没拿过私钥。如果头三十秒里出现「助记词」这三个字，他们就走了。所以钱包是悄悄创建的，日后想自己保管的人可以导出。"
           },
           {
             "kind": "h",
@@ -1962,7 +1962,7 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "SeekAR Pass",
+                "label": "Seekprotocol Pass",
                 "value": "每 90 天赛季 8.99 欧元"
               },
               {
@@ -2179,7 +2179,7 @@
         "blocks": [
           {
             "kind": "p",
-            "text": "SeekAR 已在 iOS 与 Android 上线，具备基于位置的投放、AR 渲染与社交钱包。验证栈目前跑的是 GNSS、设备认证与运动连续性三路信号；无线电指纹正在分阶段推出。设备认证在开关之后强制执行，这就是它诚实的现状：拒绝路径已经建好，而开关还没有对每一处界面都打开。"
+            "text": "Seekprotocol 已在 iOS 与 Android 上线，具备基于位置的投放、AR 渲染与社交钱包。验证栈目前跑的是 GNSS、设备认证与运动连续性三路信号；无线电指纹正在分阶段推出。设备认证在开关之后强制执行，这就是它诚实的现状：拒绝路径已经建好，而开关还没有对每一处界面都打开。"
           },
           {
             "kind": "p",
@@ -2403,7 +2403,7 @@
   "stackLayers": {
     "app": {
       "label": "应用层",
-      "sub": "SeekAR · 商业后台 · 活动搭建器",
+      "sub": "Seekprotocol · 商业后台 · 活动搭建器",
       "detail": "人们直接接触的部分。移动应用用 AR 渲染资产并处理收集；后台是发布方投放它们的地方。两者都是下层的普通客户端，不持有任何特权。"
     },
     "intelligence": {

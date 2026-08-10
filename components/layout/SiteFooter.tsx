@@ -112,7 +112,7 @@ export default function SiteFooter() {
       <div className="shell">
         <div className="site-footer-top">
           <div className="site-footer-brand">
-            <Link href="/" prefetch={false} aria-label="Seek Protocol">
+            <Link href="/" prefetch={false} aria-label="Seekprotocol">
               <SeekLogo markSize={34} />
             </Link>
             <p className="t-body site-footer-blurb">{t("description")}</p>

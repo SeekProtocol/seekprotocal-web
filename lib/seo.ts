@@ -11,7 +11,7 @@ export const OG_IMAGE = {
   url: `${baseUrl}/og.png`,
   width: 1200,
   height: 630,
-  alt: "Seek Protocol, digital assets anchored to real-world coordinates on Solana",
+  alt: "Seekprotocol, digital assets anchored to real-world coordinates on Solana",
 } as const;
 
 /** OG locale codes, keyed by the routing locale. */
@@ -69,7 +69,7 @@ export function getOpenGraph({
     description,
     type,
     url: path,
-    siteName: "Seek Protocol",
+    siteName: "Seekprotocol",
     locale: OG_LOCALE[locale] ?? "en_US",
     alternateLocale: Object.entries(OG_LOCALE)
       .filter(([loc]) => loc !== locale)
@@ -140,7 +140,7 @@ export function getBreadcrumbJsonLd(
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { name: "Seek Protocol", path: "/" },
+      { name: "Seekprotocol", path: "/" },
       ...trail,
     ].map((crumb, index) => ({
       "@type": "ListItem",

@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Inicio",
-    "seekar": "SeekAR",
+    "seekar": "La app",
     "about": "Nosotros",
     "whitepaper": "Whitepaper",
     "contact": "Contacto",
@@ -22,7 +22,7 @@
     "whitepaper": "Whitepaper",
     "tokenDashboard": "Panel de Tokens",
     "address": "Block Protocol L.L.C-FZ Meydan Grandstand, 6th floor, Meydan Road, Nad AlSheba, Dubai, U.A.E.",
-    "description": "Seek Protocol es una plataforma de nueva generación desarrollada por Block Protocol L.L.C-FZ, que combina realidad aumentada, AI y blockchain para crear experiencias gamificadas en el mundo real.",
+    "description": "Seekprotocol es una plataforma de nueva generación desarrollada por Block Protocol L.L.C-FZ, que combina realidad aumentada, AI y blockchain para crear experiencias gamificadas en el mundo real.",
     "copyright": "© 2024-2026 Block Protocol Todos los derechos reservados",
     "privacyPolicy": "Política de Privacidad",
     "termsOfService": "Términos de Servicio",
@@ -35,7 +35,7 @@
   },
   "home": {
     "heroTitle": "Explora una nueva realidad con",
-    "heroTitleHighlight": "SeekAR",
+    "heroTitleHighlight": "Seekprotocol",
     "heroSubtitle": "La primera plataforma de AR y AI en Solana que transforma tu mundo en un patio de recreo impulsado por blockchain. Caza airdrops, recolecta NFTs y explora con compañeros de AI en ubicaciones reales.",
     "downloadAppStore": "Descargar en App Store",
     "downloadGooglePlay": "Disponible en Google Play",
@@ -65,13 +65,13 @@
     "serviceMoveToEarnDesc": "Únete a enormes eventos de AR en vivo donde miles de jugadores convergen para meetups del mundo real con recompensas digitales. Imagina festivales de música donde recompensas exclusivas caen para los asistentes, eventos deportivos con coleccionables bloqueados por ubicación o cacerías del tesoro en toda la ciudad con premios.",
     "threePathsTitle": "Tres caminos para progresar",
     "pathBlockchain": "Impulsado por Blockchain",
-    "pathBlockchainDesc": "Cada NFT, token y activo del juego está asegurado en el blockchain. Eso significa propiedad real, equidad verificable y recompensas que realmente puedes usar, dentro y fuera de SeekAR.",
+    "pathBlockchainDesc": "Cada NFT, token y activo del juego está asegurado en el blockchain. Eso significa propiedad real, equidad verificable y recompensas que realmente puedes usar, dentro y fuera de Seekprotocol.",
     "pathAI": "Impulsado por AI",
     "pathAIDesc": "Nuestra AI aprende cómo exploras y juegas, dándote consejos de ubicación más inteligentes, misiones personalizadas y recompensas que realmente importan. Cuanto más te mueves, mejor se vuelve.",
     "pathProofOfLocation": "Prueba de ubicación",
     "pathProofOfLocationDesc": "Cada paso que das es prueba. Nuestro sistema confirma tu ubicación en el mundo real para desbloquear tokens, NFTs y otros activos digitales, sin trampas, solo recompensas reales por compromiso real.",
     "builtToScale": "DISEÑADO PARA ESCALAR CONTIGO",
-    "builtToScaleDesc": "Ya sea que estés lanzando un proyecto o explorando tu ciudad, Seek Protocol impulsa tu viaje con tecnología inmersiva, presencia verificada y recompensas reales.",
+    "builtToScaleDesc": "Ya sea que estés lanzando un proyecto o explorando tu ciudad, Seekprotocol impulsa tu viaje con tecnología inmersiva, presencia verificada y recompensas reales.",
     "interested": "¿Interesado?",
     "scaleOnboarding": "Incorporación fluida",
     "scaleOnboardingDesc": "Vía rápida para usuarios, creadores y empresas. Desde crear wallets sociales hasta los primeros eventos de AR, hacemos que la incorporación se sienta como juego, no como papeleo.",
@@ -86,7 +86,7 @@
     "featuredOn": "DESTACADO EN:",
     "joinBeta": "Únete a nuestra beta",
     "getReady": "¡Prepárate para buscar!",
-    "ctaDesc": "Adéntrate en una nueva realidad donde el mundo se convierte en tu patio de recreo. SeekAR transforma tu entorno en una aventura interactiva, combinando la última tecnología AR con la exploración del mundo real. ¡Persigue tesoros ocultos, recolecta recompensas digitales valiosas y conquista misiones dinámicas!",
+    "ctaDesc": "Adéntrate en una nueva realidad donde el mundo se convierte en tu patio de recreo. Seekprotocol transforma tu entorno en una aventura interactiva, combinando la última tecnología AR con la exploración del mundo real. ¡Persigue tesoros ocultos, recolecta recompensas digitales valiosas y conquista misiones dinámicas!",
     "coinReadoutLabel": "Bloqueo de señal",
     "coinReadoutAccuracy": "Precisión {meters} m",
     "beyondEyebrow": "Más allá de las monedas",
@@ -99,19 +99,19 @@
     "liveLead": "Salta a cualquier hub, toca una moneda para ver quién la recogió y prueba a atrapar una tú, tirada contra las probabilidades reales de la app.",
     "foundationsEyebrow": "Fundamentos",
     "readWhitepaper": "Leer el whitepaper técnico",
-    "metaTitle": "SeekAR | App de búsqueda del tesoro AR en Solana",
-    "metaDescription": "Caza airdrops por ubicación, colecciona NFT en realidad aumentada y explora con acompañantes de IA. SeekAR convierte lugares reales en recompensas en Solana.",
-    "ogTitle": "SeekAR de Seek Protocol | AR e IA en Solana"
+    "metaTitle": "Seekprotocol | App de búsqueda del tesoro AR en Solana",
+    "metaDescription": "Caza airdrops por ubicación, colecciona NFT en realidad aumentada y explora con acompañantes de IA. Seekprotocol convierte lugares reales en recompensas en Solana.",
+    "ogTitle": "Seekprotocol de Seekprotocol | AR e IA en Solana"
   },
   "seekarPage": {
-    "metaTitle": "SeekAR — la app de búsqueda del tesoro AR",
-    "metaDescription": "SeekAR es la app de realidad aumentada de Seek Protocol. Caza airdrops por ubicación, colecciona NFT en coordenadas reales y gana recompensas cripto en Solana. Gratis en iOS y Android.",
-    "ogTitle": "SeekAR — la app de búsqueda del tesoro AR",
+    "metaTitle": "Seekprotocol — la app de búsqueda del tesoro AR",
+    "metaDescription": "Seekprotocol es la app de realidad aumentada de Seekprotocol. Caza airdrops por ubicación, colecciona NFT en coordenadas reales y gana recompensas cripto en Solana. Gratis en iOS y Android.",
+    "ogTitle": "Seekprotocol — la app de búsqueda del tesoro AR",
     "eyebrow": "La app",
-    "heroTitle": "SeekAR",
-    "heroDesc": "La app de realidad aumentada de Seek Protocol. Apunta el móvil al mundo y encuentra lo que se ha dejado allí: tokens, NFT y recompensas ancladas a coordenadas reales en Solana.",
-    "whatTitle": "¿Qué es SeekAR?",
-    "whatBody": "SeekAR es la app móvil principal de Seek Protocol, gratuita en iOS y Android. Convierte cualquier calle, parque o local en un sitio donde se pueden esconder y reclamar activos digitales. Un anunciante deja una recompensa en unas coordenadas; tú tienes que estar allí físicamente para recogerla, y el protocolo demuestra que estuviste. Sin emuladores, sin falsear la ubicación, sin atajos.",
+    "heroTitle": "Seekprotocol",
+    "heroDesc": "La app de realidad aumentada de Seekprotocol. Apunta el móvil al mundo y encuentra lo que se ha dejado allí: tokens, NFT y recompensas ancladas a coordenadas reales en Solana.",
+    "whatTitle": "¿Qué es Seekprotocol?",
+    "whatBody": "Seekprotocol es la app móvil principal de Seekprotocol, gratuita en iOS y Android. Convierte cualquier calle, parque o local en un sitio donde se pueden esconder y reclamar activos digitales. Un anunciante deja una recompensa en unas coordenadas; tú tienes que estar allí físicamente para recogerla, y el protocolo demuestra que estuviste. Sin emuladores, sin falsear la ubicación, sin atajos.",
     "featuresTitle": "Lo que puedes hacer",
     "f1Title": "Cazar airdrops por ubicación",
     "f1Desc": "Los tokens y NFT están anclados a coordenadas reales. Camina hasta el punto, abre la cámara y reclama lo que te espera.",
@@ -129,24 +129,24 @@
     "s3Title": "Demuestra que estás y reclama",
     "s3Desc": "Proof of Location verifica tu presencia on-chain, y el activo llega a tu cartera.",
     "faqTitle": "Preguntas frecuentes",
-    "q1": "¿SeekAR es gratis?",
-    "a1": "Sí. SeekAR se descarga gratis en iOS y Android. Algunos artículos dentro de la app son de pago, pero cazar y reclamar no lo son.",
-    "q2": "¿Quién hace SeekAR?",
-    "a2": "SeekAR lo desarrolla Seek Protocol, un producto de Block Protocol L.L.C-FZ en Dubái. Es la app de AR e IA en Solana, disponible en la App Store y en Google Play.",
+    "q1": "¿Seekprotocol es gratis?",
+    "a1": "Sí. Seekprotocol se descarga gratis en iOS y Android. Algunos artículos dentro de la app son de pago, pero cazar y reclamar no lo son.",
+    "q2": "¿Quién hace Seekprotocol?",
+    "a2": "Seekprotocol lo desarrolla Seekprotocol, un producto de Block Protocol L.L.C-FZ en Dubái. Es la app de AR e IA en Solana, disponible en la App Store y en Google Play.",
     "q3": "¿Necesito saber algo de cripto?",
     "a3": "No. Se crea una cartera para ti al abrir la app, y puedes recoger y guardar activos sin tocar nunca una frase semilla.",
-    "q4": "¿En qué móviles funciona SeekAR?",
+    "q4": "¿En qué móviles funciona Seekprotocol?",
     "a4": "En iPhones recientes y dispositivos Android compatibles con AR. Las dos versiones tienen las mismas funciones.",
     "q5": "¿Puedo falsear mi ubicación?",
     "a5": "No. Proof of Location verifica tu presencia real on-chain, y eso es justo lo que da valor a un hallazgo para quien dejó la recompensa.",
-    "ctaTitle": "Descarga SeekAR",
+    "ctaTitle": "Descarga Seekprotocol",
     "ctaDesc": "Gratis en iOS y Android. Tu ciudad ya está llena de cosas que merece la pena encontrar."
   },
   "about": {
     "heroTitle": "Descubre el futuro de las experiencias digitales basadas en ubicación",
-    "heroDesc": "SeekProtocol transforma la exploración del mundo real en aventuras gratificantes a través de realidad aumentada avanzada y tecnología blockchain.",
-    "whySeekProtocol": "¿Por qué Seek Protocol?",
-    "whyDesc": "Mientras otros construyen aplicaciones, nosotros estamos construyendo una revolución. SeekProtocol une el mundo físico y el digital a través de la tecnología AR basada en ubicación que convierte cada paso en una oportunidad. Nuestro sistema descentralizado de recompensas asegura que la exploración sea rentable, literalmente. No solo creamos experiencias; estamos pionerando una nueva economía donde el descubrimiento del mundo real genera valor real. Con seguimiento de precisión submétrica, visualizaciones AR impresionantes y recompensas blockchain, estamos haciendo visible lo invisible y rentable lo imposible.",
+    "heroDesc": "Seekprotocol transforma la exploración del mundo real en aventuras gratificantes a través de realidad aumentada avanzada y tecnología blockchain.",
+    "whySeekprotocol": "¿Por qué Seekprotocol?",
+    "whyDesc": "Mientras otros construyen aplicaciones, nosotros estamos construyendo una revolución. Seekprotocol une el mundo físico y el digital a través de la tecnología AR basada en ubicación que convierte cada paso en una oportunidad. Nuestro sistema descentralizado de recompensas asegura que la exploración sea rentable, literalmente. No solo creamos experiencias; estamos pionerando una nueva economía donde el descubrimiento del mundo real genera valor real. Con seguimiento de precisión submétrica, visualizaciones AR impresionantes y recompensas blockchain, estamos haciendo visible lo invisible y rentable lo imposible.",
     "letsConnect": "Conectemos",
     "ourValues": "Nuestros valores",
     "whatDrivesUs": "QUÉ NOS IMPULSA",
@@ -163,7 +163,7 @@
     "readyToSeek": "¿Listo para buscar?",
     "startExploring": "Comenzar a explorar",
     "coreTechnologies": "TECNOLOGÍAS CORE QUE DESPLEGAMOS",
-    "coreTechDesc": "En SeekProtocol, entendemos que la exploración necesita un propósito. No ofrecemos experiencias únicas para todos, creamos aventuras dinámicas conscientes de la ubicación para cada usuario.",
+    "coreTechDesc": "En Seekprotocol, entendemos que la exploración necesita un propósito. No ofrecemos experiencias únicas para todos, creamos aventuras dinámicas conscientes de la ubicación para cada usuario.",
     "techGeospatial": "MAPEO GEOESPACIAL",
     "techGeospatialDesc": "Seguimiento de ubicación en tiempo real con geofencing dinámico que crea experiencias contextuales.",
     "techAR": "RENDERIZADO AR",
@@ -173,13 +173,13 @@
     "techSync": "SYNC INSTANTÁNEO",
     "techSyncDesc": "Actualizaciones en tiempo real para todos los jugadores - ve los descubrimientos en vivo mientras ocurren en todo el mundo.",
     "threePillars": "TRES PILARES DEL ÉXITO",
-    "threePillarsDesc": "En el núcleo de SeekProtocol hay tres tecnologías revolucionarias que transforman cómo interactuamos con el mundo.",
+    "threePillarsDesc": "En el núcleo de Seekprotocol hay tres tecnologías revolucionarias que transforman cómo interactuamos con el mundo.",
     "pillarAR": "Realidad aumentada",
     "pillarARDesc": "AR de vanguardia que revela capas digitales ocultas invisibles a simple vista.",
     "pillarLocation": "Precisión de ubicación",
     "pillarLocationDesc": "GPS con exactitud submétrica y geofencing dinámico que sabe exactamente dónde están colocados los airdrops.",
     "pillarReward": "Distribución de recompensas",
-    "pillarRewardDesc": "Pools descentralizados que aseguran ganancias justas, instantáneas y transparentes para cada usuario de SeekAR.",
+    "pillarRewardDesc": "Pools descentralizados que aseguran ganancias justas, instantáneas y transparentes para cada usuario de Seekprotocol.",
     "ourApproach": "Nuestro enfoque",
     "approachTitle": "DONDE LA EXPLORACIÓN ENCUENTRA LAS RECOMPENSAS",
     "approachDesc": "Cada ubicación tiene un valor indescriptible. ¿Nuestro trabajo? Desbloquearlo de formas que cautiven, recompensen y hagan que los buscadores vuelvan por más.",
@@ -200,21 +200,21 @@
     "ourTeam": "Nuestro increíble equipo",
     "joinBeta": "Únete a nuestra beta",
     "getReady": "¡Prepárate para buscar!",
-    "ctaDesc": "Adéntrate en una nueva realidad donde el mundo se convierte en tu patio de recreo. SeekAR transforma tu entorno en una aventura interactiva, combinando la última tecnología AR con la exploración del mundo real.",
-    "metaTitle": "Sobre el equipo detrás de SeekAR",
-    "metaDescription": "Conoce al equipo que construye AR por ubicación en Solana: la idea tras la prueba de ubicación, la tecnología de SeekAR y las personas detrás de $SEEK.",
-    "ogTitle": "El equipo detrás de SeekAR"
+    "ctaDesc": "Adéntrate en una nueva realidad donde el mundo se convierte en tu patio de recreo. Seekprotocol transforma tu entorno en una aventura interactiva, combinando la última tecnología AR con la exploración del mundo real.",
+    "metaTitle": "Sobre el equipo detrás de Seekprotocol",
+    "metaDescription": "Conoce al equipo que construye AR por ubicación en Solana: la idea tras la prueba de ubicación, la tecnología de Seekprotocol y las personas detrás de $SEEK.",
+    "ogTitle": "El equipo detrás de Seekprotocol"
   },
   "contact": {
     "getInTouch": "Ponte en contacto",
     "formDesc": "Completa el formulario a continuación y te responderemos lo antes posible.",
     "metaTitle": "Contacto: alianzas y campañas",
-    "metaDescription": "Habla con el equipo de Seek Protocol sobre colocar una campaña en tus propias coordenadas, alianzas, acceso beta o prensa.",
-    "ogTitle": "Contacta con Seek Protocol"
+    "metaDescription": "Habla con el equipo de Seekprotocol sobre colocar una campaña en tus propias coordenadas, alianzas, acceso beta o prensa.",
+    "ogTitle": "Contacta con Seekprotocol"
   },
   "services": {
     "heroTitle": "NUESTRA EXPERIENCIA, TU CRECIMIENTO",
-    "heroDesc": "Seek Protocol ofrece soluciones avanzadas de AR, AI y blockchain en Solana. No solo construimos tecnología, somos tus socios en la transformación del engagement del mundo real.",
+    "heroDesc": "Seekprotocol ofrece soluciones avanzadas de AR, AI y blockchain en Solana. No solo construimos tecnología, somos tus socios en la transformación del engagement del mundo real.",
     "letsContact": "Contáctenos",
     "businessStrategy": "Estrategia empresarial",
     "businessStrategyDesc": "Estrategias personalizadas que alinean los objetivos empresariales con el crecimiento digital.",
@@ -258,19 +258,19 @@
     "ctaTitle": "¿TIENES UNA IDEA O NECESITAS INICIAR UN PROYECTO?"
   },
   "blog": {
-    "title": "Blog de Seek Protocol",
+    "title": "Blog de Seekprotocol",
     "desc": "Perspectivas, actualizaciones y análisis profundos sobre realidad aumentada, AI, tecnología blockchain y el futuro de las experiencias basadas en ubicación.",
     "read": "leer",
     "backToBlog": "← Volver al Blog",
     "readyToSeek": "¿Listo para comenzar a buscar?",
-    "readyToSeekDesc": "Descarga SeekAR y transforma tu mundo en un patio de recreo impulsado por blockchain.",
+    "readyToSeekDesc": "Descarga Seekprotocol y transforma tu mundo en un patio de recreo impulsado por blockchain.",
     "moreArticles": "Más artículos",
     "keepReading": "Seguir leyendo",
     "allArticles": "Todos los artículos",
     "relatedPages": "Páginas relacionadas",
     "metaTitle": "Blog: AR, IA y recompensas por ubicación",
-    "metaDescription": "Artículos sobre realidad aumentada, acompañantes de IA, airdrops con geovalla y prueba de ubicación, del equipo que construye SeekAR en Solana.",
-    "ogTitle": "El blog de Seek Protocol"
+    "metaDescription": "Artículos sobre realidad aumentada, acompañantes de IA, airdrops con geovalla y prueba de ubicación, del equipo que construye Seekprotocol en Solana.",
+    "ogTitle": "El blog de Seekprotocol"
   },
   "forms": {
     "emailPlaceholder": "Correo electrónico",
@@ -327,11 +327,11 @@
   },
   "privacyPolicyPage": {
     "title": "Política de Privacidad",
-    "subtitle1": "SeekAR · Block Protocol LLC",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
     "subtitle2": "Vigente desde: 12 de agosto de 2025",
     "introTitle": "Introducción",
-    "introP1": "Esta Política de Privacidad se aplica a la aplicación móvil SeekAR (denominada a lo largo de este documento como \"la Aplicación\"), desarrollada y mantenida por Block Protocol LLC (denominada como \"el Proveedor de Servicios\") como un servicio gratuito para dispositivos móviles. La Aplicación se proporciona \"TAL CUAL\".",
-    "introP2": "SeekAR es una plataforma de nueva generación con realidad aumentada, inteligencia artificial y tecnología blockchain integrada, que crea experiencias gamificadas en el mundo real para sus usuarios. Dada la naturaleza de estas experiencias, la Aplicación interactúa con varias categorías de datos personales para ofrecer sus funciones de manera completa y segura. Esta política describe en detalle qué datos se recopilan, por qué se recopilan, cómo se gestionan, con quién pueden compartirse y los derechos de los usuarios con respecto a su información personal.",
+    "introP1": "Esta Política de Privacidad se aplica a la aplicación móvil Seekprotocol (denominada a lo largo de este documento como \"la Aplicación\"), desarrollada y mantenida por Block Protocol LLC (denominada como \"el Proveedor de Servicios\") como un servicio gratuito para dispositivos móviles. La Aplicación se proporciona \"TAL CUAL\".",
+    "introP2": "Seekprotocol es una plataforma de nueva generación con realidad aumentada, inteligencia artificial y tecnología blockchain integrada, que crea experiencias gamificadas en el mundo real para sus usuarios. Dada la naturaleza de estas experiencias, la Aplicación interactúa con varias categorías de datos personales para ofrecer sus funciones de manera completa y segura. Esta política describe en detalle qué datos se recopilan, por qué se recopilan, cómo se gestionan, con quién pueden compartirse y los derechos de los usuarios con respecto a su información personal.",
     "introP3": "Al descargar y utilizar la Aplicación, usted consiente las prácticas de datos descritas en esta Política de Privacidad. Esta política debe revisarse periódicamente, ya que puede actualizarse de vez en cuando para reflejar cambios en las prácticas de datos, la legislación aplicable o las funcionalidades de la Aplicación.",
     "part1Title": "Parte I: Recopilación y uso de la información",
     "part1P1": "La Aplicación recopila información cuando usted la descarga y la utiliza. Esto incluye datos técnicos recopilados automáticamente durante el uso, como la dirección de Protocolo de Internet (IP) de su dispositivo, las páginas o secciones de la Aplicación que visita, la hora y fecha de sus visitas, la duración del tiempo transcurrido en dichas páginas e información sobre el sistema operativo que se ejecuta en su dispositivo móvil.",
@@ -347,7 +347,7 @@
     "part1s3Title": "3. Datos de ubicación",
     "part1s3P1": "La Aplicación requiere acceso a datos de ubicación tanto aproximados como precisos de su dispositivo. El acceso a la ubicación es obligatorio y no puede ser desactivado por los usuarios sin afectar la funcionalidad principal de la aplicación.",
     "part1s3P2": "Los datos de ubicación aproximada, que identifican su área geográfica general sin señalar su posición exacta, se recopilan y comparten. Se recopilan para respaldar la funcionalidad principal de la aplicación y para realizar análisis internos sobre cómo los usuarios interactúan con las funciones basadas en ubicación en diferentes regiones geográficas. Los datos de ubicación aproximada también se comparten con terceros para los propósitos de respaldar la funcionalidad de la aplicación y proporcionar contenido y experiencias personalizadas basadas en el contexto geográfico.",
-    "part1s3P3": "Los datos de ubicación precisa, coordenadas geográficas exactas derivadas de GPS o tecnologías equivalentes, se recopilan y comparten, y sirven para la gama más amplia de propósitos de cualquier tipo de dato en la Aplicación. Esto refleja el hecho de que la experiencia principal de SeekAR se basa en la realidad aumentada anclada en el mundo real. Los datos de ubicación precisa se recopilan para respaldar las funciones de AR y otras funcionalidades principales que dependen del posicionamiento exacto en el mundo real, para realizar análisis detallados de uso, para transmitir comunicaciones del desarrollador relevantes para su ubicación específica, para aplicar medidas de seguridad y prevención de fraude vinculadas a patrones de actividad geográfica, para personalizar el contenido y las funciones según su entorno preciso, y para gestionar funciones de cuenta o condiciones de servicio que dependen de parámetros geográficos. Estos mismos datos se comparten con proveedores de servicios terceros para todos los propósitos mencionados.",
+    "part1s3P3": "Los datos de ubicación precisa, coordenadas geográficas exactas derivadas de GPS o tecnologías equivalentes, se recopilan y comparten, y sirven para la gama más amplia de propósitos de cualquier tipo de dato en la Aplicación. Esto refleja el hecho de que la experiencia principal de Seekprotocol se basa en la realidad aumentada anclada en el mundo real. Los datos de ubicación precisa se recopilan para respaldar las funciones de AR y otras funcionalidades principales que dependen del posicionamiento exacto en el mundo real, para realizar análisis detallados de uso, para transmitir comunicaciones del desarrollador relevantes para su ubicación específica, para aplicar medidas de seguridad y prevención de fraude vinculadas a patrones de actividad geográfica, para personalizar el contenido y las funciones según su entorno preciso, y para gestionar funciones de cuenta o condiciones de servicio que dependen de parámetros geográficos. Estos mismos datos se comparten con proveedores de servicios terceros para todos los propósitos mencionados.",
     "part1s4Title": "4. Mensajes",
     "part1s4P1": "La Aplicación recopila tres tipos de datos de mensajería: correos electrónicos, mensajes SMS o MMS y otros mensajes dentro de la aplicación. Los tres tipos son obligatorios y no pueden ser desactivados por el usuario.",
     "part1s4P2": "Los correos electrónicos se recopilan exclusivamente para respaldar la funcionalidad principal de la aplicación, incluyendo la comunicación entre los usuarios y la plataforma y el envío de notificaciones relacionadas con el servicio.",
@@ -357,8 +357,8 @@
     "part1s5P1": "La Aplicación requiere acceso a las fotos y videos de su dispositivo. Ambos tipos de datos solo se recopilan y se utilizan exclusivamente para respaldar la funcionalidad principal de la aplicación, particularmente en el contexto de funciones de realidad aumentada que requieren acceso a la cámara del dispositivo y a la biblioteca multimedia para superponer contenido digital sobre entornos físicos o capturar experiencias dentro de las sesiones interactivas de la Aplicación.",
     "part1s6Title": "6. Información de salud y actividad física",
     "part1s6P1": "La Aplicación recopila información relacionada con la salud e información relacionada con la actividad física. Ambas categorías son obligatorias y se utilizan exclusivamente para respaldar la funcionalidad principal de la aplicación. Estos datos no se comparten con terceros.",
-    "part1s6P2": "La información de salud permite que la Aplicación integre el contexto de salud en sus experiencias cuando sea relevante, respaldando funciones que responden a la condición física general del usuario como parte del modelo de engagement gamificado más amplio de SeekAR.",
-    "part1s6P3": "La información de actividad física se utiliza en conjunto con los sistemas de desafíos y recompensas de la Aplicación. La Aplicación solicita el permiso ACTIVITY_RECOGNITION de Android para detectar y monitorear actividades físicas como caminar, correr o andar en bicicleta directamente a través de los sensores de su dispositivo. Este permiso impulsa las funciones de desafíos y recompensas de la Aplicación, que están diseñadas para reconocer la actividad física en el mundo real como parte de la experiencia gamificada de SeekAR. Al detectar patrones de movimiento, la Aplicación puede activar eventos dentro de la aplicación, validar la finalización de desafíos y atribuir recompensas vinculadas al engagement físico en el mundo real. Ningún dato de reconocimiento de actividad se utiliza con fines publicitarios y no se comparte con terceros. Este permiso puede revocarse en cualquier momento a través de la configuración de la aplicación en su dispositivo, aunque hacerlo desactivará los desafíos y recompensas basados en la actividad que dependen de él.",
+    "part1s6P2": "La información de salud permite que la Aplicación integre el contexto de salud en sus experiencias cuando sea relevante, respaldando funciones que responden a la condición física general del usuario como parte del modelo de engagement gamificado más amplio de Seekprotocol.",
+    "part1s6P3": "La información de actividad física se utiliza en conjunto con los sistemas de desafíos y recompensas de la Aplicación. La Aplicación solicita el permiso ACTIVITY_RECOGNITION de Android para detectar y monitorear actividades físicas como caminar, correr o andar en bicicleta directamente a través de los sensores de su dispositivo. Este permiso impulsa las funciones de desafíos y recompensas de la Aplicación, que están diseñadas para reconocer la actividad física en el mundo real como parte de la experiencia gamificada de Seekprotocol. Al detectar patrones de movimiento, la Aplicación puede activar eventos dentro de la aplicación, validar la finalización de desafíos y atribuir recompensas vinculadas al engagement físico en el mundo real. Ningún dato de reconocimiento de actividad se utiliza con fines publicitarios y no se comparte con terceros. Este permiso puede revocarse en cualquier momento a través de la configuración de la aplicación en su dispositivo, aunque hacerlo desactivará los desafíos y recompensas basados en la actividad que dependen de él.",
     "part1s7Title": "7. Rendimiento de la aplicación y datos de diagnóstico",
     "part1s7P1": "La Aplicación recopila datos técnicos relacionados con su propio rendimiento. Esto incluye registros de fallos, información de diagnóstico y otras métricas de rendimiento de la aplicación.",
     "part1s7P2": "Los registros de fallos son obligatorios y se recopilan automáticamente para respaldar la funcionalidad principal de la aplicación, específicamente, para identificar, diagnosticar y resolver fallas técnicas que afectan la experiencia del usuario.",
@@ -384,7 +384,7 @@
     "part6Title": "Parte VI: Seguridad",
     "part6P1": "El Proveedor de Servicios se compromete a salvaguardar la confidencialidad e integridad de su información. Todos los datos recopilados por la Aplicación se cifran en tránsito. Se mantienen salvaguardas físicas, electrónicas y procedimentales para proteger la información que el Proveedor de Servicios procesa y conserva. Cuando los datos se transmiten a proveedores de servicios terceros, el Proveedor de Servicios hace esfuerzos razonables para garantizar que dicho intercambio sea limitado, esté vinculado a un propósito específico y esté sujeto a acuerdos apropiados de manejo de datos.",
     "part7Title": "Parte VII: Solicitudes de eliminación de datos",
-    "part7P1": "Los usuarios que deseen solicitar la eliminación de su cuenta y todos los datos asociados pueden enviar una solicitud a través del sitio web de SeekAR en:",
+    "part7P1": "Los usuarios que deseen solicitar la eliminación de su cuenta y todos los datos asociados pueden enviar una solicitud a través del sitio web de Seekprotocol en:",
     "part7P2": "Alternativamente, las solicitudes de eliminación pueden enviarse contactando directamente al Proveedor de Servicios en <email>support@seekprotocol.ai</email>. El Proveedor de Servicios procesará todas las solicitudes de eliminación dentro de un plazo razonable.",
     "part8Title": "Parte VIII: Cambios en esta política",
     "part8P1": "Esta Política de Privacidad puede actualizarse de vez en cuando por cualquier motivo. El Proveedor de Servicios le notificará cualquier cambio actualizando esta página con la nueva Política de Privacidad y revisando la fecha de vigencia que aparece en la parte superior de este documento. Cuando los cambios sean sustanciales, el Proveedor de Servicios también puede notificar a los usuarios a través de la propia Aplicación. Se le aconseja revisar esta Política de Privacidad periódicamente. El uso continuado de la Aplicación después de la publicación de cualquier cambio constituye su aceptación de dichos cambios.",
@@ -394,14 +394,14 @@
     "contactP1": "Si tiene alguna pregunta sobre su privacidad al usar la Aplicación, o si tiene preguntas sobre las prácticas de datos descritas en esta política, comuníquese con el Proveedor de Servicios en:",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "Política de privacidad",
-    "metaDescription": "Cómo tratan Seek Protocol y SeekAR los datos de ubicación, los sensores y la cartera: qué se recoge y qué nunca se comparte.",
-    "ogTitle": "Privacidad en Seek Protocol"
+    "metaDescription": "Cómo tratan Seekprotocol y Seekprotocol los datos de ubicación, los sensores y la cartera: qué se recoge y qué nunca se comparte.",
+    "ogTitle": "Privacidad en Seekprotocol"
   },
   "termsPage": {
     "title": "Términos y Condiciones",
-    "subtitle1": "SeekAR · Block Protocol LLC",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
     "subtitle2": "Vigente desde: 12 de agosto de 2025",
-    "p1": "Estos términos y condiciones se aplican a la aplicación SeekAR (en adelante denominada \"la Aplicación\") para dispositivos móviles, creada por Block Protocol LLC (en adelante denominado \"el Proveedor de Servicios\") como un servicio gratuito.",
+    "p1": "Estos términos y condiciones se aplican a la aplicación Seekprotocol (en adelante denominada \"la Aplicación\") para dispositivos móviles, creada por Block Protocol LLC (en adelante denominado \"el Proveedor de Servicios\") como un servicio gratuito.",
     "p2": "Al descargar o utilizar la Aplicación, usted acepta automáticamente los siguientes términos. Se le recomienda encarecidamente que lea y comprenda completamente estos términos antes de utilizar la Aplicación. La copia no autorizada, la modificación de la Aplicación, de cualquier parte de la Aplicación o de nuestras marcas comerciales está estrictamente prohibida. No se permite ningún intento de extraer el código fuente de la Aplicación, traducir la Aplicación a otros idiomas o crear versiones derivadas. Todas las marcas comerciales, derechos de autor, derechos de base de datos y otros derechos de propiedad intelectual relacionados con la Aplicación siguen siendo propiedad del Proveedor de Servicios.",
     "p3": "El Proveedor de Servicios se dedica a garantizar que la Aplicación sea lo más beneficiosa y eficiente posible. Como tal, se reserva el derecho de modificar la Aplicación o cobrar por sus servicios en cualquier momento y por cualquier motivo. El Proveedor de Servicios le asegura que cualquier cargo por la Aplicación o sus servicios le será comunicado claramente.",
     "p4": "La Aplicación almacena y procesa datos personales que usted ha proporcionado al Proveedor de Servicios para prestar el Servicio. Es su responsabilidad mantener la seguridad de su teléfono y el acceso a la Aplicación. El Proveedor de Servicios desaconseja encarecidamente realizar jailbreak o root a su teléfono, lo que implica eliminar las restricciones y limitaciones de software impuestas por el sistema operativo oficial de su dispositivo. Tales acciones podrían exponer su teléfono a malware, virus, programas maliciosos, comprometer las funciones de seguridad de su teléfono y pueden provocar que la Aplicación no funcione correctamente o en absoluto.",
@@ -416,8 +416,8 @@
     "contactTitle": "Contáctenos",
     "contactP1": "Si tiene alguna pregunta o sugerencia sobre los Términos y Condiciones, no dude en comunicarse con el Proveedor de Servicios en <email>support@seekprotocol.ai</email>.",
     "metaTitle": "Términos y condiciones",
-    "metaDescription": "Las condiciones de uso de SeekAR y la plataforma Seek Protocol: tus derechos, las reglas para reclamar activos y cómo funcionan los artículos de pago.",
-    "ogTitle": "Términos de Seek Protocol"
+    "metaDescription": "Las condiciones de uso de Seekprotocol y la plataforma Seekprotocol: tus derechos, las reglas para reclamar activos y cómo funcionan los artículos de pago.",
+    "ogTitle": "Términos de Seekprotocol"
   },
   "languageSwitcher": {
     "en": "English",
@@ -692,7 +692,7 @@
           "body": "Creada desde un inicio de sesión social, para que puedas recoger algo al minuto de instalar. Exporta la clave cuando quieras la custodia."
         },
         {
-          "title": "SeekAR Pass",
+          "title": "Seekprotocol Pass",
           "body": "Una vía de recompensas por temporada que corre en paralelo al juego normal, con un nivel gratuito y otro de pago."
         },
         {
@@ -1019,7 +1019,7 @@
   },
   "ecosystemPage": {
     "metaTitle": "Ecosistema: seekers, editores, protocolo",
-    "metaDescription": "Cómo encaja el ecosistema de Seek Protocol: seekers que recogen, editores que colocan y el protocolo que verifica la presencia y la liquida en Solana.",
+    "metaDescription": "Cómo encaja el ecosistema de Seekprotocol: seekers que recogen, editores que colocan y el protocolo que verifica la presencia y la liquida en Solana.",
     "ogTitle": "Tres partes, una coordenada",
     "eyebrow": "Ecosistema",
     "titleStart": "Tres partes, una",
@@ -1112,11 +1112,11 @@
       "answer": "No sale barato. Una señal de GPS pura es fácil de falsear, por eso es solo una de cuatro señales. El entorno de radio, la atestación del dispositivo y tu rastro de movimiento tienen que corroborarla, y un dispositivo que falla de forma repetida se enfrenta a un umbral más alto. El objetivo es que falsificar cueste más de lo que vale la recompensa, no afirmar que sea imposible."
     },
     "crypto": {
-      "question": "¿Necesito saber algo de cripto para usar SeekAR?",
+      "question": "¿Necesito saber algo de cripto para usar Seekprotocol?",
       "answer": "No. La cartera se crea desde un inicio de sesión social y nunca ves una frase semilla salvo que la busques. Si más adelante quieres la autocustodia, puedes exportar la clave en cualquier momento."
     },
     "tracking": {
-      "question": "¿Seek Protocol registra por dónde voy?",
+      "question": "¿Seekprotocol registra por dónde voy?",
       "answer": "No. La app pide una posición cuando intentas un reclamo, no de forma continua en segundo plano. Los datos brutos de los sensores sirven para puntuar ese reclamo y luego se descartan, y tu historial de movimientos se queda en tu dispositivo."
     },
     "farming": {
@@ -1134,8 +1134,8 @@
   },
   "roadmapPage": {
     "metaTitle": "Hoja de ruta: entregado y lo que viene",
-    "metaDescription": "Lo que Seek Protocol ha entregado y lo que viene, desde el prototipo de prueba de ubicación y el lanzamiento de SeekAR hasta el portal de autoservicio.",
-    "ogTitle": "Hoja de ruta de Seek Protocol",
+    "metaDescription": "Lo que Seekprotocol ha entregado y lo que viene, desde el prototipo de prueba de ubicación y el lanzamiento de Seekprotocol hasta el portal de autoservicio.",
+    "ogTitle": "Hoja de ruta de Seekprotocol",
     "eyebrow": "Hoja de ruta",
     "titleStart": "Lo que está hecho, y lo que",
     "titleAccent": "viene",
@@ -1167,10 +1167,10 @@
     },
     "launch": {
       "title": "Lanzamiento público",
-      "summary": "Poner SeekAR en manos reales, en ambas tiendas de apps, con una entrada que no da por hecho que el usuario haya tenido nunca una clave privada.",
+      "summary": "Poner Seekprotocol en manos reales, en ambas tiendas de apps, con una entrada que no da por hecho que el usuario haya tenido nunca una clave privada.",
       "groups": {},
       "items": {
-        "stores": "SeekAR publicada en iOS y Android",
+        "stores": "Seekprotocol publicada en iOS y Android",
         "wallet": "Cartera con inicio de sesión social y exportación opcional a autocustodia",
         "drops": "Drops por ubicación y sistema de misiones",
         "attestation": "Atestación de dispositivo con Play Integrity y App Attest",
@@ -1401,13 +1401,13 @@
   },
   "whitepaper": {
     "metaTitle": "Whitepaper: prueba de ubicación en Solana",
-    "metaDescription": "Cómo Seek Protocol emite activos digitales en coordenadas reales, verifica que alguien estuvo allí y lo liquida en Solana. Arquitectura, token y ataques.",
-    "ogTitle": "Whitepaper de Seek Protocol",
+    "metaDescription": "Cómo Seekprotocol emite activos digitales en coordenadas reales, verifica que alguien estuvo allí y lo liquida en Solana. Arquitectura, token y ataques.",
+    "ogTitle": "Whitepaper de Seekprotocol",
     "ogDescription": "Prueba de ubicación, arquitectura, diseño del token y un relato honesto de los ataques y los límites.",
     "eyebrow": "Whitepaper",
     "titleStart": "Activos digitales que viven en",
     "titleAccent": "un lugar",
-    "lead": "El relato técnico de cómo Seek Protocol emite activos en coordenadas, demuestra que alguien estuvo allí y lo liquida on-chain, incluido lo que el sistema no puede hacer.",
+    "lead": "El relato técnico de cómo Seekprotocol emite activos en coordenadas, demuestra que alguien estuvo allí y lo liquida on-chain, incluido lo que el sistema no puede hacer.",
     "readingTime": "{minutes} min de lectura",
     "updated": "Actualizado en {date}",
     "updatedValue": "agosto de 2026",
@@ -1429,11 +1429,11 @@
           },
           {
             "kind": "p",
-            "text": "Seek Protocol devuelve la ubicación a los activos digitales. Un token, un NFT o una recompensa pueden emitirse a unas coordenadas en lugar de a una cartera, y se quedan ahí hasta que alguien está físicamente dentro de su radio y lo demuestra. A eso lo llamamos prueba de ubicación, y es la primitiva sobre la que se construye el resto del protocolo."
+            "text": "Seekprotocol devuelve la ubicación a los activos digitales. Un token, un NFT o una recompensa pueden emitirse a unas coordenadas en lugar de a una cartera, y se quedan ahí hasta que alguien está físicamente dentro de su radio y lo demuestra. A eso lo llamamos prueba de ubicación, y es la primitiva sobre la que se construye el resto del protocolo."
           },
           {
             "kind": "p",
-            "text": "La superficie para el usuario es **SeekAR**, una app móvil para iOS y Android que muestra estos activos en realidad aumentada. Caminas, el teléfono te enseña lo que hay cerca y recoges lo que encuentras. Por debajo, la liquidación ocurre en Solana, elegida por unos costes de transacción lo bastante bajos como para que recoger una recompensa pequeña no cueste más de lo que vale."
+            "text": "La superficie para el usuario es **Seekprotocol**, una app móvil para iOS y Android que muestra estos activos en realidad aumentada. Caminas, el teléfono te enseña lo que hay cerca y recoges lo que encuentras. Por debajo, la liquidación ocurre en Solana, elegida por unos costes de transacción lo bastante bajos como para que recoger una recompensa pequeña no cueste más de lo que vale."
           },
           {
             "kind": "callout",
@@ -1703,11 +1703,11 @@
       "seekar": {
         "index": "06",
         "eyebrow": "Aplicación",
-        "title": "SeekAR, la cara visible",
+        "title": "Seekprotocol, la cara visible",
         "blocks": [
           {
             "kind": "p",
-            "text": "En SeekAR el protocolo se convierte en algo que una persona puede usar sin saber nada de lo anterior. Abre con un mapa de lo que hay cerca, y al levantar la cámara el motor de AR dibuja esos activos en su sitio."
+            "text": "En Seekprotocol el protocolo se convierte en algo que una persona puede usar sin saber nada de lo anterior. Abre con un mapa de lo que hay cerca, y al levantar la cámara el motor de AR dibuja esos activos en su sitio."
           },
           {
             "kind": "h",
@@ -1724,7 +1724,7 @@
           },
           {
             "kind": "p",
-            "text": "La restricción de la primera experiencia manda más que ninguna otra en el diseño. La mayoría de quienes usarán SeekAR nunca han tenido una clave privada. Si en los primeros treinta segundos aparece la palabra 'mnemónica', se van. Así que la cartera se crea en silencio y quien quiera la custodia puede exportarla después."
+            "text": "La restricción de la primera experiencia manda más que ninguna otra en el diseño. La mayoría de quienes usarán Seekprotocol nunca han tenido una clave privada. Si en los primeros treinta segundos aparece la palabra 'mnemónica', se van. Así que la cartera se crea en silencio y quien quiera la custodia puede exportarla después."
           },
           {
             "kind": "h",
@@ -1962,7 +1962,7 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "SeekAR Pass",
+                "label": "Seekprotocol Pass",
                 "value": "8,99 € por temporada de 90 días"
               },
               {
@@ -2179,7 +2179,7 @@
         "blocks": [
           {
             "kind": "p",
-            "text": "SeekAR está en vivo en iOS y Android con drops por ubicación, renderizado AR y la cartera social. La pila de verificación ejecuta hoy las señales de GNSS, atestación y continuidad de movimiento; la huella de radio está en despliegue por fases. La atestación se aplica detrás de una bandera, y ese es su estado honesto: la vía de rechazo está construida y el interruptor no se ha accionado en todas las superficies."
+            "text": "Seekprotocol está en vivo en iOS y Android con drops por ubicación, renderizado AR y la cartera social. La pila de verificación ejecuta hoy las señales de GNSS, atestación y continuidad de movimiento; la huella de radio está en despliegue por fases. La atestación se aplica detrás de una bandera, y ese es su estado honesto: la vía de rechazo está construida y el interruptor no se ha accionado en todas las superficies."
           },
           {
             "kind": "p",
@@ -2403,7 +2403,7 @@
   "stackLayers": {
     "app": {
       "label": "Aplicación",
-      "sub": "SeekAR · portal de negocio · creador de campañas",
+      "sub": "Seekprotocol · portal de negocio · creador de campañas",
       "detail": "Lo que la gente toca. La app móvil dibuja los activos en AR y gestiona la recogida; el portal es donde los editores los colocan. Ambos son clientes corrientes de las capas de abajo y no tienen ningún acceso privilegiado."
     },
     "intelligence": {

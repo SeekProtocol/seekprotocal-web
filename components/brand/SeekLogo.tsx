@@ -51,7 +51,7 @@ export default function SeekLogo({
       <SeekMark size={markSize} gradientId={gradientId} />
       {showWord && (
         <span className="seek-logo-word">
-          Seek<span className="seek-logo-word-light">Protocol</span>
+          Seek<span className="seek-logo-word-light">protocol</span>
         </span>
       )}
     </span>

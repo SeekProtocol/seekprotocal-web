@@ -59,7 +59,7 @@ export default function GlobalError({
               color: "#9096a6",
             }}
           >
-            Seek Protocol
+            Seekprotocol
           </p>
           <h1 style={{ margin: "0.75rem 0 0", fontSize: "1.75rem", lineHeight: 1.2 }}>
             The page could not load

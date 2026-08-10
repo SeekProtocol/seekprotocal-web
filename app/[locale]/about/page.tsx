@@ -45,18 +45,18 @@ const aboutFaqJsonLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is Seek Protocol?",
+      name: "What is Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Seek Protocol is the first AR and AI platform on Solana that transforms real-world exploration into rewarding adventures through augmented reality and blockchain technology. Users hunt location-based airdrops, collect NFTs, and explore with AI companions.",
+        text: "Seekprotocol is the first AR and AI platform on Solana that transforms real-world exploration into rewarding adventures through augmented reality and blockchain technology. Users hunt location-based airdrops, collect NFTs, and explore with AI companions.",
       },
     },
     {
       "@type": "Question",
-      name: "What is SeekAR?",
+      name: "What is Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "SeekAR is the flagship mobile app by Seek Protocol, available on iOS and Android. It uses augmented reality to overlay digital treasures in the real world, turning every location into an interactive treasure hunt with crypto rewards.",
+        text: "Seekprotocol is the flagship mobile app by Seekprotocol, available on iOS and Android. It uses augmented reality to overlay digital treasures in the real world, turning every location into an interactive treasure hunt with crypto rewards.",
       },
     },
     {
@@ -64,7 +64,7 @@ const aboutFaqJsonLd = {
       name: "What is $SEEK token?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "$SEEK is the native token of Seek Protocol on the Solana blockchain. It is essential for launching campaigns within the SeekAR app. Integrating assets into the ecosystem drives demand for $SEEK, creating positive buying pressure and sustainable growth.",
+        text: "$SEEK is the native token of Seekprotocol on the Solana blockchain. It is essential for launching campaigns within the Seekprotocol app. Integrating assets into the ecosystem drives demand for $SEEK, creating positive buying pressure and sustainable growth.",
       },
     },
     {
@@ -77,10 +77,10 @@ const aboutFaqJsonLd = {
     },
     {
       "@type": "Question",
-      name: "Where is Seek Protocol based?",
+      name: "Where is Seekprotocol based?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Seek Protocol is founded in Dubai, UAE, and operated by Block Protocol L.L.C-FZ. The team includes professionals from around the world working on AR, AI, blockchain, and game development.",
+        text: "Seekprotocol is founded in Dubai, UAE, and operated by Block Protocol L.L.C-FZ. The team includes professionals from around the world working on AR, AI, blockchain, and game development.",
       },
     },
   ],
@@ -181,7 +181,7 @@ function AboutContent() {
           <div className="about-why reveal">
             <div>
               <p className="eyebrow">Why we build this</p>
-              <h2 className="t-h2">{t("whySeekProtocol")}</h2>
+              <h2 className="t-h2">{t("whySeekprotocol")}</h2>
             </div>
             <div>
               <p className="t-lead">{t("whyDesc")}</p>

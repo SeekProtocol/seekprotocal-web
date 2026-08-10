@@ -36,7 +36,7 @@ export async function generateMetadata({
   };
 
   return {
-    /* Absolute, so the layout's "%s | Seek Protocol" template is not appended.
+    /* Absolute, so the layout's "%s | Seekprotocol" template is not appended.
        The headlines are 55 to 60 characters on their own; the 16-character
        suffix pushed all six past 70 and Google cut them off mid-sentence. The
        brand is already the first thing in the URL and the breadcrumb. */
@@ -99,13 +99,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     dateModified: post.date,
     author: {
       "@type": "Organization",
-      name: "Seek Protocol",
+      name: "Seekprotocol",
       url: baseUrl,
     },
     publisher: {
       "@id": `${baseUrl}/#organization`,
       "@type": "Organization",
-      name: "Seek Protocol",
+      name: "Seekprotocol",
       logo: {
         "@type": "ImageObject",
         url: `${baseUrl}/images/webclip.png`,
@@ -174,7 +174,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
             <div className="article-body">
               {post.content.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <p key={index}>{renderCopy(paragraph)}</p>
               ))}
             </div>
 
@@ -308,4 +308,40 @@ function BlogRelatedSection({
       </div>
     </section>
   );
+}
+
+/**
+ * A paragraph, with support for one thing markdown does that plain text cannot:
+ * an internal link.
+ *
+ * Articles were plain strings rendered straight into a <p>, which is safe and
+ * was enough until a post needed to send a reader somewhere on the site. The
+ * options were to allow HTML through dangerouslySetInnerHTML, or to parse the
+ * one construct actually needed. This is the second: `[text](/path)`, split by
+ * regex and rebuilt as elements, so nothing in a post can ever become markup.
+ *
+ * Internal paths only, and deliberately. A post that wants to send someone off
+ * the site can name the destination in prose; a link syntax that silently
+ * accepts `javascript:` or an arbitrary host is a hole in a content file that
+ * several people edit.
+ */
+const LINK = /\[([^\]]+)\]\((\/[^)\s]*)\)/g;
+
+function renderCopy(text: string) {
+  const parts: React.ReactNode[] = [];
+  let last = 0;
+  let match: RegExpExecArray | null;
+  LINK.lastIndex = 0;
+  while ((match = LINK.exec(text)) !== null) {
+    if (match.index > last) parts.push(text.slice(last, match.index));
+    parts.push(
+      <Link key={`${match.index}-${match[2]}`} href={match[2]} prefetch={false}>
+        {match[1]}
+      </Link>,
+    );
+    last = match.index + match[0].length;
+  }
+  if (last === 0) return text;
+  if (last < text.length) parts.push(text.slice(last));
+  return parts;
 }

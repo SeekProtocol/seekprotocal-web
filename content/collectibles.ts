@@ -1,7 +1,7 @@
 /**
  * The coins you can actually catch, with the app's own ladder.
  *
- * Odds and values come from the SeekAR migrations:
+ * Odds and values come from the Seekprotocol migrations:
  *  - `two_attempts_per_spawn` (29 July) sets base_collection_chance per rarity
  *    and caps a spawn at two attempts with a 0.65 decay. It supersedes
  *    `rebalance_catch_ladder`, which had three attempts at 0.50, and the two
