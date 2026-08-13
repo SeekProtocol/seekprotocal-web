@@ -24,6 +24,7 @@ const OG_LOCALE: Record<string, string> = {
   zh: "zh_CN",
   ja: "ja_JP",
   ko: "ko_KR",
+  tr: "tr_TR",
 };
 
 /**

@@ -15,6 +15,7 @@ const LOCALE_TO_COUNTRY: Record<string, string> = {
   zh: "cn",
   ja: "jp",
   ko: "kr",
+  tr: "tr",
 };
 
 export default function LanguageSwitcher() {
