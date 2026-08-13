@@ -107,9 +107,7 @@ export default async function AboutPage({
 const TEAM = [
   { name: "Don Reijke", role: "Founder & CTO", img: "Don-Reijke.avif", linkedin: "https://www.linkedin.com/in/don-reijke-09630921b/" },
   { name: "Lukas Novotny", role: "COO", img: "Lukas-Novotny.avif", linkedin: "" },
-  { name: "Senna Kabbaj", role: "CCO", img: "Senna-Kabbaj.avif", linkedin: "https://www.linkedin.com/in/sennakabbaj/" },
   { name: "Tristan Wesenhagen", role: "Business Development & Strategy Lead", img: "Tristan-Wesenhagen_1.avif", linkedin: "https://www.linkedin.com/in/sdewansingh/" },
-  { name: "Jonathan Ladislas", role: "Strategic Advisor", img: "Jonathan-Ladislas_1.avif", linkedin: "" },
   { name: "Martin Patzer", role: "Community Manager", img: "Martin-Patzer.avif", linkedin: "https://www.linkedin.com/in/martin-patzer-92885a295/" },
   { name: "Vitor Souza", role: "Lead AI Engineer & Game Development", img: "Vitor-Souza.avif", linkedin: "" },
   { name: "Wilson Bueres", role: "3D Design & Animations", img: "Wilson-Bueres.avif", linkedin: "" },
