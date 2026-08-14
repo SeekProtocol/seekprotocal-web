@@ -1,0 +1,2602 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "seekar": "Uygulama",
+    "about": "Hakkımızda",
+    "whitepaper": "Teknik Belge",
+    "contact": "İletişim",
+    "toggleMenu": "Gezinme menüsünü aç/kapat",
+    "ecosystem": "Ekosistem",
+    "roadmap": "Yol Haritası",
+    "business": "Kurumsal",
+    "blog": "Blog",
+    "getApp": "Uygulamayı indir",
+    "switchToLight": "Açık moda geç",
+    "switchToDark": "Koyu moda geç"
+  },
+  "footer": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "blog": "Blog",
+    "whitepaper": "Teknik Belge",
+    "tokenDashboard": "Token Paneli",
+    "address": "Block Protocol L.L.C-FZ Meydan Grandstand, 6. kat, Meydan Yolu, Nad AlSheba, Dubai, B.A.E.",
+    "description": "Seekprotocol, artırılmış gerçeklik, yapay zeka ve blok zinciri teknolojilerini birleştirerek gerçek dünyada oyunlaştırılmış deneyimler oluşturan, Block Protocol L.L.C-FZ tarafından geliştirilen yeni nesil bir platformdur.",
+    "copyright": "© 2024-2026 Block Protocol Tüm hakları saklıdır",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Hizmet Şartları",
+    "cookieSettings": "Çerez Ayarları",
+    "product": "Ürün",
+    "company": "Şirket",
+    "resources": "Kaynaklar",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "home": {
+    "heroTitle": "Yeni Bir Gerçekliği Keşfet:",
+    "heroTitleHighlight": "Seekprotocol",
+    "heroSubtitle": "Solana üzerindeki ilk AR ve AI platformu; dünyanı blok zincirle çalışan bir oyun alanına dönüştürür. Hava dağıtımlarını avla, NFT topla ve yapay zeka rehberlerinle gerçek mekanları keşfet.",
+    "downloadAppStore": "App Store'dan indir",
+    "downloadGooglePlay": "Google Play'den indir",
+    "benefitsTitle": "Sınırsız",
+    "benefitsTitleHighlight": "Olanaklar!",
+    "benefitAR": "Artırılmış gerçeklik",
+    "benefitARDesc": "Herhangi bir mekanı, dijital varlıkları hayata geçiren AR teknolojisiyle interaktif bir hazine avına dönüştür.",
+    "benefitSeekToEarn": "Ara-ve-Kazan",
+    "benefitSeekToEarnDesc": "Günlük hareketini ödüllere çevir. Her adım, koşu ve macera; hava dağıtımlarına ve gizli hazinelere götürür.",
+    "benefitLiveEvents": "Canlı Etkinlikler",
+    "benefitLiveEventsDesc": "Küçük buluşmalardan şehir çapında dev hazine avlarına kadar AR ödülleriyle zenginleştirilmiş gerçek dünya etkinliklerine katıl.",
+    "benefitCreatorTools": "Yaratıcı Araçları",
+    "benefitCreatorToolsDesc": "Sürükle-bırak aracımız, herkesin AR kampanyaları başlatmasını, NFT, token ve varlık dağıtmasını ve büyük kitlelerle etkileşim kurmasını sağlar.",
+    "benefitGeofencing": "Coğrafi Sınırlama Teknolojisi",
+    "benefitGeofencingDesc": "30 metre hassasiyetle GPS tabanlı varlık yerleştirme; konum doğrulamalı ödüller ve deneyimler mümkün kılar.",
+    "benefitQuests": "Görevler",
+    "benefitQuestsDesc": "Konumuna, seviyene ve tercihlerine uyum sağlayan; artan ödüller ve zorluklar sunan dinamik görevler.",
+    "futureTitle": "Konum tabanlı etkileşimlerin geleceği",
+    "futureDesc": "Anahtar teknolojilerin devrim niteliğindeki birleşimini deneyimle. Her yenilik, fiziksel dünyanı; her adımın değerli olduğu, her mekanın potansiyel taşıdığı ve her maceranın seni gerçek dijital varlıklarla ödüllendirdiği oyunlaştırılmış bir kazanç ekosistemine dönüştürmek için kusursuzca birleşir",
+    "serviceLocationAirdrops": "Konum tabanlı Hava Dağıtımları",
+    "serviceLocationAirdropsDesc": "Coğrafi sınırlama teknolojisi, dijital varlıkların belirli GPS koordinatlarına hassas biçimde yerleştirilmesini sağlar. Şehir merkezlerinden gizli köşelere kadar her mekan potansiyel bir ödül bölgesine dönüşür. Özel NFT'ler, token hava dağıtımları ve sınırlı koleksiyonlar keşfedilmeyi bekler.",
+    "serviceImmersiveAR": "Sürükleyici AR Teknolojisi",
+    "serviceImmersiveARDesc": "Dijital varlıkları fiziksel çevrenle kusursuzca harmanlayan yeni nesil artırılmış gerçekliği deneyimle. Gelişmiş AR motorumuz; çarpıcı 3B görselleştirmeler, gerçek zamanlı çevre haritalama ve kalıcı dünya sabitlemesi sunar. NFT'lerin canlandığını, tokenlerin havada süzüldüğünü izle ve dijital nesnelerle sanki gerçekten oradaymışçasına etkileşime gir.",
+    "serviceAIPersonalization": "AI Destekli Kişiselleştirme",
+    "serviceAIPersonalizationDesc": "AI rehberin yalnızca yön göstermez; AR aracılığıyla senin gördüğünü görür, çevreni analiz eder ve gerçek zamanlı bağlamsal içgörüler sunar. Yerel yemek noktalarını açığa çıkarmak için dönüm noktalarını tanıyan, oyun tarzına göre en uygun yürüyüş rotalarını öneren ve anında kişiselleştirilmiş AR içerikleri üreten bir AI düşün.",
+    "serviceMoveToEarn": "Hareket Et Kazan, Canlı Etkinliklerle Buluşuyor",
+    "serviceMoveToEarnDesc": "Dijital ödüllerle gerçek dünya buluşmaları için binlerce oyuncunun bir araya geldiği devasa canlı AR etkinliklerine katıl. Katılımcılara özel ödüllerin düştüğü müzik festivallerini, konuma kilitli koleksiyonların yer aldığı spor etkinliklerini veya ödül havuzları olan şehir çapında hazine avlarını hayal et.",
+    "threePathsTitle": "İlerlemenin üç yolu",
+    "pathBlockchain": "Blok Zincir Destekli",
+    "pathBlockchainDesc": "Her NFT, token ve oyun içi varlık blok zincirinde güvence altındadır. Bu; gerçek sahiplik, kanıtlanabilir adalet ve Seekprotocol içinde ve dışında gerçekten kullanabileceğin ödüller demektir.",
+    "pathAI": "AI Destekli",
+    "pathAIDesc": "AI'ımız keşif ve oyun tarzını öğrenir; sana daha akıllı konum ipuçları, kişiselleştirilmiş görevler ve gerçekten anlamlı ödüller sunar. Ne kadar çok hareket edersen o kadar iyi olur.",
+    "pathProofOfLocation": "Konum Kanıtı",
+    "pathProofOfLocationDesc": "Attığın her adım bir kanıttır. Sistemimiz, token, NFT ve diğer dijital varlıkları açmak için gerçek dünyadaki konumunu doğrular. Hile yok, sadece gerçek etkileşim için gerçek ödüller.",
+    "builtToScale": "SİZİNLE ÖLÇEKLENMEK İÇİN İNŞA EDİLDİ",
+    "builtToScaleDesc": "İster bir proje başlatıyor ol ister şehrini keşfediyor; Seekprotocol yolculuğunu sürükleyici teknoloji, doğrulanmış varlık ve gerçek ödüllerle güçlendirir.",
+    "interested": "İlgini çekti mi?",
+    "scaleOnboarding": "Kusursuz Katılım",
+    "scaleOnboardingDesc": "Kullanıcılar, yaratıcılar ve işletmeler için hızlı bir başlangıç. Sosyal cüzdan oluşturmaktan ilk AR etkinliklerine kadar; katılımı evrak işi değil oyun gibi hissettiriyoruz.",
+    "scaleProjectLaunch": "Proje Başlatma Entegrasyonu",
+    "scaleProjectLaunchDesc": "İster bir meme coin ol ister misyon odaklı bir proje; AR, AI ve ödül katmanlarımıza bağlan. Etkinlikler başlat, token spawn'ları ya da NFT görevleri düzenle; hepsi coğrafi ve oyunlaştırılmış.",
+    "scaleBusinessPortal": "Kurumsal Portal Aktivasyonu",
+    "scaleBusinessPortalDesc": "Yerel mağazalar, küresel markalar: Seek ekosistemine katılın. Özel fırsatlar, konum tabanlı ödüller sunun ve dijital teşviklerle gerçek dünyada müşteri trafiği yaratın.",
+    "scaleEngagement": "Etkileşim Motoru",
+    "scaleEngagementDesc": "Yönlendirme görevleri, liderlik tablosu serileri ve lonca misyonları; kullanıcılar arasında günlük, haftalık ve sosyal etkileşimi tetikleyen eksiksiz bir araç seti.",
+    "scaleCrossPlatform": "Platformlar Arası Yayılım",
+    "scaleCrossPlatformDesc": "Solana Mobile ile Android/iOS'te genişleme. Tek profil, tek cüzdan, sınırsız Seek deneyimi; her yerde, her zaman.",
+    "featuredOn": "BASINDA YER ALDIK:",
+    "joinBeta": "Beta'mıza katıl",
+    "getReady": "Aramaya hazır ol!",
+    "ctaDesc": "Dünyanın oyun alanın olduğu yeni bir gerçekliğe adım at. Seekprotocol, çevreni interaktif bir maceraya dönüştürerek en yeni AR teknolojisini gerçek dünya keşfiyle harmanlar. Gizli hazinelerin izini sür, değerli dijital ödüller topla ve dinamik görevleri fethet!",
+    "coinReadoutLabel": "Sinyal kilitli",
+    "coinReadoutAccuracy": "Hassasiyet {meters} m",
+    "beyondEyebrow": "Coinlerin ötesinde",
+    "beyondTitle": "Bir drop'un token olması şart değil",
+    "beyondLead": "Bir insana verilebilecek her şey bir yere de verilebilir. Kasada indirim, dükkanda bekleyen fiziksel bir ürün, sadece mekanda geçerli bir bilet. Bir ana caddede çoğu zaman coin bunların en az ilginç olanıdır.",
+    "howEyebrow": "Nasıl çalışır",
+    "howTitle": "Üç adım, ve üçüncüsü ödüyor",
+    "liveEyebrow": "Canlı ağ",
+    "liveTitle": "Bir şehir seç ve şansını dene",
+    "liveLead": "Herhangi bir merkeze atla, bir coini kimin aldığını görmek için üzerine dokun ve uygulamanın gerçek olasılıklarına karşı kendin de bir deneme yap.",
+    "foundationsEyebrow": "Temeller",
+    "readWhitepaper": "Teknik belgeyi oku",
+    "metaTitle": "Seekprotocol | Solana Üzerinde AR Hazine Avı Uygulaması",
+    "metaDescription": "Konum tabanlı hava dağıtımlarını avla, artırılmış gerçeklikte NFT topla ve AI rehberlerinle keşfe çık. Seekprotocol gerçek mekanları Solana üzerinde talep edilebilir ödüllere dönüştürür.",
+    "ogTitle": "Seekprotocol tarafından Seekprotocol | Solana'da AR & AI"
+  },
+  "seekarPage": {
+    "metaTitle": "Seekprotocol — AR Hazine Avı Uygulaması",
+    "metaDescription": "Seekprotocol, Seekprotocol'ün artırılmış gerçeklik uygulamasıdır. Konum tabanlı hava dağıtımlarını avla, gerçek koordinatlarda NFT topla ve Solana üzerinde kripto ödüller kazan. iOS ve Android için ücretsiz.",
+    "ogTitle": "Seekprotocol — AR Hazine Avı Uygulaması",
+    "eyebrow": "Uygulama",
+    "heroTitle": "Seekprotocol",
+    "heroDesc": "Seekprotocol'ün artırılmış gerçeklik uygulaması. Telefonunu dünyaya doğrult ve oraya yerleştirilen şeyleri bul: Solana üzerinde gerçek koordinatlara sabitlenmiş tokenler, NFT'ler ve ödüller.",
+    "whatTitle": "Seekprotocol nedir?",
+    "whatBody": "Seekprotocol, Seekprotocol'ün amiral gemisi mobil uygulamasıdır; iOS ve Android'de ücretsizdir. Herhangi bir sokağı, parkı veya mekanı; dijital varlıkların gizlenip talep edilebildiği bir yere dönüştürür. Bir yayıncı bir koordinata ödül yerleştirir; sen bunu almak için fiziksel olarak orada olmalısın ve protokol orada olduğunu kanıtlar. Emülatör yok, sahtecilik yok, kestirme yok.",
+    "featuresTitle": "Neler yapabilirsin",
+    "f1Title": "Konum tabanlı hava dağıtımlarını avla",
+    "f1Desc": "Tokenler ve NFT'ler gerçek koordinatlara sabitlenir. Noktaya yürü, kamerayı aç ve seni bekleyeni al.",
+    "f2Title": "Artırılmış gerçeklikte topla",
+    "f2Desc": "Varlıklar; ekrandaki bir liste yerine, kameran aracılığıyla dünyada gerçek boyutlarda ve doğru yerde görünür.",
+    "f3Title": "AI rehberleriyle keşfe çık",
+    "f3Desc": "Bir AI rehber, nerede olduğuna ve yakınında ne olduğuna tepki verir, sana yürümeye değecek olanları gösterir.",
+    "f4Title": "Gerçek kripto ödüller kazan",
+    "f4Desc": "Her şey Solana üzerinde çözülür. Topladığın şey senindir; cüzdanındadır ve sen hareket ettikçe o da hareket eder.",
+    "howTitle": "Nasıl çalışır",
+    "s1Title": "İndir ve aç",
+    "s1Desc": "App Store ve Google Play'de ücretsiz. Senin için bir cüzdan oluşturulur; daha önce özel anahtar tutmuş olman gerekmez.",
+    "s2Title": "Yakınındakileri bul",
+    "s2Desc": "Harita, çevrene yerleştirilenleri gösterir. Birini seç ve ona doğru yürü.",
+    "s3Title": "Orada olduğunu kanıtla ve talep et",
+    "s3Desc": "Konum Kanıtı, varlığını zincir üzerinde doğrular ve varlık cüzdanına düşer.",
+    "faqTitle": "Sıkça sorulanlar",
+    "q1": "Seekprotocol ücretsiz mi?",
+    "a1": "Evet. Seekprotocol iOS ve Android'de indirmek için ücretsizdir. Bazı uygulama içi öğeler ücretlidir, ancak avlanma ve talep etme değildir.",
+    "q2": "Seekprotocol'ü kim yapıyor?",
+    "a2": "Seekprotocol, Dubai'deki Block Protocol L.L.C-FZ'nin bir ürünü olan Seekprotocol tarafından geliştirilmiştir. Solana üzerindeki AR ve AI uygulamasıdır; App Store ve Google Play'de bulunur.",
+    "q3": "Kripto hakkında bir şey bilmem gerekir mi?",
+    "a3": "Hayır. Uygulamayı açtığında senin için bir cüzdan oluşturulur ve kendin bir seed ifadesiyle uğraşmadan varlıkları toplayıp saklayabilirsin.",
+    "q4": "Seekprotocol hangi telefonlarda çalışır?",
+    "a4": "AR destekli güncel iPhone'lar ve Android cihazlar. Her iki sürüm de aynı özellikleri sunar.",
+    "q5": "Konumumu sahteleyebilir miyim?",
+    "a5": "Hayır. Konum Kanıtı, gerçek varlığını zincir üzerinde doğrular; bir talebi, onu yerleştiren yayıncı için değerli kılan da budur.",
+    "ctaTitle": "Seekprotocol'ü indir",
+    "ctaDesc": "iOS ve Android'de ücretsiz. Şehrin, bulunmaya değer şeylerle dolu.",
+    "renameTitle": "SeekAR artık Seekprotocol",
+    "renameBody": "Aynı uygulama, aynı hesap, aynı harita. Sadece isim değişti. Ayrı bir şirket eski adı kapsayan bir marka başvurusu yaptı, bu yüzden hep sahip olduğumuz isme geçtik.",
+    "renameLink": "Duyuruyu oku"
+  },
+  "about": {
+    "heroTitle": "Konum Tabanlı Dijital Deneyimlerin Geleceğini Keşfet",
+    "heroDesc": "Seekprotocol, gelişmiş artırılmış gerçeklik ve blok zincir teknolojisiyle gerçek dünya keşfini ödüllendirici maceralara dönüştürür.",
+    "whySeekprotocol": "Neden Seekprotocol?",
+    "whyDesc": "Diğerleri uygulama inşa ederken, biz bir devrim inşa ediyoruz. Seekprotocol; her adımı bir fırsata dönüştüren konum tabanlı AR teknolojisiyle fiziksel ve dijital dünyalar arasındaki uçurumu kapatır. Merkeziyetsiz ödül sistemimiz keşfin gerçek anlamda karşılığını verir. Sadece deneyimler yaratmıyoruz; gerçek dünya keşfinin gerçek değer ürettiği yeni bir ekonominin öncüsüyüz. Metrenin altında hassasiyetle takip, çarpıcı AR görselleştirmeler ve blok zincir ödüllerle görünmezi görünür, imkansızı karlı hale getiriyoruz.",
+    "letsConnect": "Bağlantı Kuralım",
+    "ourValues": "Değerlerimiz",
+    "whatDrivesUs": "BİZİ NE YÖNLENDİRİYOR",
+    "valueLocationIntelligence": "Konum Zekası",
+    "valueLocationIntelligenceDesc": "Her hareketine gerçek zamanlı yanıt veren, metre altı hassasiyetli konum teknolojisi.",
+    "valueARInnovation": "AR Yeniliği",
+    "valueARInnovationDesc": "Dijital hazineleri fiziksel dünyanla kusursuzca harmanlayan son teknoloji artırılmış gerçeklik.",
+    "valueSocialDiscovery": "Sosyal Keşif",
+    "valueSocialDiscoveryDesc": "Katlanan ödüller ve paylaşılan başarılar için yakınındaki kaşiflerle takım kur.",
+    "valueCrossChainRewards": "Zincirler Arası Ödüller",
+    "valueCrossChainRewardsDesc": "Farklı blok zincir ağlarında birden çok hava dağıtımı, NFT ve diğer dijital varlıkları kazan.",
+    "valueProofOfExploration": "Keşif Kanıtı",
+    "valueProofOfExplorationDesc": "Keşiflerinin zincir üzerinde doğrulanabilir kayıtları, kalıcı bir macera mirası oluşturur.",
+    "readyToSeek": "Aramaya hazır mısın?",
+    "startExploring": "Keşfetmeye Başla",
+    "coreTechnologies": "KULLANDIĞIMIZ TEMEL TEKNOLOJİLER",
+    "coreTechDesc": "Seekprotocol'de, keşfin bir amaca ihtiyacı olduğunu anlıyoruz. Tek beden herkese uyan deneyimler sunmuyoruz. Her kullanıcı için dinamik, konuma duyarlı maceralar yaratıyoruz.",
+    "techGeospatial": "COĞRAFİ HARİTALAMA",
+    "techGeospatialDesc": "Bağlama duyarlı deneyimler yaratan dinamik coğrafi sınırlamayla gerçek zamanlı konum takibi.",
+    "techAR": "AR RENDERLAMA",
+    "techARDesc": "Sürükleyici artırılmış gerçeklik için gelişmiş renderlama mekanikleri ve mekansal bilgi işlem.",
+    "techBlockchain": "BLOK ZİNCİR ÖDÜLLERİ",
+    "techBlockchainDesc": "Gerçek keşif ve etkileşim için gerçek ödüller.",
+    "techSync": "ANLIK SENKRONİZASYON",
+    "techSyncDesc": "Tüm oyuncular arasında gerçek zamanlı güncellemeler - keşiflerin dünya çapında olduğu anda canlı gerçekleştiğini gör.",
+    "threePillars": "BAŞARININ ÜÇ SÜTUNU",
+    "threePillarsDesc": "Seekprotocol'ün merkezinde, dünyayla nasıl etkileşim kurduğumuzu dönüştüren üç devrim niteliğinde teknoloji vardır.",
+    "pillarAR": "Artırılmış Gerçeklik",
+    "pillarARDesc": "Çıplak gözle görünmeyen gizli dijital katmanları açığa çıkaran son teknoloji AR.",
+    "pillarLocation": "Konum Hassasiyeti",
+    "pillarLocationDesc": "Hava dağıtımlarının tam olarak nereye yerleştirildiğini bilen dinamik coğrafi sınırlamalı, metre altı hassasiyetli GPS.",
+    "pillarReward": "Ödül Dağıtımı",
+    "pillarRewardDesc": "Her Seekprotocol kullanıcısı için adil, anında ve şeffaf kazançlar sağlayan merkeziyetsiz havuzlar.",
+    "ourApproach": "Yaklaşımımız",
+    "approachTitle": "KEŞFİN ÖDÜLLERLE BULUŞTUĞU YER",
+    "approachDesc": "Her mekanın anlatılmamış bir değeri vardır. Bizim işimiz mi? Bunu; büyüleyen, ödüllendiren ve arayıcıları geri getirmeye devam eden yollarla açığa çıkarmak.",
+    "approachTreasureHunts": "Heyecan Veren Hazine Avları",
+    "approachTreasureHuntsDesc": "Dinamik, konum tabanlı zorluklar.",
+    "approachARExperiences": "Şaşırtan AR Deneyimleri",
+    "approachARExperiencesDesc": "Gerçekliğin üzerinde sürükleyici dijital katmanlar.",
+    "approachRewardPools": "Ödeyen Ödül Havuzları",
+    "approachRewardPoolsDesc": "Topluluk odaklı kazanç fırsatları.",
+    "approachSocial": "Bağlantı Kuran Sosyal Özellikler",
+    "approachSocialDesc": "Çok kullanıcılı keşif ve işbirliği.",
+    "approachAnalytics": "Bilgi Veren Analitik",
+    "approachAnalyticsDesc": "Keşif kalıpları üzerine gerçek zamanlı içgörüler.",
+    "approachEvents": "Birleştiren Etkinlikler",
+    "approachEventsDesc": "Kalabalıkları bir araya getiren zamanla sınırlı topluluk etkinlikleri; Pokémon-Go Raidlerinin Web3 sürümünü düşün.",
+    "approachCollaborations": "Yaratan İşbirlikleri",
+    "approachCollaborationsDesc": "Kullanıcı tarafından üretilen içerikler ve zorluklar.",
+    "ourTeam": "Harika Ekibimiz",
+    "joinBeta": "Beta'mıza katıl",
+    "getReady": "Aramaya hazır ol!",
+    "ctaDesc": "Dünyanın oyun alanın olduğu yeni bir gerçekliğe adım at. Seekprotocol, çevreni interaktif bir maceraya dönüştürerek en yeni AR teknolojisini gerçek dünya keşfiyle harmanlar.",
+    "metaTitle": "Seekprotocol'ün Arkasındaki Ekip Hakkında",
+    "metaDescription": "Solana üzerinde konum tabanlı AR inşa eden ekibi tanıyın: konum kanıtı arkasındaki misyon, Seekprotocol'ün altındaki teknoloji ve $SEEK'in arkasındaki insanlar.",
+    "ogTitle": "Seekprotocol'ün arkasındaki ekip"
+  },
+  "contact": {
+    "getInTouch": "İletişime Geç",
+    "formDesc": "Aşağıdaki formu doldur, en kısa sürede sana geri dönelim.",
+    "metaTitle": "İletişim: Ortaklıklar ve Kampanyalar",
+    "metaDescription": "Kendi koordinatlarına bir kampanya yerleştirmek, ortaklıklar, beta erişimi veya basın konularında Seekprotocol ekibiyle konuş.",
+    "ogTitle": "Seekprotocol ile İletişim"
+  },
+  "services": {
+    "heroTitle": "BİZİM UZMANLIĞIMIZ, SİZİN BÜYÜMENİZ",
+    "heroDesc": "Seekprotocol, Solana üzerinde son teknoloji AR, AI ve blok zincir çözümleri sunar. Sadece teknoloji inşa etmiyoruz. Gerçek dünya etkileşimini dönüştürmede sizin ortağınızız.",
+    "letsContact": "İletişime Geçelim",
+    "businessStrategy": "İş Stratejisi",
+    "businessStrategyDesc": "İş hedeflerini dijital büyümeyle hizalayan özel stratejiler.",
+    "visualDirection": "Görsel Yön",
+    "visualDirectionDesc": "Vizyonunu yakalayan bütünsel ve zamansız marka kimlikleri yaratırız.",
+    "websiteCreation": "Web Sitesi Oluşturma",
+    "websiteCreationDesc": "Hız ve zarafet düşünülerek inşa edilmiş tam duyarlı web siteleri.",
+    "contentSolutions": "İçerik Çözümleri",
+    "contentSolutionsDesc": "Güçlü içerik yönetimiyle dikkat çek ve büyümeyi tetikle.",
+    "campaignExecution": "Kampanya Yürütme",
+    "campaignExecutionDesc": "Dijital kanallar ve platformlar arasında yüksek performanslı pazarlama başlat.",
+    "uiuxSystems": "UI/UX Sistemleri",
+    "uiuxSystemsDesc": "Cihazlar ve akışlar arasında kesintisiz, işlevsel kullanıcı yolculukları tasarla.",
+    "growthTactics": "Büyüme Taktikleri",
+    "growthTacticsDesc": "Marka görünürlüğünü ve ölçeğini artırmak için tasarlanmış stratejik yöntemler.",
+    "copywriting": "Metin Yazarlığı",
+    "copywritingDesc": "Vizyonunu yakalayan bütünsel ve zamansız marka kimlikleri yaratırız.",
+    "details": "Detaylar",
+    "pricingTitle": "Fiyatlandırma: Her Hizmet İçin Esnek",
+    "pricingDesc": "Her işletmenin kendine özgü bir bütçesi olduğunu biliyoruz, bu yüzden fiyatlandırmamız seçtiğin modüle dayalıdır.",
+    "pricingQuestion": "Projeni detaylı görüşmeye hazır mısın?",
+    "scheduleConsultation": "Danışmanlık planla",
+    "smallModule": "Küçük Modül",
+    "smallModuleDesc": "Daha küçük logolar ve kısa mesajlar için ideal.",
+    "mediumModule": "Orta Modül",
+    "mediumModuleDesc": "Marka içeriğin için daha fazla alan sunar.",
+    "largeModule": "Büyük Modül",
+    "largeModuleDesc": "Harita üzerindeki en belirgin yerleşim.",
+    "whoWeWorkWith": "Kimlerle Çalışırız",
+    "smallBusinesses": "Küçük İşletmeler & Girişimler",
+    "smallBusinessesDesc": "Sesini yaratmak ve duyulmasını sağlamak.",
+    "ecommerce": "E-ticaret Markaları",
+    "ecommerceDesc": "Dönüşüm sağlayan etkileyici ürün açıklamaları yazmak.",
+    "agencies": "Ajanslar & Danışmanlar",
+    "agenciesDesc": "Yüksek değerli içerikle otorite inşa etmek.",
+    "localBusinesses": "Yerel İşletmeler",
+    "localBusinessesDesc": "Prag'da ve ötesinde müşterilerinle bağlantı kurmana yardımcı olmak.",
+    "largeCorporations": "Büyük Kuruluşlar",
+    "largeCorporationsDesc": "Markanı güçlendiren net, etkili mesajlar yazmak.",
+    "ctaConnect": "Bağlantı Kuralım",
+    "ctaTitle": "BİR FİKRİN VAR MI YA DA BİR PROJEYE BAŞLAMAN GEREKİYOR MU?"
+  },
+  "blog": {
+    "title": "Seekprotocol Blogu",
+    "desc": "Artırılmış gerçeklik, AI, blok zincir teknolojisi ve konum tabanlı deneyimlerin geleceğine dair içgörüler, güncellemeler ve derinlemesine incelemeler.",
+    "read": "okuma",
+    "backToBlog": "← Bloga geri dön",
+    "readyToSeek": "Aramaya başlamaya hazır mısın?",
+    "readyToSeekDesc": "Seekprotocol'ü indir ve dünyanı blok zincirle çalışan bir oyun alanına dönüştür.",
+    "moreArticles": "Daha Fazla Makale",
+    "keepReading": "Okumaya devam et",
+    "allArticles": "Tüm makaleler",
+    "relatedPages": "İlgili sayfalar",
+    "metaTitle": "Blog: AR, AI ve Konum Tabanlı Ödüller",
+    "metaDescription": "Artırılmış gerçeklik, AI rehberler, coğrafi sınırlamalı hava dağıtımları ve konum kanıtı üzerine makaleler; Solana üzerinde Seekprotocol'ü inşa eden ekipten.",
+    "ogTitle": "Seekprotocol blogu"
+  },
+  "forms": {
+    "emailPlaceholder": "E-posta Adresi",
+    "sendNow": "Şimdi Gönder",
+    "sending": "Gönderiliyor...",
+    "captchaError": "Lütfen captcha doğrulamasını tamamla.",
+    "genericError": "Bir şeyler ters gitti.",
+    "genericErrorRetry": "Bir şeyler ters gitti. Lütfen tekrar dene.",
+    "successMessage": "Teşekkürler! Gönderin alındı!",
+    "yourName": "Adın",
+    "namePlaceholder": "Adını gir",
+    "yourEmail": "E-postan",
+    "emailInputPlaceholder": "E-postanı gir",
+    "message": "Mesaj",
+    "messagePlaceholder": "Buraya yaz",
+    "yourPhone": "Telefon Numarası",
+    "phonePlaceholder": "Telefon numaranı gir",
+    "validationRequired": "Bu alan zorunludur",
+    "validationEmail": "Lütfen geçerli bir e-posta adresi gir",
+    "validationPhone": "Lütfen geçerli bir telefon numarası gir",
+    "validationName": "Lütfen adını gir",
+    "optional": "isteğe bağlı"
+  },
+  "cookies": {
+    "title": "Çerez Tercihleri",
+    "subtitle": "Gizlilik ayarlarını yönet",
+    "description": "Tarama deneyimini geliştirmek, kişiselleştirilmiş içerik sunmak ve trafiğimizi analiz etmek için çerezler kullanıyoruz. \"Tümünü Kabul Et\"e tıklayarak çerez kullanımımızı onaylamış olursun.",
+    "readMore": "Daha fazlasını oku:",
+    "privacyPolicy": "Gizlilik Politikası",
+    "necessary": "Zorunlu",
+    "necessaryDesc": "Web sitesinin düzgün çalışması için gereklidir. Devre dışı bırakılamaz.",
+    "functional": "İşlevsel",
+    "functionalDesc": "Gelişmiş işlevsellik ve kişiselleştirmeyi etkinleştirir.",
+    "analytics": "Analitik",
+    "analyticsDesc": "Ziyaretçilerin web sitemizle nasıl etkileşim kurduğunu anlamamıza yardımcı olur.",
+    "marketing": "Pazarlama",
+    "marketingDesc": "İlgili reklamların sunulması ve kampanyaların takibi için kullanılır.",
+    "acceptAll": "Tümünü Kabul Et",
+    "rejectAll": "Tümünü Reddet",
+    "customize": "Özelleştir",
+    "savePreferences": "Tercihleri Kaydet",
+    "cookieSettings": "Çerez Ayarları"
+  },
+  "notFound": {
+    "pageNotFound": "Sayfa Bulunamadı",
+    "pageNotFoundDesc": "Aradığın sayfa mevcut değil ya da taşınmış",
+    "oops": "Ups, Sayfa Bulunamadı",
+    "backToHome": "Ana Sayfaya Dön"
+  },
+  "metrics": {
+    "text1": "SINIRSIZ VARLIKLAR.",
+    "text2": "GERÇEK ETKİLEŞİM.",
+    "text3": "ARA. TOPLA. KAZAN"
+  },
+  "privacyPolicyPage": {
+    "title": "Gizlilik Politikası",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Yürürlük: 12 Ağustos 2025",
+    "introTitle": "Giriş",
+    "introP1": "Bu Gizlilik Politikası, Block Protocol LLC (\"Hizmet Sağlayıcı\" olarak anılacaktır) tarafından mobil cihazlar için ücretsiz bir hizmet olarak geliştirilen ve sürdürülen Seekprotocol mobil uygulaması (bu belge boyunca \"Uygulama\" olarak anılacaktır) için geçerlidir. Uygulama, \"OLDUĞU GİBİ\" esasına göre sağlanır.",
+    "introP2": "Seekprotocol; kullanıcıları için oyunlaştırılmış gerçek dünya deneyimleri yaratan, yeni nesil bir artırılmış gerçeklik, AI destekli ve blok zincir entegre platformdur. Bu deneyimlerin doğası göz önüne alındığında, Uygulama özelliklerini eksiksiz ve güvenli şekilde sunmak için çeşitli kişisel veri kategorileriyle etkileşime girer. Bu politika; hangi verilerin toplandığını, neden toplandığını, nasıl işlendiğini, kimlerle paylaşılabileceğini ve kullanıcıların kişisel bilgileriyle ilgili sahip oldukları hakları eksiksiz biçimde açıklar.",
+    "introP3": "Uygulamayı indirerek ve kullanarak, bu Gizlilik Politikasında açıklanan veri uygulamalarını kabul etmiş olursun. Veri uygulamalarındaki, geçerli yasalardaki veya Uygulama özelliklerindeki değişiklikleri yansıtmak için zaman zaman güncellenebileceği için bu politika düzenli olarak gözden geçirilmelidir.",
+    "part1Title": "Bölüm I: Bilgi Toplama ve Kullanım",
+    "part1P1": "Uygulama, indirdiğinde ve kullandığında bilgi toplar. Bu; cihazın İnternet Protokolü (IP) adresi, ziyaret ettiğin sayfalar veya bölümler, ziyaretlerinin saati ve tarihi, o sayfalarda geçirilen süre ve mobil cihazında çalışan işletim sistemi hakkında bilgiler gibi kullanım sırasında otomatik olarak toplanan teknik verileri içerir.",
+    "part1P2": "Bu otomatik olarak toplanan teknik verilerin ötesinde, Uygulama aşağıda tam olarak açıklanan çeşitli kişisel bilgi kategorilerini toplar.",
+    "part1P3": "Uygulama tarafından toplanan tüm veriler, iletim sırasında şifreleme kullanılarak iletilir ve depolanır; bu da bilgilerin cihazın ile Hizmet Sağlayıcının sistemleri arasında dolaşırken korunmasını sağlar.",
+    "part1s1Title": "1. Hesap Oluşturma",
+    "part1s1P1": "Uygulama, kullanıcıların hesaplarını oluşturması ve erişmesi için birden çok yöntemi destekler. Bunlar; kullanıcı adı ve parola kimlik doğrulaması, kullanıcı adı ile diğer kimlik doğrulama biçimlerinin birleşimi, kullanıcı adı ile hem parola hem de ek kimlik doğrulama faktörleri, ve desteklenen harici kimlik sağlayıcılar aracılığıyla OAuth tabanlı kimlik doğrulamadır. Belirli bir kullanıcı tarafından kullanılan hesap oluşturma yöntemi, Uygulama tarafından hangi hesap tanımlayıcılarının toplandığını ve saklandığını belirler.",
+    "part1s2Title": "2. Kişisel Bilgiler",
+    "part1s2P1": "Uygulama, adın, e-posta adresin ve kullanıcı tanımlayıcıların (Kullanıcı Kimlikleri) dahil olmak üzere kişisel olarak tanımlayıcı bilgileri toplar.",
+    "part1s2P2": "Adın, kullanıcı arayüzünü kişiselleştirmek ve platform içindeki profilini tanımlamak dahil temel uygulama işlevselliğini desteklemek için gerekli olduğundan toplanır. Bu veri yalnızca toplanır ve üçüncü taraflarla paylaşılmaz.",
+    "part1s2P3": "E-posta adresin de benzer şekilde gereklidir ve yalnızca hesap kimlik doğrulaması, hizmetle ilgili iletişim ve önemli bildirimlerin iletilmesi dahil uygulama işlevselliğini desteklemek için toplanır. Bu veri yalnızca toplanır ve üçüncü taraflarla paylaşılmaz.",
+    "part1s2P4": "Hesabına veya oturumuna atanan benzersiz tanımlayıcılar olan Kullanıcı Kimlikleri gereklidir ve daha geniş bir amaç yelpazesi için toplanır. Bunlar; temel uygulama işlevselliğini desteklemeyi, Uygulamanın nasıl kullanıldığını anlamak için dahili analitik yürütmeyi, güvenlik ve dolandırıcılık önleme önlemlerini uygulamayı ve hesap düzeyi özellikleri ve izinleri yönetmeyi içerir. Kullanıcı Kimlikleri yalnızca toplanır ve dışarıyla paylaşılmaz.",
+    "part1s3Title": "3. Konum Verileri",
+    "part1s3P1": "Uygulama, cihazından hem yaklaşık hem de kesin konum verilerine erişim gerektirir. Konum erişimi zorunludur ve kullanıcılar tarafından temel uygulama işlevselliğini etkilemeden devre dışı bırakılamaz.",
+    "part1s3P2": "Genel coğrafi alanını tam pozisyonunu belirtmeden tanımlayan yaklaşık konum verileri hem toplanır hem de paylaşılır. Bu; temel uygulama işlevselliğini desteklemek ve kullanıcıların farklı coğrafi bölgelerde konum tabanlı özelliklerle nasıl etkileşim kurduğuna dair dahili analitik yürütmek için toplanır. Yaklaşık konum verileri ayrıca; uygulama işlevselliğini desteklemek ve coğrafi bağlama dayalı kişiselleştirilmiş içerik ve deneyimler sunmak amacıyla üçüncü taraflarla paylaşılır.",
+    "part1s3P3": "GPS veya eşdeğer teknolojilerden türetilen tam coğrafi koordinatlar anlamına gelen kesin konum verileri hem toplanır hem paylaşılır ve Uygulamadaki herhangi bir veri türü arasında en geniş amaç yelpazesine hizmet eder. Bu, Seekprotocol'ün temel deneyiminin gerçek dünya, konum sabitli artırılmış gerçeklik etrafında inşa edildiği gerçeğini yansıtır. Kesin konum verileri; kesin gerçek dünya konumlandırmasına bağlı AR özelliklerini ve diğer temel işlevleri desteklemek, ayrıntılı kullanım analitiği yürütmek, konumuna özel geliştirici iletişimlerini iletmek, coğrafi etkinlik kalıplarına bağlı güvenlik ve dolandırıcılık önleme önlemleri uygulamak, içeriği ve özellikleri kesin ortamına göre kişiselleştirmek ve coğrafi parametrelere bağlı hesap özellikleri veya hizmet koşullarını yönetmek için toplanır. Aynı veriler, tüm bu amaçlar için üçüncü taraf hizmet sağlayıcılarla paylaşılır.",
+    "part1s4Title": "4. Mesajlar",
+    "part1s4P1": "Uygulama üç tür mesajlaşma verisi toplar: e-postalar, SMS veya MMS mesajları ve diğer uygulama içi mesajlar. Üç tür de gereklidir ve kullanıcı tarafından devre dışı bırakılamaz.",
+    "part1s4P2": "E-postalar yalnızca; kullanıcılar ile platform arasındaki iletişim ve hizmetle ilgili bildirimlerin iletilmesi dahil temel uygulama işlevselliğini desteklemek için toplanır.",
+    "part1s4P3": "SMS veya MMS verileri yalnızca temel uygulama işlevselliğini desteklemek için toplanır ve geçici olarak işlenir; yani ilgili işleme görevi tamamlandıktan sonra saklanmaz ve Uygulama tarafından kalıcı olarak depolanmaz.",
+    "part1s4P4": "Diğer uygulama içi mesajlar yalnızca Uygulamanın kendi mesajlaşma ve iletişim sistemleri içindeki etkileşimler dahil temel uygulama işlevselliğini desteklemek için toplanır.",
+    "part1s5Title": "5. Fotoğraflar ve Videolar",
+    "part1s5P1": "Uygulama, cihazındaki fotoğraflara ve videolara erişim gerektirir. Her iki veri türü de yalnızca toplanır ve özellikle; fiziksel çevre üzerine dijital içerik yerleştirmek veya Uygulamanın etkileşimli oturumları içinde deneyim yakalamak için cihaz kamerasına ve medya kitaplığına erişim gerektiren artırılmış gerçeklik özellikleri bağlamında, temel uygulama işlevselliğini desteklemek için kullanılır.",
+    "part1s6Title": "6. Sağlık ve Fitness Bilgileri",
+    "part1s6P1": "Uygulama, sağlıkla ilgili bilgileri ve fitness ile ilgili bilgileri toplar. Her iki kategori de gereklidir ve yalnızca temel uygulama işlevselliğini desteklemek için kullanılır. Bu veri üçüncü taraflarla paylaşılmaz.",
+    "part1s6P2": "Sağlık bilgileri, Seekprotocol'ün daha geniş oyunlaştırılmış etkileşim modelinin bir parçası olarak kullanıcının genel fiziksel durumuna yanıt veren özellikleri destekleyerek, Uygulamanın sağlık bağlamını deneyimlerine ilgili olduğunda entegre etmesini sağlar.",
+    "part1s6P3": "Fitness bilgileri, Uygulamanın zorluk ve ödül sistemleriyle birlikte kullanılır. Uygulama, yürüme, koşma veya bisiklet sürme gibi fiziksel etkinlikleri doğrudan cihazının sensörleri aracılığıyla algılamak ve izlemek için Android ACTIVITY_RECOGNITION iznini talep eder. Bu izin, Seekprotocol'ün oyunlaştırılmış deneyiminin bir parçası olarak gerçek dünya fiziksel etkinliğini tanımak üzere tasarlanmış Uygulamanın zorluk ve ödül özelliklerini güçlendirir. Uygulama; hareket kalıplarını algılayarak uygulama içi olayları tetikleyebilir, zorluk tamamlamalarını doğrulayabilir ve gerçek dünyadaki fiziksel etkileşime bağlı ödülleri atayabilir. Etkinlik tanıma verisi reklam amacıyla kullanılmaz ve üçüncü taraflarla paylaşılmaz. Bu izin, cihazının uygulama ayarları aracılığıyla her an iptal edilebilir; ancak bunu yapmak, ona bağlı etkinlik tabanlı zorlukları ve ödülleri devre dışı bırakır.",
+    "part1s7Title": "7. Uygulama Performans ve Tanılama Verileri",
+    "part1s7P1": "Uygulama, kendi performansıyla ilgili teknik verileri toplar. Bu; çökme günlüklerini, tanılama bilgilerini ve diğer uygulama performans metriklerini içerir.",
+    "part1s7P2": "Çökme günlükleri gereklidir ve temel uygulama işlevselliğini desteklemek için otomatik olarak toplanır: özellikle, kullanıcı deneyimini etkileyen teknik hataları belirlemek, tanılamak ve çözmek için.",
+    "part1s7P3": "Tanılama bilgileri ve diğer uygulama performans verileri isteğe bağlıdır ve yalnızca kullanıcılar izin vermeyi seçtiğinde toplanır. Toplandığında, bu veri yalnızca Uygulamanın kararlılığını ve tepki hızını zaman içinde izlemek, sürdürmek ve iyileştirmek için kullanılır.",
+    "part1s8Title": "8. Dosyalar ve Belgeler",
+    "part1s8P1": "Uygulama isteğe bağlı olarak cihazından erişilebilen dosyaları ve belgeleri toplayabilir. Bu toplama kullanıcı kontrolündedir ve yalnızca Uygulama ile doğrudan etkileşiminin dosyalar veya belgeler içerdiği bağlamlarda tetiklenir. Toplandığında, bu veri yalnızca temel uygulama işlevselliğini desteklemek için kullanılır ve üçüncü taraflarla paylaşılmaz.",
+    "part1s9Title": "9. Cihaz Tanımlayıcıları ve Diğer Kimlikler",
+    "part1s9P1": "Uygulama, cihaz tanımlayıcıları ve benzer teknik tanımlayıcıları toplar. Bu veri gereklidir ve devre dışı bırakılamaz. Cihaz tanımlayıcıları hem toplanır hem paylaşılır ve geçici olarak işlenir; yani gerçek zamanlı oturum işleme için kullanılır ve anlık amacın ötesinde kalıcı olarak depolanmaz.",
+    "part1s9P2": "Cihaz tanımlayıcıları; cihaz düzeyinde tanımaya bağlı temel uygulama işlevselliğini desteklemek ve güvenlik ile dolandırıcılık önleme önlemlerini uygulamak amacıyla toplanır. Aynı veri, uygulama işlevselliği ve güvenlik ile dolandırıcılık önleme amacıyla üçüncü taraflarla paylaşılır.",
+    "part2Title": "Bölüm II: Üçüncü Taraf Erişimi ve Veri Paylaşımı",
+    "part2P1": "Yalnızca toplu, anonimleştirilmiş veriler, Hizmet Sağlayıcının Uygulamayı ve hizmetlerini iyileştirmesine yardımcı olmak için periyodik olarak harici hizmetlere iletilir. Hizmet Sağlayıcı, bilgilerini bu bölümde açıklanan şekillerde üçüncü taraflarla paylaşabilir.",
+    "part2P2": "Uygulama, örneğin bir mahkeme çağrısı veya benzer yasal süreç yanıt olarak, yasa gereği zorunlu olduğunda veya Hizmet Sağlayıcı iyi niyetle ifşanın haklarını korumak, güvenliğini veya başkalarının güvenliğini korumak, dolandırıcılığı araştırmak veya bir hükümet talebine yanıt vermek için gerekli olduğuna inandığında hem kullanıcı tarafından sağlanan hem de otomatik olarak toplanan bilgileri ifşa edebilir. Bilgiler, Hizmet Sağlayıcı adına çalışan, kendilerine ifşa edilen bilgileri bağımsız olarak kullanmayan ve bu Gizlilik Politikasında belirlenen kurallara uymayı kabul eden güvenilir hizmet sağlayıcılarla da paylaşılabilir.",
+    "part2P3": "Uygulama aşağıdaki üçüncü taraf hizmetleri entegre eder; her biri kendi gizlilik politikası kapsamında çalışır. Kullanıcıların, her sağlayıcının Uygulamadan aldığı verileri nasıl ele aldığını anlamak için o politikaları doğrudan incelemeleri önerilir:",
+    "part3Title": "Bölüm III: Vazgeçme Hakları",
+    "part3P1": "Uygulamayı kaldırarak, Uygulama tarafından tüm bilgi toplanmasını her an durdurabilirsin. Mobil cihazında veya ilgili mobil uygulama pazarında bulunan standart kaldırma süreçlerini kullanabilirsin.",
+    "part3P2": "İsteğe bağlı veri türleri, özellikle tanılama bilgileri, diğer uygulama performans verileri ile dosyalar ve belgeler için toplama, tam bir kaldırma gerektirmeden Uygulamanın ayarları içinde kontrol edilebilir.",
+    "part3P3": "Android'deki ACTIVITY_RECOGNITION izni, cihazının uygulama izinleri ayarları aracılığıyla her an iptal edilebilir. Bu iznin iptal edilmesi, etkinlik tabanlı zorlukları ve ödülleri devre dışı bırakır ancak Uygulamayı kullanmanı başka türlü etkilemez.",
+    "part4Title": "Bölüm IV: Veri Saklama",
+    "part4P1": "Hizmet Sağlayıcı, kullanıcı tarafından sağlanan verileri Uygulamayı kullandığın süre boyunca ve sonrasında meşru operasyonel, yasal veya idari ihtiyaçları karşılamak için makul bir süre saklar. Geçici olarak işlenen veriler, özellikle SMS/MMS verileri ve cihaz tanımlayıcıları, toplandığı anlık amacın ötesinde saklanmaz ve her ilgili işleme oturumunun sonunda atılır.",
+    "part4P2": "Hizmet Sağlayıcının, Uygulama aracılığıyla gönderdiğin kullanıcı tarafından sağlanan verileri silmesini istiyorsan, lütfen onlarla <email>support@seekprotocol.ai</email> adresinden iletişime geç. Hizmet Sağlayıcı, makul bir süre içinde yanıt verecektir.",
+    "part5Title": "Bölüm V: Çocuklar",
+    "part5P1": "Hizmet Sağlayıcı, 13 yaş altı çocuklardan bilerek veri toplamak veya onlara pazarlama yapmak için Uygulamayı kullanmaz. Uygulama, 13 yaş altındakilere yönelik değildir ve Hizmet Sağlayıcı, o yaş grubundaki çocuklardan bilerek kişisel olarak tanımlayıcı bilgi toplamaz. Hizmet Sağlayıcı, 13 yaş altı bir çocuğun kişisel bilgi sağladığını keşfederse, bilgi sunucularından derhal silinir. Ebeveyn veya vasi iseniz ve çocuğunuzun Uygulamaya kişisel bilgi sağladığını düşünüyorsanız, gerekli düzeltici işlemi yapabilmeleri için lütfen Hizmet Sağlayıcı ile <email>support@seekprotocol.ai</email> adresinden iletişime geçin.",
+    "part6Title": "Bölüm VI: Güvenlik",
+    "part6P1": "Hizmet Sağlayıcı, bilgilerinin gizliliğini ve bütünlüğünü korumaya kararlıdır. Uygulama tarafından toplanan tüm veriler iletim sırasında şifrelenir. Hizmet Sağlayıcının işlediği ve sakladığı bilgileri korumak için fiziksel, elektronik ve prosedürel önlemler sürdürülür. Verilerin üçüncü taraf hizmet sağlayıcılara iletildiği durumlarda, Hizmet Sağlayıcı bu paylaşımın sınırlı, amaca bağlı ve uygun veri işleme anlaşmalarına tabi olmasını sağlamak için makul çaba gösterir.",
+    "part7Title": "Bölüm VII: Veri Silme Talepleri",
+    "part7P1": "Hesaplarının ve ilişkili tüm verilerin silinmesini talep etmek isteyen kullanıcılar, Seekprotocol web sitesi aracılığıyla bir talep gönderebilir:",
+    "part7P2": "Alternatif olarak, silme talepleri Hizmet Sağlayıcıya doğrudan <email>support@seekprotocol.ai</email> adresinden iletişime geçilerek gönderilebilir. Hizmet Sağlayıcı, tüm silme taleplerini makul bir süre içinde işleyecektir.",
+    "part8Title": "Bölüm VIII: Bu Politikadaki Değişiklikler",
+    "part8P1": "Bu Gizlilik Politikası herhangi bir nedenle zaman zaman güncellenebilir. Hizmet Sağlayıcı, bu sayfayı yeni Gizlilik Politikasıyla güncelleyerek ve belgenin başında gösterilen yürürlük tarihini revize ederek herhangi bir değişikliği bildirecektir. Değişiklikler önemli olduğunda, Hizmet Sağlayıcı kullanıcıları Uygulama aracılığıyla da bilgilendirebilir. Bu Gizlilik Politikasını düzenli olarak incelemen tavsiye edilir. Herhangi bir değişikliğin yayınlanmasının ardından Uygulamayı kullanmaya devam etmen, bu değişiklikleri kabul ettiğin anlamına gelir.",
+    "consentTitle": "Onayın",
+    "consentP1": "Uygulamayı kullanarak, bilgilerinin bu Gizlilik Politikasında açıklandığı şekilde, şu anda mevcut olduğu ve gelecekte Hizmet Sağlayıcı tarafından değiştirilebileceği gibi toplanmasını, kullanılmasını ve paylaşılmasını onaylamış olursun.",
+    "contactTitle": "İletişim",
+    "contactP1": "Uygulamayı kullanırken gizliliğinle ilgili herhangi bir sorun varsa veya bu politikada açıklanan veri uygulamaları hakkında sorunuz varsa, lütfen Hizmet Sağlayıcı ile iletişime geç:",
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6. kat\nMeydan Yolu, Nad AlSheba\nDubai, Birleşik Arap Emirlikleri",
+    "metaTitle": "Gizlilik Politikası",
+    "metaDescription": "Seekprotocol'ün konum verilerini, sensör okumalarını ve cüzdan ayrıntılarını nasıl ele aldığı: nelerin toplandığı, ne kadar süre saklandığı ve neyin asla paylaşılmadığı.",
+    "ogTitle": "Seekprotocol'de Gizlilik"
+  },
+  "termsPage": {
+    "title": "Şartlar ve Koşullar",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Yürürlük: 12 Ağustos 2025",
+    "p1": "Bu şartlar ve koşullar, Block Protocol LLC (bundan böyle \"Hizmet Sağlayıcı\" olarak anılacaktır) tarafından Ücretsiz bir hizmet olarak oluşturulan mobil cihazlar için Seekprotocol uygulaması (bundan böyle \"Uygulama\" olarak anılacaktır) için geçerlidir.",
+    "p2": "Uygulamayı indirdiğinde veya kullandığında, aşağıdaki şartları otomatik olarak kabul etmiş olursun. Uygulamayı kullanmadan önce bu şartları dikkatlice okuman ve anlaman şiddetle tavsiye edilir. Uygulamanın, Uygulamanın herhangi bir bölümünün veya markalarımızın yetkisiz kopyalanması, değiştirilmesi kesinlikle yasaktır. Uygulamanın kaynak kodunu çıkarma, Uygulamayı başka dillere çevirme veya türev sürümler oluşturma girişimlerine izin verilmez. Uygulamayla ilgili tüm ticari markalar, telif hakları, veri tabanı hakları ve diğer fikri mülkiyet hakları Hizmet Sağlayıcının mülkiyetinde kalır.",
+    "p3": "Hizmet Sağlayıcı, Uygulamanın mümkün olduğunca faydalı ve verimli olmasını sağlamaya adanmıştır. Bu nedenle, herhangi bir zamanda ve herhangi bir nedenle Uygulamayı değiştirme veya hizmetlerinden ücret alma hakkını saklı tutar. Hizmet Sağlayıcı, Uygulama veya hizmetleri için herhangi bir ücretin sana açıkça bildirileceğini garanti eder.",
+    "p4": "Uygulama, Hizmeti sağlamak için Hizmet Sağlayıcıya verdiğin kişisel verileri depolar ve işler. Telefonunun güvenliğini ve Uygulamaya erişimi sürdürmek senin sorumluluğundadır. Hizmet Sağlayıcı, cihazının resmi işletim sistemi tarafından uygulanan yazılım kısıtlamalarını ve sınırlamalarını kaldırmayı içeren telefonunun jailbreak veya root yapılmasına kesinlikle karşı tavsiyede bulunur. Bu tür eylemler telefonunu kötü amaçlı yazılım, virüs, zararlı programlara maruz bırakabilir, telefonunun güvenlik özelliklerini tehlikeye atabilir ve Uygulamanın düzgün çalışmamasına veya hiç çalışmamasına neden olabilir.",
+    "thirdPartyIntro": "Uygulamanın kendi Şartlar ve Koşullarına sahip üçüncü taraf hizmetleri kullandığını lütfen unutma. Aşağıda, Uygulama tarafından kullanılan üçüncü taraf hizmet sağlayıcıların Şartlar ve Koşullarına bağlantılar yer almaktadır:",
+    "p6": "Hizmet Sağlayıcının bazı hususlar için sorumluluk üstlenmediğini lütfen bil. Uygulamanın bazı işlevleri, Wi-Fi veya mobil ağ sağlayıcın tarafından sağlanabilen aktif bir internet bağlantısı gerektirir. Uygulamanın Wi-Fi erişimi eksikliği veya veri kotanı tükettiğin için tam kapasite çalışmaması durumunda Hizmet Sağlayıcı sorumlu tutulamaz.",
+    "p7": "Uygulamayı Wi-Fi alanının dışında kullanıyorsan, mobil ağ sağlayıcının anlaşma şartlarının hâlâ geçerli olduğunu lütfen bil. Sonuç olarak, uygulamaya bağlantı sırasında veri kullanımı için mobil sağlayıcından veya diğer üçüncü taraf ücretlerden ücretlendirilebilirsin. Uygulamayı kullanarak, uygulamayı ana bölgen (yani bölge veya ülke) dışında veri dolaşımını devre dışı bırakmadan kullanırsan dolaşım veri ücretleri dahil bu tür ücretlerin sorumluluğunu kabul edersin. Uygulamayı kullandığın cihazın fatura ödeyicisi değilsen, fatura ödeyiciden izin aldığını varsayarlar.",
+    "p8": "Benzer şekilde, Hizmet Sağlayıcı uygulamayı kullanışın için her zaman sorumluluk üstlenemez. Örneğin, cihazının şarjlı kalmasını sağlamak senin sorumluluğundur. Cihazının pili biterse ve Hizmete erişemezsen, Hizmet Sağlayıcı sorumlu tutulamaz.",
+    "p9": "Hizmet Sağlayıcının uygulamayı kullanışın için sorumluluğu açısından, her zaman güncel ve doğru olmasını sağlamaya çalışsalar da, sana sunabilmek için bilgi sağlamak üzere üçüncü taraflara güvendiklerini not etmek önemlidir. Hizmet Sağlayıcı, uygulamanın bu işlevine tamamen güvenmen sonucunda yaşadığın doğrudan veya dolaylı herhangi bir kayıp için sorumluluk kabul etmez.",
+    "p10": "Hizmet Sağlayıcı, bir noktada uygulamayı güncellemek isteyebilir. Uygulama şu anda işletim sistemi (ve uygulamanın kullanılabilirliğini genişletmeye karar verdikleri ek sistemler) gereksinimlerine göre mevcuttur; değişebilir ve uygulamayı kullanmaya devam etmek istiyorsan güncellemeleri indirmen gerekecektir. Hizmet Sağlayıcı, uygulamayı seninle ilgili olacak ve/veya cihazına yüklü belirli işletim sistemi sürümüyle uyumlu olacak şekilde her zaman güncelleyeceğini garanti etmez. Ancak, uygulamaya güncellemeler sunulduğunda bunları her zaman kabul etmeyi kabul edersin. Hizmet Sağlayıcı ayrıca uygulamayı sağlamayı bırakmak isteyebilir ve sana fesih bildirimi yapmadan istediği zaman kullanımını sonlandırabilir. Aksini bildirmedikçe, herhangi bir fesih üzerine, (a) bu şartlarda sana verilen haklar ve lisanslar sona erecektir; (b) uygulamayı kullanmayı bırakmalı ve (gerekirse) cihazından silmelisin.",
+    "changesTitle": "Bu Şartlar ve Koşullardaki Değişiklikler",
+    "changesP1": "Hizmet Sağlayıcı, Şartlar ve Koşullarını periyodik olarak güncelleyebilir. Bu nedenle, herhangi bir değişiklik için bu sayfayı düzenli olarak incelemen tavsiye edilir. Hizmet Sağlayıcı, yeni Şartlar ve Koşulları bu sayfada yayınlayarak sana herhangi bir değişikliği bildirecektir.",
+    "contactTitle": "Bize Ulaş",
+    "contactP1": "Şartlar ve Koşullar hakkında herhangi bir soru veya öneriniz varsa, lütfen Hizmet Sağlayıcı ile <email>support@seekprotocol.ai</email> adresinden iletişime geçmekten çekinmeyin.",
+    "metaTitle": "Şartlar ve Koşullar",
+    "metaDescription": "Seekprotocol'ü ve Seekprotocol platformunu kullanma şartları: hakların, varlıkları talep etme kuralları ve ücretli öğelerin nasıl çalıştığı.",
+    "ogTitle": "Seekprotocol şartları"
+  },
+  "languageSwitcher": {
+    "en": "English",
+    "nl": "Nederlands",
+    "de": "Deutsch",
+    "es": "Español",
+    "fr": "Français",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "tr": "Türkçe"
+  },
+  "globe": {
+    "liveLabel": "Canlı arayıcılar",
+    "panelTitle": "Arayıcılar şu anda topluyor",
+    "panelDesc": "Her iğne gerçek bir şehirdir. Drop'lar sabit koordinatlara düşer ve yalnızca biri gerçekten orada durduğunda açılır.",
+    "todayLabel": "Bugün toplanan",
+    "waiting": "Bir sonraki alım bekleniyor…",
+    "dragHint": "Döndürmek için sürükle",
+    "xpLabel": "Kazanılan XP",
+    "clickHint": "Alımı görmek için bir coine dokun",
+    "seekerLabel": "Arayıcı",
+    "xpGained": "Kazanılan XP",
+    "coordsLabel": "Koordinatlar",
+    "verified": "Varlık zincir üzerinde doğrulandı",
+    "all": "Hepsi",
+    "yourHaul": "Toplamın",
+    "filterLabel": "Nadirliğe göre filtrele",
+    "waitingRarity": "Henüz {rarity} alım yok",
+    "catchChance": "Yakalama şansı",
+    "close": "Kapat",
+    "secondsAgo": "{seconds}s önce",
+    "zoomIn": "Yakınlaştır",
+    "zoomOut": "Uzaklaştır"
+  },
+  "homeSteps": {
+    "placed": {
+      "title": "Bir şey yerleştirildi",
+      "meta": "Yayıncı · dünyanın herhangi bir yerinde",
+      "body": "Bir marka, bir proje ya da bir etkinlik, bir koordinat kümesine bir varlık iğneler ve talep edilebileceği yarıçapı belirler. Birisi almaya gelene kadar haritada görünür şekilde orada durur."
+    },
+    "arrive": {
+      "title": "Menzile giriyorsun",
+      "meta": "Varsayılan yarıçap 30 m",
+      "body": "Telefonun gerçekten orada olduğunu doğrular: uydu kilidi, çevresel radyo, cihaz doğrulaması ve hareket izin hepsinin uyuşması gerekir. Tek bir sinyali sahtelemek kolaydır; hepsini aynı anda sahtelemek değildir."
+    },
+    "collect": {
+      "title": "Onu topluyorsun",
+      "meta": "Solana'da saniyeden kısa çözümleme",
+      "body": "Kamerayı kaldır, varlığı önündeki sokakta sabitlenmiş şekilde gör ve al. Aktarım zincir üzerinde bir kuruşun küçük bir kesri karşılığında çözümlenir ve o artık senindir."
+    }
+  },
+  "homeStats": {
+    "accuracy": {
+      "label": "Talep hassasiyeti"
+    },
+    "languages": {
+      "label": "Diller"
+    },
+    "stores": {
+      "label": "Yayında olan uygulama mağazaları"
+    }
+  },
+  "worldDescent": {
+    "hint": "Kaydırmaya devam et",
+    "bannerDistance": "84 m uzakta",
+    "orbit": {
+      "label": "Yörünge",
+      "title": "Her drop bir koordinattır",
+      "body": "Varlıklar bir akışa değil, gezegen üzerindeki noktalara yayınlanır. Buradan bakıldığında ağın tamamı bu kadardır: bir şeyin beklediği birkaç bin yer."
+    },
+    "descent": {
+      "label": "İniş",
+      "title": "Onlardan birine doğru düşüyorsun",
+      "body": "O noktalardan herhangi birini seç ve git. Protokol hangisini seçtiğinle değil, sen onu talep ederken orada durduğunla ilgilenir."
+    },
+    "street": {
+      "label": "Sokak seviyesi",
+      "title": "Bu, dört yüz kilometre daha yakın olan aynı harita",
+      "body": "Üzerinden uçtuğun binalar, seninle drop arasındaki binalar. Mesafe tüm mekanizma, bu yüzden harita gerçek olan olmak zorunda."
+    },
+    "hand": {
+      "label": "Elinde",
+      "title": "Ve bir telefona sığıyor",
+      "body": "Hiçbir şey değiştirilmedi. Az önce içinden uçtuğun görüntü, üzerinde kendi kontrolleriyle uygulamanın gerçekten render ettiği şey."
+    }
+  },
+  "appChrome": {
+    "home": "Ana Sayfa",
+    "map": "Harita",
+    "quests": "Görevler",
+    "wallet": "Cüzdan",
+    "backToMap": "‹ Harita",
+    "tapCoin": "Bir coine dokun",
+    "distanceAway": "{metres} m uzakta"
+  },
+  "arSection": {
+    "eyebrow": "Artırılmış gerçeklik",
+    "hint": "Kaydırmaya devam et",
+    "see": {
+      "label": "Kamera bakıyor",
+      "title": "Bir kamera sokak görmez",
+      "body": "Bir ızgara boyunca değişen parlaklık görür. Herhangi bir yere bir şey yerleştirilmeden önce, sahnenin yapısı olan bir şeye dönüştürülmesi gerekir; şu an ise hiç yok.",
+      "readout": "KARE 1/60 · TAKİP YOK"
+    },
+    "track": {
+      "label": "Özellikler çözümleniyor",
+      "title": "Köşeler, dünyanın yapıldığı şeydir",
+      "body": "Parlaklığın aynı anda iki yönde değiştiği noktalar harekete karşı hayatta kalır, bu yüzden motor onları tutar ve geri kalanını atar. Yeterince kareyi yeterli sayıda kare boyunca izle, telefon nasıl hareket ettiğini bilir.",
+      "readout": "TAKİP · 2.412 ÖZELLİK"
+    },
+    "plane": {
+      "label": "Bir düzlem bulundu",
+      "title": "Üzerinde duracak bir şey",
+      "body": "Aynı yüzeyi paylaşan özellikler bir düzlemde gruplanır. Bu, bir drop'un ekranındaki bir resim olmaktan çıkıp oturacak yeri olan bir nesneye dönüştüğü andır.",
+      "readout": "DÜZLEM ALGILANDI · 6.0 × 6.0 M"
+    },
+    "anchor": {
+      "label": "Sabit yerleşiyor",
+      "title": "Telefona değil, dünyaya sabitlenmiş",
+      "body": "Drop, o geometri parçasına ve yayınlandığı koordinata bağlıdır. Etrafında dolaş, olduğu yerde kalır. Aynı yerde duran iki kişi onu aynı noktada görür.",
+      "readout": "SABİT KİLİTLİ · 52.3702 K 4.8952 D"
+    },
+    "persist": {
+      "label": "Kalıcı olur",
+      "title": "Yarın da orada",
+      "body": "Sabit, oturum yerine konuma göre saklanır, bu yüzden uygulamayı kapatmak onu yerinden oynatmaz. Bu kalıcılık, bir AR oyuncağını bir AR protokolünden ayıran şeydir.",
+      "readout": "SABİT KALICI · OTURUMDAN BAĞIMSIZ"
+    }
+  },
+  "mobiSection": {
+    "title": "Senin gördüğünü görebilen rehber",
+    "lead": "Sesli sor ve Mobi sokağı kameradan okur: dönüm noktaları, açılış saatleri, drop'un hangi tarafta olduğu. Yapabildiği her yerde cihaz üzerinde çalışır ve nerede olduğunun izini asla saklamaz.",
+    "tapHint": "Mobi'ye dokun",
+    "tapAgain": "{label} · tekrar dokun",
+    "tapAria": "Mobi {state}. Devam etmek için dokun.",
+    "points": [
+      "Sesli giriş, sesli çıkış; yürürken eller serbest",
+      "Canlı kameradan dönüm noktalarını ve tabelaları okur",
+      "Nasıl ve nerede oynadığına uyum sağlayan görevler"
+    ],
+    "listening": {
+      "label": "Dinliyor",
+      "line": "Buralarda yürümeye değecek ne var?"
+    },
+    "thinking": {
+      "label": "Sokağı okuyor",
+      "line": "Kameranın gördüğünü yakındaki spawn'larla eşleştiriyor…"
+    },
+    "answering": {
+      "label": "Yanıtlıyor",
+      "line": "İki sokak yukarıda, pazarın arkasında bir legendary var. Senin hızında altı dakika ve altıda kapanıyor."
+    },
+    "idle": {
+      "label": "Boşta",
+      "line": "Bekliyor. Hiçbir şey kaydedilmiyor."
+    }
+  },
+  "socialSection": {
+    "eyebrow": "Birlikte",
+    "title": "Bunun yarısı, birlikte gittiğin kişidir",
+    "lead": "Klanlar herkesin topladığını bir havuzda toplar. Sohbet uçtan uca şifrelidir; bir konuşmanın kendinden uzun yaşamaması gerektiğinde kaybolan mesajlarla. Birini getirmek, bulduklarından pay kazandırır.",
+    "points": [
+      "Doğrudan ve klan mesajları, uçtan uca şifreli",
+      "Arkadaşlar arasında paylaşılan güçlendirmeler ve ipuçları",
+      "Onlar oynarken sana kazandıran davet ödülleri"
+    ],
+    "online": "{count} çevrimiçi",
+    "encrypted": "Şifreli",
+    "composer": "Mesaj",
+    "disappearing": "Kaybolan mesajlar",
+    "yourCode": "Kodun",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı",
+    "spot": {
+      "text": "Az önce pazarın yanında bir legendary spawn oldu. Tramvay durağından iki sokak ötede."
+    },
+    "coming": {
+      "text": "Yoldayım. Elinde magnet kalmış olan var mı?"
+    },
+    "sent": {
+      "text": "Sana iki tane gönderdim. Diamond hands'i sızıntı için sakla."
+    },
+    "missed": {
+      "text": "Halka doluydu yine de kaçtı. İki deneme kaldı."
+    },
+    "invited": {
+      "label": "Davetli"
+    },
+    "active": {
+      "label": "Aktif"
+    },
+    "share": {
+      "label": "Payın"
+    }
+  },
+  "videoReveal": {
+    "mute": "Filmi sessize al",
+    "unmute": "Filmi sesli oynat"
+  },
+  "featureGroups": {
+    "eyebrow": "İçinde neler var",
+    "title": "Üzerinde coinler olan bir haritadan fazlası",
+    "tablist": "Özellik grupları",
+    "hunt": {
+      "label": "Av",
+      "items": [
+        {
+          "title": "Gerçek koordinatlarda spawn'lar",
+          "body": "Drop'lar etrafındaki sabit noktalarda ortaya çıkar ve biri onları talep edene kadar orada kalır. Birini işaretle, uygulama yürüdükçe mesafeyi geri sayar."
+        },
+        {
+          "title": "Kalıcı AR yakalamalar",
+          "body": "Coin önündeki zemine sabitlenir ve oturumlar arasında sabit kalır; böylece ona gelen herkes için aynı noktada olur."
+        },
+        {
+          "title": "Güçlendirmeler ve zamanlama",
+          "body": "Magnet, double ve freeze bir yakalamada birikir. Bir zamanlama çubuğu drop'un ne kadarını tuttuğuna karar verir, çünkü kötü yakalanmış bir legendary hâlâ kötü yakalanmış bir legendary'dir."
+        },
+        {
+          "title": "Bir anlam ifade eden nadirlik",
+          "body": "Common'dan legendary'e, nadirlik sen ona yaklaşmadan önce haritadaki halka rengini belirler."
+        }
+      ]
+    },
+    "progress": {
+      "label": "İlerleme",
+      "items": [
+        {
+          "title": "Yürüyerek kazanılan on rütbe",
+          "body": "Seeker'dan Legend'a. Rütbe, harcadığından değil, kat edilen mesafeden ve ziyaret edilen yerlerden gelir."
+        },
+        {
+          "title": "Altmış bir rozet",
+          "body": "Diamond Hands'ten On-Chain Detective'e, her biri kendi açılma koşuluyla eksiksiz bir koleksiyon seti."
+        },
+        {
+          "title": "Game Center ve Play Games",
+          "body": "Başarılar zaten kullandığın platformla senkronize olur, böylece seriler ve dönüm noktaları diğer oyunlarınla birlikte durur."
+        },
+        {
+          "title": "Seriler ve günlük görevler",
+          "body": "Nerede olduğuna ve nasıl oynadığına uyum sağlayan görevler; seri devam ettikçe ödül de ölçeklenir."
+        }
+      ]
+    },
+    "together": {
+      "label": "Birlikte",
+      "items": [
+        {
+          "title": "Klanlar",
+          "body": "Birine katıl ya da kur, katkıları havuzda topla ve klan tablosunda tırman. Amblemler, rütbeler ve paylaşılan ödül havuzları dahil."
+        },
+        {
+          "title": "Şifreli sohbet",
+          "body": "Doğrudan ve klan mesajları, uçtan uca şifreli; bir konuşmanın kendinden uzun yaşamaması gerektiğinde kaybolan mesajlarla."
+        },
+        {
+          "title": "Liderlik tabloları",
+          "body": "Küresel, ulusal ve klan düzeyinde; ilk üç için madalyalar ve insanlar yürüdükçe güncellenen bir tablo."
+        },
+        {
+          "title": "Davetler",
+          "body": "İnsanları getir ve topladıklarından pay kazan. Kodun ekranın ilk şeyidir, çünkü asıl aradığın odur."
+        }
+      ]
+    },
+    "own": {
+      "label": "Sahiplen",
+      "items": [
+        {
+          "title": "Seed ifadesi olmayan bir cüzdan",
+          "body": "Bir sosyal girişten oluşturulur; böylece kurmadan bir dakika içinde toplayabilirsin. Sahipliği istediğinde anahtarı dışa aktar."
+        },
+        {
+          "title": "Seekprotocol Pass",
+          "body": "Normal oyunun yanında ilerleyen bir sezon ödül parkuru; ücretsiz ve ücretli katmanı vardır."
+        },
+        {
+          "title": "Mağaza",
+          "body": "Güçlendirmeler, kozmetikler ve avatar parçaları; yalnızca satın alabileceğinle değil, topladığınla da fiyatlandırılır."
+        },
+        {
+          "title": "3B avatarlar",
+          "body": "Kırpılmış bir profil fotoğrafı değil; animasyonlar ve emotelerle tam Decentraland uyumlu avatarlar."
+        }
+      ]
+    }
+  },
+  "progression": {
+    "eyebrow": "İlerleme",
+    "title": "On rütbe, altmış bir rozet ve ikisini de satın alma yolu yok",
+    "lead": "Rütbe kat edilen mesafeden ve ziyaret edilen yerlerden gelir. Bu duvardaki her şey dışarı çıkarak kazanılır.",
+    "badgeAlt": "{name} rütbe rozeti",
+    "rankOf": "Rütbe {tier} / {total}",
+    "rankTablist": "Rütbe kademeleri",
+    "badgesTitle": "Toplanabilir rozetler",
+    "badgesShown": "{total} rozetten {shown} tanesi gösteriliyor",
+    "achievementsTitle": "Başarılar"
+  },
+  "ranks": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "scout": {
+      "name": "Scout"
+    },
+    "tracker": {
+      "name": "Tracker"
+    },
+    "hunter": {
+      "name": "Hunter"
+    },
+    "pathfinder": {
+      "name": "Pathfinder"
+    },
+    "ranger": {
+      "name": "Ranger"
+    },
+    "sentinel": {
+      "name": "Sentinel"
+    },
+    "apex": {
+      "name": "Apex"
+    },
+    "mythic": {
+      "name": "Mythic"
+    },
+    "legend": {
+      "name": "Legend"
+    }
+  },
+  "badges": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "web3Wizard": {
+      "name": "Web3 Wizard"
+    },
+    "whale": {
+      "name": "Whale"
+    },
+    "bull": {
+      "name": "Bull"
+    },
+    "detective": {
+      "name": "On-Chain Detective"
+    },
+    "samurai": {
+      "name": "Degen Samurai"
+    },
+    "liquidityKing": {
+      "name": "Liquidity King"
+    }
+  },
+  "achievements": {
+    "firstCatch": {
+      "name": "İlk yakalama",
+      "detail": "İlk drop'unu topla"
+    },
+    "explorer": {
+      "name": "Kaşif",
+      "detail": "50 farklı yerde topla"
+    },
+    "legendary": {
+      "name": "Legendary",
+      "detail": "Bir legendary spawn yakala"
+    },
+    "rareHunter": {
+      "name": "Nadir avcısı",
+      "detail": "250 nadir yakalama"
+    },
+    "streak": {
+      "name": "Otuz günlük seri",
+      "detail": "Ard arda 30 gün oyna"
+    },
+    "clanFounder": {
+      "name": "Klan kurucusu",
+      "detail": "Kendi klanını kur"
+    }
+  },
+  "clans": {
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "laserEyes": {
+      "name": "Laser Eyes"
+    },
+    "megaWhales": {
+      "name": "Mega Whales"
+    },
+    "moonSquad": {
+      "name": "Moon Squad"
+    },
+    "alphaWolves": {
+      "name": "Alpha Wolves"
+    },
+    "yieldFarmers": {
+      "name": "Yield Farmers"
+    },
+    "anonCabal": {
+      "name": "Anon Cabal"
+    },
+    "bullRunners": {
+      "name": "Bull Runners"
+    }
+  },
+  "clansSection": {
+    "eyebrow": "Klanlar",
+    "title": "Bir şehri kimse tek başına kapsayamaz",
+    "lead": "Bir klan kur ya da birine katıl, herkesin topladığını havuzda topla ve birlikte tabloda tırman. Sohbet uçtan uca şifrelidir; bir konuşmanın kendinden uzun yaşamaması gerektiğinde mesajlar kaybolacak şekilde ayarlanabilir.",
+    "statClans": "Kurucu klanlar",
+    "statChat": "Şifreli sohbet",
+    "statRanks": "Klan rütbeleri",
+    "tableTitle": "Klan tablosu",
+    "thisSeason": "Bu sezon",
+    "rankAlt": "Rütbe {rank}"
+  },
+  "rarity": {
+    "common": "Common",
+    "uncommon": "Uncommon",
+    "rare": "Rare",
+    "epic": "Epic",
+    "legendary": "Legendary"
+  },
+  "powerups": {
+    "coin_magnet": {
+      "label": "Coin magnet",
+      "effect": "Yakındaki drop'ları menzile çeker"
+    },
+    "diamond_hands": {
+      "label": "Diamond hands",
+      "effect": "Kazandığın şarjı korur"
+    },
+    "pump_it": {
+      "label": "Pump it",
+      "effect": "Her dokunuş iki kez sayılır"
+    },
+    "to_the_moon": {
+      "label": "To the moon",
+      "effect": "Yakalama şansını bir kademe yükseltir"
+    },
+    "whale": {
+      "label": "Whale",
+      "effect": "Bir yakalamadaki birim sayısını iki katına çıkarır"
+    },
+    "this_is_fine": {
+      "label": "This is fine",
+      "effect": "Bir başarısız denemeyi atlatır"
+    }
+  },
+  "collectiblesSection": {
+    "eyebrow": "Koleksiyonlar",
+    "title": "Orada olan coinler bunlar",
+    "lead": "Nadirlik bir spawn'ın ne sıklıkta çıktığını ve onu tutma olasılığını belirler. Yakalanan bir birim bir oyun birimidir. Gerçek tokenlerde ne ödediği piyasanın işidir.",
+    "filterLabel": "Nadirliğe göre filtrele",
+    "all": "Hepsi",
+    "catchChance": "Yakalama şansı",
+    "overThree": "3 deneme üzerinden",
+    "perUnit": "Birim başına",
+    "powerupsTitle": "Turu değiştiren güçlendirmeler"
+  },
+  "offers": {
+    "railLabel": "Drop biçimleri",
+    "redeemLabel": "Nasıl kullanılır",
+    "proofLabel": "Onu geçerli kılan",
+    "voucher": {
+      "label": "İndirim kuponu",
+      "headline": "İndirim, onu veren kapıda",
+      "face": "%25 indirim",
+      "fine": "Kişi başı bir · 14 gün geçerli · Sadece mağazada",
+      "redeem": "Kod kasada gösterilir ve kullanılmış olarak işaretlenir. İletilemez, çünkü yarıçapın içinde duran cihaza verilmiştir.",
+      "proof": "Talep, alındığı koordinatla birlikte zincir üzerindedir; böylece bir kullanım bir ekran görüntüsüne değil gerçek bir varışa karşı kontrol edilebilir.",
+      "placedBy": "Perakende ve konaklama"
+    },
+    "asset": {
+      "label": "Gerçek dünya varlığı",
+      "headline": "Fiziksel bir şey, bir yerde bekliyor",
+      "face": "Bir çift spor ayakkabı",
+      "fine": "250'de 1 · Mağazadan alınır · Stok bitince biter",
+      "redeem": "Sahibi öğenin kendisini alır. Token, üzerindeki taleptir ve teslim anında yakılır, böylece aynı çift iki kez toplanamaz.",
+      "proof": "Stok sınırlıdır ve talep bir aramadır değil bir kilittir; bu yüzden sonuncusuna uzanan iki kişiye ikisine birden aldıkları söylenemez.",
+      "placedBy": "Verecek bir şeyi olan markalar"
+    },
+    "access": {
+      "label": "Erişim bileti",
+      "headline": "Bilet, mekanda olmaktır",
+      "face": "Kapı B · 19:00",
+      "fine": "Devredilemez · Etkinlik sonunda biter",
+      "redeem": "Herhangi bir bilet gibi kapıda taranır. Fark, yalnızca yerinde elde edilebilmesidir; onu verilmeye değer kılan da budur.",
+      "proof": "Yüksek değerli drop'lar sıkı bir güven eşiği belirler, böylece serbest bırakılmadan önce radyo çevresinin konumla uyuşması gerekir.",
+      "placedBy": "Etkinlikler, mekanlar ve festivaller"
+    },
+    "token": {
+      "label": "Token drop",
+      "headline": "Farm etmesi bir bedele mal olan dağıtım",
+      "face": "40 $SEEK",
+      "fine": "Cihaz başına bir talep · Solana'da çözümlenir",
+      "redeem": "Uygulamanın senin için yaptığı cüzdana düşer ve tutmak, taşımak ya da satmak senindir. Kullanılacak bir şey yok, soracak kimse yok.",
+      "proof": "Bir cüzdan oluşturmak ücretsizdir, bir yürüyüş değildir. Coğrafya, bir hava dağıtımının ucuza farm edilemeyeceği filtredir.",
+      "placedBy": "Token projeleri ve toplulukları"
+    },
+    "collectible": {
+      "label": "Koleksiyon",
+      "headline": "Yalnızca yerleştirildiği yerde var olan bir şey",
+      "face": "Rare",
+      "fine": "500'lük seri · Devredilebilir · Nadirlik yayın anında sabittir",
+      "redeem": "Kullanılacak bir şey yok. Bir yere gitmiş olmanın kaydıdır; bu da birinin bir şeyi saklamak için sahip olduğu en eski nedendir.",
+      "proof": "Her biri alındığı koordinatı taşır, böylece birinin elindeki set, gerçekten nerelerde olduğunun bir haritasıdır.",
+      "placedBy": "Şehirler, turizm ofisleri, sanatçılar"
+    }
+  },
+  "walkthrough": {
+    "eyebrow": "İçinden geç",
+    "title": "İşte tüm döngü",
+    "lead": "Uygulamanın bir videosu değil. Bunlar onun kendi kuralları, burada çalışıyor. Haritadaki bir spawn'a dokun ve oradan başla.",
+    "startOver": "Baştan başla",
+    "map": {
+      "label": "Harita",
+      "title": "Çevrendeki her şey, gerçekten olduğu yerde duruyor",
+      "body": "Spawn'lar sabit koordinatlara oturur ve biri onları talep edene kadar orada kalır. Ne olduğunu ve ne kadar yürümen gerektiğini görmek için birine dokun."
+    },
+    "spawn": {
+      "label": "Spawn",
+      "title": "Nadirlik, neye doğru yürüdüğünü söyler",
+      "body": "Common'dan legendary'e, her birinin kendi yakalama şansı vardır. İki denemen olur ve yeniden deneme ilkinin 0,65 katı değerindedir; bu yüzden ilk dokunuş en çok önem taşır."
+    },
+    "catch": {
+      "label": "Yakalama",
+      "title": "Şarj etmek için dokun ve sinirlerine hakim ol",
+      "body": "Halka sen dokundukça dolar. Her bir iki turda bir şey araya girer: küre donar, şarj sızıntı yapar ya da dokunuşların iki kez sayıldığı bir dalga açılır."
+    },
+    "result": {
+      "label": "Zar",
+      "title": "Şarj şans satın alır, kesinlik satın almaz",
+      "body": "Bir legendary'de dolu halka hâlâ beştir birdedir. Bir legendary'yi değerli kılan da, dokunuşu bir şeye karar vermeyi zorunlu kılan da budur."
+    },
+    "wallet": {
+      "label": "Senin",
+      "title": "Hiç kurmadığın bir cüzdana düşüyor",
+      "body": "Bir sosyal girişten oluşturuluyor, böylece ilk kez oynayan biri bir dakika içinde bir şey topluyor. Sahipliği istediğinde anahtarı dışa aktar."
+    }
+  },
+  "spawnScreen": {
+    "back": "‹ Harita",
+    "distance": "Mesafe",
+    "inRange": "Menzilde",
+    "thisAttempt": "Bu deneme",
+    "attemptsLeft": "Kalan deneme",
+    "attemptsOf": "{total} denemeden {left}",
+    "note": "Halkayı şarj etmek bunu artırır. Sonraki yeniden deneme ilkinin 0,65 katı değerindedir.",
+    "cta": "Yakala"
+  },
+  "catchScreen": {
+    "attempt": "Deneme {attempt} / {total}",
+    "tapAria": "Şarj etmek için dokun",
+    "sealAria": "Gediği mühürle",
+    "ringFull": "Halka dolu, tut",
+    "tapPrompt": "Coine dokun",
+    "mechanic": {
+      "freeze": "Donmuş, eritmek için dokunmaya devam et",
+      "leak": "Sızıntı var, gedikleri mühürle",
+      "surge": "Dalga, her dokunuş iki kez sayılır"
+    }
+  },
+  "resultScreen": {
+    "caught": "Yakalandı",
+    "escaped": "Kaçtı",
+    "ringCharged": "Halka şarj oldu",
+    "chance": "Bu denemedeki şans",
+    "xp": "XP",
+    "gameValue": "Oyun değeri",
+    "noteCaught": "Yakalanan bir birim bir oyun birimidir. Gerçek tokenlerde ne ödediği piyasanın işidir.",
+    "noteRetry": "Bir deneme daha, ilkinin 0,65 katı değerinde.",
+    "noteGone": "O spawn gitti. Bir başkası gelecek.",
+    "openWallet": "Cüzdanı aç",
+    "tryAgain": "Tekrar dene",
+    "backToMap": "Haritaya dön"
+  },
+  "walletScreen": {
+    "totalBalance": "Toplam bakiye",
+    "delta": "+ {amount} bugün",
+    "send": "Gönder",
+    "receive": "Al",
+    "swap": "Takas",
+    "stake": "Stake",
+    "justCaught": "Az önce yakalandı",
+    "assets": "Varlıklar",
+    "recentBadges": "Son rozetler"
+  },
+  "dropKinds": {
+    "airdrop": "Hava dağıtımı",
+    "quest": "Görev ödülü",
+    "partner": "Partner drop",
+    "event": "Etkinlik tokeni",
+    "cache": "Sokak deposu"
+  },
+  "ecosystemPage": {
+    "metaTitle": "Ekosistem: Arayıcılar, Yayıncılar, Protokol",
+    "metaDescription": "Seekprotocol ekosisteminin nasıl birbirine bağlandığı: toplayan arayıcılar, yerleştiren yayıncılar ve varlığı doğrulayıp Solana'da çözümleyen protokol.",
+    "ogTitle": "Üç taraf, bir koordinat",
+    "eyebrow": "Ekosistem",
+    "titleStart": "Üç taraf, bir",
+    "titleAccent": "koordinat",
+    "lead": "Biri bir varlık yerleştirir. Biri ona doğru yürür. Protokol gerçekten orada olduğunu doğrular ve çözümler. Geri kalan her şey bu döngünün üzerine eklenen detaydır.",
+    "networkEyebrow": "Ağ",
+    "networkTitle": "Her iğne gerçek bir yer",
+    "networkLead": "Küreyi sürükle. Koordinatlar gerçek şehir konumlarıdır ve her yay, aralarında hareket eden bir drop'tur.",
+    "capabilitiesEyebrow": "Yetenekler",
+    "capabilitiesTitle": "Protokolün gerçekten sunduğu şeyler",
+    "faqEyebrow": "Sorular",
+    "faqTitle": "Sormaya değer olanlar",
+    "faqLead": "Rahatsız edici cevapları olanlar dahil.",
+    "ctaEyebrow": "Derine in",
+    "ctaTitle": "Teknik açıklama",
+    "ctaBody": "Konum kanıtı, mimari, token tasarımı ve savunduğumuz saldırılar ile kabul ettiğimiz sınırların dosdoğru bir listesi.",
+    "ctaWhitepaper": "Teknik belgeyi oku",
+    "ctaBusiness": "Kendi varlıklarını yerleştir"
+  },
+  "participants": {
+    "seekers": {
+      "label": "Arayıcılar",
+      "tag": "Talep",
+      "title": "Gidip alan insanlar",
+      "body": "Uygulaması olan herkes. Yürürler, şeyler bulurlar ve topladıklarını saklarlar. Önceden kripto bilgisi varsayılmaz: cüzdan bir sosyal girişten oluşturulur ve sahiplik isteyen herkes tarafından sonradan dışa aktarılabilir.",
+      "gets": [
+        "Token, NFT ve partner ödülleri",
+        "Nerede olduklarına uyum sağlayan görevler",
+        "Önce anlamak zorunda olmadıkları bir cüzdan"
+      ]
+    },
+    "publishers": {
+      "label": "Yayıncılar",
+      "tag": "Arz",
+      "title": "Onu oraya kim koyduysa",
+      "body": "Markalar, mekanlar, token projeleri ve etkinlik organizatörleri. Önemsedikleri koordinatlara varlık yerleştirir ve yarıçap, süre ve bölgenin ne kadar tartışmalı olduğuna göre ağırlıklandırılmış olarak yerleştirme başına öderler.",
+      "gets": [
+        "Gösterimler değil, doğrulanmış varışlar",
+        "Farm etmeye direnen coğrafi dağılım",
+        "Entegrasyon işi olmayan bir kampanya kurucusu"
+      ]
+    },
+    "protocol": {
+      "label": "Protokol",
+      "tag": "Çözümleme",
+      "title": "Onları dürüst tutan kısım",
+      "body": "Doğrulama puanlaması, varlık saklama ve çözümleme. Yerleştirmeden ücret alır, çoğunu arayıcılara geri yönlendirir ve nerede neyin talep edildiğinin kaydını tutar.",
+      "gets": [
+        "Gerçek etkinliği izleyen ücretler",
+        "Herkese açık bir talep kaydı",
+        "Zamanla yönetişime geçen parametreler"
+      ]
+    }
+  },
+  "capabilities": {
+    "placement": {
+      "title": "Coğrafi sınırlamalı yerleştirme",
+      "meta": "5 m ile 500 m arası",
+      "body": "Varlıklar, yapılandırılabilir bir talep yarıçapıyla koordinatlara iğnelenir. Bir dükkan girişi dar bir yarıçap kullanır; bir festival alanı geniş bir yarıçap kullanır."
+    },
+    "verification": {
+      "title": "Çoklu sinyal doğrulama",
+      "meta": "4 bağımsız sinyal",
+      "body": "Bir talep kabul edilmeden önce uydu kilidi, çevresel radyo, cihaz doğrulaması ve hareket sürekliliğinin hepsi uyuşmalıdır."
+    },
+    "anchoring": {
+      "title": "AR sabitleme",
+      "meta": "Kalıcı",
+      "body": "Varlıklar oturumlar ve kullanıcılar arasında yerinde kalır. Aynı yerde duran iki kişi aynı şeyi aynı noktada görür."
+    },
+    "companion": {
+      "title": "AI rehber",
+      "meta": "Öncelikle cihaz üzerinde",
+      "body": "Neye baktığını açıklamak ve nereye gitmeni önermek için kamerayı okur; hareket geçmişini hiçbir yere göndermez."
+    },
+    "wallet": {
+      "title": "Sosyal cüzdan",
+      "meta": "Seed ifadesi yok",
+      "body": "Bir sosyal girişten oluşturulur, böylece ilk kez kullanan bir dakika içinde bir şey toplayabilir; istediğinde öz-saklama için dışa aktarma mevcuttur."
+    },
+    "settlement": {
+      "title": "Solana çözümleme",
+      "meta": "Saniyeden kısa",
+      "body": "Küçük bir ödülü almanın ödülden daha fazlaya mal olmayacağı kadar ucuz; zincir seçiminin önemli olmasının tüm nedeni bu."
+    }
+  },
+  "ecosystemFaq": {
+    "spoofing": {
+      "question": "Oraya gitmeden toplamak için konumumu sahte gösterebilir miyim?",
+      "answer": "Ucuza değil. Ham GPS kilidini sahtelemek kolaydır, bu yüzden dört sinyalden yalnızca biridir. Çevresel radyo ortamı, cihaz doğrulaması ve hareket izi hepsinin bunu desteklemesi gerekir ve tekrar başarısız olan bir cihaz daha yüksek bir eşikle karşılaşır. Amaç sahteciliğin ödülden daha fazlaya mal olmasını sağlamaktır, imkansız olduğunu iddia etmek değildir."
+    },
+    "crypto": {
+      "question": "Seekprotocol'ü kullanmak için kripto hakkında bir şey bilmem gerekir mi?",
+      "answer": "Hayır. Cüzdan bir sosyal girişten oluşturulur ve aramaya gitmedikçe bir seed ifadesi asla göremezsin. Daha sonra öz-saklama istiyorsan, anahtarı istediğin an dışa aktarabilirsin."
+    },
+    "tracking": {
+      "question": "Seekprotocol nereye gittiğimi takip ediyor mu?",
+      "answer": "Hayır. Uygulama, arka planda sürekli değil, bir talep denediğinde bir konum ister. Ham sensör verisi o tek talebi puanlamak için kullanılır ve sonra atılır; hareket geçmişin cihazında kalır."
+    },
+    "farming": {
+      "question": "Bir kişinin birçok cüzdanla bir konumu farm etmesini ne engelliyor?",
+      "answer": "Bir yarıçap ve zaman aralığı içindeki cihaz başına talep sınırları, artı emülatör çiftliklerinin geçemediği cihaz doğrulaması. Cüzdanlar ücretsizdir ama seyahat değildir; dağıtımı en başta coğrafyaya sabitlemenin nedeni de budur."
+    },
+    "chain": {
+      "question": "Neden başka bir zincir yerine Solana?",
+      "answer": "İşlem maliyeti. Birkaç sent değerinde bir ödül toplamanın çözümlenmesi bir sentin küçük bir kesrine mal olmak zorunda, aksi halde ekonomi hiç işlemez. Saniyenin altında onay da biri sokak köşesinde beklerken önemlidir."
+    },
+    "business": {
+      "question": "İşletmem bugün varlık yerleştirebilir mi?",
+      "answer": "Yönetilen bir ortaklık aracılığıyla, evet. Bizimle konuşma ihtiyacını ortadan kaldıran self-servis portal geliştirme aşamasında ve yol haritası nerede olduğunu söylüyor."
+    }
+  },
+  "roadmapPage": {
+    "metaTitle": "Yol Haritası: Yayınlananlar ve Sıradakiler",
+    "metaDescription": "Seekprotocol'ün ne yayınladığı ve sıradaki neler; konum kanıtı prototipinden ve halka açık Seekprotocol lansmanından self-servis portala ve yönetişime kadar.",
+    "ogTitle": "Seekprotocol yol haritası",
+    "eyebrow": "Yol Haritası",
+    "titleStart": "Ne inşa edildi ve",
+    "titleAccent": "sıradaki ne",
+    "lead": "{phases} aşama, gerçekten yayınlanana karşı takip ediliyor. {total} dönüm noktasından {shipped} tanesi tamamlandı.",
+    "status": {
+      "done": "Yayınlandı",
+      "active": "Devam ediyor",
+      "next": "Planlanıyor"
+    },
+    "datesTitle": "Bu tarihlerde",
+    "datesNote": "Tarihler taahhütleri değil niyetleri tanımlar. Henüz tamamlandı olarak işaretlenmemiş her şey değişebilir ve sessizce yeniden düzenlemek yerine bunu söylemeyi tercih ederiz.",
+    "legendTitle": "Açıklama",
+    "ctaEyebrow": "Detay",
+    "ctaTitle": "Sıranın arkasındaki mantık",
+    "ctaBody": "Teknik belge, doğrulamanın neden ölçekten önce geldiğini ve yönetişimin neden en sonda geldiğini açıklar.",
+    "ctaWhitepaper": "Teknik belgeyi oku"
+  },
+  "roadmapPhases": {
+    "foundation": {
+      "title": "Temel",
+      "summary": "Temel fikrin hiç işe yarayıp yaramadığını kanıtlamak: bir telefon, birinin bir yerde olduğunu değerli bir şey serbest bırakacak kadar güvenilir şekilde onaylayabilir mi?",
+      "groups": {},
+      "items": {
+        "prototype": "GNSS ve hareket sürekliliği kullanan konum kanıtı prototipi",
+        "engine": "Kalıcı dünya sabitlemeli AR renderlama motoru",
+        "settlement": "Solana çözümleme katmanı ve varlık tanımları",
+        "alpha": "Üç test şehrinde dahili alfa"
+      }
+    },
+    "launch": {
+      "title": "Halka açık lansman",
+      "summary": "Seekprotocol'ü gerçek ellere, her iki uygulama mağazasına ve kullanıcının daha önce özel anahtar tutmuş olduğunu varsaymayan bir katılım akışıyla ulaştırmak.",
+      "groups": {},
+      "items": {
+        "stores": "Seekprotocol iOS ve Android'de yayınlandı",
+        "wallet": "İsteğe bağlı öz-saklama dışa aktarımıyla sosyal giriş cüzdanı",
+        "drops": "Konum tabanlı drop'lar ve görev sistemi",
+        "attestation": "Play Integrity ve App Attest aracılığıyla cihaz doğrulaması",
+        "localisation": "Site ve uygulama sekiz dile yerelleştirildi"
+      }
+    },
+    "scale": {
+      "title": "Kapıları açmak",
+      "summary": "Ağın doldurmasının bize kalmadığı yıl. Herkes önce bizimle konuşmadan varlık yerleştirebilir, onları finanse eden token halka açılır ve geri gelme nedenleri artık tek başına yaptığın şeyler olmaktan çıkar.",
+      "groups": {
+        "supply": "Arz tarafı",
+        "network": "Ağ etkileri"
+      },
+      "items": {
+        "companion": "Kamerayı algılayan bağlamsal rehberliğe sahip AI rehber",
+        "radio": "Doğrulama yığınına radyo parmak izi eklendi",
+        "builder": "Küçük yayıncılar için sürükle-bırak kampanya kurucusu",
+        "portal": "Mekanlar ve markalar için self-servis kurumsal portal",
+        "analytics": "Doğrulanmış varış analitiği ve ziyaret başına maliyet raporlaması",
+        "tge": "Token oluşturma etkinliği",
+        "partnerships": "Büyük ortaklıklar",
+        "liveEvents": "Festivaller, maçlar ve konferanslar için canlı etkinlik modu",
+        "seasons": "Kendi merdivenleri ve ödülleri olan sezonlar",
+        "scanning": "Oyunlaştırılmış nesne tarama",
+        "guilds": "Loncalar, takım görevleri ve paylaşılan ödül havuzları",
+        "revenueShare": "Yerleştirilen varlıklarda yaratıcı gelir paylaşımı"
+      }
+    },
+    "governance": {
+      "title": "Parametreleri devretmek",
+      "summary": "Yönetişim, önce gelmek yerine gerçek ücret akışını takip eder. Hacmi olmayan bir ekonomi üzerinde oy vermek tiyatrodur, bu yüzden bu bilerek en sona bırakılır.",
+      "groups": {},
+      "items": {
+        "onChain": "Protokol parametreleri için zincir üstü yönetişim",
+        "treasury": "Topluluk hazine tahsisi",
+        "providers": "Üçüncü taraf doğrulama sağlayıcıları",
+        "sdk": "Protokol üzerindeki harici uygulamalar için Açık SDK"
+      }
+    }
+  },
+  "businessPage": {
+    "metaTitle": "Coğrafi Sınırlama Pazarlaması, Varış Başına Ödeme",
+    "metaDescription": "Varışları modellemek yerine sayan konum tabanlı pazarlama. Koordinatlarına bir ödül yerleştir ve doğrulanmış ziyaret başına öde.",
+    "ogTitle": "Doğrulanmış varış başına öde",
+    "eyebrow": "Kurumsal",
+    "titleStart": "Gösterim değil,",
+    "titleAccent": "varış satın al",
+    "lead": "Dijital reklam, logonu birinin karşısına milisaniyeler içinde koyabilir. Onu üç sokak öteye yürümeye ikna edemez. Kapına bir ödül yerleştir ve ona ulaşan insanlar için öde.",
+    "ctaTalk": "Bize ulaş",
+    "ctaVerification": "Doğrulama nasıl çalışır",
+    "argumentEyebrow": "Argüman",
+    "argumentTitle": "Sayımın durduğu yer",
+    "argumentLead": "Aynı parayı iki yolla harcayın ve huniler son satıra kadar karşılaştırılabilir görünür. Biri sayılıyor. Diğeri bir model ve her kampanyanın değerlendirildiği satır o.",
+    "useCasesEyebrow": "Kullanım alanları",
+    "useCasesTitle": "İnsanların onu kullandığı dört yol",
+    "setupEyebrow": "Kurulum",
+    "setupTitle": "Dört karar, mühendislik yok",
+    "setupLead": "İşte tüm akış. Dört seçimi yap ve yayınla; her birinin tuttuğun zemin ve kapındaki bir kişinin fiyatı üzerinde ne yaptığını gör.",
+    "measurementEyebrow": "Ölçüm",
+    "measurementTitle": "Ne alırsın ve neyi almazsın",
+    "measurementLead": "Konum verisi var olan en hassas kategoridir. Bir kampanyayı değerlendirmek için ihtiyacın olan sayıları alırsın ve bir bireyi takip etmene izin verecek hiçbir şey almazsın.",
+    "ctaEyebrow": "Başlayın",
+    "ctaTitle": "Kapına bir şey koy",
+    "ctaBody": "Self-servis portal geliştirme aşamasında. Yayınlanana kadar kampanyaları seninle doğrudan kuruyoruz. Bize konumu ve neyi yerleştirmek istediğini söyle.",
+    "ctaStart": "Bir konuşma başlat",
+    "ctaRoadmap": "Self-servisin ne zaman geldiğini gör"
+  },
+  "useCases": {
+    "retail": {
+      "label": "Perakende & konaklama",
+      "metric": "Doğrulanmış varış başına maliyet",
+      "title": "Bir mekanı ziyaret etmek için bir nedene dönüştür",
+      "body": "Dar bir talep yarıçapıyla kapına bir teklif yerleştir. Yalnızca orada duran biri tarafından alınabilir, bu yüzden gördüğün kullanım, birinin kaydırdığı bir reklam değil içeri giren bir kişidir.",
+      "points": [
+        "Posta kodu değil, giriş kapısına ayarlanmış yarıçap",
+        "Varış anında kaydedilen kullanım",
+        "Mağaza başına entegrasyon olmadan bir zincirde çalışır"
+      ]
+    },
+    "events": {
+      "label": "Etkinlikler & mekanlar",
+      "metric": "Yerinde etkileşim",
+      "title": "Etkinlik süresince talep edilebilir bir harita",
+      "body": "Festivaller, maçlar ve konferanslar; etkinlik bittiğinde biten geçici bir varlık katmanına dönüşür. Katılım onları açar, böylece ödül gerçekten gelenlere ulaşır.",
+      "points": [
+        "Zamanı sınırlı, planlanan zamanda biten varlıklar",
+        "Alanlar için geniş, sahneler ve tribünler için dar yarıçaplar",
+        "Yüksek değerli drop'lar için daha yüksek doğrulama eşikleri"
+      ]
+    },
+    "token": {
+      "label": "Token & NFT projeleri",
+      "metric": "Sybil direnci",
+      "title": "Cüzdanlara değil, insanlara dağıt",
+      "body": "Bir cüzdan oluşturmak ücretsizdir, hava dağıtımlarının farm edilmesinin nedeni budur. Fiziksel varlık gerektirmek, her ek talebe gerçek bir maliyet yükler, çünkü kimse aynı anda kırk şehirde değildir.",
+      "points": [
+        "Seçilen pazarlarda coğrafi dağılım",
+        "Bir yarıçap ve pencere içindeki cihaz başına talep sınırları",
+        "Solana'da herkese açık talep kaydı"
+      ]
+    },
+    "tourism": {
+      "label": "Şehirler & turizm",
+      "metric": "Yaya trafiği dağılımı",
+      "title": "İnsanları kullanılmasını istediğin yerlerden geçir",
+      "body": "Ziyaretçilerin sırayla ilerlemesi için varlıkları bir izde birbirine bağla. Sessiz sokaklar, ikincil siteler ve düşük yoğunluklu saatler, yoğun dönüm noktalarının ihtiyaç duymadığı ödülleri taşıyabilir.",
+      "points": [
+        "Birden çok site arasında sıralı görevler",
+        "Talebi yaymak için düşük yoğunluk ağırlıklandırması",
+        "Toplu varış sayıları, asla bireysel izler değil"
+      ]
+    }
+  },
+  "measurement": {
+    "counted": {
+      "label": "Sayılan şey",
+      "value": "Yarıçapının içinde doğrulanmış bir varış"
+    },
+    "when": {
+      "label": "Ne zaman sayılır",
+      "value": "Talep anında, sonradan çıkarımla değil"
+    },
+    "receive": {
+      "label": "Aldığın şey",
+      "value": "Konuma, zamana ve kampanyaya göre toplu sayılar"
+    },
+    "never": {
+      "label": "Asla almadığın şey",
+      "value": "Bireysel hareket izleri veya kimlikler"
+    }
+  },
+  "funnel": {
+    "budget": "Kampanya bütçesi",
+    "displayTitle": "Display olarak alındı",
+    "displayCost": "modellenen ziyaret başına",
+    "seekTitle": "Varış olarak alındı",
+    "seekCost": "doğrulanmış varış başına",
+    "counted": "Sayıldı",
+    "estimated": "Tahmini",
+    "stages": {
+      "impressions": "Sunulan gösterimler",
+      "viewable": "Görünür şekilde render edildi",
+      "clicks": "Tıklamalar",
+      "visits": "Mağaza ziyaretleri",
+      "saw": "Yakındaki iğneyi gördü",
+      "opened": "Drop'u açtı",
+      "walked": "Ona yürüdü",
+      "claimed": "Kapıda talep etti"
+    },
+    "caption": "Display, ${cpm} CPM, %{viewability} görünürlük, %{ctr} tıklama oranı ve reklam platformlarının modellediği %{modelled} gösterimden ziyarete oranını kullanır. Bakılacak satır o son satır: sayılmıyor, tahmin ediliyor ve üstündeki tıklamalardan çıkmıyor. Sağ sütundaki her satır, yarıçapının içindeki bir cihazda gerçekleşen bir şeydir."
+  },
+  "deploy": {
+    "stepsLabel": "Adımlar",
+    "steps": {
+      "location": "Konum",
+      "asset": "Varlık",
+      "rules": "Kurallar",
+      "publish": "Yayınla"
+    },
+    "whereLegend": "Nerede olacak",
+    "whereNote": "Portalda bu, sürüklediğin bir iğnedir. Koordinat, varlığın sahip olduğu tek adrestir.",
+    "assetLegend": "Ne yerleştirirsin",
+    "assetNote": "Yarıçap ve pencere içindeki cihaz başına bir talep, bu yüzden miktar bir arz rakamı değil bir kişi sayısıdır.",
+    "rulesLegend": "Kim alabilir",
+    "campaignLegend": "Kampanya",
+    "quantity": "Miktar",
+    "claimRadius": "Talep yarıçapı",
+    "presets": {
+      "store": {
+        "label": "Vitrin",
+        "place": "Kalverstraat 92, Amsterdam",
+        "hint": "Bir giriş kapısı. Yalnızca kasada birinin talep edebileceği kadar dar."
+      },
+      "venue": {
+        "label": "Etkinlik alanı",
+        "place": "Johan Cruijff ArenA, Amsterdam",
+        "hint": "Etkinlik süresince tüm bir alan; bittiğinde biter."
+      },
+      "trail": {
+        "label": "Şehir izi",
+        "place": "Amsterdam Noord'da altı site",
+        "hint": "Sırayla talep edilebilir, sessiz sokaklara ağırlıklandırılmış zincirleme varlıklar."
+      }
+    },
+    "assets": {
+      "token": "Token",
+      "nft": "Koleksiyon",
+      "offer": "Teklif kodu",
+      "ticket": "Erişim bileti"
+    },
+    "tiers": {
+      "standard": {
+        "label": "Standart doğrulama",
+        "note": "GNSS, doğrulama ve hareket uyuşmalı."
+      },
+      "strict": {
+        "label": "Sıkı doğrulama",
+        "note": "Radyo parmak izini ekler. Yüksek değerli drop'lar için."
+      }
+    },
+    "summaryLocation": "Konum",
+    "summaryAsset": "Varlık",
+    "summaryRadius": "Yarıçap",
+    "summaryVerification": "Doğrulama",
+    "summaryThreshold": "{tier}, eşik {threshold}",
+    "summaryBudget": "Bütçe",
+    "summaryBudgetValue": "${budget} varış başına ${cost}",
+    "publish": "Kampanyayı yayınla",
+    "sequence": {
+      "signing": "Kampanya imzalanıyor",
+      "writing": "Varlık tanımı Solana'ya yazılıyor",
+      "indexing": "Koordinatlar indeksleniyor",
+      "live": "Haritada canlı"
+    },
+    "again": "Bir tane daha kur",
+    "back": "Geri",
+    "next": "İleri",
+    "review": "Gözden geçir",
+    "verifiedArrivals": "Doğrulanmış varışlar",
+    "costPerArrival": "Varış başına maliyet",
+    "sawPin": "Yakındaki iğneyi gördü",
+    "placementFee": "Yerleştirme ücreti",
+    "perArrival": "Varış başına",
+    "live": "Canlı",
+    "radiusOf": "{radius} m yarıçap",
+    "captionLive": "Varışlar; yarıçap ve etrafındaki harita trafiğinden bir projeksiyondur, garanti değildir. Her biri, biri orada durduğu anda zincir üzerinde kaydedilen bir talep olurdu.",
+    "captionIdle": "Halka plakaya oranla ölçekli çizilir. Burada hiçbir şeyin geliştiriciye ihtiyacı yok: dört karar, sonra yayınla."
+  },
+  "whitepaper": {
+    "metaTitle": "Teknik Belge: Solana'da Konum Kanıtı",
+    "metaDescription": "Seekprotocol'ün dijital varlıkları gerçek koordinatlara nasıl yayınladığı, birinin gerçekten orada olduğunu nasıl doğruladığı ve Solana'da nasıl çözümlediği. Mimari, token tasarımı, saldırılar.",
+    "ogTitle": "Seekprotocol Teknik Belgesi",
+    "ogDescription": "Konum kanıtı, mimari, token tasarımı ve saldırılar ile sınırların dürüst bir açıklaması.",
+    "eyebrow": "Teknik Belge",
+    "titleStart": "Bir yerde yaşayan",
+    "titleAccent": "dijital varlıklar",
+    "lead": "Seekprotocol'ün varlıkları koordinatlara nasıl yayınladığının, birinin orada durduğunu nasıl kanıtladığının ve zincir üzerinde nasıl çözümlediğinin, sistemin yapamadıkları dahil, teknik açıklaması.",
+    "readingTime": "{minutes} dk okuma",
+    "updated": "Güncelleme {date}",
+    "updatedValue": "Ağustos 2026",
+    "gitbook": "GitBook'ta tüm dokümanlar",
+    "ctaEyebrow": "Sıradaki",
+    "ctaTitle": "Çalışırken gör",
+    "ctaBody": "Ekosistem sayfası canlı ağı gösterir ve yol haritası, yayınlananları sıradakilere karşı takip eder.",
+    "ctaEcosystem": "Ekosistemi keşfet",
+    "ctaRoadmap": "Yol haritasını görüntüle",
+    "chapters": {
+      "summary": {
+        "index": "01",
+        "eyebrow": "Yönetici özeti",
+        "title": "Bir yerde var olan şeyler için bir protokol",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "İnternet, her dijital nesneyi her yerde aynı anda erişilebilir kıldı. Amaç oydu ve işe yaradı. Ancak dijital şeyleri de, fiziksel şeyleri değerli hissettiren tek özellikten sıyırdı: belirli bir yerde olmaktan. Bir konser bileti seni bir salona kabul ettiği için önemlidir. Bir dönüm noktası, ona seyahat etmek zorunda kaldığın için önemlidir."
+          },
+          {
+            "kind": "p",
+            "text": "Seekprotocol, konumu tekrar dijital varlıklara koyar. Bir token, bir NFT veya bir ödül, bir cüzdana değil bir koordinat kümesine yayınlanabilir ve biri fiziksel olarak yarıçapının içinde durup bunu kanıtlayana kadar orada kalır. Buna konum kanıtı diyoruz ve protokolün geri kalanının üzerine inşa edildiği ilkeldir."
+          },
+          {
+            "kind": "p",
+            "text": "Tüketici yüzü **Seekprotocol**, bu varlıkları artırılmış gerçeklikte render eden iOS ve Android için bir mobil uygulamadır. Yürürsün, telefonun yakındakileri gösterir ve bulduklarını toplarsın. Altta çözümleme, küçük bir ödülü almanın ödülden daha fazlaya mal olmayacağı kadar düşük işlem maliyetleri için seçilen Solana'da gerçekleşir."
+          },
+          {
+            "kind": "callout",
+            "text": "Kısa sürüm: yalnızca belirli bir yerden talep edilebilecek dijital varlıklar üretiyoruz, birinin gerçekten orada olduğunu doğruluyoruz ve bunu zincir üzerinde bir saniyeden kısa sürede bir kuruşun küçük bir kesri karşılığında çözümlüyoruz."
+          },
+          {
+            "kind": "h",
+            "text": "Bu belge neyi kapsar"
+          },
+          {
+            "kind": "p",
+            "text": "On altı bölüm, dört hareket halinde. İlk üçü problemi ve ona cevap veren ilkeli ortaya koyar. Dörtten yediye kadar olan bölümler makinedir: bir talep nasıl seyahat eder, katmanlar nasıl birbirine uyar ve uygulama onlarla ne yapar. Sekizden on bire kadar olanlar ekonomidir; yerleştirme için kim ödüyor sorusundan parametrelere kimin karar verdiğine kadar. Son beşi, bir teknik belgenin genellikle atladığı şeyler; yani saldırılar, gizlilik maliyeti, düzenleyici konum ve dürüst sınırlar."
+          },
+          {
+            "kind": "p",
+            "text": "Birkaç şekil oynanabilir. Doğrulama modeli, talep zaman çizelgesi, yakalama zarı ve bütçe hesaplayıcısı, aynı sabitlerle protokolün çalıştırdığı aritmetiği çalıştırır; böylece tasarımın kendisiyle değil, bir diyagramıyla anlaşmazlık yaşayabilirsin."
+          }
+        ]
+      },
+      "problem": {
+        "index": "02",
+        "eyebrow": "Problem",
+        "title": "Dikkat çevrimiçi ucuz, sokakta pahalıdır",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "İki grup, karşıt uçlardan bakıldığında aynı problem olduğu ortaya çıkan bir soruna sahip."
+          },
+          {
+            "kind": "h",
+            "text": "Markalar ve mekanlar yaya trafiği satın alamıyor"
+          },
+          {
+            "kind": "p",
+            "text": "Dijital reklam, milisaniyeler içinde birinin karşısına bir görsel koyabilir. Onu üç sokak öteye yürütemez. Bir gösterimden fiziksel bir ziyarete dönüşüm, tüm perakende ve etkinlik hunisindeki en zayıf halkadır ve kötü ölçülür; genellikle kasadaki insanlara bir reklam görüp görmediklerini sorarak."
+          },
+          {
+            "kind": "p",
+            "text": "Sektörün yanıtı modellemek olmuştur. Katılan cihazlardan oluşan paneller bir popülasyona ekstrapolasyon yapılır ve elde edilen mağaza-ziyaret rakamı, sanki aynı türden bir sayıcıdan geliyormuş gibi gösterimler ve tıklamalarla birlikte raporlanır. Öyle değil. Bir sayı bir olay, diğeri bir tahmin ve kampanyalar tahmin üzerinden değerlendiriliyor."
+          },
+          {
+            "kind": "h",
+            "text": "Kripto projeleri gerçek kullanıcı bulamıyor"
+          },
+          {
+            "kind": "p",
+            "text": "Hava dağıtımları dağıtım için standart araçtır ve farm edilirler. Bir cüzdan oluşturmak hiçbir şeye mal olmaz, bu yüzden bir cüzdan tarafından talep edilebilen herhangi bir ödül, birkaç kişiye ait binlerce cüzdan tarafından talep edilir. Projeler, giderek daha ayrıntılı uygunluk kurallarıyla yanıt verir; bu da çoğunlukla sıradan kullanıcıları filtreler, gelişmiş çiftçiler ise uyum sağlar."
+          },
+          {
+            "kind": "p",
+            "text": "Bir insanın belirli bir zamanda belirli bir yerde olduğunu kanıtlayabilirsen, her iki problem de çözülür. Yaya trafiği ölçülebilir hale gelir çünkü kaydedilen olay varıştır. Hava dağıtımı farm etmek pahalı hale gelir çünkü bir cüzdan ücretsizdir ama seyahat değildir ve kimse aynı anda kırk şehirde değildir."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Cüzdan oluşturma maliyeti",
+                "value": "Etkili biçimde sıfır"
+              },
+              {
+                "label": "Bir yerde olma maliyeti",
+                "value": "Zaman, mesafe, fiziksel varlık"
+              },
+              {
+                "label": "Bu farkın satın aldığı şey",
+                "value": "Fiziğe dayanan bir sybil direnç mekanizması"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Bu neden şimdi inşa edilebilir ve önceden değildi"
+          },
+          {
+            "kind": "p",
+            "text": "Üç şeyin aynı anda gelmesi gerekiyordu. Telefonların çift frekanslı GNSS, derinlik algılayan kameralar ve donanım destekli doğrulamayı amiral gemisi özellikler olarak değil standart olarak taşıması gerekiyordu. Çözümlemenin, birkaç sent değerinde bir ödülün taşınmayı atlatabileceği kadar ucuz hale gelmesi gerekiyordu; bu da ücretler bir sentin altına düşene kadar her zinciri elemek anlamına geliyordu. Ve insanların bir kameraya bir sokağa doğrultup içine bir şey render edildiğini görmeye istekli olması gerekiyordu; bu da oyunlardaki on yıllık AR'nin sessizce çözdüğü bir şey."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "03",
+        "eyebrow": "Temel ilkel",
+        "title": "Konum kanıtı",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Konum kanıtı, belirli bir cihazın belirli bir zaman aralığında belirli bir yarıçapın içinde olduğunun; değerli bir şeyin gücüne dayanarak serbest bırakılacak kadar inandırıcı hale getirilmiş iddiasıdır."
+          },
+          {
+            "kind": "p",
+            "text": "Tek başına hiçbir sinyal güvenilir değildir. Ham GPS, sahte konum sağlayıcısı olan herhangi bir root'lu cihaz tarafından sahtelenebilir. Bu yüzden protokol bir talebi birkaç bağımsız sinyal üzerinden puanlar ve kombinasyonun tutarlı olmasını gerektirir, çünkü bir sinyali sahtelemek kolaydır ve hepsini tutarlı biçimde sahtelemek değildir."
+          },
+          {
+            "kind": "h",
+            "text": "Birleştirdiğimiz sinyaller"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GNSS kilidi**, bildirilen doğruluğuyla ham uydu konumu, artı sahtekarların sıklıkla yanlış yaptığı takımyıldız ve uydu sayısı.",
+              "**Çevresel radyo**, o koordinatlarda görülmesi beklenene karşı eşleştirilen yakındaki Wi-Fi SSID'leri ve baz istasyonları seti. Radyo ortamlarını üretmek zordur ve yavaş değişirler.",
+              "**Cihaz doğrulaması**, Android'de Play Integrity ve iOS'ta DeviceCheck veya App Attest; uygulamanın gerçek ve işletim sisteminin bozulmamış olduğunu doğrular.",
+              "**Hareket sürekliliği**, önceki onaylanmış konum ile bu konum arasındaki ivmeölçer izi. Eşleşen bir hareket profili olmadan 90 saniyede 400 km hareket ettiğin bir talep reddedilir.",
+              "**Zamansal makullük**, varış zamanlarının son onaylanmış konumuna göre çıkarılan seyahat süresine karşı kontrol edildiği yer."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Her sinyal bir güven puanına katkıda bulunur. Varlıklar gerektirdikleri puanı belirler: düşük değerli bir görev ödülü orta bir puanı kabul edebilirken, biletli bir etkinlikteki yüksek değerli bir drop cihaz doğrulaması ve eşleşen bir radyo ortamı talep edebilir. Eşik altındaki talepler reddedilir ve bir cihazdan tekrarlanan retler o cihaz için eşiği yükseltir."
+          },
+          {
+            "kind": "confidence"
+          },
+          {
+            "kind": "callout",
+            "text": "Amaç, tüketici donanımında elde edilemeyecek olan mükemmel kanıt değildir. Amaç, sahteciliği ödülden daha pahalı hale getirmektir; kart ödemelerini işler tutan aynı standarttır."
+          },
+          {
+            "kind": "h",
+            "text": "Sinyaller neden zorunlu değil de ağırlıklı"
+          },
+          {
+            "kind": "p",
+            "text": "Her sinyali talep eden bir kural, dürüst kullanıcıları reddeden bir kuraldır. Metro istasyonları GNSS'i kaybeder. Yeni binaların, haritanın hiç görmediği radyo ortamları vardır. İki OS sürümü geride olan bir telefon, dolandırıcılıkla hiçbir ilgisi olmayan nedenlerle doğrulamada başarısız olabilir. Ağırlıklandırma, bir varlığın değerine ne kadar kanıt hak ettiğini söylemesine izin verir ve dürüst bir talebin, sahte bir talebin dördüne dayanmadan bir kötü sinyale rağmen hayatta kalmasına izin verir."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Varsayılan talep yarıçapı",
+                "value": "30 m"
+              },
+              {
+                "label": "Yapılandırılabilir aralık",
+                "value": "Varlık başına 5 m ile 500 m"
+              },
+              {
+                "label": "Tipik onay",
+                "value": "Solana'da saniyeden kısa"
+              },
+              {
+                "label": "Doğrulama",
+                "value": "Play Integrity, App Attest"
+              },
+              {
+                "label": "Ret işleme",
+                "value": "Cihaz başına kaydedilir, o cihazın çıtasını yükseltir"
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "index": "04",
+        "eyebrow": "Mekanikler",
+        "title": "Bir şey talep ettiğinde gerçekten ne oluyor",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Önceki bölüm kanıtı tanımlıyor. Bu bölüm, bir varlığa uzandığın andan cüzdanında olduğu ana kadar tek bir talebi takip ediyor, çünkü tasarım kararlarının çoğunun yaşadığı yer işlem sırasıdır."
+          },
+          {
+            "kind": "timeline"
+          },
+          {
+            "kind": "h",
+            "text": "Önemli olan sınır"
+          },
+          {
+            "kind": "p",
+            "text": "Aşamaların makinaları değiştirdiği yere bak. Tüm hassas şeyler ilk üçte olur: konum, radyo taraması, hareket izi, doğrulama. Hiçbiri telefonundan ham biçimde ayrılmaz. Doğrulayıcıya geçen şey imzalı bir taleptir ve doğrulayıcıdan zincire geçen şey talebin eşiğini karşıladığına dair imzalı bir onaydır."
+          },
+          {
+            "kind": "p",
+            "text": "Doğrulamanın zincir dışı olmasının nedeni budur. Bir ölçeklenme uzlaşması değildir. Puanlamayı zincir üstüne koymak, girdileri yayınlamak anlamına gelirdi ve girdiler senin nerede durduğunun ve etrafında hangi kablosuz ağların olduğunun bir tanımıdır."
+          },
+          {
+            "kind": "h",
+            "text": "Başarısız olduğunda ne olur"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Eşiğin altında**: talep reddedilir, varlık haritada kalır ve zincire hiçbir şey yazılmaz. Ret cihaza karşı kaydedilir.",
+              "**Tekrarlanan retler**: o cihaz için gereken puan yükselir. Bir saatte altı talepte başarısız olan bir cihaz, hiçbirinde başarısız olmayan bir cihazla aynı şekilde işlem görmez.",
+              "**Çözümleme başarısızlığı**: talep bırakılmak yerine tutulur ve yeniden denenir. Kazanılıp teslim edilmemiş bir varlık, güvene mal olan bir hatadır; bu yüzden sıra, arkasındakilerin engellenmesi yerine takılı bir ödemeyi yana çekecek şekilde tasarlanmıştır.",
+              "**Talep sırasında süre bitmesi**: varlıklar bir pencere taşır ve pencere kapandıktan sonra gelen bir talep mükemmel puanda bile reddedilir. Pencere varlığın bir parçasıdır, bir ağ koşulu değildir."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Bir talep bir arama değil, bir kilittir. Aynı anda bir varlığın son birimine uzanan iki kişiye ikisine birden aldıkları söylenmemelidir, bu yüzden kontrol bir şeye karar vermeden önce kilidi alır."
+          }
+        ]
+      },
+      "architecture": {
+        "index": "05",
+        "eyebrow": "Mimari",
+        "title": "Katmanlar nasıl birbirine uyar",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokol dört katmandır. Her biri tek başına düşünülebilir ve değiştirilebilir."
+          },
+          {
+            "kind": "stack"
+          },
+          {
+            "kind": "p",
+            "text": "Ayrım en çok konum ile çözümleme arasındaki sınırda önemlidir. Konum doğrulaması olasılıksaldır ve zincir dışı gerçekleşir çünkü halka açık olmasının bir işi olmayan sensör verilerine bağlıdır. Zincire ulaşan şey; bir talebin eşiğini karşıladığına dair imzalı bir onaydır, hareket geçmişin değildir."
+          },
+          {
+            "kind": "h",
+            "text": "Nerede ne depolanır"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Zincir üstü**: varlık tanımları, koordinatları ve yarıçapları, talep kayıtları ve token aktarımları. Herkese açık ve kalıcı.",
+              "**Zincir dışı**: ham sensör okumaları, radyo parmak izleri ve cihaz doğrulamaları. Yalnızca bir talebi puanlamak ve anlaşmazlıkları çözmek için gereken süre kadar saklanır, ardından atılır.",
+              "**Cihaz üzerinde**: konum geçmişin ve AR sabit verilerin. Açıkça paylaşmadıkça telefonunda kalır."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Neden Solana"
+          },
+          {
+            "kind": "p",
+            "text": "Bir zincir için gereklilik alışılmadık: çok yüksek işlem sayısı, işlem başına çok düşük değer ve sokakta duran bir kişinin fark etmediği kadar hızlı bir onay. Yirmi sent değerinde bir ödül alan biri onu almak için on sent ödeyemez ve otuz saniye beklemeyecektir. Bu kombinasyon, alanın çoğunu maliyet üzerinden ve geri kalanını gecikme üzerinden eler."
+          },
+          {
+            "kind": "p",
+            "text": "Bu değiş tokuş gerçektir ve söylemeye değer. Solana'nın kesintileri olmuştur ve duran bir zincir, sıraya giren talepler demektir. Protokol, çözümlemeyi her zaman başarılı olan değil, başarısız olabilecek ve yeniden denenebilecek bir adım olarak ele alır; bu, zincirden bağımsız olarak doğru tasarımdır ancak bunda isteğe bağlı değildir."
+          },
+          {
+            "kind": "h",
+            "text": "Ne nerede çalışır"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Konum, sensörler, AR sabitleri",
+                "value": "Cihazda, asla ham yüklenmez"
+              },
+              {
+                "label": "Puanlama ve eşik",
+                "value": "Protokol doğrulayıcı, zincir dışı"
+              },
+              {
+                "label": "Varlık tanımları ve talepler",
+                "value": "Solana, herkese açık"
+              },
+              {
+                "label": "Medya ve coin çizimleri",
+                "value": "Cihazda önbelleklenir, nesne depolamasından sunulur"
+              },
+              {
+                "label": "Spawn duyuruları",
+                "value": "Sunucu yetkili, asla istemci tarafından bildirilmez"
+              }
+            ]
+          }
+        ]
+      },
+      "seekar": {
+        "index": "06",
+        "eyebrow": "Uygulama",
+        "title": "Seekprotocol, tüketici yüzü",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol, protokolün yukarıdakilerin hiçbirini bilmeyen bir kişinin kullanabileceği bir şeye dönüştüğü yerdir. Yakındakilerin bir haritasıyla açılır ve kamerayı kaldırmak o varlıkları AR motoru aracılığıyla yerinde render eder."
+          },
+          {
+            "kind": "h",
+            "text": "Uygulama ne yapar"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Keşfet**, gerçekten önemsediklerine göre filtrelenmiş, yürüme mesafesindeki drop'ların, görevlerin ve etkinliklerin canlı bir haritası.",
+              "**Topla**, kamerayı doğrultup varlığı dünyada sabitlenmiş gördüğün, uzanıp aldığın yer. Çözümleme arka planda gerçekleşir.",
+              "**Rehberlik**, çevreyi kamera aracılığıyla okuyan, rotalar öneren, neye baktığını açıklayan ve nasıl oynadığına uyum sağlayan bir AI rehber.",
+              "**Sakla**, bir sosyal girişten oluşturulmuş yerleşik bir cüzdan; böylece ilk kez kullanan bir kullanıcıdan bir şey almadan önce bir seed ifadesi yazması istenmez."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Katılım kısıtlaması, diğer herhangi bir tasarım kararından daha fazla tasarım kararını yönlendirir. Seekprotocol'ü kullanacak insanların çoğu hiç özel anahtar tutmamıştır. İlk otuz saniye 'mnemonic' kelimesini içerirse ayrılırlar. Bu yüzden cüzdan sessizce oluşturulur ve sahipliği isteyen herkes tarafından sonradan dışa aktarılabilir."
+          },
+          {
+            "kind": "h",
+            "text": "Drop'a doğru yürüyüş"
+          },
+          {
+            "kind": "p",
+            "text": "Varlıklar onlarca ile birkaç yüz metre uzaktadır; bu, bir haritanın yeterli olduğu ve bir rotanın gereksiz olduğu bir mesafedir. Bir spawn'ı işaretlemek, senden ona doğru düz bir çizgi çeker. Çizgi bilerek kesiklidir: bir rota değil, bir yön göstericidir, binalar hakkında hiçbir şey bilmez ve bu mesafe boyunca yön göstergesi genellikle yürüyüşün kendisidir. Yakalama menziline girdiğinde kendini temizler ve halka devreye girer."
+          },
+          {
+            "kind": "p",
+            "text": "Spawn'lar bir saat içinde sona erer. Bu, bir protokol sonucu olan bir oyun kararıdır: bir sonraki başlatmada geri yüklenen bir işaretçi hiçbir şeye işaret etmez, bu yüzden uygulama onu kalıcı olarak tutmaz."
+          },
+          {
+            "kind": "h",
+            "text": "Sabitleme ve burada AR ne için var"
+          },
+          {
+            "kind": "p",
+            "text": "Kamera geçişi ne dekorasyondur ne de doğrulamadır. İki şey yapar. Varlığı dünyada inandırıcı bir yere koyar, böylece ona uzanmak bir düğmeye basmak değil bir eylem olur ve hareket sinyaline tutarlı olacağı bir şey verir; çünkü sabitlenmiş bir nesnenin etrafında yürüyen bir kişi bir insan gibi hareket eder ve telefonu sabit tutan bir sahtekar öyle hareket etmez."
+          }
+        ]
+      },
+      "play": {
+        "index": "07",
+        "eyebrow": "Döngü",
+        "title": "Birini yürütmeye devam eden şey",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Varış için ödeyen bir protokolün hâlâ ilk varış için bir nedene ihtiyacı vardır. Kimse bir mekanizma için dört sokak yürümez. Oyun katmanı ağın talep tarafıdır ve doğrulamayla aynı dürüstlükle tasarlanmıştır: olasılıklar yayınlanır, sunucuda hesaplanır ve istemciye ne olduğu asla sorulmaz."
+          },
+          {
+            "kind": "h",
+            "text": "Yakalama"
+          },
+          {
+            "kind": "p",
+            "text": "Bir varlığa ulaşmak onu sana vermez. Sen dokunmayı tuttukça bir şarj halkası döner ve o şarjın kalitesi bir çarpanı besler. Sonra sunucu zarı atar. Bir spawn'da iki denemen olur ve yeniden deneme ilkinin 0,65 katı değerindedir; ikinci şansın bir teselli değil ikinci bir şans gibi hissettiren sayıdır."
+          },
+          {
+            "kind": "catch"
+          },
+          {
+            "kind": "h",
+            "text": "Kimsenin genellikle yayınlamadığı koşullar"
+          },
+          {
+            "kind": "p",
+            "text": "Çoğu oyun değiştiricileri gizler. Burada yapmak için bir neden yok, çünkü ilginç özellik şudur: beceri iter ve asla karar vermez. Şarj halkası 0,85 ile 1,0 arasında bir çarpandır, bu yüzden bir legendary üzerindeki mükemmel bir dokunuş hâlâ bir legendary'dir ve bir common üzerindeki tökezleyen bir dokunuş hâlâ muhtemelen bir common'dır."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Seviye bonusu**, Seeker'dan Legend'a on seviye boyunca, oyuncu seviyesi başına düz 0,3 puan şans.",
+              "**Soğuk seri**, ardışık kaçırma başına 2 puan değerinde ve 12 ile sınırlı bir merhamet zamanlayıcısı; coinler arasında olduğu kadar yeniden denemeye de uygulanır.",
+              "**Seri cezası**, aynı coinde ardışık başarı başına 4 puan ve 20 ile sınırlı, böylece bir spawn noktasını farm etmek iyi değil kötüye gider.",
+              "**Klan bonusu**, 5 puanla sınırlı, oyuncu değil klan tarafından kazanılır.",
+              "**Güçlendirmeler**, satın alınan veya kazanılan; diğer her terim eklenmeden önce temel şansı çarpar."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Zemin %5 ve tavan %95'tir. Hiçbir şey bir garantiye ulaşmak için üst üste binmez ve hiçbir şey bir duvara ulaşmak için üst üste binmez."
+          },
+          {
+            "kind": "h",
+            "text": "İlerleme ve ne için var"
+          },
+          {
+            "kind": "p",
+            "text": "Seviyeler, rozetler, klanlar, on iki saatlik zorluklar ve haftalık hedefler; yürüyüşe bir drop'tan daha uzun bir şekil vermek için vardır. Ayrıca protokol işi yaparlar: bir seviyesi, klanı ve serisi olan bir oyuncunun geçmişi olan bir hesabı vardır ve geçmişi ölçekte üretmek pahalıdır. İlerleme, dürüst oyuncuya hiçbir şeye mal olmayan, çiftçiye yüklenen ikinci bir maliyettir çünkü zaten oynayacaktı."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Spawn başına deneme",
+                "value": "2"
+              },
+              {
+                "label": "Yeniden deneme çarpanı",
+                "value": "×0,65"
+              },
+              {
+                "label": "Şarj halkası aralığı",
+                "value": "×0,85 ile ×1,00"
+              },
+              {
+                "label": "Şans zemini ve tavanı",
+                "value": "%5 ve %95"
+              },
+              {
+                "label": "Yakalamada XP",
+                "value": "30 ile 140"
+              },
+              {
+                "label": "Kaçırmada XP",
+                "value": "5 ile 15"
+              },
+              {
+                "label": "Seviyeler",
+                "value": "On, Seeker'dan Legend'a"
+              }
+            ]
+          }
+        ]
+      },
+      "creators": {
+        "index": "08",
+        "eyebrow": "Arz tarafı",
+        "title": "Varlıkları kim yerleştirir",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Konumları boş olan konum tabanlı bir ağ değersizdir. Protokol bu nedenle varlık yerleştirmeyi dahili bir araç değil, birinci sınıf bir ürün olarak ele alır."
+          },
+          {
+            "kind": "h",
+            "text": "Üç tür yayıncı"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Markalar ve mekanlar** kendi tesislerine teklifler yerleştirmek ve gerçekten kimin geldiğini ölçmek için kurumsal portalı kullanır. Satın aldıkları birim, bir gösterim değil, doğrulanmış bir ziyarettir.",
+              "**Token projeleri ve NFT toplulukları** cüzdanlara değil insanlara dağıtır; coğrafyayı, farm etmenin ucuza yenemeyeceği filtre olarak kullanır.",
+              "**Etkinlik organizatörleri** bir festivali, maçı veya konferansı, etkinlik bittiğinde biten varlıklarla, etkinlik süresince talep edilebilir bir haritaya dönüştürür."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Üçü de aynı kampanya kurucuyu kullanır: bir iğne bırak, yarıçapı ayarla, varlığı ve miktarı seç, güven eşiğini ve pencereyi ayarla, finanse et, yayınla. Entegrasyon işi yok ve yazılacak bir sözleşme yok."
+          },
+          {
+            "kind": "callout",
+            "text": "Bir mekan için önemli olan metrik, doğrulanmış varış başına maliyettir. Dijital pazarlamadaki, bir anketten çıkarılmak yerine kapıda ölçülen ilk yaya trafiği rakamıdır."
+          },
+          {
+            "kind": "calculator"
+          },
+          {
+            "kind": "h",
+            "text": "Yoğunluk problemi"
+          },
+          {
+            "kind": "p",
+            "text": "Burada arz ve talep coğrafidir, bu da olağan pazar tavsiyesini işe yaramaz kılar. Bir ülkeye eşit dağıtılmış bin varlık, her yerde boş bir haritadır. Aynı bin varlık tek bir şehirde, evden çıkmak için bir nedendir. Yerleştirme fiyatlandırması bu nedenle düz olmak yerine bölgenin talebine göre ağırlıklandırılır; böylece doymuş bir ana caddeyi tutmak sessiz bir caddeden daha pahalıdır ve protokol, zaten trafiği olan sokakları değil, trafik ihtiyacı olan sokakları sübvanse eder."
+          }
+        ]
+      },
+      "token": {
+        "index": "09",
+        "eyebrow": "Token",
+        "title": "$SEEK ve ne için var",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "$SEEK, protokolün çözümleme ve koordinasyon varlığıdır. Var, çünkü ağın birbirini tanımayan taraflar arasında değer taşıması gerekir; bir ülkedeki bir markanın başka bir ülkedeki bir yabancı tarafından talep edilen bir ödülü finanse etmesi gibi ve varlık yerleştirme maliyeti kullanılan yerlere olan talebe göre ölçeklenmelidir."
+          },
+          {
+            "kind": "h",
+            "text": "Fayda"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Kampanya finansmanı**, yayıncıların ödülleri $SEEK cinsinden belirlediği ve finanse ettiği yer.",
+              "**Yerleştirme ücretleri**, yerleştirilen varlık başına bir ücret; yarıçap, süre ve o bölgenin talebine göre ağırlıklandırılır.",
+              "**Öncelik için staking**, birden çok kampanyanın aynı koordinatlar için rekabet ettiğinde stake edilen $SEEK'in yayıncının yerleştirme önceliğini yükselttiği yer.",
+              "**Ödüller**, protokol ücretlerinin çoğunun yürüyüş yapan insanlara geri akmasıyla.",
+              "**Yönetişim**, parametre değişikliklerini, hazine tahsisini ve yüksek değerli talepler için güven eşiklerini kapsar."
+            ]
+          },
+          {
+            "kind": "economy"
+          },
+          {
+            "kind": "tokenomics"
+          },
+          {
+            "kind": "h",
+            "text": "Zamana göre arz"
+          },
+          {
+            "kind": "p",
+            "text": "Bir tahsis grafiği kimin neye sahip olduğunu söyler ve ne zamana dair hiçbir şey söylemez. Aşağıdaki program daha yararlı rakamdır, çünkü bir tokendeki risk nadiren dağılımdır; uçurumdur."
+          },
+          {
+            "kind": "vesting"
+          },
+          {
+            "kind": "p",
+            "text": "Tasarım niyeti, ücret akışının spekülasyondan çok gerçek etkinliği takip etmesidir: protokol, yalnızca birinin doğrulanmış bir ziyaret için ödemeye istekli olduğunda gerçekleşen varlıklar yerleştirildiğinde ve talep edildiğinde kazanır."
+          },
+          {
+            "kind": "h",
+            "text": "Tokenin bilerek yapmadığı şeyler"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Yakalanan bir oyun birimi ile bir token arasındaki oranı sabitlemez. Oyun bir yakalamayı değerlendirir; piyasa tokeni değerlendirir; protokol ikisi arasında köprü kurma iddiasında bulunmaz.",
+              "Oynamak için gerekli değildir. Yakalama, XP ve zorluklar ücretsizdir ve tokene hiç dokunmayan bir oyuncu, yine de bir yayıncının ödediği varışları üretir.",
+              "Yerleştirmeyi minimum bir varlık arkasında geçitlemez. Staking, hiç yayınlama hakkı değil, kampanyalar rekabet ettiğinde öncelik satın alır."
+            ]
+          }
+        ]
+      },
+      "revenue": {
+        "index": "10",
+        "eyebrow": "İş modeli",
+        "title": "Protokol nasıl ve kimden kazanır",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Bir token'ı tanımlayan ve bir işi tanımlamayan bir teknik belge, sistemin yarısını tanımlar. İki gelir kalemi vardır ve bunlar ağın karşıt taraflarından gelir; bu bilerek yapılır: hiçbir taraf tek başına onu ayakta tutamaz."
+          },
+          {
+            "kind": "h",
+            "text": "Yerleştirme, yayıncılar tarafından ödenir"
+          },
+          {
+            "kind": "p",
+            "text": "Birincil kalem. Bir yayıncı ödülleri finanse eder ve üzerine varlığın ne kadar zemin tuttuğuna, ne kadar süre için ve o zeminin ne kadar tartışmalı olduğuna göre ağırlıklandırılmış bir yerleştirme ücreti öder. Bu, ağın yarattığı değerle ölçeklenen ücrettir çünkü yayıncıların gerçekten satın aldığı şeye, yani varışa karşı alınır."
+          },
+          {
+            "kind": "h",
+            "text": "Pass ve mağaza, oyuncular tarafından ödenir"
+          },
+          {
+            "kind": "p",
+            "text": "İsteğe bağlı ve bilerek sınırlı. Sezonluk bir pass doksan gün sürer ve spawn ağırlıklandırmasını daha nadir coinlere yaslar; haftalık bir nadir talep ve bir boost dahildir. Bireysel boost'lar ayrı satılır: bir nadir boost, bir spawn magnet, bir XP çarpanı veya üçünün bir paketi."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Seekprotocol Pass",
+                "value": "90 günlük sezon başına €8,99"
+              },
+              {
+                "label": "Nadir boost, spawn magnet",
+                "value": "€1,99 her biri, 30 dakika"
+              },
+              {
+                "label": "XP boost",
+                "value": "€0,99, 30 dakika"
+              },
+              {
+                "label": "Boost paketi",
+                "value": "€4,99, her birinden bir tane"
+              }
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Temel yakalama, XP, zorluklar ve platform başarıları kalıcı olarak ücretsiz kalır. Döngüyü geçitleyen ücretli bir katman, yayıncıların satın aldığı tek şeyi, yani insanların ortaya çıkmasını bozardı."
+          },
+          {
+            "kind": "h",
+            "text": "Bölünme neden doğru şekilde"
+          },
+          {
+            "kind": "p",
+            "text": "Oyuncu harcaması esnektir, mevsimliktir ve bir insanın bir hobiye ödeyeceği miktarla sınırlıdır. Yayıncı harcaması, karşılaştırılacak gerçek bir alternatifi olan bir varış başına maliyete göre değerlendirilen bir pazarlama kalem öğesidir. Birincisi, kampanyalardan çok oyuncu olduğu erken dönemde ışıkları yakar. İkincisi, işin dönüştüğü şeydir ve yalnızca birincisi asla öde-kazan'a dönüşmezse çalışır çünkü hepsi her şeyi yakalayan ödeme yapan oyunculardan oluşan bir ağ, mekana hiçbir değeri olmayan varışlar bildirir."
+          }
+        ]
+      },
+      "governance": {
+        "index": "11",
+        "eyebrow": "Yönetişim",
+        "title": "Rakamlara kim karar veriyor",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Bu protokolün alışılmadık şekilde çok sayıda ayarlanabilir sabiti vardır: yarıçap sınırları, güven eşikleri, yerleştirme ücreti ağırlıklandırması, arayıcılara döndürülen ücret payı ve yakalama merdiveninin kendisi. Bunların her biri bir yapılandırma değeri olarak giyinmiş bir politika kararıdır ve aksini iddia etmek, protokollerin dosyayı en son düzenleyen tarafından yönetilmesiyle sonuçlanma biçimidir."
+          },
+          {
+            "kind": "h",
+            "text": "Aşamalı konum, dürüstçe belirtilmiştir"
+          },
+          {
+            "kind": "p",
+            "text": "Yönetişim canlı değil. Bugün parametreler çekirdek ekip tarafından belirleniyor ve kaydedilen ve gözden geçirilebilir göçler yoluyla değiştiriliyor. Bunu merkeziyetsiz olarak tanımlamayacağız çünkü öyle değil."
+          },
+          {
+            "kind": "p",
+            "text": "Gecikmenin nedeni isteksizlik değil. Hacmi olmayan bir ekonomi üzerinde oy vermek tiyatrodur: katılım düşüktür, birkaç sahip karar verir ve alınan kararlar kimsenin yargılayacak yeterli veriye sahip olmadığı parametreler hakkındadır. Yönetişim, gerçek ücret akışı olduğunda anlamlı hale gelir çünkü o zaman bir parametre değişikliğinin, birinin tartışabileceği ölçülebilir bir sonucu vardır."
+          },
+          {
+            "kind": "h",
+            "text": "Neyin yönetileceği ve neyin yönetilmeyeceği"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Yönetilir**: ücret ağırlıklandırması, protokol ücretlerinin arayıcı payı, hazine tahsisi, yarıçap sınırları ve yüksek değerli varlıklara sunulan güven eşikleri.",
+              "**Gecikmeli yönetilir**: zaten yerleştirilmiş varlıkların değerini değiştiren her şey. Bir ücret programı altında finanse edilen bir kampanya, altında tamamlanmalıdır.",
+              "**Yönetilmez**: on üçüncü bölümdeki gizlilik taahhütleri. Saklama sınırları ve hareket verilerini yayınlamayı reddetme parametreler değildir ve bir oy onları zayıflatmak için meşru bir yol değildir.",
+              "**Yönetilmez**: bireysel talep sonuçları. Reddedilen bir talep, bir oylama değil, bir anlaşmazlık çözümü meselesidir."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Kendi kullanıcılarının gizliliğini oylayarak kaldırabilen bir yönetişim sistemi bir koruma değildir, yeter sayısı olan bir saldırı yüzeyidir."
+          }
+        ]
+      },
+      "security": {
+        "index": "12",
+        "eyebrow": "Risk",
+        "title": "Saldırılar, sınırlar ve iddia etmediklerimiz",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "İnsanlara bir yerde olmaları için ödeme yapan bir protokol, insanları bir yerde olduklarına dair yalan söylemeye davet eder. Saldırılar konusunda spesifik olmak, sistemin güvenli olduğunu iddia etmekten daha yararlıdır."
+          },
+          {
+            "kind": "h",
+            "text": "Savunduğumuz saldırılar"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GPS sahteciliği**, kilidi desteklemek için radyo ortamının ve hareket izinin gerekmesi ve kurcalanmış OS yapılarını tespit eden cihaz doğrulaması ile azaltılır.",
+              "**Sybil farming**, seyahatin fiziksel maliyeti ve bir yarıçap ve zaman aralığı içindeki cihaz başına talep sınırları ile azaltılır.",
+              "**Röle saldırıları**, konumda gerçek bir cihazın uzak bir kullanıcı için imzaladığı yer; doğrulamayı uygulama örneğine ve oturuma bağlayarak ve cihaz başına talepleri hız sınırlayarak azaltılır.",
+              "**Emülatör çiftlikleri**, emülatörlerin başarısız olduğu doğrulama ile ve gerçek yürüyüşten istatistiksel olarak ayırt edilebilen hareket izleri ile azaltılır.",
+              "**İstemci tarafından bildirilen spawn'lar**, azaltılmak yerine önlenir: yalnızca sunucu neyin var olduğunu ve nerede olduğunu duyurur, böylece değiştirilmiş bir istemci ne gördüğü hakkında yalan söyleyebilir ve hiçbir şey kazanmaz.",
+              "**Çift talepler**, talep değerlendirilmeden önce bir kilit alarak önlenir, böylece bir varlığın son birimine uzanan iki kişiye ikisine birden aldıkları söylenemez."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Kabul ettiğimiz sınırlar"
+          },
+          {
+            "kind": "p",
+            "text": "Değiştirilmiş donanıma sahip ve bir konumda fiziksel varlığı olan yeterince kararlı bir saldırgan, o konumdan dürüst bir kullanıcının çıkaracağından daha fazla değer çıkarabilir. Bunu imkansız olduğunu iddia etmek yerine konum başına sınırlarla sınırlandırırız. Kapalı alan konumlandırma, açık alandan önemli ölçüde daha az doğru kalır, bu yüzden kapalı alan varlıkları daha geniş yarıçaplar kullanır ve radyo parmak izine daha çok yaslanır. Ve hiçbir tüketici cihazı, bir insanın değil, bir cihazın mevcut olduğunu kanıtlayamaz: bir teslimat aracındaki telefon, hâlâ bir cepteki telefon gibi hareket eder."
+          },
+          {
+            "kind": "h",
+            "text": "Saldırı olmayan riskler"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Platform bağımlılığı**. Doğrulama Apple ve Google'ın vereceği bir şeydir. Herhangi birindeki bir politika değişikliği, yığındaki en güçlü sinyali bir gecede zayıflatabilir ve bunu işletim sistemi etrafında yönlendirmenin bir yolu yoktur.",
+              "**Zincir kullanılabilirliği**. Duran bir zincir, sıraya giren talepler demektir. Protokol bırakmak yerine yeniden dener, ancak sokakta duran bir kişi yeniden denemeyi başarı olarak deneyimlemez.",
+              "**Fiziksel güvenlik**. İnsanları yerlere gitmeleri için ödüllendirmek insanları yerlere koyar. Varlıklar bina ayak izlerinin içine değil, yol kavşaklarına yerleştirilir, yüksek değerli drop'lar özel mülkiyetten kaçınır ve uygulama bir güvenlik uyarısı taşır. Bu bir feragatname değil, bir tasarım kısıtlamasıdır."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Ekonomik bir caydırıcı inşa ediyoruz, kriptografik bir garanti değil. İkisinin karıştırıldığı yerde kullanıcılar zarar görür."
+          }
+        ]
+      },
+      "privacy": {
+        "index": "13",
+        "eyebrow": "Gizlilik",
+        "title": "Konum verisi var olan en hassas veridir",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Birinin nereye gittiğinin bir kaydı; evini, işini, sağlığını, dinini ve ilişkilerini açığa çıkarır. Konum taleplerinden bir ağ inşa etmek bunun sorumluluğunu kabul etmek anlamına gelir ve sorumlu tasarım, mümkün olduğunca azını tutmaktır."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Sürekli takip asla gerekli değildir. Uygulama, arka planda değil, bir talep denediğinde bir konum ister.",
+              "Ham sensör ve radyo verisi bir talebi puanlamak için kullanılır ve ardından kısa bir saklama süresinde atılır.",
+              "Zincir üstüne yazılan şey, halka açık bir koordinatta bir talebin başarılı olduğudur; bir dükkanın birinin bir kuponu kullandığını bilmesiyle aynı bilgi.",
+              "Hareket geçmişin cihazında kalır. Protokolün ona ihtiyacı yoktur ve istemez.",
+              "Yayıncılar toplu sayılar alır, asla bireysel izler değil."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Çözmediğimiz problem"
+          },
+          {
+            "kind": "p",
+            "text": "Talep kayıtları zincirin doğası gereği herkese açık ve kalıcı olduğundan, kararlı bir gözlemci aynı cüzdan tarafından farklı konumlarda yapılan talepleri ilişkilendirebilir. Bu gerçek bir zayıflıktır ve halka açık bir defterde çözümlemenin doğasında vardır. Bunu önlemek isteyen kullanıcılar farklı bağlamlar için ayrı cüzdanlar kullanmalıdır ve uygulama bunu gizlemek yerine kolaylaştırır; ancak kullanıcının problem hakkında bilgi sahibi olmasını gerektiren bir varsayılan bir çözüm değildir."
+          },
+          {
+            "kind": "callout",
+            "text": "Dürüst özet: tuttuğumuzu en aza indiririz, tuttuğumuzu satmayız ve halka açık kayda karşı azaltabildiğimiz ama ortadan kaldıramayacağımız bir ilişkilendirme saldırısı vardır."
+          }
+        ]
+      },
+      "compliance": {
+        "index": "14",
+        "eyebrow": "Yargı",
+        "title": "Düzenleme ve bunun nerede oturduğu",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Bu protokole aynı anda üç rejim dokunur; bu alışılmadıktır ve bir dipnota bırakmak yerine açıkça belirtmeye değer."
+          },
+          {
+            "kind": "h",
+            "text": "Veri koruma"
+          },
+          {
+            "kind": "p",
+            "text": "Konum, çoğu modern veri koruma yasası altında özel kategoriye bitişiktir ve protokol en uygun okumaya değil en katı okumaya göre inşa edilmiştir. Konum, bir talep anında belirtilen bir amaç için toplanır, yalnızca puanlama ve anlaşmazlık çözümünün gerektirdiği süre kadar saklanır ve asla bir hareket profiline birleştirilmez. Bir rejimin silme hakları verdiği yerde, zincir dışı kayıt silinebilir; zincir üstü talep kaydı silinemez, bu defterin bir sınırlamasıdır ve örtbas edilmek yerine açıklanır."
+          },
+          {
+            "kind": "h",
+            "text": "Token sınıflandırması"
+          },
+          {
+            "kind": "p",
+            "text": "$SEEK, bir fayda ve koordinasyon varlığı olarak tasarlanmıştır ve dokuzuncu bölümde tanımlanan fayda dekoratif değil gerçektir. Bu bir tasarım pozisyonudur, yasal bir sonuç değildir. Sınıflandırma yargı yetkisine göre değişir, zamanla değişir ve bir teknik belgenin iddia ederek çözebileceği bir şey değildir. Kullanılabilirlik bu nedenle yerel kuralların gerektirdiği yerde sınırlıdır."
+          },
+          {
+            "kind": "h",
+            "text": "Ödüller, şans ve kumar sınırı"
+          },
+          {
+            "kind": "p",
+            "text": "Yakalama bir zar atmayı içerir; bu da ülkeye göre değişen bir sınırın yakınına koyar. İki özellik onu çoğu rejimde doğru tarafta tutar ve bilerek korunur: katılım hiçbir şeye mal olmaz ve ücretli öğeler, değişken bir ödemeyle bahisler değil, oranları ve oranları ayarlar. Bir pass ağırlıklandırma satın alır ve bir boost bir çarpan satın alır; hiçbiri kaybedilebilecek bir bahis değildir. Bir yargı yetkisinin bunu farklı okuduğu yerde, ücretli katman tartışılmak yerine geri çekilir."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Zincir dışı kişisel veri",
+                "value": "Talep üzerine silinebilir"
+              },
+              {
+                "label": "Zincir üstü talep kaydı",
+                "value": "Kalıcı, öyle olduğu açıklanır"
+              },
+              {
+                "label": "Yaş kapısı",
+                "value": "Kayıtta uygulanır, ücretli öğeler için zorunludur"
+              },
+              {
+                "label": "Ücretli öğeler",
+                "value": "Bunları bahis olarak sınıflandıran yargı yetkilerinde geri çekilir"
+              }
+            ]
+          }
+        ]
+      },
+      "roadmap": {
+        "index": "15",
+        "eyebrow": "Yön",
+        "title": "Ne inşa edildi ve sıradaki ne",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol, konum tabanlı drop'lar, AR renderlama ve sosyal cüzdan ile iOS ve Android'de canlıdır. Doğrulama yığını şu anda GNSS, doğrulama ve hareket sürekliliği sinyallerini çalıştırır; radyo parmak izi aşamalı yayında. Doğrulama bir bayrak arkasında zorunludur, bunun dürüst durumu: ret yolu inşa edildi ve zorlama düğmesi her yüzey için atılmadı."
+          },
+          {
+            "kind": "p",
+            "text": "Sürükle-bırak kampanya kurucusu inşa edildi. Sıradaki, yönetilen ortaklıkların ötesinde yerleştirmeyi açan self-servis kurumsal portal ve onunla birlikte gelen varış analitiği. Bunun yanında token oluşturma etkinliği, canlı etkinlik modu, sezonlar ve nesne tarama oturur. Yönetişim, parametre kararlarının anlamlı olması için yeterli gerçek ücret akışı olduğunda takip eder; nedenleri on birinci bölümde belirtilmiştir."
+          },
+          {
+            "kind": "h",
+            "text": "Söz vermediklerimiz"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Yönetişim için bir tarih. Hacme bağlı ve hacim bir tarih değil.",
+              "Kapalı alan doğruluk eşitliği. Zor bir problem ve dürüst cevap, öngörülebilir gelecek için kapalı alanlarda daha geniş yarıçaplar.",
+              "Zincirler arası bir dağıtım. Beşinci bölümdeki gecikme ve maliyet gereksinimleri dardır ve bunları karşılamayan ikinci bir zincir, teknik bir karardan çok bir pazarlama kararı olurdu."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Tam aşama aşama döküm, yayınlandıkça güncel tutulan yol haritası sayfasında yaşıyor."
+          }
+        ]
+      },
+      "glossary": {
+        "index": "16",
+        "eyebrow": "Referans",
+        "title": "Sözlük",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Bu belge boyunca kullanılan terimler; genel olarak taşıdıkları anlamdan çok burada taşıdıkları anlamla."
+          },
+          {
+            "kind": "glossary"
+          }
+        ]
+      }
+    }
+  },
+  "allocations": {
+    "community": {
+      "label": "Topluluk ödülleri",
+      "note": "Arayıcılar tarafından toplama ve görevlerle kazanılır"
+    },
+    "ecosystem": {
+      "label": "Ekosistem & partnerler",
+      "note": "Kampanya sübvansiyonları, mekan katılımı, entegrasyonlar"
+    },
+    "team": {
+      "label": "Ekip & katkıda bulunanlar",
+      "note": "4 yıllık vest, 12 aylık cliff"
+    },
+    "treasury": {
+      "label": "Hazine",
+      "note": "Protokol geliştirme için yönetilen rezerv"
+    },
+    "liquidity": {
+      "label": "Likidite",
+      "note": "Borsa ve zincir üstü pazar derinliği"
+    },
+    "backers": {
+      "label": "Erken destekçiler",
+      "note": "2 yıllık vest, 6 aylık cliff"
+    }
+  },
+  "tokenFacts": {
+    "ticker": {
+      "label": "Sembol",
+      "value": "$SEEK"
+    },
+    "chain": {
+      "label": "Zincir",
+      "value": "Solana (SPL)"
+    },
+    "supply": {
+      "label": "Toplam arz",
+      "value": "1.000.000.000"
+    },
+    "emission": {
+      "label": "Emisyon",
+      "value": "Sabit, ek basım yok"
+    }
+  },
+  "glossary": {
+    "proof-of-location": {
+      "term": "Konum kanıtı",
+      "definition": "Bir cihazın belirli bir zaman aralığı boyunca belirli bir yarıçapın içinde olduğu iddiası; birkaç bağımsız sinyal üzerinden puanlanır ve üzerine değer serbest bırakılacak kadar inandırıcıdır. Olasılıksaldır, asla mutlak değildir."
+    },
+    "confidence-score": {
+      "term": "Güven puanı",
+      "definition": "Bir talebin sinyallerini puanlamanın birleşik sonucu. Her varlık gerektirdiği puanı belirler, böylece bir görev ödülü ve biletli bir drop bir doğrulayıcıyı paylaşabilir ve bir çıtayı paylaşmayabilir."
+    },
+    "claim-radius": {
+      "term": "Talep yarıçapı",
+      "definition": "Bir varlığın koordinatlarından alınabileceği mesafe. Varsayılan 30 m, 5 m ile 500 m arasında yapılandırılabilir ve bir yayıncının hem maliyet hem de anlam üzerindeki en büyük kolu."
+    },
+    "drop": {
+      "term": "Drop",
+      "definition": "Talep edilmek üzere bekleyen, koordinatlara yerleştirilmiş bir varlık. Bir miktar, bir pencere, bir güven eşiği ve bir yarıçap taşır."
+    },
+    "spawn": {
+      "term": "Spawn",
+      "definition": "Oyunun sunduğu şekliyle bir drop: sunucu tarafından duyurulur, haritada görünür, bir saat içinde biter ve iki yakalama denemesi değerindedir."
+    },
+    "attestation": {
+      "term": "Doğrulama",
+      "definition": "İşletim sisteminden uygulamanın gerçek ve cihazın kurcalanmamış olduğuna dair imzalı bir bildiri. Android'de Play Integrity, iOS'ta App Attest. Yığındaki en güçlü sinyal ve protokolün kontrol etmediği tek sinyal."
+    },
+    "radio-fingerprint": {
+      "term": "Radyo parmak izi",
+      "definition": "Bir konumdan görünen Wi-Fi ağları ve baz istasyonları seti; orada görünmesi gerekene karşı eşleştirilir. Değişmesi yavaş ve üretilmesi zordur; onu yararlı kılan da budur."
+    },
+    "motion-continuity": {
+      "term": "Hareket sürekliliği",
+      "definition": "Bir onaylanmış konum ile bir sonraki arasındaki ivmeölçer izi. Işınlanan talebi yakalar, çünkü 90 saniyede 400 km hareket etmenin eşleşen bir hareket profili yoktur."
+    },
+    "verified-arrival": {
+      "term": "Doğrulanmış varış",
+      "definition": "Bir yayıncının yarıçapının içinde eşiğini karşılayan bir talep. Bir yayıncının satın aldığı birim ve bir kampanyadaki maliyet rakamının modellenmek yerine sayılmasının nedeni."
+    },
+    "placement-fee": {
+      "term": "Yerleştirme ücreti",
+      "definition": "Bir yayıncının zemin tutmak için ödediği; yarıçap, süre ve bölge için talebe göre ağırlıklandırılır. Arayıcının aldığı ödülden ayrıdır."
+    },
+    "cold-streak": {
+      "term": "Soğuk seri",
+      "definition": "Merhamet zamanlayıcısı. Ardışık kaçırma başına iki puan yakalama şansı, on iki ile sınırlı, coinler arasında olduğu kadar yeniden denemeye de uygulanır."
+    },
+    "streak-penalty": {
+      "term": "Seri cezası",
+      "definition": "Ters kol. Aynı coinde ardışık başarı başına dört puan eksi, yirmi ile sınırlı; böylece tek bir spawn noktası farm etmek için iyi değil kötüye gider."
+    },
+    "seeker": {
+      "term": "Seeker",
+      "definition": "Varlıklara yürüyen ve onları talep eden kişi. Ayrıca on oyuncu seviyesinin ilki, sonuncusu Legend."
+    },
+    "seek": {
+      "term": "$SEEK",
+      "definition": "Çözümleme ve koordinasyon varlığı. Kampanyaları finanse eder, yerleştirme ücretlerini öder, staking yoluyla yerleştirme önceliği satın alır ve yönetişim canlandığında yönetişim oyunu taşır."
+    }
+  },
+  "whitepaperFigures": {
+    "draft": "Taslak rakamlar, nihai tokenomik değil",
+    "totalSupply": "Toplam arz",
+    "donutAria": "Toplam arzın payına göre token tahsisi",
+    "terms": "{count} terim",
+    "filterTerms": "Terimleri filtrele",
+    "filter": "Filtre",
+    "noMatch": "Buna hiçbir şey uymuyor. Belgenin kendisi tarayıcının kendi bul özelliğiyle aranabilir.",
+    "stackCaption": "Talepler yığından aşağı seyahat eder; değer yukarı geri seyahat eder. Ayrıntı için bir katman seç.",
+    "liveModel": "Canlı model",
+    "interactive": "Etkileşimli",
+    "confidenceTitle": "Bir talebi reddetmeyi dene",
+    "thresholdLabel": "Varlık eşiği",
+    "confidenceThreshold": "güven · eşik {threshold}",
+    "claimAccepted": "Talep kabul edildi",
+    "claimRefused": "Talep reddedildi",
+    "shortBy": "{short} kadar eksik. Bir cihazdan tekrarlanan retler eşiğini daha da yükseltir.",
+    "confidenceCaption": "Ağırlıklar açıklayıcıdır. Önemli olan şekildir: hiçbir sinyal tek başına finanse edilmiş bir kampanyayı geçemez ve dördünü de aynı anda sahtelemek drop'tan daha pahalıdır.",
+    "economyLabel": "Ekonomik döngü",
+    "stageOf": "{total} aşamadan {step}",
+    "timelineTitle": "Bir talep, aşama aşama",
+    "stop": "Durdur",
+    "runReal": "Gerçek hızda çalıştır",
+    "claimStages": "Talep aşamaları",
+    "segAria": "{label}, {ms} milisaniye, {where}",
+    "endToEnd": "Uçtan uca {seconds} sn",
+    "takes": "Sürer",
+    "elapsed": "Geçen",
+    "whatMoves": "Ne hareket eder",
+    "timelineWhere": {
+      "device": "Telefonunda",
+      "verifier": "Doğrulayıcı",
+      "chain": "Solana"
+    },
+    "timelineCaption": "Bunlar bütçelerdir, ölçümler değil. Sensör penceresi ve çözümleme koşullarla birlikte hareket eder ve aralarındaki her şey hareket etmeyen bir aritmetiktir. Sınırın nerede olduğuna dikkat et: ham sensör verisi ilk üç aşamayı asla terk etmez.",
+    "vestingTitle": "Dolaşımdaki arz, ay ay",
+    "vestingAria": "48 ay boyunca tahsis başına dolaşımdaki arz",
+    "circulatingMonth": "{month}. ayda dolaşımda",
+    "circulatingLaunch": "lansmanda dolaşımda",
+    "axisLaunch": "Lansman",
+    "axisYear": "{year}. Yıl",
+    "month": "Ay",
+    "vestingCaption": "Adımları oku, eğriyi değil. Bir sıçramanın ardından gelen düz bir uzunluk bir cliff'tir ve bir cliff, bir programın tutulup tutulmadığı yerdir. Ekip ve destekçi tahsisleri kontrol etmeye değer olanlardır çünkü ağın kullanan insanlarına değil, piyasaya açılan iki tahsistir.",
+    "calcTitle": "Bir bütçenin satın aldığı şey",
+    "calcBudget": "Kampanya bütçesi",
+    "calcReward": "Talep başına ödül",
+    "calcRadius": "Talep yarıçapı",
+    "calcFee": "Bu yarıçaptaki yerleştirme ücreti: drop başına ${fee}",
+    "calcArrivals": "Doğrulanmış varışlar",
+    "calcPerPerson": "Kapıdaki kişi başına ${cost}",
+    "calcDisplay": "Display olarak aynı bütçe",
+    "calcInferred": "gösterim, bunların yaklaşık {visits} tanesi ${cost} birim maliyetle çıkarılan bir ziyarete dönüşür",
+    "calcCaption": "Display rakamları ${cpm} CPM ve %{rate} gösterimden ziyarete oranı kullanır; her ikisi de sektör baş parmak kuralları. Önemli olan fark, bir sütunun kapıda ölçülmesi ve diğerinin çıkarımla bulunmasıdır.",
+    "contents": "İçindekiler · {count} bölüm",
+    "chaptersLabel": "Bölümler",
+    "close": "Kapat",
+    "ladderTitle": "Yakalama zarı, sunucunun hesapladığı gibi",
+    "rarityLabel": "Nadirlik",
+    "playerLevel": "Oyuncu seviyesi",
+    "chargeRing": "Şarj halkası",
+    "missed": "Kaçırıldı",
+    "clanBonus": "Klan bonusu",
+    "points": "+{points} pts",
+    "baseChance": "Temel şans",
+    "levelBonus": "Seviye bonusu",
+    "ringMultiplier": "Halka çarpanı",
+    "retryMultiplier": "Yeniden deneme çarpanı",
+    "firstAttempt": "İlk deneme",
+    "retry": "Yeniden deneme",
+    "acrossSpawn": "Spawn boyunca",
+    "youCaught": "Yakaladın",
+    "notYet": "henüz değil",
+    "ladderHint": "Bir spawn sana neredeyse hiçbir şey söylemez. Bin tane çalıştır ve iki çubuğun yaklaştığını izle.",
+    "ladderTally": "{spawns} spawn'dan {caught} yakalandı, modelden {gap} puan sapma.",
+    "runOne": "Bir spawn çalıştır",
+    "runThousand": "Bin çalıştır",
+    "reset": "Sıfırla",
+    "ladderCaption": "Göç, {rarity}'yi %{first} ve sonra %{second} olarak yayınlar; spawn boyunca %{overall}. Bu, seviye 5'te halka doluyken ve klan yokken bu modeldir; kaydırıcıların başladığı yer bu. Yakalanan bir birim bir oyun birimidir ve tokenlerde neye değdiği oyunun değil piyasanın işidir."
+  },
+  "stackLayers": {
+    "app": {
+      "label": "Uygulama",
+      "sub": "Seekprotocol · kurumsal portal · kampanya kurucusu",
+      "detail": "İnsanların dokunduğu şey. Mobil uygulama varlıkları AR'da render eder ve toplama işini yapar; portal yayıncıların onları yerleştirdiği yerdir. Her ikisi de aşağıdaki katmanların sıradan istemcileridir ve ayrıcalıklı erişimleri yoktur."
+    },
+    "intelligence": {
+      "label": "Zeka",
+      "sub": "AI rehber · görev üretimi · yönlendirme",
+      "detail": "Nereye gitmen gerektiğini önermek ve neye baktığını söylemek için kamera akışını ve oyun geçmişini okur. Yapabildiği yerde cihaz üzerinde çalışır ve ihtiyacı olmayan ham konum geçmişini asla görmez."
+    },
+    "location": {
+      "label": "Konum doğrulama",
+      "sub": "GNSS · radyo parmak izi · doğrulama · hareket",
+      "detail": "Bir talebi bağımsız sinyaller üzerinden puanlar ve puan varlığın eşiğini geçtiğinde imzalı bir doğrulama yayar. Tasarım gereği zincir dışı: doğrulamayı işletirken kullanılan sensör verisi tam olarak halka açık olmaması gereken veridir."
+    },
+    "settlement": {
+      "label": "Çözümleme",
+      "sub": "Solana · SPL varlıkları · talep kayıtları",
+      "detail": "Varlık tanımlarını, koordinatları ve talep kayıtlarını tutar ve bir talep kabul edildiğinde değeri hareket ettirir. Küçük bir ödül toplamanın, toplama maliyetiyle domine edilmediği kadar düşük ücretler için seçilmiştir."
+    }
+  },
+  "confidenceSignals": {
+    "gnss": {
+      "label": "GNSS kilidi",
+      "detail": "Uydu konumu ve bildirilen doğruluğu, artı takımyıldız ve uydu sayısı.",
+      "spoofable": "Root'lu bir cihazda kolayca sahtelenir."
+    },
+    "radio": {
+      "label": "Çevresel radyo",
+      "detail": "Burada görünmesi gerekene karşı eşleştirilen yakındaki Wi-Fi SSID'leri ve baz istasyonları.",
+      "spoofable": "Üretmek zor; radyo ortamları yavaş değişir."
+    },
+    "attest": {
+      "label": "Cihaz doğrulaması",
+      "detail": "Kurcalanmamış bir OS'de gerçek bir uygulamayı onaylayan Play Integrity veya App Attest.",
+      "spoofable": "Emülatör çiftlikleri bunu doğrudan başaramaz."
+    },
+    "motion": {
+      "label": "Hareket sürekliliği",
+      "detail": "Son onaylanmış konumun ile bu konumun arasındaki ivmeölçer izi.",
+      "spoofable": "90 saniyede 400 km sıçramanın eşleşen bir hareket profili yoktur."
+    }
+  },
+  "confidenceTiers": {
+    "low": {
+      "label": "Görev ödülü",
+      "note": "Düşük değer, düşük çıta."
+    },
+    "mid": {
+      "label": "Partner drop",
+      "note": "Finanse edilmiş kampanyalar için varsayılan."
+    },
+    "high": {
+      "label": "Biletli etkinlik",
+      "note": "Yüksek değer, her şeyin uyuşması gerekir."
+    }
+  },
+  "economyStages": {
+    "fund": {
+      "label": "Yayıncı finanse eder",
+      "actor": "Marka · proje · mekan",
+      "body": "Bir kampanya $SEEK cinsinden belirlenir ve finanse edilir; yarıçap, süre ve bölgenin ne kadar tartışmalı olduğuna göre ağırlıklandırılmış bir yerleştirme ücretiyle.",
+      "flow": "$SEEK giriş"
+    },
+    "place": {
+      "label": "Varlık yerleştirilir",
+      "actor": "Protokol",
+      "body": "Drop, koordinatlarına bir talep yarıçapı, bir pencere ve talep ettiği güven eşiğiyle yazılır.",
+      "flow": "Hazineye ücret"
+    },
+    "walk": {
+      "label": "Biri oraya yürür",
+      "actor": "Arayıcı",
+      "body": "Otomatikleştirilemeyen tek adım. Seyahat, farm etmeyi pahalı yapan maliyettir.",
+      "flow": "Zaman ve mesafe"
+    },
+    "verify": {
+      "label": "Varlık doğrulanır",
+      "actor": "Doğrulama katmanı",
+      "body": "Dört sinyal zincir dışı puanlanır. Zincire ulaşan şey imzalı bir doğrulamadır, sensör verin değil.",
+      "flow": "Doğrulama"
+    },
+    "settle": {
+      "label": "Çözümlenir",
+      "actor": "Solana",
+      "body": "Aktarım bir kuruşun küçük bir kesri karşılığında bir saniyeden kısa sürede onaylanır ve talep kaydı herkese açıktır.",
+      "flow": "Ödül çıkış"
+    },
+    "split": {
+      "label": "Ücretler geri akar",
+      "actor": "Protokol",
+      "body": "Protokol ücretlerinin çoğu yürüyüş yapan insanlara yönlendirilir; geri kalanı hazineyi ve ekosistemi finanse eder.",
+      "flow": "Çoğu arayıcılara"
+    }
+  },
+  "timelineStages": {
+    "open": {
+      "label": "Drop açıldı",
+      "detail": "Haritadaki bir varlığa dokunursun veya ona kamera aracılığıyla uzanırsın. Uygulama zaten tuttuğu konumu alır ve yeni bir sensör penceresi başlatır.",
+      "payload": "Varlık kimliği, son bilinen kilit"
+    },
+    "window": {
+      "label": "Sensör penceresi",
+      "detail": "Şimdiye kadarki en uzun aşama ve ondan sonrasına karar veren aşama: doğruluğuyla yeni bir GNSS kilidi, radyo ortamının bir taraması ve son onaylanmış konumdan bu yana hareket izi.",
+      "payload": "GNSS kilidi, uydu sayısı, Wi-Fi ve baz istasyonu seti, ivmeölçer izi"
+    },
+    "attest": {
+      "label": "Doğrulama ve imza",
+      "detail": "Play Integrity veya App Attest, uygulamanın gerçek ve OS'un kurcalanmamış olduğunu onaylar. Talep, o uygulama örneğine bağlı anahtarla imzalanır; röleli bir talebi pahalı kılan da budur.",
+      "payload": "Doğrulama tokeni, imzalı talep"
+    },
+    "score": {
+      "label": "Puanlama",
+      "detail": "Zincir dışı, çünkü halka açık olmasının bir işi olmayan sensör verilerine bağlıdır. Her sinyal, koordinatın nasıl görünmesi gerektiğine karşı puanlanır ve sonuçlar tek bir güven sayısında birleştirilir.",
+      "payload": "Güven puanı, sinyal başına döküm"
+    },
+    "threshold": {
+      "label": "Eşik kontrolü",
+      "detail": "Puan varlığın eşiğini karşılar ya da karşılamaz. Bir ret cihaza karşı kaydedilir ve tekrarlanan retler yalnızca yeniden başarısız olmak yerine o cihaz için çıtayı yükseltir.",
+      "payload": "Kabul veya ret, imzalı doğrulama"
+    },
+    "settle": {
+      "label": "Çözümleme",
+      "detail": "Talep kaydı ve aktarım Solana'ya tek bir işlemde iner. Bu, başkalarının görebildiği tek aşamadır ve tek söylediği, halka açık bir koordinattaki bir talebin başarılı olduğudur.",
+      "payload": "Talep kaydı, token aktarımı"
+    },
+    "confirm": {
+      "label": "Cüzdanında",
+      "detail": "Cüzdan güncellenir ve varlık senin için haritadan gider. Dokunmaktan tutmaya, iyi bir bağlantıda iki saniyeden az.",
+      "payload": "Bakiye güncellemesi, harita durumu"
+    }
+  },
+  "referrals": {
+    "eyebrow": "Davetler",
+    "title": "Oynayan her arkadaş seni güçlendirir",
+    "lead": "Bir arkadaşına davet kodunu ver ve yaptığın her yakalamada; onlar oynadıkça, %5 daha fazla XP tut. Üst sınır yok ve asla onların tarafından çıkmaz.",
+    "codeLabel": "Sekiz karakterlik davet kodun",
+    "activeLabel": "AKTİF",
+    "exampleLabel": "Bir legendary yakalama, öncesi ve sonrası",
+    "exampleBody": "Bonus, yakalama puanlandığında sunucuda uygulanır ve kaydın yanında klan rütbenle birlikte yazılır; böylece ikisi daha sonra ayırt edilebilir.",
+    "activeRule": "Aktif; son {days} günde {needed} yakalama demektir",
+    "panelTitle": "TAKIMIN",
+    "rateLabel": "ORANIN",
+    "idle": "uykuda",
+    "levelShort": "SV"
+  },
+  "referralRules": {
+    "once": {
+      "title": "Bir davet eden, bir kez seçilir",
+      "body": "Bir kod tek seferde kullanılabilir ve sonrasında asla değiştirilemez. Veritabanı ikinci denemeyi reddeder, bu yüzden uygulamanın vazgeçirilebileceği bir kural değildir."
+    },
+    "newOnly": {
+      "title": "Yalnızca yeni hesaplar",
+      "body": "Bir kod yalnızca XP'si olmayan ve henüz hiçbir şey toplamamış bir hesapta işe yarar. Yerleşmiş bir arayıcı sonradan bir takıma bağlanıp yeni sayılamaz."
+    },
+    "oneLevel": {
+      "title": "Bir seviye derin",
+      "body": "Getirdiğin arkadaşlardan kazanırsın, onların getirdiği arkadaşlardan değil. O arayıcılar kendi takımlarını inşa eder ve hepsini tutar."
+    },
+    "friendKeeps": {
+      "title": "Arkadaşın hiçbir şey kaybetmez",
+      "body": "Bonus kendi yakalamalarına eklenir. Onların bir kesintisi değildir, bu yüzden kazandığın hiçbir şey kimseden alınmaz."
+    }
+  },
+  "referralInfo": {
+    "openLabel": "Davetler nasıl çalışır, tam olarak",
+    "close": "Kapat",
+    "eyebrow": "Davetler tam olarak",
+    "title": "Bir takımın değeri ve saymaya ne zaman başladığı",
+    "lead": "Burada yanlış anlaşılması kolay iki şey vardır. Bonusun tavanı yoktur ve bir arkadaş kurdukları anda ödemeye başlamaz. İkisi de söylenmek yerine görülmeye değer.",
+    "ladderLabel": "Aktif arkadaşlar ve yakalamalarının değeri",
+    "ladderFriends": "{count} oynuyor",
+    "noCap": "Üst sınır yoktur. Yirmi aktif arkadaş düz bir katlanmadır ve toplamda hiçbir şey orada durmaz.",
+    "lifecycleLabel": "Bir arkadaşın nasıl davetli olduğu",
+    "foot": "Bir arkadaş, {days} gün içinde {needed} gerçek yakalama yaptığında sayılır. Kısa kalırsa sayılmayı durdurur; tekrar oyna, geri dönerler. Her iki yönde de kaybedilen bir şey yoktur."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "Kodunu veriyorsun",
+      "body": "Her arayıcı kayıtta sekiz karakterlik bir kod alır. Sonsuza kadar senindir ve talep edilecek ya da üretilecek bir şey yoktur."
+    },
+    "redeem": {
+      "title": "Onu yeni bir hesapta giriyorlar",
+      "body": "Bir kod yalnızca XP'si olmayan ve hiçbir şey toplamamış bir hesapta çalışır. Bir kez yazılır ve sonrasında değiştirilemez, bu yüzden kimse takımlar arasında taşınamaz."
+    },
+    "play": {
+      "title": "Dışarı çıkıp oynuyorlar",
+      "body": "Yalnızca gerçek yakalamalar sayılır. Bir simülatörde yapılan denemeler ayrı kaydedilir ve toplamın bir parçası değildir."
+    },
+    "count": {
+      "title": "Ödemeye başlıyorlar ve ödemeye devam ediyorlar",
+      "body": "Bu, insanların atladığı adımdır. Kurmak yeterli değildir: arkadaşın çarpanının hareket etmesi için gerçekten dışarıda olması gerekir."
+    }
+  }
+}

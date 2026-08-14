@@ -17,7 +17,7 @@ Where the site stands, what it is built on, and what is still open.
 | Framework | Next.js 16 (Turbopack), React 19, Tailwind v4 |
 | Dev | `npm run dev` → http://localhost:3005 |
 | Build | `npm run build` — clean as of this writing |
-| Languages | 8 locales via next-intl (`en nl de es fr zh ja ko`) |
+| Languages | 9 locales via next-intl (`en nl de es fr zh ja ko tr`) |
 
 The app repo at `/Users/donreijke/Downloads/seekar-app` is the source of truth
 for anything the site claims about the product. Its `docs/HANDOVER.md`,

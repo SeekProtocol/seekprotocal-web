@@ -1,7 +1,7 @@
 # Seek Protocol — website
 
 Marketing site for Seek Protocol and the SeekAR app: an AR and AI platform on
-Solana. Next.js 16, React 19, Tailwind v4, eight languages, five three.js
+Solana. Next.js 16, React 19, Tailwind v4, nine languages, five three.js
 scenes.
 
 Production: <https://www.seekprotocol.ai>
