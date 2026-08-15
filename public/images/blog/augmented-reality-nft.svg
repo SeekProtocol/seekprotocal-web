@@ -1,0 +1,87 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A geometric NFT diamond suspended in the air above a coordinate pin on the ground, connected by an anchoring line">
+  <defs>
+    <radialGradient id="nbg" cx="0.5" cy="0.4" r="0.9">
+      <stop offset="0" stop-color="#151826"/>
+      <stop offset="1" stop-color="#08090c"/>
+    </radialGradient>
+    <linearGradient id="ngem" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B9FF66"/>
+      <stop offset="0.5" stop-color="#3FD4C5"/>
+      <stop offset="1" stop-color="#7A6BFF"/>
+    </linearGradient>
+    <linearGradient id="ngemDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7A6BFF"/>
+      <stop offset="1" stop-color="#2f3348"/>
+    </linearGradient>
+    <linearGradient id="nacc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B9FF66"/>
+      <stop offset="1" stop-color="#3FD4C5"/>
+    </linearGradient>
+    <radialGradient id="nglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#B9FF66" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#B9FF66" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="ngrid" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1c1f2a" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#nbg)"/>
+  <rect width="1024" height="1024" fill="url(#ngrid)" opacity="0.55"/>
+
+  <!-- Ground line (subtle horizon) -->
+  <line x1="0" y1="760" x2="1024" y2="760" stroke="#1c1f2a" stroke-width="2"/>
+
+  <!-- Radar around ground pin -->
+  <g transform="translate(512, 800)" fill="none" stroke="url(#nacc)">
+    <circle r="90" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle r="170" stroke-opacity="0.20" stroke-width="1.5"/>
+    <circle r="260" stroke-opacity="0.10" stroke-width="1.5"/>
+  </g>
+  <ellipse cx="512" cy="820" rx="180" ry="40" fill="url(#nglow)"/>
+
+  <!-- Anchoring line pin ↔ NFT (dashed, gives "tether" feel) -->
+  <line x1="512" y1="740" x2="512" y2="450" stroke="url(#nacc)" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="10 8"/>
+  <!-- Anchor "chain links" as three small circles along the line -->
+  <g fill="none" stroke="url(#nacc)" stroke-opacity="0.55" stroke-width="1.5">
+    <circle cx="512" cy="710" r="8"/>
+    <circle cx="512" cy="620" r="8"/>
+    <circle cx="512" cy="510" r="8"/>
+  </g>
+
+  <!-- The NFT diamond, up in the air -->
+  <g transform="translate(512, 380)">
+    <!-- Outer ghost -->
+    <polygon points="0,-190 165,0 0,190 -165,0"
+             fill="none" stroke="url(#ngem)" stroke-opacity="0.35" stroke-width="2"/>
+    <!-- Fill -->
+    <polygon points="0,-160 140,0 0,160 -140,0" fill="url(#ngem)"/>
+    <!-- Front-facet highlight -->
+    <polygon points="0,-160 70,-80 0,0 -70,-80" fill="#ffffff" fill-opacity="0.20"/>
+    <polygon points="0,0 70,-80 140,0 70,80" fill="#ffffff" fill-opacity="0.06"/>
+    <!-- Bottom shadow facet -->
+    <polygon points="0,0 -70,80 0,160 70,80" fill="url(#ngemDark)" fill-opacity="0.55"/>
+    <!-- Center inscription -->
+    <text x="0" y="-38" font-family="ui-monospace, 'SF Mono', Menlo, monospace"
+          font-size="14" fill="#08090c" text-anchor="middle" letter-spacing="2" font-weight="600">NFT</text>
+    <text x="0" y="-8" font-family="ui-monospace, 'SF Mono', Menlo, monospace"
+          font-size="20" fill="#08090c" text-anchor="middle" letter-spacing="1" font-weight="700">#4A8F</text>
+  </g>
+
+  <!-- Ground pin -->
+  <g transform="translate(512, 800)">
+    <path d="M 0 -100 C -55 -100 -98 -57 -98 -2 C -98 55 0 125 0 125 C 0 125 98 55 98 -2 C 98 -57 55 -100 0 -100 Z"
+          fill="url(#nacc)" stroke="#08090c" stroke-width="6"/>
+    <circle r="24" cy="-12" fill="#08090c"/>
+    <circle r="8" cy="-12" fill="url(#nacc)"/>
+  </g>
+
+  <!-- Corner mono labels -->
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#B9FF66">
+    <text x="60" y="70" font-size="22" letter-spacing="3">ANCHORED</text>
+    <text x="60" y="98" font-size="16" fill="#5a5f6e" letter-spacing="2">ONE COORDINATE · ONE HOLDER · ONE CHAIN</text>
+  </g>
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#5a5f6e" text-anchor="end">
+    <text x="964" y="964" font-size="14" letter-spacing="2">SEEKPROTOCOL</text>
+  </g>
+</svg>

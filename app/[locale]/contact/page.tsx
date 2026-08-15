@@ -51,6 +51,18 @@ export default async function ContactPage({
 function ContactContent() {
   const t = useTranslations("contact");
 
+  /* Four inquiry-type cards sit between the hero and the form.
+     They give each audience (partners, publishers, press, support) its own
+     landing rather than one generic "get in touch". Also fixes the thin-content
+     signal Ubersuggest flagged: the page was 106 crawlable words in EN and
+     mirrored across every locale — now 350+. */
+  const inquiryTypes = [
+    { title: t("partnershipsTitle"), body: t("partnershipsBody") },
+    { title: t("publishersTitle"), body: t("publishersBody") },
+    { title: t("pressTitle"), body: t("pressBody") },
+    { title: t("supportTitle"), body: t("supportBody") },
+  ];
+
   return (
     <>
       <script
@@ -65,6 +77,29 @@ function ContactContent() {
             <p className="eyebrow">Contact</p>
             <h1 className="t-h1 page-head-title">{t("getInTouch")}</h1>
             <p className="t-lead">{t("formDesc")}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Inquiry-type cards — one card per audience segment.
+          Above the form because the reader who scrolled here already knows
+          they want to talk to somebody; giving them a shortcut into whichever
+          conversation matches saves them scanning a generic form.  */}
+      <section className="section section-tight">
+        <div className="shell">
+          <p className="eyebrow">{t("inquiryTypesEyebrow")}</p>
+          <div
+            className="grid-4"
+            style={{ marginTop: "1.25rem", gap: "1.25rem" }}
+          >
+            {inquiryTypes.map((it) => (
+              <div key={it.title} className="card reveal">
+                <h2 className="t-h4" style={{ marginBottom: ".5rem" }}>
+                  {it.title}
+                </h2>
+                <p className="t-body">{it.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

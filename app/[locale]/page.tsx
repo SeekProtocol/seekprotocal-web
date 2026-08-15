@@ -62,6 +62,90 @@ export async function generateMetadata({
   };
 }
 
+/* Homepage FAQPage schema.
+
+   English regardless of the visitor's locale, following the same pattern as
+   the seekar page's own FAQ node: structured data is read by crawlers and by
+   LLM retrieval, and the queries worth winning ("what is seekprotocol", "is
+   seekprotocol on solana", "what is $SEEK", "who builds seekprotocol") are
+   asked in English overwhelmingly. Answers are canonical short-form and pull
+   from the same facts the visible content is built on, so a reader who arrives
+   from an assistant citation lands on a page that says the same thing.
+
+   Deliberately outside the SoftwareApplication FAQ that lives on /seekar: that
+   one answers app-usage questions ("is it free", "what phones"), this one
+   answers protocol/brand-level questions ("what is it", "on which chain"). */
+const homeFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is Seekprotocol?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Seekprotocol is the first augmented reality and AI platform on Solana. It anchors digital assets — tokens, NFTs, brand rewards — to real-world coordinates. A publisher places a reward at a location, someone walks to it, and the protocol verifies they were actually there before settling the claim on Solana. The consumer surface is the Seekprotocol mobile app on iOS and Android.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Seekprotocol built on Solana?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Every claim settles on Solana. The chain is chosen for its low transaction cost — collecting a reward worth a few cents has to cost a small fraction of a cent to record, or the economics do not work — and for its sub-second confirmation, which matters when a user is standing on a street corner waiting.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is $SEEK, the native token?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "$SEEK is the settlement asset of the Seekprotocol protocol. Publishers spend $SEEK to place location-based campaigns, and a majority of that fee routes back to the seekers who claim the resulting drops. Token distribution and vesting details are in the whitepaper at https://www.seekprotocol.ai/en/whitepaper.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How does proof of location work?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Presence is verified against four independent signals — satellite fix, ambient radio environment, device attestation and motion continuity — that must all agree before a claim is accepted. The goal is to make forgery cost more than the reward is worth. The protocol does not claim forgery is impossible; the whitepaper documents the specific attacks and the limits.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Seekprotocol free to use?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The Seekprotocol mobile app is free on iOS and Android. Discovering and claiming rewards costs nothing to the user, and a wallet is created for you from a social login so no crypto knowledge is required to start. Publishers pay per verified visit when they place a campaign.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who is behind Seekprotocol?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Seekprotocol is built by Block Protocol L.L.C-FZ, a company based in Dubai, UAE. The app is published on the App Store and Google Play, and the project's home is seekprotocol.ai.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is location-based AR?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Location-based AR anchors digital objects — 3D models, tokens, NFTs, rewards — to specific real-world coordinates. Unlike marker-based AR (which needs a printed image) or world-scale AR (which places objects relatively), location-based AR uses GPS plus a verification layer so an asset only exists for people who physically visit its coordinate. Seekprotocol is a location-based AR platform in this sense.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What was SeekAR? Is it the same as Seekprotocol?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "SeekAR was the launch name of what is now called Seekprotocol. The same app, the same account, the same map — only the name and icon changed in August 2026, after a separate company filed a trademark application on the old name. The full account is at https://www.seekprotocol.ai/en/blog/seekar-is-now-seekprotocol.",
+      },
+    },
+  ],
+};
+
 export default async function HomePage({
   params,
 }: {
@@ -85,6 +169,11 @@ function HomeContent() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqJsonLd) }}
+      />
+
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <section className="hero">
         <div className="grid-field" aria-hidden="true" />
@@ -171,6 +260,17 @@ function HomeContent() {
           <div className="reveal" style={{ marginTop: "3rem" }}>
             <OffersSection />
           </div>
+
+          {/* Contextual link out to the business trechter. Publishers who
+              read Beyond-coins are the audience for /business — this hand-off
+              was missing, so the section dead-ended and everything below it
+              stayed a seeker narrative. */}
+          <div className="reveal" style={{ marginTop: "2.5rem" }}>
+            <Link href="/business" prefetch={false} className="arrow-link">
+              {t("placeReward")}
+              <ArrowRight />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -240,6 +340,17 @@ function HomeContent() {
             </p>
           </div>
           <GlobeSection />
+
+          {/* The live network section is where a reader first sees the whole
+              picture; hand them off to /ecosystem for the three-party
+              structure instead of letting them scroll past to Clans without a
+              route into the deeper page. */}
+          <div className="reveal" style={{ marginTop: "2.5rem", textAlign: "center" }}>
+            <Link href="/ecosystem" prefetch={false} className="arrow-link">
+              {t("exploreEcosystem")}
+              <ArrowRight />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -285,13 +396,29 @@ function HomeContent() {
             ))}
           </div>
 
-          <div className="reveal" style={{ marginTop: "2.5rem" }}>
+          <div
+            className="reveal"
+            style={{
+              marginTop: "2.5rem",
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "1.5rem 2rem",
+              alignItems: "center",
+            }}
+          >
             {/* Sits about 18,000px down. Prefetching the whitepaper because it
                 scrolled past costs 132 KB across four segment requests, at the
                 depth where the tab was being killed. See SiteFooter.tsx for
                 what `false` does and does not keep. */}
             <Link href="/whitepaper" prefetch={false} className="arrow-link">
               {t("readWhitepaper")}
+              <ArrowRight />
+            </Link>
+            {/* Companion link out to the roadmap. Pillars answer "what is it?";
+                readers who want "when?" belong on /roadmap, and the sitewide
+                autoriteit that lands on `/en` should route to both, not one. */}
+            <Link href="/roadmap" prefetch={false} className="arrow-link">
+              {t("viewRoadmap")}
               <ArrowRight />
             </Link>
           </div>

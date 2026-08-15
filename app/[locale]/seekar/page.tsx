@@ -87,7 +87,7 @@ const seekarFaqJsonLd = {
       name: "Who makes Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Seekprotocol is built by Seekprotocol, a product of Block Protocol L.L.C-FZ in Dubai, UAE. The app is published on the App Store and Google Play and the project's home is seekprotocol.ai.",
+        text: "Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE. The app is published on the App Store and Google Play and the project's home is seekprotocol.ai.",
       },
     },
     {
