@@ -310,11 +310,36 @@ export default async function LocaleLayout({
               }),
             }}
           />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `document.addEventListener('contextmenu',function(e){e.preventDefault()});document.addEventListener('copy',function(e){e.preventDefault()});document.addEventListener('cut',function(e){e.preventDefault()});document.addEventListener('selectstart',function(e){e.preventDefault()});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.key==='c'||e.key==='x'||e.key==='a'||e.key==='u'||e.key==='s')){e.preventDefault()}});`,
-            }}
-          />
+          {/* No copy/context/select-blocking script here on purpose.
+
+              A previous version registered listeners for `contextmenu`, `copy`,
+              `cut`, `selectstart` and the Ctrl/Cmd shortcuts for C/X/A/U/S, all
+              set to `preventDefault`. It was removed for four separate reasons
+              and should not come back without addressing all of them:
+
+              1. LLM discoverability. robots.txt explicitly allows OAI-SearchBot,
+                 ChatGPT-User, PerplexityBot, Claude-User, Claude-SearchBot,
+                 Google-Extended, Applebot-Extended, GPTBot, ClaudeBot and
+                 anthropic-ai. That policy is a public bet that being quotable in
+                 an assistant's answer is worth more than withholding the
+                 content. A user who cannot copy a sentence from this site into
+                 their AI chat is a user who cannot ask their AI about us — the
+                 script contradicted the file we ship next to it.
+
+              2. Accessibility. Screen readers and assistive tech expect the
+                 selection model to work. Blocking selectstart breaks translation
+                 tools, read-aloud modes and the built-in accessibility features
+                 on every platform.
+
+              3. Discoverability for humans. Ctrl/Cmd+S is used to save reading
+                 for later; Ctrl/Cmd+U is used by any developer or partner
+                 evaluating whether to integrate. Blocking them cost curiosity
+                 for no gain.
+
+              4. It did not protect anything. Anyone motivated to copy the copy
+                 already used the browser DevTools or `view-source:`, neither of
+                 which the listeners could reach. The people it blocked were the
+                 casual readers who would have quoted us. */}
           <ThemeProvider>
             <a href="#main-content" className="skip-link">
               Skip to main content

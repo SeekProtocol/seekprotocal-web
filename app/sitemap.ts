@@ -48,21 +48,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
    */
   const REBUILT = new Date("2026-08-05");
 
-  /* The app page, added 8 August 2026. Its own date rather than REBUILT: it is
-     new, and telling Google it last changed three days before it existed is the
-     kind of small lie this file is otherwise careful not to tell. */
-  const SEEKAR_ADDED = new Date("2026-08-08");
+  /* SEO diagnose van 15 aug 2026 raakte vier pagina's inhoudelijk: de homepage
+     kreeg drie nieuwe interne links, /seekar en /business kregen herschreven
+     metadata en /contact een nieuwe inquiry-types-sectie. Aparte constant zodat
+     een latere kleine copy-wijziging op één van die vier niet stilletjes REBUILT
+     laat "kloppen" voor pagina's die niet zijn aangeraakt. */
+  const SEO_PASS = new Date("2026-08-15");
 
   const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly"; lastModified: Date }[] = [
-    { path: "/", priority: 1, changeFrequency: "weekly", lastModified: REBUILT },
+    { path: "/", priority: 1, changeFrequency: "weekly", lastModified: SEO_PASS },
 
     /* Priority 0.9, level with /ecosystem and /whitepaper and below only the
        homepage. It is the page for the product the whole site is about, and the
        one carrying the app's name. */
-    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SEEKAR_ADDED },
+    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SEO_PASS },
     { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
     { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: REBUILT },
-    { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: REBUILT },
+    { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: SEO_PASS },
     { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
     { path: "/terms-conditions", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
 
@@ -75,7 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/ecosystem", priority: 0.9, changeFrequency: "monthly", lastModified: REBUILT },
     { path: "/whitepaper", priority: 0.9, changeFrequency: "monthly", lastModified: REBUILT },
     { path: "/roadmap", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
-    { path: "/business", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
+    { path: "/business", priority: 0.8, changeFrequency: "monthly", lastModified: SEO_PASS },
   ];
 
   /* One entry per locale, each pointing at itself and each carrying the same
