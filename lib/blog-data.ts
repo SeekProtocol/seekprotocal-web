@@ -224,7 +224,7 @@ export const blogPosts: BlogPost[] = [
       "A hybrid is possible. A geocache that contains a QR code that unlocks an AR drop nearby is a format we have seen tried at community events and it works surprisingly well, you get the physical satisfaction of finding the container and the dynamic reward of the AR pickup. Nothing prevents publishers from designing more of these, and if the two formats grow up together this is where the interesting overlap lives.",
       "If you have only done one, do the other. If you are a geocacher who has never used [Seekprotocol](/seekar), the closest analogue is a city cache, a coordinate, a short walk, a thing to find, only the thing is rendered rather than plastic. If you are an AR player who has never geocached, pick a traditional cache within a kilometre of your house and try it on a Sunday morning. The formats are less in competition than they look; they are two ways of doing the same underlying thing, and the good version of each is worth the walk.",
     ],
-    image: "/images/blog/geocaching-vs-ar.avif",
+    image: "/images/blog/geocaching-vs-ar-v2.avif",
     imageWidth: 1536,
     imageHeight: 960,
     imageAlt: "A physical geocache box beside a hovering holographic AR coin in moss",
