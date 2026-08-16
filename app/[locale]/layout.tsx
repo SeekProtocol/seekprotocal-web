@@ -71,17 +71,18 @@ export async function generateMetadata({
     // Google truncates the SERP title around 60 characters. The previous
     // default ran to 76, so "Redefining Innovation" was never shown.
     title: {
-      default: "Seekprotocol | The AR & AI Platform for On-Chain Rewards",
+      default: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
       template: "%s | Seekprotocol",
     },
     description:
-      "Experience the future with $SEEK, the AR and AI platform for on-chain rewards. Hunt location-based airdrops, collect NFTs, explore with AI companions, and earn real crypto rewards through immersive augmented reality experiences. Multi-chain by design, currently live on Solana.",
+      "Experience the future with $SEEK, the AR and AI layer for assets on any chain. Hunt location-based airdrops, collect NFTs, explore with AI companions, and earn real crypto rewards through immersive augmented reality experiences.",
     keywords: [
       "Seekprotocol",
       "$SEEK",
       "Seekprotocol",
       "augmented reality",
       "AR platform",
+      "multi-chain",
       "multi-chain",
       "chain-agnostic",
       "on-chain rewards",
@@ -109,9 +110,9 @@ export async function generateMetadata({
     publisher: "Block Protocol L.L.C-FZ",
     category: "Technology",
     openGraph: {
-      title: "Seekprotocol | The AR & AI Platform for On-Chain Rewards",
+      title: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
       description:
-        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The multi-chain AR & AI platform transforming real-world exploration into crypto rewards. Currently live on Solana.",
+        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The AR and AI layer that anchors assets from any chain to real places.",
       type: "website",
       locale: localeToOgLocale[locale] || "en_US",
       alternateLocale: Object.entries(localeToOgLocale)
@@ -125,9 +126,9 @@ export async function generateMetadata({
       card: "summary_large_image",
       site: "@Seekprotocol",
       creator: "@Seekprotocol",
-      title: "Seekprotocol | The AR & AI Platform for On-Chain Rewards",
+      title: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
       description:
-        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The multi-chain AR & AI platform transforming real-world exploration into crypto rewards. Currently live on Solana.",
+        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The AR and AI layer that anchors assets from any chain to real places.",
       images: [OG_IMAGE],
     },
     robots: {
@@ -240,7 +241,7 @@ export default async function LocaleLayout({
                     },
                     legalName: "Block Protocol L.L.C-FZ",
                     description:
-                      "The multi-chain AR and AI platform for on-chain rewards. Currently live on Solana. Hunt location-based airdrops, collect NFTs, and explore with AI companions.",
+                      "The AR and AI layer for assets on any chain. Hunt location-based airdrops, collect NFTs, and explore with AI companions.",
                     sameAs: [
                       "https://x.com/Seekprotocol",
                       "https://t.me/seekprotocol",
@@ -267,7 +268,7 @@ export default async function LocaleLayout({
                       "@id": "https://www.seekprotocol.ai/#organization",
                     },
                     description:
-                      "The multi-chain AR and AI platform transforming real-world exploration into crypto rewards. Currently live on Solana.",
+                      "The AR and AI layer for assets on any chain, turning real-world exploration into crypto rewards.",
                     inLanguage: locale,
                     availableLanguage: routing.locales.map((loc) => ({
                       "@type": "Language",
@@ -294,7 +295,7 @@ export default async function LocaleLayout({
                     operatingSystem: "iOS, Android",
                     applicationCategory: "GameApplication",
                     description:
-                      "AR-powered mobile app for location-based crypto rewards, anchoring digital assets to real-world coordinates. Multi-chain protocol, currently settling on Solana.",
+                      "AR-powered mobile app that turns real-world locations into interactive treasure hunts, settling rewards on whichever chain the asset lives on.",
                     publisher: {
                       "@id": "https://www.seekprotocol.ai/#organization",
                     },
