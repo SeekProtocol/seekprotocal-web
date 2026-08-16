@@ -1062,7 +1062,11 @@
     "ctaTitle": "The technical account",
     "ctaBody": "Proof of location, the architecture, the token design, and a straight list of the attacks we defend against and the limits we accept.",
     "ctaWhitepaper": "Read the whitepaper",
-    "ctaBusiness": "Place your own assets"
+    "ctaBusiness": "Place your own assets",
+    "polCtaEyebrow": "Proof of location",
+    "polCtaTitle": "Presence, verified",
+    "polCtaBody": "Four independent signals must agree before a claim is accepted. The plain-language walkthrough is on the blog.",
+    "polCtaLink": "How proof of location works"
   },
   "participants": {
     "seekers": {
@@ -1261,7 +1265,11 @@
     "ctaTitle": "Put something at your door",
     "ctaBody": "The self-serve portal is in progress. Until it lands, we set campaigns up with you directly. Tell us the location and what you want to place.",
     "ctaStart": "Start a conversation",
-    "ctaRoadmap": "See when self-serve ships"
+    "ctaRoadmap": "See when self-serve ships",
+    "verifiedEyebrow": "Verified visits only",
+    "verifiedTitle": "Pay only when someone was actually there",
+    "verifiedBody": "No impressions, no clicks that never became a visit. A campaign spends when the protocol has verified a person on-site.",
+    "verifiedLink": "Open Seek Partners"
   },
   "useCases": {
     "retail": {

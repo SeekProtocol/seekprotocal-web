@@ -1062,7 +1062,11 @@
     "ctaTitle": "La explicación técnica",
     "ctaBody": "Prueba de ubicación, la arquitectura, el diseño del token y una lista honesta de los ataques contra los que nos defendemos y los límites que aceptamos.",
     "ctaWhitepaper": "Leer el whitepaper",
-    "ctaBusiness": "Coloca tus propios activos"
+    "ctaBusiness": "Coloca tus propios activos",
+    "polCtaEyebrow": "Prueba de ubicación",
+    "polCtaTitle": "Presencia, verificada",
+    "polCtaBody": "Cuatro señales independientes deben coincidir antes de aceptar un reclamo. La explicación en lenguaje claro está en el blog.",
+    "polCtaLink": "Cómo funciona la prueba de ubicación"
   },
   "participants": {
     "seekers": {
@@ -1261,7 +1265,11 @@
     "ctaTitle": "Pon algo en tu puerta",
     "ctaBody": "El portal de autoservicio está en marcha. Hasta que llegue, montamos las campañas contigo directamente. Dinos la ubicación y qué quieres colocar.",
     "ctaStart": "Empezar una conversación",
-    "ctaRoadmap": "Ver cuándo llega el autoservicio"
+    "ctaRoadmap": "Ver cuándo llega el autoservicio",
+    "verifiedEyebrow": "Solo visitas verificadas",
+    "verifiedTitle": "Paga únicamente cuando alguien realmente estuvo allí",
+    "verifiedBody": "Sin impresiones, sin clics que nunca fueron visita. Una campaña gasta cuando el protocolo ha verificado a una persona en el sitio.",
+    "verifiedLink": "Abrir Seek Partners"
   },
   "useCases": {
     "retail": {

@@ -1062,7 +1062,11 @@
     "ctaTitle": "Teknik açıklama",
     "ctaBody": "Konum kanıtı, mimari, token tasarımı ve savunduğumuz saldırılar ile kabul ettiğimiz sınırların dosdoğru bir listesi.",
     "ctaWhitepaper": "Teknik belgeyi oku",
-    "ctaBusiness": "Kendi varlıklarını yerleştir"
+    "ctaBusiness": "Kendi varlıklarını yerleştir",
+    "polCtaEyebrow": "Konum kanıtı",
+    "polCtaTitle": "Varlık, doğrulandı",
+    "polCtaBody": "Bir talep kabul edilmeden önce dört bağımsız sinyalin uyuşması gerekir. Sade açıklama blogda.",
+    "polCtaLink": "Konum kanıtı nasıl çalışır"
   },
   "participants": {
     "seekers": {
@@ -1261,7 +1265,11 @@
     "ctaTitle": "Kapına bir şey koy",
     "ctaBody": "Self-servis portal geliştirme aşamasında. Yayınlanana kadar kampanyaları seninle doğrudan kuruyoruz. Bize konumu ve neyi yerleştirmek istediğini söyle.",
     "ctaStart": "Bir konuşma başlat",
-    "ctaRoadmap": "Self-servisin ne zaman geldiğini gör"
+    "ctaRoadmap": "Self-servisin ne zaman geldiğini gör",
+    "verifiedEyebrow": "Yalnızca doğrulanmış ziyaretler",
+    "verifiedTitle": "Yalnızca biri gerçekten oradaysa öde",
+    "verifiedBody": "Gösterim yok, ziyarete dönüşmemiş tıklama yok. Bir kampanya, protokol yerinde bir kişiyi doğruladığında harcar.",
+    "verifiedLink": "Seek Partners'ı aç"
   },
   "useCases": {
     "retail": {

@@ -1062,7 +1062,11 @@
     "ctaTitle": "Die technische Darstellung",
     "ctaBody": "Proof of Location, die Architektur, das Token-Design und eine ehrliche Liste der Angriffe, gegen die wir uns wehren, und der Grenzen, die wir akzeptieren.",
     "ctaWhitepaper": "Whitepaper lesen",
-    "ctaBusiness": "Eigene Assets platzieren"
+    "ctaBusiness": "Eigene Assets platzieren",
+    "polCtaEyebrow": "Standortnachweis",
+    "polCtaTitle": "Präsenz, verifiziert",
+    "polCtaBody": "Vier unabhängige Signale müssen übereinstimmen, bevor ein Claim akzeptiert wird. Die einfache Erklärung steht im Blog.",
+    "polCtaLink": "Wie Standortnachweis funktioniert"
   },
   "participants": {
     "seekers": {
@@ -1261,7 +1265,11 @@
     "ctaTitle": "Leg etwas an deine Tür",
     "ctaBody": "Das Self-Service-Portal ist in Arbeit. Bis es kommt, richten wir Kampagnen direkt mit dir ein. Sag uns den Ort und was du platzieren willst.",
     "ctaStart": "Gespräch beginnen",
-    "ctaRoadmap": "Sehen, wann Self-Service kommt"
+    "ctaRoadmap": "Sehen, wann Self-Service kommt",
+    "verifiedEyebrow": "Nur verifizierte Besuche",
+    "verifiedTitle": "Zahle nur, wenn jemand tatsächlich da war",
+    "verifiedBody": "Keine Impressionen, keine Klicks, die nie zu einem Besuch wurden. Eine Kampagne gibt aus, wenn das Protokoll eine Person vor Ort verifiziert hat.",
+    "verifiedLink": "Seek Partners öffnen"
   },
   "useCases": {
     "retail": {

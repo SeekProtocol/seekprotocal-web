@@ -1062,7 +1062,11 @@
     "ctaTitle": "技術的な説明",
     "ctaBody": "位置証明、アーキテクチャ、トークン設計、そして防いでいる攻撃と受け入れている限界の率直な一覧。",
     "ctaWhitepaper": "ホワイトペーパーを読む",
-    "ctaBusiness": "自分でアセットを置く"
+    "ctaBusiness": "自分でアセットを置く",
+    "polCtaEyebrow": "位置証明",
+    "polCtaTitle": "存在の検証",
+    "polCtaBody": "クレームが受理されるには、4つの独立したシグナルが一致する必要があります。平易な解説はブログにあります。",
+    "polCtaLink": "位置証明の仕組み"
   },
   "participants": {
     "seekers": {
@@ -1261,7 +1265,11 @@
     "ctaTitle": "店先に何か置いてみる",
     "ctaBody": "セルフサービスのポータルは開発中です。それまでは私たちが直接一緒に設定します。場所と、置きたいものを教えてください。",
     "ctaStart": "話をはじめる",
-    "ctaRoadmap": "セルフサービスの提供時期を見る"
+    "ctaRoadmap": "セルフサービスの提供時期を見る",
+    "verifiedEyebrow": "検証済みの訪問のみ",
+    "verifiedTitle": "実際に来た人にのみ支払い",
+    "verifiedBody": "インプレッションなし、訪問にならなかったクリックもなし。プロトコルが現地で人物を検証したときにキャンペーンは支出します。",
+    "verifiedLink": "Seek Partners を開く"
   },
   "useCases": {
     "retail": {

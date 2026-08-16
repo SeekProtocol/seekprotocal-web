@@ -174,6 +174,33 @@ function BusinessContent() {
       </section>
 
       {/* --------------------------------------------------------------- */}
+      {/* Verified-visits pitch, before the final CTA. It restates in one
+          block what the whole page has been building toward: publishers
+          only spend when the protocol has verified a person was actually
+          at the coordinate. The Seek Partners button hands self-serve
+          publishers straight into the console rather than back through the
+          contact form. */}
+      <section className="section section-sunken">
+        <div className="shell">
+          <div className="reveal" style={{ textAlign: "center", maxWidth: "44rem", margin: "0 auto" }}>
+            <p className="eyebrow eyebrow-center">{t("verifiedEyebrow")}</p>
+            <h2 className="t-h2" style={{ marginTop: "0.75rem" }}>{t("verifiedTitle")}</h2>
+            <p className="t-lead" style={{ marginTop: "1rem" }}>{t("verifiedBody")}</p>
+            <div className="btn-row" style={{ marginTop: "2rem", justifyContent: "center" }}>
+              <a
+                href="https://partners.seekprotocol.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-brand btn-lg"
+              >
+                {t("verifiedLink")}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --------------------------------------------------------------- */}
       <section className="section">
         <div className="shell">
           <div className="cta-band reveal">

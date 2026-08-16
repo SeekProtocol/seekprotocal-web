@@ -1062,7 +1062,11 @@
     "ctaTitle": "Het technische verhaal",
     "ctaBody": "Locatiebewijs, de architectuur, het tokenontwerp, en een eerlijke lijst van de aanvallen waartegen we ons verdedigen en de grenzen die we accepteren.",
     "ctaWhitepaper": "Lees de whitepaper",
-    "ctaBusiness": "Plaats je eigen assets"
+    "ctaBusiness": "Plaats je eigen assets",
+    "polCtaEyebrow": "Locatiebewijs",
+    "polCtaTitle": "Aanwezigheid, geverifieerd",
+    "polCtaBody": "Vier onafhankelijke signalen moeten overeenkomen voordat een claim wordt geaccepteerd. De uitleg in gewone taal staat op de blog.",
+    "polCtaLink": "Hoe locatiebewijs werkt"
   },
   "participants": {
     "seekers": {
@@ -1261,7 +1265,11 @@
     "ctaTitle": "Leg iets bij je deur",
     "ctaBody": "Het selfserviceportaal is in ontwikkeling. Tot het er is, zetten we campagnes samen met jou op. Vertel ons de locatie en wat je wilt plaatsen.",
     "ctaStart": "Begin een gesprek",
-    "ctaRoadmap": "Zie wanneer selfservice komt"
+    "ctaRoadmap": "Zie wanneer selfservice komt",
+    "verifiedEyebrow": "Alleen geverifieerde bezoeken",
+    "verifiedTitle": "Betaal alleen als iemand er echt was",
+    "verifiedBody": "Geen impressies, geen kliks die nooit een bezoek werden. Een campagne besteedt pas wanneer het protocol iemand ter plekke heeft geverifieerd.",
+    "verifiedLink": "Open Seek Partners"
   },
   "useCases": {
     "retail": {

@@ -1062,7 +1062,11 @@
     "ctaTitle": "技术说明",
     "ctaBody": "位置证明、系统架构、代币设计，以及一份直白的清单：我们防御哪些攻击，又接受哪些局限。",
     "ctaWhitepaper": "阅读白皮书",
-    "ctaBusiness": "投放你自己的资产"
+    "ctaBusiness": "投放你自己的资产",
+    "polCtaEyebrow": "位置证明",
+    "polCtaTitle": "存在，已验证",
+    "polCtaBody": "四个独立信号必须一致，索赔才会被接受。通俗易懂的说明在博客上。",
+    "polCtaLink": "位置证明的工作原理"
   },
   "participants": {
     "seekers": {
@@ -1261,7 +1265,11 @@
     "ctaTitle": "在你门口放点东西",
     "ctaBody": "自助后台正在开发中。在它上线之前，我们会直接和你一起把活动搭起来。告诉我们地点，以及你想投放什么。",
     "ctaStart": "聊一聊",
-    "ctaRoadmap": "看看自助后台何时上线"
+    "ctaRoadmap": "看看自助后台何时上线",
+    "verifiedEyebrow": "仅限已验证到访",
+    "verifiedTitle": "只在真的有人到场时付费",
+    "verifiedBody": "没有曝光费，没有未转化为到访的点击。协议在现场验证到一个人时，活动才会花费。",
+    "verifiedLink": "打开 Seek Partners"
   },
   "useCases": {
     "retail": {

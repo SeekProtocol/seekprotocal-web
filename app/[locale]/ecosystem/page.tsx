@@ -9,6 +9,14 @@ import en from "@/messages/en.json";
 import GlobeSection from "@/components/sections/GlobeSection";
 import Accordion from "@/components/ui/Accordion";
 
+function ArrowRight() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M3 8h10m0 0l-4-4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+    </svg>
+  );
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -196,7 +204,29 @@ function EcosystemContent() {
       </section>
 
       {/* --------------------------------------------------------------- */}
+      {/* Proof-of-location hand-off. Ecosystem readers who scrolled past
+          the settlement chapter without stopping still deserve one clear
+          route into the plain-language blog walkthrough before the final
+          CTA. Compact block, not a full cta-band, so it does not compete
+          with the whitepaper + business buttons below. */}
       <section className="section">
+        <div className="shell">
+          <div className="reveal" style={{ textAlign: "center", maxWidth: "40rem", margin: "0 auto" }}>
+            <p className="eyebrow eyebrow-center">{t("polCtaEyebrow")}</p>
+            <h2 className="t-h3" style={{ marginTop: "0.75rem" }}>{t("polCtaTitle")}</h2>
+            <p className="t-body" style={{ marginTop: "1rem" }}>{t("polCtaBody")}</p>
+            <div style={{ marginTop: "1.5rem" }}>
+              <Link href="/blog/how-proof-of-location-works" prefetch={false} className="arrow-link">
+                {t("polCtaLink")}
+                <ArrowRight />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --------------------------------------------------------------- */}
+      <section className="section section-sunken">
         <div className="shell">
           <div className="cta-band reveal">
             <div className="cta-band-inner">

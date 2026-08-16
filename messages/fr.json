@@ -1062,7 +1062,11 @@
     "ctaTitle": "L'exposé technique",
     "ctaBody": "La preuve de localisation, l'architecture, la conception du token, et une liste franche des attaques contre lesquelles nous nous défendons et des limites que nous acceptons.",
     "ctaWhitepaper": "Lire le whitepaper",
-    "ctaBusiness": "Déposez vos propres actifs"
+    "ctaBusiness": "Déposez vos propres actifs",
+    "polCtaEyebrow": "Preuve de localisation",
+    "polCtaTitle": "Présence, vérifiée",
+    "polCtaBody": "Quatre signaux indépendants doivent concorder avant qu'une réclamation soit acceptée. L'explication en langage clair est sur le blog.",
+    "polCtaLink": "Comment fonctionne la preuve de localisation"
   },
   "participants": {
     "seekers": {
@@ -1261,7 +1265,11 @@
     "ctaTitle": "Posez quelque chose devant votre porte",
     "ctaBody": "Le portail en libre-service est en cours. En attendant, nous montons les campagnes directement avec vous. Dites-nous le lieu et ce que vous voulez déposer.",
     "ctaStart": "Entamer la conversation",
-    "ctaRoadmap": "Voir quand arrive le libre-service"
+    "ctaRoadmap": "Voir quand arrive le libre-service",
+    "verifiedEyebrow": "Visites vérifiées uniquement",
+    "verifiedTitle": "Ne payez que si quelqu'un était vraiment sur place",
+    "verifiedBody": "Pas d'impressions, pas de clics qui ne sont jamais devenus une visite. Une campagne dépense lorsque le protocole a vérifié une personne sur place.",
+    "verifiedLink": "Ouvrir Seek Partners"
   },
   "useCases": {
     "retail": {

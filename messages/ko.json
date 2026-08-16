@@ -1062,7 +1062,11 @@
     "ctaTitle": "기술적인 설명",
     "ctaBody": "위치 증명, 아키텍처, 토큰 설계, 그리고 우리가 방어하는 공격과 받아들이는 한계를 솔직하게 적은 목록.",
     "ctaWhitepaper": "백서 읽기",
-    "ctaBusiness": "직접 자산 놓기"
+    "ctaBusiness": "직접 자산 놓기",
+    "polCtaEyebrow": "위치 증명",
+    "polCtaTitle": "존재의 검증",
+    "polCtaBody": "청구가 수락되기 전에 네 개의 독립적인 신호가 일치해야 합니다. 쉬운 설명은 블로그에서 확인하세요.",
+    "polCtaLink": "위치 증명 작동 방식"
   },
   "participants": {
     "seekers": {
@@ -1261,7 +1265,11 @@
     "ctaTitle": "문 앞에 뭔가 놓아 보세요",
     "ctaBody": "셀프서비스 포털은 개발 중입니다. 나올 때까지는 저희가 직접 함께 캠페인을 세팅합니다. 장소와 놓고 싶은 것을 알려 주세요.",
     "ctaStart": "이야기 시작하기",
-    "ctaRoadmap": "셀프서비스 출시 시점 보기"
+    "ctaRoadmap": "셀프서비스 출시 시점 보기",
+    "verifiedEyebrow": "검증된 방문만",
+    "verifiedTitle": "실제로 방문한 경우에만 지불",
+    "verifiedBody": "노출도, 방문으로 이어지지 않은 클릭도 없습니다. 프로토콜이 현장에서 사람을 검증했을 때만 캠페인이 지출됩니다.",
+    "verifiedLink": "Seek Partners 열기"
   },
   "useCases": {
     "retail": {
