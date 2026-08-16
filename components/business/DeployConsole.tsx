@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import LiveMark from "@/components/brand/LiveMark";
 import { useFormatter, useTranslations } from "next-intl";
 
 /**
@@ -489,7 +490,7 @@ function StreetPlate({ radius, label, live }: { radius: number; label: string; l
       </svg>
 
       <span className="deploy-plate-tag t-mono-sm">
-        {live && <span className="dot-live" />}
+        {live && <LiveMark id="deploy-plate-live" size={12} />}
         {live ? t("live") : label}
       </span>
 

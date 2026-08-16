@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Seekprotocol",
     short_name: "Seekprotocol",
     description:
-      "The first AR and AI platform on Solana - Redefining Innovation",
+      "The AR and AI layer for digital assets on any chain, anchored to real places",
     start_url: "/",
     display: "standalone",
     background_color: "#000206",

@@ -11,7 +11,7 @@ export const OG_IMAGE = {
   url: `${baseUrl}/og.png`,
   width: 1200,
   height: 630,
-  alt: "Seekprotocol, digital assets anchored to real-world coordinates, multi-chain, currently on Solana",
+  alt: "Seekprotocol, rewards anchored to real-world coordinates, on any chain or none at all",
 } as const;
 
 /** OG locale codes, keyed by the routing locale. */

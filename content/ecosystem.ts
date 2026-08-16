@@ -25,5 +25,9 @@ export const FAQ_IDS = [
   "tracking",
   "farming",
   "chain",
+  /* "Does a reward have to be crypto?" Sits next to the chain question because
+     a reader who is asking one is about to ask the other, and a business
+     landing on this page needs the answer to be no. */
+  "rewardKind",
   "business",
 ];

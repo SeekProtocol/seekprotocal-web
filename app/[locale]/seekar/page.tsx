@@ -79,7 +79,7 @@ const seekarFaqJsonLd = {
       name: "What is Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Seekprotocol is the augmented reality app by Seekprotocol, free on iOS and Android. It anchors tokens, NFTs and rewards to real-world coordinates on Solana: you walk to the spot, open the camera, and claim what has been placed there. Proof of Location verifies on-chain that you were physically present.",
+        text: "Seekprotocol is the augmented reality app by Seekprotocol, free on iOS and Android. It anchors tokens, NFTs and rewards from any chain to real-world coordinates: you walk to the spot, open the camera, and claim what has been placed there. Proof of Location verifies on-chain that you were physically present.",
       },
     },
     {

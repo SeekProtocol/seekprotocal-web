@@ -722,3 +722,812 @@ which is the one thing a contents list exists to prevent.
 The static list is hidden there rather than kept as well: sixteen chapters
 ahead of the first paragraph is a screen and a half of contents before the
 document starts. Desktop is untouched.
+
+---
+
+## Eighth pass, 16 August 2026: every chain, and the distribution argument
+
+The site said "the first AR and AI platform on Solana" in thirty places. The
+protocol has never required one chain, and the app had already stopped being
+single-chain, so the copy was describing a decision nobody had made.
+
+### What the app actually says
+
+Read before writing any of it, per the rule at the top of this file:
+
+| In `seekar-app` | What it means |
+|---|---|
+| `networks` is a **table**: `chain`, `chain_id`, `rpc_url`, `explorer_url`, `is_active`, `sort_order` | Every network the protocol settles on is a row. Adding one is configuration, not a release |
+| `token_networks` maps an asset to networks, with contract address and decimals per network | One asset, many chains |
+| `SUPPORTED_CHAINS = ['solana', 'ethereum']`, and `networks_chain_check` allows the same two | **Address families, not networks.** A wallet is a Solana keypair or an EVM one, and every EVM network shares the second |
+
+So Ethereum, BNB Smart Chain and Arbitrum are three rows against one wallet,
+not three integrations. That is the honest version of "every chain", and it is
+what the whitepaper's architecture chapter now argues.
+
+### The roster is the single source of truth
+
+**`content/chains.ts`** holds the four networks with a `status` of `live` or
+`soon`. `ChainRoster` (homepage and business page), `llms.txt` and every
+"settles on ..." sentence read it, so a chain going live is one edit.
+
+Ethereum and Solana are `live`, from the app's own constants. BNB Smart Chain
+and Arbitrum are `soon`, because the production `networks` rows could not be
+read from this repo and a chain listed as live on a public site is a claim.
+**Flip `status` when those rows are confirmed.**
+
+One place is prose rather than data and needs the same edit:
+`roadmapPhases.scale.items.multichain`, in all nine message files, names which
+networks the 2026 rollout covers. The comment in `chains.ts` says so.
+
+### What changed in the copy
+
+Thirty strings per locale, times nine. The pattern throughout is that
+settlement is described by its **requirement** rather than by a chain name:
+"settles on the chain the asset already lives on, against one requirement,
+that picking up a small reward must not cost more than the reward is worth."
+
+- `/` hero eyebrow was the hard-coded string `AR · AI · Solana`. It is
+  `home.heroEyebrow` now, because the third term became a claim rather than a
+  proper noun and a claim has to be translatable.
+- Meta titles, OG card, `manifest.ts`, `lib/seo.ts` alt text, the JSON-LD on
+  `/about` and `/seekar`, and the keyword list in `layout.tsx`.
+- `lib/blog-data.ts` titles and bodies. **The slug
+  `what-is-seek-protocol-first-ar-ai-platform-solana` stays**: it is the
+  published URL of a December 2025 article, and renaming it to match the copy
+  would break every inbound link to buy a tidier path.
+- `WalletScreen`'s mock holdings were SEEK, SOL and BONK, three Solana tokens
+  under a sentence claiming assets come from anywhere. BONK became ETH, so the
+  recreation shows one holding per address family, which is what the app is.
+- Two Solana mentions survive on purpose: the Foundation roadmap item, because
+  Solana genuinely was the first settlement layer and that is history, and
+  `tokenFacts.chain`, because $SEEK is an SPL token.
+
+### New: the distribution section
+
+`components/sections/DistributionSection.tsx` and `content/distribution.ts`, on
+the homepage between the offer formats and how-it-works. That ordering is
+deliberate: the section above answers *what* a publisher can place, this one
+answers why placing it beats buying reach for the same money.
+
+Three parts:
+
+1. **Three failure/answer pairs**, drawn as pairs rather than written as a
+   paragraph, because the argument is a correspondence. The bought column is
+   hatched, the same way the funnel figure marks its estimated row.
+2. **The brief.** Pick what you want people to do and the drop card and the
+   receipt line both change while the verification underneath does not. This is
+   the "the call to action is yours" claim, made by letting someone do it
+   rather than by asserting it. Five asks: walk in, follow, sign up, scan, mint.
+3. **The chain roster**, from `content/chains.ts`.
+
+The button on the drop card is a `<span>`, not a `<button>`. It is a picture of
+the control a seeker sees; the thing it stands for happens in the app, and a
+control that looks pressable and does nothing is worse than one that never
+invited the tap.
+
+`components/brand/ChainMarks.tsx` draws the four network marks on the same
+24-grid as `TechIcons`. They are **filled rather than stroked**, unlike the
+rest of the icon set, because that is how each network draws its own mark and
+one reproduced in outline reads as a different logo. An id with no mark falls
+back to a ring with the network's initial, so adding a chain never renders an
+empty tile.
+
+### Business page
+
+A new section between the funnel and the use cases, on the unit rather than the
+money: no bot traffic, organic by construction, your call to action. It ends
+with the chain roster, because "which chain is your asset on" is the last
+question before a campaign gets scoped. `INTERACTION_CLAIMS` in
+`content/business.ts`.
+
+### Whitepaper: sixteen chapters became seventeen
+
+**Chapter 03, "Why paid reach cannot deliver a real person."** Every metric on
+the market is a proxy; filters raise the cost of a fake claim and a real one by
+different amounts and only the ratio matters; presence is different in kind
+because its cost is not computational. It ends on what this does *not* solve,
+which is that somebody paid to walk past a door is a real arrival and a poor
+customer.
+
+**Chapter 06's settlement section was rewritten.** "Why Solana" is now "Why the
+settlement layer is not fixed", and it gained a block: the requirement, then
+how it is configured, then the trade. The old single paragraph argued the trade
+about one chain. Spreading across several does not remove the outage risk, it
+only stops one network's outage being the protocol's, and the chapter says so
+in those words.
+
+Chapter indices renumber from `CHAPTER_IDS`, and `readingMinutes` went to 31.
+Nothing hard-codes "sixteen"; the reader chrome counts the array.
+
+### The trap this pass hit
+
+`i18n/client-messages.ts` carries an allowlist of namespaces that reach the
+browser, and its own comment warns that a client component asking for a
+namespace not on it throws `MISSING_MESSAGE`. `DistributionSection` carries
+"use client". The build still exited 0 and printed 648 of them, one per page
+per locale, which is the failure mode worth remembering: **`next build`
+succeeding is not evidence that next-intl found its messages.** Grep the build
+log for `MISSING_MESSAGE` after adding any client component that reads copy.
+
+### Verified
+
+Clean build, no missing messages, no lint or type errors. The new section was
+checked at 1440px in both themes and at 390px with a touch pointer: no
+horizontal overflow, the pairs stack with the arrow turning to point down them,
+the five asks become a wrapping row above the card they change, and the choice
+buttons measure 51px against the 38px floor.
+
+One thing the screenshots teach: the cookie-consent overlay is a
+`rgba(0,2,6,0.55)` fixed layer over the whole document, so any headless capture
+of a light-theme page comes back looking grey. Remove
+`.CookieConsent-module__*__overlay` before shooting, or spend an hour deciding
+the tokens are broken when they are not.
+
+---
+
+## Ninth pass, 16 August 2026: the chain coins
+
+A row of real 3D coins above the chain strip, so "we settle on any chain" is
+something you can see rather than a list of names.
+
+### Getting a stock coin into the site
+
+The models come from iconscout as `.blend`. **`scripts/export-coin.sh`** is the
+whole pipeline:
+
+```
+scripts/export-coin.sh ~/Downloads/whatever.blend bnb
+```
+
+It opens the file in a background Blender, never writes to it, and produces
+`public/app/3d/coins/<name>.glb`. Then add `coin: "<name>.glb"` to that chain in
+`content/chains.ts` and the row picks it up. A chain with no model is simply not
+drawn, and the flat strip carries it either way, so coins can land one at a time.
+
+What the script does and why, since the numbers drove every choice:
+
+| Step | Why |
+|---|---|
+| Drops cameras and lights | They are the stock render's. The site lights its own stage |
+| Applies modifiers first | These files lean on Mirror and Bevel, so the bounds are wrong until that geometry is real |
+| Joins to one object | Separate materials survive as separate primitives. One node to animate rather than a hierarchy to keep in step |
+| Normalises to a 1-unit diameter | Every coin arrives the same size, so the component needs no per-file magic number |
+| Decimates to 18% | See below |
+| Draco | See below |
+
+**Decimation was measured, not guessed.** The BNB coin arrives at 54,644
+triangles with the bevels applied, which is far past what a coin drawn about
+120px across can show. Renders at 100%, 30% and 18% were put side by side and
+18% is indistinguishable, down to the edges of the logo. That is 9,834 triangles
+and it takes the GLB from 1.9 MB to 65 KB. `RATIO` in the script if a coin with
+finer detail ever looks chewed.
+
+**Draco earns its decoder.** Gzipped, one coin is 65 KB compressed against
+204 KB plain, and the decoder is 89 KB shared across all of them. Four coins:
+349 KB with Draco, 816 KB without. It stays. The decoder lives at
+`public/app/3d/draco/` and is copied from `three/examples/jsm/libs/draco/`;
+**re-copy it when three is upgraded**, since a decoder older than the loader is
+a runtime failure with no build-time warning.
+
+### The scene
+
+`components/three/ChainCoins.tsx`, one slot on the shared stage, so it costs no
+WebGL context.
+
+**They rock rather than spin**, for the reason the hero coin already documents:
+a full rotation passes edge-on, and a coin edge-on is a sliver with no logo on
+it. A row of them would be unreadable a third of every cycle, and being read is
+the row's whole job. Each swings through a three-quarter view, phase-offset
+across the cycle rather than by a fixed step, so a fifth coin cannot land in
+lockstep with the first.
+
+**The layout folds.** One row is the intent. `frame()` reads the slot's aspect
+and drops to two columns when a single row would put the coins under about 60px,
+which is what four coins across a phone would do. The CSS gives it a box shaped
+to fold into; the scene decides.
+
+### Two things that cost time
+
+**The coin came out bronze.** The first attempt pushed metalness to 0.92, on the
+theory that gold is a metal. At that value almost none of the base colour
+reaches the diffuse term, so the coin stops being gold-coloured and becomes a
+mirror of the room. The stock 0.5 is what makes it gold; leave the exported
+material alone and change the room instead. What it did need was a brighter
+environment than `SeekCoin`'s, which is built to light a near-black body, plus
+ACES tone mapping, because the stage defaults to none and a polished metal
+clips its rim to a flat white band.
+
+**`ssr: false` is not allowed in a Server Component.** The lazy import started
+inside `ChainRoster`, which renders on the client through the homepage and on
+the server on `/business`. Dev served the homepage happily and the production
+build failed on the business page alone. It lives in
+`components/brand/ChainCoinsMount.tsx` now, which exists only to be that
+boundary. **`next dev` passing says nothing about which side of the boundary a
+shared component is on.**
+
+---
+
+## Tenth pass, 16 August 2026: the rewards stage
+
+The chain coins went in as GLB and came back out again. The section that
+replaced them is the point of this pass: one wide scene that says the drop can
+be anything, using real artwork instead of drawn stand-ins.
+
+### The assets
+
+`scripts/build-rewards.py` turns a folder of stock renders into web assets:
+
+```
+python3 scripts/build-rewards.py ~/Downloads/rewards
+```
+
+Eighteen 3000x3000 PNGs, **250 MB, become 420 KB**. Three steps, each worth
+more than the last: trim to the alpha bounding box, which is up to 40% of the
+pixels and is also what makes "fit the box" mean "fit the subject"; resize the
+long edge to 640, which covers 2x at the size these are drawn; encode AVIF with
+`avifenc` at `-q 58 --qalpha 100`, lossless alpha over a lossy colour plane,
+because these are cut-outs and a soft alpha edge is what stops them looking
+pasted on.
+
+`CATEGORY` in that script is the only enumeration of the set. A file in the
+folder that it does not know is **not built**, and the run says so. Add the
+category there and the id to `content/rewards.ts`.
+
+The two live event screens are the app's own, 402x874, which is exactly the
+aperture ratio `PhoneFrame` measures off the device artwork, so they drop in
+with no cropping. They are upscaled 2x on conversion because 402 is all that
+exists; it holds at the drawn size and sharper exports would replace them
+without any other change.
+
+### The stage
+
+`components/sections/RewardsSection.tsx`, on the homepage where `OffersSection`
+used to be.
+
+**Every reward is mounted once and never unmounted.** Choosing a category does
+not swap what is on the stage, it re-ranks it: the chosen category takes the
+four front slots and everything else redistributes behind, smaller, dimmer and
+softer. That is what makes an uneven set survive. NFTs has one artwork and
+tokens has six, and a layout that emptied the stage for one and filled it for
+the other would flash between a crowd and a void on every switch. Here only the
+ordering changes, so a switch reads as depth rather than as a repaint.
+
+**Two elements per reward, and they cannot be merged.** The outer one carries
+the slot transform, which React sets and CSS transitions. The inner one carries
+the idle drift, which is a keyframe animation. A keyframe animation on
+`transform` beats an inline `transform` outright, so a single element would
+drift correctly and then refuse to move between slots.
+
+**Live events is not a sixth kind of reward.** It is every kind, handed out at a
+time and a place, so selecting it sends the whole field back and lifts the phone
+rather than reshuffling anything. `data-events` on the stage.
+
+The one line under the panel that answers "what stops someone claiming who was
+never there" is outside the panel on purpose: the answer does not change with
+the category, and the section it replaced asked the question five times over.
+
+### The bug this pass found
+
+**`PhoneFrame` had made its own responsive rules dead.** It took `width = 340`
+and always wrote `--device-w-n` inline, and an inline custom property outranks
+any rule in a stylesheet, so the `@media (max-width: 1200px)` and
+`(max-width: 520px)` steps in `app-ui.css` had never once applied: the device
+was 340px wide on a 390px phone. `width` is optional now and the variable is
+only written when it is passed. Nothing else renders the default export today,
+so this was free to fix.
+
+### What happened to the 3D coins
+
+The GLB pipeline from the ninth pass still works and is still documented above.
+It is just not on the page: the rewards stage shows the chain coins as artwork,
+and a second spinning coin two sections further down was the same picture told
+twice for a 340 KB Draco decoder. The row is off because
+`DistributionSection` stopped passing `coinsLabel` to `ChainRoster`. Pass it
+again and the row comes back.
+
+`public/app/3d/coins/` and `public/app/3d/draco/` are still in the repo and
+nothing requests them. **Delete both, and `scripts/export-coin.*`, if the 3D
+route is not coming back.**
+
+### The tap, added the same day
+
+The stage got a second gear: the participate button does something.
+
+**The button is painted into the screen artwork**, so the control is a
+transparent overlay sized to the pill. Its box is measured off the source file
+rather than eyeballed: on the 402x874 panel the pill runs x 20..381, y 774..829,
+which is `left: 4.98%; top: 88.56%; width: 89.8%; height: 6.41%`. **Re-measure
+if the screens are ever re-exported.** There is a one-line numpy check in the
+scratchpad approach: threshold the bottom quarter above 238 on all channels and
+take the contiguous run of rows wider than 40% of the frame, which separates the
+pill from the home indicator.
+
+Tapping it runs a four-step sequence, all timeouts tracked so a reader who
+scrolls away mid-flight does not come back to a stale alert opening over them:
+
+| ms | what |
+|---|---|
+| 20 | `data-pull` on the stage. Every reward collapses onto the phone |
+| 620 | the alert rises out of the screen, as the field lands |
+| 4200 | alert closes |
+| 4600 | field returns to its slots |
+
+The pull **overrides the slot coordinates** rather than animating each item's
+own transform. That is the payoff of the two-element structure the section
+already needed: the drift keeps running underneath and the collapse composes
+over it.
+
+The alert lives *inside* the device viewport so the aperture clips it, which is
+what sells it as coming out of the phone rather than floating over it.
+
+Two things that were invisible on the first attempt, both for the same reason:
+**the pill is white**. The tap glyph was a bare white hand on it, and the ring
+leaving it was white. The hand sits on a dark circular badge now, straddling the
+pill's right edge, and the ring is brand blue, which reads against the pill and
+against the screen's gradient at once.
+
+The live chip carries the SEEK mark and the brand ramp painted into its border
+box, the store-button trick: a hairline in one colour disappears against a
+screen that is already every colour.
+
+**The rail advances on its own**, and now says so: a 2px bar under the active
+tab fills over one dwell. It is keyed on the category so it restarts, and it is
+not rendered at all once the reader has taken over, because then it would be
+counting down to nothing.
+
+`auto` is state rather than a ref, and that is deliberate. It began as
+`takenOver.current`, which lint caught: a ref read during render does not
+re-render when it changes, so the progress bar would have kept counting after
+the reader had taken the wheel.
+
+### More WOW, and two lessons in what animates what
+
+The catch was too polite: a 4.5% recoil and a glow. It is now four things at
+once, deliberately on four different properties so none of them fight:
+
+| | property | why there |
+|---|---|---|
+| Recoil | `scale` | Its own property in modern CSS, so it composes with the centring |
+| Shake | `transform` | Free to own it outright, since `translate` and `scale` are separate properties. Amplitude decays across the run: that is the difference between a phone that was hit and a phone that is vibrating |
+| Halo flare | a child element | Blooms to 1.75 with `brightness(2.6)` and holds a beat, so the glow is still up when the alert arrives |
+| Shockwaves | three siblings | Outside the frame, since their job is to reach past its edges. Staggered 120ms and coloured across the brand ramp |
+
+Plus a screen flash, which is a child of the *viewport* so the aperture clips
+it. Over the device instead it reads as a sheet laid on the phone rather than
+the screen firing.
+
+**Lesson one: a rotating rectangle sweeps its own diagonal.** The live chip's
+halo is a blurred conic gradient, and the first version animated `rotate` on it.
+The element is about 200x48, so rotating it swings a circle of radius 105px, and
+its corners threw a bar of blurred light up over the paragraph above the stage.
+It looked like a spotlight and took three probes to pin down, because it only
+appeared while the chip was mid-rotation. It animates `hue-rotate` now: the
+colours travel through the same ramp and the silhouette never moves.
+
+**Lesson two: a blend mode inside a promoted layer blends against the wrong
+backdrop.** The screen flash was `mix-blend-mode: screen`, which was fine at
+rest. The shake animates `transform` on an ancestor, that promotes it to its own
+compositing layer, and the blend then composited against a backdrop that is not
+the one on screen. Plain alpha at a higher opacity is indistinguishable here and
+cannot do that. **If an effect only misbehaves during an animation, suspect
+layer promotion before suspecting the effect.**
+
+**The chip was given all of that too, and it was taken straight back off.** It
+briefly carried the hue-cycling halo, two staggered rings, a hover and a glow on
+the mark. Every part worked on its own and together they were noise: a label the
+size of a thumbnail cannot run four simultaneous animations and still read as a
+label. It is back to the SEEK mark, the ramp in the border box and one slow
+ring, and it moved from `-1.1rem` to `-2.6rem` so there is real air between it
+and the device. The lesson about the rotating rectangle is worth keeping even
+though the halo it belonged to is gone.
+
+### The failure mode that cost the most here
+
+Reverting the chip was done with a Python string splice from `.rewards-live {`
+to the comment that starts the tap block, and **everything between those two
+points went with it**: the rail, the tabs, the panel, the proof line, the
+`[data-events]` rules and every media query the section had. The page still
+built, still had balanced braces, still passed lint and typecheck, and looked
+completely correct on a desktop, because most of what was deleted only shows up
+under 900px or on the rail.
+
+CSS has no compiler to catch this. **After any scripted edit to a stylesheet,
+grep for the selectors that were supposed to survive**, not just the ones that
+were supposed to change:
+
+```
+for sel in .rewards-rail ".rewards-tab {" .rewards-panel; do
+  printf "%-24s " "$sel"; grep -c "$sel" app/components.css; done
+```
+
+The symptom to recognise: unstyled controls plus a layout that is right on
+desktop and wrong on a phone means a chunk of stylesheet is missing, not that
+the responsive rules are wrong.
+
+### The payoff: found on the map
+
+Tapping participate now tells a whole story rather than a flourish, and the
+last beat is the one that was missing. The full sequence, all timeouts tracked
+so scrolling away mid-flight cannot leave a stale screen opening:
+
+| ms | what |
+|---|---|
+| 20 | the field collapses into the phone, which recoils, shakes, flares and throws three shockwaves |
+| 620 | the alert rises out of the screen: a mystery reward is near, other seekers are moving |
+| 2700 | the alert closes |
+| 3050 | the win screen fades up: the map, the route walked, the reward found at the end of it |
+| 7400 | it fades out |
+| 7900 | the rewards fly back to their slots |
+
+**The reward is drawn at random** from all nineteen, by `randomReward()` in
+`content/rewards.ts`, so two taps rarely land on the same thing. Names are in
+`messages` under `rewards.items`: twelve are proper nouns and are byte-identical
+in every locale, seven are common nouns and are translated. That split is why
+adding the win screen cost seven strings a locale rather than nineteen.
+
+`FoundScreen` is a **layer over** the static event screen, not a replacement, so
+nothing loads or lays out when it arrives. The map is drawn, in the same idiom
+`MapScreen` uses, and deliberately quiet: it is a backdrop for the reward, not a
+map to read. The trail draws itself on with `stroke-dashoffset`, which leads the
+eye to the spot rather than letting it find it.
+
+Three things that needed a second pass:
+
+- **The map was invisible.** Blocks at `#111118` on `#08080c` are a texture, not
+  a plan. They are `#181822` on `#0a0a10` now, with the roads lifted to `#26262f`
+  and the park given some green.
+- **The pin rings pulsed where nobody could see them.** They were 34% wide and
+  `.found-prize` is 52%, so they were entirely behind the artwork. 86% now.
+- **The reward name has to survive nine locales**, from `$SEEK` to
+  `Zapatillas edición limitada`. `.found` is a `container-type: inline-size` and
+  the name is `clamp(1.05rem, 9cqw, 1.5rem)`, so it sizes against the phone
+  screen. A viewport unit would have gone tiny on desktop, where the screen is
+  small and the viewport is not.
+
+### The map became a real map
+
+The win screen's drawn SVG street plan is gone, replaced by a Mapbox render of
+the Eiffel Tower, cropped to the aperture's ratio and centred on the tower.
+`FOUND_MAP` in `content/rewards.ts`.
+
+The drawing was perfectly legible. It was also obviously a diagram, and the
+moment this screen is selling is *this happened in a real place*, which a
+diagram cannot say however well it is drawn.
+
+Processing: crop 521x1132 out of the 1825x1132 source at x=640, which is where
+the tower stands, then up to 640x1391 and AVIF at q62. 78 KB. It is darkened
+and cooled in CSS rather than in the file (`brightness(0.72) saturate(0.92)`),
+so the asset stays reusable at full strength, and two scrims sit over it: dark
+at the top for the status bar, dark at the bottom for the copy, clear through
+the middle where the reward lands and the map still has to be a map.
+
+**Two things this change dragged with it.**
+
+`rewards.foundWhere` said "New Avenue 13", which came from the event screenshot.
+Against a picture of the Eiffel Tower that reads as a mistake, so it is
+"Champ de Mars" now, which is on the crop and is about the distance the line
+claims. The live event screen above it still says New Avenue 13; those are two
+different moments and nobody has ever read both in one glance, but if the map is
+ever re-cropped somewhere else, this line moves with it.
+
+**Attribution is not optional.** This is Mapbox imagery and their terms require
+the logo and copyright line to stay visible. The crop removes the logo baked
+into the source's bottom left, so the screen carries `rewards.mapCredit`
+("© Mapbox © OpenStreetMap") instead, small and dim at the bottom edge. The
+comment on `FOUND_MAP` says the same thing. **Do not delete that line without
+first establishing what licence this render came under.**
+
+### Paying for it, as its own beat
+
+The sequence now opens with the SEEK coin leaving the field, landing on the
+participate button, and a mint tick confirming it. Only then does everything
+else get pulled in.
+
+That order matters more than it sounds. Running the payment and the payoff
+together lost the payment entirely: 500 SEEK disappeared into a general
+commotion and the button may as well have been decorative. Paying for a thing
+and getting the thing are two events, and an interface that respects the first
+one is the difference between a flourish and a transaction.
+
+| ms | what |
+|---|---|
+| 20 | the SEEK coin leaves its slot for the button |
+| 760 | it lands and is spent; the tick pops and draws its check |
+| 1400 | the field collapses into the phone |
+| 2000 | the alert |
+| 4400 | the win screen |
+| 9250 | reset |
+
+**The landing point is measured, not written down.** The button lives inside
+the phone and the coin lives in the field, and no fixed percentage relates the
+two across breakpoints. On tap, the component reads both bounding boxes and
+writes `--pay-x` / `--pay-y` onto the field. Measured **against the field and
+not the stage**, because the field is inset on a phone (`inset: 2% 7%`) and the
+slots are percentages of it; against the stage the coin missed by about its own
+width on mobile. Verified at 390px: the coin's centre lands on the button's to
+the pixel in both axes.
+
+Two things the flight needed that were not obvious:
+
+- **Full strength for the duration.** On any category but tokens the SEEK coin
+  sits in a back row at a third opacity behind two pixels of blur, and a coin
+  nobody can see cannot be seen to be spent. `opacity: 1; filter: none` for the
+  flight, whatever slot it started from.
+- **It has to land before it goes.** The first version faded it from 0.5s over
+  a 0.58s flight, so it was half gone on arrival and the payment read as the
+  coin evaporating. The fade is delayed to 0.64s of a 0.7s flight now: it
+  arrives, then it is spent.
+
+### Making "you found it" readable
+
+It was mint type at 0.6rem over a photograph of Paris, and it lost. Two changes,
+and the second is the one that mattered:
+
+- The bottom scrim now reaches past the top of the copy before it starts fading
+  (0.97 at the edge, still 0.94 at 26%, gone by 58%). It used to be clear by
+  44%, which put the label on the Eiffel Tower's own map pin.
+- **The label went through two versions.** First a mint pill with a check in it,
+  which was legible and read as every success toast ever shipped. It is the
+  site's own eyebrow device now: mono, uppercase, letterspaced, in mint, between
+  two rules that draw outward as it lands. `.eyebrow` puts one rule on the left;
+  centred over a phone screen it wants both. A glow carries it instead of a
+  plate, which works because the real problem was never the missing box, it was
+  the scrim underneath.
+
+The trail also moved *under* the scrim. It was above it, so the route stayed at
+full brightness straight through the copy block and competed with it. Under it,
+it fades out towards the bottom of the screen, which is also what a route
+arriving from somewhere else ought to do. Layer order in `.found` is map,
+trail, scrim, pin, prize, copy, credit.
+
+### The chain strip was arguing against itself
+
+Four tiles reading Ethereum LIVE, Solana LIVE, BNB Smart Chain NEXT, Arbitrum
+NEXT sat under a heading claiming the protocol is chain-agnostic. What it
+actually communicated was "we support exactly these four, and two of them do not
+work yet", which is a compatibility matrix, not an open set.
+
+Three changes:
+
+- The legend is **"Any source, any blockchain"**. `source` matters as much as
+  `blockchain` here: the reward can come from a project, a brand, a venue or the
+  shop on the corner, and the section above it has just spent six categories
+  proving that.
+- **The strip ends open.** A fifth tile, dashed, with a plus instead of a logo:
+  "Any other chain". Dashed rather than solid, because a solid border would make
+  it the fifth supported chain instead of the statement that there is no fifth
+  position to be in.
+- **The per-tile status is gone.** Which chains settle today is still a fact and
+  is still stated, one sentence into the note underneath, where it informs
+  rather than caps the claim above it.
+
+`content/chains.ts` keeps `status` regardless: `llms.txt` reads it, and the
+roadmap item still needs to know. The strip simply stopped being the place that
+displays it. `chainLive` and `chainSoon` are gone from all nine message files,
+replaced by `chainAny`.
+
+### Real chain marks
+
+The four hand-drawn marks in `ChainMarks.tsx` are gone, replaced by the
+networks' own official SVGs, inlined. Each is under 2 KB, so inlining means the
+strip paints with the page instead of five requests landing after it.
+
+**They are badges, not glyphs.** Every one is a filled circle with the mark
+knocked out of it, in the network's own colours. Nothing here takes
+`currentColor` and nothing here may ever be given a filter, which is the lesson
+`twitter.svg` already taught this codebase in the seventh pass: it is a purple
+disc rather than a glyph, and inverting it for the dark theme turned it green.
+The tile also stopped drawing a rounded-square plate behind them, because a
+square under a circle is two backgrounds arguing.
+
+Two things the swap needed:
+
+- **The gradient ids had to be namespaced.** The supplied `binance.svg` and the
+  Arbitrum file both declare `id="linear-gradient"`. SVG ids are global to the
+  document, so inlining them unchanged makes the second one's fill resolve to
+  the first one's definition and BNB comes out Arbitrum navy. Every id now
+  carries its chain's name.
+- **A hairline around the badge.** Ethereum's disc is `#f2f2f2` and the light
+  theme's tile is `#ffffff`, so without a ring the disc vanishes and the black
+  diamond floats on nothing. It is on all four rather than only Ethereum,
+  because a ring on one badge out of five is a ring you notice. On dark it is
+  invisible, which is the point.
+
+`AnyChainMark` is the exception and stays `currentColor`: it is a plus, and a
+plus is a glyph.
+
+### The live badges carry the mark now
+
+`components/brand/LiveMark.tsx`. The SEEK mark replaced `.dot-live` in the four
+places that badge a live state: the drop card, the clan board, the film's HUD
+tag and the deploy console's plate. A blue dot said "something is happening"
+without saying whose, and these are the four spots where a reader is looking at
+the product doing something.
+
+`.dot-live` stays, and is still right in the two places it is left: the hero's
+signal-lock readout, where it is a GPS indicator rather than a badge, and the
+descent's eyebrow, where it is a typographic bullet and a mark would fight the
+heading beside it.
+
+The mark cannot pulse the way the dot did without wobbling a shape that has to
+stay readable at 13px, so `.mark-live` breathes a glow instead.
+
+**Gradient ids, again.** `SeekMark` fills from a `linearGradient` it defines
+itself and SVG ids are global to the document, so every one of the four passes
+its own. Auditing that turned up a collision that was already there:
+`SeekLogo` defaults to `seek-logo-grad` and both the header and the footer
+rendered it, on every page. Both pass a distinct id now. Two identical
+gradients render the same, so nothing looked wrong; the day one of them takes
+different stops the other repaints with it and nothing says why.
+
+Worth keeping as a check, since this pass hit id collisions twice:
+
+```
+[...document.querySelectorAll('linearGradient[id]')].map(g => g.id)
+  .filter((v, i, a) => a.indexOf(v) !== i)
+```
+
+### The walkthrough's map screen is a real map too
+
+Same move as the win screen, and for the same reason: the drawn SVG street plan
+was accurate to the app's own layout and still read as a diagram, which is the
+one thing a map screen cannot afford to look like.
+
+`scripts/build-app-map.py` takes a Mapbox render and writes two plates, both
+cropped to the aperture ratio:
+
+| | |
+|---|---|
+| `map-day.avif` | the render as supplied, 80 KB |
+| `map-night.avif` | darkened and tinted, 28 KB |
+
+**Night is what ships.** Every other screen in the walkthrough is dark, and the
+coin glows, the cyan route and the vignette drawn over this were all built for a
+night map; the day plate makes the heads-up chrome compete with the map's own
+labels. `APP_MAP` in `content/rewards.ts` is one line to switch, and both plates
+are in the repo.
+
+**The night version is composited at build time, not filtered in CSS**, and
+that distinction is the whole reason the script exists. A CSS filter either
+washes the map out or, if it reaches for `invert`, turns the parks magenta and
+the water orange. Inverting a hue is not the same as turning the lights off.
+Darkening the luminance, easing the saturation back and multiplying a deep
+blue-black over the top keeps green green.
+
+What stayed on top of the photograph: the route, the vignette, the spawns, the
+me-dot and all the chrome. The only structural change is that `.map-canvas` now
+holds the route alone and had to move above the new scrim.
+
+Attribution again, and it took two goes to place: at `bottom: 68px` the credit
+line sat behind the tab bar. The bar is 62px tall and sits 18px up from the
+screen edge for the home indicator, so anything under 80px is hidden. It is at
+84px, in the gap between the bar and the hint pill.
+
+### Map sharpness: two mistakes in the pipeline
+
+Both map plates looked soft, and two things in `scripts/build-app-map.py` were
+doing it:
+
+- **It upscaled.** `EDGE` was a target rather than a cap, so a 567px crop was
+  resized *up* to 640. That adds no detail, costs bytes, and softens every
+  street label, which is the one thing on a map that has to survive. It is a cap
+  now: 880, which covers the phone screen at 3x, and anything smaller is left at
+  its native size.
+- **It encoded at q62.** These plates are dense fine type at exactly the size a
+  street name is drawn, and AVIF spends its error budget there first. At 62 the
+  labels smear into the roads. q72 now. The Tokyo night plate went from 28 KB to
+  33 KB for it, which is nothing.
+
+`FOUND_MAP` had both problems and was rebuilt the same way, 640 down to its
+native 521.
+
+**What actually decides sharpness is the source.** The number to look at is the
+portrait crop's width against the 287 CSS px the phone screen is drawn at:
+
+| source | portrait crop | ratio |
+|---|---|---|
+| the Tokyo render in use | 567 x 1232 | 1.98x |
+| a wider Milwaukee render offered as an alternative | 845 x 1838 | 2.94x |
+
+The Milwaukee one is visibly sharper at 1:1 and was still not adopted: it is a
+city-scale render, so at phone size the street grid is texture and the banner's
+"84 m away" is claiming a distance smaller than a pixel. Sharpness is not worth
+a map that contradicts the copy on top of it.
+
+**What was exported in the end** was better than either: an aerial photograph
+of a town centre, already portrait, 920 x 2000 in its crop, **3.21x** the
+rendered width. It also sidesteps the compression trap entirely, because a
+photograph of roofs has no fine type for AVIF to smear.
+
+The cost is bytes. A vector map plate is 33 KB and this is 124 KB, which is the
+price of a photograph and is paid on a screen well below the fold. `q64` rather
+than the map's `q72`, because the night treatment has already pulled the
+contrast back and hides compression better than the day version would, and
+re-encoded from the source rather than from the AVIF so it is not a second
+generation.
+
+`.map-credit` was removed with it. This is not Mapbox imagery and a Mapbox
+credit under someone else's photograph is worse than no credit at all. **The
+aerial carries no attribution of its own: establish what licence it came under
+before this ships.** The win screen's plate is still Mapbox and still credited.
+
+Note that the phone now shows two visual languages: an aerial photograph in the
+walkthrough and a Mapbox 3D vector render on the win screen. They are different
+moments, so it is defensible, but if it ever reads as inconsistent the aerial
+pipeline handles either.
+
+### The wallet holds real coins now
+
+`WalletScreen`'s SOL and ETH rows were drawing a letter in a grey circle,
+because only SEEK had a `badge` set and the other two fell through to the
+initial. On the one screen whose whole job is to show what you are holding, two
+of three holdings were placeholders. They point at `solana.avif` and
+`ethereum.avif` from the rewards set now.
+
+`data-art` on `.wallet-row-icon` drops the grey plate whenever there is a render
+to show, for the same reason the chain tiles lost theirs: these are circular
+badges with their own rim, and a disc behind one reads as a ring around it. The
+plate stays for the initial, which still needs something to sit on if a holding
+ever arrives without artwork.
+
+### The spawn screen had never shown its copy
+
+It rendered `spawnScreen.distance`, `spawnScreen.inRange` and the rest as raw
+keys. Every one of those keys exists in all nine message files. The namespace
+was simply missing from `CLIENT_NAMESPACES`.
+
+**The build did not catch it, and could not.** `SpawnScreen` only mounts when
+somebody clicks a coin on the map, so it is never rendered during prerender and
+never produced a `MISSING_MESSAGE` line. Grepping the build log, which is the
+check the eighth pass added, is necessary and not sufficient.
+
+**The audit in `client-messages.ts` did not catch it either, and that is the
+part worth fixing.** It greps for files containing `use client` and reads the
+`useTranslations` calls out of those. `SpawnScreen.tsx` does not carry the
+directive: it is pulled into the client bundle by `AppWalkthrough`, which does.
+The directive marks a boundary, not a bundle, and everything imported past one
+is client code too.
+
+The audit has to follow imports. This found `spawnScreen` and nothing else:
+
+```js
+// node, from the repo root
+const fs=require('fs'),path=require('path');
+const files={}; (function walk(d){for(const f of fs.readdirSync(d)){const p=path.join(d,f);
+  fs.statSync(p).isDirectory()?walk(p):/\.tsx?$/.test(p)&&(files[p]=fs.readFileSync(p,'utf8'))}})('components');
+(function walk(d){for(const f of fs.readdirSync(d)){const p=path.join(d,f);
+  fs.statSync(p).isDirectory()?walk(p):/\.tsx?$/.test(p)&&(files[p]=fs.readFileSync(p,'utf8'))}})('app');
+const res=(s,from)=>{let c=s.startsWith('@/')?s.slice(2):s.startsWith('.')?path.normalize(path.join(path.dirname(from),s)):null;
+  if(!c)return null; for(const e of ['.tsx','.ts','/index.tsx','/index.ts']) if(files[c+e])return c+e; return files[c]?c:null};
+const seen=new Set(), stack=Object.keys(files).filter(p=>/^\s*["']use client["']/.test(files[p]));
+while(stack.length){const p=stack.pop(); if(seen.has(p))continue; seen.add(p);
+  for(const m of files[p].matchAll(/from\s+["']([^"']+)["']/g)){const r=res(m[1],p); if(r)stack.push(r)}}
+const need=new Set(); for(const p of seen)
+  for(const m of files[p].matchAll(/useTranslations\(\s*["']([^"']+)["']/g)) need.add(m[1]);
+console.log([...need].sort());
+```
+
+Both quote styles, in the entry test and in the `useTranslations` match. A
+double-quote-only version of this reports `cookies` as unused, because
+`CookieConsent` writes `'use client'` with single quotes, which is the same
+trap the comment in `client-messages.ts` already records from the first time
+that list was derived.
+
+### The wallet's action row was four guesses under four blank tiles
+
+`send / receive / swap / stake`, each with an empty `<b/>` that CSS filled with
+a plain gradient disc. The app's actual row is **Deposit, Send, Exchange, QR**,
+and its icons arrived as one 402-wide SVG strip, which is exactly the screen
+width.
+
+They are in `components/app/WalletActionIcons.tsx`, extracted rather than used
+as a strip because the strip has its labels baked in as outlined text and this
+site has nine locales. Each icon **keeps the coordinates it had in the strip**
+and takes the box it occupied there as its viewBox: the gradients are
+`userSpaceOnUse`, so moving the paths to a local origin would have meant moving
+every gradient with them. Leaving both where they were is exact and free.
+
+Gradient ids are prefixed per icon, for the third time this pass. The export
+ships all eight as `paint0_linear_0_16409` upward, and four of these on one
+screen sharing ids would each fill with the first one's ramp.

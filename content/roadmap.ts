@@ -50,6 +50,10 @@ export const PHASES: Phase[] = [
       { id: "radio", done: true },
       { id: "builder", done: true },
       { id: "portal" },
+      /* Which networks this covers is in `content/chains.ts`, not here. A
+         chain that goes live flips its status there and the strips on the
+         homepage and the business page follow; this line stays a line. */
+      { id: "multichain" },
       { id: "analytics" },
       { id: "tge" },
       { id: "partnerships" },

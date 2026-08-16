@@ -10,7 +10,8 @@ import GlobeSection from "@/components/sections/GlobeSection";
 import AppWalkthrough from "@/components/app/AppWalkthrough";
 import VideoReveal from "@/components/sections/VideoReveal";
 import CollectiblesSection from "@/components/sections/CollectiblesSection";
-import OffersSection from "@/components/sections/OffersSection";
+import RewardsSection from "@/components/sections/RewardsSection";
+import DistributionSection from "@/components/sections/DistributionSection";
 import MobiSection from "@/components/sections/MobiSection";
 import ARSection from "@/components/sections/ARSection";
 import ProgressionSection from "@/components/sections/ProgressionSection";
@@ -181,7 +182,11 @@ function HomeContent() {
         <div className="shell">
           <div className="hero-layout">
             <div>
-              <p className="eyebrow enter">AR · AI · Solana</p>
+              {/* Was "AR · AI · Solana". The eyebrow is a translated string
+                  now because the third term is a claim rather than a proper
+                  noun: it says the protocol is not tied to one chain, and that
+                  has to be sayable in nine languages. */}
+              <p className="eyebrow enter">{t("heroEyebrow")}</p>
               <h1 className="t-display hero-title enter" style={{ animationDelay: "80ms" }}>
                 {t("heroTitle")}{" "}
                 <span className="text-gradient">{t("heroTitleHighlight")}</span>
@@ -246,31 +251,38 @@ function HomeContent() {
         </div>
       </section>
 
-      {/* ── What else can be placed ─────────────────────────────────────── */}
+      {/* ── What else can be placed ─────────────────────────────────────────
+          Replaced `OffersSection`, which said the same thing with five drawn
+          artefacts standing in for artwork that did not exist yet. It does now,
+          so the section shows the objects instead of illustrating them. The
+          component and its eight translations are untouched in the repo if this
+          ever needs putting back. */}
       <section className="section">
         <div className="shell">
-          <div className="sec-head reveal">
-            <p className="eyebrow">{t("beyondEyebrow")}</p>
-            <h2 className="t-h2">{t("beyondTitle")}</h2>
-            <p className="t-lead" style={{ marginTop: "1.25rem" }}>
-              {t("beyondLead")}
-            </p>
-          </div>
+          <RewardsSection />
 
-          <div className="reveal" style={{ marginTop: "3rem" }}>
-            <OffersSection />
-          </div>
-
-          {/* Contextual link out to the business trechter. Publishers who
-              read Beyond-coins are the audience for /business, this hand-off
-              was missing, so the section dead-ended and everything below it
-              stayed a seeker narrative. */}
-          <div className="reveal" style={{ marginTop: "2.5rem" }}>
+          {/* Their hand-off, kept through the merge. The section used to
+              dead-end: a publisher who has just been shown what a drop can be
+              is the audience for /business, and everything below this goes
+              back to being a seeker narrative. */}
+          <div className="reveal" style={{ marginTop: "2.5rem", textAlign: "center" }}>
             <Link href="/business" prefetch={false} className="arrow-link">
               {t("placeReward")}
               <ArrowRight />
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ── Distribution ────────────────────────────────────────────────────
+          Sits directly after the formats on purpose. That section answers
+          *what* a publisher can place; this one answers why placing it beats
+          buying reach for the same money, and which chains the asset can come
+          from. The two questions arrive in that order in every conversation
+          we have had with a publisher. */}
+      <section className="section">
+        <div className="shell">
+          <DistributionSection />
         </div>
       </section>
 

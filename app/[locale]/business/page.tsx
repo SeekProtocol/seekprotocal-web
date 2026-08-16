@@ -3,10 +3,11 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getMultilingualAlternates, OG_IMAGE, getBreadcrumbJsonLd, getOpenGraph } from "@/lib/seo";
-import { MEASUREMENT, USE_CASES } from "@/content/business";
+import { INTERACTION_CLAIMS, MEASUREMENT, USE_CASES } from "@/content/business";
 import { listCopy, withCopy } from "@/lib/content-i18n";
 import DeployConsole from "@/components/business/DeployConsole";
 import AttentionFunnel from "@/components/business/AttentionFunnel";
+import ChainRoster from "@/components/brand/ChainRoster";
 
 export async function generateMetadata({
   params,
@@ -58,6 +59,15 @@ function BusinessContent() {
     "label",
     "value",
   ]);
+  const claims = withCopy(useTranslations("interactionClaims"), INTERACTION_CLAIMS, [
+    "metric",
+    "title",
+    "body",
+  ]);
+  /* The roster's own label comes from `distribution`, which is where the
+     homepage reads it too. One string for one component, rather than the same
+     words translated twice and drifting. */
+  const chains = useTranslations("distribution");
 
   return (
     <>
@@ -104,8 +114,42 @@ function BusinessContent() {
         </div>
       </section>
 
-      {/* --------------------------------------------------------------- */}
+      {/* ---------------------------------------------------------------
+          The unit, not the money. The funnel above argues what a budget buys;
+          this argues what an arrival *is*, which is the question a publisher
+          asks second and cares about longer. The chain roster closes it,
+          because "which chain is your asset on" is the last objection before
+          a campaign gets scoped. */}
       <section className="section section-sunken">
+        <div className="shell">
+          <div className="sec-head reveal">
+            <p className="eyebrow">{t("realEyebrow")}</p>
+            <h2 className="t-h2">{t("realTitle")}</h2>
+            <p className="t-lead" style={{ marginTop: "1.25rem" }}>
+              {t("realLead")}
+            </p>
+          </div>
+
+          <div className="grid-3" style={{ marginTop: "3rem" }}>
+            {claims.map((claim) => (
+              <article key={claim.id} className="card card-hover reveal">
+                <span className="chip chip-brand">{claim.metric}</span>
+                <h3 className="t-h3" style={{ margin: "1rem 0 0.75rem" }}>
+                  {claim.title}
+                </h3>
+                <p className="t-body">{claim.body}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="reveal" style={{ marginTop: "3rem" }}>
+            <ChainRoster anyLabel={chains("chainAny")} note={t("chainsNote")} />
+          </div>
+        </div>
+      </section>
+
+      {/* --------------------------------------------------------------- */}
+      <section className="section">
         <div className="shell">
           <div className="sec-head reveal">
             <p className="eyebrow">{t("useCasesEyebrow")}</p>

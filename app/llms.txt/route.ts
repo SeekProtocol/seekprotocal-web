@@ -5,6 +5,7 @@ import { CHAPTER_IDS, WHITEPAPER_META } from "@/content/whitepaper";
 import { PARTICIPANTS, CAPABILITIES, FAQ_IDS } from "@/content/ecosystem";
 import messages from "@/messages/en.json";
 import { PHASES } from "@/content/roadmap";
+import { CHAINS, nameList } from "@/content/chains";
 
 /**
  * llms.txt, following the llmstxt.org convention: one Markdown file at the root
@@ -30,15 +31,22 @@ export async function GET() {
   const shipped = PHASES.flatMap((p) => p.items).filter((i) => i.done).length;
   const total = PHASES.flatMap((p) => p.items).length;
 
+  /* Read from the roster rather than written out, for the reason in the
+     comment above: a chain that goes live must not need an edit here too. */
+  const live = nameList(CHAINS.filter((c) => c.status === "live"), "and");
+  const next = nameList(CHAINS.filter((c) => c.status === "soon"), "and");
+
   const body = [
     `# Seekprotocol`,
     ``,
     `> Seekprotocol anchors digital assets to real-world coordinates. A publisher`,
     `> places a reward at a location, someone travels to it, and the protocol`,
-    `> verifies they were actually there before settling the claim on-chain.`,
+    `> verifies they were actually there before settling the claim on chain.`,
     `> The consumer app is Seekprotocol (iOS and Android); the native token is $SEEK.`,
-    `> The protocol is chain-agnostic, currently settling on Solana, built to`,
-    `> support any chain a campaign publisher chooses.`,
+    /* Derived from content/chains.ts rather than written out, so a chain going
+       live is one edit there and not a second one here. */
+    `> The protocol is chain-agnostic. Settling today: ${live}.${next ? ` Next: ${next}.` : ""}`,
+    `> A network is a row in a table rather than code, so the roster is open ended.`,
     `> Operated by Block Protocol L.L.C-FZ, Dubai, UAE.`,
     ``,
     `The distinguishing claim is proof of location: presence is checked against`,
@@ -47,6 +55,8 @@ export async function GET() {
     `reward is worth. The protocol does not assert forgery is impossible, and the`,
     `whitepaper documents the attacks and the limits.`,
     ``,
+    /* Counted rather than written out. It said "eight" in both places, and was
+       already wrong: Turkish landed and nothing here noticed. */
     `The site is served at ${routing.locales.length} locales under a path prefix (${routing.locales.join(", ")}).`,
     `Every page is translated into all ${routing.locales.length}. The articles are English only and`,
     `canonicalise to their /${routing.defaultLocale} URL. This file describes the English site.`,

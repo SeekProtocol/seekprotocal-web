@@ -103,7 +103,7 @@ export async function GET() {
               }}
             >
               Rewards anchored to real coordinates, verified on arrival, settled
-              on Solana.
+              on any chain.
             </div>
           </div>
 

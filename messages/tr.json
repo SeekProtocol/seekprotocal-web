@@ -21,7 +21,6 @@
     "blog": "Blog",
     "whitepaper": "Teknik Belge",
     "tokenDashboard": "Token Paneli",
-    "seekPartners": "Seek Partners",
     "address": "Block Protocol L.L.C-FZ Meydan Grandstand, 6. kat, Meydan Yolu, Nad AlSheba, Dubai, B.A.E.",
     "description": "Seekprotocol, artırılmış gerçeklik, yapay zeka ve blok zinciri teknolojilerini birleştirerek gerçek dünyada oyunlaştırılmış deneyimler oluşturan, Block Protocol L.L.C-FZ tarafından geliştirilen yeni nesil bir platformdur.",
     "copyright": "© 2024-2026 Block Protocol Tüm hakları saklıdır",
@@ -32,12 +31,13 @@
     "company": "Şirket",
     "resources": "Kaynaklar",
     "appStore": "App Store",
-    "googlePlay": "Google Play"
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners"
   },
   "home": {
     "heroTitle": "Yeni Bir Gerçekliği Keşfet:",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "AR ve AI platformu; dünyanı blok zincirle çalışan bir oyun alanına dönüştürür. Hava dağıtımlarını avla, NFT topla ve yapay zeka rehberlerinle gerçek mekanları keşfet. Çoklu zincir uyumlu, şu anda Solana üzerinde.",
+    "heroSubtitle": "Bir yere ait ödüller için AR ve AI katmanı: herhangi bir zincirdeki bir token, kasada geçen bir kupon, kutuyla gelen bir şey. Koordinata yürü, telefonunu doğrult ve oraya bırakılanı topla.",
     "downloadAppStore": "App Store'dan indir",
     "downloadGooglePlay": "Google Play'den indir",
     "benefitsTitle": "Sınırsız",
@@ -83,7 +83,7 @@
     "scaleEngagement": "Etkileşim Motoru",
     "scaleEngagementDesc": "Yönlendirme görevleri, liderlik tablosu serileri ve lonca misyonları; kullanıcılar arasında günlük, haftalık ve sosyal etkileşimi tetikleyen eksiksiz bir araç seti.",
     "scaleCrossPlatform": "Platformlar Arası Yayılım",
-    "scaleCrossPlatformDesc": "Solana Mobile ile Android/iOS'te genişleme. Tek profil, tek cüzdan, sınırsız Seek deneyimi; her yerde, her zaman.",
+    "scaleCrossPlatformDesc": "iOS ve Android'de tek profil, tek cüzdan; çözümleme yaptığımız her zincirin varlıklarını birlikte tutar. Sınırsız Seek deneyimi, her yerde, her zaman.",
     "featuredOn": "BASINDA YER ALDIK:",
     "joinBeta": "Beta'mıza katıl",
     "getReady": "Aramaya hazır ol!",
@@ -100,24 +100,25 @@
     "liveLead": "Herhangi bir merkeze atla, bir coini kimin aldığını görmek için üzerine dokun ve uygulamanın gerçek olasılıklarına karşı kendin de bir deneme yap.",
     "foundationsEyebrow": "Temeller",
     "readWhitepaper": "Teknik belgeyi oku",
+    "metaTitle": "Seekprotocol | Gerçek Ödüller için AR Hazine Avı",
+    "metaDescription": "Artırılmış gerçeklikte konum tabanlı ödüller avla: her zincirde tokenler, kuponlar, fiziksel ürünler. Seekprotocol bunları gerçek mekanlara sabitler ve orada olduğunu kanıtlar.",
+    "ogTitle": "Seekprotocol | Gerçek ödüller için AR ve AI",
+    "heroEyebrow": "AR · AI · Her ödül",
     "placeReward": "Kendi koordinatlarına ödül yerleştir",
     "exploreEcosystem": "Ekosistemi keşfet",
     "viewRoadmap": "Yol haritasını gör",
     "polCtaEyebrow": "Konum kanıtı",
     "polCtaTitle": "Varlık, doğrulandı",
     "polCtaBody": "Bir talep kabul edilmeden önce dört bağımsız sinyalin uyuşması gerekir. Sade açıklama blogda.",
-    "polCtaLink": "Konum kanıtı nasıl çalışır",
-    "metaTitle": "Seekprotocol | On-Chain Ödüllü AR Hazine Avı",
-    "metaDescription": "Konum tabanlı hava dağıtımlarını avla, artırılmış gerçeklikte NFT topla ve AI rehberlerinle keşfe çık. Seekprotocol gerçek mekanları on-chain ödüllere dönüştürür, çoklu zincir uyumlu, şu anda Solana üzerinde.",
-    "ogTitle": "Seekprotocol | On-Chain Ödüller için AR ve AI Keşfi"
+    "polCtaLink": "Konum kanıtı nasıl çalışır"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol, AR Hazine Avı Uygulaması",
-    "metaDescription": "On-chain ödüller için artırılmış gerçeklik uygulaması. Konum tabanlı hava dağıtımlarını avla, gerçek koordinatlarda NFT topla ve kripto ödüller kazan. Çoklu zincir uyumlu, şu anda Solana üzerinde. iOS ve Android için ücretsiz.",
-    "ogTitle": "Seekprotocol, AR Hazine Avı Uygulaması",
+    "metaTitle": "Seekprotocol | AR Hazine Avı Uygulaması",
+    "metaDescription": "Seekprotocol, Seekprotocol'ün artırılmış gerçeklik uygulamasıdır. Gerçek koordinatlarda ödül avla: her zincirde tokenler, kuponlar ve fiziksel ürünler. iOS ve Android'de ücretsiz.",
+    "ogTitle": "Seekprotocol | AR Hazine Avı Uygulaması",
     "eyebrow": "Uygulama",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "Seekprotocol'ün artırılmış gerçeklik uygulaması. Telefonunu dünyaya doğrult ve oraya yerleştirilen şeyleri bul: gerçek koordinatlara sabitlenmiş tokenler, NFT'ler ve ödüller. Çoklu zincir uyumlu, şu anda Solana üzerinde.",
+    "heroDesc": "Seekprotocol'ün artırılmış gerçeklik uygulaması. Telefonunu dünyaya doğrult ve oraya bırakılanları bul: tokenler, NFT'ler, kuponlar ve kutuyla gelen şeyler, hepsi gerçek koordinatlara sabitlenmiş.",
     "whatTitle": "Seekprotocol nedir?",
     "whatBody": "Seekprotocol, amiral gemisi mobil uygulamamızdır; iOS ve Android'de ücretsizdir. Herhangi bir sokağı, parkı veya mekanı; dijital varlıkların gizlenip talep edilebildiği bir yere dönüştürür. Bir yayıncı bir koordinata ödül yerleştirir; sen bunu almak için fiziksel olarak orada olmalısın ve protokol orada olduğunu kanıtlar. Emülatör yok, sahtecilik yok, kestirme yok.",
     "featuresTitle": "Neler yapabilirsin",
@@ -128,7 +129,7 @@
     "f3Title": "AI rehberleriyle keşfe çık",
     "f3Desc": "Bir AI rehber, nerede olduğuna ve yakınında ne olduğuna tepki verir, sana yürümeye değecek olanları gösterir.",
     "f4Title": "Gerçek kripto ödüller kazan",
-    "f4Desc": "Her şey on-chain çözülür, şu anda Solana üzerinde, çoklu zincir uyumlu protokol. Topladığın şey senindir; cüzdanındadır ve sen hareket ettikçe o da hareket eder.",
+    "f4Desc": "Her şey varlığın zaten ait olduğu zincirde çözülür. Topladığın şey senindir; cüzdanındadır ve sen hareket ettikçe o da hareket eder.",
     "howTitle": "Nasıl çalışır",
     "s1Title": "İndir ve aç",
     "s1Desc": "App Store ve Google Play'de ücretsiz. Senin için bir cüzdan oluşturulur; daha önce özel anahtar tutmuş olman gerekmez.",
@@ -140,7 +141,7 @@
     "q1": "Seekprotocol ücretsiz mi?",
     "a1": "Evet. Seekprotocol iOS ve Android'de indirmek için ücretsizdir. Bazı uygulama içi öğeler ücretlidir, ancak avlanma ve talep etme değildir.",
     "q2": "Seekprotocol'ü kim yapıyor?",
-    "a2": "Seekprotocol, Dubai'deki Block Protocol L.L.C-FZ tarafından geliştirilmiştir. On-chain ödüller için çoklu zincir AR ve AI uygulamasıdır; şu anda Solana üzerinde, App Store ve Google Play'de bulunur.",
+    "a2": "Seekprotocol, Dubai'deki Block Protocol L.L.C-FZ'nin bir ürünü olan Seekprotocol tarafından geliştirilmiştir. Gerçek mekanlara sabitlenmiş ödüller için AR ve AI uygulamasıdır; herhangi bir zincirde ya da hiçbir zincir olmadan. App Store ve Google Play'de bulunur.",
     "q3": "Kripto hakkında bir şey bilmem gerekir mi?",
     "a3": "Hayır. Uygulamayı açtığında senin için bir cüzdan oluşturulur ve kendin bir seed ifadesiyle uğraşmadan varlıkları toplayıp saklayabilirsin.",
     "q4": "Seekprotocol hangi telefonlarda çalışır?",
@@ -154,13 +155,13 @@
     "renameLink": "Duyuruyu oku",
     "legacyEyebrow": "İsim geçmişi",
     "legacyTitle": "SeekAR kripto AR uygulaması artık Seekprotocol",
-    "legacyBody": "Sadece uygulama adı değişti; şirket ilk günden beri Seekprotocol adını taşıyor. Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı, Block Protocol L.L.C-FZ, Dubai, BAE, aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle on-chain ödüller için çoklu zincir AR uygulamasını (şu anda Solana üzerinde) açıklıyor.",
+    "legacyBody": "Sadece uygulama adı değişti; şirket ilk günden beri Seekprotocol adını taşıyor. Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı, Block Protocol L.L.C-FZ, Dubai, BAE, aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle on-chain ödüller için çoklu zincir AR uygulamasını açıklıyor.",
     "q6": "SeekAR uygulamasına ne oldu?",
-    "a6": "SeekAR olarak yayınlanan on-chain ödüller için AR mobil uygulaması 10 Ağustos 2026'da Seekprotocol olarak yeniden adlandırıldı. Aynı ürün, aynı yayıncı (Block Protocol L.L.C-FZ, Dubai), aynı App Store girişi (id 6752813761), aynı Play Store paketi (com.seekar.seekar), şu anda Solana üzerinde. Yalnızca isim ve simge değişti.",
+    "a6": "SeekAR olarak yayınlanan on-chain ödüller için AR mobil uygulaması 10 Ağustos 2026'da Seekprotocol olarak yeniden adlandırıldı. Aynı ürün, aynı yayıncı (Block Protocol L.L.C-FZ, Dubai), aynı App Store girişi (id 6752813761), aynı Play Store paketi (com.seekar.seekar). Yalnızca isim ve simge değişti.",
     "q7": "Eskiden SeekAR olarak bilinen uygulamayı nereden indirebilirim?",
     "a7": "App Store'da apps.apple.com/app/id6752813761 ve Google Play'de play.google.com/store/apps/details?id=com.seekar.seekar adreslerinden. Her iki giriş de artık Seekprotocol olarak adlandırılıyor.",
     "q8": "Seekprotocol, SeekAR ile aynı ürün mü?",
-    "a8": "Evet. Şirket ilk günden beri Seekprotocol; yalnızca uygulama adı değişti. Lansmandan Ağustos 2026'ya kadar SeekAR olarak adlandırılan on-chain ödüller için çoklu zincir AR uygulaması (şu anda Solana üzerinde) bugün Seekprotocol olarak adlandırılıyor, aynı ekip tarafından Dubai, BAE'deki Block Protocol L.L.C-FZ üzerinden yayınlanıyor."
+    "a8": "Evet. Şirket ilk günden beri Seekprotocol; yalnızca uygulama adı değişti. Lansmandan Ağustos 2026'ya kadar SeekAR olarak adlandırılan on-chain ödüller için çoklu zincir AR uygulaması bugün Seekprotocol olarak adlandırılıyor, aynı ekip tarafından Dubai, BAE'deki Block Protocol L.L.C-FZ üzerinden yayınlanıyor."
   },
   "about": {
     "heroTitle": "Konum Tabanlı Dijital Deneyimlerin Geleceğini Keşfet",
@@ -222,12 +223,15 @@
     "getReady": "Aramaya hazır ol!",
     "ctaDesc": "Dünyanın oyun alanın olduğu yeni bir gerçekliğe adım at. Seekprotocol, çevreni interaktif bir maceraya dönüştürerek en yeni AR teknolojisini gerçek dünya keşfiyle harmanlar.",
     "metaTitle": "Seekprotocol'ün Arkasındaki Ekip Hakkında",
-    "metaDescription": "Solana üzerinde konum tabanlı AR inşa eden ekibi tanıyın: konum kanıtı arkasındaki misyon, Seekprotocol'ün altındaki teknoloji ve $SEEK'in arkasındaki insanlar.",
+    "metaDescription": "Her zincir için konum tabanlı AR inşa eden ekibi tanıyın: konum kanıtı arkasındaki misyon, Seekprotocol'ün altındaki teknoloji ve $SEEK'in arkasındaki insanlar.",
     "ogTitle": "Seekprotocol'ün arkasındaki ekip"
   },
   "contact": {
     "getInTouch": "İletişime Geç",
     "formDesc": "Aşağıdaki formu doldur, en kısa sürede sana geri dönelim.",
+    "metaTitle": "İletişim: Ortaklıklar ve Kampanyalar",
+    "metaDescription": "Kendi koordinatlarına bir kampanya yerleştirmek, ortaklıklar, beta erişimi veya basın konularında Seekprotocol ekibiyle konuş.",
+    "ogTitle": "Seekprotocol ile İletişim",
     "inquiryTypesEyebrow": "Ya da daha kesin olarak",
     "partnershipsTitle": "Ortaklıklar",
     "partnershipsBody": "Bir projen, bir IP'n veya Seek'e taşımak istediğin bir mekan ağın var. Bize ne ve nerede olduğunu söyle, gerisini biz hallederiz.",
@@ -236,14 +240,11 @@
     "pressTitle": "Basın & medya",
     "pressBody": "Haber, röportaj, inceleme kopyası, ambargolu haber. Editoryal her şey için buradan ulaş; aynı gün yanıtlarız.",
     "supportTitle": "Destek",
-    "supportBody": "Bir hata, ulaşmayan bir ödül, bir cüzdan sorusu. En hızlısı Discord, ama bu form da işe yarar.",
-    "metaTitle": "İletişim: Ortaklıklar ve Kampanyalar",
-    "metaDescription": "Kendi koordinatlarına bir kampanya yerleştirmek, ortaklıklar, beta erişimi veya basın konularında Seekprotocol ekibiyle konuş.",
-    "ogTitle": "Seekprotocol ile İletişim"
+    "supportBody": "Bir hata, ulaşmayan bir ödül, bir cüzdan sorusu. En hızlısı Discord, ama bu form da işe yarar."
   },
   "services": {
     "heroTitle": "BİZİM UZMANLIĞIMIZ, SİZİN BÜYÜMENİZ",
-    "heroDesc": "Seekprotocol, Solana üzerinde son teknoloji AR, AI ve blok zincir çözümleri sunar. Sadece teknoloji inşa etmiyoruz. Gerçek dünya etkileşimini dönüştürmede sizin ortağınızız.",
+    "heroDesc": "Seekprotocol, her büyük zincirde son teknoloji AR, AI ve blok zincir çözümleri sunar. Sadece teknoloji inşa etmiyoruz. Gerçek dünya etkileşimini dönüştürmede sizin ortağınızız.",
     "letsContact": "İletişime Geçelim",
     "businessStrategy": "İş Stratejisi",
     "businessStrategyDesc": "İş hedeflerini dijital büyümeyle hizalayan özel stratejiler.",
@@ -298,7 +299,7 @@
     "allArticles": "Tüm makaleler",
     "relatedPages": "İlgili sayfalar",
     "metaTitle": "Blog: AR, AI ve Konum Tabanlı Ödüller",
-    "metaDescription": "Artırılmış gerçeklik, AI rehberler, coğrafi sınırlamalı hava dağıtımları ve konum kanıtı üzerine makaleler; Solana üzerinde Seekprotocol'ü inşa eden ekipten.",
+    "metaDescription": "Artırılmış gerçeklik, AI rehberler, coğrafi sınırlamalı hava dağıtımları ve konum kanıtı üzerine makaleler; Seekprotocol'ü inşa eden ekipten.",
     "ogTitle": "Seekprotocol blogu"
   },
   "forms": {
@@ -495,7 +496,7 @@
     },
     "collect": {
       "title": "Onu topluyorsun",
-      "meta": "Solana'da saniyeden kısa çözümleme",
+      "meta": "Varlığın kendi zincirinde çözümleme",
       "body": "Kamerayı kaldır, varlığı önündeki sokakta sabitlenmiş şekilde gör ve al. Aktarım zincir üzerinde bir kuruşun küçük bir kesri karşılığında çözümlenir ve o artık senindir."
     }
   },
@@ -947,7 +948,7 @@
       "label": "Token drop",
       "headline": "Farm etmesi bir bedele mal olan dağıtım",
       "face": "40 $SEEK",
-      "fine": "Cihaz başına bir talep · Solana'da çözümlenir",
+      "fine": "Cihaz başına bir talep · Kendi zincirinde çözümlenir",
       "redeem": "Uygulamanın senin için yaptığı cüzdana düşer ve tutmak, taşımak ya da satmak senindir. Kullanılacak bir şey yok, soracak kimse yok.",
       "proof": "Bir cüzdan oluşturmak ücretsizdir, bir yürüyüş değildir. Coğrafya, bir hava dağıtımının ucuza farm edilemeyeceği filtredir.",
       "placedBy": "Token projeleri ve toplulukları"
@@ -961,6 +962,142 @@
       "proof": "Her biri alındığı koordinatı taşır, böylece birinin elindeki set, gerçekten nerelerde olduğunun bir haritasıdır.",
       "placedBy": "Şehirler, turizm ofisleri, sanatçılar"
     }
+  },
+  "rewards": {
+    "eyebrow": "Ödüller",
+    "title": "Bir koordinatta her şey bekliyor olabilir",
+    "lead": "Madeni para herkesin ilk aklına gelen hali ve en az ilgi çekeni. Protokol kutunun içinde ne olduğuna bakmaz: bir kişiye verilebilen şey bir yere de verilebilir ve onu almak için birinin oraya kadar yürümesi gerekir.",
+    "railLabel": "Bir ödül türü seç",
+    "phoneAlt": "Canlı bir etkinliği ve dağıttığı ödülleri gösteren Seekprotocol uygulaması",
+    "liveChip": "Canlı etkinlik",
+    "participateLabel": "Canlı etkinliğe katıl",
+    "alertTitle": "Yakınında gizemli bir ödül var",
+    "alertBody": "301 m uzakta ve 21.00'e kadar açık. Oraya ilk varanın oluyor.",
+    "alertSeekers": "Başka arayıcılar da yola çıktı",
+    "foundLabel": "Onu buldun",
+    "foundWhere": "Champ de Mars · 301 m yüründü",
+    "foundFine": "Varışta talep edildi ve zincir üzerinde çözümlendi. Cüzdanında.",
+    "foundAlt": "Haritada bir ödül kazanmak",
+    "mapCredit": "© Mapbox © OpenStreetMap",
+    "items": {
+      "seek": "$SEEK",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "bnb": "BNB",
+      "hyperliquid": "Hyperliquid",
+      "berachain": "Berachain",
+      "dogecoin": "Dogecoin",
+      "pepe": "PEPE",
+      "babydoge": "Baby Doge",
+      "spx6900": "SPX6900",
+      "toshi": "Toshi",
+      "turbo": "Turbo",
+      "nft": "Gizemli NFT",
+      "voucher": "Mağaza kuponu",
+      "food": "Yemek kuponu",
+      "barcode": "Etkinlik pasosu",
+      "console": "PlayStation 5",
+      "handheld": "El konsolu",
+      "shoes": "Sınırlı sayıda sneaker"
+    },
+    "proofNote": "Kutuda ne olursa olsun, orada hiç bulunmamış birinin onu almasını engelleyen şey aynıdır: fiziksel varlık, talep anında dört bağımsız sinyalle puanlanır.",
+    "categories": {
+      "tokens": {
+        "label": "Tokenler",
+        "headline": "Her token, her zincirde",
+        "body": "Ethereum, Solana, BNB Smart Chain ve onlardan sonra gelecek ağlar. Bir yayıncı kampanyayı elindeki tokenle fonlar ve kampanya o tokenin bulunduğu yerde çözümlenir; yani katılmak için kimsenin köprü kurmasına gerek yok."
+      },
+      "memes": {
+        "label": "Meme coinler",
+        "headline": "Kanalı olmayan lansmanlar",
+        "body": "Bir meme coinin kitlesi vardır ama ona ulaşmanın airdrop çiftliği olmayan bir yolu yoktur. Arzı gerçek sokaklara koymak onu bunun için dışarı çıkmış insanların önüne serer ve her talep bir adres değil bir kişidir."
+      },
+      "nfts": {
+        "label": "NFT'ler",
+        "headline": "Durduğunuz yerde basıldı",
+        "body": "Geldiği koordinatı taşıyan bir koleksiyon parçası, koltuktan basılmış olandan başka bir nesnedir. Bir baskı bir şehre, bir mekana ya da tek bir kapıya bağlanabilir ve her birinin nerede alındığı herkese açık kayıttır."
+      },
+      "vouchers": {
+        "label": "Kuponlar",
+        "headline": "Kasada indirim",
+        "body": "Bir çarşının gerçekten istediği biçim. Yalnızca kapının içinde açılan bir kod, içeri girmiş biri tarafından kasada kullanılır ve buna yol açmış olabilecek bir gösterim olarak değil, bir varış olarak sayılır."
+      },
+      "goods": {
+        "label": "Fiziksel ürünler",
+        "headline": "Kutuyla gelen şeyler",
+        "body": "Bir konsol, bir çift spor ayakkabı, bir ekipman. Talep zincir üzerinde, teslimat ise sıradan lojistik. Bir markanın bir yürüyüşün sonuna fiziksel bir şey koyabilmesini, üstelik bunun için hiçbir şey inşa etmeden, tam olarak bu sağlıyor."
+      },
+      "events": {
+        "label": "Canlı etkinlikler",
+        "headline": "Etkinlik sürdüğü sürece, hepsi birden",
+        "body": "Bir festival, bir maç ya da bir konferans, etkinlikle birlikte sona eren geçici bir ödül katmanına dönüşür. Onları açan şey gelmiş olmaktır; böylece ödül havuzu gerçekten orada olanlara ulaşır ve sayaç kapıda durur."
+      }
+    }
+  },
+  "distribution": {
+    "eyebrow": "Dağıtım",
+    "title": "Erişimi almak kolay, ona güvenmek imkansız",
+    "lead": "Bir lansmanın satın alabileceği her kanal aynı şeyi satar: bir betiğin üretebileceği bir sayı. Gösterimler, tıklamalar, takipler, cüzdanlar; hepsi ölçekte bir sentin kesrine imal edilir. Fiziksel varlık, kimsenin otomatikleştirmediği tek etkileşimdir, çünkü kimse yürüyen bir bot yazmadı.",
+    "failureTag": "Satın aldığın",
+    "answerTag": "Burada aldığın",
+    "failures": {
+      "bots": "Ücretli trafik veri merkezlerinden ve tıklama çiftliklerinden gelir. Gösterim başına ödersin ve bunların kayda değer bir kısmı hiçbir insana gösterilmemiştir.",
+      "farms": "Bir hava dağıtımını cüzdanlar talep eder ve bir cüzdanın maliyeti yoktur. Betiği olan tek bir çiftçi kırk bin uygun adrese dönüşür ve tokenler, gitmesi gereken insanların yakınına bile düşmez.",
+      "unaudited": "Etkileşim rakamlarını, onları satan platformun kendisi raporlar. Bir takip, bir izlenme ya da modellenmiş bir mağaza ziyareti denetlenemez; böylece kampanya, inanmak zorunda olduğun bir sayıyla değerlendirilir."
+    },
+    "answers": {
+      "bots": "Bir talep, bir koordinatta gerçekten durmuş bir cihazdır; uydu konumu, çevresindeki radyo ortamı ve hareket izi birbiriyle uyuşur. Bir yerde olmanın sunucu tarafı sürümü yoktur.",
+      "farms": "Yarıçap ve zaman aralığı içinde cihaz başına tek talep. İkinci bir talep ikinci bir yolculuk demektir ve kimse aynı anda kırk şehirde değildir.",
+      "unaudited": "Her talep herkese açık bir kayıttır: bir koordinat, bir zaman, bir varlık. Rakamı bize sormak yerine bir blok gezgininde kendin say."
+    },
+    "askLegend": "Ne yapmalarını istiyorsun?",
+    "askNote": "Protokol, bir kişinin orada olduğunu doğrular. Ödülü hak etmek için ne yapması gerektiğini sen yazarsın ve bunların hiçbiri alttaki doğrulamayı değiştirmez.",
+    "actions": {
+      "visit": {
+        "label": "Mağazaya girsinler",
+        "headline": "Kasada talep et",
+        "body": "Bırakılan şey kapının içindedir; yarıçap, yalnızca kasadaki bir telefonun açabileceği kadar dardır. Kullanılan kod, içeri gerçekten giren birine aittir.",
+        "button": "Mağazada talep et",
+        "recorded": "Adresinde doğrulanmış bir varış, talep anının zaman damgasıyla."
+      },
+      "follow": {
+        "label": "Hesabı takip etsinler",
+        "headline": "Takip et, kilidi aç",
+        "body": "Hesap takip edilene kadar varlık kilitli kalır ve o takip yalnızca yarıçap içindeki bir cihazdan sayılır. Bir çiftlik takibi üretebilir. Yürüyüşü üretemez.",
+        "button": "Takip et ve talep et",
+        "recorded": "Arkasında doğrulanmış bir ziyaret olan bir takip, gerçekleştiği yere yazılır."
+      },
+      "signup": {
+        "label": "Kaydolsunlar ya da listeye girsinler",
+        "headline": "Yerinde kaydol",
+        "body": "Tek bir alan, bırakılan şeyin olduğu yerde doldurulur. Listedeki her adres, yazarken senin kampanyanın önünde duran birine aittir.",
+        "button": "Kaydol ve talep et",
+        "recorded": "Arkasında doğrulanmış bir varış olan bir kayıt; ödemeye değer tek tür budur."
+      },
+      "scan": {
+        "label": "Ürünü taratsınlar",
+        "headline": "Rafta tarat",
+        "body": "Kamerayı bir iğneye değil ürünün kendisine doğrult. Tarama yarıçap içinde olmak zorundadır; böylece ödül, o şeyi gerçekten elinde tutan kişiye ulaşır.",
+        "button": "Tarat ve talep et",
+        "recorded": "Tek bir mağazada tek bir ürünün taranması; kampanya başına değil ürün başına sayılır."
+      },
+      "mint": {
+        "label": "Yerinde basmak",
+        "headline": "Durduğun yerde bas",
+        "body": "Koleksiyon parçası koordinatta basılır ve onu yanında taşır. Sonradan ne edeceği, nereden geldiğiyle ilgilidir ve bunu bir basım sayfası söyleyemez.",
+        "button": "Burada bas",
+        "recorded": "Bir yere ve bir ana bağlı bir basım; koleksiyonun ait olduğu zincirde."
+      }
+    },
+    "dropStatus": "Yayında",
+    "dropWhere": "Kalverstraat 92, Amsterdam · 25 m yarıçap",
+    "dropFine": "Cihaz başına bir talep · Varışta doğrulanır",
+    "recordedLegend": "Geri aldığın",
+    "recordedNever": "Konuma, zamana ve kampanyaya göre sayılar. Asla bir birey, asla sonrasında nereye gittiğinin izi değil.",
+    "chainsLegend": "Her kaynak, her blok zinciri",
+    "chainsNote": "Kaynak, bir şey verebilen herkestir: bir proje, bir marka, bir mekan, köşedeki dükkan. Bir ağ, bir sürüm değil bir tablodaki satırdır; yani tek bir kampanya aynı anda birkaçında yürüyebilir ve bir arayıcının birini seçmesi hiç gerekmez. Bugün Solana çözümlüyor, sıradaki ise bir yapılandırma.",
+    "chainsCoinsAlt": "Seekprotocol'ün çözümleme yaptığı zincirlerin dönen 3B madeni paraları",
+    "chainAny": "Başka herhangi bir zincir"
   },
   "walkthrough": {
     "eyebrow": "İçinden geç",
@@ -1032,10 +1169,10 @@
   "walletScreen": {
     "totalBalance": "Toplam bakiye",
     "delta": "+ {amount} bugün",
+    "deposit": "Yatır",
     "send": "Gönder",
-    "receive": "Al",
-    "swap": "Takas",
-    "stake": "Stake",
+    "exchange": "Takas",
+    "qr": "QR",
     "justCaught": "Az önce yakalandı",
     "assets": "Varlıklar",
     "recentBadges": "Son rozetler"
@@ -1049,7 +1186,7 @@
   },
   "ecosystemPage": {
     "metaTitle": "Ekosistem: Arayıcılar, Yayıncılar, Protokol",
-    "metaDescription": "Seekprotocol ekosisteminin nasıl birbirine bağlandığı: toplayan arayıcılar, yerleştiren yayıncılar ve varlığı doğrulayıp Solana'da çözümleyen protokol.",
+    "metaDescription": "Seekprotocol ekosisteminin nasıl birbirine bağlandığı: toplayan arayıcılar, yerleştiren yayıncılar ve varlığı doğrulayıp zincir üzerinde çözümleyen protokol.",
     "ogTitle": "Üç taraf, bir koordinat",
     "eyebrow": "Ekosistem",
     "titleStart": "Üç taraf, bir",
@@ -1135,9 +1272,9 @@
       "body": "Bir sosyal girişten oluşturulur, böylece ilk kez kullanan bir dakika içinde bir şey toplayabilir; istediğinde öz-saklama için dışa aktarma mevcuttur."
     },
     "settlement": {
-      "title": "Solana çözümleme",
+      "title": "Her zincirde çözümleme",
       "meta": "Saniyeden kısa",
-      "body": "Küçük bir ödülü almanın ödülden daha fazlaya mal olmayacağı kadar ucuz; zincir seçiminin önemli olmasının tüm nedeni bu."
+      "body": "Bir varlık, zaten ait olduğu ağda çözümlenir; her zincirin karşılaması gereken tek koşul vardır: küçük bir ödülü almak, ödülün kendisinden pahalıya mal olmamalıdır."
     }
   },
   "ecosystemFaq": {
@@ -1158,8 +1295,12 @@
       "answer": "Bir yarıçap ve zaman aralığı içindeki cihaz başına talep sınırları, artı emülatör çiftliklerinin geçemediği cihaz doğrulaması. Cüzdanlar ücretsizdir ama seyahat değildir; dağıtımı en başta coğrafyaya sabitlemenin nedeni de budur."
     },
     "chain": {
-      "question": "Neden başka bir zincir yerine Solana?",
-      "answer": "İşlem maliyeti. Birkaç sent değerinde bir ödül toplamanın çözümlenmesi bir sentin küçük bir kesrine mal olmak zorunda, aksi halde ekonomi hiç işlemez. Saniyenin altında onay da biri sokak köşesinde beklerken önemlidir."
+      "question": "Seekprotocol hangi zincirde çalışıyor?",
+      "answer": "Varlık hangisindeyse onda. Ağlar kod değil, bir tablodaki satırlardır; bu yüzden bir yayıncı elindeki tokenle kampanya fonlar ve bir arayıcının zincir seçmesi hiç gerekmez. Her ağın karşılaması gereken koşul aynıdır: birkaç sent değerindeki bir ödül aktarılmaya dayanmalı ve sokak köşesinde duran biri onu beklemek zorunda kalmamalıdır. Bugün hangi zincirlerin çözümlediğini ana sayfadaki şerit söyler."
+    },
+    "rewardKind": {
+      "question": "Ödülün kripto olması şart mı?",
+      "answer": "Hayır. Kasada kullanılan bir kupon, kutudaki bir çift spor ayakkabı, yalnızca mekanda var olan bir pass: bunların hiçbiri bir zincire dokunmaz ve alttaki doğrulama iki durumda da aynıdır. Bir tokenin işin içinde olduğu yerde, o token zaten ait olduğu zincirde çözümlenir. Protokolün kanıtladığı şey birinin orada olduğudur; ona ne verileceğine siz karar verirsiniz."
     },
     "business": {
       "question": "İşletmem bugün varlık yerleştirebilir mi?",
@@ -1191,18 +1332,16 @@
     "foundation": {
       "title": "Temel",
       "summary": "Temel fikrin hiç işe yarayıp yaramadığını kanıtlamak: bir telefon, birinin bir yerde olduğunu değerli bir şey serbest bırakacak kadar güvenilir şekilde onaylayabilir mi?",
-      "groups": {},
       "items": {
         "prototype": "GNSS ve hareket sürekliliği kullanan konum kanıtı prototipi",
         "engine": "Kalıcı dünya sabitlemeli AR renderlama motoru",
-        "settlement": "Solana çözümleme katmanı ve varlık tanımları",
+        "settlement": "İlk çözümleme katmanı, Solana üzerinde, varlık tanımlarıyla",
         "alpha": "Üç test şehrinde dahili alfa"
       }
     },
     "launch": {
       "title": "Halka açık lansman",
       "summary": "Seekprotocol'ü gerçek ellere, her iki uygulama mağazasına ve kullanıcının daha önce özel anahtar tutmuş olduğunu varsaymayan bir katılım akışıyla ulaştırmak.",
-      "groups": {},
       "items": {
         "stores": "Seekprotocol iOS ve Android'de yayınlandı",
         "wallet": "İsteğe bağlı öz-saklama dışa aktarımıyla sosyal giriş cüzdanı",
@@ -1230,13 +1369,13 @@
         "seasons": "Kendi merdivenleri ve ödülleri olan sezonlar",
         "scanning": "Oyunlaştırılmış nesne tarama",
         "guilds": "Loncalar, takım görevleri ve paylaşılan ödül havuzları",
-        "revenueShare": "Yerleştirilen varlıklarda yaratıcı gelir paylaşımı"
+        "revenueShare": "Yerleştirilen varlıklarda yaratıcı gelir paylaşımı",
+        "multichain": "Ethereum, BNB Smart Chain ve Arbitrum üzerinde çözümleme"
       }
     },
     "governance": {
       "title": "Parametreleri devretmek",
       "summary": "Yönetişim, önce gelmek yerine gerçek ücret akışını takip eder. Hacmi olmayan bir ekonomi üzerinde oy vermek tiyatrodur, bu yüzden bu bilerek en sona bırakılır.",
-      "groups": {},
       "items": {
         "onChain": "Protokol parametreleri için zincir üstü yönetişim",
         "treasury": "Topluluk hazine tahsisi",
@@ -1271,6 +1410,10 @@
     "ctaBody": "Self-servis portal geliştirme aşamasında. Yayınlanana kadar kampanyaları seninle doğrudan kuruyoruz. Bize konumu ve neyi yerleştirmek istediğini söyle.",
     "ctaStart": "Bir konuşma başlat",
     "ctaRoadmap": "Self-servisin ne zaman geldiğini gör",
+    "realEyebrow": "Birim",
+    "realTitle": "Bir varış nedir, ne değildir",
+    "realLead": "Piyasadaki her ölçüt bir vekildir ve her vekilin, onu bir sentten aza üreten bir betiği vardır. Fiziksel varlık bunun istisnasıdır ve daha iyi donanımla aşınmayan bir nedenle öyledir: maliyet bedenseldir.",
+    "chainsNote": "Kampanyayı elinizde zaten olan varlıkla fonlayın ya da hiç varlık kullanmadan. Kasadaki bir kupon ve kapının önündeki bir kutu için ne zincir ne cüzdan gerekir. Bir tokenin işin içinde olduğu yerde ise bir ağ, bir entegrasyon değil bir yapılandırmadır; yani tek bir kampanya aynı anda birkaçında yürüyebilir ve talep eden kişinin hangisi olduğunu bilmesi hiç gerekmez.",
     "verifiedEyebrow": "Yalnızca doğrulanmış ziyaretler",
     "verifiedTitle": "Yalnızca biri gerçekten oradaysa öde",
     "verifiedBody": "Gösterim yok, ziyarete dönüşmemiş tıklama yok. Bir kampanya, protokol yerinde bir kişiyi doğruladığında harcar.",
@@ -1307,7 +1450,7 @@
       "points": [
         "Seçilen pazarlarda coğrafi dağılım",
         "Bir yarıçap ve pencere içindeki cihaz başına talep sınırları",
-        "Solana'da herkese açık talep kaydı"
+        "Varlığın kendi zincirinde herkese açık talep kaydı"
       ]
     },
     "tourism": {
@@ -1320,6 +1463,23 @@
         "Talebi yaymak için düşük yoğunluk ağırlıklandırması",
         "Toplu varış sayıları, asla bireysel izler değil"
       ]
+    }
+  },
+  "interactionClaims": {
+    "nobots": {
+      "metric": "Bot trafiği yok",
+      "title": "Buradaki hiçbir şey bir betikle üretilemez",
+      "body": "Bir talep, bir koordinatta duran ve kendi uydu konumu, çevresindeki radyo ortamı ve onu oraya getiren hareketle uyuşan bir cihaz gerektirir. Bunların hiçbirinin veri merkezinde karşılığı yoktur; bu yüzden burada sahtecilik, aşağı çekmemiz gereken bir rakam değildir."
+    },
+    "organic": {
+      "metric": "Yapısı gereği organik",
+      "title": "Her etkileşim, birinin gerçekten yaptığı bir yolculuktur",
+      "body": "Buradaki etkileşim bir tıklamadan çıkarsanmaz ve bir panelden modellenmez. Biri senin adresine yürümeyi seçti ve bu, sonradan yeniden kurulmak yerine vardığı anda yazıldı."
+    },
+    "cta": {
+      "metric": "Senin eylem çağrın",
+      "title": "Fiziksel varlığı biz doğrularız, isteği sen belirlersin",
+      "body": "Ödülü bir satın almaya, bir takibe, bir kayda, raftaki ürünün taranmasına ya da yalnızca gelmiş olmaya bağla. Alttaki doğrulama her durumda aynıdır; böylece istek kampanyadan kampanyaya değişebilir ve garanti yerinde kalır."
     }
   },
   "measurement": {
@@ -1419,7 +1579,7 @@
     "publish": "Kampanyayı yayınla",
     "sequence": {
       "signing": "Kampanya imzalanıyor",
-      "writing": "Varlık tanımı Solana'ya yazılıyor",
+      "writing": "Varlık tanımı zincire yazılıyor",
       "indexing": "Koordinatlar indeksleniyor",
       "live": "Haritada canlı"
     },
@@ -1438,8 +1598,8 @@
     "captionIdle": "Halka plakaya oranla ölçekli çizilir. Burada hiçbir şeyin geliştiriciye ihtiyacı yok: dört karar, sonra yayınla."
   },
   "whitepaper": {
-    "metaTitle": "Teknik Belge: Solana'da Konum Kanıtı",
-    "metaDescription": "Seekprotocol'ün dijital varlıkları gerçek koordinatlara nasıl yayınladığı, birinin gerçekten orada olduğunu nasıl doğruladığı ve Solana'da nasıl çözümlediği. Mimari, token tasarımı, saldırılar.",
+    "metaTitle": "Teknik Belge: Her Zincirde Konum Kanıtı",
+    "metaDescription": "Seekprotocol'ün dijital varlıkları gerçek koordinatlara nasıl verdiği, birinin gerçekten orada olduğunu nasıl doğruladığı ve varlığın ait olduğu zincirde nasıl çözümlediği. Mimari, token tasarımı, saldırılar.",
     "ogTitle": "Seekprotocol Teknik Belgesi",
     "ogDescription": "Konum kanıtı, mimari, token tasarımı ve saldırılar ile sınırların dürüst bir açıklaması.",
     "eyebrow": "Teknik Belge",
@@ -1471,7 +1631,7 @@
           },
           {
             "kind": "p",
-            "text": "Tüketici yüzü **Seekprotocol**, bu varlıkları artırılmış gerçeklikte render eden iOS ve Android için bir mobil uygulamadır. Yürürsün, telefonun yakındakileri gösterir ve bulduklarını toplarsın. Altta çözümleme, küçük bir ödülü almanın ödülden daha fazlaya mal olmayacağı kadar düşük işlem maliyetleri için seçilen Solana'da gerçekleşir."
+            "text": "Tüketici yüzü **Seekprotocol**, bu varlıkları artırılmış gerçeklikte render eden iOS ve Android için bir mobil uygulamadır. Yürürsün, telefonun yakındakileri gösterir ve bulduklarını toplarsın. Altta çözümleme, varlığın zaten ait olduğu zincirde gerçekleşir ve tek bir koşul vardır: işlem maliyetleri, küçük bir ödülü almanın ödülden pahalıya gelmeyeceği kadar düşük olmalıdır."
           },
           {
             "kind": "callout",
@@ -1551,8 +1711,84 @@
           }
         ]
       },
-      "proof-of-location": {
+      "distribution": {
         "index": "03",
+        "eyebrow": "Dağıtım",
+        "title": "Satın alınan erişim neden gerçek bir insan getirmez",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Önceki bölüm, iki grubun aynı probleme sahip olduğunu söylüyordu. Bu bölüm, ikisinin de ilk uzandığı araçla ve onun, daha fazla harcamanın düzeltmediği bir biçimde nasıl başarısız olduğuyla ilgili."
+          },
+          {
+            "kind": "h",
+            "text": "Piyasadaki her ölçüt bir vekildir"
+          },
+          {
+            "kind": "p",
+            "text": "Bir gösterim, bir tıklama, bir izlenme, bir takip, bir cüzdan adresi: bunların hiçbiri bir insan değildir. Her biri, sinyali satanın kendi belirlediği koşullar altında bir insanla ilişkilenen bir işarettir. Sinyali üretmenin getirisi, onu insansız üretmenin maliyetini aştığı anda insansız üretilir ve bütün piyasanın fiyatlandığı o ilişki, yerine geçtiği şeyden sessizce kopar."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Bir gösterim",
+                "value": "Bir sentin kesri, insan gerekmez"
+              },
+              {
+                "label": "Bir tıklama",
+                "value": "Birkaç sent, konut proxy havuzundan"
+              },
+              {
+                "label": "Bir cüzdan",
+                "value": "Ücretsiz ve betikle binlercesi"
+              },
+              {
+                "label": "Bir doğrulanmış varış",
+                "value": "Bir yolculuk, bir bedenle, bir kez"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Filtreler sinyali geri getirmez"
+          },
+          {
+            "kind": "p",
+            "text": "Standart yanıt uygunluk kurallarıdır: asgari bakiyeler, geçmiş etkinlik, anlık görüntü pencereleri, captcha, cihaz parmak izleri. Her biri sahte bir talebin maliyetini bir miktar, gerçek bir talebin maliyetini de başka bir miktar artırır ve filtrenin işe yarayıp yaramadığına karar veren tek şey bu ikisi arasındaki orandır. Uygulamada usta çiftçi maliyeti yutar, sıradan kullanıcı vazgeçer; böylece filtreler sonunda tam da dışarıda bırakmaları gereken kitleyi seçer."
+          },
+          {
+            "kind": "p",
+            "text": "Fiziksel varlık daha iyi bir filtre değildir. Türü farklı bir şeydir, çünkü dayattığı maliyet hesaplamaya dayalı değildir. Bir rafa paralelleştirilemez, donanım ucuzladıkça düşmez ve bir sokak için konut proxy'si yoktur."
+          },
+          {
+            "kind": "callout",
+            "text": "Herhangi bir sahtecilik önleminde işe yarayan soru, saldırgana kaça mal olduğu değil, dürüst bir kullanıcıya kıyasla saldırgana kaça mal olduğudur. Fiziksel varlık, bu listede bu oranın zamanla saldırganın lehine kaymadığı tek sinyaldir."
+          },
+          {
+            "kind": "h",
+            "text": "İstek hâlâ yayıncınındır"
+          },
+          {
+            "kind": "p",
+            "text": "Birinin bir yerde olduğunu doğrulamak, orada ne yapması gerektiği hakkında hiçbir şey söylemez ve protokol bunu bilerek karara bağlamaz. Bir talep bir takibe, bir kayda, raftaki bir ürünün taranmasına, koordinatta bir basıma, kasada bir satın almaya ya da yalnızca varışa bağlanabilir. Alttaki doğrulama her durumda aynıdır; bu da bir yayıncının, garantiye hiç dokunmadan kampanyadan kampanyaya isteği değiştirebileceği anlamına gelir."
+          },
+          {
+            "kind": "p",
+            "text": "Bu, gözden kaçması kolay bir nedenle önemlidir. Eylem çağrısını dayatan bir dağıtım kanalı yalnızca tasarlandığı kampanyalara uyar ve o biçimin dışındaki her yayıncı teklifini kanala göre bükmek zorunda kalır. Burada satılan şey kanıttır, huni değil."
+          },
+          {
+            "kind": "h",
+            "text": "Bunun çözmediği şey"
+          },
+          {
+            "kind": "p",
+            "text": "Doğrulanmış bir varış, bir cihazın bir koordinatta olduğunun kanıtıdır; onu taşıyan kişinin orada olmak istediğinin ya da bir daha geleceğinin değil. Bir kapının önünden geçmek için para alan biri gerçek bir varış ve kötü bir müşteridir. Protokol varışı taklidi pahalı, sayması kolay hale getirir. Satın almaya değip değmediği hâlâ bir pazarlama sorusudur ve hiçbir zincir onu yanıtlamaz."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "04",
         "eyebrow": "Temel ilkel",
         "title": "Konum kanıtı",
         "blocks": [
@@ -1610,7 +1846,7 @@
               },
               {
                 "label": "Tipik onay",
-                "value": "Solana'da saniyeden kısa"
+                "value": "Çözümleme zincirinde saniyeden kısa"
               },
               {
                 "label": "Doğrulama",
@@ -1625,7 +1861,7 @@
         ]
       },
       "lifecycle": {
-        "index": "04",
+        "index": "05",
         "eyebrow": "Mekanikler",
         "title": "Bir şey talep ettiğinde gerçekten ne oluyor",
         "blocks": [
@@ -1668,7 +1904,7 @@
         ]
       },
       "architecture": {
-        "index": "05",
+        "index": "06",
         "eyebrow": "Mimari",
         "title": "Katmanlar nasıl birbirine uyar",
         "blocks": [
@@ -1697,15 +1933,19 @@
           },
           {
             "kind": "h",
-            "text": "Neden Solana"
+            "text": "Çözümleme katmanı neden sabit değil"
           },
           {
             "kind": "p",
-            "text": "Bir zincir için gereklilik alışılmadık: çok yüksek işlem sayısı, işlem başına çok düşük değer ve sokakta duran bir kişinin fark etmediği kadar hızlı bir onay. Yirmi sent değerinde bir ödül alan biri onu almak için on sent ödeyemez ve otuz saniye beklemeyecektir. Bu kombinasyon, alanın çoğunu maliyet üzerinden ve geri kalanını gecikme üzerinden eler."
+            "text": "Bir zincir için gereklilik alışılmadık: çok yüksek işlem sayısı, işlem başına çok düşük değer ve sokakta duran bir kişinin fark etmediği kadar hızlı bir onay. Yirmi sent değerinde bir ödül alan biri onu almak için on sent ödeyemez ve otuz saniye beklemeyecektir. Bu, alanın büyük kısmını maliyet üzerinden ve geri kalanını gecikme üzerinden eler. Ama onları bir gereklilik olarak eler; bir kez yapılıp etrafına her şeyin inşa edildiği bir zincir seçimi olarak değil."
           },
           {
             "kind": "p",
-            "text": "Bu değiş tokuş gerçektir ve söylemeye değer. Solana'nın kesintileri olmuştur ve duran bir zincir, sıraya giren talepler demektir. Protokol, çözümlemeyi her zaman başarılı olan değil, başarısız olabilecek ve yeniden denenebilecek bir adım olarak ele alır; bu, zincirden bağımsız olarak doğru tasarımdır ancak bunda isteğe bağlı değildir."
+            "text": "Yani çözümleme bir yapılandırmadır. Bir ağ, kendi uç noktasını, gezginini ve yerel tokenini taşıyan bir satırdır; bir varlık, üzerinde bulunduğu ağları, her birindeki sözleşme adresi ve ondalıklarıyla birlikte taşır; ve bir cüzdan, zincir başına bir tane değil, iki adres ailesinden biridir, çünkü bütün EVM ağları aynı adresi paylaşır. Bir yayıncı elindeki tokenle kampanya fonlar ve talep, o tokenin bulunduğu yerde çözümlenir. Bir ağ eklemek bir satırdır, bir sürüm değil."
+          },
+          {
+            "kind": "p",
+            "text": "Değiş tokuşu söylemeye değer. Zincirler durur ve duran bir zincir, sıraya giren talepler demektir. Çözümleme, her zaman başarılı olan değil, başarısız olabilecek ve yeniden denenebilecek bir adım olarak ele alınır; bu her ağda doğru tasarımdır ve hızlı bir ağda isteğe bağlı değildir. Birkaç ağa yayılmak bu riski ortadan kaldırmaz. Yalnızca bir ağın kesintisinin bütün protokolün kesintisi olmasını engeller; bu daha küçük ve dürüst olan iddiadır."
           },
           {
             "kind": "h",
@@ -1724,7 +1964,7 @@
               },
               {
                 "label": "Varlık tanımları ve talepler",
-                "value": "Solana, herkese açık"
+                "value": "Çözümleme zinciri, herkese açık"
               },
               {
                 "label": "Medya ve coin çizimleri",
@@ -1739,7 +1979,7 @@
         ]
       },
       "seekar": {
-        "index": "06",
+        "index": "07",
         "eyebrow": "Uygulama",
         "title": "Seekprotocol, tüketici yüzü",
         "blocks": [
@@ -1787,7 +2027,7 @@
         ]
       },
       "play": {
-        "index": "07",
+        "index": "08",
         "eyebrow": "Döngü",
         "title": "Birini yürütmeye devam eden şey",
         "blocks": [
@@ -1872,7 +2112,7 @@
         ]
       },
       "creators": {
-        "index": "08",
+        "index": "09",
         "eyebrow": "Arz tarafı",
         "title": "Varlıkları kim yerleştirir",
         "blocks": [
@@ -1914,7 +2154,7 @@
         ]
       },
       "token": {
-        "index": "09",
+        "index": "10",
         "eyebrow": "Token",
         "title": "$SEEK ve ne için var",
         "blocks": [
@@ -1972,7 +2212,7 @@
         ]
       },
       "revenue": {
-        "index": "10",
+        "index": "11",
         "eyebrow": "İş modeli",
         "title": "Protokol nasıl ve kimden kazanır",
         "blocks": [
@@ -2032,7 +2272,7 @@
         ]
       },
       "governance": {
-        "index": "11",
+        "index": "12",
         "eyebrow": "Yönetişim",
         "title": "Rakamlara kim karar veriyor",
         "blocks": [
@@ -2072,7 +2312,7 @@
         ]
       },
       "security": {
-        "index": "12",
+        "index": "13",
         "eyebrow": "Risk",
         "title": "Saldırılar, sınırlar ve iddia etmediklerimiz",
         "blocks": [
@@ -2122,7 +2362,7 @@
         ]
       },
       "privacy": {
-        "index": "13",
+        "index": "14",
         "eyebrow": "Gizlilik",
         "title": "Konum verisi var olan en hassas veridir",
         "blocks": [
@@ -2155,7 +2395,7 @@
         ]
       },
       "compliance": {
-        "index": "14",
+        "index": "15",
         "eyebrow": "Yargı",
         "title": "Düzenleme ve bunun nerede oturduğu",
         "blocks": [
@@ -2211,7 +2451,7 @@
         ]
       },
       "roadmap": {
-        "index": "15",
+        "index": "16",
         "eyebrow": "Yön",
         "title": "Ne inşa edildi ve sıradaki ne",
         "blocks": [
@@ -2242,7 +2482,7 @@
         ]
       },
       "glossary": {
-        "index": "16",
+        "index": "17",
         "eyebrow": "Referans",
         "title": "Sözlük",
         "blocks": [
@@ -2290,7 +2530,7 @@
     },
     "chain": {
       "label": "Zincir",
-      "value": "Solana (SPL)"
+      "value": "Solana (SPL), her zinciri çözümler"
     },
     "supply": {
       "label": "Toplam arz",
@@ -2391,7 +2631,7 @@
     "timelineWhere": {
       "device": "Telefonunda",
       "verifier": "Doğrulayıcı",
-      "chain": "Solana"
+      "chain": "Çözümleme zinciri"
     },
     "timelineCaption": "Bunlar bütçelerdir, ölçümler değil. Sensör penceresi ve çözümleme koşullarla birlikte hareket eder ve aralarındaki her şey hareket etmeyen bir aritmetiktir. Sınırın nerede olduğuna dikkat et: ham sensör verisi ilk üç aşamayı asla terk etmez.",
     "vestingTitle": "Dolaşımdaki arz, ay ay",
@@ -2456,8 +2696,8 @@
     },
     "settlement": {
       "label": "Çözümleme",
-      "sub": "Solana · SPL varlıkları · talep kayıtları",
-      "detail": "Varlık tanımlarını, koordinatları ve talep kayıtlarını tutar ve bir talep kabul edildiğinde değeri hareket ettirir. Küçük bir ödül toplamanın, toplama maliyetiyle domine edilmediği kadar düşük ücretler için seçilmiştir."
+      "sub": "Her zincir · varlıklar · talep kayıtları",
+      "detail": "Varlık tanımlarını, koordinatları ve talep kayıtlarını tutar ve bir talep kabul edildiğinde değeri hareket ettirir. Bir ağ, bir entegrasyon değil bir yapılandırmadır ve her ağın aşması gereken eşik aynıdır: küçük bir ödül toplamanın, toplama maliyetiyle domine edilmediği kadar düşük ücretler."
     }
   },
   "confidenceSignals": {
@@ -2523,8 +2763,8 @@
     },
     "settle": {
       "label": "Çözümlenir",
-      "actor": "Solana",
-      "body": "Aktarım bir kuruşun küçük bir kesri karşılığında bir saniyeden kısa sürede onaylanır ve talep kaydı herkese açıktır.",
+      "actor": "Çözümleme zinciri",
+      "body": "Aktarım, varlığın ait olduğu zincirde, bir kuruşun küçük bir kesri karşılığında bir saniyeden kısa sürede onaylanır ve talep kaydı herkese açıktır.",
       "flow": "Ödül çıkış"
     },
     "split": {
@@ -2562,7 +2802,7 @@
     },
     "settle": {
       "label": "Çözümleme",
-      "detail": "Talep kaydı ve aktarım Solana'ya tek bir işlemde iner. Bu, başkalarının görebildiği tek aşamadır ve tek söylediği, halka açık bir koordinattaki bir talebin başarılı olduğudur.",
+      "detail": "Talep kaydı ve aktarım çözümleme zincirine tek bir işlemde iner. Bu, başkalarının görebildiği tek aşamadır ve tek söylediği, halka açık bir koordinattaki bir talebin başarılı olduğudur.",
       "payload": "Talep kaydı, token aktarımı"
     },
     "confirm": {

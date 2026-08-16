@@ -98,7 +98,7 @@ export default function SiteHeader() {
             className="site-header-brand"
             aria-label="Seekprotocol"
           >
-            <SeekLogo markSize={42} />
+            <SeekLogo markSize={42} gradientId="seek-logo-header" />
           </Link>
 
           <nav className="site-nav" aria-label="Main">

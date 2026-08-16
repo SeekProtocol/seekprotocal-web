@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { COLLECTIBLES, RARITY_LADDER, type Collectible } from "@/content/collectibles";
+import { APP_MAP } from "@/content/rewards";
 
 /** Where each spawn stands on the street grid, in 390 × 844 screen points. */
 const PLACEMENTS = [
@@ -33,60 +34,26 @@ export default function MapScreen({
     <div className="scr scr-map">
       <StatusBar />
 
+      <Image
+        src={APP_MAP.src}
+        alt=""
+        fill
+        sizes="300px"
+        className="map-photo"
+        aria-hidden="true"
+      />
+      {/* The drawn street plan that used to be here is gone. It was accurate to
+          the app's own layout and it still read as a diagram, which is exactly
+          the thing a map screen cannot afford to look like. */}
+      <span className="map-photo-scrim" aria-hidden="true" />
+
       <svg className="map-canvas" viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice">
         <defs>
-          <linearGradient id="map-sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#0d0d12" />
-            <stop offset="100%" stopColor="#08080b" />
-          </linearGradient>
-          <radialGradient id="map-vignette" cx="50%" cy="42%" r="70%">
-            <stop offset="55%" stopColor="transparent" />
-            <stop offset="100%" stopColor="#000" stopOpacity="0.75" />
-          </radialGradient>
           <linearGradient id="trail-grad" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="#00D2FF" />
             <stop offset="100%" stopColor="#CFF7FF" />
           </linearGradient>
         </defs>
-
-        <rect width="390" height="844" fill="url(#map-sky)" />
-
-        <g fill="#111117">
-          <rect x="18" y="188" width="120" height="96" rx="4" />
-          <rect x="152" y="188" width="88" height="96" rx="4" />
-          <rect x="254" y="200" width="120" height="84" rx="4" />
-          <rect x="18" y="300" width="120" height="130" rx="4" />
-          <rect x="152" y="300" width="88" height="130" rx="4" />
-          <rect x="18" y="446" width="120" height="110" rx="4" />
-          <rect x="152" y="446" width="88" height="110" rx="4" />
-          <rect x="254" y="446" width="120" height="110" rx="4" />
-          <rect x="18" y="572" width="150" height="100" rx="4" />
-          <rect x="184" y="572" width="190" height="100" rx="4" />
-        </g>
-
-        <path d="M254 300h120v130H254z" fill="#0d1a14" />
-        <path
-          d="M262 420c22-14 30-40 26-64 22 10 46 4 62-12 6 30 24 50 48 58-18 14-26 34-24 56h-96a52 52 0 0 0-16-38Z"
-          fill="#10241b"
-        />
-
-        <path d="M0 700c60-18 120-6 180 8s120 20 210-4v140H0Z" fill="#08141c" />
-        <path d="M0 700c60-18 120-6 180 8s120 20 210-4" fill="none" stroke="#0f2632" strokeWidth="1.5" />
-
-        <g stroke="#1d1d25" strokeWidth="9" strokeLinecap="round">
-          <path d="M0 292h390M0 438h390M0 564h390M0 680h390" />
-          <path d="M146 150v560M248 150v560" />
-        </g>
-        <g stroke="#26262f" strokeWidth="12" strokeLinecap="round">
-          <path d="M0 180h390" />
-        </g>
-        <path d="M-20 700 210 150" stroke="#212129" strokeWidth="8" strokeLinecap="round" fill="none" />
-        <g stroke="#33333f" strokeWidth="1" strokeDasharray="10 12" opacity="0.7">
-          <path d="M0 180h390" />
-          <path d="M0 438h390" />
-        </g>
-
-        <rect width="390" height="844" fill="url(#map-vignette)" />
 
         <g className="map-trail">
           <path d="M195 622C182 560 150 500 122 452" fill="none" stroke="#00D2FF" strokeWidth="14" strokeLinecap="round" opacity="0.16" />
