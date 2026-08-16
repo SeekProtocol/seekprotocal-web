@@ -102,6 +102,10 @@
     "placeReward": "Kendi koordinatlarına ödül yerleştir",
     "exploreEcosystem": "Ekosistemi keşfet",
     "viewRoadmap": "Yol haritasını gör",
+    "polCtaEyebrow": "Konum kanıtı",
+    "polCtaTitle": "Varlık, doğrulandı",
+    "polCtaBody": "Bir talep kabul edilmeden önce dört bağımsız sinyalin uyuşması gerekir. Sade açıklama blogda.",
+    "polCtaLink": "Konum kanıtı nasıl çalışır",
     "metaTitle": "Seekprotocol | On-Chain Ödüllü AR Hazine Avı",
     "metaDescription": "Konum tabanlı hava dağıtımlarını avla, artırılmış gerçeklikte NFT topla ve AI rehberlerinle keşfe çık. Seekprotocol gerçek mekanları on-chain ödüllere dönüştürür, çoklu zincir uyumlu, şu anda Solana üzerinde.",
     "ogTitle": "Seekprotocol | On-Chain Ödüller için AR ve AI Keşfi"

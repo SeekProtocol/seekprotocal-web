@@ -102,6 +102,10 @@
     "placeReward": "Belohnung an deinen Koordinaten platzieren",
     "exploreEcosystem": "Ökosystem erkunden",
     "viewRoadmap": "Roadmap ansehen",
+    "polCtaEyebrow": "Standortnachweis",
+    "polCtaTitle": "Präsenz, verifiziert",
+    "polCtaBody": "Vier unabhängige Signale müssen übereinstimmen, bevor ein Claim akzeptiert wird. Die einfache Erklärung steht im Blog.",
+    "polCtaLink": "Wie Standortnachweis funktioniert",
     "metaTitle": "Seekprotocol | AR-Schatzsuche mit On-Chain-Belohnungen",
     "metaDescription": "Jage standortbasierte Airdrops, sammle NFTs in Augmented Reality und erkunde mit KI-Begleitern. Seekprotocol macht echte Orte zu On-Chain-Belohnungen, multi-chain, aktuell auf Solana.",
     "ogTitle": "Seekprotocol | AR- und KI-Entdeckungen für On-Chain-Belohnungen"

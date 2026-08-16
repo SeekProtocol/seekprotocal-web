@@ -102,6 +102,10 @@
     "placeReward": "自分の座標に報酬を置く",
     "exploreEcosystem": "エコシステムを探る",
     "viewRoadmap": "ロードマップを見る",
+    "polCtaEyebrow": "位置証明",
+    "polCtaTitle": "存在の検証",
+    "polCtaBody": "クレームが受理されるには、4つの独立したシグナルが一致する必要があります。平易な解説はブログにあります。",
+    "polCtaLink": "位置証明の仕組み",
     "metaTitle": "Seekprotocol | オンチェーン報酬のAR宝探しアプリ",
     "metaDescription": "現実の場所でエアドロップを探し、ARでNFTを集め、AIの相棒と歩く。Seekprotocolは実在の場所を、オンチェーンで受け取れる報酬に変えます。マルチチェーン対応、現在はSolanaで稼働中。",
     "ogTitle": "Seekprotocol｜オンチェーン報酬のAR・AIディスカバリー"
