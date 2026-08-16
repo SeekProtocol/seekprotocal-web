@@ -144,18 +144,18 @@
     "a5": "없습니다. Proof of Location이 실제 방문을 온체인으로 검증하며, 바로 그것이 보상을 놓아둔 게시자에게 수령이 의미를 갖게 하는 이유입니다.",
     "ctaTitle": "Seekprotocol 내려받기",
     "ctaDesc": "iOS와 Android에서 무료. 여러분의 도시에는 이미 찾아볼 만한 것들이 가득합니다.",
-    "renameTitle": "SeekAR는 이제 Seekprotocol입니다",
-    "renameBody": "같은 앱, 같은 계정, 같은 지도입니다. 이름만 바뀌었습니다. 다른 회사가 이전 이름에 대해 상표를 출원해, 처음부터 저희 것이었던 이름으로 옮겼습니다.",
+    "renameTitle": "SeekAR 앱은 이제 Seekprotocol입니다",
+    "renameBody": "같은 앱, 같은 계정, 같은 지도입니다. 앱 이름만 바뀌었습니다; 회사명은 처음부터 Seekprotocol이었습니다. 다른 회사가 이전 앱 이름에 대해 상표를 출원해, 앱을 처음부터 저희 것이었던 이름으로 옮겼습니다.",
     "renameLink": "공지 읽기",
     "legacyEyebrow": "이름 변경 이력",
     "legacyTitle": "암호화폐 AR 앱 SeekAR는 이제 Seekprotocol입니다",
-    "legacyBody": "출시부터 2026년 8월까지 iOS와 Android에서 SeekAR라는 이름으로 출시되었던 모바일 앱은 이제 Seekprotocol이라고 불립니다. 같은 제품, 같은 발행사(Block Protocol L.L.C-FZ, 두바이, UAE), 같은 App Store 등록(id 6752813761), 같은 Play Store 패키지(com.seekar.seekar). 다른 제품, 아티스트, 장소도 Seekar라는 이름을 사용하지만, 이 페이지는 온체인 보상을 위한 멀티체인 AR 앱(현재 Solana에서 라이브)을 구체적으로 설명합니다.",
+    "legacyBody": "앱 이름만 바뀌었습니다; 회사명은 처음부터 Seekprotocol이었습니다. 출시부터 2026년 8월까지 iOS와 Android에서 SeekAR라는 이름으로 출시되었던 모바일 앱은 이제 Seekprotocol이라고 불립니다. 같은 제품, 같은 발행사(Block Protocol L.L.C-FZ, 두바이, UAE), 같은 App Store 등록(id 6752813761), 같은 Play Store 패키지(com.seekar.seekar). 다른 제품, 아티스트, 장소도 Seekar라는 이름을 사용하지만, 이 페이지는 온체인 보상을 위한 멀티체인 AR 앱(현재 Solana에서 라이브)을 구체적으로 설명합니다.",
     "q6": "SeekAR 앱은 어떻게 되었나요?",
     "a6": "SeekAR로 출시되었던 온체인 보상을 위한 AR 모바일 앱은 2026년 8월 10일에 Seekprotocol로 이름이 변경되었습니다. 같은 제품, 같은 발행사(Block Protocol L.L.C-FZ, 두바이), 같은 App Store 등록(id 6752813761), 같은 Play Store 패키지(com.seekar.seekar), 현재 Solana에서 라이브. 이름과 아이콘만 바뀌었습니다.",
     "q7": "예전에 SeekAR로 알려진 앱을 어디서 다운로드할 수 있나요?",
     "a7": "App Store의 apps.apple.com/app/id6752813761 및 Google Play의 play.google.com/store/apps/details?id=com.seekar.seekar에서 다운로드할 수 있습니다. 두 등록 모두 현재 Seekprotocol이라는 이름입니다.",
-    "q8": "Seekprotocol은 SeekAR와 같은 회사인가요?",
-    "a8": "네. Seekprotocol은 두바이의 Block Protocol L.L.C-FZ가 개발합니다. SeekAR를 개발하고 출시했던 같은 회사입니다. 이전에 SeekAR라고 불렸던 온체인 보상을 위한 멀티체인 AR 앱(현재 Solana에서 라이브)이 오늘날 Seekprotocol이라고 불리는 것입니다."
+    "q8": "Seekprotocol은 SeekAR와 같은 제품인가요?",
+    "a8": "네. 회사명은 처음부터 Seekprotocol이었고, 앱 이름만 바뀌었습니다. 출시부터 2026년 8월까지 SeekAR로 불렸던 온체인 보상을 위한 멀티체인 AR 앱(현재 Solana에서 라이브)은 이제 Seekprotocol이라고 불리며, 두바이의 Block Protocol L.L.C-FZ의 동일한 팀이 게시합니다."
   },
   "about": {
     "heroTitle": "위치 기반 디지털 경험의 미래를 발견하세요",

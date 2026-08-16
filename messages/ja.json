@@ -144,18 +144,18 @@
     "a5": "できません。Proof of Locationが実際の滞在をオンチェーンで検証します。それこそが、報酬を置いた出題者にとって受け取りに意味を持たせているものです。",
     "ctaTitle": "Seekprotocolをダウンロード",
     "ctaDesc": "iOSとAndroidで無料。あなたの街には、見つける価値のあるものがもう溢れています。",
-    "renameTitle": "SeekAR は Seekprotocol になりました",
-    "renameBody": "同じアプリ、同じアカウント、同じマップ。変わったのは名前だけです。別の会社が旧名称について商標を出願したため、はじめから自分たちのものである名称に移行しました。",
+    "renameTitle": "SeekAR アプリは Seekprotocol になりました",
+    "renameBody": "同じアプリ、同じアカウント、同じマップ。変わったのはアプリの名前だけです。会社名ははじめから Seekprotocol です。別の会社が旧アプリ名について商標を出願したため、アプリをはじめから自分たちのものである名称に移行しました。",
     "renameLink": "お知らせを読む",
     "legacyEyebrow": "名称の履歴",
     "legacyTitle": "暗号資産AR アプリ「SeekAR」は現在「Seekprotocol」です",
-    "legacyBody": "リリースから2026年8月までiOSおよびAndroidで「SeekAR」の名称で公開されていたモバイルアプリは、現在「Seekprotocol」と呼ばれています。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ、UAE）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）。他の製品、アーティスト、場所も「Seekar」という名称を使用していますが、このページはオンチェーン報酬のためのマルチチェーン対応ARアプリ（現在はSolanaで稼働中）について具体的に説明しています。",
+    "legacyBody": "変わったのはアプリの名前だけです。会社名ははじめから Seekprotocol です。リリースから2026年8月までiOSおよびAndroidで「SeekAR」の名称で公開されていたモバイルアプリは、現在「Seekprotocol」と呼ばれています。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ、UAE）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）。他の製品、アーティスト、場所も「Seekar」という名称を使用していますが、このページはオンチェーン報酬のためのマルチチェーン対応ARアプリ（現在はSolanaで稼働中）について具体的に説明しています。",
     "q6": "SeekAR アプリはどうなりましたか？",
     "a6": "SeekARとしてリリースされたオンチェーン報酬のためのARモバイルアプリは、2026年8月10日にSeekprotocolに名称変更されました。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）、現在はSolanaで稼働中。名称とアイコンのみが変更されました。",
     "q7": "以前SeekARと呼ばれていたアプリはどこでダウンロードできますか？",
     "a7": "App Storeのapps.apple.com/app/id6752813761、Google Playのplay.google.com/store/apps/details?id=com.seekar.seekar からダウンロードできます。両方のリスティングは現在Seekprotocolという名称です。",
-    "q8": "SeekprotocolはSeekARと同じ会社ですか？",
-    "a8": "はい。SeekprotocolはドバイのBlock Protocol L.L.C-FZが開発しています。SeekARを開発・公開したのと同じ会社です。以前SeekARと呼ばれていたオンチェーン報酬のためのマルチチェーン対応ARアプリ（現在はSolanaで稼働中）が、現在Seekprotocolと呼ばれているものです。"
+    "q8": "SeekprotocolはSeekARと同じ製品ですか？",
+    "a8": "はい。会社名ははじめからSeekprotocolであり、変わったのはアプリの名前だけです。ローンチから2026年8月までSeekARと呼ばれていたオンチェーン報酬のためのマルチチェーン対応ARアプリ（現在はSolanaで稼働中）が、現在はSeekprotocolと呼ばれています。ドバイのBlock Protocol L.L.C-FZの同じチームによって公開されています。"
   },
   "about": {
     "heroTitle": "位置ベースデジタル体験の未来を発見",

@@ -138,14 +138,10 @@ const seekarFaqJsonLd = {
     },
     {
       "@type": "Question",
-      name: "Is Seekprotocol the same company as SeekAR?",
+      name: "Is Seekprotocol the same product as SeekAR?",
       acceptedAnswer: {
         "@type": "Answer",
-<<<<<<< HEAD
-        text: "Yes. Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE, the same company that built and published SeekAR. The AR-and-Solana app previously named SeekAR is what is today called Seekprotocol.",
-=======
-        text: "Yes. Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE, the same company that built and published SeekAR. The multi-chain AR crypto-rewards app previously named SeekAR (currently settling on Solana) is what is today called Seekprotocol.",
->>>>>>> origin/content/soften-solana-positioning-2026-08-16
+        text: "Yes. The company has always been Seekprotocol; only the app name changed. The multi-chain AR crypto-rewards app (currently settling on Solana) that was named SeekAR from launch through August 2026 is now named Seekprotocol, published by the same team at Block Protocol L.L.C-FZ in Dubai, UAE.",
       },
     },
   ],

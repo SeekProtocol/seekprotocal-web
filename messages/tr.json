@@ -144,18 +144,18 @@
     "a5": "Hayır. Konum Kanıtı, gerçek varlığını zincir üzerinde doğrular; bir talebi, onu yerleştiren yayıncı için değerli kılan da budur.",
     "ctaTitle": "Seekprotocol'ü indir",
     "ctaDesc": "iOS ve Android'de ücretsiz. Şehrin, bulunmaya değer şeylerle dolu.",
-    "renameTitle": "SeekAR artık Seekprotocol",
-    "renameBody": "Aynı uygulama, aynı hesap, aynı harita. Sadece isim değişti. Ayrı bir şirket eski adı kapsayan bir marka başvurusu yaptı, bu yüzden hep sahip olduğumuz isme geçtik.",
+    "renameTitle": "SeekAR uygulaması artık Seekprotocol",
+    "renameBody": "Aynı uygulama, aynı hesap, aynı harita. Sadece uygulama adı değişti; şirket ilk günden beri Seekprotocol adını taşıyor. Ayrı bir şirket eski uygulama adını kapsayan bir marka başvurusu yaptı, bu yüzden uygulamayı hep sahip olduğumuz isme geçirdik.",
     "renameLink": "Duyuruyu oku",
     "legacyEyebrow": "İsim geçmişi",
     "legacyTitle": "SeekAR kripto AR uygulaması artık Seekprotocol",
-    "legacyBody": "Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı, Block Protocol L.L.C-FZ, Dubai, BAE, aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle on-chain ödüller için çoklu zincir AR uygulamasını (şu anda Solana üzerinde) açıklıyor.",
+    "legacyBody": "Sadece uygulama adı değişti; şirket ilk günden beri Seekprotocol adını taşıyor. Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı, Block Protocol L.L.C-FZ, Dubai, BAE, aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle on-chain ödüller için çoklu zincir AR uygulamasını (şu anda Solana üzerinde) açıklıyor.",
     "q6": "SeekAR uygulamasına ne oldu?",
     "a6": "SeekAR olarak yayınlanan on-chain ödüller için AR mobil uygulaması 10 Ağustos 2026'da Seekprotocol olarak yeniden adlandırıldı. Aynı ürün, aynı yayıncı (Block Protocol L.L.C-FZ, Dubai), aynı App Store girişi (id 6752813761), aynı Play Store paketi (com.seekar.seekar), şu anda Solana üzerinde. Yalnızca isim ve simge değişti.",
     "q7": "Eskiden SeekAR olarak bilinen uygulamayı nereden indirebilirim?",
     "a7": "App Store'da apps.apple.com/app/id6752813761 ve Google Play'de play.google.com/store/apps/details?id=com.seekar.seekar adreslerinden. Her iki giriş de artık Seekprotocol olarak adlandırılıyor.",
-    "q8": "Seekprotocol, SeekAR ile aynı şirket mi?",
-    "a8": "Evet. Seekprotocol, Dubai, BAE'deki Block Protocol L.L.C-FZ tarafından geliştiriliyor, SeekAR'ı geliştiren ve yayınlayan aynı şirket. Daha önce SeekAR olarak adlandırılan on-chain ödüller için çoklu zincir AR uygulaması (şu anda Solana üzerinde) bugün Seekprotocol olarak adlandırılıyor."
+    "q8": "Seekprotocol, SeekAR ile aynı ürün mü?",
+    "a8": "Evet. Şirket ilk günden beri Seekprotocol; yalnızca uygulama adı değişti. Lansmandan Ağustos 2026'ya kadar SeekAR olarak adlandırılan on-chain ödüller için çoklu zincir AR uygulaması (şu anda Solana üzerinde) bugün Seekprotocol olarak adlandırılıyor, aynı ekip tarafından Dubai, BAE'deki Block Protocol L.L.C-FZ üzerinden yayınlanıyor."
   },
   "about": {
     "heroTitle": "Konum Tabanlı Dijital Deneyimlerin Geleceğini Keşfet",
