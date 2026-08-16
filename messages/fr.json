@@ -37,7 +37,7 @@
   "home": {
     "heroTitle": "Explorez une nouvelle réalité avec",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "La couche AR et IA pour les actifs qui vivent dans un lieu, sur n'importe quelle chaîne. Marchez jusqu'à la coordonnée, pointez votre téléphone, et ramassez ce qui y a été déposé.",
+    "heroSubtitle": "La couche AR et IA pour les récompenses qui vivent dans un lieu : un jeton sur n'importe quelle chaîne, un bon valable en caisse, une chose qui arrive dans un carton. Marchez jusqu'à la coordonnée, pointez votre téléphone, et ramassez ce qui y a été déposé.",
     "downloadAppStore": "Télécharger sur l'App Store",
     "downloadGooglePlay": "Disponible sur Google Play",
     "benefitsTitle": "Des possibilités",
@@ -100,10 +100,10 @@
     "liveLead": "Sautez sur n'importe quel hub, touchez une pièce pour voir qui l'a ramassée, et tentez d'en attraper une vous-même, tirée avec les vraies probabilités de l'application.",
     "foundationsEyebrow": "Fondations",
     "readWhitepaper": "Lire le whitepaper technique",
-    "metaTitle": "Seekprotocol | Chasse au trésor AR sur toute chaîne",
-    "metaDescription": "Chassez des airdrops géolocalisés, collectionnez des NFT en AR et explorez avec des compagnons IA. Seekprotocol ancre des actifs de toute chaîne à des lieux réels.",
-    "ogTitle": "Seekprotocol | AR et IA pour toutes les chaînes",
-    "heroEyebrow": "AR · IA · Toute chaîne",
+    "metaTitle": "Seekprotocol | Chasse au trésor AR à vraies récompenses",
+    "metaDescription": "Chassez des récompenses géolocalisées en réalité augmentée : jetons sur toute chaîne, bons, biens physiques. Seekprotocol les ancre à des lieux réels et prouve que vous y étiez.",
+    "ogTitle": "Seekprotocol | AR et IA pour de vraies récompenses",
+    "heroEyebrow": "AR · IA · Toute récompense",
     "placeReward": "Placez une récompense à vos coordonnées",
     "exploreEcosystem": "Explorer l'écosystème",
     "viewRoadmap": "Voir la feuille de route",
@@ -114,11 +114,11 @@
   },
   "seekarPage": {
     "metaTitle": "Seekprotocol | l'appli de chasse au trésor AR",
-    "metaDescription": "Seekprotocol est l'application de réalité augmentée de Seekprotocol. Chassez des airdrops géolocalisés, collectionnez des NFT à des coordonnées réelles et gagnez des récompenses crypto sur n'importe quelle chaîne. Gratuit sur iOS et Android.",
+    "metaDescription": "Seekprotocol est l'application de réalité augmentée de Seekprotocol. Chassez des récompenses à des coordonnées réelles : jetons sur toute chaîne, bons et biens physiques. Gratuit sur iOS et Android.",
     "ogTitle": "Seekprotocol | l'appli de chasse au trésor AR",
     "eyebrow": "L'application",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "L'application de réalité augmentée de Seekprotocol. Pointez votre téléphone vers le monde et trouvez ce qui y a été déposé : jetons, NFT et récompenses ancrés à des coordonnées réelles, quelle que soit la chaîne dont ils viennent.",
+    "heroDesc": "L'application de réalité augmentée de Seekprotocol. Pointez votre téléphone vers le monde et trouvez ce qui y a été déposé : jetons, NFT, bons et choses qui arrivent dans un carton, le tout ancré à des coordonnées réelles.",
     "whatTitle": "Qu'est-ce que Seekprotocol ?",
     "whatBody": "Seekprotocol est l'application mobile phare, gratuite sur iOS et Android. Elle transforme n'importe quelle rue, n'importe quel parc ou lieu en endroit où des actifs numériques peuvent être cachés et récupérés. Un annonceur dépose une récompense à une coordonnée ; vous devez y être physiquement pour la récupérer, et le protocole prouve que vous y étiez. Pas d'émulateur, pas de falsification, pas de raccourci.",
     "featuresTitle": "Ce que vous pouvez faire",
@@ -141,7 +141,7 @@
     "q1": "Seekprotocol est-il gratuit ?",
     "a1": "Oui. Seekprotocol est gratuit au téléchargement sur iOS et Android. Certains objets dans l'application sont payants, mais chasser et récupérer ne le sont pas.",
     "q2": "Qui fait Seekprotocol ?",
-    "a2": "Seekprotocol est développé par Seekprotocol, un produit de Block Protocol L.L.C-FZ à Dubaï. C'est l'application AR et IA pour les actifs de toute chaîne, disponible sur l'App Store et Google Play.",
+    "a2": "Seekprotocol est développé par Seekprotocol, un produit de Block Protocol L.L.C-FZ à Dubaï. C'est l'application AR et IA pour des récompenses ancrées à des lieux réels, sur n'importe quelle chaîne ou sur aucune, disponible sur l'App Store et Google Play.",
     "q3": "Dois-je m'y connaître en crypto ?",
     "a3": "Non. Un portefeuille est créé pour vous à l'ouverture de l'application, et vous pouvez collecter et conserver des actifs sans jamais manipuler de phrase de récupération.",
     "q4": "Sur quels téléphones Seekprotocol fonctionne-t-il ?",
@@ -155,13 +155,13 @@
     "renameLink": "Lire l'annonce",
     "legacyEyebrow": "Historique du nom",
     "legacyTitle": "L'application AR crypto SeekAR s'appelle désormais Seekprotocol",
-    "legacyBody": "Seul le nom de l'application a changé ; la société s'appelle depuis toujours Seekprotocol. L'application mobile publiée sur iOS et Android sous le nom SeekAR de son lancement à août 2026 s'appelle désormais Seekprotocol. Même produit, même éditeur, Block Protocol L.L.C-FZ, Dubaï, EAU, même fiche App Store (id 6752813761) et même package Play Store (com.seekar.seekar). D'autres produits, artistes et lieux portent aussi le nom Seekar ; cette page documente spécifiquement l'application AR multi-chaîne pour récompenses on-chain (actuellement sur Solana).",
+    "legacyBody": "Seul le nom de l'application a changé ; la société s'appelle depuis toujours Seekprotocol. L'application mobile publiée sur iOS et Android sous le nom SeekAR de son lancement à août 2026 s'appelle désormais Seekprotocol. Même produit, même éditeur, Block Protocol L.L.C-FZ, Dubaï, EAU, même fiche App Store (id 6752813761) et même package Play Store (com.seekar.seekar). D'autres produits, artistes et lieux portent aussi le nom Seekar ; cette page documente spécifiquement l'application AR multi-chaîne pour récompenses on-chain.",
     "q6": "Qu'est-il arrivé à l'application SeekAR ?",
-    "a6": "L'application mobile AR pour récompenses on-chain publiée sous le nom SeekAR a été renommée Seekprotocol le 10 août 2026. Même produit, même éditeur (Block Protocol L.L.C-FZ, Dubaï), même fiche App Store (id 6752813761), même package Play Store (com.seekar.seekar), actuellement sur Solana. Seuls le nom et l'icône ont changé.",
+    "a6": "L'application mobile AR pour récompenses on-chain publiée sous le nom SeekAR a été renommée Seekprotocol le 10 août 2026. Même produit, même éditeur (Block Protocol L.L.C-FZ, Dubaï), même fiche App Store (id 6752813761), même package Play Store (com.seekar.seekar). Seuls le nom et l'icône ont changé.",
     "q7": "Où télécharger l'application anciennement appelée SeekAR ?",
     "a7": "Sur l'App Store à apps.apple.com/app/id6752813761 et sur Google Play à play.google.com/store/apps/details?id=com.seekar.seekar. Les deux fiches s'appellent désormais Seekprotocol.",
     "q8": "Seekprotocol est-il le même produit que SeekAR ?",
-    "a8": "Oui. La société s'appelle depuis toujours Seekprotocol ; seul le nom de l'application a changé. L'application AR multi-chaîne pour récompenses on-chain (actuellement sur Solana) qui s'appelait SeekAR de son lancement à août 2026 s'appelle désormais Seekprotocol, publiée par la même équipe chez Block Protocol L.L.C-FZ à Dubaï, EAU."
+    "a8": "Oui. La société s'appelle depuis toujours Seekprotocol ; seul le nom de l'application a changé. L'application AR multi-chaîne pour récompenses on-chain qui s'appelait SeekAR de son lancement à août 2026 s'appelle désormais Seekprotocol, publiée par la même équipe chez Block Protocol L.L.C-FZ à Dubaï, EAU."
   },
   "about": {
     "heroTitle": "Découvrez l'avenir des expériences numériques géolocalisées",
@@ -1298,6 +1298,10 @@
       "question": "Sur quelle chaîne tourne Seekprotocol ?",
       "answer": "Sur celle où vit l'actif. Les réseaux sont des lignes dans une table et non du code, donc un éditeur finance une campagne avec le jeton qu'il détient déjà et un seeker n'a jamais à choisir de chaîne. L'exigence est la même pour chacun : une récompense de quelques centimes doit survivre au transfert, et quelqu'un debout au coin d'une rue ne devrait pas attendre. Le bandeau de la page d'accueil dit quelles chaînes règlent aujourd'hui."
     },
+    "rewardKind": {
+      "question": "Une récompense doit-elle être en crypto ?",
+      "answer": "Non. Un bon utilisé en caisse, une paire de baskets dans un carton, un pass qui n'existe que sur place : rien de tout cela ne touche une chaîne, et la vérification en dessous est identique dans les deux cas. Là où un jeton intervient, il se règle sur la chaîne où il vit déjà. Le protocole prouve que quelqu'un était là ; ce qu'il reçoit, c'est vous qui le décidez."
+    },
     "business": {
       "question": "Mon entreprise peut-elle déposer des actifs aujourd'hui ?",
       "answer": "Via un partenariat accompagné, oui. Le portail en libre-service qui supprime l'échange avec nous est en cours, et la roadmap indique où il se situe."
@@ -1409,7 +1413,7 @@
     "realEyebrow": "L'unité",
     "realTitle": "Ce qu'est une arrivée, et ce qu'elle n'est pas",
     "realLead": "Chaque métrique du marché est un substitut, et chaque substitut a un script qui le produit pour moins d'un centime. La présence fait exception, et pour une raison qui ne s'érode pas avec du meilleur matériel : le coût est physique.",
-    "chainsNote": "Financez une campagne avec l'actif que vous détenez déjà, où qu'il vive. Un réseau est une configuration et non une intégration, donc une campagne peut tourner sur plusieurs à la fois et la personne qui réclame n'a jamais à savoir lequel.",
+    "chainsNote": "Financez une campagne avec l'actif que vous détenez déjà, ou sans aucun actif. Un bon en caisse et un carton sur le pas de la porte n'ont besoin ni de chaîne ni de portefeuille. Là où un jeton intervient, un réseau est une configuration et non une intégration, donc une campagne peut tourner sur plusieurs à la fois et la personne qui réclame n'a jamais à savoir lequel.",
     "verifiedEyebrow": "Visites vérifiées uniquement",
     "verifiedTitle": "Ne payez que si quelqu'un était vraiment sur place",
     "verifiedBody": "Pas d'impressions, pas de clics qui ne sont jamais devenus une visite. Une campagne dépense lorsque le protocole a vérifié une personne sur place.",

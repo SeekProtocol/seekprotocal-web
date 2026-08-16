@@ -37,7 +37,7 @@
   "home": {
     "heroTitle": "Yeni Bir Gerçekliği Keşfet:",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "Bir yere ait varlıklar için AR ve AI katmanı, her zincirde. Koordinata yürü, telefonunu doğrult ve oraya bırakılanı topla.",
+    "heroSubtitle": "Bir yere ait ödüller için AR ve AI katmanı: herhangi bir zincirdeki bir token, kasada geçen bir kupon, kutuyla gelen bir şey. Koordinata yürü, telefonunu doğrult ve oraya bırakılanı topla.",
     "downloadAppStore": "App Store'dan indir",
     "downloadGooglePlay": "Google Play'den indir",
     "benefitsTitle": "Sınırsız",
@@ -100,10 +100,10 @@
     "liveLead": "Herhangi bir merkeze atla, bir coini kimin aldığını görmek için üzerine dokun ve uygulamanın gerçek olasılıklarına karşı kendin de bir deneme yap.",
     "foundationsEyebrow": "Temeller",
     "readWhitepaper": "Teknik belgeyi oku",
-    "metaTitle": "Seekprotocol | Her Zincirde AR Hazine Avı Uygulaması",
-    "metaDescription": "Konum tabanlı hava dağıtımlarını avla, artırılmış gerçeklikte NFT topla ve AI rehberlerinle keşfe çık. Seekprotocol her zincirdeki varlıkları gerçek mekanlara sabitler.",
-    "ogTitle": "Seekprotocol | Her zincir için AR ve AI",
-    "heroEyebrow": "AR · AI · Her zincir",
+    "metaTitle": "Seekprotocol | Gerçek Ödüller için AR Hazine Avı",
+    "metaDescription": "Artırılmış gerçeklikte konum tabanlı ödüller avla: her zincirde tokenler, kuponlar, fiziksel ürünler. Seekprotocol bunları gerçek mekanlara sabitler ve orada olduğunu kanıtlar.",
+    "ogTitle": "Seekprotocol | Gerçek ödüller için AR ve AI",
+    "heroEyebrow": "AR · AI · Her ödül",
     "placeReward": "Kendi koordinatlarına ödül yerleştir",
     "exploreEcosystem": "Ekosistemi keşfet",
     "viewRoadmap": "Yol haritasını gör",
@@ -114,11 +114,11 @@
   },
   "seekarPage": {
     "metaTitle": "Seekprotocol | AR Hazine Avı Uygulaması",
-    "metaDescription": "Seekprotocol, Seekprotocol'ün artırılmış gerçeklik uygulamasıdır. Konum tabanlı hava dağıtımlarını avla, gerçek koordinatlarda NFT topla ve her zincirde kripto ödüller kazan. iOS ve Android'de ücretsiz.",
+    "metaDescription": "Seekprotocol, Seekprotocol'ün artırılmış gerçeklik uygulamasıdır. Gerçek koordinatlarda ödül avla: her zincirde tokenler, kuponlar ve fiziksel ürünler. iOS ve Android'de ücretsiz.",
     "ogTitle": "Seekprotocol | AR Hazine Avı Uygulaması",
     "eyebrow": "Uygulama",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "Seekprotocol'ün artırılmış gerçeklik uygulaması. Telefonunu dünyaya doğrult ve oraya yerleştirilen şeyleri bul: gerçek koordinatlara sabitlenmiş tokenler, NFT'ler ve ödüller, hangi zincirden gelirlerse gelsinler.",
+    "heroDesc": "Seekprotocol'ün artırılmış gerçeklik uygulaması. Telefonunu dünyaya doğrult ve oraya bırakılanları bul: tokenler, NFT'ler, kuponlar ve kutuyla gelen şeyler, hepsi gerçek koordinatlara sabitlenmiş.",
     "whatTitle": "Seekprotocol nedir?",
     "whatBody": "Seekprotocol, amiral gemisi mobil uygulamamızdır; iOS ve Android'de ücretsizdir. Herhangi bir sokağı, parkı veya mekanı; dijital varlıkların gizlenip talep edilebildiği bir yere dönüştürür. Bir yayıncı bir koordinata ödül yerleştirir; sen bunu almak için fiziksel olarak orada olmalısın ve protokol orada olduğunu kanıtlar. Emülatör yok, sahtecilik yok, kestirme yok.",
     "featuresTitle": "Neler yapabilirsin",
@@ -141,7 +141,7 @@
     "q1": "Seekprotocol ücretsiz mi?",
     "a1": "Evet. Seekprotocol iOS ve Android'de indirmek için ücretsizdir. Bazı uygulama içi öğeler ücretlidir, ancak avlanma ve talep etme değildir.",
     "q2": "Seekprotocol'ü kim yapıyor?",
-    "a2": "Seekprotocol, Dubai'deki Block Protocol L.L.C-FZ'nin bir ürünü olan Seekprotocol tarafından geliştirilmiştir. Her zincirdeki varlıklar için AR ve AI uygulamasıdır; App Store ve Google Play'de bulunur.",
+    "a2": "Seekprotocol, Dubai'deki Block Protocol L.L.C-FZ'nin bir ürünü olan Seekprotocol tarafından geliştirilmiştir. Gerçek mekanlara sabitlenmiş ödüller için AR ve AI uygulamasıdır; herhangi bir zincirde ya da hiçbir zincir olmadan. App Store ve Google Play'de bulunur.",
     "q3": "Kripto hakkında bir şey bilmem gerekir mi?",
     "a3": "Hayır. Uygulamayı açtığında senin için bir cüzdan oluşturulur ve kendin bir seed ifadesiyle uğraşmadan varlıkları toplayıp saklayabilirsin.",
     "q4": "Seekprotocol hangi telefonlarda çalışır?",
@@ -155,13 +155,13 @@
     "renameLink": "Duyuruyu oku",
     "legacyEyebrow": "İsim geçmişi",
     "legacyTitle": "SeekAR kripto AR uygulaması artık Seekprotocol",
-    "legacyBody": "Sadece uygulama adı değişti; şirket ilk günden beri Seekprotocol adını taşıyor. Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı, Block Protocol L.L.C-FZ, Dubai, BAE, aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle on-chain ödüller için çoklu zincir AR uygulamasını (şu anda Solana üzerinde) açıklıyor.",
+    "legacyBody": "Sadece uygulama adı değişti; şirket ilk günden beri Seekprotocol adını taşıyor. Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı, Block Protocol L.L.C-FZ, Dubai, BAE, aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle on-chain ödüller için çoklu zincir AR uygulamasını açıklıyor.",
     "q6": "SeekAR uygulamasına ne oldu?",
-    "a6": "SeekAR olarak yayınlanan on-chain ödüller için AR mobil uygulaması 10 Ağustos 2026'da Seekprotocol olarak yeniden adlandırıldı. Aynı ürün, aynı yayıncı (Block Protocol L.L.C-FZ, Dubai), aynı App Store girişi (id 6752813761), aynı Play Store paketi (com.seekar.seekar), şu anda Solana üzerinde. Yalnızca isim ve simge değişti.",
+    "a6": "SeekAR olarak yayınlanan on-chain ödüller için AR mobil uygulaması 10 Ağustos 2026'da Seekprotocol olarak yeniden adlandırıldı. Aynı ürün, aynı yayıncı (Block Protocol L.L.C-FZ, Dubai), aynı App Store girişi (id 6752813761), aynı Play Store paketi (com.seekar.seekar). Yalnızca isim ve simge değişti.",
     "q7": "Eskiden SeekAR olarak bilinen uygulamayı nereden indirebilirim?",
     "a7": "App Store'da apps.apple.com/app/id6752813761 ve Google Play'de play.google.com/store/apps/details?id=com.seekar.seekar adreslerinden. Her iki giriş de artık Seekprotocol olarak adlandırılıyor.",
     "q8": "Seekprotocol, SeekAR ile aynı ürün mü?",
-    "a8": "Evet. Şirket ilk günden beri Seekprotocol; yalnızca uygulama adı değişti. Lansmandan Ağustos 2026'ya kadar SeekAR olarak adlandırılan on-chain ödüller için çoklu zincir AR uygulaması (şu anda Solana üzerinde) bugün Seekprotocol olarak adlandırılıyor, aynı ekip tarafından Dubai, BAE'deki Block Protocol L.L.C-FZ üzerinden yayınlanıyor."
+    "a8": "Evet. Şirket ilk günden beri Seekprotocol; yalnızca uygulama adı değişti. Lansmandan Ağustos 2026'ya kadar SeekAR olarak adlandırılan on-chain ödüller için çoklu zincir AR uygulaması bugün Seekprotocol olarak adlandırılıyor, aynı ekip tarafından Dubai, BAE'deki Block Protocol L.L.C-FZ üzerinden yayınlanıyor."
   },
   "about": {
     "heroTitle": "Konum Tabanlı Dijital Deneyimlerin Geleceğini Keşfet",
@@ -1298,6 +1298,10 @@
       "question": "Seekprotocol hangi zincirde çalışıyor?",
       "answer": "Varlık hangisindeyse onda. Ağlar kod değil, bir tablodaki satırlardır; bu yüzden bir yayıncı elindeki tokenle kampanya fonlar ve bir arayıcının zincir seçmesi hiç gerekmez. Her ağın karşılaması gereken koşul aynıdır: birkaç sent değerindeki bir ödül aktarılmaya dayanmalı ve sokak köşesinde duran biri onu beklemek zorunda kalmamalıdır. Bugün hangi zincirlerin çözümlediğini ana sayfadaki şerit söyler."
     },
+    "rewardKind": {
+      "question": "Ödülün kripto olması şart mı?",
+      "answer": "Hayır. Kasada kullanılan bir kupon, kutudaki bir çift spor ayakkabı, yalnızca mekanda var olan bir pass: bunların hiçbiri bir zincire dokunmaz ve alttaki doğrulama iki durumda da aynıdır. Bir tokenin işin içinde olduğu yerde, o token zaten ait olduğu zincirde çözümlenir. Protokolün kanıtladığı şey birinin orada olduğudur; ona ne verileceğine siz karar verirsiniz."
+    },
     "business": {
       "question": "İşletmem bugün varlık yerleştirebilir mi?",
       "answer": "Yönetilen bir ortaklık aracılığıyla, evet. Bizimle konuşma ihtiyacını ortadan kaldıran self-servis portal geliştirme aşamasında ve yol haritası nerede olduğunu söylüyor."
@@ -1409,7 +1413,7 @@
     "realEyebrow": "Birim",
     "realTitle": "Bir varış nedir, ne değildir",
     "realLead": "Piyasadaki her ölçüt bir vekildir ve her vekilin, onu bir sentten aza üreten bir betiği vardır. Fiziksel varlık bunun istisnasıdır ve daha iyi donanımla aşınmayan bir nedenle öyledir: maliyet bedenseldir.",
-    "chainsNote": "Kampanyayı elinizde zaten olan varlıkla, nerede duruyorsa oradan fonlayın. Bir ağ, bir entegrasyon değil bir yapılandırmadır; yani tek bir kampanya aynı anda birkaç ağda yürüyebilir ve talep eden kişinin hangisi olduğunu bilmesi hiç gerekmez.",
+    "chainsNote": "Kampanyayı elinizde zaten olan varlıkla fonlayın ya da hiç varlık kullanmadan. Kasadaki bir kupon ve kapının önündeki bir kutu için ne zincir ne cüzdan gerekir. Bir tokenin işin içinde olduğu yerde ise bir ağ, bir entegrasyon değil bir yapılandırmadır; yani tek bir kampanya aynı anda birkaçında yürüyebilir ve talep eden kişinin hangisi olduğunu bilmesi hiç gerekmez.",
     "verifiedEyebrow": "Yalnızca doğrulanmış ziyaretler",
     "verifiedTitle": "Yalnızca biri gerçekten oradaysa öde",
     "verifiedBody": "Gösterim yok, ziyarete dönüşmemiş tıklama yok. Bir kampanya, protokol yerinde bir kişiyi doğruladığında harcar.",

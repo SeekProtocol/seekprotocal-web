@@ -37,7 +37,7 @@
   "home": {
     "heroTitle": "新しい現実を探索しよう",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "場所に紐づくアセットのための AR と AI のレイヤー、どのチェーンでも。座標まで歩き、スマホをかざし、そこに置かれたものを受け取ってください。",
+    "heroSubtitle": "場所に紐づく報酬のための AR と AI のレイヤー。どのチェーンのトークンでも、レジで使えるクーポンでも、箱で届く品物でも。座標まで歩き、スマホをかざし、そこに置かれたものを受け取ってください。",
     "downloadAppStore": "App Store でダウンロード",
     "downloadGooglePlay": "Google Play で入手",
     "benefitsTitle": "無限の",
@@ -100,10 +100,10 @@
     "liveLead": "どの拠点にでも飛んで、コインをタップすれば誰が拾ったかがわかります。アプリ本来の確率で、自分でも1枚狙ってみてください。",
     "foundationsEyebrow": "土台",
     "readWhitepaper": "技術ホワイトペーパーを読む",
-    "metaTitle": "Seekprotocol | どのチェーンでも遊べるAR宝探しアプリ",
-    "metaDescription": "現実の場所でエアドロップを探し、ARでNFTを集め、AIの相棒と歩く。Seekprotocolは、どのチェーンのアセットも実在の場所に紐づけます。",
-    "ogTitle": "Seekprotocol｜すべてのチェーンのためのARとAI",
-    "heroEyebrow": "AR · AI · どのチェーンでも",
+    "metaTitle": "Seekprotocol | 実物報酬のAR宝探しアプリ",
+    "metaDescription": "拡張現実で実在の場所の報酬を探す。どのチェーンのトークンも、クーポンも、実物の品も。Seekprotocolはそれらを場所に紐づけ、あなたがそこにいたことを証明します。",
+    "ogTitle": "Seekprotocol | 実物報酬のためのARとAI",
+    "heroEyebrow": "AR · AI · どんな報酬でも",
     "placeReward": "自分の座標に報酬を置く",
     "exploreEcosystem": "エコシステムを探る",
     "viewRoadmap": "ロードマップを見る",
@@ -114,11 +114,11 @@
   },
   "seekarPage": {
     "metaTitle": "Seekprotocol | AR宝探しアプリ",
-    "metaDescription": "SeekprotocolはSeekprotocolの拡張現実アプリ。現実の座標でエアドロップを探し、NFTを集め、どのチェーンでも暗号資産の報酬を受け取れます。iOSとAndroidで無料。",
+    "metaDescription": "SeekprotocolはSeekprotocolの拡張現実アプリ。実在の座標で報酬を探せます。どのチェーンのトークンも、クーポンも、実物の品も。iOSとAndroidで無料。",
     "ogTitle": "Seekprotocol | AR宝探しアプリ",
     "eyebrow": "アプリ",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "Seekprotocolの拡張現実アプリ。スマホを世界にかざせば、そこに置かれたものが見えてきます。実在する座標に紐づいたトークン、NFT、そして報酬。どのチェーンから来たものでも構いません。",
+    "heroDesc": "Seekprotocolの拡張現実アプリ。スマホを世界にかざせば、そこに置かれたものが見えてきます。トークン、NFT、クーポン、そして箱で届く品物。すべて実在する座標に紐づいています。",
     "whatTitle": "Seekprotocolとは",
     "whatBody": "Seekprotocolは主力モバイルアプリで、iOSとAndroidで無料で使えます。どんな通りも、公園も、施設も、デジタル資産を隠して受け取れる場所に変わります。出題者が座標に報酬を置き、あなたは実際にその場所へ行かなければ受け取れません。そして プロトコルがあなたがそこにいたことを証明します。エミュレーターも、位置偽装も、抜け道もありません。",
     "featuresTitle": "できること",
@@ -141,7 +141,7 @@
     "q1": "Seekprotocolは無料ですか",
     "a1": "はい。SeekprotocolはiOSとAndroidで無料でダウンロードできます。アプリ内には有料のアイテムもありますが、探すことと受け取ることは無料です。",
     "q2": "Seekprotocolは誰が作っていますか",
-    "a2": "SeekprotocolはドバイのBlock Protocol L.L.C-FZが手がけるSeekprotocolが開発しています。どのチェーンのアセットにも対応するARとAIのアプリで、App StoreとGoogle Playで入手できます。",
+    "a2": "SeekprotocolはドバイのBlock Protocol L.L.C-FZが手がけるSeekprotocolが開発しています。実在の場所に紐づいた報酬のためのARとAIのアプリで、どのチェーンでも、チェーンを使わなくても構いません。App StoreとGoogle Playで入手できます。",
     "q3": "暗号資産の知識は必要ですか",
     "a3": "必要ありません。アプリを開くとウォレットが自動で作成され、シードフレーズを自分で扱うことなく資産を集めて保有できます。",
     "q4": "どの端末で動きますか",
@@ -155,13 +155,13 @@
     "renameLink": "お知らせを読む",
     "legacyEyebrow": "名称の履歴",
     "legacyTitle": "暗号資産AR アプリ「SeekAR」は現在「Seekprotocol」です",
-    "legacyBody": "変わったのはアプリの名前だけです。会社名ははじめから Seekprotocol です。リリースから2026年8月までiOSおよびAndroidで「SeekAR」の名称で公開されていたモバイルアプリは、現在「Seekprotocol」と呼ばれています。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ、UAE）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）。他の製品、アーティスト、場所も「Seekar」という名称を使用していますが、このページはオンチェーン報酬のためのマルチチェーン対応ARアプリ（現在はSolanaで稼働中）について具体的に説明しています。",
+    "legacyBody": "変わったのはアプリの名前だけです。会社名ははじめから Seekprotocol です。リリースから2026年8月までiOSおよびAndroidで「SeekAR」の名称で公開されていたモバイルアプリは、現在「Seekprotocol」と呼ばれています。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ、UAE）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）。他の製品、アーティスト、場所も「Seekar」という名称を使用していますが、このページはオンチェーン報酬のためのマルチチェーン対応ARアプリについて具体的に説明しています。",
     "q6": "SeekAR アプリはどうなりましたか？",
-    "a6": "SeekARとしてリリースされたオンチェーン報酬のためのARモバイルアプリは、2026年8月10日にSeekprotocolに名称変更されました。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）、現在はSolanaで稼働中。名称とアイコンのみが変更されました。",
+    "a6": "SeekARとしてリリースされたオンチェーン報酬のためのARモバイルアプリは、2026年8月10日にSeekprotocolに名称変更されました。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）。名称とアイコンのみが変更されました。",
     "q7": "以前SeekARと呼ばれていたアプリはどこでダウンロードできますか？",
     "a7": "App Storeのapps.apple.com/app/id6752813761、Google Playのplay.google.com/store/apps/details?id=com.seekar.seekar からダウンロードできます。両方のリスティングは現在Seekprotocolという名称です。",
     "q8": "SeekprotocolはSeekARと同じ製品ですか？",
-    "a8": "はい。会社名ははじめからSeekprotocolであり、変わったのはアプリの名前だけです。ローンチから2026年8月までSeekARと呼ばれていたオンチェーン報酬のためのマルチチェーン対応ARアプリ（現在はSolanaで稼働中）が、現在はSeekprotocolと呼ばれています。ドバイのBlock Protocol L.L.C-FZの同じチームによって公開されています。"
+    "a8": "はい。会社名ははじめからSeekprotocolであり、変わったのはアプリの名前だけです。ローンチから2026年8月までSeekARと呼ばれていたオンチェーン報酬のためのマルチチェーン対応ARアプリが、現在はSeekprotocolと呼ばれています。ドバイのBlock Protocol L.L.C-FZの同じチームによって公開されています。"
   },
   "about": {
     "heroTitle": "位置ベースデジタル体験の未来を発見",
@@ -1298,6 +1298,10 @@
       "question": "Seekprotocolはどのチェーンで動いていますか？",
       "answer": "そのアセットがいるチェーンです。ネットワークはコードではなくテーブルの1行なので、パブリッシャーはすでに持っているトークンでキャンペーンを組み、シーカーがチェーンを選ぶ場面はありません。どのネットワークにも同じ条件が課されます。数セント相当の報酬が移動に耐えること、そして街角に立っている人がそれを待たされないこと。今どのチェーンで決済されているかは、トップページの一覧に出ています。"
     },
+    "rewardKind": {
+      "question": "報酬は暗号資産でなければいけませんか？",
+      "answer": "いいえ。レジで使うクーポン、箱に入ったスニーカー、その会場でしか存在しないパス。どれもチェーンには触れませんし、下にある検証はどちらの場合も同一です。トークンが関わる場合は、そのトークンがもともといるチェーンで決済されます。プロトコルが証明するのは誰かがそこにいたことで、何を渡すかはあなたが決めます。"
+    },
     "business": {
       "question": "うちの会社は今日からアセットを置けますか？",
       "answer": "こちらが伴走するかたちのパートナーシップなら可能です。私たちとのやり取りを不要にするセルフサービスのポータルは開発中で、ロードマップにその位置が示されています。"
@@ -1409,7 +1413,7 @@
     "realEyebrow": "単位",
     "realTitle": "来訪とは何で、何ではないのか",
     "realLead": "市場にあるどの指標も代理でしかなく、どの代理にも1セント未満でそれを生み出すスクリプトがあります。到達だけが例外で、しかもハードウェアが良くなっても薄れない理由からです。その費用は身体的なものだからです。",
-    "chainsNote": "すでに持っているアセットで、それがどこにあってもキャンペーンを組めます。ネットワークは統合ではなく設定なので、ひとつのキャンペーンが複数にまたがって走り、受け取る人はどれなのかを知る必要がありません。",
+    "chainsNote": "すでに持っているアセットで、あるいはアセットをまったく使わずにキャンペーンを組めます。レジで使うクーポンや玄関に届く箱に、チェーンもウォレットも要りません。トークンが関わる場合には、ネットワークは統合ではなく設定なので、ひとつのキャンペーンが複数にまたがって走り、受け取る人はどれなのかを知る必要がありません。",
     "verifiedEyebrow": "検証済みの訪問のみ",
     "verifiedTitle": "実際に来た人にのみ支払い",
     "verifiedBody": "インプレッションなし、訪問にならなかったクリックもなし。プロトコルが現地で人物を検証したときにキャンペーンは支出します。",

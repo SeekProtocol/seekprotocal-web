@@ -71,11 +71,11 @@ export async function generateMetadata({
     // Google truncates the SERP title around 60 characters. The previous
     // default ran to 76, so "Redefining Innovation" was never shown.
     title: {
-      default: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
+      default: "Seekprotocol | AR & AI Treasure Hunts for Real Rewards",
       template: "%s | Seekprotocol",
     },
     description:
-      "Experience the future with $SEEK, the AR and AI layer for assets on any chain. Hunt location-based airdrops, collect NFTs, explore with AI companions, and earn real crypto rewards through immersive augmented reality experiences.",
+      "Experience the future with $SEEK, the AR and AI layer for rewards that live in a place. Hunt location-based drops, collect NFTs, redeem vouchers, win real-world goods and explore with AI companions. A reward can be a token on any chain, or nothing to do with a chain at all.",
     keywords: [
       "Seekprotocol",
       "$SEEK",
@@ -110,9 +110,9 @@ export async function generateMetadata({
     publisher: "Block Protocol L.L.C-FZ",
     category: "Technology",
     openGraph: {
-      title: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
+      title: "Seekprotocol | AR & AI Treasure Hunts for Real Rewards",
       description:
-        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The AR and AI layer that anchors assets from any chain to real places.",
+        "Hunt location-based drops, collect NFTs, redeem vouchers and win real-world goods. The AR and AI layer that anchors a reward to a real place, on any chain or none at all.",
       type: "website",
       locale: localeToOgLocale[locale] || "en_US",
       alternateLocale: Object.entries(localeToOgLocale)
@@ -126,9 +126,9 @@ export async function generateMetadata({
       card: "summary_large_image",
       site: "@Seekprotocol",
       creator: "@Seekprotocol",
-      title: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
+      title: "Seekprotocol | AR & AI Treasure Hunts for Real Rewards",
       description:
-        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The AR and AI layer that anchors assets from any chain to real places.",
+        "Hunt location-based drops, collect NFTs, redeem vouchers and win real-world goods. The AR and AI layer that anchors a reward to a real place, on any chain or none at all.",
       images: [OG_IMAGE],
     },
     robots: {
@@ -241,7 +241,7 @@ export default async function LocaleLayout({
                     },
                     legalName: "Block Protocol L.L.C-FZ",
                     description:
-                      "The AR and AI layer for assets on any chain. Hunt location-based airdrops, collect NFTs, and explore with AI companions.",
+                      "The AR and AI layer for rewards that live in a place: tokens on any chain, vouchers, real-world goods. Hunt location-based drops, collect NFTs, and explore with AI companions.",
                     sameAs: [
                       "https://x.com/Seekprotocol",
                       "https://t.me/seekprotocol",
@@ -268,7 +268,7 @@ export default async function LocaleLayout({
                       "@id": "https://www.seekprotocol.ai/#organization",
                     },
                     description:
-                      "The AR and AI layer for assets on any chain, turning real-world exploration into crypto rewards.",
+                      "The AR and AI layer for rewards that live in a place, turning real-world exploration into rewards worth collecting.",
                     inLanguage: locale,
                     availableLanguage: routing.locales.map((loc) => ({
                       "@type": "Language",
@@ -295,7 +295,7 @@ export default async function LocaleLayout({
                     operatingSystem: "iOS, Android",
                     applicationCategory: "GameApplication",
                     description:
-                      "AR-powered mobile app that turns real-world locations into interactive treasure hunts, settling rewards on whichever chain the asset lives on.",
+                      "AR-powered mobile app that turns real-world locations into interactive treasure hunts. Rewards range from tokens on any chain to vouchers and physical goods.",
                     publisher: {
                       "@id": "https://www.seekprotocol.ai/#organization",
                     },

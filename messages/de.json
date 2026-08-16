@@ -37,7 +37,7 @@
   "home": {
     "heroTitle": "Erkunde eine neue Realität mit",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "Die AR- und KI-Schicht für Assets, die an einen Ort gehören, auf jeder Chain. Geh zur Koordinate, richte dein Handy darauf, und sammle ein, was dort hinterlegt wurde.",
+    "heroSubtitle": "Die AR- und KI-Schicht für Belohnungen, die an einen Ort gehören: ein Token auf jeder Chain, ein Gutschein, der an der Kasse gilt, etwas, das im Karton ankommt. Geh zur Koordinate, richte dein Handy darauf, und sammle ein, was dort hinterlegt wurde.",
     "downloadAppStore": "Im App Store herunterladen",
     "downloadGooglePlay": "Bei Google Play herunterladen",
     "benefitsTitle": "Unbegrenzte",
@@ -100,10 +100,10 @@
     "liveLead": "Spring zu jedem Hub, tippe auf einen Coin, um zu sehen, wer ihn eingesammelt hat, und versuche selbst einen zu fangen, ausgewürfelt mit den echten Chancen aus der App.",
     "foundationsEyebrow": "Grundlagen",
     "readWhitepaper": "Technisches Whitepaper lesen",
-    "metaTitle": "Seekprotocol | AR-Schatzsuche-App auf jeder Chain",
-    "metaDescription": "Jage standortbasierte Airdrops, sammle NFTs in Augmented Reality und erkunde mit KI-Begleitern. Seekprotocol verankert Assets von jeder Chain an echten Orten.",
-    "ogTitle": "Seekprotocol | AR und KI für jede Chain",
-    "heroEyebrow": "AR · KI · Jede Chain",
+    "metaTitle": "Seekprotocol | AR-Schatzsuche für echte Belohnungen",
+    "metaDescription": "Jage in AR Belohnungen an echten Orten: Token auf jeder Chain, Gutscheine, echte Waren. Seekprotocol verankert sie an Orten und belegt, dass du dort warst.",
+    "ogTitle": "Seekprotocol | AR und KI für echte Belohnungen",
+    "heroEyebrow": "AR · KI · Jede Belohnung",
     "placeReward": "Belohnung an deinen Koordinaten platzieren",
     "exploreEcosystem": "Ökosystem erkunden",
     "viewRoadmap": "Roadmap ansehen",
@@ -114,11 +114,11 @@
   },
   "seekarPage": {
     "metaTitle": "Seekprotocol | die AR-Schatzsuche-App",
-    "metaDescription": "Seekprotocol ist die Augmented-Reality-App von Seekprotocol. Jage standortbasierte Airdrops, sammle NFTs an echten Koordinaten und verdiene Krypto-Belohnungen auf jeder Chain. Kostenlos für iOS und Android.",
+    "metaDescription": "Seekprotocol ist die Augmented-Reality-App von Seekprotocol. Jage Belohnungen an echten Koordinaten: Token auf jeder Chain, Gutscheine und echte Waren. Kostenlos für iOS und Android.",
     "ogTitle": "Seekprotocol | die AR-Schatzsuche-App",
     "eyebrow": "Die App",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "Die Augmented-Reality-App von Seekprotocol. Richte dein Handy auf die Welt und finde, was dort hinterlegt wurde: Token, NFTs und Belohnungen, verankert an echten Koordinaten, von welcher Chain sie auch stammen.",
+    "heroDesc": "Die Augmented-Reality-App von Seekprotocol. Richte dein Handy auf die Welt und finde, was dort hinterlegt wurde: Token, NFTs, Gutscheine und Dinge, die im Karton ankommen, alle an echte Koordinaten verankert.",
     "whatTitle": "Was ist Seekprotocol?",
     "whatBody": "Seekprotocol ist die zentrale mobile App, kostenlos für iOS und Android. Sie macht jede Straße, jeden Park und jeden Ort zu einem Platz, an dem digitale Werte versteckt und eingesammelt werden können. Ein Anbieter hinterlegt eine Belohnung an einer Koordinate; du musst physisch dort sein, um sie abzuholen, und das Protokoll beweist, dass du es warst. Keine Emulatoren, kein Spoofing, keine Abkürzungen.",
     "featuresTitle": "Was du tun kannst",
@@ -141,7 +141,7 @@
     "q1": "Ist Seekprotocol kostenlos?",
     "a1": "Ja. Seekprotocol lässt sich kostenlos für iOS und Android herunterladen. Manche Artikel in der App kosten Geld, das Jagen und Einsammeln nicht.",
     "q2": "Wer macht Seekprotocol?",
-    "a2": "Seekprotocol wird von Seekprotocol entwickelt, einem Produkt der Block Protocol L.L.C-FZ in Dubai. Es ist die AR- und KI-App für Assets auf jeder Chain, erhältlich im App Store und bei Google Play.",
+    "a2": "Seekprotocol wird von Seekprotocol entwickelt, einem Produkt der Block Protocol L.L.C-FZ in Dubai. Es ist die AR- und KI-App für Belohnungen an echten Orten, auf jeder Chain oder ganz ohne, erhältlich im App Store und bei Google Play.",
     "q3": "Muss ich mich mit Krypto auskennen?",
     "a3": "Nein. Beim ersten Öffnen wird eine Wallet für dich angelegt, und du kannst Werte sammeln und halten, ohne je selbst mit einer Seed Phrase zu hantieren.",
     "q4": "Auf welchen Handys läuft Seekprotocol?",
@@ -155,13 +155,13 @@
     "renameLink": "Zur Ankündigung",
     "legacyEyebrow": "Namensgeschichte",
     "legacyTitle": "Die SeekAR-Krypto-AR-App heißt jetzt Seekprotocol",
-    "legacyBody": "Nur der App-Name hat sich geändert; das Unternehmen heißt seit jeher Seekprotocol. Die mobile App, die von Marktstart bis August 2026 unter dem Namen SeekAR für iOS und Android erschien, heißt jetzt Seekprotocol. Dasselbe Produkt, derselbe Herausgeber, Block Protocol L.L.C-FZ, Dubai, VAE, derselbe App-Store-Eintrag (ID 6752813761) und dasselbe Play-Store-Package (com.seekar.seekar). Andere Produkte, Musiker und Orte tragen ebenfalls den Namen Seekar; diese Seite dokumentiert speziell die multi-chain AR-und-Krypto-Belohnungen-App (derzeit auf Solana).",
+    "legacyBody": "Nur der App-Name hat sich geändert; das Unternehmen heißt seit jeher Seekprotocol. Die mobile App, die von Marktstart bis August 2026 unter dem Namen SeekAR für iOS und Android erschien, heißt jetzt Seekprotocol. Dasselbe Produkt, derselbe Herausgeber, Block Protocol L.L.C-FZ, Dubai, VAE, derselbe App-Store-Eintrag (ID 6752813761) und dasselbe Play-Store-Package (com.seekar.seekar). Andere Produkte, Musiker und Orte tragen ebenfalls den Namen Seekar; diese Seite dokumentiert speziell die multi-chain AR-und-Krypto-Belohnungen-App.",
     "q6": "Was ist mit der SeekAR-App passiert?",
-    "a6": "Die AR-Mobile-App für On-Chain-Krypto-Belohnungen, die als SeekAR erschien, wurde am 10. August 2026 in Seekprotocol umbenannt. Dasselbe Produkt, derselbe Herausgeber (Block Protocol L.L.C-FZ, Dubai), derselbe App-Store-Eintrag (ID 6752813761), dasselbe Play-Store-Package (com.seekar.seekar), derzeit auf Solana. Nur Name und Icon haben sich geändert.",
+    "a6": "Die AR-Mobile-App für On-Chain-Krypto-Belohnungen, die als SeekAR erschien, wurde am 10. August 2026 in Seekprotocol umbenannt. Dasselbe Produkt, derselbe Herausgeber (Block Protocol L.L.C-FZ, Dubai), derselbe App-Store-Eintrag (ID 6752813761), dasselbe Play-Store-Package (com.seekar.seekar). Nur Name und Icon haben sich geändert.",
     "q7": "Wo kann ich die zuvor als SeekAR bekannte App herunterladen?",
     "a7": "Im App Store unter apps.apple.com/app/id6752813761 und bei Google Play unter play.google.com/store/apps/details?id=com.seekar.seekar. Beide Einträge heißen jetzt Seekprotocol.",
     "q8": "Ist Seekprotocol dasselbe Produkt wie SeekAR?",
-    "a8": "Ja. Das Unternehmen heißt seit jeher Seekprotocol; nur der App-Name hat sich geändert. Die multi-chain AR-Krypto-Belohnungen-App (derzeit auf Solana), die von Launch bis August 2026 SeekAR hieß, heißt jetzt Seekprotocol, veröffentlicht vom selben Team bei Block Protocol L.L.C-FZ in Dubai, VAE."
+    "a8": "Ja. Das Unternehmen heißt seit jeher Seekprotocol; nur der App-Name hat sich geändert. Die multi-chain AR-Krypto-Belohnungen-App, die von Launch bis August 2026 SeekAR hieß, heißt jetzt Seekprotocol, veröffentlicht vom selben Team bei Block Protocol L.L.C-FZ in Dubai, VAE."
   },
   "about": {
     "heroTitle": "Entdecke die Zukunft standortbasierter digitaler Erlebnisse",
@@ -1298,6 +1298,10 @@
       "question": "Auf welcher Chain läuft Seekprotocol?",
       "answer": "Auf der, zu der das Asset gehört. Netzwerke sind Zeilen in einer Tabelle und kein Code, also finanziert ein Publisher eine Kampagne in dem Token, den er ohnehin hält, und ein Seeker muss nie eine Chain wählen. Die Anforderung ist für jedes Netzwerk dieselbe: eine Belohnung im Wert weniger Cent muss den Transfer überstehen, und wer an einer Straßenecke steht, sollte nicht darauf warten müssen. Die Leiste auf der Startseite zeigt, welche Chains heute abwickeln."
     },
+    "rewardKind": {
+      "question": "Muss eine Belohnung Krypto sein?",
+      "answer": "Nein. Ein Gutschein, der an der Kasse eingelöst wird, ein Paar Sneaker im Karton, ein Pass, den es nur vor Ort gibt: nichts davon berührt eine Chain, und die Prüfung darunter ist in beiden Fällen dieselbe. Wo ein Token dabei ist, wird er auf der Chain abgewickelt, zu der er ohnehin gehört. Das Protokoll belegt, dass jemand da war; was diese Person bekommt, entscheidest du."
+    },
     "business": {
       "question": "Kann mein Unternehmen heute schon Assets platzieren?",
       "answer": "Über eine betreute Partnerschaft ja. Das Self-Service-Portal, das das Gespräch mit uns überflüssig macht, ist in Arbeit, und die Roadmap sagt, wo es steht."
@@ -1409,7 +1413,7 @@
     "realEyebrow": "Die Einheit",
     "realTitle": "Was eine Ankunft ist, und was nicht",
     "realLead": "Jede Kennzahl am Markt ist ein Näherungswert, und zu jedem Näherungswert gehört ein Skript, das ihn für weniger als einen Cent erzeugt. Anwesenheit ist die Ausnahme, und zwar aus einem Grund, den bessere Hardware nicht abträgt: die Kosten sind körperlich.",
-    "chainsNote": "Finanziere eine Kampagne in dem Asset, das du ohnehin hältst, wo auch immer es liegt. Ein Netzwerk ist Konfiguration und keine Integration, also kann eine Kampagne über mehrere zugleich laufen, und wer einlöst, muss nie wissen, über welches.",
+    "chainsNote": "Finanziere eine Kampagne in dem Asset, das du ohnehin hältst, oder ganz ohne Asset. Ein Gutschein an der Kasse und ein Karton vor der Tür brauchen weder Chain noch Wallet. Wo ein Token im Spiel ist, ist ein Netzwerk Konfiguration und keine Integration, also kann eine Kampagne über mehrere zugleich laufen, und wer einlöst, muss nie wissen, über welches.",
     "verifiedEyebrow": "Nur verifizierte Besuche",
     "verifiedTitle": "Zahle nur, wenn jemand tatsächlich da war",
     "verifiedBody": "Keine Impressionen, keine Klicks, die nie zu einem Besuch wurden. Eine Kampagne gibt aus, wenn das Protokoll eine Person vor Ort verifiziert hat.",
