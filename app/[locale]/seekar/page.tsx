@@ -125,7 +125,7 @@ const seekarFaqJsonLd = {
       name: "What happened to the SeekAR app?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The AR mobile app on Solana that shipped as SeekAR was renamed to Seekprotocol on 10 August 2026. Same product, same publisher (Block Protocol L.L.C-FZ, Dubai, UAE), same App Store listing (id 6752813761) and same Play Store package (com.seekar.seekar). Only the name and icon changed.",
+        text: "The AR mobile app for on-chain crypto rewards that shipped as SeekAR was renamed to Seekprotocol on 10 August 2026. Same product, same publisher (Block Protocol L.L.C-FZ, Dubai, UAE), same App Store listing (id 6752813761), same Play Store package (com.seekar.seekar), currently settling on Solana. Only the name and icon changed.",
       },
     },
     {
@@ -141,7 +141,11 @@ const seekarFaqJsonLd = {
       name: "Is Seekprotocol the same company as SeekAR?",
       acceptedAnswer: {
         "@type": "Answer",
+<<<<<<< HEAD
         text: "Yes. Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE, the same company that built and published SeekAR. The AR-and-Solana app previously named SeekAR is what is today called Seekprotocol.",
+=======
+        text: "Yes. Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE, the same company that built and published SeekAR. The multi-chain AR crypto-rewards app previously named SeekAR (currently settling on Solana) is what is today called Seekprotocol.",
+>>>>>>> origin/content/soften-solana-positioning-2026-08-16
       },
     },
   ],
