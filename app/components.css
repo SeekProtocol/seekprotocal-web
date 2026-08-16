@@ -1049,7 +1049,7 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 .logo-wall-item {
   display: grid;
   place-items: center;
-  height: 30px;
+  height: var(--logo-h, 40px);
   flex: none;
 }
 
@@ -1060,12 +1060,15 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
    item to its content, so the item has no definite height for a percentage to
    resolve against — every attempt at `max-height: 100%` or `height: 100%` fell
    back to the intrinsic size, and several marks rendered thousands of pixels
-   wide. The width cap keeps very long wordmarks from dominating the row. */
+   wide. The width cap keeps very long wordmarks from dominating the row.
+   Height is forced (not `auto`) so stacked marks like Business Insider stay
+   inside the row instead of overflowing and getting clipped by the marquee. */
 .logo-wall-item img {
-  height: 30px;
+  height: var(--logo-h, 40px);
   width: auto;
   max-width: 168px;
   object-fit: contain;
+  object-position: center;
   opacity: 0.42;
   filter: brightness(0);
   transition: opacity 0.3s var(--ease-out);
@@ -1076,6 +1079,10 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
 .press-band { border-block: 1px solid var(--line); }
 .press-band-label { margin-bottom: 2rem; }
+.press-band .marquee {
+  --logo-h: 40px;
+  padding-block: 0.35rem;
+}
 
 /* --------------------------------------------------------------------------
    VIDEO

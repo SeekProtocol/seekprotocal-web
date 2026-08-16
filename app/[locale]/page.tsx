@@ -224,7 +224,13 @@ function HomeContent() {
         <Marquee speed={54}>
           {PRESS_LOGOS.map((logo) => (
             <span key={logo.src} className="logo-wall-item">
-              <Image src={`/images/${logo.src}`} alt={logo.alt} width={120} height={40} style={{ height: "auto" }} />
+              <Image
+                src={`/images/${logo.src}`}
+                alt={logo.alt}
+                width={168}
+                height={40}
+                style={{ height: 40, width: "auto", maxWidth: 168 }}
+              />
             </span>
           ))}
         </Marquee>
