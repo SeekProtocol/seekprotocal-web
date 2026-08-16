@@ -36,7 +36,7 @@
   "home": {
     "heroTitle": "Verken een nieuwe realiteit met",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "Het eerste AR- en AI-platform op Solana dat jouw wereld transformeert in een blockchain-aangedreven speeltuin. Jaag op airdrops, verzamel NFTs en verken met AI-gezellen op echte locaties.",
+    "heroSubtitle": "De AR- en AI-laag voor assets die op een plek thuishoren, op elke chain. Loop naar de coördinaat, richt je telefoon, en pak op wat daar is achtergelaten.",
     "downloadAppStore": "Download in App Store",
     "downloadGooglePlay": "Download in Google Play",
     "benefitsTitle": "Onbeperkte",
@@ -82,7 +82,7 @@
     "scaleEngagement": "Betrokkenheidsmotor",
     "scaleEngagementDesc": "Referral quests, leaderboard streaks en guild missies, een complete toolkit om dagelijkse, wekelijkse en sociale betrokkenheid onder gebruikers te stimuleren.",
     "scaleCrossPlatform": "Cross-Platform Uitrol",
-    "scaleCrossPlatformDesc": "Uitbreiding over Solana Mobile en Android/iOS. Eén profiel, één wallet, eindeloze Seek-ervaringen, overal, altijd.",
+    "scaleCrossPlatformDesc": "Eén profiel en één wallet op iOS en Android, met assets van elke chain waarop we afwikkelen. Eindeloze Seek-ervaringen, overal, altijd.",
     "featuredOn": "TE ZIEN OP:",
     "joinBeta": "Doe mee met onze beta",
     "getReady": "Bereid je voor om te zoeken!",
@@ -99,17 +99,18 @@
     "liveLead": "Spring naar elke hub, tik op een munt om te zien wie hem opgepakt heeft, en probeer er zelf een te vangen, gerold tegen de echte kansen uit de app.",
     "foundationsEyebrow": "Fundamenten",
     "readWhitepaper": "Lees de technische whitepaper",
-    "metaTitle": "Seekprotocol | AR-schattenjacht-app op Solana",
-    "metaDescription": "Jaag op locatiegebonden airdrops, verzamel NFT's in AR en verken met AI-metgezellen. Seekprotocol maakt van echte plekken beloningen op Solana.",
-    "ogTitle": "Seekprotocol van Seekprotocol | AR en AI op Solana"
+    "metaTitle": "Seekprotocol | AR-schattenjacht-app op elke chain",
+    "metaDescription": "Jaag op locatiegebonden airdrops, verzamel NFT's in AR en verken met AI-metgezellen. Seekprotocol verankert assets van elke chain aan echte plekken.",
+    "ogTitle": "Seekprotocol | AR en AI voor elke chain",
+    "heroEyebrow": "AR · AI · Elke chain"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol — de AR-schattenjacht-app",
-    "metaDescription": "Seekprotocol is de augmented reality-app van Seekprotocol. Jaag op locatiegebonden airdrops, verzamel NFT's op echte coördinaten en verdien crypto-beloningen op Solana. Gratis voor iOS en Android.",
-    "ogTitle": "Seekprotocol — de AR-schattenjacht-app",
+    "metaTitle": "Seekprotocol | de AR-schattenjacht-app",
+    "metaDescription": "Seekprotocol is de augmented reality-app van Seekprotocol. Jaag op locatiegebonden airdrops, verzamel NFT's op echte coördinaten en verdien crypto-beloningen op elke chain. Gratis voor iOS en Android.",
+    "ogTitle": "Seekprotocol | de AR-schattenjacht-app",
     "eyebrow": "De app",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "De augmented reality-app van Seekprotocol. Richt je telefoon op de wereld en vind wat daar is neergelegd: tokens, NFT's en beloningen, verankerd aan echte coördinaten op Solana.",
+    "heroDesc": "De augmented reality-app van Seekprotocol. Richt je telefoon op de wereld en vind wat daar is neergelegd: tokens, NFT's en beloningen, verankerd aan echte coördinaten, van welke chain ze ook komen.",
     "whatTitle": "Wat is Seekprotocol?",
     "whatBody": "Seekprotocol is de belangrijkste mobiele app van Seekprotocol, gratis voor iOS en Android. Elke straat, elk park en elke locatie wordt een plek waar digitale bezittingen verstopt en geclaimd kunnen worden. Een uitgever legt een beloning op een coördinaat; jij moet er fysiek zijn om hem op te halen, en het protocol bewijst dat je er was. Geen emulators, geen spoofing, geen sluiproutes.",
     "featuresTitle": "Wat je kunt doen",
@@ -120,7 +121,7 @@
     "f3Title": "Verken met AI-metgezellen",
     "f3Desc": "Een AI-gids reageert op waar je bent en wat er in de buurt is, en wijst je op wat de wandeling waard is.",
     "f4Title": "Verdien echte crypto-beloningen",
-    "f4Desc": "Alles wordt afgewikkeld op Solana. Wat je verzamelt is van jou, in je eigen wallet, en het gaat met je mee.",
+    "f4Desc": "Alles wordt afgewikkeld op de chain waar de asset al thuishoort. Wat je verzamelt is van jou, in je eigen wallet, en het gaat met je mee.",
     "howTitle": "Hoe het werkt",
     "s1Title": "Downloaden en openen",
     "s1Desc": "Gratis in de App Store en Google Play. Er wordt een wallet voor je aangemaakt; je hoeft nooit eerder een private key te hebben gehad.",
@@ -132,7 +133,7 @@
     "q1": "Is Seekprotocol gratis?",
     "a1": "Ja. Seekprotocol is gratis te downloaden voor iOS en Android. Sommige items in de app kosten geld, maar jagen en claimen niet.",
     "q2": "Wie maakt Seekprotocol?",
-    "a2": "Seekprotocol wordt gebouwd door Seekprotocol, een product van Block Protocol L.L.C-FZ in Dubai. Het is de AR- en AI-app op Solana, te vinden in de App Store en Google Play.",
+    "a2": "Seekprotocol wordt gebouwd door Seekprotocol, een product van Block Protocol L.L.C-FZ in Dubai. Het is de AR- en AI-app voor assets op elke chain, te vinden in de App Store en Google Play.",
     "q3": "Moet ik iets van crypto weten?",
     "a3": "Nee. Er wordt een wallet voor je aangemaakt zodra je de app opent, en je kunt bezittingen verzamelen en bewaren zonder ooit zelf met een seed phrase te werken.",
     "q4": "Op welke telefoons draait Seekprotocol?",
@@ -205,7 +206,7 @@
     "getReady": "Bereid je voor om te zoeken!",
     "ctaDesc": "Stap in een nieuwe realiteit waar de wereld je speeltuin wordt. Seekprotocol transformeert je omgeving in een interactief avontuur, de nieuwste AR-technologie vermengend met verkenning in de echte wereld.",
     "metaTitle": "Over het team achter Seekprotocol",
-    "metaDescription": "Maak kennis met het team achter locatiegebonden AR op Solana: de missie achter locatiebewijs, de techniek onder Seekprotocol en de mensen achter $SEEK.",
+    "metaDescription": "Maak kennis met het team achter locatiegebonden AR voor elke chain: de missie achter locatiebewijs, de techniek onder Seekprotocol en de mensen achter $SEEK.",
     "ogTitle": "Het team achter Seekprotocol"
   },
   "contact": {
@@ -217,7 +218,7 @@
   },
   "services": {
     "heroTitle": "ONZE EXPERTISE, JOUW GROEI",
-    "heroDesc": "Seekprotocol levert geavanceerde AR-, AI- en blockchain-oplossingen op Solana. We bouwen niet alleen technologie. We zijn je partners in het transformeren van engagement in de echte wereld.",
+    "heroDesc": "Seekprotocol levert geavanceerde AR-, AI- en blockchain-oplossingen op elke grote chain. We bouwen niet alleen technologie. We zijn je partners in het transformeren van engagement in de echte wereld.",
     "letsContact": "Laten we contact opnemen",
     "businessStrategy": "Businessstrategie",
     "businessStrategyDesc": "Op maat gemaakte strategieën die zakelijke doelen aligneren met digitale groei.",
@@ -272,7 +273,7 @@
     "allArticles": "Alle artikelen",
     "relatedPages": "Verwante pagina's",
     "metaTitle": "Blog: AR, AI en locatiegebonden beloningen",
-    "metaDescription": "Artikelen over augmented reality, AI-metgezellen, geofenced airdrops en locatiebewijs, van het team dat Seekprotocol op Solana bouwt.",
+    "metaDescription": "Artikelen over augmented reality, AI-metgezellen, geofenced airdrops en locatiebewijs, van het team dat Seekprotocol bouwt.",
     "ogTitle": "Blog van Seekprotocol"
   },
   "forms": {
@@ -469,7 +470,7 @@
     },
     "collect": {
       "title": "Je pakt hem op",
-      "meta": "Afwikkeling op Solana binnen een seconde",
+      "meta": "Afwikkeling op de eigen chain van de asset",
       "body": "Houd de camera omhoog, zie de asset verankerd in de straat voor je, en pak hem. De overdracht wordt on-chain afgewikkeld voor een fractie van een cent, en hij is van jou."
     }
   },
@@ -921,7 +922,7 @@
       "label": "Tokendrop",
       "headline": "Distributie die iets kost om te farmen",
       "face": "40 $SEEK",
-      "fine": "Eén claim per toestel · Afgewikkeld op Solana",
+      "fine": "Eén claim per toestel · Afgewikkeld op de eigen chain",
       "redeem": "Hij komt binnen in de wallet die de app voor je gemaakt heeft, en is van jou om te houden, te verplaatsen of te verkopen. Niets te verzilveren en niemand om iets aan te vragen.",
       "proof": "Een wallet aanmaken is gratis, een wandeling niet. Geografie is het filter waar een airdrop niet goedkoop doorheen te farmen is.",
       "placedBy": "Tokenprojecten en communities"
@@ -935,6 +936,142 @@
       "proof": "Elk exemplaar draagt de coördinaat waarop het opgehaald is, dus de verzameling die iemand heeft, is een kaart van waar diegene echt geweest is.",
       "placedBy": "Steden, toerismebureaus, kunstenaars"
     }
+  },
+  "rewards": {
+    "eyebrow": "Beloningen",
+    "title": "Alles kan op een coördinaat liggen",
+    "lead": "Een munt is de versie die iedereen voor zich ziet, en de minst interessante. Het protocol maakt niet uit wat er in de doos zit: wat je aan een persoon kunt uitgeven, kun je aan een plek uitgeven, en iemand moet ernaartoe lopen om het te pakken.",
+    "railLabel": "Kies een soort beloning",
+    "phoneAlt": "De Seekprotocol-app met een live event en de beloningen die daar worden uitgedeeld",
+    "liveChip": "Live event",
+    "participateLabel": "Doe mee aan het live event",
+    "alertTitle": "Mystery reward bij jou in de buurt",
+    "alertBody": "301 m verderop en live tot 21.00 uur. Hij is voor wie er als eerste is.",
+    "alertSeekers": "Andere seekers zijn onderweg",
+    "foundLabel": "Je hebt hem gevonden",
+    "foundWhere": "Champ de Mars · 301 m gelopen",
+    "foundFine": "Geclaimd bij aankomst en on chain afgewikkeld. Hij staat in je wallet.",
+    "foundAlt": "Een beloning winnen op de kaart",
+    "mapCredit": "© Mapbox © OpenStreetMap",
+    "items": {
+      "seek": "$SEEK",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "bnb": "BNB",
+      "hyperliquid": "Hyperliquid",
+      "berachain": "Berachain",
+      "dogecoin": "Dogecoin",
+      "pepe": "PEPE",
+      "babydoge": "Baby Doge",
+      "spx6900": "SPX6900",
+      "toshi": "Toshi",
+      "turbo": "Turbo",
+      "nft": "Mystery NFT",
+      "voucher": "Winkelvoucher",
+      "food": "Etensbon",
+      "barcode": "Eventpas",
+      "console": "PlayStation 5",
+      "handheld": "Handheld console",
+      "shoes": "Limited sneakers"
+    },
+    "proofNote": "Wat er ook in de doos zit, wat voorkomt dat het geclaimd wordt door iemand die er nooit was is hetzelfde: aanwezigheid, gescoord op vier onafhankelijke signalen op het moment van claimen.",
+    "categories": {
+      "tokens": {
+        "label": "Tokens",
+        "headline": "Elke token, op elke chain",
+        "body": "Ethereum, Solana, BNB Smart Chain en de netwerken daarna. Een uitgever financiert een campagne in de token die hij al heeft en die wikkelt af waar die token thuishoort, dus niemand hoeft iets te bridgen om mee te doen."
+      },
+      "memes": {
+        "label": "Memecoins",
+        "headline": "De lanceringen zonder kanaal",
+        "body": "Een memecoin heeft een publiek en geen manier om dat te bereiken die geen airdropfarm is. De voorraad in echte straten leggen zet hem voor mensen die er zelf voor naar buiten kwamen, en elke claim is een mens en geen adres."
+      },
+      "nfts": {
+        "label": "NFT's",
+        "headline": "Gemint waar je stond",
+        "body": "Een collectible die de coördinaat draagt waar hij vandaan komt is iets anders dan een die vanaf de bank gemint is. Een editie kan gebonden zijn aan een stad, een locatie of één deuropening, en waar elk exemplaar is opgepakt staat openbaar vast."
+      },
+      "vouchers": {
+        "label": "Vouchers",
+        "headline": "Korting, aan de kassa",
+        "body": "Het formaat waar een winkelstraat echt op zit te wachten. Een code die alleen binnen de deur opengaat, verzilverd aan de kassa door iemand die naar binnen liep, en geteld als bezoek in plaats van als vertoning die er misschien toe leidde."
+      },
+      "goods": {
+        "label": "Fysieke spullen",
+        "headline": "Dingen die in een doos aankomen",
+        "body": "Een console, een paar sneakers, een stuk gear. De claim staat on chain en de afhandeling is gewone logistiek, en juist dat laat een merk iets tastbaars aan het eind van een wandeling leggen zonder daar iets voor te hoeven bouwen."
+      },
+      "events": {
+        "label": "Live events",
+        "headline": "Alles tegelijk, zolang het event duurt",
+        "body": "Een festival, een wedstrijd of een congres wordt een tijdelijke laag beloningen die vervalt zodra het event dat doet. Opdagen is wat ze ontgrendelt, dus de prijzenpot bereikt de mensen die er echt waren, en de teller staat bij de deur."
+      }
+    }
+  },
+  "distribution": {
+    "eyebrow": "Distributie",
+    "title": "Bereik koop je zo, vertrouwen niet",
+    "lead": "Elk kanaal dat een lancering kan kopen verkoopt hetzelfde: een getal dat een script kan produceren. Impressies, clicks, volgers, wallets, allemaal kosten ze een fractie van een cent om op schaal na te maken. Aanwezigheid is de enige interactie die niemand geautomatiseerd heeft, want niemand heeft een bot geschreven die loopt.",
+    "failureTag": "Wat je koopt",
+    "answerTag": "Wat je hier krijgt",
+    "failures": {
+      "bots": "Betaald verkeer komt uit datacenters en clickfarms. Je betaalt per impressie, en een flink deel daarvan is nooit aan een mens getoond.",
+      "farms": "Een airdrop wordt geclaimd door wallets, en een wallet kost niets. Eén farmer met een script wordt veertigduizend geldige adressen, en de tokens landen nergens in de buurt van de mensen voor wie ze bedoeld waren.",
+      "unaudited": "Engagementcijfers worden gerapporteerd door het platform dat ze verkoopt. Een volger, een view of een gemodelleerd winkelbezoek is niet controleerbaar, dus de campagne wordt beoordeeld op een getal dat je op goed vertrouwen moet aannemen."
+    },
+    "answers": {
+      "bots": "Een claim is een toestel dat op een coördinaat stond, waarbij de satellietfix, de radio-omgeving en het bewegingsspoor het met elkaar eens zijn. Er bestaat geen serverkant-versie van ergens zijn.",
+      "farms": "Eén claim per toestel binnen de straal en het tijdvenster. Een tweede claim betekent een tweede reis, en niemand is in veertig steden tegelijk.",
+      "unaudited": "Elke claim is een openbare registratie: een coördinaat, een tijdstip, een asset. Tel ze zelf na op een block explorer in plaats van ons om het cijfer te vragen."
+    },
+    "askLegend": "Wat wil je dat ze doen?",
+    "askNote": "Het protocol verifieert dat iemand er was. Wat diegene moet doen om de beloning te verdienen schrijf jij, en niets daarvan verandert de verificatie eronder.",
+    "actions": {
+      "visit": {
+        "label": "De winkel binnenlopen",
+        "headline": "Claimen aan de balie",
+        "body": "De drop ligt binnen de deur, met een straal die zo krap is dat alleen een telefoon aan de kassa hem kan openen. De code die wordt verzilverd hoort bij iemand die naar binnen kwam.",
+        "button": "Claim in de winkel",
+        "recorded": "Een geverifieerd bezoek op jouw adres, met een tijdstempel van het moment van claimen."
+      },
+      "follow": {
+        "label": "Het account volgen",
+        "headline": "Volg om te ontgrendelen",
+        "body": "De asset blijft op slot tot het account gevolgd wordt, en die volger telt alleen vanaf een toestel binnen de straal. Een farm kan de volger produceren. De wandeling niet.",
+        "button": "Volg en claim",
+        "recorded": "Een volger met een geverifieerd bezoek erachter, geteld op de locatie waar het gebeurde."
+      },
+      "signup": {
+        "label": "Aanmelden of op de lijst",
+        "headline": "Ter plekke aanmelden",
+        "body": "Eén veld, ingevuld waar de drop ligt. Elk adres op de lijst hoort bij iemand die bij jouw campagne stond op het moment van typen.",
+        "button": "Meld je aan en claim",
+        "recorded": "Een aanmelding met een geverifieerd bezoek erachter, de enige soort die het betalen waard is."
+      },
+      "scan": {
+        "label": "Het product scannen",
+        "headline": "Scan het in het schap",
+        "body": "Richt de camera op het artikel in plaats van op een pin. De scan moet binnen de straal gebeuren, dus de beloning bereikt degene die het ding ook echt vasthoudt.",
+        "button": "Scan en claim",
+        "recorded": "Een scan van één product in één winkel, geteld per artikel in plaats van per campagne."
+      },
+      "mint": {
+        "label": "Ter plekke minten",
+        "headline": "Mint waar je staat",
+        "body": "De collectible wordt gemint op de coördinaat en draagt die mee. Wat hij later waard is heeft iets te maken met waar hij vandaan komt, en dat kan een mintpagina niet zeggen.",
+        "button": "Mint hier",
+        "recorded": "Een mint verbonden aan een plek en een moment, op de chain waar de collectie thuishoort."
+      }
+    },
+    "dropStatus": "Live",
+    "dropWhere": "Kalverstraat 92, Amsterdam · straal 25 m",
+    "dropFine": "Eén claim per toestel · Geverifieerd bij aankomst",
+    "recordedLegend": "Wat je terugkrijgt",
+    "recordedNever": "Aantallen per locatie, tijd en campagne. Nooit een individu, en nooit een spoor van waar diegene daarna heen ging.",
+    "chainsLegend": "Elke bron, elke blockchain",
+    "chainsNote": "Een bron is iedereen die iets kan uitgeven: een project, een merk, een locatie, de winkel op de hoek. Een netwerk is een rij in een tabel en geen release, dus één campagne kan er meerdere tegelijk gebruiken en een seeker hoeft er nooit een te kiezen. Ethereum en Solana wikkelen vandaag af, de volgende is configuratie.",
+    "chainsCoinsAlt": "Draaiende 3D-munten van de chains waarop Seekprotocol afwikkelt",
+    "chainAny": "Elke andere chain"
   },
   "walkthrough": {
     "eyebrow": "Loop het door",
@@ -1006,10 +1143,10 @@
   "walletScreen": {
     "totalBalance": "Totaal saldo",
     "delta": "+ {amount} vandaag",
-    "send": "Verstuur",
-    "receive": "Ontvang",
-    "swap": "Wissel",
-    "stake": "Stake",
+    "deposit": "Storten",
+    "send": "Sturen",
+    "exchange": "Wisselen",
+    "qr": "QR",
     "justCaught": "Net gevangen",
     "assets": "Assets",
     "recentBadges": "Recente badges"
@@ -1023,7 +1160,7 @@
   },
   "ecosystemPage": {
     "metaTitle": "Ecosysteem: seekers, uitgevers, protocol",
-    "metaDescription": "Hoe het ecosysteem van Seekprotocol in elkaar zit: seekers die verzamelen, uitgevers die plaatsen, en het protocol dat afwikkelt op Solana.",
+    "metaDescription": "Hoe het ecosysteem van Seekprotocol in elkaar zit: seekers die verzamelen, uitgevers die plaatsen, en het protocol dat aanwezigheid verifieert en on chain afwikkelt.",
     "ogTitle": "Drie partijen, één coördinaat",
     "eyebrow": "Ecosysteem",
     "titleStart": "Drie partijen, één",
@@ -1105,9 +1242,9 @@
       "body": "Aangemaakt vanuit een social login, zodat een nieuwe gebruiker binnen een minuut iets kan verzamelen, met export naar eigen beheer wanneer die dat wil."
     },
     "settlement": {
-      "title": "Afwikkeling op Solana",
+      "title": "Afwikkeling op elke chain",
       "meta": "Binnen een seconde",
-      "body": "Goedkoop genoeg dat een kleine beloning ophalen niet meer kost dan de beloning waard is, en dat is precies waarom de keuze voor de chain uitmaakt."
+      "body": "Een asset wikkelt af op het netwerk waar hij al thuishoort, met één eis waaraan elke chain moet voldoen: een kleine beloning ophalen mag niet meer kosten dan de beloning waard is."
     }
   },
   "ecosystemFaq": {
@@ -1128,8 +1265,8 @@
       "answer": "Claimlimieten per toestel binnen een straal en tijdvenster, plus device-attestatie waar emulatorfarms op stuklopen. Wallets zijn gratis, reizen niet, en dat is precies waarom distributie aan geografie gekoppeld is."
     },
     "chain": {
-      "question": "Waarom Solana en geen andere chain?",
-      "answer": "Transactiekosten. Een beloning van een paar cent ophalen moet een fractie van een cent kosten om af te wikkelen, anders klopt de economie niet. Bevestiging binnen een seconde telt ook, als iemand op een straathoek staat te wachten."
+      "question": "Op welke chain draait Seekprotocol?",
+      "answer": "Op de chain waar de asset thuishoort. Netwerken zijn rijen in een tabel en geen code, dus een uitgever financiert een campagne in de token die hij al heeft en een seeker hoeft nooit een chain te kiezen. De eis waaraan elk netwerk moet voldoen is dezelfde: een beloning van een paar cent moet een verplaatsing overleven, en wie op een straathoek staat hoort er niet op te wachten. De strip op de homepage laat zien welke chains vandaag afwikkelen."
     },
     "business": {
       "question": "Kan mijn bedrijf vandaag al assets plaatsen?",
@@ -1165,7 +1302,7 @@
       "items": {
         "prototype": "Prototype voor locatiebewijs met GNSS en bewegingscontinuïteit",
         "engine": "AR-renderengine met blijvende verankering in de wereld",
-        "settlement": "Afwikkelingslaag op Solana en assetdefinities",
+        "settlement": "Eerste afwikkelingslaag, op Solana, met assetdefinities",
         "alpha": "Interne alpha in drie teststeden"
       }
     },
@@ -1200,7 +1337,8 @@
         "seasons": "Seizoenen, met eigen ladders en beloningen",
         "scanning": "Gamified objecten scannen",
         "guilds": "Guilds, teamquests en gedeelde beloningspotten",
-        "revenueShare": "Omzetdeling voor creators op geplaatste assets"
+        "revenueShare": "Omzetdeling voor creators op geplaatste assets",
+        "multichain": "Afwikkeling op Ethereum, BNB Smart Chain en Arbitrum"
       }
     },
     "governance": {
@@ -1240,7 +1378,11 @@
     "ctaTitle": "Leg iets bij je deur",
     "ctaBody": "Het selfserviceportaal is in ontwikkeling. Tot het er is, zetten we campagnes samen met jou op. Vertel ons de locatie en wat je wilt plaatsen.",
     "ctaStart": "Begin een gesprek",
-    "ctaRoadmap": "Zie wanneer selfservice komt"
+    "ctaRoadmap": "Zie wanneer selfservice komt",
+    "realEyebrow": "De eenheid",
+    "realTitle": "Wat een bezoek is, en wat het niet is",
+    "realLead": "Elke maatstaf op de markt is een benadering, en bij elke benadering hoort een script dat hem voor minder dan een cent produceert. Aanwezigheid is de uitzondering, om een reden die niet sleet met betere hardware: de kosten zijn fysiek.",
+    "chainsNote": "Financier een campagne in de asset die je al hebt, waar die ook thuishoort. Een netwerk is configuratie en geen integratie, dus één campagne kan er meerdere tegelijk gebruiken en degene die claimt hoeft nooit te weten welke."
   },
   "useCases": {
     "retail": {
@@ -1273,7 +1415,7 @@
       "points": [
         "Geografische spreiding over gekozen markten",
         "Claimlimieten per toestel binnen een straal en tijdvenster",
-        "Openbaar claimregister op Solana"
+        "Openbaar claimregister op de eigen chain van de asset"
       ]
     },
     "tourism": {
@@ -1286,6 +1428,23 @@
         "Weging op daluren om de drukte te spreiden",
         "Bezoekersaantallen op totaalniveau, nooit individuele sporen"
       ]
+    }
+  },
+  "interactionClaims": {
+    "nobots": {
+      "metric": "Geen botverkeer",
+      "title": "Niets hiervan is met een script te maken",
+      "body": "Een claim vraagt om een toestel op een coördinaat dat het eens is met zijn eigen satellietfix, de radio-omgeving eromheen en de beweging die het daarheen bracht. Geen van die drie heeft een datacenter-equivalent, en daarom is fraude hier geen cijfer dat we naar beneden moeten managen."
+    },
+    "organic": {
+      "metric": "Organisch van bouw",
+      "title": "Elke interactie is een reis die iemand maakte",
+      "body": "De engagement wordt niet afgeleid uit een click en niet gemodelleerd uit een panel. Iemand koos ervoor naar jouw adres te lopen, en dat wordt vastgelegd op het moment van aankomst in plaats van achteraf gereconstrueerd."
+    },
+    "cta": {
+      "metric": "Jouw call to action",
+      "title": "Wij verifiëren aanwezigheid, jij bepaalt de vraag",
+      "body": "Hang de beloning op aan een aankoop, een volger, een aanmelding, een scan van het product in het schap, of aan niets meer dan komen opdagen. De verificatie eronder is in elk geval identiek, dus de vraag kan per campagne veranderen zonder dat de garantie meebeweegt."
     }
   },
   "measurement": {
@@ -1385,7 +1544,7 @@
     "publish": "Publiceer campagne",
     "sequence": {
       "signing": "Campagne wordt ondertekend",
-      "writing": "Assetdefinitie wordt naar Solana geschreven",
+      "writing": "Assetdefinitie wordt on chain geschreven",
       "indexing": "Coördinaten worden geïndexeerd",
       "live": "Live op de kaart"
     },
@@ -1404,8 +1563,8 @@
     "captionIdle": "De ring is op schaal getekend ten opzichte van de plattegrond. Hier is geen ontwikkelaar voor nodig: vier keuzes, dan publiceren."
   },
   "whitepaper": {
-    "metaTitle": "Whitepaper: locatiebewijs op Solana",
-    "metaDescription": "Hoe Seekprotocol digitale assets uitgeeft op echte coördinaten, verifieert dat iemand er was, en afwikkelt op Solana. Architectuur, tokenontwerp, aanvallen.",
+    "metaTitle": "Whitepaper: locatiebewijs, op elke chain",
+    "metaDescription": "Hoe Seekprotocol digitale assets uitgeeft op echte coördinaten, verifieert dat iemand er was, en afwikkelt op de chain waar de asset thuishoort. Architectuur, tokenontwerp, aanvallen.",
     "ogTitle": "Whitepaper van Seekprotocol",
     "ogDescription": "Locatiebewijs, architectuur, tokenontwerp, en een eerlijk verslag van de aanvallen en de grenzen.",
     "eyebrow": "Whitepaper",
@@ -1437,7 +1596,7 @@
           },
           {
             "kind": "p",
-            "text": "De consumentenkant is **Seekprotocol**, een mobiele app op iOS en Android die deze assets in augmented reality toont. Je loopt, je telefoon laat zien wat er in de buurt is, en je pakt wat je vindt. Daaronder gebeurt de afwikkeling op Solana, gekozen om transactiekosten die laag genoeg zijn dat een kleine beloning ophalen niet meer kost dan de beloning waard is."
+            "text": "De consumentenkant is **Seekprotocol**, een mobiele app op iOS en Android die deze assets in augmented reality toont. Je loopt, je telefoon laat zien wat er in de buurt is, en je pakt wat je vindt. Daaronder gebeurt de afwikkeling op de chain waar de asset al thuishoort, met één eis: transactiekosten die laag genoeg zijn dat een kleine beloning ophalen niet meer kost dan de beloning waard is."
           },
           {
             "kind": "callout",
@@ -1517,8 +1676,84 @@
           }
         ]
       },
-      "proof-of-location": {
+      "distribution": {
         "index": "03",
+        "eyebrow": "Distributie",
+        "title": "Waarom betaald bereik geen echt mens levert",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Het vorige hoofdstuk stelde dat twee groepen hetzelfde probleem hebben. Dit gaat over het middel waar ze allebei het eerst naar grijpen, en waarom dat faalt op een manier die meer uitgeven niet oplost."
+          },
+          {
+            "kind": "h",
+            "text": "Elke maatstaf op de markt is een benadering"
+          },
+          {
+            "kind": "p",
+            "text": "Een impressie, een click, een view, een volger, een walletadres: geen van deze is een mens. Elk is een signaal dat samenhangt met een mens onder voorwaarden die de verkoper van het signaal zelf bepaalt. Zodra de beloning voor het produceren van het signaal groter is dan de kosten om het zonder mens te produceren, wordt het zonder mens geproduceerd, en de samenhang waarop de hele markt geprijsd is laat stilletjes los van datgene waarvoor hij in de plaats stond."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Eén impressie",
+                "value": "Fracties van een cent, zonder mens"
+              },
+              {
+                "label": "Eén click",
+                "value": "Centen, uit een pool van woonproxies"
+              },
+              {
+                "label": "Eén wallet",
+                "value": "Gratis, en met een script bij duizenden tegelijk"
+              },
+              {
+                "label": "Eén geverifieerd bezoek",
+                "value": "Een reis, met een lichaam, één keer"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Filters herstellen het signaal niet"
+          },
+          {
+            "kind": "p",
+            "text": "Het standaardantwoord is toelatingsregels: minimumsaldi, eerdere activiteit, snapshotvensters, captchas, apparaatvingerafdrukken. Elke regel verhoogt de kosten van een valse claim met een bepaald bedrag en de kosten van een echte claim met een ander bedrag, en de verhouding tussen die twee is het enige dat bepaalt of het filter geholpen heeft. In de praktijk slikt de doorgewinterde farmer de kosten en haakt de gewone gebruiker af, dus de filters selecteren uiteindelijk precies de groep die ze moesten weren."
+          },
+          {
+            "kind": "p",
+            "text": "Aanwezigheid is geen beter filter. Het is iets van een andere orde, omdat de kosten die het oplegt niet rekenkundig zijn. Ze zijn niet over een rack te verdelen, ze dalen niet mee met goedkopere hardware, en er bestaat geen woonproxy voor een straat."
+          },
+          {
+            "kind": "callout",
+            "text": "De nuttige vraag bij elke antifraudemaatregel is niet wat hij een aanvaller kost, maar wat hij een aanvaller kost ten opzichte van een eerlijke gebruiker. Aanwezigheid is het enige signaal in het rijtje waarbij die verhouding niet met de tijd in het voordeel van de aanvaller verschuift."
+          },
+          {
+            "kind": "h",
+            "text": "De uitgever houdt de vraag zelf in handen"
+          },
+          {
+            "kind": "p",
+            "text": "Verifiëren dat iemand ergens was zegt niets over wat diegene daar zou moeten doen, en het protocol weigert daar bewust over te beslissen. Een claim kan afhangen van een volger, een aanmelding, een scan van een product in het schap, een mint op de coördinaat, een aankoop aan de kassa, of van niets meer dan aankomen. De verificatie eronder is in alle gevallen identiek, wat betekent dat een uitgever de vraag per campagne kan wijzigen zonder iets aan de garantie te veranderen."
+          },
+          {
+            "kind": "p",
+            "text": "Dat is om een reden belangrijk die makkelijk over het hoofd wordt gezien. Een distributiekanaal dat de call to action voorschrijft past alleen bij de campagnes waarvoor het ontworpen is, en elke uitgever daarbuiten moet zijn aanbod naar het kanaal buigen. Wat hier verkocht wordt is het bewijs, niet de trechter."
+          },
+          {
+            "kind": "h",
+            "text": "Wat dit niet oplost"
+          },
+          {
+            "kind": "p",
+            "text": "Een geverifieerd bezoek is bewijs dat een toestel op een coördinaat was, niet dat de persoon die het vasthield daar wilde zijn of ooit terugkomt. Iemand die betaald wordt om langs een deur te lopen is een echt bezoek en een slechte klant. Het protocol maakt het bezoek duur om na te maken en eenvoudig om te tellen. Of het de aankoop waard was blijft een marketingvraag, en geen enkele chain beantwoordt die."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "04",
         "eyebrow": "Grondbeginsel",
         "title": "Locatiebewijs",
         "blocks": [
@@ -1576,7 +1811,7 @@
               },
               {
                 "label": "Gebruikelijke bevestiging",
-                "value": "Binnen een seconde op Solana"
+                "value": "Binnen een seconde op de afwikkelchain"
               },
               {
                 "label": "Attestatie",
@@ -1591,7 +1826,7 @@
         ]
       },
       "lifecycle": {
-        "index": "04",
+        "index": "05",
         "eyebrow": "Mechaniek",
         "title": "Wat er werkelijk gebeurt als je iets claimt",
         "blocks": [
@@ -1634,7 +1869,7 @@
         ]
       },
       "architecture": {
-        "index": "05",
+        "index": "06",
         "eyebrow": "Architectuur",
         "title": "Hoe de lagen in elkaar passen",
         "blocks": [
@@ -1663,15 +1898,19 @@
           },
           {
             "kind": "h",
-            "text": "Waarom Solana"
+            "text": "Waarom de afwikkelingslaag niet vastligt"
           },
           {
             "kind": "p",
-            "text": "De eis is ongebruikelijk voor een chain: heel veel transacties, heel weinig waarde per transactie, en een bevestiging die snel genoeg is dat iemand op straat er niets van merkt. Wie een beloning van twintig cent ophaalt, kan geen tien cent betalen om hem te ontvangen, en gaat geen dertig seconden staan wachten. Die combinatie schrapt het merendeel van het veld op kosten en de rest op vertraging."
+            "text": "De eis is ongebruikelijk voor een chain: heel veel transacties, heel weinig waarde per transactie, en een bevestiging die snel genoeg is dat iemand op straat er niets van merkt. Wie een beloning van twintig cent ophaalt, kan geen tien cent betalen om hem te ontvangen, en gaat geen dertig seconden staan wachten. Dat schrapt een groot deel van het veld op kosten en de rest op vertraging. Het schrapt ze als eis, niet als een keuze voor één chain die je eenmalig maakt en waar je vervolgens omheen bouwt."
           },
           {
             "kind": "p",
-            "text": "De afweging is echt en het is eerlijk om die te noemen. Solana heeft storingen gehad, en een chain die stilvalt betekent claims die in de rij komen. Het protocol behandelt afwikkeling als een stap die kan mislukken en opnieuw geprobeerd wordt in plaats van een stap die altijd slaagt, wat sowieso het juiste ontwerp is maar op deze chain niet optioneel."
+            "text": "Afwikkeling is dus configuratie. Een netwerk is een rij met zijn eigen endpoint, explorer en native token; een asset draagt de netwerken waarop hij bestaat, met zijn contractadres en decimalen per netwerk; en een wallet is een van twee adresfamilies in plaats van een per chain, omdat elk EVM-netwerk hetzelfde adres deelt. Een uitgever financiert een campagne in de token die hij al heeft en de claim wikkelt af waar die token thuishoort. Een netwerk toevoegen is een rij, geen release."
+          },
+          {
+            "kind": "p",
+            "text": "De afweging is het waard om te noemen. Chains vallen stil, en een chain die stilvalt betekent claims die in de rij komen. Afwikkeling wordt behandeld als een stap die kan mislukken en opnieuw geprobeerd wordt in plaats van een stap die altijd slaagt, wat op elk netwerk het juiste ontwerp is en op een snel netwerk niet optioneel. Spreiden over meerdere netwerken haalt dat risico er niet uit. Het voorkomt dat de storing van één netwerk de storing van het hele protocol is, en dat is een kleinere claim en de eerlijke."
           },
           {
             "kind": "h",
@@ -1690,7 +1929,7 @@
               },
               {
                 "label": "Assetdefinities en claims",
-                "value": "Solana, openbaar"
+                "value": "Afwikkelchain, openbaar"
               },
               {
                 "label": "Media en muntafbeeldingen",
@@ -1705,7 +1944,7 @@
         ]
       },
       "seekar": {
-        "index": "06",
+        "index": "07",
         "eyebrow": "Applicatie",
         "title": "Seekprotocol, de kant die mensen zien",
         "blocks": [
@@ -1753,7 +1992,7 @@
         ]
       },
       "play": {
-        "index": "07",
+        "index": "08",
         "eyebrow": "De lus",
         "title": "Wat iemand aan het lopen houdt",
         "blocks": [
@@ -1838,7 +2077,7 @@
         ]
       },
       "creators": {
-        "index": "08",
+        "index": "09",
         "eyebrow": "Aanbodkant",
         "title": "Wie de assets plaatst",
         "blocks": [
@@ -1880,7 +2119,7 @@
         ]
       },
       "token": {
-        "index": "09",
+        "index": "10",
         "eyebrow": "Token",
         "title": "$SEEK en waar die voor is",
         "blocks": [
@@ -1938,7 +2177,7 @@
         ]
       },
       "revenue": {
-        "index": "10",
+        "index": "11",
         "eyebrow": "Verdienmodel",
         "title": "Hoe het protocol verdient, en aan wie",
         "blocks": [
@@ -1998,7 +2237,7 @@
         ]
       },
       "governance": {
-        "index": "11",
+        "index": "12",
         "eyebrow": "Governance",
         "title": "Wie de getallen bepaalt",
         "blocks": [
@@ -2038,7 +2277,7 @@
         ]
       },
       "security": {
-        "index": "12",
+        "index": "13",
         "eyebrow": "Risico",
         "title": "Aanvallen, grenzen, en wat we niet beweren",
         "blocks": [
@@ -2088,7 +2327,7 @@
         ]
       },
       "privacy": {
-        "index": "13",
+        "index": "14",
         "eyebrow": "Privacy",
         "title": "Locatiedata is de gevoeligste data die er is",
         "blocks": [
@@ -2121,7 +2360,7 @@
         ]
       },
       "compliance": {
-        "index": "14",
+        "index": "15",
         "eyebrow": "Jurisdictie",
         "title": "Regelgeving, en waar dit staat",
         "blocks": [
@@ -2177,7 +2416,7 @@
         ]
       },
       "roadmap": {
-        "index": "15",
+        "index": "16",
         "eyebrow": "Richting",
         "title": "Wat er staat en wat er volgt",
         "blocks": [
@@ -2208,7 +2447,7 @@
         ]
       },
       "glossary": {
-        "index": "16",
+        "index": "17",
         "eyebrow": "Naslag",
         "title": "Begrippenlijst",
         "blocks": [
@@ -2256,7 +2495,7 @@
     },
     "chain": {
       "label": "Chain",
-      "value": "Solana (SPL)"
+      "value": "Solana (SPL), wikkelt elke chain af"
     },
     "supply": {
       "label": "Totale voorraad",
@@ -2357,7 +2596,7 @@
     "timelineWhere": {
       "device": "Op je telefoon",
       "verifier": "Verifier",
-      "chain": "Solana"
+      "chain": "Afwikkelchain"
     },
     "timelineCaption": "Dit zijn budgetten, geen metingen. Het sensorvenster en de afwikkeling bewegen mee met de omstandigheden, en alles daartussen is rekenwerk dat dat niet doet. Let op waar de grens ligt: ruwe sensordata verlaat de eerste drie stappen nooit.",
     "vestingTitle": "Circulerende voorraad, maand voor maand",
@@ -2422,8 +2661,8 @@
     },
     "settlement": {
       "label": "Afwikkeling",
-      "sub": "Solana · SPL-assets · claimregistraties",
-      "detail": "Houdt assetdefinities, coördinaten en claimregistraties vast, en verplaatst waarde zodra een claim geaccepteerd is. Gekozen om kosten die laag genoeg zijn dat een kleine beloning ophalen niet ondergesneeuwd raakt door de kosten van het ophalen."
+      "sub": "Elke chain · assets · claimregistraties",
+      "detail": "Houdt assetdefinities, coördinaten en claimregistraties vast, en verplaatst waarde zodra een claim geaccepteerd is. Een netwerk is configuratie en geen integratie, en de lat die elk netwerk moet halen is dezelfde: kosten die laag genoeg zijn dat een kleine beloning ophalen niet ondergesneeuwd raakt door de kosten van het ophalen."
     }
   },
   "confidenceSignals": {
@@ -2489,8 +2728,8 @@
     },
     "settle": {
       "label": "Het wikkelt af",
-      "actor": "Solana",
-      "body": "De overdracht bevestigt binnen een seconde voor een fractie van een cent, en de claimregistratie is openbaar.",
+      "actor": "Afwikkelchain",
+      "body": "De overdracht bevestigt binnen een seconde voor een fractie van een cent, op de chain waar de asset thuishoort, en de claimregistratie is openbaar.",
       "flow": "Beloning eruit"
     },
     "split": {
@@ -2528,7 +2767,7 @@
     },
     "settle": {
       "label": "Afwikkeling",
-      "detail": "De claimregistratie en de overdracht landen in één transactie op Solana. Dit is de enige stap die iemand anders kan zien, en het enige wat er staat is dat een claim op een openbare coördinaat geslaagd is.",
+      "detail": "De claimregistratie en de overdracht landen in één transactie op de afwikkelchain. Dit is de enige stap die iemand anders kan zien, en het enige wat er staat is dat een claim op een openbare coördinaat geslaagd is.",
       "payload": "Claimregistratie, tokenoverdracht"
     },
     "confirm": {

@@ -48,7 +48,7 @@ const aboutFaqJsonLd = {
       name: "What is Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Seekprotocol is the first AR and AI platform on Solana that transforms real-world exploration into rewarding adventures through augmented reality and blockchain technology. Users hunt location-based airdrops, collect NFTs, and explore with AI companions.",
+        text: "Seekprotocol is the AR and AI layer for digital assets on any chain, turning real-world exploration into rewarding adventures through augmented reality and blockchain technology. Users hunt location-based airdrops, collect NFTs, and explore with AI companions.",
       },
     },
     {
@@ -64,7 +64,7 @@ const aboutFaqJsonLd = {
       name: "What is $SEEK token?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "$SEEK is the native token of Seekprotocol on the Solana blockchain. It is essential for launching campaigns within the Seekprotocol app. Integrating assets into the ecosystem drives demand for $SEEK, creating positive buying pressure and sustainable growth.",
+        text: "$SEEK is the native token of Seekprotocol. It is essential for launching campaigns within the Seekprotocol app, whichever chain the placed asset itself lives on. Integrating assets into the ecosystem drives demand for $SEEK, creating positive buying pressure and sustainable growth.",
       },
     },
     {

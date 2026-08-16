@@ -5,11 +5,21 @@ import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { TabIcon } from "@/components/app/screens/MapScreen";
 import { RARITY_LADDER, type Collectible } from "@/content/collectibles";
+import { WALLET_ACTIONS } from "@/components/app/WalletActionIcons";
 
+/* One holding per address family, which is what the app's wallet actually is:
+   `SUPPORTED_CHAINS` is `['solana', 'ethereum']`, and every EVM network shares
+   the second of those. BONK stood here until the site started saying assets
+   come from any chain, at which point a wallet holding three Solana tokens was
+   quietly contradicting the sentence above it. */
 const ASSETS = [
   { name: "SEEK", sub: "Seekprotocol", amount: "12,480", fiat: "$1,842.10", up: true, badge: "/app/seek-coin-3d.png" },
-  { name: "SOL", sub: "Solana", amount: "4.28", fiat: "$612.44", up: true },
-  { name: "BONK", sub: "Bonk", amount: "1.2M", fiat: "$38.90", up: false },
+  /* The renders from the rewards set, not a letter in a circle. They were
+     falling back to the initial because no badge was given, which meant the one
+     screen that shows what you are actually holding drew two of its three
+     holdings as placeholders. */
+  { name: "SOL", sub: "Solana", amount: "4.28", fiat: "$612.44", up: true, badge: "/app/rewards/solana.avif" },
+  { name: "ETH", sub: "Ethereum", amount: "0.31", fiat: "$1,104.60", up: false, badge: "/app/rewards/ethereum.avif" },
 ];
 
 const BADGES = [
@@ -58,11 +68,16 @@ export default function WalletScreen({
         </div>
       </div>
 
+      {/* The app's own four, with the app's own icons. This was
+          send/receive/swap/stake with an empty `<b/>` where an icon should
+          have been, so the row was four guesses under four blank tiles. */}
       <div className="wallet-actions">
-        {["send", "receive", "swap", "stake"].map((action) => (
-          <span key={action} className="wallet-action">
-            <b />
-            <em>{t(action)}</em>
+        {WALLET_ACTIONS.map(({ id, Icon }) => (
+          <span key={id} className="wallet-action">
+            <b>
+              <Icon />
+            </b>
+            <em>{t(id)}</em>
           </span>
         ))}
       </div>
@@ -90,7 +105,11 @@ export default function WalletScreen({
         <ul className="wallet-list">
           {ASSETS.map((asset) => (
             <li key={asset.name} className="wallet-row">
-              <span className="wallet-row-icon">
+              {/* `data-art` drops the grey plate when there is a render to
+                  show. These are circular badges with their own rim, and a disc
+                  behind one reads as a ring around it. The plate is still what
+                  the initial needs when a holding has no artwork. */}
+              <span className="wallet-row-icon" data-art={asset.badge ? "" : undefined}>
                 {asset.badge ? <Image src={asset.badge} alt="" width={38} height={38} /> : <b>{asset.name.slice(0, 1)}</b>}
               </span>
               <span className="wallet-row-main">

@@ -58,16 +58,20 @@ export const blogPosts: BlogPost[] = [
     category: "Announcement",
   },
   {
+    /* The slug still says "solana" and stays that way. It is the published
+       URL of an article from December 2025, and renaming it to match the copy
+       would break every inbound link to buy a tidier path. The title and the
+       body are current; the address is history. */
     slug: "what-is-seek-protocol-first-ar-ai-platform-solana",
-    title: "What is Seekprotocol? The First AR & AI Platform on Solana",
+    title: "What is Seekprotocol? The AR & AI Layer for Every Chain",
     excerpt:
-      "Discover how Seekprotocol is pioneering the intersection of augmented reality, artificial intelligence, geolocation, and GameFi on the Solana blockchain.",
+      "Discover how Seekprotocol is pioneering the intersection of augmented reality, artificial intelligence, geolocation, and GameFi, for assets on any chain.",
     content: [
-      "In a world where the boundaries between physical and virtual realities are increasingly blurred, Seekprotocol emerges as a pioneer at the intersection of AI, augmented reality (AR), geolocation, and GameFi. Built on Solana, it is the first project to integrate all four technologies into a single, cohesive ecosystem.",
+      "In a world where the boundaries between physical and virtual realities are increasingly blurred, Seekprotocol emerges as a pioneer at the intersection of AI, augmented reality (AR), geolocation, and GameFi. It is the first project to integrate all four technologies into a single, cohesive ecosystem, and it does it without asking a project to leave the chain it is already on.",
       "Seekprotocol is not just another blockchain project. It is the ultimate user acquisition platform, enabling creators and projects to distribute their tokenized assets to users on-chain in a gamified and engaging way. Through its flagship app Seekprotocol, users experience an ever-evolving treasure hunt with infinite replayability and a continuous stream of new rewards.",
-      "The Seek Panel empowers creators and projects to distribute tokenized assets to users through gamified experiences. Whether you are a meme token creator looking to add real-world utility, a web3 game seeking new players, or a Solana-based project wanting to introduce your token to new audiences, Seekprotocol provides the tools to do it in an innovative way.",
+      "The Seek Panel empowers creators and projects to distribute tokenized assets to users through gamified experiences. Whether you are a meme token creator looking to add real-world utility, a web3 game seeking new players, or an Ethereum, Solana, BNB Smart Chain or Arbitrum project wanting to introduce your token to new audiences, Seekprotocol provides the tools to do it in an innovative way.",
       "At the core of the platform is $SEEK, the native token essential for launching campaigns within the Seekprotocol app. Integrating assets into the ecosystem drives demand for $SEEK, creating positive buying pressure and fostering sustainable growth.",
-      "With Seekprotocol's crypto-native user base of individuals passionate about cutting-edge technologies and GameFi, the platform becomes an ideal gateway for new projects entering the Solana ecosystem. The foundation is built on driving demand, expanding reach, attracting players, and providing real utility, all through the power of location-based augmented reality.",
+      "With Seekprotocol's crypto-native user base of individuals passionate about cutting-edge technologies and GameFi, the platform becomes an ideal gateway for new projects looking for an audience, whichever ecosystem they launched in. The foundation is built on driving demand, expanding reach, attracting players, and providing real utility, all through the power of location-based augmented reality.",
       "The technology stack combines geospatial mapping with real-time location tracking, advanced AR rendering with spatial computing, blockchain-powered reward distribution, and instant sync across all users worldwide. This makes Seekprotocol not just a concept, but a fully functional platform transforming how we interact with the world around us.",
     ],
     image: "/images/Ontwerp-zonder-titel-11_1.avif",
@@ -75,7 +79,7 @@ export const blogPosts: BlogPost[] = [
     imageHeight: 1024,
     imageSrcSet:
       "/images/Ontwerp-zonder-titel-11_1Ontwerp-zonder-titel-(11).avif 500w, /images/Ontwerp-zonder-titel-11_1.avif 1024w",
-    imageAlt: "Seekprotocol AR platform on Solana",
+    imageAlt: "Seekprotocol, the AR platform for assets on any chain",
     date: "2025-12-15",
     readTime: "5 min",
     category: "Platform",
@@ -111,7 +115,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       "Augmented reality has come a long way since the early days of simple camera overlays. Today, Seekprotocol represents the cutting edge of AR technology in the Web3 space, delivering an experience that seamlessly blends digital assets with the physical environment in ways previously unimaginable.",
       "The advanced AR engine behind Seekprotocol delivers stunning 3D visualizations, real-time environmental mapping, and persistent world anchoring. This means NFTs come to life before your eyes, tokens float in mid-air, and digital objects behave as if they are truly part of your surroundings.",
-      "What sets Seekprotocol apart from other AR applications is its deep integration with blockchain technology. Every AR interaction is backed by real on-chain assets. When you collect an NFT in augmented reality, you are not just playing a game, you are acquiring a verifiable digital asset secured on the Solana blockchain with real ownership and provable fairness.",
+      "What sets Seekprotocol apart from other AR applications is its deep integration with blockchain technology. Every AR interaction is backed by real on-chain assets. When you collect an NFT in augmented reality, you are not just playing a game, you are acquiring a verifiable digital asset secured on chain, with real ownership and provable fairness.",
       "The platform transforms any location into an interactive treasure hunt. Picture a city park where digital treasure chests appear through your phone's camera, each containing unique NFTs or token rewards. Or imagine attending a music festival where exclusive AR collectibles are scattered throughout the venue, only visible and collectible through Seekprotocol.",
       "For game developers and creators, Seekprotocol's drag-and-drop tools make it easy to deploy AR campaigns at scale. You do not need a team of AR specialists. The platform handles the complex spatial computing, leaving creators free to focus on designing engaging experiences and distributing their digital assets.",
       "The future of Web3 gaming is not confined to screens. It extends into the world around us, turning every street corner, park bench, and landmark into a potential gaming arena. With Seekprotocol, that future is already here.",
@@ -183,7 +187,7 @@ export const blogPosts: BlogPost[] = [
       "Proof of location creates verifiable on-chain records of your discoveries, building a permanent legacy of adventure on the blockchain. Each location you visit, each airdrop you collect, and each quest you complete is immutably recorded, creating a unique explorer profile that grows more valuable over time.",
       "The technology behind this system combines GPS-based precision with blockchain verification. With sub-meter accuracy and dynamic geofencing, the platform knows exactly where assets are placed and verifies that users are physically present before allowing claims. This eliminates the bot problem that plagues traditional airdrops.",
       "For the broader blockchain ecosystem, proof of location opens up entirely new use cases. Businesses can verify customer visits. Event organizers can confirm attendance. Tourism boards can incentivize exploration of specific areas. The applications extend far beyond gaming into real-world commerce and engagement.",
-      "Every NFT, token, and in-game asset within Seekprotocol is secured on the Solana blockchain, meaning real ownership, provable fairness, and rewards you can actually use, both inside and outside of Seekprotocol. This is not just a new proof mechanism; it is a new paradigm for how we validate real-world human activity on-chain.",
+      "Every NFT, token, and in-game asset within Seekprotocol is secured on the chain it was issued on, meaning real ownership, provable fairness, and rewards you can actually use, both inside and outside of Seekprotocol. This is not just a new proof mechanism; it is a new paradigm for how we validate real-world human activity on-chain.",
     ],
     image: "/images/Three-Pillars_1Three-Pillars.avif",
     imageWidth: 1130,

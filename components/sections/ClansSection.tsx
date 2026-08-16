@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useFormatter, useTranslations } from "next-intl";
 import { withCopy } from "@/lib/content-i18n";
+import LiveMark from "@/components/brand/LiveMark";
 import { CLANS } from "@/content/app-features";
 
 const MEDALS = ["/app/medals/gold.png", "/app/medals/silver.png", "/app/medals/bronze.png"];
@@ -40,7 +41,7 @@ export default function ClansSection() {
         <div className="clan-board-head">
           <span className="t-mono">{t("tableTitle")}</span>
           <span className="chip chip-live">
-            <span className="dot-live" />
+            <LiveMark id="clans-live" />
             {t("thisSeason")}
           </span>
         </div>

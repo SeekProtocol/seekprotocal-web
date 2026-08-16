@@ -730,12 +730,16 @@
   border-top-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Was a plain gradient disc standing in for an icon that did not exist. The
+   icons carry their own ramp now, so the tile holds them and nothing else. */
 .wallet-action b {
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  background: linear-gradient(130deg, #d04cfb, #049efd 55%, #02eaa9);
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
 }
+
+.wallet-action b svg { display: block; width: 100%; height: 100%; }
 
 .wallet-action em {
   font-style: normal;
@@ -779,6 +783,8 @@
   background: rgba(255, 255, 255, 0.06);
   overflow: hidden;
 }
+
+.wallet-row-icon[data-art] { background: none; overflow: visible; }
 
 .wallet-row-icon img { width: 100%; height: 100%; object-fit: contain; }
 .wallet-row-icon b { font-size: 14px; font-weight: 600; color: rgba(255, 255, 255, 0.75); }
@@ -3611,3 +3617,34 @@
 [data-off-img] img {
   visibility: hidden !important;
 }
+
+/* ── The map screen's photograph ─────────────────────────────────────────────
+   Replaced a drawn SVG street plan. Everything that used to sit on top of that
+   plan still sits on top of this: the route, the vignette, the spawns, the
+   heads-up chrome. */
+.map-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Dark at the very top and bottom, for the banner and the tab bar, and a
+   vignette to stop the frame's edges reading as a cropped screenshot. */
+.map-photo-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(4, 6, 12, 0.9) 0%, transparent 18%),
+    linear-gradient(0deg, rgba(4, 6, 12, 0.92) 0%, transparent 22%),
+    radial-gradient(ellipse at 50% 45%, transparent 48%, rgba(2, 4, 8, 0.72) 100%);
+  pointer-events: none;
+}
+
+/* The canvas keeps the route and nothing else now, so it has to sit above the
+   scrim rather than under it. */
+.scr-map .map-canvas { z-index: 2; }
+

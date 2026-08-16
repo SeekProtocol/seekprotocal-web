@@ -41,17 +41,22 @@ export type Chapter = {
 };
 
 export const WHITEPAPER_META = {
-  version: "v1.5",
+  version: "v1.6",
   updated: "2026-08",
-  /* About 5,100 words of prose, plus nine figures that are worth playing with.
-     Recount if chapters are added: `words / 220` is the prose figure. */
-  readingMinutes: 28,
+  /* About 5,700 words of prose, plus nine figures that are worth playing with.
+     Recount if chapters are added: `words / 220` is the prose figure.
+
+     v1.6 added chapter 03, on distribution, and rewrote the settlement section
+     of chapter 06: the document argued for one chain where the protocol has
+     never required one. */
+  readingMinutes: 31,
 };
 
 /** Chapter order. The chapters themselves are in the message files. */
 export const CHAPTER_IDS = [
   "summary",
   "problem",
+  "distribution",
   "proof-of-location",
   "lifecycle",
   "architecture",

@@ -4772,3 +4772,1397 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   .referral-life-step,
   .referral-life-mark { transition: none; }
 }
+
+/* --------------------------------------------------------------------------
+   THE DISTRIBUTION SECTION AND THE CHAIN ROSTER
+   -------------------------------------------------------------------------- */
+
+/* ── Chain roster ───────────────────────────────────────────────────────────
+   One strip, read from `content/chains.ts`, used on the homepage and the
+   business page. `auto-fit` rather than a fixed column count so a chain added
+   to the roster lays itself out instead of needing a media query. */
+.chain-strip {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  gap: 0.75rem;
+}
+
+.chain-tile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg-raised);
+}
+
+/* The tile that keeps the list open. Dashed, because a solid border would make
+   it the fifth supported chain instead of the statement that there is no fifth
+   position to be in. */
+.chain-tile-any {
+  border-style: dashed;
+  border-color: var(--line-strong);
+  background: none;
+}
+
+.chain-tile-any .chain-tile-mark {
+  border: 1px dashed var(--line-strong);
+  border-radius: 50%;
+  color: var(--brand);
+}
+
+.chain-tile-any .chain-tile-name { color: var(--fg-muted); }
+
+/* No plate. The four chain marks are circular badges in their own colours, and
+   a rounded square behind a circle is two backgrounds arguing. The one that
+   does need a plate is the open-ended tile, which is a bare glyph. */
+.chain-tile-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  color: var(--fg);
+}
+
+.chain-tile-mark svg { display: block; }
+
+/* A hairline around the badge, not around a plate.
+   Ethereum's disc is #f2f2f2 and the light theme's tile is #ffffff, so without
+   this the disc vanishes and the black diamond floats on nothing. The other
+   three are saturated enough not to need it, but a ring on only one of five
+   badges is a ring you can see. Invisible on dark, where --line is #1e1e24
+   against artwork that is already dark. */
+.chain-tile:not(.chain-tile-any) .chain-tile-mark {
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--line-strong);
+}
+
+.chain-tile-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--fg);
+  min-width: 0;
+}
+
+.chain-roster-note {
+  margin-top: 1rem;
+  color: var(--fg-subtle);
+  max-width: 62ch;
+}
+
+/* ── The failure and its answer, as pairs ──────────────────────────────── */
+.dist-pairs {
+  list-style: none;
+  margin: 3rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.dist-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 2.5rem minmax(0, 1fr);
+  align-items: stretch;
+  gap: 0;
+}
+
+.dist-pair-side {
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+}
+
+.dist-pair-fail {
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+  border-right: none;
+  /* Hatched, the way the funnel figure marks its estimated row. The line is
+     what says "this is the column you should not trust", and it says it
+     without needing a colour that would read as an error state. */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0 7px,
+    var(--grid-line) 7px 8px
+  );
+}
+
+.dist-pair-answer {
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  border-left: none;
+  border-color: var(--brand-ring);
+  background: linear-gradient(180deg, var(--brand-soft), transparent 60%), var(--bg-raised);
+}
+
+.dist-pair-tag {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--fg-subtle);
+}
+
+.dist-pair-answer .dist-pair-tag { color: var(--brand); }
+
+.dist-pair-arrow {
+  display: grid;
+  place-items: center;
+  border-block: 1px solid var(--line);
+  background: var(--bg-raised);
+  color: var(--fg-subtle);
+}
+
+/* ── The brief: pick the ask, see the drop ─────────────────────────────── */
+.dist-brief {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.dist-brief-legend {
+  color: var(--fg-subtle);
+  margin-bottom: 0.9rem;
+}
+
+.dist-choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dist-choice {
+  appearance: none;
+  text-align: left;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--bg-raised);
+  color: var(--fg-muted);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.dist-choice:hover { border-color: var(--line-strong); color: var(--fg); }
+
+.dist-choice[data-active] {
+  border-color: var(--brand-ring);
+  background: var(--brand-soft);
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.dist-brief-note {
+  margin-top: 1rem;
+  color: var(--fg-subtle);
+}
+
+.dist-brief-preview {
+  display: grid;
+  gap: 1rem;
+  animation: rise 0.42s var(--ease-out) both;
+}
+
+.dist-drop {
+  padding: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--bg-raised);
+  box-shadow: var(--shadow-md);
+}
+
+.dist-drop-where {
+  margin-top: 0.9rem;
+  color: var(--fg-subtle);
+}
+
+.dist-drop-title { margin: 0.35rem 0 0.6rem; }
+
+.dist-drop-cta {
+  margin-top: 1.25rem;
+  /* A picture of a button, not a button. It carries no href and no handler:
+     the thing it stands for happens in the app, and a control that looks
+     pressable and does nothing is worse than one that does not invite it. */
+  pointer-events: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.dist-drop-fine {
+  margin-top: 0.85rem;
+  color: var(--fg-subtle);
+}
+
+.dist-receipt {
+  padding: 1.4rem 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg-sunken);
+}
+
+.dist-receipt-line { color: var(--fg); }
+
+.dist-receipt-never {
+  margin-top: 0.6rem;
+  color: var(--fg-subtle);
+}
+
+.dist-chains-legend {
+  color: var(--fg-subtle);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .dist-brief { grid-template-columns: minmax(0, 1fr); }
+  /* The choices become a wrapping row above the preview: a vertical list of
+     five full-width buttons pushes the thing they change off the screen. */
+  .dist-choice-list { flex-direction: row; flex-wrap: wrap; }
+  .dist-choice { flex: 1 1 auto; }
+}
+
+@media (max-width: 720px) {
+  /* The pair stacks, and the arrow turns to point down it. A 2.5rem column
+     between two full-width blocks is a gap with a glyph in it. */
+  .dist-pair { grid-template-columns: minmax(0, 1fr); }
+
+  .dist-pair-fail {
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    border-right: 1px solid var(--line);
+    border-bottom: none;
+  }
+
+  .dist-pair-answer {
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    border-left: 1px solid var(--brand-ring);
+    border-top: none;
+  }
+
+  .dist-pair-arrow {
+    border-block: none;
+    border-inline: 1px solid var(--line);
+    padding: 0.35rem 0;
+  }
+
+  .dist-pair-arrow svg { transform: rotate(90deg); }
+}
+
+@media (pointer: coarse) {
+  /* 38px, the same floor the mono chips and the store badges were given. */
+  .dist-choice { min-height: 38px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dist-brief-preview { animation: none; }
+}
+
+/* ── The chain coin row ──────────────────────────────────────────────────────
+   Sits above the flat strip, and is decoration: the strip carries the names and
+   the live status, so a browser with no WebGL, a reader with 3d=off, or a chain
+   with no model authored yet all lose nothing but the picture.
+
+   The height is a ratio rather than a fixed value because the row is framed by
+   its aspect: `ChainCoins.frame()` fits on whichever axis is tighter, so a short
+   wide box pulls the camera back and the coins simply get smaller. */
+.chain-coins {
+  position: relative;
+
+  /* Height one coin wants. The only number to turn to make the row bigger or
+     smaller; everything else is derived. */
+  --coin-px: 340px;
+
+  /* Natural aspect of the row: the gaps *between* coins plus one coin's width,
+     with a little air. The gap term is `--coins - 1`, not `--coins`, and that
+     is the whole reason a single coin used to sit stranded in the middle of a
+     wide black band: it was being given room for a gap it does not have. */
+  --row-aspect: calc((var(--coins, 4) - 1) * 1.42 + 1.15);
+
+  width: min(100%, calc(var(--row-aspect) * var(--coin-px)));
+  aspect-ratio: var(--row-aspect) / 1;
+  margin-inline: auto;
+  margin-bottom: 1.25rem;
+}
+
+.chain-coins-view {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact shadow, so the row sits on the section instead of hovering over it.
+   An ellipse under each coin would need to track the bob; one soft band under
+   the row reads the same at this size and costs nothing per frame. */
+.chain-coins::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  width: 62%;
+  height: 16%;
+  translate: -50% 0;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(8, 8, 10, 0.18), transparent 70%);
+  pointer-events: none;
+}
+
+[data-theme="dark"] .chain-coins::after {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.55), transparent 70%);
+}
+
+@media (max-width: 720px) {
+  /* Half the columns, twice the rows, so the box goes squarer.
+     `ChainCoins.frame()` reads the slot's aspect and folds the row itself; this
+     only has to hand it a box the right shape to fold into. */
+  .chain-coins {
+    --coin-px: 190px;
+    /* Two rows, so roughly half the columns. `max()` rather than `ceil()`:
+       ceil() is CSS Values 4 and too new to rely on, and the floor is doing the
+       same job here, which is to stop a one or two coin row from being given a
+       box taller than it is wide. */
+    --row-aspect: max(1.15, calc((var(--coins, 4) / 2 - 1) * 1.42 + 1.15));
+  }
+}
+
+/* --------------------------------------------------------------------------
+   THE REWARDS STAGE
+   -------------------------------------------------------------------------- */
+
+.rewards-stage {
+  position: relative;
+  margin-top: 3rem;
+  /* Tall enough that the phone has air above and below it and the back rows
+     have somewhere to be. Ratio rather than a height, so the whole scene
+     scales with the shell instead of cropping. */
+  aspect-ratio: 16 / 9;
+  min-height: 460px;
+  isolation: isolate;
+}
+
+.rewards-field {
+  position: absolute;
+  inset: 0;
+  /* The field is decoration and the phone is the subject, so nothing here can
+     take a tap away from it. */
+  pointer-events: none;
+}
+
+/* Outer element: the slot. Transform and filter are set from React and
+   transitioned, so a category change reads as objects moving through depth
+   rather than as a list being redrawn. */
+.reward-slot {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  display: grid;
+  place-items: center;
+  width: var(--reward-size, 168px);
+  height: var(--reward-size, 168px);
+  translate: -50% -50%;
+  scale: var(--s);
+  opacity: var(--o);
+  filter: blur(var(--blur));
+  transition:
+    left 0.9s var(--ease-out),
+    top 0.9s var(--ease-out),
+    scale 0.9s var(--ease-out),
+    opacity 0.7s var(--ease-out),
+    filter 0.7s var(--ease-out);
+}
+
+/* Inner element: the idle drift. It has to be a separate element, because a
+   keyframe animation on transform beats an inline transform outright and the
+   two would fight over every category change. */
+.reward-drift {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  animation: reward-float 9s var(--ease-in-out) infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes reward-float {
+  0%, 100% { transform: translateY(-4%) rotate(-1.4deg); }
+  50%      { transform: translateY(4%) rotate(1.4deg); }
+}
+
+/* Square box, contained artwork. The set runs from a tall console to a wide
+   voucher, and fitting each one inside the same square is what keeps them
+   reading as a single scene at a single distance. */
+.reward-art {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 26px rgba(0, 0, 0, 0.42));
+}
+
+/* The four front slots get a warmer contact shadow, since they are the ones
+   the eye is meant to land on. */
+.reward-slot[data-front] .reward-art {
+  filter: drop-shadow(0 22px 34px rgba(0, 0, 0, 0.5));
+}
+
+/* ── The phone ──────────────────────────────────────────────────────────── */
+.rewards-phone {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  z-index: 2;
+  transition: scale 0.9s var(--ease-out);
+}
+
+/* The device size is set here rather than passed as a prop, so it can step
+   down with the viewport. On a phone the mock has to give ground: at the
+   desktop width it covers three quarters of the screen and the rewards it is
+   supposed to be surrounded by end up behind it. */
+.rewards-phone .device { --device-w-n: 300; }
+
+.rewards-phone-glow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 190%;
+  height: 130%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    var(--brand-soft),
+    transparent 68%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.rewards-screen {
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.9s var(--ease-out);
+}
+
+.rewards-screen[data-shown] { opacity: 1; }
+
+/* Above the phone, not below it. Below, it sat between the device and the rail
+   and collided with the tabs on any viewport where the stage was shorter than
+   the device. Above, the only thing it can reach is the lead paragraph, and the
+   stage has margin there.
+
+   It carries the SEEK mark instead of a plain dot. The dot said "something is
+   live" without saying whose, and this is the one spot on the stage where the
+   product name earns its place. */
+.rewards-live {
+  position: absolute;
+  left: 50%;
+  /* Well clear of the device. It sat at -1.1rem, close enough that the chip and
+     the phone's top edge read as one crowded object; the gap is what lets it be
+     a label hovering over the stage. */
+  top: -2.6rem;
+  translate: -50% 0;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem 0.45rem 0.7rem;
+  border-radius: 100px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg);
+  white-space: nowrap;
+  /* The brand ramp painted into the border box, the same trick the store
+     buttons use: a hairline in a single colour disappears against the phone's
+     own gradient, which is already every colour. */
+  background:
+    linear-gradient(var(--bg-raised), var(--bg-raised)) padding-box,
+    linear-gradient(100deg, #d04cfb, #049efd 52%, #02eaa9) border-box;
+  border: 1.5px solid transparent;
+  box-shadow: 0 10px 30px -10px rgba(4, 158, 253, 0.55);
+}
+
+/* One ring leaving the chip, slow. Faster and it reads as an error state.
+   This was briefly a hue-cycling halo with two staggered rings, a hover and a
+   glow on the mark. Every part of it worked and together they were noise: a
+   label the size of a thumbnail cannot carry four simultaneous animations and
+   still read as a label. One ring, and the mark does the rest. */
+.rewards-live-pulse {
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  border: 1.5px solid var(--brand);
+  opacity: 0;
+  animation: rewards-live-ring 3.2s var(--ease-out) infinite;
+  pointer-events: none;
+}
+
+@keyframes rewards-live-ring {
+  0%   { opacity: 0.65; scale: 1; }
+  70%  { opacity: 0; scale: 1.22; }
+  100% { opacity: 0; scale: 1.22; }
+}
+
+/* Events is not a sixth kind of reward. It is every kind, handed out at a time
+   and a place, so selecting it makes the thing handing them out the subject and
+   sends the field back rather than reshuffling it. */
+.rewards-stage[data-events] .rewards-field {
+  scale: 0.9;
+  opacity: 0.5;
+  transition: scale 0.9s var(--ease-out), opacity 0.9s var(--ease-out);
+}
+
+.rewards-stage[data-events] .rewards-phone { scale: 1.06; }
+
+/* ── Rail and panel ─────────────────────────────────────────────────────── */
+.rewards-rail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.rewards-tab {
+  appearance: none;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  background: var(--bg-raised);
+  color: var(--fg-muted);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.rewards-tab:hover { border-color: var(--line-strong); color: var(--fg); }
+
+.rewards-tab[data-active] {
+  border-color: var(--brand-ring);
+  background: var(--brand-soft);
+  color: var(--fg);
+  font-weight: 500;
+}
+
+@media (max-width: 560px) {
+  .rewards-tab { font-size: 0.82rem; padding: 0.5rem 0.85rem; }
+}
+
+@media (pointer: coarse) {
+  .rewards-tab { min-height: 38px; }
+}
+
+.rewards-panel {
+  max-width: 62ch;
+  margin: 1.75rem auto 0;
+  text-align: center;
+  animation: rise 0.5s var(--ease-out) both;
+}
+
+.rewards-panel-title { margin-bottom: 0.75rem; }
+
+.rewards-proof {
+  max-width: 58ch;
+  margin: 1.25rem auto 0;
+  text-align: center;
+  color: var(--fg-subtle);
+}
+
+@media (max-width: 900px) {
+  .rewards-stage {
+    aspect-ratio: 3 / 4;
+    min-height: 560px;
+    --reward-size: 108px;
+  }
+
+  .rewards-phone .device { --device-w-n: 218; }
+
+  /* Pull the field in off the edges. The slots run from 3% to 97%, which on a
+     desktop stage leaves a comfortable margin and on a 350px one puts half of
+     the outermost reward past the edge. Insetting the field rather than
+     rewriting the slots keeps one set of coordinates for both. */
+  .rewards-field { inset: 2% 7%; }
+}
+
+@media (max-width: 560px) {
+  .rewards-stage { --reward-size: 82px; min-height: 500px; }
+  .rewards-phone .device { --device-w-n: 178; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reward-drift { animation: none; }
+  .reward-slot,
+  .rewards-phone,
+  .rewards-screen { transition: none; }
+  .rewards-panel { animation: none; }
+}
+
+/* ── The tap, and what it sets off ───────────────────────────────────────────
+   The participate button is painted into the screen artwork, so the control is
+   a transparent overlay sized to the pill. Percentages measured off the source
+   file, not eyeballed: 402x874, pill at x 20..381, y 774..829. */
+.rewards-tap {
+  position: absolute;
+  left: 4.98%;
+  top: 88.56%;
+  width: 89.8%;
+  height: 6.41%;
+  z-index: 6;
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* A ring leaving the pill, and only while the invitation stands.
+   Brand blue rather than white: the pill it grows out of is white, and the
+   first version was a white ring on a white button, which is a ring nobody can
+   see. Blue reads against the pill and against the screen's own gradient. */
+.rewards-tap-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 100px;
+  border: 2.5px solid var(--brand);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rewards-tap[data-armed] .rewards-tap-ring {
+  animation: rewards-tap-ring 1.9s var(--ease-out) infinite;
+}
+
+@keyframes rewards-tap-ring {
+  0%   { opacity: 0.9; scale: 1; }
+  65%  { opacity: 0; scale: 1.16; }
+  100% { opacity: 0; scale: 1.16; }
+}
+
+/* The hand straddles the right end of the pill, where a thumb would come from,
+   and taps on the same beat as the ring.
+   It sits on its own dark badge. Drawn as a bare glyph it was white on a white
+   button and simply was not there; the badge is what makes it legible over the
+   pill and over the gradient beside it at the same time. */
+.rewards-tap-hand {
+  position: absolute;
+  /* Inside the pill's right end, never past it. At -6% the badge's right edge
+     landed at about 100.2% of the screen and `.device-screen` clips to the
+     aperture, so it lost a sliver on desktop and a third of itself on a phone,
+     where the same percentage is a bigger number of pixels. */
+  right: 1%;
+  top: 30%;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.92);
+  background: #0b0b10;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-out);
+  pointer-events: none;
+}
+
+.rewards-tap-hand svg { width: 19px; height: 19px; }
+
+.rewards-tap[data-armed] .rewards-tap-hand {
+  opacity: 1;
+  animation: rewards-tap-hand 1.9s var(--ease-out) infinite;
+}
+
+@keyframes rewards-tap-hand {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  55%      { transform: translate(-8%, -20%) scale(0.92); }
+}
+
+.rewards-tap:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* ── The pull ────────────────────────────────────────────────────────────────
+   Every reward collapses onto the phone. This overrides the slot coordinates
+   rather than animating each item's own transform, which is why the section
+   needed the slot and the drift to be two elements: the drift keeps running
+   underneath and the collapse composes over it. */
+.rewards-stage[data-pull] .reward-slot {
+  left: 50%;
+  top: 50%;
+  scale: 0.12;
+  opacity: 0;
+  filter: blur(3px);
+  transition:
+    left 0.75s cubic-bezier(0.62, 0, 0.3, 1),
+    top 0.75s cubic-bezier(0.62, 0, 0.3, 1),
+    scale 0.75s cubic-bezier(0.62, 0, 0.3, 1),
+    opacity 0.62s ease-in,
+    filter 0.5s ease-in;
+}
+
+/* ── The catch ───────────────────────────────────────────────────────────────
+   The phone takes the hit. Three things happen at once and they are on three
+   different properties on purpose: `scale` for the recoil, `transform` for the
+   shake, and a separate element for the halo. `scale` and `translate` are their
+   own properties in modern CSS, so the shake can own `transform` outright
+   without fighting the -50%/-50% centring the phone already needs. */
+.rewards-stage[data-pull] .rewards-phone {
+  animation:
+    rewards-recoil 1.05s var(--ease-out),
+    rewards-shake 0.62s linear;
+}
+
+@keyframes rewards-recoil {
+  0%   { scale: 1; }
+  18%  { scale: 0.965; }
+  44%  { scale: 1.075; }
+  70%  { scale: 0.99; }
+  100% { scale: 1; }
+}
+
+/* Amplitude decays across the run rather than stopping dead, which is the
+   difference between a phone that was hit and a phone that is vibrating. */
+@keyframes rewards-shake {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  8%   { transform: translate(-7px, 3px) rotate(-1.5deg); }
+  17%  { transform: translate(6px, -4px) rotate(1.3deg); }
+  26%  { transform: translate(-5px, -2px) rotate(-1deg); }
+  35%  { transform: translate(4px, 3px) rotate(0.8deg); }
+  46%  { transform: translate(-3px, -2px) rotate(-0.6deg); }
+  57%  { transform: translate(2px, 2px) rotate(0.45deg); }
+  70%  { transform: translate(-1.5px, -1px) rotate(-0.3deg); }
+  84%  { transform: translate(1px, 1px) rotate(0.15deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* The halo blooms and holds a beat before falling back, so the glow is still
+   up when the alert arrives. */
+.rewards-stage[data-pull] .rewards-phone-glow {
+  animation: rewards-flare 1.5s var(--ease-out);
+}
+
+@keyframes rewards-flare {
+  0%   { opacity: 0.8; scale: 1; filter: none; }
+  22%  { opacity: 1; scale: 1.75; filter: brightness(2.6) saturate(1.5); }
+  55%  { opacity: 1; scale: 1.5; filter: brightness(1.8) saturate(1.3); }
+  100% { opacity: 1; scale: 1; filter: none; }
+}
+
+/* ── Shockwaves ─────────────────────────────────────────────────────────── */
+.rewards-shock {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 62%;
+  translate: -50% -50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rewards-shock i {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--brand);
+  opacity: 0;
+}
+
+.rewards-stage[data-pull] .rewards-shock i {
+  animation: rewards-shockwave 1.1s var(--ease-out) both;
+}
+
+.rewards-stage[data-pull] .rewards-shock i:nth-child(2) {
+  animation-delay: 0.12s;
+  border-color: var(--brand-2);
+}
+
+.rewards-stage[data-pull] .rewards-shock i:nth-child(3) {
+  animation-delay: 0.24s;
+  border-color: var(--brand-3);
+}
+
+@keyframes rewards-shockwave {
+  0%   { opacity: 0; scale: 0.35; }
+  14%  { opacity: 0.85; }
+  100% { opacity: 0; scale: 2.1; }
+}
+
+/* ── The screen lights up ────────────────────────────────────────────────────
+   A child of the viewport, so the aperture clips it. Over the device instead,
+   it would read as a sheet laid on the phone rather than the screen firing. */
+.rewards-flash {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.95), transparent 62%),
+    linear-gradient(160deg, rgba(208, 76, 251, 0.85), rgba(2, 234, 169, 0.85));
+  opacity: 0;
+  /* No `mix-blend-mode` here, deliberately. It was `screen`, which looked right
+     at rest and produced a hard column of light above the device during the
+     catch: the shake animates `transform` on `.rewards-phone`, that promotes it
+     to its own compositing layer, and a blend mode inside a promoted layer
+     blends against a backdrop that is no longer the one on screen. Plain alpha
+     is predictable and, at this brightness, indistinguishable. */
+  pointer-events: none;
+}
+
+.rewards-stage[data-pull] .rewards-flash {
+  animation: rewards-screen-flash 0.85s var(--ease-out) both;
+}
+
+@keyframes rewards-screen-flash {
+  0%   { opacity: 0; }
+  16%  { opacity: 0.92; }
+  100% { opacity: 0; }
+}
+
+/* ── The alert ───────────────────────────────────────────────────────────────
+   Rises out of the screen. It sits inside the device viewport so it is clipped
+   by the aperture, which is what sells it as coming from the phone rather than
+   floating over it. */
+.rewards-alert {
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  bottom: 4%;
+  z-index: 7;
+  padding: 1rem 1rem 0.9rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(10, 10, 16, 0.82);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 44px -14px rgba(0, 0, 0, 0.8);
+  text-align: left;
+  opacity: 0;
+  translate: 0 24%;
+  scale: 0.94;
+  pointer-events: none;
+  transition:
+    opacity 0.42s var(--ease-out),
+    translate 0.52s var(--ease-out),
+    scale 0.52s var(--ease-out);
+}
+
+.rewards-alert[data-open] { opacity: 1; translate: 0 0; scale: 1; }
+
+.rewards-alert-mark { display: block; margin-bottom: 0.55rem; }
+
+.rewards-alert-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.98rem;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.rewards-alert-body {
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.rewards-alert-seekers {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand-3);
+}
+
+/* Three dots breathing out of phase: other people, looking, right now. */
+.rewards-alert-seekers i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--brand-3);
+  animation: rewards-seeker 1.4s var(--ease-in-out) infinite;
+}
+
+.rewards-alert-seekers i:nth-child(2) { animation-delay: 0.18s; }
+.rewards-alert-seekers i:nth-child(3) { animation-delay: 0.36s; }
+
+@keyframes rewards-seeker {
+  0%, 100% { opacity: 0.25; scale: 0.8; }
+  50%      { opacity: 1; scale: 1.25; }
+}
+
+/* ── Rail progress ──────────────────────────────────────────────────────── */
+.rewards-tab { position: relative; overflow: hidden; }
+
+.rewards-tab-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  transform-origin: left;
+  background: var(--brand);
+  animation: rewards-progress 5.2s linear both;
+}
+
+@keyframes rewards-progress {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+@media (max-width: 560px) {
+  .rewards-alert { padding: 0.8rem 0.85rem 0.7rem; border-radius: 15px; }
+  .rewards-alert-title { font-size: 0.88rem; }
+  .rewards-alert-body { font-size: 0.72rem; }
+  .rewards-tap-hand { width: 26px; height: 26px; right: 1.5%; top: 24%; }
+  .rewards-tap-hand svg { width: 15px; height: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rewards-tap-ring,
+  .rewards-tap-hand,
+  .rewards-live-pulse,
+  .rewards-alert-seekers i,
+  .rewards-tab-progress { animation: none; }
+  .rewards-tap-hand { opacity: 1; }
+  .rewards-stage[data-pull] .rewards-phone,
+  .rewards-stage[data-pull] .rewards-phone-glow,
+  .rewards-stage[data-pull] .rewards-shock i,
+  .rewards-stage[data-pull] .rewards-flash { animation: none; }
+  .rewards-alert { transition: opacity 0.2s linear; }
+}
+
+/* ── The win screen ─────────────────────────────────────────────────────────
+   Sits over the static event screen inside the aperture. It is a layer rather
+   than a replacement so nothing has to load or lay out when it arrives: it
+   fades in over a screen that is already painted. */
+.found {
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  /* A container, so the reward name can size against the phone screen rather
+     than the viewport. The names run from "$SEEK" to
+     "Zapatillas edición limitada" and a fixed size cannot serve both. */
+  container-type: inline-size;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s var(--ease-out);
+}
+
+.found[data-shown] { opacity: 1; }
+
+/* Over the map, which paints the whole screen. */
+.found .ios-status { position: relative; z-index: 3; color: #ffffff; }
+
+.found-map {
+  object-fit: cover;
+  /* Slightly cooled and darkened, so the reward and the copy sit on top of it
+     rather than competing with a lit city. Done here rather than baked into the
+     file, which keeps the asset reusable at full strength. */
+  filter: brightness(0.72) saturate(0.92);
+}
+
+.found-trail {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Dark at the top and bottom, clear through the middle. The status bar and the
+   copy both need something to sit on; the reward needs the map to still be a
+   map where it lands. */
+.found-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(180deg, rgba(4, 4, 8, 0.85) 0%, transparent 16%),
+    /* Reaches past the top of the copy before it starts fading. It used to be
+       gone by 44%, which left the label sitting on the Eiffel Tower's own map
+       pin and the words underneath fighting "Centre émetteur TDF". */
+    linear-gradient(
+      0deg,
+      rgba(4, 4, 8, 0.97) 0%,
+      rgba(4, 4, 8, 0.94) 26%,
+      rgba(4, 4, 8, 0.72) 40%,
+      transparent 58%
+    );
+  pointer-events: none;
+}
+
+/* The route that got there. Drawn on once, as the screen arrives, so the eye
+   is led to the pin instead of finding it. */
+.found-trail path {
+  fill: none;
+  stroke: var(--brand-3);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  opacity: 0.75;
+  filter: drop-shadow(0 0 6px rgba(2, 234, 169, 0.7));
+}
+
+.found[data-shown] .found-trail path {
+  animation: found-trail 1.1s var(--ease-out) 0.15s both;
+}
+
+@keyframes found-trail {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Where it was. Three rings leaving the spot, staggered, under the reward. */
+.found-pin {
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  top: 41%;
+  /* Wider than `.found-prize`, which is 52%. It was 34% and sat entirely behind
+     the artwork, so three rings pulsed where nobody could see them. */
+  width: 86%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+}
+
+.found-pin i {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--brand);
+  opacity: 0;
+}
+
+.found[data-shown] .found-pin i {
+  animation: found-ping 2.4s var(--ease-out) 0.3s infinite;
+}
+
+.found[data-shown] .found-pin i:nth-child(2) { animation-delay: 0.8s; }
+.found[data-shown] .found-pin i:nth-child(3) { animation-delay: 1.6s; }
+
+@keyframes found-ping {
+  0%   { opacity: 0.9; scale: 0.34; }
+  70%  { opacity: 0; scale: 1; }
+  100% { opacity: 0; scale: 1; }
+}
+
+/* ── The reward ─────────────────────────────────────────────────────────── */
+.found-prize {
+  z-index: 4;
+  position: absolute;
+  left: 50%;
+  top: 41%;
+  width: 52%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  display: grid;
+  place-items: center;
+}
+
+.found[data-shown] .found-prize {
+  animation: found-rise 0.85s cubic-bezier(0.2, 1.5, 0.4, 1) 0.35s both;
+}
+
+/* Overshoot on the way up, because a prize that eases politely into place is a
+   prize nobody cheers for. */
+@keyframes found-rise {
+  0%   { opacity: 0; scale: 0.2; translate: -50% -20%; }
+  100% { opacity: 1; scale: 1; translate: -50% -50%; }
+}
+
+.found-art {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 30px rgba(0, 0, 0, 0.6));
+}
+
+/* A cone of light behind it, turning slowly. This one is a square, so unlike
+   the live chip's halo it can rotate without its silhouette changing. */
+.found-rays {
+  position: absolute;
+  inset: -34%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.34) 0deg 8deg,
+    transparent 8deg 30deg,
+    rgba(255, 255, 255, 0.22) 30deg 36deg,
+    transparent 36deg 60deg
+  );
+  mask-image: radial-gradient(circle, #000 22%, transparent 72%);
+  opacity: 0;
+}
+
+.found[data-shown] .found-rays {
+  opacity: 1;
+  animation: found-rays 14s linear infinite;
+}
+
+@keyframes found-rays {
+  to { rotate: 360deg; }
+}
+
+/* ── The copy ───────────────────────────────────────────────────────────── */
+.found-copy {
+  z-index: 5;
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  bottom: 9%;
+  text-align: center;
+}
+
+.found[data-shown] .found-copy {
+  animation: rise 0.6s var(--ease-out) 0.7s both;
+}
+
+.found-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brand-3);
+  /* The glow is what carries it now that there is no plate underneath. Over a
+     scrim this reads at a glance; it was the weak scrim, not the missing box,
+     that made the first version hard to see. */
+  text-shadow: 0 0 14px rgba(18, 240, 184, 0.55);
+}
+
+/* Two rules, drawing outward as the label lands. `.eyebrow` puts one on the
+   left; centred over a phone screen it wants both, and a rule that arrives by
+   growing says "this just happened" where a static one says "this is a
+   heading". */
+.found-label::before,
+.found-label::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+  transform-origin: right;
+}
+
+.found-label::after { transform-origin: left; }
+
+.found[data-shown] .found-label::before,
+.found[data-shown] .found-label::after {
+  animation: found-rule 0.6s var(--ease-out) 0.85s both;
+}
+
+@keyframes found-rule {
+  from { transform: scaleX(0); opacity: 0; }
+  to   { transform: scaleX(1); opacity: 0.7; }
+}
+
+.found-name {
+  margin-top: 0.3rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: #ffffff;
+  /* The reward names run from "$SEEK" to "Zapatillas edición limitada", so the
+     size has to give: `clamp` against the container rather than a fixed value,
+     which would overflow the screen in half the locales. */
+  font-size: clamp(1.05rem, 9cqw, 1.5rem);
+}
+
+.found-where {
+  margin-top: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.found-fine {
+  margin-top: 0.55rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Small, dim, and not optional: Mapbox require it wherever their imagery is
+   shown. See FOUND_MAP in content/rewards.ts. */
+.found-credit {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5%;
+  z-index: 6;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.46rem;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .found-trail path,
+  .found-pin i,
+  .found-prize,
+  .found-rays,
+  .found-copy,
+  .found-label::before,
+  .found-label::after { animation: none; }
+  .found-trail path { stroke-dashoffset: 0; }
+  .found-prize { opacity: 1; scale: 1; translate: -50% -50%; }
+}
+
+/* ── Paying, before anything else moves ──────────────────────────────────────
+   The SEEK coin leaves the field and lands on the button. `--pay-x` and
+   `--pay-y` are written onto the field by the component from a live
+   measurement, because the button lives inside the phone and the coin lives in
+   the field, and no fixed percentage relates the two across breakpoints. */
+.rewards-stage[data-pay] .reward-slot[data-seek] {
+  left: var(--pay-x, 50%);
+  top: var(--pay-y, 92%);
+  scale: 0.3;
+  /* Full strength for the flight whatever slot it started in. On any category
+     but tokens the SEEK coin is in a back row at a third opacity behind two
+     pixels of blur, and a coin nobody can see cannot be seen to be spent. */
+  opacity: 1;
+  filter: none;
+  z-index: 3;
+  /* 0.7s, and the fade does not begin until 0.64s. The first version faded from
+     0.5s over a 0.58s flight, so the coin was half gone before it arrived and
+     the payment read as the coin vanishing rather than as the coin being
+     handed over. It has to land, then go. */
+  transition:
+    left 0.7s cubic-bezier(0.5, 0, 0.25, 1.25),
+    top 0.7s cubic-bezier(0.5, 0, 0.25, 1.25),
+    scale 0.7s cubic-bezier(0.5, 0, 0.25, 1.25),
+    opacity 0.14s linear 0.64s,
+    filter 0.25s linear;
+  opacity: 0;
+}
+
+/* Once the pull starts it is over the phone anyway, so hand it back to the
+   normal collapse rather than leaving it parked on the button. */
+.rewards-stage[data-pull] .reward-slot[data-seek] {
+  transition:
+    left 0.75s cubic-bezier(0.62, 0, 0.3, 1),
+    top 0.75s cubic-bezier(0.62, 0, 0.3, 1),
+    scale 0.75s cubic-bezier(0.62, 0, 0.3, 1),
+    opacity 0.4s ease-in;
+}
+
+/* ── The tick ───────────────────────────────────────────────────────────── */
+.rewards-paid {
+  position: absolute;
+  left: 50%;
+  /* Centred on the pill: 88.56% + 6.41% / 2. Same measurement the button uses,
+     so the two cannot drift apart. */
+  top: 91.77%;
+  z-index: 7;
+  display: grid;
+  place-items: center;
+  width: 17%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: var(--brand-3);
+  color: #04120d;
+  box-shadow: 0 0 0 6px rgba(18, 240, 184, 0.22), 0 10px 24px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  scale: 0.3;
+  pointer-events: none;
+  transition: opacity 0.22s var(--ease-out), scale 0.22s var(--ease-out);
+}
+
+.rewards-paid svg { width: 62%; height: 62%; }
+
+.rewards-paid[data-on] {
+  opacity: 1;
+  /* Overshoot on arrival. A tick that fades in has not confirmed anything. */
+  animation: rewards-paid-pop 0.5s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+}
+
+@keyframes rewards-paid-pop {
+  0%   { scale: 0.2; }
+  60%  { scale: 1.16; }
+  100% { scale: 1; }
+}
+
+/* The check draws itself, so the tick is an event rather than a symbol that
+   was always there. */
+.rewards-paid path {
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+}
+
+.rewards-paid[data-on] path {
+  animation: rewards-check 0.32s var(--ease-out) 0.14s both;
+}
+
+@keyframes rewards-check {
+  to { stroke-dashoffset: 0; }
+}
+
+/* One ring leaving the tick, once. */
+.rewards-paid[data-on]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--brand-3);
+  animation: rewards-paid-ring 0.75s var(--ease-out) 0.1s both;
+}
+
+@keyframes rewards-paid-ring {
+  0%   { opacity: 0.9; scale: 1; }
+  100% { opacity: 0; scale: 2.1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rewards-stage[data-pay] .reward-slot[data-seek] { transition: opacity 0.2s linear; }
+  .rewards-paid[data-on],
+  .rewards-paid[data-on] path,
+  .rewards-paid[data-on]::after { animation: none; }
+  .rewards-paid[data-on] { scale: 1; }
+  .rewards-paid[data-on] path { stroke-dashoffset: 0; }
+}
+
+/* The SEEK mark standing in for the live dot. See components/brand/LiveMark.
+   A dot pulsed; the mark cannot, without wobbling a shape that has to stay
+   readable at 13px. It breathes its own glow instead, which carries the same
+   "this is happening now" without moving. */
+.mark-live {
+  display: inline-flex;
+  flex: none;
+  line-height: 0;
+  animation: mark-live-breathe 2.6s var(--ease-in-out) infinite;
+}
+
+.mark-live svg { display: block; }
+
+@keyframes mark-live-breathe {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(125, 99, 248, 0)); }
+  50%      { filter: drop-shadow(0 0 5px rgba(125, 99, 248, 0.85)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark-live { animation: none; }
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import LiveMark from "@/components/brand/LiveMark";
 import { useTranslations } from "next-intl";
 import { isHandheld } from "@/lib/render-budget";
 
@@ -159,7 +160,7 @@ export default function VideoReveal() {
 
         <div className="video-reveal-hud" aria-hidden="true">
           <span className="video-reveal-hud-tag">
-            <span className="dot-live" />
+            <LiveMark id="film-live" />
             Seekprotocol
           </span>
           <span className="video-reveal-hud-clock">{clock}</span>

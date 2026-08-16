@@ -34,7 +34,15 @@ export function SeekMark({
   );
 }
 
-/** Mark plus wordmark, used in the header and footer. */
+/**
+ * Mark plus wordmark, used in the header and footer.
+ *
+ * `gradientId` has a default and both call sites override it, because both are
+ * on every page: two `<linearGradient id="seek-logo-grad">` in one document is
+ * invalid markup, and the day one of them takes different stops the other one
+ * repaints with it and nothing says why. Pass a distinct id anywhere a second
+ * instance can share the page.
+ */
 export default function SeekLogo({
   className = "",
   markSize = 30,

@@ -71,18 +71,22 @@ export async function generateMetadata({
     // Google truncates the SERP title around 60 characters. The previous
     // default ran to 76, so "Redefining Innovation" was never shown.
     title: {
-      default: "Seekprotocol | The First AR & AI Platform on Solana",
+      default: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
       template: "%s | Seekprotocol",
     },
     description:
-      "Experience the future with $SEEK, the first AR and AI platform on Solana. Hunt location-based airdrops, collect NFTs, explore with AI companions, and earn real crypto rewards through immersive augmented reality experiences.",
+      "Experience the future with $SEEK, the AR and AI layer for assets on any chain. Hunt location-based airdrops, collect NFTs, explore with AI companions, and earn real crypto rewards through immersive augmented reality experiences.",
     keywords: [
       "Seekprotocol",
       "$SEEK",
       "Seekprotocol",
       "augmented reality",
       "AR platform",
+      "multi-chain",
+      "Ethereum",
       "Solana",
+      "BNB Smart Chain",
+      "Arbitrum",
       "blockchain",
       "location-based airdrops",
       "NFT",
@@ -95,7 +99,7 @@ export async function generateMetadata({
       "Web3 gaming",
       "geofencing",
       "AR experiences",
-      "Solana NFT",
+      "cross-chain NFT",
       "crypto gaming",
     ],
     authors: [{ name: "Seekprotocol", url: "https://www.seekprotocol.ai" }],
@@ -103,9 +107,9 @@ export async function generateMetadata({
     publisher: "Block Protocol L.L.C-FZ",
     category: "Technology",
     openGraph: {
-      title: "Seekprotocol | The First AR & AI Platform on Solana",
+      title: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
       description:
-        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The first AR & AI platform on Solana transforming real-world exploration into crypto rewards.",
+        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The AR and AI layer that anchors assets from any chain to real places.",
       type: "website",
       locale: localeToOgLocale[locale] || "en_US",
       alternateLocale: Object.entries(localeToOgLocale)
@@ -119,9 +123,9 @@ export async function generateMetadata({
       card: "summary_large_image",
       site: "@Seekprotocol",
       creator: "@Seekprotocol",
-      title: "Seekprotocol | The First AR & AI Platform on Solana",
+      title: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
       description:
-        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The first AR & AI platform on Solana transforming real-world exploration into crypto rewards.",
+        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The AR and AI layer that anchors assets from any chain to real places.",
       images: [OG_IMAGE],
     },
     robots: {
@@ -234,7 +238,7 @@ export default async function LocaleLayout({
                     },
                     legalName: "Block Protocol L.L.C-FZ",
                     description:
-                      "The first AR and AI platform on Solana. Hunt location-based airdrops, collect NFTs, and explore with AI companions.",
+                      "The AR and AI layer for assets on any chain. Hunt location-based airdrops, collect NFTs, and explore with AI companions.",
                     sameAs: [
                       "https://x.com/Seekprotocol",
                       "https://t.me/seekprotocol",
@@ -261,7 +265,7 @@ export default async function LocaleLayout({
                       "@id": "https://www.seekprotocol.ai/#organization",
                     },
                     description:
-                      "The first AR and AI platform on Solana transforming real-world exploration into crypto rewards.",
+                      "The AR and AI layer for assets on any chain, turning real-world exploration into crypto rewards.",
                     inLanguage: locale,
                     availableLanguage: routing.locales.map((loc) => ({
                       "@type": "Language",
@@ -288,7 +292,7 @@ export default async function LocaleLayout({
                     operatingSystem: "iOS, Android",
                     applicationCategory: "GameApplication",
                     description:
-                      "AR-powered mobile app on Solana that transforms real-world locations into interactive treasure hunts with crypto rewards.",
+                      "AR-powered mobile app that turns real-world locations into interactive treasure hunts, settling rewards on whichever chain the asset lives on.",
                     publisher: {
                       "@id": "https://www.seekprotocol.ai/#organization",
                     },

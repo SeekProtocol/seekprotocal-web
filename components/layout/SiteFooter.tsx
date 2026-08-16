@@ -113,7 +113,7 @@ export default function SiteFooter() {
         <div className="site-footer-top">
           <div className="site-footer-brand">
             <Link href="/" prefetch={false} aria-label="Seekprotocol">
-              <SeekLogo markSize={34} />
+              <SeekLogo markSize={34} gradientId="seek-logo-footer" />
             </Link>
             <p className="t-body site-footer-blurb">{t("description")}</p>
             <div className="store-buttons site-footer-stores">

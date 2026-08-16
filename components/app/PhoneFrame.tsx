@@ -26,19 +26,27 @@ export default function PhoneFrame({
   children,
   className = "",
   glow = true,
-  width = 340,
+  width,
 }: {
   children: ReactNode;
   className?: string;
   glow?: boolean;
-  /** Rendered device width in px on desktop. */
+  /**
+   * Rendered device width in px, pinned at every viewport.
+   *
+   * Leave it out to get the stylesheet's own value, which steps down at 1200px
+   * and again at 520px. It used to default to 340 and set the variable
+   * regardless, and since an inline custom property outranks any rule in a
+   * stylesheet, **those two media queries had never once applied**: the device
+   * was 340px wide on a 390px phone. Only pass this to hold a width on purpose.
+   */
   width?: number;
 }) {
   return (
     <div
       className={`device ${className}`}
       style={{
-        ["--device-w-n" as string]: width,
+        ...(width === undefined ? {} : { ["--device-w-n" as string]: width }),
         ["--ap-left" as string]: APERTURE.left,
         ["--ap-top" as string]: APERTURE.top,
         ["--ap-w" as string]: APERTURE.width,

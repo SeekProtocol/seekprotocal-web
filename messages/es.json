@@ -36,7 +36,7 @@
   "home": {
     "heroTitle": "Explora una nueva realidad con",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "La primera plataforma de AR y AI en Solana que transforma tu mundo en un patio de recreo impulsado por blockchain. Caza airdrops, recolecta NFTs y explora con compañeros de AI en ubicaciones reales.",
+    "heroSubtitle": "La capa de AR e IA para activos que viven en un lugar, en cualquier cadena. Camina hasta la coordenada, apunta el móvil y recoge lo que dejaron allí.",
     "downloadAppStore": "Descargar en App Store",
     "downloadGooglePlay": "Disponible en Google Play",
     "benefitsTitle": "Posibilidades",
@@ -82,7 +82,7 @@
     "scaleEngagement": "Motor de engagement",
     "scaleEngagementDesc": "Misiones de referidos, rachas en tablas de clasificación y misiones de gremios, un conjunto completo de herramientas para impulsar el engagement diario, semanal y social entre los usuarios.",
     "scaleCrossPlatform": "Despliegue multiplataforma",
-    "scaleCrossPlatformDesc": "Expandiéndonos por Solana Mobile y Android/iOS. Un perfil, una wallet, infinitas experiencias Seek, en cualquier lugar, en cualquier momento.",
+    "scaleCrossPlatformDesc": "Un perfil y una wallet en iOS y Android, con activos de todas las cadenas en las que liquidamos. Infinitas experiencias Seek, en cualquier lugar, en cualquier momento.",
     "featuredOn": "DESTACADO EN:",
     "joinBeta": "Únete a nuestra beta",
     "getReady": "¡Prepárate para buscar!",
@@ -99,17 +99,18 @@
     "liveLead": "Salta a cualquier hub, toca una moneda para ver quién la recogió y prueba a atrapar una tú, tirada contra las probabilidades reales de la app.",
     "foundationsEyebrow": "Fundamentos",
     "readWhitepaper": "Leer el whitepaper técnico",
-    "metaTitle": "Seekprotocol | App de búsqueda del tesoro AR en Solana",
-    "metaDescription": "Caza airdrops por ubicación, colecciona NFT en realidad aumentada y explora con acompañantes de IA. Seekprotocol convierte lugares reales en recompensas en Solana.",
-    "ogTitle": "Seekprotocol de Seekprotocol | AR e IA en Solana"
+    "metaTitle": "Seekprotocol | Búsqueda del tesoro AR en cualquier cadena",
+    "metaDescription": "Caza airdrops por ubicación, colecciona NFT en realidad aumentada y explora con acompañantes de IA. Seekprotocol ancla activos de cualquier cadena a lugares reales.",
+    "ogTitle": "Seekprotocol | AR e IA para cualquier cadena",
+    "heroEyebrow": "AR · IA · Cualquier cadena"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol — la app de búsqueda del tesoro AR",
-    "metaDescription": "Seekprotocol es la app de realidad aumentada de Seekprotocol. Caza airdrops por ubicación, colecciona NFT en coordenadas reales y gana recompensas cripto en Solana. Gratis en iOS y Android.",
-    "ogTitle": "Seekprotocol — la app de búsqueda del tesoro AR",
+    "metaTitle": "Seekprotocol | la app de búsqueda del tesoro AR",
+    "metaDescription": "Seekprotocol es la app de realidad aumentada de Seekprotocol. Caza airdrops por ubicación, colecciona NFT en coordenadas reales y gana recompensas cripto en cualquier cadena. Gratis para iOS y Android.",
+    "ogTitle": "Seekprotocol | la app de búsqueda del tesoro AR",
     "eyebrow": "La app",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "La app de realidad aumentada de Seekprotocol. Apunta el móvil al mundo y encuentra lo que se ha dejado allí: tokens, NFT y recompensas ancladas a coordenadas reales en Solana.",
+    "heroDesc": "La app de realidad aumentada de Seekprotocol. Apunta el móvil al mundo y encuentra lo que se ha dejado allí: tokens, NFT y recompensas ancladas a coordenadas reales, vengan de la cadena que vengan.",
     "whatTitle": "¿Qué es Seekprotocol?",
     "whatBody": "Seekprotocol es la app móvil principal de Seekprotocol, gratuita en iOS y Android. Convierte cualquier calle, parque o local en un sitio donde se pueden esconder y reclamar activos digitales. Un anunciante deja una recompensa en unas coordenadas; tú tienes que estar allí físicamente para recogerla, y el protocolo demuestra que estuviste. Sin emuladores, sin falsear la ubicación, sin atajos.",
     "featuresTitle": "Lo que puedes hacer",
@@ -120,7 +121,7 @@
     "f3Title": "Explorar con compañeros de IA",
     "f3Desc": "Un guía de IA reacciona a dónde estás y a qué tienes cerca, y te señala lo que merece el paseo.",
     "f4Title": "Ganar recompensas cripto reales",
-    "f4Desc": "Todo se liquida en Solana. Lo que recoges es tuyo, está en tu cartera y se mueve contigo.",
+    "f4Desc": "Todo se liquida en la cadena en la que ya vive el activo. Lo que recoges es tuyo, está en tu cartera y se mueve contigo.",
     "howTitle": "Cómo funciona",
     "s1Title": "Descarga y abre",
     "s1Desc": "Gratis en la App Store y en Google Play. Se crea una cartera para ti; no hace falta haber tenido nunca una clave privada.",
@@ -132,7 +133,7 @@
     "q1": "¿Seekprotocol es gratis?",
     "a1": "Sí. Seekprotocol se descarga gratis en iOS y Android. Algunos artículos dentro de la app son de pago, pero cazar y reclamar no lo son.",
     "q2": "¿Quién hace Seekprotocol?",
-    "a2": "Seekprotocol lo desarrolla Seekprotocol, un producto de Block Protocol L.L.C-FZ en Dubái. Es la app de AR e IA en Solana, disponible en la App Store y en Google Play.",
+    "a2": "Seekprotocol lo desarrolla Seekprotocol, un producto de Block Protocol L.L.C-FZ en Dubái. Es la app de AR e IA para activos en cualquier cadena, disponible en la App Store y en Google Play.",
     "q3": "¿Necesito saber algo de cripto?",
     "a3": "No. Se crea una cartera para ti al abrir la app, y puedes recoger y guardar activos sin tocar nunca una frase semilla.",
     "q4": "¿En qué móviles funciona Seekprotocol?",
@@ -205,7 +206,7 @@
     "getReady": "¡Prepárate para buscar!",
     "ctaDesc": "Adéntrate en una nueva realidad donde el mundo se convierte en tu patio de recreo. Seekprotocol transforma tu entorno en una aventura interactiva, combinando la última tecnología AR con la exploración del mundo real.",
     "metaTitle": "Sobre el equipo detrás de Seekprotocol",
-    "metaDescription": "Conoce al equipo que construye AR por ubicación en Solana: la idea tras la prueba de ubicación, la tecnología de Seekprotocol y las personas detrás de $SEEK.",
+    "metaDescription": "Conoce al equipo que construye AR por ubicación para cualquier cadena: la idea tras la prueba de ubicación, la tecnología de Seekprotocol y las personas detrás de $SEEK.",
     "ogTitle": "El equipo detrás de Seekprotocol"
   },
   "contact": {
@@ -217,7 +218,7 @@
   },
   "services": {
     "heroTitle": "NUESTRA EXPERIENCIA, TU CRECIMIENTO",
-    "heroDesc": "Seekprotocol ofrece soluciones avanzadas de AR, AI y blockchain en Solana. No solo construimos tecnología, somos tus socios en la transformación del engagement del mundo real.",
+    "heroDesc": "Seekprotocol ofrece soluciones punteras de AR, IA y blockchain en todas las cadenas importantes. No solo construimos tecnología. Somos tus socios para transformar la interacción en el mundo real.",
     "letsContact": "Contáctenos",
     "businessStrategy": "Estrategia empresarial",
     "businessStrategyDesc": "Estrategias personalizadas que alinean los objetivos empresariales con el crecimiento digital.",
@@ -272,7 +273,7 @@
     "allArticles": "Todos los artículos",
     "relatedPages": "Páginas relacionadas",
     "metaTitle": "Blog: AR, IA y recompensas por ubicación",
-    "metaDescription": "Artículos sobre realidad aumentada, acompañantes de IA, airdrops con geovalla y prueba de ubicación, del equipo que construye Seekprotocol en Solana.",
+    "metaDescription": "Artículos sobre realidad aumentada, acompañantes de IA, airdrops con geovalla y prueba de ubicación, del equipo que construye Seekprotocol.",
     "ogTitle": "El blog de Seekprotocol"
   },
   "forms": {
@@ -469,7 +470,7 @@
     },
     "collect": {
       "title": "Lo recoges",
-      "meta": "Liquidación en Solana en menos de un segundo",
+      "meta": "Liquidación en la cadena propia del activo",
       "body": "Levantas la cámara, ves el activo anclado en la calle delante de ti y lo coges. La transferencia se liquida on-chain por una fracción de céntimo, y es tuyo."
     }
   },
@@ -921,7 +922,7 @@
       "label": "Drop de tokens",
       "headline": "Distribución que cuesta algo farmear",
       "face": "40 $SEEK",
-      "fine": "Un reclamo por dispositivo · Se liquida en Solana",
+      "fine": "Un reclamo por dispositivo · Se liquida en su propia cadena",
       "redeem": "Llega a la cartera que la app creó para ti, y es tuyo para guardarlo, moverlo o venderlo. Nada que canjear y nadie a quien pedir permiso.",
       "proof": "Crear una cartera es gratis; caminar no. La geografía es el filtro por el que un airdrop no se puede farmear barato.",
       "placedBy": "Proyectos de token y comunidades"
@@ -935,6 +936,142 @@
       "proof": "Cada uno lleva la coordenada donde se recogió, así que la colección de alguien es un mapa de dónde ha estado de verdad.",
       "placedBy": "Ciudades, oficinas de turismo, artistas"
     }
+  },
+  "rewards": {
+    "eyebrow": "Recompensas",
+    "title": "En una coordenada puede esperarte cualquier cosa",
+    "lead": "Una moneda es la versión que todo el mundo se imagina, y la menos interesante. Al protocolo le da igual qué haya en la caja: lo que se puede emitir a una persona se puede emitir a un lugar, y alguien tiene que caminar hasta allí para recogerlo.",
+    "railLabel": "Elige un tipo de recompensa",
+    "phoneAlt": "La app de Seekprotocol mostrando un evento en directo y las recompensas que reparte",
+    "liveChip": "Evento en directo",
+    "participateLabel": "Participar en el evento en directo",
+    "alertTitle": "Recompensa misteriosa cerca de ti",
+    "alertBody": "A 301 m y activa hasta las 21:00. Se la lleva quien llegue primero.",
+    "alertSeekers": "Otros seekers ya van hacia allí",
+    "foundLabel": "La has encontrado",
+    "foundWhere": "Champ de Mars · 301 m andados",
+    "foundFine": "Reclamada al llegar y liquidada en cadena. Está en tu cartera.",
+    "foundAlt": "Ganar una recompensa en el mapa",
+    "mapCredit": "© Mapbox © OpenStreetMap",
+    "items": {
+      "seek": "$SEEK",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "bnb": "BNB",
+      "hyperliquid": "Hyperliquid",
+      "berachain": "Berachain",
+      "dogecoin": "Dogecoin",
+      "pepe": "PEPE",
+      "babydoge": "Baby Doge",
+      "spx6900": "SPX6900",
+      "toshi": "Toshi",
+      "turbo": "Turbo",
+      "nft": "NFT misterioso",
+      "voucher": "Vale de tienda",
+      "food": "Vale de comida",
+      "barcode": "Pase del evento",
+      "console": "PlayStation 5",
+      "handheld": "Consola portátil",
+      "shoes": "Zapatillas edición limitada"
+    },
+    "proofNote": "Sea lo que sea lo que hay en la caja, lo que impide que la reclame alguien que nunca estuvo allí es lo mismo: la presencia, puntuada con cuatro señales independientes en el momento del reclamo.",
+    "categories": {
+      "tokens": {
+        "label": "Tokens",
+        "headline": "Cualquier token, en cualquier cadena",
+        "body": "Ethereum, Solana, BNB Smart Chain y las redes que vengan después. Un editor financia la campaña con el token que ya tiene y se liquida donde vive ese token, así que nadie necesita hacer un puente para participar."
+      },
+      "memes": {
+        "label": "Memecoins",
+        "headline": "Los lanzamientos sin canal",
+        "body": "Una memecoin tiene público y ninguna forma de llegar a él que no sea una granja de airdrops. Poner el suministro en calles reales lo sitúa delante de gente que salió por él, y cada reclamo es una persona en vez de una dirección."
+      },
+      "nfts": {
+        "label": "NFT",
+        "headline": "Acuñado donde estabas",
+        "body": "Un coleccionable que lleva la coordenada de la que salió es otro objeto distinto de uno acuñado desde el sofá. Una edición puede atarse a una ciudad, a un local o a una sola puerta, y dónde se recogió cada pieza queda registrado en público."
+      },
+      "vouchers": {
+        "label": "Cupones",
+        "headline": "Descuento, en el mostrador",
+        "body": "El formato que una calle comercial quiere de verdad. Un código que solo se abre dentro de la puerta, canjeado en caja por alguien que entró, y contado como una llegada en lugar de como una impresión que quizá llevó a una."
+      },
+      "goods": {
+        "label": "Productos físicos",
+        "headline": "Cosas que llegan en una caja",
+        "body": "Una consola, unas zapatillas, un equipo. El reclamo va en cadena y la entrega es logística corriente, y eso es lo que permite a una marca poner algo físico al final de un paseo sin tener que construir nada para hacerlo."
+      },
+      "events": {
+        "label": "Eventos en directo",
+        "headline": "Todo a la vez, mientras dure el evento",
+        "body": "Un festival, un partido o un congreso se convierte en una capa temporal de recompensas que caduca cuando el evento termina. Presentarse es lo que las desbloquea, así que el premio llega a quienes estuvieron de verdad, y el contador está en la puerta."
+      }
+    }
+  },
+  "distribution": {
+    "eyebrow": "Distribución",
+    "title": "El alcance es fácil de comprar e imposible de creer",
+    "lead": "Todos los canales que puede comprar un lanzamiento venden lo mismo: un número que un script puede producir. Impresiones, clics, seguidores, wallets, todos cuestan una fracción de céntimo de fabricar a escala. La presencia es la única interacción que nadie ha automatizado, porque nadie ha escrito un bot que camine.",
+    "failureTag": "Lo que compras",
+    "answerTag": "Lo que consigues aquí",
+    "failures": {
+      "bots": "El tráfico de pago llega desde centros de datos y granjas de clics. Pagas por impresión, y una parte considerable de ellas nunca se le mostró a una persona.",
+      "farms": "Un airdrop lo reclaman wallets, y una wallet no cuesta nada. Un granjero con un script se convierte en cuarenta mil direcciones elegibles, y los tokens acaban lejos de la gente a la que iban dirigidos.",
+      "unaudited": "Las cifras de interacción las reporta la plataforma que las vende. Un seguidor, una visualización o una visita a tienda modelada no se pueden auditar, así que la campaña se juzga por un número que hay que creerse."
+    },
+    "answers": {
+      "bots": "Un reclamo es un dispositivo que estuvo en una coordenada, con su fijación satelital, su entorno de radio y su rastro de movimiento coincidiendo entre sí. No existe una versión de servidor de estar en un sitio.",
+      "farms": "Un reclamo por dispositivo dentro del radio y la ventana. Un segundo reclamo significa un segundo viaje, y nadie está en cuarenta ciudades a la vez.",
+      "unaudited": "Cada reclamo es un registro público: una coordenada, una hora, un activo. Cuéntalos tú en un explorador de bloques en lugar de pedirnos la cifra."
+    },
+    "askLegend": "¿Qué quieres que hagan?",
+    "askNote": "El protocolo verifica que una persona estuvo allí. Lo que tiene que hacer para ganarse la recompensa lo escribes tú, y nada de eso cambia la verificación de debajo.",
+    "actions": {
+      "visit": {
+        "label": "Entrar en la tienda",
+        "headline": "Reclamar en el mostrador",
+        "body": "El drop está dentro de la puerta, con un radio tan ajustado que solo lo puede abrir un móvil en la caja. El código que se canjea pertenece a alguien que entró.",
+        "button": "Reclamar en tienda",
+        "recorded": "Una llegada verificada en tu dirección, con la marca de tiempo del momento del reclamo."
+      },
+      "follow": {
+        "label": "Seguir la cuenta",
+        "headline": "Sigue para desbloquear",
+        "body": "El activo sigue bloqueado hasta que se sigue la cuenta, y ese seguimiento solo cuenta desde un dispositivo dentro del radio. Una granja puede producir el seguimiento. El paseo no.",
+        "button": "Seguir y reclamar",
+        "recorded": "Un seguidor con una visita verificada detrás, contado en el lugar donde ocurrió."
+      },
+      "signup": {
+        "label": "Registrarse o apuntarse",
+        "headline": "Registrarse allí mismo",
+        "body": "Un campo, rellenado donde está el drop. Cada dirección de la lista pertenece a alguien que estaba en tu campaña mientras la escribía.",
+        "button": "Registrarse y reclamar",
+        "recorded": "Un registro con una llegada verificada detrás, el único tipo por el que merece la pena pagar."
+      },
+      "scan": {
+        "label": "Escanear el producto",
+        "headline": "Escanéalo en el lineal",
+        "body": "Apunta la cámara al artículo en vez de a un pin. El escaneo tiene que ocurrir dentro del radio, así que la recompensa llega a quien de verdad tiene el producto en la mano.",
+        "button": "Escanear y reclamar",
+        "recorded": "Un escaneo de un producto en una tienda, contado por referencia en lugar de por campaña."
+      },
+      "mint": {
+        "label": "Acuñar allí mismo",
+        "headline": "Acuña donde estás",
+        "body": "El coleccionable se acuña en la coordenada y la lleva consigo. Lo que valga después tiene algo que ver con de dónde salió, y eso una página de minteo no lo puede decir.",
+        "button": "Acuñar aquí",
+        "recorded": "Un minteo atado a un lugar y a un momento, en la cadena en la que vive la colección."
+      }
+    },
+    "dropStatus": "En vivo",
+    "dropWhere": "Kalverstraat 92, Ámsterdam · radio de 25 m",
+    "dropFine": "Un reclamo por dispositivo · Verificado al llegar",
+    "recordedLegend": "Lo que recibes",
+    "recordedNever": "Recuentos por ubicación, hora y campaña. Nunca una persona concreta, ni rastro de adónde fue después.",
+    "chainsLegend": "Cualquier fuente, cualquier cadena",
+    "chainsNote": "Una fuente es cualquiera que pueda emitir algo: un proyecto, una marca, un recinto, la tienda de la esquina. Una red es una fila de una tabla y no una versión nueva, así que una campaña puede correr en varias a la vez y un seeker nunca tiene que elegir. Ethereum y Solana liquidan hoy; la siguiente es configuración.",
+    "chainsCoinsAlt": "Monedas 3D girando, de las cadenas en las que Seekprotocol liquida",
+    "chainAny": "Cualquier otra cadena"
   },
   "walkthrough": {
     "eyebrow": "Recórrelo",
@@ -1006,10 +1143,10 @@
   "walletScreen": {
     "totalBalance": "Saldo total",
     "delta": "+ {amount} hoy",
+    "deposit": "Depositar",
     "send": "Enviar",
-    "receive": "Recibir",
-    "swap": "Intercambiar",
-    "stake": "Hacer staking",
+    "exchange": "Cambiar",
+    "qr": "QR",
     "justCaught": "Recién capturado",
     "assets": "Activos",
     "recentBadges": "Insignias recientes"
@@ -1023,7 +1160,7 @@
   },
   "ecosystemPage": {
     "metaTitle": "Ecosistema: seekers, editores, protocolo",
-    "metaDescription": "Cómo encaja el ecosistema de Seekprotocol: seekers que recogen, editores que colocan y el protocolo que verifica la presencia y la liquida en Solana.",
+    "metaDescription": "Cómo encaja el ecosistema de Seekprotocol: seekers que recogen, editores que colocan y el protocolo que verifica la presencia y la liquida en cadena.",
     "ogTitle": "Tres partes, una coordenada",
     "eyebrow": "Ecosistema",
     "titleStart": "Tres partes, una",
@@ -1105,9 +1242,9 @@
       "body": "Creada desde un inicio de sesión social para que alguien nuevo recoja algo en un minuto, con exportación a autocustodia cuando quiera."
     },
     "settlement": {
-      "title": "Liquidación en Solana",
+      "title": "Liquidación en cualquier cadena",
       "meta": "Menos de un segundo",
-      "body": "Lo bastante barata como para que recoger una recompensa pequeña no cueste más de lo que vale, y por eso importa la elección de la cadena."
+      "body": "Un activo se liquida en la red en la que ya vive, con un único requisito que toda cadena debe cumplir: recoger una recompensa pequeña no puede costar más de lo que vale."
     }
   },
   "ecosystemFaq": {
@@ -1128,8 +1265,8 @@
       "answer": "Límites de reclamo por dispositivo dentro de un radio y una ventana de tiempo, más una atestación de dispositivo que las granjas de emuladores no superan. Las carteras son gratis, viajar no, y ese es justamente el sentido de anclar la distribución a la geografía."
     },
     "chain": {
-      "question": "¿Por qué Solana y no otra cadena?",
-      "answer": "El coste por transacción. Recoger una recompensa de unos céntimos tiene que costar una fracción de céntimo de liquidar, o las cuentas no salen. La confirmación por debajo del segundo también importa cuando alguien está esperando en una esquina."
+      "question": "¿En qué cadena funciona Seekprotocol?",
+      "answer": "En aquella en la que vive el activo. Las redes son filas de una tabla, no código, así que un editor financia una campaña con el token que ya tiene y un seeker nunca elige cadena. El requisito es el mismo para todas: una recompensa de unos céntimos tiene que sobrevivir al traslado, y quien está en una esquina no debería esperar por ella. La tira de la página de inicio dice qué cadenas liquidan hoy."
     },
     "business": {
       "question": "¿Puede mi negocio colocar activos hoy?",
@@ -1165,7 +1302,7 @@
       "items": {
         "prototype": "Prototipo de prueba de ubicación con GNSS y continuidad de movimiento",
         "engine": "Motor de renderizado AR con anclaje persistente al mundo",
-        "settlement": "Capa de liquidación en Solana y definiciones de activos",
+        "settlement": "Primera capa de liquidación, en Solana, con definiciones de activos",
         "alpha": "Alfa interna en tres ciudades de prueba"
       }
     },
@@ -1200,7 +1337,8 @@
         "seasons": "Temporadas, con sus propias escalas y recompensas",
         "scanning": "Escaneo de objetos con mecánica de juego",
         "guilds": "Gremios, misiones de equipo y botes de recompensa compartidos",
-        "revenueShare": "Reparto de ingresos para creadores sobre los activos colocados"
+        "revenueShare": "Reparto de ingresos para creadores sobre los activos colocados",
+        "multichain": "Liquidación en Ethereum, BNB Smart Chain y Arbitrum"
       }
     },
     "governance": {
@@ -1240,7 +1378,11 @@
     "ctaTitle": "Pon algo en tu puerta",
     "ctaBody": "El portal de autoservicio está en marcha. Hasta que llegue, montamos las campañas contigo directamente. Dinos la ubicación y qué quieres colocar.",
     "ctaStart": "Empezar una conversación",
-    "ctaRoadmap": "Ver cuándo llega el autoservicio"
+    "ctaRoadmap": "Ver cuándo llega el autoservicio",
+    "realEyebrow": "La unidad",
+    "realTitle": "Qué es una llegada, y qué no lo es",
+    "realLead": "Toda métrica del mercado es un sustituto, y todo sustituto tiene un script que lo produce por menos de un céntimo. La presencia es la excepción, y lo es por un motivo que no se erosiona con mejor hardware: el coste es físico.",
+    "chainsNote": "Financia una campaña con el activo que ya tienes, viva donde viva. Una red es configuración y no una integración, así que una campaña puede correr en varias a la vez y quien reclama nunca tiene que saber en cuál."
   },
   "useCases": {
     "retail": {
@@ -1273,7 +1415,7 @@
       "points": [
         "Distribución geográfica por los mercados elegidos",
         "Límites de reclamo por dispositivo dentro de un radio y una ventana",
-        "Registro público de reclamos en Solana"
+        "Registro público de reclamos en la cadena propia del activo"
       ]
     },
     "tourism": {
@@ -1286,6 +1428,23 @@
         "Ponderación en horas valle para repartir la demanda",
         "Recuentos agregados de llegadas, nunca rastros individuales"
       ]
+    }
+  },
+  "interactionClaims": {
+    "nobots": {
+      "metric": "Sin tráfico de bots",
+      "title": "Nada de esto lo puede producir un script",
+      "body": "Un reclamo exige un dispositivo en una coordenada que coincida con su propia fijación satelital, con el entorno de radio a su alrededor y con el movimiento que lo llevó hasta allí. Ninguno de los tres tiene equivalente en un centro de datos, y por eso el fraude aquí no es una cifra que tengamos que ir reduciendo."
+    },
+    "organic": {
+      "metric": "Orgánico por construcción",
+      "title": "Cada interacción es un trayecto que alguien hizo",
+      "body": "La interacción no se deduce de un clic ni se modela a partir de un panel. Alguien decidió caminar hasta tu dirección, y queda escrito en el momento en que llegó, no reconstruido después."
+    },
+    "cta": {
+      "metric": "Tu llamada a la acción",
+      "title": "Nosotros verificamos la presencia, tú decides qué pedir",
+      "body": "Condiciona la recompensa a una compra, un seguimiento, un registro, un escaneo del producto en el lineal, o a nada más que aparecer. La verificación de debajo es idéntica en todos los casos, así que lo que pides puede cambiar de una campaña a otra sin que cambie la garantía."
     }
   },
   "measurement": {
@@ -1385,7 +1544,7 @@
     "publish": "Publicar campaña",
     "sequence": {
       "signing": "Firmando la campaña",
-      "writing": "Escribiendo la definición del activo en Solana",
+      "writing": "Escribiendo la definición del activo en cadena",
       "indexing": "Indexando las coordenadas",
       "live": "En directo en el mapa"
     },
@@ -1404,8 +1563,8 @@
     "captionIdle": "El anillo está dibujado a escala sobre el plano. Aquí no hace falta ningún desarrollador: cuatro decisiones y a publicar."
   },
   "whitepaper": {
-    "metaTitle": "Whitepaper: prueba de ubicación en Solana",
-    "metaDescription": "Cómo Seekprotocol emite activos digitales en coordenadas reales, verifica que alguien estuvo allí y lo liquida en Solana. Arquitectura, token y ataques.",
+    "metaTitle": "Whitepaper: prueba de ubicación, en cualquier cadena",
+    "metaDescription": "Cómo Seekprotocol emite activos digitales en coordenadas reales, verifica que alguien estuvo allí y liquida en la cadena en la que vive el activo. Arquitectura, diseño del token, ataques.",
     "ogTitle": "Whitepaper de Seekprotocol",
     "ogDescription": "Prueba de ubicación, arquitectura, diseño del token y un relato honesto de los ataques y los límites.",
     "eyebrow": "Whitepaper",
@@ -1437,7 +1596,7 @@
           },
           {
             "kind": "p",
-            "text": "La superficie para el usuario es **Seekprotocol**, una app móvil para iOS y Android que muestra estos activos en realidad aumentada. Caminas, el teléfono te enseña lo que hay cerca y recoges lo que encuentras. Por debajo, la liquidación ocurre en Solana, elegida por unos costes de transacción lo bastante bajos como para que recoger una recompensa pequeña no cueste más de lo que vale."
+            "text": "La superficie para el usuario es **Seekprotocol**, una app móvil para iOS y Android que muestra estos activos en realidad aumentada. Caminas, el teléfono te enseña lo que hay cerca y recoges lo que encuentras. Por debajo, la liquidación ocurre en la cadena en la que ya vive el activo, con un único requisito: unos costes de transacción lo bastante bajos como para que recoger una recompensa pequeña no cueste más de lo que vale."
           },
           {
             "kind": "callout",
@@ -1517,8 +1676,84 @@
           }
         ]
       },
-      "proof-of-location": {
+      "distribution": {
         "index": "03",
+        "eyebrow": "Distribución",
+        "title": "Por qué el alcance pagado no entrega una persona real",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "El capítulo anterior decía que dos grupos tienen el mismo problema. Este trata de la herramienta a la que ambos recurren primero, y de por qué falla de una manera que gastar más no arregla."
+          },
+          {
+            "kind": "h",
+            "text": "Toda métrica del mercado es un sustituto"
+          },
+          {
+            "kind": "p",
+            "text": "Una impresión, un clic, una visualización, un seguidor, una dirección de wallet: ninguna de ellas es una persona. Cada una es una señal que correlaciona con una persona bajo condiciones que controla quien vende la señal. En cuanto la recompensa por producir la señal supera el coste de producirla sin persona, se produce sin persona, y la correlación sobre la que está fijado el precio de todo el mercado se desprende en silencio de aquello que representaba."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Una impresión",
+                "value": "Fracciones de céntimo, sin persona"
+              },
+              {
+                "label": "Un clic",
+                "value": "Céntimos, desde un pool de proxies residenciales"
+              },
+              {
+                "label": "Una wallet",
+                "value": "Gratis, y programable por millares"
+              },
+              {
+                "label": "Una llegada verificada",
+                "value": "Un trayecto, con un cuerpo, una vez"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Los filtros no devuelven la señal"
+          },
+          {
+            "kind": "p",
+            "text": "La respuesta habitual son las reglas de elegibilidad: saldos mínimos, actividad previa, ventanas de snapshot, captchas, huellas de dispositivo. Cada una sube el coste de un reclamo falso en cierta cantidad y el de uno real en otra, y la proporción entre ambas es lo único que decide si el filtro ha servido. En la práctica el granjero sofisticado absorbe el coste y el usuario corriente abandona, así que los filtros acaban seleccionando justo a la población que debían excluir."
+          },
+          {
+            "kind": "p",
+            "text": "La presencia no es un filtro mejor. Es algo de otra naturaleza, porque el coste que impone no es computacional. No se puede repartir por un rack, no baja cuando abarata el hardware, y no existe un proxy residencial para una calle."
+          },
+          {
+            "kind": "callout",
+            "text": "La pregunta útil sobre cualquier medida antifraude no es cuánto le cuesta a un atacante, sino cuánto le cuesta a un atacante en relación con un usuario honesto. La presencia es la única señal de la lista en la que esa proporción no se mueve con el tiempo a favor del atacante."
+          },
+          {
+            "kind": "h",
+            "text": "El editor sigue siendo dueño de lo que pide"
+          },
+          {
+            "kind": "p",
+            "text": "Verificar que alguien estuvo en un sitio no dice nada sobre qué debería hacer mientras está allí, y el protocolo se niega deliberadamente a decidirlo. Un reclamo puede depender de un seguimiento, de un registro, de un escaneo de un producto en el lineal, de un minteo en la coordenada, de una compra en caja, o de nada más que llegar. La verificación de debajo es idéntica en todos los casos, lo que significa que un editor puede cambiar lo que pide de una campaña a otra sin cambiar nada de la garantía."
+          },
+          {
+            "kind": "p",
+            "text": "Esto importa por un motivo fácil de pasar por alto. Un canal de distribución que dicta la llamada a la acción solo encaja con las campañas para las que se diseñó, y cualquier editor fuera de esa forma tiene que doblar su oferta al canal. Lo que se vende aquí es la prueba, no el embudo."
+          },
+          {
+            "kind": "h",
+            "text": "Lo que esto no resuelve"
+          },
+          {
+            "kind": "p",
+            "text": "Una llegada verificada demuestra que un dispositivo estuvo en una coordenada, no que la persona que lo llevaba quisiera estar allí ni que vaya a volver. A quien le pagan por pasar por delante de una puerta es una llegada real y un mal cliente. El protocolo hace que la llegada sea cara de falsificar y sencilla de contar. Si valía la pena comprarla sigue siendo una pregunta de marketing, y ninguna cadena la responde."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "04",
         "eyebrow": "Primitiva central",
         "title": "Prueba de ubicación",
         "blocks": [
@@ -1576,7 +1811,7 @@
               },
               {
                 "label": "Confirmación habitual",
-                "value": "Menos de un segundo en Solana"
+                "value": "Menos de un segundo en la cadena de liquidación"
               },
               {
                 "label": "Atestación",
@@ -1591,7 +1826,7 @@
         ]
       },
       "lifecycle": {
-        "index": "04",
+        "index": "05",
         "eyebrow": "Mecánica",
         "title": "Qué ocurre realmente cuando reclamas algo",
         "blocks": [
@@ -1634,7 +1869,7 @@
         ]
       },
       "architecture": {
-        "index": "05",
+        "index": "06",
         "eyebrow": "Arquitectura",
         "title": "Cómo encajan las capas",
         "blocks": [
@@ -1663,15 +1898,19 @@
           },
           {
             "kind": "h",
-            "text": "Por qué Solana"
+            "text": "Por qué la capa de liquidación no está fijada"
           },
           {
             "kind": "p",
-            "text": "El requisito es inusual para una cadena: muchísimas transacciones, muy poco valor por transacción, y una confirmación lo bastante rápida como para que alguien de pie en la calle no la note. Quien recoge una recompensa de veinte céntimos no puede pagar diez por recibirla, ni se va a quedar quieto treinta segundos. Esa combinación descarta a la mayoría del campo por coste y al resto por latencia."
+            "text": "El requisito es inusual para una cadena: muchísimas transacciones, muy poco valor por transacción, y una confirmación lo bastante rápida como para que alguien de pie en la calle no la note. Quien recoge una recompensa de veinte céntimos no puede pagar diez por recibirla, ni se va a quedar quieto treinta segundos. Eso descarta a buena parte del campo por coste y al resto por latencia. Los descarta como requisito, no como una elección de cadena hecha una vez y construida alrededor."
           },
           {
             "kind": "p",
-            "text": "La contrapartida es real y conviene decirla. Solana ha tenido caídas, y una cadena parada significa reclamos en cola. El protocolo trata la liquidación como un paso que puede fallar y reintentarse, no como uno que siempre sale bien, que es el diseño correcto con cualquier cadena pero aquí no es opcional."
+            "text": "Así que la liquidación es configuración. Una red es una fila con su propio endpoint, su explorador y su token nativo; un activo lleva consigo las redes en las que existe, con su dirección de contrato y sus decimales en cada una; y una wallet es una de dos familias de direcciones en lugar de una por cadena, porque todas las redes EVM comparten el mismo formato. Un editor financia una campaña con el token que ya tiene y el reclamo se liquida donde vive ese token. Añadir una red es una fila, no una versión nueva."
+          },
+          {
+            "kind": "p",
+            "text": "La contrapartida conviene decirla. Las cadenas se paran, y una cadena parada significa reclamos en cola. La liquidación se trata como un paso que puede fallar y reintentarse, no como uno que siempre sale bien, que es el diseño correcto en cualquier red y en una rápida no es opcional. Repartirse entre varias no elimina ese riesgo. Evita que la caída de una red sea la caída de todo el protocolo, que es una afirmación más pequeña y la honesta."
           },
           {
             "kind": "h",
@@ -1690,7 +1929,7 @@
               },
               {
                 "label": "Definiciones de activos y reclamos",
-                "value": "Solana, público"
+                "value": "Cadena de liquidación, pública"
               },
               {
                 "label": "Medios e ilustraciones de monedas",
@@ -1705,7 +1944,7 @@
         ]
       },
       "seekar": {
-        "index": "06",
+        "index": "07",
         "eyebrow": "Aplicación",
         "title": "Seekprotocol, la cara visible",
         "blocks": [
@@ -1753,7 +1992,7 @@
         ]
       },
       "play": {
-        "index": "07",
+        "index": "08",
         "eyebrow": "El bucle",
         "title": "Qué mantiene a alguien caminando",
         "blocks": [
@@ -1838,7 +2077,7 @@
         ]
       },
       "creators": {
-        "index": "08",
+        "index": "09",
         "eyebrow": "Lado de la oferta",
         "title": "Quién coloca los activos",
         "blocks": [
@@ -1880,7 +2119,7 @@
         ]
       },
       "token": {
-        "index": "09",
+        "index": "10",
         "eyebrow": "Token",
         "title": "$SEEK y para qué sirve",
         "blocks": [
@@ -1938,7 +2177,7 @@
         ]
       },
       "revenue": {
-        "index": "10",
+        "index": "11",
         "eyebrow": "Modelo de negocio",
         "title": "Cómo gana el protocolo, y a quién",
         "blocks": [
@@ -1998,7 +2237,7 @@
         ]
       },
       "governance": {
-        "index": "11",
+        "index": "12",
         "eyebrow": "Gobernanza",
         "title": "Quién decide los números",
         "blocks": [
@@ -2038,7 +2277,7 @@
         ]
       },
       "security": {
-        "index": "12",
+        "index": "13",
         "eyebrow": "Riesgo",
         "title": "Ataques, límites y lo que no afirmamos",
         "blocks": [
@@ -2088,7 +2327,7 @@
         ]
       },
       "privacy": {
-        "index": "13",
+        "index": "14",
         "eyebrow": "Privacidad",
         "title": "Los datos de ubicación son los datos más sensibles que hay",
         "blocks": [
@@ -2121,7 +2360,7 @@
         ]
       },
       "compliance": {
-        "index": "14",
+        "index": "15",
         "eyebrow": "Jurisdicción",
         "title": "Regulación, y dónde encaja esto",
         "blocks": [
@@ -2177,7 +2416,7 @@
         ]
       },
       "roadmap": {
-        "index": "15",
+        "index": "16",
         "eyebrow": "Dirección",
         "title": "Qué está hecho y qué viene",
         "blocks": [
@@ -2208,7 +2447,7 @@
         ]
       },
       "glossary": {
-        "index": "16",
+        "index": "17",
         "eyebrow": "Referencia",
         "title": "Glosario",
         "blocks": [
@@ -2256,7 +2495,7 @@
     },
     "chain": {
       "label": "Cadena",
-      "value": "Solana (SPL)"
+      "value": "Solana (SPL), liquida cualquier cadena"
     },
     "supply": {
       "label": "Suministro total",
@@ -2357,7 +2596,7 @@
     "timelineWhere": {
       "device": "En tu teléfono",
       "verifier": "Verificador",
-      "chain": "Solana"
+      "chain": "Cadena de liquidación"
     },
     "timelineCaption": "Son presupuestos, no mediciones. La ventana de sensores y la liquidación se mueven con las condiciones, y todo lo que hay entre ellas es aritmética que no. Fíjate en dónde queda la frontera: los datos brutos de sensores nunca salen de las tres primeras etapas.",
     "vestingTitle": "Suministro circulante, mes a mes",
@@ -2422,8 +2661,8 @@
     },
     "settlement": {
       "label": "Liquidación",
-      "sub": "Solana · activos SPL · registros de reclamo",
-      "detail": "Guarda las definiciones de activos, las coordenadas y los registros de reclamo, y mueve valor cuando se acepta un reclamo. Elegida por comisiones lo bastante bajas como para que recoger una recompensa pequeña no quede dominado por el coste de recogerla."
+      "sub": "Cualquier cadena · activos · registros de reclamo",
+      "detail": "Guarda las definiciones de activos, las coordenadas y los registros de reclamo, y mueve valor cuando se acepta un reclamo. Una red es configuración y no una integración, y el listón es el mismo para todas: comisiones lo bastante bajas como para que recoger una recompensa pequeña no quede dominado por el coste de recogerla."
     }
   },
   "confidenceSignals": {
@@ -2489,8 +2728,8 @@
     },
     "settle": {
       "label": "Se liquida",
-      "actor": "Solana",
-      "body": "La transferencia se confirma en menos de un segundo por una fracción de céntimo, y el registro del reclamo es público.",
+      "actor": "Cadena de liquidación",
+      "body": "La transferencia se confirma en menos de un segundo por una fracción de céntimo, en la cadena en la que vive el activo, y el registro del reclamo es público.",
       "flow": "Recompensa sale"
     },
     "split": {
@@ -2528,7 +2767,7 @@
     },
     "settle": {
       "label": "Liquidación",
-      "detail": "El registro del reclamo y la transferencia llegan a Solana en una sola transacción. Es la única etapa que puede ver alguien más, y lo único que dice es que un reclamo en una coordenada pública salió bien.",
+      "detail": "El registro del reclamo y la transferencia llegan a la cadena de liquidación en una sola transacción. Es la única etapa que puede ver alguien más, y lo único que dice es que un reclamo en una coordenada pública salió bien.",
       "payload": "Registro de reclamo, transferencia de token"
     },
     "confirm": {
