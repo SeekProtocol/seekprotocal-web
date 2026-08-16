@@ -5,8 +5,9 @@ export interface BlogPost {
   content: string[];
   image: string;
   /* Intrinsic size of `image`. Stated so the article page can reserve the
-     right box before the file arrives; five of these are square and one is
-     1130x1014, so a single hard-coded ratio would shift the layout. */
+     right box before the file arrives. The newer posts are 16:10; the older
+     ones are square or near-square, so a single hard-coded ratio would shift
+     the layout. */
   imageWidth: number;
   imageHeight: number;
   imageSrcSet?: string;
@@ -64,9 +65,8 @@ export const blogPosts: BlogPost[] = [
      site was not intercepting at all, and short essays lose to competitor
      guides that answer the question in depth. Voice matches the announcement
      above (direct, first-person plural, opinionated), only more of it.
-     Hero images reuse the SVG mark because a bespoke hero per post is a design
-     job for later; the mark scales and does not compete visually with the
-     copy. Replace `image` per post whenever real art is ready. */
+     Hero art lives under /images/blog/ as 16:10 AVIFs so the card crop and
+     the article frame show the same picture. */
   {
     slug: "what-is-ar-treasure-hunt",
     title: "What is an AR Treasure Hunt?",
@@ -93,13 +93,11 @@ export const blogPosts: BlogPost[] = [
     ],
     /* Under /images/blog/, NOT /blog/. The redirect in next.config.ts turns
        `/blog/:slug` into `/en/blog/:slug` (a permanent 308), which happily
-       intercepts `/blog/ar-treasure-hunt.svg` and sends the request to the
-       article renderer, which 404s. Any hero art added later must live under
-       /images/blog/ for the same reason. */
-    image: "/images/blog/ar-treasure-hunt.svg",
-    imageWidth: 1024,
-    imageHeight: 1024,
-    imageAlt: "A coordinate pin with radar rings and an AR waypoint hexagon above it",
+       intercepts a file at `/blog/...` and sends it to the article renderer. */
+    image: "/images/blog/ar-treasure-hunt.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "A phone camera view of a lime AR coin hovering above a city street at night",
     date: "2026-08-15",
     readTime: "8 min",
     category: "Guide",
@@ -126,10 +124,10 @@ export const blogPosts: BlogPost[] = [
       "Two things are worth watching for 2027. Hardware, Apple's Vision line and Meta's next glasses cycle both remove the phone from the camera pass, which will change what a good AR game looks like at the interaction layer. And chain economics, as more games settle rewards on-chain and treat what a player collects as portable value, the closed-economy problem that drove this whole search category will start to feel harder to defend.",
       "If you like the walk, keep walking. The genre is finally big enough that there is more than one good answer to the question in the title, and it is worth trying two or three of the above before settling. [The one we make is here.](/seekar) The rest are a search away.",
     ],
-    image: "/images/blog/pokemon-go-alternatives.svg",
-    imageWidth: 1024,
-    imageHeight: 1024,
-    imageAlt: "A dark map with seven AR game pins, one glowing lime at the centre",
+    image: "/images/blog/pokemon-go-alternatives.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "A dark city map with seven glowing pins, the centre one lime and brighter than the rest",
     date: "2026-08-15",
     readTime: "9 min",
     category: "Alternatives",
@@ -160,10 +158,10 @@ export const blogPosts: BlogPost[] = [
       "If the anchored-NFT version of this is the one you want to try, [Seekprotocol](/seekar) is the app we build. If you want to place one at a coordinate of your own choosing, [the publisher side](/business) of the same protocol is the tool for that. The category is small enough that a serious project shipping now has a real chance to become the reference implementation for the space, and that is what we are trying to do.",
       "The short version. AR NFTs are three different things wearing the same phrase. Two of them are useful. One of them is genuinely new. The new one is anchored, a token pinned to a place, waiting for somebody to arrive. That is the definition worth watching.",
     ],
-    image: "/images/blog/augmented-reality-nft.svg",
-    imageWidth: 1024,
-    imageHeight: 1024,
-    imageAlt: "A geometric NFT diamond suspended above a coordinate pin, connected by an anchoring line",
+    image: "/images/blog/augmented-reality-nft.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "A glass NFT crystal floating above a coordinate pin, tethered by a lime light",
     date: "2026-08-15",
     readTime: "10 min",
     category: "Guide",
@@ -171,10 +169,7 @@ export const blogPosts: BlogPost[] = [
 
   /* Four Q1 cornerstones added 16 Aug 2026, continuing the calendar the first
      three opened. Same voice, same length range (8-10 min), same interlink
-     pattern into /seekar, /business and /whitepaper. Hero images reuse the
-     mark until bespoke art per post is ready, the earlier three got their
-     own SVGs, these four do not yet. Replace `image` per post as the design
-     catches up. */
+     pattern into /seekar, /business and /whitepaper. */
   {
     slug: "best-ar-games-2026",
     title: "The AR Games Worth Your Time in 2026",
@@ -197,10 +192,10 @@ export const blogPosts: BlogPost[] = [
       "Two things to watch for 2027. Hardware: Apple's Vision line and Meta's next glasses cycle both remove the phone from the camera pass, and the games that were designed for a phone-in-hand posture will not automatically translate. And chain economics: as more games settle rewards on-chain and treat what a player collects as portable, the closed-economy problem that drives half the traffic to this search category starts to feel harder to defend.",
       "If you play one AR game, keep playing it, the install base is the moat and there is no shame in that. If you play two, the second one is where the interesting comparisons start. [The one we make is here.](/seekar); the rest are one app-store search away, and worth the ten minutes.",
     ],
-    image: "/app/seekar-icon.svg",
-    imageWidth: 1024,
-    imageHeight: 1024,
-    imageAlt: "The Seekprotocol mark",
+    image: "/images/blog/best-ar-games-2026.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "Four phones on a dark table, each showing a different AR scene",
     date: "2026-08-16",
     readTime: "9 min",
     category: "Alternatives",
@@ -229,10 +224,10 @@ export const blogPosts: BlogPost[] = [
       "A hybrid is possible. A geocache that contains a QR code that unlocks an AR drop nearby is a format we have seen tried at community events and it works surprisingly well, you get the physical satisfaction of finding the container and the dynamic reward of the AR pickup. Nothing prevents publishers from designing more of these, and if the two formats grow up together this is where the interesting overlap lives.",
       "If you have only done one, do the other. If you are a geocacher who has never used [Seekprotocol](/seekar), the closest analogue is a city cache, a coordinate, a short walk, a thing to find, only the thing is rendered rather than plastic. If you are an AR player who has never geocached, pick a traditional cache within a kilometre of your house and try it on a Sunday morning. The formats are less in competition than they look; they are two ways of doing the same underlying thing, and the good version of each is worth the walk.",
     ],
-    image: "/app/seekar-icon.svg",
-    imageWidth: 1024,
-    imageHeight: 1024,
-    imageAlt: "The Seekprotocol mark",
+    image: "/images/blog/geocaching-vs-ar.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "A physical geocache box beside a hovering holographic AR coin in moss",
     date: "2026-08-16",
     readTime: "8 min",
     category: "Comparison",
@@ -263,10 +258,10 @@ export const blogPosts: BlogPost[] = [
       "This is the piece under Seek that makes anchored assets and location verified airdrops worth doing. A publisher places a token worth real money at a coordinate because the person who ends up with it was at that coordinate on an attested device, and because the payout gate will read back through the account's history before the money moves. The [whitepaper](/whitepaper) has the full specification. This piece is the plain language version of what happens inside the app.",
       "The short version. Presence is not a coordinate. A single signal does not prove presence. Seek verifies presence in two layers: attestation, distance and a motion trace at the moment of the catch, and a ninety day fraud gate at the moment of payout. The one still open, beacon fallback for indoor drops, closes the last coordinate case that GPS alone cannot. That is what proof of location actually is inside Seek today, and it is why the layer matters more than any of the flashier things it enables.",
     ],
-    image: "/app/seekar-icon.svg",
-    imageWidth: 1024,
-    imageHeight: 1024,
-    imageAlt: "The Seekprotocol mark",
+    image: "/images/blog/proof-of-location.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "A phone under stacked translucent signal layers and satellite lights",
     date: "2026-08-16",
     readTime: "10 min",
     category: "Technology",
@@ -296,10 +291,10 @@ export const blogPosts: BlogPost[] = [
       "How to start. Pick one location. Pick one reward. Pick one four-hour window on a Saturday. Cap the reward at whatever feels sensible and halve it. Publish it. Watch what happens. The learning curve on the first campaign is what makes the second one much better; the second-campaign brief is where most of the compounding starts. If the [publisher side of Seekprotocol](/business) is where you want to try one, the tooling for the first three shapes above is what the panel is built around, and we help walk clients through the first brief until it feels self-serve.",
       "The short version. AR location campaigns work when the brief is boring and the discipline is high, one location, six variables, one clear reward, a narrow window. Everything else about them is discretionary, and most first-timer failures come from moving faster than the discipline can keep up. Start small, instrument well, treat the first campaign as a data-gathering exercise, and the second one is where the medium starts paying back.",
     ],
-    image: "/app/seekar-icon.svg",
-    imageWidth: 1024,
-    imageHeight: 1024,
-    imageAlt: "The Seekprotocol mark",
+    image: "/images/blog/ar-location-campaigns.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "A night storefront with a lime AR diamond glowing in the window",
     date: "2026-08-16",
     readTime: "9 min",
     category: "Business",

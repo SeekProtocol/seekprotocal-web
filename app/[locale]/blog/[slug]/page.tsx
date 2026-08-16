@@ -156,9 +156,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
                   Sized rather than filled, because .article-media has no
                   aspect-ratio to fill. The dimensions come from the data rather
-                  than a constant: five of the six sources are square and one is
-                  1130x1014, so stating one ratio for all of them would reserve
-                  the wrong box and shift the page as the picture arrived.
+                  than a constant: the newer posts are 16:10 and the older ones
+                  are square or near-square, so stating one ratio for all of
+                  them would reserve the wrong box and shift the page.
 
                   sizes matches .article, which is 44rem. Claiming 1024px made
                   the browser ask for w=2048 for a 702px slot. */}
