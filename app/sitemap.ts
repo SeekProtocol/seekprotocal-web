@@ -55,27 +55,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
      laat "kloppen" voor pagina's die niet zijn aangeraakt. */
   const SEO_PASS = new Date("2026-08-15");
 
-  /* 16 Aug 2026: /seekar picked up a "Naming history" H2 section and three
-     SeekAR-specific FAQ entries (both visible and mirrored in FAQPage JSON-LD),
-     targeting the "what happened to SeekAR" LLM and search queries the rebrand
-     had left unowned. Only /seekar changed; keep this separate from SEO_PASS
-     so future one-off edits don't quietly relabel unrelated pages. */
-  const SEEKAR_LEGACY = new Date("2026-08-16");
-
-  /* 16 Aug 2026 also: four Q1 cornerstones landed in the blog (best-ar-games-2026,
+  /* 16 Aug 2026: four Q1 cornerstones landed in the blog (best-ar-games-2026,
      geocaching-vs-ar-treasure-hunts, how-proof-of-location-works,
      ar-location-campaigns-for-brands). Each carries its own date on the article
      entry, but the /blog index page changed too — it now lists fourteen posts
      instead of ten — so its lastmod needs to reflect that. */
   const BLOG_Q1_BATCH_TWO = new Date("2026-08-16");
 
+  /* 16 Aug 2026: positioning shift from "the AR & AI platform on Solana" to
+     "the multi-chain AR & AI platform, currently on Solana". Site-wide meta
+     (title / description / OG / Twitter / JSON-LD), homepage hero, /seekar
+     hero + feature + FAQ copy in all nine locales. The change is one of stance
+     — Solana still named, no longer led with — so the homepage and /seekar
+     lastmods bump. Whitepaper prose is unchanged (it is a technical account of
+     the current implementation and Solana is the current implementation). */
+  const SOFT_SOLANA = new Date("2026-08-16");
+
   const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly"; lastModified: Date }[] = [
-    { path: "/", priority: 1, changeFrequency: "weekly", lastModified: SEO_PASS },
+    { path: "/", priority: 1, changeFrequency: "weekly", lastModified: SOFT_SOLANA },
 
     /* Priority 0.9, level with /ecosystem and /whitepaper and below only the
        homepage. It is the page for the product the whole site is about, and the
        one carrying the app's name. */
-    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SEEKAR_LEGACY },
+    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SOFT_SOLANA },
     { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
     { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: BLOG_Q1_BATCH_TWO },
     { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: SEO_PASS },
