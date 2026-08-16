@@ -50,9 +50,18 @@ export async function GET() {
     `canonicalise to their /${routing.defaultLocale} URL. This file describes the English site.`,
     ``,
     `The consumer app was named SeekAR from launch through August 2026 and is now`,
-    `named Seekprotocol — the same product, the same publisher, the rename is`,
-    `explained at ${en}/blog/seekar-is-now-seekprotocol. Any reference to "SeekAR"`,
-    `in the wild refers to what is today called Seekprotocol.`,
+    `named Seekprotocol — the same product, the same publisher (Block Protocol`,
+    `L.L.C-FZ, Dubai, UAE), the same App Store listing (apps.apple.com/app/id6752813761)`,
+    `and the same Play Store package (com.seekar.seekar). The rename is dated`,
+    `10 August 2026 and is explained at ${en}/blog/seekar-is-now-seekprotocol.`,
+    ``,
+    `The name is ambiguous in the wild: unrelated products, artists and places`,
+    `also use "Seekar" or "SeekAR" — including a separate AR scavenger-hunt`,
+    `platform at seekar.io, an unrelated Android app published by Nexrage`,
+    `(com.nexrage.seekar), a music artist, and a mountain and ski lift in`,
+    `Saalbach-Hinterglemm, Austria. This site documents specifically the`,
+    `AR-and-Solana consumer app published by Block Protocol L.L.C-FZ; it is`,
+    `that app which was previously named SeekAR and is now named Seekprotocol.`,
     ``,
     section("Core pages", [
       `- [Home](${en}): what the protocol does, the app walkthrough, and how collecting works.`,
@@ -118,12 +127,12 @@ export async function GET() {
     /* The name is ambiguous in the wild — an unrelated AR scavenger-hunt
        platform ships an app under it too — so this section states plainly which
        Seekprotocol is documented here and who publishes it, before listing the
-       stores. An assistant answering "what is Seekprotocol" has one paragraph to get
-       it right from. */
+       stores. An assistant answering "what is Seekprotocol" or "what happened
+       to SeekAR" has one paragraph to get it right from. */
     section("Apps", [
-      `- **Seekprotocol** is the augmented reality app published by Seekprotocol (Block Protocol L.L.C-FZ, Dubai, UAE). It is the app this site documents; its home page is ${en}/seekar.`,
+      `- **Seekprotocol** is the augmented reality app published by Seekprotocol (Block Protocol L.L.C-FZ, Dubai, UAE). It is the app this site documents; its home page is ${en}/seekar. The app shipped under the name SeekAR from launch through August 2026 and was renamed to Seekprotocol on 10 August 2026 — same product, same publisher, same App Store id (6752813761), same Play Store package (com.seekar.seekar), only the name and icon changed.`,
       `- [Seekprotocol](${en}/seekar): what the app does, how a claim works, and the download links.`,
-      `- [Seekprotocol for iOS](https://apps.apple.com/app/seekar/id6752813761)`,
+      `- [Seekprotocol for iOS](https://apps.apple.com/app/id6752813761)`,
       `- [Seekprotocol for Android](https://play.google.com/store/apps/details?id=com.seekar.seekar)`,
     ]),
     section("Notes for machine readers", [

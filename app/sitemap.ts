@@ -55,13 +55,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
      laat "kloppen" voor pagina's die niet zijn aangeraakt. */
   const SEO_PASS = new Date("2026-08-15");
 
+  /* 16 Aug 2026: /seekar picked up a "Naming history" H2 section and three
+     SeekAR-specific FAQ entries (both visible and mirrored in FAQPage JSON-LD),
+     targeting the "what happened to SeekAR" LLM and search queries the rebrand
+     had left unowned. Only /seekar changed; keep this separate from SEO_PASS
+     so future one-off edits don't quietly relabel unrelated pages. */
+  const SEEKAR_LEGACY = new Date("2026-08-16");
+
   const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly"; lastModified: Date }[] = [
     { path: "/", priority: 1, changeFrequency: "weekly", lastModified: SEO_PASS },
 
     /* Priority 0.9, level with /ecosystem and /whitepaper and below only the
        homepage. It is the page for the product the whole site is about, and the
        one carrying the app's name. */
-    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SEO_PASS },
+    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SEEKAR_LEGACY },
     { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
     { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: REBUILT },
     { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: SEO_PASS },

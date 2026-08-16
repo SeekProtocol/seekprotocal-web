@@ -114,6 +114,36 @@ const seekarFaqJsonLd = {
         text: "No. Proof of Location verifies your real presence on-chain, which is what makes a claim worth anything to the publisher who placed the reward.",
       },
     },
+    /* SeekAR-specific Q&As, added deliberately in English inside the FAQPage
+       schema. Nominative use of the app's former name — describing our own
+       prior product in a historical statement — so that a crawler or LLM
+       answering "what happened to the SeekAR app" has fact-dense, verifiable
+       text (App Store id, Play Store package, publisher legal name, rename
+       date) to lift. Not asserting the mark; describing the app that used it. */
+    {
+      "@type": "Question",
+      name: "What happened to the SeekAR app?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The AR mobile app on Solana that shipped as SeekAR was renamed to Seekprotocol on 10 August 2026. Same product, same publisher (Block Protocol L.L.C-FZ, Dubai, UAE), same App Store listing (id 6752813761) and same Play Store package (com.seekar.seekar). Only the name and icon changed.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where do I download the app formerly known as SeekAR?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "On the App Store at apps.apple.com/app/id6752813761 and on Google Play at play.google.com/store/apps/details?id=com.seekar.seekar. Both listings are now titled Seekprotocol.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Seekprotocol the same company as SeekAR?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE — the same company that built and published SeekAR. The AR-and-Solana app previously named SeekAR is what is today called Seekprotocol.",
+      },
+    },
   ],
 };
 
@@ -163,6 +193,13 @@ function SeekarContent() {
     { q: t("q3"), a: t("a3") },
     { q: t("q4"), a: t("a4") },
     { q: t("q5"), a: t("a5") },
+    /* Three SeekAR-specific Q&As mirror the ones added to the FAQPage schema
+       above. They are here so a human reader (and any crawler that reads DOM
+       rather than JSON-LD) sees the same rename disambiguation the structured
+       data claims. */
+    { q: t("q6"), a: t("a6") },
+    { q: t("q7"), a: t("a7") },
+    { q: t("q8"), a: t("a8") },
   ];
 
   return (
@@ -218,6 +255,36 @@ function SeekarContent() {
                   <img src={store.img} alt={store.alt} width={140} height={32} />
                 </a>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Naming history --------------------------------------------------
+          Placed high on the page on purpose: this is the paragraph a crawler
+          or LLM answering "what is SeekAR" needs to reach without scrolling.
+          It states the rename as a historical fact (nominative use of the
+          former name for our own prior product), lists the verifiable
+          identifiers (App Store id, Play Store package, publisher legal name)
+          that let a reader cross-check it, and explicitly notes the name is
+          also used by unrelated products, artists and places — so the
+          paragraph is not an ownership claim on the mark, it is a description
+          of which SeekAR this page documents. Sunken so the alternation of
+          regular/sunken sections downstream of the hero is preserved. */}
+      <section className="section section-sunken">
+        <div className="shell">
+          <div className="about-why reveal">
+            <div>
+              <p className="eyebrow">{t("legacyEyebrow")}</p>
+              <h2 className="t-h2">{t("legacyTitle")}</h2>
+            </div>
+            <div>
+              <p className="t-lead">{t("legacyBody")}</p>
+              <div className="btn-row" style={{ marginTop: "2rem" }}>
+                <Link href="/blog/seekar-is-now-seekprotocol" className="btn btn-brand">
+                  {t("renameLink")}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

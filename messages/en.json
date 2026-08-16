@@ -146,7 +146,16 @@
     "ctaDesc": "Free on iOS and Android. Your city is already full of things worth finding.",
     "renameTitle": "SeekAR is now Seekprotocol",
     "renameBody": "Same app, same account, same map. Only the name changed. A separate company filed a trademark application covering the old name, so we moved to the one we have always owned.",
-    "renameLink": "Read the announcement"
+    "renameLink": "Read the announcement",
+    "legacyEyebrow": "Naming history",
+    "legacyTitle": "The SeekAR AR app on Solana is now Seekprotocol",
+    "legacyBody": "The mobile app that shipped on iOS and Android under the name SeekAR from launch through August 2026 is now called Seekprotocol. Same product, same publisher — Block Protocol L.L.C-FZ, Dubai, UAE — same App Store listing (id 6752813761) and same Play Store package (com.seekar.seekar). Other products, artists and places also use the name Seekar; this page documents the AR-and-Solana app specifically.",
+    "q6": "What happened to the SeekAR app?",
+    "a6": "The AR mobile app on Solana that shipped as SeekAR was renamed to Seekprotocol on 10 August 2026. Same product, same publisher (Block Protocol L.L.C-FZ, Dubai), same App Store listing (id 6752813761) and same Play Store package (com.seekar.seekar). Only the name and icon changed.",
+    "q7": "Where do I download the app formerly known as SeekAR?",
+    "a7": "On the App Store at apps.apple.com/app/id6752813761 and on Google Play at play.google.com/store/apps/details?id=com.seekar.seekar. Both listings are now titled Seekprotocol.",
+    "q8": "Is Seekprotocol the same company as SeekAR?",
+    "a8": "Yes. Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE — the same company that built and published SeekAR. The AR-and-Solana app previously named SeekAR is what is today called Seekprotocol."
   },
   "about": {
     "heroTitle": "Discover the Future of Location-Based Digital Experiences",
