@@ -66,6 +66,7 @@ const COLUMNS = [
 
 const EXTERNAL = [
   { href: "https://dashboard.seekprotocol.ai/", key: "tokenDashboard" },
+  { href: "https://partners.seekprotocol.ai/", key: "seekPartners" },
 ] as const;
 
 /* The stores are the point of the whole site, so they get their own badges

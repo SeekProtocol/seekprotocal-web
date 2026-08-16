@@ -117,6 +117,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // /publishers is a URL-alias for /business — the B2B page IS the publisher
+      // page ("Buy arrivals, not impressions"), and third parties (press,
+      // journalists, decks) reference this audience by name. Redirect rather
+      // than a second page: two URLs about the same thing would fragment the
+      // autoriteit that is currently thin on the B2B trechter.
+      { source: "/publishers", destination: `${DEFAULT}/business`, permanent: true },
+      {
+        source: `/:locale(${LOCALE_GROUP})/publishers`,
+        destination: "/:locale/business",
+        permanent: true,
+      },
+
       // Blog posts kept their slugs across the rebuild, only the prefix is new.
       { source: "/blog/:slug", destination: `${DEFAULT}/blog/:slug`, permanent: true },
 

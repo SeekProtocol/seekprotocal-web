@@ -32,11 +32,14 @@
  * the asset. `soon` means the family is supported and the row is not seeded
  * yet.
  *
- * Ethereum and Solana are `live` because the app's own constants say so.
- * BNB Smart Chain and Arbitrum are `soon` because the production `networks`
- * rows could not be read from this repo, and a chain listed as live on a public
- * site is a claim, not a hope. If those rows exist, flip `status` here and the
- * whole site follows.
+ * Solana alone is `live`. The first version of this file read
+ * `SUPPORTED_CHAINS = ['solana', 'ethereum']` and marked both, which was a
+ * reading of what the code *supports* rather than what is *running*; the
+ * portal copy written by the team in August 2026 says "multi-chain by design,
+ * currently live on Solana", and they have the production `networks` rows that
+ * this repo does not. Their answer wins. Everything else is `soon`.
+ *
+ * If a chain goes live, flip `status` here and the whole site follows.
  *
  * The chain strips, `llms.txt` and every "settles on ..." sentence read this
  * file, so flipping a status is genuinely one edit. **One place does not**, and
@@ -70,7 +73,7 @@ export type Chain = {
 };
 
 export const CHAINS: readonly Chain[] = [
-  { id: "ethereum", name: "Ethereum", family: "evm", status: "live" },
+  { id: "ethereum", name: "Ethereum", family: "evm", status: "soon" },
   { id: "solana", name: "Solana", family: "solana", status: "live" },
   { id: "bnb", name: "BNB Smart Chain", family: "evm", status: "soon", coin: "bnb.glb" },
   { id: "arbitrum", name: "Arbitrum", family: "evm", status: "soon" },

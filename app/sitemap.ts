@@ -48,21 +48,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
    */
   const REBUILT = new Date("2026-08-05");
 
-  /* The app page, added 8 August 2026. Its own date rather than REBUILT: it is
-     new, and telling Google it last changed three days before it existed is the
-     kind of small lie this file is otherwise careful not to tell. */
-  const SEEKAR_ADDED = new Date("2026-08-08");
+  /* SEO diagnose van 15 aug 2026 raakte vier pagina's inhoudelijk: de homepage
+     kreeg drie nieuwe interne links, /seekar en /business kregen herschreven
+     metadata en /contact een nieuwe inquiry-types-sectie. Aparte constant zodat
+     een latere kleine copy-wijziging op één van die vier niet stilletjes REBUILT
+     laat "kloppen" voor pagina's die niet zijn aangeraakt. */
+  const SEO_PASS = new Date("2026-08-15");
+
+  /* 16 Aug 2026: four Q1 cornerstones landed in the blog (best-ar-games-2026,
+     geocaching-vs-ar-treasure-hunts, how-proof-of-location-works,
+     ar-location-campaigns-for-brands). Each carries its own date on the article
+     entry, but the /blog index page changed too — it now lists fourteen posts
+     instead of ten — so its lastmod needs to reflect that. */
+  const BLOG_Q1_BATCH_TWO = new Date("2026-08-16");
+
+  /* 16 Aug 2026: positioning shift from "the AR & AI platform on Solana" to
+     "the multi-chain AR & AI platform, currently on Solana". Site-wide meta
+     (title / description / OG / Twitter / JSON-LD), homepage hero, /seekar
+     hero + feature + FAQ copy in all nine locales. The change is one of stance
+     — Solana still named, no longer led with — so the homepage and /seekar
+     lastmods bump. Whitepaper prose is unchanged (it is a technical account of
+     the current implementation and Solana is the current implementation). */
+  const SOFT_SOLANA = new Date("2026-08-16");
 
   const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly"; lastModified: Date }[] = [
-    { path: "/", priority: 1, changeFrequency: "weekly", lastModified: REBUILT },
+    { path: "/", priority: 1, changeFrequency: "weekly", lastModified: SOFT_SOLANA },
 
     /* Priority 0.9, level with /ecosystem and /whitepaper and below only the
        homepage. It is the page for the product the whole site is about, and the
        one carrying the app's name. */
-    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SEEKAR_ADDED },
+    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SOFT_SOLANA },
     { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
-    { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: REBUILT },
-    { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: REBUILT },
+    { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: BLOG_Q1_BATCH_TWO },
+    { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: SEO_PASS },
     { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
     { path: "/terms-conditions", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
 
@@ -75,7 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/ecosystem", priority: 0.9, changeFrequency: "monthly", lastModified: REBUILT },
     { path: "/whitepaper", priority: 0.9, changeFrequency: "monthly", lastModified: REBUILT },
     { path: "/roadmap", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
-    { path: "/business", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
+    { path: "/business", priority: 0.8, changeFrequency: "monthly", lastModified: SEO_PASS },
   ];
 
   /* One entry per locale, each pointing at itself and each carrying the same

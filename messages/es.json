@@ -31,12 +31,13 @@
     "company": "Empresa",
     "resources": "Recursos",
     "appStore": "App Store",
-    "googlePlay": "Google Play"
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners"
   },
   "home": {
     "heroTitle": "Explora una nueva realidad con",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "La capa de AR e IA para activos que viven en un lugar, en cualquier cadena. Camina hasta la coordenada, apunta el móvil y recoge lo que dejaron allí.",
+    "heroSubtitle": "La plataforma de AR y AI que transforma tu mundo en un patio de recreo impulsado por blockchain. Caza airdrops, recolecta NFTs y explora con compañeros de AI en ubicaciones reales. Multi-chain, actualmente en Solana.",
     "downloadAppStore": "Descargar en App Store",
     "downloadGooglePlay": "Disponible en Google Play",
     "benefitsTitle": "Posibilidades",
@@ -99,20 +100,27 @@
     "liveLead": "Salta a cualquier hub, toca una moneda para ver quién la recogió y prueba a atrapar una tú, tirada contra las probabilidades reales de la app.",
     "foundationsEyebrow": "Fundamentos",
     "readWhitepaper": "Leer el whitepaper técnico",
-    "metaTitle": "Seekprotocol | Búsqueda del tesoro AR en cualquier cadena",
-    "metaDescription": "Caza airdrops por ubicación, colecciona NFT en realidad aumentada y explora con acompañantes de IA. Seekprotocol ancla activos de cualquier cadena a lugares reales.",
-    "ogTitle": "Seekprotocol | AR e IA para cualquier cadena",
-    "heroEyebrow": "AR · IA · Cualquier cadena"
+    "metaTitle": "Seekprotocol | Búsqueda AR con recompensas on-chain",
+    "metaDescription": "Caza airdrops por ubicación, colecciona NFT en realidad aumentada y explora con acompañantes de IA. Seekprotocol convierte lugares reales en recompensas on-chain, multi-chain, actualmente en Solana.",
+    "ogTitle": "Seekprotocol | Descubrimiento AR e IA para recompensas on-chain",
+    "heroEyebrow": "AR · IA · Cualquier cadena",
+    "placeReward": "Coloca una recompensa en tus coordenadas",
+    "exploreEcosystem": "Explora el ecosistema",
+    "viewRoadmap": "Ver la hoja de ruta",
+    "polCtaEyebrow": "Prueba de ubicación",
+    "polCtaTitle": "Presencia, verificada",
+    "polCtaBody": "Cuatro señales independientes deben coincidir antes de aceptar un reclamo. La explicación en lenguaje claro está en el blog.",
+    "polCtaLink": "Cómo funciona la prueba de ubicación"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol | la app de búsqueda del tesoro AR",
-    "metaDescription": "Seekprotocol es la app de realidad aumentada de Seekprotocol. Caza airdrops por ubicación, colecciona NFT en coordenadas reales y gana recompensas cripto en cualquier cadena. Gratis para iOS y Android.",
-    "ogTitle": "Seekprotocol | la app de búsqueda del tesoro AR",
+    "metaTitle": "Seekprotocol, la app de búsqueda del tesoro AR",
+    "metaDescription": "La app de realidad aumentada para recompensas on-chain. Caza airdrops por ubicación, colecciona NFT en coordenadas reales y gana recompensas cripto. Multi-chain, actualmente en Solana. Gratis en iOS y Android.",
+    "ogTitle": "Seekprotocol, la app de búsqueda del tesoro AR",
     "eyebrow": "La app",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "La app de realidad aumentada de Seekprotocol. Apunta el móvil al mundo y encuentra lo que se ha dejado allí: tokens, NFT y recompensas ancladas a coordenadas reales, vengan de la cadena que vengan.",
+    "heroDesc": "La app de realidad aumentada de Seekprotocol. Apunta el móvil al mundo y encuentra lo que se ha dejado allí: tokens, NFT y recompensas ancladas a coordenadas reales. Multi-chain, actualmente en Solana.",
     "whatTitle": "¿Qué es Seekprotocol?",
-    "whatBody": "Seekprotocol es la app móvil principal de Seekprotocol, gratuita en iOS y Android. Convierte cualquier calle, parque o local en un sitio donde se pueden esconder y reclamar activos digitales. Un anunciante deja una recompensa en unas coordenadas; tú tienes que estar allí físicamente para recogerla, y el protocolo demuestra que estuviste. Sin emuladores, sin falsear la ubicación, sin atajos.",
+    "whatBody": "Seekprotocol es la app móvil principal, gratuita en iOS y Android. Convierte cualquier calle, parque o local en un sitio donde se pueden esconder y reclamar activos digitales. Un anunciante deja una recompensa en unas coordenadas; tú tienes que estar allí físicamente para recogerla, y el protocolo demuestra que estuviste. Sin emuladores, sin falsear la ubicación, sin atajos.",
     "featuresTitle": "Lo que puedes hacer",
     "f1Title": "Cazar airdrops por ubicación",
     "f1Desc": "Los tokens y NFT están anclados a coordenadas reales. Camina hasta el punto, abre la cámara y reclama lo que te espera.",
@@ -121,7 +129,7 @@
     "f3Title": "Explorar con compañeros de IA",
     "f3Desc": "Un guía de IA reacciona a dónde estás y a qué tienes cerca, y te señala lo que merece el paseo.",
     "f4Title": "Ganar recompensas cripto reales",
-    "f4Desc": "Todo se liquida en la cadena en la que ya vive el activo. Lo que recoges es tuyo, está en tu cartera y se mueve contigo.",
+    "f4Desc": "Todo se liquida on-chain, actualmente en Solana, protocolo multi-chain. Lo que recoges es tuyo, está en tu cartera y se mueve contigo.",
     "howTitle": "Cómo funciona",
     "s1Title": "Descarga y abre",
     "s1Desc": "Gratis en la App Store y en Google Play. Se crea una cartera para ti; no hace falta haber tenido nunca una clave privada.",
@@ -133,7 +141,7 @@
     "q1": "¿Seekprotocol es gratis?",
     "a1": "Sí. Seekprotocol se descarga gratis en iOS y Android. Algunos artículos dentro de la app son de pago, pero cazar y reclamar no lo son.",
     "q2": "¿Quién hace Seekprotocol?",
-    "a2": "Seekprotocol lo desarrolla Seekprotocol, un producto de Block Protocol L.L.C-FZ en Dubái. Es la app de AR e IA para activos en cualquier cadena, disponible en la App Store y en Google Play.",
+    "a2": "Seekprotocol lo desarrolla Block Protocol L.L.C-FZ en Dubái. Es la app de AR e IA multi-chain para recompensas on-chain, actualmente en Solana, disponible en la App Store y en Google Play.",
     "q3": "¿Necesito saber algo de cripto?",
     "a3": "No. Se crea una cartera para ti al abrir la app, y puedes recoger y guardar activos sin tocar nunca una frase semilla.",
     "q4": "¿En qué móviles funciona Seekprotocol?",
@@ -142,9 +150,18 @@
     "a5": "No. Proof of Location verifica tu presencia real on-chain, y eso es justo lo que da valor a un hallazgo para quien dejó la recompensa.",
     "ctaTitle": "Descarga Seekprotocol",
     "ctaDesc": "Gratis en iOS y Android. Tu ciudad ya está llena de cosas que merece la pena encontrar.",
-    "renameTitle": "SeekAR ahora se llama Seekprotocol",
-    "renameBody": "La misma app, la misma cuenta, el mismo mapa. Solo cambió el nombre. Otra empresa presentó una solicitud de marca sobre el nombre anterior, así que pasamos al que siempre ha sido nuestro.",
-    "renameLink": "Leer el anuncio"
+    "renameTitle": "La app SeekAR ahora se llama Seekprotocol",
+    "renameBody": "La misma app, la misma cuenta, el mismo mapa. Solo cambió el nombre de la app; la empresa siempre se ha llamado Seekprotocol. Otra empresa presentó una solicitud de marca sobre el antiguo nombre de la app, así que renombramos la app al que siempre ha sido nuestro.",
+    "renameLink": "Leer el anuncio",
+    "legacyEyebrow": "Historial del nombre",
+    "legacyTitle": "La app AR cripto SeekAR ahora se llama Seekprotocol",
+    "legacyBody": "Solo cambió el nombre de la app; la empresa siempre se ha llamado Seekprotocol. La aplicación móvil publicada en iOS y Android bajo el nombre SeekAR desde su lanzamiento hasta agosto de 2026 ahora se llama Seekprotocol. El mismo producto, la misma editora, Block Protocol L.L.C-FZ, Dubái, EAU, la misma ficha en App Store (id 6752813761) y el mismo paquete en Play Store (com.seekar.seekar). Otros productos, artistas y lugares también usan el nombre Seekar; esta página documenta específicamente la app AR multi-chain para recompensas on-chain (actualmente en Solana).",
+    "q6": "¿Qué pasó con la app SeekAR?",
+    "a6": "La app móvil AR para recompensas on-chain publicada como SeekAR pasó a llamarse Seekprotocol el 10 de agosto de 2026. El mismo producto, la misma editora (Block Protocol L.L.C-FZ, Dubái), la misma ficha en App Store (id 6752813761), el mismo paquete en Play Store (com.seekar.seekar), actualmente en Solana. Solo cambiaron el nombre y el icono.",
+    "q7": "¿Dónde descargo la app antes conocida como SeekAR?",
+    "a7": "En el App Store en apps.apple.com/app/id6752813761 y en Google Play en play.google.com/store/apps/details?id=com.seekar.seekar. Ambas fichas ahora se titulan Seekprotocol.",
+    "q8": "¿Es Seekprotocol el mismo producto que SeekAR?",
+    "a8": "Sí. La empresa siempre se ha llamado Seekprotocol; solo cambió el nombre de la app. La app AR multi-chain para recompensas on-chain (actualmente en Solana) que se llamó SeekAR desde su lanzamiento hasta agosto de 2026 ahora se llama Seekprotocol, publicada por el mismo equipo en Block Protocol L.L.C-FZ en Dubái, EAU."
   },
   "about": {
     "heroTitle": "Descubre el futuro de las experiencias digitales basadas en ubicación",
@@ -214,7 +231,16 @@
     "formDesc": "Completa el formulario a continuación y te responderemos lo antes posible.",
     "metaTitle": "Contacto: alianzas y campañas",
     "metaDescription": "Habla con el equipo de Seekprotocol sobre colocar una campaña en tus propias coordenadas, alianzas, acceso beta o prensa.",
-    "ogTitle": "Contacta con Seekprotocol"
+    "ogTitle": "Contacta con Seekprotocol",
+    "inquiryTypesEyebrow": "O, más concretamente",
+    "partnershipsTitle": "Colaboraciones",
+    "partnershipsBody": "Tienes un proyecto, una IP o una red de ubicaciones que quieres traer a Seek. Cuéntanos qué y dónde, nos encargamos del resto.",
+    "publishersTitle": "Publishers",
+    "publishersBody": "Quieres colocar campañas AR en coordenadas concretas y pagar por visita verificada. Envíanos la ubicación y la oferta; montamos la campaña contigo.",
+    "pressTitle": "Prensa y medios",
+    "pressBody": "Coberturas, entrevistas, copias para reseña, noticias con embargo. Escríbenos aquí para cualquier tema editorial y respondemos el mismo día.",
+    "supportTitle": "Soporte",
+    "supportBody": "Un bug, una recompensa que no llegó, una duda de wallet. La ruta más rápida es Discord, pero este formulario también funciona."
   },
   "services": {
     "heroTitle": "NUESTRA EXPERIENCIA, TU CRECIMIENTO",
@@ -1178,7 +1204,11 @@
     "ctaTitle": "La explicación técnica",
     "ctaBody": "Prueba de ubicación, la arquitectura, el diseño del token y una lista honesta de los ataques contra los que nos defendemos y los límites que aceptamos.",
     "ctaWhitepaper": "Leer el whitepaper",
-    "ctaBusiness": "Coloca tus propios activos"
+    "ctaBusiness": "Coloca tus propios activos",
+    "polCtaEyebrow": "Prueba de ubicación",
+    "polCtaTitle": "Presencia, verificada",
+    "polCtaBody": "Cuatro señales independientes deben coincidir antes de aceptar un reclamo. La explicación en lenguaje claro está en el blog.",
+    "polCtaLink": "Cómo funciona la prueba de ubicación"
   },
   "participants": {
     "seekers": {
@@ -1298,7 +1328,6 @@
     "foundation": {
       "title": "Cimientos",
       "summary": "Demostrar que la idea central funcionaba: ¿podía un teléfono confirmar que alguien estaba en un sitio con fiabilidad suficiente para liberar algo de valor?",
-      "groups": {},
       "items": {
         "prototype": "Prototipo de prueba de ubicación con GNSS y continuidad de movimiento",
         "engine": "Motor de renderizado AR con anclaje persistente al mundo",
@@ -1309,7 +1338,6 @@
     "launch": {
       "title": "Lanzamiento público",
       "summary": "Poner Seekprotocol en manos reales, en ambas tiendas de apps, con una entrada que no da por hecho que el usuario haya tenido nunca una clave privada.",
-      "groups": {},
       "items": {
         "stores": "Seekprotocol publicada en iOS y Android",
         "wallet": "Cartera con inicio de sesión social y exportación opcional a autocustodia",
@@ -1344,7 +1372,6 @@
     "governance": {
       "title": "Entregar los parámetros",
       "summary": "La gobernanza va detrás del flujo real de comisiones, no delante. Votar sobre una economía sin volumen es teatro, así que esto va al final a propósito.",
-      "groups": {},
       "items": {
         "onChain": "Gobernanza on-chain de los parámetros del protocolo",
         "treasury": "Asignación de la tesorería comunitaria",
@@ -1355,7 +1382,7 @@
   },
   "businessPage": {
     "metaTitle": "Marketing con geovalla por llegada",
-    "metaDescription": "Marketing de proximidad que cuenta llegadas en lugar de modelarlas. Coloca una recompensa en tus coordenadas y paga por visita verificada, medida en la puerta.",
+    "metaDescription": "Publicidad AR por ubicación para publishers y marcas. Coloca una recompensa en tus coordenadas y paga por visita verificada, no por impresión.",
     "ogTitle": "Paga por llegada verificada",
     "eyebrow": "Para empresas",
     "titleStart": "Compra llegadas, no",
@@ -1382,7 +1409,11 @@
     "realEyebrow": "La unidad",
     "realTitle": "Qué es una llegada, y qué no lo es",
     "realLead": "Toda métrica del mercado es un sustituto, y todo sustituto tiene un script que lo produce por menos de un céntimo. La presencia es la excepción, y lo es por un motivo que no se erosiona con mejor hardware: el coste es físico.",
-    "chainsNote": "Financia una campaña con el activo que ya tienes, viva donde viva. Una red es configuración y no una integración, así que una campaña puede correr en varias a la vez y quien reclama nunca tiene que saber en cuál."
+    "chainsNote": "Financia una campaña con el activo que ya tienes, viva donde viva. Una red es configuración y no una integración, así que una campaña puede correr en varias a la vez y quien reclama nunca tiene que saber en cuál.",
+    "verifiedEyebrow": "Solo visitas verificadas",
+    "verifiedTitle": "Paga únicamente cuando alguien realmente estuvo allí",
+    "verifiedBody": "Sin impresiones, sin clics que nunca fueron visita. Una campaña gasta cuando el protocolo ha verificado a una persona en el sitio.",
+    "verifiedLink": "Abrir Seek Partners"
   },
   "useCases": {
     "retail": {

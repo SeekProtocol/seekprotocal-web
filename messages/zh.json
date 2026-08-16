@@ -31,12 +31,13 @@
     "company": "公司",
     "resources": "资源",
     "appStore": "App Store",
-    "googlePlay": "Google Play"
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners"
   },
   "home": {
     "heroTitle": "探索新现实",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "面向任意链的 AR 与 AI 层，让数字资产落在真实地点上。走到坐标前，举起手机，把留在那里的东西收下。",
+    "heroSubtitle": "AR 和 AI 平台，将您的世界变成区块链驱动的游乐场。寻找空投、收集 NFT，并在真实地点与 AI 伙伴一起探索。多链支持, 目前在 Solana 上运行。",
     "downloadAppStore": "在 App Store 下载",
     "downloadGooglePlay": "在 Google Play 获取",
     "benefitsTitle": "无限",
@@ -99,20 +100,27 @@
     "liveLead": "跳到任意枢纽城市，点一枚币看看是谁捡走的，也可以自己试着抓一枚，按应用里真实的概率来掷。",
     "foundationsEyebrow": "底层基础",
     "readWhitepaper": "阅读技术白皮书",
-    "metaTitle": "Seekprotocol | 任意链上的 AR 寻宝应用",
-    "metaDescription": "在真实地点捕捉空投、用增强现实收集 NFT，并与 AI 伙伴一同探索。Seekprotocol 把任意链上的资产锚定到现实中的地点。",
-    "ogTitle": "Seekprotocol｜面向每一条链的 AR 与 AI",
-    "heroEyebrow": "AR · AI · 任意链"
+    "metaTitle": "Seekprotocol | 链上奖励 AR 寻宝应用",
+    "metaDescription": "在真实地点捕捉空投、用增强现实收集 NFT，并与 AI 伙伴一同探索。Seekprotocol 把现实中的地点变成可领取的链上奖励, 多链支持，目前在 Solana 上运行。",
+    "ogTitle": "Seekprotocol｜链上奖励的 AR 与 AI 发现平台",
+    "heroEyebrow": "AR · AI · 任意链",
+    "placeReward": "在你的坐标放置奖励",
+    "exploreEcosystem": "探索生态",
+    "viewRoadmap": "查看路线图",
+    "polCtaEyebrow": "位置证明",
+    "polCtaTitle": "存在，已验证",
+    "polCtaBody": "四个独立信号必须一致，索赔才会被接受。通俗易懂的说明在博客上。",
+    "polCtaLink": "位置证明的工作原理"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol | AR 寻宝应用",
-    "metaDescription": "Seekprotocol 是 Seekprotocol 推出的增强现实应用。在真实坐标上捕捉空投、收集 NFT，并在任意链上赚取加密奖励。iOS 与 Android 免费下载。",
-    "ogTitle": "Seekprotocol | AR 寻宝应用",
+    "metaTitle": "Seekprotocol, AR 寻宝应用",
+    "metaDescription": "为链上奖励打造的增强现实应用。在真实坐标上猎取空投、收集 NFT，赚取加密奖励。多链支持, 目前在 Solana 上运行。iOS 与 Android 免费下载。",
+    "ogTitle": "Seekprotocol, AR 寻宝应用",
     "eyebrow": "应用",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "Seekprotocol 推出的增强现实应用。用手机对准这个世界，找到别人留在那里的东西：锚定在真实坐标上的代币、NFT 与奖励，无论它们来自哪条链。",
+    "heroDesc": "Seekprotocol 推出的增强现实应用。用手机对准这个世界，找到别人留在那里的东西：锚定在真实坐标上的代币、NFT 与奖励。多链支持, 目前在 Solana 上运行。",
     "whatTitle": "什么是 Seekprotocol？",
-    "whatBody": "Seekprotocol 是 Seekprotocol 的旗舰移动应用，在 iOS 和 Android 上免费提供。它让任何一条街道、一座公园、一个场所都能成为藏匿和领取数字资产的地方。发布方把奖励放在某个坐标上；你必须亲自到场才能领取，而协议会证明你确实到过。没有模拟器，没有位置伪造，没有捷径。",
+    "whatBody": "Seekprotocol 是旗舰移动应用，在 iOS 和 Android 上免费提供。它让任何一条街道、一座公园、一个场所都能成为藏匿和领取数字资产的地方。发布方把奖励放在某个坐标上；你必须亲自到场才能领取，而协议会证明你确实到过。没有模拟器，没有位置伪造，没有捷径。",
     "featuresTitle": "你可以做什么",
     "f1Title": "猎取基于位置的空投",
     "f1Desc": "代币和 NFT 锚定在真实坐标上。走到那个位置，打开相机，领取等待着你的东西。",
@@ -121,7 +129,7 @@
     "f3Title": "与 AI 伙伴一起探索",
     "f3Desc": "AI 向导会根据你所在的位置和附近的内容作出反应，告诉你哪些值得走一趟。",
     "f4Title": "赚取真实的加密奖励",
-    "f4Desc": "一切都在资产本来所在的那条链上结算。你收集到的就是你的，存在你的钱包里，跟着你走。",
+    "f4Desc": "一切都在链上结算, 目前在 Solana 上运行，多链兼容协议。你收集到的就是你的，存在你的钱包里，跟着你走。",
     "howTitle": "如何使用",
     "s1Title": "下载并打开",
     "s1Desc": "在 App Store 和 Google Play 免费下载。系统会为你创建钱包，你不需要事先接触过私钥。",
@@ -133,7 +141,7 @@
     "q1": "Seekprotocol 免费吗？",
     "a1": "免费。Seekprotocol 在 iOS 和 Android 上均可免费下载。应用内有部分付费道具，但寻找和领取本身不收费。",
     "q2": "Seekprotocol 是谁开发的？",
-    "a2": "Seekprotocol 由 Seekprotocol 开发，隶属于迪拜的 Block Protocol L.L.C-FZ。它是面向任意链资产的 AR 与 AI 应用，可在 App Store 和 Google Play 获取。",
+    "a2": "Seekprotocol 由迪拜的 Block Protocol L.L.C-FZ 开发。它是面向链上奖励的多链 AR 与 AI 应用，目前在 Solana 上运行，可在 App Store 和 Google Play 获取。",
     "q3": "我需要懂加密货币吗？",
     "a3": "不需要。打开应用时会自动为你创建钱包，你可以收集和保存资产，全程无需自己处理助记词。",
     "q4": "Seekprotocol 支持哪些手机？",
@@ -142,9 +150,18 @@
     "a5": "不可以。Proof of Location 会在链上验证你真实的到场，而这正是一次领取对投放奖励的发布方而言有价值的原因。",
     "ctaTitle": "下载 Seekprotocol",
     "ctaDesc": "iOS 与 Android 免费下载。你的城市里早就藏满了值得一找的东西。",
-    "renameTitle": "SeekAR 现已更名为 Seekprotocol",
-    "renameBody": "同一个应用、同一个账号、同一张地图，只有名称变了。另一家公司就旧名称提交了商标申请，因此我们改用一直属于我们自己的名称。",
-    "renameLink": "阅读公告"
+    "renameTitle": "SeekAR 应用现已更名为 Seekprotocol",
+    "renameBody": "同一个应用、同一个账号、同一张地图，只有应用名称变了；公司名称一直是 Seekprotocol。另一家公司就旧应用名称提交了商标申请，因此我们把应用改用一直属于我们自己的名称。",
+    "renameLink": "阅读公告",
+    "legacyEyebrow": "名称沿革",
+    "legacyTitle": "加密 AR 应用 SeekAR 现在名为 Seekprotocol",
+    "legacyBody": "只有应用名称变了；公司名称一直是 Seekprotocol。自发布至 2026 年 8 月期间在 iOS 与 Android 上以 SeekAR 之名发布的移动应用现在名为 Seekprotocol。相同产品、相同发行方（Block Protocol L.L.C-FZ，位于阿联酋迪拜）、相同的 App Store 列表（id 6752813761）以及相同的 Play Store 包名（com.seekar.seekar）。其他产品、艺人和地点也在使用 Seekar 这个名字；本页专门介绍的是面向链上奖励的多链 AR 应用（目前在 Solana 上运行）。",
+    "q6": "SeekAR 应用怎么了？",
+    "a6": "以 SeekAR 之名发布的面向链上奖励的 AR 移动应用已于 2026 年 8 月 10 日更名为 Seekprotocol。相同产品、相同发行方（Block Protocol L.L.C-FZ，位于迪拜）、相同的 App Store 列表（id 6752813761）、相同的 Play Store 包名（com.seekar.seekar），目前在 Solana 上运行。仅名称和图标发生了变化。",
+    "q7": "在哪里下载曾经被称为 SeekAR 的应用？",
+    "a7": "在 App Store 的 apps.apple.com/app/id6752813761 和 Google Play 的 play.google.com/store/apps/details?id=com.seekar.seekar。两个列表现在均以 Seekprotocol 命名。",
+    "q8": "Seekprotocol 与 SeekAR 是同一款产品吗？",
+    "a8": "是的。公司名称一直是 Seekprotocol，只有应用名称变了。从发布至 2026 年 8 月期间被称为 SeekAR 的面向链上奖励的多链 AR 应用（目前在 Solana 上运行）如今被称为 Seekprotocol，由位于阿联酋迪拜的 Block Protocol L.L.C-FZ 的同一支团队发布。"
   },
   "about": {
     "heroTitle": "发现基于位置的数字体验的未来",
@@ -214,7 +231,16 @@
     "formDesc": "填写下方表单，我们会尽快回复您。",
     "metaTitle": "联系我们：合作与投放",
     "metaDescription": "就在你自己的坐标上投放活动、商务合作、内测资格或媒体采访，联系 Seekprotocol 团队。",
-    "ogTitle": "联系 Seekprotocol"
+    "ogTitle": "联系 Seekprotocol",
+    "inquiryTypesEyebrow": "或者更具体地",
+    "partnershipsTitle": "合作",
+    "partnershipsBody": "你有一个项目、一份 IP 或一整个想接入 Seek 的场所网络。告诉我们做什么、放在哪里, 其余交给我们。",
+    "publishersTitle": "发布方",
+    "publishersBody": "你想在特定坐标投放 AR 活动，并按验证到达付费。发送地点与优惠内容；我们与你一起搭建活动。",
+    "pressTitle": "媒体与新闻",
+    "pressBody": "报道、采访、试用副本、禁运稿件。编辑事宜请从此处联系，我们当天回复。",
+    "supportTitle": "支持",
+    "supportBody": "报错、未到账的奖励、钱包问题。最快的通道是 Discord，此表单也能受理。"
   },
   "services": {
     "heroTitle": "我们的专业，您的增长",
@@ -1178,7 +1204,11 @@
     "ctaTitle": "技术说明",
     "ctaBody": "位置证明、系统架构、代币设计，以及一份直白的清单：我们防御哪些攻击，又接受哪些局限。",
     "ctaWhitepaper": "阅读白皮书",
-    "ctaBusiness": "投放你自己的资产"
+    "ctaBusiness": "投放你自己的资产",
+    "polCtaEyebrow": "位置证明",
+    "polCtaTitle": "存在，已验证",
+    "polCtaBody": "四个独立信号必须一致，索赔才会被接受。通俗易懂的说明在博客上。",
+    "polCtaLink": "位置证明的工作原理"
   },
   "participants": {
     "seekers": {
@@ -1298,7 +1328,6 @@
     "foundation": {
       "title": "打地基",
       "summary": "先证明核心想法能不能成立：一部手机能否确认某人到过某地，可靠到足以释放有价值的东西？",
-      "groups": {},
       "items": {
         "prototype": "基于 GNSS 与运动连续性的位置证明原型",
         "engine": "具备持久世界锚定的 AR 渲染引擎",
@@ -1309,7 +1338,6 @@
     "launch": {
       "title": "公开上线",
       "summary": "把 Seekprotocol 交到真实用户手里，两大应用商店同时上线，且引导流程不假设用户拿过私钥。",
-      "groups": {},
       "items": {
         "stores": "Seekprotocol 在 iOS 与 Android 发布",
         "wallet": "社交登录钱包，可选导出自行保管",
@@ -1344,7 +1372,6 @@
     "governance": {
       "title": "交出参数",
       "summary": "治理跟在真实费用流之后，而不是走在它前面。对一个没有成交量的经济体投票只是表演，所以这一步是刻意放在最后的。",
-      "groups": {},
       "items": {
         "onChain": "协议参数的链上治理",
         "treasury": "社区金库分配",
@@ -1355,7 +1382,7 @@
   },
   "businessPage": {
     "metaTitle": "地理围栏营销，按到店付费",
-    "metaDescription": "用会数人的位置营销，而不是靠模型推算。把奖励放在你自己的坐标上，按门口测得的验证到店付费。",
+    "metaDescription": "面向发布方和品牌的地理围栏 AR 广告。把奖励放在你自己的坐标上，按验证到店付费, 不按曝光付费。",
     "ogTitle": "按验证到店付费",
     "eyebrow": "商业合作",
     "titleStart": "买到场，而不是买",
@@ -1382,7 +1409,11 @@
     "realEyebrow": "计量单位",
     "realTitle": "一次到场是什么，又不是什么",
     "realLead": "市面上每一项指标都是替代品，而每一项替代品背后都有一段脚本，能用不到一分钱把它造出来。到场是那个例外，而它成为例外的理由不会随硬件变好而消失：这项成本是身体上的。",
-    "chainsNote": "用你手里已有的资产出资，无论它在哪条链上。网络是配置而不是一次集成，所以一场活动可以同时跑在好几条链上，而领取的人从不需要知道是哪一条。"
+    "chainsNote": "用你手里已有的资产出资，无论它在哪条链上。网络是配置而不是一次集成，所以一场活动可以同时跑在好几条链上，而领取的人从不需要知道是哪一条。",
+    "verifiedEyebrow": "仅限已验证到访",
+    "verifiedTitle": "只在真的有人到场时付费",
+    "verifiedBody": "没有曝光费，没有未转化为到访的点击。协议在现场验证到一个人时，活动才会花费。",
+    "verifiedLink": "打开 Seek Partners"
   },
   "useCases": {
     "retail": {

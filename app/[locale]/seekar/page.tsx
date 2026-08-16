@@ -19,14 +19,14 @@ import {
  * The page for the app.
  *
  * It was written when the app and the site had different names, to give the
- * app's own name a URL that was about it — the site ranked for the app
+ * app's own name a URL that was about it, the site ranked for the app
  * nowhere, and an unrelated platform on a similar domain took the result. The
  * app carries the site's name now, so that particular problem has been solved
  * by the rename rather than by this page.
  *
  * The page stays, and so does its slug. Two reasons, and neither is
  * sentimental. Anyone who searches the old name, or follows a link that has
- * been out in the world for months, lands here rather than on a 404 — and this
+ * been out in the world for months, lands here rather than on a 404, and this
  * is where the announcement post sends them. And the site-wide
  * SoftwareApplication node names this URL as the app's home, so it has to keep
  * resolving for the graph to be true.
@@ -69,7 +69,7 @@ const breadcrumbJsonLd = getBreadcrumbJsonLd([
 
 /* English regardless of locale, matching the about page. Structured data is
    read by a crawler rather than a reader, and the questions worth winning
-   — "what is seekar", "who makes seekar" — are asked in English. */
+  , "what is seekar", "who makes seekar", are asked in English. */
 const seekarFaqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -87,7 +87,7 @@ const seekarFaqJsonLd = {
       name: "Who makes Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Seekprotocol is built by Seekprotocol, a product of Block Protocol L.L.C-FZ in Dubai, UAE. The app is published on the App Store and Google Play and the project's home is seekprotocol.ai.",
+        text: "Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE. The app is published on the App Store and Google Play and the project's home is seekprotocol.ai.",
       },
     },
     {
@@ -112,6 +112,36 @@ const seekarFaqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "No. Proof of Location verifies your real presence on-chain, which is what makes a claim worth anything to the publisher who placed the reward.",
+      },
+    },
+    /* SeekAR-specific Q&As, added deliberately in English inside the FAQPage
+       schema. Nominative use of the app's former name, describing our own
+       prior product in a historical statement, so that a crawler or LLM
+       answering "what happened to the SeekAR app" has fact-dense, verifiable
+       text (App Store id, Play Store package, publisher legal name, rename
+       date) to lift. Not asserting the mark; describing the app that used it. */
+    {
+      "@type": "Question",
+      name: "What happened to the SeekAR app?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The AR mobile app for on-chain crypto rewards that shipped as SeekAR was renamed to Seekprotocol on 10 August 2026. Same product, same publisher (Block Protocol L.L.C-FZ, Dubai, UAE), same App Store listing (id 6752813761), same Play Store package (com.seekar.seekar), currently settling on Solana. Only the name and icon changed.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where do I download the app formerly known as SeekAR?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "On the App Store at apps.apple.com/app/id6752813761 and on Google Play at play.google.com/store/apps/details?id=com.seekar.seekar. Both listings are now titled Seekprotocol.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Seekprotocol the same product as SeekAR?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. The company has always been Seekprotocol; only the app name changed. The multi-chain AR crypto-rewards app (currently settling on Solana) that was named SeekAR from launch through August 2026 is now named Seekprotocol, published by the same team at Block Protocol L.L.C-FZ in Dubai, UAE.",
       },
     },
   ],
@@ -163,6 +193,13 @@ function SeekarContent() {
     { q: t("q3"), a: t("a3") },
     { q: t("q4"), a: t("a4") },
     { q: t("q5"), a: t("a5") },
+    /* Three SeekAR-specific Q&As mirror the ones added to the FAQPage schema
+       above. They are here so a human reader (and any crawler that reads DOM
+       rather than JSON-LD) sees the same rename disambiguation the structured
+       data claims. */
+    { q: t("q6"), a: t("a6") },
+    { q: t("q7"), a: t("a7") },
+    { q: t("q8"), a: t("a8") },
   ];
 
   return (
@@ -183,7 +220,7 @@ function SeekarContent() {
           <div className="page-head-inner">
             {/* The rename, said first and said large.
                 This URL is where anyone searching the old name lands, and the
-                first thing they need is not the pitch — it is confirmation that
+                first thing they need is not the pitch, it is confirmation that
                 they are in the right place and that the product they were
                 looking for still exists under another word. Above the eyebrow
                 rather than below the hero for that reason: a notice under the
@@ -218,6 +255,36 @@ function SeekarContent() {
                   <img src={store.img} alt={store.alt} width={140} height={32} />
                 </a>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Naming history --------------------------------------------------
+          Placed high on the page on purpose: this is the paragraph a crawler
+          or LLM answering "what is SeekAR" needs to reach without scrolling.
+          It states the rename as a historical fact (nominative use of the
+          former name for our own prior product), lists the verifiable
+          identifiers (App Store id, Play Store package, publisher legal name)
+          that let a reader cross-check it, and explicitly notes the name is
+          also used by unrelated products, artists and places, so the
+          paragraph is not an ownership claim on the mark, it is a description
+          of which SeekAR this page documents. Sunken so the alternation of
+          regular/sunken sections downstream of the hero is preserved. */}
+      <section className="section section-sunken">
+        <div className="shell">
+          <div className="about-why reveal">
+            <div>
+              <p className="eyebrow">{t("legacyEyebrow")}</p>
+              <h2 className="t-h2">{t("legacyTitle")}</h2>
+            </div>
+            <div>
+              <p className="t-lead">{t("legacyBody")}</p>
+              <div className="btn-row" style={{ marginTop: "2rem" }}>
+                <Link href="/blog/seekar-is-now-seekprotocol" className="btn btn-brand">
+                  {t("renameLink")}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

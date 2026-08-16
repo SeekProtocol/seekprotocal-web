@@ -31,12 +31,13 @@
     "company": "Bedrijf",
     "resources": "Bronnen",
     "appStore": "App Store",
-    "googlePlay": "Google Play"
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners"
   },
   "home": {
     "heroTitle": "Verken een nieuwe realiteit met",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "De AR- en AI-laag voor assets die op een plek thuishoren, op elke chain. Loop naar de coördinaat, richt je telefoon, en pak op wat daar is achtergelaten.",
+    "heroSubtitle": "Het AR- en AI-platform dat jouw wereld transformeert in een blockchain-aangedreven speeltuin. Jaag op airdrops, verzamel NFTs en verken met AI-gezellen op echte locaties. Multi-chain, nu live op Solana.",
     "downloadAppStore": "Download in App Store",
     "downloadGooglePlay": "Download in Google Play",
     "benefitsTitle": "Onbeperkte",
@@ -99,20 +100,27 @@
     "liveLead": "Spring naar elke hub, tik op een munt om te zien wie hem opgepakt heeft, en probeer er zelf een te vangen, gerold tegen de echte kansen uit de app.",
     "foundationsEyebrow": "Fundamenten",
     "readWhitepaper": "Lees de technische whitepaper",
-    "metaTitle": "Seekprotocol | AR-schattenjacht-app op elke chain",
-    "metaDescription": "Jaag op locatiegebonden airdrops, verzamel NFT's in AR en verken met AI-metgezellen. Seekprotocol verankert assets van elke chain aan echte plekken.",
-    "ogTitle": "Seekprotocol | AR en AI voor elke chain",
-    "heroEyebrow": "AR · AI · Elke chain"
+    "metaTitle": "Seekprotocol | AR-schattenjacht met on-chain beloningen",
+    "metaDescription": "Jaag op locatiegebonden airdrops, verzamel NFT's in AR en verken met AI-metgezellen. Seekprotocol maakt van echte plekken on-chain beloningen, multi-chain, nu live op Solana.",
+    "ogTitle": "Seekprotocol | AR- en AI-ontdekkingen voor on-chain beloningen",
+    "heroEyebrow": "AR · AI · Elke chain",
+    "placeReward": "Plaats een beloning op jouw coördinaten",
+    "exploreEcosystem": "Verken het ecosysteem",
+    "viewRoadmap": "Bekijk de roadmap",
+    "polCtaEyebrow": "Locatiebewijs",
+    "polCtaTitle": "Aanwezigheid, geverifieerd",
+    "polCtaBody": "Vier onafhankelijke signalen moeten overeenkomen voordat een claim wordt geaccepteerd. De uitleg in gewone taal staat op de blog.",
+    "polCtaLink": "Hoe locatiebewijs werkt"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol | de AR-schattenjacht-app",
-    "metaDescription": "Seekprotocol is de augmented reality-app van Seekprotocol. Jaag op locatiegebonden airdrops, verzamel NFT's op echte coördinaten en verdien crypto-beloningen op elke chain. Gratis voor iOS en Android.",
-    "ogTitle": "Seekprotocol | de AR-schattenjacht-app",
+    "metaTitle": "Seekprotocol, de AR-schattenjacht-app",
+    "metaDescription": "De augmented reality-app voor on-chain beloningen. Jaag op locatiegebonden airdrops, verzamel NFT's op echte coördinaten en verdien crypto-beloningen. Multi-chain, nu op Solana. Gratis voor iOS en Android.",
+    "ogTitle": "Seekprotocol, de AR-schattenjacht-app",
     "eyebrow": "De app",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "De augmented reality-app van Seekprotocol. Richt je telefoon op de wereld en vind wat daar is neergelegd: tokens, NFT's en beloningen, verankerd aan echte coördinaten, van welke chain ze ook komen.",
+    "heroDesc": "De augmented reality-app van Seekprotocol. Richt je telefoon op de wereld en vind wat daar is neergelegd: tokens, NFT's en beloningen, verankerd aan echte coördinaten. Multi-chain, nu op Solana.",
     "whatTitle": "Wat is Seekprotocol?",
-    "whatBody": "Seekprotocol is de belangrijkste mobiele app van Seekprotocol, gratis voor iOS en Android. Elke straat, elk park en elke locatie wordt een plek waar digitale bezittingen verstopt en geclaimd kunnen worden. Een uitgever legt een beloning op een coördinaat; jij moet er fysiek zijn om hem op te halen, en het protocol bewijst dat je er was. Geen emulators, geen spoofing, geen sluiproutes.",
+    "whatBody": "Seekprotocol is de belangrijkste mobiele app, gratis voor iOS en Android. Elke straat, elk park en elke locatie wordt een plek waar digitale bezittingen verstopt en geclaimd kunnen worden. Een uitgever legt een beloning op een coördinaat; jij moet er fysiek zijn om hem op te halen, en het protocol bewijst dat je er was. Geen emulators, geen spoofing, geen sluiproutes.",
     "featuresTitle": "Wat je kunt doen",
     "f1Title": "Jaag op locatiegebonden airdrops",
     "f1Desc": "Tokens en NFT's zijn verankerd aan echte coördinaten. Loop naar de plek, open de camera en claim wat er ligt.",
@@ -121,7 +129,7 @@
     "f3Title": "Verken met AI-metgezellen",
     "f3Desc": "Een AI-gids reageert op waar je bent en wat er in de buurt is, en wijst je op wat de wandeling waard is.",
     "f4Title": "Verdien echte crypto-beloningen",
-    "f4Desc": "Alles wordt afgewikkeld op de chain waar de asset al thuishoort. Wat je verzamelt is van jou, in je eigen wallet, en het gaat met je mee.",
+    "f4Desc": "Alles wordt afgewikkeld on-chain, nu op Solana, chain-agnostisch protocol. Wat je verzamelt is van jou, in je eigen wallet, en het gaat met je mee.",
     "howTitle": "Hoe het werkt",
     "s1Title": "Downloaden en openen",
     "s1Desc": "Gratis in de App Store en Google Play. Er wordt een wallet voor je aangemaakt; je hoeft nooit eerder een private key te hebben gehad.",
@@ -133,7 +141,7 @@
     "q1": "Is Seekprotocol gratis?",
     "a1": "Ja. Seekprotocol is gratis te downloaden voor iOS en Android. Sommige items in de app kosten geld, maar jagen en claimen niet.",
     "q2": "Wie maakt Seekprotocol?",
-    "a2": "Seekprotocol wordt gebouwd door Seekprotocol, een product van Block Protocol L.L.C-FZ in Dubai. Het is de AR- en AI-app voor assets op elke chain, te vinden in de App Store en Google Play.",
+    "a2": "Seekprotocol wordt gebouwd door Block Protocol L.L.C-FZ in Dubai. Het is de multi-chain AR- en AI-app voor on-chain crypto-beloningen, nu live op Solana, te vinden in de App Store en Google Play.",
     "q3": "Moet ik iets van crypto weten?",
     "a3": "Nee. Er wordt een wallet voor je aangemaakt zodra je de app opent, en je kunt bezittingen verzamelen en bewaren zonder ooit zelf met een seed phrase te werken.",
     "q4": "Op welke telefoons draait Seekprotocol?",
@@ -142,9 +150,18 @@
     "a5": "Nee. Proof of Location verifieert je echte aanwezigheid on-chain, en dat is precies wat een claim waarde geeft voor de uitgever die hem heeft neergelegd.",
     "ctaTitle": "Download Seekprotocol",
     "ctaDesc": "Gratis voor iOS en Android. Je stad ligt al vol met dingen die het vinden waard zijn.",
-    "renameTitle": "SeekAR heet nu Seekprotocol",
-    "renameBody": "Dezelfde app, hetzelfde account, dezelfde kaart. Alleen de naam is veranderd. Een ander bedrijf diende een merkaanvraag in op de oude naam, dus zijn we overgestapt op de naam die altijd al van ons was.",
-    "renameLink": "Lees de aankondiging"
+    "renameTitle": "De SeekAR-app heet nu Seekprotocol",
+    "renameBody": "Dezelfde app, hetzelfde account, dezelfde kaart. Alleen de app-naam is veranderd; het bedrijf heet al vanaf het begin Seekprotocol. Een ander bedrijf diende een merkaanvraag in op de oude app-naam, dus zijn we voor de app overgestapt op de naam die altijd al van ons was.",
+    "renameLink": "Lees de aankondiging",
+    "legacyEyebrow": "Naamgeschiedenis",
+    "legacyTitle": "De SeekAR crypto-AR-app heet nu Seekprotocol",
+    "legacyBody": "Alleen de app-naam is veranderd; het bedrijf heet al vanaf het begin Seekprotocol. De mobiele app die van launch tot en met augustus 2026 op iOS en Android verscheen onder de naam SeekAR heet nu Seekprotocol. Zelfde product, zelfde uitgever, Block Protocol L.L.C-FZ, Dubai, VAE, zelfde App Store-vermelding (id 6752813761) en zelfde Play Store-package (com.seekar.seekar). Er zijn ook andere producten, artiesten en plaatsen die de naam Seekar dragen; deze pagina beschrijft specifiek de multi-chain AR-en-crypto-beloningen-app (nu live op Solana).",
+    "q6": "Wat is er met de SeekAR-app gebeurd?",
+    "a6": "De AR-mobiele app voor on-chain crypto-beloningen die als SeekAR werd uitgebracht is op 10 augustus 2026 hernoemd tot Seekprotocol. Zelfde product, zelfde uitgever (Block Protocol L.L.C-FZ, Dubai), zelfde App Store-vermelding (id 6752813761), zelfde Play Store-package (com.seekar.seekar), nu live op Solana. Alleen de naam en het icoon zijn veranderd.",
+    "q7": "Waar kan ik de app downloaden die vroeger SeekAR heette?",
+    "a7": "In de App Store op apps.apple.com/app/id6752813761 en in Google Play op play.google.com/store/apps/details?id=com.seekar.seekar. Beide vermeldingen dragen nu de naam Seekprotocol.",
+    "q8": "Is Seekprotocol hetzelfde product als SeekAR?",
+    "a8": "Ja. Het bedrijf heet al vanaf het begin Seekprotocol; alleen de app-naam is veranderd. De multi-chain AR-crypto-beloningen-app (nu live op Solana) die van launch tot en met augustus 2026 SeekAR heette is nu Seekprotocol, uitgebracht door hetzelfde team bij Block Protocol L.L.C-FZ in Dubai, VAE."
   },
   "about": {
     "heroTitle": "Ontdek de toekomst van locatie-gebaseerde digitale ervaringen",
@@ -214,7 +231,16 @@
     "formDesc": "Vul het onderstaande formulier in, en we nemen zo snel mogelijk contact met je op.",
     "metaTitle": "Contact: samenwerking en campagnes",
     "metaDescription": "Spreek het team van Seekprotocol over een campagne op je eigen coördinaten, samenwerking, bètatoegang of pers.",
-    "ogTitle": "Contact met Seekprotocol"
+    "ogTitle": "Contact met Seekprotocol",
+    "inquiryTypesEyebrow": "Of, specifieker",
+    "partnershipsTitle": "Samenwerkingen",
+    "partnershipsBody": "Je hebt een project, een IP of een netwerk van locaties dat je in Seek wilt brengen. Vertel ons wat en waar, de rest doen wij.",
+    "publishersTitle": "Publishers",
+    "publishersBody": "Je wilt AR-campagnes op specifieke coördinaten plaatsen en per geverifieerd bezoek betalen. Stuur de locatie en de aanbieding; we zetten de campagne samen met je op.",
+    "pressTitle": "Pers & media",
+    "pressBody": "Coverage, interviews, review-kopieën, embargonieuws. Neem hier contact op voor alles wat redactioneel is; we reageren dezelfde dag.",
+    "supportTitle": "Support",
+    "supportBody": "Een bug, een claim die niet aankwam, een wallet-vraag. De snelste route is Discord, maar dit formulier werkt ook."
   },
   "services": {
     "heroTitle": "ONZE EXPERTISE, JOUW GROEI",
@@ -1178,7 +1204,11 @@
     "ctaTitle": "Het technische verhaal",
     "ctaBody": "Locatiebewijs, de architectuur, het tokenontwerp, en een eerlijke lijst van de aanvallen waartegen we ons verdedigen en de grenzen die we accepteren.",
     "ctaWhitepaper": "Lees de whitepaper",
-    "ctaBusiness": "Plaats je eigen assets"
+    "ctaBusiness": "Plaats je eigen assets",
+    "polCtaEyebrow": "Locatiebewijs",
+    "polCtaTitle": "Aanwezigheid, geverifieerd",
+    "polCtaBody": "Vier onafhankelijke signalen moeten overeenkomen voordat een claim wordt geaccepteerd. De uitleg in gewone taal staat op de blog.",
+    "polCtaLink": "Hoe locatiebewijs werkt"
   },
   "participants": {
     "seekers": {
@@ -1298,7 +1328,6 @@
     "foundation": {
       "title": "Fundament",
       "summary": "Bewijzen dat het kernidee überhaupt werkte: kon een telefoon bevestigen dat iemand ergens was, betrouwbaar genoeg om iets van waarde vrij te geven?",
-      "groups": {},
       "items": {
         "prototype": "Prototype voor locatiebewijs met GNSS en bewegingscontinuïteit",
         "engine": "AR-renderengine met blijvende verankering in de wereld",
@@ -1309,7 +1338,6 @@
     "launch": {
       "title": "Publieke lancering",
       "summary": "Seekprotocol in echte handen krijgen, in beide app stores, met een onboarding die er niet van uitgaat dat de gebruiker ooit een private key vastgehouden heeft.",
-      "groups": {},
       "items": {
         "stores": "Seekprotocol uitgebracht op iOS en Android",
         "wallet": "Wallet via social login met optionele export naar eigen beheer",
@@ -1344,7 +1372,6 @@
     "governance": {
       "title": "De parameters overdragen",
       "summary": "Governance volgt op echte feestromen in plaats van eraan vooraf te gaan. Stemmen over een economie zonder volume is theater, dus dit komt bewust als laatste.",
-      "groups": {},
       "items": {
         "onChain": "On-chain governance voor protocolparameters",
         "treasury": "Toewijzing uit de community treasury",
@@ -1355,7 +1382,7 @@
   },
   "businessPage": {
     "metaTitle": "Geofencing-marketing, betaald per bezoek",
-    "metaDescription": "Locatiegebonden marketing die bezoeken telt in plaats van ze te modelleren. Leg een beloning op je coördinaten en betaal per geverifieerd bezoek.",
+    "metaDescription": "Locatiegebonden AR-adverteren voor publishers en merken. Leg een beloning op je coördinaten en betaal per geverifieerd bezoek, niet per impressie.",
     "ogTitle": "Betaal per geverifieerd bezoek",
     "eyebrow": "Zakelijk",
     "titleStart": "Koop bezoeken, geen",
@@ -1382,7 +1409,11 @@
     "realEyebrow": "De eenheid",
     "realTitle": "Wat een bezoek is, en wat het niet is",
     "realLead": "Elke maatstaf op de markt is een benadering, en bij elke benadering hoort een script dat hem voor minder dan een cent produceert. Aanwezigheid is de uitzondering, om een reden die niet sleet met betere hardware: de kosten zijn fysiek.",
-    "chainsNote": "Financier een campagne in de asset die je al hebt, waar die ook thuishoort. Een netwerk is configuratie en geen integratie, dus één campagne kan er meerdere tegelijk gebruiken en degene die claimt hoeft nooit te weten welke."
+    "chainsNote": "Financier een campagne in de asset die je al hebt, waar die ook thuishoort. Een netwerk is configuratie en geen integratie, dus één campagne kan er meerdere tegelijk gebruiken en degene die claimt hoeft nooit te weten welke.",
+    "verifiedEyebrow": "Alleen geverifieerde bezoeken",
+    "verifiedTitle": "Betaal alleen als iemand er echt was",
+    "verifiedBody": "Geen impressies, geen kliks die nooit een bezoek werden. Een campagne besteedt pas wanneer het protocol iemand ter plekke heeft geverifieerd.",
+    "verifiedLink": "Open Seek Partners"
   },
   "useCases": {
     "retail": {

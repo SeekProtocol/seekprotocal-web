@@ -31,12 +31,13 @@
     "company": "会社",
     "resources": "リソース",
     "appStore": "App Store",
-    "googlePlay": "Google Play"
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners"
   },
   "home": {
     "heroTitle": "新しい現実を探索しよう",
     "heroTitleHighlight": "Seekprotocol",
-    "heroSubtitle": "場所に紐づくアセットのための AR と AI のレイヤー、どのチェーンでも。座標まで歩き、スマホをかざし、そこに置かれたものを受け取ってください。",
+    "heroSubtitle": "AR と AI のプラットフォームが、あなたの世界をブロックチェーンで動く遊び場に変えます。エアドロップを探し、NFT を集め、実際の場所で AI コンパニオンと一緒に探索しましょう。マルチチェーン対応、現在は Solana で稼働中。",
     "downloadAppStore": "App Store でダウンロード",
     "downloadGooglePlay": "Google Play で入手",
     "benefitsTitle": "無限の",
@@ -99,20 +100,27 @@
     "liveLead": "どの拠点にでも飛んで、コインをタップすれば誰が拾ったかがわかります。アプリ本来の確率で、自分でも1枚狙ってみてください。",
     "foundationsEyebrow": "土台",
     "readWhitepaper": "技術ホワイトペーパーを読む",
-    "metaTitle": "Seekprotocol | どのチェーンでも遊べるAR宝探しアプリ",
-    "metaDescription": "現実の場所でエアドロップを探し、ARでNFTを集め、AIの相棒と歩く。Seekprotocolは、どのチェーンのアセットも実在の場所に紐づけます。",
-    "ogTitle": "Seekprotocol｜すべてのチェーンのためのARとAI",
-    "heroEyebrow": "AR · AI · どのチェーンでも"
+    "metaTitle": "Seekprotocol | オンチェーン報酬のAR宝探しアプリ",
+    "metaDescription": "現実の場所でエアドロップを探し、ARでNFTを集め、AIの相棒と歩く。Seekprotocolは実在の場所を、オンチェーンで受け取れる報酬に変えます。マルチチェーン対応、現在はSolanaで稼働中。",
+    "ogTitle": "Seekprotocol｜オンチェーン報酬のAR・AIディスカバリー",
+    "heroEyebrow": "AR · AI · どのチェーンでも",
+    "placeReward": "自分の座標に報酬を置く",
+    "exploreEcosystem": "エコシステムを探る",
+    "viewRoadmap": "ロードマップを見る",
+    "polCtaEyebrow": "位置証明",
+    "polCtaTitle": "存在の検証",
+    "polCtaBody": "クレームが受理されるには、4つの独立したシグナルが一致する必要があります。平易な解説はブログにあります。",
+    "polCtaLink": "位置証明の仕組み"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol | AR宝探しアプリ",
-    "metaDescription": "SeekprotocolはSeekprotocolの拡張現実アプリ。現実の座標でエアドロップを探し、NFTを集め、どのチェーンでも暗号資産の報酬を受け取れます。iOSとAndroidで無料。",
-    "ogTitle": "Seekprotocol | AR宝探しアプリ",
+    "metaTitle": "Seekprotocol, AR宝探しアプリ",
+    "metaDescription": "オンチェーン報酬の拡張現実アプリ。位置連動のエアドロップを探し、実在する座標でNFTを集め、暗号資産の報酬を獲得しましょう。マルチチェーン対応、現在はSolanaで稼働中。iOSとAndroidで無料。",
+    "ogTitle": "Seekprotocol, AR宝探しアプリ",
     "eyebrow": "アプリ",
     "heroTitle": "Seekprotocol",
-    "heroDesc": "Seekprotocolの拡張現実アプリ。スマホを世界にかざせば、そこに置かれたものが見えてきます。実在する座標に紐づいたトークン、NFT、そして報酬。どのチェーンから来たものでも構いません。",
+    "heroDesc": "Seekprotocolの拡張現実アプリ。スマホを世界にかざせば、そこに置かれたものが見えてきます。実在する座標に紐づいたトークン、NFT、そして報酬です。マルチチェーン対応、現在はSolanaで稼働中。",
     "whatTitle": "Seekprotocolとは",
-    "whatBody": "SeekprotocolはSeekprotocolの主力モバイルアプリで、iOSとAndroidで無料で使えます。どんな通りも、公園も、施設も、デジタル資産を隠して受け取れる場所に変わります。出題者が座標に報酬を置き、あなたは実際にその場所へ行かなければ受け取れません。そして プロトコルがあなたがそこにいたことを証明します。エミュレーターも、位置偽装も、抜け道もありません。",
+    "whatBody": "Seekprotocolは主力モバイルアプリで、iOSとAndroidで無料で使えます。どんな通りも、公園も、施設も、デジタル資産を隠して受け取れる場所に変わります。出題者が座標に報酬を置き、あなたは実際にその場所へ行かなければ受け取れません。そして プロトコルがあなたがそこにいたことを証明します。エミュレーターも、位置偽装も、抜け道もありません。",
     "featuresTitle": "できること",
     "f1Title": "位置連動のエアドロップを探す",
     "f1Desc": "トークンやNFTは実在する座標に紐づいています。その場所まで歩き、カメラを開いて、待っているものを受け取りましょう。",
@@ -121,7 +129,7 @@
     "f3Title": "AIコンパニオンと探索する",
     "f3Desc": "AIガイドが今いる場所と周辺の状況に反応し、足を運ぶ価値のあるものを教えてくれます。",
     "f4Title": "本物の暗号資産報酬を得る",
-    "f4Desc": "すべて、そのアセットがもともといるチェーンで決済されます。集めたものはあなたのもので、あなたのウォレットに入り、どこへでも一緒に動きます。",
+    "f4Desc": "すべてオンチェーンで決済されます, 現在はSolanaで、チェーンに依存しないプロトコルです。集めたものはあなたのもので、あなたのウォレットに入り、どこへでも一緒に動きます。",
     "howTitle": "使い方",
     "s1Title": "ダウンロードして開く",
     "s1Desc": "App StoreとGoogle Playで無料。ウォレットは自動で作成されるので、秘密鍵を扱った経験は必要ありません。",
@@ -133,7 +141,7 @@
     "q1": "Seekprotocolは無料ですか",
     "a1": "はい。SeekprotocolはiOSとAndroidで無料でダウンロードできます。アプリ内には有料のアイテムもありますが、探すことと受け取ることは無料です。",
     "q2": "Seekprotocolは誰が作っていますか",
-    "a2": "SeekprotocolはドバイのBlock Protocol L.L.C-FZが手がけるSeekprotocolが開発しています。どのチェーンのアセットにも対応するARとAIのアプリで、App StoreとGoogle Playで入手できます。",
+    "a2": "SeekprotocolはドバイのBlock Protocol L.L.C-FZが開発しています。オンチェーン報酬のためのマルチチェーン対応ARとAIのアプリで、現在はSolanaで稼働中、App StoreとGoogle Playで入手できます。",
     "q3": "暗号資産の知識は必要ですか",
     "a3": "必要ありません。アプリを開くとウォレットが自動で作成され、シードフレーズを自分で扱うことなく資産を集めて保有できます。",
     "q4": "どの端末で動きますか",
@@ -142,9 +150,18 @@
     "a5": "できません。Proof of Locationが実際の滞在をオンチェーンで検証します。それこそが、報酬を置いた出題者にとって受け取りに意味を持たせているものです。",
     "ctaTitle": "Seekprotocolをダウンロード",
     "ctaDesc": "iOSとAndroidで無料。あなたの街には、見つける価値のあるものがもう溢れています。",
-    "renameTitle": "SeekAR は Seekprotocol になりました",
-    "renameBody": "同じアプリ、同じアカウント、同じマップ。変わったのは名前だけです。別の会社が旧名称について商標を出願したため、はじめから自分たちのものである名称に移行しました。",
-    "renameLink": "お知らせを読む"
+    "renameTitle": "SeekAR アプリは Seekprotocol になりました",
+    "renameBody": "同じアプリ、同じアカウント、同じマップ。変わったのはアプリの名前だけです。会社名ははじめから Seekprotocol です。別の会社が旧アプリ名について商標を出願したため、アプリをはじめから自分たちのものである名称に移行しました。",
+    "renameLink": "お知らせを読む",
+    "legacyEyebrow": "名称の履歴",
+    "legacyTitle": "暗号資産AR アプリ「SeekAR」は現在「Seekprotocol」です",
+    "legacyBody": "変わったのはアプリの名前だけです。会社名ははじめから Seekprotocol です。リリースから2026年8月までiOSおよびAndroidで「SeekAR」の名称で公開されていたモバイルアプリは、現在「Seekprotocol」と呼ばれています。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ、UAE）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）。他の製品、アーティスト、場所も「Seekar」という名称を使用していますが、このページはオンチェーン報酬のためのマルチチェーン対応ARアプリ（現在はSolanaで稼働中）について具体的に説明しています。",
+    "q6": "SeekAR アプリはどうなりましたか？",
+    "a6": "SeekARとしてリリースされたオンチェーン報酬のためのARモバイルアプリは、2026年8月10日にSeekprotocolに名称変更されました。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）、現在はSolanaで稼働中。名称とアイコンのみが変更されました。",
+    "q7": "以前SeekARと呼ばれていたアプリはどこでダウンロードできますか？",
+    "a7": "App Storeのapps.apple.com/app/id6752813761、Google Playのplay.google.com/store/apps/details?id=com.seekar.seekar からダウンロードできます。両方のリスティングは現在Seekprotocolという名称です。",
+    "q8": "SeekprotocolはSeekARと同じ製品ですか？",
+    "a8": "はい。会社名ははじめからSeekprotocolであり、変わったのはアプリの名前だけです。ローンチから2026年8月までSeekARと呼ばれていたオンチェーン報酬のためのマルチチェーン対応ARアプリ（現在はSolanaで稼働中）が、現在はSeekprotocolと呼ばれています。ドバイのBlock Protocol L.L.C-FZの同じチームによって公開されています。"
   },
   "about": {
     "heroTitle": "位置ベースデジタル体験の未来を発見",
@@ -214,7 +231,16 @@
     "formDesc": "以下のフォームにご記入ください。できるだけ早くご返信いたします。",
     "metaTitle": "お問い合わせ：協業とキャンペーン",
     "metaDescription": "自社の座標でのキャンペーン、パートナーシップ、ベータ参加、取材について、Seekprotocolのチームにご連絡ください。",
-    "ogTitle": "Seekprotocolへのお問い合わせ"
+    "ogTitle": "Seekprotocolへのお問い合わせ",
+    "inquiryTypesEyebrow": "もっと具体的に",
+    "partnershipsTitle": "パートナーシップ",
+    "partnershipsBody": "プロジェクト、IP、あるいはSeekに持ち込みたい拠点のネットワーク。何をどこに、と教えてください, 残りは私たちが対応します。",
+    "publishersTitle": "パブリッシャー",
+    "publishersBody": "特定の座標にARキャンペーンを置き、来訪ごとに支払いたい。場所とオファーを送ってください。一緒にキャンペーンを立ち上げます。",
+    "pressTitle": "プレス・メディア",
+    "pressBody": "掲載、取材、レビュー用配布、エンバーゴ情報。編集関連はすべてこちらから、当日中に返信します。",
+    "supportTitle": "サポート",
+    "supportBody": "不具合、届かなかった報酬、ウォレットの質問。最速はDiscordですが、このフォームでも受け付けます。"
   },
   "services": {
     "heroTitle": "私たちの専門知識、あなたの成長",
@@ -1178,7 +1204,11 @@
     "ctaTitle": "技術的な説明",
     "ctaBody": "位置証明、アーキテクチャ、トークン設計、そして防いでいる攻撃と受け入れている限界の率直な一覧。",
     "ctaWhitepaper": "ホワイトペーパーを読む",
-    "ctaBusiness": "自分でアセットを置く"
+    "ctaBusiness": "自分でアセットを置く",
+    "polCtaEyebrow": "位置証明",
+    "polCtaTitle": "存在の検証",
+    "polCtaBody": "クレームが受理されるには、4つの独立したシグナルが一致する必要があります。平易な解説はブログにあります。",
+    "polCtaLink": "位置証明の仕組み"
   },
   "participants": {
     "seekers": {
@@ -1298,7 +1328,6 @@
     "foundation": {
       "title": "土台",
       "summary": "そもそも中核の発想が成り立つかの確認。価値あるものを解放できるだけの信頼度で、スマホは人がそこにいたと確認できるのか。",
-      "groups": {},
       "items": {
         "prototype": "GNSSと移動の連続性による位置証明のプロトタイプ",
         "engine": "永続的なワールドアンカーを備えたARレンダリングエンジン",
@@ -1309,7 +1338,6 @@
     "launch": {
       "title": "一般公開",
       "summary": "Seekprotocolを実際の手に届けること。両方のアプリストアで、秘密鍵を握った経験を前提にしないオンボーディングとともに。",
-      "groups": {},
       "items": {
         "stores": "SeekprotocolをiOSとAndroidでリリース",
         "wallet": "ソーシャルログインのウォレット、自己管理への書き出しは任意",
@@ -1344,7 +1372,6 @@
     "governance": {
       "title": "パラメータを手渡す",
       "summary": "ガバナンスは実際の手数料の流れに先んじるのではなく、後から続きます。取引量のない経済で投票するのは演出でしかないので、これは意図して最後です。",
-      "groups": {},
       "items": {
         "onChain": "プロトコルパラメータのオンチェーンガバナンス",
         "treasury": "コミュニティトレジャリーの配分",
@@ -1355,7 +1382,7 @@
   },
   "businessPage": {
     "metaTitle": "ジオフェンス広告、来訪ごとの課金",
-    "metaDescription": "来訪を推定ではなく実測する位置連動マーケティング。自社の座標に報酬を置き、店先で測った検証済み来訪ごとに支払います。",
+    "metaDescription": "パブリッシャーとブランド向けの位置連動型AR広告。自社の座標に報酬を置き、インプレッションではなく検証済み来訪ごとに支払います。",
     "ogTitle": "検証済み来訪ごとの支払い",
     "eyebrow": "法人向け",
     "titleStart": "買うのは来訪、",
@@ -1382,7 +1409,11 @@
     "realEyebrow": "単位",
     "realTitle": "来訪とは何で、何ではないのか",
     "realLead": "市場にあるどの指標も代理でしかなく、どの代理にも1セント未満でそれを生み出すスクリプトがあります。到達だけが例外で、しかもハードウェアが良くなっても薄れない理由からです。その費用は身体的なものだからです。",
-    "chainsNote": "すでに持っているアセットで、それがどこにあってもキャンペーンを組めます。ネットワークは統合ではなく設定なので、ひとつのキャンペーンが複数にまたがって走り、受け取る人はどれなのかを知る必要がありません。"
+    "chainsNote": "すでに持っているアセットで、それがどこにあってもキャンペーンを組めます。ネットワークは統合ではなく設定なので、ひとつのキャンペーンが複数にまたがって走り、受け取る人はどれなのかを知る必要がありません。",
+    "verifiedEyebrow": "検証済みの訪問のみ",
+    "verifiedTitle": "実際に来た人にのみ支払い",
+    "verifiedBody": "インプレッションなし、訪問にならなかったクリックもなし。プロトコルが現地で人物を検証したときにキャンペーンは支出します。",
+    "verifiedLink": "Seek Partners を開く"
   },
   "useCases": {
     "retail": {

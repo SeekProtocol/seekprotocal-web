@@ -71,11 +71,11 @@ export async function generateMetadata({
     // Google truncates the SERP title around 60 characters. The previous
     // default ran to 76, so "Redefining Innovation" was never shown.
     title: {
-      default: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
+      default: "Seekprotocol | The AR & AI Platform for On-Chain Rewards",
       template: "%s | Seekprotocol",
     },
     description:
-      "Experience the future with $SEEK, the AR and AI layer for assets on any chain. Hunt location-based airdrops, collect NFTs, explore with AI companions, and earn real crypto rewards through immersive augmented reality experiences.",
+      "Experience the future with $SEEK, the AR and AI platform for on-chain rewards. Hunt location-based airdrops, collect NFTs, explore with AI companions, and earn real crypto rewards through immersive augmented reality experiences. Multi-chain by design, currently live on Solana.",
     keywords: [
       "Seekprotocol",
       "$SEEK",
@@ -83,6 +83,8 @@ export async function generateMetadata({
       "augmented reality",
       "AR platform",
       "multi-chain",
+      "chain-agnostic",
+      "on-chain rewards",
       "Ethereum",
       "Solana",
       "BNB Smart Chain",
@@ -107,9 +109,9 @@ export async function generateMetadata({
     publisher: "Block Protocol L.L.C-FZ",
     category: "Technology",
     openGraph: {
-      title: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
+      title: "Seekprotocol | The AR & AI Platform for On-Chain Rewards",
       description:
-        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The AR and AI layer that anchors assets from any chain to real places.",
+        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The multi-chain AR & AI platform transforming real-world exploration into crypto rewards. Currently live on Solana.",
       type: "website",
       locale: localeToOgLocale[locale] || "en_US",
       alternateLocale: Object.entries(localeToOgLocale)
@@ -123,9 +125,9 @@ export async function generateMetadata({
       card: "summary_large_image",
       site: "@Seekprotocol",
       creator: "@Seekprotocol",
-      title: "Seekprotocol | AR & AI Treasure Hunts on Any Chain",
+      title: "Seekprotocol | The AR & AI Platform for On-Chain Rewards",
       description:
-        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The AR and AI layer that anchors assets from any chain to real places.",
+        "Hunt location-based airdrops, collect NFTs, and explore with AI companions. The multi-chain AR & AI platform transforming real-world exploration into crypto rewards. Currently live on Solana.",
       images: [OG_IMAGE],
     },
     robots: {
@@ -205,7 +207,7 @@ export default async function LocaleLayout({
         <script dangerouslySetInnerHTML={{ __html: deploymentInitScript }} />
         {/* Consent Mode defaults, then GA4. In <head> and last among these,
             because the defaults have to reach the dataLayer before the tag
-            reads it — that ordering is what keeps Google from writing anything
+            reads it, that ordering is what keeps Google from writing anything
             to the device before the banner is answered. */}
         <GoogleAnalytics />
       </head>
@@ -238,7 +240,7 @@ export default async function LocaleLayout({
                     },
                     legalName: "Block Protocol L.L.C-FZ",
                     description:
-                      "The AR and AI layer for assets on any chain. Hunt location-based airdrops, collect NFTs, and explore with AI companions.",
+                      "The multi-chain AR and AI platform for on-chain rewards. Currently live on Solana. Hunt location-based airdrops, collect NFTs, and explore with AI companions.",
                     sameAs: [
                       "https://x.com/Seekprotocol",
                       "https://t.me/seekprotocol",
@@ -265,7 +267,7 @@ export default async function LocaleLayout({
                       "@id": "https://www.seekprotocol.ai/#organization",
                     },
                     description:
-                      "The AR and AI layer for assets on any chain, turning real-world exploration into crypto rewards.",
+                      "The multi-chain AR and AI platform transforming real-world exploration into crypto rewards. Currently live on Solana.",
                     inLanguage: locale,
                     availableLanguage: routing.locales.map((loc) => ({
                       "@type": "Language",
@@ -292,7 +294,7 @@ export default async function LocaleLayout({
                     operatingSystem: "iOS, Android",
                     applicationCategory: "GameApplication",
                     description:
-                      "AR-powered mobile app that turns real-world locations into interactive treasure hunts, settling rewards on whichever chain the asset lives on.",
+                      "AR-powered mobile app for location-based crypto rewards, anchoring digital assets to real-world coordinates. Multi-chain protocol, currently settling on Solana.",
                     publisher: {
                       "@id": "https://www.seekprotocol.ai/#organization",
                     },
@@ -314,11 +316,36 @@ export default async function LocaleLayout({
               }),
             }}
           />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `document.addEventListener('contextmenu',function(e){e.preventDefault()});document.addEventListener('copy',function(e){e.preventDefault()});document.addEventListener('cut',function(e){e.preventDefault()});document.addEventListener('selectstart',function(e){e.preventDefault()});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.key==='c'||e.key==='x'||e.key==='a'||e.key==='u'||e.key==='s')){e.preventDefault()}});`,
-            }}
-          />
+          {/* No copy/context/select-blocking script here on purpose.
+
+              A previous version registered listeners for `contextmenu`, `copy`,
+              `cut`, `selectstart` and the Ctrl/Cmd shortcuts for C/X/A/U/S, all
+              set to `preventDefault`. It was removed for four separate reasons
+              and should not come back without addressing all of them:
+
+              1. LLM discoverability. robots.txt explicitly allows OAI-SearchBot,
+                 ChatGPT-User, PerplexityBot, Claude-User, Claude-SearchBot,
+                 Google-Extended, Applebot-Extended, GPTBot, ClaudeBot and
+                 anthropic-ai. That policy is a public bet that being quotable in
+                 an assistant's answer is worth more than withholding the
+                 content. A user who cannot copy a sentence from this site into
+                 their AI chat is a user who cannot ask their AI about us, the
+                 script contradicted the file we ship next to it.
+
+              2. Accessibility. Screen readers and assistive tech expect the
+                 selection model to work. Blocking selectstart breaks translation
+                 tools, read-aloud modes and the built-in accessibility features
+                 on every platform.
+
+              3. Discoverability for humans. Ctrl/Cmd+S is used to save reading
+                 for later; Ctrl/Cmd+U is used by any developer or partner
+                 evaluating whether to integrate. Blocking them cost curiosity
+                 for no gain.
+
+              4. It did not protect anything. Anyone motivated to copy the copy
+                 already used the browser DevTools or `view-source:`, neither of
+                 which the listeners could reach. The people it blocked were the
+                 casual readers who would have quoted us. */}
           <ThemeProvider>
             <a href="#main-content" className="skip-link">
               Skip to main content
