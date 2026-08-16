@@ -36,9 +36,9 @@ export async function generateMetadata({
   return {
     /* `metaTitle` is the whole title, with no brand suffix appended.
 
-       The layout's `%s | Seekprotocol` template never reaches this page — it
+       The layout's `%s | Seekprotocol` template never reaches this page, it
        applies to *child* segments, and this page sits in the same segment as
-       the layout that declares it — so the suffix used to be added here by
+       the layout that declares it, so the suffix used to be added here by
        hand. It is gone, and now that the app and the site share one name there
        is nothing for it to add: "Seekprotocol | ... | Seekprotocol" would say
        the name twice inside a limit that already has no room for it.
@@ -84,7 +84,7 @@ const homeFaqJsonLd = {
       name: "What is Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Seekprotocol is the first augmented reality and AI platform on Solana. It anchors digital assets — tokens, NFTs, brand rewards — to real-world coordinates. A publisher places a reward at a location, someone walks to it, and the protocol verifies they were actually there before settling the claim on Solana. The consumer surface is the Seekprotocol mobile app on iOS and Android.",
+        text: "Seekprotocol is the first augmented reality and AI platform on Solana. It anchors digital assets, tokens, NFTs, brand rewards, to real-world coordinates. A publisher places a reward at a location, someone walks to it, and the protocol verifies they were actually there before settling the claim on Solana. The consumer surface is the Seekprotocol mobile app on iOS and Android.",
       },
     },
     {
@@ -92,7 +92,7 @@ const homeFaqJsonLd = {
       name: "Is Seekprotocol built on Solana?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Every claim settles on Solana. The chain is chosen for its low transaction cost — collecting a reward worth a few cents has to cost a small fraction of a cent to record, or the economics do not work — and for its sub-second confirmation, which matters when a user is standing on a street corner waiting.",
+        text: "Yes. Every claim settles on Solana. The chain is chosen for its low transaction cost, collecting a reward worth a few cents has to cost a small fraction of a cent to record, or the economics do not work, and for its sub-second confirmation, which matters when a user is standing on a street corner waiting.",
       },
     },
     {
@@ -108,7 +108,7 @@ const homeFaqJsonLd = {
       name: "How does proof of location work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Presence is verified against four independent signals — satellite fix, ambient radio environment, device attestation and motion continuity — that must all agree before a claim is accepted. The goal is to make forgery cost more than the reward is worth. The protocol does not claim forgery is impossible; the whitepaper documents the specific attacks and the limits.",
+        text: "Presence is verified against four independent signals, satellite fix, ambient radio environment, device attestation and motion continuity, that must all agree before a claim is accepted. The goal is to make forgery cost more than the reward is worth. The protocol does not claim forgery is impossible; the whitepaper documents the specific attacks and the limits.",
       },
     },
     {
@@ -132,7 +132,7 @@ const homeFaqJsonLd = {
       name: "What is location-based AR?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Location-based AR anchors digital objects — 3D models, tokens, NFTs, rewards — to specific real-world coordinates. Unlike marker-based AR (which needs a printed image) or world-scale AR (which places objects relatively), location-based AR uses GPS plus a verification layer so an asset only exists for people who physically visit its coordinate. Seekprotocol is a location-based AR platform in this sense.",
+        text: "Location-based AR anchors digital objects, 3D models, tokens, NFTs, rewards, to specific real-world coordinates. Unlike marker-based AR (which needs a printed image) or world-scale AR (which places objects relatively), location-based AR uses GPS plus a verification layer so an asset only exists for people who physically visit its coordinate. Seekprotocol is a location-based AR platform in this sense.",
       },
     },
     {
@@ -140,7 +140,7 @@ const homeFaqJsonLd = {
       name: "What was SeekAR? Is it the same as Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "SeekAR was the launch name of what is now called Seekprotocol. The same app, the same account, the same map — only the name and icon changed in August 2026, after a separate company filed a trademark application on the old name. The full account is at https://www.seekprotocol.ai/en/blog/seekar-is-now-seekprotocol.",
+        text: "SeekAR was the launch name of what is now called Seekprotocol. The same app, the same account, the same map, only the name and icon changed in August 2026, after a separate company filed a trademark application on the old name. The full account is at https://www.seekprotocol.ai/en/blog/seekar-is-now-seekprotocol.",
       },
     },
   ],
@@ -262,7 +262,7 @@ function HomeContent() {
           </div>
 
           {/* Contextual link out to the business trechter. Publishers who
-              read Beyond-coins are the audience for /business — this hand-off
+              read Beyond-coins are the audience for /business, this hand-off
               was missing, so the section dead-ended and everything below it
               stayed a seeker narrative. */}
           <div className="reveal" style={{ marginTop: "2.5rem" }}>
