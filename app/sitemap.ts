@@ -62,6 +62,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
      so future one-off edits don't quietly relabel unrelated pages. */
   const SEEKAR_LEGACY = new Date("2026-08-16");
 
+  /* 16 Aug 2026 also: four Q1 cornerstones landed in the blog (best-ar-games-2026,
+     geocaching-vs-ar-treasure-hunts, how-proof-of-location-works,
+     ar-location-campaigns-for-brands). Each carries its own date on the article
+     entry, but the /blog index page changed too — it now lists fourteen posts
+     instead of ten — so its lastmod needs to reflect that. */
+  const BLOG_Q1_BATCH_TWO = new Date("2026-08-16");
+
   const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly"; lastModified: Date }[] = [
     { path: "/", priority: 1, changeFrequency: "weekly", lastModified: SEO_PASS },
 
@@ -70,7 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
        one carrying the app's name. */
     { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SEEKAR_LEGACY },
     { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
-    { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: REBUILT },
+    { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: BLOG_Q1_BATCH_TWO },
     { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: SEO_PASS },
     { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
     { path: "/terms-conditions", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
