@@ -425,8 +425,30 @@ function HomeContent() {
         </div>
       </section>
 
-      {/* ── CTA ─────────────────────────────────────────────────────────── */}
+      {/* ── Proof of location CTA ───────────────────────────────────────
+          Compact hand-off from the Foundations section (where proof of
+          location is pillar #1) to the plain-language walkthrough on the
+          blog. Placed here rather than inside the pillars grid so that
+          readers who did not stop at the card still hit the link before
+          the final beta CTA. */}
       <section className="section">
+        <div className="shell">
+          <div className="reveal" style={{ textAlign: "center", maxWidth: "40rem", margin: "0 auto" }}>
+            <p className="eyebrow eyebrow-center">{t("polCtaEyebrow")}</p>
+            <h2 className="t-h3" style={{ marginTop: "0.75rem" }}>{t("polCtaTitle")}</h2>
+            <p className="t-body" style={{ marginTop: "1rem" }}>{t("polCtaBody")}</p>
+            <div style={{ marginTop: "1.5rem" }}>
+              <Link href="/blog/how-proof-of-location-works" prefetch={false} className="arrow-link">
+                {t("polCtaLink")}
+                <ArrowRight />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ─────────────────────────────────────────────────────────── */}
+      <section className="section section-sunken">
         <div className="shell">
           <div className="cta-band reveal">
             <div className="cta-band-inner">
