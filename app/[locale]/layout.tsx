@@ -201,7 +201,7 @@ export default async function LocaleLayout({
         <script dangerouslySetInnerHTML={{ __html: deploymentInitScript }} />
         {/* Consent Mode defaults, then GA4. In <head> and last among these,
             because the defaults have to reach the dataLayer before the tag
-            reads it — that ordering is what keeps Google from writing anything
+            reads it, that ordering is what keeps Google from writing anything
             to the device before the banner is answered. */}
         <GoogleAnalytics />
       </head>
@@ -323,7 +323,7 @@ export default async function LocaleLayout({
                  anthropic-ai. That policy is a public bet that being quotable in
                  an assistant's answer is worth more than withholding the
                  content. A user who cannot copy a sentence from this site into
-                 their AI chat is a user who cannot ask their AI about us — the
+                 their AI chat is a user who cannot ask their AI about us, the
                  script contradicted the file we ship next to it.
 
               2. Accessibility. Screen readers and assistive tech expect the

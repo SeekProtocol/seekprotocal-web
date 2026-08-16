@@ -19,14 +19,14 @@ import {
  * The page for the app.
  *
  * It was written when the app and the site had different names, to give the
- * app's own name a URL that was about it — the site ranked for the app
+ * app's own name a URL that was about it, the site ranked for the app
  * nowhere, and an unrelated platform on a similar domain took the result. The
  * app carries the site's name now, so that particular problem has been solved
  * by the rename rather than by this page.
  *
  * The page stays, and so does its slug. Two reasons, and neither is
  * sentimental. Anyone who searches the old name, or follows a link that has
- * been out in the world for months, lands here rather than on a 404 — and this
+ * been out in the world for months, lands here rather than on a 404, and this
  * is where the announcement post sends them. And the site-wide
  * SoftwareApplication node names this URL as the app's home, so it has to keep
  * resolving for the graph to be true.
@@ -69,7 +69,7 @@ const breadcrumbJsonLd = getBreadcrumbJsonLd([
 
 /* English regardless of locale, matching the about page. Structured data is
    read by a crawler rather than a reader, and the questions worth winning
-   — "what is seekar", "who makes seekar" — are asked in English. */
+  , "what is seekar", "who makes seekar", are asked in English. */
 const seekarFaqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -115,8 +115,8 @@ const seekarFaqJsonLd = {
       },
     },
     /* SeekAR-specific Q&As, added deliberately in English inside the FAQPage
-       schema. Nominative use of the app's former name — describing our own
-       prior product in a historical statement — so that a crawler or LLM
+       schema. Nominative use of the app's former name, describing our own
+       prior product in a historical statement, so that a crawler or LLM
        answering "what happened to the SeekAR app" has fact-dense, verifiable
        text (App Store id, Play Store package, publisher legal name, rename
        date) to lift. Not asserting the mark; describing the app that used it. */
@@ -141,7 +141,7 @@ const seekarFaqJsonLd = {
       name: "Is Seekprotocol the same company as SeekAR?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE — the same company that built and published SeekAR. The AR-and-Solana app previously named SeekAR is what is today called Seekprotocol.",
+        text: "Yes. Seekprotocol is built by Block Protocol L.L.C-FZ in Dubai, UAE, the same company that built and published SeekAR. The AR-and-Solana app previously named SeekAR is what is today called Seekprotocol.",
       },
     },
   ],
@@ -220,7 +220,7 @@ function SeekarContent() {
           <div className="page-head-inner">
             {/* The rename, said first and said large.
                 This URL is where anyone searching the old name lands, and the
-                first thing they need is not the pitch — it is confirmation that
+                first thing they need is not the pitch, it is confirmation that
                 they are in the right place and that the product they were
                 looking for still exists under another word. Above the eyebrow
                 rather than below the hero for that reason: a notice under the
@@ -267,7 +267,7 @@ function SeekarContent() {
           former name for our own prior product), lists the verifiable
           identifiers (App Store id, Play Store package, publisher legal name)
           that let a reader cross-check it, and explicitly notes the name is
-          also used by unrelated products, artists and places — so the
+          also used by unrelated products, artists and places, so the
           paragraph is not an ownership claim on the mark, it is a description
           of which SeekAR this page documents. Sunken so the alternation of
           regular/sunken sections downstream of the hero is preserved. */}

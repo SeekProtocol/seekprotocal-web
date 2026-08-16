@@ -107,9 +107,9 @@
     "ogTitle": "Seekprotocol | AR- en AI-ontdekkingen op Solana"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol — de AR-schattenjacht-app",
+    "metaTitle": "Seekprotocol, de AR-schattenjacht-app",
     "metaDescription": "De augmented reality-app op Solana. Jaag op locatiegebonden airdrops, verzamel NFT's op echte coördinaten en verdien crypto-beloningen. Gratis voor iOS en Android.",
-    "ogTitle": "Seekprotocol — de AR-schattenjacht-app",
+    "ogTitle": "Seekprotocol, de AR-schattenjacht-app",
     "eyebrow": "De app",
     "heroTitle": "Seekprotocol",
     "heroDesc": "De augmented reality-app van Seekprotocol. Richt je telefoon op de wereld en vind wat daar is neergelegd: tokens, NFT's en beloningen, verankerd aan echte coördinaten op Solana.",
@@ -149,13 +149,13 @@
     "renameLink": "Lees de aankondiging",
     "legacyEyebrow": "Naamgeschiedenis",
     "legacyTitle": "De SeekAR AR-app op Solana heet nu Seekprotocol",
-    "legacyBody": "De mobiele app die van launch tot en met augustus 2026 op iOS en Android verscheen onder de naam SeekAR heet nu Seekprotocol. Zelfde product, zelfde uitgever — Block Protocol L.L.C-FZ, Dubai, VAE — zelfde App Store-vermelding (id 6752813761) en zelfde Play Store-package (com.seekar.seekar). Er zijn ook andere producten, artiesten en plaatsen die de naam Seekar dragen; deze pagina beschrijft specifiek de AR-en-Solana-app.",
+    "legacyBody": "De mobiele app die van launch tot en met augustus 2026 op iOS en Android verscheen onder de naam SeekAR heet nu Seekprotocol. Zelfde product, zelfde uitgever, Block Protocol L.L.C-FZ, Dubai, VAE, zelfde App Store-vermelding (id 6752813761) en zelfde Play Store-package (com.seekar.seekar). Er zijn ook andere producten, artiesten en plaatsen die de naam Seekar dragen; deze pagina beschrijft specifiek de AR-en-Solana-app.",
     "q6": "Wat is er met de SeekAR-app gebeurd?",
     "a6": "De AR-mobiele app op Solana die als SeekAR werd uitgebracht is op 10 augustus 2026 hernoemd tot Seekprotocol. Zelfde product, zelfde uitgever (Block Protocol L.L.C-FZ, Dubai), zelfde App Store-vermelding (id 6752813761) en zelfde Play Store-package (com.seekar.seekar). Alleen de naam en het icoon zijn veranderd.",
     "q7": "Waar kan ik de app downloaden die vroeger SeekAR heette?",
     "a7": "In de App Store op apps.apple.com/app/id6752813761 en in Google Play op play.google.com/store/apps/details?id=com.seekar.seekar. Beide vermeldingen dragen nu de naam Seekprotocol.",
     "q8": "Is Seekprotocol hetzelfde bedrijf als SeekAR?",
-    "a8": "Ja. Seekprotocol wordt gebouwd door Block Protocol L.L.C-FZ in Dubai, VAE — hetzelfde bedrijf dat SeekAR bouwde en uitbracht. De AR-en-Solana-app die voorheen SeekAR heette is wat vandaag Seekprotocol heet."
+    "a8": "Ja. Seekprotocol wordt gebouwd door Block Protocol L.L.C-FZ in Dubai, VAE, hetzelfde bedrijf dat SeekAR bouwde en uitbracht. De AR-en-Solana-app die voorheen SeekAR heette is wat vandaag Seekprotocol heet."
   },
   "about": {
     "heroTitle": "Ontdek de toekomst van locatie-gebaseerde digitale ervaringen",
@@ -225,7 +225,7 @@
     "formDesc": "Vul het onderstaande formulier in, en we nemen zo snel mogelijk contact met je op.",
     "inquiryTypesEyebrow": "Of, specifieker",
     "partnershipsTitle": "Samenwerkingen",
-    "partnershipsBody": "Je hebt een project, een IP of een netwerk van locaties dat je in Seek wilt brengen. Vertel ons wat en waar — de rest doen wij.",
+    "partnershipsBody": "Je hebt een project, een IP of een netwerk van locaties dat je in Seek wilt brengen. Vertel ons wat en waar, de rest doen wij.",
     "publishersTitle": "Publishers",
     "publishersBody": "Je wilt AR-campagnes op specifieke coördinaten plaatsen en per geverifieerd bezoek betalen. Stuur de locatie en de aanbieding; we zetten de campagne samen met je op.",
     "pressTitle": "Pers & media",
@@ -1238,7 +1238,7 @@
   },
   "businessPage": {
     "metaTitle": "Geofencing-marketing, betaald per bezoek",
-    "metaDescription": "Locatiegebonden AR-adverteren voor publishers en merken. Leg een beloning op je coördinaten en betaal per geverifieerd bezoek — niet per impressie.",
+    "metaDescription": "Locatiegebonden AR-adverteren voor publishers en merken. Leg een beloning op je coördinaten en betaal per geverifieerd bezoek, niet per impressie.",
     "ogTitle": "Betaal per geverifieerd bezoek",
     "eyebrow": "Zakelijk",
     "titleStart": "Koop bezoeken, geen",

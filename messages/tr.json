@@ -107,9 +107,9 @@
     "ogTitle": "Seekprotocol | Solana'da AR ve AI Keşfi"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol — AR Hazine Avı Uygulaması",
+    "metaTitle": "Seekprotocol, AR Hazine Avı Uygulaması",
     "metaDescription": "Solana üzerindeki artırılmış gerçeklik uygulaması. Konum tabanlı hava dağıtımlarını avla, gerçek koordinatlarda NFT topla ve kripto ödüller kazan. iOS ve Android için ücretsiz.",
-    "ogTitle": "Seekprotocol — AR Hazine Avı Uygulaması",
+    "ogTitle": "Seekprotocol, AR Hazine Avı Uygulaması",
     "eyebrow": "Uygulama",
     "heroTitle": "Seekprotocol",
     "heroDesc": "Seekprotocol'ün artırılmış gerçeklik uygulaması. Telefonunu dünyaya doğrult ve oraya yerleştirilen şeyleri bul: Solana üzerinde gerçek koordinatlara sabitlenmiş tokenler, NFT'ler ve ödüller.",
@@ -149,13 +149,13 @@
     "renameLink": "Duyuruyu oku",
     "legacyEyebrow": "İsim geçmişi",
     "legacyTitle": "Solana üzerindeki SeekAR AR uygulaması artık Seekprotocol",
-    "legacyBody": "Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı — Block Protocol L.L.C-FZ, Dubai, BAE — aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle Solana üzerindeki AR uygulamasını açıklıyor.",
+    "legacyBody": "Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı, Block Protocol L.L.C-FZ, Dubai, BAE, aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle Solana üzerindeki AR uygulamasını açıklıyor.",
     "q6": "SeekAR uygulamasına ne oldu?",
     "a6": "SeekAR olarak yayınlanan Solana üzerindeki AR mobil uygulaması 10 Ağustos 2026'da Seekprotocol olarak yeniden adlandırıldı. Aynı ürün, aynı yayıncı (Block Protocol L.L.C-FZ, Dubai), aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Yalnızca isim ve simge değişti.",
     "q7": "Eskiden SeekAR olarak bilinen uygulamayı nereden indirebilirim?",
     "a7": "App Store'da apps.apple.com/app/id6752813761 ve Google Play'de play.google.com/store/apps/details?id=com.seekar.seekar adreslerinden. Her iki giriş de artık Seekprotocol olarak adlandırılıyor.",
     "q8": "Seekprotocol, SeekAR ile aynı şirket mi?",
-    "a8": "Evet. Seekprotocol, Dubai, BAE'deki Block Protocol L.L.C-FZ tarafından geliştiriliyor — SeekAR'ı geliştiren ve yayınlayan aynı şirket. Daha önce SeekAR olarak adlandırılan Solana üzerindeki AR uygulaması bugün Seekprotocol olarak adlandırılıyor."
+    "a8": "Evet. Seekprotocol, Dubai, BAE'deki Block Protocol L.L.C-FZ tarafından geliştiriliyor, SeekAR'ı geliştiren ve yayınlayan aynı şirket. Daha önce SeekAR olarak adlandırılan Solana üzerindeki AR uygulaması bugün Seekprotocol olarak adlandırılıyor."
   },
   "about": {
     "heroTitle": "Konum Tabanlı Dijital Deneyimlerin Geleceğini Keşfet",
@@ -225,7 +225,7 @@
     "formDesc": "Aşağıdaki formu doldur, en kısa sürede sana geri dönelim.",
     "inquiryTypesEyebrow": "Ya da daha kesin olarak",
     "partnershipsTitle": "Ortaklıklar",
-    "partnershipsBody": "Bir projen, bir IP'n veya Seek'e taşımak istediğin bir mekan ağın var. Bize ne ve nerede olduğunu söyle — gerisini biz hallederiz.",
+    "partnershipsBody": "Bir projen, bir IP'n veya Seek'e taşımak istediğin bir mekan ağın var. Bize ne ve nerede olduğunu söyle, gerisini biz hallederiz.",
     "publishersTitle": "Yayıncılar",
     "publishersBody": "Belirli koordinatlara AR kampanyaları yerleştirmek ve doğrulanmış ziyaret başına ödeme yapmak istiyorsun. Konumu ve teklifi gönder; kampanyayı seninle birlikte kuralım.",
     "pressTitle": "Basın & medya",
@@ -1238,7 +1238,7 @@
   },
   "businessPage": {
     "metaTitle": "Coğrafi Sınırlama Pazarlaması, Varış Başına Ödeme",
-    "metaDescription": "Yayıncılar ve markalar için konum tabanlı AR reklamcılığı. Koordinatlarına bir ödül yerleştir ve doğrulanmış ziyaret başına öde — gösterim başına değil.",
+    "metaDescription": "Yayıncılar ve markalar için konum tabanlı AR reklamcılığı. Koordinatlarına bir ödül yerleştir ve doğrulanmış ziyaret başına öde, gösterim başına değil.",
     "ogTitle": "Doğrulanmış varış başına öde",
     "eyebrow": "Kurumsal",
     "titleStart": "Gösterim değil,",

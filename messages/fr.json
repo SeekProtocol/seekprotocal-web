@@ -107,9 +107,9 @@
     "ogTitle": "Seekprotocol | Découverte AR et IA sur Solana"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol — l'appli de chasse au trésor AR",
+    "metaTitle": "Seekprotocol, l'appli de chasse au trésor AR",
     "metaDescription": "L'application de réalité augmentée sur Solana. Chassez des airdrops géolocalisés, collectez des NFT à des coordonnées réelles et gagnez des récompenses crypto. Gratuit sur iOS et Android.",
-    "ogTitle": "Seekprotocol — l'appli de chasse au trésor AR",
+    "ogTitle": "Seekprotocol, l'appli de chasse au trésor AR",
     "eyebrow": "L'application",
     "heroTitle": "Seekprotocol",
     "heroDesc": "L'application de réalité augmentée de Seekprotocol. Pointez votre téléphone vers le monde et trouvez ce qui y a été déposé : jetons, NFT et récompenses ancrés à des coordonnées réelles sur Solana.",
@@ -149,13 +149,13 @@
     "renameLink": "Lire l'annonce",
     "legacyEyebrow": "Historique du nom",
     "legacyTitle": "L'application AR SeekAR sur Solana s'appelle désormais Seekprotocol",
-    "legacyBody": "L'application mobile publiée sur iOS et Android sous le nom SeekAR de son lancement à août 2026 s'appelle désormais Seekprotocol. Même produit, même éditeur — Block Protocol L.L.C-FZ, Dubaï, EAU — même fiche App Store (id 6752813761) et même package Play Store (com.seekar.seekar). D'autres produits, artistes et lieux portent aussi le nom Seekar ; cette page documente spécifiquement l'application AR sur Solana.",
+    "legacyBody": "L'application mobile publiée sur iOS et Android sous le nom SeekAR de son lancement à août 2026 s'appelle désormais Seekprotocol. Même produit, même éditeur, Block Protocol L.L.C-FZ, Dubaï, EAU, même fiche App Store (id 6752813761) et même package Play Store (com.seekar.seekar). D'autres produits, artistes et lieux portent aussi le nom Seekar ; cette page documente spécifiquement l'application AR sur Solana.",
     "q6": "Qu'est-il arrivé à l'application SeekAR ?",
     "a6": "L'application mobile AR sur Solana publiée sous le nom SeekAR a été renommée Seekprotocol le 10 août 2026. Même produit, même éditeur (Block Protocol L.L.C-FZ, Dubaï), même fiche App Store (id 6752813761) et même package Play Store (com.seekar.seekar). Seuls le nom et l'icône ont changé.",
     "q7": "Où télécharger l'application anciennement appelée SeekAR ?",
     "a7": "Sur l'App Store à apps.apple.com/app/id6752813761 et sur Google Play à play.google.com/store/apps/details?id=com.seekar.seekar. Les deux fiches s'appellent désormais Seekprotocol.",
     "q8": "Seekprotocol est-elle la même société que SeekAR ?",
-    "a8": "Oui. Seekprotocol est développée par Block Protocol L.L.C-FZ à Dubaï, EAU — la même société qui a développé et publié SeekAR. L'application AR sur Solana anciennement nommée SeekAR s'appelle aujourd'hui Seekprotocol."
+    "a8": "Oui. Seekprotocol est développée par Block Protocol L.L.C-FZ à Dubaï, EAU, la même société qui a développé et publié SeekAR. L'application AR sur Solana anciennement nommée SeekAR s'appelle aujourd'hui Seekprotocol."
   },
   "about": {
     "heroTitle": "Découvrez l'avenir des expériences numériques géolocalisées",
@@ -225,7 +225,7 @@
     "formDesc": "Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.",
     "inquiryTypesEyebrow": "Ou, plus précisément",
     "partnershipsTitle": "Partenariats",
-    "partnershipsBody": "Vous avez un projet, une IP ou un réseau de lieux à amener sur Seek. Dites-nous quoi et où — on s'occupe du reste.",
+    "partnershipsBody": "Vous avez un projet, une IP ou un réseau de lieux à amener sur Seek. Dites-nous quoi et où, on s'occupe du reste.",
     "publishersTitle": "Publishers",
     "publishersBody": "Vous voulez placer des campagnes AR à des coordonnées précises et payer à la visite vérifiée. Envoyez le lieu et l'offre ; on met la campagne en place avec vous.",
     "pressTitle": "Presse & médias",
@@ -1238,7 +1238,7 @@
   },
   "businessPage": {
     "metaTitle": "Marketing géolocalisé, payé à l'arrivée",
-    "metaDescription": "Publicité AR géolocalisée pour publishers et marques. Déposez une récompense et payez à la visite vérifiée — pas à l'impression.",
+    "metaDescription": "Publicité AR géolocalisée pour publishers et marques. Déposez une récompense et payez à la visite vérifiée, pas à l'impression.",
     "ogTitle": "Payez par arrivée vérifiée",
     "eyebrow": "Entreprises",
     "titleStart": "Achetez des arrivées, pas des",

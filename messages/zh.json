@@ -107,9 +107,9 @@
     "ogTitle": "Seekprotocol｜Solana 上的 AR 与 AI 发现平台"
   },
   "seekarPage": {
-    "metaTitle": "Seekprotocol — AR 寻宝应用",
+    "metaTitle": "Seekprotocol, AR 寻宝应用",
     "metaDescription": "Solana 上的增强现实应用。在真实坐标上猎取空投、收集 NFT，赚取加密奖励。iOS 与 Android 免费下载。",
-    "ogTitle": "Seekprotocol — AR 寻宝应用",
+    "ogTitle": "Seekprotocol, AR 寻宝应用",
     "eyebrow": "应用",
     "heroTitle": "Seekprotocol",
     "heroDesc": "Seekprotocol 推出的增强现实应用。用手机对准这个世界，找到别人留在那里的东西：锚定在 Solana 真实坐标上的代币、NFT 与奖励。",
@@ -155,7 +155,7 @@
     "q7": "在哪里下载曾经被称为 SeekAR 的应用？",
     "a7": "在 App Store 的 apps.apple.com/app/id6752813761 和 Google Play 的 play.google.com/store/apps/details?id=com.seekar.seekar。两个列表现在均以 Seekprotocol 命名。",
     "q8": "Seekprotocol 与 SeekAR 是同一家公司吗？",
-    "a8": "是的。Seekprotocol 由位于阿联酋迪拜的 Block Protocol L.L.C-FZ 开发——这与开发并发布 SeekAR 的公司相同。曾经名为 SeekAR 的 Solana 上的 AR 应用即今天被称为 Seekprotocol 的应用。"
+    "a8": "是的。Seekprotocol 由位于阿联酋迪拜的 Block Protocol L.L.C-FZ 开发, 这与开发并发布 SeekAR 的公司相同。曾经名为 SeekAR 的 Solana 上的 AR 应用即今天被称为 Seekprotocol 的应用。"
   },
   "about": {
     "heroTitle": "发现基于位置的数字体验的未来",
@@ -225,7 +225,7 @@
     "formDesc": "填写下方表单，我们会尽快回复您。",
     "inquiryTypesEyebrow": "或者更具体地",
     "partnershipsTitle": "合作",
-    "partnershipsBody": "你有一个项目、一份 IP 或一整个想接入 Seek 的场所网络。告诉我们做什么、放在哪里 — 其余交给我们。",
+    "partnershipsBody": "你有一个项目、一份 IP 或一整个想接入 Seek 的场所网络。告诉我们做什么、放在哪里, 其余交给我们。",
     "publishersTitle": "发布方",
     "publishersBody": "你想在特定坐标投放 AR 活动，并按验证到达付费。发送地点与优惠内容；我们与你一起搭建活动。",
     "pressTitle": "媒体与新闻",
@@ -1238,7 +1238,7 @@
   },
   "businessPage": {
     "metaTitle": "地理围栏营销，按到店付费",
-    "metaDescription": "面向发布方和品牌的地理围栏 AR 广告。把奖励放在你自己的坐标上，按验证到店付费——不按曝光付费。",
+    "metaDescription": "面向发布方和品牌的地理围栏 AR 广告。把奖励放在你自己的坐标上，按验证到店付费, 不按曝光付费。",
     "ogTitle": "按验证到店付费",
     "eyebrow": "商业合作",
     "titleStart": "买到场，而不是买",
