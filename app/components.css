@@ -5518,17 +5518,19 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
     animation: rewards-tap-glow 1.9s var(--ease-in-out) infinite;
   }
 
-  /* The hand does the talking on touch. Centred on the pill's edge with a
-     margin rather than a top percentage, because the badge is far taller than
-     the pill it straddles. */
+  /* The hand does the talking on touch, so it is sized like a subject rather
+     than a garnish: roughly twice the pill's own height. Its centre sits a
+     little above the pill's, because the aperture ends a few pixels under the
+     pill and `.device-screen` clips to it — biased down instead, the badge
+     loses its chin on the smallest devices. */
   .rewards-tap-hand {
-    width: 52px;
-    height: 52px;
+    width: 68px;
+    height: 68px;
     right: 0.5%;
     top: 50%;
-    margin-top: -26px;
+    margin-top: -44px;
   }
-  .rewards-tap-hand svg { width: 29px; height: 29px; }
+  .rewards-tap-hand svg { width: 38px; height: 38px; }
 }
 
 @keyframes rewards-tap-glow {
