@@ -59,8 +59,15 @@ export type CrashEntry = {
    * from one — `performance.navigation.type` reports "reload" for a deliberate
    * pull-to-refresh and "back_forward" for an ordinary back tap, exactly as it
    * does after a kill.
+   *
+   * `hidden` sits between the two. The reader switched tab or app and the page
+   * went to the background, which visibilitychange reports reliably where
+   * pagehide stays silent. A tab that dies while hidden was evicted by iOS's
+   * routine housekeeping — every backgrounded Safari tab risks that, on any
+   * site — and counting those as crashes had the log blaming the page for
+   * kills that happen to everyone. Only a kill while `live` is the bug.
    */
-  exit?: "live" | "unload" | "bfcache";
+  exit?: "live" | "unload" | "bfcache" | "hidden";
   /**
    * Which build of the site this document was served by.
    *
@@ -231,7 +238,9 @@ export function recordReload() {
               ? " The build also changed before it came back; a redeploy reload would have fired pagehide, so the new id arrived with the revival rather than causing the exit."
               : ""
           } Fields below are its last state.`
-        : wasRedeployed
+        : exit === "hidden"
+          ? `EVICTED IN BACKGROUND — the tab was hidden when it went (nav "${nav.type}", no pagehide). Safari reclaims hidden tabs as routine housekeeping on any site; this is memory pressure, but not the live, in-hand crash being hunted. Fields below are its last state.`
+          : wasRedeployed
           ? `REDEPLOYED — the site shipped a new build while this page was open, so Next reloaded the whole document. Not a crash. Fields below are its last state.`
           : exit === undefined
             ? `came back as "${nav.type}" — no exit was recorded, so this one cannot be called either way`
