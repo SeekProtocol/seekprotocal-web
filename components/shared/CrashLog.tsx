@@ -84,6 +84,17 @@ export default function CrashLog() {
     const onPageHide = (event: PageTransitionEvent) =>
       recordBreadcrumb(event.persisted ? "bfcache" : "unload");
     window.addEventListener("pagehide", onPageHide);
+    /* Backgrounding is the one exit pagehide never reports, and it matters
+       more than the others: iOS evicts hidden tabs as routine housekeeping,
+       and without this stamp every one of those evictions read as the page
+       crashing in someone's hand. Written synchronously, like pagehide, since
+       a backgrounded tab may never get another idle slot. The order works out
+       on a real navigation too: visibilitychange fires first, pagehide second,
+       so the orderly stamp still wins. Coming back to the foreground restores
+       `live` immediately rather than waiting for the next scroll. */
+    const onVisibility = () =>
+      recordBreadcrumb(document.visibilityState === "hidden" ? "hidden" : "live");
+    document.addEventListener("visibilitychange", onVisibility);
     tick();
 
     return () => {
@@ -91,6 +102,7 @@ export default function CrashLog() {
       window.removeEventListener("unhandledrejection", onRejection);
       window.removeEventListener("scroll", tick);
       window.removeEventListener("pagehide", onPageHide);
+      document.removeEventListener("visibilitychange", onVisibility);
     };
   }, []);
 

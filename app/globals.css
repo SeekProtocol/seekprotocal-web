@@ -441,6 +441,22 @@ a {
 
 [data-theme="dark"] .noise-layer { opacity: 0.05; mix-blend-mode: screen; }
 
+/* A blended element composites against the backdrop of its nearest stacking
+   context, and none of the sections hosting this layer were one — `position:
+   relative` alone does not create it. Blink quietly bounds the damage; WebKit
+   takes the spec at its word and builds the transparency group against the
+   root, which on the homepage is a 25,000px document rasterized at 3x — a
+   few hundred megabytes of backdrop for a grain texture that only ever meant
+   to blend with its own section. This is invisible to every desktop-Chrome
+   measurement and exactly the shape of the mobile Safari tab kills: no JS
+   error, no canvas, no big image, and the tab still gone mid-scroll.
+   `isolation` draws the boundary where it was always intended to be. The
+   blend result is pixel-identical, because nothing between the section's own
+   background and the noise was ever part of the picture. `:where` keeps the
+   specificity at zero, and a browser too old for `:has` simply keeps the
+   status quo. */
+:where(:has(> .noise-layer)) { isolation: isolate; }
+
 /* --------------------------------------------------------------------------
    GLASS — the app's surface: a near-transparent pane whose rim is brighter
    along the top than down the sides, so it reads as lit from above.
