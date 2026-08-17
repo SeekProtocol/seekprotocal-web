@@ -44,14 +44,6 @@ import { isHandheld, pixelRatio } from "@/lib/render-budget";
  * A scene module owns its scene graph and nothing else. No renderer, no
  * requestAnimationFrame, no ResizeObserver, no context loss handling. The stage
  * owns all four, once.
- *
- * ## Eviction
- *
- * The renderer is kept for the whole page. Scene modules are not: on the
- * homepage the reader passes a dozen slots on the way down, and holding all
- * of their geometries and textures at once is what pushed the phone over.
- * A slot that has been out of build range (a full viewport) for long enough
- * is disposed and rebuilt on return. See `evictMs` and `evict` below.
  */
 
 /** Renderer state a slot needs applied before it draws. Scenes differ. */
@@ -138,12 +130,6 @@ type Slot = {
   visible: boolean;
   /** Close enough to be worth building, which reaches further. */
   inBuildRange: boolean;
-  /**
-   * `performance.now()` the last time the slot was in build range. Used by
-   * eviction: a scene that has been out of build range for long enough is
-   * disposed so its geometries, textures and shader programs can be reclaimed.
-   */
-  lastInRangeAt: number;
 };
 
 /**
@@ -226,24 +212,10 @@ class Stage {
   /** The shared drawing buffer, sized to the largest slot that has been seen. */
   private bufferW = 0;
   private bufferH = 0;
-  /**
-   * How long a slot may stay built after leaving build range before it is
-   * disposed. One context is cheap; the geometries, textures and shader
-   * programs uploaded into it are not, and on a page that scrolls to 18,000px
-   * they accumulated until Safari killed the tab. Eviction runs on build range
-   * (a whole viewport), not draw range, so a small back-scroll never crosses
-   * it and the reader never watches a scene rebuild after leaving it.
-   *
-   * Handhelds are the reason this exists; desktop keeps a longer window so a
-   * reader panning up and down the page does not pay for a rebuild each time.
-   * Set on first `ensureRenderer` because `isHandheld()` needs `window`.
-   */
-  private evictMs = 45_000;
 
   private ensureRenderer(): THREE.WebGLRenderer | null {
     if (this.renderer) return this.renderer;
     this.logDepth = logDepthWanted();
-    this.evictMs = isHandheld() ? 8_000 : 45_000;
     try {
       this.renderer = new THREE.WebGLRenderer({
         alpha: true,
@@ -335,7 +307,6 @@ class Stage {
       bornAt: performance.now(),
       visible: false,
       inBuildRange: false,
-      lastInRangeAt: 0,
     };
     this.slots.add(slot);
     this.start();
@@ -399,25 +370,6 @@ class Stage {
     slot.height = Math.round(box.height);
   }
 
-  /**
-   * Free the scene graph a slot is holding, without unregistering the slot.
-   *
-   * The renderer stays: that is what this file exists to keep. What goes are
-   * the module's geometries, materials, textures and shader programs, plus
-   * the 2D canvas's backing store — a DOM canvas holds its bitmap for as long
-   * as its element lives, and on a page with a dozen slots that adds up on
-   * its own. When the slot comes back into build range the render loop will
-   * rebuild the module and size the canvas back.
-   */
-  private evict(slot: Slot) {
-    slot.module?.dispose();
-    slot.module = null;
-    slot.built = false;
-    slot.view.width = 0;
-    slot.view.height = 0;
-    delete slot.host.dataset.ready;
-  }
-
   private render() {
     const renderer = this.ensureRenderer();
     if (!renderer || this.contextLost) return;
@@ -427,20 +379,6 @@ class Stage {
     this.last = now;
 
     for (const slot of this.slots) this.measure(slot);
-
-    /* Track last-in-range time and dispose slots that have been out of build
-       range long enough. The bill this pays down is not the renderer — that
-       one context is deliberate — but everything each scene uploaded into it:
-       a slot the reader passed twenty screens ago is holding geometries and
-       textures with no chance of being seen without a rebuild that would run
-       long before it was drawn again. */
-    for (const slot of this.slots) {
-      if (slot.inBuildRange) {
-        slot.lastInRangeAt = now;
-      } else if (slot.built && now - slot.lastInRangeAt > this.evictMs) {
-        this.evict(slot);
-      }
-    }
 
     /* Building runs on the wide reach and only below the speed threshold, so a
        scene is ready before the reader arrives and a flick past it builds
