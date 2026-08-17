@@ -28,11 +28,13 @@ const DEFAULT = `/${routing.defaultLocale}`;
  * function.
  */
 
-// Pages that lived at the root before the locale prefix landed, and now also
-// catch anyone linking the newer pages without a prefix.
-const UNPREFIXED_PAGES = [
+// Paths whose canonical form is the same slug under the default locale. Covers
+// both the pre-i18n URLs still in Google's index and newer links people write
+// without the prefix. Each becomes /${defaultLocale}/${path}.
+const UNPREFIXED_PATHS = [
   "about",
   "blog",
+  "blog/:slug",
   "contact",
   "privacy-policy",
   "terms-conditions",
@@ -41,6 +43,20 @@ const UNPREFIXED_PAGES = [
   "roadmap",
   "whitepaper",
 ];
+
+// Pages whose canonical slug has changed. Both the unprefixed and every
+// locale-prefixed form redirect to the new slug.
+const ALIASES: Record<string, string> = {
+  // /services carried generic agency boilerplate that never described the
+  // product. The B2B story now lives on /business.
+  services: "business",
+  // /publishers is a URL-alias for /business — the B2B page IS the publisher
+  // page ("Buy arrivals, not impressions"), and third parties (press,
+  // journalists, decks) reference this audience by name. Redirect rather
+  // than a second page: two URLs about the same thing would fragment the
+  // autoriteit that is currently thin on the B2B trechter.
+  publishers: "business",
+};
 
 // Webflow-era paths whose content has no direct successor.
 const RETIRED_PATHS: Record<string, string> = {
@@ -62,6 +78,15 @@ const RETIRED_PATHS: Record<string, string> = {
   "/project": `${DEFAULT}/ecosystem`,
   "/project.html": `${DEFAULT}/ecosystem`,
 };
+
+const aliasRedirects = (from: string, to: string) => [
+  { source: `/${from}`, destination: `${DEFAULT}/${to}`, permanent: true },
+  {
+    source: `/:locale(${LOCALE_GROUP})/${from}`,
+    destination: `/:locale/${to}`,
+    permanent: true,
+  },
+];
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -108,35 +133,13 @@ const nextConfig: NextConfig = {
        * agree with what the metadata has been claiming all along. */
       { source: "/", destination: DEFAULT, permanent: true },
 
-      // /services carried generic agency boilerplate that never described the
-      // product. The B2B story now lives on /business.
-      { source: "/services", destination: `${DEFAULT}/business`, permanent: true },
-      {
-        source: `/:locale(${LOCALE_GROUP})/services`,
-        destination: "/:locale/business",
-        permanent: true,
-      },
-
-      // /publishers is a URL-alias for /business — the B2B page IS the publisher
-      // page ("Buy arrivals, not impressions"), and third parties (press,
-      // journalists, decks) reference this audience by name. Redirect rather
-      // than a second page: two URLs about the same thing would fragment the
-      // autoriteit that is currently thin on the B2B trechter.
-      { source: "/publishers", destination: `${DEFAULT}/business`, permanent: true },
-      {
-        source: `/:locale(${LOCALE_GROUP})/publishers`,
-        destination: "/:locale/business",
-        permanent: true,
-      },
-
-      // Blog posts kept their slugs across the rebuild, only the prefix is new.
-      { source: "/blog/:slug", destination: `${DEFAULT}/blog/:slug`, permanent: true },
-
-      ...UNPREFIXED_PAGES.map((page) => ({
-        source: `/${page}`,
-        destination: `${DEFAULT}/${page}`,
+      ...UNPREFIXED_PATHS.map((path) => ({
+        source: `/${path}`,
+        destination: `${DEFAULT}/${path}`,
         permanent: true,
       })),
+
+      ...Object.entries(ALIASES).flatMap(([from, to]) => aliasRedirects(from, to)),
 
       ...Object.entries(RETIRED_PATHS).map(([source, destination]) => ({
         source,
