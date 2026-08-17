@@ -7,9 +7,13 @@
   align-items: flex-end;
   justify-content: center;
   padding: 20px;
-  background: rgba(0, 2, 6, 0.55);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  /* No backdrop-filter, for the same reason the site header lost its blur
+     (see the note at .is-scrolled .site-header in app/components.css): a
+     fixed element with one re-snapshots and re-blurs its backdrop on every
+     repaint underneath it, and WebKit leaks the snapshot. Full-viewport at
+     3x that was ~11 MB per scrolled frame while this overlay was up. The
+     tint carries the dimming on its own at a slightly deeper alpha. */
+  background: rgba(0, 2, 6, 0.62);
   animation: fadeIn 0.3s ease;
 }
 
