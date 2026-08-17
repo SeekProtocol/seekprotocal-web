@@ -5490,6 +5490,52 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   outline-offset: 3px;
 }
 
+/* ── Making the invitation visible on a phone ────────────────────────────────
+   On a desktop the ring and the tapping hand carry it: the device is drawn
+   large and a cursor is already hovering nearby. On a phone the device is a
+   third of that size, the hand shrank with it, and the whole invitation
+   disappeared into the artwork. So a coarse pointer gets a brand glow
+   breathing around the pill, keyed on [data-armed] so it stops the moment the
+   invitation is answered, and a much larger hand. There was a sheen sweeping
+   across the pill here too; it was cut on review — a travelling highlight over
+   the label read as noise, not as a pointer to it. The glow animates opacity
+   only — no filter, no new promoted layer, nothing the memory hunt has to
+   care about. */
+@media (hover: none) and (pointer: coarse) {
+  .rewards-tap::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: 100px;
+    box-shadow: 0 0 16px 5px color-mix(in srgb, var(--brand) 55%, transparent);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .rewards-tap[data-armed]::before {
+    /* Same 1.9s beat as the ring and the hand, so the three read as one
+       gesture rather than three blinking things. */
+    animation: rewards-tap-glow 1.9s var(--ease-in-out) infinite;
+  }
+
+  /* The hand does the talking on touch. Centred on the pill's edge with a
+     margin rather than a top percentage, because the badge is far taller than
+     the pill it straddles. */
+  .rewards-tap-hand {
+    width: 52px;
+    height: 52px;
+    right: 0.5%;
+    top: 50%;
+    margin-top: -26px;
+  }
+  .rewards-tap-hand svg { width: 29px; height: 29px; }
+}
+
+@keyframes rewards-tap-glow {
+  0%, 100% { opacity: 0.35; }
+  50%      { opacity: 1; }
+}
+
 /* ── The pull ────────────────────────────────────────────────────────────────
    Every reward collapses onto the phone. This overrides the slot coordinates
    rather than animating each item's own transform, which is why the section
@@ -5726,17 +5772,23 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   .rewards-alert { padding: 0.8rem 0.85rem 0.7rem; border-radius: 15px; }
   .rewards-alert-title { font-size: 0.88rem; }
   .rewards-alert-body { font-size: 0.72rem; }
-  .rewards-tap-hand { width: 26px; height: 26px; right: 1.5%; top: 24%; }
-  .rewards-tap-hand svg { width: 15px; height: 15px; }
+  /* The hand used to be shrunk to 26px here alongside everything else in
+     this query, which is backwards: the smaller the device is drawn, the
+     harder the invitation has to work. Its size now lives in the coarse
+     pointer block up by .rewards-tap, which covers every touch screen rather
+     than only narrow ones. */
 }
 
 @media (prefers-reduced-motion: reduce) {
   .rewards-tap-ring,
   .rewards-tap-hand,
+  .rewards-tap::before,
   .rewards-live-pulse,
   .rewards-alert-seekers i,
   .rewards-tab-progress { animation: none; }
   .rewards-tap-hand { opacity: 1; }
+  /* The glow holds still rather than breathing, the way the hand does. */
+  .rewards-tap[data-armed]::before { opacity: 0.6; }
   .rewards-stage[data-pull] .rewards-phone,
   .rewards-stage[data-pull] .rewards-phone-glow,
   .rewards-stage[data-pull] .rewards-shock i,
