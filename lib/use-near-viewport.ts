@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { isOff } from "@/lib/bisect";
+import { isHandheld } from "@/lib/render-budget";
 
 /**
- * Whether an element has come within reach of the viewport, once and for good.
+ * Whether an element is currently within reach of the viewport.
  *
  * This file used to do two jobs. It gated the *download* — holding back a
  * `dynamic()` so the 603 KB chunk that three.js and all five scenes share was
@@ -12,35 +13,63 @@ import { isOff } from "@/lib/bisect";
  * deciding when a scene was allowed to open a WebGL context and, on a handheld,
  * when it had to give one back.
  *
- * The second job is gone. There is one context now, held by lib/three-stage.ts
- * for the whole page, and the stage decides which slots to draw from their own
- * geometry. So everything this file grew in order to manage five contexts has
- * been deleted with them:
+ * The build gate has moved to lib/three-stage.ts, which now owns one context
+ * for the whole page. What is here is the mount gate: whether the wrapper
+ * component that owns the three-host div and its canvas is in the tree at all.
  *
- *  - the release observer, and the RELEASE_GAP that had to stay wider than the
- *    build reach or a scene sitting between the two would build, be released,
- *    and rebuild for as long as a reader rested there
- *  - the LINGER grace period on the way out
- *  - the `live` set that evicted every offscreen scene whenever another
- *    latched, which was the only way to promise a phone held one context when
- *    the layout would not
+ * ## Desktop: one-way. Handheld: two-way.
  *
- * Two earlier attempts to get that count down by choosing better distances both
- * missed, in different directions: 80% release against 100% build left a band
- * where three scenes could thrash, and 250% left Mobi and the globe alive
- * across most of the page until Safari killed the tab. Neither number was
- * wrong so much as the question was — none of it is asked any more.
+ * On desktop the latch is one-way, as it was before: a section that has been
+ * near the viewport keeps its scene mounted for the rest of the page. Memory
+ * is plentiful there and remounting is what would be expensive — it disposes
+ * the slot and makes the stage build the whole scene graph again.
  *
- * What is left is a one-way latch. A section within reach renders its scene and
- * keeps rendering it. Unmounting is what would be expensive now: it would
- * dispose the slot and make the stage build the whole scene graph again.
+ * On a handheld the latch is two-way: a section that has scrolled far enough
+ * away unmounts, which disposes the slot (via useSceneSlot's cleanup) and
+ * lets React reclaim its DOM. Reversed as a memory measure — three scenes
+ * held live across a 20,000px page pushed the tab over.
+ *
+ * ## Why the numbers are these numbers
+ *
+ * Two earlier attempts to add release both thrashed: 80% release against 100%
+ * build left a band where three scenes could rebuild for as long as a reader
+ * rested there, and 250% left the globe and Mobi alive across most of the
+ * page until Safari killed the tab. Neither release was *wrong*; they were
+ * too close to build without a time gate to stop the flapping.
+ *
+ * So this uses both: a wide gap between the two margins, and a dwell that
+ * must elapse in the outer band before an unmount fires. Any scroll back
+ * toward the section cancels the timer, so nothing thrashes.
+ *
+ *  - `BUILD_REACH = 1` viewport (or whatever the caller passed). Mount when
+ *    the section is within that reach of the fold.
+ *  - `RELEASE_MARGIN = 3` viewports on top of the build reach — so with the
+ *    default the release band is at 4 viewports. Reading pace never sweeps a
+ *    section out that fast and then back within the dwell, and a deliberate
+ *    scroll-back inside the outer band cancels the timer anyway.
+ *  - `UNMOUNT_DELAY_MS = 8000`. Even after crossing the outer band, the
+ *    section has eight seconds to be scrolled back to before it disappears.
+ *
+ * ## Fallbacks
  *
  * Returns true when IntersectionObserver is unavailable, so an unsupported
- * browser gets every scene rather than none.
+ * browser gets every scene rather than none. `?3d=off` returns false and no
+ * observer runs at all.
  */
 
 /** How far ahead a section starts fetching its chunk, in viewports. */
 const BUILD_REACH = 1;
+/**
+ * How much wider the release band is than the build band, in viewports.
+ *
+ * Derived from `buildReach` rather than pinned so a caller that widens the
+ * build reach automatically gets a release that stays strictly outside it —
+ * if the two ever met the section would unmount and remount in the same
+ * frame, which is exactly the thrash the docstring above names.
+ */
+const RELEASE_MARGIN = 3;
+/** How long the section must stay past the release band before unmount. */
+const UNMOUNT_DELAY_MS = 8000;
 
 /*
  * There used to be a settle delay here, so that nothing mounted mid-flick. It
@@ -77,7 +106,6 @@ export function useNearViewport(
   );
 
   useEffect(() => {
-    if (near) return; // One way. Nothing takes it back.
     const el = ref.current;
     if (!el) return;
     /* ?3d=off. One return covers every scene on the site, because they all
@@ -85,35 +113,60 @@ export function useNearViewport(
     if (isOff("3d")) return;
     if (typeof IntersectionObserver === "undefined") return;
 
-    /* There was a geometry shortcut here, latching straight from
-       getBoundingClientRect so that a section already in range did not wait a
-       frame on the observer's first callback. It has gone, for two reasons.
+    const handheld = isHandheld();
+    let unmountTimer: number | undefined;
+    const cancelUnmount = () => {
+      if (unmountTimer !== undefined) {
+        window.clearTimeout(unmountTimer);
+        unmountTimer = undefined;
+      }
+    };
 
-       It called setState synchronously from an effect body, which cascades a
-       second render and is what react-hooks/set-state-in-effect is for. And it
-       was buying a single frame of spinner, which mattered when latching meant
-       building a scene right there — it does not any more. The stage builds a
-       whole viewport ahead of the reader, so a frame either way at the moment
-       of mounting changes nothing anyone can see.
-
-       An IntersectionObserver reports every element it is given on its first
-       callback, in range or not, so nothing is lost: the section above the fold
-       still latches on the next tick rather than needing to be told.
-
-       A display: none element has no layout box, which is how the two scrubbed
-       sections are hidden on a handheld — and the observer handles that
-       correctly on its own, where the old geometry test needed a guard for it,
-       since every edge of a box that is not there reads as zero. */
-    const observer = new IntersectionObserver(
+    const buildObs = new IntersectionObserver(
       (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) setNear(true);
+        if (entries.some((entry) => entry.isIntersecting)) {
+          cancelUnmount();
+          setNear(true);
+        }
       },
       { rootMargin: `${buildReach * 100}% 0px` },
     );
+    buildObs.observe(el);
 
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [ref, buildReach, near]);
+    /* Desktop keeps the one-way behaviour: the release observer only runs on
+       a handheld, which is where holding every scene at once is what killed
+       the tab. On desktop, unmounting a scene the reader may pan back to
+       costs a rebuild for no memory the browser was short of. */
+    let releaseObs: IntersectionObserver | undefined;
+    if (handheld) {
+      releaseObs = new IntersectionObserver(
+        (entries) => {
+          const outside = entries.every((entry) => !entry.isIntersecting);
+          if (outside) {
+            /* Start the dwell. Only sections still outside the release band
+               after UNMOUNT_DELAY_MS are actually unmounted. Any callback that
+               reports inside cancels the timer, so a scroll back into the
+               band before it fires keeps the scene mounted. */
+            cancelUnmount();
+            unmountTimer = window.setTimeout(() => {
+              unmountTimer = undefined;
+              setNear(false);
+            }, UNMOUNT_DELAY_MS);
+          } else {
+            cancelUnmount();
+          }
+        },
+        { rootMargin: `${(buildReach + RELEASE_MARGIN) * 100}% 0px` },
+      );
+      releaseObs.observe(el);
+    }
+
+    return () => {
+      buildObs.disconnect();
+      releaseObs?.disconnect();
+      cancelUnmount();
+    };
+  }, [ref, buildReach]);
 
   return near;
 }
