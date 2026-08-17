@@ -484,8 +484,16 @@ class Stage {
     if (needW !== this.bufferW || needH !== this.bufferH) {
       this.bufferW = needW;
       this.bufferH = needH;
-      renderer.setPixelRatio(pixelRatio());
+      const dpr = pixelRatio();
+      renderer.setPixelRatio(dpr);
       renderer.setSize(needW, needH, false);
+      /* The crash log counts canvases in the document, and this one never is —
+         so the largest GPU allocation on the page was invisible to the very
+         diagnostic hunting for it. Stamped on window rather than imported, to
+         keep the logger free of a dependency on three. */
+      (window as unknown as { __seekStageMP?: number }).__seekStageMP = Number(
+        ((needW * dpr * (needH * dpr)) / 1e6).toFixed(2),
+      );
     }
 
     for (const slot of live) {
