@@ -63,42 +63,40 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid transparent;
-  transition: background-color 0.3s var(--ease-out), border-color 0.3s var(--ease-out),
-    backdrop-filter 0.3s var(--ease-out);
+  transition: background-color 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
 }
 
+/* No backdrop-filter here, and it is not a style choice: it was the silent
+ * mobile tab kill.
+ *
+ * A fixed bar with a backdrop-filter has to re-snapshot and re-blur whatever
+ * sits under it on every scrolled frame, and WebKit was measured leaking that
+ * snapshot. The memory timeline of an iPhone 17 Pro Max scrolling this page
+ * (18 Aug recording): the "Page" category climbing ~0.75 MB per scroll paint,
+ * which is this bar's own backdrop buffer at 3x (1206 x 192 x 4 bytes), up to
+ * 1.66 GB in 76 seconds. A phone with a lower jetsam ceiling than a Pro Max
+ * dies inside two minutes of scrolling, which is exactly the crash-log
+ * signature that started the hunt: KILLED mid-scroll, no error, no canvas,
+ * no big image, at whatever depth that phone's budget ran out.
+ *
+ * The 94%-opaque bar was nearly solid, so the blur bought almost nothing;
+ * 97% stands in for it. If glass ever comes back here, it must be re-measured
+ * against that timeline on a real iPhone first.
+ *
+ * The filter's removal also retires two earlier workarounds that lived here:
+ * a [data-open] rule stripping the filter while the menu is open (a filter
+ * makes the header the containing block for its fixed .mobile-nav child, so
+ * the menu opened into a 72px sliver — Safari implements that rule, Chrome
+ * does not) and an @supports fallback for browsers without backdrop-filter.
+ * The solid menu background stays. */
 .is-scrolled .site-header,
 .nav-toggle:checked ~ .site-header {
-  background: color-mix(in srgb, var(--bg) 94%, transparent);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background: color-mix(in srgb, var(--bg) 97%, transparent);
   border-bottom-color: var(--line);
 }
 
-/* No backdrop-filter while the menu is open, and this is not cosmetic.
- *
- * `backdrop-filter` makes an element a containing block for its
- * position: fixed descendants. `.mobile-nav` is a child of this header and is
- * fixed with `inset: var(--nav-h) 0 0`, so the moment the header gained a
- * filter those offsets started resolving against a 72px-tall bar instead of
- * the viewport, and the menu opened into a sliver.
- *
- * Safari implements that rule; Chrome does not, which is exactly why the menu
- * worked in device emulation and failed on an actual iPhone. Behind an opaque
- * full-screen menu there is nothing to blur anyway.
- *
- * Same specificity as the rule above, so it has to come after it. */
 .site-header[data-open] {
   background: var(--bg);
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-}
-
-/* Browsers without backdrop-filter get a solid bar rather than see-through
-   text behind the nav. */
-@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  .is-scrolled .site-header,
-  .nav-toggle:checked ~ .site-header { background: var(--bg); }
 }
 
 .site-header-inner {
@@ -242,9 +240,11 @@
 .nav-toggle:checked ~ .site-header .site-burger span:last-child { transform: translateY(-3.25px) rotate(-45deg); }
 
 /* Must stay a sibling of .site-header in the markup, never a descendant. The
-   open header carries a backdrop-filter, which would make it the containing
-   block for this fixed panel and collapse it to the height of the bar. See the
-   note in SiteHeader.tsx.
+   header used to carry a backdrop-filter, which made it the containing block
+   for this fixed panel and collapsed it to the height of the bar. The filter
+   is gone (it leaked — see the note at .is-scrolled .site-header), but the
+   sibling structure stays: anything that ever gives the header a filter or
+   transform again would re-collapse a nested panel. See SiteHeader.tsx.
 
    Sized by height rather than by a bottom offset, so that if it ever does end up
    nested again it is merely misplaced instead of invisible. dvh also tracks the
@@ -3943,9 +3943,11 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
     z-index: 70;
     display: block;
     padding: 0.65rem var(--gutter) calc(0.65rem + env(safe-area-inset-bottom));
-    background: color-mix(in srgb, var(--bg) 88%, transparent);
-    backdrop-filter: blur(18px) saturate(160%);
-    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    /* No backdrop-filter, same reason as the site header (see the note at
+       .is-scrolled .site-header): a fixed bar with one leaks its backdrop
+       snapshot in WebKit on every scrolled frame, and this bar is up for the
+       whole of a 31-minute read on the page people scroll most. */
+    background: color-mix(in srgb, var(--bg) 96%, transparent);
     border-top: 1px solid var(--line);
     transform: translateY(115%);
     opacity: 0;
