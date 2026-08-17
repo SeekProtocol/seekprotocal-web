@@ -33,6 +33,16 @@ export type CrashEntry = {
   dpr: number;
   canvases: number;
   megapixels: number;
+  /**
+   * The shared renderer's offscreen drawing buffer, in megapixels.
+   *
+   * `canvases`/`megapixels` count only canvases in the document, and the stage
+   * renders into one that never is — so those two read 0 while the largest GPU
+   * allocation on the page sits invisible. The stage stamps its buffer size on
+   * `window.__seekStageMP` whenever it grows; absent means no scene has ever
+   * been built in this document, which is itself worth knowing.
+   */
+  stageMegapixels?: number;
   memoryMB?: number;
   /**
    * How the document this was written in left, which is the whole difference
@@ -93,6 +103,8 @@ function snapshot() {
   /* Chrome only; Safari does not expose it. Recorded when present because it is
      the number that settles whether a reload was a memory kill. */
   const mem = (performance as { memory?: { usedJSHeapSize: number } }).memory;
+  /* Written by lib/three-stage.ts when its offscreen buffer grows. */
+  const stageMP = (window as unknown as { __seekStageMP?: number }).__seekStageMP;
   return {
     url: location.pathname + location.hash,
     scrollY: Math.round(window.scrollY),
@@ -100,6 +112,7 @@ function snapshot() {
     dpr: window.devicePixelRatio,
     canvases: canvases.length,
     megapixels: Number(mp.toFixed(2)),
+    ...(stageMP !== undefined ? { stageMegapixels: stageMP } : {}),
     ...(mem ? { memoryMB: Math.round(mem.usedJSHeapSize / 1048576) } : {}),
     ...(deployment() ? { deployment: deployment() } : {}),
   };
@@ -196,23 +209,33 @@ export function recordReload() {
        "unknown" rather than being counted either way. */
     const exit = crumb.exit;
 
-    /* A build that changed underneath the reader outranks every other reading.
-       Next reloads the whole document when the deployment it fetches does not
-       match the one it was served, so an orderly exit at that moment is the
-       framework doing it, not the reader — and it looks identical from every
-       other angle. Checked first for that reason. */
+    /* Whether the build changed while the reader was away. This used to be
+       checked first and to outrank every other reading, and on 17 August it
+       buried a kill: the revival after a kill is itself a load, and that load
+       can be served a different deployment than the page it replaces — a stale
+       document out of a cache, or a deploy that landed in the meantime. So a
+       changed build is consistent with a crash, and the one signal that is not
+       is `exit` still reading `live`. Next's skew reload is an ordinary
+       navigation and fires pagehide like any other, so a breadcrumb that never
+       saw pagehide belongs to a page that was never navigated away from. The
+       exit field decides; the deployment only annotates. */
     const wasRedeployed =
       crumb.deployment !== undefined &&
       deployment() !== undefined &&
       crumb.deployment !== deployment();
 
-    const verdict = wasRedeployed
-      ? `REDEPLOYED — the site shipped a new build while this page was open, so Next reloaded the whole document. Not a crash. Fields below are its last state.`
-      : exit === undefined
-        ? `came back as "${nav.type}" — no exit was recorded, so this one cannot be called either way`
-        : exit === "live"
-          ? `KILLED — the page before this went without notice (nav "${nav.type}", no pagehide). Fields below are its last state.`
-          : `left cleanly (${exit}) — a refresh or a back tap, and the build did not change. Fields below are its last state.`;
+    const verdict =
+      exit === "live"
+        ? `KILLED — the page before this went without notice (nav "${nav.type}", no pagehide).${
+            wasRedeployed
+              ? " The build also changed before it came back; a redeploy reload would have fired pagehide, so the new id arrived with the revival rather than causing the exit."
+              : ""
+          } Fields below are its last state.`
+        : wasRedeployed
+          ? `REDEPLOYED — the site shipped a new build while this page was open, so Next reloaded the whole document. Not a crash. Fields below are its last state.`
+          : exit === undefined
+            ? `came back as "${nav.type}" — no exit was recorded, so this one cannot be called either way`
+            : `left cleanly (${exit}) — a refresh or a back tap, and the build did not change. Fields below are its last state.`;
 
     /* The snapshot and the timestamp are the breadcrumb's, not now's: the point
        of the entry is where the page was before it went, not where it is after. */
