@@ -66,22 +66,23 @@
   transition: background-color 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
 }
 
-/* No backdrop-filter here, and it is not a style choice: it was the silent
- * mobile tab kill.
+/* No backdrop-filter here, and it is not a style choice: it was half of the
+ * silent mobile tab kill.
  *
- * A fixed bar with a backdrop-filter has to re-snapshot and re-blur whatever
- * sits under it on every scrolled frame, and WebKit was measured leaking that
- * snapshot. The memory timeline of an iPhone 17 Pro Max scrolling this page
- * (18 Aug recording): the "Page" category climbing ~0.75 MB per scroll paint,
- * which is this bar's own backdrop buffer at 3x (1206 x 192 x 4 bytes), up to
- * 1.66 GB in 76 seconds. A phone with a lower jetsam ceiling than a Pro Max
- * dies inside two minutes of scrolling, which is exactly the crash-log
- * signature that started the hunt: KILLED mid-scroll, no error, no canvas,
- * no big image, at whatever depth that phone's budget ran out.
+ * A fixed bar with a backdrop-filter re-snapshots and re-blurs whatever sits
+ * under it on every scrolled frame. On the 18 Aug memory timeline of an
+ * iPhone 17 Pro Max, removing this filter took the scroll-time memory climb
+ * from ~20 MB/s to ~2 MB/s — same instrumentation both sides, only this
+ * change between them — and the phone the crash log kept recording got
+ * measurably deeper into the page afterwards. The other, decisive half was
+ * a per-scroll-frame custom-property write on <html> that invalidated style
+ * across the whole document (see SiteEffects.tsx); each fixed blurred bar
+ * multiplied what that invalidation cost per frame.
  *
  * The 94%-opaque bar was nearly solid, so the blur bought almost nothing;
- * 97% stands in for it. If glass ever comes back here, it must be re-measured
- * against that timeline on a real iPhone first.
+ * 97% stands in for it. If glass ever comes back here, verify it on a real
+ * iPhone without the inspector attached — the timeline instrument distorts
+ * exactly the memory behaviour being checked, which cost this hunt days.
  *
  * The filter's removal also retires two earlier workarounds that lived here:
  * a [data-open] rule stripping the filter while the menu is open (a filter
