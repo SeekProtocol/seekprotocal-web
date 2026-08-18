@@ -77,9 +77,8 @@ export function useScrubbedSection({
        this attaches a scroll listener that calls getBoundingClientRect on every
        event, for each of the two sections, on the one device that cannot afford
        it. The rect on a display: none element is all zeros, so `scrollable`
-       comes out negative and measure() returns having done nothing but force
-       the layout — and it forces a full one, because SiteEffects writes
-       --scroll-progress to the document element on the frame before it. */
+       comes out negative and measure() returns after forcing a layout for a
+       section the reader cannot see. */
     if (handheld) return;
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

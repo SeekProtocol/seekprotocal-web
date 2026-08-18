@@ -10,7 +10,7 @@ import { isOff } from "@/lib/bisect";
  *
  *  - reveal: releases elements as they scroll into view, staggered per group
  *  - spotlight: feeds pointer position into cards as --mx/--my
- *  - scroll progress: exposes --scroll-progress on <html> for reading bars
+ *  - header state: marks the document once it has moved below the top edge
  */
 export default function SiteEffects() {
   const pathname = usePathname();
@@ -89,64 +89,31 @@ export default function SiteEffects() {
     };
     window.addEventListener("pointermove", onPointerMove, { passive: true });
 
-    // --- scroll progress --------------------------------------------------
-    /* `scrollHeight` is a layout-forcing read, and it was being taken on every
-       scroll frame. By then the scrubbed sections have already written their
-       own custom properties, so the read flushed a synchronous layout of the
-       whole document, every frame, on a page that is 25,000px tall and carries
-       five WebGL contexts. It was the single largest cost in a scroll frame.
+    // --- header state -----------------------------------------------------
+    /* This used to write --scroll-progress to <html> on every scroll frame,
+       even though no stylesheet reads that variable. A custom property on the
+       root is inherited, so WebKit can invalidate style across the entire
+       33,000px document for an unused value. That is particularly costly on
+       iOS when Reduce Motion leaves fewer sections on compositor layers.
 
-       The document does not change height while you scroll, so it is measured
-       once and re-measured only when something could have changed it. */
-    let scrollable = 0;
-    const measure = () => {
-      scrollable = document.documentElement.scrollHeight - window.innerHeight;
-    };
-    measure();
-
-    let ticking = false;
+       The only live consumer of page-wide scroll state is the header. It needs
+       one class change when the reader crosses 12px, not a root style mutation
+       for every pixel travelled. */
+    let scrolled = document.documentElement.classList.contains("is-scrolled");
     const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        ticking = false;
-        const y = window.scrollY;
-        const root = document.documentElement;
-        root.style.setProperty(
-          "--scroll-progress",
-          (scrollable > 0 ? y / scrollable : 0).toFixed(4)
-        );
-        const scrolled = y > 12;
-        if (scrolled !== root.classList.contains("is-scrolled")) {
-          root.classList.toggle("is-scrolled", scrolled);
-        }
-      });
+      const next = window.scrollY > 12;
+      if (next === scrolled) return;
+      scrolled = next;
+      document.documentElement.classList.toggle("is-scrolled", next);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
 
-    // Re-measure when the document could have changed height. Coalesced, and
-    // never during a scroll frame's write phase.
-    let measureQueued = false;
-    const queueMeasure = () => {
-      if (measureQueued) return;
-      measureQueued = true;
-      requestAnimationFrame(() => {
-        measureQueued = false;
-        measure();
-      });
-    };
-    window.addEventListener("resize", queueMeasure);
-    const heightObserver = new ResizeObserver(queueMeasure);
-    heightObserver.observe(document.documentElement);
-
     return () => {
       observer.disconnect();
       mutation.disconnect();
-      heightObserver.disconnect();
       window.removeEventListener("pointermove", onPointerMove);
       window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", queueMeasure);
     };
   }, [pathname]);
 
