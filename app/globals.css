@@ -826,6 +826,45 @@ a {
   .reveal { opacity: 1; transform: none; }
 }
 
+/* The pacemaker: a 2px, quarter-opacity-of-invisible spinner that must never
+   stop, mounted once from the locale layout.
+
+   Measured on an iPhone 17 Pro Max over the Web Inspector's memory timeline
+   (18 Aug): with CSS animations running, scrolling the homepage holds steady
+   at ~2 MB/s of drift; with none running — Reduce Motion, or ?anim=off — the
+   identical scroll leaks 20 to 30 MB/s, about one tile-sized buffer per
+   scroll event, until the tab is killed. The only difference between the two
+   states is whether the compositor is committing continuously: animation
+   keeps the pipeline warm and WebKit's paint-buffer pool gets recycled, while
+   without one the buffers pile up faster than the lazy purge collects them.
+   A reader with "Reduce Motion" on — which is exactly the reader the crash
+   log had been recording — pays for that setting with a dead tab.
+
+   So one animation is exempted from stillness. It is 2x2px, opacity 0.01,
+   fixed in a corner, behind everything, and invisible in any real sense; what
+   it animates is beside the point, its running is the feature. The
+   declarations repeat !important because the reduced-motion block above kills
+   every animation with `* !important` and this class must outrank it — the
+   whole reason the rule sits after that block. If it ever appears to do
+   nothing, check it still wins that cascade before doubting the mechanism. */
+.paint-pacemaker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  opacity: 0.01;
+  pointer-events: none;
+  animation: paint-pacemaker-spin 1s linear infinite !important;
+  animation-duration: 1s !important;
+  animation-iteration-count: infinite !important;
+}
+
+@keyframes paint-pacemaker-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
 /* --------------------------------------------------------------------------
    8. UTILITIES
    -------------------------------------------------------------------------- */

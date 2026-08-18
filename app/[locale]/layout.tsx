@@ -217,6 +217,11 @@ export default async function LocaleLayout({
           {/* First in the tree so its listeners are attached before anything
               below it has had a chance to throw. Renders nothing. */}
           <CrashLog />
+          {/* A 2px invisible spinner that must never stop. See its rule in
+              globals.css for why a page with zero running animations leaks
+              ~1 MB per scroll event in WebKit and this is the pacemaker that
+              prevents it. */}
+          <div className="paint-pacemaker" aria-hidden="true" />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
