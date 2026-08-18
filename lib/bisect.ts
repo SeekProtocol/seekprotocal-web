@@ -48,6 +48,18 @@ export const BISECT_FLAGS = [
   "effects",
   "tail",
   "cf",
+  /* ?rootclip=off — html and body drop their `overflow-x: clip`. The clip on
+     the root is the one property that changes how WebKit configures the
+     scrolling and tiling machinery itself, and the reduced-motion scroll leak
+     (~1.2 MB per scroll event, measured 18 Aug) survived every content-level
+     subtraction — filters, animations, images, whole sections — which points
+     at machinery rather than content. This was once "tested" by setting
+     overflow inline from the inspector console; that test was worthless for
+     the same reason the pacemaker injection was: a reload wipes the console's
+     work and nothing in the recording proves it was in force. A flag set
+     before first paint is provable. The page may scroll sideways while it is
+     on; that is acceptable in a diagnostic. */
+  "rootclip",
 ] as const;
 
 /**

@@ -979,6 +979,15 @@ a {
   mix-blend-mode: normal !important;
 }
 
+/* ?rootclip=off — the root's own overflow clip, which is the one property
+   here that reconfigures the engine's scrolling machinery rather than the
+   page's content. See the flag's comment in lib/bisect.ts. Sideways scroll
+   while it is on is expected and acceptable. */
+[data-off-rootclip],
+[data-off-rootclip] body {
+  overflow-x: visible !important;
+}
+
 /* ?anim=off — everything that moves, and every standing promise that something
    is about to. Reveals are forced visible so the page is still readable with
    their entrance transition gone. */
