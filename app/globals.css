@@ -826,43 +826,34 @@ a {
   .reveal { opacity: 1; transform: none; }
 }
 
-/* The pacemaker: a 2px, quarter-opacity-of-invisible spinner that must never
-   stop, mounted once from the locale layout.
+/* Reduced motion is also the page's leanest paint mode, and that is a memory
+   fix before it is a courtesy.
 
    Measured on an iPhone 17 Pro Max over the Web Inspector's memory timeline
-   (18 Aug): with CSS animations running, scrolling the homepage holds steady
-   at ~2 MB/s of drift; with none running — Reduce Motion, or ?anim=off — the
-   identical scroll leaks 20 to 30 MB/s, about one tile-sized buffer per
-   scroll event, until the tab is killed. The only difference between the two
-   states is whether the compositor is committing continuously: animation
-   keeps the pipeline warm and WebKit's paint-buffer pool gets recycled, while
-   without one the buffers pile up faster than the lazy purge collects them.
-   A reader with "Reduce Motion" on — which is exactly the reader the crash
-   log had been recording — pays for that setting with a dead tab.
+   (18 Aug): with animations running, scrolling the homepage drifts at
+   ~2 MB/s; under Reduce Motion the identical scroll leaked 20 to 30 MB/s —
+   roughly one tile-sized paint buffer per scroll event, WebKit repainting
+   440 to 496 x 512 tile rects three times as often as the animated page and
+   never giving the buffers back — until the tab was killed. That reader,
+   with Reduce Motion on, is exactly the one the crash log kept recording. A
+   2px always-running "pacemaker" animation was tried against the theory that
+   a busy compositor recycles its pool; it ran, provably, and changed
+   nothing, so the falsified theory is not encoded here.
 
-   So one animation is exempted from stillness. It is 2x2px, opacity 0.01,
-   fixed in a corner, behind everything, and invisible in any real sense; what
-   it animates is beside the point, its running is the feature. The
-   declarations repeat !important because the reduced-motion block above kills
-   every animation with `* !important` and this class must outrank it — the
-   whole reason the rule sits after that block. If it ever appears to do
-   nothing, check it still wins that cascade before doubting the mechanism. */
-.paint-pacemaker {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 2px;
-  opacity: 0.01;
-  pointer-events: none;
-  animation: paint-pacemaker-spin 1s linear infinite !important;
-  animation-duration: 1s !important;
-  animation-iteration-count: infinite !important;
-}
-
-@keyframes paint-pacemaker-spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+   What is encoded: if repainting leaks, have less to repaint. Sections
+   outside the viewport are not rendered at all, so the tiles the reader
+   scrolls through carry one section's pixels instead of a 25,000px
+   document's. `auto` in contain-intrinsic-size keeps the measured height
+   once a section has rendered, so the scroll bar settles after one pass;
+   900px is only the first-guess placeholder. Browsers without
+   content-visibility (Safari pre-18) ignore both lines and keep today's
+   behaviour. Scoped to reduced motion because that is the measured leak; the
+   animated page holds its layers and does not need it. */
+@media (prefers-reduced-motion: reduce) {
+  main > * {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+  }
 }
 
 /* --------------------------------------------------------------------------
