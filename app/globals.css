@@ -443,18 +443,15 @@ a {
 
 /* A blended element composites against the backdrop of its nearest stacking
    context, and none of the sections hosting this layer were one — `position:
-   relative` alone does not create it. Blink quietly bounds the damage; WebKit
-   takes the spec at its word and builds the transparency group against the
-   root, which on the homepage is a 25,000px document rasterized at 3x — a
-   few hundred megabytes of backdrop for a grain texture that only ever meant
-   to blend with its own section. This is invisible to every desktop-Chrome
-   measurement and exactly the shape of the mobile Safari tab kills: no JS
-   error, no canvas, no big image, and the tab still gone mid-scroll.
-   `isolation` draws the boundary where it was always intended to be. The
-   blend result is pixel-identical, because nothing between the section's own
-   background and the noise was ever part of the picture. `:where` keeps the
-   specificity at zero, and a browser too old for `:has` simply keeps the
-   status quo. */
+   relative` alone does not create it — so the blend group could reach the
+   document root. This was once suspected of being the mobile tab kill; it
+   was not (that turned out to be per-scroll-frame invalidation, see
+   SiteEffects.tsx, compounded by backdrop-filter on fixed bars, see
+   .is-scrolled .site-header in components.css). The isolation stays because
+   it is correct regardless: the noise only ever meant to blend with its own
+   section, bounding the group costs nothing, and the blend result is
+   pixel-identical. `:where` keeps specificity at zero, and a browser too old
+   for `:has` simply keeps the status quo. */
 :where(:has(> .noise-layer)) { isolation: isolate; }
 
 /* --------------------------------------------------------------------------
@@ -826,36 +823,6 @@ a {
   .reveal { opacity: 1; transform: none; }
 }
 
-/* Reduced motion is also the page's leanest paint mode, and that is a memory
-   fix before it is a courtesy.
-
-   Measured on an iPhone 17 Pro Max over the Web Inspector's memory timeline
-   (18 Aug): with animations running, scrolling the homepage drifts at
-   ~2 MB/s; under Reduce Motion the identical scroll leaked 20 to 30 MB/s —
-   roughly one tile-sized paint buffer per scroll event, WebKit repainting
-   440 to 496 x 512 tile rects three times as often as the animated page and
-   never giving the buffers back — until the tab was killed. That reader,
-   with Reduce Motion on, is exactly the one the crash log kept recording. A
-   2px always-running "pacemaker" animation was tried against the theory that
-   a busy compositor recycles its pool; it ran, provably, and changed
-   nothing, so the falsified theory is not encoded here.
-
-   What is encoded: if repainting leaks, have less to repaint. Sections
-   outside the viewport are not rendered at all, so the tiles the reader
-   scrolls through carry one section's pixels instead of a 25,000px
-   document's. `auto` in contain-intrinsic-size keeps the measured height
-   once a section has rendered, so the scroll bar settles after one pass;
-   900px is only the first-guess placeholder. Browsers without
-   content-visibility (Safari pre-18) ignore both lines and keep today's
-   behaviour. Scoped to reduced motion because that is the measured leak; the
-   animated page holds its layers and does not need it. */
-@media (prefers-reduced-motion: reduce) {
-  main > * {
-    content-visibility: auto;
-    contain-intrinsic-size: auto 900px;
-  }
-}
-
 /* --------------------------------------------------------------------------
    8. UTILITIES
    -------------------------------------------------------------------------- */
@@ -977,15 +944,6 @@ a {
   filter: none !important;
   backdrop-filter: none !important;
   mix-blend-mode: normal !important;
-}
-
-/* ?rootclip=off — the root's own overflow clip, which is the one property
-   here that reconfigures the engine's scrolling machinery rather than the
-   page's content. See the flag's comment in lib/bisect.ts. Sideways scroll
-   while it is on is expected and acceptable. */
-[data-off-rootclip],
-[data-off-rootclip] body {
-  overflow-x: visible !important;
 }
 
 /* ?anim=off — everything that moves, and every standing promise that something
