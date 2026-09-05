@@ -110,6 +110,16 @@ function PrivacyPolicyContent() {
         </li>
       </ul>
 
+      <h3>{t("raspTitle")}</h3>
+      <p>{t("raspP1")}</p>
+      <p>{t("raspP2")}</p>
+      <p>{t("raspP3")}</p>
+      <p>
+        <a href="https://docs.talsec.app/freerasp/user-data-policies">
+          Talsec freeRASP
+        </a>
+      </p>
+
       <h2>{t("part3Title")}</h2>
       <p>{t("part3P1")}</p>
       <p>{t("part3P2")}</p>
