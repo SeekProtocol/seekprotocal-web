@@ -44,6 +44,7 @@ const LINKS = [
   { href: "/business", key: "business" },
   { href: "/about", key: "about" },
   { href: "/blog", key: "blog" },
+  { href: "/shop", key: "shop" },
 ] as const;
 
 export default function SiteHeader() {

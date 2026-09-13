@@ -81,6 +81,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
     { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: BLOG_Q1_BATCH_TWO },
     { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: SEO_PASS },
+    /* 13 Sep 2026: the pack shop. Translated in all nine locales like the rest,
+       so it takes the hreflang cluster. Level with /contact: it is a page a
+       player arrives at on purpose, not one the site needs found. */
+    { path: "/shop", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-09-13") },
     { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
     { path: "/terms-conditions", priority: 0.3, changeFrequency: "yearly", lastModified: REBUILT },
 

@@ -27,18 +27,22 @@ work; nothing has been checked against them.
 
 ### Environment
 
-Local secrets live in `.env.local`, which is not committed. Four keys are read
-anywhere in the codebase:
+Local secrets live in `.env.local`, which is not committed; `.env.example`
+lists every key. Seven are read anywhere in the codebase:
 
 | Key | Used by | Needed for |
 |---|---|---|
 | `RESEND_API_KEY` | `lib/resend.ts` | Sending the beta and contact form mail |
 | `TURNSTILE_SECRET_KEY` | `lib/turnstile.ts` | Server-side captcha verification |
-| `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Both forms | The captcha widget |
+| `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Both forms and the shop | The captcha widget |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | `components/shared/GoogleAnalytics.tsx` | Analytics, only after consent |
+| `NEXT_PUBLIC_SUPABASE_URL` | `lib/supabase-browser.ts` | The shop's sign-in, orders and pack credits. The app's project |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | `lib/supabase-browser.ts` | Same. Copy `EXPO_PUBLIC_SUPABASE_ANON_KEY` from the app repo's `.env` |
+| `NEXT_PUBLIC_SOLANA_RPC_URL` | `components/shop/ShopProviders.tsx` | One recent blockhash per purchase. Its host must also be in the CSP in `vercel.json` |
 
-Without them the site still builds and every page renders; the two forms are
-what stop working.
+Without them the site still builds and every page renders; the two forms and
+the shop are what stop working. The shop's server contract is in
+`HANDOVER.md` under "the pack shop".
 
 ---
 

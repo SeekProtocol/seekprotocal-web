@@ -1531,3 +1531,105 @@ every gradient with them. Leaving both where they were is exact and free.
 Gradient ids are prefixed per icon, for the third time this pass. The export
 ships all eight as `paint0_linear_0_16409` upward, and four of these on one
 screen sharing ids would each fill with the first one's ramp.
+
+---
+
+## Eleventh pass, 13 September 2026: the pack shop
+
+`/[locale]/shop` sells the arena's card packs for SOL. A player signs in with
+the account they play with, connects a browser wallet, approves one transfer,
+and the pack credits appear in the app. The site does the browser half of what
+`lib/solana/checkout.ts` does in the app; the server is the same edge function
+and owns every price.
+
+### Where it lives
+
+| File | Holds |
+|---|---|
+| `app/[locale]/shop/page.tsx` | Server-rendered head and the three-step strip; mounts the client shop |
+| `components/shop/ShopMount.tsx` | The `ssr: false` boundary. Same reason as `ChainCoinsMount` |
+| `components/shop/Shop.tsx` | Owns the session. Signed out: `SignIn`. Signed in: providers, storefront, packs |
+| `components/shop/SignIn.tsx` | Google, Apple, or an 8-digit code by email, all through Supabase auth |
+| `components/shop/ShopProviders.tsx` | Wallet adapter plumbing, copied in shape from the partner portal |
+| `components/shop/Storefront.tsx` | Products, the SOL rate, the wallet button, Turnstile, and the purchase state machine |
+| `components/shop/PacksPanel.tsx` | Unopened credits with a realtime subscription, and the last ten orders |
+| `lib/shop/checkout.ts` | The server contract, the transaction builder, error codes |
+| `lib/supabase-browser.ts` | One PKCE browser client for the app's project |
+
+Styles are the `SHOP` block at the end of `app/components.css`. The wallet
+adapter's own stylesheet loads with the route, after ours, so its classes are
+restyled under `html .wallet-adapter-*` to win on specificity.
+
+### Environment
+
+| Key | What |
+|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | `https://ukoqxyoogjouhdqhtiei.supabase.co`, the app's project |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | The app repo's `EXPO_PUBLIC_SUPABASE_ANON_KEY` |
+| `NEXT_PUBLIC_SOLANA_RPC_URL` | Asked for one recent blockhash per purchase. Default is the public mainnet endpoint |
+| `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Already there for the forms; the shop uses the same widget |
+
+The RPC host is also written into the CSP's `connect-src` in `vercel.json`
+alongside the Supabase origin and its `wss://` twin. **Change the endpoint and
+the CSP together**, or the blockhash call fails silently in the console.
+
+### The server contract
+
+`POST https://ukoqxyoogjouhdqhtiei.supabase.co/functions/v1/solana-checkout`,
+JSON body, with `Authorization: Bearer <session access_token>`, `apikey`,
+`x-app-distribution: web`, and for the two money-moving actions an
+`x-turnstile-token`. In production the request `Origin` has to be
+`https://www.seekprotocol.ai` or `https://seekprotocol.ai`.
+
+| Action | Sends | Gets |
+|---|---|---|
+| `quote_order` | `product_id` | `amount` in lamports for the price, plus a coin list the web ignores |
+| `create_order` | `product_id`, `coins: []` | `order_id`, `amount`, `recipient`, `reference`, `expires_at` (five minutes) |
+| `confirm_order` | `order_id`, `signature` | `status: paid` or `pending`; polled twelve times, 2.5 s apart |
+| `abort_order` | `order_id`, `reason` | Hands the order back when the wallet refused before anything was broadcast |
+| `recover_orders` | nothing | Settles an earlier unconfirmed order; called once per sign-in |
+
+Product ids are the server's, `seekar_pack_single`, `seekar_pack_five`,
+`seekar_pack_ten`, not the `pack_single` keys the app's constants file uses to
+name them. Errors arrive as `{ error: "<code>" }`; `errorKeyFor` in
+`Storefront.tsx` maps each to a message.
+
+The transaction is one `SystemProgram.transfer` from the wallet to
+`recipient` for `amount`, with the `reference` key appended to that
+instruction as a non-signer, non-writable account, fee payer the wallet,
+blockhash from the RPC. The wallet broadcasts it through
+`sendTransaction`; the page never holds a signed transaction.
+
+### Three decisions worth knowing about
+
+**One quote, three prices.** A Turnstile token verifies once, so quoting each
+product would cost three challenges for one exchange rate. The storefront
+quotes the single pack, derives lamports per USD cent, and shows the other two
+from that, marked "about". The amount the wallet is asked for always comes
+from `create_order`, and it is shown with a countdown before the wallet opens.
+
+**A signature that went out is never a failure.** After `sendTransaction`
+resolves, the only two ends are `paid` and `pending`. If the twelve confirm
+polls run out, the page says the payment is being confirmed and the packs will
+appear once it settles, and offers nothing that looks like "buy again". A
+refusal inside the wallet, and only that, aborts the order.
+
+**The rate is the page's, the price is the server's.** The site shows USD from
+its own constants for the shelf and `price_usd_cents` from the server on every
+order and in the order history. If the server retunes a price, the shelf will
+lag until `SHOP_PRODUCTS` in `lib/shop/checkout.ts` is updated.
+
+### What cannot be exercised locally
+
+The server refuses any `Origin` but the production hosts, so `quote_order`
+and `create_order` fail on localhost with `checkout_not_available_in_this_build`
+and the rate line shows that message. Sign-in, the wallet modal, the packs
+panel and the order history all work locally against the real project.
+
+Outside this repo, the shop depends on four settings in the Supabase
+dashboard: Google and Apple enabled as providers, `https://www.seekprotocol.ai/**`
+and the localhost dev URL in the auth redirect allow-list, the magic-link email
+template carrying `{{ .Token }}` so the mail contains a code rather than only a
+link, and `arena_pack_credits` in the `supabase_realtime` publication so the
+count moves on its own. Without the last one the panel still refetches after
+every settlement the page itself sees.

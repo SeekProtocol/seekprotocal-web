@@ -123,7 +123,25 @@
   font-size: 0.9063rem;
   font-weight: 500;
   color: var(--fg-muted);
+  /* Eight links since the shop landed. Without this the two-word labels
+     ("The app", "For business") broke onto two lines once the row got tight,
+     which reads as a layout fault rather than a wrap. The row tightens
+     instead, below. */
+  white-space: nowrap;
   transition: color 0.2s var(--ease-out), background-color 0.2s var(--ease-out);
+}
+
+@media (max-width: 1400px) {
+  .site-nav-link { padding-inline: 0.6rem; font-size: 0.875rem; }
+  .site-nav + .site-header-actions { margin-left: 0.5rem; }
+}
+
+/* The burger takes over at 1080px. Measured at 1162px the row needed 1161px,
+   so the band just above the burger gets one more step down. */
+@media (max-width: 1200px) {
+  .site-header-inner { gap: 1rem; }
+  .site-nav-link { padding-inline: 0.4rem; font-size: 0.8125rem; }
+  .site-nav + .site-header-actions { margin-left: 0; }
 }
 
 .site-nav-link:hover { color: var(--fg); background: var(--brand-soft); }
@@ -6229,4 +6247,279 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   .mark-live { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   SHOP
+   The pack shop at /shop: sign-in card, storefront, wallet panel, packs and
+   orders. The wallet adapter ships its own stylesheet, which the route loads
+   after this file, so every override of its classes below is qualified with
+   `html` to outrank it at equal class specificity.
+   -------------------------------------------------------------------------- */
+
+.shop-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+
+@media (max-width: 900px) { .shop-layout { grid-template-columns: minmax(0, 1fr); } }
+
+.shop-stack { display: grid; gap: 1.5rem; min-width: 0; }
+.shop-panel { display: grid; gap: 0.75rem; align-content: start; }
+.shop-panel > .eyebrow { margin-bottom: 0; }
+.shop-panel-head { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.shop-panel-head .eyebrow { margin-bottom: 0; }
+
+.shop-account {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.shop-account-who { display: inline-flex; align-items: center; gap: 0.6rem; min-width: 0; }
+.shop-account-email { font-size: 0.9375rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.shop-skeleton {
+  min-height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--fg-subtle);
+  font-size: 0.9375rem;
+}
+
+/* Sign in */
+.shop-signin { max-width: 30rem; display: grid; gap: 1.25rem; }
+.shop-signin .eyebrow { margin-bottom: 0.5rem; }
+.shop-signin-providers { display: grid; gap: 0.75rem; }
+.shop-signin-providers .btn { width: 100%; }
+.shop-signin-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  color: var(--fg-subtle);
+  font-size: 0.8125rem;
+}
+.shop-signin-divider::before,
+.shop-signin-divider::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.shop-code-input {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  letter-spacing: 0.3em;
+  text-align: center;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Products */
+.shop-products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+@media (max-width: 640px) { .shop-products { grid-template-columns: minmax(0, 1fr); } }
+
+.shop-product {
+  position: relative;
+  display: grid;
+  gap: 0.6rem;
+  align-content: start;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg-sunken);
+  transition: border-color 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
+}
+/* The middle bundle carries the brand ramp in its top rim: the same "lit from
+   above" idiom the glass surfaces use, rather than a badge stuck on the side. */
+.shop-product[data-featured]::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  background: linear-gradient(90deg, var(--brand-2), var(--brand), var(--brand-3));
+}
+.shop-product[data-selected] { border-color: var(--brand-ring); box-shadow: 0 0 0 3px var(--brand-soft); }
+.shop-product-packs { font-size: clamp(1.9rem, 3.6vw, 2.5rem); margin: 0.1rem 0 0.2rem; }
+.shop-product-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem 0.6rem; }
+.shop-product-usd {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+.shop-product-sol {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--fg-muted);
+  font-feature-settings: "tnum" 1;
+}
+.shop-product-per { min-height: 1.3em; }
+.shop-product .btn { width: 100%; margin-top: 0.25rem; }
+
+.shop-rate {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+  margin-top: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+.shop-rate-note { font-size: 0.8125rem; color: var(--fg-subtle); max-width: 36rem; }
+
+/* Wallet and the purchase itself */
+.shop-wallet-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 0.5rem; }
+.shop-turnstile { min-height: 65px; margin-top: 0.5rem; }
+
+.shop-flow { display: grid; gap: 0.75rem; margin-top: 0.75rem; }
+.shop-flow-box {
+  display: grid;
+  gap: 0.6rem;
+  padding: 1rem 1.125rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--bg-sunken);
+}
+.shop-flow-amount { font-size: clamp(1.5rem, 3vw, 2rem); }
+.shop-flow-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin: 0; }
+.shop-flow-pending {
+  border-color: var(--brand-ring);
+  background: var(--brand-soft);
+  color: var(--fg);
+}
+.shop-flow-progress {
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line);
+  overflow: hidden;
+}
+.shop-flow-progress > i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand-2), var(--brand), var(--brand-3));
+  transition: width 0.4s var(--ease-out);
+}
+.shop-flow-spinner {
+  display: inline-block;
+  flex: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--line-strong);
+  border-top-color: var(--brand);
+  border-radius: 50%;
+  animation: shop-spin 0.8s linear infinite;
+}
+@keyframes shop-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .shop-flow-spinner { animation-duration: 2.4s; } }
+
+/* Packs and orders */
+.shop-packs { display: grid; gap: 0.4rem; }
+.shop-packs-count { font-size: clamp(2.75rem, 6vw, 4rem); }
+.shop-orders { list-style: none; margin: 0; padding: 0; display: grid; }
+.shop-order {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.2rem 0.75rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.875rem;
+}
+.shop-order:first-child { border-top: 0; padding-top: 0; }
+.shop-order-name { font-weight: 500; }
+.shop-order-status { justify-self: end; color: var(--fg-subtle); }
+.shop-order-status[data-status="paid"] { color: color-mix(in srgb, var(--color-seek-mint) 70%, var(--fg)); }
+.shop-order-status[data-status="pending"] { color: var(--brand); }
+.shop-order-meta {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  color: var(--fg-subtle);
+  font-size: 0.8125rem;
+  font-feature-settings: "tnum" 1;
+}
+
+/* The wallet adapter's controls, restyled as the site's own. Its stylesheet
+   paints a purple #512da8 pill with a 4px radius and its own font; none of
+   that belongs on this page. The modal is portalled to <body>, so those rules
+   cannot be scoped under .shop and are qualified with `html` like the rest. */
+html .wallet-adapter-button {
+  height: 48px;
+  padding: 0 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  background: var(--fg);
+  color: var(--bg);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: transform 0.25s var(--ease-out), opacity 0.25s var(--ease-out);
+}
+html .wallet-adapter-button-trigger { background: var(--fg); }
+html .wallet-adapter-button:not([disabled]):hover { background: var(--fg); opacity: 0.88; transform: translateY(-1px); }
+html .wallet-adapter-button:not([disabled]):focus-visible { outline: 2px solid var(--brand-ring); outline-offset: 2px; }
+html .wallet-adapter-button-start-icon,
+html .wallet-adapter-button-end-icon { width: 20px; height: 20px; }
+
+html .wallet-adapter-dropdown-list {
+  padding: 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--bg-raised);
+  box-shadow: var(--shadow-lg);
+  font-family: var(--font-body);
+}
+html .wallet-adapter-dropdown-list-item {
+  height: 38px;
+  padding: 0 0.9rem;
+  border-radius: var(--radius-xs);
+  color: var(--fg);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+html .wallet-adapter-dropdown-list-item:not([disabled]):hover { background: var(--bg-sunken); }
+
+html .wallet-adapter-modal-overlay { background: rgba(0, 2, 6, 0.55); }
+html .wallet-adapter-modal-wrapper {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--bg-raised);
+  box-shadow: var(--shadow-lg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+html .wallet-adapter-modal-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+html .wallet-adapter-modal-button-close { background: var(--bg-sunken); }
+html .wallet-adapter-modal-button-close svg { fill: var(--fg-muted); }
+html .wallet-adapter-modal-list .wallet-adapter-button {
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--fg);
+  font-weight: 500;
+}
+html .wallet-adapter-modal-list .wallet-adapter-button:not([disabled]):hover { background: var(--bg-sunken); opacity: 1; transform: none; }
+html .wallet-adapter-modal-list-more { color: var(--brand); }
+html .wallet-adapter-modal-list-more svg { fill: var(--brand); }
+html .wallet-adapter-modal-middle-button {
+  border-radius: 100px;
+  background: var(--fg);
+  color: var(--bg);
+  font-family: var(--font-body);
+  font-weight: 500;
 }

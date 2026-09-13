@@ -42,6 +42,7 @@ const UNPREFIXED_PATHS = [
   "ecosystem",
   "roadmap",
   "whitepaper",
+  "shop",
 ];
 
 // Pages whose canonical slug has changed. Both the unprefixed and every

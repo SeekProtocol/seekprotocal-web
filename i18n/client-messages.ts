@@ -65,6 +65,7 @@ export const CLIENT_NAMESPACES = [
   "referrals",
   "resultScreen",
   "rewards",
+  "shop",
   "socialSection",
   "spawnScreen",
   "stackLayers",
