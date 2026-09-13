@@ -13,6 +13,12 @@ import { getSupabase, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/lib/supabase-bro
  * `create_order`, also carry a Turnstile token in `x-turnstile-token`; the
  * server verifies it in place of the app's device attestation. A token is
  * good for one verification, so the widget is reset after each of those.
+ *
+ * The second way to pay goes through the `radom-checkout` function: the same
+ * headers and the same error codes, but the money moves on Radom's hosted
+ * page rather than in a wallet the site can see. `createRadomOrder` hands
+ * back a URL to leave for; `radomOrderStatus` is what the page asks when the
+ * player comes back.
  */
 
 /** Product ids as the server keys them. The display prices are the server's too; these are for the shelf only. */
@@ -29,6 +35,8 @@ export function productById(id: string): ShopProduct | null {
 
 /** How long the server holds a created order's price. */
 export const ORDER_TTL_MS = 5 * 60_000;
+/** A Radom order stays open this long; the hosted page carries its own clock. */
+export const RADOM_ORDER_TTL_MS = 30 * 60_000;
 /** confirm_order is polled this many times, this far apart, before the page stops claiming anything. */
 export const CONFIRM_ATTEMPTS = 12;
 export const CONFIRM_INTERVAL_MS = 2500;
@@ -44,6 +52,7 @@ export type CheckoutCode =
   | "account_blocked"
   | "order_unknown"
   | "quote_unavailable"
+  | "radom_unavailable"
   | "unauthorized"
   | "captcha"
   | "network"
@@ -60,6 +69,7 @@ const KNOWN_CODES: ReadonlySet<string> = new Set<CheckoutCode>([
   "account_blocked",
   "order_unknown",
   "quote_unavailable",
+  "radom_unavailable",
 ]);
 
 export class CheckoutError extends Error {
@@ -82,9 +92,12 @@ function codeFrom(raw: string, status: number): CheckoutCode {
   return "unknown";
 }
 
+type CheckoutFunction = "solana-checkout" | "radom-checkout";
+
 async function call(
   body: Record<string, unknown>,
   turnstileToken?: string,
+  fn: CheckoutFunction = "solana-checkout",
 ): Promise<Record<string, unknown>> {
   const {
     data: { session },
@@ -93,7 +106,7 @@ async function call(
 
   let res: Response;
   try {
-    res = await fetch(`${SUPABASE_URL}/functions/v1/solana-checkout`, {
+    res = await fetch(`${SUPABASE_URL}/functions/v1/${fn}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${session.access_token}`,
@@ -204,6 +217,54 @@ export async function abortOrder(orderId: string, reason: string): Promise<void>
   } catch {
     /* The reconciler refunds it after expiry either way. */
   }
+}
+
+export interface RadomOrder {
+  orderId: string;
+  /** Where to send the browser. Radom's hosted page; the site never renders it. */
+  checkoutUrl: string;
+  expiresAt: string;
+  priceUsdCents: number;
+}
+
+export type RadomStatus = "paid" | "pending" | "closed";
+
+/**
+ * A Radom order for one product. `returnPath` is the shop's own path, from
+ * `/`; the server turns it into the success and cancel URLs Radom sends the
+ * player back to, both carrying `?order=<id>`.
+ */
+export async function createRadomOrder(
+  productId: string,
+  turnstileToken: string,
+  returnPath: string,
+): Promise<RadomOrder> {
+  const data = await call(
+    { action: "create", product_id: productId, return_path: returnPath },
+    turnstileToken,
+    "radom-checkout",
+  );
+  const checkoutUrl = typeof data.checkout_url === "string" ? data.checkout_url : "";
+  if (!data.order_id || !/^https:\/\//.test(checkoutUrl)) {
+    throw new CheckoutError("radom_unavailable");
+  }
+  return {
+    orderId: String(data.order_id),
+    checkoutUrl,
+    expiresAt: String(data.expires_at),
+    priceUsdCents: cents(data.price_usd_cents),
+  };
+}
+
+/**
+ * One check after the player is back from Radom. The caller polls, as for
+ * confirm_order. `closed` is Radom's cancelled or expired; the server also
+ * hears about a payment by webhook, so `paid` can arrive on the first ask.
+ */
+export async function radomOrderStatus(orderId: string): Promise<RadomStatus> {
+  const data = await call({ action: "status", order_id: orderId }, undefined, "radom-checkout");
+  if (data.status === "paid" || data.status === "closed") return data.status;
+  return "pending";
 }
 
 export function orderExpired(order: ShopOrder, now = Date.now()): boolean {

@@ -11,12 +11,15 @@ import {
   CheckoutError,
   confirmOrder,
   createOrder,
+  createRadomOrder,
   formatSol,
   formatUsd,
   isWalletRejection,
   looksInsufficient,
   orderExpired,
+  productById,
   quoteOrder,
+  radomOrderStatus,
   sleep,
   CONFIRM_ATTEMPTS,
   CONFIRM_INTERVAL_MS,
@@ -41,6 +44,7 @@ type ErrorKey =
   | "errWalletFailed"
   | "errNetwork"
   | "errCaptcha"
+  | "errRadomUnavailable"
   | "errGeneric";
 
 /**
@@ -48,6 +52,13 @@ type ErrorKey =
  * waiting on, and the two terminal phases after a broadcast, `paid` and
  * `pending`, are the only two the page is allowed to end a payment in: a
  * signature that went out is never reported as a failure.
+ *
+ * The Radom path adds two phases of its own. `redirecting` covers the
+ * moment between asking for the order and the browser leaving for the hosted
+ * page; `returning` is the poll after the player comes back with `?order=`.
+ * It ends in the same `paid`, `pending` and `cancelled` as the wallet, with
+ * no signature and, when the browser forgot which bundle it left with, no
+ * product either.
  */
 type Flow =
   | { phase: "idle" }
@@ -55,8 +66,10 @@ type Flow =
   | { phase: "ready"; product: ShopProduct; order: ShopOrder }
   | { phase: "signing"; product: ShopProduct; order: ShopOrder }
   | { phase: "confirming"; product: ShopProduct; order: ShopOrder; signature: string; attempt: number }
-  | { phase: "paid"; product: ShopProduct; order: ShopOrder; signature: string }
-  | { phase: "pending"; product: ShopProduct; order: ShopOrder; signature: string }
+  | { phase: "redirecting"; product: ShopProduct }
+  | { phase: "returning"; product: ShopProduct | null; orderId: string; attempt: number }
+  | { phase: "paid"; product: ShopProduct | null; signature: string }
+  | { phase: "pending"; product: ShopProduct | null; signature: string }
   | { phase: "cancelled" }
   | { phase: "error"; code: ErrorKey };
 
@@ -64,6 +77,10 @@ type Flow =
 const QUOTE_FRESH_MS = 3 * 60_000;
 /** How long to wait for the Turnstile widget to hand over a token before giving up. */
 const TOKEN_WAIT_MS = 25_000;
+/** The bundle a Radom order was made for, kept for the return so the paid line can count packs. */
+const RADOM_PRODUCT_KEY = "seek_shop_radom_product";
+/** Order ids the server hands out. Anything else on the URL is ignored rather than asked about. */
+const ORDER_ID_SHAPE = /^[A-Za-z0-9_-]{8,64}$/;
 
 function errorKeyFor(error: unknown): ErrorKey {
   if (error instanceof CheckoutError) {
@@ -91,6 +108,8 @@ function errorKeyFor(error: unknown): ErrorKey {
         return "errCaptcha";
       case "network":
         return "errNetwork";
+      case "radom_unavailable":
+        return "errRadomUnavailable";
       default:
         return "errGeneric";
     }
@@ -211,7 +230,7 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
         reset();
         if (!liveRef.current) return;
         if (order.settled) {
-          setFlow({ phase: "paid", product, order, signature: "" });
+          setFlow({ phase: "paid", product, signature: "" });
           onSettled();
           return;
         }
@@ -286,7 +305,7 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
       try {
         if (await confirmOrder(order.orderId, signature)) {
           if (liveRef.current) {
-            setFlow({ phase: "paid", product, order, signature });
+            setFlow({ phase: "paid", product, signature });
             onSettled();
           }
           return;
@@ -296,8 +315,103 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
       }
       await sleep(CONFIRM_INTERVAL_MS);
     }
-    if (liveRef.current) setFlow({ phase: "pending", product, order, signature });
+    if (liveRef.current) setFlow({ phase: "pending", product, signature });
   }, [flow, publicKey, connection, sendTransaction, setVisible, onSettled]);
+
+  /* The other way to pay. No wallet needed: the order is made here, the
+     money moves on Radom's page, and the browser comes back to this path
+     with the order id on the URL. The bundle is noted in session storage so
+     the paid line can still count packs after the round trip; a browser
+     that lost it gets the line without a count. `redirecting` is left
+     standing on purpose: the page is unloading. */
+  const startRadomOrder = useCallback(
+    async (product: ShopProduct) => {
+      setFlow({ phase: "redirecting", product });
+      try {
+        const tokenValue = await waitForToken();
+        const order = await createRadomOrder(product.id, tokenValue, window.location.pathname);
+        reset();
+        if (!liveRef.current) return;
+        try {
+          window.sessionStorage.setItem(RADOM_PRODUCT_KEY, `${order.orderId}:${product.id}`);
+        } catch {
+          /* Private mode or a full store: the return simply has no count. */
+        }
+        window.location.assign(order.checkoutUrl);
+      } catch (error) {
+        reset();
+        if (liveRef.current) setFlow({ phase: "error", code: errorKeyFor(error) });
+      }
+    },
+    [waitForToken, reset],
+  );
+
+  /* Back from Radom. The order may already be paid (the webhook is usually
+     ahead of the browser), still open, or closed on Radom's side. The poll
+     mirrors the wallet confirm: twelve asks, and the only ends are paid,
+     pending and cancelled. A pending order is never a failure, so the copy
+     after the last ask says the packs will follow, not "buy again". Only an
+     answer that the order is not this account's stops the poll early. */
+  const resumeRadomOrder = useCallback(
+    async (orderId: string, product: ShopProduct | null) => {
+      for (let attempt = 1; attempt <= CONFIRM_ATTEMPTS; attempt++) {
+        if (!liveRef.current) return;
+        setFlow({ phase: "returning", product, orderId, attempt });
+        try {
+          const status = await radomOrderStatus(orderId);
+          if (status === "paid") {
+            if (liveRef.current) {
+              setFlow({ phase: "paid", product, signature: "" });
+              onSettled();
+            }
+            return;
+          }
+          if (status === "closed") {
+            if (liveRef.current) setFlow({ phase: "cancelled" });
+            return;
+          }
+        } catch (error) {
+          const code = error instanceof CheckoutError ? error.code : null;
+          if (code === "order_unknown" || code === "unauthorized" || code === "account_blocked") {
+            if (liveRef.current) setFlow({ phase: "error", code: errorKeyFor(error) });
+            return;
+          }
+          /* Anything else is the network; the server's webhook settles it regardless. */
+        }
+        await sleep(CONFIRM_INTERVAL_MS);
+      }
+      if (liveRef.current) setFlow({ phase: "pending", product, signature: "" });
+    },
+    [onSettled],
+  );
+
+  /* `?order=<id>` on mount means the browser is back from Radom, with or
+     without Radom's `paid=1` hint, which is not trusted: the server is asked
+     either way. Both params leave the URL before the first poll so a reload
+     or a shared link does not ask again. */
+  const resumedOnce = useRef(false);
+  useEffect(() => {
+    if (resumedOnce.current) return;
+    resumedOnce.current = true;
+    const url = new URL(window.location.href);
+    const orderId = url.searchParams.get("order");
+    if (!orderId) return;
+    url.searchParams.delete("order");
+    url.searchParams.delete("paid");
+    window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
+    if (!ORDER_ID_SHAPE.test(orderId)) return;
+
+    let product: ShopProduct | null = null;
+    try {
+      const noted = window.sessionStorage.getItem(RADOM_PRODUCT_KEY) ?? "";
+      window.sessionStorage.removeItem(RADOM_PRODUCT_KEY);
+      const [notedOrder, notedProduct] = noted.split(":");
+      if (notedOrder === orderId) product = productById(notedProduct ?? "");
+    } catch {
+      /* No note, no count. */
+    }
+    void resumeRadomOrder(orderId, product);
+  }, [resumeRadomOrder]);
 
   const cancel = useCallback(() => {
     if (flow.phase !== "ready") return;
@@ -311,9 +425,11 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
     flow.phase === "creating" ||
     flow.phase === "ready" ||
     flow.phase === "signing" ||
-    flow.phase === "confirming";
+    flow.phase === "confirming" ||
+    flow.phase === "redirecting" ||
+    flow.phase === "returning";
   const stale = rate ? now - rate.at > QUOTE_FRESH_MS : false;
-  const selectedId = "product" in flow ? flow.product.id : null;
+  const selectedId = "product" in flow && flow.product ? flow.product.id : null;
   const timeFormat = new Intl.DateTimeFormat(locale, { hour: "2-digit", minute: "2-digit" });
   const solFor = (product: ShopProduct) =>
     rate ? formatSol(BigInt(Math.round(rate.lamportsPerCent * product.priceUsdCents)), 5) : null;
@@ -376,10 +492,19 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
                 >
                   {connected ? t("buy") : t("connectToBuy")}
                 </button>
+                <button
+                  type="button"
+                  className="btn btn-ghost btn-sm shop-product-alt"
+                  disabled={busy}
+                  onClick={() => void startRadomOrder(product)}
+                >
+                  {t("payOther")}
+                </button>
               </article>
             );
           })}
         </div>
+        <p className="shop-ways">{t("waysToPay")}</p>
         <div className="shop-rate">
           <div className="stack gap-xs">
             <p className="t-small" aria-live="polite">
@@ -432,14 +557,36 @@ function FlowView({
 
   if (flow.phase === "idle") return null;
 
-  if (flow.phase === "creating" || flow.phase === "signing") {
+  if (flow.phase === "creating" || flow.phase === "signing" || flow.phase === "redirecting") {
+    const line =
+      flow.phase === "creating"
+        ? t("flowCreating")
+        : flow.phase === "signing"
+          ? t("flowSigning")
+          : t("flowRedirecting");
     return (
       <div className="shop-flow" role="status" aria-live="polite">
         <div className="shop-flow-box">
           <p className="shop-flow-row">
             <span className="shop-flow-spinner" aria-hidden="true" />
-            <span>{flow.phase === "creating" ? t("flowCreating") : t("flowSigning")}</span>
+            <span>{line}</span>
           </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (flow.phase === "returning") {
+    return (
+      <div className="shop-flow" role="status" aria-live="polite">
+        <div className="shop-flow-box">
+          <p className="shop-flow-row">
+            <span className="shop-flow-spinner" aria-hidden="true" />
+            <span>{t("flowChecking", { attempt: flow.attempt, total: CONFIRM_ATTEMPTS })}</span>
+          </p>
+          <div className="shop-flow-progress" aria-hidden="true">
+            <i style={{ width: `${(flow.attempt / CONFIRM_ATTEMPTS) * 100}%` }} />
+          </div>
         </div>
       </div>
     );
@@ -498,9 +645,11 @@ function FlowView({
     return (
       <div className="shop-flow" role="status" aria-live="polite">
         <p className={`form-status ${flow.phase === "paid" ? "form-status-success" : "shop-flow-pending"}`}>
-          {flow.phase === "paid"
-            ? t("flowPaid", { count: flow.product.packs })
-            : t("flowPending")}
+          {flow.phase !== "paid"
+            ? t("flowPending")
+            : flow.product
+              ? t("flowPaid", { count: flow.product.packs })
+              : t("flowPaidAny")}
         </p>
         <div className="shop-flow-row">
           {flow.signature && (

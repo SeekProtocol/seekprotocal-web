@@ -1551,7 +1551,7 @@ and owns every price.
 | `components/shop/Shop.tsx` | Owns the session. Signed out: `SignIn`. Signed in: providers, storefront, packs |
 | `components/shop/SignIn.tsx` | Google, Apple, or an 8-digit code by email, all through Supabase auth |
 | `components/shop/ShopProviders.tsx` | Wallet adapter plumbing, copied in shape from the partner portal |
-| `components/shop/Storefront.tsx` | Products, the SOL rate, the wallet button, Turnstile, and the purchase state machine |
+| `components/shop/Storefront.tsx` | Products, the SOL rate, the wallet button, the Radom button, Turnstile, and the purchase state machine |
 | `components/shop/PacksPanel.tsx` | Unopened credits with a realtime subscription, and the last ten orders |
 | `lib/shop/checkout.ts` | The server contract, the transaction builder, error codes |
 | `lib/supabase-browser.ts` | One PKCE browser client for the app's project |
@@ -1600,6 +1600,51 @@ instruction as a non-signer, non-writable account, fee payer the wallet,
 blockhash from the RPC. The wallet broadcasts it through
 `sendTransaction`; the page never holds a signed transaction.
 
+### The second way to pay: Radom
+
+Each bundle has a second, quieter button, "Pay with stablecoins or other
+crypto". It needs no wallet. The page makes an order with the
+`radom-checkout` function, leaves for Radom's hosted page at `pay.radom.com`
+(USDC, USDT, SOL, ETH, BTC and more on Solana, Ethereum, Base, Arbitrum,
+Polygon, BNB, Tron and Bitcoin), and comes back to the same shop path.
+
+`POST https://ukoqxyoogjouhdqhtiei.supabase.co/functions/v1/radom-checkout`,
+the same headers as `solana-checkout`, with `x-turnstile-token` on `create`.
+The same origin lock and the same error codes apply, plus `radom_unavailable`
+(503) when Radom itself could not open a session.
+
+| Action | Sends | Gets |
+|---|---|---|
+| `create` | `product_id`, `return_path` (the current shop path, from `/`) | `order_id`, `checkout_url`, `expires_at` (thirty minutes), `price_usd_cents` |
+| `status` | `order_id` | `ok`, `status: paid`, `pending` or `closed`; polled twelve times, 2.5 s apart |
+
+The server builds the success URL as origin + `return_path` + `?order=<id>&paid=1`
+and the cancel URL as origin + `return_path` + `?order=<id>`. Radom also
+webhooks the server, so an order can settle while the player is still on
+Radom's page, and `PacksPanel`'s realtime subscription shows it.
+
+On the site side this lives in `createRadomOrder` and `radomOrderStatus` in
+`lib/shop/checkout.ts` (the shared `call` now takes the function name,
+defaulting to `solana-checkout`) and in `startRadomOrder` and
+`resumeRadomOrder` in `Storefront.tsx`. Two phases were added to the flow,
+`redirecting` and `returning`; they end in the same `paid`, `pending` and
+`cancelled` as the wallet. `closed` from the server is Radom's cancelled or
+expired and lands in `cancelled`. If the twelve polls run out the page shows
+the wallet's "being confirmed" copy and, as with the wallet, nothing that
+reads as "buy again".
+
+On mount, `?order=<id>` (with or without `paid=1`) is read, both params are
+taken off the URL with `history.replaceState`, and the poll starts. `paid=1`
+is a hint only; the server is asked either way. The bundle the player left
+with is noted in `sessionStorage` under `seek_shop_radom_product` so the paid
+line can still count packs after the round trip; a browser that lost the
+note gets `flowPaidAny`, the same line without a count.
+
+Nothing changed in the environment or the CSP: `window.location.assign` to
+Radom is a top-level navigation, which `connect-src`, `frame-src` and
+`form-action` do not govern, and the page never fetches from or embeds
+Radom.
+
 ### Three decisions worth knowing about
 
 **One quote, three prices.** A Turnstile token verifies once, so quoting each
@@ -1623,7 +1668,10 @@ lag until `SHOP_PRODUCTS` in `lib/shop/checkout.ts` is updated.
 
 The server refuses any `Origin` but the production hosts, so `quote_order`
 and `create_order` fail on localhost with `checkout_not_available_in_this_build`
-and the rate line shows that message. Sign-in, the wallet modal, the packs
+and the rate line shows that message. The Radom `create` is behind the same
+lock, so the redirect cannot be exercised locally either; the return path
+can, by opening `/en/shop?order=<id>` by hand, which polls `status` and ends
+in an error for an order that is not the signed-in account's. Sign-in, the wallet modal, the packs
 panel and the order history all work locally against the real project.
 
 Outside this repo, the shop depends on four settings in the Supabase
