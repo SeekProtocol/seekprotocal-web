@@ -1,10 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState, type ReactNode } from "react";
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { BaseWalletMultiButton, useWalletModal } from "@solana/wallet-adapter-react-ui";
 import { useTurnstile } from "@/lib/use-turnstile";
+import { createVerificationQueue } from "@/lib/shop/verification-queue";
+import { isLocalShopDevelopment } from "@/lib/shop/local-development";
 import {
   abortOrder,
   buildOrderTransaction,
@@ -62,6 +65,7 @@ type ErrorKey =
  */
 type Flow =
   | { phase: "idle" }
+  | { phase: "verifying"; product: ShopProduct }
   | { phase: "creating"; product: ShopProduct }
   | { phase: "ready"; product: ShopProduct; order: ShopOrder }
   | { phase: "signing"; product: ShopProduct; order: ShopOrder }
@@ -125,7 +129,9 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
   const { connection } = useConnection();
   const { publicKey, sendTransaction, connected } = useWallet();
   const { setVisible } = useWalletModal();
-  const { containerRef, token, armed, arm, reset } = useTurnstile();
+  const { containerRef, token, error: verificationError, armed, arm, reset } = useTurnstile();
+  const [verify] = useState(() => createVerificationQueue());
+  const localCheckout = isLocalShopDevelopment();
 
   /* One quote fixes the SOL per USD cent; the three shelf prices are derived
      from it. A Turnstile token verifies once, so quoting all three would cost
@@ -135,14 +141,19 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
   const [quoting, setQuoting] = useState(false);
   const [quoteError, setQuoteError] = useState<ErrorKey | null>(null);
   const [flow, setFlow] = useState<Flow>({ phase: "idle" });
+  const [selectedProduct, setSelectedProduct] = useState<ShopProduct>(SHOP_PRODUCTS[1]);
   const [now, setNow] = useState(() => Date.now());
 
   /* The token is state so the widget re-renders the page; the async flows
      below read it through a ref so they see the value at the moment they ask. */
   const tokenRef = useRef(token);
+  const verificationErrorRef = useRef(verificationError);
   useEffect(() => {
     tokenRef.current = token;
   }, [token]);
+  useEffect(() => {
+    verificationErrorRef.current = verificationError;
+  }, [verificationError]);
   const liveRef = useRef(true);
   useEffect(() => {
     liveRef.current = true;
@@ -155,36 +166,47 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
      and the first quote needs it. The homepage caveat in use-turnstile.ts is
      about readers who never asked for a captcha; this one did. */
   useEffect(() => {
-    arm();
-  }, [arm]);
+    if (!localCheckout) arm();
+  }, [arm, localCheckout]);
 
   const waitForToken = useCallback(async (): Promise<string> => {
-    if (!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY) return "";
+    if (!liveRef.current) throw new CheckoutError("network");
+    if (localCheckout) return "";
+    if (!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY) throw new CheckoutError("captcha");
+    if (verificationErrorRef.current) {
+      verificationErrorRef.current = null;
+      tokenRef.current = "";
+      reset();
+    }
     arm();
     const deadline = Date.now() + TOKEN_WAIT_MS;
-    while (Date.now() < deadline) {
+    while (liveRef.current && Date.now() < deadline) {
+      if (verificationErrorRef.current) throw new CheckoutError("captcha");
       if (tokenRef.current) return tokenRef.current;
       await sleep(200);
     }
     throw new CheckoutError("captcha");
-  }, [arm]);
+  }, [arm, reset, localCheckout]);
+
+  const runVerified = useCallback(<T,>(request: (value: string) => Promise<T>) =>
+    verify(waitForToken, request, () => {
+      tokenRef.current = "";
+      reset();
+    }), [verify, waitForToken, reset]);
 
   const refreshQuote = useCallback(async () => {
     setQuoting(true);
     setQuoteError(null);
     try {
-      const tokenValue = await waitForToken();
-      const quote = await quoteOrder(SHOP_PRODUCTS[0].id, tokenValue);
-      reset();
+      const quote = await runVerified((value) => quoteOrder(SHOP_PRODUCTS[0].id, value));
       const base = quote.priceUsdCents || SHOP_PRODUCTS[0].priceUsdCents;
       if (liveRef.current) setRate({ lamportsPerCent: Number(quote.lamports) / base, at: Date.now() });
     } catch (error) {
-      reset();
       if (liveRef.current) setQuoteError(errorKeyFor(error));
     } finally {
       if (liveRef.current) setQuoting(false);
     }
-  }, [waitForToken, reset]);
+  }, [runVerified]);
 
   const quotedOnce = useRef(false);
   useEffect(() => {
@@ -223,11 +245,12 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
         setVisible(true);
         return;
       }
-      setFlow({ phase: "creating", product });
+      setFlow({ phase: "verifying", product });
       try {
-        const tokenValue = await waitForToken();
-        const order = await createOrder(product.id, tokenValue);
-        reset();
+        const order = await runVerified((value) => {
+          setFlow({ phase: "creating", product });
+          return createOrder(product.id, value);
+        });
         if (!liveRef.current) return;
         if (order.settled) {
           setFlow({ phase: "paid", product, signature: "" });
@@ -236,11 +259,10 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
         }
         setFlow({ phase: "ready", product, order });
       } catch (error) {
-        reset();
         if (liveRef.current) setFlow({ phase: "error", code: errorKeyFor(error) });
       }
     },
-    [publicKey, setVisible, waitForToken, reset, onSettled],
+    [publicKey, setVisible, runVerified, onSettled],
   );
 
   const pay = useCallback(async () => {
@@ -326,24 +348,25 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
      standing on purpose: the page is unloading. */
   const startRadomOrder = useCallback(
     async (product: ShopProduct) => {
-      setFlow({ phase: "redirecting", product });
+      setFlow({ phase: "verifying", product });
       try {
-        const tokenValue = await waitForToken();
-        const order = await createRadomOrder(product.id, tokenValue, window.location.pathname);
-        reset();
+        const order = await runVerified((value) => {
+          setFlow({ phase: "creating", product });
+          return createRadomOrder(product.id, value, window.location.pathname);
+        });
         if (!liveRef.current) return;
         try {
           window.sessionStorage.setItem(RADOM_PRODUCT_KEY, `${order.orderId}:${product.id}`);
         } catch {
           /* Private mode or a full store: the return simply has no count. */
         }
+        setFlow({ phase: "redirecting", product });
         window.location.assign(order.checkoutUrl);
       } catch (error) {
-        reset();
         if (liveRef.current) setFlow({ phase: "error", code: errorKeyFor(error) });
       }
     },
-    [waitForToken, reset],
+    [runVerified],
   );
 
   /* Back from Radom. The order may already be paid (the webhook is usually
@@ -422,6 +445,7 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
   const resetFlow = useCallback(() => setFlow({ phase: "idle" }), []);
 
   const busy =
+    flow.phase === "verifying" ||
     flow.phase === "creating" ||
     flow.phase === "ready" ||
     flow.phase === "signing" ||
@@ -429,7 +453,7 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
     flow.phase === "redirecting" ||
     flow.phase === "returning";
   const stale = rate ? now - rate.at > QUOTE_FRESH_MS : false;
-  const selectedId = "product" in flow && flow.product ? flow.product.id : null;
+  const activeProduct = busy && "product" in flow && flow.product ? flow.product : selectedProduct;
   const timeFormat = new Intl.DateTimeFormat(locale, { hour: "2-digit", minute: "2-digit" });
   const solFor = (product: ShopProduct) =>
     rate ? formatSol(BigInt(Math.round(rate.lamportsPerCent * product.priceUsdCents)), 5) : null;
@@ -454,87 +478,126 @@ export default function Storefront({ onSettled }: { onSettled: () => void }) {
     rateLine = quoting ? t("refreshing") : t("rateNone");
   }
 
+  return <StorefrontView
+    selectedProduct={activeProduct}
+    onSelect={setSelectedProduct}
+    onSol={() => void startOrder(activeProduct)}
+    onRadom={() => void startRadomOrder(activeProduct)}
+    onRefresh={() => void refreshQuote()}
+    busy={busy}
+    connected={connected}
+    quoting={quoting}
+    rateLine={rateLine}
+    sol={solFor(activeProduct)}
+    quoteError={!!quoteError}
+    wallet={connected && <BaseWalletMultiButton labels={walletLabels} />}
+    verificationNote={localCheckout ? null : undefined}
+    verification={localCheckout ? null : <>
+      {armed && <div ref={containerRef} className="cf-turnstile shop-turnstile" />}
+      {verificationError && <div className="shop-verification-error" role="alert">
+        <p className="t-small">{t("errCaptcha")}</p>
+        <button type="button" className="shop-rate-refresh" disabled={busy || quoting} onClick={() => void refreshQuote()}>{t("tryAgain")}</button>
+      </div>}
+    </>}
+    flow={<FlowView flow={flow} now={now} onPay={pay} onCancel={cancel} onReset={resetFlow} />}
+  />;
+}
+
+/** The shelf and payment layout share one selected bundle; payment handlers stay above. */
+export function StorefrontView({
+  selectedProduct, onSelect, onSol, onRadom, onRefresh, busy, connected,
+  quoting, rateLine, sol, quoteError, wallet, verification, verificationNote, flow,
+}: {
+  selectedProduct: ShopProduct;
+  onSelect: (product: ShopProduct) => void;
+  onSol: () => void;
+  onRadom: () => void;
+  onRefresh: () => void;
+  busy: boolean;
+  connected: boolean;
+  quoting: boolean;
+  rateLine: string;
+  sol: string | null;
+  quoteError: boolean;
+  wallet?: ReactNode;
+  verification?: ReactNode;
+  verificationNote?: string | null;
+  flow?: ReactNode;
+}) {
+  const t = useTranslations("shop");
+  const locale = useLocale();
+  const groupId = useId();
+
   return (
-    <div className="shop-stack">
-      <section className="card shop-panel">
-        <p className="eyebrow">{t("productsEyebrow")}</p>
-        <h2 className="t-h3">{t("productsTitle")}</h2>
-        <div className="shop-products">
+    <div className="shop-stack shop-storefront">
+      <section className="shop-bundles">
+        <div className="shop-section-heading">
+          <span className="shop-step" aria-hidden="true">01</span>
+          <div><p className="eyebrow">{t("productsEyebrow")}</p><h2 className="t-h3">{t("productsTitle")}</h2></div>
+        </div>
+        <fieldset className="shop-products" disabled={busy}>
+          <legend className="sr-only">{t("productsTitle")}</legend>
           {SHOP_PRODUCTS.map((product) => {
-            const sol = solFor(product);
+            const saving = Math.round((1 - product.priceUsdCents / (SHOP_PRODUCTS[0].priceUsdCents * product.packs)) * 100);
             return (
-              <article
-                key={product.id}
-                className="shop-product"
-                data-selected={selectedId === product.id || undefined}
-                data-featured={product.packs === 5 || undefined}
-              >
-                <p className="t-mono">{t(product.key)}</p>
-                <p className="t-num shop-product-packs">{t("packs", { count: product.packs })}</p>
-                <div className="shop-product-price">
+              <label className="shop-product" key={product.id} data-selected={selectedProduct.id === product.id || undefined}>
+                <input type="radio" name={groupId} value={product.id} checked={selectedProduct.id === product.id} onChange={() => onSelect(product)} />
+                <span className="shop-product-top">
+                  <span className="shop-product-label">{t(product.key)}</span>
+                  <span className="shop-product-check" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m4 8 2.5 2.5L12 5" /></svg></span>
+                </span>
+                <span className="shop-product-art" data-bundle={product.packs} aria-hidden="true">
+                  {Array.from({ length: product.packs === 1 ? 1 : product.packs === 5 ? 3 : 5 }, (_, i) => (
+                    <Image key={i} src="/app/shop/card-back.png" alt="" width={132} height={186} loading="eager" className="shop-pack-image" />
+                  ))}
+                </span>
+                <span className="shop-product-packs">{t("packs", { count: product.packs })}</span>
+                <span className="shop-product-price">
                   <span className="shop-product-usd">{formatUsd(product.priceUsdCents, locale)}</span>
-                  <span className="shop-product-sol">
-                    {sol ? t("solApprox", { sol }) : t("solPending")}
-                  </span>
-                </div>
-                <p className="t-small text-muted shop-product-per">
-                  {product.packs > 1
-                    ? t("perPack", {
-                        price: formatUsd(Math.round(product.priceUsdCents / product.packs), locale),
-                      })
-                    : " "}
-                </p>
-                <button
-                  type="button"
-                  className={`btn ${connected ? "btn-brand" : "btn-outline"}`}
-                  disabled={busy}
-                  onClick={() => void startOrder(product)}
-                >
-                  {connected ? t("buy") : t("connectToBuy")}
-                </button>
-                <button
-                  type="button"
-                  className="btn btn-ghost btn-sm shop-product-alt"
-                  disabled={busy}
-                  onClick={() => void startRadomOrder(product)}
-                >
-                  {t("payOther")}
-                </button>
-              </article>
+                  {saving > 0 && <span className="shop-product-saving">{t("bundleSaving", { percent: saving })}</span>}
+                </span>
+                <span className="shop-product-per">{t("perPack", { price: formatUsd(Math.round(product.priceUsdCents / product.packs), locale) })}</span>
+              </label>
             );
           })}
-        </div>
-        <p className="shop-ways">{t("waysToPay")}</p>
-        <div className="shop-rate">
-          <div className="stack gap-xs">
-            <p className="t-small" aria-live="polite">
-              {rateLine}
-            </p>
-            <p className="shop-rate-note">{t("rateNote")}</p>
-          </div>
-          <button
-            type="button"
-            className={`btn btn-sm ${stale || !rate ? "btn-brand" : "btn-outline"}`}
-            disabled={quoting || busy}
-            onClick={() => void refreshQuote()}
-          >
-            {quoting ? t("refreshing") : t("refreshRate")}
-          </button>
-        </div>
+        </fieldset>
       </section>
 
-      <section className="card shop-panel">
-        <p className="eyebrow">{t("walletEyebrow")}</p>
-        <h2 className="t-h3">{t("walletTitle")}</h2>
-        <p className="t-body text-muted">{t("walletLead")}</p>
-        <div className="shop-wallet-row">
-          <BaseWalletMultiButton labels={walletLabels} />
+      <section className="card shop-panel shop-payment">
+        <div className="shop-section-heading">
+          <span className="shop-step" aria-hidden="true">02</span>
+          <div><p className="eyebrow">{t("paymentEyebrow")}</p><h2 className="t-h3">{t("paymentTitle")}</h2></div>
         </div>
-        {/* In the tree only once armed. Refs are attached before effects run,
-            so the node exists by the time the widget renders into it. */}
-        {armed && <div ref={containerRef} className="cf-turnstile shop-turnstile" />}
-        <p className="form-note">{t("verificationNote")}</p>
-        <FlowView flow={flow} now={now} onPay={pay} onCancel={cancel} onReset={resetFlow} />
+        <div className="shop-payment-summary" aria-live="polite">
+          <span>{t("packs", { count: selectedProduct.packs })}</span>
+          <strong>{formatUsd(selectedProduct.priceUsdCents, locale)}</strong>
+        </div>
+        <div className="shop-payment-options">
+          <button type="button" className="shop-payment-option" disabled={busy} onClick={onSol}>
+            <span className="shop-payment-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h14a2 2 0 0 1 2 2v11H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12v2M20 10h-5v5h5" /><circle cx="16.5" cy="12.5" r=".6" /></svg></span>
+            <span className="shop-payment-copy"><strong>{connected ? t("buy") : t("walletConnect")}</strong><span>{t("paymentSolHint")}</span></span>
+            <span className="shop-payment-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" className="shop-payment-option shop-payment-radom" disabled={busy} onClick={onRadom}>
+            <span className="shop-payment-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="6" /><path d="M15 9a6 6 0 1 1-6 6M9 6v6M7 7h3a1 1 0 0 1 0 2H8a1 1 0 0 0 0 2h3" /></svg></span>
+            <span className="shop-payment-copy"><strong>{t("paymentCrypto")}</strong><span>USDC · USDT · ETH · BTC</span></span>
+            <span className="shop-payment-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+        {wallet && <div className="shop-wallet-row">{wallet}</div>}
+        <div className="shop-rate">
+          <div className="shop-rate-value"><span className="shop-sol-mark" aria-hidden="true">≋</span><span>{sol ? t("solApprox", { sol }) : t("rateNone")}</span></div>
+          <button type="button" className="shop-rate-refresh" disabled={quoting || busy} onClick={onRefresh}>
+            <span aria-hidden="true">↻</span> {quoting ? t("refreshing") : t("refreshRate")}
+          </button>
+          <p className="shop-rate-note" data-error={quoteError || undefined} aria-live="polite">{rateLine}</p>
+        </div>
+        <details className="shop-payment-details">
+          <summary>{t("paymentDetails")}</summary>
+          <p>{t("waysToPay")}</p><p>{t("rateNote")}</p>
+        </details>
+        {verificationNote !== null && <div className="shop-verification">{verification}<p className="form-note">{verificationNote ?? t("verificationNote")}</p></div>}
+        {flow}
       </section>
     </div>
   );
@@ -557,9 +620,11 @@ function FlowView({
 
   if (flow.phase === "idle") return null;
 
-  if (flow.phase === "creating" || flow.phase === "signing" || flow.phase === "redirecting") {
+  if (flow.phase === "verifying" || flow.phase === "creating" || flow.phase === "signing" || flow.phase === "redirecting") {
     const line =
-      flow.phase === "creating"
+      flow.phase === "verifying"
+        ? t("flowVerifying")
+        : flow.phase === "creating"
         ? t("flowCreating")
         : flow.phase === "signing"
           ? t("flowSigning")

@@ -1,5 +1,6 @@
 import { PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
 import { getSupabase, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/lib/supabase-browser";
+import { isLocalShopDevelopment } from "@/lib/shop/local-development";
 
 /**
  * The web side of the app's `solana-checkout` edge function.
@@ -9,10 +10,11 @@ import { getSupabase, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/lib/supabase-bro
  * never proposes an amount, it names a product and pays what comes back.
  *
  * Every call carries the player's Supabase session and `x-app-distribution:
- * web`. The two calls that create money movement, `quote_order` and
+ * web`. In production the two calls `quote_order` and
  * `create_order`, also carry a Turnstile token in `x-turnstile-token`; the
  * server verifies it in place of the app's device attestation. A token is
  * good for one verification, so the widget is reset after each of those.
+ * Local development uses a server-signed relay instead of a browser challenge.
  *
  * The second way to pay goes through the `radom-checkout` function: the same
  * headers and the same error codes, but the money moves on Radom's hosted
@@ -70,6 +72,7 @@ const KNOWN_CODES: ReadonlySet<string> = new Set<CheckoutCode>([
   "order_unknown",
   "quote_unavailable",
   "radom_unavailable",
+  "network",
 ]);
 
 export class CheckoutError extends Error {
@@ -106,8 +109,12 @@ async function call(
 
   let res: Response;
   try {
-    res = await fetch(`${SUPABASE_URL}/functions/v1/${fn}`, {
+    const endpoint = isLocalShopDevelopment()
+      ? `/api/shop/dev-checkout?function=${fn}`
+      : `${SUPABASE_URL}/functions/v1/${fn}`;
+    res = await fetch(endpoint, {
       method: "POST",
+      signal: AbortSignal.timeout(20_000),
       headers: {
         Authorization: `Bearer ${session.access_token}`,
         apikey: SUPABASE_ANON_KEY,

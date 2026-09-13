@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { getSupabase } from "@/lib/supabase-browser";
 import { formatUsd, productById } from "@/lib/shop/checkout";
@@ -58,8 +59,6 @@ async function fetchAccount(userId: string): Promise<{ credits: Credit[] | null;
 }
 
 export default function PacksPanel({ userId, refreshKey }: { userId: string; refreshKey: number }) {
-  const t = useTranslations("shop");
-  const locale = useLocale();
   const [credits, setCredits] = useState<Credit[] | null>(null);
   const [orders, setOrders] = useState<Order[]>([]);
   const [live, setLive] = useState(false);
@@ -93,27 +92,38 @@ export default function PacksPanel({ userId, refreshKey }: { userId: string; ref
     };
   }, [userId]);
 
+  return <PacksPanelView count={credits?.length ?? null} orders={orders} live={live} />;
+}
+
+export function PacksPanelView({ count, orders, live }: { count: number | null; orders: Order[]; live: boolean }) {
+  const t = useTranslations("shop");
+  const locale = useLocale();
   const dateFormat = new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "short" });
-  const count = credits?.length ?? 0;
 
   return (
-    <aside className="shop-stack">
-      <section className="card shop-panel">
+    <aside className="shop-stack shop-account-panels">
+      <section className="card shop-panel shop-inventory">
         <div className="shop-panel-head">
           <p className="eyebrow">{t("packsEyebrow")}</p>
-          {live && <span className="chip chip-live">{t("packsLive")}</span>}
+          {live && <span className="shop-live"><i aria-hidden="true" />{t("packsLive")}</span>}
         </div>
         <div className="shop-packs" aria-live="polite">
-          <p className="t-num shop-packs-count">{credits === null ? "…" : count}</p>
-          <p className="t-body">{t("packsWaiting", { count })}</p>
+          <div className="shop-packs-balance">
+            <p className="t-num shop-packs-count">{count === null ? "…" : count}</p>
+            <Image src="/app/shop/card-back.png" alt="" width={48} height={68} loading="eager" />
+          </div>
+          <p className="t-body">{t("packsWaiting", { count: count ?? 0 })}</p>
           <p className="t-small text-muted">{t("packsHint")}</p>
         </div>
       </section>
 
-      <section className="card shop-panel">
+      <section className="card shop-panel shop-history">
         <p className="eyebrow">{t("ordersEyebrow")}</p>
         {orders.length === 0 ? (
-          <p className="t-small text-muted">{t("ordersEmpty")}</p>
+          <div className="shop-orders-empty">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M9 5h14v23l-3-2-4 2-4-2-3 2V5ZM13 11h6m-6 5h6m-6 5h3" /></svg>
+            <p className="t-small text-muted">{t("ordersEmpty")}</p>
+          </div>
         ) : (
           <ul className="shop-orders">
             {orders.map((order) => {

@@ -6259,12 +6259,12 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
 .shop-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(0, 1fr) 17rem;
+  gap: 1.75rem;
   align-items: start;
 }
 
-@media (max-width: 900px) { .shop-layout { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 1050px) { .shop-layout { grid-template-columns: minmax(0, 1fr); } }
 
 .shop-stack { display: grid; gap: 1.5rem; min-width: 0; }
 .shop-panel { display: grid; gap: 0.75rem; align-content: start; }
@@ -6316,88 +6316,93 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   font-feature-settings: "tnum" 1;
 }
 
-/* Products */
-.shop-products {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-@media (max-width: 640px) { .shop-products { grid-template-columns: minmax(0, 1fr); } }
+/* Bundle selection and one shared checkout. Intrinsic widths must never
+   determine the grid: labels and controls also support long translations. */
+.shop-storefront { gap: 1.75rem; }
+.shop-section-heading { display: flex; align-items: center; gap: .875rem; margin-bottom: 1.25rem; }
+.shop-section-heading .eyebrow { margin: 0 0 .35rem; font-size: .625rem; letter-spacing: .16em; }
+.shop-section-heading .eyebrow::before { display: none; }
+.shop-section-heading .t-h3 { font-size: clamp(1.3rem, 2vw, 1.625rem); }
+.shop-step { display: grid; place-items: center; flex: none; width: 2.5rem; height: 2.5rem; border: 1px solid var(--line-strong); border-radius: .75rem; font: .6875rem var(--font-mono); color: var(--fg-muted); background: var(--bg-raised); }
+.shop-products { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .875rem; margin: 0; padding: 0; border: 0; min-width: 0; }
+.shop-product { position: relative; display: flex; flex-direction: column; min-width: 0; padding: 1.125rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--bg-raised); cursor: pointer; transition: border-color .2s, background-color .2s; }
+.shop-product:hover { border-color: var(--line-strong); }
+.shop-product[data-selected] { border-color: var(--brand-3); background: color-mix(in srgb, var(--brand-3) 4%, var(--bg-raised)); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--brand-3) 30%, transparent); }
+.shop-product:has(input:focus-visible) { outline: 2px solid var(--brand); outline-offset: 4px; }
+.shop-product:has(input:disabled) { cursor: default; opacity: .65; }
+.shop-product input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.shop-product-top { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.shop-product-label { color: var(--fg-muted); font-size: .75rem; font-weight: 500; overflow-wrap: anywhere; }
+.shop-product-check { width: 1.125rem; height: 1.125rem; flex: none; border: 1px solid var(--line-strong); border-radius: 50%; display: grid; place-items: center; }
+.shop-product-check svg { width: .875rem; fill: none; stroke: transparent; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.shop-product[data-selected] .shop-product-check { background: var(--brand-3); border-color: var(--brand-3); }
+.shop-product[data-selected] .shop-product-check svg { stroke: #061c18; }
+.shop-product-art { position: relative; display: block; width: 100%; height: 10.75rem; margin: .25rem 0 .5rem; isolation: isolate; }
+.shop-product-art::before { content: ''; position: absolute; inset: 1rem -1rem 0; z-index: -1; background: radial-gradient(ellipse at center, color-mix(in srgb, var(--brand) 13%, transparent), transparent 65%); }
+.shop-pack-image { position: absolute; top: 50%; left: 50%; width: 5.35rem; height: auto; border-radius: .5rem; transform: translate(-50%, -50%) rotate(-7deg); filter: drop-shadow(0 8px 12px #0004); }
+.shop-product-art[data-bundle="5"] .shop-pack-image:nth-child(1),
+.shop-product-art[data-bundle="10"] .shop-pack-image:nth-child(1) { transform: translate(-78%, -44%) rotate(-19deg); }
+.shop-product-art[data-bundle="5"] .shop-pack-image:nth-child(2),
+.shop-product-art[data-bundle="10"] .shop-pack-image:nth-child(2) { transform: translate(-22%, -44%) rotate(19deg); }
+.shop-product-art[data-bundle="10"] .shop-pack-image:nth-child(3) { transform: translate(-100%, -35%) rotate(-30deg); z-index: -1; }
+.shop-product-art[data-bundle="10"] .shop-pack-image:nth-child(4) { transform: translate(0%, -35%) rotate(30deg); z-index: -1; }
+.shop-product-art .shop-pack-image:last-child { transform: translate(-50%, -54%) rotate(-3deg); }
+.shop-product-packs { font-family: var(--font-display); font-size: clamp(1.5rem, 2.2vw, 2rem); font-weight: 600; letter-spacing: -.04em; line-height: 1.2; overflow-wrap: anywhere; }
+.shop-product-price { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .4rem; margin-top: 1.15rem; }
+.shop-product-usd { font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; line-height: 1.2; letter-spacing: -.035em; }
+.shop-product-saving { color: var(--fg); background: color-mix(in srgb, var(--brand-3) 12%, var(--bg-raised)); border-radius: .35rem; padding: .25rem .375rem; font-size: .625rem; font-weight: 600; line-height: 1.2; }
+.shop-product-per { margin-top: .4rem; color: var(--fg-muted); font-size: .75rem; line-height: 1.5; }
 
-.shop-product {
-  position: relative;
-  display: grid;
-  gap: 0.6rem;
-  align-content: start;
-  padding: 1.25rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: var(--bg-sunken);
-  transition: border-color 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
-}
-/* The middle bundle carries the brand ramp in its top rim: the same "lit from
-   above" idiom the glass surfaces use, rather than a badge stuck on the side. */
-.shop-product[data-featured]::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 2px;
-  border-radius: var(--radius-md) var(--radius-md) 0 0;
-  background: linear-gradient(90deg, var(--brand-2), var(--brand), var(--brand-3));
-}
-.shop-product[data-selected] { border-color: var(--brand-ring); box-shadow: 0 0 0 3px var(--brand-soft); }
-.shop-product-packs { font-size: clamp(1.9rem, 3.6vw, 2.5rem); margin: 0.1rem 0 0.2rem; }
-.shop-product-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem 0.6rem; }
-.shop-product-usd {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.25rem;
-  letter-spacing: -0.02em;
-}
-.shop-product-sol {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--fg-muted);
-  font-feature-settings: "tnum" 1;
-}
-.shop-product-per { min-height: 1.3em; }
-.shop-product .btn { width: 100%; margin-top: 0.25rem; }
-/* The second way to pay sits under the wallet button, quieter, so the shelf
-   still reads as one price and one primary action per bundle. */
-.shop-product .shop-product-alt {
-  margin-top: 0;
-  height: auto;
-  min-height: 38px;
-  padding-block: 0.45rem;
-  white-space: normal;
-  text-align: center;
-  line-height: 1.3;
-}
+.shop-payment { gap: 1rem; padding: 1.5rem; border-radius: 1rem; }
+.shop-payment .shop-section-heading { margin: 0; }
+.shop-payment-summary { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-block: 1px solid var(--line); font-size: .9375rem; color: var(--fg-muted); }
+.shop-payment-summary strong { color: var(--fg); font: 600 1.375rem var(--font-display); letter-spacing: -.035em; }
+.shop-payment-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+.shop-payment-option { display: flex; align-items: center; gap: .75rem; min-width: 0; min-height: 5.25rem; padding: 1rem; border: 1px solid var(--line-strong); border-radius: .75rem; background: var(--bg-sunken); color: var(--fg); text-align: start; cursor: pointer; transition: background-color .2s, border-color .2s; }
+.shop-payment-option:hover { border-color: var(--brand); background: var(--brand-soft); }
+.shop-payment-option:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+.shop-payment-option:disabled { opacity: .5; cursor: wait; }
+.shop-payment-radom { border-color: color-mix(in srgb, var(--brand-3) 45%, var(--line)); background: color-mix(in srgb, var(--brand-3) 6%, var(--bg-sunken)); }
+.shop-payment-icon { display: grid; place-items: center; flex: none; width: 2.375rem; height: 2.375rem; border-radius: .625rem; background: var(--bg-raised); border: 1px solid var(--line); }
+.shop-payment-icon svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.shop-payment-copy { display: grid; gap: .35rem; min-width: 0; flex: 1; }
+.shop-payment-copy strong { font-size: .875rem; line-height: 1.4; font-weight: 600; overflow-wrap: anywhere; }
+.shop-payment-copy > span { color: var(--fg-muted); font-size: .6875rem; line-height: 1.5; }
+.shop-payment-arrow { flex: none; color: var(--fg-muted); font-size: 1.125rem; }
+.shop-wallet-row { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; min-width: 0; }
+.shop-rate { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem .75rem; padding-top: .125rem; }
+.shop-rate-value { display: flex; align-items: center; gap: .5rem; color: var(--fg-muted); font-size: .75rem; }
+.shop-sol-mark { color: var(--brand); font: 700 1.25rem var(--font-display); }
+.shop-rate-refresh { min-height: 2.25rem; padding: .35rem 0; border: 0; background: none; color: var(--fg); font: 500 .75rem var(--font-body); cursor: pointer; text-align: start; }
+.shop-rate-refresh:hover { color: var(--brand); }
+.shop-rate-refresh:disabled { color: var(--fg-muted); cursor: wait; }
+.shop-rate-note { flex-basis: 100%; font-size: .75rem; line-height: 1.6; color: var(--fg-muted); }
+.shop-rate-note[data-error] { padding: .65rem .75rem; border-inline-start: 2px solid var(--line-strong); background: var(--bg-sunken); border-radius: 0 .375rem .375rem 0; }
+.shop-payment-details { font-size: .75rem; line-height: 1.7; color: var(--fg-muted); }
+.shop-payment-details summary { cursor: pointer; width: fit-content; padding-block: .25rem; }
+.shop-payment-details p { margin-top: .75rem; }
+.shop-verification { border-top: 1px solid var(--line); padding-top: .75rem; }
+.shop-verification .form-note { margin: 0; font-size: .6875rem; }
+.shop-verification-error { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; margin-bottom: .75rem; }
+.shop-turnstile { min-height: 65px; margin-bottom: .5rem; max-width: 100%; }
+.shop-flow .btn { max-width: 100%; height: auto; min-height: 44px; padding-block: .6rem; white-space: normal; text-align: center; }
 
-/* One line under the shelf naming both ways to pay. */
-.shop-ways {
-  margin-top: 1rem;
-  font-size: 0.8125rem;
-  color: var(--fg-subtle);
-  max-width: 44rem;
+@media (max-width: 640px) {
+  .shop-products { grid-template-columns: minmax(0, 1fr); gap: .75rem; }
+  .shop-product { display: grid; grid-template-columns: 5.75rem minmax(0, 1fr); column-gap: 1rem; padding: 1rem; }
+  .shop-product-top { grid-column: 2; }
+  .shop-product-art { grid-column: 1; grid-row: 1 / 5; align-self: center; height: 7.25rem; margin: 0; }
+  .shop-product-art::before { inset: 0 -.5rem; }
+  .shop-pack-image { width: 3.25rem; }
+  .shop-product-packs { grid-column: 2; margin-top: .5rem; font-size: 1.5rem; }
+  .shop-product-price { grid-column: 2; margin-top: .5rem; justify-content: flex-start; gap: .65rem; }
+  .shop-product-usd { font-size: 1.25rem; }
+  .shop-product-per { grid-column: 2; }
+  .shop-payment { padding: 1rem; }
+  .shop-payment-options { grid-template-columns: minmax(0, 1fr); }
+  .shop-payment-option { min-height: 4.75rem; }
+  .shop-account-who { flex-wrap: wrap; gap: .25rem .5rem; }
 }
-
-.shop-rate {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem 1.25rem;
-  margin-top: 0.75rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--line);
-}
-.shop-rate-note { font-size: 0.8125rem; color: var(--fg-subtle); max-width: 36rem; }
-
-/* Wallet and the purchase itself */
-.shop-wallet-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 0.5rem; }
-.shop-turnstile { min-height: 65px; margin-top: 0.5rem; }
 
 .shop-flow { display: grid; gap: 0.75rem; margin-top: 0.75rem; }
 .shop-flow-box {
@@ -6442,7 +6447,22 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
 /* Packs and orders */
 .shop-packs { display: grid; gap: 0.4rem; }
-.shop-packs-count { font-size: clamp(2.75rem, 6vw, 4rem); }
+.shop-account-panels { gap: 1rem; }
+.shop-account-panels .card { padding: 1.25rem; border-radius: 1rem; }
+.shop-account-panels .eyebrow { font-size: .625rem; letter-spacing: .12em; }
+.shop-account-panels .eyebrow::before { display: none; }
+.shop-live { display: inline-flex; align-items: center; gap: .375rem; font-size: .625rem; color: var(--fg-muted); }
+.shop-live i { width: .3125rem; height: .3125rem; background: var(--brand-3); border-radius: 50%; }
+.shop-packs-balance { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: .75rem 0 .5rem; }
+.shop-packs-balance img { transform: rotate(9deg); opacity: .7; }
+.shop-packs-count { font-size: 3rem; line-height: 1; }
+.shop-packs .t-body { font-size: .9375rem; color: var(--fg); }
+.shop-packs .t-small { font-size: .75rem; }
+.shop-orders-empty { display: grid; justify-items: center; gap: .5rem; padding: 1.5rem .5rem .75rem; }
+.shop-orders-empty svg { width: 2rem; height: 2rem; stroke: var(--fg-subtle); stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+.shop-orders-empty p { font-size: .75rem; }
+@media (min-width: 641px) and (max-width: 1050px) { .shop-account-panels { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1051px) { .shop-account-panels { padding-top: 4.875rem; } }
 .shop-orders { list-style: none; margin: 0; padding: 0; display: grid; }
 .shop-order {
   display: grid;
