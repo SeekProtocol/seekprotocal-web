@@ -1,6 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import {productName} from "./ProductCatalog";
+import { useCatalog } from "@/lib/shop/use-catalog";
 import { CheckoutLayout } from "./CheckoutLayout";
 import OrderReceipt from "./OrderReceipt";
 import { useLocale, useTranslations } from "next-intl";
@@ -20,7 +22,6 @@ import {
   isWalletRejection,
   looksInsufficient,
   orderExpired,
-  productById,
   quoteOrder,
   radomOrderStatus,
   recordCheckoutEvent,
@@ -28,13 +29,14 @@ import {
   CONFIRM_ATTEMPTS,
   CONFIRM_INTERVAL_MS,
   ORDER_TTL_MS,
-  SHOP_PRODUCTS,
   type CheckoutSelection,
   type ShopOrder,
   type ShopProduct,
 } from "@/lib/shop/checkout";
 
 type ErrorKey =
+  | "errPassUnavailable" | "errPassOwned" | "errPassPending"
+  | "errCatalogChanged"
   | "errRecipient" | "errPreparing"
   | "errCheckoutUnavailable"
   | "errArenaUnavailable"
@@ -92,6 +94,10 @@ const ORDER_ID_SHAPE = /^[A-Za-z0-9_-]{8,64}$/;
 function errorKeyFor(error: unknown): ErrorKey {
   if (error instanceof CheckoutError) {
     switch (error.code) {
+      case "pass_unavailable": return "errPassUnavailable";
+      case "pass_already_owned": return "errPassOwned";
+      case "pass_order_pending": return "errPassPending";
+      case "catalog_changed": return "errCatalogChanged";
       case "friends_id_invalid":
       case "recipient_changed":
       case "checkout_details_required":
@@ -134,6 +140,7 @@ function errorKeyFor(error: unknown): ErrorKey {
 export default function Storefront({ onSettled, email, name }: { onSettled: () => void; email?: string; name?: string }) {
   const t = useTranslations("shop");
   const locale = useLocale();
+  const catalog = useCatalog();
   const { connection } = useConnection();
   const { publicKey, sendTransaction, connected } = useWallet();
   const { setVisible } = useWalletModal();
@@ -141,15 +148,15 @@ export default function Storefront({ onSettled, email, name }: { onSettled: () =
   const [verify] = useState(() => createVerificationQueue());
   const localCheckout = isLocalShopDevelopment();
 
-  /* One quote fixes the SOL per USD cent; the three shelf prices are derived
-     from it. A Turnstile token verifies once, so quoting all three would cost
-     three challenges for one number. The order's own amount comes from the
-     server at create time and is what the wallet is asked to pay. */
-  const [rate, setRate] = useState<{ lamportsPerCent: number; at: number } | null>(null);
+  // A quote belongs to exactly one product/version and its currency.
+  const [rate, setRate] = useState<{productId:string;revision:number;lamports:bigint;at:number} | null>(null);
   const [quoting, setQuoting] = useState(false);
   const [quoteError, setQuoteError] = useState<ErrorKey | null>(null);
   const [flow, setFlow] = useState<Flow>({ phase: "idle" });
-  const [selectedProduct, setSelectedProduct] = useState<ShopProduct>(SHOP_PRODUCTS[1]);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const products = catalog.products;
+  const selectedProduct = products?.find(p => p.id === selectedId) ?? products?.[0] ?? null;
+  const baseProduct = selectedProduct;
   const [selection,setSelection] = useState<CheckoutSelection | null>(null);
   const [receiptId,setReceiptId] = useState<string | null>(null);
   const [now, setNow] = useState(() => Date.now());
@@ -205,25 +212,24 @@ export default function Storefront({ onSettled, email, name }: { onSettled: () =
     }), [verify, waitForToken, reset]);
 
   const refreshQuote = useCallback(async () => {
+    if (!baseProduct) return;
     setQuoting(true);
     setQuoteError(null);
     try {
-      const quote = await runVerified((value) => quoteOrder(SHOP_PRODUCTS[0].id, value));
-      const base = quote.priceUsdCents || SHOP_PRODUCTS[0].priceUsdCents;
-      if (liveRef.current) setRate({ lamportsPerCent: Number(quote.lamports) / base, at: Date.now() });
+      const quote = await runVerified((value) => quoteOrder(baseProduct.id, value, baseProduct.revision));
+      if (liveRef.current) setRate({productId:baseProduct.id,revision:baseProduct.revision,lamports:quote.lamports,at:Date.now()});
     } catch (error) {
       if (liveRef.current) setQuoteError(errorKeyFor(error));
     } finally {
       if (liveRef.current) setQuoting(false);
     }
-  }, [runVerified]);
+  }, [runVerified, baseProduct]);
 
-  const quotedOnce = useRef(false);
   useEffect(() => {
-    if (quotedOnce.current) return;
-    quotedOnce.current = true;
-    void refreshQuote();
-  }, [refreshQuote]);
+    if (!baseProduct || (flow.phase !== 'idle' && flow.phase !== 'error')) return;
+    const timer=setTimeout(()=>void refreshQuote(),400);
+    return ()=>clearTimeout(timer);
+  }, [refreshQuote,baseProduct,flow.phase]);
 
   /* One clock. A second while an order is being held, so the countdown reads;
      otherwise only often enough to notice the quote going stale. The tick also
@@ -260,7 +266,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled: () =
       try {
         const order = await runVerified((value) => {
           setFlow({ phase: "creating", product });
-          return createOrder(product.id, value, selection);
+          return createOrder(product.id, value, selection, product.revision);
         });
         if (!liveRef.current) return;
         setReceiptId(order.orderId);
@@ -368,7 +374,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled: () =
       try {
         const order = await runVerified((value) => {
           setFlow({ phase: "creating", product });
-          return createRadomOrder(product.id, value, window.location.pathname, selection);
+          return createRadomOrder(product.id, value, window.location.pathname, selection, product.revision);
         });
         if (!liveRef.current) return;
         setReceiptId(order.orderId);
@@ -449,12 +455,12 @@ export default function Storefront({ onSettled, email, name }: { onSettled: () =
       const noted = window.sessionStorage.getItem(RADOM_PRODUCT_KEY) ?? "";
       window.sessionStorage.removeItem(RADOM_PRODUCT_KEY);
       const [notedOrder, notedProduct] = noted.split(":");
-      if (notedOrder === orderId) product = productById(notedProduct ?? "");
+      if (notedOrder === orderId) product = products?.find(p => p.id === notedProduct) ?? null;
     } catch {
       /* No note, no count. */
     }
     void resumeRadomOrder(orderId, product);
-  }, [resumeRadomOrder]);
+  }, [resumeRadomOrder, products]);
 
   const cancel = useCallback(() => {
     if (flow.phase !== "ready") return;
@@ -482,7 +488,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled: () =
   const activeProduct = busy && "product" in flow && flow.product ? flow.product : selectedProduct;
   const timeFormat = new Intl.DateTimeFormat(locale, { hour: "2-digit", minute: "2-digit" });
   const solFor = (product: ShopProduct) =>
-    rate ? formatSol(BigInt(Math.round(rate.lamportsPerCent * product.priceUsdCents)), 5) : null;
+    rate?.productId===product.id && rate.revision===product.revision ? formatSol(rate.lamports,5) : null;
 
   const walletLabels = {
     connecting: t("walletConnecting"),
@@ -495,7 +501,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled: () =
   };
 
   let rateLine: string;
-  if (rate) {
+  if (rate && rate.productId === activeProduct?.id && rate.revision === activeProduct?.revision) {
     rateLine = t("rateFrom", { time: timeFormat.format(rate.at) });
     if (stale) rateLine = `${rateLine} ${t("rateStale")}`;
   } else if (quoteError) {
@@ -504,10 +510,16 @@ export default function Storefront({ onSettled, email, name }: { onSettled: () =
     rateLine = quoting ? t("refreshing") : t("rateNone");
   }
 
+  const flowView = <><FlowView flow={flow} now={now} onPay={pay} onCancel={cancel} onReset={resetFlow} />{receiptId && <OrderReceipt orderId={receiptId} refreshKey={flow.phase} />}</>;
+  const catalogMessage = catalog.failed ? t("catalogFailed") : catalog.loading && !products ? t("catalogLoading") : t("catalogEmpty");
+  if (!activeProduct) return <div className="card" aria-live="polite"><p>{catalogMessage}</p><button type="button" className="btn btn-outline" disabled={catalog.loading} onClick={catalog.refresh}>{t("tryAgain")}</button>{flowView}</div>;
   return <CheckoutLayout
+    products={products ?? []}
+    catalogFailed={catalog.failed}
+    catalogNotice={(catalog.failed || flow.phase === "error" && flow.code === "errCatalogChanged") && <p role="alert">{catalog.failed ? t("catalogFailed") : t("errCatalogChanged")} <button type="button" className="btn btn-outline btn-sm" disabled={catalog.loading} onClick={() => {catalog.refresh();setSelection(null);setFlow({phase:"idle"});}}>{t("tryAgain")}</button></p>}
     email={email} name={name} selection={selection} onSelection={setSelection}
     selectedProduct={activeProduct}
-    onSelect={setSelectedProduct}
+    onSelect={product => setSelectedId(product.id)}
     onSol={() => void startOrder(activeProduct)}
     onRadom={() => void startRadomOrder(activeProduct)}
     onRefresh={() => void refreshQuote()}
@@ -601,7 +613,7 @@ function FlowView({
           <p className="t-num shop-flow-amount">
             {t("flowPay", { sol: formatSol(flow.order.lamports) })}
           </p>
-          <p className="t-small text-muted">{t("flowFor", { product: t(flow.product.key) })}</p>
+          <p className="t-small text-muted">{t("flowFor", { product: productName(flow.product,n=>t("packs",{count:n})) })}</p>
           <p className="t-mono-sm">{t("flowHeld", { seconds: left })}</p>
           <div className="shop-flow-progress" aria-hidden="true">
             <i style={{ width: `${fraction * 100}%` }} />

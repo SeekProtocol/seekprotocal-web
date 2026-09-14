@@ -3,12 +3,13 @@
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { getSupabase } from "@/lib/supabase-browser";
-import { formatUsd } from "@/lib/shop/checkout";
+import {receiptPrice} from "@/lib/shop/catalog";
 import { orderProgress } from "@/lib/shop/order-status";
 
 export interface Receipt {
   id: string; status: string; fulfilled_at: string | null; paid_at: string | null;
   price_usd_cents: number | null; created_at: string; signature: string | null;
+  product_snapshot?: {price_cents?:number;currency?:string;name?:string;fulfillment?:{kind?:string;packs?:number}} | null;
   checkout_snapshot: {email?: string;beneficiary_name?: string;beneficiary_code?: string} | null;
 }
 
@@ -20,7 +21,7 @@ export default function OrderReceipt({orderId,refreshKey}: {orderId:string;refre
   useEffect(() => {
     let active=true;
     getSupabase().from("solana_orders")
-      .select("id,status,fulfilled_at,paid_at,price_usd_cents,created_at,signature,checkout_snapshot")
+      .select("id,status,fulfilled_at,paid_at,price_usd_cents,created_at,signature,checkout_snapshot,product_snapshot")
       .eq("id",orderId).maybeSingle().then(({data,error}) => {
         if (!active) return;
         setFailed(!!error || !data);setReceipt(data as Receipt | null);setLoading(false);
@@ -45,7 +46,7 @@ export function OrderReceiptView({receipt,orderId,failed,loading,onRefresh}: {re
         <li data-done={progress?.payment === "paid"}><span aria-hidden="true">{progress?.payment === "paid" ? "✓" : "2"}</span>{h(`payment.${progress!.payment}`)}</li>
         <li data-done={!!receipt.fulfilled_at}><span aria-hidden="true">{receipt.fulfilled_at ? "✓" : "3"}</span>{h(`delivery.${progress!.delivery}`)}</li>
       </ol>
-      <dl className="checkout-receipt-details"><div><dt>{c("total")}</dt><dd>{receipt.price_usd_cents === null ? "—" : formatUsd(receipt.price_usd_cents,locale)}</dd></div>
+      <dl className="checkout-receipt-details"><div><dt>{c("total")}</dt><dd>{receiptPrice(receipt,locale)}</dd></div>
         <div><dt>{h("orderedAt")}</dt><dd>{dateFormat.format(new Date(receipt.created_at))}</dd></div>
         {receipt.paid_at && <div><dt>{h("paidAt")}</dt><dd>{dateFormat.format(new Date(receipt.paid_at))}</dd></div>}
         {receipt.fulfilled_at && <div><dt>{h("deliveredAt")}</dt><dd>{dateFormat.format(new Date(receipt.fulfilled_at))}</dd></div>}

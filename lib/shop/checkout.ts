@@ -23,17 +23,7 @@ import { isLocalShopDevelopment } from "@/lib/shop/local-development";
  * player comes back.
  */
 
-/** Product ids as the server keys them. The display prices are the server's too; these are for the shelf only. */
-export const SHOP_PRODUCTS = [
-  { id: "seekar_pack_single", key: "packSingle", packs: 1, priceUsdCents: 299 },
-  { id: "seekar_pack_five", key: "packFive", packs: 5, priceUsdCents: 1299 },
-  { id: "seekar_pack_ten", key: "packTen", packs: 10, priceUsdCents: 2399 },
-] as const;
-export type ShopProduct = (typeof SHOP_PRODUCTS)[number];
-
-export function productById(id: string): ShopProduct | null {
-  return SHOP_PRODUCTS.find((p) => p.id === id) ?? null;
-}
+export type { ShopProduct } from "./catalog";
 
 /** How long the server holds a created order's price. */
 export const ORDER_TTL_MS = 5 * 60_000;
@@ -44,6 +34,8 @@ export const CONFIRM_ATTEMPTS = 12;
 export const CONFIRM_INTERVAL_MS = 2500;
 
 export type CheckoutCode =
+  | "pass_unavailable" | "pass_already_owned" | "pass_order_pending"
+  | "catalog_changed"
   | "friends_id_invalid" | "recipient_changed" | "checkout_details_required" | "order_preparing" | "request_conflict"
   | "checkout_unavailable"
   | "arena_unavailable"
@@ -62,6 +54,8 @@ export type CheckoutCode =
   | "unknown";
 
 const KNOWN_CODES: ReadonlySet<string> = new Set<CheckoutCode>([
+  "pass_unavailable", "pass_already_owned", "pass_order_pending",
+  "catalog_changed",
   "friends_id_invalid", "recipient_changed", "checkout_details_required", "order_preparing", "request_conflict",
   "checkout_unavailable",
   "arena_unavailable",
@@ -168,8 +162,8 @@ export interface ShopOrder {
 }
 
 /** What a product costs in SOL right now. The coins the server also offers are for the app; the web pays in SOL only. */
-export async function quoteOrder(productId: string, turnstileToken: string): Promise<ShopQuote> {
-  const data = await call({ action: "quote_order", product_id: productId }, turnstileToken);
+export async function quoteOrder(productId: string, turnstileToken: string, revision?: number): Promise<ShopQuote> {
+  const data = await call({ action: "quote_order", product_id: productId, catalog_revision: revision }, turnstileToken);
   if (!wholeNumber(data.amount) || BigInt(String(data.amount)) <= BigInt(0)) {
     throw new CheckoutError("quote_unavailable");
   }
@@ -183,9 +177,9 @@ export async function quoteOrder(productId: string, turnstileToken: string): Pro
 }
 
 /** Make the order. All in SOL: `coins` is empty on purpose. */
-export async function createOrder(productId: string, turnstileToken: string, checkout: CheckoutSelection): Promise<ShopOrder> {
+export async function createOrder(productId: string, turnstileToken: string, checkout: CheckoutSelection, revision: number): Promise<ShopOrder> {
   const data = await call(
-    { action: "create_order", product_id: productId, coins: [], ...checkoutBody(checkout) },
+    { action: "create_order", product_id: productId, catalog_revision: revision, coins: [], ...checkoutBody(checkout) },
     turnstileToken,
   );
   const settled = data.settled === true;
@@ -250,9 +244,10 @@ export async function createRadomOrder(
   turnstileToken: string,
   returnPath: string,
   checkout: CheckoutSelection,
+  revision: number,
 ): Promise<RadomOrder> {
   const data = await call(
-    { action: "create", product_id: productId, return_path: returnPath, ...checkoutBody(checkout) },
+    { action: "create", product_id: productId, catalog_revision: revision, return_path: returnPath, ...checkoutBody(checkout) },
     turnstileToken,
     "radom-checkout",
   );
@@ -359,8 +354,8 @@ export interface CheckoutSelection {
 function checkoutBody(value: CheckoutSelection) {
   return {friends_id:value.friends_id,customer_name:value.customer_name,expected_recipient_id:value.expected_recipient_id,request_id:value.request_id};
 }
-export async function checkoutContext(friendsId: string, name: string, requestId?: string): Promise<CheckoutContext> {
-  const data=await call({action:"checkout_context",friends_id:friendsId,customer_name:name,request_id:requestId},undefined,"radom-checkout");
+export async function checkoutContext(friendsId: string, name: string, requestId?: string, productId?: string): Promise<CheckoutContext> {
+  const data=await call({action:"checkout_context",product_id:productId,friends_id:friendsId,customer_name:name,request_id:requestId},undefined,"radom-checkout");
   if (typeof data.beneficiary_id !== "string" || typeof data.beneficiary_name !== "string") throw new CheckoutError("checkout_unavailable");
   return data as unknown as CheckoutContext;
 }

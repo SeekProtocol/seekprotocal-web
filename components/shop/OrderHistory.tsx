@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { getSupabase } from "@/lib/supabase-browser";
-import { formatUsd, productById } from "@/lib/shop/checkout";
+import {receiptPrice} from "@/lib/shop/catalog";
 import { orderProgress } from "@/lib/shop/order-status";
 import { OrderReceiptView, type Receipt } from "./OrderReceipt";
 
@@ -36,7 +36,7 @@ export default function OrderHistory({userId}: {userId: string}) {
       try {
         // RLS enforces buyer ownership even if a caller changes userId or the filters.
         let query = getSupabase().from("solana_orders")
-          .select("id,product_id,mint,status,paid_at,fulfilled_at,price_usd_cents,created_at,signature,checkout_snapshot")
+          .select("id,product_id,mint,status,paid_at,fulfilled_at,price_usd_cents,created_at,signature,checkout_snapshot,product_snapshot")
           .eq("user_id", userId).eq("channel", "web")
           .order("created_at", {ascending: false}).order("id", {ascending: false});
         // The cursor comes only from a database row; ties use the immutable order UUID.
@@ -97,12 +97,12 @@ export function OrderHistoryView({orders,failed,loading,updatedAt,page,hasNext,o
     {!orders && loading && <div className="card shop-skeleton"><span className="shop-flow-spinner" aria-hidden="true" /><span>{h("loading")}</span></div>}
     {orders?.length === 0 && <div className="card order-history-empty"><span className="order-history-empty-icon" aria-hidden="true">↗</span><h2>{h("emptyTitle")}</h2><p>{h("emptyLead")}</p><Link href="/shop" className="btn btn-brand">{h("shop")}</Link></div>}
     {!!orders?.length && <ul className="order-history-list">{orders.map(order => {
-      const product = productById(order.product_id);
+      const product = order.product_snapshot;
       const progress = orderProgress(order);
       return <li className="order-history-card" key={order.id}>
         <div className="order-history-card-heading">
-          <div><time dateTime={order.created_at}>{dateFormat.format(new Date(order.created_at))}</time><h2>{product ? t("packs", {count:product.packs}) : h("purchase")}</h2></div>
-          <div className="order-history-price"><strong>{order.price_usd_cents === null ? "—" : formatUsd(order.price_usd_cents, locale)}</strong><span>{order.mint === "RADOM" ? "Radom" : "Solana"}</span></div>
+          <div><time dateTime={order.created_at}>{dateFormat.format(new Date(order.created_at))}</time><h2>{product?.fulfillment?.kind === "pack" && product.fulfillment.packs ? t("packs", {count:product.fulfillment.packs}) : product?.name || h("purchase")}</h2></div>
+          <div className="order-history-price"><strong>{receiptPrice(order,locale)}</strong><span>{order.mint === "RADOM" ? "Radom" : "Solana"}</span></div>
         </div>
         <dl className="order-history-statuses">
           <div><dt>{h("paymentLabel")}</dt><dd><span className="order-status" data-state={progress.payment}>{h(`payment.${progress.payment}`)}</span></dd></div>
