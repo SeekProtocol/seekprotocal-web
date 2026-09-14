@@ -17,7 +17,7 @@ function returnUrl(): string {
  * that the browser client exchanges; the email path stays on the page and
  * `Shop`'s auth listener swaps this component out when the code verifies.
  */
-export default function SignIn() {
+export default function SignIn({purpose="shop"}: {purpose?: "shop" | "orders"}) {
   const t = useTranslations("shop");
   const [stage, setStage] = useState<"email" | "code">("email");
   const [email, setEmail] = useState("");
@@ -85,8 +85,8 @@ export default function SignIn() {
   return (
     <div className="card shop-signin">
       <div>
-        <p className="eyebrow">{t("signInTitle")}</p>
-        <p className="t-body text-muted">{t("signInLead")}</p>
+        <p className="eyebrow">{t(purpose === "orders" ? "history.signInTitle" : "signInTitle")}</p>
+        <p className="t-body text-muted">{t(purpose === "orders" ? "history.signInLead" : "signInLead")}</p>
       </div>
 
       <div className="shop-signin-providers">

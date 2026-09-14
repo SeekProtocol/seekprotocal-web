@@ -44,6 +44,7 @@ export const CONFIRM_ATTEMPTS = 12;
 export const CONFIRM_INTERVAL_MS = 2500;
 
 export type CheckoutCode =
+  | "friends_id_invalid" | "recipient_changed" | "checkout_details_required" | "order_preparing" | "request_conflict"
   | "checkout_unavailable"
   | "arena_unavailable"
   | "checkout_not_available_in_this_build"
@@ -61,6 +62,7 @@ export type CheckoutCode =
   | "unknown";
 
 const KNOWN_CODES: ReadonlySet<string> = new Set<CheckoutCode>([
+  "friends_id_invalid", "recipient_changed", "checkout_details_required", "order_preparing", "request_conflict",
   "checkout_unavailable",
   "arena_unavailable",
   "checkout_not_available_in_this_build",
@@ -80,6 +82,7 @@ export class CheckoutError extends Error {
     readonly code: CheckoutCode,
     readonly status?: number,
     message?: string,
+    readonly orderId?: string,
   ) {
     super(message ?? code);
     this.name = "CheckoutError";
@@ -101,6 +104,7 @@ async function call(
   body: Record<string, unknown>,
   turnstileToken?: string,
   fn: CheckoutFunction = "solana-checkout",
+  timeoutMs = 20_000,
 ): Promise<Record<string, unknown>> {
   const {
     data: { session },
@@ -114,7 +118,7 @@ async function call(
       : `${SUPABASE_URL}/functions/v1/${fn}`;
     res = await fetch(endpoint, {
       method: "POST",
-      signal: AbortSignal.timeout(20_000),
+      signal: AbortSignal.timeout(timeoutMs),
       headers: {
         Authorization: `Bearer ${session.access_token}`,
         apikey: SUPABASE_ANON_KEY,
@@ -131,7 +135,7 @@ async function call(
   const data = (await res.json().catch(() => ({}))) as Record<string, unknown>;
   if (!res.ok) {
     const raw = typeof data.error === "string" ? data.error : "";
-    throw new CheckoutError(codeFrom(raw, res.status), res.status, raw || `http_${res.status}`);
+    throw new CheckoutError(codeFrom(raw, res.status), res.status, raw || `http_${res.status}`, typeof data.order_id === "string" ? data.order_id : undefined);
   }
   return data;
 }
@@ -179,9 +183,9 @@ export async function quoteOrder(productId: string, turnstileToken: string): Pro
 }
 
 /** Make the order. All in SOL: `coins` is empty on purpose. */
-export async function createOrder(productId: string, turnstileToken: string): Promise<ShopOrder> {
+export async function createOrder(productId: string, turnstileToken: string, checkout: CheckoutSelection): Promise<ShopOrder> {
   const data = await call(
-    { action: "create_order", product_id: productId, coins: [] },
+    { action: "create_order", product_id: productId, coins: [], ...checkoutBody(checkout) },
     turnstileToken,
   );
   const settled = data.settled === true;
@@ -245,9 +249,10 @@ export async function createRadomOrder(
   productId: string,
   turnstileToken: string,
   returnPath: string,
+  checkout: CheckoutSelection,
 ): Promise<RadomOrder> {
   const data = await call(
-    { action: "create", product_id: productId, return_path: returnPath },
+    { action: "create", product_id: productId, return_path: returnPath, ...checkoutBody(checkout) },
     turnstileToken,
     "radom-checkout",
   );
@@ -270,7 +275,8 @@ export async function createRadomOrder(
  */
 export async function radomOrderStatus(orderId: string): Promise<RadomStatus> {
   const data = await call({ action: "status", order_id: orderId }, undefined, "radom-checkout");
-  if (data.status === "paid" || data.status === "closed") return data.status;
+  if (data.status === "paid" && data.ok === true) return "paid";
+  if (data.status === "closed") return "closed";
   return "pending";
 }
 
@@ -342,3 +348,24 @@ export function formatUsd(centsValue: number, locale: string): string {
 }
 
 export const sleep = (ms: number) => new Promise<void>((done) => setTimeout(done, ms));
+
+export interface CheckoutContext {
+  email: string | null; name: string; friends_id: string; buyer_id: string;
+  beneficiary_id: string; beneficiary_name: string; beneficiary_code: string | null; is_self: boolean;
+}
+export interface CheckoutSelection {
+  friends_id: string; customer_name: string; expected_recipient_id: string; request_id: string; context: CheckoutContext;
+}
+function checkoutBody(value: CheckoutSelection) {
+  return {friends_id:value.friends_id,customer_name:value.customer_name,expected_recipient_id:value.expected_recipient_id,request_id:value.request_id};
+}
+export async function checkoutContext(friendsId: string, name: string, requestId?: string): Promise<CheckoutContext> {
+  const data=await call({action:"checkout_context",friends_id:friendsId,customer_name:name,request_id:requestId},undefined,"radom-checkout");
+  if (typeof data.beneficiary_id !== "string" || typeof data.beneficiary_name !== "string") throw new CheckoutError("checkout_unavailable");
+  return data as unknown as CheckoutContext;
+}
+
+/** Client observations support investigation but can never confirm payment or delivery. */
+export async function recordCheckoutEvent(orderId: string, event: "wallet_opened" | "wallet_rejected" | "wallet_uncertain" | "transaction_submitted" | "redirect_started", signature?: string): Promise<void> {
+  await call({action:"client_event",order_id:orderId,event,signature},undefined,"radom-checkout",3000).catch(() => undefined);
+}

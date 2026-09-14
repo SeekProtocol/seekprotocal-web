@@ -47,9 +47,9 @@ export default async function ShopPage({
   const t = await getTranslations("shop");
 
   const steps = [
-    { title: t("stepSignIn"), body: t("stepSignInBody") },
-    { title: t("stepPay"), body: t("stepPayBody") },
-    { title: t("stepOpen"), body: t("stepOpenBody") },
+    { title: t("checkout.details"), body: t("checkout.friendsNote") },
+    { title: t("checkout.payment"), body: t("waysToPay") },
+    { title: t("checkout.delivery"), body: t("checkout.linkedDeliveryNote") },
   ];
 
   return (
@@ -58,14 +58,14 @@ export default async function ShopPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <section className="page-head">
+      <section className="page-head shop-page-head">
         <div className="grid-field" aria-hidden="true" />
         <div className="noise-layer" aria-hidden="true" />
         <div className="shell">
           <div className="page-head-inner">
             <p className="eyebrow">{t("eyebrow")}</p>
             <h1 className="t-h1 page-head-title">{t("title")}</h1>
-            <p className="t-lead">{t("lead")}</p>
+            <p className="t-lead">{t("checkout.intro")}</p>
           </div>
         </div>
       </section>

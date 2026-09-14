@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { getSupabase } from "@/lib/supabase-browser";
-import { formatUsd, productById } from "@/lib/shop/checkout";
 
 interface Credit {
   id: string;
@@ -12,65 +12,25 @@ interface Credit {
   created_at: string;
 }
 
-interface Order {
-  id: string;
-  product_id: string;
-  status: "pending" | "paid" | "expired" | "failed";
-  price_usd_cents: number | null;
-  created_at: string;
-}
-
-const STATUS_KEY = {
-  pending: "statusPending",
-  paid: "statusPaid",
-  expired: "statusExpired",
-  failed: "statusFailed",
-} as const;
-
-/**
- * What the account holds: unopened pack credits and the last ten orders.
- *
- * Both tables let a player read their own rows and nothing else, so the
- * queries carry no filter beyond the user id, for clarity rather than for
- * safety. The credits are also watched over realtime, so the count moves the
- * moment a payment settles; `refreshKey` covers the case where the channel
- * is not delivering, since the storefront bumps it on every settlement.
- */
-async function fetchAccount(userId: string): Promise<{ credits: Credit[] | null; orders: Order[] | null }> {
-  const supabase = getSupabase();
-  const [c, o] = await Promise.all([
-    supabase
-      .from("arena_pack_credits")
-      .select("id, ordinal, created_at")
-      .eq("user_id", userId)
-      .is("consumed_at", null)
-      .order("ordinal", { ascending: true }),
-    supabase
-      .from("solana_orders")
-      .select("id, product_id, status, price_usd_cents, created_at")
-      .eq("user_id", userId)
-      .order("created_at", { ascending: false })
-      .limit(10),
-  ]);
-  return {
-    credits: c.error ? null : ((c.data ?? []) as Credit[]),
-    orders: o.error ? null : ((o.data ?? []) as Order[]),
-  };
+/** Inventory remains in checkout; the complete history has its own page. */
+async function fetchCredits(userId: string): Promise<Credit[] | null> {
+  const result = await getSupabase().from("arena_pack_credits")
+    .select("id, ordinal, created_at").eq("user_id", userId).is("consumed_at", null)
+    .order("ordinal", {ascending: true});
+  return result.error ? null : (result.data ?? []) as Credit[];
 }
 
 export default function PacksPanel({ userId, refreshKey }: { userId: string; refreshKey: number }) {
   const [credits, setCredits] = useState<Credit[] | null>(null);
-  const [orders, setOrders] = useState<Order[]>([]);
   const [live, setLive] = useState(false);
   /* Bumped by the realtime channel; the fetch effect keys on it. */
   const [tick, setTick] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
-    fetchAccount(userId).then((result) => {
+    fetchCredits(userId).then((result) => {
       if (cancelled) return;
-      if (result.credits) setCredits(result.credits);
-      if (result.orders) setOrders(result.orders);
+      if (result) setCredits(result);
     });
     return () => {
       cancelled = true;
@@ -92,13 +52,11 @@ export default function PacksPanel({ userId, refreshKey }: { userId: string; ref
     };
   }, [userId]);
 
-  return <PacksPanelView count={credits?.length ?? null} orders={orders} live={live} />;
+  return <PacksPanelView count={credits?.length ?? null} live={live} />;
 }
 
-export function PacksPanelView({ count, orders, live }: { count: number | null; orders: Order[]; live: boolean }) {
+export function PacksPanelView({ count, live }: { count: number | null; live: boolean }) {
   const t = useTranslations("shop");
-  const locale = useLocale();
-  const dateFormat = new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "short" });
 
   return (
     <aside className="shop-stack shop-account-panels">
@@ -118,34 +76,9 @@ export function PacksPanelView({ count, orders, live }: { count: number | null; 
       </section>
 
       <section className="card shop-panel shop-history">
-        <p className="eyebrow">{t("ordersEyebrow")}</p>
-        {orders.length === 0 ? (
-          <div className="shop-orders-empty">
-            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M9 5h14v23l-3-2-4 2-4-2-3 2V5ZM13 11h6m-6 5h6m-6 5h3" /></svg>
-            <p className="t-small text-muted">{t("ordersEmpty")}</p>
-          </div>
-        ) : (
-          <ul className="shop-orders">
-            {orders.map((order) => {
-              const product = productById(order.product_id);
-              const centsValue = order.price_usd_cents ?? product?.priceUsdCents ?? null;
-              return (
-                <li key={order.id} className="shop-order">
-                  <span className="shop-order-name">
-                    {product ? t(product.key) : order.product_id}
-                  </span>
-                  <span className="shop-order-status t-mono-sm" data-status={order.status}>
-                    {t(STATUS_KEY[order.status] ?? "statusPending")}
-                  </span>
-                  <span className="shop-order-meta">
-                    {centsValue !== null && <span>{formatUsd(centsValue, locale)}</span>}
-                    <time dateTime={order.created_at}>{dateFormat.format(new Date(order.created_at))}</time>
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
-        )}
+        <p className="eyebrow">{t("history.title")}</p>
+        <p className="t-small text-muted">{t("history.shortLead")}</p>
+        <Link href="/shop/orders" className="btn btn-outline btn-sm">{t("history.viewOrders")} <span aria-hidden="true">→</span></Link>
       </section>
     </aside>
   );
