@@ -15,7 +15,7 @@ De backend is gepubliceerd in Supabase-project `ukoqxyoogjouhdqhtiei`:
 
 ## Mijn bestellingen
 
-De webshop heeft een aparte pagina `/{locale}/shop/orders`, bereikbaar via **Mijn bestellingen** naast de accountgegevens en vanuit de checkout. De bestaande loginmethoden keren na aanmelden terug naar deze pagina. De checkout toont de voorraad en een link naar de geschiedenis; de oude lijst van tien recente bestellingen is vervangen.
+De webshop heeft een aparte pagina `/{locale}/shop/orders`, bereikbaar via **Mijn bestellingen** naast de accountgegevens en vanuit de checkout. Na inloggen met Google, Apple of een e-mailcode start de klant altijd in de shop, met behoud van de gekozen taal. Dit geldt ook als het inloggen vanuit Mijn bestellingen is gestart. Wie al ingelogd is, kan Mijn bestellingen rechtstreeks openen. De checkout toont de voorraad en een link naar de geschiedenis; de oude lijst van tien recente bestellingen is vervangen.
 
 De pagina toont webshoporders (`channel = web`) van de koper, inclusief orders die via Friends ID aan een ander account zijn geleverd. Per bestelling staan product, opgeslagen prijs, datum, betaalmethode, ontvanger, betaalstatus en leverstatus. Uitklappen toont de volledige referentie en bestel-, betaal- en toekenningsdatums. Een bevestigde betaling zonder `fulfilled_at` blijft zichtbaar als betaald met toekenning in behandeling. Verlopen orders beloven geen levering.
 

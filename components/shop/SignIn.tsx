@@ -1,29 +1,29 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getPathname, useRouter } from "@/i18n/navigation";
 import { getSupabase } from "@/lib/supabase-browser";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-/** Back to this exact page, without whatever query or hash it carried. */
-function returnUrl(): string {
-  return `${window.location.origin}${window.location.pathname}`;
-}
-
 /**
  * Three ways in, all of them the app's own: Google, Apple, or an 8-digit code
  * by email. The OAuth buttons navigate away and come back with a PKCE code
- * that the browser client exchanges; the email path stays on the page and
- * `Shop`'s auth listener swaps this component out when the code verifies.
+ * that the browser client exchanges. Every completed login starts in the
+ * shop, keeping the selected language. Existing sessions can browse orders.
  */
 export default function SignIn({purpose="shop"}: {purpose?: "shop" | "orders"}) {
   const t = useTranslations("shop");
+  const locale = useLocale();
+  const router = useRouter();
   const [stage, setStage] = useState<"email" | "code">("email");
   const [email, setEmail] = useState("");
   const [code, setCode] = useState("");
   const [busy, setBusy] = useState<null | "google" | "apple" | "email" | "code">(null);
   const [error, setError] = useState("");
+
+  const returnUrl = () => `${window.location.origin}${getPathname({href: "/shop", locale})}`;
 
   const oauth = async (provider: "google" | "apple") => {
     setBusy(provider);
@@ -71,15 +71,17 @@ export default function SignIn({purpose="shop"}: {purpose?: "shop" | "orders"}) 
     }
     setBusy("code");
     setError("");
-    const { error: verifyError } = await getSupabase().auth.verifyOtp({
+    const { data, error: verifyError } = await getSupabase().auth.verifyOtp({
       email,
       token,
       type: "email",
     });
-    if (verifyError) {
+    if (verifyError || !data.session) {
       setError(t("codeInvalid"));
       setBusy(null);
+      return;
     }
+    router.replace("/shop");
   };
 
   return (
