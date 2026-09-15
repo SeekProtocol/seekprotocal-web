@@ -2913,6 +2913,7 @@
     "emailInvalid": "请输入有效的邮箱地址。",
     "signedInAs": "当前账号",
     "signOut": "退出登录",
+    "sessionExpired": "你已自动退出登录。请重新登录以继续。你的订单已保存。",
     "productsEyebrow": "卡包",
     "productsTitle": "选择套餐",
     "bundleSaving": "节省 {percent}%",
@@ -3048,7 +3049,8 @@
       "deliveryWaiting": "等待发放",
       "closedOrder": "此订单已关闭。如果已扣款，请在再次付款前携参考编号联系支持团队。",
       "pendingNote": "如果你已付款，请勿重复付款。请刷新状态；系统也会自动检查交付情况。",
-      "loadingReceipt": "正在加载订单…"
+      "loadingReceipt": "正在加载订单…",
+      "calculating": "计算中…"
     },
     "errRecipient": "无法核对账号。已保留你的填写内容，请重试。",
     "errPreparing": "如果你已付款，请勿重复付款。请刷新状态；系统也会自动检查交付情况。",
@@ -3120,6 +3122,16 @@
       "pump_it": "Pump It",
       "diamond_hands": "钻石手",
       "spawn_lure": "刷新诱饵"
-    }
+    },
+    "cart": {
+      "add": "将{product}加入购物车",
+      "quantity": "{product}的数量",
+      "decrease": "减少数量",
+      "increase": "增加数量",
+      "remove": "移除",
+      "empty": "购物车为空。请在上方添加一件或多件商品。",
+      "conversion": "不同币种的商品将在结账时换算为一个美元总额。"
+    },
+    "errCart": "请检查购物车数量。每笔订单最多可购买50个卡包和一个Pass。"
   }
 }

@@ -2913,6 +2913,7 @@
     "emailInvalid": "Vul een geldig e-mailadres in.",
     "signedInAs": "Ingelogd als",
     "signOut": "Uitloggen",
+    "sessionExpired": "Je bent automatisch uitgelogd. Log opnieuw in om verder te gaan. Je bestellingen blijven bewaard.",
     "productsEyebrow": "Pakketten",
     "productsTitle": "Kies een bundel",
     "bundleSaving": "Bespaar {percent}%",
@@ -3048,7 +3049,8 @@
       "deliveryWaiting": "Wachten op toekenning",
       "closedOrder": "Deze bestelling is gesloten. Is er wel geld afgeschreven? Neem dan eerst contact op met support met deze referentie.",
       "pendingNote": "Heb je al betaald? Betaal niet opnieuw. Vernieuw de status; de levering wordt ook automatisch gecontroleerd.",
-      "loadingReceipt": "Bestelling laden…"
+      "loadingReceipt": "Bestelling laden…",
+      "calculating": "Berekenen…"
     },
     "errRecipient": "We konden het account niet controleren. Je gegevens blijven staan; probeer het opnieuw.",
     "errPreparing": "Je bestelling wordt nog voorbereid. Probeer straks opnieuw; we gebruiken dezelfde bestelling.",
@@ -3120,6 +3122,16 @@
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
       "spawn_lure": "Spawn Lure"
-    }
+    },
+    "cart": {
+      "add": "Voeg {product} toe aan winkelmandje",
+      "quantity": "Aantal voor {product}",
+      "decrease": "Aantal verlagen",
+      "increase": "Aantal verhogen",
+      "remove": "Verwijderen",
+      "empty": "Je winkelmandje is leeg. Voeg hierboven één of meer producten toe.",
+      "conversion": "Producten met verschillende valuta worden bij het afrekenen omgerekend naar één totaal in USD."
+    },
+    "errCart": "Controleer de aantallen in je winkelmandje. Je kunt maximaal 50 kaartpakketten en één Pass per bestelling kopen."
   }
 }

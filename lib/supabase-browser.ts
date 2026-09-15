@@ -1,24 +1,35 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { createShopSessionStorage } from "@/lib/shop/session-storage";
 
-/**
- * The browser client for the shop, and nothing else on the site.
- *
- * Same project as the app, so a player signs in here with the account they
- * play with and the pack credits land on that account. PKCE, because the
- * OAuth round trip comes back to a page rather than a native scheme, and the
- * code in the URL is exchanged here on the client (`detectSessionInUrl`).
- *
- * One instance per tab. supabase-js keeps the session in localStorage and
- * refreshes it on a timer; a second client would run a second timer against
- * the same storage.
- */
+/** One client per browser tab; the shop shares accounts with the mobile app. */
 export const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
 export const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
-
+export const SHOP_SESSION_EVENT = "shop-session-changed";
 let client: SupabaseClient | null = null;
+let policy: ReturnType<typeof createShopSessionStorage> | null = null;
 
 export function supabaseConfigured(): boolean {
   return Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
+}
+
+export function getShopSessionPolicy() {
+  if (!policy && typeof window !== "undefined") {
+    const key = `sb-${new URL(SUPABASE_URL).hostname.split(".")[0]}-auth-token`;
+    policy = createShopSessionStorage(window.localStorage, key, {
+      onChange: () => queueMicrotask(() => window.dispatchEvent(new Event(SHOP_SESSION_EVENT))),
+      onEnd: (token) => {
+        // Clear browser credentials and private UI first, even offline. Revoke
+        // only this JWT's session: the player's mobile login stays independent.
+        // This is the same public JWT logout call used by auth.signOut('local').
+        if (token) queueMicrotask(() => { void client?.auth.admin.signOut(token, "local").catch(() => {}); });
+      },
+    });
+  }
+  return policy;
+}
+
+export function signOutShop() {
+  getShopSessionPolicy()?.signOut();
 }
 
 export function getSupabase(): SupabaseClient {
@@ -29,6 +40,7 @@ export function getSupabase(): SupabaseClient {
         persistSession: true,
         autoRefreshToken: true,
         detectSessionInUrl: true,
+        storage: getShopSessionPolicy() ?? undefined,
       },
     });
   }

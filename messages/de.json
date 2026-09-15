@@ -2913,6 +2913,7 @@
     "emailInvalid": "Gib eine gültige E-Mail-Adresse ein.",
     "signedInAs": "Angemeldet als",
     "signOut": "Abmelden",
+    "sessionExpired": "Du wurdest automatisch abgemeldet. Melde dich erneut an, um fortzufahren. Deine Bestellungen bleiben gespeichert.",
     "productsEyebrow": "Packs",
     "productsTitle": "Wähle ein Bundle",
     "bundleSaving": "{percent}% sparen",
@@ -3048,7 +3049,8 @@
       "deliveryWaiting": "Zuteilung ausstehend",
       "closedOrder": "Diese Bestellung ist geschlossen. Wurde Geld abgebucht, kontaktiere den Support mit dieser Referenz, bevor du erneut zahlst.",
       "pendingNote": "Bereits bezahlt? Zahle nicht erneut. Aktualisiere den Status. Die Lieferung wird auch automatisch geprüft.",
-      "loadingReceipt": "Bestellung wird geladen…"
+      "loadingReceipt": "Bestellung wird geladen…",
+      "calculating": "Wird berechnet…"
     },
     "errRecipient": "Das Konto konnte nicht geprüft werden. Deine Angaben bleiben erhalten. Versuche es erneut.",
     "errPreparing": "Bereits bezahlt? Zahle nicht erneut. Aktualisiere den Status. Die Lieferung wird auch automatisch geprüft.",
@@ -3120,6 +3122,16 @@
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
       "spawn_lure": "Spawn Lockstoff"
-    }
+    },
+    "cart": {
+      "add": "{product} zum Warenkorb hinzufügen",
+      "quantity": "Menge für {product}",
+      "decrease": "Menge verringern",
+      "increase": "Menge erhöhen",
+      "remove": "Entfernen",
+      "empty": "Dein Warenkorb ist leer. Füge oben ein oder mehrere Produkte hinzu.",
+      "conversion": "Produkte in verschiedenen Währungen werden beim Bezahlen in einen Gesamtbetrag in USD umgerechnet."
+    },
+    "errCart": "Prüfe die Mengen im Warenkorb. Pro Bestellung sind bis zu 50 Kartenpakete und ein Pass möglich."
   }
 }

@@ -2913,6 +2913,7 @@
     "emailInvalid": "Enter a valid email address.",
     "signedInAs": "Signed in as",
     "signOut": "Sign out",
+    "sessionExpired": "You have been signed out automatically. Sign in again to continue. Your orders are saved.",
     "productsEyebrow": "Packs",
     "productsTitle": "Choose a bundle",
     "bundleSaving": "Save {percent}%",
@@ -3048,7 +3049,8 @@
       "deliveryWaiting": "Awaiting delivery",
       "closedOrder": "This order is closed. If money left your wallet, contact support with this reference before paying again.",
       "pendingNote": "If you already paid, do not pay again. Refresh the status; delivery is also checked automatically.",
-      "loadingReceipt": "Loading order…"
+      "loadingReceipt": "Loading order…",
+      "calculating": "Calculating…"
     },
     "errRecipient": "We could not check the account. Your details are saved here; please try again.",
     "errPreparing": "Your order is still being prepared. Please retry shortly; we will reuse the same order.",
@@ -3120,6 +3122,16 @@
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
       "spawn_lure": "Spawn Lure"
-    }
+    },
+    "cart": {
+      "add": "Add {product} to cart",
+      "quantity": "Quantity for {product}",
+      "decrease": "Decrease quantity",
+      "increase": "Increase quantity",
+      "remove": "Remove",
+      "empty": "Your cart is empty. Add one or more products above.",
+      "conversion": "Products in different currencies are converted to one USD total at checkout."
+    },
+    "errCart": "Check your cart quantities. You can buy up to 50 card packs and one Pass per order."
   }
 }

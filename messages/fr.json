@@ -2913,6 +2913,7 @@
     "emailInvalid": "Saisissez une adresse e-mail valide.",
     "signedInAs": "Connecté en tant que",
     "signOut": "Se déconnecter",
+    "sessionExpired": "Vous avez été déconnecté automatiquement. Reconnectez-vous pour continuer. Vos commandes sont conservées.",
     "productsEyebrow": "Packs",
     "productsTitle": "Choisissez un lot",
     "bundleSaving": "Économisez {percent}%",
@@ -3048,7 +3049,8 @@
       "deliveryWaiting": "Attribution en attente",
       "closedOrder": "Cette commande est fermée. Si vous avez été débité, contactez l’assistance avec cette référence avant de payer à nouveau.",
       "pendingNote": "Déjà payé ? Ne payez pas à nouveau. Actualisez le statut ; la livraison est également vérifiée automatiquement.",
-      "loadingReceipt": "Chargement de la commande…"
+      "loadingReceipt": "Chargement de la commande…",
+      "calculating": "Calcul en cours…"
     },
     "errRecipient": "Impossible de vérifier le compte. Vos coordonnées sont conservées ici. Réessayez.",
     "errPreparing": "Déjà payé ? Ne payez pas à nouveau. Actualisez le statut ; la livraison est également vérifiée automatiquement.",
@@ -3120,6 +3122,16 @@
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
       "spawn_lure": "Spawn Lure"
-    }
+    },
+    "cart": {
+      "add": "Ajouter {product} au panier",
+      "quantity": "Quantité de {product}",
+      "decrease": "Diminuer la quantité",
+      "increase": "Augmenter la quantité",
+      "remove": "Supprimer",
+      "empty": "Votre panier est vide. Ajoutez un ou plusieurs produits ci-dessus.",
+      "conversion": "Les produits dans différentes devises sont convertis en un total en USD lors du paiement."
+    },
+    "errCart": "Vérifiez les quantités du panier. Vous pouvez acheter jusqu’à 50 paquets de cartes et un Pass par commande."
   }
 }

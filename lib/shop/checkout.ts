@@ -1,5 +1,6 @@
+import { cartRequest, type CartItem } from "./cart";
 import { PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
-import { getSupabase, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/lib/supabase-browser";
+import { getSupabase, getShopSessionPolicy, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/lib/supabase-browser";
 import { isLocalShopDevelopment } from "@/lib/shop/local-development";
 
 /**
@@ -35,7 +36,7 @@ export const CONFIRM_INTERVAL_MS = 2500;
 
 export type CheckoutCode =
   | "pass_unavailable" | "pass_already_owned" | "pass_order_pending"
-  | "catalog_changed"
+  | "invalid_cart" | "catalog_changed"
   | "friends_id_invalid" | "recipient_changed" | "checkout_details_required" | "order_preparing" | "request_conflict"
   | "checkout_unavailable"
   | "arena_unavailable"
@@ -55,7 +56,7 @@ export type CheckoutCode =
 
 const KNOWN_CODES: ReadonlySet<string> = new Set<CheckoutCode>([
   "pass_unavailable", "pass_already_owned", "pass_order_pending",
-  "catalog_changed",
+  "invalid_cart", "catalog_changed",
   "friends_id_invalid", "recipient_changed", "checkout_details_required", "order_preparing", "request_conflict",
   "checkout_unavailable",
   "arena_unavailable",
@@ -103,7 +104,7 @@ async function call(
   const {
     data: { session },
   } = await getSupabase().auth.getSession();
-  if (!session) throw new CheckoutError("unauthorized", 401);
+  if (!session || !getShopSessionPolicy()?.accepts(session.access_token)) throw new CheckoutError("unauthorized", 401);
 
   let res: Response;
   try {
@@ -162,8 +163,8 @@ export interface ShopOrder {
 }
 
 /** What a product costs in SOL right now. The coins the server also offers are for the app; the web pays in SOL only. */
-export async function quoteOrder(productId: string, turnstileToken: string, revision?: number): Promise<ShopQuote> {
-  const data = await call({ action: "quote_order", product_id: productId, catalog_revision: revision }, turnstileToken);
+export async function quoteOrder(items: CartItem[], turnstileToken: string): Promise<ShopQuote> {
+  const data = await call({ action: "quote_order", items: cartRequest(items) }, turnstileToken);
   if (!wholeNumber(data.amount) || BigInt(String(data.amount)) <= BigInt(0)) {
     throw new CheckoutError("quote_unavailable");
   }
@@ -177,9 +178,9 @@ export async function quoteOrder(productId: string, turnstileToken: string, revi
 }
 
 /** Make the order. All in SOL: `coins` is empty on purpose. */
-export async function createOrder(productId: string, turnstileToken: string, checkout: CheckoutSelection, revision: number): Promise<ShopOrder> {
+export async function createOrder(items: CartItem[], turnstileToken: string, checkout: CheckoutSelection, total: {priceCents:number;currency:"usd"|"eur"}): Promise<ShopOrder> {
   const data = await call(
-    { action: "create_order", product_id: productId, catalog_revision: revision, coins: [], ...checkoutBody(checkout) },
+    { action: "create_order", items: cartRequest(items), coins: [], expected_total:{price_cents:total.priceCents,currency:total.currency}, ...checkoutBody(checkout) },
     turnstileToken,
   );
   const settled = data.settled === true;
@@ -191,7 +192,7 @@ export async function createOrder(productId: string, turnstileToken: string, che
   }
   return {
     orderId: String(data.order_id),
-    productId: String(data.product_id ?? productId),
+    productId: String(data.product_id ?? "seekar_cart"),
     lamports: BigInt(String(data.amount)),
     recipient: String(data.recipient),
     reference: String(data.reference),
@@ -240,14 +241,14 @@ export type RadomStatus = "paid" | "pending" | "closed";
  * player back to, both carrying `?order=<id>`.
  */
 export async function createRadomOrder(
-  productId: string,
+  items: CartItem[],
   turnstileToken: string,
   returnPath: string,
   checkout: CheckoutSelection,
-  revision: number,
+  total: {priceCents:number;currency:"usd"|"eur"},
 ): Promise<RadomOrder> {
   const data = await call(
-    { action: "create", product_id: productId, catalog_revision: revision, return_path: returnPath, ...checkoutBody(checkout) },
+    { action: "create", items: cartRequest(items), return_path: returnPath, expected_total:{price_cents:total.priceCents,currency:total.currency}, ...checkoutBody(checkout) },
     turnstileToken,
     "radom-checkout",
   );
@@ -354,8 +355,8 @@ export interface CheckoutSelection {
 function checkoutBody(value: CheckoutSelection) {
   return {friends_id:value.friends_id,customer_name:value.customer_name,expected_recipient_id:value.expected_recipient_id,request_id:value.request_id};
 }
-export async function checkoutContext(friendsId: string, name: string, requestId?: string, productId?: string): Promise<CheckoutContext> {
-  const data=await call({action:"checkout_context",product_id:productId,friends_id:friendsId,customer_name:name,request_id:requestId},undefined,"radom-checkout");
+export async function checkoutContext(friendsId: string, name: string, requestId?: string, items?: CartItem[]): Promise<CheckoutContext> {
+  const data=await call({action:"checkout_context",...(items?.length ? {items:cartRequest(items)} : {}),friends_id:friendsId,customer_name:name,request_id:requestId},undefined,"radom-checkout");
   if (typeof data.beneficiary_id !== "string" || typeof data.beneficiary_name !== "string") throw new CheckoutError("checkout_unavailable");
   return data as unknown as CheckoutContext;
 }
@@ -363,4 +364,11 @@ export async function checkoutContext(friendsId: string, name: string, requestId
 /** Client observations support investigation but can never confirm payment or delivery. */
 export async function recordCheckoutEvent(orderId: string, event: "wallet_opened" | "wallet_rejected" | "wallet_uncertain" | "transaction_submitted" | "redirect_started", signature?: string): Promise<void> {
   await call({action:"client_event",order_id:orderId,event,signature},undefined,"radom-checkout",3000).catch(() => undefined);
+}
+
+/** Total is available independently of the optional SOL wallet payment method. */
+export async function quoteCart(items: CartItem[], token: string) {
+  const data=await call({action:"quote_cart",items:cartRequest(items)},token,"radom-checkout");
+  if (!Number.isSafeInteger(data.price_cents) || Number(data.price_cents)<=0 || !["usd","eur"].includes(String(data.currency))) throw new CheckoutError("quote_unavailable");
+  return {priceCents:Number(data.price_cents),currency:data.currency as "usd"|"eur"};
 }

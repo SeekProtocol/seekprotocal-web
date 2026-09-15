@@ -2913,6 +2913,7 @@
     "emailInvalid": "올바른 이메일 주소를 입력하세요.",
     "signedInAs": "로그인 계정",
     "signOut": "로그아웃",
+    "sessionExpired": "자동으로 로그아웃되었습니다. 계속하려면 다시 로그인하세요. 주문 내역은 저장되어 있습니다.",
     "productsEyebrow": "팩",
     "productsTitle": "묶음 선택",
     "bundleSaving": "{percent}% 할인",
@@ -3048,7 +3049,8 @@
       "deliveryWaiting": "지급 대기 중",
       "closedOrder": "종료된 주문입니다. 금액이 출금되었다면 다시 결제하기 전에 참조 번호와 함께 지원팀에 문의하세요.",
       "pendingNote": "이미 결제했다면 다시 결제하지 마세요. 상태를 새로고침하세요. 지급 상태는 자동으로도 확인됩니다.",
-      "loadingReceipt": "주문 불러오는 중…"
+      "loadingReceipt": "주문 불러오는 중…",
+      "calculating": "계산 중…"
     },
     "errRecipient": "계정을 확인할 수 없습니다. 입력 내용은 유지됩니다. 다시 시도하세요.",
     "errPreparing": "이미 결제했다면 다시 결제하지 마세요. 상태를 새로고침하세요. 지급 상태는 자동으로도 확인됩니다.",
@@ -3120,6 +3122,16 @@
       "pump_it": "펌프하기",
       "diamond_hands": "다이아몬드 핸즈",
       "spawn_lure": "스폰 루어"
-    }
+    },
+    "cart": {
+      "add": "{product} 장바구니에 추가",
+      "quantity": "{product} 수량",
+      "decrease": "수량 줄이기",
+      "increase": "수량 늘리기",
+      "remove": "삭제",
+      "empty": "장바구니가 비어 있습니다. 위에서 상품을 하나 이상 추가하세요.",
+      "conversion": "통화가 다른 상품은 결제 시 하나의 USD 총액으로 환산됩니다."
+    },
+    "errCart": "장바구니 수량을 확인하세요. 주문당 카드 팩은 최대 50개, Pass는 1개까지 구매할 수 있습니다."
   }
 }

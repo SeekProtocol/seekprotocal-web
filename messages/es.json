@@ -2913,6 +2913,7 @@
     "emailInvalid": "Introduce un correo válido.",
     "signedInAs": "Sesión iniciada como",
     "signOut": "Cerrar sesión",
+    "sessionExpired": "Se ha cerrado tu sesión automáticamente. Vuelve a iniciar sesión para continuar. Tus pedidos están guardados.",
     "productsEyebrow": "Sobres",
     "productsTitle": "Elige un paquete",
     "bundleSaving": "Ahorra un {percent}%",
@@ -3048,7 +3049,8 @@
       "deliveryWaiting": "Entrega pendiente",
       "closedOrder": "Este pedido está cerrado. Si se descontó dinero, contacta con soporte con esta referencia antes de pagar otra vez.",
       "pendingNote": "¿Ya pagaste? No pagues otra vez. Actualiza el estado; la entrega también se comprueba automáticamente.",
-      "loadingReceipt": "Cargando pedido…"
+      "loadingReceipt": "Cargando pedido…",
+      "calculating": "Calculando…"
     },
     "errRecipient": "No pudimos verificar la cuenta. Tus datos se mantienen aquí; vuelve a intentarlo.",
     "errPreparing": "¿Ya pagaste? No pagues otra vez. Actualiza el estado; la entrega también se comprueba automáticamente.",
@@ -3120,6 +3122,16 @@
       "pump_it": "Dale Gas",
       "diamond_hands": "Diamond Hands",
       "spawn_lure": "Cebo de Spawn"
-    }
+    },
+    "cart": {
+      "add": "Añadir {product} al carrito",
+      "quantity": "Cantidad de {product}",
+      "decrease": "Reducir cantidad",
+      "increase": "Aumentar cantidad",
+      "remove": "Eliminar",
+      "empty": "Tu carrito está vacío. Añade uno o varios productos arriba.",
+      "conversion": "Los productos en distintas monedas se convierten en un total en USD al pagar."
+    },
+    "errCart": "Revisa las cantidades del carrito. Puedes comprar hasta 50 paquetes de cartas y un Pass por pedido."
   }
 }

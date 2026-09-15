@@ -3,13 +3,13 @@
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { getSupabase } from "@/lib/supabase-browser";
-import {receiptPrice} from "@/lib/shop/catalog";
+import {formatPrice,receiptPrice} from "@/lib/shop/catalog";
 import { orderProgress } from "@/lib/shop/order-status";
 
 export interface Receipt {
   id: string; status: string; fulfilled_at: string | null; paid_at: string | null;
   price_usd_cents: number | null; created_at: string; signature: string | null;
-  product_snapshot?: {price_cents?:number;currency?:string;name?:string;fulfillment?:{kind?:string;packs?:number}} | null;
+  product_snapshot?: {items?:{id:string;name:string;quantity:number;price_cents:number;currency:"usd"|"eur"}[];price_cents?:number;currency?:string;name?:string;fulfillment?:{kind?:string;packs?:number}} | null;
   checkout_snapshot: {email?: string;beneficiary_name?: string;beneficiary_code?: string} | null;
 }
 
@@ -46,6 +46,7 @@ export function OrderReceiptView({receipt,orderId,failed,loading,onRefresh}: {re
         <li data-done={progress?.payment === "paid"}><span aria-hidden="true">{progress?.payment === "paid" ? "✓" : "2"}</span>{h(`payment.${progress!.payment}`)}</li>
         <li data-done={!!receipt.fulfilled_at}><span aria-hidden="true">{receipt.fulfilled_at ? "✓" : "3"}</span>{h(`delivery.${progress!.delivery}`)}</li>
       </ol>
+      {receipt.product_snapshot?.items && <ul className="checkout-cart-receipt">{receipt.product_snapshot.items.map(item=><li key={item.id}>{item.quantity} × {item.name} <strong>{formatPrice({priceCents:item.price_cents*item.quantity,currency:item.currency},locale)}</strong></li>)}</ul>}
       <dl className="checkout-receipt-details"><div><dt>{c("total")}</dt><dd>{receiptPrice(receipt,locale)}</dd></div>
         <div><dt>{h("orderedAt")}</dt><dd>{dateFormat.format(new Date(receipt.created_at))}</dd></div>
         {receipt.paid_at && <div><dt>{h("paidAt")}</dt><dd>{dateFormat.format(new Date(receipt.paid_at))}</dd></div>}

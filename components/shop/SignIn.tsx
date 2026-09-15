@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { getPathname, useRouter } from "@/i18n/navigation";
+import { shopReturnPath } from "@/lib/shop/checkout-return";
 import { getSupabase } from "@/lib/supabase-browser";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -23,7 +24,7 @@ export default function SignIn({purpose="shop"}: {purpose?: "shop" | "orders"}) 
   const [busy, setBusy] = useState<null | "google" | "apple" | "email" | "code">(null);
   const [error, setError] = useState("");
 
-  const returnUrl = () => `${window.location.origin}${getPathname({href: "/shop", locale})}`;
+  const returnUrl = () => `${window.location.origin}${shopReturnPath(getPathname({href: "/shop", locale}), window.location.search)}`;
 
   const oauth = async (provider: "google" | "apple") => {
     setBusy(provider);
@@ -81,7 +82,7 @@ export default function SignIn({purpose="shop"}: {purpose?: "shop" | "orders"}) 
       setBusy(null);
       return;
     }
-    router.replace("/shop");
+    router.replace(shopReturnPath("/shop", window.location.search));
   };
 
   return (

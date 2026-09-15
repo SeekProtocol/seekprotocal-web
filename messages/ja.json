@@ -2913,6 +2913,7 @@
     "emailInvalid": "有効なメールアドレスを入力してください。",
     "signedInAs": "サインイン中",
     "signOut": "サインアウト",
+    "sessionExpired": "自動的にログアウトしました。続けるには再度ログインしてください。ご注文は保存されています。",
     "productsEyebrow": "パック",
     "productsTitle": "セットを選ぶ",
     "bundleSaving": "{percent}%お得",
@@ -3048,7 +3049,8 @@
       "deliveryWaiting": "付与待ち",
       "closedOrder": "この注文は終了しています。引き落としがあった場合、再度支払う前に照会番号を添えてサポートにご連絡ください。",
       "pendingNote": "支払い済みの場合、再度支払わないでください。状況を更新してください。配信は自動でも確認されます。",
-      "loadingReceipt": "注文を読み込み中…"
+      "loadingReceipt": "注文を読み込み中…",
+      "calculating": "計算中…"
     },
     "errRecipient": "アカウントを確認できませんでした。入力内容は保持されています。もう一度お試しください。",
     "errPreparing": "支払い済みの場合、再度支払わないでください。状況を更新してください。配信は自動でも確認されます。",
@@ -3120,6 +3122,16 @@
       "pump_it": "Pump It",
       "diamond_hands": "ダイヤモンドハンズ",
       "spawn_lure": "スポーンルアー"
-    }
+    },
+    "cart": {
+      "add": "{product}をカートに追加",
+      "quantity": "{product}の数量",
+      "decrease": "数量を減らす",
+      "increase": "数量を増やす",
+      "remove": "削除",
+      "empty": "カートは空です。上から商品を1つ以上追加してください。",
+      "conversion": "通貨が異なる商品は、お支払い時にUSDの合計額に換算されます。"
+    },
+    "errCart": "カートの数量を確認してください。1回の注文でカードパックは最大50個、Passは1個まで購入できます。"
   }
 }

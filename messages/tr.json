@@ -2913,6 +2913,7 @@
     "emailInvalid": "Geçerli bir e-posta adresi gir.",
     "signedInAs": "Giriş yapan",
     "signOut": "Çıkış yap",
+    "sessionExpired": "Oturumunuz otomatik olarak kapatıldı. Devam etmek için tekrar giriş yapın. Siparişleriniz kaydedildi.",
     "productsEyebrow": "Paketler",
     "productsTitle": "Bir paket seç",
     "bundleSaving": "%{percent} tasarruf",
@@ -3048,7 +3049,8 @@
       "deliveryWaiting": "Teslimat bekleniyor",
       "closedOrder": "Bu sipariş kapalı. Para çekildiyse tekrar ödemeden önce bu referansla destek ekibine başvurun.",
       "pendingNote": "Zaten ödediyseniz tekrar ödemeyin. Durumu yenileyin; teslimat otomatik olarak da kontrol edilir.",
-      "loadingReceipt": "Sipariş yükleniyor…"
+      "loadingReceipt": "Sipariş yükleniyor…",
+      "calculating": "Hesaplanıyor…"
     },
     "errRecipient": "Hesap kontrol edilemedi. Bilgileriniz burada korunuyor; tekrar deneyin.",
     "errPreparing": "Zaten ödediyseniz tekrar ödemeyin. Durumu yenileyin; teslimat otomatik olarak da kontrol edilir.",
@@ -3120,6 +3122,16 @@
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
       "spawn_lure": "Spawn Yemi"
-    }
+    },
+    "cart": {
+      "add": "{product} ürününü sepete ekle",
+      "quantity": "{product} adedi",
+      "decrease": "Adedi azalt",
+      "increase": "Adedi artır",
+      "remove": "Kaldır",
+      "empty": "Sepetiniz boş. Yukarıdan bir veya daha fazla ürün ekleyin.",
+      "conversion": "Farklı para birimlerindeki ürünler ödeme sırasında tek bir USD toplamına çevrilir."
+    },
+    "errCart": "Sepetteki adetleri kontrol edin. Bir siparişte en fazla 50 kart paketi ve bir Pass satın alabilirsiniz."
   }
 }
