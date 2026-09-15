@@ -63,7 +63,7 @@ export function CheckoutLayout({products,catalogFailed=false,catalogNotice,items
   return <><ProductCatalog products={products} items={items} disabled={locked} onQuantity={(product,quantity)=>{onQuantity(product,quantity);changeDetails();}} /><div className="checkout-layout">
     <div className="checkout-main">
       <nav className="checkout-steps" aria-label={c("steps")}>
-        <span>SeekAR Shop</span><span aria-hidden="true">/</span>
+        <span>Seekprotocol Shop</span><span aria-hidden="true">/</span>
         <button type="button" onClick={() => setStage("details")} disabled={locked} aria-current={!paying ? "step" : undefined}>{c("details")}</button>
         <span aria-hidden="true">/</span><span aria-current={paying ? "step" : undefined}>{c("payment")}</span>
       </nav>

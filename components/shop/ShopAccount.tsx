@@ -128,6 +128,6 @@ export default function ShopAccount({page="shop", children}: {
     </div>
     {failed ? <div className="card" role="alert"><p>{t("errNetwork")}</p><button className="btn btn-outline btn-sm" onClick={() => {setFailed(false);setRetry(n => n+1);}}>{t("tryAgain")}</button></div>
       : session === undefined ? <div className="card shop-skeleton" aria-busy="true"><span className="shop-flow-spinner" aria-hidden="true" /><span>{t("loadingAccount")}</span></div>
-      : session ? children(session) : <>{expired && <p className="form-status" role="status">{t("sessionExpired")}</p>}<SignIn purpose={page} /></>}
+      : session ? children(session) : <>{expired && <p className="form-status shop-session-notice" role="status">{t("sessionExpired")}</p>}<SignIn purpose={page} /></>}
   </div>;
 }

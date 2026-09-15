@@ -14,7 +14,7 @@ export default async function OrdersPage({params}: {params: Promise<{locale: str
   const t = await getTranslations("shop.history");
   return <>
     <section className="page-head shop-page-head"><div className="shell"><div className="page-head-inner">
-      <p className="eyebrow">SeekAR Shop</p><h1 className="t-h1 page-head-title">{t("title")}</h1><p className="t-lead">{t("lead")}</p>
+      <p className="eyebrow">Seekprotocol Shop</p><h1 className="t-h1 page-head-title">{t("title")}</h1><p className="t-lead">{t("lead")}</p>
     </div></div></section>
     <section className="section section-tight"><div className="shell"><OrdersMount /></div></section>
   </>;

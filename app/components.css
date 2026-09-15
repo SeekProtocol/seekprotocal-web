@@ -6294,6 +6294,7 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 }
 
 /* Sign in */
+.shop-session-notice { margin: 0 0 1.5rem; }
 .shop-signin { max-width: 30rem; display: grid; gap: 1.25rem; }
 .shop-signin .eyebrow { margin-bottom: 0.5rem; }
 .shop-signin-providers { display: grid; gap: 0.75rem; }

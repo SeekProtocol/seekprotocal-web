@@ -10,7 +10,7 @@ const products: ShopProduct[] = [
  {...base,id:"seekar_pack_single",name:"Card pack",kind:"pack",packs:1,priceCents:299,currency:"usd"},
  {...base,id:"seekar_pack_five",name:"5 packs",kind:"pack",packs:5,priceCents:1299,currency:"usd"},
  {...base,id:"seekar_pack_ten",name:"10 packs",kind:"pack",packs:10,priceCents:2399,currency:"usd"},
- {...base,id:"seekar_pass",name:"SeekAR Pass",kind:"pass",priceCents:899},
+ {...base,id:"seekar_pass",name:"Seekprotocol Pass",kind:"pass",priceCents:899},
  ...[
    ["rare_boost","Rare Boost",199], ["coin_magnet","Coin Magnet",199],
    ["xp_boost","XP Boost",99], ["pump_it","Pump It",149],

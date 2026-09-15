@@ -5,11 +5,11 @@ export { default as ProductArt } from "./ProductArt";
 import {useLocale,useTranslations} from 'next-intl';
 import {bundleSaving,formatPrice,type ShopProduct} from '@/lib/shop/catalog';
 
-export function productName(product:ShopProduct, packs:(n:number)=>string) {return product.kind==='pack' ? packs(product.packs!) : product.name;}
+export function productName(product:ShopProduct, packs:(n:number)=>string) {return product.kind==='pack' ? packs(product.packs!) : product.name.replace(/\bSeekAR\b/g, 'Seekprotocol');}
 export default function ProductCatalog({products,items,onQuantity,disabled}: {products:ShopProduct[];items:CartItem[];onQuantity:(p:ShopProduct,q:number)=>void;disabled:boolean}) {
   const t=useTranslations('shop');const locale=useLocale();
   return <section className="shop-catalog" aria-labelledby="shop-catalog-title">
-    <div className="shop-catalog-heading"><span className="eyebrow">SeekAR Shop</span><h2 id="shop-catalog-title">{t('catalogTitle')}</h2><p>{t('catalogLead')}</p></div>
+    <div className="shop-catalog-heading"><span className="eyebrow">Seekprotocol Shop</span><h2 id="shop-catalog-title">{t('catalogTitle')}</h2><p>{t('catalogLead')}</p></div>
     <fieldset disabled={disabled} className="shop-product-grid"><legend className="sr-only">{t('catalogTitle')}</legend>
       {products.map(product => {
         const quantity = items.find(item => item.product.id === product.id)?.quantity ?? 0;

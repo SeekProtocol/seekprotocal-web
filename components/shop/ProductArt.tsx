@@ -50,7 +50,7 @@ export default function ProductArt({ product }: { product: ShopProduct }) {
         <path d="M82 29h76M82 33h76M82 37h76M82 145h76M82 149h76M82 153h76" stroke="#90d7ed" strokeOpacity=".28"/>
         <path d="M86 43v96M154 43v96" stroke="#adcfe0" strokeOpacity=".2"/>
         <path d="m86 139 68-96v45l-35 51Z" fill="#80d9ff" fillOpacity=".06"/>
-        <text x="120" y="56" textAnchor="middle" fill="#dcf3ff" fontSize="8" fontWeight="700" letterSpacing="2" fontFamily="sans-serif">SEEKAR</text>
+        <text x="120" y="56" textAnchor="middle" fill="#dcf3ff" fontSize="7.5" fontWeight="700" letterSpacing=".35" fontFamily="sans-serif">Seekprotocol</text>
         <g transform="translate(96 69) scale(.48)"><path d={SEEK_MARK} fill={fill("brand")} fillRule="evenodd"/></g>
         <text x="120" y="132" textAnchor="middle" fill="#c0e9f9" fontSize="7" letterSpacing="2.8" fontFamily="sans-serif">ARENA</text>
       </g>}
@@ -77,7 +77,7 @@ export default function ProductArt({ product }: { product: ShopProduct }) {
         <rect x="69" y="21" width="103" height="137" rx="12" fill={fill("body")} stroke={fill("accent")} strokeWidth="1.5"/>
         <rect x="75" y="27" width="91" height="125" rx="8" stroke={accent} strokeOpacity=".3"/>
         <path d="m75 106 91-58v28l-91 58Z" fill={accent} fillOpacity=".08"/>
-        <text x="87" y="44" fill={light} fontSize="8" fontWeight="700" letterSpacing="1.3" fontFamily="sans-serif">SEEKAR</text>
+        <text x="120" y="44" textAnchor="middle" fill={light} fontSize="7.5" fontWeight="700" letterSpacing=".35" fontFamily="sans-serif">Seekprotocol</text>
         <path d="m91 71 18 14 11-27 12 27 18-14-6 34H97Z" fill={fill("accent")} stroke={light} strokeWidth="1" strokeLinejoin="round"/>
         <path d="M99 99h43" stroke={shade} strokeWidth="3"/>
         <circle cx="120" cy="91" r="4" fill="#715b34"/>
