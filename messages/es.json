@@ -2913,7 +2913,6 @@
     "emailInvalid": "Introduce un correo válido.",
     "signedInAs": "Sesión iniciada como",
     "signOut": "Cerrar sesión",
-    "sessionExpired": "Se ha cerrado tu sesión automáticamente. Vuelve a iniciar sesión para continuar. Tus pedidos están guardados.",
     "productsEyebrow": "Sobres",
     "productsTitle": "Elige un paquete",
     "bundleSaving": "Ahorra un {percent}%",

@@ -2913,7 +2913,6 @@
     "emailInvalid": "올바른 이메일 주소를 입력하세요.",
     "signedInAs": "로그인 계정",
     "signOut": "로그아웃",
-    "sessionExpired": "자동으로 로그아웃되었습니다. 계속하려면 다시 로그인하세요. 주문 내역은 저장되어 있습니다.",
     "productsEyebrow": "팩",
     "productsTitle": "묶음 선택",
     "bundleSaving": "{percent}% 할인",

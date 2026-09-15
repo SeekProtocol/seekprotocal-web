@@ -2913,7 +2913,6 @@
     "emailInvalid": "Enter a valid email address.",
     "signedInAs": "Signed in as",
     "signOut": "Sign out",
-    "sessionExpired": "You have been signed out automatically. Sign in again to continue. Your orders are saved.",
     "productsEyebrow": "Packs",
     "productsTitle": "Choose a bundle",
     "bundleSaving": "Save {percent}%",

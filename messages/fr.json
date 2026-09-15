@@ -2913,7 +2913,6 @@
     "emailInvalid": "Saisissez une adresse e-mail valide.",
     "signedInAs": "Connecté en tant que",
     "signOut": "Se déconnecter",
-    "sessionExpired": "Vous avez été déconnecté automatiquement. Reconnectez-vous pour continuer. Vos commandes sont conservées.",
     "productsEyebrow": "Packs",
     "productsTitle": "Choisissez un lot",
     "bundleSaving": "Économisez {percent}%",

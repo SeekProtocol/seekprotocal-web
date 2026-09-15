@@ -2913,7 +2913,6 @@
     "emailInvalid": "有効なメールアドレスを入力してください。",
     "signedInAs": "サインイン中",
     "signOut": "サインアウト",
-    "sessionExpired": "自動的にログアウトしました。続けるには再度ログインしてください。ご注文は保存されています。",
     "productsEyebrow": "パック",
     "productsTitle": "セットを選ぶ",
     "bundleSaving": "{percent}%お得",

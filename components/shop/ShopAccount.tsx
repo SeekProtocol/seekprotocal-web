@@ -16,7 +16,6 @@ export default function ShopAccount({page="shop", children}: {
   const configured = supabaseConfigured();
   const [session, setSession] = useState<Session | null>();
   const [failed, setFailed] = useState(false);
-  const [expired, setExpired] = useState(false);
   const [retry, setRetry] = useState(0);
 
   useEffect(() => {
@@ -39,7 +38,6 @@ export default function ShopAccount({page="shop", children}: {
       if (!active) return;
       latest = next && policy?.accepts(next.access_token) ? next : null;
       setSession(latest);
-      setExpired(!latest && policy?.reason() === "expired");
       setFailed(false);
       schedule();
     };
@@ -128,6 +126,6 @@ export default function ShopAccount({page="shop", children}: {
     </div>
     {failed ? <div className="card" role="alert"><p>{t("errNetwork")}</p><button className="btn btn-outline btn-sm" onClick={() => {setFailed(false);setRetry(n => n+1);}}>{t("tryAgain")}</button></div>
       : session === undefined ? <div className="card shop-skeleton" aria-busy="true"><span className="shop-flow-spinner" aria-hidden="true" /><span>{t("loadingAccount")}</span></div>
-      : session ? children(session) : <>{expired && <p className="form-status shop-session-notice" role="status">{t("sessionExpired")}</p>}<SignIn purpose={page} /></>}
+      : session ? children(session) : <SignIn purpose={page} />}
   </div>;
 }

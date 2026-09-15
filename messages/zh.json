@@ -2913,7 +2913,6 @@
     "emailInvalid": "请输入有效的邮箱地址。",
     "signedInAs": "当前账号",
     "signOut": "退出登录",
-    "sessionExpired": "你已自动退出登录。请重新登录以继续。你的订单已保存。",
     "productsEyebrow": "卡包",
     "productsTitle": "选择套餐",
     "bundleSaving": "节省 {percent}%",

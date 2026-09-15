@@ -2913,7 +2913,6 @@
     "emailInvalid": "Geçerli bir e-posta adresi gir.",
     "signedInAs": "Giriş yapan",
     "signOut": "Çıkış yap",
-    "sessionExpired": "Oturumunuz otomatik olarak kapatıldı. Devam etmek için tekrar giriş yapın. Siparişleriniz kaydedildi.",
     "productsEyebrow": "Paketler",
     "productsTitle": "Bir paket seç",
     "bundleSaving": "%{percent} tasarruf",
