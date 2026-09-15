@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "created": "2026-09-16",
+  "generator": "built-in image generation",
+  "treatment": "Posed collectible illustrations with dark midnight backdrops",
+  "icons": {
+    "shiba": {
+      "file": "shiba.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 69400,
+      "sha256": "14e7500d7c282bd8fded98a5a30cf30c52e66ab10aa40877333d265157396083",
+      "generated_original_sha256": "65e85226bda511051571d1c744ef0e81ece5672fc1781fa7fd0d615c04bc6b49",
+      "identity_reference": "../shiba.png"
+    },
+    "coin_magnet": {
+      "file": "coin_magnet.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 59286,
+      "sha256": "7fabd1f5c38915b3e361df31e7aa2f7e631803d087a1eb56bf4d238496b8c801",
+      "generated_original_sha256": "ea6204e3be8f6368a89e18bf08e0bfa4119e7a8c19a27054ba7ed9ae043a3ad1",
+      "identity_reference": "../coin_magnet.png"
+    },
+    "to_the_moon": {
+      "file": "to_the_moon.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 58220,
+      "sha256": "caa608f0986e98ea95a7cf7cc21d34b8df901f14da8629a410f73e6355b4a881",
+      "generated_original_sha256": "5e204c885f2fbe946dbfece699e8da31343478c3af26c9ff043966235b7dbbbc",
+      "identity_reference": "../to_the_moon.png"
+    },
+    "pump_it": {
+      "file": "pump_it.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 65190,
+      "sha256": "98cce577a406f8d0094ab248ba4cc6b7e710f9f96b0048d8b91357f3fccef1e1",
+      "generated_original_sha256": "d9c6fac510bfd0ac53539e62ea082ca1968dca8b4cf5c6eded92728ef0957237",
+      "identity_reference": "../pump_it.png"
+    },
+    "diamond_hands": {
+      "file": "diamond_hands.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 61664,
+      "sha256": "0256e1753ae3e429ccf45aa3fed6ae2b05a18ae713bd4804bb483212a7a2f0d5",
+      "generated_original_sha256": "f5cb9a8a7f72367a604373adb13bd6c45d2842b1d0a30859018a901881a5e23d",
+      "identity_reference": "../diamond_hands.png"
+    },
+    "whale": {
+      "file": "whale.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 63756,
+      "sha256": "635660d6464ad10a0f92bfcbbffdb4076097dfa2df018f59592e070351423fbd",
+      "generated_original_sha256": "a67ad8fd7903a7221f8b39192146d8a4818d65aac13e978914ef94725f732d76",
+      "identity_reference": "../whale.png"
+    },
+    "cash": {
+      "file": "cash.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 63968,
+      "sha256": "945a54d772504ab601aff31cb2739f9059c6ce55de3e43ac35a4e2fe81e092b5",
+      "generated_original_sha256": "24422edf599afea5b0b8d234ab7a1a620abb88a4158ada9fa5b6e46534e11dd7",
+      "identity_reference": "../cash.png"
+    },
+    "fitness": {
+      "file": "fitness.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 70582,
+      "sha256": "5907b5064d12b5277338cbd9ca025f5f3510d3501b5d481c8f4a63e90d28f455",
+      "generated_original_sha256": "e53887b84d492166d99bf75a2f561b16b9f9d8b037b1195143a32759415d9f56",
+      "identity_reference": "../fitness.png"
+    },
+    "chill_guy": {
+      "file": "chill_guy.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 34330,
+      "sha256": "35145ce2942b79703b20280854d3eeabeec3f3ae39bea8b90ca97c0ca7424c5c",
+      "generated_original_sha256": "0580a3a18e19804bfb803be48ee2f6fd4da0f3ba123bbda0ada2b781c3f168b6",
+      "identity_reference": "../chill_guy.png"
+    },
+    "this_is_fine": {
+      "file": "this_is_fine.webp",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 63716,
+      "sha256": "d36e3a394f923e2dc344c623a9f3882ad805ad164b727f722f8ef0d3352539e8",
+      "generated_original_sha256": "e8ca2bae011504e0a78b9f3ec052a95ef34187ddf48392ab697f24ed476edd77",
+      "identity_reference": "../this_is_fine.png"
+    }
+  }
+}

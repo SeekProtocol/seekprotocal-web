@@ -728,7 +728,7 @@
           "body": "由社交账号登录创建，装好应用一分钟内就能开始收集。想自己保管私钥，随时可以导出。"
         },
         {
-          "title": "Seekprotocol Pass",
+          "title": "Season Pass",
           "body": "与常规玩法并行的赛季奖励线，分免费档和付费档。"
         },
         {
@@ -2245,8 +2245,8 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "Seekprotocol Pass",
-                "value": "每 90 天赛季 8.99 欧元"
+                "label": "Season Pass",
+                "value": "每 90 天赛季 9.95 欧元"
               },
               {
                 "label": "稀有度加成、刷新磁铁",
@@ -2880,11 +2880,11 @@
   },
   "shop": {
     "metaTitle": "Seekprotocol Shop",
-    "metaDescription": "为你的账户购买卡包、Seekprotocol Pass 和加成道具。",
+    "metaDescription": "为你的账户购买卡包、Season Pass 和加成道具。",
     "ogTitle": "Seekprotocol Shop",
     "eyebrow": "商店",
     "title": "Seekprotocol Shop",
-    "lead": "为你的账户购买卡包、Seekprotocol Pass 和加成道具。",
+    "lead": "为你的账户购买卡包、Season Pass 和加成道具。",
     "howEyebrow": "流程",
     "stepSignIn": "登录",
     "stepSignInBody": "与应用相同的账号：Google、Apple 或邮箱验证码。",
@@ -2895,7 +2895,7 @@
     "notConfigured": "此部署未配置商店。",
     "loadingAccount": "正在检查你的登录状态...",
     "signInTitle": "登录后购买",
-    "signInLead": "为你的账户购买卡包、Seekprotocol Pass 和加成道具。",
+    "signInLead": "为你的账户购买卡包、Season Pass 和加成道具。",
     "continueGoogle": "使用 Google 继续",
     "continueApple": "使用 Apple 继续",
     "orEmail": "或使用邮箱验证码",
@@ -3001,7 +3001,7 @@
       "digitalDelivery": "数字交付",
       "yourDetails": "你的订单信息",
       "reviewPay": "确认并付款",
-      "intro": "为你的账户购买卡包、Seekprotocol Pass 和加成道具。",
+      "intro": "为你的账户购买卡包、Season Pass 和加成道具。",
       "contact": "联系方式",
       "email": "电子邮箱",
       "signedInAccount": "已登录账号",
@@ -3098,7 +3098,7 @@
     "catalogEmpty": "目前没有可购买的商品。",
     "errCatalogChanged": "此商品已更新。请刷新商品并在付款前核对价格。",
     "catalogTitle": "选择商品",
-    "catalogLead": "为你的账户购买卡包、Seekprotocol Pass 和加成道具。",
+    "catalogLead": "为你的账户购买卡包、Season Pass 和加成道具。",
     "passSeason": "适用于当前赛季。一次性购买。",
     "cardsInPacks": "每包 5 张卡牌",
     "recipientPrompt": "哪个账户接收你的购买商品？",
@@ -3120,7 +3120,11 @@
       "to_the_moon": "XP 增益",
       "pump_it": "Pump It",
       "diamond_hands": "钻石手",
-      "spawn_lure": "刷新诱饵"
+      "spawn_lure": "刷新诱饵",
+      "cash": "现金",
+      "fitness": "健身",
+      "chill_guy": "淡定哥",
+      "this_is_fine": "问题不大"
     },
     "cart": {
       "add": "将{product}加入购物车",
@@ -3131,6 +3135,56 @@
       "empty": "购物车为空。请在上方添加一件或多件商品。",
       "conversion": "不同币种的商品将在结账时换算为一个美元总额。"
     },
-    "errCart": "请检查购物车数量。每笔订单最多可购买50个卡包和一个Pass。"
+    "errCart": "请检查购物车数量。每笔订单最多可购买50个卡包和一个Pass。",
+    "login": {
+      "heading": "使用应用账户登录",
+      "existingOnly": "请使用与 Seekprotocol 应用相同的登录方式。商店仅供已有应用账户使用。",
+      "methods": "登录方式",
+      "continueWith": "使用 {provider} 继续",
+      "notAvailable": "暂时不可用",
+      "unavailable": "此登录方式暂时不可用。请稍后重试，或使用已关联应用账户的其他方式。",
+      "methodsFailed": "部分登录方式未能加载。",
+      "orEmail": "或使用邮箱登录",
+      "emailMethod": "邮箱登录方式",
+      "emailCode": "邮箱验证码",
+      "signIn": "登录",
+      "emailNotSent": "验证码未能发送。请使用已有应用账户的邮箱重试。",
+      "appRequired": "使用商店需要已有的应用账户。请先在 Seekprotocol 应用中创建账户或完成设置，然后返回。",
+      "noAccount": "还没有应用账户？请在 Seekprotocol 应用中创建。商店不提供注册。",
+      "changeAccount": "使用其他账户",
+      "expired": "本次登录已过期。请从商店重新开始。",
+      "wallet": "使用 Solana 钱包继续",
+      "connectWallet": "连接钱包",
+      "walletSignIn": "使用此钱包登录",
+      "walletSigning": "请在钱包中确认…",
+      "changeWallet": "选择其他钱包",
+      "walletCannotSign": "此钱包无法签署登录消息。请选择已关联应用账户的其他钱包。",
+      "walletFailed": "钱包登录失败或已取消。请使用已关联应用账户的钱包重试。",
+      "emailHelp": "我们将发送登录验证码。请使用应用账户的邮箱地址。"
+    },
+    "powerupDescriptions": {
+      "rare_boost": "发现更特别的收获。30分钟内，稀有、史诗和传说金币会更频繁地出现。",
+      "coin_magnet": "让散步收获更多。30分钟内，附近会出现更多金币。",
+      "to_the_moon": "让每次尝试都有价值。30分钟内，尝试捕捉金币可获得3倍经验。",
+      "pump_it": "为寻宝添一把力。30分钟内，金币捕捉概率提高35%，但不保证每次成功。",
+      "diamond_hands": "看到心仪的金币了？激活后1分钟内，确保下一次金币捕捉成功。",
+      "spawn_lure": "把寻宝机会带到身边。30分钟内，为附近玩家吸引金币。需要加入公会。",
+      "cash": "让成功收获更多。15分钟内，成功捕捉金币可获得2倍经验。",
+      "fitness": "把握稍远处的机会。15分钟内，可捕捉60米范围内的金币。",
+      "chill_guy": "保持连胜势头。15分钟内，连续成功捕捉不会降低下一次的捕捉概率。",
+      "this_is_fine": "关键时刻再给你一次机会。激活后15分钟内，挽救一次失败的金币捕捉。"
+    },
+    "productInfo": {
+      "more": "商品详情",
+      "includes": "包含内容",
+      "use": "使用方法",
+      "pack": "每个卡包包含5张随机Arena卡牌。在应用的Arena中打开卡包，发现获得的卡牌。可能获得重复卡牌，不保证获得某张指定卡牌。",
+      "pass": "在当前赛季更常遇到稀有、史诗和传说金币，并可每周在应用中领取一枚稀有金币。通行证在当前赛季结束时到期，不会自动续期。",
+      "bundle": "所列增益将分别加入背包。你可以选择先激活哪一个；它们的效果不能同时生效。",
+      "delivery": "付款确认后，商品将发放至你选择的SeekAR账号。未填写Friends ID时，将发放至与你当前登录关联的应用账号。",
+      "passName": "赛季通行证",
+      "bundleName": "增益组合包",
+      "activate": "购买后存入背包，准备好时在游戏内商店中激活。同一时间只能启用一个增益。"
+    }
   }
 }

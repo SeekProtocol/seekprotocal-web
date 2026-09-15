@@ -728,7 +728,7 @@
           "body": "ソーシャルログインから作られるので、インストール後1分で集め始められます。自分で管理したくなったら、いつでも鍵をエクスポートできます。"
         },
         {
-          "title": "Seekprotocol Pass",
+          "title": "Season Pass",
           "body": "通常のプレイと並行して進むシーズン報酬。無料枠と有料枠があります。"
         },
         {
@@ -2245,8 +2245,8 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "Seekprotocol Pass",
-                "value": "90日シーズンごとに8.99ユーロ"
+                "label": "Season Pass",
+                "value": "90日シーズンごとに9.95ユーロ"
               },
               {
                 "label": "レアブースト、スポーンマグネット",
@@ -2880,11 +2880,11 @@
   },
   "shop": {
     "metaTitle": "Seekprotocol Shop",
-    "metaDescription": "アカウント用のカードパック、Seekprotocol Pass、ブースト。",
+    "metaDescription": "アカウント用のカードパック、Season Pass、ブースト。",
     "ogTitle": "Seekprotocol Shop",
     "eyebrow": "ショップ",
     "title": "Seekprotocol Shop",
-    "lead": "アカウント用のカードパック、Seekprotocol Pass、ブースト。",
+    "lead": "アカウント用のカードパック、Season Pass、ブースト。",
     "howEyebrow": "流れ",
     "stepSignIn": "サインイン",
     "stepSignInBody": "アプリと同じアカウントで。Google、Apple、またはメールのコードで。",
@@ -2895,7 +2895,7 @@
     "notConfigured": "このデプロイではショップが設定されていません。",
     "loadingAccount": "セッションを確認しています...",
     "signInTitle": "サインインして購入",
-    "signInLead": "アカウント用のカードパック、Seekprotocol Pass、ブースト。",
+    "signInLead": "アカウント用のカードパック、Season Pass、ブースト。",
     "continueGoogle": "Googleで続行",
     "continueApple": "Appleで続行",
     "orEmail": "またはメールのコードで",
@@ -3001,7 +3001,7 @@
       "digitalDelivery": "デジタル配信",
       "yourDetails": "ご注文情報",
       "reviewPay": "確認して支払う",
-      "intro": "アカウント用のカードパック、Seekprotocol Pass、ブースト。",
+      "intro": "アカウント用のカードパック、Season Pass、ブースト。",
       "contact": "連絡先",
       "email": "メールアドレス",
       "signedInAccount": "ログイン中のアカウント",
@@ -3098,7 +3098,7 @@
     "catalogEmpty": "現在、購入できる商品はありません。",
     "errCatalogChanged": "この商品は変更されました。商品を更新し、お支払い前に価格をご確認ください。",
     "catalogTitle": "商品を選択",
-    "catalogLead": "アカウント用のカードパック、Seekprotocol Pass、ブースト。",
+    "catalogLead": "アカウント用のカードパック、Season Pass、ブースト。",
     "passSeason": "現在のシーズンに有効。1回限りの購入です。",
     "cardsInPacks": "1パックにつきカード5枚",
     "recipientPrompt": "購入商品をどのアカウントに届けますか？",
@@ -3120,7 +3120,11 @@
       "to_the_moon": "XPブースト",
       "pump_it": "Pump It",
       "diamond_hands": "ダイヤモンドハンズ",
-      "spawn_lure": "スポーンルアー"
+      "spawn_lure": "スポーンルアー",
+      "cash": "キャッシュ",
+      "fitness": "フィットネス",
+      "chill_guy": "チルガイ",
+      "this_is_fine": "ディス・イズ・ファイン"
     },
     "cart": {
       "add": "{product}をカートに追加",
@@ -3131,6 +3135,56 @@
       "empty": "カートは空です。上から商品を1つ以上追加してください。",
       "conversion": "通貨が異なる商品は、お支払い時にUSDの合計額に換算されます。"
     },
-    "errCart": "カートの数量を確認してください。1回の注文でカードパックは最大50個、Passは1個まで購入できます。"
+    "errCart": "カートの数量を確認してください。1回の注文でカードパックは最大50個、Passは1個まで購入できます。",
+    "login": {
+      "heading": "アプリのアカウントでログイン",
+      "existingOnly": "Seekprotocolアプリと同じ方法でログインしてください。ショップは既存のアプリアカウント専用です。",
+      "methods": "ログイン方法",
+      "continueWith": "{provider}で続ける",
+      "notAvailable": "現在利用できません",
+      "unavailable": "このログイン方法は現在利用できません。後でもう一度試すか、アカウントに連携済みの別の方法をお使いください。",
+      "methodsFailed": "一部のログイン方法を読み込めませんでした。",
+      "orEmail": "またはメールでログイン",
+      "emailMethod": "メールでのログイン方法",
+      "emailCode": "メールコード",
+      "signIn": "ログイン",
+      "emailNotSent": "コードを送信できませんでした。既存のアプリアカウントのメールアドレスで再試行してください。",
+      "appRequired": "ショップの利用には既存のアプリアカウントが必要です。Seekprotocolアプリでアカウントの作成または設定を完了してから戻ってください。",
+      "noAccount": "アカウントをお持ちでない場合はSeekprotocolアプリで作成してください。ショップでは登録できません。",
+      "changeAccount": "別のアカウントを使う",
+      "expired": "このログインの有効期限が切れました。ショップからやり直してください。",
+      "wallet": "Solanaウォレットで続ける",
+      "connectWallet": "ウォレットを接続",
+      "walletSignIn": "このウォレットでログイン",
+      "walletSigning": "ウォレットで確認してください…",
+      "changeWallet": "別のウォレットを選ぶ",
+      "walletCannotSign": "このウォレットではログインメッセージに署名できません。アカウントに連携済みの別のウォレットを選んでください。",
+      "walletFailed": "ウォレットのログインに失敗したか、キャンセルされました。連携済みのウォレットでもう一度お試しください。",
+      "emailHelp": "ログインコードをお送りします。アプリアカウントのメールアドレスを入力してください。"
+    },
+    "powerupDescriptions": {
+      "rare_boost": "特別な出会いを増やそう。30分間、レア・エピック・レジェンダリーのコインが出現しやすくなります。",
+      "coin_magnet": "散歩をもっと楽しく。30分間、近くに出現するコインが増えます。",
+      "to_the_moon": "挑戦するたびに成長。30分間、コインの捕獲挑戦で得られるXPが3倍になります。",
+      "pump_it": "次の探索を後押し。30分間、コインの捕獲確率が35%上がります。成功を保証するものではありません。",
+      "diamond_hands": "欲しいコインを見つけたら。発動から1分以内の次のコイン捕獲が必ず成功します。",
+      "spawn_lure": "自分のいる場所を探索スポットに。30分間、近くのプレイヤー向けにコインを引き寄せます。クランへの所属が必要です。",
+      "cash": "成功した捕獲をもっとお得に。15分間、コイン捕獲成功時のXPが2倍になります。",
+      "fitness": "少し遠くにも手を伸ばそう。15分間、最大60メートル先のコインを捕獲できます。",
+      "chill_guy": "連続成功の勢いをそのままに。15分間、捕獲成功による次回の捕獲確率低下を防ぎます。",
+      "this_is_fine": "いざというときのもう一度。発動から15分以内に、コイン捕獲の失敗を1回だけ成功に変えます。"
+    },
+    "productInfo": {
+      "more": "この商品について",
+      "includes": "含まれるもの",
+      "use": "使い方",
+      "pack": "各パックにはランダムなArenaカードが5枚入っています。アプリのArenaでパックを開き、カードを確認しましょう。同じカードが出ることもあり、特定のカードは保証されません。",
+      "pass": "現在のシーズン中、レア・エピック・レジェンダリーのコインに出会いやすくなり、毎週レアコインを1枚アプリで受け取れます。パスはシーズン終了時に失効し、自動更新されません。",
+      "bundle": "表示されているブーストがそれぞれ持ち物に追加されます。どれから発動するか選べますが、効果を同時には使えません。",
+      "delivery": "支払い確認後、選択したSeekARアカウントに届きます。Friends IDを入力しない場合は、ログインに紐づくアプリアカウントに付与されます。",
+      "passName": "シーズンパス",
+      "bundleName": "ブーストセット",
+      "activate": "購入後は持ち物に追加されます。準備ができたらアプリ内ショップで発動しましょう。同時に使えるブーストは1つです。"
+    }
   }
 }

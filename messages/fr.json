@@ -728,7 +728,7 @@
           "body": "Créé depuis une connexion sociale, pour récupérer quelque chose dans la minute qui suit l'installation. Exportez la clé quand vous voulez la garde."
         },
         {
-          "title": "Seekprotocol Pass",
+          "title": "Season Pass",
           "body": "Un parcours de récompenses saisonnier qui avance en parallèle du jeu normal, avec un palier gratuit et un payant."
         },
         {
@@ -2245,8 +2245,8 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "Seekprotocol Pass",
-                "value": "8,99 € par saison de 90 jours"
+                "label": "Season Pass",
+                "value": "9,95 € par saison de 90 jours"
               },
               {
                 "label": "Boost de rareté, aimant à spawns",
@@ -2880,11 +2880,11 @@
   },
   "shop": {
     "metaTitle": "Seekprotocol Shop",
-    "metaDescription": "Packs de cartes, Seekprotocol Pass et boosts pour votre compte.",
+    "metaDescription": "Packs de cartes, Season Pass et boosts pour votre compte.",
     "ogTitle": "Seekprotocol Shop",
     "eyebrow": "Boutique",
     "title": "Seekprotocol Shop",
-    "lead": "Packs de cartes, Seekprotocol Pass et boosts pour votre compte.",
+    "lead": "Packs de cartes, Season Pass et boosts pour votre compte.",
     "howEyebrow": "Comment ça marche",
     "stepSignIn": "Connexion",
     "stepSignInBody": "Le même compte que dans l’app : Google, Apple ou un code par e-mail.",
@@ -2895,7 +2895,7 @@
     "notConfigured": "La boutique n’est pas configurée sur ce déploiement.",
     "loadingAccount": "Vérification de votre session...",
     "signInTitle": "Connectez-vous pour acheter",
-    "signInLead": "Packs de cartes, Seekprotocol Pass et boosts pour votre compte.",
+    "signInLead": "Packs de cartes, Season Pass et boosts pour votre compte.",
     "continueGoogle": "Continuer avec Google",
     "continueApple": "Continuer avec Apple",
     "orEmail": "ou avec un code par e-mail",
@@ -3001,7 +3001,7 @@
       "digitalDelivery": "LIVRAISON NUMÉRIQUE",
       "yourDetails": "Vos coordonnées",
       "reviewPay": "Vérifier et payer",
-      "intro": "Packs de cartes, Seekprotocol Pass et boosts pour votre compte.",
+      "intro": "Packs de cartes, Season Pass et boosts pour votre compte.",
       "contact": "Contact",
       "email": "Adresse e-mail",
       "signedInAccount": "Compte connecté",
@@ -3098,7 +3098,7 @@
     "catalogEmpty": "Aucun produit disponible pour le moment.",
     "errCatalogChanged": "Ce produit a changé. Actualisez les produits et vérifiez le prix avant de payer.",
     "catalogTitle": "Choisissez votre produit",
-    "catalogLead": "Packs de cartes, Seekprotocol Pass et boosts pour votre compte.",
+    "catalogLead": "Packs de cartes, Season Pass et boosts pour votre compte.",
     "passSeason": "Valable pour la saison actuelle. Achat unique.",
     "cardsInPacks": "5 cartes par pack",
     "recipientPrompt": "Quel compte doit recevoir votre achat ?",
@@ -3120,7 +3120,11 @@
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
-      "spawn_lure": "Spawn Lure"
+      "spawn_lure": "Spawn Lure",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
     },
     "cart": {
       "add": "Ajouter {product} au panier",
@@ -3131,6 +3135,56 @@
       "empty": "Votre panier est vide. Ajoutez un ou plusieurs produits ci-dessus.",
       "conversion": "Les produits dans différentes devises sont convertis en un total en USD lors du paiement."
     },
-    "errCart": "Vérifiez les quantités du panier. Vous pouvez acheter jusqu’à 50 paquets de cartes et un Pass par commande."
+    "errCart": "Vérifiez les quantités du panier. Vous pouvez acheter jusqu’à 50 paquets de cartes et un Pass par commande.",
+    "login": {
+      "heading": "Connectez-vous avec votre compte de l’application",
+      "existingOnly": "Utilisez la même méthode de connexion que dans l’application Seekprotocol. La boutique est réservée aux comptes existants.",
+      "methods": "Méthodes de connexion",
+      "continueWith": "Continuer avec {provider}",
+      "notAvailable": "Indisponible pour le moment",
+      "unavailable": "Cette méthode est indisponible. Réessayez plus tard ou utilisez une autre méthode déjà liée à votre compte dans l’application.",
+      "methodsFailed": "Certaines méthodes de connexion n’ont pas pu être chargées.",
+      "orEmail": "ou connectez-vous par e-mail",
+      "emailMethod": "Connexion par e-mail",
+      "emailCode": "Code par e-mail",
+      "signIn": "Se connecter",
+      "emailNotSent": "Le code n’a pas pu être envoyé. Utilisez l’e-mail de votre compte existant et réessayez.",
+      "appRequired": "Un compte existant dans l’application est nécessaire. Créez votre compte ou terminez sa configuration dans l’application Seekprotocol, puis revenez ici.",
+      "noAccount": "Pas encore de compte ? Créez-en un dans l’application Seekprotocol. L’inscription n’est pas possible dans la boutique.",
+      "changeAccount": "Utiliser un autre compte",
+      "expired": "Cette tentative de connexion a expiré. Recommencez depuis la boutique.",
+      "wallet": "Continuer avec un portefeuille Solana",
+      "connectWallet": "Connecter le portefeuille",
+      "walletSignIn": "Se connecter avec ce portefeuille",
+      "walletSigning": "Confirmez dans votre portefeuille…",
+      "changeWallet": "Choisir un autre portefeuille",
+      "walletCannotSign": "Ce portefeuille ne peut pas signer de message de connexion. Choisissez un autre portefeuille lié à votre compte.",
+      "walletFailed": "La connexion a échoué ou a été annulée. Réessayez avec un portefeuille lié à votre compte.",
+      "emailHelp": "Nous vous enverrons un code de connexion. Utilisez l’adresse e-mail de votre compte dans l’application."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Faites de belles découvertes. Les pièces rares, épiques et légendaires apparaissent plus souvent pendant 30 minutes.",
+      "coin_magnet": "Plus de découvertes pendant votre balade. Davantage de pièces apparaissent à proximité pendant 30 minutes.",
+      "to_the_moon": "Profitez de chaque tentative. Gagnez 3× plus d’XP lors de vos tentatives de capture de pièces pendant 30 minutes.",
+      "pump_it": "Donnez un coup de pouce à votre chasse. Vos chances de capturer des pièces augmentent de 35 % pendant 30 minutes, sans garantie de réussite.",
+      "diamond_hands": "Une pièce vous fait envie ? Assurez votre prochaine capture dans la minute qui suit l’activation.",
+      "spawn_lure": "Attirez la chasse à vous. Faites apparaître des pièces pour les joueurs à proximité pendant 30 minutes. Il faut appartenir à un clan.",
+      "cash": "Faites compter vos réussites. Gagnez 2× plus d’XP en capturant des pièces pendant 15 minutes.",
+      "fitness": "Voyez un peu plus loin. Capturez des pièces jusqu’à 60 mètres pendant 15 minutes.",
+      "chill_guy": "Gardez votre élan. Les captures réussies ne réduisent plus vos chances suivantes pendant 15 minutes.",
+      "this_is_fine": "Une seconde chance au bon moment. Sauve une capture ratée dans les 15 minutes suivant l’activation."
+    },
+    "productInfo": {
+      "more": "À propos de ce produit",
+      "includes": "Ce que vous recevez",
+      "use": "Comment l’utiliser",
+      "pack": "Chaque pack contient 5 cartes Arena aléatoires. Ouvrez vos packs dans Arena, dans l’app, pour découvrir vos cartes. Des doublons sont possibles ; aucune carte précise n’est garantie.",
+      "pass": "Rencontrez plus de pièces rares, épiques et légendaires pendant la saison en cours et réclamez une pièce rare chaque semaine dans l’app. Le pass prend fin avec la saison, sans renouvellement automatique.",
+      "bundle": "Les boosts indiqués sont ajoutés séparément à votre inventaire. Choisissez lequel activer en premier ; leurs effets ne s’appliquent pas simultanément.",
+      "delivery": "Après confirmation du paiement, l’achat est livré au compte SeekAR choisi. Sans Friends ID, il est attribué au compte de l’app associé à votre connexion.",
+      "passName": "Pass saisonnier",
+      "bundleName": "Pack de boosts",
+      "activate": "Ajouté à votre inventaire après l’achat. Activez-le dans la boutique de l’app quand vous le souhaitez. Un seul boost peut être actif."
+    }
   }
 }

@@ -101,8 +101,8 @@ export function CheckoutLayout({products,catalogFailed=false,catalogNotice,items
       {!items.length && <p className="checkout-hint">{t("cart.empty")}</p>}
       {items.map(({product,quantity})=><div className="checkout-line-item" key={product.id}>
         <div className="checkout-item-art" data-kind={product.kind}><ProductArt product={product}/></div>
-        <div><strong>{productName(product,n=>t("packs",{count:n}))}</strong><small>{formatPrice(product,locale)} × {quantity}</small>
-          <div className="shop-cart-quantity" role="group" aria-label={t("cart.quantity",{product:productName(product,n=>t("packs",{count:n}))})}>
+        <div><strong>{productName(product,t)}</strong><small>{formatPrice(product,locale)} × {quantity}</small>
+          <div className="shop-cart-quantity" role="group" aria-label={t("cart.quantity",{product:productName(product,t)})}>
             <button type="button" disabled={locked} aria-label={t("cart.decrease")} onClick={()=>{onQuantity(product,quantity-1);changeDetails();}}>−</button>
             <span aria-live="polite">{quantity}</span>
             <button type="button" disabled={locked || !canSetQuantity(items,product,quantity+1)} aria-label={t("cart.increase")} onClick={()=>{onQuantity(product,quantity+1);changeDetails();}}>+</button>

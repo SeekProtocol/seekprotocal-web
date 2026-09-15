@@ -1,0 +1,199 @@
+{
+  "coin_magnet": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/coin_magnet.glb",
+    "sha256": "896a70d0715c42c2c31aa1ff44f8648003d41956e0dbf24082aa79c3724609aa",
+    "bytes": 1045392,
+    "output": "coin_magnet.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 45,
+    "map_rotation": [
+      90,
+      0,
+      0
+    ],
+    "hidden_meshes": [],
+    "idle_clip": null,
+    "png_sha256": "0850d29459603fe9a08622da1d38a1f06483874ab6643757b2abef0781229c9d"
+  },
+  "diamond_hands": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/diamond_hands.glb",
+    "sha256": "76665c7bb30159562b76d490855cbb9187eb9d367227de88d97e0d89e3218416",
+    "bytes": 925896,
+    "output": "diamond_hands.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 0,
+    "map_rotation": [
+      90,
+      0,
+      0
+    ],
+    "hidden_meshes": [
+      "hodl001",
+      "hodl002"
+    ],
+    "idle_clip": null,
+    "png_sha256": "5915ac759cc736bfa3299de5fd18b54a4474204bb2da7fe143041e2645067c28"
+  },
+  "pump_it": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/pump_it.glb",
+    "sha256": "18f5c77aabe799223eec4d2af573537031b439e52839885d2e9973427d3f1f3d",
+    "bytes": 1783952,
+    "output": "pump_it.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 0,
+    "map_rotation": [
+      90,
+      0,
+      0
+    ],
+    "hidden_meshes": [],
+    "idle_clip": null,
+    "png_sha256": "d3a33fbc839dcdcb77e464f70a34bf49e81fc29b67dd6b1a98f5ead65a4eff5e"
+  },
+  "to_the_moon": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/to_the_moon.glb",
+    "sha256": "44bc7c3dceffbbcc0e125e35bf9b625d5ee30b49d5230be7b51221ec6bff55ad",
+    "bytes": 1556076,
+    "output": "to_the_moon.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 0,
+    "map_rotation": [
+      -96.06,
+      -14.46,
+      160.06
+    ],
+    "hidden_meshes": [],
+    "idle_clip": "Bitcoin_Rig|Scene.002",
+    "png_sha256": "a366bea2e59378dc0bcb5a17db9d1dab0277effa2373b29b945ffff93c35b014"
+  },
+  "cash": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/cash.glb",
+    "sha256": "89cf8672b5035c9c350f110889370ec7b59db856330893d7700ec52a8effae01",
+    "bytes": 1534220,
+    "output": "cash.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 0,
+    "map_rotation": [
+      90,
+      0,
+      0
+    ],
+    "hidden_meshes": [],
+    "idle_clip": null,
+    "png_sha256": "235f4589c82e19f488c00c0f20217cd6547f4cb565a584b03e4c7041c91a5040"
+  },
+  "whale": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/whale.glb",
+    "sha256": "241d00d0096445513cf5a7fbb038656d48ba6358f7858b63b55d04e8c9933ac9",
+    "bytes": 658676,
+    "output": "whale.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 0,
+    "map_rotation": [
+      90,
+      225,
+      0
+    ],
+    "hidden_meshes": [
+      "Esfera_UV"
+    ],
+    "idle_clip": null,
+    "png_sha256": "c9529e437b635353c56aea9defc5959e2adba478c801e766048f2e78e37c4506"
+  },
+  "fitness": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/fitness.glb",
+    "sha256": "8b3bb11604c70e16896f624570551280dc7d3cfbe1a1bbe33ae030319d9a8a8d",
+    "bytes": 693740,
+    "output": "fitness.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 180,
+    "map_rotation": [
+      90,
+      0,
+      0
+    ],
+    "hidden_meshes": [],
+    "idle_clip": null,
+    "png_sha256": "af29d3f9a81118e30e1c62d665da4d7a7711a779e5f050d3e83ca29e3300e80d"
+  },
+  "shiba": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/shiba.glb",
+    "sha256": "c77b2176fe13ed682cafa89eb9c1aedf523f68c2ee8efa8ac10c9125c5277049",
+    "bytes": 2408276,
+    "output": "shiba.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 0,
+    "map_rotation": [
+      90,
+      0,
+      0
+    ],
+    "hidden_meshes": [
+      "Plane002"
+    ],
+    "idle_clip": null,
+    "png_sha256": "9be6183e2b71fe334421ecc78caffdd5066a8f8e4086b05a75b45c0603686768"
+  },
+  "chill_guy": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/chill_guy.glb",
+    "sha256": "a5cfed383a7fa18b2ae0e42a9955573a12a46a4ea169b5a4def58ea8ae0883e8",
+    "bytes": 3451908,
+    "output": "chill_guy.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 0,
+    "map_rotation": [
+      90,
+      0,
+      0
+    ],
+    "hidden_meshes": [],
+    "idle_clip": null,
+    "png_sha256": "d330c756374631e5338b2e353ee2791a265e2b4aa4795dd58236e3a55c7e55f1"
+  },
+  "this_is_fine": {
+    "source": "https://ukoqxyoogjouhdqhtiei.supabase.co/storage/v1/object/public/assets/powerups/this_is_fine.glb",
+    "sha256": "9ed5d20568d415855a95d50e468fbb8cda216ae2e4ac88b3e4c3044af346f426",
+    "bytes": 2001616,
+    "output": "this_is_fine.png",
+    "size": [
+      512,
+      512
+    ],
+    "rotation_offset": 0,
+    "map_rotation": [
+      90,
+      0,
+      0
+    ],
+    "hidden_meshes": [],
+    "idle_clip": null,
+    "png_sha256": "9a35464661a2989897cfee6235a1bbe6c7eea91dd0d90184e49239c57a7a303a"
+  }
+}

@@ -728,7 +728,7 @@
           "body": "Aangemaakt vanuit een social login, zodat je binnen een minuut na installeren al kunt verzamelen. Exporteer de sleutel wanneer je zelf het beheer wilt."
         },
         {
-          "title": "Seekprotocol Pass",
+          "title": "Season Pass",
           "body": "Een seizoenstraject met beloningen dat naast het gewone spel meeloopt, met een gratis en een betaalde variant."
         },
         {
@@ -2245,8 +2245,8 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "Seekprotocol Pass",
-                "value": "€ 8,99 per seizoen van 90 dagen"
+                "label": "Season Pass",
+                "value": "€ 9,95 per seizoen van 90 dagen"
               },
               {
                 "label": "Zeldzaamheidsboost, spawnmagneet",
@@ -2880,11 +2880,11 @@
   },
   "shop": {
     "metaTitle": "Seekprotocol Shop",
-    "metaDescription": "Kaartpacks, de Seekprotocol Pass en boosts voor je account.",
+    "metaDescription": "Kaartpacks, de Season Pass en boosts voor je account.",
     "ogTitle": "Seekprotocol Shop",
     "eyebrow": "Shop",
     "title": "Seekprotocol Shop",
-    "lead": "Kaartpacks, de Seekprotocol Pass en boosts voor je account.",
+    "lead": "Kaartpacks, de Season Pass en boosts voor je account.",
     "howEyebrow": "Zo werkt het",
     "stepSignIn": "Inloggen",
     "stepSignInBody": "Hetzelfde account als in de app: Google, Apple of een code per e-mail.",
@@ -2895,7 +2895,7 @@
     "notConfigured": "De shop is op deze omgeving niet geconfigureerd.",
     "loadingAccount": "Je sessie wordt gecontroleerd...",
     "signInTitle": "Log in om te kopen",
-    "signInLead": "Kaartpacks, de Seekprotocol Pass en boosts voor je account.",
+    "signInLead": "Kaartpacks, de Season Pass en boosts voor je account.",
     "continueGoogle": "Doorgaan met Google",
     "continueApple": "Doorgaan met Apple",
     "orEmail": "of met een code per e-mail",
@@ -3001,7 +3001,7 @@
       "digitalDelivery": "DIGITALE LEVERING",
       "yourDetails": "Je bestelgegevens",
       "reviewPay": "Controleren & betalen",
-      "intro": "Kaartpacks, de Seekprotocol Pass en boosts voor je account.",
+      "intro": "Kaartpacks, de Season Pass en boosts voor je account.",
       "contact": "Contact",
       "email": "E-mailadres",
       "signedInAccount": "Ingelogd account",
@@ -3098,7 +3098,7 @@
     "catalogEmpty": "Er zijn momenteel geen producten beschikbaar.",
     "errCatalogChanged": "Dit product is gewijzigd. Vernieuw de producten en controleer de prijs voordat je betaalt.",
     "catalogTitle": "Kies je product",
-    "catalogLead": "Kaartpacks, de Seekprotocol Pass en boosts voor je account.",
+    "catalogLead": "Kaartpacks, de Season Pass en boosts voor je account.",
     "passSeason": "Geldig voor het huidige seizoen. Eenmalige aankoop.",
     "cardsInPacks": "5 kaarten per pack",
     "recipientPrompt": "Welk account krijgt je aankoop?",
@@ -3120,7 +3120,11 @@
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
-      "spawn_lure": "Spawn Lure"
+      "spawn_lure": "Spawn Lure",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
     },
     "cart": {
       "add": "Voeg {product} toe aan winkelmandje",
@@ -3131,6 +3135,56 @@
       "empty": "Je winkelmandje is leeg. Voeg hierboven één of meer producten toe.",
       "conversion": "Producten met verschillende valuta worden bij het afrekenen omgerekend naar één totaal in USD."
     },
-    "errCart": "Controleer de aantallen in je winkelmandje. Je kunt maximaal 50 kaartpakketten en één Pass per bestelling kopen."
+    "errCart": "Controleer de aantallen in je winkelmandje. Je kunt maximaal 50 kaartpakketten en één Pass per bestelling kopen.",
+    "login": {
+      "heading": "Log in met je app-account",
+      "existingOnly": "Gebruik dezelfde inlogmethode als in de Seekprotocol-app. De shop is alleen voor bestaande app-accounts.",
+      "methods": "Inlogmethoden",
+      "continueWith": "Doorgaan met {provider}",
+      "notAvailable": "Tijdelijk niet beschikbaar",
+      "unavailable": "Deze inlogmethode is nu niet beschikbaar. Probeer het later opnieuw of gebruik een andere methode die al aan je app-account is gekoppeld.",
+      "methodsFailed": "Niet alle inlogmethoden konden worden geladen.",
+      "orEmail": "of log in met e-mail",
+      "emailMethod": "Inloggen met e-mail",
+      "emailCode": "E-mailcode",
+      "signIn": "Inloggen",
+      "emailNotSent": "De code kon niet worden verstuurd. Gebruik het e-mailadres van je bestaande app-account en probeer opnieuw.",
+      "appRequired": "Je hebt een bestaand app-account nodig om de shop te gebruiken. Maak je account aan of rond het instellen af in de Seekprotocol-app en kom daarna terug.",
+      "noAccount": "Nog geen app-account? Maak er een aan in de Seekprotocol-app. Je kunt je niet registreren in de shop.",
+      "changeAccount": "Ander account gebruiken",
+      "expired": "Deze inlogpoging is verlopen. Begin opnieuw vanuit de shop.",
+      "wallet": "Doorgaan met Solana-wallet",
+      "connectWallet": "Wallet verbinden",
+      "walletSignIn": "Inloggen met deze wallet",
+      "walletSigning": "Bevestig in je wallet…",
+      "changeWallet": "Andere wallet kiezen",
+      "walletCannotSign": "Deze wallet kan geen inlogbericht ondertekenen. Kies een andere wallet die aan je app-account is gekoppeld.",
+      "walletFailed": "Inloggen met je wallet is niet gelukt of is geannuleerd. Probeer opnieuw met een wallet die aan je app-account is gekoppeld.",
+      "emailHelp": "We sturen je een inlogcode. Gebruik het e-mailadres van je app-account."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Ga op zoek naar bijzondere vondsten. Zeldzame, epische en legendarische munten verschijnen 30 minuten lang vaker.",
+      "coin_magnet": "Meer te ontdekken tijdens je wandeling. Er verschijnen 30 minuten lang meer munten in je buurt.",
+      "to_the_moon": "Elke poging telt. Verdien 30 minuten lang 3× XP bij elke vangpoging.",
+      "pump_it": "Geef je volgende jacht een zetje. Je vangkans voor munten stijgt 30 minuten lang met 35%; succes is niet gegarandeerd.",
+      "diamond_hands": "Een munt gezien die je echt wilt? Stel je volgende muntvangst veilig binnen 1 minuut na activering.",
+      "spawn_lure": "Breng de jacht naar jouw plek. Trek 30 minuten lang munten aan voor spelers in de buurt. Je moet lid zijn van een clan.",
+      "cash": "Laat geslaagde vangsten extra tellen. Verdien 15 minuten lang 2× XP als je een munt vangt.",
+      "fitness": "Reik net wat verder. Vang 15 minuten lang munten op maximaal 60 meter afstand.",
+      "chill_guy": "Houd je reeks vast. Geslaagde vangsten verlagen 15 minuten lang niet je kans op de volgende vangst.",
+      "this_is_fine": "Een tweede kans als het tegenzit. Redt één mislukte muntvangst, binnen 15 minuten na activering."
+    },
+    "productInfo": {
+      "more": "Over dit product",
+      "includes": "Dit krijg je",
+      "use": "Zo gebruik je het",
+      "pack": "Elk pack bevat 5 willekeurige Arena-kaarten. Open je packs in Arena in de app en ontdek welke kaarten je hebt gekregen. Dubbele kaarten zijn mogelijk; een specifieke kaart is niet gegarandeerd.",
+      "pass": "Kom dit seizoen vaker zeldzame, epische en legendarische munten tegen en claim elke week een zeldzame munt in de app. De Pass loopt tot het einde van het huidige seizoen en wordt niet automatisch verlengd.",
+      "bundle": "De genoemde boosters komen apart in je voorraad. Kies zelf welke je eerst activeert; hun effecten werken niet tegelijk.",
+      "delivery": "Na bevestiging van de betaling leveren we aan je gekozen SeekAR-account. Zonder Friends ID gaat je aankoop naar het appaccount dat aan je login is gekoppeld.",
+      "passName": "Seizoenspas",
+      "bundleName": "Boostbundel",
+      "activate": "Na aankoop staat de booster in je voorraad. Activeer hem in de winkel in de app wanneer je wilt. Er kan één booster tegelijk actief zijn."
+    }
   }
 }

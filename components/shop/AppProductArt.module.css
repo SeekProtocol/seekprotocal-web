@@ -1,0 +1,45 @@
+.frame {
+  display: grid;
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.frame .boost {
+  display: block;
+  width: auto;
+  height: 100%;
+  aspect-ratio: 1;
+  max-width: 100%;
+  min-height: 0;
+  object-fit: contain;
+  border-radius: 16%;
+}
+
+.bundle { display: flex; justify-content: center; gap: .375rem; max-width: 240px; }
+.bundle .bundleItem {
+  flex: 1;
+  min-width: 0;
+  width: 0;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 16%;
+}
+
+.frame .pass {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 260px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+:global(.checkout-item-art) > .frame {
+  height: auto;
+  aspect-ratio: 240 / 176;
+}

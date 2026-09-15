@@ -728,7 +728,7 @@
           "body": "Aus einem Social Login erstellt, sodass du innerhalb einer Minute nach der Installation sammeln kannst. Exportiere den Schlüssel, wann immer du die Verwahrung selbst willst."
         },
         {
-          "title": "Seekprotocol Pass",
+          "title": "Season Pass",
           "body": "Ein saisonaler Belohnungspfad, der neben dem normalen Spiel läuft, mit einer kostenlosen und einer bezahlten Stufe."
         },
         {
@@ -2245,8 +2245,8 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "Seekprotocol Pass",
-                "value": "8,99 € je 90-Tage-Saison"
+                "label": "Season Pass",
+                "value": "9,95 € je 90-Tage-Saison"
               },
               {
                 "label": "Seltenheitsboost, Spawn-Magnet",
@@ -2880,11 +2880,11 @@
   },
   "shop": {
     "metaTitle": "Seekprotocol Shop",
-    "metaDescription": "Kartenpacks, der Seekprotocol Pass und Boosts für dein Konto.",
+    "metaDescription": "Kartenpacks, der Season Pass und Boosts für dein Konto.",
     "ogTitle": "Seekprotocol Shop",
     "eyebrow": "Shop",
     "title": "Seekprotocol Shop",
-    "lead": "Kartenpacks, der Seekprotocol Pass und Boosts für dein Konto.",
+    "lead": "Kartenpacks, der Season Pass und Boosts für dein Konto.",
     "howEyebrow": "So funktioniert es",
     "stepSignIn": "Anmelden",
     "stepSignInBody": "Dasselbe Konto wie in der App: Google, Apple oder ein Code per E-Mail.",
@@ -2895,7 +2895,7 @@
     "notConfigured": "Der Shop ist auf dieser Umgebung nicht konfiguriert.",
     "loadingAccount": "Sitzung wird geprüft...",
     "signInTitle": "Zum Kaufen anmelden",
-    "signInLead": "Kartenpacks, der Seekprotocol Pass und Boosts für dein Konto.",
+    "signInLead": "Kartenpacks, der Season Pass und Boosts für dein Konto.",
     "continueGoogle": "Weiter mit Google",
     "continueApple": "Weiter mit Apple",
     "orEmail": "oder mit einem Code per E-Mail",
@@ -3001,7 +3001,7 @@
       "digitalDelivery": "DIGITALE LIEFERUNG",
       "yourDetails": "Deine Bestellangaben",
       "reviewPay": "Prüfen & bezahlen",
-      "intro": "Kartenpacks, der Seekprotocol Pass und Boosts für dein Konto.",
+      "intro": "Kartenpacks, der Season Pass und Boosts für dein Konto.",
       "contact": "Kontakt",
       "email": "E-Mail-Adresse",
       "signedInAccount": "Angemeldetes Konto",
@@ -3098,7 +3098,7 @@
     "catalogEmpty": "Derzeit sind keine Produkte verfügbar.",
     "errCatalogChanged": "Dieses Produkt wurde geändert. Lade die Produkte neu und prüfe den Preis vor der Zahlung.",
     "catalogTitle": "Wähle dein Produkt",
-    "catalogLead": "Kartenpacks, der Seekprotocol Pass und Boosts für dein Konto.",
+    "catalogLead": "Kartenpacks, der Season Pass und Boosts für dein Konto.",
     "passSeason": "Gültig für die aktuelle Saison. Einmaliger Kauf.",
     "cardsInPacks": "5 Karten pro Pack",
     "recipientPrompt": "Welches Konto soll deinen Kauf erhalten?",
@@ -3120,7 +3120,11 @@
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
-      "spawn_lure": "Spawn Lockstoff"
+      "spawn_lure": "Spawn Lockstoff",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
     },
     "cart": {
       "add": "{product} zum Warenkorb hinzufügen",
@@ -3131,6 +3135,56 @@
       "empty": "Dein Warenkorb ist leer. Füge oben ein oder mehrere Produkte hinzu.",
       "conversion": "Produkte in verschiedenen Währungen werden beim Bezahlen in einen Gesamtbetrag in USD umgerechnet."
     },
-    "errCart": "Prüfe die Mengen im Warenkorb. Pro Bestellung sind bis zu 50 Kartenpakete und ein Pass möglich."
+    "errCart": "Prüfe die Mengen im Warenkorb. Pro Bestellung sind bis zu 50 Kartenpakete und ein Pass möglich.",
+    "login": {
+      "heading": "Mit deinem App-Konto anmelden",
+      "existingOnly": "Verwende dieselbe Anmeldemethode wie in der Seekprotocol-App. Der Shop ist nur für bestehende App-Konten.",
+      "methods": "Anmeldemethoden",
+      "continueWith": "Weiter mit {provider}",
+      "notAvailable": "Derzeit nicht verfügbar",
+      "unavailable": "Diese Anmeldemethode ist derzeit nicht verfügbar. Versuche es später erneut oder nutze eine andere Methode, die bereits mit deinem App-Konto verknüpft ist.",
+      "methodsFailed": "Nicht alle Anmeldemethoden konnten geladen werden.",
+      "orEmail": "oder mit E-Mail anmelden",
+      "emailMethod": "Anmeldung per E-Mail",
+      "emailCode": "E-Mail-Code",
+      "signIn": "Anmelden",
+      "emailNotSent": "Der Code konnte nicht gesendet werden. Verwende die E-Mail deines bestehenden App-Kontos und versuche es erneut.",
+      "appRequired": "Du brauchst ein bestehendes App-Konto für den Shop. Erstelle dein Konto oder schließe die Einrichtung zuerst in der Seekprotocol-App ab und kehre dann zurück.",
+      "noAccount": "Noch kein App-Konto? Erstelle eines in der Seekprotocol-App. Im Shop ist keine Registrierung möglich.",
+      "changeAccount": "Anderes Konto verwenden",
+      "expired": "Diese Anmeldung ist abgelaufen. Starte erneut im Shop.",
+      "wallet": "Weiter mit Solana-Wallet",
+      "connectWallet": "Wallet verbinden",
+      "walletSignIn": "Mit dieser Wallet anmelden",
+      "walletSigning": "In deiner Wallet bestätigen…",
+      "changeWallet": "Andere Wallet wählen",
+      "walletCannotSign": "Diese Wallet kann keine Anmeldenachricht signieren. Wähle eine andere Wallet, die mit deinem App-Konto verknüpft ist.",
+      "walletFailed": "Die Wallet-Anmeldung ist fehlgeschlagen oder wurde abgebrochen. Versuche es erneut mit einer verknüpften Wallet.",
+      "emailHelp": "Wir senden dir einen Anmeldecode. Verwende die E-Mail-Adresse deines App-Kontos."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Entdecke besondere Funde. Seltene, epische und legendäre Coins erscheinen 30 Minuten lang häufiger.",
+      "coin_magnet": "Mehr zu entdecken bei deinem Spaziergang. In deiner Nähe erscheinen 30 Minuten lang mehr Coins.",
+      "to_the_moon": "Mach mehr aus jedem Versuch. Erhalte 30 Minuten lang 3× EP bei Coin-Fangversuchen.",
+      "pump_it": "Gib deiner Jagd Auftrieb. Deine Coin-Fangchance steigt 30 Minuten lang um 35 %; Erfolg ist nicht garantiert.",
+      "diamond_hands": "Ein Coin, den du unbedingt willst? Sichere deinen nächsten Coin-Fang innerhalb von 1 Minute nach Aktivierung.",
+      "spawn_lure": "Hol die Jagd zu dir. Locke 30 Minuten lang Coins für Spieler in der Nähe an. Clan-Mitgliedschaft erforderlich.",
+      "cash": "Lass erfolgreiche Fänge doppelt zählen. Erhalte 15 Minuten lang 2× EP für gefangene Coins.",
+      "fitness": "Greif etwas weiter. Fange 15 Minuten lang Coins aus bis zu 60 Metern Entfernung.",
+      "chill_guy": "Halte deine Serie am Laufen. Erfolgreiche Fänge senken 15 Minuten lang nicht die Chance auf den nächsten Fang.",
+      "this_is_fine": "Eine zweite Chance im richtigen Moment. Rettet einen fehlgeschlagenen Coin-Fang innerhalb von 15 Minuten nach Aktivierung."
+    },
+    "productInfo": {
+      "more": "Über dieses Produkt",
+      "includes": "Das bekommst du",
+      "use": "So verwendest du es",
+      "pack": "Jedes Pack enthält 5 zufällige Arena-Karten. Öffne deine Packs im Arena-Bereich der App und entdecke deine Karten. Doppelte Karten sind möglich; eine bestimmte Karte ist nicht garantiert.",
+      "pass": "Entdecke in der aktuellen Saison häufiger seltene, epische und legendäre Coins und hole dir jede Woche einen seltenen Coin in der App ab. Der Pass endet mit der Saison und verlängert sich nicht automatisch.",
+      "bundle": "Die aufgeführten Booster werden einzeln deinem Inventar hinzugefügt. Du entscheidest, welchen du zuerst aktivierst; ihre Effekte wirken nicht gleichzeitig.",
+      "delivery": "Nach Zahlungsbestätigung erhält dein ausgewähltes SeekAR-Konto den Kauf. Ohne Friends ID geht er an das App-Konto, das mit deiner Anmeldung verknüpft ist.",
+      "passName": "Saisonpass",
+      "bundleName": "Booster-Paket",
+      "activate": "Nach dem Kauf in deinem Inventar. Aktiviere den Booster im App-Shop, wenn du bereit bist. Nur ein Booster gleichzeitig."
+    }
   }
 }

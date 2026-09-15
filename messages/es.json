@@ -728,7 +728,7 @@
           "body": "Creada desde un inicio de sesión social, para que puedas recoger algo al minuto de instalar. Exporta la clave cuando quieras la custodia."
         },
         {
-          "title": "Seekprotocol Pass",
+          "title": "Season Pass",
           "body": "Una vía de recompensas por temporada que corre en paralelo al juego normal, con un nivel gratuito y otro de pago."
         },
         {
@@ -2245,8 +2245,8 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "Seekprotocol Pass",
-                "value": "8,99 € por temporada de 90 días"
+                "label": "Season Pass",
+                "value": "9,95 € por temporada de 90 días"
               },
               {
                 "label": "Mejora de rareza, imán de spawns",
@@ -2880,11 +2880,11 @@
   },
   "shop": {
     "metaTitle": "Seekprotocol Shop",
-    "metaDescription": "Paquetes de cartas, el Seekprotocol Pass y potenciadores para tu cuenta.",
+    "metaDescription": "Paquetes de cartas, el Season Pass y potenciadores para tu cuenta.",
     "ogTitle": "Seekprotocol Shop",
     "eyebrow": "Tienda",
     "title": "Seekprotocol Shop",
-    "lead": "Paquetes de cartas, el Seekprotocol Pass y potenciadores para tu cuenta.",
+    "lead": "Paquetes de cartas, el Season Pass y potenciadores para tu cuenta.",
     "howEyebrow": "Cómo funciona",
     "stepSignIn": "Inicia sesión",
     "stepSignInBody": "La misma cuenta que en la app: Google, Apple o un código por correo.",
@@ -2895,7 +2895,7 @@
     "notConfigured": "La tienda no está configurada en este despliegue.",
     "loadingAccount": "Comprobando tu sesión...",
     "signInTitle": "Inicia sesión para comprar",
-    "signInLead": "Paquetes de cartas, el Seekprotocol Pass y potenciadores para tu cuenta.",
+    "signInLead": "Paquetes de cartas, el Season Pass y potenciadores para tu cuenta.",
     "continueGoogle": "Continuar con Google",
     "continueApple": "Continuar con Apple",
     "orEmail": "o con un código por correo",
@@ -3001,7 +3001,7 @@
       "digitalDelivery": "ENTREGA DIGITAL",
       "yourDetails": "Tus datos de compra",
       "reviewPay": "Revisar y pagar",
-      "intro": "Paquetes de cartas, el Seekprotocol Pass y potenciadores para tu cuenta.",
+      "intro": "Paquetes de cartas, el Season Pass y potenciadores para tu cuenta.",
       "contact": "Contacto",
       "email": "Correo electrónico",
       "signedInAccount": "Cuenta conectada",
@@ -3098,7 +3098,7 @@
     "catalogEmpty": "No hay productos disponibles en este momento.",
     "errCatalogChanged": "Este producto ha cambiado. Actualiza los productos y revisa el precio antes de pagar.",
     "catalogTitle": "Elige tu producto",
-    "catalogLead": "Paquetes de cartas, el Seekprotocol Pass y potenciadores para tu cuenta.",
+    "catalogLead": "Paquetes de cartas, el Season Pass y potenciadores para tu cuenta.",
     "passSeason": "Válido para la temporada actual. Compra única.",
     "cardsInPacks": "5 cartas por paquete",
     "recipientPrompt": "¿Qué cuenta recibirá tu compra?",
@@ -3120,7 +3120,11 @@
       "to_the_moon": "XP Boost",
       "pump_it": "Dale Gas",
       "diamond_hands": "Diamond Hands",
-      "spawn_lure": "Cebo de Spawn"
+      "spawn_lure": "Cebo de Spawn",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
     },
     "cart": {
       "add": "Añadir {product} al carrito",
@@ -3131,6 +3135,56 @@
       "empty": "Tu carrito está vacío. Añade uno o varios productos arriba.",
       "conversion": "Los productos en distintas monedas se convierten en un total en USD al pagar."
     },
-    "errCart": "Revisa las cantidades del carrito. Puedes comprar hasta 50 paquetes de cartas y un Pass por pedido."
+    "errCart": "Revisa las cantidades del carrito. Puedes comprar hasta 50 paquetes de cartas y un Pass por pedido.",
+    "login": {
+      "heading": "Inicia sesión con tu cuenta de la app",
+      "existingOnly": "Usa el mismo método de acceso que en la app Seekprotocol. La tienda es solo para cuentas existentes de la app.",
+      "methods": "Métodos de acceso",
+      "continueWith": "Continuar con {provider}",
+      "notAvailable": "No disponible temporalmente",
+      "unavailable": "Este método no está disponible. Inténtalo más tarde o usa otro método ya vinculado a tu cuenta de la app.",
+      "methodsFailed": "No se pudieron cargar todos los métodos de acceso.",
+      "orEmail": "o accede con tu correo",
+      "emailMethod": "Acceso por correo electrónico",
+      "emailCode": "Código por correo",
+      "signIn": "Iniciar sesión",
+      "emailNotSent": "No se pudo enviar el código. Usa el correo de tu cuenta existente y vuelve a intentarlo.",
+      "appRequired": "Necesitas una cuenta existente de la app para usar la tienda. Crea tu cuenta o termina de configurarla en la app Seekprotocol y vuelve aquí.",
+      "noAccount": "¿Aún no tienes cuenta? Créala en la app Seekprotocol. No puedes registrarte en la tienda.",
+      "changeAccount": "Usar otra cuenta",
+      "expired": "Este intento de acceso ha caducado. Empieza de nuevo desde la tienda.",
+      "wallet": "Continuar con una wallet Solana",
+      "connectWallet": "Conectar wallet",
+      "walletSignIn": "Acceder con esta wallet",
+      "walletSigning": "Confirma en tu wallet…",
+      "changeWallet": "Elegir otra wallet",
+      "walletCannotSign": "Esta wallet no puede firmar mensajes de acceso. Elige otra wallet vinculada a tu cuenta.",
+      "walletFailed": "El acceso con la wallet falló o se canceló. Inténtalo de nuevo con una wallet vinculada a tu cuenta.",
+      "emailHelp": "Te enviaremos un código de acceso. Usa el correo de tu cuenta de la app."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Encuentra algo especial. Las monedas raras, épicas y legendarias aparecen más a menudo durante 30 minutos.",
+      "coin_magnet": "Más por descubrir en tu paseo. Aparecen más monedas cerca de ti durante 30 minutos.",
+      "to_the_moon": "Aprovecha cada intento. Gana el triple de EXP al intentar capturar monedas durante 30 minutos.",
+      "pump_it": "Dale impulso a tu búsqueda. Tu probabilidad de capturar monedas aumenta un 35 % durante 30 minutos; el éxito no está garantizado.",
+      "diamond_hands": "¿Has visto una moneda que quieres? Asegura tu próxima captura en el minuto siguiente a la activación.",
+      "spawn_lure": "Trae la búsqueda hasta ti. Atrae monedas para los jugadores cercanos durante 30 minutos. Debes pertenecer a un clan.",
+      "cash": "Haz que tus aciertos valgan más. Gana el doble de EXP al capturar monedas durante 15 minutos.",
+      "fitness": "Llega un poco más lejos. Captura monedas a hasta 60 metros durante 15 minutos.",
+      "chill_guy": "Mantén tu racha. Las capturas exitosas no reducen tu siguiente probabilidad de captura durante 15 minutos.",
+      "this_is_fine": "Una segunda oportunidad cuando hace falta. Salva una captura fallida dentro de los 15 minutos posteriores a la activación."
+    },
+    "productInfo": {
+      "more": "Sobre este producto",
+      "includes": "Qué recibes",
+      "use": "Cómo usarlo",
+      "pack": "Cada pack contiene 5 cartas aleatorias de Arena. Abre tus packs en Arena dentro de la app para descubrir tus cartas. Puede haber duplicados; no se garantiza ninguna carta concreta.",
+      "pass": "Encuentra más monedas raras, épicas y legendarias durante la temporada actual y reclama una moneda rara cada semana en la app. El pase termina al acabar la temporada y no se renueva automáticamente.",
+      "bundle": "Los potenciadores indicados se añaden por separado a tu inventario. Elige cuál activar primero; sus efectos no se aplican al mismo tiempo.",
+      "delivery": "Se entrega a la cuenta de SeekAR elegida tras confirmar el pago. Sin Friends ID, la compra va a la cuenta de la app vinculada a tu inicio de sesión.",
+      "passName": "Pase de temporada",
+      "bundleName": "Paquete de potenciadores",
+      "activate": "Se añade a tu inventario al comprarlo. Actívalo en la tienda de la app cuando quieras. Solo puede haber un potenciador activo."
+    }
   }
 }

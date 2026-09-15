@@ -728,7 +728,7 @@
           "body": "Bir sosyal girişten oluşturulur; böylece kurmadan bir dakika içinde toplayabilirsin. Sahipliği istediğinde anahtarı dışa aktar."
         },
         {
-          "title": "Seekprotocol Pass",
+          "title": "Season Pass",
           "body": "Normal oyunun yanında ilerleyen bir sezon ödül parkuru; ücretsiz ve ücretli katmanı vardır."
         },
         {
@@ -2245,8 +2245,8 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "Seekprotocol Pass",
-                "value": "90 günlük sezon başına €8,99"
+                "label": "Season Pass",
+                "value": "90 günlük sezon başına €9,95"
               },
               {
                 "label": "Nadir boost, spawn magnet",
@@ -2880,11 +2880,11 @@
   },
   "shop": {
     "metaTitle": "Seekprotocol Shop",
-    "metaDescription": "Hesabın için kart paketleri, Seekprotocol Pass ve güçlendirmeler.",
+    "metaDescription": "Hesabın için kart paketleri, Season Pass ve güçlendirmeler.",
     "ogTitle": "Seekprotocol Shop",
     "eyebrow": "Mağaza",
     "title": "Seekprotocol Shop",
-    "lead": "Hesabın için kart paketleri, Seekprotocol Pass ve güçlendirmeler.",
+    "lead": "Hesabın için kart paketleri, Season Pass ve güçlendirmeler.",
     "howEyebrow": "Nasıl çalışır",
     "stepSignIn": "Giriş yap",
     "stepSignInBody": "Uygulamadakiyle aynı hesap: Google, Apple veya e-posta ile kod.",
@@ -2895,7 +2895,7 @@
     "notConfigured": "Bu dağıtımda mağaza yapılandırılmamış.",
     "loadingAccount": "Oturumun kontrol ediliyor...",
     "signInTitle": "Satın almak için giriş yap",
-    "signInLead": "Hesabın için kart paketleri, Seekprotocol Pass ve güçlendirmeler.",
+    "signInLead": "Hesabın için kart paketleri, Season Pass ve güçlendirmeler.",
     "continueGoogle": "Google ile devam et",
     "continueApple": "Apple ile devam et",
     "orEmail": "veya e-posta ile gelen kodla",
@@ -3001,7 +3001,7 @@
       "digitalDelivery": "DİJİTAL TESLİMAT",
       "yourDetails": "Sipariş bilgileriniz",
       "reviewPay": "Kontrol et ve öde",
-      "intro": "Hesabın için kart paketleri, Seekprotocol Pass ve güçlendirmeler.",
+      "intro": "Hesabın için kart paketleri, Season Pass ve güçlendirmeler.",
       "contact": "İletişim",
       "email": "E-posta adresi",
       "signedInAccount": "Giriş yapılan hesap",
@@ -3098,7 +3098,7 @@
     "catalogEmpty": "Şu anda mevcut ürün yok.",
     "errCatalogChanged": "Bu ürün değişti. Ödeme yapmadan önce ürünleri yenileyip fiyatı kontrol edin.",
     "catalogTitle": "Ürününü seç",
-    "catalogLead": "Hesabın için kart paketleri, Seekprotocol Pass ve güçlendirmeler.",
+    "catalogLead": "Hesabın için kart paketleri, Season Pass ve güçlendirmeler.",
     "passSeason": "Mevcut sezon için geçerli. Tek seferlik satın alma.",
     "cardsInPacks": "Paket başına 5 kart",
     "recipientPrompt": "Satın aldıkların hangi hesaba gönderilsin?",
@@ -3120,7 +3120,11 @@
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
-      "spawn_lure": "Spawn Yemi"
+      "spawn_lure": "Spawn Yemi",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
     },
     "cart": {
       "add": "{product} ürününü sepete ekle",
@@ -3131,6 +3135,56 @@
       "empty": "Sepetiniz boş. Yukarıdan bir veya daha fazla ürün ekleyin.",
       "conversion": "Farklı para birimlerindeki ürünler ödeme sırasında tek bir USD toplamına çevrilir."
     },
-    "errCart": "Sepetteki adetleri kontrol edin. Bir siparişte en fazla 50 kart paketi ve bir Pass satın alabilirsiniz."
+    "errCart": "Sepetteki adetleri kontrol edin. Bir siparişte en fazla 50 kart paketi ve bir Pass satın alabilirsiniz.",
+    "login": {
+      "heading": "Uygulama hesabınla giriş yap",
+      "existingOnly": "Seekprotocol uygulamasındaki giriş yöntemini kullan. Mağaza yalnızca mevcut uygulama hesapları içindir.",
+      "methods": "Giriş yöntemleri",
+      "continueWith": "{provider} ile devam et",
+      "notAvailable": "Geçici olarak kullanılamıyor",
+      "unavailable": "Bu giriş yöntemi şu anda kullanılamıyor. Daha sonra tekrar dene veya hesabına zaten bağlı başka bir yöntem kullan.",
+      "methodsFailed": "Bazı giriş yöntemleri yüklenemedi.",
+      "orEmail": "veya e-postayla giriş yap",
+      "emailMethod": "E-posta giriş yöntemi",
+      "emailCode": "E-posta kodu",
+      "signIn": "Giriş yap",
+      "emailNotSent": "Kod gönderilemedi. Mevcut uygulama hesabının e-postasıyla tekrar dene.",
+      "appRequired": "Mağazayı kullanmak için mevcut bir uygulama hesabın olmalı. Önce Seekprotocol uygulamasında hesabını oluştur veya kurulumunu tamamla, sonra buraya dön.",
+      "noAccount": "Henüz uygulama hesabın yok mu? Seekprotocol uygulamasında oluştur. Mağazada kayıt olamazsın.",
+      "changeAccount": "Başka hesap kullan",
+      "expired": "Bu giriş denemesinin süresi doldu. Mağazadan yeniden başla.",
+      "wallet": "Solana cüzdanıyla devam et",
+      "connectWallet": "Cüzdanı bağla",
+      "walletSignIn": "Bu cüzdanla giriş yap",
+      "walletSigning": "Cüzdanında onayla…",
+      "changeWallet": "Başka cüzdan seç",
+      "walletCannotSign": "Bu cüzdan giriş mesajı imzalayamıyor. Uygulama hesabına bağlı başka bir cüzdan seç.",
+      "walletFailed": "Cüzdanla giriş başarısız oldu veya iptal edildi. Hesabına bağlı bir cüzdanla tekrar dene.",
+      "emailHelp": "Sana bir giriş kodu göndereceğiz. Uygulama hesabının e-posta adresini kullan."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Daha özel keşiflere yer aç. Nadir, epik ve efsanevi coinler 30 dakika boyunca daha sık belirir.",
+      "coin_magnet": "Yürüyüşünde daha fazlasını keşfet. Yakınında 30 dakika boyunca daha fazla coin belirir.",
+      "to_the_moon": "Her denemeden daha çok kazan. 30 dakika boyunca coin yakalama denemelerinden 3 kat XP al.",
+      "pump_it": "Avına güç kat. Coin yakalama şansın 30 dakika boyunca %35 artar; başarı garanti değildir.",
+      "diamond_hands": "Çok istediğin bir coin mi gördün? Etkinleştirdikten sonraki 1 dakika içinde bir sonraki coin yakalamanı garantile.",
+      "spawn_lure": "Avı bulunduğun yere getir. 30 dakika boyunca yakındaki oyuncular için coin çek. Klan üyeliği gerekir.",
+      "cash": "Başarılı yakalamalar daha değerli olsun. 15 dakika boyunca yakaladığın coinlerden 2 kat XP al.",
+      "fitness": "Biraz daha uzağa eriş. 15 dakika boyunca 60 metreye kadar uzaktaki coinleri yakala.",
+      "chill_guy": "Başarı serini sürdür. 15 dakika boyunca başarılı yakalamalar sonraki yakalama şansını düşürmez.",
+      "this_is_fine": "İhtiyacın olduğunda ikinci bir şans. Etkinleştirmeden sonraki 15 dakika içinde bir başarısız coin yakalamayı kurtarır."
+    },
+    "productInfo": {
+      "more": "Bu ürün hakkında",
+      "includes": "Neler alırsın",
+      "use": "Nasıl kullanılır",
+      "pack": "Her paket 5 rastgele Arena kartı içerir. Kartlarını keşfetmek için uygulamada Arena bölümünden paketlerini aç. Aynı kart tekrar çıkabilir; belirli bir kart garanti edilmez.",
+      "pass": "Mevcut sezon boyunca daha fazla nadir, epik ve efsanevi coinle karşılaş ve uygulamada her hafta bir nadir coin al. Bilet mevcut sezon sonunda biter ve otomatik yenilenmez.",
+      "bundle": "Listelenen güçlendirmeler envanterine ayrı ayrı eklenir. Önce hangisini etkinleştireceğini seç; etkileri aynı anda çalışmaz.",
+      "delivery": "Ödeme onaylandıktan sonra seçtiğin SeekAR hesabına teslim edilir. Friends ID girmezsen satın aldıkların girişine bağlı uygulama hesabına gider.",
+      "passName": "Sezon Bileti",
+      "bundleName": "Güçlendirme Paketi",
+      "activate": "Satın alınca envanterine eklenir. Hazır olduğunda uygulama mağazasından etkinleştir. Aynı anda yalnızca bir güçlendirme çalışabilir."
+    }
   }
 }

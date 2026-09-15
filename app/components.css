@@ -6295,19 +6295,26 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
 /* Sign in */
 .shop-signin { max-width: 30rem; display: grid; gap: 1.25rem; }
+.shop-signin-login { width: 100%; max-width: 64rem; gap: 1.75rem; }
 .shop-signin .eyebrow { margin-bottom: 0.5rem; }
-.shop-signin-providers { display: grid; gap: 0.75rem; }
-.shop-signin-providers .btn { width: 100%; }
-.shop-signin-divider {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 0;
-  color: var(--fg-subtle);
-  font-size: 0.8125rem;
+.shop-signin-options { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; }
+.shop-signin-social, .shop-signin-email { min-width: 0; display: grid; align-content: start; gap: 1rem; }
+.shop-signin-email { border-left: 1px solid var(--line); padding-left: 2rem; }
+.shop-signin-method-heading { margin: 0 0 0.25rem; font-size: 1rem; line-height: 1.4; font-weight: 600; }
+.shop-signin-providers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; align-items: start; }
+.shop-signin-heading { font-size: 1.5rem; line-height: 1.25; margin: 0.65rem 0; }
+.shop-signin-providers .btn { display: grid; grid-template-columns: 1.25rem minmax(0, 1fr); align-content: center; width: 100%; min-width: 0; height: auto; min-height: 4.5rem; padding: 0.75rem; border-radius: 0.875rem; white-space: normal; text-align: left; justify-content: start; gap: 0.35rem 0.625rem; font-size: 0.9375rem; line-height: 1.35; }
+.shop-signin-providers .btn svg { flex-shrink: 0; }
+.shop-signin-providers .btn:disabled { opacity: 0.55; }
+.shop-provider-unavailable { grid-column: 1 / -1; font-size: 0.625rem; line-height: 1.3; font-weight: 400; }
+.shop-wallet-login { display: grid; min-width: 0; gap: 0.2rem; }
+.shop-signin-providers .shop-wallet-login-change { display: block; min-height: 0; padding: 0.5rem 0; font-size: 0.75rem; }
+.shop-login-retry { display: grid; gap: 0.3rem; }
+.shop-login-footnote { border-top: 1px solid var(--line); padding-top: 1rem; }
+@media (max-width: 47.99rem) {
+  .shop-signin-options { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .shop-signin-email { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 1.5rem; }
 }
-.shop-signin-divider::before,
-.shop-signin-divider::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .shop-code-input {
   font-family: var(--font-mono);
   font-size: 1.25rem;
@@ -6752,7 +6759,16 @@ html .wallet-adapter-modal-middle-button {
 .shop-product-card[data-selected=true] .shop-product-check { background:var(--brand); color:#fff; border-color:var(--brand); }
 .shop-product-kind { color:var(--fg-muted); font-size:.65rem; text-transform:uppercase; letter-spacing:.08em; margin-bottom:.35rem; }
 .shop-product-card > strong { font-size:.98rem; overflow-wrap:anywhere; }
-.shop-product-detail { color:var(--fg-muted); font-size:.73rem; line-height:1.6; margin-top:.5rem; margin-bottom:1.2rem; }
+.shop-product-detail { color:var(--fg-muted); font-size:.8rem; line-height:1.6; margin-top:.5rem; margin-bottom:.7rem; }
+.shop-product-info { margin-bottom:1.1rem; font-size:.8rem; line-height:1.6; overflow-wrap:anywhere; }
+.shop-product-info summary { cursor:pointer; color:var(--fg); padding:.3rem 0; }
+.shop-product-info summary:focus-visible { outline:2px solid var(--brand); outline-offset:4px; border-radius:3px; }
+.shop-product-info p, .shop-product-info dl { color:var(--fg-muted); margin:.7rem 0 0; }
+.shop-product-info dt { color:var(--fg); font-weight:600; margin-top:.7rem; }
+.shop-product-info dd { margin:0; }
+.shop-product-info ul { list-style:none; padding:0; margin:0; }
+.shop-product-info li + li { margin-top:.65rem; }
+.shop-product-info li span { display:block; margin-top:.2rem; }
 .shop-product-price { margin-top:auto; display:flex; align-items:center; flex-wrap:wrap; gap:.5rem; }
 .shop-product-price b { font-size:1.15rem; font-weight:600; }
 .shop-product-price small { font-size:.65rem; color:var(--brand); }

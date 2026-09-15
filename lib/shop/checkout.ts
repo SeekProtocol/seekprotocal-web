@@ -46,6 +46,7 @@ export type CheckoutCode =
   | "unknown_action"
   | "unknown_product"
   | "account_blocked"
+  | "app_account_required"
   | "order_unknown"
   | "quote_unavailable"
   | "radom_unavailable"
@@ -66,6 +67,7 @@ const KNOWN_CODES: ReadonlySet<string> = new Set<CheckoutCode>([
   "unknown_action",
   "unknown_product",
   "account_blocked",
+  "app_account_required",
   "order_unknown",
   "quote_unavailable",
   "radom_unavailable",

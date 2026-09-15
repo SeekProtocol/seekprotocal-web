@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="208" viewBox="0 0 320 208" fill="none">
+  <title>Seekprotocol Season Pass</title>
+  <defs>
+    <linearGradient id="body" x1="34" y1="22" x2="274" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#354052"/><stop offset=".32" stop-color="#1c2531"/><stop offset=".7" stop-color="#101720"/><stop offset="1" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="36" y1="14" x2="271" y2="197" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eef2f4"/><stop offset=".25" stop-color="#7a8d9d"/><stop offset=".51" stop-color="#303f52"/><stop offset=".78" stop-color="#cbd4db"/><stop offset="1" stop-color="#5b7184"/>
+    </linearGradient>
+    <linearGradient id="foil" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eacaff"/><stop offset=".28" stop-color="#c3a5f9"/><stop offset=".55" stop-color="#93d2ed"/><stop offset=".77" stop-color="#b1efd7"/><stop offset="1" stop-color="#e1c694"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="74" y1="11" x2="217" y2="191" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity=".12"/><stop offset=".48" stop-color="white" stop-opacity=".015"/><stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="5" flood-color="#000" flood-opacity=".5"/>
+    </filter>
+    <clipPath id="card"><rect x="22" y="17" width="276" height="174" rx="15"/></clipPath>
+    <path id="mark" d="M 60.32 2.38 L 96.90 35.55 L 93.49 51.49 L 77.74 56.58 L 89.55 67.62 L 86.00 83.36 L 39.68 97.62 L 3.10 64.45 L 6.51 48.51 L 22.26 43.42 L 10.45 32.38 L 14.00 16.64 Z M 56.91 18.32 L 61.09 20.91 L 81.30 40.64 L 77.74 56.19 L 54.13 34.06 L 49.81 49.62 L 26.38 27.68 Z M 43.09 81.68 L 38.91 79.09 L 18.70 59.36 L 22.26 43.81 L 45.87 65.94 L 50.19 50.38 L 73.62 72.32 Z" fill-rule="evenodd"/>
+  </defs>
+  <g transform="rotate(-5 160 104)">
+    <rect x="22" y="20" width="276" height="174" rx="15" fill="#53616e"/>
+    <rect x="22" y="17" width="276" height="174" rx="15" fill="url(#body)" filter="url(#shadow)"/>
+    <g clip-path="url(#card)">
+      <path d="M161 0h105L86 209H-17Z" fill="url(#sheen)"/>
+      <g transform="translate(173 31) scale(1.14)" opacity=".12"><use href="#mark" fill="url(#foil)"/></g>
+      <path d="M205 19 57 191M228 19 80 191M251 19 103 191" stroke="#b8d5eb" stroke-opacity=".035"/>
+    </g>
+    <rect x="22.6" y="17.6" width="274.8" height="172.8" rx="14.4" stroke="url(#edge)" stroke-width="1.2"/>
+    <rect x="26" y="21" width="268" height="166" rx="11" stroke="#e4efff" stroke-opacity=".065"/>
+    <g transform="translate(43 37) scale(.235)"><use href="#mark" fill="url(#foil)"/></g>
+    <text x="72" y="53" fill="#e9edf3" font-family="Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="-.3">Seekprotocol</text>
+    <text x="43" y="100" fill="#f6f7f8" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="1.3">SEASON</text>
+    <text x="43" y="133" fill="#f6f7f8" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="3.4">PASS</text>
+    <path d="M44 154h30" stroke="#b8c9df" stroke-width="1.2"/>
+    <text x="43" y="170" fill="#a2afbf" font-family="Arial, sans-serif" font-size="7" letter-spacing="1.55">DIGITAL SEASON PASS</text>
+    <rect x="246" y="146" width="29" height="29" rx="6" fill="#a3c1d0" fill-opacity=".08" stroke="#bed6df" stroke-opacity=".3"/>
+    <g transform="translate(250 150) scale(.21)"><use href="#mark" fill="url(#foil)"/></g>
+  </g>
+</svg>

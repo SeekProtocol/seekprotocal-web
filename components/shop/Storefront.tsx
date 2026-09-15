@@ -47,6 +47,7 @@ type ErrorKey =
   | "errUnknownAction"
   | "errUnknownProduct"
   | "errAccountBlocked"
+  | "login.appRequired"
   | "errUnauthorized"
   | "errWalletRejected"
   | "errInsufficient"
@@ -122,6 +123,8 @@ function errorKeyFor(error: unknown): ErrorKey {
         return "errUnknownProduct";
       case "account_blocked":
         return "errAccountBlocked";
+      case "app_account_required":
+        return "login.appRequired";
       case "unauthorized":
         return "errUnauthorized";
       case "captcha":
@@ -623,7 +626,7 @@ function FlowView({
           <p className="t-num shop-flow-amount">
             {t("flowPay", { sol: formatSol(flow.order.lamports) })}
           </p>
-          <p className="t-small text-muted">{t("flowFor", { product: flow.product.map(item=>`${item.quantity} × ${productName(item.product,n=>t("packs",{count:n}))}`).join(" · ") })}</p>
+          <p className="t-small text-muted">{t("flowFor", { product: flow.product.map(item=>`${item.quantity} × ${productName(item.product,t)}`).join(" · ") })}</p>
           <p className="t-mono-sm">{t("flowHeld", { seconds: left })}</p>
           <div className="shop-flow-progress" aria-hidden="true">
             <i style={{ width: `${fraction * 100}%` }} />

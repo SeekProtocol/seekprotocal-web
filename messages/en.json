@@ -728,7 +728,7 @@
           "body": "Created from a social login so you can collect within a minute of installing. Export the key whenever you want custody."
         },
         {
-          "title": "Seekprotocol Pass",
+          "title": "Season Pass",
           "body": "A season track of rewards that runs alongside normal play, with a free tier and a paid one."
         },
         {
@@ -2245,8 +2245,8 @@
             "kind": "specs",
             "rows": [
               {
-                "label": "Seekprotocol Pass",
-                "value": "€8.99 per 90-day season"
+                "label": "Season Pass",
+                "value": "€9.95 per 90-day season"
               },
               {
                 "label": "Rare boost, spawn magnet",
@@ -2880,11 +2880,11 @@
   },
   "shop": {
     "metaTitle": "Seekprotocol Shop",
-    "metaDescription": "Card packs, the Seekprotocol Pass and boosts for your account.",
+    "metaDescription": "Card packs, the Season Pass and boosts for your account.",
     "ogTitle": "Seekprotocol Shop",
     "eyebrow": "Shop",
     "title": "Seekprotocol Shop",
-    "lead": "Card packs, the Seekprotocol Pass and boosts for your account.",
+    "lead": "Card packs, the Season Pass and boosts for your account.",
     "howEyebrow": "How it works",
     "stepSignIn": "Sign in",
     "stepSignInBody": "Same account as the app: Google, Apple, or a code by email.",
@@ -2895,7 +2895,7 @@
     "notConfigured": "The shop is not configured on this deployment.",
     "loadingAccount": "Checking your session...",
     "signInTitle": "Sign in to buy",
-    "signInLead": "Card packs, the Seekprotocol Pass and boosts for your account.",
+    "signInLead": "Card packs, the Season Pass and boosts for your account.",
     "continueGoogle": "Continue with Google",
     "continueApple": "Continue with Apple",
     "orEmail": "or with a code by email",
@@ -3001,7 +3001,7 @@
       "digitalDelivery": "DIGITAL DELIVERY",
       "yourDetails": "Your checkout details",
       "reviewPay": "Review & pay",
-      "intro": "Card packs, the Seekprotocol Pass and boosts for your account.",
+      "intro": "Card packs, the Season Pass and boosts for your account.",
       "contact": "Contact",
       "email": "Email address",
       "signedInAccount": "Signed-in account",
@@ -3098,7 +3098,7 @@
     "catalogEmpty": "No products are available right now.",
     "errCatalogChanged": "This product has changed. Refresh the products and review the price before paying.",
     "catalogTitle": "Choose your product",
-    "catalogLead": "Card packs, the Seekprotocol Pass and boosts for your account.",
+    "catalogLead": "Card packs, the Season Pass and boosts for your account.",
     "passSeason": "Valid for the current season. One-time purchase.",
     "cardsInPacks": "5 cards per pack",
     "recipientPrompt": "Which account should receive your purchase?",
@@ -3120,7 +3120,11 @@
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
       "diamond_hands": "Diamond Hands",
-      "spawn_lure": "Spawn Lure"
+      "spawn_lure": "Spawn Lure",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
     },
     "cart": {
       "add": "Add {product} to cart",
@@ -3131,6 +3135,56 @@
       "empty": "Your cart is empty. Add one or more products above.",
       "conversion": "Products in different currencies are converted to one USD total at checkout."
     },
-    "errCart": "Check your cart quantities. You can buy up to 50 card packs and one Pass per order."
+    "errCart": "Check your cart quantities. You can buy up to 50 card packs and one Pass per order.",
+    "login": {
+      "heading": "Sign in with your app account",
+      "existingOnly": "Use the same sign-in method as in the Seekprotocol app. The shop is only for existing app accounts.",
+      "methods": "Sign-in methods",
+      "continueWith": "Continue with {provider}",
+      "notAvailable": "Temporarily unavailable",
+      "unavailable": "This sign-in method is currently unavailable. Try again later or use another method already linked to your app account.",
+      "methodsFailed": "Some sign-in methods could not be loaded.",
+      "orEmail": "or sign in with email",
+      "emailMethod": "Email sign-in method",
+      "emailCode": "Email code",
+      "signIn": "Sign in",
+      "emailNotSent": "The code could not be sent. Use the email of your existing app account and try again.",
+      "appRequired": "You need an existing app account to use the shop. Create your account or finish setting it up in the Seekprotocol app first, then return here.",
+      "noAccount": "No app account yet? Create one in the Seekprotocol app. You cannot register in the shop.",
+      "changeAccount": "Use another account",
+      "expired": "This sign-in attempt has expired. Start again from the shop.",
+      "wallet": "Continue with Solana wallet",
+      "connectWallet": "Connect wallet",
+      "walletSignIn": "Sign in with this wallet",
+      "walletSigning": "Confirm in your wallet…",
+      "changeWallet": "Choose another wallet",
+      "walletCannotSign": "This wallet cannot sign a login message. Choose another wallet linked to your app account.",
+      "walletFailed": "Wallet sign-in failed or was cancelled. Try again using a wallet linked to your app account.",
+      "emailHelp": "We’ll send you a sign-in code. Use the email address of your app account."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Make room for rarer finds. Rare, epic and legendary coins appear more often for 30 minutes.",
+      "coin_magnet": "More to discover on your walk. More coins appear nearby for 30 minutes.",
+      "to_the_moon": "Make every attempt count. Earn 3× XP from coin catch attempts for 30 minutes.",
+      "pump_it": "Give your next hunt a lift. Boost your coin catch chance by 35% for 30 minutes; catches are not guaranteed.",
+      "diamond_hands": "Spotted a coin you really want? Secure your next coin catch within 1 minute of activation.",
+      "spawn_lure": "Bring the hunt to your spot. Attract coins for nearby players for 30 minutes. Requires clan membership.",
+      "cash": "Make good catches go further. Earn 2× XP on successful coin catches for 15 minutes.",
+      "fitness": "Reach a little further. Catch coins from up to 60 metres away for 15 minutes.",
+      "chill_guy": "Keep your winning streak going. Successful catches no longer lower your next catch chance for 15 minutes.",
+      "this_is_fine": "A second chance when you need it. Saves one failed coin catch, within 15 minutes of activation."
+    },
+    "productInfo": {
+      "more": "About this product",
+      "includes": "What you get",
+      "use": "How to use it",
+      "pack": "Each pack contains 5 random Arena cards. Open your packs in Arena in the app and discover which cards you received. Duplicate cards are possible; a particular card is not guaranteed.",
+      "pass": "Enjoy more rare, epic and legendary coin encounters during the current season, plus a weekly rare coin to claim in the app. The Pass ends with the season and does not renew automatically.",
+      "bundle": "The listed boosters are added separately to your inventory. Choose which one to activate first; their effects do not run together.",
+      "delivery": "Delivered to your selected SeekAR account after payment is confirmed. With no Friends ID, the purchase goes to the app account linked to your login.",
+      "passName": "Season Pass",
+      "bundleName": "Boost Bundle",
+      "activate": "Added to your inventory after purchase. Activate it from the app shop when you are ready. Only one booster can run at a time."
+    }
   }
 }

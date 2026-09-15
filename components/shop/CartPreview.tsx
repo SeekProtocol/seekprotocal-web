@@ -10,11 +10,12 @@ const products: ShopProduct[] = [
  {...base,id:"seekar_pack_single",name:"Card pack",kind:"pack",packs:1,priceCents:299,currency:"usd"},
  {...base,id:"seekar_pack_five",name:"5 packs",kind:"pack",packs:5,priceCents:1299,currency:"usd"},
  {...base,id:"seekar_pack_ten",name:"10 packs",kind:"pack",packs:10,priceCents:2399,currency:"usd"},
- {...base,id:"seekar_pass",name:"Seekprotocol Pass",kind:"pass",priceCents:899},
+ {...base,id:"seekar_pass",name:"Season Pass",kind:"pass",priceCents:995},
  ...[
    ["rare_boost","Rare Boost",199], ["coin_magnet","Coin Magnet",199],
    ["xp_boost","XP Boost",99], ["pump_it","Pump It",149],
-   ["diamond_hands","Diamond Hands",199], ["spawn_lure","Spawn Lure",249],
+   ["diamond_hands","Diamond Hands",299], ["spawn_lure","Spawn Lure",249],
+   ["cash","Cash",79], ["fitness","Fitness",149], ["chill_guy","Chill Guy",199], ["this_is_fine","This Is Fine",299],
  ].map(([key,name,price])=>({...base,id:`seekar_${key}`,name:String(name),kind:"consumable" as const,priceCents:Number(price),grants:[{powerupKey:key === "xp_boost" ? "to_the_moon" : String(key),quantity:1}]})),
  {...base,id:"seekar_boost_bundle",name:"Boost Bundle",kind:"bundle",priceCents:799,grants:[{powerupKey:"rare_boost",quantity:1},{powerupKey:"coin_magnet",quantity:1},{powerupKey:"to_the_moon",quantity:1}]},
 ];

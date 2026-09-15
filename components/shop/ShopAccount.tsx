@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import type { Session } from "@supabase/supabase-js";
 import { Link } from "@/i18n/navigation";
 import { getSupabase, getShopSessionPolicy, signOutShop, SHOP_SESSION_EVENT, supabaseConfigured } from "@/lib/supabase-browser";
+import {checkAppAccess,type AppAccess} from "@/lib/shop/auth";
 import SignIn from "./SignIn";
 
 /** Shared login boundary. Private content unmounts on sign-out or account change. */
@@ -17,6 +18,17 @@ export default function ShopAccount({page="shop", children}: {
   const [session, setSession] = useState<Session | null>();
   const [failed, setFailed] = useState(false);
   const [retry, setRetry] = useState(0);
+  const [access, setAccess] = useState<{token:string;result?:AppAccess;failed?:boolean}>();
+
+  useEffect(() => {
+    if (!session) return;
+    let active = true;
+    const token = session.access_token;
+    checkAppAccess().then(result => {
+      if (active) setAccess({token,result});
+    }).catch(() => { if (active) setAccess({token,failed:true}); });
+    return () => { active = false; };
+  }, [session, retry]);
 
   useEffect(() => {
     if (!configured) return;
@@ -126,6 +138,14 @@ export default function ShopAccount({page="shop", children}: {
     </div>
     {failed ? <div className="card" role="alert"><p>{t("errNetwork")}</p><button className="btn btn-outline btn-sm" onClick={() => {setFailed(false);setRetry(n => n+1);}}>{t("tryAgain")}</button></div>
       : session === undefined ? <div className="card shop-skeleton" aria-busy="true"><span className="shop-flow-spinner" aria-hidden="true" /><span>{t("loadingAccount")}</span></div>
-      : session ? children(session) : <SignIn purpose={page} />}
+      : session ? access?.token !== session.access_token
+        ? <div className="card shop-skeleton" aria-busy="true"><span className="shop-flow-spinner" aria-hidden="true"/><span>{t("loadingAccount")}</span></div>
+        : access.failed
+          ? <div className="card" role="alert"><p>{t("errNetwork")}</p><button className="btn btn-outline btn-sm" onClick={()=>{setAccess(undefined);setRetry(n=>n+1);}}>{t("tryAgain")}</button></div>
+          : access.result?.allowed ? children(session)
+            : <div className="card shop-signin" role="alert"><p className="eyebrow">{t("login.heading")}</p>
+              <p>{t(access.result?.reason === "account_blocked" ? "errAccountBlocked" : "login.appRequired")}</p>
+              <button className="btn btn-outline" type="button" onClick={signOutShop}>{t("login.changeAccount")}</button></div>
+        : <SignIn purpose={page} />}
   </div>;
 }
