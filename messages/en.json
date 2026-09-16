@@ -3071,7 +3071,7 @@
       "purchase": "SeekAR purchase",
       "paymentLabel": "Payment",
       "deliveryLabel": "Delivery",
-      "paidNotDelivered": "Your payment is confirmed. The packs have not been credited yet. Do not pay again; refresh the status to follow delivery.",
+      "paidNotDelivered": "Your payment is confirmed. Delivery is still processing. Do not pay again; delivery status updates automatically.",
       "pagination": "Order history pages",
       "previous": "Previous",
       "next": "Next",
@@ -3087,10 +3087,33 @@
         "unknown": "Status unknown"
       },
       "delivery": {
-        "delivered": "Packs credited",
+        "delivered": "Purchase delivered",
         "processing": "Delivery in progress",
         "notDelivered": "Not credited",
         "awaitingPayment": "After payment confirmation"
+      },
+      "overview": "Order overview",
+      "pageSize": "{count} orders per page",
+      "orderShort": "Order #{reference}",
+      "recipient": "For {name}",
+      "moreProducts": "+ {count} more products",
+      "reorder": "Build cart again",
+      "resume": "Resume payment",
+      "checkPayment": "Check payment",
+      "checkingPayment": "Checking payment…",
+      "actionFailed": "We could not check this payment. Please try again.",
+      "viewDetails": "View order details",
+      "quantity": "Quantity: {count}",
+      "currencyNote": "Products retain their original currencies. The total is the amount fixed for this checkout, converted when the order was placed.",
+      "actionResult": {
+        "paid": "Your payment is confirmed. Delivery status is being updated.",
+        "pending": "Payment is not confirmed yet. If you already paid, do not pay again.",
+        "closed": "This checkout is closed. Build the cart again to continue."
+      },
+      "restore": {
+        "loading": "Checking the previous order…",
+        "ready": "Your cart is restored. Check current prices and the receiving account before paying again.",
+        "failed": "We could not restore this order. Payment may still be processing or a product may be unavailable. Refresh the order status first."
       }
     },
     "catalogLoading": "Loading products…",
@@ -3160,7 +3183,13 @@
       "changeWallet": "Choose another wallet",
       "walletCannotSign": "This wallet cannot sign a login message. Choose another wallet linked to your app account.",
       "walletFailed": "Wallet sign-in failed or was cancelled. Try again using a wallet linked to your app account.",
-      "emailHelp": "We’ll send you a sign-in code. Use the email address of your app account."
+      "emailHelp": "We’ll send you a sign-in code. Use the email address of your app account.",
+      "welcome": "Welcome back.",
+      "intro": "Sign in with your Seekprotocol app account.",
+      "socialHeading": "With your account",
+      "socialHelp": "Choose the sign-in method you use in the app.",
+      "accountNote": "For existing app accounts only. Create a new account in the Seekprotocol app.",
+      "availabilityNote": "Greyed-out sign-in methods are temporarily unavailable."
     },
     "powerupDescriptions": {
       "rare_boost": "Make room for rarer finds. Rare, epic and legendary coins appear more often for 30 minutes.",

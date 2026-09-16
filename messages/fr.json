@@ -3071,7 +3071,7 @@
       "purchase": "Achat SeekAR",
       "paymentLabel": "Paiement",
       "deliveryLabel": "Livraison",
-      "paidNotDelivered": "Votre paiement est confirmé. Les packs ne sont pas encore attribués. Ne payez pas à nouveau ; actualisez le statut pour suivre la livraison.",
+      "paidNotDelivered": "Votre paiement est confirmé. L’attribution est en cours. Ne payez pas à nouveau ; le statut est actualisé automatiquement.",
       "pagination": "Pages des commandes",
       "previous": "Précédent",
       "next": "Suivant",
@@ -3087,10 +3087,33 @@
         "unknown": "Statut inconnu"
       },
       "delivery": {
-        "delivered": "Packs attribués",
+        "delivered": "Achat attribué",
         "processing": "Attribution en cours",
         "notDelivered": "Non attribués",
         "awaitingPayment": "Après confirmation du paiement"
+      },
+      "overview": "Récapitulatif des commandes",
+      "pageSize": "{count} commandes par page",
+      "orderShort": "Commande #{reference}",
+      "recipient": "Pour {name}",
+      "moreProducts": "+ {count} autres produits",
+      "reorder": "Reconstituer le panier",
+      "resume": "Reprendre le paiement",
+      "checkPayment": "Vérifier le paiement",
+      "checkingPayment": "Vérification du paiement…",
+      "actionFailed": "Impossible de vérifier ce paiement. Réessayez.",
+      "viewDetails": "Voir les détails",
+      "quantity": "Quantité : {count}",
+      "currencyNote": "Les produits conservent leur devise d’origine. Le total a été converti et fixé au moment de la commande.",
+      "actionResult": {
+        "paid": "Votre paiement est confirmé. Le statut de livraison est actualisé.",
+        "pending": "Le paiement n’est pas encore confirmé. Si vous avez déjà payé, ne payez pas à nouveau.",
+        "closed": "Ce paiement est clôturé. Reconstituez le panier pour continuer."
+      },
+      "restore": {
+        "loading": "Vérification de la commande précédente…",
+        "ready": "Votre panier est restauré. Vérifiez les prix actuels et le compte destinataire avant de payer à nouveau.",
+        "failed": "Impossible de restaurer cette commande. Le paiement est peut-être en cours ou un produit indisponible. Actualisez d’abord son statut."
       }
     },
     "catalogLoading": "Chargement des produits…",
@@ -3160,7 +3183,13 @@
       "changeWallet": "Choisir un autre portefeuille",
       "walletCannotSign": "Ce portefeuille ne peut pas signer de message de connexion. Choisissez un autre portefeuille lié à votre compte.",
       "walletFailed": "La connexion a échoué ou a été annulée. Réessayez avec un portefeuille lié à votre compte.",
-      "emailHelp": "Nous vous enverrons un code de connexion. Utilisez l’adresse e-mail de votre compte dans l’application."
+      "emailHelp": "Nous vous enverrons un code de connexion. Utilisez l’adresse e-mail de votre compte dans l’application.",
+      "welcome": "Bon retour.",
+      "intro": "Connectez-vous avec votre compte Seekprotocol.",
+      "socialHeading": "Avec votre compte",
+      "socialHelp": "Utilisez la même méthode que dans l’application.",
+      "accountNote": "Réservé aux comptes existants. Créez un nouveau compte dans l’application Seekprotocol.",
+      "availabilityNote": "Les méthodes grisées sont temporairement indisponibles."
     },
     "powerupDescriptions": {
       "rare_boost": "Faites de belles découvertes. Les pièces rares, épiques et légendaires apparaissent plus souvent pendant 30 minutes.",

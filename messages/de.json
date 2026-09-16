@@ -3071,7 +3071,7 @@
       "purchase": "SeekAR-Kauf",
       "paymentLabel": "Zahlung",
       "deliveryLabel": "Lieferung",
-      "paidNotDelivered": "Deine Zahlung ist bestätigt. Die Packs wurden noch nicht gutgeschrieben. Zahle nicht erneut; aktualisiere den Status, um die Lieferung zu verfolgen.",
+      "paidNotDelivered": "Deine Zahlung ist bestätigt. Die Zuweisung läuft noch. Zahle nicht erneut; der Lieferstatus wird automatisch aktualisiert.",
       "pagination": "Seiten der Bestellhistorie",
       "previous": "Zurück",
       "next": "Weiter",
@@ -3087,10 +3087,33 @@
         "unknown": "Status unbekannt"
       },
       "delivery": {
-        "delivered": "Packs gutgeschrieben",
+        "delivered": "Kauf zugewiesen",
         "processing": "Gutschrift in Bearbeitung",
         "notDelivered": "Nicht gutgeschrieben",
         "awaitingPayment": "Nach Zahlungsbestätigung"
+      },
+      "overview": "Bestellübersicht",
+      "pageSize": "{count} Bestellungen pro Seite",
+      "orderShort": "Bestellung #{reference}",
+      "recipient": "Für {name}",
+      "moreProducts": "+ {count} weitere Produkte",
+      "reorder": "Warenkorb erneut zusammenstellen",
+      "resume": "Zahlung fortsetzen",
+      "checkPayment": "Zahlung prüfen",
+      "checkingPayment": "Zahlung wird geprüft…",
+      "actionFailed": "Die Zahlung konnte nicht geprüft werden. Bitte erneut versuchen.",
+      "viewDetails": "Bestelldetails ansehen",
+      "quantity": "Anzahl: {count}",
+      "currencyNote": "Produkte werden in ihrer ursprünglichen Währung angezeigt. Die Gesamtsumme wurde beim Bestellen umgerechnet und für diesen Checkout festgelegt.",
+      "actionResult": {
+        "paid": "Die Zahlung ist bestätigt. Der Lieferstatus wird aktualisiert.",
+        "pending": "Die Zahlung ist noch nicht bestätigt. Falls du bezahlt hast, zahle nicht erneut.",
+        "closed": "Dieser Checkout ist geschlossen. Stelle den Warenkorb erneut zusammen."
+      },
+      "restore": {
+        "loading": "Die frühere Bestellung wird geprüft…",
+        "ready": "Dein Warenkorb ist wiederhergestellt. Prüfe die aktuellen Preise und das Empfängerkonto vor einer erneuten Zahlung.",
+        "failed": "Die Bestellung konnte nicht wiederhergestellt werden. Die Zahlung wird möglicherweise noch verarbeitet oder ein Produkt ist nicht verfügbar. Aktualisiere zuerst den Bestellstatus."
       }
     },
     "catalogLoading": "Produkte werden geladen…",
@@ -3160,7 +3183,13 @@
       "changeWallet": "Andere Wallet wählen",
       "walletCannotSign": "Diese Wallet kann keine Anmeldenachricht signieren. Wähle eine andere Wallet, die mit deinem App-Konto verknüpft ist.",
       "walletFailed": "Die Wallet-Anmeldung ist fehlgeschlagen oder wurde abgebrochen. Versuche es erneut mit einer verknüpften Wallet.",
-      "emailHelp": "Wir senden dir einen Anmeldecode. Verwende die E-Mail-Adresse deines App-Kontos."
+      "emailHelp": "Wir senden dir einen Anmeldecode. Verwende die E-Mail-Adresse deines App-Kontos.",
+      "welcome": "Willkommen zurück.",
+      "intro": "Melde dich mit deinem Seekprotocol-App-Konto an.",
+      "socialHeading": "Mit deinem Konto",
+      "socialHelp": "Wähle dieselbe Anmeldemethode wie in der App.",
+      "accountNote": "Nur für bestehende App-Konten. Ein neues Konto erstellst du in der Seekprotocol-App.",
+      "availabilityNote": "Ausgegraute Anmeldemethoden sind vorübergehend nicht verfügbar."
     },
     "powerupDescriptions": {
       "rare_boost": "Entdecke besondere Funde. Seltene, epische und legendäre Coins erscheinen 30 Minuten lang häufiger.",

@@ -3071,7 +3071,7 @@
       "purchase": "SeekAR购买",
       "paymentLabel": "付款",
       "deliveryLabel": "发放",
-      "paidNotDelivered": "付款已确认，但卡包尚未发放。请勿再次付款，刷新状态以查看发放进度。",
+      "paidNotDelivered": "付款已确认，购买内容正在发放。请勿再次付款，发放状态会自动更新。",
       "pagination": "订单记录分页",
       "previous": "上一页",
       "next": "下一页",
@@ -3087,10 +3087,33 @@
         "unknown": "状态未知"
       },
       "delivery": {
-        "delivered": "卡包已发放",
+        "delivered": "购买内容已发放",
         "processing": "正在发放",
         "notDelivered": "未发放",
         "awaitingPayment": "确认付款后发放"
+      },
+      "overview": "订单概览",
+      "pageSize": "每页 {count} 笔订单",
+      "orderShort": "订单 #{reference}",
+      "recipient": "接收人：{name}",
+      "moreProducts": "另有 {count} 件商品",
+      "reorder": "重新加入购物车",
+      "resume": "继续付款",
+      "checkPayment": "检查付款",
+      "checkingPayment": "正在检查付款…",
+      "actionFailed": "无法检查付款，请重试。",
+      "viewDetails": "查看订单详情",
+      "quantity": "数量：{count}",
+      "currencyNote": "商品按原始币种显示。总额为下单时换算并为该订单确定的金额。",
+      "actionResult": {
+        "paid": "付款已确认，正在更新发放状态。",
+        "pending": "付款尚未确认。如果您已付款，请勿再次付款。",
+        "closed": "此付款流程已关闭。请重新加入购物车后继续。"
+      },
+      "restore": {
+        "loading": "正在检查之前的订单…",
+        "ready": "购物车已恢复。再次付款前，请确认当前价格和接收账户。",
+        "failed": "无法恢复此订单。付款可能仍在处理中，或商品已停售。请先刷新订单状态。"
       }
     },
     "catalogLoading": "正在加载商品…",
@@ -3160,7 +3183,13 @@
       "changeWallet": "选择其他钱包",
       "walletCannotSign": "此钱包无法签署登录消息。请选择已关联应用账户的其他钱包。",
       "walletFailed": "钱包登录失败或已取消。请使用已关联应用账户的钱包重试。",
-      "emailHelp": "我们将发送登录验证码。请使用应用账户的邮箱地址。"
+      "emailHelp": "我们将发送登录验证码。请使用应用账户的邮箱地址。",
+      "welcome": "欢迎回来。",
+      "intro": "使用你的 Seekprotocol 应用账户登录。",
+      "socialHeading": "使用关联账户",
+      "socialHelp": "选择与应用中相同的登录方式。",
+      "accountNote": "仅限已有应用账户使用。请在 Seekprotocol 应用中创建新账户。",
+      "availabilityNote": "灰色登录方式暂时不可用。"
     },
     "powerupDescriptions": {
       "rare_boost": "发现更特别的收获。30分钟内，稀有、史诗和传说金币会更频繁地出现。",

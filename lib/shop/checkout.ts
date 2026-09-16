@@ -1,4 +1,5 @@
 import { cartRequest, type CartItem } from "./cart";
+import { HISTORY_COLUMNS, historyAction, type HistoryOrder } from './order-history';
 import { PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
 import { getSupabase, getShopSessionPolicy, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/lib/supabase-browser";
 import { isLocalShopDevelopment } from "@/lib/shop/local-development";
@@ -276,6 +277,37 @@ export async function radomOrderStatus(orderId: string): Promise<RadomStatus> {
   if (data.status === "paid" && data.ok === true) return "paid";
   if (data.status === "closed") return "closed";
   return "pending";
+}
+
+/** Resume the existing provider session only after an owner/status/expiry check. */
+export async function resumeRadomCheckout(orderId:string):Promise<{status:RadomStatus;checkoutUrl?:string}> {
+  const data=await call({action:'resume',order_id:orderId},undefined,'radom-checkout');
+  if(data.status==='paid'||data.status==='closed') return {status:data.status};
+  if(data.status!=='pending'||typeof data.checkout_url!=='string') throw new CheckoutError('radom_unavailable');
+  const url=new URL(data.checkout_url);
+  if(url.origin!=='https://pay.radom.com'||!url.pathname.startsWith('/checkout/')||url.username||url.password) throw new CheckoutError('radom_unavailable');
+  return {status:'pending',checkoutUrl:url.href};
+}
+
+export async function readOrderForReorder(orderId:string):Promise<HistoryOrder> {
+  if(!/^[0-9a-f-]{36}$/i.test(orderId)) throw new CheckoutError('order_unknown');
+  const {data:{session}}=await getSupabase().auth.getSession();
+  if(!session)throw new CheckoutError('unauthorized');
+  const read=()=>getSupabase().from('solana_orders').select(HISTORY_COLUMNS)
+    .eq('id',orderId).eq('user_id',session.user.id).eq('channel','web').abortSignal(AbortSignal.timeout(12000)).maybeSingle();
+  let result=await read();
+  if(result.error||!result.data)throw new CheckoutError('order_unknown');
+  const prior=result.data as HistoryOrder;
+  if(historyAction(prior)!=='reorder')throw new CheckoutError('order_preparing');
+  // A late provider confirmation may have arrived since the history was displayed.
+  if(prior.mint==='RADOM'){
+    if(await radomOrderStatus(orderId)!=='closed')throw new CheckoutError('order_preparing');
+  }else {
+    if(await confirmOrder(orderId,prior.signature??'') || Date.now()<Date.parse(prior.expires_at??'')+120_000)throw new CheckoutError('order_preparing');
+  }
+  result=await read();
+  if(result.error||!result.data||historyAction(result.data as HistoryOrder)!=='reorder')throw new CheckoutError('order_preparing');
+  return result.data as HistoryOrder;
 }
 
 export function orderExpired(order: ShopOrder, now = Date.now()): boolean {

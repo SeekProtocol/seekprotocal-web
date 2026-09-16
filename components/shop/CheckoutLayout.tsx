@@ -18,18 +18,19 @@ export interface CheckoutLayoutProps {
   sol: string | null; quoteError: boolean; wallet?: ReactNode; verification?: ReactNode;
   verificationNote?: string | null; flow?: ReactNode;
   email?: string; name?: string; selection?: CheckoutSelection | null;
+  initialFriendsId?: string;
   onSelection?: (selection: CheckoutSelection | null) => void;
   resolveContext?: typeof checkoutContext;
 }
 
 export function CheckoutLayout({products,catalogFailed=false,catalogNotice,items,onQuantity,quotedTotal,onSol,onRadom,onRefresh,busy,connected,quoting,rateLine,sol,
-  wallet,verification,verificationNote,flow,email="",name:knownName="",selection,onSelection,resolveContext=checkoutContext}: CheckoutLayoutProps) {
+  wallet,verification,verificationNote,flow,email="",name:knownName="",selection,onSelection,initialFriendsId="",resolveContext=checkoutContext}: CheckoutLayoutProps) {
   const t = useTranslations("shop");
   const c = useTranslations("shop.checkout");
   const locale = useLocale();
   const id = useId();
   const [contactEmail,setContactEmail] = useState(email);
-  const [friendsId,setFriendsId] = useState("");
+  const [friendsId,setFriendsId] = useState(initialFriendsId);
   const [stage,setStage] = useState<"details" | "payment">("details");
   const [method,setMethod] = useState<"radom" | "sol">("radom");
   const [checking,setChecking] = useState(false);

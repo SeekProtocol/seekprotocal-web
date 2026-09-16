@@ -1,0 +1,82 @@
+.anchor {scroll-margin-top:6rem}
+.history {max-width:1120px;margin:0 auto;min-width:0}
+.toolbar,.cardHeader,.cardFooter,.pagination {display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.toolbar {margin:0 0 1.2rem}
+.toolbar strong {font-size:1rem;font-weight:600}
+.toolbar p,.help {color:var(--fg-muted);font-size:.76rem;line-height:1.6;margin:.3rem 0 0}
+.list {list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.card {border:1px solid var(--line);background:var(--bg-sunken);border-radius:16px;overflow:hidden;min-width:0}
+.cardHeader {padding:1.15rem 1.5rem;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--fg) 1.5%,var(--bg-sunken))}
+.reference {display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.reference strong {font-size:.85rem;font-weight:600;letter-spacing:.01em}
+.reference time {font-size:.74rem;color:var(--fg-muted)}
+.price {display:grid;gap:.18rem;text-align:right;flex-shrink:0;font-variant-numeric:tabular-nums}
+.price strong {font-size:1.08rem;letter-spacing:-.03em}
+.price span {font-size:.68rem;color:var(--fg-muted)}
+.productSummary {display:flex;align-items:center;gap:1rem;padding:1.25rem 1.5rem;min-width:0}
+.productSummary h2 {font-size:.94rem;line-height:1.5;font-weight:550;margin:0;overflow-wrap:anywhere}
+.productSummary p {font-size:.75rem;color:var(--fg-muted);margin:.3rem 0 0;line-height:1.5}
+.thumbnails {display:flex;gap:.35rem;flex-shrink:0}
+.thumbnail {width:58px;height:58px;padding:3px;border:1px solid var(--line);border-radius:10px;background:var(--bg);display:grid;place-items:center}
+.thumbnail svg,.thumbnail img {width:100%;height:100%;max-width:100%;object-fit:contain}
+.cardFooter {padding:0 1.5rem 1.15rem;flex-wrap:wrap}
+.statuses {display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.status {display:inline-flex;align-items:center;gap:.4rem;padding:.32rem .6rem;border-radius:6px;background:color-mix(in srgb,var(--fg-muted) 9%,transparent);color:var(--fg-muted);font-size:.72rem;font-weight:550;line-height:1.5}
+.status i {width:5px;height:5px;border-radius:50%;background:currentColor}
+.status[data-state=paid] {color:color-mix(in srgb,#36cf9b 80%,var(--fg));background:color-mix(in srgb,#36cf9b 10%,transparent)}
+.status[data-state=pending] {color:color-mix(in srgb,#edb65a 82%,var(--fg));background:color-mix(in srgb,#edb65a 9%,transparent)}
+.delivery {font-size:.72rem;color:var(--fg-muted)}
+.quietButton,.primaryButton {display:inline-flex;justify-content:center;align-items:center;gap:.5rem;min-height:38px;padding:.5rem .8rem;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--fg);font:inherit;font-size:.75rem;font-weight:550;text-decoration:none;cursor:pointer;line-height:1.4;transition:background .15s,border-color .15s}
+.primaryButton {background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.quietButton:hover {background:color-mix(in srgb,var(--fg) 5%,transparent);border-color:var(--fg-muted)}
+.primaryButton:hover {opacity:.85}
+.quietButton:disabled,.primaryButton:disabled {opacity:.4;cursor:default}
+.quietButton:focus-visible,.primaryButton:focus-visible,.details summary:focus-visible {outline:2px solid var(--brand);outline-offset:3px}
+.details {border-top:1px solid var(--line)}
+.details summary {display:flex;justify-content:space-between;align-items:center;padding:.75rem 1.5rem;font-size:.73rem;color:var(--fg-muted);list-style:none;cursor:pointer;outline-offset:-4px!important}
+.details summary::-webkit-details-marker {display:none}
+.details[open] summary {color:var(--fg)}
+.details[open] summary span {transform:rotate(180deg)}
+.detailsBody {padding:1.2rem 1.5rem;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:2rem;background:var(--bg)}
+.receipt {margin-top:1.2rem;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.receiptHeader {display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.5rem}
+.receiptHeader h3 {font-size:1rem}
+.items {list-style:none;margin:0;padding:0;display:grid;align-content:start;gap:.9rem}
+.item {display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:.7rem;font-size:.8rem}
+.item .thumbnail {width:44px;height:44px;border-radius:8px}
+.item strong {font-size:.8rem;font-weight:550;line-height:1.5;overflow-wrap:anywhere}
+.item small {display:block;font-size:.7rem;color:var(--fg-muted);margin-top:.15rem}
+.itemPrice {font-size:.8rem;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.facts {display:grid;align-content:start;gap:.75rem;margin:0;font-size:.75rem;line-height:1.5;min-width:0}
+.facts>div {display:flex;justify-content:space-between;gap:1.5rem}
+.facts dt {color:var(--fg-muted);flex-shrink:0}
+.facts dd {text-align:right;overflow-wrap:anywhere;min-width:0}
+.facts code {font:inherit;letter-spacing:.015em}
+.facts .total {font-size:.85rem;padding-bottom:.8rem;border-bottom:1px solid var(--line)}
+.total dt,.total dd {font-weight:650;color:var(--fg)}
+.currencyNote {font-size:.7rem;color:var(--fg-muted);line-height:1.6;grid-column:1/-1}
+.notice {font-size:.76rem;line-height:1.65;color:var(--fg-muted);margin:0 1.5rem 1rem;padding:.65rem .8rem;border-radius:7px;background:color-mix(in srgb,var(--brand) 6%,transparent)}
+.pagination {padding:1.25rem 0;border-bottom:1px solid var(--line);font-size:.75rem}
+.pagination>div {display:flex;align-items:center;gap:1rem}
+.pageCount {color:var(--fg-muted)}
+.help {margin:1rem 0}
+.empty {display:grid;justify-items:center;gap:1rem;text-align:center;padding:3rem 1rem;border:1px solid var(--line);border-radius:14px;color:var(--fg-muted)}
+.empty h2 {color:var(--fg);font-size:1.3rem}
+@media(max-width:700px){
+ .cardHeader,.productSummary {padding:1rem}
+ .reference {display:grid;gap:.3rem}
+ .reference strong {font-size:.78rem}
+ .reference time {font-size:.68rem}
+ .cardFooter {padding:0 1rem 1rem;gap:.9rem}
+ .cardFooter>a,.cardFooter>button {width:100%;min-height:42px}
+ .thumbnails .thumbnail:not(:first-child) {display:none}
+ .productSummary h2 {font-size:.85rem}
+ .details summary {padding:.8rem 1rem;min-height:44px}
+ .detailsBody {grid-template-columns:minmax(0,1fr);gap:1.5rem;padding:1rem}
+ .notice {margin:0 1rem 1rem}
+ .toolbar {align-items:flex-start}
+ .toolbar .quietButton {font-size:.7rem;max-width:45%}
+ .pagination {flex-direction:column;align-items:stretch;gap:.75rem}
+ .pagination>div {justify-content:space-between;gap:.5rem}
+ .pageCount {text-align:center;font-size:.7rem}
+}

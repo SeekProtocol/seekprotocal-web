@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { cartKey, cartTotal, canSetQuantity, type CartItem } from "@/lib/shop/cart";
 import {productName} from "./ProductCatalog";
 import { useCatalog } from "@/lib/shop/use-catalog";
+import {restoreOrderCart} from '@/lib/shop/order-history';
 import { CheckoutLayout } from "./CheckoutLayout";
 import OrderReceipt from "./OrderReceipt";
 import { useLocale, useTranslations } from "next-intl";
@@ -26,6 +27,7 @@ import {
   quoteOrder,
   quoteCart,
   radomOrderStatus,
+  readOrderForReorder,
   recordCheckoutEvent,
   sleep,
   CONFIRM_ATTEMPTS,
@@ -164,7 +166,23 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
   const baseProduct = useMemo(() => (products ?? []).filter(p => quantities[p.id]>0).map(product=>({product,quantity:quantities[product.id]})), [products,quantities]);
   const [selection,setSelection] = useState<CheckoutSelection | null>(null);
   const [receiptId,setReceiptId] = useState<string | null>(null);
+  const [reorder,setReorder] = useState<{id:string;friendsId:string;state:'loading'|'ready'|'failed'}|null>(null);
+  const reorderLoaded=useRef(false);
   const [now, setNow] = useState(() => Date.now());
+
+  useEffect(()=>{
+    if(!products||reorderLoaded.current)return;
+    const id=new URL(window.location.href).searchParams.get('reorder');
+    if(!id)return;
+    reorderLoaded.current=true;setReorder({id,friendsId:'',state:'loading'});
+    void readOrderForReorder(id).then(order=>{
+      const draft=restoreOrderCart(order,products);
+      if(!liveRef.current)return;
+      setQuantities(draft.quantities);setSelection(null);setReorder({id,friendsId:draft.friendsId,state:'ready'});
+      const url=new URL(window.location.href);url.searchParams.delete('reorder');
+      window.history.replaceState(window.history.state,'',`${url.pathname}${url.search}${url.hash}`);
+    }).catch(()=>{if(liveRef.current)setReorder({id,friendsId:'',state:'failed'});});
+  },[products]);
 
   /* The token is state so the widget re-renders the page; the async flows
      below read it through a ref so they see the value at the moment they ask. */
@@ -522,7 +540,9 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
   const flowView = <><FlowView flow={flow} now={now} onPay={pay} onCancel={cancel} onReset={resetFlow} />{receiptId && <OrderReceipt orderId={receiptId} refreshKey={flow.phase} />}</>;
   const catalogMessage = catalog.failed ? t("catalogFailed") : catalog.loading && !products ? t("catalogLoading") : t("catalogEmpty");
   if (!products?.length) return <div className="card" aria-live="polite"><p>{catalogMessage}</p><button type="button" className="btn btn-outline" disabled={catalog.loading} onClick={catalog.refresh}>{t("tryAgain")}</button>{flowView}</div>;
-  return <CheckoutLayout
+  return <>{reorder&&<p className="card" role="status" style={{padding:'1rem 1.25rem',marginBottom:'1.5rem',fontSize:'.85rem'}}>{t(`history.restore.${reorder.state}`)}</p>}<CheckoutLayout
+    key={reorder?.state==='ready'?reorder.id:'checkout'}
+    initialFriendsId={reorder?.friendsId??''}
     products={products ?? []}
     catalogFailed={catalog.failed}
     catalogNotice={(catalog.failed || flow.phase === "error" && flow.code === "errCatalogChanged") && <p role="alert">{catalog.failed ? t("catalogFailed") : t("errCatalogChanged")} <button type="button" className="btn btn-outline btn-sm" disabled={catalog.loading} onClick={() => {catalog.refresh();setSelection(null);setFlow({phase:"idle"});}}>{t("tryAgain")}</button></p>}
@@ -536,7 +556,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
     onSol={() => void startOrder(activeProduct)}
     onRadom={() => void startRadomOrder(activeProduct)}
     onRefresh={() => void refreshQuote()}
-    busy={busy || flow.phase === "paid" || flow.phase === "pending" || flow.phase === "cancelled"}
+    busy={busy || reorder?.state==='loading' || flow.phase === "paid" || flow.phase === "pending" || flow.phase === "cancelled"}
     connected={connected}
     quoting={quoting}
     rateLine={rateLine}
@@ -552,7 +572,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
       </div>}
     </>}
     flow={<>{flow.phase === "error" && selection && !receiptId && <p className="checkout-order-reference">{t("checkout.orderNumber")}<code>{selection.request_id}</code></p>}<FlowView flow={flow} now={now} onPay={pay} onCancel={cancel} onReset={resetFlow} />{receiptId && <OrderReceipt orderId={receiptId} refreshKey={flow.phase} />}</>}
-  />;
+  /></>;
 }
 
 export { CheckoutLayout as StorefrontView } from "./CheckoutLayout";

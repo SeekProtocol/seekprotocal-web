@@ -3071,7 +3071,7 @@
       "purchase": "SeekARの購入",
       "paymentLabel": "支払い",
       "deliveryLabel": "付与",
-      "paidNotDelivered": "支払いは確認済みです。パックはまだ付与されていません。再度支払わず、状況を更新して付与をご確認ください。",
+      "paidNotDelivered": "支払いが確認されました。購入品を付与中です。再度支払わないでください。状況は自動更新されます。",
       "pagination": "注文履歴のページ",
       "previous": "前へ",
       "next": "次へ",
@@ -3087,10 +3087,33 @@
         "unknown": "状況不明"
       },
       "delivery": {
-        "delivered": "パック付与済み",
+        "delivered": "購入品を付与済み",
         "processing": "付与処理中",
         "notDelivered": "未付与",
         "awaitingPayment": "支払い確認後に付与"
+      },
+      "overview": "注文一覧",
+      "pageSize": "1ページあたり{count}件",
+      "orderShort": "注文 #{reference}",
+      "recipient": "受取人：{name}",
+      "moreProducts": "ほか{count}点",
+      "reorder": "カートを再作成",
+      "resume": "支払いを再開",
+      "checkPayment": "支払いを確認",
+      "checkingPayment": "支払いを確認中…",
+      "actionFailed": "支払いを確認できませんでした。もう一度お試しください。",
+      "viewDetails": "注文詳細を見る",
+      "quantity": "数量：{count}",
+      "currencyNote": "商品は元の通貨で表示されます。合計は注文時に換算され、この注文に対して確定された金額です。",
+      "actionResult": {
+        "paid": "支払いが確認されました。付与状況を更新しています。",
+        "pending": "支払いはまだ確認されていません。お支払い済みの場合は再度支払わないでください。",
+        "closed": "この決済は終了しています。続けるにはカートを再作成してください。"
+      },
+      "restore": {
+        "loading": "以前の注文を確認中…",
+        "ready": "カートを復元しました。再度支払う前に現在の価格と受取アカウントを確認してください。",
+        "failed": "注文を復元できませんでした。支払いが処理中か、商品が販売終了した可能性があります。まず注文状況を更新してください。"
       }
     },
     "catalogLoading": "商品を読み込み中…",
@@ -3160,7 +3183,13 @@
       "changeWallet": "別のウォレットを選ぶ",
       "walletCannotSign": "このウォレットではログインメッセージに署名できません。アカウントに連携済みの別のウォレットを選んでください。",
       "walletFailed": "ウォレットのログインに失敗したか、キャンセルされました。連携済みのウォレットでもう一度お試しください。",
-      "emailHelp": "ログインコードをお送りします。アプリアカウントのメールアドレスを入力してください。"
+      "emailHelp": "ログインコードをお送りします。アプリアカウントのメールアドレスを入力してください。",
+      "welcome": "おかえりなさい。",
+      "intro": "Seekprotocolアプリのアカウントでログイン。",
+      "socialHeading": "アカウントでログイン",
+      "socialHelp": "アプリと同じログイン方法を選んでください。",
+      "accountNote": "既存のアプリアカウント専用です。新規アカウントはSeekprotocolアプリで作成してください。",
+      "availabilityNote": "グレーのログイン方法は一時的に利用できません。"
     },
     "powerupDescriptions": {
       "rare_boost": "特別な出会いを増やそう。30分間、レア・エピック・レジェンダリーのコインが出現しやすくなります。",

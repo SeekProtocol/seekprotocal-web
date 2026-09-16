@@ -47,10 +47,10 @@ export default function WalletSignIn({disabled,onSuccess,onBusy,onError}:{
     finally { setSigning(false);onBusy(false); }
   }
   return <div className="shop-wallet-login">
-    <button type="button" className="btn btn-outline btn-lg" aria-label={signing?t('walletSigning'):connected?t('walletSignIn'):wallet?t('connectWallet'):t('wallet')} disabled={disabled || connecting || signing} onClick={()=>void login()}>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M20 7H5a2 2 0 0 1 0-4h13v4M3 5v14a2 2 0 0 0 2 2h15V7M16 12h5v5h-5z"/></svg>
+    <button type="button" className="shop-login-provider" data-provider="solana" aria-label={signing?t('walletSigning'):connected?t('walletSignIn'):wallet?t('connectWallet'):t('wallet')} disabled={disabled || connecting || signing} onClick={()=>void login()}>
+      <span className="shop-provider-logo"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 3-4 4h16l4-4Z" fill="#5acfae"/><path d="m2 10 4 4h16l-4-4Z" fill="#7b9de7"/><path d="m6 17-4 4h16l4-4Z" fill="#aa83ed"/></svg></span>
       <span>{signing?t('walletSigning'):connected?t('walletSignIn'):wallet?t('connectWallet'):'Solana'}</span>
     </button>
-    {wallet && <button type="button" className="btn btn-ghost btn-sm shop-wallet-login-change" disabled={disabled || connecting || signing} onClick={()=>setVisible(true)}>{t('changeWallet')}</button>}
+    {wallet && <button type="button" className="shop-wallet-login-change" disabled={disabled || connecting || signing} onClick={()=>setVisible(true)}>{t('changeWallet')}</button>}
   </div>;
 }

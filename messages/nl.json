@@ -3071,7 +3071,7 @@
       "purchase": "SeekAR-aankoop",
       "paymentLabel": "Betaling",
       "deliveryLabel": "Levering",
-      "paidNotDelivered": "Je betaling is bevestigd. De packs zijn nog niet toegekend. Betaal niet opnieuw; vernieuw de status om de levering te volgen.",
+      "paidNotDelivered": "Je betaling is bevestigd. De aankoop wordt nog toegekend. Betaal niet opnieuw; de leverstatus wordt automatisch bijgewerkt.",
       "pagination": "Bestelgeschiedenis bladeren",
       "previous": "Vorige",
       "next": "Volgende",
@@ -3087,10 +3087,33 @@
         "unknown": "Status onbekend"
       },
       "delivery": {
-        "delivered": "Packs toegekend",
+        "delivered": "Aankoop toegekend",
         "processing": "Toekenning in behandeling",
         "notDelivered": "Niet toegekend",
         "awaitingPayment": "Na betaalbevestiging"
+      },
+      "overview": "Besteloverzicht",
+      "pageSize": "{count} bestellingen per pagina",
+      "orderShort": "Bestelling #{reference}",
+      "recipient": "Voor {name}",
+      "moreProducts": "+ {count} andere producten",
+      "reorder": "Opnieuw samenstellen",
+      "resume": "Betaling hervatten",
+      "checkPayment": "Betaling controleren",
+      "checkingPayment": "Betaling controleren…",
+      "actionFailed": "We konden de betaling niet controleren. Probeer het opnieuw.",
+      "viewDetails": "Bekijk bestelgegevens",
+      "quantity": "Aantal: {count}",
+      "currencyNote": "Producten staan in hun oorspronkelijke valuta. Het totaal is het vastgelegde bedrag voor deze checkout; de omrekening vond plaats bij het bestellen.",
+      "actionResult": {
+        "paid": "Je betaling is bevestigd. De leverstatus wordt bijgewerkt.",
+        "pending": "De betaling is nog niet bevestigd. Heb je al betaald? Betaal dan niet opnieuw.",
+        "closed": "Deze checkout is gesloten. Stel de bestelling opnieuw samen om verder te gaan."
+      },
+      "restore": {
+        "loading": "De vorige bestelling wordt gecontroleerd…",
+        "ready": "Je winkelmandje is hersteld. Controleer de actuele prijzen en het ontvangende account voordat je opnieuw betaalt.",
+        "failed": "We konden deze bestelling niet opnieuw samenstellen. De betaling kan nog in behandeling zijn of een product is niet meer beschikbaar. Vernieuw eerst de bestelstatus."
       }
     },
     "catalogLoading": "Producten laden…",
@@ -3160,7 +3183,13 @@
       "changeWallet": "Andere wallet kiezen",
       "walletCannotSign": "Deze wallet kan geen inlogbericht ondertekenen. Kies een andere wallet die aan je app-account is gekoppeld.",
       "walletFailed": "Inloggen met je wallet is niet gelukt of is geannuleerd. Probeer opnieuw met een wallet die aan je app-account is gekoppeld.",
-      "emailHelp": "We sturen je een inlogcode. Gebruik het e-mailadres van je app-account."
+      "emailHelp": "We sturen je een inlogcode. Gebruik het e-mailadres van je app-account.",
+      "welcome": "Welkom terug.",
+      "intro": "Log in met je Seekprotocol-app-account.",
+      "socialHeading": "Via je account",
+      "socialHelp": "Kies dezelfde inlogmethode als in de app.",
+      "accountNote": "Alleen voor bestaande app-accounts. Een nieuw account maak je aan in de Seekprotocol-app.",
+      "availabilityNote": "Grijze inlogmethoden zijn tijdelijk niet beschikbaar."
     },
     "powerupDescriptions": {
       "rare_boost": "Ga op zoek naar bijzondere vondsten. Zeldzame, epische en legendarische munten verschijnen 30 minuten lang vaker.",

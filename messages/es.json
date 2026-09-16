@@ -3071,7 +3071,7 @@
       "purchase": "Compra de SeekAR",
       "paymentLabel": "Pago",
       "deliveryLabel": "Entrega",
-      "paidNotDelivered": "Tu pago está confirmado. Los packs aún no se han asignado. No vuelvas a pagar; actualiza el estado para seguir la entrega.",
+      "paidNotDelivered": "Tu pago está confirmado. La entrega sigue en proceso. No vuelvas a pagar; el estado se actualiza automáticamente.",
       "pagination": "Páginas de pedidos",
       "previous": "Anterior",
       "next": "Siguiente",
@@ -3087,10 +3087,33 @@
         "unknown": "Estado desconocido"
       },
       "delivery": {
-        "delivered": "Packs asignados",
+        "delivered": "Compra entregada",
         "processing": "Asignación en curso",
         "notDelivered": "No asignados",
         "awaitingPayment": "Tras confirmar el pago"
+      },
+      "overview": "Resumen de pedidos",
+      "pageSize": "{count} pedidos por página",
+      "orderShort": "Pedido #{reference}",
+      "recipient": "Para {name}",
+      "moreProducts": "+ {count} productos más",
+      "reorder": "Volver a preparar el carrito",
+      "resume": "Continuar el pago",
+      "checkPayment": "Comprobar el pago",
+      "checkingPayment": "Comprobando el pago…",
+      "actionFailed": "No pudimos comprobar el pago. Inténtalo de nuevo.",
+      "viewDetails": "Ver detalles del pedido",
+      "quantity": "Cantidad: {count}",
+      "currencyNote": "Los productos conservan su moneda original. El total es el importe fijado para este pedido, convertido al realizarlo.",
+      "actionResult": {
+        "paid": "Tu pago está confirmado. Se está actualizando la entrega.",
+        "pending": "El pago aún no está confirmado. Si ya pagaste, no vuelvas a pagar.",
+        "closed": "Este proceso de pago está cerrado. Prepara el carrito de nuevo para continuar."
+      },
+      "restore": {
+        "loading": "Comprobando el pedido anterior…",
+        "ready": "Tu carrito está restaurado. Comprueba los precios actuales y la cuenta destinataria antes de volver a pagar.",
+        "failed": "No pudimos restaurar este pedido. El pago puede seguir en proceso o algún producto no estar disponible. Actualiza primero el estado del pedido."
       }
     },
     "catalogLoading": "Cargando productos…",
@@ -3160,7 +3183,13 @@
       "changeWallet": "Elegir otra wallet",
       "walletCannotSign": "Esta wallet no puede firmar mensajes de acceso. Elige otra wallet vinculada a tu cuenta.",
       "walletFailed": "El acceso con la wallet falló o se canceló. Inténtalo de nuevo con una wallet vinculada a tu cuenta.",
-      "emailHelp": "Te enviaremos un código de acceso. Usa el correo de tu cuenta de la app."
+      "emailHelp": "Te enviaremos un código de acceso. Usa el correo de tu cuenta de la app.",
+      "welcome": "Te damos la bienvenida.",
+      "intro": "Inicia sesión con tu cuenta de la app Seekprotocol.",
+      "socialHeading": "Con tu cuenta",
+      "socialHelp": "Elige el mismo método que usas en la app.",
+      "accountNote": "Solo para cuentas existentes. Crea una nueva cuenta en la app Seekprotocol.",
+      "availabilityNote": "Los métodos en gris no están disponibles temporalmente."
     },
     "powerupDescriptions": {
       "rare_boost": "Encuentra algo especial. Las monedas raras, épicas y legendarias aparecen más a menudo durante 30 minutos.",

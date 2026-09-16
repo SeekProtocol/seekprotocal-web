@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-16",
+  "status": "backend_published_web_and_app_release_pending",
+  "web": {
+    "project": "seekprotocal-web",
+    "domains": [
+      "www.seekprotocol.ai",
+      "seekprotocol.ai"
+    ],
+    "release": "/private/tmp/seek-booster-rollout-20260916/web",
+    "typecheck": true,
+    "tests": 14,
+    "productionBuild": true,
+    "publication": "blocked by automatic approval review; explicit destination approval requested",
+    "localImagesServed": true,
+    "liveCatalogParserPassed": true,
+    "authenticatedVisualCheck": "not completed; browser session is logged out"
+  },
+  "app": {
+    "project": "d9a44d45-a89c-4866-9d32-c012d4262eb8",
+    "sdk": 56,
+    "base": "currently published Home fix source, /private/tmp/seekar-home-spawns-20260915/stage",
+    "release": "/private/tmp/seek-booster-rollout-20260916/app",
+    "typecheck": true,
+    "tests": 79,
+    "exports": [
+      "ios",
+      "android"
+    ],
+    "bundles": {
+      "ios": {
+        "file": "_expo/static/js/ios/index-edac53bd8f9c02580f9cb3e632a112e8.hbc",
+        "sha256": "85b021cfc457d92ce0e2cd52bd5bbe23f401ab8b07665144481eda0e09b77278"
+      },
+      "android": {
+        "file": "_expo/static/js/android/index-9067720d1b2ace0aa6582935dea0ee91.hbc",
+        "sha256": "8c12cc49ccbc942d311de5d2cb0d3f12bbf864129290358117b72a61e8d37f25"
+      }
+    },
+    "publication": "not attempted; dynamic catalog / installed native billing parity needs review"
+  },
+  "backend": {
+    "project": "ukoqxyoogjouhdqhtiei",
+    "release": "/private/tmp/seek-booster-rollout-20260916/backend",
+    "dryRunMigrations": [
+      "20260916100000",
+      "20260916101000",
+      "20260916102000",
+      "20260916104000"
+    ],
+    "integrationTest": "passed",
+    "publication": "published and live verified",
+    "publishedMigrations": [
+      "20260916100000",
+      "20260916101000",
+      "20260916102000",
+      "20260916104000",
+      "20260916105000"
+    ],
+    "functions": [
+      {
+        "name": "get-spawns",
+        "version": 188,
+        "verify_jwt": false,
+        "status": "ACTIVE"
+      },
+      {
+        "name": "collect-coin",
+        "version": 188,
+        "verify_jwt": true,
+        "status": "ACTIVE"
+      },
+      {
+        "name": "activate-powerup",
+        "version": 94,
+        "verify_jwt": false,
+        "status": "ACTIVE"
+      },
+      {
+        "name": "activate-lure",
+        "version": 104,
+        "verify_jwt": true,
+        "status": "ACTIVE"
+      },
+      {
+        "name": "reveal-spawns",
+        "version": 17,
+        "verify_jwt": false,
+        "status": "ACTIVE"
+      }
+    ],
+    "publicCatalog": {
+      "web": {
+        "products": 15,
+        "boosters": 10
+      },
+      "dappstore": {
+        "products": 15,
+        "boosters": 10
+      }
+    },
+    "pricesEurCents": {
+      "cash": 79,
+      "fitness": 149,
+      "chill_guy": 199,
+      "this_is_fine": 299
+    },
+    "releaseAuditVerified": true,
+    "unauthorizedActivationBlocked": true,
+    "schemaAndHandlersPublishedBeforeVisibility": true
+  },
+  "models": {
+    "existingPresentation": "included in local compatible app export",
+    "newMeshes": "two local prototypes; rejected for production quality, not integrated or uploaded"
+  },
+  "deviceVerification": false,
+  "verifiedAt": "2026-09-16T00:21:53.644339+00:00"
+}

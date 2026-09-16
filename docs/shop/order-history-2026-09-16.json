@@ -1,0 +1,13 @@
+{
+  "project": "ukoqxyoogjouhdqhtiei",
+  "function": {
+    "name": "radom-checkout",
+    "version": 11,
+    "status": "ACTIVE",
+    "verify_jwt": false
+  },
+  "migration": "20260916130000",
+  "unauthenticatedResume": 401,
+  "webDeployment": "local only; Vercel approval pending",
+  "realCustomerPaymentTest": false
+}

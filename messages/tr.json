@@ -3071,7 +3071,7 @@
       "purchase": "SeekAR alışverişi",
       "paymentLabel": "Ödeme",
       "deliveryLabel": "Teslimat",
-      "paidNotDelivered": "Ödemeniz onaylandı. Paketler henüz hesaba eklenmedi. Tekrar ödeme yapmayın; teslimatı izlemek için durumu yenileyin.",
+      "paidNotDelivered": "Ödemeniz onaylandı. Teslimat işleniyor. Tekrar ödemeyin; teslimat durumu otomatik güncellenir.",
       "pagination": "Sipariş geçmişi sayfaları",
       "previous": "Önceki",
       "next": "Sonraki",
@@ -3087,10 +3087,33 @@
         "unknown": "Durum bilinmiyor"
       },
       "delivery": {
-        "delivered": "Paketler eklendi",
+        "delivered": "Satın alma teslim edildi",
         "processing": "Teslimat işleniyor",
         "notDelivered": "Eklenmedi",
         "awaitingPayment": "Ödeme onayından sonra"
+      },
+      "overview": "Sipariş özeti",
+      "pageSize": "Sayfa başına {count} sipariş",
+      "orderShort": "Sipariş #{reference}",
+      "recipient": "Alıcı: {name}",
+      "moreProducts": "+ {count} ürün daha",
+      "reorder": "Sepeti yeniden oluştur",
+      "resume": "Ödemeye devam et",
+      "checkPayment": "Ödemeyi kontrol et",
+      "checkingPayment": "Ödeme kontrol ediliyor…",
+      "actionFailed": "Ödeme kontrol edilemedi. Lütfen tekrar deneyin.",
+      "viewDetails": "Sipariş ayrıntılarını gör",
+      "quantity": "Adet: {count}",
+      "currencyNote": "Ürünler özgün para birimleriyle gösterilir. Toplam, sipariş sırasında dönüştürülüp bu ödeme için sabitlenen tutardır.",
+      "actionResult": {
+        "paid": "Ödemeniz onaylandı. Teslimat durumu güncelleniyor.",
+        "pending": "Ödeme henüz onaylanmadı. Zaten ödediyseniz tekrar ödemeyin.",
+        "closed": "Bu ödeme kapandı. Devam etmek için sepeti yeniden oluşturun."
+      },
+      "restore": {
+        "loading": "Önceki sipariş kontrol ediliyor…",
+        "ready": "Sepetiniz geri yüklendi. Yeniden ödemeden önce güncel fiyatları ve alıcı hesabı kontrol edin.",
+        "failed": "Sipariş geri yüklenemedi. Ödeme işleniyor veya bir ürün kullanılamıyor olabilir. Önce sipariş durumunu yenileyin."
       }
     },
     "catalogLoading": "Ürünler yükleniyor…",
@@ -3160,7 +3183,13 @@
       "changeWallet": "Başka cüzdan seç",
       "walletCannotSign": "Bu cüzdan giriş mesajı imzalayamıyor. Uygulama hesabına bağlı başka bir cüzdan seç.",
       "walletFailed": "Cüzdanla giriş başarısız oldu veya iptal edildi. Hesabına bağlı bir cüzdanla tekrar dene.",
-      "emailHelp": "Sana bir giriş kodu göndereceğiz. Uygulama hesabının e-posta adresini kullan."
+      "emailHelp": "Sana bir giriş kodu göndereceğiz. Uygulama hesabının e-posta adresini kullan.",
+      "welcome": "Tekrar hoş geldin.",
+      "intro": "Seekprotocol uygulama hesabınla giriş yap.",
+      "socialHeading": "Hesabınla",
+      "socialHelp": "Uygulamadaki giriş yöntemini seç.",
+      "accountNote": "Yalnızca mevcut uygulama hesapları içindir. Yeni hesabını Seekprotocol uygulamasında oluştur.",
+      "availabilityNote": "Gri giriş yöntemleri geçici olarak kullanılamıyor."
     },
     "powerupDescriptions": {
       "rare_boost": "Daha özel keşiflere yer aç. Nadir, epik ve efsanevi coinler 30 dakika boyunca daha sık belirir.",

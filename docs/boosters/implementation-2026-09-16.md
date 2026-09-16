@@ -51,7 +51,7 @@ The existing 768 px illustrated WebP assets are used in the app shop, website, i
 
 Review the proposed four effects/prices before live publication. The native app, XR runtime, edge handlers and database changes need a coordinated release; publishing catalog products alone would expose benefits the deployed handlers do not yet apply.
 
-Required backend changes: the two gameplay/catalog migrations plus `20260916102000_booster_prices.sql` and `20260916103000_booster_single_use_replay_guard.sql` and `activate-powerup`, `activate-lure`, `collect-coin`, `get-spawns`, `reveal-spawns`. Existing checkout handlers already consume the dynamic catalog and grants. The new activation RPC must exist before its callers are published. The collection migration tolerates existing requests without the new evidence field.
+Required backend changes: the two gameplay/catalog migrations plus `20260916102000_booster_prices.sql` and `20260916104000_booster_single_use_replay_guard.sql` and `activate-powerup`, `activate-lure`, `collect-coin`, `get-spawns`, `reveal-spawns`. Existing checkout handlers already consume the dynamic catalog and grants. The new activation RPC must exist before its callers are published. The collection migration tolerates existing requests without the new evidence field.
 
 Keep the four new products disabled during a staged backend/app rollout, then enable both catalog channels once the released app and handlers are verified. App purchase availability continues to follow the existing distribution rules (SOL commerce in the dApp Store build); no new Apple/Google billing path was introduced.
 
