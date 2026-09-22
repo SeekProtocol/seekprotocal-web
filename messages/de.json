@@ -884,27 +884,27 @@
   "powerups": {
     "coin_magnet": {
       "label": "Coin-Magnet",
-      "effect": "Zieht Drops in der Nähe in Reichweite"
+      "effect": "Mehr Coins um dich herum"
     },
     "diamond_hands": {
       "label": "Diamond Hands",
-      "effect": "Behält die Ladung, die du erarbeitet hast"
+      "effect": "Fang einen Coin aus der Ferne"
     },
     "pump_it": {
       "label": "Pump it",
-      "effect": "Jedes Tippen zählt doppelt"
+      "effect": "Eine zusätzliche Kartenbox heute"
     },
     "to_the_moon": {
       "label": "To the moon",
-      "effect": "Hebt die Fangchance um eine Stufe"
+      "effect": "Dreifache XP für 30 Minuten"
     },
     "whale": {
       "label": "Whale",
-      "effect": "Verdoppelt die Einheiten bei einem Fang"
+      "effect": "Lockt Spawns zu deinem Ort"
     },
     "this_is_fine": {
       "label": "This is fine",
-      "effect": "Übersteht einen Fehlversuch"
+      "effect": "Hält einen verfehlten Coin für dich fest"
     }
   },
   "collectiblesSection": {
@@ -2239,7 +2239,7 @@
           },
           {
             "kind": "p",
-            "text": "Optional und bewusst begrenzt. Ein Saisonpass läuft neunzig Tage und verschiebt die Spawn-Gewichtung zu selteneren Coins, mit einem wöchentlichen seltenen Claim und einem Boost inklusive. Einzelne Boosts werden separat verkauft: ein Seltenheitsboost, ein Spawn-Magnet, ein XP-Multiplikator oder ein Bündel mit allen dreien."
+            "text": "Optional und bewusst begrenzt. Ein Saisonpass läuft neunzig Tage und verschiebt die Spawn-Gewichtung zu selteneren Coins, mit einem wöchentlichen seltenen Claim und einer Enthüllung inklusive. Boosts werden separat verkauft, und keiner davon kauft bessere Chancen auf einen Coin: Sie zeigen, was ein Fragezeichen ist, vergrößern die Fangreichweite, bringen mehr Coins in die Nähe, vervielfachen XP, halten einen verfehlten Coin fest, erlauben einen Fang aus der Ferne oder eine zusätzliche Kartenbox."
           },
           {
             "kind": "specs",
@@ -2249,16 +2249,20 @@
                 "value": "9,95 € je 90-Tage-Saison"
               },
               {
-                "label": "Seltenheitsboost, Spawn-Magnet",
-                "value": "je 1,99 €, 30 Minuten"
+                "label": "Shiba (3 Enthüllungen), This Is Fine",
+                "value": "je 0,99 €"
               },
               {
-                "label": "XP-Boost",
-                "value": "0,99 €, 30 Minuten"
+                "label": "XP-Boost, Chill Guy, Pump It, Cash",
+                "value": "je 1,49 €"
               },
               {
-                "label": "Boost-Bündel",
-                "value": "4,99 €, eines von jedem"
+                "label": "Fitness, Diamond Hands",
+                "value": "je 1,99 €"
+              },
+              {
+                "label": "Spawn-Magnet, Spawn-Köder",
+                "value": "je 2,49 €"
               }
             ]
           },
@@ -3138,7 +3142,7 @@
       "bundle": "Bundle"
     },
     "powerupNames": {
-      "rare_boost": "Seltene Boost",
+      "rare_boost": "Shiba",
       "coin_magnet": "Spawn Magnet",
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
@@ -3192,16 +3196,16 @@
       "availabilityNote": "Ausgegraute Anmeldemethoden sind vorübergehend nicht verfügbar."
     },
     "powerupDescriptions": {
-      "rare_boost": "Entdecke besondere Funde. Seltene, epische und legendäre Coins erscheinen 30 Minuten lang häufiger.",
+      "rare_boost": "Neugierig, was es ist? Tippe auf ein Fragezeichen auf der Karte und sieh, was darunter steckt, egal wo auf deiner Karte.",
       "coin_magnet": "Mehr zu entdecken bei deinem Spaziergang. In deiner Nähe erscheinen 30 Minuten lang mehr Coins.",
       "to_the_moon": "Mach mehr aus jedem Versuch. Erhalte 30 Minuten lang 3× EP bei Coin-Fangversuchen.",
-      "pump_it": "Gib deiner Jagd Auftrieb. Deine Coin-Fangchance steigt 30 Minuten lang um 35 %; Erfolg ist nicht garantiert.",
-      "diamond_hands": "Ein Coin, den du unbedingt willst? Sichere deinen nächsten Coin-Fang innerhalb von 1 Minute nach Aktivierung.",
+      "pump_it": "Noch eine Kartenbox. Fange heute eine zusätzliche Arena-Kartenbox, zusätzlich zu deinem Tageslimit.",
+      "diamond_hands": "Zu weit zum Laufen? Fange einen Coin aus bis zu 500 Metern Entfernung, mit der normalen Chance.",
       "spawn_lure": "Hol die Jagd zu dir. Locke 30 Minuten lang Coins für Spieler in der Nähe an. Clan-Mitgliedschaft erforderlich.",
-      "cash": "Lass erfolgreiche Fänge doppelt zählen. Erhalte 15 Minuten lang 2× EP für gefangene Coins.",
-      "fitness": "Greif etwas weiter. Fange 15 Minuten lang Coins aus bis zu 60 Metern Entfernung.",
-      "chill_guy": "Halte deine Serie am Laufen. Erfolgreiche Fänge senken 15 Minuten lang nicht die Chance auf den nächsten Fang.",
-      "this_is_fine": "Eine zweite Chance im richtigen Moment. Rettet einen fehlgeschlagenen Coin-Fang innerhalb von 15 Minuten nach Aktivierung."
+      "cash": "Mach aus kleinen Coins einen selteneren. Tausche 30 Minuten lang 3 gewöhnliche gegen 1 ungewöhnlichen, 3 ungewöhnliche gegen 1 seltenen oder 5 seltene gegen 1 legendären.",
+      "fitness": "Greif viel weiter. Fange 15 Minuten lang Coins aus bis zu 80 Metern Entfernung.",
+      "chill_guy": "Schau dich genau um. Sieh 15 Minuten lang, was die 15 nächsten Spawns sind, statt 5.",
+      "this_is_fine": "Verfehlt? Keine Panik. Nach deinem nächsten Fehlversuch bleibt der Coin 2 Minuten lang deiner, niemand anderes kann ihn nehmen. Wirkt bis zu 15 Minuten."
     },
     "productInfo": {
       "more": "Über dieses Produkt",

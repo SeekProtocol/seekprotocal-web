@@ -884,27 +884,27 @@
   "powerups": {
     "coin_magnet": {
       "label": "Muntmagneet",
-      "effect": "Trekt drops in de buurt binnen bereik"
+      "effect": "Meer munten om je heen"
     },
     "diamond_hands": {
       "label": "Diamond hands",
-      "effect": "Houdt de lading vast die je verdiend hebt"
+      "effect": "Vang één munt op afstand"
     },
     "pump_it": {
       "label": "Pump it",
-      "effect": "Elke tik telt dubbel"
+      "effect": "Eén extra kaartenbox vandaag"
     },
     "to_the_moon": {
       "label": "To the moon",
-      "effect": "Tilt de vangkans een niveau omhoog"
+      "effect": "Driedubbele XP, 30 minuten"
     },
     "whale": {
       "label": "Whale",
-      "effect": "Verdubbelt de eenheden bij een vangst"
+      "effect": "Lokt spawns naar jouw plek"
     },
     "this_is_fine": {
       "label": "This is fine",
-      "effect": "Overleeft één mislukte poging"
+      "effect": "Houdt een gemiste munt voor je vast"
     }
   },
   "collectiblesSection": {
@@ -2239,7 +2239,7 @@
           },
           {
             "kind": "p",
-            "text": "Optioneel, en bewust begrensd. Een seizoenspas loopt negentig dagen en verschuift de spawnweging naar zeldzamere munten, met een wekelijkse zeldzame claim en een boost inbegrepen. Losse boosts worden apart verkocht: een zeldzaamheidsboost, een spawnmagneet, een XP-vermenigvuldiger, of een bundel met alle drie."
+            "text": "Optioneel, en bewust begrensd. Een seizoenspas loopt negentig dagen en verschuift de spawnweging naar zeldzamere munten, met een wekelijkse zeldzame claim en een onthulling inbegrepen. Boosts worden apart verkocht, en geen enkele koopt een betere kans op een munt: ze laten zien wat een vraagteken is, vergroten het vangbereik, brengen meer munten in de buurt, vermenigvuldigen XP, houden een gemiste munt vast, geven één vangst op afstand of een extra kaartenbox."
           },
           {
             "kind": "specs",
@@ -2249,16 +2249,20 @@
                 "value": "€ 9,95 per seizoen van 90 dagen"
               },
               {
-                "label": "Zeldzaamheidsboost, spawnmagneet",
-                "value": "€ 1,99 per stuk, 30 minuten"
+                "label": "Shiba (3 onthullingen), This Is Fine",
+                "value": "€ 0,99 per stuk"
               },
               {
-                "label": "XP-boost",
-                "value": "€ 0,99, 30 minuten"
+                "label": "XP-boost, Chill Guy, Pump It, Cash",
+                "value": "€ 1,49 per stuk"
               },
               {
-                "label": "Boostbundel",
-                "value": "€ 4,99, één van elk"
+                "label": "Fitness, Diamond Hands",
+                "value": "€ 1,99 per stuk"
+              },
+              {
+                "label": "Spawnmagneet, spawnlokker",
+                "value": "€ 2,49 per stuk"
               }
             ]
           },
@@ -3138,7 +3142,7 @@
       "bundle": "Bundel"
     },
     "powerupNames": {
-      "rare_boost": "Zeldzame Boost",
+      "rare_boost": "Shiba",
       "coin_magnet": "Spawn Magneet",
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
@@ -3192,16 +3196,16 @@
       "availabilityNote": "Grijze inlogmethoden zijn tijdelijk niet beschikbaar."
     },
     "powerupDescriptions": {
-      "rare_boost": "Ga op zoek naar bijzondere vondsten. Zeldzame, epische en legendarische munten verschijnen 30 minuten lang vaker.",
+      "rare_boost": "Benieuwd wat het is? Tik op een vraagteken op de kaart en zie wat eronder zit, waar je ook bent op je kaart.",
       "coin_magnet": "Meer te ontdekken tijdens je wandeling. Er verschijnen 30 minuten lang meer munten in je buurt.",
       "to_the_moon": "Elke poging telt. Verdien 30 minuten lang 3× XP bij elke vangpoging.",
-      "pump_it": "Geef je volgende jacht een zetje. Je vangkans voor munten stijgt 30 minuten lang met 35%; succes is niet gegarandeerd.",
-      "diamond_hands": "Een munt gezien die je echt wilt? Stel je volgende muntvangst veilig binnen 1 minuut na activering.",
+      "pump_it": "Nog een kaartenbox. Vang vandaag één extra arena-kaartenbox, bovenop je daglimiet.",
+      "diamond_hands": "Te ver om te lopen? Vang één munt vanaf maximaal 500 meter afstand, met de normale kans.",
       "spawn_lure": "Breng de jacht naar jouw plek. Trek 30 minuten lang munten aan voor spelers in de buurt. Je moet lid zijn van een clan.",
-      "cash": "Laat geslaagde vangsten extra tellen. Verdien 15 minuten lang 2× XP als je een munt vangt.",
-      "fitness": "Reik net wat verder. Vang 15 minuten lang munten op maximaal 60 meter afstand.",
-      "chill_guy": "Houd je reeks vast. Geslaagde vangsten verlagen 15 minuten lang niet je kans op de volgende vangst.",
-      "this_is_fine": "Een tweede kans als het tegenzit. Redt één mislukte muntvangst, binnen 15 minuten na activering."
+      "cash": "Maak van kleine munten een zeldzamere. Ruil 30 minuten lang 3 basis voor 1 ongewone, 3 ongewone voor 1 zeldzame of 5 zeldzame voor 1 legendarische.",
+      "fitness": "Reik een stuk verder. Vang 15 minuten lang munten op maximaal 80 meter afstand.",
+      "chill_guy": "Kijk goed om je heen. Zie 15 minuten lang wat de 15 dichtstbijzijnde spawns zijn, in plaats van 5.",
+      "this_is_fine": "Gemist? Geen paniek. Na je volgende misser blijft de munt 2 minuten van jou, zodat niemand anders hem kan pakken. Werkt maximaal 15 minuten."
     },
     "productInfo": {
       "more": "Over dit product",

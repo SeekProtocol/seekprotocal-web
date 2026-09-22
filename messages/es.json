@@ -884,27 +884,27 @@
   "powerups": {
     "coin_magnet": {
       "label": "Imán de monedas",
-      "effect": "Atrae los drops cercanos al radio"
+      "effect": "Más monedas a tu alrededor"
     },
     "diamond_hands": {
       "label": "Diamond hands",
-      "effect": "Conserva la carga que has ganado"
+      "effect": "Captura una moneda a distancia"
     },
     "pump_it": {
       "label": "Pump it",
-      "effect": "Cada toque cuenta doble"
+      "effect": "Una caja de cartas extra hoy"
     },
     "to_the_moon": {
       "label": "To the moon",
-      "effect": "Sube un nivel la probabilidad de captura"
+      "effect": "Triple XP durante 30 minutos"
     },
     "whale": {
       "label": "Whale",
-      "effect": "Duplica las unidades de una captura"
+      "effect": "Atrae apariciones a tu sitio"
     },
     "this_is_fine": {
       "label": "This is fine",
-      "effect": "Sobrevive a un intento fallido"
+      "effect": "Reserva para ti una moneda fallada"
     }
   },
   "collectiblesSection": {
@@ -2239,7 +2239,7 @@
           },
           {
             "kind": "p",
-            "text": "Opcional, y acotado a propósito. Un pase de temporada dura noventa días e inclina la ponderación de spawns hacia monedas más raras, con un reclamo raro semanal y una mejora incluida. Las mejoras sueltas se venden aparte: una de rareza, un imán de spawns, un multiplicador de XP o un paquete con las tres."
+            "text": "Opcional, y limitado a propósito. Un pase de temporada dura noventa días e inclina las apariciones hacia monedas más raras, con un reclamo raro semanal y una revelación incluidos. Los boosts se venden por separado, y ninguno compra mejores probabilidades sobre una moneda: revelan qué es un signo de interrogación, amplían el alcance de captura, traen más monedas cerca, multiplican la XP, reservan una moneda fallada, permiten una captura a distancia o añaden una caja de cartas."
           },
           {
             "kind": "specs",
@@ -2249,16 +2249,20 @@
                 "value": "9,95 € por temporada de 90 días"
               },
               {
-                "label": "Mejora de rareza, imán de spawns",
-                "value": "1,99 € cada una, 30 minutos"
+                "label": "Shiba (3 revelaciones), This Is Fine",
+                "value": "0,99 € cada uno"
               },
               {
-                "label": "Mejora de XP",
-                "value": "0,99 €, 30 minutos"
+                "label": "Boost de XP, Chill Guy, Pump It, Cash",
+                "value": "1,49 € cada uno"
               },
               {
-                "label": "Paquete de mejoras",
-                "value": "4,99 €, una de cada"
+                "label": "Fitness, Diamond Hands",
+                "value": "1,99 € cada uno"
+              },
+              {
+                "label": "Imán de apariciones, señuelo de apariciones",
+                "value": "2,49 € cada uno"
               }
             ]
           },
@@ -3138,7 +3142,7 @@
       "bundle": "Lote"
     },
     "powerupNames": {
-      "rare_boost": "Rare Boost",
+      "rare_boost": "Shiba",
       "coin_magnet": "Imán de Spawns",
       "to_the_moon": "XP Boost",
       "pump_it": "Dale Gas",
@@ -3192,16 +3196,16 @@
       "availabilityNote": "Los métodos en gris no están disponibles temporalmente."
     },
     "powerupDescriptions": {
-      "rare_boost": "Encuentra algo especial. Las monedas raras, épicas y legendarias aparecen más a menudo durante 30 minutos.",
+      "rare_boost": "¿Te intriga qué es? Toca un signo de interrogación en el mapa y descubre qué hay debajo, esté donde esté en tu mapa.",
       "coin_magnet": "Más por descubrir en tu paseo. Aparecen más monedas cerca de ti durante 30 minutos.",
       "to_the_moon": "Aprovecha cada intento. Gana el triple de EXP al intentar capturar monedas durante 30 minutos.",
-      "pump_it": "Dale impulso a tu búsqueda. Tu probabilidad de capturar monedas aumenta un 35 % durante 30 minutos; el éxito no está garantizado.",
-      "diamond_hands": "¿Has visto una moneda que quieres? Asegura tu próxima captura en el minuto siguiente a la activación.",
+      "pump_it": "Una caja de cartas más. Captura hoy una caja de cartas de arena adicional, además de tu límite diario.",
+      "diamond_hands": "¿Demasiado lejos para caminar? Captura una moneda a hasta 500 metros de distancia, con su probabilidad normal.",
       "spawn_lure": "Trae la búsqueda hasta ti. Atrae monedas para los jugadores cercanos durante 30 minutos. Debes pertenecer a un clan.",
-      "cash": "Haz que tus aciertos valgan más. Gana el doble de EXP al capturar monedas durante 15 minutos.",
-      "fitness": "Llega un poco más lejos. Captura monedas a hasta 60 metros durante 15 minutos.",
-      "chill_guy": "Mantén tu racha. Las capturas exitosas no reducen tu siguiente probabilidad de captura durante 15 minutos.",
-      "this_is_fine": "Una segunda oportunidad cuando hace falta. Salva una captura fallida dentro de los 15 minutos posteriores a la activación."
+      "cash": "Convierte monedas pequeñas en una más rara. Durante 30 minutos, cambia 3 comunes por 1 poco común, 3 poco comunes por 1 rara o 5 raras por 1 legendaria.",
+      "fitness": "Llega mucho más lejos. Captura monedas a hasta 80 metros de distancia durante 15 minutos.",
+      "chill_guy": "Echa un buen vistazo. Ve qué son los 15 spawns más cercanos durante 15 minutos, en lugar de 5.",
+      "this_is_fine": "¿Fallaste? Tranquilo. Tras tu próximo fallo, la moneda sigue siendo tuya durante 2 minutos y nadie más puede llevársela. Dura hasta 15 minutos."
     },
     "productInfo": {
       "more": "Sobre este producto",

@@ -884,27 +884,27 @@
   "powerups": {
     "coin_magnet": {
       "label": "Aimant à pièces",
-      "effect": "Attire les drops proches dans le rayon"
+      "effect": "Plus de pièces autour de vous"
     },
     "diamond_hands": {
       "label": "Diamond hands",
-      "effect": "Conserve la charge que vous avez gagnée"
+      "effect": "Capturez une pièce à distance"
     },
     "pump_it": {
       "label": "Pump it",
-      "effect": "Chaque tape compte double"
+      "effect": "Une boîte de cartes en plus aujourd’hui"
     },
     "to_the_moon": {
       "label": "To the moon",
-      "effect": "Monte la chance de capture d'un cran"
+      "effect": "XP triple pendant 30 minutes"
     },
     "whale": {
       "label": "Whale",
-      "effect": "Double les unités d'une capture"
+      "effect": "Attire les apparitions vers vous"
     },
     "this_is_fine": {
       "label": "This is fine",
-      "effect": "Survit à une tentative ratée"
+      "effect": "Garde pour vous une pièce manquée"
     }
   },
   "collectiblesSection": {
@@ -2239,7 +2239,7 @@
           },
           {
             "kind": "p",
-            "text": "Optionnels, et bornés à dessein. Un pass saisonnier court sur quatre-vingt-dix jours et oriente la pondération des spawns vers des pièces plus rares, avec une réclamation rare hebdomadaire et un boost inclus. Les boosts individuels sont vendus à part : un boost de rareté, un aimant à spawns, un multiplicateur d'XP, ou un lot des trois."
+            "text": "Optionnel, et limité à dessein. Un pass saisonnier dure quatre-vingt-dix jours et oriente les apparitions vers des pièces plus rares, avec une réclamation rare hebdomadaire et une révélation incluses. Les boosts sont vendus séparément, et aucun n’achète de meilleures chances sur une pièce : ils révèlent ce qu’est un point d’interrogation, élargissent la portée de capture, font apparaître plus de pièces à proximité, multiplient l’XP, gardent une pièce manquée, permettent une capture à distance ou ajoutent une boîte de cartes."
           },
           {
             "kind": "specs",
@@ -2249,16 +2249,20 @@
                 "value": "9,95 € par saison de 90 jours"
               },
               {
-                "label": "Boost de rareté, aimant à spawns",
-                "value": "1,99 € chacun, 30 minutes"
+                "label": "Shiba (3 révélations), This Is Fine",
+                "value": "0,99 € chacun"
               },
               {
-                "label": "Boost d'XP",
-                "value": "0,99 €, 30 minutes"
+                "label": "Boost d’XP, Chill Guy, Pump It, Cash",
+                "value": "1,49 € chacun"
               },
               {
-                "label": "Lot de boosts",
-                "value": "4,99 €, un de chaque"
+                "label": "Fitness, Diamond Hands",
+                "value": "1,99 € chacun"
+              },
+              {
+                "label": "Aimant d’apparitions, leurre d’apparitions",
+                "value": "2,49 € chacun"
               }
             ]
           },
@@ -3138,7 +3142,7 @@
       "bundle": "Lot"
     },
     "powerupNames": {
-      "rare_boost": "Rare Boost",
+      "rare_boost": "Shiba",
       "coin_magnet": "Aimant à Spawns",
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
@@ -3192,16 +3196,16 @@
       "availabilityNote": "Les méthodes grisées sont temporairement indisponibles."
     },
     "powerupDescriptions": {
-      "rare_boost": "Faites de belles découvertes. Les pièces rares, épiques et légendaires apparaissent plus souvent pendant 30 minutes.",
+      "rare_boost": "Curieux de savoir ce que c’est ? Touchez un point d’interrogation sur la carte et découvrez ce qui s’y cache, où qu’il soit sur votre carte.",
       "coin_magnet": "Plus de découvertes pendant votre balade. Davantage de pièces apparaissent à proximité pendant 30 minutes.",
       "to_the_moon": "Profitez de chaque tentative. Gagnez 3× plus d’XP lors de vos tentatives de capture de pièces pendant 30 minutes.",
-      "pump_it": "Donnez un coup de pouce à votre chasse. Vos chances de capturer des pièces augmentent de 35 % pendant 30 minutes, sans garantie de réussite.",
-      "diamond_hands": "Une pièce vous fait envie ? Assurez votre prochaine capture dans la minute qui suit l’activation.",
+      "pump_it": "Une boîte de cartes de plus. Capturez aujourd’hui une boîte de cartes d’arène supplémentaire, en plus de votre limite quotidienne.",
+      "diamond_hands": "Trop loin pour marcher ? Capturez une pièce jusqu’à 500 mètres de distance, avec sa chance normale.",
       "spawn_lure": "Attirez la chasse à vous. Faites apparaître des pièces pour les joueurs à proximité pendant 30 minutes. Il faut appartenir à un clan.",
-      "cash": "Faites compter vos réussites. Gagnez 2× plus d’XP en capturant des pièces pendant 15 minutes.",
-      "fitness": "Voyez un peu plus loin. Capturez des pièces jusqu’à 60 mètres pendant 15 minutes.",
-      "chill_guy": "Gardez votre élan. Les captures réussies ne réduisent plus vos chances suivantes pendant 15 minutes.",
-      "this_is_fine": "Une seconde chance au bon moment. Sauve une capture ratée dans les 15 minutes suivant l’activation."
+      "cash": "Transformez de petites pièces en une plus rare. Pendant 30 minutes, échangez 3 communes contre 1 peu commune, 3 peu communes contre 1 rare ou 5 rares contre 1 légendaire.",
+      "fitness": "Voyez beaucoup plus loin. Capturez des pièces jusqu’à 80 mètres de distance pendant 15 minutes.",
+      "chill_guy": "Regardez bien autour de vous. Voyez ce que sont les 15 apparitions les plus proches pendant 15 minutes, au lieu de 5.",
+      "this_is_fine": "Raté ? Pas de panique. Après votre prochain échec, la pièce reste à vous pendant 2 minutes, personne d’autre ne peut la prendre. Dure jusqu’à 15 minutes."
     },
     "productInfo": {
       "more": "À propos de ce produit",

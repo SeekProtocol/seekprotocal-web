@@ -884,27 +884,27 @@
   "powerups": {
     "coin_magnet": {
       "label": "Coin magnet",
-      "effect": "Pulls nearby drops into range"
+      "effect": "More coins appear around you"
     },
     "diamond_hands": {
       "label": "Diamond hands",
-      "effect": "Keeps the charge you earned"
+      "effect": "Catch one coin from afar"
     },
     "pump_it": {
       "label": "Pump it",
-      "effect": "Every tap counts double"
+      "effect": "One extra card box today"
     },
     "to_the_moon": {
       "label": "To the moon",
-      "effect": "Raises the catch chance one tier"
+      "effect": "Triple XP for 30 minutes"
     },
     "whale": {
       "label": "Whale",
-      "effect": "Doubles the units on a catch"
+      "effect": "Draws spawns to your spot"
     },
     "this_is_fine": {
       "label": "This is fine",
-      "effect": "Survives one failed attempt"
+      "effect": "Holds a missed coin for you"
     }
   },
   "collectiblesSection": {
@@ -2239,7 +2239,7 @@
           },
           {
             "kind": "p",
-            "text": "Optional, and bounded on purpose. A seasonal pass runs for ninety days and tilts spawn weighting towards rarer coins, with a weekly rare claim and a boost included. Individual boosts are sold separately: a rare boost, a spawn magnet, an XP multiplier, or a bundle of all three."
+            "text": "Optional, and bounded on purpose. A seasonal pass runs for ninety days and tilts spawn weighting towards rarer coins, with a weekly rare claim and a reveal included. Boosts are sold separately, and none of them buys better odds on a coin: they reveal what a question mark is, widen the catch range, bring more coins nearby, multiply XP, hold a missed coin, allow one catch from afar or add a card box."
           },
           {
             "kind": "specs",
@@ -2249,16 +2249,20 @@
                 "value": "€9.95 per 90-day season"
               },
               {
-                "label": "Rare boost, spawn magnet",
-                "value": "€1.99 each, 30 minutes"
+                "label": "Shiba (3 reveals), This Is Fine",
+                "value": "€0.99 each"
               },
               {
-                "label": "XP boost",
-                "value": "€0.99, 30 minutes"
+                "label": "XP boost, Chill Guy, Pump It, Cash",
+                "value": "€1.49 each"
               },
               {
-                "label": "Boost bundle",
-                "value": "€4.99, one of each"
+                "label": "Fitness, Diamond Hands",
+                "value": "€1.99 each"
+              },
+              {
+                "label": "Spawn magnet, spawn lure",
+                "value": "€2.49 each"
               }
             ]
           },
@@ -3138,7 +3142,7 @@
       "bundle": "Bundle"
     },
     "powerupNames": {
-      "rare_boost": "Rare Boost",
+      "rare_boost": "Shiba",
       "coin_magnet": "Spawn Magnet",
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
@@ -3192,16 +3196,16 @@
       "availabilityNote": "Greyed-out sign-in methods are temporarily unavailable."
     },
     "powerupDescriptions": {
-      "rare_boost": "Make room for rarer finds. Rare, epic and legendary coins appear more often for 30 minutes.",
+      "rare_boost": "Curious what it is? Tap a question mark on the map and see what is under it, from anywhere on your map.",
       "coin_magnet": "More to discover on your walk. More coins appear nearby for 30 minutes.",
       "to_the_moon": "Make every attempt count. Earn 3× XP from coin catch attempts for 30 minutes.",
-      "pump_it": "Give your next hunt a lift. Boost your coin catch chance by 35% for 30 minutes; catches are not guaranteed.",
-      "diamond_hands": "Spotted a coin you really want? Secure your next coin catch within 1 minute of activation.",
+      "pump_it": "One more card box. Catch one extra arena card box today, on top of your daily limit.",
+      "diamond_hands": "Too far to walk? Catch one coin from up to 500 metres away, at its normal chance.",
       "spawn_lure": "Bring the hunt to your spot. Attract coins for nearby players for 30 minutes. Requires clan membership.",
-      "cash": "Make good catches go further. Earn 2× XP on successful coin catches for 15 minutes.",
-      "fitness": "Reach a little further. Catch coins from up to 60 metres away for 15 minutes.",
-      "chill_guy": "Keep your winning streak going. Successful catches no longer lower your next catch chance for 15 minutes.",
-      "this_is_fine": "A second chance when you need it. Saves one failed coin catch, within 15 minutes of activation."
+      "cash": "Turn small coins into a rarer one. For 30 minutes, trade 3 common for 1 uncommon, 3 uncommon for 1 rare, or 5 rare for 1 legendary.",
+      "fitness": "Reach a lot further. Catch coins from up to 80 metres away for 15 minutes.",
+      "chill_guy": "Take a good look around. See what the 15 nearest spawns are for 15 minutes, instead of 5.",
+      "this_is_fine": "Missed? No panic. After your next miss the coin stays yours for 2 minutes, so nobody else can take it. Lasts up to 15 minutes."
     },
     "productInfo": {
       "more": "About this product",

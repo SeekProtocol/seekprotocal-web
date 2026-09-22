@@ -884,27 +884,27 @@
   "powerups": {
     "coin_magnet": {
       "label": "Coin magnet",
-      "effect": "Yakındaki drop'ları menzile çeker"
+      "effect": "Etrafında daha fazla coin"
     },
     "diamond_hands": {
       "label": "Diamond hands",
-      "effect": "Kazandığın şarjı korur"
+      "effect": "Uzaktan bir coin yakala"
     },
     "pump_it": {
       "label": "Pump it",
-      "effect": "Her dokunuş iki kez sayılır"
+      "effect": "Bugün bir ekstra kart kutusu"
     },
     "to_the_moon": {
       "label": "To the moon",
-      "effect": "Yakalama şansını bir kademe yükseltir"
+      "effect": "30 dakika üç kat XP"
     },
     "whale": {
       "label": "Whale",
-      "effect": "Bir yakalamadaki birim sayısını iki katına çıkarır"
+      "effect": "Spawnları bulunduğun yere çeker"
     },
     "this_is_fine": {
       "label": "This is fine",
-      "effect": "Bir başarısız denemeyi atlatır"
+      "effect": "Kaçırılan coini senin için tutar"
     }
   },
   "collectiblesSection": {
@@ -2239,7 +2239,7 @@
           },
           {
             "kind": "p",
-            "text": "İsteğe bağlı ve bilerek sınırlı. Sezonluk bir pass doksan gün sürer ve spawn ağırlıklandırmasını daha nadir coinlere yaslar; haftalık bir nadir talep ve bir boost dahildir. Bireysel boost'lar ayrı satılır: bir nadir boost, bir spawn magnet, bir XP çarpanı veya üçünün bir paketi."
+            "text": "İsteğe bağlı ve bilinçli olarak sınırlı. Sezon kartı doksan gün sürer ve spawn ağırlığını daha nadir coinlere kaydırır; haftalık nadir talep ve bir açığa çıkarma dahildir. Boostlar ayrı satılır ve hiçbiri bir coin için daha iyi şans satın almaz: soru işaretinin ne olduğunu gösterir, yakalama menzilini genişletir, yakına daha fazla coin getirir, XP'yi katlar, kaçırılan bir coini tutar, uzaktan bir yakalama ya da ekstra bir kart kutusu sağlar."
           },
           {
             "kind": "specs",
@@ -2249,16 +2249,20 @@
                 "value": "90 günlük sezon başına €9,95"
               },
               {
-                "label": "Nadir boost, spawn magnet",
-                "value": "€1,99 her biri, 30 dakika"
+                "label": "Shiba (3 açığa çıkarma), This Is Fine",
+                "value": "tanesi 0,99 €"
               },
               {
-                "label": "XP boost",
-                "value": "€0,99, 30 dakika"
+                "label": "XP boost, Chill Guy, Pump It, Cash",
+                "value": "tanesi 1,49 €"
               },
               {
-                "label": "Boost paketi",
-                "value": "€4,99, her birinden bir tane"
+                "label": "Fitness, Diamond Hands",
+                "value": "tanesi 1,99 €"
+              },
+              {
+                "label": "Spawn mıknatısı, spawn yemi",
+                "value": "tanesi 2,49 €"
               }
             ]
           },
@@ -3138,7 +3142,7 @@
       "bundle": "Paket"
     },
     "powerupNames": {
-      "rare_boost": "Nadir Boost",
+      "rare_boost": "Shiba",
       "coin_magnet": "Spawn Mıknatısı",
       "to_the_moon": "XP Boost",
       "pump_it": "Pump It",
@@ -3192,16 +3196,16 @@
       "availabilityNote": "Gri giriş yöntemleri geçici olarak kullanılamıyor."
     },
     "powerupDescriptions": {
-      "rare_boost": "Daha özel keşiflere yer aç. Nadir, epik ve efsanevi coinler 30 dakika boyunca daha sık belirir.",
+      "rare_boost": "Ne olduğunu merak mı ediyorsun? Haritadaki bir soru işaretine dokun ve altında ne olduğunu gör, haritanın neresinde olursa olsun.",
       "coin_magnet": "Yürüyüşünde daha fazlasını keşfet. Yakınında 30 dakika boyunca daha fazla coin belirir.",
       "to_the_moon": "Her denemeden daha çok kazan. 30 dakika boyunca coin yakalama denemelerinden 3 kat XP al.",
-      "pump_it": "Avına güç kat. Coin yakalama şansın 30 dakika boyunca %35 artar; başarı garanti değildir.",
-      "diamond_hands": "Çok istediğin bir coin mi gördün? Etkinleştirdikten sonraki 1 dakika içinde bir sonraki coin yakalamanı garantile.",
+      "pump_it": "Bir kart kutusu daha. Günlük sınırına ek olarak bugün bir ekstra arena kart kutusu yakala.",
+      "diamond_hands": "Yürümek için çok mu uzak? 500 metreye kadar uzaktaki bir coini normal şansıyla yakala.",
       "spawn_lure": "Avı bulunduğun yere getir. 30 dakika boyunca yakındaki oyuncular için coin çek. Klan üyeliği gerekir.",
-      "cash": "Başarılı yakalamalar daha değerli olsun. 15 dakika boyunca yakaladığın coinlerden 2 kat XP al.",
-      "fitness": "Biraz daha uzağa eriş. 15 dakika boyunca 60 metreye kadar uzaktaki coinleri yakala.",
-      "chill_guy": "Başarı serini sürdür. 15 dakika boyunca başarılı yakalamalar sonraki yakalama şansını düşürmez.",
-      "this_is_fine": "İhtiyacın olduğunda ikinci bir şans. Etkinleştirmeden sonraki 15 dakika içinde bir başarısız coin yakalamayı kurtarır."
+      "cash": "Küçük coinleri daha nadir birine dönüştür. 30 dakika boyunca 3 yaygını 1 nadir olmayan, 3 nadir olmayanı 1 nadir ya da 5 nadiri 1 efsanevi coinle takas et.",
+      "fitness": "Çok daha uzağa eriş. 15 dakika boyunca 80 metreye kadar uzaktaki coinleri yakala.",
+      "chill_guy": "Etrafına iyice bak. 15 dakika boyunca 5 yerine en yakın 15 spawnın ne olduğunu gör.",
+      "this_is_fine": "Kaçırdın mı? Panik yok. Bir sonraki ıskalamandan sonra coin 2 dakika boyunca senin kalır ve başka kimse alamaz. En fazla 15 dakika sürer."
     },
     "productInfo": {
       "more": "Bu ürün hakkında",
