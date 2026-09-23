@@ -501,7 +501,7 @@
     "verified": "Kehadiran disahkan on-chain",
     "all": "Semua",
     "yourHaul": "Hasil anda",
-    "filterLabel": "Tapis mengikut kelangkaan",
+    "filterLabel": "Tapis mengikut kejarangan",
     "waitingRarity": "Belum ada kutipan {rarity}",
     "catchChance": "Peluang tangkapan",
     "close": "Tutup",
@@ -544,7 +544,7 @@
       "label": "Bahasa"
     },
     "stores": {
-      "label": "Gedung aplikasi aktif"
+      "label": "Kedai aplikasi aktif"
     }
   },
   "worldDescent": {
@@ -635,7 +635,7 @@
     },
     "answering": {
       "label": "Menjawab",
-      "line": "Ada satu legendaris dua jalan ke atas, di belakang pasar. Enam minit mengikut rentak anda, dan ia tutup pukul enam."
+      "line": "Ada satu legenda dua jalan ke atas, di belakang pasar. Enam minit mengikut rentak anda, dan ia tutup pukul enam."
     },
     "idle": {
       "label": "Rehat",
@@ -659,7 +659,7 @@
     "copy": "Salin",
     "copied": "Disalin",
     "spot": {
-      "text": "Legendaris baru muncul dekat pasar. Dua jalan dari hentian trem."
+      "text": "Legenda baru muncul dekat pasar. Dua jalan dari hentian trem."
     },
     "coming": {
       "text": "Dalam perjalanan. Ada sesiapa masih ada magnet?"
@@ -668,7 +668,7 @@
       "text": "Dah hantar dua. Simpan diamond hands untuk leak."
     },
     "missed": {
-      "text": "Gelang penuh tapi masih terlepas. Tinggal dua cubaan."
+      "text": "Gelang penuh tetapi masih terlepas. Tinggal dua cubaan."
     },
     "invited": {
       "label": "Dijemput"
@@ -701,11 +701,11 @@
         },
         {
           "title": "Power-up dan masa",
-          "body": "Magnet, berganda dan beku boleh digabungkan pada satu tangkapan. Bar masa menentukan berapa banyak drop yang anda simpan, kerana legendaris yang ditangkap dengan buruk tetap legendaris yang ditangkap dengan buruk."
+          "body": "Magnet, berganda dan beku boleh digabungkan pada satu tangkapan. Bar masa menentukan berapa banyak drop yang anda simpan, kerana legenda yang ditangkap dengan buruk tetap legenda yang ditangkap dengan buruk."
         },
         {
-          "title": "Kelangkaan yang bermakna",
-          "body": "Dari biasa hingga legendaris, dengan kelangkaan menentukan warna gelang di peta sebelum anda menghampirinya."
+          "title": "Kejarangan yang bermakna",
+          "body": "Dari biasa hingga legenda, dengan kejarangan menentukan warna gelang di peta sebelum anda menghampirinya."
         }
       ]
     },
@@ -852,8 +852,8 @@
       "detail": "Kutip di 50 tempat berbeza"
     },
     "legendary": {
-      "name": "Legendaris",
-      "detail": "Tangkap spawn legendaris"
+      "name": "Legenda",
+      "detail": "Tangkap spawn legenda"
     },
     "rareHunter": {
       "name": "Pemburu jarang",
@@ -910,7 +910,7 @@
     "uncommon": "Tidak biasa",
     "rare": "Jarang",
     "epic": "Epik",
-    "legendary": "Legendaris"
+    "legendary": "Legenda"
   },
   "powerups": {
     "coin_magnet": {
@@ -941,8 +941,8 @@
   "collectiblesSection": {
     "eyebrow": "Barang koleksi",
     "title": "Inilah koin yang ada di luar sana",
-    "lead": "Kelangkaan menentukan kekerapan ia muncul dan kemungkinan anda menyimpannya. Unit yang ditangkap ialah unit permainan. Nilainya dalam token sebenar ditentukan oleh pasaran.",
-    "filterLabel": "Tapis mengikut kelangkaan",
+    "lead": "Kejarangan menentukan kekerapan ia muncul dan kemungkinan anda menyimpannya. Unit yang ditangkap ialah unit permainan. Nilainya dalam token sebenar ditentukan oleh pasaran.",
+    "filterLabel": "Tapis mengikut kejarangan",
     "all": "Semua",
     "catchChance": "Peluang tangkapan",
     "overThree": "Dalam 3 cubaan",
@@ -993,7 +993,7 @@
       "label": "Barang koleksi",
       "headline": "Sesuatu yang hanya wujud di tempat ia diletakkan",
       "face": "Jarang",
-      "fine": "Siri 500 · Boleh didagang · Kelangkaan ditetapkan semasa dikeluarkan",
+      "fine": "Siri 500 · Boleh didagang · Kejarangan ditetapkan semasa dikeluarkan",
       "redeem": "Tiada apa yang perlu ditebus. Ia rekod pernah berada di sesuatu tempat, sebab tertua mengapa sesiapa pernah menyimpan sesuatu.",
       "proof": "Setiap satu membawa koordinat tempat ia diambil, jadi set yang dipegang seseorang ialah peta tempat yang benar-benar pernah mereka kunjungi.",
       "placedBy": "Bandar, lembaga pelancongan, artis"
@@ -1147,8 +1147,8 @@
     },
     "spawn": {
       "label": "Spawn",
-      "title": "Kelangkaan memberitahu apa yang anda tuju",
-      "body": "Dari biasa hingga legendaris, masing-masing dengan peluang tangkapannya sendiri. Anda ada dua cubaan, dan cubaan kedua bernilai 0.65 daripada yang pertama, jadi ketikan pembukaan paling penting."
+      "title": "Kejarangan memberitahu apa yang anda tuju",
+      "body": "Dari biasa hingga legenda, masing-masing dengan peluang tangkapannya sendiri. Anda ada dua cubaan, dan cubaan kedua bernilai 0.65 daripada yang pertama, jadi ketikan pembukaan paling penting."
     },
     "catch": {
       "label": "Tangkapan",
@@ -1158,7 +1158,7 @@
     "result": {
       "label": "Undian",
       "title": "Cas membeli peluang, bukan kepastian",
-      "body": "Gelang penuh pada legendaris masih satu dalam lima. Itulah yang menjadikan legendaris berbaloi dimiliki, dan yang menjadikan ketikan itu menentukan sesuatu."
+      "body": "Gelang penuh pada legenda masih satu dalam lima. Itulah yang menjadikan legenda berbaloi dimiliki, dan yang menjadikan ketikan itu menentukan sesuatu."
     },
     "wallet": {
       "label": "Milik anda",
@@ -1377,7 +1377,7 @@
     },
     "launch": {
       "title": "Pelancaran awam",
-      "summary": "Membawa Seekprotocol ke tangan sebenar, di kedua-dua gedung aplikasi, dengan aliran permulaan yang tidak menganggap pengguna pernah memegang kunci peribadi.",
+      "summary": "Membawa Seekprotocol ke tangan sebenar, di kedua-dua kedai aplikasi, dengan aliran permulaan yang tidak menganggap pengguna pernah memegang kunci peribadi.",
       "items": {
         "stores": "Seekprotocol dilancarkan di iOS dan Android",
         "wallet": "Dompet log masuk sosial dengan eksport jagaan sendiri pilihan",
@@ -2088,7 +2088,7 @@
           },
           {
             "kind": "p",
-            "text": "Kebanyakan permainan menyembunyikan pengubah suai. Tiada sebab untuk berbuat demikian di sini, kerana sifat yang menarik ialah kemahiran mempengaruhi tetapi tidak pernah menentukan. Gelang cas ialah pengganda antara 0.85 dan 1.0, jadi ketikan sempurna pada legendaris tetap legendaris, dan ketikan yang kekok pada biasa mungkin masih biasa."
+            "text": "Kebanyakan permainan menyembunyikan pengubah suai. Tiada sebab untuk berbuat demikian di sini, kerana sifat yang menarik ialah kemahiran mempengaruhi tetapi tidak pernah menentukan. Gelang cas ialah pengganda antara 0.85 dan 1.0, jadi ketikan sempurna pada legenda tetap legenda, dan ketikan yang kekok pada biasa mungkin masih biasa."
           },
           {
             "kind": "list",
@@ -2696,7 +2696,7 @@
     "chaptersLabel": "Bab",
     "close": "Tutup",
     "ladderTitle": "Undian tangkapan, seperti yang dikira pelayan",
-    "rarityLabel": "Kelangkaan",
+    "rarityLabel": "Kejarangan",
     "playerLevel": "Tahap pemain",
     "chargeRing": "Gelang cas",
     "missed": "Terlepas",
@@ -2858,7 +2858,7 @@
     "lead": "Berikan kod jemputan anda kepada rakan dan anda dapat 5% lebih XP pada setiap tangkapan anda, selagi mereka terus bermain. Tiada had, dan ia tidak pernah diambil daripada bahagian mereka.",
     "codeLabel": "Kod jemputan lapan aksara anda",
     "activeLabel": "AKTIF",
-    "exampleLabel": "Satu tangkapan legendaris, sebelum dan selepas",
+    "exampleLabel": "Satu tangkapan legenda, sebelum dan selepas",
     "exampleBody": "Bonus dikenakan semasa tangkapan dinilai, di pelayan, dan ditulis dalam rekod bersama pangkat klan anda supaya kedua-duanya boleh dibezakan kemudian.",
     "activeRule": "Aktif bermaksud {needed} tangkapan dalam {days} hari terakhir",
     "panelTitle": "PASUKAN ANDA",
@@ -3234,7 +3234,7 @@
       "pump_it": "Satu lagi kotak kad. Tangkap satu kotak kad arena tambahan hari ini, melebihi had harian anda.",
       "diamond_hands": "Terlalu jauh untuk berjalan? Tangkap satu koin dari jarak sehingga 500 meter, pada peluang biasanya.",
       "spawn_lure": "Bawa pemburuan ke tempat anda. Tarik koin untuk pemain berdekatan selama 30 minit. Memerlukan keahlian klan.",
-      "cash": "Tukar koin kecil menjadi yang lebih jarang. Selama 30 minit, tukar 3 biasa untuk 1 tidak biasa, 3 tidak biasa untuk 1 jarang, atau 5 jarang untuk 1 legendaris.",
+      "cash": "Tukar koin kecil menjadi yang lebih jarang. Selama 30 minit, tukar 3 biasa untuk 1 tidak biasa, 3 tidak biasa untuk 1 jarang, atau 5 jarang untuk 1 legenda.",
       "fitness": "Capai lebih jauh. Tangkap koin dari jarak sehingga 80 meter selama 15 minit.",
       "chill_guy": "Lihat sekeliling dengan teliti. Lihat apa 15 spawn terdekat selama 15 minit, bukan 5.",
       "this_is_fine": "Terlepas? Jangan panik. Selepas kegagalan anda seterusnya, koin itu kekal milik anda selama 2 minit, jadi tiada orang lain boleh mengambilnya. Bertahan sehingga 15 minit."
@@ -3244,7 +3244,7 @@
       "includes": "Apa yang anda dapat",
       "use": "Cara menggunakannya",
       "pack": "Setiap pek mengandungi 5 kad Arena rawak. Buka pek anda di Arena dalam aplikasi dan lihat kad yang anda terima. Kad pendua mungkin berlaku; kad tertentu tidak dijamin.",
-      "pass": "Nikmati lebih banyak pertemuan dengan koin jarang, epik dan legendaris sepanjang musim semasa, serta koin jarang mingguan untuk dituntut dalam aplikasi. Pass tamat bersama musim dan tidak diperbaharui secara automatik.",
+      "pass": "Nikmati lebih banyak pertemuan dengan koin jarang, epik dan legenda sepanjang musim semasa, serta koin jarang mingguan untuk dituntut dalam aplikasi. Pass tamat bersama musim dan tidak diperbaharui secara automatik.",
       "bundle": "Booster yang disenaraikan ditambah secara berasingan ke inventori anda. Pilih yang mana hendak diaktifkan dahulu; kesannya tidak berjalan serentak.",
       "delivery": "Dihantar ke akaun Seekprotocol yang anda pilih selepas pembayaran disahkan. Tanpa ID Rakan, pembelian dihantar ke akaun aplikasi yang dipautkan pada log masuk anda.",
       "passName": "Season Pass",
