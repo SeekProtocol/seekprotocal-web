@@ -18,7 +18,7 @@ export default function NotFound() {
           <SeekMark size={56} gradientId="notfound-mark" />
         </div>
 
-        <p className="t-mono notfound-code">Error 404 · No signal at this coordinate</p>
+        <p className="t-mono notfound-code">{t("errorCode")}</p>
         <h1 className="t-h1 notfound-title">{t("pageNotFound")}</h1>
         <p className="t-lead notfound-desc">{t("pageNotFoundDesc")}</p>
 

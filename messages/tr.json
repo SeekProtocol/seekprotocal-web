@@ -13,7 +13,9 @@
     "shop": "Mağaza",
     "getApp": "Uygulamayı indir",
     "switchToLight": "Açık moda geç",
-    "switchToDark": "Koyu moda geç"
+    "switchToDark": "Koyu moda geç",
+    "mainLabel": "Ana menü",
+    "mobileLabel": "Mobil menü"
   },
   "footer": {
     "home": "Ana Sayfa",
@@ -33,7 +35,9 @@
     "resources": "Kaynaklar",
     "appStore": "App Store",
     "googlePlay": "Google Play",
-    "seekPartners": "Seek Partners"
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "App Store'dan indirin",
+    "googlePlayAlt": "Google Play'den alın"
   },
   "home": {
     "heroTitle": "Yeni Bir Gerçekliği Keşfet:",
@@ -156,13 +160,15 @@
     "renameLink": "Duyuruyu oku",
     "legacyEyebrow": "İsim geçmişi",
     "legacyTitle": "SeekAR kripto AR uygulaması artık Seekprotocol",
-    "legacyBody": "Sadece uygulama adı değişti; şirket ilk günden beri Seekprotocol adını taşıyor. Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı, Block Protocol L.L.C-FZ, Dubai, BAE, aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle on-chain ödüller için çoklu zincir AR uygulamasını açıklıyor.",
+    "legacyBody": "Sadece uygulama adı değişti; şirket ilk günden beri Seekprotocol adını taşıyor. Lansmandan Ağustos 2026'ya kadar iOS ve Android'de SeekAR adıyla yayınlanan mobil uygulama artık Seekprotocol olarak adlandırılıyor. Aynı ürün, aynı yayıncı, Block Protocol L.L.C-FZ, Dubai, BAE, aynı App Store girişi (id 6752813761) ve aynı Play Store paketi (com.seekar.seekar). Başka ürünler, sanatçılar ve yerler de Seekar adını kullanıyor; bu sayfa özellikle çoklu zincir AR ve kripto ödül uygulamasını anlatıyor.",
     "q6": "SeekAR uygulamasına ne oldu?",
     "a6": "SeekAR olarak yayınlanan on-chain ödüller için AR mobil uygulaması 10 Ağustos 2026'da Seekprotocol olarak yeniden adlandırıldı. Aynı ürün, aynı yayıncı (Block Protocol L.L.C-FZ, Dubai), aynı App Store girişi (id 6752813761), aynı Play Store paketi (com.seekar.seekar). Yalnızca isim ve simge değişti.",
     "q7": "Eskiden SeekAR olarak bilinen uygulamayı nereden indirebilirim?",
     "a7": "App Store'da apps.apple.com/app/id6752813761 ve Google Play'de play.google.com/store/apps/details?id=com.seekar.seekar adreslerinden. Her iki giriş de artık Seekprotocol olarak adlandırılıyor.",
     "q8": "Seekprotocol, SeekAR ile aynı ürün mü?",
-    "a8": "Evet. Şirket ilk günden beri Seekprotocol; yalnızca uygulama adı değişti. Lansmandan Ağustos 2026'ya kadar SeekAR olarak adlandırılan on-chain ödüller için çoklu zincir AR uygulaması bugün Seekprotocol olarak adlandırılıyor, aynı ekip tarafından Dubai, BAE'deki Block Protocol L.L.C-FZ üzerinden yayınlanıyor."
+    "a8": "Evet. Şirket ilk günden beri Seekprotocol; yalnızca uygulama adı değişti. Lansmandan Ağustos 2026'ya kadar SeekAR adını taşıyan çoklu zincir AR kripto ödül uygulamasının adı artık Seekprotocol ve uygulamayı yine aynı ekip, Dubai, BAE'deki Block Protocol L.L.C-FZ bünyesinde yayınlıyor.",
+    "stepsEyebrow": "Adım adım",
+    "faqEyebrow": "SSS"
   },
   "about": {
     "heroTitle": "Konum Tabanlı Dijital Deneyimlerin Geleceğini Keşfet",
@@ -193,7 +199,7 @@
     "techBlockchain": "BLOK ZİNCİR ÖDÜLLERİ",
     "techBlockchainDesc": "Gerçek keşif ve etkileşim için gerçek ödüller.",
     "techSync": "ANLIK SENKRONİZASYON",
-    "techSyncDesc": "Tüm oyuncular arasında gerçek zamanlı güncellemeler - keşiflerin dünya çapında olduğu anda canlı gerçekleştiğini gör.",
+    "techSyncDesc": "Tüm oyuncular arasında gerçek zamanlı güncellemeler. Keşiflerin dünya çapında olduğu anda canlı gerçekleştiğini gör.",
     "threePillars": "BAŞARININ ÜÇ SÜTUNU",
     "threePillarsDesc": "Seekprotocol'ün merkezinde, dünyayla nasıl etkileşim kurduğumuzu dönüştüren üç devrim niteliğinde teknoloji vardır.",
     "pillarAR": "Artırılmış Gerçeklik",
@@ -225,7 +231,13 @@
     "ctaDesc": "Dünyanın oyun alanın olduğu yeni bir gerçekliğe adım at. Seekprotocol, çevreni interaktif bir maceraya dönüştürerek en yeni AR teknolojisini gerçek dünya keşfiyle harmanlar.",
     "metaTitle": "Seekprotocol'ün Arkasındaki Ekip Hakkında",
     "metaDescription": "Her zincir için konum tabanlı AR inşa eden ekibi tanıyın: konum kanıtı arkasındaki misyon, Seekprotocol'ün altındaki teknoloji ve $SEEK'in arkasındaki insanlar.",
-    "ogTitle": "Seekprotocol'ün arkasındaki ekip"
+    "ogTitle": "Seekprotocol'ün arkasındaki ekip",
+    "eyebrow": "Hakkımızda",
+    "whyEyebrow": "Bunu neden inşa ediyoruz",
+    "techEyebrow": "Teknoloji",
+    "pillarsEyebrow": "Temel taşlar",
+    "teamEyebrow": "Ekip",
+    "linkedinLabel": "LinkedIn'de {name}"
   },
   "contact": {
     "getInTouch": "İletişime Geç",
@@ -241,7 +253,11 @@
     "pressTitle": "Basın & medya",
     "pressBody": "Haber, röportaj, inceleme kopyası, ambargolu haber. Editoryal her şey için buradan ulaş; aynı gün yanıtlarız.",
     "supportTitle": "Destek",
-    "supportBody": "Bir hata, ulaşmayan bir ödül, bir cüzdan sorusu. En hızlısı Discord, ama bu form da işe yarar."
+    "supportBody": "Bir hata, ulaşmayan bir ödül, bir cüzdan sorusu. En hızlısı Discord, ama bu form da işe yarar.",
+    "eyebrow": "İletişim",
+    "elsewhere": "Diğer kanallar",
+    "documentation": "Dokümantasyon",
+    "registeredOffice": "Kayıtlı merkez"
   },
   "services": {
     "heroTitle": "BİZİM UZMANLIĞIMIZ, SİZİN BÜYÜMENİZ",
@@ -282,7 +298,7 @@
     "agencies": "Ajanslar & Danışmanlar",
     "agenciesDesc": "Yüksek değerli içerikle otorite inşa etmek.",
     "localBusinesses": "Yerel İşletmeler",
-    "localBusinessesDesc": "Prag'da ve ötesinde müşterilerinle bağlantı kurmana yardımcı olmak.",
+    "localBusinessesDesc": "Şehrindeki ve ötesindeki müşterilerle bağlantı kurmana yardımcı oluyoruz.",
     "largeCorporations": "Büyük Kuruluşlar",
     "largeCorporationsDesc": "Markanı güçlendiren net, etkili mesajlar yazmak.",
     "ctaConnect": "Bağlantı Kuralım",
@@ -301,7 +317,8 @@
     "relatedPages": "İlgili sayfalar",
     "metaTitle": "Blog: AR, AI ve Konum Tabanlı Ödüller",
     "metaDescription": "Artırılmış gerçeklik, AI rehberler, coğrafi sınırlamalı hava dağıtımları ve konum kanıtı üzerine makaleler; Seekprotocol'ü inşa eden ekipten.",
-    "ogTitle": "Seekprotocol blogu"
+    "ogTitle": "Seekprotocol blogu",
+    "eyebrow": "Blog"
   },
   "forms": {
     "emailPlaceholder": "E-posta Adresi",
@@ -343,13 +360,15 @@
     "rejectAll": "Tümünü Reddet",
     "customize": "Özelleştir",
     "savePreferences": "Tercihleri Kaydet",
-    "cookieSettings": "Çerez Ayarları"
+    "cookieSettings": "Çerez Ayarları",
+    "toggleLabel": "{category} aç veya kapat"
   },
   "notFound": {
     "pageNotFound": "Sayfa Bulunamadı",
     "pageNotFoundDesc": "Aradığın sayfa mevcut değil ya da taşınmış",
     "oops": "Ups, Sayfa Bulunamadı",
-    "backToHome": "Ana Sayfaya Dön"
+    "backToHome": "Ana Sayfaya Dön",
+    "errorCode": "Hata 404 · Bu koordinatta sinyal yok"
   },
   "metrics": {
     "text1": "SINIRSIZ VARLIKLAR.",
@@ -430,7 +449,8 @@
     "raspTitle": "Talsec freeRASP: güvenlik tanılama verileri",
     "raspP1": "freeRASP'ın etkin olduğu sürümlerde Talsec (Lynx SFT s.r.o.), uygulama ve işletim sistemine ilişkin güvenlik tanılama verilerini, cihaz modeli bilgilerini, uygulama örneği ve cihaz tanımlayıcılarını alır. Sinyaller root erişimi, emülatörler, uygulama değişiklikleri, hata ayıklama ve hooking içerebilir. Bu veriler ilgili sürüm çalışırken otomatik gönderilir; isteğe bağlı performans analizi ayarları bunları devre dışı bırakmaz.",
     "raspP2": "Talsec bu verileri güvenlik raporları, ücretsiz ve ticari güvenlik ürünlerini geliştirme ve toplulaştırılmış araştırmalar için kullanır. Talsec, Amerika Birleşik Devletleri'nde bulut işlemesi yapıldığını belirtir. Cihaz kimliklerinin tüm gizlilik yasaları kapsamında tamamen anonim olduğu varsayılmamalıdır. Aşağıdaki bağlantıdan Talsec'in veri politikalarını inceleyebilirsiniz.",
-    "raspP3": "Kendi sunucu sistemimiz de hesabınızla ilişkilendirilebilen toplama girişimleriyle birlikte tehdit adlarını kaydeder. Callback işleme kodumuz, yüklü diğer uygulamaların listesini yüklemez. Bunlar cihazın bildirdiği sinyallerdir ve tek başlarına dolandırıcılığın kanıtı değildir."
+    "raspP3": "Kendi sunucu sistemimiz de hesabınızla ilişkilendirilebilen toplama girişimleriyle birlikte tehdit adlarını kaydeder. Callback işleme kodumuz, yüklü diğer uygulamaların listesini yüklemez. Bunlar cihazın bildirdiği sinyallerdir ve tek başlarına dolandırıcılığın kanıtı değildir.",
+    "eyebrow": "Yasal"
   },
   "termsPage": {
     "title": "Şartlar ve Koşullar",
@@ -452,7 +472,8 @@
     "contactP1": "Şartlar ve Koşullar hakkında herhangi bir soru veya öneriniz varsa, lütfen Hizmet Sağlayıcı ile <email>support@seekprotocol.ai</email> adresinden iletişime geçmekten çekinmeyin.",
     "metaTitle": "Şartlar ve Koşullar",
     "metaDescription": "Seekprotocol'ü ve Seekprotocol platformunu kullanma şartları: hakların, varlıkları talep etme kuralları ve ücretli öğelerin nasıl çalıştığı.",
-    "ogTitle": "Seekprotocol şartları"
+    "ogTitle": "Seekprotocol şartları",
+    "eyebrow": "Yasal"
   },
   "languageSwitcher": {
     "en": "English",
@@ -486,7 +507,17 @@
     "close": "Kapat",
     "secondsAgo": "{seconds}s önce",
     "zoomIn": "Yakınlaştır",
-    "zoomOut": "Uzaklaştır"
+    "zoomOut": "Uzaklaştır",
+    "busiest": "Şu anda en hareketli",
+    "units": "Adet",
+    "zoomLabel": "Yakınlaştırma",
+    "hubsLabel": "Bir şehre git",
+    "wholeEarth": "Tüm dünya",
+    "zoomLevel": "Yakınlaştırma %{percent}",
+    "caught": "Yakalandı · +{xp, number} XP",
+    "escaped": "Kaçtı · tekrar denemede %{percent}",
+    "tryCatch": "Yakalamayı dene",
+    "globeAria": "Seekprotocol'ün dünya çapındaki toplama etkinliğini gösteren etkileşimli küre"
   },
   "homeSteps": {
     "placed": {
@@ -2310,7 +2341,7 @@
             "items": [
               "**Yönetilir**: ücret ağırlıklandırması, protokol ücretlerinin arayıcı payı, hazine tahsisi, yarıçap sınırları ve yüksek değerli varlıklara sunulan güven eşikleri.",
               "**Gecikmeli yönetilir**: zaten yerleştirilmiş varlıkların değerini değiştiren her şey. Bir ücret programı altında finanse edilen bir kampanya, altında tamamlanmalıdır.",
-              "**Yönetilmez**: on üçüncü bölümdeki gizlilik taahhütleri. Saklama sınırları ve hareket verilerini yayınlamayı reddetme parametreler değildir ve bir oy onları zayıflatmak için meşru bir yol değildir.",
+              "**Yönetilmez**: on dördüncü bölümdeki gizlilik taahhütleri. Saklama sınırları ve hareket verilerini yayınlamayı reddetme parametre değildir ve oylama bunları zayıflatmanın meşru bir yolu değildir.",
               "**Yönetilmez**: bireysel talep sonuçları. Reddedilen bir talep, bir oylama değil, bir anlaşmazlık çözümü meselesidir."
             ]
           },
@@ -2426,7 +2457,7 @@
           },
           {
             "kind": "p",
-            "text": "$SEEK, bir fayda ve koordinasyon varlığı olarak tasarlanmıştır ve dokuzuncu bölümde tanımlanan fayda dekoratif değil gerçektir. Bu bir tasarım pozisyonudur, yasal bir sonuç değildir. Sınıflandırma yargı yetkisine göre değişir, zamanla değişir ve bir teknik belgenin iddia ederek çözebileceği bir şey değildir. Kullanılabilirlik bu nedenle yerel kuralların gerektirdiği yerde sınırlıdır."
+            "text": "$SEEK, bir fayda ve koordinasyon varlığı olarak tasarlanmıştır ve onuncu bölümde tanımlanan fayda dekoratif değil gerçektir. Bu bir tasarım pozisyonudur, yasal bir sonuç değildir. Sınıflandırma yargı yetkisine göre farklılık gösterir, zamanla değişir ve bir teknik belgenin iddia ederek çözebileceği bir şey değildir. Bu nedenle yerel kuralların gerektirdiği yerlerde erişim kısıtlanır."
           },
           {
             "kind": "h",
@@ -2470,7 +2501,7 @@
           },
           {
             "kind": "p",
-            "text": "Sürükle-bırak kampanya kurucusu inşa edildi. Sıradaki, yönetilen ortaklıkların ötesinde yerleştirmeyi açan self-servis kurumsal portal ve onunla birlikte gelen varış analitiği. Bunun yanında token oluşturma etkinliği, canlı etkinlik modu, sezonlar ve nesne tarama oturur. Yönetişim, parametre kararlarının anlamlı olması için yeterli gerçek ücret akışı olduğunda takip eder; nedenleri on birinci bölümde belirtilmiştir."
+            "text": "Sürükle-bırak kampanya oluşturucu hazır. Sırada, yerleştirmeyi yönetilen ortaklıkların ötesine açan self-servis kurumsal portal ve onunla birlikte gelen varış analitiği var. Bunların yanında token oluşturma etkinliği, canlı etkinlik modu, sezonlar ve nesne tarama yer alıyor. Yönetişim, on ikinci bölümde açıklanan nedenlerle, parametre kararlarını anlamlı kılacak kadar gerçek ücret akışı oluştuğunda gelecek."
           },
           {
             "kind": "h",
@@ -2481,7 +2512,7 @@
             "items": [
               "Yönetişim için bir tarih. Hacme bağlı ve hacim bir tarih değil.",
               "Kapalı alan doğruluk eşitliği. Zor bir problem ve dürüst cevap, öngörülebilir gelecek için kapalı alanlarda daha geniş yarıçaplar.",
-              "Zincirler arası bir dağıtım. Beşinci bölümdeki gecikme ve maliyet gereksinimleri dardır ve bunları karşılamayan ikinci bir zincir, teknik bir karardan çok bir pazarlama kararı olurdu."
+              "Sırf yeni olsun diye yeni bir zincir. Altıncı bölümdeki gecikme ve maliyet gereksinimleri dardır ve bunları karşılamayan bir zincir eklemek teknik değil pazarlama kararı olurdu."
             ]
           },
           {
@@ -2685,7 +2716,8 @@
     "runOne": "Bir spawn çalıştır",
     "runThousand": "Bin çalıştır",
     "reset": "Sıfırla",
-    "ladderCaption": "Göç, {rarity}'yi %{first} ve sonra %{second} olarak yayınlar; spawn boyunca %{overall}. Bu, seviye 5'te halka doluyken ve klan yokken bu modeldir; kaydırıcıların başladığı yer bu. Yakalanan bir birim bir oyun birimidir ve tokenlerde neye değdiği oyunun değil piyasanın işidir."
+    "ladderCaption": "Göç, {rarity}'yi %{first} ve sonra %{second} olarak yayınlar; spawn boyunca %{overall}. Bu, seviye 5'te halka doluyken ve klan yokken bu modeldir; kaydırıcıların başladığı yer bu. Yakalanan bir birim bir oyun birimidir ve tokenlerde neye değdiği oyunun değil piyasanın işidir.",
+    "tocTitle": "İçindekiler"
   },
   "stackLayers": {
     "app": {
@@ -3012,10 +3044,10 @@
       "emailNote": "Doğrulanmış giriş e-postanız. Hesap değiştirmek için yukarıdan çıkış yapın.",
       "name": "Ad (isteğe bağlı)",
       "deliverTo": "Satın aldıkların hangi hesaba gönderilsin?",
-      "inApp": "SeekAR içinde teslim",
+      "inApp": "Seekprotocol içinde teslim",
       "friendsId": "Friends ID",
       "optional": "isteğe bağlı",
-      "friendsNote": "Friends ID isteğe bağlıdır. Boş bırakırsan ürünler mevcut girişine bağlı SeekAR hesabına gönderilir. Başka bir hesap için 8 karakterli Friends ID’sini gir.",
+      "friendsNote": "Friends ID isteğe bağlıdır. Boş bırakırsan ürünler mevcut girişine bağlı Seekprotocol hesabına gönderilir. Başka bir hesap için 8 karakterli Friends ID’sini gir.",
       "checking": "Hesap kontrol ediliyor…",
       "continue": "Ödemeye devam et",
       "invalidFriend": "Bu Friends ID ile kullanılabilir bir hesap bulunamadı. 8 karakterli kodu kontrol edin.",
@@ -3036,11 +3068,11 @@
       "bundle": "Paket grubunu seçin",
       "subtotal": "Ara toplam",
       "delivery": "Teslimat",
-      "toAccount": "SeekAR hesabı",
+      "toAccount": "Seekprotocol hesabı",
       "total": "Toplam",
       "feeNote": "Ağ ücretleri uygulanabilir. Ödeme sağlayıcısı veya cüzdan, onayınızdan önce bunları gösterir.",
       "linkedDelivery": "Seçilen hesaba bağlı",
-      "linkedDeliveryNote": "Ödeme onaylandıktan sonra satın aldıkların seçilen SeekAR hesabına gönderilir.",
+      "linkedDeliveryNote": "Ödeme onaylandıktan sonra satın aldıkların seçilen Seekprotocol hesabına gönderilir.",
       "receipt": "Sipariş ayrıntıları",
       "refreshStatus": "Durumu yenile",
       "orderNumber": "Sipariş referansı",
@@ -3072,7 +3104,7 @@
       "loadFailed": "Siparişleriniz güncellenemedi. Gösterilen durum eski olabilir. Durumu yenilemeyi deneyin.",
       "emptyTitle": "Henüz sipariş yok",
       "emptyLead": "Bu hesapla verilen siparişler burada görünür.",
-      "purchase": "SeekAR alışverişi",
+      "purchase": "Seekprotocol alışverişi",
       "paymentLabel": "Ödeme",
       "deliveryLabel": "Teslimat",
       "paidNotDelivered": "Ödemeniz onaylandı. Teslimat işleniyor. Tekrar ödemeyin; teslimat durumu otomatik güncellenir.",
@@ -3134,7 +3166,7 @@
     "errPassUnavailable": "Pass şu anda satın alınamıyor.",
     "errPassOwned": "Bu hesabın zaten aktif bir Pass’i var.",
     "errPassPending": "Bu hesap için açık bir Pass siparişi var. Önce ödeme durumunu kontrol et.",
-    "friendsHelp": "Friends ID isteğe bağlıdır. Boş bırakırsan ürünler mevcut girişine bağlı SeekAR hesabına gönderilir. Başka bir hesap için 8 karakterli Friends ID’sini gir.",
+    "friendsHelp": "Friends ID isteğe bağlıdır. Boş bırakırsan ürünler mevcut girişine bağlı Seekprotocol hesabına gönderilir. Başka bir hesap için 8 karakterli Friends ID’sini gir.",
     "productKinds": {
       "pack": "Kart paketleri",
       "pass": "Pass",
@@ -3214,10 +3246,16 @@
       "pack": "Her paket 5 rastgele Arena kartı içerir. Kartlarını keşfetmek için uygulamada Arena bölümünden paketlerini aç. Aynı kart tekrar çıkabilir; belirli bir kart garanti edilmez.",
       "pass": "Mevcut sezon boyunca daha fazla nadir, epik ve efsanevi coinle karşılaş ve uygulamada her hafta bir nadir coin al. Bilet mevcut sezon sonunda biter ve otomatik yenilenmez.",
       "bundle": "Listelenen güçlendirmeler envanterine ayrı ayrı eklenir. Önce hangisini etkinleştireceğini seç; etkileri aynı anda çalışmaz.",
-      "delivery": "Ödeme onaylandıktan sonra seçtiğin SeekAR hesabına teslim edilir. Friends ID girmezsen satın aldıkların girişine bağlı uygulama hesabına gider.",
+      "delivery": "Ödeme onaylandıktan sonra seçtiğin Seekprotocol hesabına teslim edilir. Friends ID girmezsen satın aldıkların girişine bağlı uygulama hesabına gider.",
       "passName": "Sezon Bileti",
       "bundleName": "Güçlendirme Paketi",
       "activate": "Satın alınca envanterine eklenir. Hazır olduğunda uygulama mağazasından etkinleştir. Aynı anda yalnızca bir güçlendirme çalışabilir."
     }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | Gerçek ödüller için AR ve AI hazine avı",
+    "description": "$SEEK ile geleceği deneyimle: bir yerde yaşayan ödüller için AR ve AI katmanı. Konuma dayalı dropların peşine düş, NFT topla, kuponları kullan, gerçek ürünler kazan ve AI yol arkadaşlarıyla keşfet. Bir ödül herhangi bir zincirde bir token olabilir ya da zincirle hiçbir ilgisi olmayabilir.",
+    "socialDescription": "Konuma dayalı dropların peşine düş, NFT topla, kuponları kullan ve gerçek ürünler kazan. Bir ödülü gerçek bir yere sabitleyen AR ve AI katmanı; herhangi bir zincirde ya da hiç zincir olmadan.",
+    "skipToContent": "Ana içeriğe geç"
   }
 }

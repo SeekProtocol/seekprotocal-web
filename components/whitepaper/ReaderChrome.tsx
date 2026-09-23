@@ -107,7 +107,7 @@ export default function ReaderChrome({ entries }: { entries: Entry[] }) {
       </div>
 
       <nav className="wp-toc" aria-label={t("chaptersLabel")}>
-        <h2 className="t-mono wp-toc-title">Contents</h2>
+        <h2 className="t-mono wp-toc-title">{t("tocTitle")}</h2>
         <ul className="wp-toc-list">
           {entries.map((entry) => (
             <li key={entry.id}>

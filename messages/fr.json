@@ -13,7 +13,9 @@
     "shop": "Boutique",
     "getApp": "Obtenir l'app",
     "switchToLight": "Passer en mode clair",
-    "switchToDark": "Passer en mode sombre"
+    "switchToDark": "Passer en mode sombre",
+    "mainLabel": "Menu principal",
+    "mobileLabel": "Menu mobile"
   },
   "footer": {
     "home": "Accueil",
@@ -33,7 +35,9 @@
     "resources": "Ressources",
     "appStore": "App Store",
     "googlePlay": "Google Play",
-    "seekPartners": "Seek Partners"
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "Télécharger dans l'App Store",
+    "googlePlayAlt": "Disponible sur Google Play"
   },
   "home": {
     "heroTitle": "Explorez une nouvelle réalité avec",
@@ -162,7 +166,9 @@
     "q7": "Où télécharger l'application anciennement appelée SeekAR ?",
     "a7": "Sur l'App Store à apps.apple.com/app/id6752813761 et sur Google Play à play.google.com/store/apps/details?id=com.seekar.seekar. Les deux fiches s'appellent désormais Seekprotocol.",
     "q8": "Seekprotocol est-il le même produit que SeekAR ?",
-    "a8": "Oui. La société s'appelle depuis toujours Seekprotocol ; seul le nom de l'application a changé. L'application AR multi-chaîne pour récompenses on-chain qui s'appelait SeekAR de son lancement à août 2026 s'appelle désormais Seekprotocol, publiée par la même équipe chez Block Protocol L.L.C-FZ à Dubaï, EAU."
+    "a8": "Oui. La société s'appelle depuis toujours Seekprotocol ; seul le nom de l'application a changé. L'application AR multi-chaîne pour récompenses on-chain qui s'appelait SeekAR de son lancement à août 2026 s'appelle désormais Seekprotocol, publiée par la même équipe chez Block Protocol L.L.C-FZ à Dubaï, EAU.",
+    "stepsEyebrow": "Étape par étape",
+    "faqEyebrow": "FAQ"
   },
   "about": {
     "heroTitle": "Découvrez l'avenir des expériences numériques géolocalisées",
@@ -193,7 +199,7 @@
     "techBlockchain": "RÉCOMPENSES BLOCKCHAIN",
     "techBlockchainDesc": "Vraies récompenses pour une vraie exploration et engagement.",
     "techSync": "SYNC INSTANTANÉ",
-    "techSyncDesc": "Mises à jour en temps réel pour tous les joueurs - voyez les découvertes en direct telles qu'elles se produisent dans le monde entier.",
+    "techSyncDesc": "Mises à jour en temps réel pour tous les joueurs. Voyez les découvertes en direct, au moment où elles se produisent dans le monde entier.",
     "threePillars": "TROIS PILIERS DU SUCCÈS",
     "threePillarsDesc": "Au cœur de Seekprotocol se trouvent trois technologies révolutionnaires qui transforment notre façon d'interagir avec le monde.",
     "pillarAR": "Réalité augmentée",
@@ -225,7 +231,13 @@
     "ctaDesc": "Plongez dans une nouvelle réalité où le monde devient votre terrain de jeu. Seekprotocol transforme votre environnement en une aventure interactive, alliant la dernière technologie AR à l'exploration du monde réel.",
     "metaTitle": "L'équipe derrière Seekprotocol",
     "metaDescription": "Rencontrez l'équipe qui construit l'AR géolocalisée pour toutes les chaînes : l'idée derrière la preuve de localisation et les personnes derrière $SEEK.",
-    "ogTitle": "L'équipe derrière Seekprotocol"
+    "ogTitle": "L'équipe derrière Seekprotocol",
+    "eyebrow": "À propos",
+    "whyEyebrow": "Pourquoi nous le construisons",
+    "techEyebrow": "Technologie",
+    "pillarsEyebrow": "Piliers",
+    "teamEyebrow": "Équipe",
+    "linkedinLabel": "{name} sur LinkedIn"
   },
   "contact": {
     "getInTouch": "Contactez-nous",
@@ -241,7 +253,11 @@
     "pressTitle": "Presse & médias",
     "pressBody": "Couverture, interviews, copies pour test, embargos. Contactez-nous ici pour tout ce qui est éditorial ; on répond le jour même.",
     "supportTitle": "Support",
-    "supportBody": "Un bug, une récompense non arrivée, une question wallet. Le plus rapide reste Discord, mais ce formulaire fonctionne aussi."
+    "supportBody": "Un bug, une récompense non arrivée, une question wallet. Le plus rapide reste Discord, mais ce formulaire fonctionne aussi.",
+    "eyebrow": "Contact",
+    "elsewhere": "Ailleurs",
+    "documentation": "Documentation",
+    "registeredOffice": "Siège social"
   },
   "services": {
     "heroTitle": "NOTRE EXPERTISE, VOTRE CROISSANCE",
@@ -282,7 +298,7 @@
     "agencies": "Agences et consultants",
     "agenciesDesc": "Construisant l'autorité avec du contenu de haute valeur.",
     "localBusinesses": "Commerces locaux",
-    "localBusinessesDesc": "Vous aidant à vous connecter avec les clients à Prague et au-delà.",
+    "localBusinessesDesc": "Nous vous aidons à toucher des clients dans votre ville et au-delà.",
     "largeCorporations": "Grandes corporations",
     "largeCorporationsDesc": "Rédigeant des messages clairs et efficaces qui renforcent votre marque.",
     "ctaConnect": "Connectons-nous",
@@ -301,7 +317,8 @@
     "relatedPages": "Pages liées",
     "metaTitle": "Blog : AR, IA et récompenses géolocalisées",
     "metaDescription": "Des articles sur la réalité augmentée, les compagnons IA, les airdrops géolocalisés et la preuve de localisation, par l'équipe qui construit Seekprotocol.",
-    "ogTitle": "Le blog de Seekprotocol"
+    "ogTitle": "Le blog de Seekprotocol",
+    "eyebrow": "Blog"
   },
   "forms": {
     "emailPlaceholder": "Adresse e-mail",
@@ -343,13 +360,15 @@
     "rejectAll": "Tout refuser",
     "customize": "Personnaliser",
     "savePreferences": "Enregistrer les préférences",
-    "cookieSettings": "Paramètres des cookies"
+    "cookieSettings": "Paramètres des cookies",
+    "toggleLabel": "Activer ou désactiver {category}"
   },
   "notFound": {
     "pageNotFound": "Page non trouvée",
     "pageNotFoundDesc": "La page que vous recherchez n'existe pas ou a été déplacée",
     "oops": "Oups, page non trouvée",
-    "backToHome": "Retour à l'accueil"
+    "backToHome": "Retour à l'accueil",
+    "errorCode": "Erreur 404 · Aucun signal à cette coordonnée"
   },
   "metrics": {
     "text1": "ACTIFS ILLIMITÉS.",
@@ -425,12 +444,13 @@
     "contactP1": "Si vous avez des questions concernant votre vie privée lors de l'utilisation de l'Application, ou si vous avez des questions sur les pratiques en matière de données décrites dans cette politique, veuillez contacter le Prestataire de Services à :",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "Politique de confidentialité",
-    "metaDescription": "Comment Seekprotocol et Seekprotocol traitent les données de localisation, les capteurs et le portefeuille : ce qui est collecté et jamais partagé.",
+    "metaDescription": "Comment Seekprotocol traite les données de localisation, les mesures des capteurs et les informations de portefeuille : ce qui est collecté, combien de temps c'est conservé et ce qui n'est jamais partagé.",
     "ogTitle": "Confidentialité chez Seekprotocol",
     "raspTitle": "Talsec freeRASP : diagnostics de sécurité",
     "raspP1": "Dans les versions où freeRASP est activé, Talsec (Lynx SFT s.r.o.) reçoit des diagnostics de sécurité concernant l’application et le système d’exploitation, le modèle de l’appareil ainsi que des identifiants d’instance de l’application et d’appareil. Les signaux peuvent concerner le root, les émulateurs, les modifications de l’application, le débogage et le hooking. Ces données sont envoyées automatiquement pendant l’exécution de la version concernée ; les réglages des analyses facultatives de performance ne les désactivent pas.",
     "raspP2": "Talsec utilise ces données pour les rapports de sécurité, l’amélioration de ses produits de sécurité gratuits et commerciaux et la recherche agrégée. Talsec décrit un traitement dans le cloud aux États-Unis. Les identifiants d’appareil ne doivent pas être considérés comme entièrement anonymes au regard de toutes les lois sur la vie privée. Consultez les politiques de données de Talsec via le lien ci-dessous.",
-    "raspP3": "Notre propre backend enregistre également les noms des menaces avec les tentatives de collecte, qui peuvent être liés à votre compte. Notre traitement des callbacks n’envoie pas la liste des autres applications installées. Ces signaux sont déclarés par l’appareil et ne constituent pas, à eux seuls, une preuve de fraude."
+    "raspP3": "Notre propre backend enregistre également les noms des menaces avec les tentatives de collecte, qui peuvent être liés à votre compte. Notre traitement des callbacks n’envoie pas la liste des autres applications installées. Ces signaux sont déclarés par l’appareil et ne constituent pas, à eux seuls, une preuve de fraude.",
+    "eyebrow": "Mentions légales"
   },
   "termsPage": {
     "title": "Conditions générales d'utilisation",
@@ -452,7 +472,8 @@
     "contactP1": "Si vous avez des questions ou des suggestions concernant les Conditions générales d'utilisation, n'hésitez pas à contacter le Prestataire de Services à <email>support@seekprotocol.ai</email>.",
     "metaTitle": "Conditions générales",
     "metaDescription": "Les conditions d'utilisation de Seekprotocol et de Seekprotocol : vos droits, les règles de réclamation des actifs et les articles payants.",
-    "ogTitle": "Conditions de Seekprotocol"
+    "ogTitle": "Conditions de Seekprotocol",
+    "eyebrow": "Mentions légales"
   },
   "languageSwitcher": {
     "en": "English",
@@ -486,7 +507,17 @@
     "close": "Fermer",
     "secondsAgo": "il y a {seconds} s",
     "zoomIn": "Zoom avant",
-    "zoomOut": "Zoom arrière"
+    "zoomOut": "Zoom arrière",
+    "busiest": "Les plus actives en ce moment",
+    "units": "Unités",
+    "zoomLabel": "Zoom",
+    "hubsLabel": "Aller à une ville",
+    "wholeEarth": "Terre entière",
+    "zoomLevel": "Zoom {percent} %",
+    "caught": "Capturé · +{xp, number} XP",
+    "escaped": "Il s'est échappé · {percent} % au prochain essai",
+    "tryCatch": "Essayez de l'attraper",
+    "globeAria": "Globe interactif montrant l'activité de collecte Seekprotocol dans le monde entier"
   },
   "homeSteps": {
     "placed": {
@@ -2310,7 +2341,7 @@
             "items": [
               "**Gouverné** : la pondération des frais, la part des frais du protocole revenant aux seekers, l'allocation de la trésorerie, les bornes de rayon et les seuils de confiance ouverts aux actifs de forte valeur.",
               "**Gouverné avec délai** : tout ce qui change la valeur d'actifs déjà déposés. Une campagne financée sous une grille de frais devrait s'achever sous celle-ci.",
-              "**Non gouverné** : les engagements de confidentialité du chapitre treize. Les limites de conservation et le refus de publier des données de déplacement ne sont pas des paramètres, et un vote n'est pas un moyen légitime de les affaiblir.",
+              "**Non gouverné** : les engagements de confidentialité du chapitre quatorze. Les limites de conservation et le refus de publier des données de déplacement ne sont pas des paramètres, et un vote n'est pas un moyen légitime de les affaiblir.",
               "**Non gouverné** : les issues de réclamations individuelles. Une réclamation refusée relève du règlement des litiges, pas d'un scrutin."
             ]
           },
@@ -2426,7 +2457,7 @@
           },
           {
             "kind": "p",
-            "text": "$SEEK est conçu comme un actif d'usage et de coordination, et l'utilité décrite au chapitre neuf est réelle et non décorative. C'est une position de conception, pas une conclusion juridique. La qualification varie selon la juridiction, évolue dans le temps, et n'est pas quelque chose qu'un whitepaper peut trancher en l'affirmant. La disponibilité est donc restreinte là où les règles locales l'exigent."
+            "text": "$SEEK est conçu comme un actif d'usage et de coordination, et l'utilité décrite au chapitre dix est réelle et non décorative. C'est une position de conception, pas une conclusion juridique. La qualification varie selon la juridiction, évolue dans le temps, et n'est pas quelque chose qu'un whitepaper peut trancher en l'affirmant. La disponibilité est donc restreinte là où les règles locales l'exigent."
           },
           {
             "kind": "h",
@@ -2470,7 +2501,7 @@
           },
           {
             "kind": "p",
-            "text": "Le créateur de campagnes en glisser-déposer est terminé. Vient ensuite le portail en libre-service qui ouvre le dépôt au-delà des partenariats accompagnés, et l'analytique des arrivées qui va avec. À côté figurent l'événement de génération du token, le mode événement en direct, les saisons et le scan d'objets. La gouvernance suit dès qu'il y aura assez de flux de frais réel pour que les décisions de paramètres aient du sens, pour les raisons exposées au chapitre onze."
+            "text": "Le créateur de campagnes en glisser-déposer est terminé. Vient ensuite le portail en libre-service qui ouvre le dépôt au-delà des partenariats accompagnés, et l'analytique des arrivées qui va avec. À côté figurent l'événement de génération du token, le mode événement en direct, les saisons et le scan d'objets. La gouvernance suit dès qu'il y aura assez de flux de frais réel pour que les décisions de paramètres aient du sens, pour les raisons exposées au chapitre douze."
           },
           {
             "kind": "h",
@@ -2481,7 +2512,7 @@
             "items": [
               "Une date pour la gouvernance. Elle dépend du volume, et le volume n'est pas une date.",
               "Une précision équivalente en intérieur. C'est un problème difficile et la réponse honnête, ce sont des rayons plus larges en intérieur pour un bon moment.",
-              "Un déploiement multi-chaînes. Les exigences de latence et de coût du chapitre cinq sont étroites, et une seconde chaîne qui ne les remplirait pas serait une décision marketing plutôt que technique."
+              "Une nouvelle chaîne pour le plaisir d'en avoir une. Les exigences de latence et de coût du chapitre six sont étroites, et ajouter une chaîne qui ne les remplit pas serait une décision marketing plutôt que technique."
             ]
           },
           {
@@ -2685,7 +2716,8 @@
     "runOne": "Lancer un spawn",
     "runThousand": "En lancer mille",
     "reset": "Réinitialiser",
-    "ladderCaption": "La migration publie {rarity} à {first} % puis {second} %, soit {overall} % sur tout le spawn. C'est ce modèle au niveau 5, anneau plein et sans clan, exactement là où démarrent les curseurs. Une unité capturée est une unité de jeu, et ce qu'elle vaut en tokens regarde le marché, pas le jeu."
+    "ladderCaption": "La migration publie {rarity} à {first} % puis {second} %, soit {overall} % sur tout le spawn. C'est ce modèle au niveau 5, anneau plein et sans clan, exactement là où démarrent les curseurs. Une unité capturée est une unité de jeu, et ce qu'elle vaut en tokens regarde le marché, pas le jeu.",
+    "tocTitle": "Sommaire"
   },
   "stackLayers": {
     "app": {
@@ -3012,10 +3044,10 @@
       "emailNote": "Votre adresse de connexion vérifiée. Déconnectez-vous ci-dessus pour changer de compte.",
       "name": "Nom (facultatif)",
       "deliverTo": "Quel compte doit recevoir votre achat ?",
-      "inApp": "Livraison dans SeekAR",
+      "inApp": "Livraison dans Seekprotocol",
       "friendsId": "Friends ID",
       "optional": "facultatif",
-      "friendsNote": "La Friends ID est facultative. Laissez-la vide pour livrer au compte SeekAR de votre connexion actuelle. Pour un autre compte, saisissez sa Friends ID de 8 caractères.",
+      "friendsNote": "La Friends ID est facultative. Laissez-la vide pour livrer au compte Seekprotocol de votre connexion actuelle. Pour un autre compte, saisissez sa Friends ID de 8 caractères.",
       "checking": "Vérification du compte…",
       "continue": "Continuer vers le paiement",
       "invalidFriend": "Aucun compte disponible avec ce Friends ID. Vérifiez le code de 8 caractères.",
@@ -3036,11 +3068,11 @@
       "bundle": "Choisir le lot",
       "subtotal": "Sous-total",
       "delivery": "Livraison",
-      "toAccount": "Compte SeekAR",
+      "toAccount": "Compte Seekprotocol",
       "total": "Total",
       "feeNote": "Des frais de réseau peuvent s’appliquer. Le prestataire ou le portefeuille les affiche avant votre accord.",
       "linkedDelivery": "Lié au compte choisi",
-      "linkedDeliveryNote": "Après confirmation du paiement, votre achat est attribué au compte SeekAR choisi.",
+      "linkedDeliveryNote": "Après confirmation du paiement, votre achat est attribué au compte Seekprotocol choisi.",
       "receipt": "Détails de commande",
       "refreshStatus": "Actualiser le statut",
       "orderNumber": "Référence de commande",
@@ -3072,7 +3104,7 @@
       "loadFailed": "Vos commandes n’ont pas pu être actualisées. Le statut affiché peut être ancien. Essayez Actualiser le statut.",
       "emptyTitle": "Aucune commande pour le moment",
       "emptyLead": "Les commandes passées avec ce compte apparaîtront ici.",
-      "purchase": "Achat SeekAR",
+      "purchase": "Achat Seekprotocol",
       "paymentLabel": "Paiement",
       "deliveryLabel": "Livraison",
       "paidNotDelivered": "Votre paiement est confirmé. L’attribution est en cours. Ne payez pas à nouveau ; le statut est actualisé automatiquement.",
@@ -3134,7 +3166,7 @@
     "errPassUnavailable": "Le Pass ne peut pas être acheté pour le moment.",
     "errPassOwned": "Ce compte possède déjà un Pass actif.",
     "errPassPending": "Une commande de Pass est déjà ouverte pour ce compte. Vérifiez son paiement avant de réessayer.",
-    "friendsHelp": "La Friends ID est facultative. Laissez-la vide pour livrer au compte SeekAR de votre connexion actuelle. Pour un autre compte, saisissez sa Friends ID de 8 caractères.",
+    "friendsHelp": "La Friends ID est facultative. Laissez-la vide pour livrer au compte Seekprotocol de votre connexion actuelle. Pour un autre compte, saisissez sa Friends ID de 8 caractères.",
     "productKinds": {
       "pack": "Packs de cartes",
       "pass": "Pass",
@@ -3214,10 +3246,16 @@
       "pack": "Chaque pack contient 5 cartes Arena aléatoires. Ouvrez vos packs dans Arena, dans l’app, pour découvrir vos cartes. Des doublons sont possibles ; aucune carte précise n’est garantie.",
       "pass": "Rencontrez plus de pièces rares, épiques et légendaires pendant la saison en cours et réclamez une pièce rare chaque semaine dans l’app. Le pass prend fin avec la saison, sans renouvellement automatique.",
       "bundle": "Les boosts indiqués sont ajoutés séparément à votre inventaire. Choisissez lequel activer en premier ; leurs effets ne s’appliquent pas simultanément.",
-      "delivery": "Après confirmation du paiement, l’achat est livré au compte SeekAR choisi. Sans Friends ID, il est attribué au compte de l’app associé à votre connexion.",
+      "delivery": "Après confirmation du paiement, l’achat est livré au compte Seekprotocol choisi. Sans Friends ID, il est attribué au compte de l’app associé à votre connexion.",
       "passName": "Pass saisonnier",
       "bundleName": "Pack de boosts",
       "activate": "Ajouté à votre inventaire après l’achat. Activez-le dans la boutique de l’app quand vous le souhaitez. Un seul boost peut être actif."
     }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | Chasses au trésor AR et IA, vraies récompenses",
+    "description": "Vivez le futur avec $SEEK, la couche AR et IA pour des récompenses ancrées dans un lieu. Chassez des drops géolocalisés, collectionnez des NFT, utilisez des bons, gagnez des produits bien réels et explorez avec des compagnons IA. Une récompense peut être un token sur n'importe quelle chaîne, ou n'avoir aucun lien avec une chaîne.",
+    "socialDescription": "Chassez des drops géolocalisés, collectionnez des NFT, utilisez des bons et gagnez des produits bien réels. La couche AR et IA qui ancre une récompense dans un lieu réel, sur n'importe quelle chaîne ou sans aucune.",
+    "skipToContent": "Aller au contenu principal"
   }
 }

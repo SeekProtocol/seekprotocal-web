@@ -1,0 +1,3261 @@
+{
+  "nav": {
+    "home": "Hem",
+    "seekar": "Appen",
+    "about": "Om oss",
+    "whitepaper": "Whitepaper",
+    "contact": "Kontakt",
+    "toggleMenu": "Visa eller dölj navigeringsmenyn",
+    "ecosystem": "Ekosystem",
+    "roadmap": "Roadmap",
+    "business": "För företag",
+    "blog": "Blogg",
+    "shop": "Butik",
+    "getApp": "Hämta appen",
+    "switchToLight": "Byt till ljust läge",
+    "switchToDark": "Byt till mörkt läge",
+    "mainLabel": "Huvudmeny",
+    "mobileLabel": "Mobilmeny"
+  },
+  "footer": {
+    "home": "Hem",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "blog": "Blogg",
+    "whitepaper": "Whitepaper",
+    "tokenDashboard": "Token-dashboard",
+    "address": "Block Protocol L.L.C-FZ Meydan Grandstand, 6th floor, Meydan Road, Nad AlSheba, Dubai, U.A.E.",
+    "description": "Seekprotocol är en nästa generations plattform utvecklad av Block Protocol L.L.C-FZ, som kombinerar förstärkt verklighet, AI och blockkedja för att skapa spelifierade upplevelser i den verkliga världen.",
+    "copyright": "© 2024-2026 Block Protocol Alla rättigheter förbehållna",
+    "privacyPolicy": "Integritetspolicy",
+    "termsOfService": "Användarvillkor",
+    "cookieSettings": "Cookieinställningar",
+    "product": "Produkt",
+    "company": "Företag",
+    "resources": "Resurser",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "Hämta i App Store",
+    "googlePlayAlt": "Ladda ned på Google Play"
+  },
+  "home": {
+    "heroTitle": "Utforska en ny verklighet med",
+    "heroTitleHighlight": "Seekprotocol",
+    "heroSubtitle": "AR- och AI-lagret för belöningar som finns på en plats: en token på vilken kedja som helst, en kupong som funkar i kassan, en sak som kommer i en låda. Gå till koordinaten, rikta telefonen och samla det som lämnats där.",
+    "downloadAppStore": "Hämta i App Store",
+    "downloadGooglePlay": "Ladda ned på Google Play",
+    "benefitsTitle": "Obegränsade",
+    "benefitsTitleHighlight": "möjligheter!",
+    "benefitAR": "Förstärkt verklighet",
+    "benefitARDesc": "Gör vilken plats som helst till en interaktiv skattjakt med AR-teknik som väcker digitala tillgångar till liv.",
+    "benefitSeekToEarn": "Seek-to-Earn",
+    "benefitSeekToEarnDesc": "Gör din dagliga rörelse till belöningar. Varje steg, löprunda och äventyr leder till airdrops och andra dolda skatter.",
+    "benefitLiveEvents": "Liveevenemang",
+    "benefitLiveEventsDesc": "Var med på träffar i verkligheten med AR-belöningar, från lokala meetups till enorma skattjakter över hela staden.",
+    "benefitCreatorTools": "Kreatörsverktyg",
+    "benefitCreatorToolsDesc": "Vårt dra och släpp-verktyg låter vem som helst lansera AR-kampanjer, distribuera NFT:er, tokens och tillgångar och engagera publik i stor skala.",
+    "benefitGeofencing": "Geofencing-teknik",
+    "benefitGeofencingDesc": "Exakt GPS-baserad placering av tillgångar med 30 meters noggrannhet, för platsverifierade belöningar och upplevelser.",
+    "benefitQuests": "Uppdrag",
+    "benefitQuestsDesc": "Dynamiska uppdrag som anpassar sig efter din plats, din nivå och dina preferenser, med växande belöningar och utmaningar.",
+    "futureTitle": "Framtiden för platsbaserade interaktioner",
+    "futureDesc": "Upplev den revolutionerande sammansmältningen av nyckelteknologier. Varje innovation samverkar sömlöst för att förvandla din fysiska värld till ett spelifierat ekosystem där varje steg har värde, varje plats har potential och varje äventyr belönar dig med riktiga digitala tillgångar",
+    "serviceLocationAirdrops": "Platsbaserade airdrops",
+    "serviceLocationAirdropsDesc": "Geofencing-teknik möjliggör exakt placering av digitala tillgångar på specifika GPS-koordinater. Från stadskärnor till dolda pärlor blir varje plats en möjlig belöningszon. Exklusiva NFT:er, token-airdrops och limiterade samlarobjekt väntar på att upptäckas.",
+    "serviceImmersiveAR": "Uppslukande AR-teknik",
+    "serviceImmersiveARDesc": "Upplev nästa generations förstärkta verklighet som sömlöst blandar digitala tillgångar med din fysiska miljö. Vår avancerade AR-motor levererar fantastiska 3D-visualiseringar, kartläggning av miljön i realtid och beständig förankring i världen. Se NFT:er vakna till liv, tokens sväva i luften och interagera med digitala objekt som om de verkligen fanns där.",
+    "serviceAIPersonalization": "AI-driven personalisering",
+    "serviceAIPersonalizationDesc": "Din AI-kompanjon guidar dig inte bara, den ser det du ser genom AR, analyserar din omgivning och ger insikter i sammanhanget i realtid. Tänk dig en AI som känner igen landmärken och tipsar om lokala matställen, föreslår de bästa promenadvägarna utifrån din spelstil och till och med skapar personligt AR-innehåll i farten.",
+    "serviceMoveToEarn": "Move-to-Earn möter liveevenemang",
+    "serviceMoveToEarnDesc": "Var med på stora AR-liveevenemang där tusentals spelare samlas till träffar i verkligheten med digitala belöningar. Tänk dig musikfestivaler där exklusiva belöningar droppas till besökarna, idrottsevenemang med platslåsta samlarobjekt eller skattjakter över hela staden med prispotter.",
+    "threePathsTitle": "Tre vägar till framsteg",
+    "pathBlockchain": "Driven av blockkedja",
+    "pathBlockchainDesc": "Varje NFT, token och tillgång i spelet är säkrad på blockkedjan. Det betyder verkligt ägande, bevisbar rättvisa och belöningar du faktiskt kan använda, både i och utanför Seekprotocol.",
+    "pathAI": "AI-driven",
+    "pathAIDesc": "Vår AI lär sig hur du utforskar och spelar, och ger dig smartare platstips, personliga uppdrag och belöningar som faktiskt betyder något. Ju mer du rör dig, desto bättre blir den.",
+    "pathProofOfLocation": "Proof of location",
+    "pathProofOfLocationDesc": "Varje steg du tar är ett bevis. Vårt system bekräftar din verkliga position för att låsa upp tokens, NFT:er och andra digitala tillgångar. Inget fusk, bara riktiga belöningar för riktigt engagemang.",
+    "builtToScale": "BYGGT FÖR ATT VÄXA MED DIG",
+    "builtToScaleDesc": "Oavsett om du lanserar ett projekt eller utforskar din stad driver Seekprotocol din resa med uppslukande teknik, verifierad närvaro och riktiga belöningar.",
+    "interested": "Intresserad?",
+    "scaleOnboarding": "Smidig onboarding",
+    "scaleOnboardingDesc": "Snabbspår för användare, kreatörer och företag. Från att skapa sociala plånböcker till de första AR-evenemangen gör vi onboardingen till en lek, inte pappersarbete.",
+    "scaleProjectLaunch": "Integration för projektlanseringar",
+    "scaleProjectLaunchDesc": "Oavsett om du är en memecoin eller ett projekt med ett uppdrag, koppla in dig i våra lager för AR, AI och belöningar. Lansera evenemang, token-spawns eller NFT-uppdrag, alla geobaserade och spelifierade.",
+    "scaleBusinessPortal": "Aktivering av företagsportal",
+    "scaleBusinessPortalDesc": "Lokala butiker, globala varumärken: gå med i Seek-ekosystemet. Släpp exklusiva erbjudanden och platsbaserade belöningar, och driv riktiga besöksflöden med digitala incitament.",
+    "scaleEngagement": "Engagemangsmotor",
+    "scaleEngagementDesc": "Värvningsuppdrag, sviter på topplistan och gilleuppdrag, en komplett verktygslåda för att driva dagligt, veckovis och socialt engagemang bland användarna.",
+    "scaleCrossPlatform": "Lansering på flera plattformar",
+    "scaleCrossPlatformDesc": "En profil och en plånbok på iOS och Android, med tillgångar från varje kedja vi avvecklar på. Oändliga Seek-upplevelser, var som helst och när som helst.",
+    "featuredOn": "OMNÄMND I:",
+    "joinBeta": "Gå med i vår beta",
+    "getReady": "Gör dig redo att söka!",
+    "ctaDesc": "Kliv in i en ny verklighet där världen blir din lekplats. Seekprotocol förvandlar din omgivning till ett interaktivt äventyr som blandar den senaste AR-tekniken med utforskande i verkligheten. Spåra dolda skatter, samla värdefulla digitala belöningar och klara dynamiska uppdrag!",
+    "coinReadoutLabel": "Signallås",
+    "coinReadoutAccuracy": "Noggrannhet {meters} m",
+    "beyondEyebrow": "Mer än mynt",
+    "beyondTitle": "En drop behöver inte vara en token",
+    "beyondLead": "Allt som kan utfärdas till en person kan utfärdas till en plats. Rabatt vid disken, en fysisk sak som väntar i en butik, ett pass som bara finns på arenan. För en shoppinggata är myntet oftast det minst intressanta.",
+    "howEyebrow": "Så funkar det",
+    "howTitle": "Tre steg, och det tredje betalar",
+    "liveEyebrow": "Livenätverk",
+    "liveTitle": "Välj en stad och pröva lyckan",
+    "liveLead": "Hoppa till valfri knutpunkt, tryck på ett mynt för att se vem som plockade upp det, och försök själv, slaget mot appens riktiga odds.",
+    "foundationsEyebrow": "Grunder",
+    "readWhitepaper": "Läs det tekniska whitepapret",
+    "metaTitle": "Seekprotocol | AR-skattjakter med riktiga belöningar",
+    "metaDescription": "Jaga platsbaserade belöningar i förstärkt verklighet: tokens på vilken kedja som helst, kuponger, riktiga varor. Seekprotocol förankrar dem på riktiga platser och bevisar att du var där.",
+    "ogTitle": "Seekprotocol | AR och AI för belöningar i verkligheten",
+    "heroEyebrow": "AR · AI · Vilken belöning som helst",
+    "placeReward": "Placera en belöning på dina koordinater",
+    "exploreEcosystem": "Utforska ekosystemet",
+    "viewRoadmap": "Se roadmapen",
+    "polCtaEyebrow": "Proof of location",
+    "polCtaTitle": "Närvaro, verifierad",
+    "polCtaBody": "Fyra oberoende signaler måste stämma överens innan en hämtning godkänns. En genomgång i klartext finns på bloggen.",
+    "polCtaLink": "Så fungerar proof of location"
+  },
+  "seekarPage": {
+    "metaTitle": "Seekprotocol | Appen för AR-skattjakt",
+    "metaDescription": "Seekprotocol är appen för förstärkt verklighet från Seekprotocol. Jaga belöningar på riktiga koordinater: tokens på vilken kedja som helst, kuponger och fysiska varor. Gratis på iOS och Android.",
+    "ogTitle": "Seekprotocol | Appen för AR-skattjakt",
+    "eyebrow": "Appen",
+    "heroTitle": "Seekprotocol",
+    "heroDesc": "Appen för förstärkt verklighet från Seekprotocol. Rikta telefonen mot världen och hitta det som placerats där: tokens, NFT:er, kuponger och saker som kommer i en låda, alla förankrade på riktiga koordinater.",
+    "whatTitle": "Vad är Seekprotocol?",
+    "whatBody": "Seekprotocol är vår flaggskeppsapp, gratis på iOS och Android. Den gör vilken gata, park eller arena som helst till en plats där digitala tillgångar kan gömmas och hämtas. En publicist placerar en belöning på en koordinat; du måste fysiskt vara där för att samla den, och protokollet bevisar att du var det. Inga emulatorer, ingen förfalskning, inga genvägar.",
+    "featuresTitle": "Vad du kan göra",
+    "f1Title": "Jaga platsbaserade airdrops",
+    "f1Desc": "Tokens och NFT:er är förankrade på riktiga koordinater. Gå till platsen, öppna kameran och hämta det som väntar.",
+    "f2Title": "Samla i förstärkt verklighet",
+    "f2Desc": "Tillgångarna dyker upp i världen genom kameran, i rätt storlek och på plats, i stället för som en lista på en skärm.",
+    "f3Title": "Utforska med AI-kompanjoner",
+    "f3Desc": "En AI-guide reagerar på var du är och vad som finns i närheten, och pekar ut vad som är värt promenaden.",
+    "f4Title": "Tjäna riktiga kryptobelöningar",
+    "f4Desc": "Allt avvecklas på kedjan som tillgången redan finns på. Det du samlar är ditt, i din plånbok, och det följer med dig.",
+    "howTitle": "Så funkar det",
+    "s1Title": "Ladda ned och öppna",
+    "s1Desc": "Gratis i App Store och Google Play. En plånbok skapas åt dig; du behöver aldrig ha haft en privat nyckel förut.",
+    "s2Title": "Hitta det som finns nära dig",
+    "s2Desc": "Kartan visar vad som placerats runt dig. Välj något och gå dit.",
+    "s3Title": "Bevisa att du är där och hämta",
+    "s3Desc": "Proof of Location verifierar din närvaro on-chain, och tillgången hamnar i din plånbok.",
+    "faqTitle": "Vanliga frågor",
+    "q1": "Är Seekprotocol gratis?",
+    "a1": "Ja. Seekprotocol är gratis att ladda ned på iOS och Android. Vissa saker i appen kostar pengar, men att jaga och hämta gör det inte.",
+    "q2": "Vem gör Seekprotocol?",
+    "a2": "Seekprotocol byggs av Seekprotocol, en produkt från Block Protocol L.L.C-FZ i Dubai. Det är AR- och AI-appen för belöningar förankrade på riktiga platser, på vilken kedja som helst eller ingen alls, tillgänglig i App Store och på Google Play.",
+    "q3": "Måste jag kunna något om krypto?",
+    "a3": "Nej. En plånbok skapas åt dig när du öppnar appen, och du kan samla och behålla tillgångar utan att någonsin hantera en seed phrase själv.",
+    "q4": "Vilka telefoner fungerar Seekprotocol på?",
+    "a4": "Nyare iPhones och Android-enheter med AR-stöd. Båda versionerna har samma funktioner.",
+    "q5": "Kan jag fejka min position?",
+    "a5": "Nej. Proof of Location verifierar din verkliga närvaro on-chain, och det är det som gör en hämtning värd något för publicisten som placerade den.",
+    "ctaTitle": "Ladda ned Seekprotocol",
+    "ctaDesc": "Gratis på iOS och Android. Din stad är redan full av saker värda att hitta.",
+    "renameTitle": "Appen SeekAR heter nu Seekprotocol",
+    "renameBody": "Samma app, samma konto, samma karta. Bara appens namn har ändrats; företaget har alltid hetat Seekprotocol. Ett annat företag lämnade in en varumärkesansökan som omfattar det gamla appnamnet, så vi flyttade appen till namnet vi alltid har ägt.",
+    "renameLink": "Läs tillkännagivandet",
+    "legacyEyebrow": "Namnhistorik",
+    "legacyTitle": "Krypto-AR-appen SeekAR heter nu Seekprotocol",
+    "legacyBody": "Bara appens namn har ändrats; företaget har alltid hetat Seekprotocol. Mobilappen som fanns på iOS och Android under namnet SeekAR från lanseringen till och med augusti 2026 heter nu Seekprotocol. Samma produkt, samma utgivare, Block Protocol L.L.C-FZ, Dubai, Förenade Arabemiraten, samma App Store-sida (id 6752813761) och samma Play Store-paket (com.seekar.seekar). Andra produkter, artister och platser använder också namnet Seekar; den här sidan beskriver specifikt appen för AR- och kryptobelöningar på flera kedjor.",
+    "q6": "Vad hände med appen SeekAR?",
+    "a6": "AR-mobilappen för kryptobelöningar on-chain som släpptes som SeekAR bytte namn till Seekprotocol den 10 augusti 2026. Samma produkt, samma utgivare (Block Protocol L.L.C-FZ, Dubai), samma App Store-sida (id 6752813761), samma Play Store-paket (com.seekar.seekar). Bara namnet och ikonen har ändrats.",
+    "q7": "Var laddar jag ned appen som tidigare hette SeekAR?",
+    "a7": "I App Store på apps.apple.com/app/id6752813761 och på Google Play på play.google.com/store/apps/details?id=com.seekar.seekar. Båda sidorna heter nu Seekprotocol.",
+    "q8": "Är Seekprotocol samma produkt som SeekAR?",
+    "a8": "Ja. Företaget har alltid hetat Seekprotocol; bara appens namn har ändrats. Appen för AR- och kryptobelöningar på flera kedjor som hette SeekAR från lanseringen till och med augusti 2026 heter nu Seekprotocol, utgiven av samma team på Block Protocol L.L.C-FZ i Dubai, Förenade Arabemiraten.",
+    "stepsEyebrow": "Steg för steg",
+    "faqEyebrow": "Vanliga frågor"
+  },
+  "about": {
+    "heroTitle": "Upptäck framtiden för platsbaserade digitala upplevelser",
+    "heroDesc": "Seekprotocol förvandlar utforskande i verkligheten till givande äventyr med avancerad förstärkt verklighet och blockkedjeteknik.",
+    "whySeekprotocol": "Varför Seekprotocol?",
+    "whyDesc": "Medan andra bygger appar bygger vi en revolution. Seekprotocol överbryggar klyftan mellan den fysiska och den digitala världen med platsbaserad AR-teknik som gör varje steg till en möjlighet. Vårt decentraliserade belöningssystem ser till att utforskande lönar sig, bokstavligen. Vi skapar inte bara upplevelser; vi banar väg för en ny ekonomi där upptäckter i verkligheten skapar verkligt värde. Med spårning med precision under en meter, fantastiska AR-visualiseringar och belöningar på blockkedjan gör vi det osynliga synligt och det omöjliga lönsamt.",
+    "letsConnect": "Hör av dig",
+    "ourValues": "Våra värderingar",
+    "whatDrivesUs": "VAD SOM DRIVER OSS",
+    "valueLocationIntelligence": "Platsintelligens",
+    "valueLocationIntelligenceDesc": "Geospatial precisionsteknik med noggrannhet under en meter som svarar på varje rörelse du gör i realtid.",
+    "valueARInnovation": "AR-innovation",
+    "valueARInnovationDesc": "Förstärkt verklighet i framkant som sömlöst blandar digitala skatter med din fysiska värld.",
+    "valueSocialDiscovery": "Sociala upptäckter",
+    "valueSocialDiscoveryDesc": "Slå dig ihop med utforskare i närheten för multiplicerade belöningar och gemensamma prestationer.",
+    "valueCrossChainRewards": "Belöningar över flera kedjor",
+    "valueCrossChainRewardsDesc": "Tjäna flera airdrops, NFT:er och andra digitala tillgångar över olika blockkedjenätverk.",
+    "valueProofOfExploration": "Proof of Exploration",
+    "valueProofOfExplorationDesc": "Verifierbara on-chain-register över dina upptäckter skapar ett bestående arv av äventyr.",
+    "readyToSeek": "Redo att söka?",
+    "startExploring": "Börja utforska",
+    "coreTechnologies": "KÄRNTEKNIKERNA VI ANVÄNDER",
+    "coreTechDesc": "På Seekprotocol vet vi att utforskande behöver ett syfte. Vi erbjuder inga upplevelser där en storlek passar alla. Vi skapar dynamiska, platsmedvetna äventyr för varje användare.",
+    "techGeospatial": "GEOSPATIAL KARTLÄGGNING",
+    "techGeospatialDesc": "Platsspårning i realtid med dynamisk geofencing som skapar kontextmedvetna upplevelser.",
+    "techAR": "AR-RENDERING",
+    "techARDesc": "Avancerad renderingsmekanik och spatial databehandling för uppslukande förstärkt verklighet.",
+    "techBlockchain": "BELÖNINGAR PÅ BLOCKKEDJAN",
+    "techBlockchainDesc": "Riktiga belöningar för riktigt utforskande och engagemang.",
+    "techSync": "DIREKT SYNK",
+    "techSyncDesc": "Uppdateringar i realtid för alla spelare. Se upptäckter hända live när de sker världen över.",
+    "threePillars": "TRE PELARE FÖR FRAMGÅNG",
+    "threePillarsDesc": "I kärnan av Seekprotocol finns tre revolutionerande tekniker som förändrar hur vi interagerar med världen.",
+    "pillarAR": "Förstärkt verklighet",
+    "pillarARDesc": "Banbrytande AR som avslöjar dolda digitala lager som är osynliga för blotta ögat.",
+    "pillarLocation": "Platsprecision",
+    "pillarLocationDesc": "GPS med noggrannhet under en meter och dynamisk geofencing som vet exakt var airdrops är placerade.",
+    "pillarReward": "Belöningsfördelning",
+    "pillarRewardDesc": "Decentraliserade pooler som säkerställer rättvisa, omedelbara och transparenta intäkter för varje Seekprotocol-användare.",
+    "ourApproach": "Vårt förhållningssätt",
+    "approachTitle": "DÄR UTFORSKANDE MÖTER BELÖNINGAR",
+    "approachDesc": "Varje plats har ett outsagt värde. Vårt jobb? Att låsa upp det på sätt som fängslar, belönar och får sökare att komma tillbaka för mer.",
+    "approachTreasureHunts": "Skattjakter som engagerar",
+    "approachTreasureHuntsDesc": "Dynamiska, platsbaserade utmaningar.",
+    "approachARExperiences": "AR-upplevelser som imponerar",
+    "approachARExperiencesDesc": "Uppslukande digitala lager ovanpå verkligheten.",
+    "approachRewardPools": "Belöningspooler som betalar",
+    "approachRewardPoolsDesc": "Communitydrivna möjligheter att tjäna.",
+    "approachSocial": "Sociala funktioner som förenar",
+    "approachSocialDesc": "Utforskande och samarbete med flera användare.",
+    "approachAnalytics": "Analys som informerar",
+    "approachAnalyticsDesc": "Insikter i realtid om mönster i utforskandet.",
+    "approachEvents": "Evenemang som samlar",
+    "approachEventsDesc": "Tidsbegränsade communityevenemang som samlar massorna, tänk Pokémon-Go-raider i Web3-stil.",
+    "approachCollaborations": "Samarbeten som skapar",
+    "approachCollaborationsDesc": "Användarskapat innehåll och utmaningar.",
+    "ourTeam": "Vårt fantastiska team",
+    "joinBeta": "Gå med i vår beta",
+    "getReady": "Gör dig redo att söka!",
+    "ctaDesc": "Kliv in i en ny verklighet där världen blir din lekplats. Seekprotocol förvandlar din omgivning till ett interaktivt äventyr som blandar den senaste AR-tekniken med utforskande i verkligheten.",
+    "metaTitle": "Om teamet bakom Seekprotocol",
+    "metaDescription": "Möt teamet som bygger platsbaserad AR för alla kedjor: uppdraget bakom proof of location, tekniken under Seekprotocol och människorna bakom $SEEK.",
+    "ogTitle": "Teamet bakom Seekprotocol",
+    "eyebrow": "Om oss",
+    "whyEyebrow": "Varför vi bygger det här",
+    "techEyebrow": "Teknik",
+    "pillarsEyebrow": "Pelare",
+    "teamEyebrow": "Team",
+    "linkedinLabel": "{name} på LinkedIn"
+  },
+  "contact": {
+    "getInTouch": "Hör av dig",
+    "formDesc": "Fyll i formuläret nedan så återkommer vi så snart vi kan.",
+    "metaTitle": "Kontakt: partnerskap och kampanjer",
+    "metaDescription": "Prata med Seekprotocol-teamet om att placera en kampanj på dina egna koordinater, partnerskap, betaåtkomst eller press.",
+    "ogTitle": "Kontakta Seekprotocol",
+    "inquiryTypesEyebrow": "Eller, mer specifikt",
+    "partnershipsTitle": "Partnerskap",
+    "partnershipsBody": "Du har ett projekt, en IP eller ett nätverk av platser som du vill ta in i Seek. Berätta vad och var, så sköter vi resten.",
+    "publishersTitle": "Publicister",
+    "publishersBody": "Du vill placera AR-kampanjer på specifika koordinater och betala per verifierat besök. Skicka platsen och erbjudandet, så sätter vi upp kampanjen tillsammans med dig.",
+    "pressTitle": "Press och media",
+    "pressBody": "Bevakning, intervjuer, recensionsexemplar, nyheter under embargo. Kontakta oss här för allt redaktionellt, så svarar vi samma dag.",
+    "supportTitle": "Support",
+    "supportBody": "En bugg, ett uttag som inte kom fram, en fråga om plånboken. Snabbast är Discord, men det här formuläret funkar också.",
+    "eyebrow": "Kontakt",
+    "elsewhere": "På andra ställen",
+    "documentation": "Dokumentation",
+    "registeredOffice": "Registrerat säte"
+  },
+  "services": {
+    "heroTitle": "VÅR EXPERTIS, DIN TILLVÄXT",
+    "heroDesc": "Seekprotocol levererar banbrytande lösningar inom AR, AI och blockkedja på alla stora kedjor. Vi bygger inte bara teknik. Vi är din partner när engagemanget i den verkliga världen ska förändras.",
+    "letsContact": "Kontakta oss",
+    "businessStrategy": "Affärsstrategi",
+    "businessStrategyDesc": "Skräddarsydda strategier som förenar affärsmål med digital tillväxt.",
+    "visualDirection": "Visuell riktning",
+    "visualDirectionDesc": "Vi skapar sammanhållna och tidlösa varumärkesidentiteter som fångar din vision.",
+    "websiteCreation": "Webbplatser",
+    "websiteCreationDesc": "Helt responsiva webbplatser byggda med fart och elegans i fokus.",
+    "contentSolutions": "Innehållslösningar",
+    "contentSolutionsDesc": "Fånga uppmärksamhet och driv tillväxt med en stark innehållsriktning.",
+    "campaignExecution": "Kampanjgenomförande",
+    "campaignExecutionDesc": "Lansera högpresterande marknadsföring över digitala kanaler och plattformar.",
+    "uiuxSystems": "UI/UX-system",
+    "uiuxSystemsDesc": "Design av smidiga, funktionella användarresor över enheter och flöden.",
+    "growthTactics": "Tillväxttaktik",
+    "growthTacticsDesc": "Strategiska metoder som höjer varumärkets synlighet och skalar upp.",
+    "copywriting": "Copywriting",
+    "copywritingDesc": "Vi skapar sammanhållna och tidlösa varumärkesidentiteter som fångar din vision.",
+    "details": "Detaljer",
+    "pricingTitle": "Priser: flexibla för varje tjänst",
+    "pricingDesc": "Vi vet att varje företag har en unik budget, därför baseras våra priser på den modul du väljer.",
+    "pricingQuestion": "Redo att diskutera ditt projekt i detalj?",
+    "scheduleConsultation": "Boka en konsultation",
+    "smallModule": "Liten modul",
+    "smallModuleDesc": "Perfekt för mindre logotyper och korta budskap.",
+    "mediumModule": "Mellanstor modul",
+    "mediumModuleDesc": "Ger mer utrymme för ditt varumärkesinnehåll.",
+    "largeModule": "Stor modul",
+    "largeModuleDesc": "Den mest framträdande placeringen på kartan.",
+    "whoWeWorkWith": "Vilka vi jobbar med",
+    "smallBusinesses": "Småföretag och startups",
+    "smallBusinessesDesc": "Vi skapar din röst och ser till att den hörs.",
+    "ecommerce": "E-handelsvarumärken",
+    "ecommerceDesc": "Vi skriver övertygande produktbeskrivningar som konverterar.",
+    "agencies": "Byråer och konsulter",
+    "agenciesDesc": "Vi bygger auktoritet med värdefullt innehåll.",
+    "localBusinesses": "Lokala företag",
+    "localBusinessesDesc": "Vi hjälper dig att nå kunder i din stad och längre bort.",
+    "largeCorporations": "Stora företag",
+    "largeCorporationsDesc": "Vi skriver tydliga, effektiva budskap som stärker ditt varumärke.",
+    "ctaConnect": "Hör av dig",
+    "ctaTitle": "HAR DU EN IDÉ ELLER BEHÖVER DU STARTA ETT PROJEKT?"
+  },
+  "blog": {
+    "title": "Seekprotocol-bloggen",
+    "desc": "Insikter, nyheter och fördjupningar om förstärkt verklighet, AI, blockkedjeteknik och framtiden för platsbaserade upplevelser.",
+    "read": "läsning",
+    "backToBlog": "← Tillbaka till bloggen",
+    "readyToSeek": "Redo att börja söka?",
+    "readyToSeekDesc": "Ladda ned Seekprotocol och gör din värld till en lekplats driven av blockkedjan.",
+    "moreArticles": "Fler artiklar",
+    "keepReading": "Läs vidare",
+    "allArticles": "Alla artiklar",
+    "relatedPages": "Relaterade sidor",
+    "metaTitle": "Blogg: AR, AI och platsbaserade belöningar",
+    "metaDescription": "Artiklar om förstärkt verklighet, AI-kompanjoner, geofencade airdrops och proof of location, från teamet som bygger Seekprotocol.",
+    "ogTitle": "Seekprotocol-bloggen",
+    "eyebrow": "Blogg"
+  },
+  "forms": {
+    "emailPlaceholder": "E-postadress",
+    "sendNow": "Skicka nu",
+    "sending": "Skickar...",
+    "captchaError": "Slutför captcha-verifieringen.",
+    "genericError": "Något gick fel.",
+    "genericErrorRetry": "Något gick fel. Försök igen.",
+    "successMessage": "Tack! Vi har tagit emot ditt meddelande!",
+    "yourName": "Ditt namn",
+    "namePlaceholder": "Ange ditt namn",
+    "yourEmail": "Din e-post",
+    "emailInputPlaceholder": "Ange din e-post",
+    "message": "Meddelande",
+    "messagePlaceholder": "Skriv här",
+    "yourPhone": "Telefonnummer",
+    "phonePlaceholder": "Ange ditt telefonnummer",
+    "validationRequired": "Det här fältet är obligatoriskt",
+    "validationEmail": "Ange en giltig e-postadress",
+    "validationPhone": "Ange ett giltigt telefonnummer",
+    "validationName": "Ange ditt namn",
+    "optional": "valfritt"
+  },
+  "cookies": {
+    "title": "Cookieinställningar",
+    "subtitle": "Hantera dina integritetsinställningar",
+    "description": "Vi använder cookies för att förbättra din surfupplevelse, visa personligt anpassat innehåll och analysera vår trafik. Genom att klicka på \"Acceptera alla\" samtycker du till vår användning av cookies.",
+    "readMore": "Läs mer i vår",
+    "privacyPolicy": "Integritetspolicy",
+    "necessary": "Nödvändiga",
+    "necessaryDesc": "Krävs för att webbplatsen ska fungera korrekt. Kan inte inaktiveras.",
+    "functional": "Funktionella",
+    "functionalDesc": "Möjliggör utökad funktionalitet och personanpassning.",
+    "analytics": "Analys",
+    "analyticsDesc": "Hjälper oss att förstå hur besökare interagerar med vår webbplats.",
+    "marketing": "Marknadsföring",
+    "marketingDesc": "Används för att visa relevanta annonser och följa upp kampanjer.",
+    "acceptAll": "Acceptera alla",
+    "rejectAll": "Avvisa alla",
+    "customize": "Anpassa",
+    "savePreferences": "Spara inställningar",
+    "cookieSettings": "Cookieinställningar",
+    "toggleLabel": "Växla {category}"
+  },
+  "notFound": {
+    "pageNotFound": "Sidan hittades inte",
+    "pageNotFoundDesc": "Sidan du letar efter finns inte eller har flyttats",
+    "oops": "Hoppsan, sidan hittades inte",
+    "backToHome": "Tillbaka till startsidan",
+    "errorCode": "Fel 404 · Ingen signal på den här koordinaten"
+  },
+  "metrics": {
+    "text1": "OBEGRÄNSADE TILLGÅNGAR.",
+    "text2": "RIKTIGT ENGAGEMANG.",
+    "text3": "SÖK. SAMLA. TJÄNA"
+  },
+  "privacyPolicyPage": {
+    "title": "Integritetspolicy",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Uppdaterad: 6 september 2026",
+    "introTitle": "Inledning",
+    "introP1": "Denna integritetspolicy gäller för mobilapplikationen Seekprotocol (i detta dokument kallad \"Applikationen\"), som utvecklas och underhålls av Block Protocol LLC (kallad \"Tjänsteleverantören\") som en kostnadsfri tjänst för mobila enheter. Applikationen tillhandahålls i befintligt skick (\"AS IS\").",
+    "introP2": "Seekprotocol är en nästa generations plattform för förstärkt verklighet, driven av AI och integrerad med blockkedja, som skapar spelifierade upplevelser i den verkliga världen för sina användare. Med tanke på dessa upplevelsers natur hanterar Applikationen flera kategorier av personuppgifter för att kunna leverera sina funktioner fullt ut och på ett säkert sätt. Denna policy beskriver i detalj vilka uppgifter som samlas in, varför de samlas in, hur de hanteras, med vem de kan delas och vilka rättigheter användare har avseende sina personuppgifter.",
+    "introP3": "Genom att ladda ned och använda Applikationen samtycker du till den datahantering som beskrivs i denna integritetspolicy. Policyn bör läsas regelbundet, eftersom den kan uppdateras från tid till annan för att återspegla ändringar i datahanteringen, tillämplig lag eller Applikationens funktioner.",
+    "part1Title": "Del I: Insamling och användning av information",
+    "part1P1": "Applikationen samlar in information när du laddar ned och använder den. Det omfattar tekniska uppgifter som samlas in automatiskt under användningen, såsom enhetens IP-adress (Internet Protocol), de sidor eller avsnitt i Applikationen du besöker, tid och datum för dina besök, hur länge du stannar på sidorna samt information om operativsystemet på din mobila enhet.",
+    "part1P2": "Utöver dessa automatiskt insamlade tekniska uppgifter samlar Applikationen in flera kategorier av personuppgifter, som var och en beskrivs fullständigt nedan.",
+    "part1P3": "Alla uppgifter som Applikationen samlar in överförs och lagras med kryptering under överföring, vilket säkerställer att informationen skyddas när den färdas mellan din enhet och Tjänsteleverantörens system.",
+    "part1s1Title": "1. Skapande av konto",
+    "part1s1P1": "Applikationen stöder flera sätt för användare att skapa och komma åt sina konton. Dessa omfattar autentisering med användarnamn och lösenord, användarnamn i kombination med andra former av autentisering, användarnamn i kombination med både lösenord och ytterligare autentiseringsfaktorer samt OAuth-baserad autentisering via stödda externa identitetsleverantörer. Vilken metod en användare väljer avgör vilka kontorelaterade identifierare som samlas in och sparas av Applikationen.",
+    "part1s2Title": "2. Personuppgifter",
+    "part1s2P1": "Applikationen samlar in personligt identifierbar information, inklusive ditt namn, din e-postadress och användaridentifierare (användar-ID).",
+    "part1s2P2": "Ditt namn samlas in eftersom det krävs för appens kärnfunktioner, bland annat för att anpassa användargränssnittet och identifiera din profil på plattformen. Uppgiften samlas endast in och delas inte med tredje part.",
+    "part1s2P3": "Din e-postadress krävs på samma sätt och samlas uteslutande in för appens funktioner, bland annat kontoautentisering, tjänsterelaterad kommunikation och leverans av viktiga meddelanden. Uppgiften samlas endast in och delas inte med tredje part.",
+    "part1s2P4": "Användar-ID, de unika identifierare som tilldelas ditt konto eller din session, krävs och samlas in för ett bredare syfte. Det omfattar stöd för appens kärnfunktioner, intern analys för att förstå hur Applikationen används, säkerhetsåtgärder och bedrägeriförebyggande åtgärder samt hantering av funktioner och behörigheter på kontonivå. Användar-ID samlas endast in och delas inte externt.",
+    "part1s3Title": "3. Platsuppgifter",
+    "part1s3P1": "Applikationen kräver åtkomst till både ungefärliga och exakta platsuppgifter från din enhet. Platsåtkomst är obligatorisk och kan inte inaktiveras av användare utan att appens kärnfunktioner påverkas.",
+    "part1s3P2": "Ungefärliga platsuppgifter, som anger ditt allmänna geografiska område utan att peka ut din exakta position, både samlas in och delas. De samlas in för att stödja appens kärnfunktioner och för intern analys av hur användare använder platsbaserade funktioner i olika geografiska regioner. Ungefärliga platsuppgifter delas även med tredje part i syfte att stödja appens funktioner och erbjuda personligt anpassat innehåll och upplevelser utifrån geografiskt sammanhang.",
+    "part1s3P3": "Exakta platsuppgifter, det vill säga exakta geografiska koordinater från GPS eller motsvarande teknik, både samlas in och delas, och de används för det bredaste urvalet av syften bland alla datatyper i Applikationen. Det återspeglar att Seekprotocols kärnupplevelse bygger på platsförankrad förstärkt verklighet i den verkliga världen. Exakta platsuppgifter samlas in för att stödja AR-funktioner och andra kärnfunktioner som beror på exakt positionering i verkligheten, för detaljerad användningsanalys, för att skicka utvecklarkommunikation som är relevant för din specifika plats, för säkerhetsåtgärder och bedrägeriförebyggande åtgärder kopplade till geografiska aktivitetsmönster, för att anpassa innehåll och funktioner till din exakta miljö och för att hantera kontofunktioner eller tjänstevillkor som beror på geografiska parametrar. Samma uppgifter delas med tredjepartsleverantörer för alla dessa syften.",
+    "part1s4Title": "4. Meddelanden",
+    "part1s4P1": "Applikationen samlar in tre former av meddelandedata: e-post, SMS eller MMS och andra meddelanden i appen. Alla tre typerna krävs och kan inte inaktiveras av användaren.",
+    "part1s4P2": "E-post samlas uteslutande in för att stödja appens kärnfunktioner, bland annat kommunikation mellan användare och plattformen samt leverans av tjänsterelaterade aviseringar.",
+    "part1s4P3": "SMS- eller MMS-data samlas enbart in för att stödja appens kärnfunktioner och behandlas tillfälligt, vilket innebär att de inte sparas efter att den aktuella behandlingen är slutförd och inte lagras varaktigt av Applikationen.",
+    "part1s4P4": "Andra meddelanden i appen samlas uteslutande in för att stödja appens kärnfunktioner, bland annat interaktioner i Applikationens egna meddelande- och kommunikationssystem.",
+    "part1s5Title": "5. Foton och videor",
+    "part1s5P1": "Applikationen kräver åtkomst till foton och videor på din enhet. Båda datatyperna samlas endast in och används uteslutande för att stödja appens kärnfunktioner, särskilt AR-funktioner som kräver åtkomst till enhetens kamera och mediebibliotek för att lägga digitalt innehåll över fysiska miljöer eller fånga upplevelser i Applikationens interaktiva sessioner.",
+    "part1s6Title": "6. Hälso- och träningsinformation",
+    "part1s6P1": "Applikationen samlar in hälsorelaterad information och träningsrelaterad information. Båda kategorierna krävs och används uteslutande för att stödja appens kärnfunktioner. Uppgifterna delas inte med tredje part.",
+    "part1s6P2": "Hälsoinformation gör det möjligt för Applikationen att väva in hälsosammanhang i upplevelserna där det är relevant, och stöder funktioner som svarar på användarens allmänna fysiska tillstånd som en del av Seekprotocols bredare spelifierade engagemangsmodell.",
+    "part1s6P3": "Träningsinformation används tillsammans med Applikationens utmanings- och belöningssystem. Applikationen begär Android-behörigheten ACTIVITY_RECOGNITION för att upptäcka och följa fysiska aktiviteter som att gå, springa eller cykla direkt via enhetens sensorer. Behörigheten driver Applikationens utmanings- och belöningsfunktioner, som är utformade för att känna igen fysisk aktivitet i verkligheten som en del av Seekprotocols spelifierade upplevelse. Genom att upptäcka rörelsemönster kan Applikationen utlösa händelser i appen, validera slutförda utmaningar och tilldela belöningar kopplade till fysiskt engagemang i verkligheten. Inga data från aktivitetsigenkänning används för reklamändamål, och de delas inte med tredje part. Behörigheten kan när som helst återkallas i enhetens appinställningar, men då inaktiveras de aktivitetsbaserade utmaningar och belöningar som är beroende av den.",
+    "part1s7Title": "7. Prestanda- och diagnostikdata för appen",
+    "part1s7P1": "Applikationen samlar in tekniska uppgifter om sin egen prestanda. Det omfattar kraschloggar, diagnostikinformation och andra prestandamått för appen.",
+    "part1s7P2": "Kraschloggar krävs och samlas in automatiskt för att stödja appens kärnfunktioner: närmare bestämt för att identifiera, diagnostisera och åtgärda tekniska fel som påverkar användarupplevelsen.",
+    "part1s7P3": "Valfri prestandaanalys samlas in när användare tillåter det, för att förbättra Applikationens stabilitet och svarstid. Säkerhetsdiagnostik som används för att förebygga bedrägerier är separat: i versioner där Talsec freeRASP är aktiverat samlas den in automatiskt enligt beskrivningen i del II.",
+    "part1s8Title": "8. Filer och dokument",
+    "part1s8P1": "Applikationen kan valfritt samla in filer och dokument som är tillgängliga från din enhet. Insamlingen styrs av användaren och sker endast i sammanhang där din direkta interaktion med Applikationen omfattar filer eller dokument. När uppgifterna samlas in används de enbart för att stödja appens kärnfunktioner och delas inte med tredje part.",
+    "part1s9Title": "9. Enhetsidentifierare och andra ID",
+    "part1s9P1": "Applikationen samlar in enhetsidentifierare och liknande tekniska identifierare för appens funktioner och för att förebygga bedrägerier, och delar vissa identifierare med tjänsteleverantörer. Säkerhetsidentifierare och diagnostikposter kan sparas längre än en enskild session; alla behandlas inte tillfälligt. Se del II och del IV.",
+    "part1s9P2": "Enhetsidentifierare samlas in i syfte att stödja appens kärnfunktioner som bygger på igenkänning på enhetsnivå och för säkerhetsåtgärder och bedrägeriförebyggande åtgärder. Samma uppgifter delas med tredje part för appens funktioner samt för säkerhet och bedrägeriförebyggande.",
+    "part2Title": "Del II: Tredje parts åtkomst och delning av uppgifter",
+    "part2P1": "Vi delar uppgifter med tjänsteleverantörer för de syften som beskrivs i denna policy. Vissa rapporter är aggregerade, men delningen är inte begränsad till aggregerade uppgifter: säkerhetsdiagnostik och enhetsidentifierare kan också överföras till Talsec enligt beskrivningen nedan.",
+    "part2P2": "Vi kan lämna ut information när lagen kräver det eller när det är rimligen nödvändigt för att skydda rättigheter och säkerhet, utreda bedrägerier eller besvara lagliga förfrågningar. Tjänsteleverantörer behandlar information för de tjänster de levererar enligt tillämpliga villkor. Talsec använder också säkerhetsdiagnostik för sin egen produktutveckling och för aggregerad säkerhetsforskning, som förklaras nedan.",
+    "part2P3": "Applikationen integrerar följande tjänster från tredje part, som var och en har sin egen integritetspolicy. Användare uppmanas att läsa dessa policyer direkt för att förstå hur varje leverantör hanterar uppgifter som tas emot från Applikationen:",
+    "part3Title": "Del III: Rätt att avstå",
+    "part3P1": "Du kan när som helst stoppa all insamling av information genom Applikationen genom att avinstallera den. Du kan använda de vanliga avinstallationsprocesserna på din mobila enhet eller via den aktuella marknadsplatsen för mobilappar.",
+    "part3P2": "Valfri prestandaanalys och insamling av filer eller dokument kan styras via relevanta inställningar och funktioner. Dessa kontroller inaktiverar inte säkerhetsdiagnostiken i versioner där freeRASP är aktiverat. Kontakta support@seekprotocol.ai vid frågor eller önskemål som rör säkerhetsdata.",
+    "part3P3": "Behörigheten ACTIVITY_RECOGNITION på Android kan när som helst återkallas i enhetens inställningar för appbehörigheter. Att återkalla behörigheten inaktiverar aktivitetsbaserade utmaningar och belöningar men påverkar i övrigt inte din användning av Applikationen.",
+    "part4Title": "Del IV: Lagring av uppgifter",
+    "part4P1": "Vi sparar uppgifter som användare lämnat medan du använder Applikationen och därefter i den mån det behövs för drift, rättsliga eller administrativa ändamål. Säkerhetsdiagnostik och identifierare kan sparas längre än en session för att utreda missbruk och ta fram säkerhetsrapporter; Talsecs lagring styrs av dess datapolicyer och tillämpliga avtalsvillkor. SMS/MMS-data som behandlas tillfälligt raderas efter det omedelbara behandlingsändamålet.",
+    "part4P2": "Om du vill att Tjänsteleverantören ska radera uppgifter som du har lämnat via Applikationen, kontakta Tjänsteleverantören på <email>support@seekprotocol.ai</email>. Tjänsteleverantören svarar inom rimlig tid.",
+    "part5Title": "Del V: Barn",
+    "part5P1": "Tjänsteleverantören använder inte Applikationen för att medvetet samla in uppgifter från eller marknadsföra till barn under 13 år. Applikationen riktar sig inte till någon under 13 år, och Tjänsteleverantören samlar inte medvetet in personligt identifierbar information från barn i den åldersgruppen. Om Tjänsteleverantören upptäcker att ett barn under 13 år har lämnat personuppgifter raderas de omedelbart från servrarna. Om du är förälder eller vårdnadshavare och tror att ditt barn har lämnat personuppgifter till Applikationen, kontakta Tjänsteleverantören på <email>support@seekprotocol.ai</email> så att nödvändiga åtgärder kan vidtas.",
+    "part6Title": "Del VI: Säkerhet",
+    "part6P1": "Tjänsteleverantören arbetar för att skydda sekretessen och integriteten för din information. Alla uppgifter som Applikationen samlar in krypteras under överföring. Fysiska, elektroniska och administrativa skyddsåtgärder upprätthålls för att skydda den information som Tjänsteleverantören behandlar och sparar. När uppgifter överförs till tredjepartsleverantörer gör Tjänsteleverantören rimliga ansträngningar för att delningen ska vara begränsad, ändamålsbunden och omfattas av lämpliga avtal om datahantering.",
+    "part7Title": "Del VII: Begäran om radering av uppgifter",
+    "part7P1": "Användare som vill begära radering av sitt konto och alla tillhörande uppgifter kan skicka en begäran via Seekprotocols webbplats på:",
+    "part7P2": "Alternativt kan en begäran om radering skickas genom att kontakta Tjänsteleverantören direkt på <email>support@seekprotocol.ai</email>. Tjänsteleverantören behandlar alla begäranden om radering inom rimlig tid.",
+    "part8Title": "Del VIII: Ändringar av denna policy",
+    "part8P1": "Denna integritetspolicy kan uppdateras från tid till annan av vilket skäl som helst. Tjänsteleverantören meddelar dig om ändringar genom att uppdatera den här sidan med den nya integritetspolicyn och ändra datumet högst upp i dokumentet. Vid väsentliga ändringar kan Tjänsteleverantören även meddela användare via Applikationen. Vi rekommenderar att du regelbundet läser denna integritetspolicy. Fortsatt användning av Applikationen efter att ändringar har publicerats innebär att du godkänner dem.",
+    "consentTitle": "Ditt samtycke",
+    "consentP1": "Genom att använda Applikationen samtycker du till insamling, användning och delning av din information enligt denna integritetspolicy, i dess nuvarande lydelse och så som den kan komma att ändras av Tjänsteleverantören i framtiden.",
+    "contactTitle": "Kontakt",
+    "contactP1": "Om du har frågor om din integritet när du använder Applikationen, eller om den datahantering som beskrivs i denna policy, kontakta Tjänsteleverantören på:",
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, Förenade Arabemiraten",
+    "metaTitle": "Integritetspolicy",
+    "metaDescription": "Så hanterar Seekprotocol platsdata, sensoravläsningar och plånboksuppgifter: vad som samlas in, hur länge det sparas och vad som aldrig delas.",
+    "ogTitle": "Integritet hos Seekprotocol",
+    "raspTitle": "Talsec freeRASP: säkerhetsdiagnostik",
+    "raspP1": "I versioner där freeRASP är aktiverat tar Talsec (Lynx SFT s.r.o.) emot säkerhetsdiagnostik för appen och operativsystemet, information om enhetsmodell samt identifierare för appinstans och enhet. Signalerna kan omfatta rotning, emulatorer, manipulering av appen, felsökning och hooking. Diagnostiken skickas automatiskt medan den aktiverade versionen körs; valfria inställningar för prestandaanalys inaktiverar den inte.",
+    "raspP2": "Talsec använder uppgifterna för säkerhetsrapportering, för att förbättra sina kostnadsfria och kommersiella säkerhetsprodukter och för aggregerad forskning. Talsec anger att behandlingen i molnet sker i USA. Enhetsidentifierare bör inte antas vara helt anonyma enligt all integritetslagstiftning. Läs Talsecs datapolicyer via länken nedan.",
+    "raspP3": "Vår egen backend registrerar också hotnamn tillsammans med insamlingsförsök, vilka kan kopplas till ditt konto. Vår hantering av callbacks laddar inte upp listan över andra installerade appar. Det här är signaler som rapporteras av enheten och är inte i sig bevis på bedrägeri.",
+    "eyebrow": "Juridik"
+  },
+  "termsPage": {
+    "title": "Villkor",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Gäller från: 12 augusti 2025",
+    "p1": "Dessa villkor gäller för appen Seekprotocol (nedan kallad \"Applikationen\") för mobila enheter, som skapats av Block Protocol LLC (nedan kallad \"Tjänsteleverantören\") som en kostnadsfri tjänst.",
+    "p2": "Genom att ladda ned eller använda Applikationen godkänner du automatiskt följande villkor. Vi rekommenderar starkt att du läser och förstår dessa villkor noggrant innan du använder Applikationen. Obehörig kopiering eller ändring av Applikationen, någon del av Applikationen eller våra varumärken är strängt förbjuden. Försök att extrahera Applikationens källkod, översätta Applikationen till andra språk eller skapa härledda versioner är inte tillåtna. Alla varumärken, upphovsrätter, databasrättigheter och andra immateriella rättigheter som rör Applikationen förblir Tjänsteleverantörens egendom.",
+    "p3": "Tjänsteleverantören strävar efter att Applikationen ska vara så användbar och effektiv som möjligt. Därför förbehåller sig Tjänsteleverantören rätten att när som helst och av vilket skäl som helst ändra Applikationen eller ta betalt för sina tjänster. Tjänsteleverantören garanterar att eventuella avgifter för Applikationen eller dess tjänster kommer att meddelas dig tydligt.",
+    "p4": "Applikationen lagrar och behandlar personuppgifter som du har lämnat till Tjänsteleverantören för att kunna tillhandahålla Tjänsten. Det är ditt ansvar att upprätthålla säkerheten för din telefon och åtkomsten till Applikationen. Tjänsteleverantören avråder starkt från att jailbreaka eller rota din telefon, vilket innebär att ta bort programvarubegränsningar som införts av enhetens officiella operativsystem. Sådana åtgärder kan utsätta din telefon för skadlig kod, virus och skadliga program, äventyra telefonens säkerhetsfunktioner och leda till att Applikationen inte fungerar korrekt eller inte alls.",
+    "thirdPartyIntro": "Observera att Applikationen använder tjänster från tredje part som har egna villkor. Nedan finns länkar till villkoren för de tredjepartsleverantörer som Applikationen använder:",
+    "p6": "Observera att Tjänsteleverantören inte tar ansvar för vissa aspekter. Vissa funktioner i Applikationen kräver en aktiv internetanslutning, via wifi eller din mobiloperatör. Tjänsteleverantören kan inte hållas ansvarig om Applikationen inte fungerar fullt ut på grund av bristande åtkomst till wifi eller om du har förbrukat din datamängd.",
+    "p7": "Om du använder applikationen utanför ett wifi-område gäller fortfarande villkoren i avtalet med din mobiloperatör. Du kan därför debiteras av din mobiloperatör för dataanvändning under anslutningen till applikationen, eller för andra avgifter från tredje part. Genom att använda applikationen tar du ansvar för sådana avgifter, inklusive avgifter för dataroaming om du använder applikationen utanför ditt hemområde (dvs. region eller land) utan att stänga av dataroaming. Om du inte är den som betalar räkningen för enheten där du använder applikationen, förutsätts att du har fått tillstånd från den som betalar räkningen.",
+    "p8": "På samma sätt kan Tjänsteleverantören inte alltid ta ansvar för din användning av applikationen. Det är till exempel ditt ansvar att se till att din enhet är laddad. Om batteriet tar slut och du inte kan komma åt Tjänsten kan Tjänsteleverantören inte hållas ansvarig.",
+    "p9": "När det gäller Tjänsteleverantörens ansvar för din användning av applikationen är det viktigt att notera att även om Tjänsteleverantören strävar efter att den alltid ska vara uppdaterad och korrekt, är den beroende av att tredje part tillhandahåller information så att den kan göras tillgänglig för dig. Tjänsteleverantören tar inget ansvar för någon förlust, direkt eller indirekt, som du drabbas av till följd av att helt förlita dig på denna funktion i applikationen.",
+    "p10": "Tjänsteleverantören kan vilja uppdatera applikationen vid någon tidpunkt. Applikationen är för närvarande tillgänglig enligt kraven för operativsystemet (och för eventuella ytterligare system som Tjänsteleverantören väljer att göra applikationen tillgänglig för), vilka kan ändras, och du behöver ladda ned uppdateringarna om du vill fortsätta använda applikationen. Tjänsteleverantören garanterar inte att applikationen alltid kommer att uppdateras så att den är relevant för dig och/eller kompatibel med den version av operativsystemet som är installerad på din enhet. Du samtycker dock till att alltid acceptera uppdateringar av applikationen när de erbjuds dig. Tjänsteleverantören kan också vilja sluta tillhandahålla applikationen och kan när som helst avsluta användningen av den utan att meddela dig. Om inget annat meddelas gäller vid ett sådant avslutande att (a) de rättigheter och licenser som beviljats dig i dessa villkor upphör; (b) du måste sluta använda applikationen och (vid behov) radera den från din enhet.",
+    "changesTitle": "Ändringar av dessa villkor",
+    "changesP1": "Tjänsteleverantören kan uppdatera sina villkor med jämna mellanrum. Vi rekommenderar därför att du regelbundet går igenom den här sidan för att se eventuella ändringar. Tjänsteleverantören meddelar dig om ändringar genom att publicera de nya villkoren på den här sidan.",
+    "contactTitle": "Kontakta oss",
+    "contactP1": "Om du har frågor eller förslag om villkoren är du välkommen att kontakta Tjänsteleverantören på <email>support@seekprotocol.ai</email>.",
+    "metaTitle": "Villkor",
+    "metaDescription": "Villkoren för att använda Seekprotocol och Seekprotocol-plattformen: dina rättigheter, reglerna för att hämta tillgångar och hur de betalda sakerna fungerar.",
+    "ogTitle": "Seekprotocols villkor",
+    "eyebrow": "Juridik"
+  },
+  "languageSwitcher": {
+    "en": "English",
+    "nl": "Nederlands",
+    "de": "Deutsch",
+    "es": "Español",
+    "fr": "Français",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "tr": "Türkçe"
+  },
+  "globe": {
+    "liveLabel": "Aktiva sökare",
+    "panelTitle": "Sökare samlar just nu",
+    "panelDesc": "Varje nål är en riktig stad. Drops landar på fasta koordinater och låses bara upp när någon faktiskt står där.",
+    "todayLabel": "Insamlat idag",
+    "waiting": "Väntar på nästa upplockning…",
+    "dragHint": "Dra för att rotera",
+    "xpLabel": "Intjänad XP",
+    "clickHint": "Tryck på ett mynt för att se upplockningen",
+    "seekerLabel": "Sökare",
+    "xpGained": "XP intjänad",
+    "coordsLabel": "Koordinater",
+    "verified": "Närvaro verifierad on-chain",
+    "all": "Alla",
+    "yourHaul": "Din fångst",
+    "filterLabel": "Filtrera efter sällsynthet",
+    "waitingRarity": "Inga {rarity}-upplockningar än",
+    "catchChance": "Fångstchans",
+    "close": "Stäng",
+    "secondsAgo": "för {seconds} s sedan",
+    "zoomIn": "Zooma in",
+    "zoomOut": "Zooma ut",
+    "busiest": "Mest aktivt just nu",
+    "units": "Enheter",
+    "zoomLabel": "Zoom",
+    "hubsLabel": "Hoppa till en stad",
+    "wholeEarth": "Hela jorden",
+    "zoomLevel": "Zoom {percent} %",
+    "caught": "Fångad · +{xp, number} XP",
+    "escaped": "Den kom undan · {percent} % vid nytt försök",
+    "tryCatch": "Försök fånga den",
+    "globeAria": "Interaktiv jordglob som visar Seekprotocols insamlingsaktivitet världen över"
+  },
+  "homeSteps": {
+    "placed": {
+      "title": "Något placeras ut",
+      "meta": "Publicist · var som helst på jorden",
+      "body": "Ett varumärke, ett projekt eller ett evenemang fäster en tillgång vid en uppsättning koordinater och bestämmer radien den kan hämtas inom. Där ligger den, synlig på kartan, tills någon kommer och hämtar den."
+    },
+    "arrive": {
+      "title": "Du kommer inom räckhåll",
+      "meta": "Standardradie 30 m",
+      "body": "Din telefon bekräftar att du faktiskt är där: satellitposition, radiomiljö, enhetsattestering och ditt rörelsespår måste alla stämma överens. Att förfalska en signal är lätt; att förfalska alla på en gång är det inte."
+    },
+    "collect": {
+      "title": "Du samlar in den",
+      "meta": "Avvecklas på tillgångens egen kedja",
+      "body": "Håll upp kameran, se tillgången förankrad på gatan framför dig och ta den. Överföringen avvecklas on-chain för en bråkdel av en cent, och den är din."
+    }
+  },
+  "homeStats": {
+    "accuracy": {
+      "label": "Träffsäkerhet vid hämtning"
+    },
+    "languages": {
+      "label": "Språk"
+    },
+    "stores": {
+      "label": "Appbutiker live"
+    }
+  },
+  "worldDescent": {
+    "hint": "Fortsätt skrolla",
+    "bannerDistance": "84 m bort",
+    "orbit": {
+      "label": "Omloppsbana",
+      "title": "Varje drop är en koordinat",
+      "body": "Tillgångar publiceras på punkter på planeten, inte i ett flöde. Härifrån är det allt nätverket är: några tusen platser där något väntar."
+    },
+    "descent": {
+      "label": "Nedstigning",
+      "title": "På väg ner mot en av dem",
+      "body": "Välj vilken punkt som helst och ge dig av. Protokollet bryr sig inte om vilken, bara att du står där när du hämtar den."
+    },
+    "street": {
+      "label": "Gatunivå",
+      "title": "Det här är samma karta, fyrahundra kilometer närmare",
+      "body": "Byggnaderna du flyger över är de som står mellan dig och dropen. Avstånd är hela mekaniken, så kartan måste vara den riktiga."
+    },
+    "hand": {
+      "label": "I din hand",
+      "title": "Och den får plats i en telefon",
+      "body": "Ingenting har bytts ut. Vyn du just flög igenom är vad appen renderar, med sina egna kontroller ovanpå."
+    }
+  },
+  "appChrome": {
+    "home": "Hem",
+    "map": "Karta",
+    "quests": "Uppdrag",
+    "wallet": "Plånbok",
+    "backToMap": "‹ Karta",
+    "tapCoin": "Tryck på ett mynt",
+    "distanceAway": "{metres} m bort"
+  },
+  "arSection": {
+    "eyebrow": "Förstärkt verklighet",
+    "hint": "Fortsätt skrolla",
+    "see": {
+      "label": "Kameran tittar",
+      "title": "En kamera ser ingen gata",
+      "body": "Den ser ljusstyrka som ändras över ett rutnät. Innan något kan placeras någonstans måste scenen göras om till något med struktur, och just nu finns det ingen.",
+      "readout": "BILDRUTA 1/60 · INGEN SPÅRNING"
+    },
+    "track": {
+      "label": "Kännetecken träder fram",
+      "title": "Hörn är vad världen består av",
+      "body": "Punkter där ljusstyrkan ändras i två riktningar samtidigt överlever rörelse, så motorn behåller dem och slänger resten. Spåra tillräckligt många av dem över tillräckligt många bildrutor, så vet telefonen hur den rört sig.",
+      "readout": "SPÅRAR · 2 412 KÄNNETECKEN"
+    },
+    "plane": {
+      "label": "Ett plan hittas",
+      "title": "Något att stå på",
+      "body": "Kännetecken som delar en yta grupperas till ett plan. Det är ögonblicket då en drop slutar vara en bild på skärmen och blir ett objekt med en plats att vila på.",
+      "readout": "PLAN HITTAT · 6,0 × 6,0 M"
+    },
+    "anchor": {
+      "label": "Ankaret sätts",
+      "title": "Fäst vid världen, inte vid telefonen",
+      "body": "Dropen är bunden till den geometrin och till koordinaten den publicerades på. Gå runt den och den stannar där den var. Två personer på samma plats ser den på samma ställe.",
+      "readout": "ANKARE LÅST · 52.3702 N 4.8952 E"
+    },
+    "persist": {
+      "label": "Den består",
+      "title": "Fortfarande där i morgon",
+      "body": "Ankaret sparas mot platsen snarare än sessionen, så att stänga appen flyttar det inte. Den beständigheten är vad som skiljer en AR-leksak från ett AR-protokoll.",
+      "readout": "ANKARE SPARAT · OBEROENDE AV SESSION"
+    }
+  },
+  "mobiSection": {
+    "title": "Kompanjonen som ser det du ser",
+    "lead": "Fråga högt så läser Mobi gatan genom kameran: landmärken, öppettider, åt vilket håll dropen ligger. Den körs på enheten där det går, och sparar aldrig ett spår av var du har varit.",
+    "tapHint": "Tryck på Mobi",
+    "tapAgain": "{label} · tryck igen",
+    "tapAria": "Mobi är {state}. Tryck för att fortsätta.",
+    "points": [
+      "Röst in, röst ut, händerna fria medan du går",
+      "Läser landmärken och skyltar från kameran i realtid",
+      "Uppdrag som anpassar sig efter hur och var du spelar"
+    ],
+    "listening": {
+      "label": "Lyssnar",
+      "line": "Vad är värt att gå till här i närheten?"
+    },
+    "thinking": {
+      "label": "Läser gatan",
+      "line": "Matchar det kameran ser mot spawns i närheten…"
+    },
+    "answering": {
+      "label": "Svarar",
+      "line": "Det finns en legendary två gator upp, bakom torget. Sex minuter i din takt, och den stänger klockan sex."
+    },
+    "idle": {
+      "label": "Vilar",
+      "line": "Väntar. Ingenting spelas in."
+    }
+  },
+  "socialSection": {
+    "eyebrow": "Tillsammans",
+    "title": "Hälften handlar om vem du går med",
+    "lead": "Klaner samlar ihop det alla hittar. Chatten är end-to-end-krypterad, med försvinnande meddelanden när en konversation inte ska leva längre än den behöver. Och tar du in någon får du en del av det de hittar.",
+    "points": [
+      "Direkt- och klanmeddelanden, krypterade end-to-end",
+      "Powerups och tips som skickas mellan vänner",
+      "Värvningsbelöningar som betalar medan de spelar"
+    ],
+    "online": "{count} online",
+    "encrypted": "Krypterad",
+    "composer": "Meddelande",
+    "disappearing": "Försvinnande meddelanden",
+    "yourCode": "Din kod",
+    "copy": "Kopiera",
+    "copied": "Kopierad",
+    "spot": {
+      "text": "En legendary spawnade precis vid torget. Två gator från spårvagnshållplatsen."
+    },
+    "coming": {
+      "text": "På väg. Har någon en magnet kvar?"
+    },
+    "sent": {
+      "text": "Skickade två till dig. Spara Diamond Hands till läckan."
+    },
+    "missed": {
+      "text": "Full ring och den kom ändå undan. Två försök kvar."
+    },
+    "invited": {
+      "label": "Inbjudna"
+    },
+    "active": {
+      "label": "Aktiva"
+    },
+    "share": {
+      "label": "Din andel"
+    }
+  },
+  "videoReveal": {
+    "mute": "Stäng av ljudet i filmen",
+    "unmute": "Spela filmen med ljud"
+  },
+  "featureGroups": {
+    "eyebrow": "Vad som finns där",
+    "title": "Mer än en karta med mynt på",
+    "tablist": "Funktionsgrupper",
+    "hunt": {
+      "label": "Jakt",
+      "items": [
+        {
+          "title": "Spawns på riktiga koordinater",
+          "body": "Drops dyker upp på fasta punkter runt dig och ligger kvar tills någon hämtar dem. Markera en så räknar appen ner avståndet medan du går."
+        },
+        {
+          "title": "Beständiga AR-fångster",
+          "body": "Myntet förankras i marken framför dig och stannar förankrat mellan sessioner, så det ligger på samma ställe för alla som kommer dit."
+        },
+        {
+          "title": "Powerups och timing",
+          "body": "Magnet, dubbel och frys staplas på en fångst. En timingmätare avgör hur mycket av dropen du behåller, för en legendary som fångas dåligt är fortfarande en legendary som fångats dåligt."
+        },
+        {
+          "title": "Sällsynthet som betyder något",
+          "body": "Från common till legendary, där sällsyntheten styr ringens färg på kartan långt innan du är i närheten."
+        }
+      ]
+    },
+    "progress": {
+      "label": "Framsteg",
+      "items": [
+        {
+          "title": "Tio ranger, intjänade genom att gå",
+          "body": "Från Seeker till Legend. Rangen kommer från sträckan du tillryggalagt och platserna du besökt, inte från vad du har spenderat."
+        },
+        {
+          "title": "Sextioen märken",
+          "body": "En hel samlarserie, från Diamond Hands till On-Chain Detective, var och en med sitt eget upplåsningsvillkor."
+        },
+        {
+          "title": "Game Center och Play Games",
+          "body": "Prestationer synkas till plattformen du redan använder, så dina sviter och milstolpar finns bredvid resten av dina spel."
+        },
+        {
+          "title": "Sviter och dagliga uppdrag",
+          "body": "Uppdrag som anpassar sig efter var du är och hur du spelar, där belöningen växer så länge sviten håller."
+        }
+      ]
+    },
+    "together": {
+      "label": "Tillsammans",
+      "items": [
+        {
+          "title": "Klaner",
+          "body": "Gå med i en eller grunda en, samla bidrag och klättra i klantabellen. Emblem, ranger och gemensamma belöningspooler ingår."
+        },
+        {
+          "title": "Krypterad chatt",
+          "body": "Direkt- och klanmeddelanden, krypterade end-to-end, med försvinnande meddelanden när en konversation inte ska leva längre än den behöver."
+        },
+        {
+          "title": "Topplistor",
+          "body": "Globala, nationella och på klannivå, med medaljer till topp tre och en tabell som uppdateras medan folk går."
+        },
+        {
+          "title": "Värvningar",
+          "body": "Ta in folk och få en del av det de samlar. Din kod är det första på skärmen, för det är den du kom för."
+        }
+      ]
+    },
+    "own": {
+      "label": "Ägande",
+      "items": [
+        {
+          "title": "En plånbok utan seed phrase",
+          "body": "Skapas från en social inloggning så att du kan samla inom en minut efter installationen. Exportera nyckeln när du vill ha full kontroll."
+        },
+        {
+          "title": "Season Pass",
+          "body": "En säsongsbana med belöningar som löper parallellt med vanligt spel, med en gratisnivå och en betald."
+        },
+        {
+          "title": "Butik",
+          "body": "Powerups, kosmetika och avatardelar, prissatta i det du har samlat snarare än bara i det du kan köpa."
+        },
+        {
+          "title": "3D-avatarer",
+          "body": "Fullständiga Decentraland-kompatibla avatarer med animationer och emotes, inte ett beskuret profilfoto."
+        }
+      ]
+    }
+  },
+  "progression": {
+    "eyebrow": "Progression",
+    "title": "Tio ranger, sextioen märken, och inget av dem går att köpa",
+    "lead": "Rangen kommer från sträckan du tillryggalagt och platserna du besökt. Allt på den här väggen tjänar du in genom att gå ut.",
+    "badgeAlt": "Rangmärke för {name}",
+    "rankOf": "Rang {tier} av {total}",
+    "rankTablist": "Rangnivåer",
+    "badgesTitle": "Samlarmärken",
+    "badgesShown": "{shown} av {total} visas",
+    "achievementsTitle": "Prestationer"
+  },
+  "ranks": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "scout": {
+      "name": "Scout"
+    },
+    "tracker": {
+      "name": "Tracker"
+    },
+    "hunter": {
+      "name": "Hunter"
+    },
+    "pathfinder": {
+      "name": "Pathfinder"
+    },
+    "ranger": {
+      "name": "Ranger"
+    },
+    "sentinel": {
+      "name": "Sentinel"
+    },
+    "apex": {
+      "name": "Apex"
+    },
+    "mythic": {
+      "name": "Mythic"
+    },
+    "legend": {
+      "name": "Legend"
+    }
+  },
+  "badges": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "web3Wizard": {
+      "name": "Web3 Wizard"
+    },
+    "whale": {
+      "name": "Whale"
+    },
+    "bull": {
+      "name": "Bull"
+    },
+    "detective": {
+      "name": "On-Chain Detective"
+    },
+    "samurai": {
+      "name": "Degen Samurai"
+    },
+    "liquidityKing": {
+      "name": "Liquidity King"
+    }
+  },
+  "achievements": {
+    "firstCatch": {
+      "name": "Första fångsten",
+      "detail": "Samla din första drop"
+    },
+    "explorer": {
+      "name": "Upptäckare",
+      "detail": "Samla på 50 olika platser"
+    },
+    "legendary": {
+      "name": "Legendary",
+      "detail": "Fånga en legendary-spawn"
+    },
+    "rareHunter": {
+      "name": "Rare-jägare",
+      "detail": "250 rare-fångster"
+    },
+    "streak": {
+      "name": "Trettio dagar i rad",
+      "detail": "Spela 30 dagar i sträck"
+    },
+    "clanFounder": {
+      "name": "Klangrundare",
+      "detail": "Starta en egen klan"
+    }
+  },
+  "clans": {
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "laserEyes": {
+      "name": "Laser Eyes"
+    },
+    "megaWhales": {
+      "name": "Mega Whales"
+    },
+    "moonSquad": {
+      "name": "Moon Squad"
+    },
+    "alphaWolves": {
+      "name": "Alpha Wolves"
+    },
+    "yieldFarmers": {
+      "name": "Yield Farmers"
+    },
+    "anonCabal": {
+      "name": "Anon Cabal"
+    },
+    "bullRunners": {
+      "name": "Bull Runners"
+    }
+  },
+  "clansSection": {
+    "eyebrow": "Klaner",
+    "title": "Ingen täcker en hel stad ensam",
+    "lead": "Grunda en klan eller gå med i en, samla ihop det alla hittar och klättra i tabellen tillsammans. Chatten är end-to-end-krypterad, och meddelanden kan ställas in att försvinna när en konversation inte ska leva längre än den behöver.",
+    "statClans": "Grundarklaner",
+    "statChat": "Krypterad chatt",
+    "statRanks": "Klanranger",
+    "tableTitle": "Klantabell",
+    "thisSeason": "Den här säsongen",
+    "rankAlt": "Rang {rank}"
+  },
+  "rarity": {
+    "common": "Common",
+    "uncommon": "Uncommon",
+    "rare": "Rare",
+    "epic": "Epic",
+    "legendary": "Legendary"
+  },
+  "powerups": {
+    "coin_magnet": {
+      "label": "Coin magnet",
+      "effect": "Fler mynt dyker upp runt dig"
+    },
+    "diamond_hands": {
+      "label": "Diamond hands",
+      "effect": "Fånga ett mynt på avstånd"
+    },
+    "pump_it": {
+      "label": "Pump it",
+      "effect": "En extra kortlåda idag"
+    },
+    "to_the_moon": {
+      "label": "To the moon",
+      "effect": "Trippel XP i 30 minuter"
+    },
+    "whale": {
+      "label": "Whale",
+      "effect": "Drar spawns till din plats"
+    },
+    "this_is_fine": {
+      "label": "This is fine",
+      "effect": "Håller ett missat mynt åt dig"
+    }
+  },
+  "collectiblesSection": {
+    "eyebrow": "Samlarobjekt",
+    "title": "Det här är mynten som finns där ute",
+    "lead": "Sällsyntheten avgör hur ofta ett spawnar och hur troligt det är att du behåller det. En fångad enhet är en spelenhet. Vad den betalar ut i riktiga tokens är marknadens sak.",
+    "filterLabel": "Filtrera efter sällsynthet",
+    "all": "Alla",
+    "catchChance": "Fångstchans",
+    "overThree": "Över 3 försök",
+    "perUnit": "Per enhet",
+    "powerupsTitle": "Powerups som förändrar rundan"
+  },
+  "offers": {
+    "railLabel": "Dropformat",
+    "redeemLabel": "Så löses den in",
+    "proofLabel": "Vad som gör den giltig",
+    "voucher": {
+      "label": "Rabattkupong",
+      "headline": "Rabatt, vid dörren som gav dig den",
+      "face": "25 % rabatt",
+      "fine": "En per person · Giltig i 14 dagar · Endast i butik",
+      "redeem": "Koden visas i kassan och markeras som använd. Den kan inte vidarebefordras, eftersom den utfärdades till enheten som stod inom radien.",
+      "proof": "Hämtningen finns on-chain med koordinaten den togs på, så en inlösen kan kontrolleras mot ett verkligt besök i stället för en skärmdump.",
+      "placedBy": "Handel och besöksnäring"
+    },
+    "asset": {
+      "label": "Verklig tillgång",
+      "headline": "En fysisk sak som väntar på en plats",
+      "face": "Ett par sneakers",
+      "fine": "1 av 250 · Hämtas i butik · Går ut när lagret tar slut",
+      "redeem": "Innehavaren hämtar själva varan. Token är anspråket på den, och den bränns vid överlämningen så att samma par inte kan hämtas två gånger.",
+      "proof": "Lagret är begränsat och hämtningen är ett lås, inte en uppslagning, så två personer som sträcker sig efter det sista paret kan inte båda få besked om att de fick det.",
+      "placedBy": "Varumärken med något att ge bort"
+    },
+    "access": {
+      "label": "Access pass",
+      "headline": "Biljetten är att vara på plats",
+      "face": "Grind B · 19:00",
+      "fine": "Kan inte överlåtas · Går ut när evenemanget slutar",
+      "redeem": "Skannas vid grinden som vilket pass som helst. Skillnaden är att det bara gick att få på plats, och det är det som gör det värt att utfärda.",
+      "proof": "Drops med högt värde har en strikt tröskel för tillförlitlighet, så radiomiljön måste stämma med positionen innan de släpps.",
+      "placedBy": "Evenemang, arenor och festivaler"
+    },
+    "token": {
+      "label": "Token-drop",
+      "headline": "Distribution som kostar något att farma",
+      "face": "40 $SEEK",
+      "fine": "En hämtning per enhet · Avvecklas på sin egen kedja",
+      "redeem": "Den hamnar i plånboken som appen skapade åt dig, och den är din att behålla, flytta eller sälja. Inget att lösa in och ingen att fråga.",
+      "proof": "En plånbok är gratis att skapa, en promenad är det inte. Geografin är filtret som en airdrop inte kan farmas igenom billigt.",
+      "placedBy": "Tokenprojekt och communities"
+    },
+    "collectible": {
+      "label": "Samlarobjekt",
+      "headline": "Något som bara finns där det placerades",
+      "face": "Rare",
+      "fine": "Serie om 500 · Kan bytas · Sällsynthet fastställd vid utgivning",
+      "redeem": "Inget att lösa in. Det är ett bevis på att ha varit någonstans, vilket är det äldsta skälet till att någon någonsin har sparat något.",
+      "proof": "Varje exemplar bär koordinaten det togs på, så samlingen någon har är en karta över var de faktiskt har varit.",
+      "placedBy": "Städer, turistbyråer, konstnärer"
+    }
+  },
+  "rewards": {
+    "eyebrow": "Belöningar",
+    "title": "Vad som helst kan vänta på en koordinat",
+    "lead": "Ett mynt är versionen alla föreställer sig, och det är den minst intressanta. Protokollet bryr sig inte om vad som ligger i lådan: kan det utfärdas till en person kan det utfärdas till en plats, och någon måste gå dit för att ta det.",
+    "railLabel": "Välj en typ av belöning",
+    "phoneAlt": "Seekprotocol-appen som visar ett liveevenemang och belöningarna det delar ut",
+    "liveChip": "Liveevenemang",
+    "participateLabel": "Delta i liveevenemanget",
+    "alertTitle": "Mystisk belöning nära dig",
+    "alertBody": "301 m bort och live till kl. 21. Den går till den som når fram först.",
+    "alertSeekers": "Andra sökare är på väg",
+    "foundLabel": "Du hittade den",
+    "foundWhere": "Champ de Mars · 301 m promenad",
+    "foundFine": "Hämtad vid ankomst och avvecklad on-chain. Den ligger i din plånbok.",
+    "foundAlt": "Vinner en belöning på kartan",
+    "mapCredit": "© Mapbox © OpenStreetMap",
+    "items": {
+      "seek": "$SEEK",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "bnb": "BNB",
+      "hyperliquid": "Hyperliquid",
+      "berachain": "Berachain",
+      "dogecoin": "Dogecoin",
+      "pepe": "PEPE",
+      "babydoge": "Baby Doge",
+      "spx6900": "SPX6900",
+      "toshi": "Toshi",
+      "turbo": "Turbo",
+      "nft": "Mystisk NFT",
+      "voucher": "Butikskupong",
+      "food": "Matkupong",
+      "barcode": "Evenemangspass",
+      "console": "PlayStation 5",
+      "handheld": "Handhållen konsol",
+      "shoes": "Limiterade sneakers"
+    },
+    "proofNote": "Vad som än ligger i lådan är det samma sak som hindrar att någon som aldrig var där hämtar den: närvaro, bedömd mot fyra oberoende signaler i ögonblicket för hämtningen.",
+    "categories": {
+      "tokens": {
+        "label": "Tokens",
+        "headline": "Vilken token som helst, på vilken kedja som helst",
+        "body": "Ethereum, Solana, BNB Smart Chain och näten som kommer efter dem. En publicist finansierar en kampanj i den token de redan har, och den avvecklas där token bor, så ingen behöver brygga något för att vara med."
+      },
+      "memes": {
+        "label": "Memecoins",
+        "headline": "Lanseringarna som ingen har en kanal för",
+        "body": "En memecoin har en publik men inget sätt att nå den som inte är en airdrop-farm. Att lägga ut utbudet på riktiga gator sätter det framför folk som gick ut för dess skull, och varje hämtning är en person snarare än en adress."
+      },
+      "nfts": {
+        "label": "NFT:er",
+        "headline": "Mintad där du stod",
+        "body": "Ett samlarobjekt som bär koordinaten det kom ifrån är ett annat objekt än ett som mintats från soffan. En utgåva kan bindas till en stad, en arena eller en enda dörröppning, och registret över var varje exemplar togs är offentligt."
+      },
+      "vouchers": {
+        "label": "Kuponger",
+        "headline": "Rabatt, vid disken",
+        "body": "Formatet som en shoppinggata faktiskt vill ha. En kod som bara öppnas innanför dörren, löses in i kassan av någon som gick in, och räknas som ett besök snarare än som en visning som kanske ledde till ett."
+      },
+      "goods": {
+        "label": "Fysiska varor",
+        "headline": "Saker som kommer i en låda",
+        "body": "En konsol, ett par sneakers, en utrustningsgrej. Hämtningen sker on-chain och leveransen är vanlig logistik, vilket låter ett varumärke placera något fysiskt i slutet av en promenad utan att bygga något för det."
+      },
+      "events": {
+        "label": "Liveevenemang",
+        "headline": "Allt, så länge evenemanget pågår",
+        "body": "En festival, en match eller en konferens blir ett tillfälligt lager av belöningar som går ut när evenemanget gör det. Att dyka upp är det som låser upp dem, så prispotten når dem som faktiskt var där, och räknaren är dörren."
+      }
+    }
+  },
+  "distribution": {
+    "eyebrow": "Distribution",
+    "title": "Räckvidd är lätt att köpa och omöjlig att lita på",
+    "lead": "Varje kanal en lansering kan köpa säljer samma sak: en siffra som ett skript kan producera. Visningar, klick, följare, plånböcker, allt kostar en bråkdel av en cent att tillverka i stor skala. Närvaro är den enda interaktion som ingen har automatiserat, eftersom ingen har skrivit en bot som går.",
+    "failureTag": "Det du köper",
+    "answerTag": "Det du får här",
+    "failures": {
+      "bots": "Betald trafik kommer från datacenter och klickfarmar. Du betalar per visning, och en betydande del av dem visades aldrig för en människa.",
+      "farms": "En airdrop hämtas av plånböcker, och en plånbok kostar ingenting. En farmare med ett skript blir fyrtiotusen berättigade adresser, och tokens hamnar långt ifrån de människor de var avsedda för.",
+      "unaudited": "Engagemangssiffror rapporteras av plattformen som säljer dem. En följning, en visning eller ett modellerat butiksbesök kan inte granskas, så kampanjen bedöms på en siffra du måste ta på tro."
+    },
+    "answers": {
+      "bots": "En hämtning är en enhet som stod på en koordinat, där satellitposition, radiomiljö och rörelsespår alla stämmer överens. Det finns ingen serverversion av att vara någonstans.",
+      "farms": "En hämtning per enhet inom radien och tidsfönstret. En andra hämtning betyder en andra resa, och ingen är i fyrtio städer samtidigt.",
+      "unaudited": "Varje hämtning är ett offentligt register: en koordinat, en tid, en tillgång. Räkna dem själv i en blockutforskare i stället för att fråga oss om siffran."
+    },
+    "askLegend": "Vad vill du att de ska göra?",
+    "askNote": "Protokollet verifierar att en person var där. Vad de måste göra för att tjäna belöningen bestämmer du, och inget av det ändrar verifieringen under.",
+    "actions": {
+      "visit": {
+        "label": "Gå in i butiken",
+        "headline": "Hämta vid disken",
+        "body": "Dropen ligger innanför dörren med en radie så snäv att bara en telefon vid kassan kan öppna den. Koden som löses in tillhör någon som kom in.",
+        "button": "Hämta i butiken",
+        "recorded": "Ett verifierat besök på din adress, tidsstämplat i ögonblicket för hämtningen."
+      },
+      "follow": {
+        "label": "Följ kontot",
+        "headline": "Följ för att låsa upp",
+        "body": "Tillgången förblir låst tills kontot följs, och följningen räknas bara från en enhet inom radien. En farm kan producera följningen. Den kan inte producera promenaden.",
+        "button": "Följ och hämta",
+        "recorded": "En följning med ett verifierat besök bakom sig, räknad mot platsen där den skedde."
+      },
+      "signup": {
+        "label": "Registrera dig eller gå med i listan",
+        "headline": "Registrera dig på plats",
+        "body": "Ett fält, ifyllt där dropen finns. Varje adress på listan tillhör en person som stod vid din kampanj när de skrev in den.",
+        "button": "Registrera och hämta",
+        "recorded": "En registrering med ett verifierat besök bakom sig, vilket är den enda sorten värd att betala för."
+      },
+      "scan": {
+        "label": "Skanna produkten",
+        "headline": "Skanna den på hyllan",
+        "body": "Rikta kameran mot varan i stället för mot en nål. Skanningen måste ske inom radien, så belöningen når den som faktiskt håller i saken.",
+        "button": "Skanna för att hämta",
+        "recorded": "En skanning av en produkt i en butik, räknad per produktlinje snarare än per kampanj."
+      },
+      "mint": {
+        "label": "Minta på plats",
+        "headline": "Minta där du står",
+        "body": "Samlarobjektet mintas på koordinaten och bär den med sig. Vad det är värt senare har något att göra med var det kom ifrån, vilket en mintsida inte kan säga.",
+        "button": "Minta här",
+        "recorded": "En mint knuten till en plats och ett ögonblick, på vilken kedja samlingen än finns."
+      }
+    },
+    "dropStatus": "Live",
+    "dropWhere": "Kalverstraat 92, Amsterdam · 25 m radie",
+    "dropFine": "En hämtning per enhet · Verifierad vid ankomst",
+    "recordedLegend": "Det du får tillbaka",
+    "recordedNever": "Räknas per plats, tid och kampanj. Aldrig per individ, och aldrig ett spår av vart de gick sedan.",
+    "chainsLegend": "Vilken källa som helst, vilken blockkedja som helst",
+    "chainsNote": "En källa är vem som helst som kan utfärda något: ett projekt, ett varumärke, en arena, en butik på hörnet. Ett nätverk är en rad i en tabell snarare än en release, så en kampanj kan köras på flera samtidigt och en sökare behöver aldrig välja. Solana avvecklar idag; nästa är en konfigurationsfråga.",
+    "chainsCoinsAlt": "Roterande 3D-mynt för kedjorna Seekprotocol avvecklar på",
+    "chainAny": "Vilken annan kedja som helst"
+  },
+  "walkthrough": {
+    "eyebrow": "Gå igenom det",
+    "title": "Det här är hela loopen",
+    "lead": "Inte en video av appen. Det här är dess egna regler, som körs här. Tryck på en spawn på kartan och fortsätt därifrån.",
+    "startOver": "Börja om",
+    "map": {
+      "label": "Kartan",
+      "title": "Allt i närheten, precis där det faktiskt är",
+      "body": "Spawns ligger på fasta koordinater och stannar där tills någon hämtar dem. Tryck på en för att se vad det är och hur långt du måste gå."
+    },
+    "spawn": {
+      "label": "Spawnen",
+      "title": "Sällsyntheten säger vad du går mot",
+      "body": "Från common till legendary, var och en med sin egen fångstchans. Du får två försök, och det andra är värt 0,65 av det första, så det första trycket betyder mest."
+    },
+    "catch": {
+      "label": "Fångsten",
+      "title": "Tryck för att ladda, och håll nerverna i styr",
+      "body": "Ringen fylls när du trycker. Något stör varannan runda: klotet fryser, laddningen börjar läcka, eller en surge öppnas där trycken räknas dubbelt."
+    },
+    "result": {
+      "label": "Slaget",
+      "title": "Laddning köper chans, inte säkerhet",
+      "body": "En full ring på en legendary är fortfarande en på fem. Det är det som gör en legendary värd att ha, och det som gör att trycket avgör något."
+    },
+    "wallet": {
+      "label": "Din",
+      "title": "Den hamnar i en plånbok du aldrig behövde sätta upp",
+      "body": "Skapad från en social inloggning, så en förstagångsspelare samlar något inom en minut. Exportera nyckeln när du vill ha full kontroll."
+    }
+  },
+  "spawnScreen": {
+    "back": "‹ Karta",
+    "distance": "Avstånd",
+    "inRange": "Inom räckhåll",
+    "thisAttempt": "Det här försöket",
+    "attemptsLeft": "Försök kvar",
+    "attemptsOf": "{left} av {total}",
+    "note": "Att ladda ringen höjer den här. Försöket efter är värt 0,65 av det första.",
+    "cta": "Fånga den"
+  },
+  "catchScreen": {
+    "attempt": "Försök {attempt} av {total}",
+    "tapAria": "Tryck för att ladda",
+    "sealAria": "Täta läckan",
+    "ringFull": "Ringen är full, håll den",
+    "tapPrompt": "Tryck på myntet",
+    "mechanic": {
+      "freeze": "Frusen, fortsätt trycka för att smälta den",
+      "leak": "Läcker, täta läckorna",
+      "surge": "Surge, varje tryck räknas dubbelt"
+    }
+  },
+  "resultScreen": {
+    "caught": "Fångad",
+    "escaped": "Den kom undan",
+    "ringCharged": "Ring laddad",
+    "chance": "Chans i det här försöket",
+    "xp": "XP",
+    "gameValue": "Spelvärde",
+    "noteCaught": "En fångad enhet är en spelenhet. Vad den betalar ut i riktiga tokens är marknadens sak.",
+    "noteRetry": "Ett försök till, värt 0,65 av det första.",
+    "noteGone": "Den spawnen är borta. En annan kommer snart.",
+    "openWallet": "Öppna plånboken",
+    "tryAgain": "Försök igen",
+    "backToMap": "Tillbaka till kartan"
+  },
+  "walletScreen": {
+    "totalBalance": "Totalt saldo",
+    "delta": "+ {amount} idag",
+    "deposit": "Sätt in",
+    "send": "Skicka",
+    "exchange": "Växla",
+    "qr": "QR",
+    "justCaught": "Nyss fångat",
+    "assets": "Tillgångar",
+    "recentBadges": "Senaste märken"
+  },
+  "dropKinds": {
+    "airdrop": "Airdrop",
+    "quest": "Uppdragsbelöning",
+    "partner": "Partnerdrop",
+    "event": "Evenemangstoken",
+    "cache": "Gatugömma"
+  },
+  "ecosystemPage": {
+    "metaTitle": "Ekosystem: sökare, publicister, protokoll",
+    "metaDescription": "Så hänger Seekprotocols ekosystem ihop: sökare som samlar, publicister som placerar, och protokollet som verifierar närvaro och avvecklar den on-chain.",
+    "ogTitle": "Tre parter, en koordinat",
+    "eyebrow": "Ekosystem",
+    "titleStart": "Tre parter, en",
+    "titleAccent": "koordinat",
+    "lead": "Någon placerar en tillgång. Någon tar sig dit. Protokollet bekräftar att de verkligen var där och avvecklar det. Allt annat är detaljer ovanpå den loopen.",
+    "networkEyebrow": "Nätverket",
+    "networkTitle": "Varje nål är en riktig plats",
+    "networkLead": "Dra i jordgloben. Koordinaterna är verkliga stadspositioner, och varje båge är en drop som rör sig mellan dem.",
+    "capabilitiesEyebrow": "Funktioner",
+    "capabilitiesTitle": "Vad protokollet faktiskt erbjuder",
+    "faqEyebrow": "Frågor",
+    "faqTitle": "De som är värda att ställa",
+    "faqLead": "Även de med obekväma svar.",
+    "ctaEyebrow": "Gå djupare",
+    "ctaTitle": "Den tekniska redogörelsen",
+    "ctaBody": "Proof of location, arkitekturen, tokendesignen och en rak lista över attackerna vi försvarar oss mot och begränsningarna vi accepterar.",
+    "ctaWhitepaper": "Läs whitepapret",
+    "ctaBusiness": "Placera dina egna tillgångar",
+    "polCtaEyebrow": "Proof of location",
+    "polCtaTitle": "Närvaro, verifierad",
+    "polCtaBody": "Fyra oberoende signaler måste stämma överens innan en hämtning godkänns. En genomgång i klartext finns på bloggen.",
+    "polCtaLink": "Så fungerar proof of location"
+  },
+  "participants": {
+    "seekers": {
+      "label": "Sökare",
+      "tag": "Efterfrågan",
+      "title": "Folk som går och hämtar det",
+      "body": "Alla som har appen. De går, de hittar saker och de behåller det de samlar. Inga förkunskaper om krypto förutsätts: plånboken skapas från en social inloggning och kan exporteras senare av den som vill ha full kontroll.",
+      "gets": [
+        "Tokens, NFT:er och partnerbelöningar",
+        "Uppdrag som anpassar sig efter var de är",
+        "En plånbok de inte behövde förstå först"
+      ]
+    },
+    "publishers": {
+      "label": "Publicister",
+      "tag": "Utbud",
+      "title": "Den som placerade det där",
+      "body": "Varumärken, arenor, tokenprojekt och evenemangsarrangörer. De placerar tillgångar på koordinater som är viktiga för dem och betalar per placering, viktat efter radie, varaktighet och hur konkurrensutsatt området är.",
+      "gets": [
+        "Verifierade besök, inte visningar",
+        "Geografisk distribution som står emot farming",
+        "En kampanjbyggare utan integrationsarbete"
+      ]
+    },
+    "protocol": {
+      "label": "Protokoll",
+      "tag": "Avveckling",
+      "title": "Delen som håller dem ärliga",
+      "body": "Verifieringspoäng, förvaring av tillgångar och avveckling. Protokollet tar en avgift vid placering, skickar större delen tillbaka till sökarna och håller registret över vad som hämtades var.",
+      "gets": [
+        "Avgifter som följer verklig aktivitet",
+        "Ett offentligt register över hämtningar",
+        "Parametrar som med tiden flyttas till governance"
+      ]
+    }
+  },
+  "capabilities": {
+    "placement": {
+      "title": "Geofencad placering",
+      "meta": "5 m till 500 m",
+      "body": "Tillgångar fästs vid koordinater med en konfigurerbar hämtningsradie. En butiksentré använder en snäv radie; ett festivalområde en bred."
+    },
+    "verification": {
+      "title": "Verifiering med flera signaler",
+      "meta": "4 oberoende signaler",
+      "body": "Satellitposition, radiomiljö, enhetsattestering och rörelsekontinuitet måste alla stämma överens innan en hämtning godkänns."
+    },
+    "anchoring": {
+      "title": "AR-förankring",
+      "meta": "Beständig",
+      "body": "Tillgångar stannar kvar mellan sessioner och mellan användare. Två personer på samma plats ser samma sak på samma ställe."
+    },
+    "companion": {
+      "title": "AI-kompanjon",
+      "meta": "På enheten först",
+      "body": "Läser kameran för att förklara vad du tittar på och föreslå vart du ska gå härnäst, utan att skicka iväg din rörelsehistorik någonstans."
+    },
+    "wallet": {
+      "title": "Social plånbok",
+      "meta": "Ingen seed phrase",
+      "body": "Skapas från en social inloggning så att en ny användare kan samla något inom en minut, med export för egen förvaring när de vill."
+    },
+    "settlement": {
+      "title": "Avveckling på flera kedjor",
+      "meta": "Under en sekund",
+      "body": "En tillgång avvecklas på nätverket den redan finns på, mot ett krav som varje kedja måste uppfylla: att plocka upp en liten belöning får inte kosta mer än belöningen är värd."
+    }
+  },
+  "ecosystemFaq": {
+    "spoofing": {
+      "question": "Kan jag fejka min position och samla utan att gå dit?",
+      "answer": "Inte billigt. En rå GPS-position är lätt att förfalska, och därför är den bara en av fyra signaler. Radiomiljön, enhetsattesteringen och ditt rörelsespår måste alla bekräfta den, och en enhet som misslyckas upprepade gånger möter en högre tröskel. Målet är att förfalskning ska kosta mer än belöningen är värd, inte att påstå att det är omöjligt."
+    },
+    "crypto": {
+      "question": "Måste jag kunna något om krypto för att använda Seekprotocol?",
+      "answer": "Nej. Plånboken skapas från en social inloggning och du ser aldrig någon seed phrase om du inte letar efter den. Vill du senare ha egen förvaring kan du exportera nyckeln när som helst."
+    },
+    "tracking": {
+      "question": "Spårar Seekprotocol vart jag går?",
+      "answer": "Nej. Appen ber om en position när du försöker hämta något, inte hela tiden i bakgrunden. Rå sensordata används för att bedöma just den hämtningen och kastas sedan, och din rörelsehistorik stannar på din enhet."
+    },
+    "farming": {
+      "question": "Vad hindrar en person från att farma en plats med många plånböcker?",
+      "answer": "Gränser för hämtningar per enhet inom en radie och ett tidsfönster, plus enhetsattestering som emulatorfarmar inte klarar. Plånböcker är gratis men resor är det inte, och det är just poängen med att knyta distributionen till geografi."
+    },
+    "chain": {
+      "question": "Vilken kedja körs Seekprotocol på?",
+      "answer": "Den som tillgången finns på. Nätverk är rader i en tabell snarare än kod, så en publicist finansierar en kampanj i den token de redan har och en sökare behöver aldrig välja kedja. Det varje nätverk måste uppfylla är samma krav: en belöning värd några ören måste klara att flyttas, och den som står i ett gathörn ska inte behöva vänta på den. Listan på startsidan visar vilka kedjor som avvecklar idag."
+    },
+    "rewardKind": {
+      "question": "Måste en belöning vara krypto?",
+      "answer": "Nej. En kupong som löses in i kassan, ett par sneakers i en låda, ett pass som bara finns på arenan: inget av det rör en kedja, och verifieringen under är identisk i båda fallen. Där en token är inblandad avvecklas den på kedjan den redan finns på. Protokollet bevisar att någon var där; vad de får bestämmer du."
+    },
+    "business": {
+      "question": "Kan mitt företag placera tillgångar idag?",
+      "answer": "Ja, via ett hanterat partnerskap. Självbetjäningsportalen som gör samtalet med oss onödigt är på gång, och roadmapen visar var den ligger."
+    }
+  },
+  "roadmapPage": {
+    "metaTitle": "Roadmap: levererat och vad som kommer härnäst",
+    "metaDescription": "Vad Seekprotocol har levererat och vad som kommer härnäst, från prototypen för proof of location och den publika lanseringen av Seekprotocol till självbetjäningsportalen och governance.",
+    "ogTitle": "Seekprotocols roadmap",
+    "eyebrow": "Roadmap",
+    "titleStart": "Vad som är byggt, och vad som kommer",
+    "titleAccent": "härnäst",
+    "lead": "{phases} faser, mätta mot vad som faktiskt har levererats. {shipped} av {total} milstolpar klara.",
+    "status": {
+      "done": "Levererat",
+      "active": "Pågår",
+      "next": "Planerat"
+    },
+    "datesTitle": "På de här datumen",
+    "datesNote": "Datumen beskriver avsikter, inte åtaganden. Allt som inte är markerat som klart kan flyttas, och då säger vi hellre det än att tyst kasta om i diagrammet.",
+    "legendTitle": "Förklaring",
+    "ctaEyebrow": "Detaljer",
+    "ctaTitle": "Resonemanget bakom ordningen",
+    "ctaBody": "Whitepapret förklarar varför verifiering kom före skala, och varför governance kommer sist.",
+    "ctaWhitepaper": "Läs whitepapret"
+  },
+  "roadmapPhases": {
+    "foundation": {
+      "title": "Grund",
+      "summary": "Att bevisa att kärnidén alls fungerade: kunde en telefon bekräfta att någon var någonstans, tillräckligt pålitligt för att släppa något av värde?",
+      "items": {
+        "prototype": "Prototyp för proof of location med GNSS och rörelsekontinuitet",
+        "engine": "AR-renderingsmotor med beständig förankring i världen",
+        "settlement": "Första avvecklingslagret, på Solana, med tillgångsdefinitioner",
+        "alpha": "Intern alfa i tre teststäder"
+      }
+    },
+    "launch": {
+      "title": "Publik lansering",
+      "summary": "Att få ut Seekprotocol i riktiga händer, i båda appbutikerna, med en onboarding som inte förutsätter att användaren någonsin har haft en privat nyckel.",
+      "items": {
+        "stores": "Seekprotocol släppt på iOS och Android",
+        "wallet": "Plånbok med social inloggning och valfri export för egen förvaring",
+        "drops": "Platsbaserade drops och uppdragssystem",
+        "attestation": "Enhetsattestering via Play Integrity och App Attest",
+        "localisation": "Webbplats och app översatta till åtta språk"
+      }
+    },
+    "scale": {
+      "title": "Att öppna upp",
+      "summary": "Året då nätverket slutar vara vårt att fylla. Vem som helst kan placera tillgångar utan att prata med oss först, token som finansierar dem blir publik, och skälen att komma tillbaka slutar vara saker man gör ensam.",
+      "groups": {
+        "supply": "Utbudssidan",
+        "network": "Nätverkseffekter"
+      },
+      "items": {
+        "companion": "AI-kompanjon med kameramedveten vägledning i sammanhanget",
+        "radio": "Radiofingeravtryck tillagt i verifieringsstacken",
+        "builder": "Kampanjbyggare med dra och släpp för mindre publicister",
+        "portal": "Självbetjäningsportal för arenor och varumärken",
+        "analytics": "Analys av verifierade besök och rapportering av kostnad per besök",
+        "tge": "Token generation event",
+        "partnerships": "Stora partnerskap",
+        "liveEvents": "Liveläge för festivaler, matcher och konferenser",
+        "seasons": "Säsonger, med egna stegar och belöningar",
+        "scanning": "Spelifierad objektskanning",
+        "guilds": "Gillen, laguppdrag och gemensamma belöningspooler",
+        "revenueShare": "Intäktsdelning för kreatörer på placerade tillgångar",
+        "multichain": "Avveckling på Ethereum, BNB Smart Chain och Arbitrum"
+      }
+    },
+    "governance": {
+      "title": "Att lämna över parametrarna",
+      "summary": "Governance följer verkligt avgiftsflöde i stället för att komma före det. Att rösta om en ekonomi utan volym är teater, så det här kommer sist med flit.",
+      "items": {
+        "onChain": "On-chain-governance för protokollparametrar",
+        "treasury": "Fördelning av communityns kassa",
+        "providers": "Verifieringsleverantörer från tredje part",
+        "sdk": "Öppet SDK för externa applikationer på protokollet"
+      }
+    }
+  },
+  "businessPage": {
+    "metaTitle": "Geofencing-marknadsföring, betalt per besök",
+    "metaDescription": "Platsbaserad AR-annonsering för publicister och varumärken. Placera en belöning på dina koordinater och betala per verifierat besök, inte per visning.",
+    "ogTitle": "Betala per verifierat besök",
+    "eyebrow": "För företag",
+    "titleStart": "Köp besök, inte",
+    "titleAccent": "visningar",
+    "lead": "Digital annonsering kan sätta din logga framför någon på millisekunder. Den kan inte få dem att gå tre kvarter. Placera en belöning vid din dörr och betala för de som når fram.",
+    "ctaTalk": "Prata med oss",
+    "ctaVerification": "Så fungerar verifieringen",
+    "argumentEyebrow": "Argumentet",
+    "argumentTitle": "Där räknandet slutar",
+    "argumentLead": "Spendera samma pengar på två sätt så ser tratten likadan ut ända till sista raden. Den ena räknas. Den andra är en modell, och det är raden varje kampanj bedöms på.",
+    "useCasesEyebrow": "Användningsfall",
+    "useCasesTitle": "Fyra sätt folk använder det",
+    "setupEyebrow": "Uppsättning",
+    "setupTitle": "Fyra beslut, ingen utveckling",
+    "setupLead": "Det här är hela flödet. Gör de fyra valen och publicera, och se vad varje val gör med området du håller och priset för en person vid din dörr.",
+    "measurementEyebrow": "Mätning",
+    "measurementTitle": "Vad du får, och vad du inte får",
+    "measurementLead": "Platsdata är den mest känsliga kategorin som finns. Du får siffrorna du behöver för att bedöma en kampanj, och inget som skulle låta dig följa en individ.",
+    "ctaEyebrow": "Kom igång",
+    "ctaTitle": "Placera något vid din dörr",
+    "ctaBody": "Självbetjäningsportalen är på gång. Tills den finns sätter vi upp kampanjer direkt med dig. Berätta platsen och vad du vill placera.",
+    "ctaStart": "Starta en konversation",
+    "ctaRoadmap": "Se när självbetjäningen lanseras",
+    "realEyebrow": "Enheten",
+    "realTitle": "Vad ett besök är, och vad det inte är",
+    "realLead": "Varje mått på marknaden är ett ombud, och varje ombud har ett skript som producerar det för mindre än en cent. Närvaro är undantaget, och av ett skäl som inte försvinner med bättre hårdvara: kostnaden är fysisk.",
+    "chainsNote": "Finansiera en kampanj i tillgången du redan har, eller i ingen tillgång alls. En kupong i kassan och en låda på trappan behöver ingen kedja och ingen plånbok. Där en token är inblandad är ett nätverk en konfiguration snarare än en integration, så en kampanj kan köras på flera samtidigt och den som hämtar behöver aldrig veta vilken.",
+    "verifiedEyebrow": "Bara verifierade besök",
+    "verifiedTitle": "Betala bara när någon faktiskt var där",
+    "verifiedBody": "Inga visningar, inga klick som aldrig blev ett besök. En kampanj spenderar när protokollet har verifierat en person på plats.",
+    "verifiedLink": "Öppna Seek Partners"
+  },
+  "useCases": {
+    "retail": {
+      "label": "Handel och besöksnäring",
+      "metric": "Kostnad per verifierat besök",
+      "title": "Gör en plats till ett skäl att komma",
+      "body": "Placera ett erbjudande vid din dörr med en snäv hämtningsradie. Det kan bara tas av någon som står där, så inlösen du ser är en person som kom in, inte en annons någon skrollade förbi.",
+      "points": [
+        "Radie anpassad efter dörröppningen snarare än postnumret",
+        "Inlösen registreras i ögonblicket för ankomsten",
+        "Fungerar över en hel kedja utan integration per butik"
+      ]
+    },
+    "events": {
+      "label": "Evenemang och arenor",
+      "metric": "Engagemang på plats",
+      "title": "En karta att hämta från under hela evenemanget",
+      "body": "Festivaler, matcher och konferenser blir ett tillfälligt lager av tillgångar som går ut när evenemanget gör det. Närvaro är det som låser upp dem, så belöningen når dem som faktiskt dök upp.",
+      "points": [
+        "Tidsbegränsade tillgångar som går ut enligt schema",
+        "Breda radier för områden, snäva för scener och läktare",
+        "Högre verifieringströsklar för drops med högt värde"
+      ]
+    },
+    "token": {
+      "label": "Token- och NFT-projekt",
+      "metric": "Sybil-motstånd",
+      "title": "Distribuera till människor, inte till plånböcker",
+      "body": "En plånbok är gratis att skapa, och därför farmas airdrops. Att kräva fysisk närvaro sätter en verklig kostnad på varje extra hämtning, eftersom ingen är i fyrtio städer samtidigt.",
+      "points": [
+        "Geografisk distribution över valda marknader",
+        "Gränser för hämtningar per enhet inom en radie och ett tidsfönster",
+        "Offentligt register över hämtningar på tillgångens egen kedja"
+      ]
+    },
+    "tourism": {
+      "label": "Städer och turism",
+      "metric": "Fördelning av besöksflöden",
+      "title": "Led folk genom platserna du vill ska användas",
+      "body": "Kedja ihop tillgångar till en slinga så att besökare rör sig längs den i ordning. Lugna gator, sekundära platser och lågtrafiktider kan bära belöningarna som välbesökta landmärken inte behöver.",
+      "points": [
+        "Uppdrag i sekvens över flera platser",
+        "Viktning mot lågtrafik för att sprida efterfrågan",
+        "Sammanlagda besöksantal, aldrig individuella spår"
+      ]
+    }
+  },
+  "interactionClaims": {
+    "nobots": {
+      "metric": "Ingen bottrafik",
+      "title": "Inget här kan produceras av ett skript",
+      "body": "En hämtning kräver en enhet på en koordinat, som stämmer med sin egen satellitposition, radiomiljön runt den och rörelsen som tog den dit. Inget av det har en motsvarighet i ett datacenter, och därför är bedrägerinivån inte en siffra vi behöver pressa ner."
+    },
+    "organic": {
+      "metric": "Organiskt från grunden",
+      "title": "Varje interaktion är en resa någon gjorde",
+      "body": "Engagemanget härleds inte från ett klick och modelleras inte från en panel. Någon valde att gå till din adress, och registret skrivs i ögonblicket de kom fram i stället för att rekonstrueras i efterhand."
+    },
+    "cta": {
+      "metric": "Din uppmaning",
+      "title": "Vi verifierar närvaro, du bestämmer vad du ber om",
+      "body": "Villkora belöningen med ett köp, en följning, en registrering, en skanning av produkten på hyllan, eller med inget annat än att dyka upp. Verifieringen under är identisk i alla fall, så det du ber om kan ändras mellan kampanjer utan att garantin ändras."
+    }
+  },
+  "measurement": {
+    "counted": {
+      "label": "Vad som räknas",
+      "value": "Ett verifierat besök inom din radie"
+    },
+    "when": {
+      "label": "När det räknas",
+      "value": "I ögonblicket för hämtningen, inte härlett i efterhand"
+    },
+    "receive": {
+      "label": "Vad du får",
+      "value": "Sammanlagda siffror per plats, tid och kampanj"
+    },
+    "never": {
+      "label": "Vad du aldrig får",
+      "value": "Individuella rörelsespår eller identiteter"
+    }
+  },
+  "funnel": {
+    "budget": "Kampanjbudget",
+    "displayTitle": "Köpt som display",
+    "displayCost": "per modellerat besök",
+    "seekTitle": "Köpt som besök",
+    "seekCost": "per verifierat besök",
+    "counted": "Räknat",
+    "estimated": "Uppskattat",
+    "stages": {
+      "impressions": "Levererade visningar",
+      "viewable": "Syntes i bild",
+      "clicks": "Klick",
+      "visits": "Butiksbesök",
+      "saw": "Såg nålen i närheten",
+      "opened": "Öppnade dropen",
+      "walked": "Gick dit",
+      "claimed": "Hämtade vid dörren"
+    },
+    "caption": "Display använder en CPM på ${cpm}, {viewability} % synlighet, {ctr} % klickfrekvens och siffran {modelled} % från visning till besök som annonsplattformar modellerar. Den sista raden är den att titta på: den räknas inte, den uppskattas, och den följer inte av klicken ovanför. I högra kolumnen är varje rad något som hände på en enhet inom din radie."
+  },
+  "deploy": {
+    "stepsLabel": "Steg",
+    "steps": {
+      "location": "Plats",
+      "asset": "Tillgång",
+      "rules": "Regler",
+      "publish": "Publicera"
+    },
+    "whereLegend": "Var den ligger",
+    "whereNote": "I portalen är det här en nål du drar. Koordinaten är hela adressen tillgången någonsin får.",
+    "assetLegend": "Vad du placerar",
+    "assetNote": "En hämtning per enhet inom radien och tidsfönstret, så antalet är ett antal personer snarare än en utbudssiffra.",
+    "rulesLegend": "Vem som kan ta den",
+    "campaignLegend": "Kampanjen",
+    "quantity": "Antal",
+    "claimRadius": "Hämtningsradie",
+    "presets": {
+      "store": {
+        "label": "Butik",
+        "place": "Kalverstraat 92, Amsterdam",
+        "hint": "En dörröppning. Snäv nog att bara någon vid disken kan hämta."
+      },
+      "venue": {
+        "label": "Evenemangsområde",
+        "place": "Johan Cruijff ArenA, Amsterdam",
+        "hint": "Ett helt område under evenemanget, som går ut när det slutar."
+      },
+      "trail": {
+        "label": "Stadsslinga",
+        "place": "Sex platser i Amsterdam Noord",
+        "hint": "Sammankedjade tillgångar som hämtas i ordning, viktade mot lugna gator."
+      }
+    },
+    "assets": {
+      "token": "Token",
+      "nft": "Samlarobjekt",
+      "offer": "Erbjudandekod",
+      "ticket": "Access pass"
+    },
+    "tiers": {
+      "standard": {
+        "label": "Standardverifiering",
+        "note": "GNSS, attestering och rörelse måste stämma överens."
+      },
+      "strict": {
+        "label": "Strikt verifiering",
+        "note": "Lägger till radiofingeravtrycket. För drops med högt värde."
+      }
+    },
+    "summaryLocation": "Plats",
+    "summaryAsset": "Tillgång",
+    "summaryRadius": "Radie",
+    "summaryVerification": "Verifiering",
+    "summaryThreshold": "{tier}, tröskel {threshold}",
+    "summaryBudget": "Budget",
+    "summaryBudgetValue": "${budget} med ${cost} per besök",
+    "publish": "Publicera kampanjen",
+    "sequence": {
+      "signing": "Signerar kampanjen",
+      "writing": "Skriver tillgångsdefinitionen on-chain",
+      "indexing": "Indexerar koordinaterna",
+      "live": "Live på kartan"
+    },
+    "again": "Sätt upp en till",
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "review": "Granska",
+    "verifiedArrivals": "Verifierade besök",
+    "costPerArrival": "Kostnad per besök",
+    "sawPin": "Såg nålen i närheten",
+    "placementFee": "Placeringsavgift",
+    "perArrival": "Per besök",
+    "live": "Live",
+    "radiusOf": "{radius} m radie",
+    "captionLive": "Besöken är en prognos utifrån radien och kartrafiken runt den, inte en garanti. Varje besök skulle vara en hämtning registrerad on-chain i ögonblicket någon stod där.",
+    "captionIdle": "Ringen är ritad i skala mot kartan. Inget här kräver en utvecklare: fyra beslut, sedan publicera."
+  },
+  "whitepaper": {
+    "metaTitle": "Whitepaper: proof of location, på vilken kedja som helst",
+    "metaDescription": "Så utfärdar Seekprotocol digitala tillgångar till riktiga koordinater, verifierar att någon faktiskt var där och avvecklar på den kedja tillgången finns på. Arkitektur, tokendesign, attacker.",
+    "ogTitle": "Seekprotocols whitepaper",
+    "ogDescription": "Proof of location, arkitektur, tokendesign och en ärlig redogörelse för attackerna och begränsningarna.",
+    "eyebrow": "Whitepaper",
+    "titleStart": "Digitala tillgångar som finns på",
+    "titleAccent": "en plats",
+    "lead": "Den tekniska redogörelsen för hur Seekprotocol utfärdar tillgångar till koordinater, bevisar att någon stod där och avvecklar det on-chain, inklusive vad systemet inte klarar.",
+    "readingTime": "{minutes} min läsning",
+    "updated": "Uppdaterad {date}",
+    "updatedValue": "Augusti 2026",
+    "gitbook": "Fullständig dokumentation på GitBook",
+    "ctaEyebrow": "Nästa",
+    "ctaTitle": "Se det i drift",
+    "ctaBody": "Ekosystemsidan visar det levande nätverket, och roadmapen följer vad som har levererats mot vad som kommer härnäst.",
+    "ctaEcosystem": "Utforska ekosystemet",
+    "ctaRoadmap": "Se roadmapen",
+    "chapters": {
+      "summary": {
+        "index": "01",
+        "eyebrow": "Sammanfattning",
+        "title": "Ett protokoll för saker som finns på en plats",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Internet gjorde varje digitalt objekt tillgängligt överallt på en gång. Det var poängen, och det fungerade. Men det tog också ifrån digitala saker den egenskap som får fysiska saker att kännas värdefulla: att finnas någonstans i synnerhet. En konsertbiljett betyder något för att den släpper in dig i ett rum. Ett landmärke betyder något för att du måste resa dit."
+          },
+          {
+            "kind": "p",
+            "text": "Seekprotocol ger digitala tillgångar tillbaka sin plats. En token, en NFT eller en belöning kan utfärdas till en uppsättning koordinater i stället för till en plånbok, och den ligger kvar där tills någon fysiskt står inom dess radie och bevisar det. Vi kallar det proof of location, och det är den byggsten som resten av protokollet vilar på."
+          },
+          {
+            "kind": "p",
+            "text": "Konsumentytan är **Seekprotocol**, en mobilapp för iOS och Android som visar dessa tillgångar i förstärkt verklighet. Du går, telefonen visar vad som finns i närheten, och du samlar det du hittar. Under ytan sker avvecklingen på den kedja tillgången redan finns på, mot ett enda krav: transaktionskostnader så låga att det inte kostar mer att plocka upp en liten belöning än belöningen är värd."
+          },
+          {
+            "kind": "callout",
+            "text": "Kort sagt: vi skapar digitala tillgångar som bara kan hämtas från en viss plats, verifierar att någon faktiskt var där och avvecklar det on-chain på under en sekund för en bråkdel av en cent."
+          },
+          {
+            "kind": "h",
+            "text": "Vad dokumentet handlar om"
+          },
+          {
+            "kind": "p",
+            "text": "Sexton kapitel i fyra satser. De tre första beskriver problemet och byggstenen som löser det. Kapitel fyra till sju är maskinen: hur en hämtning färdas, hur lagren hänger ihop och vad appen gör med dem. Åtta till elva är ekonomin, från vem som betalar för placering till vem som bestämmer parametrarna. De fem sista är det ett whitepaper brukar utelämna: attackerna, integritetskostnaden, den regulatoriska positionen och de ärliga begränsningarna."
+          },
+          {
+            "kind": "p",
+            "text": "Flera figurer är interaktiva. Verifieringsmodellen, tidslinjen för en hämtning, fångstslaget och budgetkalkylatorn räknar alla samma aritmetik som protokollet, med samma konstanter, så att du kan vara oenig med designen i stället för med ett diagram av den."
+          }
+        ]
+      },
+      "problem": {
+        "index": "02",
+        "eyebrow": "Problemet",
+        "title": "Uppmärksamhet är billig på nätet och dyr på gatan",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Två grupper har ett problem som visar sig vara samma problem sett från motsatta håll."
+          },
+          {
+            "kind": "h",
+            "text": "Varumärken och arenor kan inte köpa besöksflöden"
+          },
+          {
+            "kind": "p",
+            "text": "Digital annonsering kan sätta en bild framför någon på millisekunder. Den kan inte få dem att gå tre kvarter. Omvandlingen från en visning till ett fysiskt besök är den svagaste länken i hela tratten för handel och evenemang, och den mäts dåligt, oftast genom att fråga folk i kassan om de har sett en annons."
+          },
+          {
+            "kind": "p",
+            "text": "Branschens svar har varit modellering. Paneler av enheter som valt att delta extrapoleras till en population, och den resulterande siffran för butiksbesök rapporteras bredvid visningar och klick som om den kom från samma sorts räknare. Det gjorde den inte. Den ena siffran är en händelse och den andra en uppskattning, och kampanjer bedöms på uppskattningen."
+          },
+          {
+            "kind": "h",
+            "text": "Kryptoprojekt hittar inga riktiga användare"
+          },
+          {
+            "kind": "p",
+            "text": "Airdrops är standardverktyget för distribution, och de farmas. En plånbok kostar ingenting att skapa, så varje belöning som kan hämtas av en plånbok kommer att hämtas av tusentals plånböcker som tillhör en handfull personer. Projekten svarar med allt mer invecklade behörighetsregler, som mest filtrerar bort vanliga användare medan avancerade farmare anpassar sig."
+          },
+          {
+            "kind": "p",
+            "text": "Båda problemen löses upp om du kan bevisa att en människa var på en viss plats vid en viss tid. Besöksflöden blir mätbara eftersom ankomsten är själva händelsen som registreras. Airdrop-farming blir dyrt eftersom en plånbok är gratis men resor inte är det, och ingen är i fyrtio städer samtidigt."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Kostnad för att skapa en plånbok",
+                "value": "I praktiken noll"
+              },
+              {
+                "label": "Kostnad för att vara någonstans",
+                "value": "Tid, avstånd, fysisk närvaro"
+              },
+              {
+                "label": "Vad den skillnaden köper",
+                "value": "Ett skydd mot sybilattacker som vilar på fysik"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Varför det går att bygga nu men inte förut"
+          },
+          {
+            "kind": "p",
+            "text": "Tre saker måste komma samtidigt. Telefoner måste ha GNSS med dubbla frekvenser, djupmedvetna kameror och hårdvarubaserad attestering som standard snarare än som flaggskeppsfunktioner. Avvecklingen måste bli billig nog att en belöning värd några ören klarar att flyttas, vilket uteslöt varje kedja tills avgifterna föll under en cent. Och folk måste vara villiga att rikta en kamera mot en gata och se något renderat i den, något som ett decennium av AR i spel i det tysta har avgjort."
+          }
+        ]
+      },
+      "distribution": {
+        "index": "03",
+        "eyebrow": "Distribution",
+        "title": "Varför betald räckvidd inte kan leverera en riktig person",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Förra kapitlet sa att två grupper har samma problem. Det här handlar om verktyget båda griper efter först, och varför det misslyckas på ett sätt som mer pengar inte löser."
+          },
+          {
+            "kind": "h",
+            "text": "Varje mått på marknaden är ett ombud"
+          },
+          {
+            "kind": "p",
+            "text": "En visning, ett klick, en visning av en video, en följning, en plånboksadress: inget av dem är en person. Var och en är en signal som korrelerar med en person under förhållanden som säljaren av signalen kontrollerar. När belöningen för att producera signalen överstiger kostnaden för att producera den utan en person, produceras den utan en person, och korrelationen som hela marknaden är prissatt på släpper i det tysta taget om det den stod för."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "En visning",
+                "value": "Bråkdelar av en cent, ingen person behövs"
+              },
+              {
+                "label": "Ett klick",
+                "value": "Några cent, från en pool av bostadsproxyer"
+              },
+              {
+                "label": "En plånbok",
+                "value": "Gratis, och kan skriptas i tusental"
+              },
+              {
+                "label": "Ett verifierat besök",
+                "value": "En resa, gjord av en kropp, en gång"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Filter återställer inte signalen"
+          },
+          {
+            "kind": "p",
+            "text": "Standardsvaret är behörighetsregler: minsta saldo, tidigare aktivitet, ögonblicksbilder, captchas, enhetsfingeravtryck. Var och en höjer kostnaden för en falsk hämtning med en viss summa och kostnaden för en äkta hämtning med en annan, och förhållandet mellan de två är det enda som avgör om filtret hjälpte. I praktiken tar den avancerade farmaren kostnaden och den vanliga användaren ger upp, så filtren slutar med att välja ut just den population de byggdes för att stänga ute."
+          },
+          {
+            "kind": "p",
+            "text": "Närvaro är inte ett bättre filter. Det är en annan sorts sak, eftersom kostnaden den ålägger inte är beräkningsmässig. Den kan inte parallelliseras över ett serverrack, den sjunker inte när hårdvaran blir billigare, och det finns ingen bostadsproxy för en gata."
+          },
+          {
+            "kind": "callout",
+            "text": "Den användbara frågan om varje åtgärd mot bedrägerier är inte hur mycket den kostar en angripare, utan hur mycket den kostar en angripare i förhållande till en ärlig användare. Närvaro är den enda signalen på listan där det förhållandet inte förskjuts till angriparens fördel över tid."
+          },
+          {
+            "kind": "h",
+            "text": "Publicisten äger fortfarande frågan"
+          },
+          {
+            "kind": "p",
+            "text": "Att verifiera att någon var någonstans säger ingenting om vad de ska behöva göra medan de är där, och protokollet avstår medvetet från att bestämma det. En hämtning kan villkoras med en följning, en registrering, en skanning av en produkt på hyllan, en mint på koordinaten, ett köp i kassan eller inget annat än ankomsten. Verifieringen under är identisk i alla fall, vilket betyder att en publicist kan ändra vad den ber om mellan kampanjer utan att ändra något i garantin."
+          },
+          {
+            "kind": "p",
+            "text": "Det här spelar roll av ett skäl som är lätt att missa. En distributionskanal som dikterar uppmaningen passar bara de kampanjer den designades för, och varje publicist utanför den formen måste böja sitt erbjudande efter kanalen. Det som säljs här är beviset, inte tratten."
+          },
+          {
+            "kind": "h",
+            "text": "Vad det här inte löser"
+          },
+          {
+            "kind": "p",
+            "text": "Ett verifierat besök är bevis på att en enhet var på en koordinat, inte att personen som höll den ville vara där eller någonsin kommer tillbaka. Någon som får betalt för att gå förbi en dörr är ett riktigt besök och en dålig kund. Protokollet gör besöket dyrt att förfalska och enkelt att räkna. Om det var värt att köpa är fortfarande en marknadsföringsfråga, och ingen kedja besvarar den."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "04",
+        "eyebrow": "Kärnbyggsten",
+        "title": "Proof of location",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Proof of location är påståendet att en viss enhet var inom en viss radie under ett visst tidsfönster, gjort trovärdigt nog att något av värde kan släppas på dess grund."
+          },
+          {
+            "kind": "p",
+            "text": "Ingen enskild signal är pålitlig på egen hand. Rå GPS kan förfalskas av vilken rootad enhet som helst med en falsk platsleverantör. Därför bedömer protokollet en hämtning över flera oberoende signaler och kräver att kombinationen hänger ihop, eftersom det är lätt att förfalska en signal men inte att förfalska alla konsekvent."
+          },
+          {
+            "kind": "h",
+            "text": "Signaler vi kombinerar"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GNSS-position**, den råa satellitpositionen med sin rapporterade noggrannhet, plus konstellationen och antalet satelliter, som förfalskare ofta får fel.",
+              "**Radiomiljö**, uppsättningen wifi-SSID:er och mobilmaster i närheten, matchad mot vad protokollet förväntar sig att se på de koordinaterna. Radiomiljöer är svåra att fabricera och förändras långsamt.",
+              "**Enhetsattestering**, Play Integrity på Android och DeviceCheck eller App Attest på iOS, som bekräftar att appen är äkta och att operativsystemet inte är komprometterat.",
+              "**Rörelsekontinuitet**, accelerometerspåret mellan den föregående bekräftade positionen och den här. En hämtning som säger att du rört dig 400 km på 90 sekunder utan en matchande rörelseprofil nekas.",
+              "**Tidsmässig rimlighet**, där ankomsttider kontrolleras mot den restid som din senast bekräftade plats innebär."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Varje signal bidrar till en tillförlitlighetspoäng. Tillgångarna sätter den poäng de kräver: en uppdragsbelöning med lågt värde kan godta en måttlig poäng, medan en drop med högt värde på ett evenemang med biljett kan kräva enhetsattestering och en matchande radiomiljö. Hämtningar under tröskeln nekas, och upprepade nekanden från samma enhet höjer tröskeln för den enheten."
+          },
+          {
+            "kind": "confidence"
+          },
+          {
+            "kind": "callout",
+            "text": "Målet är inte perfekta bevis, som inte går att uppnå på konsumenthårdvara. Det är att göra förfalskning dyrare än belöningen är värd, samma standard som får kortbetalningar att fungera."
+          },
+          {
+            "kind": "h",
+            "text": "Varför signalerna viktas i stället för att krävas"
+          },
+          {
+            "kind": "p",
+            "text": "En regel som kräver varje signal är en regel som nekar ärliga användare. Tunnelbanestationer tappar GNSS. Nya byggnader har radiomiljöer som kartan aldrig sett. En telefon som ligger två OS-versioner efter kan misslyckas med attesteringen av skäl som inte har med bedrägeri att göra. Viktning låter en tillgång säga hur mycket bevis dess värde förtjänar, och låter en ärlig hämtning överleva en dålig signal utan att låta en förfalskad hämtning överleva fyra."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Standardradie för hämtning",
+                "value": "30 m"
+              },
+              {
+                "label": "Konfigurerbart intervall",
+                "value": "5 m till 500 m per tillgång"
+              },
+              {
+                "label": "Typisk bekräftelse",
+                "value": "Under en sekund på avvecklingskedjan"
+              },
+              {
+                "label": "Attestering",
+                "value": "Play Integrity, App Attest"
+              },
+              {
+                "label": "Hantering av nekanden",
+                "value": "Registreras per enhet och höjer den enhetens ribba"
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "index": "05",
+        "eyebrow": "Mekanik",
+        "title": "Vad som faktiskt händer när du hämtar något",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Förra kapitlet beskriver bevisen. Det här följer en enda hämtning från ögonblicket du sträcker dig efter en tillgång till ögonblicket den ligger i din plånbok, eftersom ordningsföljden är där de flesta designbesluten finns."
+          },
+          {
+            "kind": "timeline"
+          },
+          {
+            "kind": "h",
+            "text": "Gränsen som spelar roll"
+          },
+          {
+            "kind": "p",
+            "text": "Titta på var stegen byter maskin. Allt känsligt sker i de tre första: positionen, radioskanningen, rörelsespåret, attesteringen. Inget av det lämnar din telefon i rå form. Det som går över till verifieraren är en signerad hämtning, och det som går från verifieraren till kedjan är ett signerat intyg om att hämtningen klarade sin tröskel."
+          },
+          {
+            "kind": "p",
+            "text": "Det är därför verifieringen sker off-chain. Det är ingen skalningskompromiss. Att lägga bedömningen on-chain skulle innebära att publicera indata, och indata är en beskrivning av var du står och vilka trådlösa nätverk som finns omkring dig."
+          },
+          {
+            "kind": "h",
+            "text": "Vad som händer när det misslyckas"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Under tröskeln**: hämtningen nekas, tillgången ligger kvar på kartan och inget skrivs till kedjan. Nekandet registreras mot enheten.",
+              "**Upprepade nekanden**: den poäng som krävs för den enheten stiger. En enhet som har misslyckats med sex hämtningar på en timme behandlas inte som en som inte har misslyckats med någon.",
+              "**Misslyckad avveckling**: hämtningen hålls kvar och försöks igen i stället för att släppas. En tillgång som vunnits men inte levererats är en bugg som kostar förtroende, så kön är designad för att flytta undan en fastnad utbetalning i stället för att blockera dem bakom den.",
+              "**Utgång mitt i en hämtning**: tillgångar har ett tidsfönster, och en hämtning som kommer efter att det stängt nekas även med perfekt poäng. Fönstret är en del av tillgången, inte ett nätverksförhållande."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "En hämtning är ett lås, inte en uppslagning. Två personer som sträcker sig efter den sista enheten av en tillgång i samma ögonblick får inte båda besked om att de fick den, så kontrollen tar låset innan den avgör något."
+          }
+        ]
+      },
+      "architecture": {
+        "index": "06",
+        "eyebrow": "Arkitektur",
+        "title": "Så hänger lagren ihop",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokollet består av fyra lager. Vart och ett kan resoneras om, och bytas ut, för sig."
+          },
+          {
+            "kind": "stack"
+          },
+          {
+            "kind": "p",
+            "text": "Uppdelningen spelar störst roll vid gränsen mellan plats och avveckling. Platsverifiering är sannolikhetsbaserad och sker off-chain, eftersom den bygger på sensordata som inte har något att göra i det offentliga. Det som når kedjan är ett signerat intyg om att en hämtning klarade sin tröskel, inte din rörelsehistorik."
+          },
+          {
+            "kind": "h",
+            "text": "Vad som lagras, och var"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**On-chain**: tillgångsdefinitioner, deras koordinater och radier, hämtningsregister och tokenöverföringar. Offentligt och permanent.",
+              "**Off-chain**: råa sensoravläsningar, radiofingeravtryck och enhetsattesteringar. Sparas bara så länge som behövs för att bedöma en hämtning och lösa tvister, och kastas sedan.",
+              "**På enheten**: din positionshistorik och dina AR-ankardata. De stannar på din telefon om du inte uttryckligen delar dem."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Varför avvecklingslagret inte är fast"
+          },
+          {
+            "kind": "p",
+            "text": "Kravet är ovanligt för en kedja: mycket högt antal transaktioner, mycket lågt värde per transaktion och en bekräftelse snabb nog att en person som står på gatan inte märker den. Den som plockar upp en belöning värd tjugo cent kan inte betala tio cent för att ta emot den, och står inte stilla i trettio sekunder och väntar. Det utesluter en stor del av fältet på kostnad och resten på latens. Det utesluter dem dock som ett krav, inte som ett val av kedja som görs en gång och byggs runt."
+          },
+          {
+            "kind": "p",
+            "text": "Därför är avveckling konfiguration. Ett nätverk är en rad med sin egen endpoint, blockutforskare och egen token; en tillgång anger de nätverk den finns på, med kontraktsadress och decimaler på vart och ett; och en plånbok tillhör en av två adressfamiljer snarare än en per kedja, eftersom alla EVM-nätverk delar adress. En publicist finansierar en kampanj i den token de redan har och hämtningen avvecklas där den token bor. Att lägga till ett nätverk är en rad, inte en release."
+          },
+          {
+            "kind": "p",
+            "text": "Avvägningen är värd att nämna. Kedjor stannar, och en kedja som stannar innebär hämtningar som köar. Avveckling behandlas som ett steg som kan misslyckas och försökas igen snarare än ett som alltid lyckas, vilket är rätt design på vilket nätverk som helst och inte valfritt på ett snabbt. Att sprida sig över flera tar inte bort den risken. Det hindrar ett nätverks avbrott från att bli hela protokollets avbrott, vilket är ett mindre påstående och det ärliga."
+          },
+          {
+            "kind": "h",
+            "text": "Vad som körs var"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Position, sensorer, AR-ankare",
+                "value": "På enheten, laddas aldrig upp i rå form"
+              },
+              {
+                "label": "Bedömning och tröskel",
+                "value": "Protokollets verifierare, off-chain"
+              },
+              {
+                "label": "Tillgångsdefinitioner och hämtningar",
+                "value": "Avvecklingskedjan, offentligt"
+              },
+              {
+                "label": "Media och myntgrafik",
+                "value": "Cachas på enheten, levereras från objektlagring"
+              },
+              {
+                "label": "Spawn-aviseringar",
+                "value": "Servern bestämmer, aldrig klienten"
+              }
+            ]
+          }
+        ]
+      },
+      "seekar": {
+        "index": "07",
+        "eyebrow": "Applikation",
+        "title": "Seekprotocol, konsumentytan",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol är där protokollet blir något en person kan använda utan att känna till något av ovanstående. Appen öppnas med en karta över vad som finns i närheten, och när du håller upp kameran renderar AR-motorn tillgångarna på plats."
+          },
+          {
+            "kind": "h",
+            "text": "Vad appen gör"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Upptäck**, en levande karta över drops, uppdrag och evenemang inom gångavstånd, filtrerad efter vad du faktiskt bryr dig om.",
+              "**Samla**, där du riktar kameran, ser tillgången förankrad i världen, sträcker dig fram och tar den. Avvecklingen sker i bakgrunden.",
+              "**Guida**, en AI-kompanjon som läser din omgivning genom kameran och föreslår rutter, förklarar vad du tittar på och anpassar sig efter hur du spelar.",
+              "**Behåll**, en inbyggd plånbok som skapas från en social inloggning, så att en ny användare inte ombeds skriva ned en seed phrase innan de kan plocka upp något."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Kravet på enkel onboarding styr fler designbeslut än något annat. De flesta som någonsin kommer att använda Seekprotocol har aldrig haft en privat nyckel. Om de första trettio sekunderna innehåller ordet ”mnemonic” lämnar de. Därför skapas plånboken i det tysta och kan exporteras senare av den som vill ha full kontroll."
+          },
+          {
+            "kind": "h",
+            "text": "Promenaden till dropen"
+          },
+          {
+            "kind": "p",
+            "text": "Tillgångar ligger från några tiotal till ett par hundra meter bort, ett avstånd där en karta räcker och en rutt är överdrivet. Att markera en spawn drar en rak linje från dig till den. Linjen är streckad med flit: den är en kompassriktning, inte en rutt, den vet ingenting om byggnader, och på det avståndet är riktningen oftast själva promenaden. Den försvinner av sig själv när du är inom fångsträckvidd, där ringen tar över."
+          },
+          {
+            "kind": "p",
+            "text": "Spawns går ut inom en timme. Det är ett spelbeslut med en konsekvens för protokollet: en markör som återställs vid nästa start skulle peka på ingenting, så appen sparar ingen."
+          },
+          {
+            "kind": "h",
+            "text": "Förankring, och vad AR är till för här"
+          },
+          {
+            "kind": "p",
+            "text": "Kameravyn är inte dekoration och inte heller verifieringen. Den gör två saker. Den placerar tillgången på en trovärdig plats i världen så att det blir en handling att sträcka sig efter den snarare än ett knapptryck, och den ger rörelsesignalen något att vara konsekvent med, eftersom en person som går runt ett förankrat objekt rör sig som en person, medan en förfalskare som håller en telefon stilla inte gör det."
+          }
+        ]
+      },
+      "play": {
+        "index": "08",
+        "eyebrow": "Loopen",
+        "title": "Vad som får någon att fortsätta gå",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ett protokoll som betalar för ankomst behöver fortfarande ett skäl till den första ankomsten. Ingen går fyra kvarter för en mekanism. Spellagret är nätverkets efterfrågesida, och det är designat med samma ärlighet som verifieringen: oddsen är publicerade, de räknas ut på servern och klienten tillfrågas aldrig om vad som hände."
+          },
+          {
+            "kind": "h",
+            "text": "Fångsten"
+          },
+          {
+            "kind": "p",
+            "text": "Att nå fram till en tillgång ger dig den inte. En laddningsring går medan du håller inne, och kvaliteten på laddningen matar en multiplikator. Sedan slår servern. Du får två försök på en spawn, och det andra är värt 0,65 av det första, vilket är siffran som får en andra chans att kännas som en andra chans snarare än en tröst."
+          },
+          {
+            "kind": "catch"
+          },
+          {
+            "kind": "h",
+            "text": "Villkoren som ingen brukar publicera"
+          },
+          {
+            "kind": "p",
+            "text": "De flesta spel döljer modifierarna. Här finns ingen anledning till det, eftersom den intressanta egenskapen är att skicklighet knuffar men aldrig avgör. Laddningsringen är en multiplikator mellan 0,85 och 1,0, så ett perfekt tryck på en legendary är fortfarande en legendary, och ett fumligt tryck på en common är fortfarande troligen en common."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Levelbonus**, en fast ökning på 0,3 procentenheter per spelarlevel, över tio levels från Seeker till Legend.",
+              "**Kall svit**, en medlidandetimer värd 2 procentenheter per miss i rad och max 12, som gäller både det andra försöket och mellan mynt.",
+              "**Svitstraff**, 4 procentenheter per lyckad fångst i rad på samma mynt och max 20, så att farma en spawnpunkt blir sämre snarare än bättre.",
+              "**Klanbonus**, max 5 procentenheter, intjänad av klanen snarare än spelaren.",
+              "**Powerups**, köpta eller vunna, som multiplicerar baschansen innan alla andra termer läggs till."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Golvet är 5 % och taket 95 %. Inget staplas till en garanti, och inget staplas till en mur."
+          },
+          {
+            "kind": "h",
+            "text": "Progression, och vad den är till för"
+          },
+          {
+            "kind": "p",
+            "text": "Levels, märken, klaner, tolvtimmarsutmaningar och veckomål finns för att ge promenaden en form som är längre än en drop. De gör också protokollarbete: en spelare med en level, en klan och en svit har ett konto med en historik, och en historik är dyr att fabricera i stor skala. Progression är en andra kostnad som läggs på farmaren och som inte kostar den ärliga spelaren något, eftersom de ändå tänkte spela."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Försök per spawn",
+                "value": "2"
+              },
+              {
+                "label": "Multiplikator för nytt försök",
+                "value": "×0,65"
+              },
+              {
+                "label": "Laddningsringens intervall",
+                "value": "×0,85 till ×1,00"
+              },
+              {
+                "label": "Golv och tak för chansen",
+                "value": "5 % och 95 %"
+              },
+              {
+                "label": "XP vid fångst",
+                "value": "30 till 140"
+              },
+              {
+                "label": "XP vid miss",
+                "value": "5 till 15"
+              },
+              {
+                "label": "Levels",
+                "value": "Tio, från Seeker till Legend"
+              }
+            ]
+          }
+        ]
+      },
+      "creators": {
+        "index": "09",
+        "eyebrow": "Utbudssidan",
+        "title": "Vem som placerar tillgångarna",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ett platsbaserat nätverk är värdelöst om platserna är tomma. Protokollet behandlar därför placering av tillgångar som en fullvärdig produkt, inte ett internt verktyg."
+          },
+          {
+            "kind": "h",
+            "text": "Tre sorters publicister"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Varumärken och arenor** använder företagsportalen för att placera erbjudanden i sina egna lokaler och mäta vem som faktiskt kom. Enheten de köper är ett verifierat besök, inte en visning.",
+              "**Tokenprojekt och NFT-communities** distribuerar till människor snarare än till plånböcker, med geografin som det filter som farming inte kan besegra billigt.",
+              "**Evenemangsarrangörer** gör en festival, en match eller en konferens till en karta att hämta från under evenemanget, med tillgångar som går ut när det slutar."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Alla tre använder samma kampanjbyggare: sätt en nål, ställ in radien, välj tillgång och antal, sätt tillförlitlighetströskeln och tidsfönstret, finansiera, publicera. Inget integrationsarbete och inget kontrakt att skriva."
+          },
+          {
+            "kind": "callout",
+            "text": "För en arena är måttet som spelar roll kostnad per verifierat besök. Det är den första besöksflödessiffran i digital marknadsföring som mäts vid dörren i stället för att härledas från en enkät."
+          },
+          {
+            "kind": "calculator"
+          },
+          {
+            "kind": "h",
+            "text": "Täthetsproblemet"
+          },
+          {
+            "kind": "p",
+            "text": "Utbud och efterfrågan är här geografiska, vilket gör de vanliga råden om marknadsplatser värdelösa. Tusen tillgångar jämnt utspridda över ett land är en tom karta överallt. Samma tusen i en stad är ett skäl att gå hemifrån. Priset för placering viktas därför efter efterfrågan i området i stället för att vara fast, så att en mättad shoppinggata kostar mer att hålla än en lugn, och protokollet subventionerar gatorna som behöver trafik i stället för dem som redan har den."
+          }
+        ]
+      },
+      "token": {
+        "index": "10",
+        "eyebrow": "Token",
+        "title": "$SEEK och vad den är till för",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "$SEEK är protokollets tillgång för avveckling och samordning. Den finns eftersom nätverket måste flytta värde mellan parter som inte känner varandra, ett varumärke i ett land som finansierar en belöning som hämtas av en främling i ett annat, och eftersom kostnaden för att placera tillgångar bör skala med efterfrågan på platserna som används."
+          },
+          {
+            "kind": "h",
+            "text": "Nytta"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Kampanjfinansiering**, där publicister anger och finansierar belöningar i $SEEK.",
+              "**Placeringsavgifter**, en avgift per placerad tillgång, viktad efter radie, varaktighet och efterfrågan i området.",
+              "**Staking för prioritet**, där stakade $SEEK höjer en publicists placeringsprioritet när flera kampanjer konkurrerar om samma koordinater.",
+              "**Belöningar**, där större delen av protokollavgifterna går tillbaka till dem som går.",
+              "**Governance**, som omfattar parameterändringar, fördelning av kassan och tillförlitlighetströsklarna för hämtningar med högt värde."
+            ]
+          },
+          {
+            "kind": "economy"
+          },
+          {
+            "kind": "tokenomics"
+          },
+          {
+            "kind": "h",
+            "text": "Utbud över tid"
+          },
+          {
+            "kind": "p",
+            "text": "Ett fördelningsdiagram säger vem som har vad och ingenting om när. Schemat nedan är den mer användbara figuren, eftersom risken i en token sällan är fördelningen, utan cliffen."
+          },
+          {
+            "kind": "vesting"
+          },
+          {
+            "kind": "p",
+            "text": "Tanken bakom designen är att avgiftsflödet följer verklig aktivitet snarare än spekulation: protokollet tjänar när tillgångar placeras och hämtas, vilket bara sker när någon är villig att betala för ett verifierat besök."
+          },
+          {
+            "kind": "h",
+            "text": "Vad token medvetet inte gör"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Den fastställer ingen kurs mellan en fångad spelenhet och en token. Spelet värderar en fångst; marknaden värderar token; protokollet låtsas inte överbrygga de två.",
+              "Den krävs inte för att spela. Fångster, XP och utmaningar är gratis, och en spelare som aldrig rör token genererar ändå de besök som en publicist betalar för.",
+              "Den sätter ingen minsta innehav som villkor för placering. Staking köper prioritet när kampanjer konkurrerar, inte rätten att publicera överhuvudtaget."
+            ]
+          }
+        ]
+      },
+      "revenue": {
+        "index": "11",
+        "eyebrow": "Affärsmodell",
+        "title": "Hur protokollet tjänar pengar, och från vem",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ett whitepaper som beskriver en token men inte en verksamhet beskriver halva systemet. Det finns två intäktsströmmar och de kommer från motsatta sidor av nätverket, med avsikt: ingen av sidorna ensam skulle hålla det igång."
+          },
+          {
+            "kind": "h",
+            "text": "Placering, betald av publicister"
+          },
+          {
+            "kind": "p",
+            "text": "Den primära strömmen. En publicist finansierar belöningarna och betalar dessutom en placeringsavgift, viktad efter hur stort område tillgången håller, hur länge och hur konkurrensutsatt området är. Det är avgiften som skalar med värdet nätverket skapar, eftersom den tas ut på det publicister faktiskt köper, nämligen ankomst."
+          },
+          {
+            "kind": "h",
+            "text": "Passet och butiken, betalt av spelare"
+          },
+          {
+            "kind": "p",
+            "text": "Valfritt, och begränsat med flit. Ett säsongspass gäller i nittio dagar och förskjuter spawnviktningen mot sällsyntare mynt, med ett rare-mynt varje vecka och en avslöjning inkluderade. Boosts säljs separat, och ingen av dem köper bättre odds på ett mynt: de avslöjar vad ett frågetecken är, ökar fångsträckvidden, lockar fler mynt i närheten, multiplicerar XP, håller ett missat mynt, tillåter en fångst på avstånd eller lägger till en kortlåda."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Season Pass",
+                "value": "9,95 € per säsong på 90 dagar"
+              },
+              {
+                "label": "Shiba (3 avslöjanden), This Is Fine",
+                "value": "0,99 € styck"
+              },
+              {
+                "label": "XP Boost, Chill Guy, Pump It, Cash",
+                "value": "1,49 € styck"
+              },
+              {
+                "label": "Fitness, Diamond Hands",
+                "value": "1,99 € styck"
+              },
+              {
+                "label": "Spawn Magnet, Spawn Lure",
+                "value": "2,49 € styck"
+              }
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Grundläggande fångster, XP, utmaningar och plattformsprestationer förblir gratis, för alltid. En betald nivå som låste loopen skulle förstöra det enda publicister köper, nämligen att folk dyker upp."
+          },
+          {
+            "kind": "h",
+            "text": "Varför uppdelningen har rätt form"
+          },
+          {
+            "kind": "p",
+            "text": "Spelarnas utgifter är elastiska, säsongsbundna och begränsade av hur mycket en person vill betala för en hobby. Publicisternas utgifter är en marknadsföringspost, bedömd mot en kostnad per besök som har ett verkligt alternativ att jämföras med. Den första håller igång verksamheten tidigt, när det finns fler spelare än kampanjer. Den andra är vad verksamheten blir, och den fungerar bara om den första aldrig förfaller till pay-to-win, eftersom ett nätverk av betalande spelare som alla fångar allt rapporterar besök som är värda ingenting för arenan."
+          }
+        ]
+      },
+      "governance": {
+        "index": "12",
+        "eyebrow": "Governance",
+        "title": "Vem som bestämmer siffrorna",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokollet har ovanligt många justerbara konstanter: gränser för radien, tillförlitlighetströsklar, viktningen av placeringsavgifter, andelen av avgifterna som går tillbaka till sökarna och själva fångststegen. Var och en är ett policybeslut förklätt till ett konfigurationsvärde, och att låtsas något annat är hur protokoll slutar styrda av den som senast redigerade en fil."
+          },
+          {
+            "kind": "h",
+            "text": "Den stegvisa positionen, ärligt beskriven"
+          },
+          {
+            "kind": "p",
+            "text": "Governance är inte igång. Parametrarna sätts i dag av kärnteamet och ändras genom migreringar som registreras och kan granskas. Vi tänker inte kalla det decentraliserat, för det är det inte."
+          },
+          {
+            "kind": "p",
+            "text": "Skälet till fördröjningen är inte ovilja. Att rösta om en ekonomi utan volym är teater: valdeltagandet är lågt, en handfull innehavare avgör och besluten gäller parametrar som ingen har tillräckligt med data för att bedöma. Governance blir meningsfull när det finns ett verkligt avgiftsflöde, eftersom en parameterändring då har en mätbar konsekvens som någon kan argumentera om."
+          },
+          {
+            "kind": "h",
+            "text": "Vad som kommer att styras, och vad som inte kommer att göra det"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Styrs**: viktning av avgifter, sökarnas andel av protokollavgifterna, fördelning av kassan, gränser för radien och tillförlitlighetströsklarna för tillgångar med högt värde.",
+              "**Styrs med fördröjning**: allt som ändrar värdet på tillgångar som redan är placerade. En kampanj som finansierats under ett avgiftsschema bör slutföras under det.",
+              "**Styrs inte**: integritetsåtagandena i kapitel fjorton. Lagringsgränser och vägran att publicera rörelsedata är inte parametrar, och en omröstning är inte ett legitimt sätt att försvaga dem.",
+              "**Styrs inte**: utfallet av enskilda hämtningar. En nekad hämtning är en fråga för tvistlösning, inte för en omröstning."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Ett governance-system som kan rösta bort sina egna användares integritet är inget skydd, det är en attackyta med beslutsförhet."
+          }
+        ]
+      },
+      "security": {
+        "index": "13",
+        "eyebrow": "Risk",
+        "title": "Attacker, begränsningar och vad vi inte påstår",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ett protokoll som betalar folk för att vara någonstans lockar folk att ljuga om att vara någonstans. Att vara konkret om attackerna är mer användbart än att påstå att systemet är säkert."
+          },
+          {
+            "kind": "h",
+            "text": "Attacker vi försvarar oss mot"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GPS-förfalskning**, som motverkas genom att radiomiljön och rörelsespåret måste bekräfta positionen, och genom enhetsattestering som upptäcker manipulerade OS-byggen.",
+              "**Sybil-farming**, som motverkas av den fysiska kostnaden för att resa och av gränser för hämtningar per enhet inom en radie och ett tidsfönster.",
+              "**Reläattacker**, där en riktig enhet på platsen signerar åt en användare på annat håll, som motverkas genom att binda attesteringen till appinstansen och sessionen och genom att begränsa antalet hämtningar per enhet.",
+              "**Emulatorfarmar**, som motverkas av attestering, som emulatorer inte klarar, och av rörelsespår som statistiskt går att skilja från riktig gång.",
+              "**Spawns som klienten deklarerar**, som förhindras snarare än motverkas: bara servern meddelar vad som finns och var, så en modifierad klient kan ljuga om vad den ser utan att vinna något.",
+              "**Dubbla hämtningar**, som förhindras genom att ta ett lås innan hämtningen bedöms, så att två personer som sträcker sig efter den sista enheten inte båda kan få besked om att de fick den."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Begränsningar vi accepterar"
+          },
+          {
+            "kind": "p",
+            "text": "En tillräckligt beslutsam angripare med modifierad hårdvara och fysisk närvaro på en plats kan utvinna mer värde från den platsen än en ärlig användare skulle. Vi begränsar skadan med tak per plats i stället för att låtsas att det är omöjligt. Positionering inomhus är fortfarande betydligt mindre exakt än utomhus, så tillgångar inomhus använder bredare radier och lutar sig mer mot radiofingeravtryck. Och ingen konsumentenhet kan bevisa att det var en människa snarare än en enhet som var där: en telefon i en leveransbil rör sig fortfarande som en telefon i en ficka."
+          },
+          {
+            "kind": "h",
+            "text": "Risker som inte är attacker"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Plattformsberoende**. Attestering är Apples och Googles att ge. En policyändring hos någon av dem kan försvaga den starkaste signalen i stacken över en natt, och det finns ingen version av det här som går runt operativsystemet.",
+              "**Kedjans tillgänglighet**. En kedja som stannar innebär köade hämtningar. Protokollet försöker igen i stället för att släppa dem, men en person som står på gatan upplever inte ett nytt försök som en framgång.",
+              "**Fysisk säkerhet**. Att belöna folk för att gå till platser sätter folk på platser. Tillgångar placeras vid vägkorsningar snarare än inne i byggnaders fotavtryck, drops med högt värde undviker privat mark och appen har ett säkerhetsmeddelande. Det är ett designkrav, inte en friskrivning."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Vi bygger ett ekonomiskt avskräckningsmedel, inte en kryptografisk garanti. Där de två blandas ihop är det användarna som skadas."
+          }
+        ]
+      },
+      "privacy": {
+        "index": "14",
+        "eyebrow": "Integritet",
+        "title": "Platsdata är den mest känsliga data som finns",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ett register över vart någon går avslöjar deras hem, arbete, hälsa, religion och relationer. Att bygga ett nätverk på platsanspråk innebär att ta ansvar för det, och den ansvarsfulla designen är att hålla så lite av det som möjligt."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Kontinuerlig spårning krävs aldrig. Appen ber om en position när du försöker hämta något, inte i bakgrunden.",
+              "Rå sensor- och radiodata används för att bedöma en hämtning och kastas sedan efter en kort lagringstid.",
+              "Det som skrivs on-chain är att en hämtning på en offentlig koordinat lyckades, samma information som när en butik vet att någon löst in en kupong.",
+              "Din rörelsehistorik stannar på din enhet. Protokollet behöver den inte och vill inte ha den.",
+              "Publicister får sammanlagda siffror, aldrig individuella spår."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Problemet vi inte har löst"
+          },
+          {
+            "kind": "p",
+            "text": "Eftersom hämtningsregister är offentliga och permanenta till följd av kedjans natur kan en beslutsam observatör korrelera hämtningar som gjorts av samma plånbok på olika platser. Det är en verklig svaghet och den är inneboende i att avveckla på en offentlig huvudbok. Användare som vill undvika det bör använda separata plånböcker för separata sammanhang, och appen gör det enkelt i stället för att gömma det, men en standard som kräver att användaren känner till problemet är ingen lösning."
+          },
+          {
+            "kind": "callout",
+            "text": "Den ärliga sammanfattningen: vi minimerar det vi håller, vi säljer inte det vi håller, och det finns en korrelationsattack mot det offentliga registret som vi kan minska men inte eliminera."
+          }
+        ]
+      },
+      "compliance": {
+        "index": "15",
+        "eyebrow": "Jurisdiktion",
+        "title": "Reglering, och var det här hamnar",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Tre regelverk berör protokollet samtidigt, vilket är ovanligt och värt att vara tydlig med i stället för att lämna åt en fotnot."
+          },
+          {
+            "kind": "h",
+            "text": "Dataskydd"
+          },
+          {
+            "kind": "p",
+            "text": "Plats ligger nära de särskilda kategorierna av personuppgifter enligt de flesta moderna dataskyddslagar, och protokollet är byggt efter den striktaste tolkningen snarare än den bekvämaste. Positionen samlas in för ett angivet syfte i ögonblicket för en hämtning, sparas bara så länge som bedömning och tvistlösning kräver och kombineras aldrig till en rörelseprofil. Där ett regelverk ger rätt till radering kan registret off-chain raderas; hämtningsregistret on-chain kan inte det, vilket är en begränsning i huvudboken som redovisas öppet i stället för att släta över den."
+          },
+          {
+            "kind": "h",
+            "text": "Klassificering av token"
+          },
+          {
+            "kind": "p",
+            "text": "$SEEK är utformad som en nytto- och samordningstillgång, och nyttan som beskrivs i kapitel tio är verklig snarare än dekorativ. Det är en designposition, inte en juridisk slutsats. Klassificeringen skiljer sig mellan jurisdiktioner, förändras över tid och är inte något ett whitepaper kan avgöra genom att påstå det. Tillgängligheten är därför begränsad där lokala regler kräver det."
+          },
+          {
+            "kind": "h",
+            "text": "Belöningar, slump och gränsen mot spel om pengar"
+          },
+          {
+            "kind": "p",
+            "text": "Fångsten innehåller ett slag, vilket placerar den nära en gräns som varierar mellan länder. Två egenskaper håller den på rätt sida i de flesta regelverk och upprätthålls medvetet: deltagande kostar ingenting, och de betalda sakerna justerar odds och nivåer snarare än att vara insatser med variabel utbetalning. Ett pass köper viktning och en boost köper en multiplikator; ingen av dem är en insats som kan förloras. Där en jurisdiktion gör en annan tolkning hålls den betalda nivån inne i stället för att argumentera."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Personuppgifter off-chain",
+                "value": "Kan raderas på begäran"
+              },
+              {
+                "label": "Hämtningsregister on-chain",
+                "value": "Permanent, och redovisas som sådant"
+              },
+              {
+                "label": "Åldersgräns",
+                "value": "Tillämpas vid registrering, upprätthålls för betalda saker"
+              },
+              {
+                "label": "Betalda saker",
+                "value": "Hålls inne i jurisdiktioner som klassar dem som vadslagning"
+              }
+            ]
+          }
+        ]
+      },
+      "roadmap": {
+        "index": "16",
+        "eyebrow": "Riktning",
+        "title": "Vad som är byggt och vad som kommer härnäst",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol är live på iOS och Android med platsbaserade drops, AR-rendering och den sociala plånboken. Verifieringsstacken kör i dag signalerna för GNSS, attestering och rörelsekontinuitet; radiofingeravtryck rullas ut stegvis. Attesteringen upprätthålls bakom en flagga, vilket är det ärliga läget: nekandevägen är byggd och brytaren för att upprätthålla den har inte slagits om för alla ytor."
+          },
+          {
+            "kind": "p",
+            "text": "Kampanjbyggaren med dra och släpp är byggd. Nästa steg är självbetjäningsportalen för företag som öppnar placering bortom hanterade partnerskap, och besöksanalysen som hör till den. Bredvid det finns token generation event, liveläge för evenemang, säsonger och objektskanning. Governance följer när det finns tillräckligt med verkligt avgiftsflöde för att parameterbeslut ska vara meningsfulla, av skälen som anges i kapitel tolv."
+          },
+          {
+            "kind": "h",
+            "text": "Vad vi inte lovar"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Ett datum för governance. Den är villkorad av volym, och volym är inget datum.",
+              "Lika god noggrannhet inomhus. Det är ett svårt problem och det ärliga svaret är bredare radier inomhus under överskådlig tid.",
+              "En ny kedja för sakens egen skull. Kraven på latens och kostnad i kapitel sex är snäva, och att lägga till en kedja som inte uppfyller dem vore ett marknadsföringsbeslut snarare än ett tekniskt."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Den fullständiga uppdelningen fas för fas finns på roadmapsidan, som hålls aktuell allteftersom saker levereras."
+          }
+        ]
+      },
+      "glossary": {
+        "index": "17",
+        "eyebrow": "Referens",
+        "title": "Ordlista",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Termer som används i hela dokumentet, med den betydelse de har här snarare än den de har i allmänhet."
+          },
+          {
+            "kind": "glossary"
+          }
+        ]
+      }
+    }
+  },
+  "allocations": {
+    "community": {
+      "label": "Communitybelöningar",
+      "note": "Tjänas in av sökare genom insamling och uppdrag"
+    },
+    "ecosystem": {
+      "label": "Ekosystem och partner",
+      "note": "Kampanjsubventioner, onboarding av platser, integrationer"
+    },
+    "team": {
+      "label": "Team och bidragsgivare",
+      "note": "4 års vesting, 12 månaders cliff"
+    },
+    "treasury": {
+      "label": "Kassa",
+      "note": "Styrd reserv för protokollutveckling"
+    },
+    "liquidity": {
+      "label": "Likviditet",
+      "note": "Marknadsdjup på börser och on-chain"
+    },
+    "backers": {
+      "label": "Tidiga investerare",
+      "note": "2 års vesting, 6 månaders cliff"
+    }
+  },
+  "tokenFacts": {
+    "ticker": {
+      "label": "Ticker",
+      "value": "$SEEK"
+    },
+    "chain": {
+      "label": "Kedja",
+      "value": "Solana (SPL), avvecklar på alla kedjor"
+    },
+    "supply": {
+      "label": "Totalt utbud",
+      "value": "1 000 000 000"
+    },
+    "emission": {
+      "label": "Emission",
+      "value": "Fast, ingen ytterligare minting"
+    }
+  },
+  "glossary": {
+    "proof-of-location": {
+      "term": "Proof of location",
+      "definition": "Påståendet att en enhet var inom en viss radie under ett visst tidsfönster, bedömt över flera oberoende signaler och trovärdigt nog att släppa värde på. Sannolikhetsbaserat, aldrig absolut."
+    },
+    "confidence-score": {
+      "term": "Tillförlitlighetspoäng",
+      "definition": "Det samlade resultatet av att bedöma en hämtnings signaler. Varje tillgång sätter poängen den kräver, så en uppdragsbelöning och en biljettdrop kan dela verifierare men inte ribba."
+    },
+    "claim-radius": {
+      "term": "Hämtningsradie",
+      "definition": "Avståndet från en tillgångs koordinater inom vilket den kan tas. Standard 30 m, konfigurerbart från 5 m till 500 m, och den enskilt största spaken en publicist har över både kostnad och betydelse."
+    },
+    "drop": {
+      "term": "Drop",
+      "definition": "En tillgång placerad på koordinater, som väntar på att hämtas. Har ett antal, ett tidsfönster, en tillförlitlighetströskel och en radie."
+    },
+    "spawn": {
+      "term": "Spawn",
+      "definition": "En drop så som spelet visar den: aviserad av servern, synlig på kartan, går ut inom en timme och värd två fångstförsök."
+    },
+    "attestation": {
+      "term": "Attestering",
+      "definition": "Ett signerat intyg från operativsystemet om att appen är äkta och enheten inte manipulerad. Play Integrity på Android, App Attest på iOS. Den starkaste signalen i stacken och den som protokollet inte kontrollerar."
+    },
+    "radio-fingerprint": {
+      "term": "Radiofingeravtryck",
+      "definition": "Uppsättningen wifi-nätverk och mobilmaster som syns från en position, matchad mot vad som borde synas där. Ändras långsamt och är svår att fabricera, vilket är det som gör den användbar."
+    },
+    "motion-continuity": {
+      "term": "Rörelsekontinuitet",
+      "definition": "Accelerometerspåret mellan en bekräftad position och nästa. Fångar hämtningen som teleporterar, eftersom 400 km på 90 sekunder inte lämnar någon matchande rörelseprofil."
+    },
+    "verified-arrival": {
+      "term": "Verifierat besök",
+      "definition": "En hämtning som nådde sin tröskel inom en publicists radie. Enheten en publicist köper, och skälet till att kostnadssiffran för en kampanj räknas snarare än modelleras."
+    },
+    "placement-fee": {
+      "term": "Placeringsavgift",
+      "definition": "Det en publicist betalar för att hålla ett område, viktat efter radie, varaktighet och efterfrågan i området. Skilt från belöningen, som är det sökaren får."
+    },
+    "cold-streak": {
+      "term": "Kall svit",
+      "definition": "Medlidandetimern. Två procentenheter fångstchans per miss i rad, max tolv, som gäller både för det andra försöket och mellan mynt."
+    },
+    "streak-penalty": {
+      "term": "Svitstraff",
+      "definition": "Den motsatta spaken. Fyra procentenheter avdrag per lyckad fångst i rad på samma mynt, max tjugo, så att en enskild spawnpunkt blir sämre att farma snarare än bättre."
+    },
+    "seeker": {
+      "term": "Seeker",
+      "definition": "En person som går till tillgångar och hämtar dem. Också den första av tio spelarnivåer, där den sista är Legend."
+    },
+    "seek": {
+      "term": "$SEEK",
+      "definition": "Tillgången för avveckling och samordning. Finansierar kampanjer, betalar placeringsavgifter, köper placeringsprioritet genom staking och bär governance-rösten när governance är igång."
+    }
+  },
+  "whitepaperFigures": {
+    "draft": "Utkast till siffror, inte slutlig tokenomics",
+    "totalSupply": "Totalt utbud",
+    "donutAria": "Tokenfördelning efter andel av totalt utbud",
+    "terms": "{count} termer",
+    "filterTerms": "Filtrera termer",
+    "filter": "Filtrera",
+    "noMatch": "Inget matchar det. Själva dokumentet går att söka i med webbläsarens egen sökfunktion.",
+    "stackCaption": "Hämtningar färdas nedåt i stacken; värde färdas tillbaka uppåt. Välj ett lager för detaljer.",
+    "liveModel": "Livemodell",
+    "interactive": "Interaktiv",
+    "confidenceTitle": "Försök att neka en hämtning",
+    "thresholdLabel": "Tillgångens tröskel",
+    "confidenceThreshold": "tillförlitlighet · tröskel {threshold}",
+    "claimAccepted": "Hämtning godkänd",
+    "claimRefused": "Hämtning nekad",
+    "shortBy": "{short} för lite. Upprepade nekanden från samma enhet höjer dess tröskel ytterligare.",
+    "confidenceCaption": "Vikterna är illustrativa. Poängen är formen: ingen signal ensam klarar en finansierad kampanj, och att förfalska alla fyra samtidigt kostar mer än dropen.",
+    "economyLabel": "Ekonomisk loop",
+    "stageOf": "Steg {step} av {total}",
+    "timelineTitle": "En hämtning, steg för steg",
+    "stop": "Stopp",
+    "runReal": "Kör i verklig hastighet",
+    "claimStages": "Hämtningens steg",
+    "segAria": "{label}, {ms} millisekunder, {where}",
+    "endToEnd": "{seconds} s från början till slut",
+    "takes": "Tar",
+    "elapsed": "Förfluten tid",
+    "whatMoves": "Vad som skickas",
+    "timelineWhere": {
+      "device": "På din telefon",
+      "verifier": "Verifierare",
+      "chain": "Avvecklingskedja"
+    },
+    "timelineCaption": "Det här är budgetar, inte mätningar. Sensorfönstret och avvecklingen varierar båda med förhållandena, och allt däremellan är aritmetik som inte gör det. Lägg märke till var gränsen går: rå sensordata lämnar aldrig de tre första stegen.",
+    "vestingTitle": "Cirkulerande utbud, månad för månad",
+    "vestingAria": "Cirkulerande utbud per fördelning över 48 månader",
+    "circulatingMonth": "cirkulerande i månad {month}",
+    "circulatingLaunch": "cirkulerande vid lansering",
+    "axisLaunch": "Lansering",
+    "axisYear": "År {year}",
+    "month": "Månad",
+    "vestingCaption": "Läs stegen, inte kurvan. En platt sträcka följd av ett hopp är en cliff, och en cliff är där ett schema antingen håller eller inte. Team- och investerarandelarna är de som är värda att kolla, eftersom det är de två som låses upp in på en marknad snarare än ut till dem som använder nätverket.",
+    "calcTitle": "Vad en budget köper",
+    "calcBudget": "Kampanjbudget",
+    "calcReward": "Belöning per hämtning",
+    "calcRadius": "Hämtningsradie",
+    "calcFee": "Placeringsavgift vid den här radien: ${fee} per drop",
+    "calcArrivals": "Verifierade besök",
+    "calcPerPerson": "${cost} per person vid dörren",
+    "calcDisplay": "Samma budget som display",
+    "calcInferred": "visningar, varav ungefär {visits} blir ett härlett besök för ${cost} styck",
+    "calcCaption": "Displaysiffrorna använder en CPM på ${cpm} och {rate} % från visning till besök, båda tumregler i branschen. Skillnaden som spelar roll är att den ena kolumnen mäts vid dörren och den andra härleds.",
+    "contents": "Innehåll · {count} kapitel",
+    "chaptersLabel": "Kapitel",
+    "close": "Stäng",
+    "ladderTitle": "Fångstslaget, så som servern räknar det",
+    "rarityLabel": "Sällsynthet",
+    "playerLevel": "Spelarlevel",
+    "chargeRing": "Laddningsring",
+    "missed": "Missade",
+    "clanBonus": "Klanbonus",
+    "points": "+{points} p",
+    "baseChance": "Baschans",
+    "levelBonus": "Levelbonus",
+    "ringMultiplier": "Ringmultiplikator",
+    "retryMultiplier": "Multiplikator för nytt försök",
+    "firstAttempt": "Första försöket",
+    "retry": "Nytt försök",
+    "acrossSpawn": "Över hela spawnen",
+    "youCaught": "Du har fångat",
+    "notYet": "inte än",
+    "ladderHint": "En spawn säger nästan ingenting. Kör tusen och se de två staplarna närma sig varandra.",
+    "ladderTally": "{caught} fångade av {spawns} spawns, {gap} procentenheter från modellen.",
+    "runOne": "Kör en spawn",
+    "runThousand": "Kör tusen",
+    "reset": "Återställ",
+    "ladderCaption": "Migreringen publicerar {rarity} på {first} % och sedan {second} %, {overall} % över hela spawnen. Det är den här modellen på level 5 med full ring och ingen klan, vilket är vad reglagen börjar på. En fångad enhet är en spelenhet, och vad den är värd i tokens är marknadens sak snarare än spelets.",
+    "tocTitle": "Innehåll"
+  },
+  "stackLayers": {
+    "app": {
+      "label": "Applikation",
+      "sub": "Seekprotocol · företagsportal · kampanjbyggare",
+      "detail": "Det folk rör vid. Mobilappen renderar tillgångar i AR och sköter insamlingen; portalen är där publicister placerar dem. Båda är vanliga klienter till lagren under och har ingen privilegierad åtkomst."
+    },
+    "intelligence": {
+      "label": "Intelligens",
+      "sub": "AI-kompanjon · uppdragsgenerering · vägvisning",
+      "detail": "Läser kameraflödet och din spelhistorik för att föreslå vart du ska gå härnäst och vad du tittar på. Körs på enheten där det går, och ser aldrig rå positionshistorik som den inte behöver."
+    },
+    "location": {
+      "label": "Platsverifiering",
+      "sub": "GNSS · radiofingeravtryck · attestering · rörelse",
+      "detail": "Bedömer en hämtning över oberoende signaler och utfärdar ett signerat intyg när poängen klarar tillgångens tröskel. Off-chain med avsikt: sensordatan som får verifieringen att fungera är exakt den data som inte bör vara offentlig."
+    },
+    "settlement": {
+      "label": "Avveckling",
+      "sub": "Alla kedjor · tillgångar · hämtningsregister",
+      "detail": "Håller tillgångsdefinitioner, koordinater och hämtningsregister, och flyttar värde när en hämtning godkänns. Ett nätverk är en konfiguration snarare än en integration, och ribban varje nätverk måste klara är avgifter låga nog att det inte kostar mer att hämta en liten belöning än den är värd."
+    }
+  },
+  "confidenceSignals": {
+    "gnss": {
+      "label": "GNSS-position",
+      "detail": "Satellitposition och dess rapporterade noggrannhet, plus konstellation och antal satelliter.",
+      "spoofable": "Löjligt lätt att förfalska på en rootad enhet."
+    },
+    "radio": {
+      "label": "Radiomiljö",
+      "detail": "Wifi-nätverk och mobilmaster i närheten, matchade mot vad som borde synas här.",
+      "spoofable": "Svår att fabricera; radiomiljöer förändras långsamt."
+    },
+    "attest": {
+      "label": "Enhetsattestering",
+      "detail": "Play Integrity eller App Attest som bekräftar en äkta app på ett omanipulerat operativsystem.",
+      "spoofable": "Emulatorfarmar fastnar direkt här."
+    },
+    "motion": {
+      "label": "Rörelsekontinuitet",
+      "detail": "Accelerometerspåret mellan din senast bekräftade position och den här.",
+      "spoofable": "Ett hopp på 400 km på 90 sekunder har ingen matchande rörelseprofil."
+    }
+  },
+  "confidenceTiers": {
+    "low": {
+      "label": "Uppdragsbelöning",
+      "note": "Lågt värde, låg ribba."
+    },
+    "mid": {
+      "label": "Partnerdrop",
+      "note": "Standard för finansierade kampanjer."
+    },
+    "high": {
+      "label": "Evenemang med biljett",
+      "note": "Högt värde, allt måste stämma."
+    }
+  },
+  "economyStages": {
+    "fund": {
+      "label": "Publicisten finansierar",
+      "actor": "Varumärke · projekt · arena",
+      "body": "En kampanj anges och finansieras i $SEEK, med en placeringsavgift viktad efter radie, varaktighet och hur konkurrensutsatt området är.",
+      "flow": "$SEEK in"
+    },
+    "place": {
+      "label": "Tillgången placeras",
+      "actor": "Protokoll",
+      "body": "Dropen skrivs till sina koordinater med en hämtningsradie, ett tidsfönster och den tillförlitlighetströskel den kräver.",
+      "flow": "Avgift till kassan"
+    },
+    "walk": {
+      "label": "Någon går dit",
+      "actor": "Sökare",
+      "body": "Det enda steget som inte kan automatiseras. Resan är kostnaden som gör farming dyrt.",
+      "flow": "Tid och avstånd"
+    },
+    "verify": {
+      "label": "Närvaron verifieras",
+      "actor": "Verifieringslager",
+      "body": "Fyra signaler bedöms off-chain. Det som når kedjan är ett signerat intyg, inte din sensordata.",
+      "flow": "Intyg"
+    },
+    "settle": {
+      "label": "Den avvecklas",
+      "actor": "Avvecklingskedja",
+      "body": "Överföringen bekräftas på under en sekund för en bråkdel av en cent, på kedjan tillgången finns på, och hämtningsregistret är offentligt.",
+      "flow": "Belöning ut"
+    },
+    "split": {
+      "label": "Avgifterna flödar tillbaka",
+      "actor": "Protokoll",
+      "body": "Större delen av protokollavgifterna går till dem som går; resten finansierar kassan och ekosystemet.",
+      "flow": "Större delen till sökarna"
+    }
+  },
+  "timelineStages": {
+    "open": {
+      "label": "Dropen öppnas",
+      "detail": "Du trycker på en tillgång på kartan eller sträcker dig efter den genom kameran. Appen tar positionen den redan har och startar ett nytt sensorfönster.",
+      "payload": "Tillgångs-ID, senast kända position"
+    },
+    "window": {
+      "label": "Sensorfönster",
+      "detail": "Det överlägset längsta steget, och det som avgör allt efter det: en ny GNSS-position med sin noggrannhet, en skanning av radiomiljön och rörelsespåret sedan den senast bekräftade positionen.",
+      "payload": "GNSS-position, antal satelliter, wifi- och mobilnät, accelerometerspår"
+    },
+    "attest": {
+      "label": "Attestering och signatur",
+      "detail": "Play Integrity eller App Attest bekräftar att appen är äkta och operativsystemet omanipulerat. Hämtningen signeras med nyckeln som är bunden till den appinstansen, vilket gör en vidarebefordrad hämtning dyr.",
+      "payload": "Attesteringstoken, signerad hämtning"
+    },
+    "score": {
+      "label": "Bedömning",
+      "detail": "Off-chain, eftersom den bygger på sensordata som inte har något att göra i det offentliga. Varje signal bedöms mot hur koordinaten borde se ut, och resultaten slås ihop till ett tillförlitlighetstal.",
+      "payload": "Tillförlitlighetspoäng, uppdelning per signal"
+    },
+    "threshold": {
+      "label": "Tröskelkontroll",
+      "detail": "Poängen klarar tillgångens tröskel eller inte. Ett nekande registreras mot enheten, och upprepade nekanden höjer ribban för den enheten i stället för att bara misslyckas igen.",
+      "payload": "Godkänn eller neka, signerat intyg"
+    },
+    "settle": {
+      "label": "Avveckling",
+      "detail": "Hämtningsregistret och överföringen landar på avvecklingskedjan i en transaktion. Det här är det enda steget någon annan kan se, och allt det säger är att en hämtning på en offentlig koordinat lyckades.",
+      "payload": "Hämtningsregister, tokenöverföring"
+    },
+    "confirm": {
+      "label": "I din plånbok",
+      "detail": "Plånboken uppdateras och tillgången försvinner från kartan för dig. Från tryck till innehav, under två sekunder med bra uppkoppling.",
+      "payload": "Saldouppdatering, kartstatus"
+    }
+  },
+  "referrals": {
+    "eyebrow": "Värvningar",
+    "title": "Varje vän som spelar gör dig starkare",
+    "lead": "Ge en vän din inbjudningskod så behåller du 5 % mer XP på varje fångst du gör, så länge de fortsätter spela. Inget tak, och det tas aldrig från deras sida.",
+    "codeLabel": "Din inbjudningskod på åtta tecken",
+    "activeLabel": "AKTIV",
+    "exampleLabel": "En legendary-fångst, före och efter",
+    "exampleBody": "Bonusen läggs på när fångsten poängsätts, på servern, och skrivs in i registret bredvid din klanrang så att de två kan skiljas åt senare.",
+    "activeRule": "Aktiv betyder {needed} fångster de senaste {days} dagarna",
+    "panelTitle": "DITT TEAM",
+    "rateLabel": "DIN NIVÅ",
+    "idle": "vilande",
+    "levelShort": "LV"
+  },
+  "referralRules": {
+    "once": {
+      "title": "En värvare, vald en gång",
+      "body": "En kod kan lösas in en enda gång och aldrig ändras efteråt. Databasen nekar det andra försöket, så det är inte en regel som appen kan övertalas att strunta i."
+    },
+    "newOnly": {
+      "title": "Bara nya konton",
+      "body": "En kod fungerar bara på ett konto utan XP och utan något insamlat än. En etablerad sökare kan inte ansluta sig till ett team i efterhand och räknas som ny."
+    },
+    "oneLevel": {
+      "title": "En nivå djupt",
+      "body": "Du tjänar på vännerna du tog in, inte på vännerna de tar in. De sökarna bygger sitt eget team och behåller allt."
+    },
+    "friendKeeps": {
+      "title": "Din vän förlorar ingenting",
+      "body": "Bonusen läggs på dina egna fångster. Det är inte en del av deras, så inget du vinner tas från någon."
+    }
+  },
+  "referralInfo": {
+    "openLabel": "Så fungerar värvningar, i sin helhet",
+    "close": "Stäng",
+    "eyebrow": "Värvningar i sin helhet",
+    "title": "Vad ett team är värt, och när det börjar räknas",
+    "lead": "Två saker är lätta att missförstå här. Bonusen har inget tak, och en vän börjar inte betala i samma stund som de installerar. Båda är värda att se snarare än att bara höra om.",
+    "ladderLabel": "Aktiva vänner, och vad dina fångster är värda",
+    "ladderFriends": "{count} spelar",
+    "noCap": "Det finns inget tak. Tjugo aktiva vänner är en ren fördubbling, och inget i summan stannar där.",
+    "lifecycleLabel": "Så blir en vän en värvning",
+    "foot": "En vän räknas när de har {needed} riktiga fångster inom {days} dagar. Kommer de inte upp i det slutar de räknas; spelar de igen är de tillbaka. Inget går förlorat åt något håll."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "Du lämnar över din kod",
+      "body": "Varje sökare får en kod på åtta tecken vid registreringen. Den är din för alltid och det finns inget att hämta eller generera."
+    },
+    "redeem": {
+      "title": "De anger den på ett nytt konto",
+      "body": "En kod fäster bara på ett konto utan XP och utan något insamlat. Den skrivs en gång och kan inte ändras efteråt, så ingen kan flyttas mellan team."
+    },
+    "play": {
+      "title": "De går ut och spelar",
+      "body": "Bara riktiga fångster räknas. Försök som görs i en simulator registreras separat och ingår inte i summan."
+    },
+    "count": {
+      "title": "De börjar betala, och fortsätter betala",
+      "body": "Det här är steget folk missar. Att installera räcker inte: vännen måste faktiskt vara ute innan din multiplikator rör sig."
+    }
+  },
+  "shop": {
+    "metaTitle": "Seekprotocol-butiken",
+    "metaDescription": "Kortpaket, Season Pass och boosts för ditt konto.",
+    "ogTitle": "Seekprotocol-butiken",
+    "eyebrow": "Butik",
+    "title": "Seekprotocol-butiken",
+    "lead": "Kortpaket, Season Pass och boosts för ditt konto.",
+    "howEyebrow": "Så funkar det",
+    "stepSignIn": "Logga in",
+    "stepSignInBody": "Samma konto som i appen: Google, Apple eller en kod via e-post.",
+    "stepPay": "Betala med krypto",
+    "stepPayBody": "Anslut Phantom, Solflare, Backpack eller valfri Wallet Standard-plånbok och godkänn en överföring.",
+    "stepOpen": "Öppna i appen",
+    "stepOpenBody": "Paketen hamnar på ditt konto så snart betalningen är klar. Öppna dem under Arena.",
+    "notConfigured": "Butiken är inte konfigurerad i den här driftsättningen.",
+    "loadingAccount": "Kontrollerar din session...",
+    "signInTitle": "Logga in för att köpa",
+    "signInLead": "Kortpaket, Season Pass och boosts för ditt konto.",
+    "continueGoogle": "Fortsätt med Google",
+    "continueApple": "Fortsätt med Apple",
+    "orEmail": "eller med en kod via e-post",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "du@exempel.se",
+    "sendCode": "Skicka kod",
+    "sendingCode": "Skickar...",
+    "codeSentTo": "Vi har skickat en 8-siffrig kod till {email}.",
+    "codeLabel": "Kod",
+    "verifyCode": "Logga in",
+    "verifying": "Kontrollerar...",
+    "useAnotherEmail": "Använd en annan e-post",
+    "signInFailed": "Inloggningen fungerade inte. Försök igen.",
+    "codeInvalid": "Koden stämde inte. Kolla mejlet och försök igen.",
+    "emailInvalid": "Ange en giltig e-postadress.",
+    "signedInAs": "Inloggad som",
+    "signOut": "Logga ut",
+    "productsEyebrow": "Paket",
+    "productsTitle": "Välj ett paketerbjudande",
+    "bundleSaving": "Spara {percent} %",
+    "paymentEyebrow": "Betalning",
+    "paymentTitle": "Välj hur du vill betala",
+    "paymentSolHint": "SOL · Phantom, Solflare med flera",
+    "paymentCrypto": "Betala med krypto",
+    "paymentDetails": "Valutor och betalningsdetaljer",
+    "packSingle": "Ett paket",
+    "packFive": "Fem paket",
+    "packTen": "Tio paket",
+    "packs": "{count, plural, one {# paket} other {# paket}}",
+    "perPack": "{price} per paket",
+    "solApprox": "ungefär {sol} SOL",
+    "solPending": "SOL-belopp vid uppdatering",
+    "rateFrom": "Kurs från {time}.",
+    "rateStale": "Den kan ha ändrats sedan dess.",
+    "rateNone": "Ingen SOL-kurs än.",
+    "refreshRate": "Uppdatera SOL-kursen",
+    "refreshing": "Hämtar kursen...",
+    "rateNote": "Det exakta SOL-beloppet låses när du skapar ordern och gäller i fem minuter.",
+    "waysToPay": "Två sätt att betala: SOL från en webbläsarplånbok på Solana, eller USDC, USDT, SOL, ETH, BTC med flera på Ethereum, Base, Arbitrum, Polygon, BNB, Tron och Bitcoin via Radoms betalsida.",
+    "buy": "Köp med SOL",
+    "payOther": "Betala med stablecoins eller annan krypto",
+    "connectToBuy": "Anslut en plånbok för att köpa",
+    "walletEyebrow": "Plånbok",
+    "walletTitle": "Betala från din plånbok",
+    "walletLead": "Phantom, Solflare, Backpack eller valfri plånbok som stöder Wallet Standard. Inget skickas förrän du godkänner det där.",
+    "walletSelect": "Välj plånbok",
+    "walletConnecting": "Ansluter...",
+    "walletConnect": "Anslut plånbok",
+    "walletCopy": "Kopiera adress",
+    "walletCopied": "Kopierad",
+    "walletChange": "Byt plånbok",
+    "walletDisconnect": "Koppla från",
+    "verificationNote": "En kort kontroll mot automatiserade köp. Den brukar bli klar av sig själv.",
+    "flowVerifying": "Slutför säkerhetskontrollen...",
+    "flowCreating": "Skapar din order...",
+    "flowReady": "Ordern är klar",
+    "flowPay": "Betala {sol} SOL",
+    "flowFor": "för {product}",
+    "flowHeld": "Priset hålls i {seconds} s",
+    "payInWallet": "Betala i plånboken",
+    "cancelOrder": "Avbryt",
+    "flowSigning": "Godkänn betalningen i din plånbok...",
+    "flowRedirecting": "Skickar dig till betalsidan...",
+    "flowChecking": "Kontrollerar din betalning, försök {attempt} av {total}...",
+    "flowConfirming": "Bekräftar on-chain, försök {attempt} av {total}...",
+    "flowPaid": "Betalt. {count, plural, one {# paket finns} other {# paket finns}} på ditt konto.",
+    "flowPaidAny": "Betalt. Ditt köp har levererats.",
+    "flowPending": "Din betalning bekräftas. Ditt köp dyker upp i appen efter leverans.",
+    "flowCancelled": "Ordern avbröts. Inget skickades.",
+    "viewTransaction": "Visa transaktionen",
+    "flowDone": "Klart",
+    "tryAgain": "Försök igen",
+    "errCheckoutUnavailable": "Butiken är pausad just nu. Försök igen senare.",
+    "errArenaUnavailable": "Arenan är inte öppen för det här kontot än. Öppna appen först.",
+    "errBuildRefused": "Köpet kunde inte verifieras från webbplatsen. Uppdatera sidan och försök igen.",
+    "errRateLimited": "För många försök. Vänta en stund och försök igen.",
+    "errOrderExpired": "Ordern gick ut innan den betalades. Skapa en ny.",
+    "errUnknownAction": "Butiken och servern är inte överens. Uppdatera sidan.",
+    "errUnknownProduct": "Den produkten säljs inte.",
+    "errAccountBlocked": "Det här kontot kan inte köpa paket.",
+    "errUnauthorized": "Din session har gått ut. Logga in igen.",
+    "errWalletRejected": "Plånboken nekade betalningen.",
+    "errInsufficient": "Inte tillräckligt med SOL i plånboken för beloppet plus nätverksavgiften.",
+    "errWalletFailed": "Plånboken kunde inte skicka transaktionen.",
+    "errNetwork": "Kunde inte nå servern. Kolla din anslutning och försök igen.",
+    "errCaptcha": "Verifieringen slutfördes inte. Försök igen.",
+    "errRadomUnavailable": "Betalsidan är inte tillgänglig just nu. Försök igen senare eller betala med en Solana-plånbok.",
+    "errGeneric": "Något gick fel. Försök igen.",
+    "packsEyebrow": "Dina paket",
+    "packsWaiting": "{count, plural, =0 {Inga paket väntar} one {# paket väntar} other {# paket väntar}}",
+    "packsHint": "Öppna dem i appen, under Arena.",
+    "packsLive": "Live",
+    "ordersEyebrow": "Senaste ordrar",
+    "ordersEmpty": "Inga ordrar än.",
+    "statusPending": "Väntar",
+    "statusPaid": "Betald",
+    "statusExpired": "Utgången",
+    "statusFailed": "Misslyckad",
+    "checkout": {
+      "steps": "Steg i kassan",
+      "details": "Uppgifter",
+      "payment": "Betalning",
+      "digitalDelivery": "DIGITAL LEVERANS",
+      "yourDetails": "Dina uppgifter",
+      "reviewPay": "Granska och betala",
+      "intro": "Kortpaket, Season Pass och boosts för ditt konto.",
+      "contact": "Kontakt",
+      "email": "E-postadress",
+      "signedInAccount": "Inloggat konto",
+      "emailNote": "Din verifierade inloggningsadress. Byt konto med Logga ut ovan.",
+      "name": "Namn (valfritt)",
+      "deliverTo": "Vilket konto ska få ditt köp?",
+      "inApp": "Levereras i Seekprotocol",
+      "friendsId": "Vän-ID",
+      "optional": "valfritt",
+      "friendsNote": "Vän-ID är valfritt. Lämna det tomt för att leverera till Seekprotocol-kontot som är kopplat till din nuvarande inloggning. För ett annat konto anger du dess Vän-ID på 8 tecken.",
+      "checking": "Kontrollerar kontot…",
+      "continue": "Fortsätt till betalning",
+      "invalidFriend": "Vi hittade inget tillgängligt konto med det här Vän-ID:t. Kolla koden på 8 tecken.",
+      "recipientUnavailable": "Arena är inte tillgänglig för det här kontot än. Välj en annan mottagare.",
+      "detailsFailed": "Vi kunde inte kontrollera kontot. Dina uppgifter är sparade här; försök igen.",
+      "receivingAccount": "Mottagande konto",
+      "yourAccount": "Ditt inloggade konto",
+      "otherAccount": "Ditt köp går till det här kontot.",
+      "change": "Ändra",
+      "solWallet": "Solana-plånbok",
+      "radomNote": "Fortsätt till Radom för att välja valuta och nätverk. Granska eventuell nätverksavgift innan du bekräftar.",
+      "walletNote": "Godkänn betalningen i din plånbok. Nästa steg visar det exakta SOL-beloppet.",
+      "payNow": "Betala {price}",
+      "supportNote": "Varje order har en referens och en leveransstatus. Spara referensen om du behöver hjälp med ditt köp.",
+      "orderSummary": "Ordersammanfattning",
+      "oneTime": "Engångsköp",
+      "digitalPacks": "Digitala kortpaket",
+      "bundle": "Välj ditt paketerbjudande",
+      "subtotal": "Delsumma",
+      "delivery": "Leverans",
+      "toAccount": "Seekprotocol-konto",
+      "total": "Totalt",
+      "feeNote": "Nätverksavgifter kan tillkomma. Betalningsleverantören eller plånboken visar dem innan du godkänner.",
+      "linkedDelivery": "Kopplat till det valda kontot",
+      "linkedDeliveryNote": "När betalningen är bekräftad levereras ditt köp till det valda Seekprotocol-kontot.",
+      "receipt": "Orderdetaljer",
+      "refreshStatus": "Uppdatera status",
+      "orderNumber": "Orderreferens",
+      "receiptFailed": "Vi kunde inte ladda den här ordern. Spara referensen och försök uppdatera.",
+      "orderSaved": "Ordern sparad",
+      "paymentReceived": "Betalningen bekräftad",
+      "paymentWaiting": "Väntar på bekräftelse av betalningen",
+      "delivered": "Köpet levererat",
+      "deliveryWaiting": "Väntar på leverans",
+      "closedOrder": "Den här ordern är stängd. Om pengar har lämnat din plånbok, kontakta supporten med den här referensen innan du betalar igen.",
+      "pendingNote": "Om du redan har betalat, betala inte igen. Uppdatera statusen; leveransen kontrolleras också automatiskt.",
+      "loadingReceipt": "Laddar ordern…",
+      "calculating": "Beräknar…"
+    },
+    "errRecipient": "Vi kunde inte kontrollera kontot. Dina uppgifter är sparade här; försök igen.",
+    "errPreparing": "Din order förbereds fortfarande. Försök igen om en liten stund; vi återanvänder samma order.",
+    "history": {
+      "title": "Mina ordrar",
+      "lead": "Dina köp i butiken, även paket som skickats till ett annat konto. Kolla betalning och leverans här.",
+      "shortLead": "Se dina tidigare köp, betalningsstatus och leverans.",
+      "viewOrders": "Visa mina ordrar",
+      "navigation": "Butik och konto",
+      "shop": "Tillbaka till butiken",
+      "signInTitle": "Logga in för att se dina ordrar",
+      "signInLead": "Använd samma konto som du köpte med. Bara dina egna ordrar visas.",
+      "autoUpdate": "Statusen uppdateras automatiskt.",
+      "updated": "Senast uppdaterad: {time}",
+      "loading": "Laddar ordrar…",
+      "loadFailed": "Vi kunde inte uppdatera dina ordrar. Statusen som visas kan vara inaktuell. Prova Uppdatera status.",
+      "emptyTitle": "Inga ordrar än",
+      "emptyLead": "Ordrar som läggs med det här kontot visas här.",
+      "purchase": "Seekprotocol-köp",
+      "paymentLabel": "Betalning",
+      "deliveryLabel": "Leverans",
+      "paidNotDelivered": "Din betalning är bekräftad. Leveransen behandlas fortfarande. Betala inte igen; leveransstatusen uppdateras automatiskt.",
+      "pagination": "Sidor i orderhistoriken",
+      "previous": "Föregående",
+      "next": "Nästa",
+      "page": "Sida {page}",
+      "orderedAt": "Beställd",
+      "paidAt": "Betald",
+      "deliveredAt": "Krediterad",
+      "payment": {
+        "paid": "Betald",
+        "pending": "Väntar på betalning",
+        "expired": "Utgången",
+        "failed": "Inte slutförd",
+        "unknown": "Okänd status"
+      },
+      "delivery": {
+        "delivered": "Köpet levererat",
+        "processing": "Leverans pågår",
+        "notDelivered": "Inte krediterad",
+        "awaitingPayment": "Efter bekräftad betalning"
+      },
+      "overview": "Orderöversikt",
+      "pageSize": "{count} ordrar per sida",
+      "orderShort": "Order #{reference}",
+      "recipient": "Till {name}",
+      "moreProducts": "+ {count} produkter till",
+      "reorder": "Bygg varukorgen igen",
+      "resume": "Återuppta betalningen",
+      "checkPayment": "Kontrollera betalningen",
+      "checkingPayment": "Kontrollerar betalningen…",
+      "actionFailed": "Vi kunde inte kontrollera den här betalningen. Försök igen.",
+      "viewDetails": "Visa orderdetaljer",
+      "quantity": "Antal: {count}",
+      "currencyNote": "Produkterna behåller sina ursprungliga valutor. Summan är beloppet som låstes för den här betalningen, omräknat när ordern lades.",
+      "actionResult": {
+        "paid": "Din betalning är bekräftad. Leveransstatusen uppdateras.",
+        "pending": "Betalningen är inte bekräftad än. Om du redan har betalat, betala inte igen.",
+        "closed": "Den här betalningen är stängd. Bygg varukorgen igen för att fortsätta."
+      },
+      "restore": {
+        "loading": "Kontrollerar den tidigare ordern…",
+        "ready": "Din varukorg är återställd. Kolla aktuella priser och mottagande konto innan du betalar igen.",
+        "failed": "Vi kunde inte återställa den här ordern. Betalningen kan fortfarande behandlas eller en produkt kan vara otillgänglig. Uppdatera orderstatusen först."
+      }
+    },
+    "catalogLoading": "Laddar produkter…",
+    "catalogFailed": "Produkterna kunde inte laddas. Försök igen.",
+    "catalogEmpty": "Inga produkter finns tillgängliga just nu.",
+    "errCatalogChanged": "Den här produkten har ändrats. Uppdatera produkterna och granska priset innan du betalar.",
+    "catalogTitle": "Välj din produkt",
+    "catalogLead": "Kortpaket, Season Pass och boosts för ditt konto.",
+    "passSeason": "Gäller för den aktuella säsongen. Engångsköp.",
+    "cardsInPacks": "5 kort per paket",
+    "recipientPrompt": "Vilket konto ska få ditt köp?",
+    "recipientOther": "Ditt köp går till det här kontot.",
+    "purchaseDelivered": "Köpet levererat",
+    "errPassUnavailable": "Passet går inte att köpa just nu.",
+    "errPassOwned": "Det här kontot har redan ett aktivt Pass.",
+    "errPassPending": "En order på Pass för det här kontot är fortfarande öppen. Kolla dess betalningsstatus innan du försöker igen.",
+    "friendsHelp": "Vän-ID är valfritt. Lämna det tomt för att leverera till Seekprotocol-kontot som är kopplat till din nuvarande inloggning. För ett annat konto anger du dess Vän-ID på 8 tecken.",
+    "productKinds": {
+      "pack": "Kortpaket",
+      "pass": "Pass",
+      "consumable": "Boost",
+      "bundle": "Paketerbjudande"
+    },
+    "powerupNames": {
+      "rare_boost": "Shiba",
+      "coin_magnet": "Spawn Magnet",
+      "to_the_moon": "XP Boost",
+      "pump_it": "Pump It",
+      "diamond_hands": "Diamond Hands",
+      "spawn_lure": "Spawn Lure",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
+    },
+    "cart": {
+      "add": "Lägg {product} i varukorgen",
+      "quantity": "Antal för {product}",
+      "decrease": "Minska antal",
+      "increase": "Öka antal",
+      "remove": "Ta bort",
+      "empty": "Din varukorg är tom. Lägg till en eller flera produkter ovan.",
+      "conversion": "Produkter i olika valutor räknas om till en totalsumma i USD i kassan."
+    },
+    "errCart": "Kolla antalen i varukorgen. Du kan köpa upp till 50 kortpaket och ett Pass per order.",
+    "login": {
+      "heading": "Logga in med ditt appkonto",
+      "existingOnly": "Använd samma inloggningsmetod som i Seekprotocol-appen. Butiken är bara till för befintliga appkonton.",
+      "methods": "Inloggningsmetoder",
+      "continueWith": "Fortsätt med {provider}",
+      "notAvailable": "Tillfälligt otillgänglig",
+      "unavailable": "Den här inloggningsmetoden är inte tillgänglig just nu. Försök igen senare eller använd en annan metod som redan är kopplad till ditt appkonto.",
+      "methodsFailed": "Vissa inloggningsmetoder kunde inte laddas.",
+      "orEmail": "eller logga in med e-post",
+      "emailMethod": "Inloggning med e-post",
+      "emailCode": "E-postkod",
+      "signIn": "Logga in",
+      "emailNotSent": "Koden kunde inte skickas. Använd e-postadressen till ditt befintliga appkonto och försök igen.",
+      "appRequired": "Du behöver ett befintligt appkonto för att använda butiken. Skapa ditt konto eller slutför uppsättningen i Seekprotocol-appen först, och kom sedan tillbaka hit.",
+      "noAccount": "Inget appkonto än? Skapa ett i Seekprotocol-appen. Du kan inte registrera dig i butiken.",
+      "changeAccount": "Använd ett annat konto",
+      "expired": "Det här inloggningsförsöket har gått ut. Börja om från butiken.",
+      "wallet": "Fortsätt med Solana-plånbok",
+      "connectWallet": "Anslut plånbok",
+      "walletSignIn": "Logga in med den här plånboken",
+      "walletSigning": "Bekräfta i din plånbok…",
+      "changeWallet": "Välj en annan plånbok",
+      "walletCannotSign": "Den här plånboken kan inte signera ett inloggningsmeddelande. Välj en annan plånbok som är kopplad till ditt appkonto.",
+      "walletFailed": "Inloggningen med plånboken misslyckades eller avbröts. Försök igen med en plånbok som är kopplad till ditt appkonto.",
+      "emailHelp": "Vi skickar en inloggningskod till dig. Använd e-postadressen till ditt appkonto.",
+      "welcome": "Välkommen tillbaka.",
+      "intro": "Logga in med ditt Seekprotocol-appkonto.",
+      "socialHeading": "Med ditt konto",
+      "socialHelp": "Välj inloggningsmetoden du använder i appen.",
+      "accountNote": "Endast för befintliga appkonton. Skapa ett nytt konto i Seekprotocol-appen.",
+      "availabilityNote": "Gråmarkerade inloggningsmetoder är tillfälligt otillgängliga."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Nyfiken på vad det är? Tryck på ett frågetecken på kartan och se vad som döljer sig där, var det än är på din karta.",
+      "coin_magnet": "Mer att hitta på promenaden. Fler mynt dyker upp i närheten i 30 minuter.",
+      "to_the_moon": "Få mer av varje försök. Tjäna 3× XP från myntfångstförsök i 30 minuter.",
+      "pump_it": "En kortlåda till. Fånga en extra arenakortlåda i dag, utöver din dagliga gräns.",
+      "diamond_hands": "För långt att gå? Fånga ett mynt på upp till 500 meters avstånd, med den vanliga chansen.",
+      "spawn_lure": "Locka jakten till dig. Dra till dig mynt för spelare i närheten i 30 minuter. Kräver medlemskap i en klan.",
+      "cash": "Gör små mynt till ett sällsyntare. Byt i 30 minuter 3 vanliga mot 1 ovanligt, 3 ovanliga mot 1 sällsynt eller 5 sällsynta mot 1 legendariskt.",
+      "fitness": "Nå mycket längre. Fånga mynt på upp till 80 meters avstånd i 15 minuter.",
+      "chill_guy": "Se dig ordentligt omkring. Se vad de 15 närmaste spawnerna är i 15 minuter, i stället för 5.",
+      "this_is_fine": "Missat? Ingen panik. Efter din nästa miss förblir myntet ditt i 2 minuter så att ingen annan kan ta det. Gäller i upp till 15 minuter."
+    },
+    "productInfo": {
+      "more": "Om den här produkten",
+      "includes": "Det här får du",
+      "use": "Så använder du den",
+      "pack": "Varje paket innehåller 5 slumpmässiga Arena-kort. Öppna dina paket i Arena i appen och upptäck vilka kort du fick. Dubbletter kan förekomma; ett visst kort är inte garanterat.",
+      "pass": "Få fler möten med rare-, epic- och legendary-mynt under den aktuella säsongen, plus ett rare-mynt varje vecka att hämta i appen. Passet slutar med säsongen och förnyas inte automatiskt.",
+      "bundle": "De listade boostrarna läggs till separat i ditt förråd. Välj vilken du aktiverar först; deras effekter körs inte samtidigt.",
+      "delivery": "Levereras till ditt valda Seekprotocol-konto när betalningen är bekräftad. Utan Vän-ID går köpet till appkontot som är kopplat till din inloggning.",
+      "passName": "Season Pass",
+      "bundleName": "Boost-paket",
+      "activate": "Läggs i ditt förråd efter köp. Aktivera i appbutiken när du vill. Bara en booster kan vara aktiv åt gången."
+    }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | AR- och AI-skattjakter med riktiga belöningar",
+    "description": "Upplev framtiden med $SEEK, AR- och AI-lagret för belöningar som finns på en plats. Jaga platsbaserade drops, samla NFT:er, lös in kuponger, vinn fysiska varor och utforska med AI-kompanjoner. En belöning kan vara en token på vilken kedja som helst, eller inte ha med någon kedja att göra alls.",
+    "socialDescription": "Jaga platsbaserade drops, samla NFT:er, lös in kuponger och vinn fysiska varor. AR- och AI-lagret som förankrar en belöning på en riktig plats, på vilken kedja som helst eller ingen alls.",
+    "skipToContent": "Hoppa till huvudinnehållet"
+  }
+}

@@ -13,7 +13,9 @@
     "shop": "商店",
     "getApp": "获取应用",
     "switchToLight": "切换到浅色模式",
-    "switchToDark": "切换到深色模式"
+    "switchToDark": "切换到深色模式",
+    "mainLabel": "主菜单",
+    "mobileLabel": "移动端菜单"
   },
   "footer": {
     "home": "首页",
@@ -33,7 +35,9 @@
     "resources": "资源",
     "appStore": "App Store",
     "googlePlay": "Google Play",
-    "seekPartners": "Seek Partners"
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "在 App Store 下载",
+    "googlePlayAlt": "在 Google Play 获取"
   },
   "home": {
     "heroTitle": "探索新现实",
@@ -156,13 +160,15 @@
     "renameLink": "阅读公告",
     "legacyEyebrow": "名称沿革",
     "legacyTitle": "加密 AR 应用 SeekAR 现在名为 Seekprotocol",
-    "legacyBody": "只有应用名称变了；公司名称一直是 Seekprotocol。自发布至 2026 年 8 月期间在 iOS 与 Android 上以 SeekAR 之名发布的移动应用现在名为 Seekprotocol。相同产品、相同发行方（Block Protocol L.L.C-FZ，位于阿联酋迪拜）、相同的 App Store 列表（id 6752813761）以及相同的 Play Store 包名（com.seekar.seekar）。其他产品、艺人和地点也在使用 Seekar 这个名字；本页专门介绍的是面向链上奖励的多链 AR 应用。",
+    "legacyBody": "只有应用名称变了；公司名称一直是 Seekprotocol。自发布至 2026 年 8 月期间在 iOS 与 Android 上以 SeekAR 之名发布的移动应用现在名为 Seekprotocol。相同产品、相同发行方（Block Protocol L.L.C-FZ，位于阿联酋迪拜）、相同的 App Store 列表（id 6752813761）以及相同的 Play Store 包名（com.seekar.seekar）。其他产品、艺人和地点也在使用 Seekar 这个名字；本页专门介绍的是这款多链 AR 加密货币奖励应用。",
     "q6": "SeekAR 应用怎么了？",
     "a6": "以 SeekAR 之名发布的面向链上奖励的 AR 移动应用已于 2026 年 8 月 10 日更名为 Seekprotocol。相同产品、相同发行方（Block Protocol L.L.C-FZ，位于迪拜）、相同的 App Store 列表（id 6752813761）、相同的 Play Store 包名（com.seekar.seekar）。仅名称和图标发生了变化。",
     "q7": "在哪里下载曾经被称为 SeekAR 的应用？",
     "a7": "在 App Store 的 apps.apple.com/app/id6752813761 和 Google Play 的 play.google.com/store/apps/details?id=com.seekar.seekar。两个列表现在均以 Seekprotocol 命名。",
     "q8": "Seekprotocol 与 SeekAR 是同一款产品吗？",
-    "a8": "是的。公司名称一直是 Seekprotocol，只有应用名称变了。从发布至 2026 年 8 月期间被称为 SeekAR 的面向链上奖励的多链 AR 应用如今被称为 Seekprotocol，由位于阿联酋迪拜的 Block Protocol L.L.C-FZ 的同一支团队发布。"
+    "a8": "是的。公司名称一直是 Seekprotocol，只有应用名称变了。从发布至 2026 年 8 月期间名为 SeekAR 的多链 AR 加密货币奖励应用，如今名为 Seekprotocol，由位于阿联酋迪拜的 Block Protocol L.L.C-FZ 的同一支团队发布。",
+    "stepsEyebrow": "分步说明",
+    "faqEyebrow": "常见问题"
   },
   "about": {
     "heroTitle": "发现基于位置的数字体验的未来",
@@ -225,7 +231,13 @@
     "ctaDesc": "走进一个全新的现实，让世界成为您的游乐场。Seekprotocol 将您的周围变成互动冒险，融合最新的 AR 技术与真实世界探索。",
     "metaTitle": "关于 Seekprotocol 背后的团队",
     "metaDescription": "认识为每一条链构建位置增强现实的团队：位置证明背后的想法、Seekprotocol 的技术，以及 $SEEK 背后的人。",
-    "ogTitle": "Seekprotocol 背后的团队"
+    "ogTitle": "Seekprotocol 背后的团队",
+    "eyebrow": "关于我们",
+    "whyEyebrow": "我们为何打造它",
+    "techEyebrow": "技术",
+    "pillarsEyebrow": "支柱",
+    "teamEyebrow": "团队",
+    "linkedinLabel": "{name} 的 LinkedIn"
   },
   "contact": {
     "getInTouch": "联系我们",
@@ -241,7 +253,11 @@
     "pressTitle": "媒体与新闻",
     "pressBody": "报道、采访、试用副本、禁运稿件。编辑事宜请从此处联系，我们当天回复。",
     "supportTitle": "支持",
-    "supportBody": "报错、未到账的奖励、钱包问题。最快的通道是 Discord，此表单也能受理。"
+    "supportBody": "报错、未到账的奖励、钱包问题。最快的通道是 Discord，此表单也能受理。",
+    "eyebrow": "联系我们",
+    "elsewhere": "其他渠道",
+    "documentation": "文档",
+    "registeredOffice": "注册办事处"
   },
   "services": {
     "heroTitle": "我们的专业，您的增长",
@@ -282,7 +298,7 @@
     "agencies": "代理商和顾问",
     "agenciesDesc": "通过高价值内容建立权威。",
     "localBusinesses": "本地企业",
-    "localBusinessesDesc": "帮助您与当地及更广泛地区的客户建立联系。",
+    "localBusinessesDesc": "帮助您与所在城市及更远地区的客户建立联系。",
     "largeCorporations": "大型企业",
     "largeCorporationsDesc": "撰写清晰有效的信息以增强您的品牌。",
     "ctaConnect": "联系我们",
@@ -301,7 +317,8 @@
     "relatedPages": "相关页面",
     "metaTitle": "博客：AR、AI 与基于位置的奖励",
     "metaDescription": "关于增强现实、AI 伙伴、地理围栏空投与位置证明的文章，来自构建 Seekprotocol 的团队。",
-    "ogTitle": "Seekprotocol 博客"
+    "ogTitle": "Seekprotocol 博客",
+    "eyebrow": "博客"
   },
   "forms": {
     "emailPlaceholder": "电子邮件地址",
@@ -343,13 +360,15 @@
     "rejectAll": "全部拒绝",
     "customize": "自定义",
     "savePreferences": "保存偏好",
-    "cookieSettings": "Cookie 设置"
+    "cookieSettings": "Cookie 设置",
+    "toggleLabel": "切换{category}"
   },
   "notFound": {
     "pageNotFound": "页面未找到",
     "pageNotFoundDesc": "您查找的页面不存在或已被移动",
     "oops": "糟糕，页面未找到",
-    "backToHome": "返回首页"
+    "backToHome": "返回首页",
+    "errorCode": "错误 404 · 此坐标无信号"
   },
   "metrics": {
     "text1": "无限资产。",
@@ -425,12 +444,13 @@
     "contactP1": "如果您在使用本应用时对隐私保护有任何疑问，或对本政策中描述的数据处理规范有任何问题，请通过以下方式联系服务提供商：",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "隐私政策",
-    "metaDescription": "Seekprotocol 与 Seekprotocol 如何处理位置数据、传感器读数与钱包信息：收集什么、保留多久，以及什么绝不共享。",
+    "metaDescription": "Seekprotocol 如何处理位置数据、传感器读数与钱包信息：收集什么、保留多久，以及什么绝不共享。",
     "ogTitle": "Seekprotocol 的隐私做法",
     "raspTitle": "Talsec freeRASP：安全诊断",
     "raspP1": "在启用 freeRASP 的版本中，Talsec（Lynx SFT s.r.o.）会接收应用和操作系统的安全诊断、设备型号信息以及应用实例和设备标识符。信号可能涉及 root 权限、模拟器、应用篡改、调试和挂钩。相关版本运行时会自动发送这些数据；可选性能分析的设置不会停用此类数据传输。",
     "raspP2": "Talsec 使用这些数据生成安全报告、改进其免费和商业安全产品，并开展汇总性研究。Talsec 说明其在美国进行云端处理。不能假定设备标识符在所有隐私法律下都完全匿名。请通过下方链接查阅 Talsec 的数据政策。",
-    "raspP3": "我们自己的后端也会在收集尝试记录中保存威胁名称，这些记录可能与您的账户关联。我们的回调处理不会上传其他已安装应用的列表。这些是设备报告的信号，其本身不能证明存在欺诈。"
+    "raspP3": "我们自己的后端也会在收集尝试记录中保存威胁名称，这些记录可能与您的账户关联。我们的回调处理不会上传其他已安装应用的列表。这些是设备报告的信号，其本身不能证明存在欺诈。",
+    "eyebrow": "法律信息"
   },
   "termsPage": {
     "title": "条款与条件",
@@ -452,7 +472,8 @@
     "contactP1": "如果您对本条款与条件有任何疑问或建议，请随时通过 <email>support@seekprotocol.ai</email> 联系服务提供商。",
     "metaTitle": "条款与条件",
     "metaDescription": "使用 Seekprotocol 与 Seekprotocol 平台的条款：你的权利、领取资产的规则，以及付费项目的运作方式。",
-    "ogTitle": "Seekprotocol 使用条款"
+    "ogTitle": "Seekprotocol 使用条款",
+    "eyebrow": "法律信息"
   },
   "languageSwitcher": {
     "en": "English",
@@ -486,7 +507,17 @@
     "close": "关闭",
     "secondsAgo": "{seconds} 秒前",
     "zoomIn": "放大",
-    "zoomOut": "缩小"
+    "zoomOut": "缩小",
+    "busiest": "当前最活跃",
+    "units": "数量",
+    "zoomLabel": "缩放",
+    "hubsLabel": "跳转到城市",
+    "wholeEarth": "整个地球",
+    "zoomLevel": "缩放 {percent}%",
+    "caught": "捕获成功 · +{xp, number} XP",
+    "escaped": "它溜走了 · 重试成功率 {percent}%",
+    "tryCatch": "试着捕获它",
+    "globeAria": "展示 Seekprotocol 全球收集动态的交互式地球仪"
   },
   "homeSteps": {
     "placed": {
@@ -2310,7 +2341,7 @@
             "items": [
               "**交由治理**：费用加权、协议费用中归探寻者的比例、金库分配、半径上下限，以及高价值资产可选的置信门槛。",
               "**延迟生效地交由治理**：任何会改变已投放资产价值的事项。一个按某套费率注资的活动，理应在同一套费率下结束。",
-              "**不交由治理**：第十三章中的隐私承诺。保留期限与拒绝公开行动数据不是参数，一次投票也不是削弱它们的正当途径。",
+              "**不交由治理**：第十四章中的隐私承诺。保留期限与拒绝公开行动数据不是参数，一次投票也不是削弱它们的正当途径。",
               "**不交由治理**：单次领取的结果。被拒绝的领取属于争议处理的范畴，而不是投票的范畴。"
             ]
           },
@@ -2426,7 +2457,7 @@
           },
           {
             "kind": "p",
-            "text": "$SEEK 被设计为实用与协调资产，第九章所述的用途是真实的，而非装饰性的。这是一个设计立场，不是法律结论。定性因辖区而异，也随时间变化，不是一份白皮书靠断言就能定下的。因此在当地规则要求的地方，我们会限制其可用性。"
+            "text": "$SEEK 被设计为实用与协调资产，第十章所述的用途是真实的，而非装饰性的。这是一个设计立场，不是法律结论。定性因辖区而异，也随时间变化，不是一份白皮书靠断言就能定下的。因此在当地规则要求的地方，我们会限制其可用性。"
           },
           {
             "kind": "h",
@@ -2470,7 +2501,7 @@
           },
           {
             "kind": "p",
-            "text": "拖拽式的活动搭建器已经完成。接下来是把投放开放到协助式合作之外的自助商业后台，以及配套的到访分析。与之并行的还有代币生成事件、现场活动模式、赛季与实物扫描。等到真实的费用流足以让参数决定具有意义时，治理才会跟上，理由见第十一章。"
+            "text": "拖拽式的活动搭建器已经完成。接下来是把投放开放到协助式合作之外的自助商业后台，以及配套的到访分析。与之并行的还有代币生成事件、现场活动模式、赛季与实物扫描。等到真实的费用流足以让参数决定具有意义时，治理才会跟上，理由见第十二章。"
           },
           {
             "kind": "h",
@@ -2481,7 +2512,7 @@
             "items": [
               "治理的具体日期。它取决于成交量，而成交量不是一个日期。",
               "室内精度与室外持平。这是个难题，诚实的答案是在可预见的未来，室内继续使用更大的半径。",
-              "跨链部署。第五章中对延迟与成本的要求很窄，一条达不到这些要求的第二链，只会是营销决定而不是技术决定。"
+              "为了新链而新增一条链。第六章中对延迟与成本的要求很窄，增加一条达不到这些要求的链，只会是营销决定而不是技术决定。"
             ]
           },
           {
@@ -2685,7 +2716,8 @@
     "runOne": "跑一次刷新",
     "runThousand": "跑一千次",
     "reset": "重置",
-    "ladderCaption": "迁移公布的{rarity}是 {first}%，随后 {second}%，整个刷新点合计 {overall}%。那是本模型在 5 级、环充满且无战队加成时的结果，也正是滑块的初始位置。捕获到的是游戏内单位，它在代币上值多少是市场的事，不是游戏的事。"
+    "ladderCaption": "迁移公布的{rarity}是 {first}%，随后 {second}%，整个刷新点合计 {overall}%。那是本模型在 5 级、环充满且无战队加成时的结果，也正是滑块的初始位置。捕获到的是游戏内单位，它在代币上值多少是市场的事，不是游戏的事。",
+    "tocTitle": "目录"
   },
   "stackLayers": {
     "app": {
@@ -3012,10 +3044,10 @@
       "emailNote": "这是已验证的登录邮箱。如需切换账号，请在上方退出登录。",
       "name": "姓名（选填）",
       "deliverTo": "哪个账户接收你的购买商品？",
-      "inApp": "在SeekAR内领取",
+      "inApp": "在 Seekprotocol 内领取",
       "friendsId": "Friends ID",
       "optional": "选填",
-      "friendsNote": "Friends ID 为选填。留空时，商品将发放到当前登录所关联的 SeekAR 账户。若要发送给其他账户，请输入其 8 位 Friends ID。",
+      "friendsNote": "Friends ID 为选填。留空时，商品将发放到当前登录所关联的 Seekprotocol 账户。若要发送给其他账户，请输入其 8 位 Friends ID。",
       "checking": "正在核对账号…",
       "continue": "继续付款",
       "invalidFriend": "未找到此Friends ID对应的可用账号。请检查8位代码。",
@@ -3036,11 +3068,11 @@
       "bundle": "选择组合",
       "subtotal": "小计",
       "delivery": "交付",
-      "toAccount": "SeekAR账号",
+      "toAccount": "Seekprotocol 账号",
       "total": "总计",
       "feeNote": "可能产生网络费用。支付服务或钱包会在你批准前显示费用。",
       "linkedDelivery": "关联至所选账号",
-      "linkedDeliveryNote": "付款确认后，商品将发放到所选的 SeekAR 账户。",
+      "linkedDeliveryNote": "付款确认后，商品将发放到所选的 Seekprotocol 账户。",
       "receipt": "订单详情",
       "refreshStatus": "刷新状态",
       "orderNumber": "订单参考编号",
@@ -3072,7 +3104,7 @@
       "loadFailed": "无法更新订单。当前显示的状态可能已过时。请尝试刷新状态。",
       "emptyTitle": "暂无订单",
       "emptyLead": "使用此账号下单后，订单将显示在这里。",
-      "purchase": "SeekAR购买",
+      "purchase": "Seekprotocol 购买",
       "paymentLabel": "付款",
       "deliveryLabel": "发放",
       "paidNotDelivered": "付款已确认，购买内容正在发放。请勿再次付款，发放状态会自动更新。",
@@ -3134,7 +3166,7 @@
     "errPassUnavailable": "目前无法购买 Pass。",
     "errPassOwned": "此账户已有有效的 Pass。",
     "errPassPending": "此账户还有未完成的 Pass 订单，请先查看付款状态。",
-    "friendsHelp": "Friends ID 为选填。留空时，商品将发放到当前登录所关联的 SeekAR 账户。若要发送给其他账户，请输入其 8 位 Friends ID。",
+    "friendsHelp": "Friends ID 为选填。留空时，商品将发放到当前登录所关联的 Seekprotocol 账户。若要发送给其他账户，请输入其 8 位 Friends ID。",
     "productKinds": {
       "pack": "卡包",
       "pass": "Pass",
@@ -3214,10 +3246,16 @@
       "pack": "每个卡包包含5张随机Arena卡牌。在应用的Arena中打开卡包，发现获得的卡牌。可能获得重复卡牌，不保证获得某张指定卡牌。",
       "pass": "在当前赛季更常遇到稀有、史诗和传说金币，并可每周在应用中领取一枚稀有金币。通行证在当前赛季结束时到期，不会自动续期。",
       "bundle": "所列增益将分别加入背包。你可以选择先激活哪一个；它们的效果不能同时生效。",
-      "delivery": "付款确认后，商品将发放至你选择的SeekAR账号。未填写Friends ID时，将发放至与你当前登录关联的应用账号。",
+      "delivery": "付款确认后，商品将发放至你选择的Seekprotocol 账号。未填写Friends ID时，将发放至与你当前登录关联的应用账号。",
       "passName": "赛季通行证",
       "bundleName": "增益组合包",
       "activate": "购买后存入背包，准备好时在游戏内商店中激活。同一时间只能启用一个增益。"
     }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | AR 与 AI 寻宝，赢取真实奖励",
+    "description": "与 $SEEK 一起体验未来：这是为扎根于真实地点的奖励而生的 AR 与 AI 层。追寻基于位置的空投，收集 NFT，兑换代金券，赢取真实商品，并与 AI 伙伴一同探索。奖励可以是任意链上的代币，也可以与链毫无关系。",
+    "socialDescription": "追寻基于位置的空投，收集 NFT，兑换代金券，赢取真实商品。AR 与 AI 层将奖励锚定在真实地点，可在任意链上，也可完全不依赖链。",
+    "skipToContent": "跳到主要内容"
   }
 }

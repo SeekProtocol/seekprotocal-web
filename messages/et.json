@@ -1,0 +1,3261 @@
+{
+  "nav": {
+    "home": "Avaleht",
+    "seekar": "Äpp",
+    "about": "Meist",
+    "whitepaper": "Whitepaper",
+    "contact": "Kontakt",
+    "toggleMenu": "Ava või sulge navigeerimismenüü",
+    "ecosystem": "Ökosüsteem",
+    "roadmap": "Teekaart",
+    "business": "Ettevõtetele",
+    "blog": "Blogi",
+    "shop": "Pood",
+    "getApp": "Laadi äpp alla",
+    "switchToLight": "Lülitu heledale režiimile",
+    "switchToDark": "Lülitu tumedale režiimile",
+    "mainLabel": "Peamenüü",
+    "mobileLabel": "Mobiilimenüü"
+  },
+  "footer": {
+    "home": "Avaleht",
+    "about": "Meist",
+    "contact": "Kontakt",
+    "blog": "Blogi",
+    "whitepaper": "Whitepaper",
+    "tokenDashboard": "Tokeni töölaud",
+    "address": "Block Protocol L.L.C-FZ Meydan Grandstand, 6th floor, Meydan Road, Nad AlSheba, Dubai, U.A.E.",
+    "description": "Seekprotocol on uue põlvkonna platvorm, mille on arendanud Block Protocol L.L.C-FZ. See ühendab liitreaalsuse, AI ja plokiahela, et luua päris maailmas mängulisi elamusi.",
+    "copyright": "© 2024-2026 Block Protocol. Kõik õigused kaitstud",
+    "privacyPolicy": "Privaatsuspoliitika",
+    "termsOfService": "Kasutustingimused",
+    "cookieSettings": "Küpsiste seaded",
+    "product": "Toode",
+    "company": "Ettevõte",
+    "resources": "Materjalid",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "Laadi alla App Store'ist",
+    "googlePlayAlt": "Hangi Google Playst"
+  },
+  "home": {
+    "heroTitle": "Avasta uus reaalsus koos",
+    "heroTitleHighlight": "Seekprotocoliga",
+    "heroSubtitle": "AR ja AI kiht auhindadele, mis elavad kindlas kohas: token mis tahes plokiahelas, kupong, mis kassas kehtib, asi, mis ilmub kasti. Kõnni koordinaatideni, suuna telefon ja korja üles, mis sinna jäeti.",
+    "downloadAppStore": "Laadi alla App Store'ist",
+    "downloadGooglePlay": "Hangi Google Playst",
+    "benefitsTitle": "Piiramatud",
+    "benefitsTitleHighlight": "võimalused!",
+    "benefitAR": "Liitreaalsus",
+    "benefitARDesc": "Muuda iga koht interaktiivseks aardejahiks AR-tehnoloogiaga, mis äratab digitaalsed varad ellu.",
+    "benefitSeekToEarn": "Seek-to-Earn",
+    "benefitSeekToEarnDesc": "Muuda oma igapäevane liikumine auhindadeks. Iga samm, jooks ja seiklus viib airdropide ja teiste peidetud aareteni.",
+    "benefitLiveEvents": "Otseüritused",
+    "benefitLiveEventsDesc": "Liitu päris maailma kokkusaamistega, mida rikastavad AR-auhinnad, alates kohalikest meetupidest kuni hiiglaslike üle linna aardejahtideni.",
+    "benefitCreatorTools": "Loojatööriistad",
+    "benefitCreatorToolsDesc": "Meie lohista ja pane tööriist laseb igaühel käivitada AR-kampaaniaid, jagada NFT-sid, tokeneid ja varasid ning kaasata publikut suures mahus.",
+    "benefitGeofencing": "Geopiirde tehnoloogia",
+    "benefitGeofencingDesc": "Täpne GPS-põhine varade paigutus 30-meetrise täpsusega, mis võimaldab asukohaga kinnitatud auhindu ja elamusi.",
+    "benefitQuests": "Ülesanded",
+    "benefitQuestsDesc": "Dünaamilised missioonid, mis kohanduvad sinu asukoha, oskuste taseme ja eelistustega ning mille auhinnad ja väljakutsed kasvavad.",
+    "futureTitle": "Asukohapõhiste interaktsioonide tulevik",
+    "futureDesc": "Koge võtmetehnoloogiate murrangulist kokkusulamist. Iga uuendus põimub teistega sujuvalt ja muudab sinu füüsilise maailma mänguliseks teenimise ökosüsteemiks, kus igal sammul on väärtus, igas kohas peitub võimalus ja iga seiklus premeerib sind päris digitaalsete varadega",
+    "serviceLocationAirdrops": "Asukohapõhised airdropid",
+    "serviceLocationAirdropsDesc": "Geopiirde tehnoloogia võimaldab paigutada digitaalseid varasid täpselt kindlatele GPS-koordinaatidele. Kesklinnadest peidetud pärlideni: iga koht võib saada auhinnatsooniks. Eksklusiivsed NFT-d, tokenite airdropid ja piiratud kollektsiooniesemed ootavad avastamist.",
+    "serviceImmersiveAR": "Kaasahaarav AR-tehnoloogia",
+    "serviceImmersiveARDesc": "Koge uue põlvkonna liitreaalsust, mis sulandab digitaalsed varad sujuvalt sinu füüsilise keskkonnaga. Meie arenenud AR-mootor pakub vapustavaid 3D-visualiseeringuid, keskkonna kaardistamist reaalajas ja püsivat maailma ankurdamist. Vaata, kuidas NFT-d ellu ärkavad, tokenid õhus hõljuvad, ja suhtle digitaalsete objektidega, nagu oleksid need päriselt kohal.",
+    "serviceAIPersonalization": "AI-põhine isikupärastamine",
+    "serviceAIPersonalizationDesc": "Sinu AI-kaaslane ei juhenda sind lihtsalt: ta näeb AR-i kaudu seda, mida sina näed, analüüsib sinu keskkonda ja annab reaalajas kontekstipõhiseid vihjeid. Kujuta ette AI-d, mis tunneb ära vaatamisväärsused, et näidata kohalikke söögikohti, soovitab sinu mängustiili põhjal parimaid jalutusteekondi ja loob isegi lennult isikupärast AR-sisu.",
+    "serviceMoveToEarn": "Move-to-Earn kohtub otseüritustega",
+    "serviceMoveToEarnDesc": "Liitu suurte AR-otseüritustega, kus tuhanded mängijad kogunevad päris maailma kohtumistele digitaalsete auhindadega. Kujuta ette muusikafestivale, kus osalejatele langevad eksklusiivsed auhinnad, spordiüritusi asukohaga lukustatud kollektsiooniesemetega või üle linna aardejahte auhinnafondidega.",
+    "threePathsTitle": "Kolm teed edasi",
+    "pathBlockchain": "Plokiahela jõul",
+    "pathBlockchainDesc": "Iga NFT, token ja mängusisene vara on plokiahelas kaitstud. See tähendab päris omandit, tõestatavat ausust ja auhindu, mida saad päriselt kasutada nii Seekprotocolis kui ka väljaspool seda.",
+    "pathAI": "AI jõul",
+    "pathAIDesc": "Meie AI õpib, kuidas sa avastad ja mängid, ning annab sulle nutikamaid asukohavihjeid, isikupäraseid ülesandeid ja auhindu, millel on päriselt tähendus. Mida rohkem liigud, seda paremaks see läheb.",
+    "pathProofOfLocation": "Asukoha tõend",
+    "pathProofOfLocationDesc": "Iga sinu samm on tõend. Meie süsteem kinnitab sinu päris asukoha, et avada tokeneid, NFT-sid ja muid digitaalseid varasid. Ilma sohita, ainult päris auhinnad päris osaluse eest.",
+    "builtToScale": "EHITATUD KOOS SINUGA KASVAMA",
+    "builtToScaleDesc": "Olgu sa projekti käivitamas või oma linna avastamas, Seekprotocol toetab sinu teekonda kaasahaarava tehnoloogia, kinnitatud kohaloleku ja päris auhindadega.",
+    "interested": "Huvitatud?",
+    "scaleOnboarding": "Sujuv liitumine",
+    "scaleOnboardingDesc": "Kiire algus kasutajatele, loojatele ja ettevõtetele. Sotsiaalsete rahakottide loomisest esimeste AR-üritusteni: teeme liitumise mänguks, mitte paberimajanduseks.",
+    "scaleProjectLaunch": "Projekti käivitamise integratsioon",
+    "scaleProjectLaunchDesc": "Olgu sa meme coin või missiooniga projekt, ühendu meie AR-, AI- ja auhinnakihtidega. Käivita üritusi, tokenite spawne või NFT-ülesandeid, kõik asukohapõhised ja mängulised.",
+    "scaleBusinessPortal": "Ärikeskkonna aktiveerimine",
+    "scaleBusinessPortalDesc": "Kohalikud poed ja globaalsed brändid: liituge Seeki ökosüsteemiga. Pakkuge eksklusiivseid pakkumisi ja asukohapõhiseid auhindu ning tooge digitaalsete stiimulitega päris külastajaid.",
+    "scaleEngagement": "Kaasamismootor",
+    "scaleEngagementDesc": "Soovitusülesanded, edetabeliseeriad ja gildimissioonid: täielik tööriistakomplekt kasutajate igapäevase, iganädalase ja sotsiaalse aktiivsuse kasvatamiseks.",
+    "scaleCrossPlatform": "Platvormideülene levik",
+    "scaleCrossPlatformDesc": "Üks profiil ja üks rahakott nii iOS-is kui ka Androidis, mis hoiab varasid igast plokiahelast, kus me arveldame. Lõputud Seeki elamused, igal pool ja igal ajal.",
+    "featuredOn": "MEIST ON KIRJUTANUD:",
+    "joinBeta": "Liitu meie betaga",
+    "getReady": "Valmistu otsima!",
+    "ctaDesc": "Astu uude reaalsusse, kus maailmast saab sinu mänguväljak. Seekprotocol muudab sinu ümbruse interaktiivseks seikluseks, ühendades uusima AR-tehnoloogia päris maailma avastamisega. Leia peidetud aardeid, kogu väärtuslikke digitaalseid auhindu ja vallutada dünaamilisi ülesandeid!",
+    "coinReadoutLabel": "Signaal lukus",
+    "coinReadoutAccuracy": "Täpsus {meters} m",
+    "beyondEyebrow": "Müntidest kaugemale",
+    "beyondTitle": "Drop ei pea olema token",
+    "beyondLead": "Kõike, mida saab anda inimesele, saab anda ka kohale. Allahindlus kassas, füüsiline asi, mis poes ootab, pääse, mis on olemas ainult kohapeal. Kaubandustänava jaoks on münt tavaliselt neist kõige vähem huvitav.",
+    "howEyebrow": "Kuidas see töötab",
+    "howTitle": "Kolm sammu ja kolmas maksab",
+    "liveEyebrow": "Elav võrk",
+    "liveTitle": "Vali linn ja proovi õnne",
+    "liveLead": "Hüppa mis tahes keskusesse, toksa münti, et näha, kes selle üles korjas, ja proovi ise ühte püüda, äpi päris tõenäosustega.",
+    "foundationsEyebrow": "Alused",
+    "readWhitepaper": "Loe tehnilist whitepaperit",
+    "metaTitle": "Seekprotocol | AR-aardejahid päris auhindade nimel",
+    "metaDescription": "Jahi liitreaalsuses asukohapõhiseid auhindu: tokeneid mis tahes plokiahelas, kuponge, päris kaupu. Seekprotocol seob need päris kohtadega ja tõestab, et sa olid seal.",
+    "ogTitle": "Seekprotocol | AR ja AI päris maailma auhindadeks",
+    "heroEyebrow": "AR · AI · Iga auhind",
+    "placeReward": "Paiguta auhind oma koordinaatidele",
+    "exploreEcosystem": "Avasta ökosüsteemi",
+    "viewRoadmap": "Vaata teekaarti",
+    "polCtaEyebrow": "Asukoha tõend",
+    "polCtaTitle": "Kohalolek, kinnitatud",
+    "polCtaBody": "Enne kui lunastus vastu võetakse, peavad neli sõltumatut signaali kokku langema. Lihtsas keeles selgitus on blogis.",
+    "polCtaLink": "Kuidas asukoha tõend töötab"
+  },
+  "seekarPage": {
+    "metaTitle": "Seekprotocol | AR-aardejahi äpp",
+    "metaDescription": "Seekprotocol on Seekprotocoli liitreaalsuse äpp. Jahi auhindu päris koordinaatidel: tokeneid mis tahes plokiahelas, kuponge ja päris kaupu. Tasuta iOS-is ja Androidis.",
+    "ogTitle": "Seekprotocol | AR-aardejahi äpp",
+    "eyebrow": "Äpp",
+    "heroTitle": "Seekprotocol",
+    "heroDesc": "Seekprotocoli liitreaalsuse äpp. Suuna telefon maailma poole ja leia, mis sinna paigutatud on: tokenid, NFT-d, kupongid ja asjad, mis saabuvad kastis, kõik ankurdatud päris koordinaatidele.",
+    "whatTitle": "Mis on Seekprotocol?",
+    "whatBody": "Seekprotocol on meie lipulaeva mobiiliäpp, tasuta iOS-is ja Androidis. See muudab iga tänava, pargi või toimumiskoha paigaks, kuhu saab digitaalseid varasid peita ja kust neid saab lunastada. Avaldaja paigutab auhinna koordinaadile; sina pead selle kättesaamiseks füüsiliselt kohal olema ja protokoll tõestab, et sa olid. Ei emulaatoreid, ei võltsimist, ei otseteid.",
+    "featuresTitle": "Mida sa teha saad",
+    "f1Title": "Jahi asukohapõhiseid airdrope",
+    "f1Desc": "Tokenid ja NFT-d on ankurdatud päris koordinaatidele. Kõnni kohale, ava kaamera ja lunasta see, mis ootab.",
+    "f2Title": "Kogu liitreaalsuses",
+    "f2Desc": "Varad ilmuvad kaamera kaudu maailma, õiges suuruses ja õiges kohas, mitte nimekirjana ekraanil.",
+    "f3Title": "Avasta koos AI-kaaslastega",
+    "f3Desc": "AI-giid reageerib sellele, kus sa oled ja mis on läheduses, ning näitab, mille pärast tasub kõndida.",
+    "f4Title": "Teeni päris krüptoauhindu",
+    "f4Desc": "Kõik arveldatakse selles plokiahelas, kus vara juba elab. Mida kogud, on sinu oma, sinu rahakotis, ja liigub koos sinuga.",
+    "howTitle": "Kuidas see töötab",
+    "s1Title": "Laadi alla ja ava",
+    "s1Desc": "Tasuta App Store'is ja Google Plays. Sulle luuakse rahakott; sul ei pea varem privaatvõtit olnud olema.",
+    "s2Title": "Leia, mis on sinu lähedal",
+    "s2Desc": "Kaart näitab, mis sinu ümber paigutatud on. Vali midagi ja kõnni selleni.",
+    "s3Title": "Tõesta, et oled kohal, ja lunasta",
+    "s3Desc": "Asukoha tõend kinnitab sinu kohaloleku plokiahelas ja vara jõuab sinu rahakotti.",
+    "faqTitle": "Korduma kippuvad küsimused",
+    "q1": "Kas Seekprotocol on tasuta?",
+    "a1": "Jah. Seekprotocoli saab iOS-is ja Androidis tasuta alla laadida. Mõned äpisisesed asjad on tasulised, aga jahtimine ja lunastamine mitte.",
+    "q2": "Kes teeb Seekprotocoli?",
+    "a2": "Seekprotocoli ehitab Seekprotocol, mis on Dubais asuva Block Protocol L.L.C-FZ toode. See on AR- ja AI-äpp päris kohtadesse ankurdatud auhindade jaoks, mis tahes plokiahelas või üldse ilma, saadaval App Store'is ja Google Plays.",
+    "q3": "Kas ma pean krüptost midagi teadma?",
+    "a3": "Ei. Kui äpi avad, luuakse sulle rahakott, ja sa saad varasid koguda ja hoida ilma, et peaksid kunagi ise seemnelausega tegelema.",
+    "q4": "Millistel telefonidel Seekprotocol töötab?",
+    "a4": "Uuematel iPhone'idel ja AR-toega Android-seadmetel. Mõlemal versioonil on samad funktsioonid.",
+    "q5": "Kas ma saan oma asukohta võltsida?",
+    "a5": "Ei. Asukoha tõend kinnitab sinu päris kohaloleku plokiahelas ja just see teeb lunastuse väärtuslikuks avaldajale, kes auhinna paigutas.",
+    "ctaTitle": "Laadi Seekprotocol alla",
+    "ctaDesc": "Tasuta iOS-is ja Androidis. Sinu linn on juba täis asju, mida tasub leida.",
+    "renameTitle": "SeekAR äpp on nüüd Seekprotocol",
+    "renameBody": "Sama äpp, sama konto, sama kaart. Muutus ainult äpi nimi; ettevõte on alati olnud Seekprotocol. Üks teine ettevõte esitas vana äpinime kohta kaubamärgitaotluse, seega viisime äpi üle nimele, mis on alati meile kuulunud.",
+    "renameLink": "Loe teadaannet",
+    "legacyEyebrow": "Nime ajalugu",
+    "legacyTitle": "SeekAR krüpto-AR-äpp on nüüd Seekprotocol",
+    "legacyBody": "Muutus ainult äpi nimi; ettevõte on alati olnud Seekprotocol. Mobiiliäpp, mis ilmus iOS-is ja Androidis nime all SeekAR alates käivitamisest kuni 2026. aasta augustini, kannab nüüd nime Seekprotocol. Sama toode, sama avaldaja, Block Protocol L.L.C-FZ, Dubai, AÜE, sama App Store'i leht (id 6752813761) ja sama Play Store'i pakett (com.seekar.seekar). Nime Seekar kasutavad ka teised tooted, artistid ja kohad; see leht kirjeldab konkreetselt mitme plokiahela AR- ja krüptoauhindade äppi.",
+    "q6": "Mis juhtus SeekAR äpiga?",
+    "a6": "Plokiahela krüptoauhindade AR-mobiiliäpp, mis ilmus nime all SeekAR, nimetati 10. augustil 2026 ümber Seekprotocoliks. Sama toode, sama avaldaja (Block Protocol L.L.C-FZ, Dubai), sama App Store'i leht (id 6752813761), sama Play Store'i pakett (com.seekar.seekar). Muutusid ainult nimi ja ikoon.",
+    "q7": "Kust ma saan alla laadida äpi, mille nimi oli varem SeekAR?",
+    "a7": "App Store'ist aadressil apps.apple.com/app/id6752813761 ja Google Playst aadressil play.google.com/store/apps/details?id=com.seekar.seekar. Mõlema lehe pealkiri on nüüd Seekprotocol.",
+    "q8": "Kas Seekprotocol on sama toode mis SeekAR?",
+    "a8": "Jah. Ettevõtte nimi on alati olnud Seekprotocol; muutus ainult äpi nimi. Mitme plokiahela AR-krüptoauhindade äpp, mille nimi oli käivitamisest kuni 2026. aasta augustini SeekAR, kannab nüüd nime Seekprotocol ja seda avaldab sama meeskond Block Protocol L.L.C-FZ-s Dubais, AÜE-s.",
+    "stepsEyebrow": "Samm-sammult",
+    "faqEyebrow": "KKK"
+  },
+  "about": {
+    "heroTitle": "Avasta asukohapõhiste digitaalsete elamuste tulevik",
+    "heroDesc": "Seekprotocol muudab päris maailma avastamise tasuvateks seiklusteks, kasutades arenenud liitreaalsust ja plokiahela tehnoloogiat.",
+    "whySeekprotocol": "Miks Seekprotocol?",
+    "whyDesc": "Kui teised ehitavad äppe, ehitame meie revolutsiooni. Seekprotocol ühendab füüsilise ja digitaalse maailma asukohapõhise AR-tehnoloogiaga, mis muudab iga sammu võimaluseks. Meie detsentraliseeritud auhinnasüsteem tagab, et avastamine tasub end ära, sõna otseses mõttes. Me ei loo lihtsalt elamusi; me rajame teed uuele majandusele, kus päris maailma avastused loovad päris väärtust. Alla meetrise täpsusega jälgimise, vapustavate AR-visualiseeringute ja plokiahela auhindadega teeme nähtamatu nähtavaks ja võimatu tulusaks.",
+    "letsConnect": "Võtame ühendust",
+    "ourValues": "Meie väärtused",
+    "whatDrivesUs": "MIS MEID KÄIVITAB",
+    "valueLocationIntelligence": "Asukohaintellekt",
+    "valueLocationIntelligenceDesc": "Alla meetrise täpsusega geoandmete tehnoloogia, mis reageerib igale sinu liigutusele reaalajas.",
+    "valueARInnovation": "AR-innovatsioon",
+    "valueARInnovationDesc": "Tipptasemel liitreaalsus, mis sulandab digitaalsed aarded sujuvalt sinu füüsilise maailmaga.",
+    "valueSocialDiscovery": "Sotsiaalne avastamine",
+    "valueSocialDiscoveryDesc": "Tee tiim lähedal olevate avastajatega, et saada mitmekordseid auhindu ja ühiseid saavutusi.",
+    "valueCrossChainRewards": "Plokiahelateülesed auhinnad",
+    "valueCrossChainRewardsDesc": "Teeni mitu airdropi, NFT-d ja muid digitaalseid varasid erinevates plokiahela võrkudes.",
+    "valueProofOfExploration": "Avastamise tõend",
+    "valueProofOfExplorationDesc": "Kontrollitavad plokiahela kirjed sinu avastustest loovad püsiva seikluste pärandi.",
+    "readyToSeek": "Valmis otsima?",
+    "startExploring": "Alusta avastamist",
+    "coreTechnologies": "PÕHITEHNOLOOGIAD, MIDA KASUTAME",
+    "coreTechDesc": "Seekprotocolis mõistame, et avastamine vajab eesmärki. Me ei paku kõigile ühesuguseid elamusi. Loome igale kasutajale dünaamilisi, asukohateadlikke seiklusi.",
+    "techGeospatial": "GEOKAARDISTAMINE",
+    "techGeospatialDesc": "Reaalajas asukoha jälgimine dünaamilise geopiirdega, mis loob kontekstiteadlikke elamusi.",
+    "techAR": "AR-RENDERDAMINE",
+    "techARDesc": "Arenenud renderdusmehaanika ja ruumiline arvutus kaasahaarava liitreaalsuse jaoks.",
+    "techBlockchain": "PLOKIAHELA AUHINNAD",
+    "techBlockchainDesc": "Päris auhinnad päris avastamise ja osaluse eest.",
+    "techSync": "KOHENE SÜNKROONIMINE",
+    "techSyncDesc": "Reaalajas uuendused kõigile mängijatele. Vaata avastusi otse, kui need üle maailma juhtuvad.",
+    "threePillars": "EDU KOLM SAMBAT",
+    "threePillarsDesc": "Seekprotocoli tuumas on kolm revolutsioonilist tehnoloogiat, mis muudavad seda, kuidas me maailmaga suhtleme.",
+    "pillarAR": "Liitreaalsus",
+    "pillarARDesc": "Tipptasemel AR, mis paljastab palja silmaga nähtamatud peidetud digitaalsed kihid.",
+    "pillarLocation": "Asukoha täpsus",
+    "pillarLocationDesc": "Alla meetrise täpsusega GPS dünaamilise geopiirdega, mis teab täpselt, kuhu airdropid on paigutatud.",
+    "pillarReward": "Auhindade jagamine",
+    "pillarRewardDesc": "Detsentraliseeritud fondid, mis tagavad iga Seekprotocoli kasutaja jaoks õiglase, kohese ja läbipaistva teenistuse.",
+    "ourApproach": "Meie lähenemine",
+    "approachTitle": "KUS AVASTAMINE KOHTUB AUHINDADEGA",
+    "approachDesc": "Igal kohal on rääkimata väärtus. Meie töö? Avada see nii, et see köidaks, premeeriks ja tooks otsijad ikka ja jälle tagasi.",
+    "approachTreasureHunts": "Aardejahid, mis erutavad",
+    "approachTreasureHuntsDesc": "Dünaamilised asukohapõhised väljakutsed.",
+    "approachARExperiences": "AR-elamused, mis hämmastavad",
+    "approachARExperiencesDesc": "Kaasahaaravad digitaalsed kihid reaalsuse peal.",
+    "approachRewardPools": "Auhinnafondid, mis maksavad",
+    "approachRewardPoolsDesc": "Kogukonna juhitud teenimisvõimalused.",
+    "approachSocial": "Sotsiaalsed funktsioonid, mis ühendavad",
+    "approachSocialDesc": "Mitme kasutaja avastamine ja koostöö.",
+    "approachAnalytics": "Analüütika, mis informeerib",
+    "approachAnalyticsDesc": "Reaalajas ülevaade avastamismustritest.",
+    "approachEvents": "Üritused, mis liidavad",
+    "approachEventsDesc": "Ajaliselt piiratud kogukonnaüritused, mis toovad massid kokku. Kujuta ette Pokémon-Go reide Web3 stiilis.",
+    "approachCollaborations": "Koostööd, mis loovad",
+    "approachCollaborationsDesc": "Kasutajate loodud sisu ja väljakutsed.",
+    "ourTeam": "Meie vinge meeskond",
+    "joinBeta": "Liitu meie betaga",
+    "getReady": "Valmistu otsima!",
+    "ctaDesc": "Astu uude reaalsusse, kus maailmast saab sinu mänguväljak. Seekprotocol muudab sinu ümbruse interaktiivseks seikluseks, ühendades uusima AR-tehnoloogia päris maailma avastamisega.",
+    "metaTitle": "Seekprotocoli taga olev meeskond",
+    "metaDescription": "Tutvu meeskonnaga, kes ehitab asukohapõhist AR-i igale plokiahelale: asukoha tõendi missioon, Seekprotocoli tehnoloogia ja inimesed $SEEK taga.",
+    "ogTitle": "Seekprotocoli meeskond",
+    "eyebrow": "Meist",
+    "whyEyebrow": "Miks me seda ehitame",
+    "techEyebrow": "Tehnoloogia",
+    "pillarsEyebrow": "Sambad",
+    "teamEyebrow": "Meeskond",
+    "linkedinLabel": "{name} LinkedInis"
+  },
+  "contact": {
+    "getInTouch": "Võta ühendust",
+    "formDesc": "Täida allolev vorm ja vastame sulle esimesel võimalusel.",
+    "metaTitle": "Kontakt: partnerlused ja kampaaniad",
+    "metaDescription": "Räägi Seekprotocoli meeskonnaga kampaaniast oma koordinaatidel, partnerlustest, beetale pääsust või meediast.",
+    "ogTitle": "Võta ühendust Seekprotocoliga",
+    "inquiryTypesEyebrow": "Või täpsemalt",
+    "partnershipsTitle": "Partnerlused",
+    "partnershipsBody": "Sul on projekt, intellektuaalomand või asukohtade võrgustik, mida tahad Seeki tuua. Ütle meile, mis ja kus, ülejäänu teeme meie.",
+    "publishersTitle": "Avaldajad",
+    "publishersBody": "Tahad paigutada AR-kampaaniaid kindlatele koordinaatidele ja maksta iga kinnitatud külastuse eest. Saada asukoht ja pakkumine; seadistame kampaania koos sinuga.",
+    "pressTitle": "Meedia",
+    "pressBody": "Kajastus, intervjuud, arvustuseksemplarid, embargoga uudised. Kirjuta meile siia kõige toimetusliku kohta ja vastame samal päeval.",
+    "supportTitle": "Tugi",
+    "supportBody": "Viga, lunastus, mis ei jõudnud kohale, küsimus rahakoti kohta. Kiireim tee on Discord, aga ka see vorm töötab.",
+    "eyebrow": "Kontakt",
+    "elsewhere": "Mujal",
+    "documentation": "Dokumentatsioon",
+    "registeredOffice": "Registrijärgne asukoht"
+  },
+  "services": {
+    "heroTitle": "MEIE ASJATUNDLIKKUS, SINU KASV",
+    "heroDesc": "Seekprotocol pakub tipptasemel AR-, AI- ja plokiahelalahendusi kõigis suuremates plokiahelates. Me ei ehita lihtsalt tehnoloogiat. Oleme sinu partnerid päris maailma kaasatuse muutmisel.",
+    "letsContact": "Võtame ühendust",
+    "businessStrategy": "Äristrateegia",
+    "businessStrategyDesc": "Kohandatud strateegiad, mis viivad ärieesmärgid kooskõlla digitaalse kasvuga.",
+    "visualDirection": "Visuaalne suund",
+    "visualDirectionDesc": "Loome ühtseid ja ajatuid brändiidentiteete, mis tabavad sinu visiooni.",
+    "websiteCreation": "Veebilehtede loomine",
+    "websiteCreationDesc": "Täielikult kohanduvad veebilehed, mis on ehitatud kiirust ja elegantsi silmas pidades.",
+    "contentSolutions": "Sisulahendused",
+    "contentSolutionsDesc": "Püüa tähelepanu ja kasvata tugeva sisusuunaga.",
+    "campaignExecution": "Kampaaniate elluviimine",
+    "campaignExecutionDesc": "Käivita tulemuslik turundus digikanalites ja platvormidel.",
+    "uiuxSystems": "UI/UX süsteemid",
+    "uiuxSystemsDesc": "Kujunda sujuvad ja funktsionaalsed kasutajateekonnad eri seadmetes ja voogudes.",
+    "growthTactics": "Kasvutaktikad",
+    "growthTacticsDesc": "Strateegilised meetodid brändi nähtavuse tõstmiseks ja kasvamiseks.",
+    "copywriting": "Tekstiloome",
+    "copywritingDesc": "Loome ühtseid ja ajatuid brändiidentiteete, mis tabavad sinu visiooni.",
+    "details": "Üksikasjad",
+    "pricingTitle": "Hinnad: paindlikud iga teenuse jaoks",
+    "pricingDesc": "Mõistame, et igal ettevõttel on oma eelarve, seepärast põhineb meie hind valitud moodulil.",
+    "pricingQuestion": "Valmis oma projekti põhjalikumalt arutama?",
+    "scheduleConsultation": "Broneeri konsultatsioon",
+    "smallModule": "Väike moodul",
+    "smallModuleDesc": "Sobib väiksematele logodele ja lühikestele sõnumitele.",
+    "mediumModule": "Keskmine moodul",
+    "mediumModuleDesc": "Pakub rohkem ruumi sinu brändisisule.",
+    "largeModule": "Suur moodul",
+    "largeModuleDesc": "Kõige silmapaistvam koht kaardil.",
+    "whoWeWorkWith": "Kellega me töötame",
+    "smallBusinesses": "Väikeettevõtted ja idufirmad",
+    "smallBusinessesDesc": "Loome sinu hääle ja hoolitseme, et seda kuuldaks.",
+    "ecommerce": "E-kaubanduse brändid",
+    "ecommerceDesc": "Kirjutame veenvaid tootekirjeldusi, mis müüvad.",
+    "agencies": "Agentuurid ja konsultandid",
+    "agenciesDesc": "Ehitame autoriteeti kõrge väärtusega sisuga.",
+    "localBusinesses": "Kohalikud ettevõtted",
+    "localBusinessesDesc": "Aitame sul jõuda klientideni sinu linnas ja kaugemal.",
+    "largeCorporations": "Suurettevõtted",
+    "largeCorporationsDesc": "Kirjutame selgeid ja tõhusaid sõnumeid, mis tugevdavad sinu brändi.",
+    "ctaConnect": "Võtame ühendust",
+    "ctaTitle": "KAS SUL ON IDEE VÕI TAHAD PROJEKTIGA ALUSTADA?"
+  },
+  "blog": {
+    "title": "Seekprotocoli blogi",
+    "desc": "Mõtteid, uudiseid ja süvaanalüüse liitreaalsusest, AI-st, plokiahela tehnoloogiast ja asukohapõhiste elamuste tulevikust.",
+    "read": "lugemist",
+    "backToBlog": "← Tagasi blogisse",
+    "readyToSeek": "Valmis otsima hakkama?",
+    "readyToSeekDesc": "Laadi Seekprotocol alla ja muuda oma maailm plokiahela jõul töötavaks mänguväljakuks.",
+    "moreArticles": "Rohkem artikleid",
+    "keepReading": "Loe edasi",
+    "allArticles": "Kõik artiklid",
+    "relatedPages": "Seotud lehed",
+    "metaTitle": "Blogi: AR, AI ja asukohapõhised auhinnad",
+    "metaDescription": "Artiklid liitreaalsusest, AI-kaaslastest, geopiirdega airdropidest ja asukoha tõendist, Seekprotocoli ehitavalt meeskonnalt.",
+    "ogTitle": "Seekprotocoli blogi",
+    "eyebrow": "Blogi"
+  },
+  "forms": {
+    "emailPlaceholder": "E-posti aadress",
+    "sendNow": "Saada kohe",
+    "sending": "Saatmine...",
+    "captchaError": "Palun lõpeta captcha kontroll.",
+    "genericError": "Midagi läks valesti.",
+    "genericErrorRetry": "Midagi läks valesti. Palun proovi uuesti.",
+    "successMessage": "Aitäh! Sinu sõnum on kätte saadud!",
+    "yourName": "Sinu nimi",
+    "namePlaceholder": "Sisesta oma nimi",
+    "yourEmail": "Sinu e-post",
+    "emailInputPlaceholder": "Sisesta oma e-post",
+    "message": "Sõnum",
+    "messagePlaceholder": "Kirjuta siia",
+    "yourPhone": "Telefoninumber",
+    "phonePlaceholder": "Sisesta oma telefoninumber",
+    "validationRequired": "See väli on kohustuslik",
+    "validationEmail": "Palun sisesta kehtiv e-posti aadress",
+    "validationPhone": "Palun sisesta kehtiv telefoninumber",
+    "validationName": "Palun sisesta oma nimi",
+    "optional": "valikuline"
+  },
+  "cookies": {
+    "title": "Küpsiste eelistused",
+    "subtitle": "Halda oma privaatsusseadeid",
+    "description": "Kasutame küpsiseid, et parandada sinu sirvimiskogemust, pakkuda isikupärastatud sisu ja analüüsida oma liiklust. Klõpsates „Nõustu kõigiga”, nõustud küpsiste kasutamisega.",
+    "readMore": "Loe lähemalt meie",
+    "privacyPolicy": "Privaatsuspoliitikast",
+    "necessary": "Vajalikud",
+    "necessaryDesc": "Vajalikud veebilehe korralikuks toimimiseks. Neid ei saa välja lülitada.",
+    "functional": "Funktsionaalsed",
+    "functionalDesc": "Võimaldavad täiustatud funktsioone ja isikupärastamist.",
+    "analytics": "Analüütika",
+    "analyticsDesc": "Aitavad meil mõista, kuidas külastajad meie veebilehega suhtlevad.",
+    "marketing": "Turundus",
+    "marketingDesc": "Kasutatakse asjakohaste reklaamide näitamiseks ja kampaaniate jälgimiseks.",
+    "acceptAll": "Nõustu kõigiga",
+    "rejectAll": "Keeldu kõigist",
+    "customize": "Kohanda",
+    "savePreferences": "Salvesta eelistused",
+    "cookieSettings": "Küpsiste seaded",
+    "toggleLabel": "Lülita {category}"
+  },
+  "notFound": {
+    "pageNotFound": "Lehte ei leitud",
+    "pageNotFoundDesc": "Lehte, mida otsid, ei ole olemas või see on teisaldatud",
+    "oops": "Oih, lehte ei leitud",
+    "backToHome": "Tagasi avalehele",
+    "errorCode": "Viga 404 · Sellel koordinaadil pole signaali"
+  },
+  "metrics": {
+    "text1": "PIIRAMATUD VARAD.",
+    "text2": "PÄRIS KAASATUS.",
+    "text3": "OTSI. KOGU. TEENI"
+  },
+  "privacyPolicyPage": {
+    "title": "Privaatsuspoliitika",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Uuendatud: 6. september 2026",
+    "introTitle": "Sissejuhatus",
+    "introP1": "See privaatsuspoliitika kehtib Seekprotocoli mobiilirakenduse kohta (edaspidi „Rakendus”), mille on arendanud ja mida haldab Block Protocol LLC (edaspidi „Teenusepakkuja”) tasuta teenusena mobiilseadmetele. Rakendust pakutakse põhimõttel „NAGU ON”.",
+    "introP2": "Seekprotocol on uue põlvkonna liitreaalsuse, tehisintellekti ja plokiahelaga integreeritud platvorm, mis loob oma kasutajatele mängulisi elamusi päris maailmas. Nende elamuste olemuse tõttu töötleb Rakendus mitut liiki isikuandmeid, et pakkuda oma funktsioone täielikult ja turvaliselt. See poliitika kirjeldab täies ulatuses, milliseid andmeid kogutakse, miks neid kogutakse, kuidas neid käsitletakse, kellega neid võidakse jagada ja millised õigused on kasutajatel oma isikuandmete suhtes.",
+    "introP3": "Rakenduse allalaadimise ja kasutamisega nõustute käesolevas privaatsuspoliitikas kirjeldatud andmetöötlustavadega. Seda poliitikat tuleks regulaarselt üle vaadata, sest seda võidakse aeg-ajalt uuendada, et kajastada muudatusi andmetöötlustavades, kohaldatavates seadustes või Rakenduse funktsioonides.",
+    "part1Title": "I osa: Teabe kogumine ja kasutamine",
+    "part1P1": "Rakendus kogub teavet, kui te selle alla laadite ja seda kasutate. See hõlmab kasutamise ajal automaatselt kogutavaid tehnilisi andmeid, nagu teie seadme internetiprotokolli (IP) aadress, Rakenduse lehed või jaotised, mida külastate, külastuste kellaaeg ja kuupäev, neil lehtedel veedetud aeg ning teave teie mobiilseadmes töötava operatsioonisüsteemi kohta.",
+    "part1P2": "Lisaks neile automaatselt kogutud tehnilistele andmetele kogub Rakendus mitut liiki isikuandmeid, mida on kõiki allpool täielikult kirjeldatud.",
+    "part1P3": "Kõik Rakenduse kogutud andmed edastatakse ja salvestatakse edastamise ajal krüpteerituna, tagades, et teave on kaitstud, kui see liigub teie seadme ja Teenusepakkuja süsteemide vahel.",
+    "part1s1Title": "1. Konto loomine",
+    "part1s1P1": "Rakendus toetab mitut viisi, kuidas kasutajad saavad oma kontosid luua ja neile ligi pääseda. Nende hulka kuuluvad autentimine kasutajanime ja parooliga, kasutajanimi koos muude autentimisviisidega, kasutajanimi koos parooli ja täiendavate autentimisteguritega ning OAuth-põhine autentimine toetatud väliste identiteedipakkujate kaudu. Kasutaja valitud konto loomise viis määrab, milliseid kontoga seotud identifikaatoreid Rakendus kogub ja säilitab.",
+    "part1s2Title": "2. Isikuandmed",
+    "part1s2P1": "Rakendus kogub isikut tuvastavat teavet, sealhulgas teie nime, e-posti aadressi ja kasutajatunnuseid (User ID-sid).",
+    "part1s2P2": "Teie nime kogutakse, sest see on vajalik rakenduse põhifunktsioonide toetamiseks, sealhulgas kasutajaliidese isikupärastamiseks ja teie profiili tuvastamiseks platvormil. Neid andmeid ainult kogutakse ja neid ei jagata kolmandate osapooltega.",
+    "part1s2P3": "Ka teie e-posti aadress on vajalik ja seda kogutakse üksnes rakenduse funktsioonide toetamiseks, sealhulgas konto autentimiseks, teenusega seotud suhtluseks ja oluliste teadete edastamiseks. Neid andmeid ainult kogutakse ja neid ei jagata kolmandate osapooltega.",
+    "part1s2P4": "User ID-d ehk teie kontole või seansile määratud unikaalsed identifikaatorid on vajalikud ja neid kogutakse laiemal eesmärgil. Nende hulka kuuluvad rakenduse põhifunktsioonide toetamine, sisemise analüütika tegemine, et mõista, kuidas Rakendust kasutatakse, turvalisuse ja pettuste ennetamise meetmete rakendamine ning kontotasandi funktsioonide ja õiguste haldamine. User ID-sid ainult kogutakse ja neid ei jagata väljapoole.",
+    "part1s3Title": "3. Asukohaandmed",
+    "part1s3P1": "Rakendus vajab juurdepääsu teie seadme nii ligikaudsetele kui ka täpsetele asukohaandmetele. Asukohale juurdepääs on kohustuslik ja kasutajad ei saa seda välja lülitada ilma rakenduse põhifunktsioone mõjutamata.",
+    "part1s3P2": "Ligikaudseid asukohaandmeid, mis määravad teie üldise geograafilise piirkonna ilma täpset asukohta kindlaks tegemata, nii kogutakse kui ka jagatakse. Neid kogutakse rakenduse põhifunktsioonide toetamiseks ja sisemiseks analüütikaks selle kohta, kuidas kasutajad eri geograafilistes piirkondades asukohapõhiseid funktsioone kasutavad. Ligikaudseid asukohaandmeid jagatakse ka kolmandate osapooltega rakenduse funktsioonide toetamiseks ning geograafilisel kontekstil põhineva isikupärastatud sisu ja elamuste pakkumiseks.",
+    "part1s3P3": "Täpseid asukohaandmeid ehk GPS-ist või samaväärsetest tehnoloogiatest saadud täpseid geograafilisi koordinaate nii kogutakse kui ka jagatakse ning need teenivad Rakenduses kõige laiemat eesmärkide ringi võrreldes ühegi teise andmeliigiga. See tuleneb asjaolust, et Seekprotocoli põhielamus on üles ehitatud päris maailma asukohtadesse ankurdatud liitreaalsusele. Täpseid asukohaandmeid kogutakse AR-funktsioonide ja muude täpsest asukohast sõltuvate põhifunktsioonide toetamiseks, üksikasjaliku kasutusanalüütika tegemiseks, teie konkreetse asukohaga seotud arendaja teadete edastamiseks, geograafiliste tegevusmustritega seotud turvalisuse ja pettuste ennetamise meetmete rakendamiseks, sisu ja funktsioonide isikupärastamiseks teie täpse keskkonna järgi ning geograafilistest parameetritest sõltuvate kontofunktsioonide või teenusetingimuste haldamiseks. Samu andmeid jagatakse kolmandatest osapooltest teenusepakkujatega kõigil nendel samadel eesmärkidel.",
+    "part1s4Title": "4. Sõnumid",
+    "part1s4P1": "Rakendus kogub kolme liiki sõnumiandmeid: e-kirju, SMS- või MMS-sõnumeid ja muid rakendusesiseseid sõnumeid. Kõik kolm liiki on vajalikud ja kasutaja ei saa neid välja lülitada.",
+    "part1s4P2": "E-kirju kogutakse üksnes rakenduse põhifunktsioonide toetamiseks, sealhulgas kasutajate ja platvormi vaheliseks suhtluseks ning teenusega seotud teadete edastamiseks.",
+    "part1s4P3": "SMS- või MMS-andmeid kogutakse ainult rakenduse põhifunktsioonide toetamiseks ja neid töödeldakse lühiajaliselt, mis tähendab, et neid ei säilitata pärast asjaomase töötlemise lõppu ja Rakendus ei salvesta neid püsivalt.",
+    "part1s4P4": "Muid rakendusesiseseid sõnumeid kogutakse üksnes rakenduse põhifunktsioonide toetamiseks, sealhulgas Rakenduse enda sõnumi- ja suhtlussüsteemides toimuvaks suhtluseks.",
+    "part1s5Title": "5. Fotod ja videod",
+    "part1s5P1": "Rakendus vajab juurdepääsu teie seadmes olevatele fotodele ja videotele. Mõlemat andmeliiki ainult kogutakse ja neid kasutatakse üksnes rakenduse põhifunktsioonide toetamiseks, eelkõige liitreaalsuse funktsioonide puhul, mis vajavad juurdepääsu seadme kaamerale ja meediakogule, et kuvada digitaalset sisu füüsilise keskkonna peal või jäädvustada elamusi Rakenduse interaktiivsetes seanssides.",
+    "part1s6Title": "6. Tervise- ja treeninguteave",
+    "part1s6P1": "Rakendus kogub terviseteavet ja treeninguga seotud teavet. Mõlemad liigid on vajalikud ja neid kasutatakse üksnes rakenduse põhifunktsioonide toetamiseks. Neid andmeid ei jagata kolmandate osapooltega.",
+    "part1s6P2": "Terviseteave võimaldab Rakendusel vajaduse korral lõimida tervisekonteksti oma elamustesse, toetades funktsioone, mis reageerivad kasutaja üldisele füüsilisele seisundile osana Seekprotocoli laiemast mängulisest kaasamismudelist.",
+    "part1s6P3": "Treeninguteavet kasutatakse koos Rakenduse väljakutse- ja auhinnasüsteemidega. Rakendus küsib Androidi luba ACTIVITY_RECOGNITION, et tuvastada ja jälgida kehalist tegevust, nagu kõndimine, jooksmine või rattasõit, otse teie seadme andurite kaudu. See luba käitab Rakenduse väljakutse- ja auhinnafunktsioone, mis on loodud päris maailma kehalise tegevuse tunnustamiseks osana Seekprotocoli mängulisest elamusest. Liikumismustreid tuvastades saab Rakendus käivitada rakendusesiseseid sündmusi, kinnitada väljakutsete täitmist ja määrata auhindu, mis on seotud kehalise osalusega päris maailmas. Tegevuse tuvastamise andmeid ei kasutata reklaami eesmärgil ja neid ei jagata kolmandate osapooltega. Selle loa saab igal ajal tühistada seadme rakenduseseadetes, kuid see lülitab välja sellest sõltuvad tegevuspõhised väljakutsed ja auhinnad.",
+    "part1s7Title": "7. Rakenduse jõudluse ja diagnostikaandmed",
+    "part1s7P1": "Rakendus kogub oma jõudlusega seotud tehnilisi andmeid. Need hõlmavad krahhilogisid, diagnostikateavet ja muid rakenduse jõudlusnäitajaid.",
+    "part1s7P2": "Krahhilogid on vajalikud ja neid kogutakse automaatselt rakenduse põhifunktsioonide toetamiseks: täpsemalt kasutajakogemust mõjutavate tehniliste tõrgete tuvastamiseks, diagnoosimiseks ja lahendamiseks.",
+    "part1s7P3": "Valikulist jõudlusanalüütikat kogutakse siis, kui kasutajad seda lubavad, et parandada Rakenduse stabiilsust ja reageerimiskiirust. Pettuste ennetamiseks kasutatav turvadiagnostika on eraldi: versioonides, kus Talsec freeRASP on sisse lülitatud, kogutakse seda automaatselt, nagu on kirjeldatud II osas.",
+    "part1s8Title": "8. Failid ja dokumendid",
+    "part1s8P1": "Rakendus võib valikuliselt koguda teie seadmest kättesaadavaid faile ja dokumente. Seda kogumist kontrollib kasutaja ja see käivitub ainult olukordades, kus teie otsene suhtlus Rakendusega hõlmab faile või dokumente. Kogumise korral kasutatakse neid andmeid üksnes rakenduse põhifunktsioonide toetamiseks ja neid ei jagata kolmandate osapooltega.",
+    "part1s9Title": "9. Seadme identifikaatorid ja muud ID-d",
+    "part1s9P1": "Rakendus kogub seadme ja muid sarnaseid tehnilisi identifikaatoreid rakenduse toimimiseks ja pettuste ennetamiseks ning jagab mõningaid identifikaatoreid teenusepakkujatega. Turvaidentifikaatoreid ja diagnostikakirjeid võidakse säilitada kauem kui üks seanss; mitte kõiki neist ei töödelda lühiajaliselt. Vt II ja IV osa.",
+    "part1s9P2": "Seadme identifikaatoreid kogutakse seadmetasandi tuvastamisest sõltuvate rakenduse põhifunktsioonide toetamiseks ning turvalisuse ja pettuste ennetamise meetmete rakendamiseks. Samu andmeid jagatakse kolmandate osapooltega rakenduse toimimise, turvalisuse ja pettuste ennetamise eesmärgil.",
+    "part2Title": "II osa: Kolmandate osapoolte juurdepääs ja andmete jagamine",
+    "part2P1": "Jagame andmeid teenusepakkujatega käesolevas poliitikas kirjeldatud eesmärkidel. Mõned aruanded on koondatud, kuid jagamine ei piirdu koondandmetega: turvadiagnostikat ja seadme identifikaatoreid võidakse edastada ka Talsecile, nagu allpool kirjeldatud.",
+    "part2P2": "Võime teavet avaldada, kui seadus seda nõuab või kui see on mõistlikult vajalik õiguste ja turvalisuse kaitsmiseks, pettuste uurimiseks või seaduslikele päringutele vastamiseks. Teenusepakkujad töötlevad teavet nende osutatavate teenuste jaoks kohaldatavate tingimuste alusel. Talsec kasutab turvadiagnostikat ka oma toodete täiustamiseks ja koondatud turvauuringuteks, nagu allpool selgitatud.",
+    "part2P3": "Rakendus kasutab järgmisi kolmandate osapoolte teenuseid, millest igaühel on oma privaatsuspoliitika. Soovitame kasutajatel need poliitikad otse läbi lugeda, et mõista, kuidas iga pakkuja Rakenduselt saadud andmeid käsitleb:",
+    "part3Title": "III osa: Loobumisõigused",
+    "part3P1": "Saate Rakenduse igasuguse teabe kogumise igal ajal peatada, eemaldades Rakenduse. Võite kasutada oma mobiilseadme või vastava rakenduste poe tavapäraseid eemaldamisviise.",
+    "part3P2": "Valikulist jõudlusanalüütikat ning failide või dokumentide kogumist saab juhtida vastavate seadete ja funktsioonide kaudu. Need seaded ei lülita välja turvadiagnostikat versioonides, kus freeRASP on sisse lülitatud. Turvaandmetega seotud küsimuste või taotluste korral kirjutage aadressil support@seekprotocol.ai.",
+    "part3P3": "Androidi loa ACTIVITY_RECOGNITION saab igal ajal tühistada seadme rakenduste lubade seadetes. Selle loa tühistamine lülitab välja tegevuspõhised väljakutsed ja auhinnad, kuid ei mõjuta muul viisil Rakenduse kasutamist.",
+    "part4Title": "IV osa: Andmete säilitamine",
+    "part4P1": "Säilitame kasutaja esitatud andmeid seni, kuni te Rakendust kasutate, ja pärast seda nii kaua, kui see on vajalik tegevuslikel, õiguslikel või haldusalastel eesmärkidel. Turvadiagnostikat ja identifikaatoreid võidakse säilitada kauem kui üks seanss, et uurida kuritarvitusi ja koostada turvaaruandeid; Talseci poolset säilitamist reguleerivad tema andmepoliitikad ja kohaldatavad lepingutingimused. Lühiajaliselt töödeldud SMS/MMS-andmed kustutatakse pärast nende vahetu töötlemiseesmärgi täitmist.",
+    "part4P2": "Kui soovite, et Teenusepakkuja kustutaks andmed, mille olete Rakenduse kaudu esitanud, võtke temaga ühendust aadressil <email>support@seekprotocol.ai</email>. Teenusepakkuja vastab mõistliku aja jooksul.",
+    "part5Title": "V osa: Lapsed",
+    "part5P1": "Teenusepakkuja ei kasuta Rakendust selleks, et teadlikult koguda andmeid alla 13-aastastelt lastelt või neile turundada. Rakendus ei ole suunatud kellelegi alla 13 aasta ja Teenusepakkuja ei kogu teadlikult selle vanuserühma lastelt isikut tuvastavat teavet. Kui Teenusepakkuja avastab, et alla 13-aastane laps on esitanud isikuandmeid, kustutatakse need viivitamata tema serveritest. Kui olete lapsevanem või eestkostja ja usute, et teie laps on Rakendusele isikuandmeid esitanud, võtke Teenusepakkujaga ühendust aadressil <email>support@seekprotocol.ai</email>, et ta saaks võtta vajalikud parandusmeetmed.",
+    "part6Title": "VI osa: Turvalisus",
+    "part6P1": "Teenusepakkuja on pühendunud teie teabe konfidentsiaalsuse ja terviklikkuse kaitsmisele. Kõik Rakenduse kogutud andmed krüpteeritakse edastamise ajal. Teenusepakkuja töödeldava ja säilitatava teabe kaitseks rakendatakse füüsilisi, elektroonilisi ja protseduurilisi kaitsemeetmeid. Kui andmeid edastatakse kolmandatest osapooltest teenusepakkujatele, teeb Teenusepakkuja mõistlikke jõupingutusi, et selline jagamine oleks piiratud, eesmärgiga seotud ja asjakohaste andmekäitluslepingute alune.",
+    "part7Title": "VII osa: Andmete kustutamise taotlused",
+    "part7P1": "Kasutajad, kes soovivad taotleda oma konto ja kõigi sellega seotud andmete kustutamist, saavad esitada taotluse Seekprotocoli veebilehe kaudu aadressil:",
+    "part7P2": "Teise võimalusena saab kustutamistaotlusi esitada, võttes Teenusepakkujaga otse ühendust aadressil <email>support@seekprotocol.ai</email>. Teenusepakkuja töötleb kõik kustutamistaotlused mõistliku aja jooksul.",
+    "part8Title": "VIII osa: Muudatused selles poliitikas",
+    "part8P1": "Seda privaatsuspoliitikat võidakse aeg-ajalt mis tahes põhjusel uuendada. Teenusepakkuja teavitab teid kõigist muudatustest, uuendades seda lehte uue privaatsuspoliitikaga ja muutes dokumendi alguses näidatud jõustumiskuupäeva. Kui muudatused on olulised, võib Teenusepakkuja teavitada kasutajaid ka Rakenduse enda kaudu. Soovitame teil seda privaatsuspoliitikat regulaarselt üle vaadata. Rakenduse kasutamise jätkamine pärast muudatuste avaldamist tähendab, et nõustute nende muudatustega.",
+    "consentTitle": "Teie nõusolek",
+    "consentP1": "Rakendust kasutades nõustute oma teabe kogumise, kasutamise ja jagamisega, nagu on kirjeldatud selles privaatsuspoliitikas, nii praegusel kujul kui ka sellisena, nagu Teenusepakkuja seda tulevikus muuta võib.",
+    "contactTitle": "Kontakt",
+    "contactP1": "Kui teil on küsimusi oma privaatsuse kohta Rakenduse kasutamisel või selles poliitikas kirjeldatud andmetöötlustavade kohta, võtke Teenusepakkujaga ühendust aadressil:",
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
+    "metaTitle": "Privaatsuspoliitika",
+    "metaDescription": "Kuidas Seekprotocol käsitleb asukohaandmeid, andurite näite ja rahakoti andmeid: mida kogutakse, kui kaua säilitatakse ja mida ei jagata kunagi.",
+    "ogTitle": "Privaatsus Seekprotocolis",
+    "raspTitle": "Talsec freeRASP: turvadiagnostika",
+    "raspP1": "Versioonides, kus freeRASP on sisse lülitatud, saab Talsec (Lynx SFT s.r.o.) rakenduse ja operatsioonisüsteemi turvadiagnostikat, seadme mudeli teavet ning rakenduse eksemplari ja seadme identifikaatoreid. Signaalid võivad hõlmata rootimist, emulaatoreid, rakenduse rikkumist, silumist ja hookimist. Seda diagnostikat saadetakse automaatselt seni, kuni sisselülitatud versioon töötab; valikulise jõudlusanalüütika seaded seda välja ei lülita.",
+    "raspP2": "Talsec kasutab neid andmeid turvaaruandluseks, oma tasuta ja kommertsturvatoodete täiustamiseks ning koondatud uuringuteks. Talseci kirjelduse järgi toimub pilvetöötlus Ameerika Ühendriikides. Ei tohiks eeldada, et seadme identifikaatorid on kõigi privaatsusseaduste järgi täiesti anonüümsed. Palun tutvuge Talseci andmepoliitikatega allpool oleva lingi kaudu.",
+    "raspP3": "Meie oma taustsüsteem salvestab koos kogumiskatsetega ka ohtude nimed, mida saab siduda teie kontoga. Meie tagasikutsete käsitlemine ei laadi üles teiste installitud rakenduste nimekirja. Need on seadme teatatud signaalid ja need ei ole iseenesest pettuse tõend.",
+    "eyebrow": "Õiguslik"
+  },
+  "termsPage": {
+    "title": "Tingimused",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Kehtib alates: 12. august 2025",
+    "p1": "Need tingimused kehtivad mobiilseadmetele mõeldud Seekprotocoli äpi (edaspidi „Rakendus”) kohta, mille on loonud Block Protocol LLC (edaspidi „Teenusepakkuja”) tasuta teenusena.",
+    "p2": "Rakenduse allalaadimise või kasutamisega nõustute automaatselt järgmiste tingimustega. Soovitame tungivalt need tingimused enne Rakenduse kasutamist põhjalikult läbi lugeda ja neist aru saada. Rakenduse, selle mis tahes osa või meie kaubamärkide loata kopeerimine või muutmine on rangelt keelatud. Keelatud on igasugused katsed Rakenduse lähtekoodi välja võtta, Rakendust teistesse keeltesse tõlkida või luua sellest tuletatud versioone. Kõik Rakendusega seotud kaubamärgid, autoriõigused, andmebaasiõigused ja muud intellektuaalomandi õigused jäävad Teenusepakkuja omandisse.",
+    "p3": "Teenusepakkuja on pühendunud sellele, et Rakendus oleks võimalikult kasulik ja tõhus. Seetõttu jätab ta endale õiguse Rakendust muuta või oma teenuste eest tasu võtta igal ajal ja mis tahes põhjusel. Teenusepakkuja kinnitab, et kõigist Rakenduse või selle teenuste tasudest teavitatakse teid selgelt.",
+    "p4": "Rakendus salvestab ja töötleb isikuandmeid, mille olete Teenusepakkujale Teenuse osutamiseks andnud. Teie vastutate oma telefoni ja Rakendusele juurdepääsu turvalisuse eest. Teenusepakkuja soovitab tungivalt mitte teha oma telefonile jailbreaki ega rootimist, mis tähendab seadme ametliku operatsioonisüsteemi seatud tarkvarapiirangute eemaldamist. Sellised toimingud võivad muuta teie telefoni haavatavaks pahavara, viiruste ja pahatahtlike programmide suhtes, kahjustada telefoni turvafunktsioone ning põhjustada Rakenduse vigast toimimist või selle mittetoimimist.",
+    "thirdPartyIntro": "Pange tähele, et Rakendus kasutab kolmandate osapoolte teenuseid, millel on oma tingimused. Allpool on lingid Rakenduse kasutatavate kolmandatest osapooltest teenusepakkujate tingimustele:",
+    "p6": "Pange tähele, et Teenusepakkuja ei võta teatud aspektide eest vastutust. Mõned Rakenduse funktsioonid vajavad aktiivset internetiühendust, milleks võib olla Wi-Fi või teie mobiilsidepakkuja võrk. Teenusepakkujat ei saa pidada vastutavaks, kui Rakendus ei tööta täies mahus Wi-Fi puudumise tõttu või kui teie andmemaht on otsas.",
+    "p7": "Kui kasutate rakendust väljaspool Wi-Fi leviala, pidage meeles, et teie mobiilsidepakkuja lepingutingimused kehtivad endiselt. Seetõttu võib teie mobiilsidepakkuja võtta tasu andmeside kasutamise eest rakendusega ühenduses olemise ajal või võivad lisanduda muud kolmandate osapoolte tasud. Rakendust kasutades võtate vastutuse selliste tasude eest, sealhulgas rändlusandmeside tasude eest, kui kasutate rakendust väljaspool oma koduterritooriumi (st piirkonda või riiki) ilma andmeside rändlust välja lülitamata. Kui te ei ole selle seadme arve maksja, millel rakendust kasutate, eeldatakse, et olete saanud arve maksjalt loa.",
+    "p8": "Samamoodi ei saa Teenusepakkuja alati vastutada selle eest, kuidas te rakendust kasutate. Näiteks on teie vastutus tagada, et teie seade oleks laetud. Kui teie seadme aku saab tühjaks ja te ei pääse Teenusele ligi, ei saa Teenusepakkujat vastutavaks pidada.",
+    "p9": "Mis puudutab Teenusepakkuja vastutust teie rakenduse kasutamise eest, on oluline märkida, et kuigi ta püüab tagada, et rakendus oleks alati ajakohane ja täpne, sõltub ta kolmandatest osapooltest, kes talle teavet annavad, et ta saaks selle teile kättesaadavaks teha. Teenusepakkuja ei vastuta ühegi otsese ega kaudse kahju eest, mis tekib teile seetõttu, et toetute täielikult sellele rakenduse funktsioonile.",
+    "p10": "Teenusepakkuja võib soovida rakendust mingil hetkel uuendada. Rakendus on praegu saadaval vastavalt operatsioonisüsteemi nõuetele (ja nende lisasüsteemide nõuetele, kuhu ta otsustab rakenduse saadavust laiendada), mis võivad muutuda, ja rakenduse edasiseks kasutamiseks peate uuendused alla laadima. Teenusepakkuja ei garanteeri, et ta uuendab rakendust alati nii, et see oleks teie jaoks asjakohane ja/või ühilduks teie seadmesse installitud konkreetse operatsioonisüsteemi versiooniga. Siiski nõustute alati rakenduse uuendused vastu võtma, kui neid teile pakutakse. Teenusepakkuja võib soovida ka rakenduse pakkumise lõpetada ja võib selle kasutamise igal ajal lõpetada, ilma teile lõpetamisest ette teatamata. Kui ta ei teavita teid teisiti, siis mis tahes lõpetamise korral (a) lõpevad teile nende tingimustega antud õigused ja litsentsid; (b) peate lõpetama rakenduse kasutamise ja (vajaduse korral) kustutama selle oma seadmest.",
+    "changesTitle": "Muudatused nendes tingimustes",
+    "changesP1": "Teenusepakkuja võib oma tingimusi aeg-ajalt uuendada. Seetõttu soovitame teil seda lehte muudatuste suhtes regulaarselt üle vaadata. Teenusepakkuja teavitab teid kõigist muudatustest, avaldades uued tingimused sellel lehel.",
+    "contactTitle": "Võtke meiega ühendust",
+    "contactP1": "Kui teil on tingimuste kohta küsimusi või ettepanekuid, võtke julgelt Teenusepakkujaga ühendust aadressil <email>support@seekprotocol.ai</email>.",
+    "metaTitle": "Tingimused",
+    "metaDescription": "Seekprotocoli ja Seekprotocoli platvormi kasutustingimused: sinu õigused, varade lunastamise reeglid ja kuidas tasulised asjad töötavad.",
+    "ogTitle": "Seekprotocoli tingimused",
+    "eyebrow": "Õiguslik"
+  },
+  "languageSwitcher": {
+    "en": "English",
+    "nl": "Nederlands",
+    "de": "Deutsch",
+    "es": "Español",
+    "fr": "Français",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "tr": "Türkçe"
+  },
+  "globe": {
+    "liveLabel": "Otsijad praegu",
+    "panelTitle": "Otsijad korjavad just praegu",
+    "panelDesc": "Iga nõel on päris linn. Dropid maanduvad kindlatel koordinaatidel ja avanevad ainult siis, kui keegi seal päriselt seisab.",
+    "todayLabel": "Täna korjatud",
+    "waiting": "Ootan järgmist korjet…",
+    "dragHint": "Lohista pööramiseks",
+    "xpLabel": "Teenitud XP",
+    "clickHint": "Toksa münti, et korjet näha",
+    "seekerLabel": "Otsija",
+    "xpGained": "Saadud XP",
+    "coordsLabel": "Koordinaadid",
+    "verified": "Kohalolek plokiahelas kinnitatud",
+    "all": "Kõik",
+    "yourHaul": "Sinu saak",
+    "filterLabel": "Filtreeri harulduse järgi",
+    "waitingRarity": "{rarity} korjeid veel pole",
+    "catchChance": "Püügitõenäosus",
+    "close": "Sulge",
+    "secondsAgo": "{seconds} s tagasi",
+    "zoomIn": "Suumi sisse",
+    "zoomOut": "Suumi välja",
+    "busiest": "Praegu kõige aktiivsem",
+    "units": "Ühikud",
+    "zoomLabel": "Suum",
+    "hubsLabel": "Hüppa linna",
+    "wholeEarth": "Terve Maa",
+    "zoomLevel": "Suum {percent}%",
+    "caught": "Püütud · +{xp, number} XP",
+    "escaped": "Pääses minema · uuel katsel {percent}%",
+    "tryCatch": "Proovi püüda",
+    "globeAria": "Interaktiivne gloobus, mis näitab Seekprotocoli korjamistegevust üle maailma"
+  },
+  "homeSteps": {
+    "placed": {
+      "title": "Midagi paigutatakse",
+      "meta": "Avaldaja · kus iganes Maal",
+      "body": "Bränd, projekt või üritus kinnitab vara kindlatele koordinaatidele ja määrab raadiuse, millest seda saab lunastada. See seisab seal kaardil nähtavana, kuni keegi seda võtma tuleb."
+    },
+    "arrive": {
+      "title": "Sa kõnnid ulatusse",
+      "meta": "Vaikimisi raadius 30 m",
+      "body": "Sinu telefon kinnitab, et sa oled päriselt kohal: satelliidi asukoht, ümbritsev raadiokeskkond, seadme atesteerimine ja sinu liikumisjälg peavad kõik kokku langema. Ühe signaali võltsimine on lihtne; kõigi korraga mitte."
+    },
+    "collect": {
+      "title": "Sa korjad selle",
+      "meta": "Arveldatakse vara enda plokiahelas",
+      "body": "Tõsta kaamera, näe vara enda ees tänavale ankurdatuna ja võta see. Ülekanne arveldatakse plokiahelas sendi murdosa eest ja see on sinu."
+    }
+  },
+  "homeStats": {
+    "accuracy": {
+      "label": "Lunastuse täpsus"
+    },
+    "languages": {
+      "label": "Keeled"
+    },
+    "stores": {
+      "label": "Rakenduste poodides"
+    }
+  },
+  "worldDescent": {
+    "hint": "Keri edasi",
+    "bannerDistance": "84 m kaugusel",
+    "orbit": {
+      "label": "Orbiit",
+      "title": "Iga drop on koordinaat",
+      "body": "Varad avaldatakse punktidesse planeedil, mitte voogu. Siit ülevalt ongi see kogu võrk: paar tuhat kohta, kus midagi ootab."
+    },
+    "descent": {
+      "label": "Laskumine",
+      "title": "Kukkudes ühe neist poole",
+      "body": "Vali ükskõik milline neist punktidest ja mine. Protokollil pole vahet, milline, peaasi, et sa seisad seal, kui selle lunastad."
+    },
+    "street": {
+      "label": "Tänava tasand",
+      "title": "See on sama kaart, nelisada kilomeetrit lähemal",
+      "body": "Hooned, mille kohal sa lendad, on need, mis jäävad sinu ja dropi vahele. Vahemaa ongi kogu mehaanika, seega peab kaart olema päris."
+    },
+    "hand": {
+      "label": "Sinu käes",
+      "title": "Ja see mahub telefoni",
+      "body": "Midagi ei vahetatud välja. Vaade, millest just läbi lendasid, on see, mida äpp renderdab, oma juhtnuppudega peal."
+    }
+  },
+  "appChrome": {
+    "home": "Avaleht",
+    "map": "Kaart",
+    "quests": "Ülesanded",
+    "wallet": "Rahakott",
+    "backToMap": "‹ Kaart",
+    "tapCoin": "Toksa münti",
+    "distanceAway": "{metres} m kaugusel"
+  },
+  "arSection": {
+    "eyebrow": "Liitreaalsus",
+    "hint": "Keri edasi",
+    "see": {
+      "label": "Kaamera vaatab",
+      "title": "Kaamera ei näe tänavat",
+      "body": "See näeb ruudustikul muutuvat heledust. Enne kui midagi saab kuhugi paigutada, tuleb stseen muuta millekski, millel on struktuur, ja praegu seda pole.",
+      "readout": "KAADER 1/60 · JÄLGIMINE PUUDUB"
+    },
+    "track": {
+      "label": "Tunnused selginevad",
+      "title": "Maailm koosneb nurkadest",
+      "body": "Punktid, kus heledus muutub korraga kahes suunas, jäävad liikumisel alles, nii et mootor hoiab need ja viskab ülejäänu minema. Jälgi neid piisavalt paljudes kaadrites ja telefon teab, kuidas ta liikus.",
+      "readout": "JÄLGIMINE · 2412 TUNNUST"
+    },
+    "plane": {
+      "label": "Tasapind leitud",
+      "title": "Midagi, millel seista",
+      "body": "Tunnused, millel on ühine pind, grupeeritakse tasapinnaks. Sel hetkel lakkab drop olemast pilt sinu ekraanil ja muutub objektiks, millel on koht, kus olla.",
+      "readout": "TASAPIND TUVASTATUD · 6,0 × 6,0 M"
+    },
+    "anchor": {
+      "label": "Ankur kinnitub",
+      "title": "Kinnitatud maailma, mitte telefoni külge",
+      "body": "Drop seotakse selle geomeetriatükiga ja koordinaadiga, kuhu see avaldati. Kõnni sellest ümber ja see jääb sinna, kus oli. Kaks samas kohas seisvat inimest näevad seda samas punktis.",
+      "readout": "ANKUR LUKUS · 52.3702 N 4.8952 E"
+    },
+    "persist": {
+      "label": "See püsib",
+      "title": "Homme ikka alles",
+      "body": "Ankur salvestatakse asukoha, mitte seansi järgi, seega äpi sulgemine seda ei liiguta. Just see püsivus eristab AR-mänguasja AR-protokollist.",
+      "readout": "ANKUR SALVESTATUD · SEANSIST SÕLTUMATU"
+    }
+  },
+  "mobiSection": {
+    "title": "Kaaslane, kes näeb seda, mida sina",
+    "lead": "Küsi valjult ja Mobi loeb tänavat läbi kaamera: vaatamisväärsused, lahtiolekuajad, mis suunas drop on. See töötab võimaluse korral seadmes endas ega jäta kunagi jälge sellest, kus sa oled käinud.",
+    "tapHint": "Toksa Mobit",
+    "tapAgain": "{label} · toksa uuesti",
+    "tapAria": "Mobi olek: {state}. Toksa jätkamiseks.",
+    "points": [
+      "Hääl sisse, hääl välja, käed vabad, kui kõnnid",
+      "Loeb otsekaamerast vaatamisväärsusi ja silte",
+      "Ülesanded, mis kohanduvad sellega, kuidas ja kus sa mängid"
+    ],
+    "listening": {
+      "label": "Kuulab",
+      "line": "Mille juurde siin lähedal tasub kõndida?"
+    },
+    "thinking": {
+      "label": "Loeb tänavat",
+      "line": "Võrdlen kaamera nähtut lähedal olevate spawnidega…"
+    },
+    "answering": {
+      "label": "Vastab",
+      "line": "Kaks tänavat edasi, turu taga, on Legendary. Sinu tempoga kuus minutit ja see sulgub kell kuus."
+    },
+    "idle": {
+      "label": "Ootel",
+      "line": "Ootan. Midagi ei salvestata."
+    }
+  },
+  "socialSection": {
+    "eyebrow": "Koos",
+    "title": "Pool sellest on see, kellega sa lähed",
+    "lead": "Klannid koondavad kõigi korjatu. Chat on otsast lõpuni krüpteeritud ja kaduvate sõnumitega, kui vestlus ei peaks kauem elama. Ja kui kellegi kaasa tood, saad osa sellest, mida ta leiab.",
+    "points": [
+      "Otse- ja klannisõnumid, otsast lõpuni krüpteeritud",
+      "Power-upid ja vihjed, mida sõbrad üksteisele annavad",
+      "Soovitusauhinnad, mis maksavad seni, kuni nad mängivad"
+    ],
+    "online": "{count} võrgus",
+    "encrypted": "Krüpteeritud",
+    "composer": "Sõnum",
+    "disappearing": "Kaduvad sõnumid",
+    "yourCode": "Sinu kood",
+    "copy": "Kopeeri",
+    "copied": "Kopeeritud",
+    "spot": {
+      "text": "Turu juurde ilmus just Legendary. Kaks tänavat trammipeatusest."
+    },
+    "coming": {
+      "text": "Olen teel. Kellelgi magnetit veel on?"
+    },
+    "sent": {
+      "text": "Saatsin sulle kaks. Hoia diamond hands lekke jaoks."
+    },
+    "missed": {
+      "text": "Täis ring ja ikka pääses minema. Kaks katset jäänud."
+    },
+    "invited": {
+      "label": "Kutsutud"
+    },
+    "active": {
+      "label": "Aktiivsed"
+    },
+    "share": {
+      "label": "Sinu osa"
+    }
+  },
+  "videoReveal": {
+    "mute": "Vaigista film",
+    "unmute": "Esita film heliga"
+  },
+  "featureGroups": {
+    "eyebrow": "Mis seal sees on",
+    "title": "Rohkem kui kaart, millel on mündid",
+    "tablist": "Funktsioonide grupid",
+    "hunt": {
+      "label": "Jaht",
+      "items": [
+        {
+          "title": "Spawnid päris koordinaatidel",
+          "body": "Dropid ilmuvad sinu ümber kindlatesse punktidesse ja jäävad sinna, kuni keegi need lunastab. Märgi üks ära ja äpp loeb kõndides vahemaad maha."
+        },
+        {
+          "title": "Püsivad AR-püügid",
+          "body": "Münt ankurdub sinu ees maapinnale ja jääb ankurdatuks ka seansside vahel, nii et see on kõigi jaoks, kes selle juurde tulevad, samas kohas."
+        },
+        {
+          "title": "Power-upid ja ajastus",
+          "body": "Magnet, double ja freeze kuhjuvad ühele püügile. Ajastusriba otsustab, kui palju dropist endale jätad, sest halvasti püütud Legendary on ikkagi halvasti püütud Legendary."
+        },
+        {
+          "title": "Haruldus, millel on tähendus",
+          "body": "Commonist Legendaryni, kusjuures haruldus määrab kaardil rõnga värvi juba enne, kui sa lähedalegi jõuad."
+        }
+      ]
+    },
+    "progress": {
+      "label": "Edenemine",
+      "items": [
+        {
+          "title": "Kümme auastet, kõndimisega välja teenitud",
+          "body": "Seekerist Legendini. Auaste tuleb läbitud vahemaast ja külastatud kohtadest, mitte sellest, mida kulutasid."
+        },
+        {
+          "title": "Kuuskümmend üks märki",
+          "body": "Täielik kogumiskomplekt, Diamond Handsist On-Chain Detective'ini, igaühel oma avamistingimus."
+        },
+        {
+          "title": "Game Center ja Play Games",
+          "body": "Saavutused sünkroonitakse platvormiga, mida sa juba kasutad, nii et seeriad ja verstapostid on sinu teiste mängude kõrval."
+        },
+        {
+          "title": "Seeriad ja igapäevased ülesanded",
+          "body": "Missioonid, mis kohanduvad sellega, kus sa oled ja kuidas mängid, ning auhind kasvab seni, kuni seeria püsib."
+        }
+      ]
+    },
+    "together": {
+      "label": "Koos",
+      "items": [
+        {
+          "title": "Klannid",
+          "body": "Liitu mõnega või asuta oma, koondage panused ja ronige klannitabelis üles. Embleemid, auastmed ja ühised auhinnafondid on hinnas."
+        },
+        {
+          "title": "Krüpteeritud chat",
+          "body": "Otse- ja klannisõnumid, otsast lõpuni krüpteeritud, kaduvate sõnumitega, kui vestlus ei peaks kauem elama."
+        },
+        {
+          "title": "Edetabelid",
+          "body": "Ülemaailmsed, riiklikud ja klannide tasemel, medalitega kolmele parimale ja tabeliga, mis uueneb, kui inimesed kõnnivad."
+        },
+        {
+          "title": "Soovitused",
+          "body": "Too inimesi kaasa ja teeni osa sellest, mida nad korjavad. Sinu kood on ekraanil esimene asi, sest just selle pärast sa tulid."
+        }
+      ]
+    },
+    "own": {
+      "label": "Oma",
+      "items": [
+        {
+          "title": "Rahakott ilma seemnelauseta",
+          "body": "Luuakse sotsiaalse sisselogimise põhjal, nii et saad korjata minut pärast installimist. Ekspordi võti siis, kui tahad seda ise hoida."
+        },
+        {
+          "title": "Season Pass",
+          "body": "Hooaja auhinnarada, mis jookseb tavalise mängu kõrval, tasuta ja tasulise tasemega."
+        },
+        {
+          "title": "Pood",
+          "body": "Power-upid, kosmeetika ja avatari osad, hinnaga selles, mida oled korjanud, mitte ainult selles, mida saad osta."
+        },
+        {
+          "title": "3D-avatarid",
+          "body": "Täielikud Decentralandiga ühilduvad avatarid animatsioonide ja emote'idega, mitte kärbitud profiilipilt."
+        }
+      ]
+    }
+  },
+  "progression": {
+    "eyebrow": "Edenemine",
+    "title": "Kümme auastet, kuuskümmend üks märki ja ühtegi neist ei saa osta",
+    "lead": "Auaste tuleb läbitud vahemaast ja külastatud kohtadest. Kõik sellel seinal on teenitud õues käies.",
+    "badgeAlt": "Auastme {name} märk",
+    "rankOf": "Auaste {tier}/{total}",
+    "rankTablist": "Auastmete tasemed",
+    "badgesTitle": "Kogutavad märgid",
+    "badgesShown": "Näidatud {shown}/{total}",
+    "achievementsTitle": "Saavutused"
+  },
+  "ranks": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "scout": {
+      "name": "Scout"
+    },
+    "tracker": {
+      "name": "Tracker"
+    },
+    "hunter": {
+      "name": "Hunter"
+    },
+    "pathfinder": {
+      "name": "Pathfinder"
+    },
+    "ranger": {
+      "name": "Ranger"
+    },
+    "sentinel": {
+      "name": "Sentinel"
+    },
+    "apex": {
+      "name": "Apex"
+    },
+    "mythic": {
+      "name": "Mythic"
+    },
+    "legend": {
+      "name": "Legend"
+    }
+  },
+  "badges": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "web3Wizard": {
+      "name": "Web3 Wizard"
+    },
+    "whale": {
+      "name": "Whale"
+    },
+    "bull": {
+      "name": "Bull"
+    },
+    "detective": {
+      "name": "On-Chain Detective"
+    },
+    "samurai": {
+      "name": "Degen Samurai"
+    },
+    "liquidityKing": {
+      "name": "Liquidity King"
+    }
+  },
+  "achievements": {
+    "firstCatch": {
+      "name": "Esimene püük",
+      "detail": "Korja oma esimene drop"
+    },
+    "explorer": {
+      "name": "Avastaja",
+      "detail": "Korja 50 erinevas kohas"
+    },
+    "legendary": {
+      "name": "Legendary",
+      "detail": "Püüa Legendary spawn"
+    },
+    "rareHunter": {
+      "name": "Rare-kütt",
+      "detail": "250 Rare püüki"
+    },
+    "streak": {
+      "name": "Kolmekümne päeva seeria",
+      "detail": "Mängi 30 päeva järjest"
+    },
+    "clanFounder": {
+      "name": "Klanni asutaja",
+      "detail": "Asuta oma klann"
+    }
+  },
+  "clans": {
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "laserEyes": {
+      "name": "Laser Eyes"
+    },
+    "megaWhales": {
+      "name": "Mega Whales"
+    },
+    "moonSquad": {
+      "name": "Moon Squad"
+    },
+    "alphaWolves": {
+      "name": "Alpha Wolves"
+    },
+    "yieldFarmers": {
+      "name": "Yield Farmers"
+    },
+    "anonCabal": {
+      "name": "Anon Cabal"
+    },
+    "bullRunners": {
+      "name": "Bull Runners"
+    }
+  },
+  "clansSection": {
+    "eyebrow": "Klannid",
+    "title": "Keegi ei kata linna üksi",
+    "lead": "Asuta klann või liitu mõnega, koondage kõigi korjatu ja ronige koos tabelis üles. Chat on otsast lõpuni krüpteeritud ja sõnumid saab panna kaduma, kui vestlus ei peaks kauem elama.",
+    "statClans": "Asutajaklannid",
+    "statChat": "Krüpteeritud chat",
+    "statRanks": "Klanni auastmed",
+    "tableTitle": "Klannitabel",
+    "thisSeason": "See hooaeg",
+    "rankAlt": "Auaste {rank}"
+  },
+  "rarity": {
+    "common": "Common",
+    "uncommon": "Uncommon",
+    "rare": "Rare",
+    "epic": "Epic",
+    "legendary": "Legendary"
+  },
+  "powerups": {
+    "coin_magnet": {
+      "label": "Coin Magnet",
+      "effect": "Sinu ümber ilmub rohkem münte"
+    },
+    "diamond_hands": {
+      "label": "Diamond Hands",
+      "effect": "Püüa üks münt kaugelt"
+    },
+    "pump_it": {
+      "label": "Pump It",
+      "effect": "Üks lisakaardikast täna"
+    },
+    "to_the_moon": {
+      "label": "To the Moon",
+      "effect": "Kolmekordne XP 30 minutit"
+    },
+    "whale": {
+      "label": "Whale",
+      "effect": "Tõmbab spawne sinu kohta"
+    },
+    "this_is_fine": {
+      "label": "This Is Fine",
+      "effect": "Hoiab mööda läinud münti sinu jaoks"
+    }
+  },
+  "collectiblesSection": {
+    "eyebrow": "Kogumisesemed",
+    "title": "Need on mündid seal väljas",
+    "lead": "Haruldus otsustab, kui tihti üks ilmub ja kui tõenäoliselt selle endale saad. Püütud ühik on mänguühik. Kui palju see päris tokenites välja maksab, on turu asi.",
+    "filterLabel": "Filtreeri harulduse järgi",
+    "all": "Kõik",
+    "catchChance": "Püügitõenäosus",
+    "overThree": "3 katsega",
+    "perUnit": "Ühiku kohta",
+    "powerupsTitle": "Power-upid, mis muudavad vooru"
+  },
+  "offers": {
+    "railLabel": "Dropi vormid",
+    "redeemLabel": "Kuidas see lunastatakse",
+    "proofLabel": "Mis teeb selle kehtivaks",
+    "voucher": {
+      "label": "Sooduskupong",
+      "headline": "Allahindlus just selle ukse taga, mis selle sulle andis",
+      "face": "25% soodsam",
+      "fine": "Üks inimese kohta · Kehtib 14 päeva · Ainult poes",
+      "redeem": "Kood näidatakse kassas ja märgitakse kasutatuks. Seda ei saa edasi saata, sest see anti välja seadmele, mis seisis raadiuse sees.",
+      "proof": "Lunastus on plokiahelas koos koordinaadiga, kus see tehti, nii et kupongi kasutamist saab kontrollida päris saabumise, mitte ekraanipildi järgi.",
+      "placedBy": "Jaekaubandus ja majutus"
+    },
+    "asset": {
+      "label": "Päris maailma vara",
+      "headline": "Füüsiline asi, mis ootab kindlas kohas",
+      "face": "Paar tossusid",
+      "fine": "1/250 · Järele poest · Aegub, kui kaup otsa saab",
+      "redeem": "Omanik võtab asja ise vastu. Token on nõue sellele ja see põletatakse üleandmisel, nii et sama paari ei saa kaks korda kätte.",
+      "proof": "Varu on piiratud ja lunastus on lukk, mitte päring, nii et kahele viimase järele haarajale ei saa mõlemale öelda, et nad selle said.",
+      "placedBy": "Brändid, kellel on midagi välja jagada"
+    },
+    "access": {
+      "label": "Pääse",
+      "headline": "Pilet on kohapeal olemine",
+      "face": "Värav B · 19:00",
+      "fine": "Mitteülekantav · Aegub ürituse lõpus",
+      "redeem": "Skannitakse väravas nagu iga teist pääset. Erinevus on see, et seda sai ainult kohapeal, ja just see teeb selle väljaandmise väärtuslikuks.",
+      "proof": "Kõrge väärtusega dropid seavad range kindlusläve, nii et raadiokeskkond peab asukohaga kokku langema, enne kui drop vabastatakse.",
+      "placedBy": "Üritused, toimumiskohad ja festivalid"
+    },
+    "token": {
+      "label": "Tokeni drop",
+      "headline": "Jagamine, mille farmimine midagi maksab",
+      "face": "40 $SEEK",
+      "fine": "Üks lunastus seadme kohta · Arveldatakse oma plokiahelas",
+      "redeem": "See jõuab rahakotti, mille äpp sulle tegi, ja on sinu hoida, liigutada või müüa. Pole midagi lunastada ega kelleltki küsida.",
+      "proof": "Rahakoti loomine on tasuta, jalutuskäik mitte. Geograafia on filter, mille kaudu airdropi ei saa odavalt farmida.",
+      "placedBy": "Tokeniprojektid ja kogukonnad"
+    },
+    "collectible": {
+      "label": "Kogumisese",
+      "headline": "Midagi, mis on olemas ainult seal, kuhu see paigutati",
+      "face": "Rare",
+      "fine": "Seeria 500 · Vahetatav · Haruldus fikseeritud väljaandmisel",
+      "redeem": "Pole midagi lunastada. See on jälg kuskil käimisest, mis on vanim põhjus, miks keegi on kunagi midagi alles hoidnud.",
+      "proof": "Igaüks kannab koordinaati, kust see võeti, nii et kellegi kogu on kaart kohtadest, kus ta on päriselt käinud.",
+      "placedBy": "Linnad, turismiasutused, kunstnikud"
+    }
+  },
+  "rewards": {
+    "eyebrow": "Auhinnad",
+    "title": "Koordinaadil võib oodata ükskõik mida",
+    "lead": "Münt on versioon, mida kõik ette kujutavad, ja see on neist kõige vähem huvitav. Protokolli ei huvita, mis kastis on: kui seda saab anda inimesele, saab seda anda ka kohale, ja keegi peab sinna kõndima, et see võtta.",
+    "railLabel": "Vali auhinna liik",
+    "phoneAlt": "Seekprotocoli äpp näitab otseüritust ja selle jagatavaid auhindu",
+    "liveChip": "Otseüritus",
+    "participateLabel": "Osale otseüritusel",
+    "alertTitle": "Salapärane auhind sinu lähedal",
+    "alertBody": "301 m kaugusel ja aktiivne kuni kella 21-ni. Selle saab see, kes esimesena kohale jõuab.",
+    "alertSeekers": "Teised otsijad liiguvad",
+    "foundLabel": "Sa leidsid selle",
+    "foundWhere": "Champ de Mars · 301 m kõnnitud",
+    "foundFine": "Lunastatud saabumisel ja arveldatud plokiahelas. See on sinu rahakotis.",
+    "foundAlt": "Auhinna võitmine kaardil",
+    "mapCredit": "© Mapbox © OpenStreetMap",
+    "items": {
+      "seek": "$SEEK",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "bnb": "BNB",
+      "hyperliquid": "Hyperliquid",
+      "berachain": "Berachain",
+      "dogecoin": "Dogecoin",
+      "pepe": "PEPE",
+      "babydoge": "Baby Doge",
+      "spx6900": "SPX6900",
+      "toshi": "Toshi",
+      "turbo": "Turbo",
+      "nft": "Salapärane NFT",
+      "voucher": "Poekupong",
+      "food": "Toidukupong",
+      "barcode": "Ürituse pääse",
+      "console": "PlayStation 5",
+      "handheld": "Pihukonsool",
+      "shoes": "Piiratud tossud"
+    },
+    "proofNote": "Mis iganes kastis on, takistab selle lunastamist kellegi poolt, kes pole kunagi kohal olnud, alati sama asi: kohalolek, mida hinnatakse lunastuse hetkel nelja sõltumatu signaali alusel.",
+    "categories": {
+      "tokens": {
+        "label": "Tokenid",
+        "headline": "Iga token, igas plokiahelas",
+        "body": "Ethereum, Solana, BNB Smart Chain ja nendele järgnevad võrgud. Avaldaja rahastab kampaania tokeniga, mis tal juba on, ja see arveldatakse seal, kus token elab, nii et osalemiseks ei pea keegi midagi bridge'ima."
+      },
+      "memes": {
+        "label": "Memecoinid",
+        "headline": "Käivitused, millel pole kanalit",
+        "body": "Memecoinil on publik, aga pole viisi temani jõuda, mis poleks airdropi farm. Kui panna pakkumine päris tänavatele, jõuab see inimesteni, kes selle pärast välja tulid, ja iga lunastus on inimene, mitte aadress."
+      },
+      "nfts": {
+        "label": "NFT-d",
+        "headline": "Mintitud seal, kus sa seisid",
+        "body": "Kogumisese, mis kannab oma päritolu koordinaati, on teistsugune objekt kui diivanil mintitud. Väljaande saab siduda linna, toimumiskoha või ühe ainsa ukseavaga ja kirje selle kohta, kust iga eksemplar võeti, on avalik."
+      },
+      "vouchers": {
+        "label": "Kupongid",
+        "headline": "Allahindlus kassas",
+        "body": "Vorm, mida kaubandustänav päriselt tahab. Kood, mis avaneb ainult ukse sees, lunastatakse kassas kellegi poolt, kes sisse astus, ja loetakse saabumiseks, mitte näitamiseks, mis võib-olla selleni viis."
+      },
+      "goods": {
+        "label": "Päris kaubad",
+        "headline": "Asjad, mis saabuvad kastis",
+        "body": "Konsool, paar tossusid, mingi varustus. Lunastus on plokiahelas ja kohaletoimetamine on tavaline logistika, mis lubab brändil panna jalutuskäigu lõppu midagi füüsilist ilma selleks midagi ehitamata."
+      },
+      "events": {
+        "label": "Otseüritused",
+        "headline": "Kõik see, ürituse kestuse jooksul",
+        "body": "Festivalist, matšist või konverentsist saab ajutine auhindade kiht, mis aegub koos üritusega. Kohaletulek avab need, nii et auhinnafond jõuab inimesteni, kes seal päriselt olid, ja loendur on uks."
+      }
+    }
+  },
+  "distribution": {
+    "eyebrow": "Levitamine",
+    "title": "Haaret on lihtne osta ja võimatu usaldada",
+    "lead": "Iga kanal, mida käivitus saab osta, müüb sama asja: arvu, mida skript suudab toota. Näitamised, klikid, jälgimised, rahakotid: nende kõigi masstootmine maksab sendi murdosa. Kohalolek on ainus suhtlus, mida keegi pole automatiseerinud, sest keegi pole kirjutanud botti, mis kõnnib.",
+    "failureTag": "Mida sa ostad",
+    "answerTag": "Mida sa siit saad",
+    "failures": {
+      "bots": "Tasuline liiklus tuleb andmekeskustest ja klikifarmidest. Maksad iga näitamise eest ja märkimisväärset osa neist ei kuvatud kunagi ühelegi inimesele.",
+      "farms": "Airdropi lunastavad rahakotid ja rahakott ei maksa midagi. Üks skriptiga farmija muutub neljakümneks tuhandeks sobivaks aadressiks ja tokenid jõuavad kaugele neist inimestest, kellele need mõeldud olid.",
+      "unaudited": "Kaasatuse numbreid raporteerib platvorm, mis neid müüb. Jälgimist, vaatamist või modelleeritud poekülastust ei saa auditeerida, nii et kampaaniat hinnatakse arvu järgi, mida pead lihtsalt uskuma."
+    },
+    "answers": {
+      "bots": "Lunastus on seade, mis seisis koordinaadil, kusjuures selle satelliidi asukoht, raadioümbrus ja liikumisjälg langevad kõik kokku. Kuskil olemisest pole serveripoolset versiooni.",
+      "farms": "Üks lunastus seadme kohta raadiuse ja ajaakna sees. Teine lunastus tähendab teist teekonda ja keegi pole korraga neljakümnes linnas.",
+      "unaudited": "Iga lunastus on avalik kirje: koordinaat, aeg, vara. Loe need ise plokiuurijas kokku, selle asemel et meilt numbrit küsida."
+    },
+    "askLegend": "Mida sa tahad, et nad teeksid?",
+    "askNote": "Protokoll kinnitab, et inimene oli kohal. Mida ta auhinna teenimiseks tegema peab, kirjutad sina, ja miski sellest ei muuda all olevat kontrolli.",
+    "actions": {
+      "visit": {
+        "label": "Astuda poodi",
+        "headline": "Lunasta kassas",
+        "body": "Drop on ukse sees nii kitsa raadiusega, et ainult kassa juures olev telefon saab selle avada. Lunastatud kood kuulub kellelegi, kes sisse astus.",
+        "button": "Lunasta poes",
+        "recorded": "Kinnitatud saabumine sinu aadressile, ajatempliga lunastuse hetkel."
+      },
+      "follow": {
+        "label": "Jälgida kontot",
+        "headline": "Jälgi, et avada",
+        "body": "Vara jääb lukku, kuni kontot jälgitakse, ja jälgimine loeb ainult raadiuse sees olevast seadmest. Farm suudab jälgimise toota. Kõndimist ei suuda.",
+        "button": "Jälgi ja lunasta",
+        "recorded": "Jälgimine, mille taga on kinnitatud külastus, arvestatuna asukoha järgi, kus see toimus."
+      },
+      "signup": {
+        "label": "Registreeruda või liituda nimekirjaga",
+        "headline": "Registreeru kohapeal",
+        "body": "Üks väli, täidetud seal, kus drop on. Iga aadress nimekirjas kuulub inimesele, kes seisis sinu kampaania juures, kui ta selle sisestas.",
+        "button": "Registreeru ja lunasta",
+        "recorded": "Registreerumine, mille taga on kinnitatud saabumine, ainus liik, mille eest tasub maksta."
+      },
+      "scan": {
+        "label": "Skannida toodet",
+        "headline": "Skanni see riiulil",
+        "body": "Suuna kaamera nõela asemel tootele. Skannimine peab toimuma raadiuse sees, nii et auhind jõuab inimeseni, kes asja päriselt käes hoiab.",
+        "button": "Skanni ja lunasta",
+        "recorded": "Ühe toote skannimine ühes poes, arvestatuna tootepõhiselt, mitte kampaaniapõhiselt."
+      },
+      "mint": {
+        "label": "Mintida kohapeal",
+        "headline": "Mindi seal, kus seisad",
+        "body": "Kogumisese mintitakse koordinaadil ja see kannab seda endas. Selle hilisem väärtus on seotud sellega, kust see tuli, ja seda ei oska ükski mintimisleht öelda.",
+        "button": "Mindi siin",
+        "recorded": "Mint, mis on seotud koha ja hetkega, selles plokiahelas, kus kollektsioon elab."
+      }
+    },
+    "dropStatus": "Otse",
+    "dropWhere": "Kalverstraat 92, Amsterdam · raadius 25 m",
+    "dropFine": "Üks lunastus seadme kohta · Kinnitatakse saabumisel",
+    "recordedLegend": "Mida sa tagasi saad",
+    "recordedNever": "Arvud asukoha, aja ja kampaania järgi. Mitte kunagi üksikisik ega jälg sellest, kuhu ta edasi läks.",
+    "chainsLegend": "Iga allikas, iga plokiahel",
+    "chainsNote": "Allikas on igaüks, kes saab midagi välja anda: projekt, bränd, toimumiskoht, nurgapealne pood. Võrk on rida tabelis, mitte uus väljalase, nii et üks kampaania saab korraga joosta mitmes võrgus ja otsija ei pea kunagi valima. Solana arveldab juba täna; järgmine on vaid seadistuse küsimus.",
+    "chainsCoinsAlt": "Pöörlevad 3D-mündid plokiahelatele, kus Seekprotocol arveldab",
+    "chainAny": "Mis tahes muu plokiahel"
+  },
+  "walkthrough": {
+    "eyebrow": "Proovi läbi",
+    "title": "See ongi kogu tsükkel",
+    "lead": "Mitte video äpist. Need on selle enda reeglid, mis siin töötavad. Toksa kaardil spawni ja jätka sealt.",
+    "startOver": "Alusta otsast",
+    "map": {
+      "label": "Kaart",
+      "title": "Kõik lähedal, seal, kus see päriselt on",
+      "body": "Spawnid on kindlatel koordinaatidel ja jäävad sinna, kuni keegi need lunastab. Toksa ühte, et näha, mis see on ja kui kaugele pead kõndima."
+    },
+    "spawn": {
+      "label": "Spawn",
+      "title": "Haruldus ütleb, mille poole sa kõnnid",
+      "body": "Commonist Legendaryni, igaühel oma püügitõenäosus. Sul on kaks katset ja teine on väärt 0,65 esimesest, nii et esimene toksamine loeb kõige rohkem."
+    },
+    "catch": {
+      "label": "Püük",
+      "title": "Toksa, et laadida, ja hoia närvid kontrolli all",
+      "body": "Rõngas täitub toksamisel. Iga vooru või paari järel tuleb midagi vahele: kera külmub, laeng hakkab lekkima või avaneb laine, kus toksamised loevad topelt."
+    },
+    "result": {
+      "label": "Veeretus",
+      "title": "Laeng ostab tõenäosust, mitte kindlust",
+      "body": "Täis rõngas Legendary peal on ikkagi üks viiest. Just see teeb Legendary väärtuslikuks ja just see paneb toksamise midagi otsustama."
+    },
+    "wallet": {
+      "label": "Sinu oma",
+      "title": "See jõuab rahakotti, mida sa ei pidanud kunagi seadistama",
+      "body": "Luuakse sotsiaalse sisselogimise põhjal, nii et esmakordne mängija korjab midagi minuti jooksul. Ekspordi võti siis, kui tahad seda ise hoida."
+    }
+  },
+  "spawnScreen": {
+    "back": "‹ Kaart",
+    "distance": "Vahemaa",
+    "inRange": "Ulatuses",
+    "thisAttempt": "See katse",
+    "attemptsLeft": "Katseid jäänud",
+    "attemptsOf": "{left}/{total}",
+    "note": "Rõnga laadimine tõstab seda. Järgmine katse on väärt 0,65 esimesest.",
+    "cta": "Püüa see"
+  },
+  "catchScreen": {
+    "attempt": "Katse {attempt}/{total}",
+    "tapAria": "Toksa laadimiseks",
+    "sealAria": "Sulge leke",
+    "ringFull": "Rõngas täis, hoia seda",
+    "tapPrompt": "Toksa münti",
+    "mechanic": {
+      "freeze": "Külmunud, toksa edasi, et see sulaks",
+      "leak": "Lekib, sulge lekked",
+      "surge": "Laine, iga toksamine loeb topelt"
+    }
+  },
+  "resultScreen": {
+    "caught": "Püütud",
+    "escaped": "Pääses minema",
+    "ringCharged": "Rõnga laeng",
+    "chance": "Selle katse tõenäosus",
+    "xp": "XP",
+    "gameValue": "Mänguväärtus",
+    "noteCaught": "Püütud ühik on mänguühik. Kui palju see päris tokenites välja maksab, on turu asi.",
+    "noteRetry": "Veel üks katse, väärt 0,65 esimesest.",
+    "noteGone": "See spawn on läinud. Tuleb uus.",
+    "openWallet": "Ava rahakott",
+    "tryAgain": "Proovi uuesti",
+    "backToMap": "Tagasi kaardile"
+  },
+  "walletScreen": {
+    "totalBalance": "Kogusaldo",
+    "delta": "+ {amount} täna",
+    "deposit": "Sissemakse",
+    "send": "Saada",
+    "exchange": "Vaheta",
+    "qr": "QR",
+    "justCaught": "Just püütud",
+    "assets": "Varad",
+    "recentBadges": "Hiljutised märgid"
+  },
+  "dropKinds": {
+    "airdrop": "Airdrop",
+    "quest": "Ülesande auhind",
+    "partner": "Partneri drop",
+    "event": "Ürituse token",
+    "cache": "Tänavapeidik"
+  },
+  "ecosystemPage": {
+    "metaTitle": "Ökosüsteem: otsijad, avaldajad, protokoll",
+    "metaDescription": "Kuidas Seekprotocoli ökosüsteem kokku sobib: otsijad, kes korjavad, avaldajad, kes paigutavad, ja protokoll, mis kinnitab kohaloleku ja arveldab selle plokiahelas.",
+    "ogTitle": "Kolm osapoolt, üks koordinaat",
+    "eyebrow": "Ökosüsteem",
+    "titleStart": "Kolm osapoolt, üks",
+    "titleAccent": "koordinaat",
+    "lead": "Keegi paigutab vara. Keegi sõidab selleni. Protokoll kinnitab, et ta oli päriselt kohal, ja arveldab. Kõik muu on detailid selle tsükli peal.",
+    "networkEyebrow": "Võrk",
+    "networkTitle": "Iga nõel on päris koht",
+    "networkLead": "Lohista gloobust. Koordinaadid on päris linnade asukohad ja iga kaar on drop, mis nende vahel liigub.",
+    "capabilitiesEyebrow": "Võimekused",
+    "capabilitiesTitle": "Mida protokoll päriselt pakub",
+    "faqEyebrow": "Küsimused",
+    "faqTitle": "Need, mida tasub küsida",
+    "faqLead": "Kaasa arvatud need, millele on ebamugavad vastused.",
+    "ctaEyebrow": "Süvitsi",
+    "ctaTitle": "Tehniline ülevaade",
+    "ctaBody": "Asukoha tõend, arhitektuur, tokeni disain ja otsekohene nimekiri rünnakutest, mille vastu kaitseme, ning piirangutest, mida aktsepteerime.",
+    "ctaWhitepaper": "Loe whitepaperit",
+    "ctaBusiness": "Paiguta oma varad",
+    "polCtaEyebrow": "Asukoha tõend",
+    "polCtaTitle": "Kohalolek, kinnitatud",
+    "polCtaBody": "Enne kui lunastus vastu võetakse, peavad neli sõltumatut signaali kokku langema. Lihtsas keeles selgitus on blogis.",
+    "polCtaLink": "Kuidas asukoha tõend töötab"
+  },
+  "participants": {
+    "seekers": {
+      "label": "Otsijad",
+      "tag": "Nõudlus",
+      "title": "Inimesed, kes lähevad ja toovad",
+      "body": "Igaüks, kellel on äpp. Nad kõnnivad, leiavad asju ja jätavad endale, mida korjavad. Varasemaid krüptoteadmisi ei eeldata: rahakott luuakse sotsiaalse sisselogimise põhjal ja selle saab hiljem eksportida igaüks, kes tahab seda ise hoida.",
+      "gets": [
+        "Tokenid, NFT-d ja partnerite auhinnad",
+        "Ülesanded, mis kohanduvad nende asukohaga",
+        "Rahakott, mida nad ei pidanud enne mõistma"
+      ]
+    },
+    "publishers": {
+      "label": "Avaldajad",
+      "tag": "Pakkumine",
+      "title": "See, kes selle sinna pani",
+      "body": "Brändid, toimumiskohad, tokeniprojektid ja ürituste korraldajad. Nad paigutavad varasid neile olulistele koordinaatidele ja maksavad paigutuse eest, mida kaalutakse raadiuse, kestuse ja piirkonna konkurentsi järgi.",
+      "gets": [
+        "Kinnitatud saabumised, mitte näitamised",
+        "Geograafiline levitamine, mis peab farmimisele vastu",
+        "Kampaaniakoostaja ilma integratsioonitööta"
+      ]
+    },
+    "protocol": {
+      "label": "Protokoll",
+      "tag": "Arveldus",
+      "title": "Osa, mis hoiab neid ausana",
+      "body": "Kontrolli hindamine, varade hoidmine ja arveldus. See võtab paigutuselt tasu, suunab suurema osa sellest tagasi otsijatele ja hoiab kirjet selle kohta, mida kus lunastati.",
+      "gets": [
+        "Tasud, mis järgivad päris tegevust",
+        "Avalik lunastuste register",
+        "Parameetrid, mis liiguvad aja jooksul juhtimise alla"
+      ]
+    }
+  },
+  "capabilities": {
+    "placement": {
+      "title": "Geopiirdega paigutus",
+      "meta": "5 m kuni 500 m",
+      "body": "Varad kinnitatakse koordinaatidele seadistatava lunastusraadiusega. Poeuks kasutab kitsast raadiust; festivaliplats laia."
+    },
+    "verification": {
+      "title": "Mitme signaaliga kontroll",
+      "meta": "4 sõltumatut signaali",
+      "body": "Satelliidi asukoht, ümbritsev raadiokeskkond, seadme atesteerimine ja liikumise järjepidevus peavad kõik kokku langema, enne kui lunastus vastu võetakse."
+    },
+    "anchoring": {
+      "title": "AR-ankurdamine",
+      "meta": "Püsiv",
+      "body": "Varad jäävad paigale nii seansside kui ka kasutajate vahel. Kaks samas kohas seisvat inimest näevad sama asja samas punktis."
+    },
+    "companion": {
+      "title": "AI-kaaslane",
+      "meta": "Eelkõige seadmes",
+      "body": "Loeb kaamerat, et selgitada, mida sa vaatad, ja soovitada, kuhu edasi minna, saatmata sinu liikumisajalugu kuhugi."
+    },
+    "wallet": {
+      "title": "Sotsiaalne rahakott",
+      "meta": "Ilma seemnelauseta",
+      "body": "Luuakse sotsiaalse sisselogimise põhjal, et esmakordne kasutaja saaks minuti jooksul midagi korjata, ning võtme saab iseseisvaks hoidmiseks eksportida alati, kui soovid."
+    },
+    "settlement": {
+      "title": "Mitme plokiahela arveldus",
+      "meta": "Alla sekundi",
+      "body": "Vara arveldatakse võrgus, kus see juba elab, ühe nõude alusel, mida iga plokiahel peab täitma: väikese auhinna korjamine ei tohi maksta rohkem, kui auhind väärt on."
+    }
+  },
+  "ecosystemFaq": {
+    "spoofing": {
+      "question": "Kas ma saan oma asukohta võltsida, et korjata ilma kohale minemata?",
+      "answer": "Mitte odavalt. Pelka GPS-asukohta on lihtne võltsida, seepärast on see vaid üks neljast signaalist. Ümbritsev raadiokeskkond, seadme atesteerimine ja sinu liikumisjälg peavad kõik seda kinnitama ning seade, mis korduvalt ebaõnnestub, peab ületama kõrgema läve. Eesmärk on, et võltsimine maksaks rohkem, kui auhind väärt on, mitte väita, et see on võimatu."
+    },
+    "crypto": {
+      "question": "Kas ma pean Seekprotocoli kasutamiseks krüptost midagi teadma?",
+      "answer": "Ei. Rahakott luuakse sotsiaalse sisselogimise põhjal ja sa ei näe kunagi seemnelauset, kui sa ise seda otsima ei lähe. Kui tahad hiljem varasid ise hoida, saad võtme igal ajal eksportida."
+    },
+    "tracking": {
+      "question": "Kas Seekprotocol jälgib, kus ma käin?",
+      "answer": "Ei. Äpp küsib asukohta siis, kui proovid lunastada, mitte pidevalt taustal. Toorandmeid anduritest kasutatakse selle ühe lunastuse hindamiseks ja seejärel need kustutatakse ning sinu liikumisajalugu jääb sinu seadmesse."
+    },
+    "farming": {
+      "question": "Mis takistab ühte inimest paljude rahakottidega asukohta farmimast?",
+      "answer": "Seadmepõhised lunastuspiirangud raadiuse ja ajaakna sees ning seadme atesteerimine, mida emulaatorifarmid ei läbi. Rahakotid on tasuta, reisimine mitte, ja just sellepärast seotaksegi levitamine geograafiaga."
+    },
+    "chain": {
+      "question": "Millises plokiahelas Seekprotocol töötab?",
+      "answer": "Selles, kus vara elab. Võrgud on read tabelis, mitte kood, nii et avaldaja rahastab kampaania tokeniga, mis tal juba on, ja otsija ei pea kunagi plokiahelat valima. Iga võrk peab täitma sama nõude: paari sendi väärtune auhind peab liigutamise üle elama ja tänavanurgal seisja ei tohiks selle järel ootama pidama. Avalehe riba ütleb, millised plokiahelad täna arveldavad."
+    },
+    "rewardKind": {
+      "question": "Kas auhind peab olema krüpto?",
+      "answer": "Ei. Kassas lunastatav kupong, paar tossusid kastis, pääse, mis on olemas ainult kohapeal: miski sellest ei puutu plokiahelat ja all olev kontroll on mõlemal juhul sama. Kui mängus on token, arveldatakse see plokiahelas, kus see juba elab. Protokoll tõestab, et keegi oli kohal; mida talle antakse, otsustad sina."
+    },
+    "business": {
+      "question": "Kas minu ettevõte saab täna varasid paigutada?",
+      "answer": "Hallatud partnerluse kaudu, jah. Iseteeninduslik portaal, mis teeb vestluse meiega tarbetuks, on töös ja teekaart näitab, kus see on."
+    }
+  },
+  "roadmapPage": {
+    "metaTitle": "Teekaart: mis on valmis ja mis tuleb järgmisena",
+    "metaDescription": "Mida Seekprotocol on välja andnud ja mis tuleb järgmisena, asukoha tõendi prototüübist ja Seekprotocoli avalikust käivitamisest kuni iseteenindusportaali ja juhtimiseni.",
+    "ogTitle": "Seekprotocoli teekaart",
+    "eyebrow": "Teekaart",
+    "titleStart": "Mis on ehitatud ja mis tuleb",
+    "titleAccent": "järgmisena",
+    "lead": "{phases} faasi, võrreldes sellega, mis on päriselt välja antud. {shipped}/{total} verstaposti valmis.",
+    "status": {
+      "done": "Valmis",
+      "active": "Töös",
+      "next": "Plaanis"
+    },
+    "datesTitle": "Nendel kuupäevadel",
+    "datesNote": "Kuupäevad kirjeldavad kavatsust, mitte kohustusi. Kõik, mis pole veel valmis märgitud, võib nihkuda, ja me pigem ütleme seda, kui segame vaikselt graafikut ümber.",
+    "legendTitle": "Legend",
+    "ctaEyebrow": "Üksikasjad",
+    "ctaTitle": "Järjekorra põhjendus",
+    "ctaBody": "Whitepaper selgitab, miks kontroll tuli enne mastaapi ja miks juhtimine tuleb viimasena.",
+    "ctaWhitepaper": "Loe whitepaperit"
+  },
+  "roadmapPhases": {
+    "foundation": {
+      "title": "Alus",
+      "summary": "Tõestada, et põhiidee üldse töötab: kas telefon suudab kinnitada, et keegi oli kuskil, piisavalt usaldusväärselt, et vabastada midagi väärtuslikku?",
+      "items": {
+        "prototype": "Asukoha tõendi prototüüp GNSS-i ja liikumise järjepidevusega",
+        "engine": "AR-renderdusmootor püsiva maailma ankurdamisega",
+        "settlement": "Esimene arvelduskiht Solanas koos varade definitsioonidega",
+        "alpha": "Sisemine alfa kolmes testlinnas"
+      }
+    },
+    "launch": {
+      "title": "Avalik käivitamine",
+      "summary": "Seekprotocol päris inimeste kätte, mõlemas rakenduste poes, liitumisvooga, mis ei eelda, et kasutajal on kunagi privaatvõti olnud.",
+      "items": {
+        "stores": "Seekprotocol ilmus iOS-is ja Androidis",
+        "wallet": "Sotsiaalse sisselogimisega rahakott valikulise iseseisva hoidmise ekspordiga",
+        "drops": "Asukohapõhised dropid ja ülesannete süsteem",
+        "attestation": "Seadme atesteerimine Play Integrity ja App Attesti kaudu",
+        "localisation": "Veebileht ja äpp kaheksas keeles"
+      }
+    },
+    "scale": {
+      "title": "Avamine",
+      "summary": "Aasta, mil võrgu täitmine ei ole enam meie ülesanne. Igaüks saab varasid paigutada ilma meiega enne rääkimata, neid rahastav token läheb avalikuks ja tagasi tulemise põhjused ei ole enam asjad, mida teed üksi.",
+      "groups": {
+        "supply": "Pakkumise pool",
+        "network": "Võrguefektid"
+      },
+      "items": {
+        "companion": "AI-kaaslane kaamerateadliku kontekstipõhise juhendamisega",
+        "radio": "Raadiosõrmejälg kontrollipinusse",
+        "builder": "Lohista ja pane kampaaniakoostaja väiksematele avaldajatele",
+        "portal": "Iseteeninduslik ärikeskkond toimumiskohtadele ja brändidele",
+        "analytics": "Kinnitatud saabumiste analüütika ja külastuse hinna aruandlus",
+        "tge": "Tokeni loomise sündmus (TGE)",
+        "partnerships": "Suured partnerlused",
+        "liveEvents": "Otseürituse režiim festivalidele, matšidele ja konverentsidele",
+        "seasons": "Hooajad oma edetabelite ja auhindadega",
+        "scanning": "Mänguline objektide skannimine",
+        "guilds": "Gildid, meeskonnaülesanded ja ühised auhinnafondid",
+        "revenueShare": "Loojate tulujagamine paigutatud varadelt",
+        "multichain": "Arveldus Ethereumis, BNB Smart Chainis ja Arbitrumis"
+      }
+    },
+    "governance": {
+      "title": "Parameetrite üleandmine",
+      "summary": "Juhtimine järgneb päris tasude voole, mitte ei eelne sellele. Hääletamine majanduse üle, kus pole mahtu, on teater, seega tuleb see meelega viimasena.",
+      "items": {
+        "onChain": "Plokiahelapõhine juhtimine protokolli parameetrite üle",
+        "treasury": "Kogukonna varakassa jaotus",
+        "providers": "Kolmandate osapoolte kontrollipakkujad",
+        "sdk": "Avatud SDK välistele rakendustele protokolli peal"
+      }
+    }
+  },
+  "businessPage": {
+    "metaTitle": "Geopiirdega turundus, tasu saabumise eest",
+    "metaDescription": "Asukohapõhine AR-reklaam avaldajatele ja brändidele. Paiguta auhind oma koordinaatidele ja maksa iga kinnitatud külastuse, mitte näitamise eest.",
+    "ogTitle": "Maksa kinnitatud saabumise eest",
+    "eyebrow": "Ettevõtetele",
+    "titleStart": "Osta saabumisi, mitte",
+    "titleAccent": "näitamisi",
+    "lead": "Digireklaam suudab panna sinu logo kellegi ette millisekunditega. See ei suuda panna teda kolm tänavat edasi kõndima. Paiguta auhind oma ukse taha ja maksa nende inimeste eest, kes selleni jõuavad.",
+    "ctaTalk": "Räägi meiega",
+    "ctaVerification": "Kuidas kontroll töötab",
+    "argumentEyebrow": "Argument",
+    "argumentTitle": "Kus loendamine lõpeb",
+    "argumentLead": "Kuluta sama raha kahel viisil ja lehtrid näivad võrreldavad kuni viimase reani. Üks neist on loendatud. Teine on mudel, ja just selle rea järgi hinnatakse iga kampaaniat.",
+    "useCasesEyebrow": "Kasutusjuhud",
+    "useCasesTitle": "Neli viisi, kuidas seda kasutatakse",
+    "setupEyebrow": "Seadistus",
+    "setupTitle": "Neli otsust, null inseneritööd",
+    "setupLead": "See on kogu voog. Tee neli valikut ja avalda ning vaata, mida igaüks teeb sinu kaetavale alale ja inimese hinnale sinu ukse taga.",
+    "measurementEyebrow": "Mõõtmine",
+    "measurementTitle": "Mida sa saad ja mida mitte",
+    "measurementLead": "Asukohaandmed on kõige tundlikum andmeliik, mis üldse olemas on. Saad arvud, mida vajad kampaania hindamiseks, ja mitte midagi, mis laseks sul üksikisikut jälitada.",
+    "ctaEyebrow": "Alusta",
+    "ctaTitle": "Pane midagi oma ukse taha",
+    "ctaBody": "Iseteeninduslik portaal on töös. Kuni see valmis saab, seadistame kampaaniad koos sinuga otse. Ütle meile asukoht ja mida tahad paigutada.",
+    "ctaStart": "Alusta vestlust",
+    "ctaRoadmap": "Vaata, millal iseteenindus tuleb",
+    "realEyebrow": "Ühik",
+    "realTitle": "Mis on saabumine ja mis mitte",
+    "realLead": "Iga turul olev mõõdik on asendusnäitaja ja iga asendusnäitaja jaoks on skript, mis toodab selle alla sendi eest. Kohalolek on erand, ja see on erand põhjusel, mis parema riistvaraga ei kao: kulu on füüsiline.",
+    "chainsNote": "Rahasta kampaaniat varaga, mis sul juba on, või ilma ühegi varata. Kupong kassas ja kast lävel ei vaja plokiahelat ega rahakotti. Kui mängus on token, on võrk seadistus, mitte integratsioon, nii et üks kampaania saab joosta korraga mitmes ja lunastaja ei pea kunagi teadma, millises.",
+    "verifiedEyebrow": "Ainult kinnitatud külastused",
+    "verifiedTitle": "Maksa ainult siis, kui keegi oli päriselt kohal",
+    "verifiedBody": "Pole näitamisi ega klikke, mis kunagi külastuseks ei muutunud. Kampaania kulutab siis, kui protokoll on inimese kohalolekut kinnitanud.",
+    "verifiedLink": "Ava Seek Partners"
+  },
+  "useCases": {
+    "retail": {
+      "label": "Jaekaubandus ja majutus",
+      "metric": "Kinnitatud saabumise hind",
+      "title": "Muuda asukoht põhjuseks tulla",
+      "body": "Paiguta pakkumine oma ukse taha kitsa lunastusraadiusega. Seda saab võtta ainult keegi, kes seal seisab, nii et lunastus, mida näed, on inimene, kes sisse astus, mitte reklaam, millest keegi mööda keris.",
+      "points": [
+        "Raadius häälestatud ukseavale, mitte postiindeksile",
+        "Lunastus salvestatakse saabumise hetkel",
+        "Töötab kogu poeketis ilma poepõhise integratsioonita"
+      ]
+    },
+    "events": {
+      "label": "Üritused ja toimumiskohad",
+      "metric": "Kohapealne kaasatus",
+      "title": "Lunastatav kaart ürituse kestuseks",
+      "body": "Festivalid, matšid ja konverentsid muutuvad ajutiseks varade kihiks, mis aegub koos üritusega. Kohalolek avab need, nii et auhind jõuab inimesteni, kes päriselt kohale tulid.",
+      "points": [
+        "Ajapiiranguga varad, mis aeguvad graafiku järgi",
+        "Laiad raadiused platsidele, kitsad lavadele ja lettidele",
+        "Kõrgemad kontrollilävendid kõrge väärtusega droppidele"
+      ]
+    },
+    "token": {
+      "label": "Tokeni- ja NFT-projektid",
+      "metric": "Sybil-kindlus",
+      "title": "Jaga inimestele, mitte rahakottidele",
+      "body": "Rahakoti loomine on tasuta, seepärast airdrope farmitaksegi. Füüsilise kohaloleku nõue paneb igale lisalunastusele päris hinna, sest keegi pole korraga neljakümnes linnas.",
+      "points": [
+        "Geograafiline levitamine valitud turgudel",
+        "Seadmepõhised lunastuspiirangud raadiuse ja ajaakna sees",
+        "Avalik lunastuste register vara enda plokiahelas"
+      ]
+    },
+    "tourism": {
+      "label": "Linnad ja turism",
+      "metric": "Külastajavoo jaotus",
+      "title": "Juhi inimesed kohtadesse, mida tahad kasutusse",
+      "body": "Seo varad rajaks, nii et külastajad liiguvad seda mööda järjekorras. Vaiksed tänavad, teisejärgulised paigad ja vaiksed tunnid võivad kanda auhindu, mida rahvarohked vaatamisväärsused ei vaja.",
+      "points": [
+        "Järjestatud ülesanded mitmes paigas",
+        "Vaiksete tundide kaalumine nõudluse hajutamiseks",
+        "Koondatud saabumiste arvud, mitte kunagi isiklikud jäljed"
+      ]
+    }
+  },
+  "interactionClaims": {
+    "nobots": {
+      "metric": "Ilma botiliikluseta",
+      "title": "Siin ei saa midagi skriptiga toota",
+      "body": "Lunastus nõuab seadet koordinaadil, mis on kooskõlas oma satelliidi asukoha, ümbritseva raadiokeskkonna ja liikumisega, mis selle sinna tõi. Ühelgi neist pole andmekeskuse vastet, seepärast pole pettuste määr number, mida peaksime alla suruma."
+    },
+    "organic": {
+      "metric": "Orgaaniline oma olemuselt",
+      "title": "Iga interaktsioon on kellegi tehtud teekond",
+      "body": "Kaasatust ei tuletata klikist ega modelleerita paneeli põhjal. Keegi otsustas kõndida sinu aadressini ja kirje sellest tehakse tema saabumise hetkel, mitte ei rekonstrueerita hiljem."
+    },
+    "cta": {
+      "metric": "Sinu üleskutse",
+      "title": "Meie kinnitame kohaloleku, sina otsustad palve",
+      "body": "Seo auhind ostu, jälgimise, registreerumise, riiulil oleva toote skannimise või lihtsalt kohaletulekuga. All olev kontroll on igal juhul sama, nii et palve võib kampaaniati muutuda ilma garantiid muutmata."
+    }
+  },
+  "measurement": {
+    "counted": {
+      "label": "Mida loendatakse",
+      "value": "Kinnitatud saabumine sinu raadiuse sees"
+    },
+    "when": {
+      "label": "Millal loendatakse",
+      "value": "Lunastuse hetkel, mitte hiljem tuletatuna"
+    },
+    "receive": {
+      "label": "Mida sa saad",
+      "value": "Koondarvud asukoha, aja ja kampaania järgi"
+    },
+    "never": {
+      "label": "Mida sa kunagi ei saa",
+      "value": "Isiklikke liikumisjälgi ega identiteete"
+    }
+  },
+  "funnel": {
+    "budget": "Kampaania eelarve",
+    "displayTitle": "Ostetud displayna",
+    "displayCost": "modelleeritud külastuse kohta",
+    "seekTitle": "Ostetud saabumistena",
+    "seekCost": "kinnitatud saabumise kohta",
+    "counted": "Loendatud",
+    "estimated": "Hinnanguline",
+    "stages": {
+      "impressions": "Näidatud reklaamid",
+      "viewable": "Nähtaval kuvatud",
+      "clicks": "Klikid",
+      "visits": "Poekülastused",
+      "saw": "Nägid nõela lähedal",
+      "opened": "Avasid dropi",
+      "walked": "Kõndisid selleni",
+      "claimed": "Lunastasid ukse juures"
+    },
+    "caption": "Display kasutab ${cpm} CPM-i, {viewability}% nähtavust, {ctr}% klikimäära ja {modelled}% näitamisest külastuseni arvu, mida reklaamiplatvormid modelleerivad. Just viimast rida tasub vaadata: seda ei loendata, seda hinnatakse, ja see ei tulene selle kohal olevatest klikkidest. Parempoolses veerus on iga rida asi, mis juhtus seadmes sinu raadiuse sees."
+  },
+  "deploy": {
+    "stepsLabel": "Sammud",
+    "steps": {
+      "location": "Asukoht",
+      "asset": "Vara",
+      "rules": "Reeglid",
+      "publish": "Avalda"
+    },
+    "whereLegend": "Kus see asub",
+    "whereNote": "Portaalis on see nõel, mida lohistad. Koordinaat on kogu aadress, mis varal kunagi on.",
+    "assetLegend": "Mida sa paigutad",
+    "assetNote": "Üks lunastus seadme kohta raadiuse ja ajaakna sees, nii et kogus on inimeste arv, mitte varude arv.",
+    "rulesLegend": "Kes saab selle võtta",
+    "campaignLegend": "Kampaania",
+    "quantity": "Kogus",
+    "claimRadius": "Lunastusraadius",
+    "presets": {
+      "store": {
+        "label": "Poefassaad",
+        "place": "Kalverstraat 92, Amsterdam",
+        "hint": "Ukseava. Piisavalt kitsas, et lunastada saab ainult kassa juures olija."
+      },
+      "venue": {
+        "label": "Ürituse ala",
+        "place": "Johan Cruijff ArenA, Amsterdam",
+        "hint": "Terve ala ürituse kestuseks, aegub, kui see lõpeb."
+      },
+      "trail": {
+        "label": "Linnarada",
+        "place": "Kuus paika üle Amsterdam Noordi",
+        "hint": "Seotud varad, lunastatavad järjekorras, kaaluga vaiksete tänavate poole."
+      }
+    },
+    "assets": {
+      "token": "Token",
+      "nft": "Kogumisese",
+      "offer": "Pakkumiskood",
+      "ticket": "Pääse"
+    },
+    "tiers": {
+      "standard": {
+        "label": "Tavaline kontroll",
+        "note": "GNSS, atesteerimine ja liikumine peavad kokku langema."
+      },
+      "strict": {
+        "label": "Range kontroll",
+        "note": "Lisab raadiosõrmejälje. Kõrge väärtusega droppidele."
+      }
+    },
+    "summaryLocation": "Asukoht",
+    "summaryAsset": "Vara",
+    "summaryRadius": "Raadius",
+    "summaryVerification": "Kontroll",
+    "summaryThreshold": "{tier}, lävend {threshold}",
+    "summaryBudget": "Eelarve",
+    "summaryBudgetValue": "${budget}, ${cost} saabumise kohta",
+    "publish": "Avalda kampaania",
+    "sequence": {
+      "signing": "Kampaania allkirjastamine",
+      "writing": "Vara definitsiooni kirjutamine plokiahelasse",
+      "indexing": "Koordinaatide indekseerimine",
+      "live": "Kaardil otse"
+    },
+    "again": "Seadista veel üks",
+    "back": "Tagasi",
+    "next": "Edasi",
+    "review": "Ülevaade",
+    "verifiedArrivals": "Kinnitatud saabumised",
+    "costPerArrival": "Saabumise hind",
+    "sawPin": "Nägid nõela lähedal",
+    "placementFee": "Paigutustasu",
+    "perArrival": "Saabumise kohta",
+    "live": "Otse",
+    "radiusOf": "Raadius {radius} m",
+    "captionLive": "Saabumised on prognoos raadiuse ja selle ümbruse kaardiliikluse põhjal, mitte garantii. Igaüks neist oleks lunastus, mis salvestatakse plokiahelasse hetkel, kui keegi seal seisis.",
+    "captionIdle": "Rõngas on joonistatud kaardi suhtes mõõtkavas. Siin pole vaja arendajat: neli otsust, siis avalda."
+  },
+  "whitepaper": {
+    "metaTitle": "Whitepaper: asukoha tõend, igas plokiahelas",
+    "metaDescription": "Kuidas Seekprotocol annab digitaalseid varasid välja päris koordinaatidele, kinnitab, et keegi oli päriselt kohal, ja arveldab selles plokiahelas, kus vara elab. Arhitektuur, tokeni disain, rünnakud.",
+    "ogTitle": "Seekprotocoli whitepaper",
+    "ogDescription": "Asukoha tõend, arhitektuur, tokeni disain ning aus ülevaade rünnakutest ja piirangutest.",
+    "eyebrow": "Whitepaper",
+    "titleStart": "Digitaalsed varad, mis elavad",
+    "titleAccent": "kindlas kohas",
+    "lead": "Tehniline ülevaade sellest, kuidas Seekprotocol annab varasid välja koordinaatidele, tõestab, et keegi seal seisis, ja arveldab selle plokiahelas, sealhulgas sellest, mida süsteem teha ei suuda.",
+    "readingTime": "{minutes} min lugemist",
+    "updated": "Uuendatud {date}",
+    "updatedValue": "August 2026",
+    "gitbook": "Täielik dokumentatsioon GitBookis",
+    "ctaEyebrow": "Edasi",
+    "ctaTitle": "Vaata seda töös",
+    "ctaBody": "Ökosüsteemi leht näitab elavat võrku ja teekaart jälgib, mis on valmis ja mis tuleb järgmisena.",
+    "ctaEcosystem": "Avasta ökosüsteemi",
+    "ctaRoadmap": "Vaata teekaarti",
+    "chapters": {
+      "summary": {
+        "index": "01",
+        "eyebrow": "Kokkuvõte",
+        "title": "Protokoll asjadele, mis on olemas kindlas kohas",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Internet tegi iga digitaalse objekti korraga kõikjal kättesaadavaks. See oligi eesmärk ja see töötas. Kuid see võttis digitaalsetelt asjadelt ka selle ühe omaduse, mis teeb füüsilised asjad väärtuslikuna tunduvaks: olemise kuskil kindlas kohas. Kontserdipilet on oluline, sest see laseb sind saali. Vaatamisväärsus on oluline, sest selle juurde tuleb reisida."
+          },
+          {
+            "kind": "p",
+            "text": "Seekprotocol toob asukoha digitaalsetesse varadesse tagasi. Tokeni, NFT või auhinna saab välja anda koordinaatidele, mitte rahakotile, ja see jääb sinna, kuni keegi füüsiliselt selle raadiuses seisab ja seda tõestab. Me nimetame seda asukoha tõendiks ja see on alusprimitiiv, millele ülejäänud protokoll on ehitatud."
+          },
+          {
+            "kind": "p",
+            "text": "Tarbijale nähtav osa on **Seekprotocol**, mobiiliäpp iOS-is ja Androidis, mis renderdab need varad liitreaalsuses. Sa kõnnid, telefon näitab, mis on lähedal, ja sa korjad, mida leiad. All toimub arveldus selles plokiahelas, kus vara juba elab, ühe nõude alusel: tehingukulud peavad olema nii madalad, et väikese auhinna korjamine ei maksaks rohkem, kui auhind väärt on."
+          },
+          {
+            "kind": "callout",
+            "text": "Lühidalt: teeme digitaalseid varasid, mida saab lunastada ainult kindlast kohast, kinnitame, et keegi oli päriselt kohal, ja arveldame selle plokiahelas alla sekundiga sendi murdosa eest."
+          },
+          {
+            "kind": "h",
+            "text": "Mida see dokument käsitleb"
+          },
+          {
+            "kind": "p",
+            "text": "Kuusteist peatükki neljas osas. Esimesed kolm kirjeldavad probleemi ja primitiivi, mis sellele vastab. Peatükid neli kuni seitse on masin: kuidas lunastus liigub, kuidas kihid kokku sobivad ja mida äpp nendega teeb. Kaheksa kuni üksteist on majandus, alates sellest, kes paigutuse eest maksab, kuni selleni, kes parameetrid otsustab. Viimased viis on asjad, mis whitepaperist tavaliselt välja jäävad: rünnakud, privaatsuse hind, regulatiivne positsioon ja ausad piirangud."
+          },
+          {
+            "kind": "p",
+            "text": "Mitu joonist on mängitavad. Kontrollimudel, lunastuse ajajoon, püügiveeretus ja eelarvekalkulaator teevad sama aritmeetikat mis protokoll, samade konstantidega, nii et saad vaielda disainiga, mitte selle skeemiga."
+          }
+        ]
+      },
+      "problem": {
+        "index": "02",
+        "eyebrow": "Probleem",
+        "title": "Tähelepanu on veebis odav ja tänaval kallis",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Kahel grupil on probleem, mis osutub samaks probleemiks, vaadatuna vastasotstest."
+          },
+          {
+            "kind": "h",
+            "text": "Brändid ja toimumiskohad ei saa külastajaid osta"
+          },
+          {
+            "kind": "p",
+            "text": "Digireklaam suudab panna pildi kellegi ette millisekunditega. See ei suuda panna teda kolm tänavat edasi kõndima. Näitamisest füüsiliseks külastuseks muutumine on kogu jaekaubanduse ja ürituste lehtri nõrgim lüli ning seda mõõdetakse halvasti, tavaliselt kassas inimestelt küsides, kas nad nägid reklaami."
+          },
+          {
+            "kind": "p",
+            "text": "Valdkonna vastus on olnud modelleerimine. Nõusoleku andnud seadmete paneelid ekstrapoleeritakse populatsioonile ja saadud poekülastuste arvu raporteeritakse näitamiste ja klikkide kõrval, nagu tuleks see samasugusest loendurist. Ei tule. Üks number on sündmus ja teine hinnang, ning kampaaniaid hinnatakse hinnangu järgi."
+          },
+          {
+            "kind": "h",
+            "text": "Krüptoprojektid ei leia päris kasutajaid"
+          },
+          {
+            "kind": "p",
+            "text": "Airdropid on levitamise standardtööriist ja neid farmitakse. Rahakoti loomine ei maksa midagi, nii et iga auhinna, mida saab rahakotiga lunastada, lunastavad tuhanded rahakotid, mis kuuluvad käputäiele inimestele. Projektid vastavad üha keerulisemate sobivusreeglitega, mis enamasti filtreerivad välja tavakasutajad, samal ajal kui osavad farmijad kohanevad."
+          },
+          {
+            "kind": "p",
+            "text": "Mõlemad probleemid kaovad, kui saad tõestada, et inimene oli kindlal ajal kindlas kohas. Külastajad muutuvad mõõdetavaks, sest saabumine ongi salvestatav sündmus. Airdropi farmimine muutub kalliks, sest rahakott on tasuta, reisimine mitte, ja keegi pole korraga neljakümnes linnas."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Rahakoti loomise hind",
+                "value": "Sisuliselt null"
+              },
+              {
+                "label": "Kuskil olemise hind",
+                "value": "Aeg, vahemaa, füüsiline kohalolek"
+              },
+              {
+                "label": "Mida see vahe ostab",
+                "value": "Füüsikal põhineva Sybil-kaitse mehhanismi"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Miks seda saab ehitada nüüd, aga ei saanud varem"
+          },
+          {
+            "kind": "p",
+            "text": "Kolm asja pidid saabuma korraga. Telefonidel pidid standardina olema kahesageduslik GNSS, sügavust tajuvad kaamerad ja riistvarapõhine atesteerimine, mitte ainult tipptelefonide funktsioonina. Arveldus pidi muutuma piisavalt odavaks, et paari sendi väärtune auhind elaks liigutamise üle, mis välistas iga plokiahela, kuni tasud langesid alla sendi. Ja inimesed pidid olema valmis suunama kaamera tänavale ja nägema sinna midagi renderdatuna, mille on kümme aastat AR-i mängudes vaikselt ära lahendanud."
+          }
+        ]
+      },
+      "distribution": {
+        "index": "03",
+        "eyebrow": "Levitamine",
+        "title": "Miks tasuline haare ei suuda tuua päris inimest",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Eelmine peatükk ütles, et kahel grupil on sama probleem. See peatükk räägib tööriistast, mille järele mõlemad esimesena haaravad, ja miks see ebaõnnestub viisil, mida suurem kulutamine ei paranda."
+          },
+          {
+            "kind": "h",
+            "text": "Iga turul olev mõõdik on asendusnäitaja"
+          },
+          {
+            "kind": "p",
+            "text": "Näitamine, klikk, vaatamine, jälgimine, rahakoti aadress: ükski neist pole inimene. Igaüks on signaal, mis korreleerub inimesega tingimustel, mida kontrollib signaali müüja. Kui signaali tootmise tasu ületab selle ilma inimeseta tootmise kulu, toodetakse see ilma inimeseta, ja korrelatsioon, millele kogu turu hinnad tuginevad, eraldub vaikselt sellest, mida see esindas."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Üks näitamine",
+                "value": "Sendi murdosad, inimest pole vaja"
+              },
+              {
+                "label": "Üks klikk",
+                "value": "Sente, residentsiaalsete proksite hulgast"
+              },
+              {
+                "label": "Üks rahakott",
+                "value": "Tasuta ja tuhandete kaupa skriptitav"
+              },
+              {
+                "label": "Üks kinnitatud saabumine",
+                "value": "Teekond, mille tegi keha, üks kord"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Filtrid ei taasta signaali"
+          },
+          {
+            "kind": "p",
+            "text": "Tavaline vastus on sobivusreeglid: miinimumsaldod, varasem aktiivsus, snapshot-aknad, captchad, seadme sõrmejäljed. Igaüks tõstab võltslunastuse hinda mingi summa võrra ja päris lunastuse hinda mingi teise summa võrra, ning nende suhe on ainus, mis otsustab, kas filter aitas. Praktikas neelab osav farmija kulu ja tavakasutaja loobub, nii et filtrid valivad lõpuks just selle populatsiooni, mille välistamiseks need loodi."
+          },
+          {
+            "kind": "p",
+            "text": "Kohalolek ei ole parem filter. See on teist liiki asi, sest selle kulu ei ole arvutuslik. Seda ei saa serveririiulil paralleelselt teha, see ei lange riistvara odavnedes ja tänava jaoks pole residentsiaalset proksit."
+          },
+          {
+            "kind": "callout",
+            "text": "Kasulik küsimus iga pettusevastase meetme kohta pole see, kui palju see ründajale maksab, vaid kui palju see ründajale maksab võrreldes ausa kasutajaga. Kohalolek on nimekirjas ainus signaal, mille puhul see suhe ei nihku aja jooksul ründaja kasuks."
+          },
+          {
+            "kind": "h",
+            "text": "Palve jääb ikka avaldajale"
+          },
+          {
+            "kind": "p",
+            "text": "Kinnitus, et keegi oli kuskil, ei ütle midagi selle kohta, mida ta seal olles tegema peaks, ja protokoll keeldub teadlikult seda otsustamast. Lunastuse võib siduda jälgimise, registreerumise, riiulil oleva toote skannimise, koordinaadil mintimise, kassas ostmise või ainult saabumisega. All olev kontroll on igal juhul sama, mis tähendab, et avaldaja saab palvet kampaaniati muuta ilma garantiis midagi muutmata."
+          },
+          {
+            "kind": "p",
+            "text": "See on oluline põhjusel, mis kergesti kahe silma vahele jääb. Levituskanal, mis dikteerib üleskutse, sobib ainult kampaaniatele, mille jaoks see loodi, ja iga avaldaja väljaspool seda kuju peab oma pakkumise kanalile sobivaks painutama. Siin müüakse tõendit, mitte lehtrit."
+          },
+          {
+            "kind": "h",
+            "text": "Mida see ei lahenda"
+          },
+          {
+            "kind": "p",
+            "text": "Kinnitatud saabumine on tõend, et seade oli koordinaadil, mitte et seda hoidev inimene tahtis seal olla või kunagi tagasi tuleb. Keegi, kellele maksti ukse eest mööda kõndimise eest, on päris saabumine ja kehv klient. Protokoll teeb saabumise võltsimise kalliks ja loendamise lihtsaks. Kas seda tasus osta, on endiselt turundusküsimus ja ükski plokiahel sellele ei vasta."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "04",
+        "eyebrow": "Põhiprimitiiv",
+        "title": "Asukoha tõend",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Asukoha tõend on väide, et antud seade oli antud ajaaknas antud raadiuse sees, tehtud piisavalt usaldusväärseks, et selle põhjal saab midagi väärtuslikku vabastada."
+          },
+          {
+            "kind": "p",
+            "text": "Ükski signaal ei ole iseenesest usaldusväärne. Toorest GPS-i saab võltsida iga rooditud seade võltsasukoha pakkujaga. Seepärast hindab protokoll lunastust mitme sõltumatu signaali põhjal ja nõuab, et nende kombinatsioon oleks sidus, sest ühe signaali võltsimine on lihtne, aga kõigi järjepidev võltsimine mitte."
+          },
+          {
+            "kind": "h",
+            "text": "Signaalid, mida kombineerime"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GNSS-asukoht**, toores satelliitasukoht koos teatatud täpsusega ning tähtkuju ja satelliitide arv, mida võltsijad sageli valesti teevad.",
+              "**Raadiokeskkond**, lähedal olevate Wi-Fi SSID-de ja mobiilimastide kogum, mida võrreldakse sellega, mida protokoll nendel koordinaatidel näha ootab. Raadiokeskkondi on raske võltsida ja need muutuvad aeglaselt.",
+              "**Seadme atesteerimine**, Androidis Play Integrity ning iOS-is DeviceCheck või App Attest, mis kinnitab, et äpp on ehtne ja operatsioonisüsteem pole kompromiteeritud.",
+              "**Liikumise järjepidevus**, kiirendusanduri jälg eelmise kinnitatud asukoha ja praeguse vahel. Väide, et liikusid 90 sekundiga 400 km ilma sobiva liikumisprofiilita, lükatakse tagasi.",
+              "**Ajaline usutavus**, kus saabumisaegu kontrollitakse sinu viimase kinnitatud asukoha põhjal eeldatava reisiaja suhtes."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Iga signaal panustab kindlusskoori. Varad määravad nõutava skoori: madala väärtusega ülesande auhind võib leppida mõõduka skooriga, samas kui kõrge väärtusega drop piletiga üritusel võib nõuda seadme atesteerimist ja sobivat raadiokeskkonda. Lävendist allapoole jäävad lunastused lükatakse tagasi ja ühe seadme korduvad tagasilükkamised tõstavad selle seadme lävendit."
+          },
+          {
+            "kind": "confidence"
+          },
+          {
+            "kind": "callout",
+            "text": "Eesmärk ei ole täiuslik tõend, mis on tarbijariistvaral saavutamatu. Eesmärk on, et võltsimine maksaks rohkem, kui auhind väärt on, sama standard, mis hoiab kaardimaksed toimivana."
+          },
+          {
+            "kind": "h",
+            "text": "Miks signaale kaalutakse, mitte ei nõuta"
+          },
+          {
+            "kind": "p",
+            "text": "Reegel, mis nõuab kõiki signaale, on reegel, mis lükkab tagasi ausad kasutajad. Maa-alustes jaamades kaob GNSS. Uutel hoonetel on raadiokeskkond, mida kaart pole kunagi näinud. Kaks OS-i versiooni maha jäänud telefon võib atesteerimisel läbi kukkuda põhjustel, millel pole pettusega mingit pistmist. Kaalumine laseb varal öelda, kui palju tõendeid selle väärtus väärib, ja laseb ausal lunastusel üle elada ühe halva signaali, lubamata võltsitud lunastusel üle elada nelja."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Vaikimisi lunastusraadius",
+                "value": "30 m"
+              },
+              {
+                "label": "Seadistatav vahemik",
+                "value": "5 m kuni 500 m vara kohta"
+              },
+              {
+                "label": "Tüüpiline kinnitus",
+                "value": "Alla sekundi arveldusahelas"
+              },
+              {
+                "label": "Atesteerimine",
+                "value": "Play Integrity, App Attest"
+              },
+              {
+                "label": "Tagasilükkamiste käsitlus",
+                "value": "Salvestatakse seadmepõhiselt, tõstab selle seadme latti"
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "index": "05",
+        "eyebrow": "Mehaanika",
+        "title": "Mis päriselt juhtub, kui sa midagi lunastad",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Eelmine peatükk kirjeldab tõendeid. See peatükk jälgib ühte lunastust hetkest, kui sa vara järele sirutad, kuni hetkeni, mil see on sinu rahakotis, sest just toimingute järjekorras peitub enamik disainiotsuseid."
+          },
+          {
+            "kind": "timeline"
+          },
+          {
+            "kind": "h",
+            "text": "Piir, mis loeb"
+          },
+          {
+            "kind": "p",
+            "text": "Vaata, kus etapid masinat vahetavad. Kõik tundlik toimub esimeses kolmes: asukoht, raadioskannimine, liikumisjälg, atesteerimine. Miski sellest ei lahku sinu telefonist toorel kujul. Kontrollijale liigub allkirjastatud lunastus ja kontrollijalt plokiahelasse liigub allkirjastatud atesteering, et lunastus ületas oma lävendi."
+          },
+          {
+            "kind": "p",
+            "text": "Seepärast on kontroll väljaspool plokiahelat. See pole skaleerimise kompromiss. Hindamise viimine plokiahelasse tähendaks sisendite avaldamist, ja sisendid on kirjeldus sellest, kus sa seisad ja millised traadita võrgud sinu ümber on."
+          },
+          {
+            "kind": "h",
+            "text": "Mis juhtub, kui see ebaõnnestub"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Alla lävendi**: lunastus lükatakse tagasi, vara jääb kaardile ja plokiahelasse ei kirjutata midagi. Tagasilükkamine salvestatakse seadme juurde.",
+              "**Korduvad tagasilükkamised**: selle seadme nõutav skoor tõuseb. Seadet, mis on tunni jooksul kuus lunastust läbi kukkunud, ei kohelda nagu seadet, mis pole ühtegi läbi kukkunud.",
+              "**Arvelduse tõrge**: lunastust hoitakse ja proovitakse uuesti, mitte ei visata ära. Võidetud, aga kohale toimetamata vara on viga, mis maksab usaldust, nii et järjekord on loodud kinni jäänud väljamakset kõrvale tõstma, mitte selle taga olevaid blokeerima.",
+              "**Aegumine lunastuse ajal**: varadel on ajaaken ja lunastus, mis saabub pärast selle sulgumist, lükatakse tagasi isegi täiusliku skooriga. Aken on osa varast, mitte võrgu tingimus."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Lunastus on lukk, mitte päring. Kahele inimesele, kes samal hetkel vara viimase ühiku järele sirutavad, ei tohi mõlemale öelda, et nad selle said, nii et kontroll võtab luku enne, kui midagi otsustab."
+          }
+        ]
+      },
+      "architecture": {
+        "index": "06",
+        "eyebrow": "Arhitektuur",
+        "title": "Kuidas kihid kokku sobivad",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokollil on neli kihti. Igaühe üle saab arutleda ja igaühe saab välja vahetada eraldi."
+          },
+          {
+            "kind": "stack"
+          },
+          {
+            "kind": "p",
+            "text": "Eraldatus on kõige olulisem asukoha ja arvelduse piiril. Asukoha kontroll on tõenäosuslik ja toimub väljaspool plokiahelat, sest see sõltub anduriandmetest, millel pole avalikkuses midagi teha. Plokiahelasse jõuab allkirjastatud atesteering, et lunastus ületas oma lävendi, mitte sinu liikumisajalugu."
+          },
+          {
+            "kind": "h",
+            "text": "Mida salvestatakse ja kus"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Plokiahelas**: varade definitsioonid, nende koordinaadid ja raadiused, lunastuste kirjed ja tokenite ülekanded. Avalik ja püsiv.",
+              "**Väljaspool plokiahelat**: toored andurinäidud, raadiosõrmejäljed ja seadmete atesteeringud. Säilitatakse ainult nii kaua, kui on vaja lunastuse hindamiseks ja vaidluste lahendamiseks, seejärel kustutatakse.",
+              "**Seadmes**: sinu asukohaajalugu ja AR-ankrute andmed. Need jäävad sinu telefoni, kui sa neid selgesõnaliselt ei jaga."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Miks arvelduskiht pole fikseeritud"
+          },
+          {
+            "kind": "p",
+            "text": "Nõue on plokiahela jaoks ebatavaline: väga suur tehingute arv, väga väike väärtus tehingu kohta ja kinnitus, mis on nii kiire, et tänaval seisev inimene seda ei märka. Keegi, kes korjab kahekümnesendise auhinna, ei saa maksta selle vastuvõtmise eest kümme senti ega jää kolmekümneks sekundiks ootama. See välistab suure osa valdkonnast kulu ja ülejäänu latentsuse tõttu. Kuid see välistab need nõudena, mitte ühe korra tehtud plokiahela valikuna, mille ümber kõik ehitatakse."
+          },
+          {
+            "kind": "p",
+            "text": "Seega on arveldus seadistus. Võrk on rida oma endpointi, plokiuurija ja natiivse tokeniga; vara kannab võrke, milles see eksisteerib, igaühes oma lepingu aadressi ja kümnendkohtadega; ja rahakott kuulub ühte kahest aadressiperest, mitte igale plokiahelale eraldi, sest kõik EVM-võrgud jagavad sama aadressi. Avaldaja rahastab kampaania tokeniga, mis tal juba on, ja lunastus arveldatakse seal, kus see token elab. Võrgu lisamine on rida, mitte uus väljalase."
+          },
+          {
+            "kind": "p",
+            "text": "Tasub öelda, mis on hind. Plokiahelad peatuvad ja peatunud plokiahel tähendab järjekorda jäänud lunastusi. Arveldust käsitletakse sammuna, mis võib ebaõnnestuda ja mida saab uuesti proovida, mitte sammuna, mis alati õnnestub, mis on õige disain igas võrgus ja kiires võrgus mitte valikuline. Mitme võrgu vahel jaotamine seda riski ei kaota. See takistab ühe võrgu katkestusel muutumast kogu protokolli katkestuseks, mis on väiksem ja aus väide."
+          },
+          {
+            "kind": "h",
+            "text": "Mis kus töötab"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Asukoht, andurid, AR-ankrud",
+                "value": "Seadmes, toorel kujul kunagi üles ei laadita"
+              },
+              {
+                "label": "Hindamine ja lävend",
+                "value": "Protokolli kontrollija, väljaspool plokiahelat"
+              },
+              {
+                "label": "Varade definitsioonid ja lunastused",
+                "value": "Arveldusahel, avalik"
+              },
+              {
+                "label": "Meedia ja müntide kujundus",
+                "value": "Vahemälus seadmes, serveeritakse objektisalvestusest"
+              },
+              {
+                "label": "Spawnide teadaanded",
+                "value": "Serveri otsustatud, mitte kunagi kliendi deklareeritud"
+              }
+            ]
+          }
+        ]
+      },
+      "seekar": {
+        "index": "07",
+        "eyebrow": "Rakendus",
+        "title": "Seekprotocol, tarbija liides",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol on koht, kus protokollist saab midagi, mida inimene saab kasutada ilma ülaltoodust midagi teadmata. See avaneb kaardiga läheduses olevast ja kaamerat tõstes renderdab AR-mootor need varad nende kohale."
+          },
+          {
+            "kind": "h",
+            "text": "Mida äpp teeb"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Avasta**, elav kaart dropidest, ülesannetest ja üritustest jalutuskäigu kaugusel, filtreeritud selle järgi, mis sind päriselt huvitab.",
+              "**Kogu**, kus suunad kaamera, näed vara maailma ankurdatuna, sirutad käe ja võtad selle. Arveldus toimub taustal.",
+              "**Juhenda**, AI-kaaslane, mis loeb kaamera kaudu sinu ümbrust, soovitab marsruute, selgitab, mida vaatad, ja kohandub sinu mängustiiliga.",
+              "**Hoia**, sisseehitatud rahakott, mis luuakse sotsiaalse sisselogimise põhjal, nii et esmakordselt kasutajalt ei nõuta enne millegi korjamist seemnelause üleskirjutamist."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Liitumise piirang juhib rohkem disainiotsuseid kui miski muu. Enamikul inimestel, kes kunagi Seekprotocoli kasutavad, pole kunagi privaatvõtit olnud. Kui esimesed kolmkümmend sekundit sisaldavad sõna „mnemonic”, lahkuvad nad. Seepärast luuakse rahakott vaikselt ja igaüks, kes tahab seda ise hoida, saab selle hiljem eksportida."
+          },
+          {
+            "kind": "h",
+            "text": "Kõndimine dropi juurde"
+          },
+          {
+            "kind": "p",
+            "text": "Varad asuvad kümnete kuni paarisaja meetri kaugusel, mis on vahemaa, kus kaardist piisab ja marsruut on liiast. Spawni märkimine joonistab sinust selleni sirge joone. Joon on meelega katkendlik: see on suund, mitte marsruut, see ei tea hoonetest midagi ja sellisel vahemaal ongi suund tavaliselt jalutuskäik. See kaob ise, kui oled püügiulatuses, kus rõngas üle võtab."
+          },
+          {
+            "kind": "p",
+            "text": "Spawnid aeguvad tunni jooksul. See on mänguotsus, millel on tagajärg protokollile: järgmisel käivitamisel taastatud marker osutaks eimillelegi, nii et äpp seda ei säilita."
+          },
+          {
+            "kind": "h",
+            "text": "Ankurdamine ja milleks AR siin on"
+          },
+          {
+            "kind": "p",
+            "text": "Kaamerarežiim ei ole kaunistus ega ka kontroll. See teeb kahte asja. See paneb vara maailmas usutavasse kohta, nii et selle järele sirutamine on tegevus, mitte nupuvajutus, ja see annab liikumissignaalile midagi, millega kooskõlas olla, sest ankurdatud objekti ümber kõndiv inimene liigub nagu inimene, aga telefoni paigal hoidev võltsija mitte."
+          }
+        ]
+      },
+      "play": {
+        "index": "08",
+        "eyebrow": "Tsükkel",
+        "title": "Mis hoiab kedagi kõndimas",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokoll, mis maksab saabumise eest, vajab ikkagi põhjust esimeseks saabumiseks. Keegi ei kõnni mehhanismi pärast neli tänavat. Mängukiht on võrgu nõudluspool ja see on disainitud sama ausalt kui kontroll: tõenäosused avaldatakse, need arvutatakse serveris ja kliendilt ei küsita kunagi, mis juhtus."
+          },
+          {
+            "kind": "h",
+            "text": "Püük"
+          },
+          {
+            "kind": "p",
+            "text": "Vara juurde jõudmine ei anna seda sulle kätte. Laadimisrõngas jookseb, kuni hoiad toksamist, ja selle laengu kvaliteet mõjutab kordajat. Siis veeretab server. Spawnil on sul kaks katset ja kordus on väärt 0,65 esimesest, mis on number, mis paneb teise võimaluse tunduma teise võimalusena, mitte lohutusena."
+          },
+          {
+            "kind": "catch"
+          },
+          {
+            "kind": "h",
+            "text": "Tingimused, mida tavaliselt keegi ei avalda"
+          },
+          {
+            "kind": "p",
+            "text": "Enamik mänge peidab modifikaatoreid. Siin pole selleks põhjust, sest huvitav omadus on see, et oskus nügib, aga ei otsusta kunagi. Laadimisrõngas on kordaja 0,85 ja 1,0 vahel, nii et täiuslik toksamine Legendary peal on ikkagi Legendary ja kohmakas toksamine Commoni peal on ilmselt ikkagi Common."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Taseme boonus**, kindlad 0,3 tõenäosuspunkti mängija taseme kohta, kümnel tasemel Seekerist Legendini.",
+              "**Külm seeria**, halastustaimer väärtusega 2 punkti iga järjestikuse möödalasu kohta, kuni 12, mis kehtib nii kordusele kui ka müntide vahel.",
+              "**Seeria karistus**, 4 punkti iga järjestikuse õnnestumise kohta samal mündil, kuni 20, nii et ühe spawnipunkti farmimine muutub halvemaks, mitte paremaks.",
+              "**Klanni boonus**, kuni 5 punkti, mille teenib klann, mitte mängija.",
+              "**Power-upid**, ostetud või võidetud, mis korrutavad baastõenäosust enne, kui ükski teine liige lisatakse."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Alampiir on 5% ja ülempiir 95%. Miski ei kuhju garantiiks ja miski ei kuhju müüriks."
+          },
+          {
+            "kind": "h",
+            "text": "Edenemine ja milleks see on"
+          },
+          {
+            "kind": "p",
+            "text": "Tasemed, märgid, klannid, kaheteisttunnised väljakutsed ja iganädalased eesmärgid on olemas selleks, et anda jalutuskäigule ühest dropist pikem kuju. Need teevad ka protokollitööd: tasemega, klanniga ja seeriaga mängijal on ajalooga konto ja ajalugu on masstootmises kallis võltsida. Edenemine on farmijale teine kulu, mis ausale mängijale midagi ei maksa, sest tema mängiks nagunii."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Katseid spawni kohta",
+                "value": "2"
+              },
+              {
+                "label": "Korduse kordaja",
+                "value": "×0,65"
+              },
+              {
+                "label": "Laadimisrõnga vahemik",
+                "value": "×0,85 kuni ×1,00"
+              },
+              {
+                "label": "Tõenäosuse alam- ja ülempiir",
+                "value": "5% ja 95%"
+              },
+              {
+                "label": "XP püügi eest",
+                "value": "30 kuni 140"
+              },
+              {
+                "label": "XP möödalasu eest",
+                "value": "5 kuni 15"
+              },
+              {
+                "label": "Tasemed",
+                "value": "Kümme, Seekerist Legendini"
+              }
+            ]
+          }
+        ]
+      },
+      "creators": {
+        "index": "09",
+        "eyebrow": "Pakkumise pool",
+        "title": "Kes varad paigutab",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Asukohapõhine võrk on väärtusetu, kui asukohad on tühjad. Seetõttu käsitleb protokoll varade paigutamist esmaklassilise tootena, mitte sisemise tööriistana."
+          },
+          {
+            "kind": "h",
+            "text": "Kolme liiki avaldajad"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Brändid ja toimumiskohad** kasutavad ärikeskkonda, et paigutada pakkumisi oma ruumidesse ja mõõta, kes päriselt kohale tuli. Ühik, mida nad ostavad, on kinnitatud külastus, mitte näitamine.",
+              "**Tokeniprojektid ja NFT-kogukonnad** jagavad inimestele, mitte rahakottidele, kasutades filtrina geograafiat, mida farmimine odavalt ületada ei suuda.",
+              "**Ürituste korraldajad** muudavad festivali, matši või konverentsi ürituse ajaks lunastatavaks kaardiks, mille varad aeguvad ürituse lõppedes."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Kõik kolm kasutavad sama kampaaniakoostajat: pane nõel, määra raadius, vali vara ja kogus, määra kindluslävend ja ajaaken, rahasta, avalda. Ei mingit integratsioonitööd ega lepingut, mida kirjutada."
+          },
+          {
+            "kind": "callout",
+            "text": "Toimumiskohale on oluline mõõdik kinnitatud saabumise hind. See on digiturunduses esimene külastajate arv, mida mõõdetakse ukse juures, mitte ei tuletata küsitlusest."
+          },
+          {
+            "kind": "calculator"
+          },
+          {
+            "kind": "h",
+            "text": "Tiheduse probleem"
+          },
+          {
+            "kind": "p",
+            "text": "Pakkumine ja nõudlus on siin geograafilised, mis muudab tavalised turuplatside nõuanded kasutuks. Tuhat vara ühtlaselt üle riigi laotatuna on kõikjal tühi kaart. Samad tuhat ühes linnas on põhjus kodust välja minna. Seetõttu kaalutakse paigutuse hinda piirkonna nõudluse järgi, mitte ei hoita seda ühtlasena, nii et küllastunud kaubandustänava hoidmine maksab rohkem kui vaikse tänava oma ja protokoll toetab tänavaid, mis vajavad liiklust, mitte neid, millel see juba on."
+          }
+        ]
+      },
+      "token": {
+        "index": "10",
+        "eyebrow": "Token",
+        "title": "$SEEK ja milleks see on",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "$SEEK on protokolli arveldus- ja koordineerimisvara. See on olemas, sest võrk peab liigutama väärtust osapoolte vahel, kes üksteist ei tunne, näiteks bränd ühes riigis rahastab auhinda, mille lunastab võõras teises riigis, ja sest varade paigutamise kulu peaks kasvama koos nõudlusega kasutatavate kohtade järele."
+          },
+          {
+            "kind": "h",
+            "text": "Kasutus"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Kampaaniate rahastamine**, kus avaldajad nomineerivad ja rahastavad auhindu $SEEK-is.",
+              "**Paigutustasud**, tasu iga paigutatud vara kohta, kaalutud raadiuse, kestuse ja piirkonna nõudluse järgi.",
+              "**Staking prioriteedi jaoks**, kus stakitud $SEEK tõstab avaldaja paigutusprioriteeti, kui mitu kampaaniat konkureerivad samade koordinaatide pärast.",
+              "**Auhinnad**, kusjuures suurem osa protokolli tasudest voolab tagasi inimestele, kes kõnnivad.",
+              "**Juhtimine**, mis hõlmab parameetrite muudatusi, varakassa jaotust ja kõrge väärtusega lunastuste kindluslävendeid."
+            ]
+          },
+          {
+            "kind": "economy"
+          },
+          {
+            "kind": "tokenomics"
+          },
+          {
+            "kind": "h",
+            "text": "Pakkumine ajas"
+          },
+          {
+            "kind": "p",
+            "text": "Jaotusgraafik ütleb, kellel mis on, ja mitte midagi selle kohta, millal. Allolev graafik on kasulikum number, sest tokeni risk on harva jaotus; see on cliff."
+          },
+          {
+            "kind": "vesting"
+          },
+          {
+            "kind": "p",
+            "text": "Disaini eesmärk on, et tasude voog järgiks päris tegevust, mitte spekulatsiooni: protokoll teenib, kui varasid paigutatakse ja lunastatakse, mis juhtub ainult siis, kui keegi on valmis kinnitatud külastuse eest maksma."
+          },
+          {
+            "kind": "h",
+            "text": "Mida token teadlikult ei tee"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "See ei fikseeri kurssi püütud mänguühiku ja tokeni vahel. Mäng väärtustab püüki; turg väärtustab tokenit; protokoll ei teeskle, et ühendab need kaks.",
+              "Seda pole mängimiseks vaja. Püüdmine, XP ja väljakutsed on tasuta ning mängija, kes tokenit kunagi ei puuduta, toodab ikkagi saabumisi, mille eest avaldaja maksab.",
+              "See ei sea paigutamist minimaalse omamise taha. Staking ostab prioriteeti, kui kampaaniad konkureerivad, mitte õigust üldse avaldada."
+            ]
+          }
+        ]
+      },
+      "revenue": {
+        "index": "11",
+        "eyebrow": "Ärimudel",
+        "title": "Kuidas protokoll teenib ja kellelt",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Whitepaper, mis kirjeldab tokenit, aga mitte äri, kirjeldab poolt süsteemi. On kaks tululiini ja need tulevad võrgu vastaskülgedelt, mis on tahtlik: kumbki pool üksi ei hoiaks seda töös."
+          },
+          {
+            "kind": "h",
+            "text": "Paigutus, mille eest maksavad avaldajad"
+          },
+          {
+            "kind": "p",
+            "text": "Peamine liin. Avaldaja rahastab auhinnad ja maksab lisaks paigutustasu, mida kaalutakse selle järgi, kui palju ala vara hoiab, kui kaua ja kui konkurentsitihe see ala on. See on tasu, mis kasvab koos väärtusega, mida võrk loob, sest seda võetakse selle eest, mida avaldajad päriselt ostavad, st saabumise eest."
+          },
+          {
+            "kind": "h",
+            "text": "Pass ja pood, mille eest maksavad mängijad"
+          },
+          {
+            "kind": "p",
+            "text": "Valikuline ja meelega piiratud. Hooajapass kestab üheksakümmend päeva ja kallutab spawnide kaalumist haruldasemate müntide poole, sisaldades iganädalast Rare lunastust ja ühte paljastust. Boostid müüakse eraldi ja ükski neist ei osta mündile paremaid tõenäosusi: need paljastavad, mis küsimärk on, laiendavad püügiulatust, toovad rohkem münte lähedale, korrutavad XP-d, hoiavad mööda läinud münti, lubavad ühe püügi kaugelt või lisavad kaardikasti."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Season Pass",
+                "value": "9,95 € 90-päevase hooaja kohta"
+              },
+              {
+                "label": "Shiba (3 paljastust), This Is Fine",
+                "value": "0,99 € tükk"
+              },
+              {
+                "label": "XP boost, Chill Guy, Pump It, Cash",
+                "value": "1,49 € tükk"
+              },
+              {
+                "label": "Fitness, Diamond Hands",
+                "value": "1,99 € tükk"
+              },
+              {
+                "label": "Spawn magnet, spawn lure",
+                "value": "2,49 € tükk"
+              }
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Põhiline püüdmine, XP, väljakutsed ja platvormi saavutused jäävad alatiseks tasuta. Tasuline tase, mis tsükli lukku paneks, rikuks ainsa asja, mida avaldajad ostavad, ehk inimeste kohaletuleku."
+          },
+          {
+            "kind": "h",
+            "text": "Miks see jaotus on õige kujuga"
+          },
+          {
+            "kind": "p",
+            "text": "Mängijate kulutused on elastsed, hooajalised ja piiratud sellega, kui palju inimene hobi eest maksab. Avaldajate kulutused on turunduseelarve rida, mida hinnatakse saabumise hinna järgi, millel on päris alternatiiv, millega võrrelda. Esimene hoiab tuled alguses põlemas, kui mängijaid on rohkem kui kampaaniaid. Teine on see, milleks äri muutub, ja see töötab ainult siis, kui esimene ei mandu kunagi pay-to-win'iks, sest maksvate mängijate võrk, kes kõik kõike püüavad, raporteerib saabumisi, mis ei ole toimumiskohale midagi väärt."
+          }
+        ]
+      },
+      "governance": {
+        "index": "12",
+        "eyebrow": "Juhtimine",
+        "title": "Kes numbrid otsustab",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Sellel protokollil on ebatavaliselt palju häälestatavaid konstante: raadiuse piirid, kindluslävendid, paigutustasu kaalumine, otsijatele tagastatav tasude osa ja püügiredel ise. Igaüks neist on poliitiline otsus seadistusväärtuseks riietatuna, ja teisiti teeseldes jõuavad protokollid selleni, et neid juhib see, kes viimasena faili muutis."
+          },
+          {
+            "kind": "h",
+            "text": "Järk-järguline seis, ausalt öeldes"
+          },
+          {
+            "kind": "p",
+            "text": "Juhtimine ei ole käivitunud. Praegu määrab parameetrid põhimeeskond ja neid muudetakse migratsioonidega, mis on salvestatud ja ülevaadatavad. Me ei hakka seda detsentraliseerituks nimetama, sest see ei ole seda."
+          },
+          {
+            "kind": "p",
+            "text": "Viivituse põhjus pole vastumeelsus. Hääletamine majanduse üle, kus pole mahtu, on teater: osalus on madal, otsustab käputäis omanikke ja otsused puudutavad parameetreid, mille hindamiseks pole kellelgi piisavalt andmeid. Juhtimine muutub sisukaks, kui on päris tasude voog, sest siis on parameetri muutusel mõõdetav tagajärg, mille üle saab vaielda."
+          },
+          {
+            "kind": "h",
+            "text": "Mida juhitakse ja mida mitte"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Juhitav**: tasude kaalumine, otsijate osa protokolli tasudest, varakassa jaotus, raadiuse piirid ja kõrge väärtusega varadele saadaolevad kindluslävendid.",
+              "**Viivitusega juhitav**: kõik, mis muudab juba paigutatud varade väärtust. Ühe tasutabeli alusel rahastatud kampaania peaks selle alusel ka lõppema.",
+              "**Ei ole juhitav**: neljateistkümnenda peatüki privaatsuskohustused. Säilituspiirangud ja keeldumine liikumisandmeid avaldamast ei ole parameetrid ja hääletus pole legitiimne viis neid nõrgendada.",
+              "**Ei ole juhitav**: üksikute lunastuste tulemused. Tagasi lükatud lunastus on vaidluste lahendamise, mitte hääletuse küsimus."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Juhtimissüsteem, mis saab oma kasutajate privaatsuse hääletusega ära kaotada, ei ole kaitsemeede, vaid kvoorumiga ründepind."
+          }
+        ]
+      },
+      "security": {
+        "index": "13",
+        "eyebrow": "Risk",
+        "title": "Rünnakud, piirangud ja mida me ei väida",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokoll, mis maksab inimestele kuskil olemise eest, kutsub inimesi valetama, et nad on kuskil. Rünnakute osas konkreetne olemine on kasulikum kui väitmine, et süsteem on turvaline."
+          },
+          {
+            "kind": "h",
+            "text": "Rünnakud, mille vastu kaitseme"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GPS-i võltsimine**, mida leevendab nõue, et raadiokeskkond ja liikumisjälg peavad asukohta kinnitama, ning seadme atesteerimine, mis tuvastab rikutud OS-i versioonid.",
+              "**Sybil-farmimine**, mida leevendavad reisimise füüsiline hind ja seadmepõhised lunastuspiirangud raadiuse ja ajaakna sees.",
+              "**Edastusrünnakud**, kus asukohas olev päris seade allkirjastab kaugel oleva kasutaja eest, mida leevendab atesteerimise sidumine äpieksemplari ja seansiga ning seadmepõhine lunastuste sageduse piiramine.",
+              "**Emulaatorifarmid**, mida leevendavad atesteerimine, mille emulaatorid läbi kukuvad, ja liikumisjäljed, mis on päris kõndimisest statistiliselt eristatavad.",
+              "**Kliendi deklareeritud spawnid**, mida ei leevendata, vaid välditakse: ainult server teatab, mis on olemas ja kus, nii et muudetud klient võib valetada selle kohta, mida ta näeb, ilma et midagi võidaks.",
+              "**Topeltlunastused**, mida välditakse luku võtmisega enne lunastuse hindamist, nii et kahele viimase ühiku järele sirutajale ei saa mõlemale öelda, et nad selle said."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Piirangud, mida aktsepteerime"
+          },
+          {
+            "kind": "p",
+            "text": "Piisavalt otsustav ründaja muudetud riistvara ja füüsilise kohalolekuga ühes asukohas suudab sellest asukohast välja võtta rohkem väärtust kui aus kasutaja. Piirame kahju asukohapõhiste ülempiiridega, selle asemel et teeselda, et see on võimatu. Siseruumides positsioneerimine on endiselt oluliselt ebatäpsem kui väljas, seega kasutavad siseruumide varad laiemaid raadiusi ja toetuvad rohkem raadiosõrmejäljele. Ja ükski tarbijaseade ei suuda tõestada, et kohal oli inimene, mitte seade: kullerbussis olev telefon liigub ikkagi nagu taskus olev telefon."
+          },
+          {
+            "kind": "h",
+            "text": "Riskid, mis ei ole rünnakud"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Platvormist sõltuvus**. Atesteerimise annavad Apple ja Google. Kummagi poliitikamuudatus võib pinu tugevaima signaali üleöö nõrgemaks muuta ja sellest ei ole versiooni, mis operatsioonisüsteemist mööda läheks.",
+              "**Plokiahela kättesaadavus**. Peatunud plokiahel tähendab järjekorras lunastusi. Protokoll proovib uuesti, mitte ei loobu, aga tänaval seisev inimene ei koge kordust õnnestumisena.",
+              "**Füüsiline ohutus**. Inimeste premeerimine kuhugi minemise eest paneb inimesi kohtadesse. Varad paigutatakse teeristidele, mitte hoonete sisse, kõrge väärtusega dropid väldivad eraomandit ja äpis on ohutusteade. See on disainipiirang, mitte lahtiütlus."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Me ehitame majanduslikku heidutust, mitte krüptograafilist garantiid. Kus neid kahte segi aetakse, saavad kasutajad kannatada."
+          }
+        ]
+      },
+      "privacy": {
+        "index": "14",
+        "eyebrow": "Privaatsus",
+        "title": "Asukohaandmed on kõige tundlikumad andmed, mis on olemas",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ülevaade sellest, kus keegi käib, paljastab tema kodu, töökoha, tervise, usu ja suhted. Asukohaväidetele võrgu ehitamine tähendab selle eest vastutuse võtmist ja vastutustundlik disain on hoida sellest võimalikult vähe."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Pidevat jälgimist ei nõuta kunagi. Äpp küsib asukohta siis, kui proovid lunastada, mitte taustal.",
+              "Toored andurite ja raadio andmed kasutatakse lunastuse hindamiseks ja kustutatakse seejärel lühikese säilitusaja järel.",
+              "Plokiahelasse kirjutatakse, et lunastus avalikul koordinaadil õnnestus, sama teave, mis poel, kes teab, et keegi kupongi kasutas.",
+              "Sinu liikumisajalugu jääb sinu seadmesse. Protokoll ei vaja seda ega taha seda.",
+              "Avaldajad saavad koondarve, mitte kunagi üksikuid jälgi."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Probleem, mida me pole lahendanud"
+          },
+          {
+            "kind": "p",
+            "text": "Kuna lunastuste kirjed on plokiahela olemuse tõttu avalikud ja püsivad, saab otsustav vaatleja siduda sama rahakoti tehtud lunastusi eri asukohtades. See on päris nõrkus ja kuulub loomupäraselt avalikus pearaamatus arveldamise juurde. Kasutajad, kes tahavad seda vältida, peaksid eri kontekstides kasutama eri rahakotte ja äpp teeb selle lihtsaks, mitte ei peida seda, kuid vaikeseade, mis nõuab, et kasutaja probleemist teaks, ei ole lahendus."
+          },
+          {
+            "kind": "callout",
+            "text": "Aus kokkuvõte: me hoiame võimalikult vähe, me ei müü seda, mida hoiame, ja avaliku registri vastu on üks korrelatsioonirünnak, mida saame vähendada, aga mitte kõrvaldada."
+          }
+        ]
+      },
+      "compliance": {
+        "index": "15",
+        "eyebrow": "Jurisdiktsioon",
+        "title": "Regulatsioon ja kuhu see paigutub",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seda protokolli puudutab korraga kolm režiimi, mis on ebatavaline ja mida tasub selgelt välja öelda, mitte joonealusesse märkusesse jätta."
+          },
+          {
+            "kind": "h",
+            "text": "Andmekaitse"
+          },
+          {
+            "kind": "p",
+            "text": "Enamiku kaasaegse andmekaitseõiguse järgi on asukoht eriliiki andmete lähedal ja protokoll on ehitatud kõige rangema, mitte kõige mugavama tõlgenduse järgi. Asukohta kogutakse lunastuse hetkel kindlaksmääratud eesmärgil, säilitatakse ainult nii kaua, kui hindamine ja vaidluste lahendamine nõuavad, ega ühendata kunagi liikumisprofiiliks. Kus režiim annab kustutamisõiguse, saab väljaspool plokiahelat oleva kirje kustutada; plokiahelas olevat lunastuse kirjet ei saa, mis on pearaamatu piirang ja see avalikustatakse, mitte ei jäeta mainimata."
+          },
+          {
+            "kind": "h",
+            "text": "Tokeni klassifikatsioon"
+          },
+          {
+            "kind": "p",
+            "text": "$SEEK on loodud kasutus- ja koordineerimisvarana ning kümnendas peatükis kirjeldatud kasutus on päris, mitte dekoratiivne. See on disainiseisukoht, mitte õiguslik järeldus. Klassifikatsioon erineb jurisdiktsiooniti, muutub aja jooksul ega ole midagi, mida whitepaper saaks lihtsalt väites lahendada. Seetõttu on kättesaadavus piiratud seal, kus kohalikud reeglid seda nõuavad."
+          },
+          {
+            "kind": "h",
+            "text": "Auhinnad, õnn ja piir hasartmänguni"
+          },
+          {
+            "kind": "p",
+            "text": "Püük hõlmab veeretust, mis paneb selle piiri lähedale, mis riigiti erineb. Kaks omadust hoiavad seda enamikus režiimides õigel pool ja neid hoitakse teadlikult: osalemine ei maksa midagi ja tasulised asjad muudavad tõenäosusi ja määrasid, mitte ei ole muutuva väljamaksega panused. Pass ostab kaalumist ja boost ostab kordajat; kumbki pole panus, mille saab kaotada. Kus jurisdiktsioon seda teisiti tõlgendab, jäetakse tasuline tase pakkumata, selle asemel et vaielda."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Isikuandmed väljaspool plokiahelat",
+                "value": "Kustutatavad taotluse korral"
+              },
+              {
+                "label": "Lunastuse kirje plokiahelas",
+                "value": "Püsiv ja sellisena avalikustatud"
+              },
+              {
+                "label": "Vanusepiirang",
+                "value": "Rakendatakse registreerumisel, jõustatakse tasulistele asjadele"
+              },
+              {
+                "label": "Tasulised asjad",
+                "value": "Pakkumata jurisdiktsioonides, mis liigitavad need panusteks"
+              }
+            ]
+          }
+        ]
+      },
+      "roadmap": {
+        "index": "16",
+        "eyebrow": "Suund",
+        "title": "Mis on ehitatud ja mis tuleb järgmisena",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol töötab iOS-is ja Androidis asukohapõhiste droppide, AR-renderduse ja sotsiaalse rahakotiga. Kontrollipinu kasutab praegu GNSS-i, atesteerimise ja liikumise järjepidevuse signaale; raadiosõrmejälg on järk-järgulises kasutuselevõtus. Atesteerimist jõustatakse lipu taga, mis on selle aus seis: tagasilükkamise tee on ehitatud, aga jõustamislülitit pole iga liidese jaoks sisse lülitatud."
+          },
+          {
+            "kind": "p",
+            "text": "Lohista ja pane kampaaniakoostaja on valmis. Järgmisena tuleb iseteeninduslik ärikeskkond, mis avab paigutuse väljaspool hallatud partnerlusi, ja sellega kaasnev saabumiste analüütika. Nende kõrval on tokeni loomise sündmus, otseürituse režiim, hooajad ja objektide skannimine. Juhtimine järgneb, kui on piisavalt päris tasude voogu, et parameetriotsused oleksid sisukad, põhjustel, mis on esitatud kaheteistkümnendas peatükis."
+          },
+          {
+            "kind": "h",
+            "text": "Mida me ei luba"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Kuupäeva juhtimisele. See sõltub mahust ja maht ei ole kuupäev.",
+              "Siseruumide täpsuse võrdsust. See on raske probleem ja aus vastus on lähitulevikus siseruumides laiemad raadiused.",
+              "Uut plokiahelat ainult selle enda pärast. Kuuenda peatüki latentsus- ja kulunõuded on kitsad ning neid mitte täitva plokiahela lisamine oleks turundusotsus, mitte tehniline."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Täielik faasipõhine ülevaade on teekaardi lehel, mida hoitakse asjade valmimisel ajakohasena."
+          }
+        ]
+      },
+      "glossary": {
+        "index": "17",
+        "eyebrow": "Viide",
+        "title": "Sõnastik",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Selles dokumendis kasutatud mõisted, selle tähendusega, mis neil siin on, mitte üldise tähendusega."
+          },
+          {
+            "kind": "glossary"
+          }
+        ]
+      }
+    }
+  },
+  "allocations": {
+    "community": {
+      "label": "Kogukonna auhinnad",
+      "note": "Otsijad teenivad need korjamise ja ülesannetega"
+    },
+    "ecosystem": {
+      "label": "Ökosüsteem ja partnerid",
+      "note": "Kampaaniatoetused, toimumiskohtade liitmine, integratsioonid"
+    },
+    "team": {
+      "label": "Meeskond ja kaastöötajad",
+      "note": "4-aastane vesting, 12-kuune cliff"
+    },
+    "treasury": {
+      "label": "Varakassa",
+      "note": "Juhitav reserv protokolli arenduseks"
+    },
+    "liquidity": {
+      "label": "Likviidsus",
+      "note": "Börsi ja plokiahela turusügavus"
+    },
+    "backers": {
+      "label": "Varajased toetajad",
+      "note": "2-aastane vesting, 6-kuune cliff"
+    }
+  },
+  "tokenFacts": {
+    "ticker": {
+      "label": "Ticker",
+      "value": "$SEEK"
+    },
+    "chain": {
+      "label": "Plokiahel",
+      "value": "Solana (SPL), arveldab mis tahes plokiahelas"
+    },
+    "supply": {
+      "label": "Kogupakkumine",
+      "value": "1,000,000,000"
+    },
+    "emission": {
+      "label": "Emissioon",
+      "value": "Fikseeritud, edasist mintimist pole"
+    }
+  },
+  "glossary": {
+    "proof-of-location": {
+      "term": "Asukoha tõend",
+      "definition": "Väide, et seade oli antud ajaaknas antud raadiuse sees, hinnatud mitme sõltumatu signaali alusel ja piisavalt usaldusväärne, et selle põhjal väärtust vabastada. Tõenäosuslik, mitte kunagi absoluutne."
+    },
+    "confidence-score": {
+      "term": "Kindlusskoor",
+      "definition": "Lunastuse signaalide hindamise koondtulemus. Iga vara määrab nõutava skoori, nii et ülesande auhind ja piletiga drop võivad jagada sama kontrollijat, aga mitte sama latti."
+    },
+    "claim-radius": {
+      "term": "Lunastusraadius",
+      "definition": "Kaugus vara koordinaatidest, mille piires seda saab võtta. Vaikimisi 30 m, seadistatav 5 m kuni 500 m, ja avaldaja suurim hoob nii kulu kui ka tähenduse üle."
+    },
+    "drop": {
+      "term": "Drop",
+      "definition": "Koordinaatidele paigutatud vara, mis ootab lunastamist. Sellel on kogus, ajaaken, kindluslävend ja raadius."
+    },
+    "spawn": {
+      "term": "Spawn",
+      "definition": "Drop sellisena, nagu mäng seda näitab: serveri teatatud, kaardil nähtav, aegub tunni jooksul ja annab kaks püügikatset."
+    },
+    "attestation": {
+      "term": "Atesteerimine",
+      "definition": "Operatsioonisüsteemi allkirjastatud kinnitus, et äpp on ehtne ja seadet pole rikutud. Androidis Play Integrity, iOS-is App Attest. Pinu tugevaim signaal ja see, mida protokoll ei kontrolli."
+    },
+    "radio-fingerprint": {
+      "term": "Raadiosõrmejälg",
+      "definition": "Asukohast nähtavate Wi-Fi võrkude ja mobiilimastide kogum, võrreldes sellega, mis seal peaks nähtav olema. Muutub aeglaselt ja seda on raske võltsida, mis teebki selle kasulikuks."
+    },
+    "motion-continuity": {
+      "term": "Liikumise järjepidevus",
+      "definition": "Kiirendusanduri jälg ühe kinnitatud asukoha ja järgmise vahel. Tabab teleportreeruva lunastuse, sest 400 km liikumine 90 sekundiga ei jäta sobivat liikumisprofiili."
+    },
+    "verified-arrival": {
+      "term": "Kinnitatud saabumine",
+      "definition": "Lunastus, mis ületas avaldaja raadiuse sees oma lävendi. Ühik, mida avaldaja ostab, ja põhjus, miks kampaania kulunumber on loendatud, mitte modelleeritud."
+    },
+    "placement-fee": {
+      "term": "Paigutustasu",
+      "definition": "Mida avaldaja maksab ala hoidmise eest, kaalutud raadiuse, kestuse ja piirkonna nõudluse järgi. Erineb auhinnast, mille saab otsija."
+    },
+    "cold-streak": {
+      "term": "Külm seeria",
+      "definition": "Halastustaimer. Kaks punkti püügitõenäosust iga järjestikuse möödalasu kohta, kuni kaheteistkümneni, mis kehtib nii kordusele kui ka müntide vahel."
+    },
+    "streak-penalty": {
+      "term": "Seeria karistus",
+      "definition": "Vastupidine hoob. Neli punkti vähem iga järjestikuse õnnestumise kohta samal mündil, kuni kahekümneni, nii et üksiku spawnipunkti farmimine muutub halvemaks, mitte paremaks."
+    },
+    "seeker": {
+      "term": "Seeker",
+      "definition": "Inimene, kes kõnnib varade juurde ja lunastab need. Ka esimene kümnest mängijatasemest, millest viimane on Legend."
+    },
+    "seek": {
+      "term": "$SEEK",
+      "definition": "Arveldus- ja koordineerimisvara. Rahastab kampaaniaid, maksab paigutustasusid, ostab stakingu kaudu paigutuse prioriteeti ja annab juhtimises hääle, kui juhtimine käivitub."
+    }
+  },
+  "whitepaperFigures": {
+    "draft": "Mustandnumbrid, mitte lõplik tokenomics",
+    "totalSupply": "Kogupakkumine",
+    "donutAria": "Tokenite jaotus osana kogupakkumisest",
+    "terms": "{count} mõistet",
+    "filterTerms": "Filtreeri mõisteid",
+    "filter": "Filter",
+    "noMatch": "Midagi ei sobi. Dokumendist endast saad otsida brauseri otsinguga.",
+    "stackCaption": "Lunastused liiguvad pinus alla, väärtus liigub tagasi üles. Vali kiht, et näha üksikasju.",
+    "liveModel": "Elav mudel",
+    "interactive": "Interaktiivne",
+    "confidenceTitle": "Proovi lunastus tagasi lükata",
+    "thresholdLabel": "Vara lävend",
+    "confidenceThreshold": "kindlus · lävend {threshold}",
+    "claimAccepted": "Lunastus vastu võetud",
+    "claimRefused": "Lunastus tagasi lükatud",
+    "shortBy": "Puudu {short}. Ühe seadme korduvad tagasilükkamised tõstavad selle lävendit veelgi.",
+    "confidenceCaption": "Kaalud on illustratiivsed. Oluline on kuju: ükski signaal üksi ei läbi rahastatud kampaaniat ja kõigi nelja korraga võltsimine maksab rohkem kui drop.",
+    "economyLabel": "Majandustsükkel",
+    "stageOf": "Etapp {step}/{total}",
+    "timelineTitle": "Üks lunastus etapp etapi haaval",
+    "stop": "Peata",
+    "runReal": "Käivita päriskiirusel",
+    "claimStages": "Lunastuse etapid",
+    "segAria": "{label}, {ms} millisekundit, {where}",
+    "endToEnd": "{seconds} s algusest lõpuni",
+    "takes": "Kestab",
+    "elapsed": "Möödunud",
+    "whatMoves": "Mis liigub",
+    "timelineWhere": {
+      "device": "Sinu telefonis",
+      "verifier": "Kontrollija",
+      "chain": "Arveldusahel"
+    },
+    "timelineCaption": "Need on eelarved, mitte mõõtmised. Anduriaken ja arveldus muutuvad tingimustega ning kõik nende vahel on aritmeetika, mis ei muutu. Pane tähele, kus piir on: toorandmed anduritest ei lahku kunagi esimesest kolmest etapist.",
+    "vestingTitle": "Ringlev pakkumine kuu kaupa",
+    "vestingAria": "Ringlev pakkumine jaotuse järgi 48 kuu jooksul",
+    "circulatingMonth": "ringluses {month}. kuul",
+    "circulatingLaunch": "ringluses käivitamisel",
+    "axisLaunch": "Käivitus",
+    "axisYear": "Aasta {year}",
+    "month": "Kuu",
+    "vestingCaption": "Loe astmeid, mitte kõverat. Tasane lõik, millele järgneb hüpe, on cliff, ja cliffi juures graafik kas peab või mitte. Meeskonna ja toetajate jaotusi tasub kontrollida, sest need kaks avanevad turule, mitte võrgu kasutajatele.",
+    "calcTitle": "Mida eelarve ostab",
+    "calcBudget": "Kampaania eelarve",
+    "calcReward": "Auhind lunastuse kohta",
+    "calcRadius": "Lunastusraadius",
+    "calcFee": "Paigutustasu selle raadiusega: ${fee} dropi kohta",
+    "calcArrivals": "Kinnitatud saabumised",
+    "calcPerPerson": "${cost} inimese kohta ukse taga",
+    "calcDisplay": "Sama eelarve displayna",
+    "calcInferred": "näitamist, millest umbes {visits} muutuvad tuletatud külastuseks hinnaga ${cost} tükk",
+    "calcCaption": "Display numbrid kasutavad ${cpm} CPM-i ja {rate}% näitamisest külastuseni määra, mõlemad valdkonna rusikareeglid. Oluline vahe on see, et üks veerg on mõõdetud ukse juures ja teine tuletatud.",
+    "contents": "Sisukord · {count} peatükki",
+    "chaptersLabel": "Peatükid",
+    "close": "Sulge",
+    "ladderTitle": "Püügiveeretus, nagu server selle arvutab",
+    "rarityLabel": "Haruldus",
+    "playerLevel": "Mängija tase",
+    "chargeRing": "Laadimisrõngas",
+    "missed": "Möödas",
+    "clanBonus": "Klanni boonus",
+    "points": "+{points} p",
+    "baseChance": "Baastõenäosus",
+    "levelBonus": "Taseme boonus",
+    "ringMultiplier": "Rõnga kordaja",
+    "retryMultiplier": "Korduse kordaja",
+    "firstAttempt": "Esimene katse",
+    "retry": "Kordus",
+    "acrossSpawn": "Kogu spawni peale",
+    "youCaught": "Sa oled püüdnud",
+    "notYet": "veel mitte",
+    "ladderHint": "Üks spawn ei ütle peaaegu midagi. Käivita tuhat ja vaata, kuidas kaks riba kokku tulevad.",
+    "ladderTally": "{spawns} spawnist püüti {caught}, mudelist {gap} punkti erinevus.",
+    "runOne": "Käivita üks spawn",
+    "runThousand": "Käivita tuhat",
+    "reset": "Lähtesta",
+    "ladderCaption": "Migratsioon avaldab {rarity} tõenäosusega {first}%, siis {second}%, kogu spawni peale {overall}%. See on see mudel tasemel 5 täis rõnga ja ilma klannita, millest liugurid alustavad. Püütud ühik on mänguühik ja see, kui palju see tokenites väärt on, on turu, mitte mängu asi.",
+    "tocTitle": "Sisukord"
+  },
+  "stackLayers": {
+    "app": {
+      "label": "Rakendus",
+      "sub": "Seekprotocol · ärikeskkond · kampaaniakoostaja",
+      "detail": "See, mida inimesed puudutavad. Mobiiliäpp renderdab varad AR-is ja tegeleb korjamisega; portaal on koht, kus avaldajad neid paigutavad. Mõlemad on alumiste kihtide tavalised kliendid ja neil pole eelisõigustega juurdepääsu."
+    },
+    "intelligence": {
+      "label": "Intellekt",
+      "sub": "AI-kaaslane · ülesannete loomine · marsruutimine",
+      "detail": "Loeb kaamerapilti ja sinu mänguajalugu, et soovitada, kuhu edasi minna ja mida sa vaatad. Töötab võimaluse korral seadmes ega näe kunagi toorest asukohaajalugu, mida see ei vaja."
+    },
+    "location": {
+      "label": "Asukoha kontroll",
+      "sub": "GNSS · raadiosõrmejälg · atesteerimine · liikumine",
+      "detail": "Hindab lunastust sõltumatute signaalide põhjal ja väljastab allkirjastatud atesteeringu, kui skoor ületab vara lävendi. Teadlikult väljaspool plokiahelat: anduriandmed, mis kontrolli toimima panevad, on täpselt need andmed, mis ei tohiks avalikud olla."
+    },
+    "settlement": {
+      "label": "Arveldus",
+      "sub": "Iga plokiahel · varad · lunastuste kirjed",
+      "detail": "Hoiab varade definitsioone, koordinaate ja lunastuste kirjeid ning liigutab väärtust, kui lunastus vastu võetakse. Võrk on seadistus, mitte integratsioon, ja latt, mida iga võrk peab ületama, on piisavalt madalad tasud, et väikese auhinna korjamist ei varjutaks selle korjamise kulu."
+    }
+  },
+  "confidenceSignals": {
+    "gnss": {
+      "label": "GNSS-asukoht",
+      "detail": "Satelliitasukoht ja selle teatatud täpsus ning tähtkuju ja satelliitide arv.",
+      "spoofable": "Rooditud seadmes naeruväärselt lihtne võltsida."
+    },
+    "radio": {
+      "label": "Raadiokeskkond",
+      "detail": "Lähedal olevad Wi-Fi SSID-d ja mobiilimastid võrreldes sellega, mis siin peaks nähtav olema.",
+      "spoofable": "Raske võltsida; raadiokeskkond muutub aeglaselt."
+    },
+    "attest": {
+      "label": "Seadme atesteerimine",
+      "detail": "Play Integrity või App Attest kinnitab ehtsa äpi rikkumata operatsioonisüsteemis.",
+      "spoofable": "Emulaatorifarmid kukuvad siin kohe läbi."
+    },
+    "motion": {
+      "label": "Liikumise järjepidevus",
+      "detail": "Kiirendusanduri jälg sinu viimase kinnitatud asukoha ja praeguse vahel.",
+      "spoofable": "400 km hüppel 90 sekundiga pole sobivat liikumisprofiili."
+    }
+  },
+  "confidenceTiers": {
+    "low": {
+      "label": "Ülesande auhind",
+      "note": "Madal väärtus, madal latt."
+    },
+    "mid": {
+      "label": "Partneri drop",
+      "note": "Vaikimisi rahastatud kampaaniatele."
+    },
+    "high": {
+      "label": "Piletiga üritus",
+      "note": "Kõrge väärtus, kõik peab kokku langema."
+    }
+  },
+  "economyStages": {
+    "fund": {
+      "label": "Avaldaja rahastab",
+      "actor": "Bränd · projekt · toimumiskoht",
+      "body": "Kampaania on nomineeritud ja rahastatud $SEEK-is, paigutustasuga, mida kaalutakse raadiuse, kestuse ja piirkonna konkurentsi järgi.",
+      "flow": "$SEEK sisse"
+    },
+    "place": {
+      "label": "Vara paigutatakse",
+      "actor": "Protokoll",
+      "body": "Drop kirjutatakse oma koordinaatidele koos lunastusraadiuse, ajaakna ja nõutava kindluslävendiga.",
+      "flow": "Tasu varakassasse"
+    },
+    "walk": {
+      "label": "Keegi kõnnib sinna",
+      "actor": "Otsija",
+      "body": "Ainus samm, mida ei saa automatiseerida. Reisimine on kulu, mis teeb farmimise kalliks.",
+      "flow": "Aeg ja vahemaa"
+    },
+    "verify": {
+      "label": "Kohalolek kinnitatakse",
+      "actor": "Kontrollikiht",
+      "body": "Neli signaali hinnatakse väljaspool plokiahelat. Plokiahelasse jõuab allkirjastatud atesteering, mitte sinu anduriandmed.",
+      "flow": "Atesteering"
+    },
+    "settle": {
+      "label": "See arveldatakse",
+      "actor": "Arveldusahel",
+      "body": "Ülekanne kinnitub alla sekundiga sendi murdosa eest selles plokiahelas, kus vara elab, ja lunastuse kirje on avalik.",
+      "flow": "Auhind välja"
+    },
+    "split": {
+      "label": "Tasud voolavad tagasi",
+      "actor": "Protokoll",
+      "body": "Suurem osa protokolli tasudest läheb inimestele, kes kõnnivad; ülejäänu rahastab varakassat ja ökosüsteemi.",
+      "flow": "Suurem osa otsijatele"
+    }
+  },
+  "timelineStages": {
+    "open": {
+      "label": "Drop avatud",
+      "detail": "Toksad kaardil vara või sirutad kaamera kaudu selle järele. Äpp võtab juba olemasoleva asukoha ja alustab uut anduriakent.",
+      "payload": "Vara ID, viimane teadaolev asukoht"
+    },
+    "window": {
+      "label": "Anduriaken",
+      "detail": "Kaugelt pikim etapp ja see, mis otsustab kõik järgneva: uus GNSS-asukoht koos täpsusega, raadiokeskkonna skannimine ja liikumisjälg alates viimasest kinnitatud asukohast.",
+      "payload": "GNSS-asukoht, satelliitide arv, Wi-Fi ja mastide kogum, kiirendusanduri jälg"
+    },
+    "attest": {
+      "label": "Atesteerimine ja allkiri",
+      "detail": "Play Integrity või App Attest kinnitab, et äpp on ehtne ja operatsioonisüsteem rikkumata. Lunastus allkirjastatakse selle äpieksemplariga seotud võtmega, mis teeb edastatud lunastuse kalliks.",
+      "payload": "Atesteerimistoken, allkirjastatud lunastus"
+    },
+    "score": {
+      "label": "Hindamine",
+      "detail": "Väljaspool plokiahelat, sest see sõltub anduriandmetest, millel pole avalikkuses midagi teha. Iga signaali hinnatakse selle järgi, milline koordinaat peaks välja nägema, ja tulemused ühendatakse üheks kindlusnumbriks.",
+      "payload": "Kindlusskoor, signaalipõhine jaotus"
+    },
+    "threshold": {
+      "label": "Lävendi kontroll",
+      "detail": "Skoor kas vastab vara lävendile või mitte. Tagasilükkamine salvestatakse seadme juurde ja korduvad tagasilükkamised tõstavad selle seadme latti, mitte ei lase tal lihtsalt uuesti ebaõnnestuda.",
+      "payload": "Vastuvõtt või tagasilükkamine, allkirjastatud atesteering"
+    },
+    "settle": {
+      "label": "Arveldus",
+      "detail": "Lunastuse kirje ja ülekanne jõuavad arveldusahelasse ühe tehinguna. See on ainus etapp, mida keegi teine näeb, ja see ütleb vaid, et lunastus avalikul koordinaadil õnnestus.",
+      "payload": "Lunastuse kirje, tokeni ülekanne"
+    },
+    "confirm": {
+      "label": "Sinu rahakotis",
+      "detail": "Rahakott uueneb ja vara kaob sinu jaoks kaardilt. Toksamisest omamiseni alla kahe sekundi hea ühenduse korral.",
+      "payload": "Saldo uuendus, kaardi olek"
+    }
+  },
+  "referrals": {
+    "eyebrow": "Soovitused",
+    "title": "Iga mängiv sõber teeb sind tugevamaks",
+    "lead": "Anna sõbrale oma kutsekood ja saad iga oma püügi pealt 5% rohkem XP-d seni, kuni ta mängib. Ülempiiri pole ja see ei tule kunagi tema osast.",
+    "codeLabel": "Sinu kaheksamärgiline kutsekood",
+    "activeLabel": "AKTIIVNE",
+    "exampleLabel": "Üks Legendary püük, enne ja pärast",
+    "exampleBody": "Boonus rakendatakse serveris püügi hindamisel ja kirjutatakse kirjesse sinu klanni auastme kõrvale, nii et neid saab hiljem eristada.",
+    "activeRule": "Aktiivne tähendab {needed} püüki viimase {days} päeva jooksul",
+    "panelTitle": "SINU MEESKOND",
+    "rateLabel": "SINU MÄÄR",
+    "idle": "uinuv",
+    "levelShort": "TS"
+  },
+  "referralRules": {
+    "once": {
+      "title": "Üks kutsuja, valitakse üks kord",
+      "body": "Koodi saab lunastada ainult ühe korra ja seda ei saa hiljem muuta. Andmebaas lükkab teise katse tagasi, nii et seda reeglit ei saa äpist mööda rääkida."
+    },
+    "newOnly": {
+      "title": "Ainult uued kontod",
+      "body": "Kood töötab ainult kontol, millel pole XP-d ega veel midagi korjatud. Kogenud otsija ei saa end hiljem meeskonnaga siduda ja uueks lugeda lasta."
+    },
+    "oneLevel": {
+      "title": "Üks tase sügav",
+      "body": "Sa teenid sõpradelt, kelle sina kaasa tõid, mitte sõpradelt, keda nemad kaasa toovad. Need otsijad ehitavad oma meeskonna ja jätavad selle täielikult endale."
+    },
+    "friendKeeps": {
+      "title": "Sinu sõber ei kaota midagi",
+      "body": "Boonus lisatakse sinu enda püükidele. See pole osa tema omadest, nii et midagi, mida sa võidad, ei võeta kelleltki ära."
+    }
+  },
+  "referralInfo": {
+    "openLabel": "Kuidas soovitused täpselt töötavad",
+    "close": "Sulge",
+    "eyebrow": "Soovitused täpsemalt",
+    "title": "Kui palju meeskond väärt on ja millal see arvesse läheb",
+    "lead": "Kaks asja on siin lihtne valesti mõista. Boonusel pole lage ja sõber ei hakka sulle tulu tooma kohe, kui ta äpi installib. Mõlemat tasub näha, mitte lihtsalt kuulda.",
+    "ladderLabel": "Aktiivsed sõbrad ja kui palju su püügid väärt on",
+    "ladderFriends": "{count} mängib",
+    "noCap": "Ülempiiri pole. Kakskümmend aktiivset sõpra tähendab puhast kahekordistumist ja miski arvutuses ei peatu seal.",
+    "lifecycleLabel": "Kuidas sõbrast saab soovitus",
+    "foot": "Sõber läheb arvesse, kui tal on {days} päeva jooksul {needed} päris püüki. Kui ta sinnani ei jõua, lakkab ta arvesse minemast; kui ta uuesti mängib, on ta tagasi. Kummalgi juhul ei lähe midagi kaotsi."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "Sa annad oma koodi",
+      "body": "Iga otsija saab registreerumisel kaheksamärgilise koodi. See on alatiseks sinu ja midagi pole vaja lunastada ega luua."
+    },
+    "redeem": {
+      "title": "Ta sisestab selle uuel kontol",
+      "body": "Kood võetakse vastu ainult kontol, millel pole XP-d ega midagi korjatud. See kirjutatakse üks kord ja seda ei saa hiljem muuta, nii et kedagi ei saa meeskondade vahel liigutada."
+    },
+    "play": {
+      "title": "Ta läheb välja ja mängib",
+      "body": "Arvesse lähevad ainult päris püügid. Simulaatoris tehtud katsed salvestatakse eraldi ega kuulu kogusummasse."
+    },
+    "count": {
+      "title": "Ta hakkab tulu tooma ja teeb seda edasi",
+      "body": "See on samm, mis inimestel kahe silma vahele jääb. Installimisest ei piisa: sõber peab päriselt väljas olema, enne kui sinu kordaja liigub."
+    }
+  },
+  "shop": {
+    "metaTitle": "Seekprotocoli pood",
+    "metaDescription": "Kaardipakid, Season Pass ja boostid sinu kontole.",
+    "ogTitle": "Seekprotocoli pood",
+    "eyebrow": "Pood",
+    "title": "Seekprotocoli pood",
+    "lead": "Kaardipakid, Season Pass ja boostid sinu kontole.",
+    "howEyebrow": "Kuidas see töötab",
+    "stepSignIn": "Logi sisse",
+    "stepSignInBody": "Sama konto mis äpis: Google, Apple või kood e-postiga.",
+    "stepPay": "Maksa krüptoga",
+    "stepPayBody": "Ühenda Phantom, Solflare, Backpack või mõni muu Wallet Standardi rahakott ja kinnita üks ülekanne.",
+    "stepOpen": "Ava äpis",
+    "stepOpenBody": "Kaardipakid jõuavad sinu kontole kohe, kui makse on arveldatud. Ava need Arenas.",
+    "notConfigured": "Pood pole selles paigalduses seadistatud.",
+    "loadingAccount": "Kontrollin sinu seanssi...",
+    "signInTitle": "Logi ostmiseks sisse",
+    "signInLead": "Kaardipakid, Season Pass ja boostid sinu kontole.",
+    "continueGoogle": "Jätka Google'iga",
+    "continueApple": "Jätka Apple'iga",
+    "orEmail": "või koodiga e-posti teel",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "you@example.com",
+    "sendCode": "Saada kood",
+    "sendingCode": "Saatmine...",
+    "codeSentTo": "Saatsime 8-kohalise koodi aadressile {email}.",
+    "codeLabel": "Kood",
+    "verifyCode": "Logi sisse",
+    "verifying": "Kontrollimine...",
+    "useAnotherEmail": "Kasuta teist e-posti",
+    "signInFailed": "Sisselogimine ei õnnestunud. Proovi uuesti.",
+    "codeInvalid": "See kood ei klapi. Kontrolli e-kirja ja proovi uuesti.",
+    "emailInvalid": "Sisesta kehtiv e-posti aadress.",
+    "signedInAs": "Sisse logitud kui",
+    "signOut": "Logi välja",
+    "productsEyebrow": "Kaardipakid",
+    "productsTitle": "Vali komplekt",
+    "bundleSaving": "Säästa {percent}%",
+    "paymentEyebrow": "Makse",
+    "paymentTitle": "Vali makseviis",
+    "paymentSolHint": "SOL · Phantom, Solflare ja muud",
+    "paymentCrypto": "Maksa krüptoga",
+    "paymentDetails": "Valuutad ja makse üksikasjad",
+    "packSingle": "Üks kaardipakk",
+    "packFive": "Viis kaardipakki",
+    "packTen": "Kümme kaardipakki",
+    "packs": "{count, plural, one {# kaardipakk} other {# kaardipakki}}",
+    "perPack": "{price} kaardipaki kohta",
+    "solApprox": "umbes {sol} SOL",
+    "solPending": "SOL-i summa värskendamisel",
+    "rateFrom": "Kurss seisuga {time}.",
+    "rateStale": "See võib vahepeal olla muutunud.",
+    "rateNone": "SOL-i kurssi veel pole.",
+    "refreshRate": "Värskenda SOL-i kurssi",
+    "refreshing": "Kursi hankimine...",
+    "rateNote": "Täpne SOL-i summa lukustatakse tellimuse loomisel ja kehtib viis minutit.",
+    "waysToPay": "Kaks makseviisi: SOL brauseri rahakotist Solanas või USDC, USDT, SOL, ETH, BTC ja muud Ethereumis, Base'is, Arbitrumis, Polygonis, BNB-s, Tronis ja Bitcoinis Radomi makselehe kaudu.",
+    "buy": "Osta SOL-iga",
+    "payOther": "Maksa stablecoinide või muu krüptoga",
+    "connectToBuy": "Ostmiseks ühenda rahakott",
+    "walletEyebrow": "Rahakott",
+    "walletTitle": "Maksa oma rahakotist",
+    "walletLead": "Phantom, Solflare, Backpack või mõni muu Wallet Standardit toetav rahakott. Midagi ei saadeta enne, kui sa selle seal kinnitad.",
+    "walletSelect": "Vali rahakott",
+    "walletConnecting": "Ühendamine...",
+    "walletConnect": "Ühenda rahakott",
+    "walletCopy": "Kopeeri aadress",
+    "walletCopied": "Kopeeritud",
+    "walletChange": "Vaheta rahakotti",
+    "walletDisconnect": "Katkesta ühendus",
+    "verificationNote": "Lühike kontroll automatiseeritud ostude vastu. Tavaliselt lõpeb see iseenesest.",
+    "flowVerifying": "Turvakontrolli lõpetamine...",
+    "flowCreating": "Sinu tellimuse loomine...",
+    "flowReady": "Tellimus valmis",
+    "flowPay": "Maksa {sol} SOL",
+    "flowFor": "tootele {product}",
+    "flowHeld": "Hind kehtib {seconds} s",
+    "payInWallet": "Maksa rahakotis",
+    "cancelOrder": "Tühista",
+    "flowSigning": "Kinnita makse oma rahakotis...",
+    "flowRedirecting": "Suunan makselehele...",
+    "flowChecking": "Kontrollin sinu makset, katse {attempt}/{total}...",
+    "flowConfirming": "Kinnitan plokiahelas, katse {attempt}/{total}...",
+    "flowPaid": "Makstud. {count, plural, one {# kaardipakk on} other {# kaardipakki on}} sinu kontol.",
+    "flowPaidAny": "Makstud. Sinu ost on kohale toimetatud.",
+    "flowPending": "Sinu makset kinnitatakse. Ost ilmub äppi pärast kohaletoimetamist.",
+    "flowCancelled": "Tellimus tühistatud. Midagi ei saadetud.",
+    "viewTransaction": "Vaata tehingut",
+    "flowDone": "Valmis",
+    "tryAgain": "Proovi uuesti",
+    "errCheckoutUnavailable": "Pood on praegu peatatud. Proovi hiljem uuesti.",
+    "errArenaUnavailable": "Arena pole selle konto jaoks veel avatud. Ava esmalt äpp.",
+    "errBuildRefused": "Seda ostu ei õnnestunud veebilehelt kinnitada. Värskenda lehte ja proovi uuesti.",
+    "errRateLimited": "Liiga palju katseid. Oota hetk ja proovi uuesti.",
+    "errOrderExpired": "Tellimus aegus enne maksmist. Loo uus.",
+    "errUnknownAction": "Pood ja server ei ole ühel meelel. Värskenda lehte.",
+    "errUnknownProduct": "Seda toodet ei müüda.",
+    "errAccountBlocked": "See konto ei saa kaardipakke osta.",
+    "errUnauthorized": "Sinu seanss lõppes. Logi uuesti sisse.",
+    "errWalletRejected": "Rahakott lükkas makse tagasi.",
+    "errInsufficient": "Rahakotis pole selle summa ja võrgutasu jaoks piisavalt SOL-i.",
+    "errWalletFailed": "Rahakott ei saanud tehingut saata.",
+    "errNetwork": "Serveriga ei saanud ühendust. Kontrolli ühendust ja proovi uuesti.",
+    "errCaptcha": "Kontroll ei lõppenud. Proovi uuesti.",
+    "errRadomUnavailable": "Makseleht pole praegu saadaval. Proovi hiljem uuesti või maksa Solana rahakotiga.",
+    "errGeneric": "Midagi läks valesti. Proovi uuesti.",
+    "packsEyebrow": "Sinu kaardipakid",
+    "packsWaiting": "{count, plural, =0 {Ükski kaardipakk ei oota} one {# kaardipakk ootab} other {# kaardipakki ootab}}",
+    "packsHint": "Ava need äpis, Arena all.",
+    "packsLive": "Otse",
+    "ordersEyebrow": "Viimased tellimused",
+    "ordersEmpty": "Tellimusi veel pole.",
+    "statusPending": "Ootel",
+    "statusPaid": "Makstud",
+    "statusExpired": "Aegunud",
+    "statusFailed": "Ebaõnnestus",
+    "checkout": {
+      "steps": "Ostu sammud",
+      "details": "Andmed",
+      "payment": "Makse",
+      "digitalDelivery": "DIGITAALNE KOHALETOIMETAMINE",
+      "yourDetails": "Sinu ostu andmed",
+      "reviewPay": "Ülevaade ja makse",
+      "intro": "Kaardipakid, Season Pass ja boostid sinu kontole.",
+      "contact": "Kontakt",
+      "email": "E-posti aadress",
+      "signedInAccount": "Sisse logitud konto",
+      "emailNote": "Sinu kinnitatud sisselogimise e-post. Konto vahetamiseks kasuta ülal nuppu Logi välja.",
+      "name": "Nimi (valikuline)",
+      "deliverTo": "Milline konto peaks sinu ostu saama?",
+      "inApp": "Toimetatakse Seekprotocoli",
+      "friendsId": "Friends ID",
+      "optional": "valikuline",
+      "friendsNote": "Friends ID on valikuline. Jäta see tühjaks, et toimetada ost Seekprotocoli kontole, mis on seotud sinu praeguse sisselogimisega. Teise konto jaoks sisesta selle 8-märgiline Friends ID.",
+      "checking": "Konto kontrollimine…",
+      "continue": "Jätka maksma",
+      "invalidFriend": "Selle Friends ID-ga saadaolevat kontot ei leitud. Kontrolli 8-märgilist koodi.",
+      "recipientUnavailable": "Arena pole selle konto jaoks veel saadaval. Vali teine saaja.",
+      "detailsFailed": "Me ei saanud kontot kontrollida. Sinu andmed on siin salvestatud; palun proovi uuesti.",
+      "receivingAccount": "Saav konto",
+      "yourAccount": "Sinu sisse logitud konto",
+      "otherAccount": "Sinu ost läheb sellele kontole.",
+      "change": "Muuda",
+      "solWallet": "Solana rahakott",
+      "radomNote": "Jätka Radomis, et valida valuuta ja võrk. Vaata enne kinnitamist üle võimalik võrgutasu.",
+      "walletNote": "Kinnita makse oma rahakotis. Järgmine samm näitab täpset SOL-i summat.",
+      "payNow": "Maksa {price}",
+      "supportNote": "Igal tellimusel on viitenumber ja tarneolek. Hoia viitenumber alles, kui vajad ostuga abi.",
+      "orderSummary": "Tellimuse kokkuvõte",
+      "oneTime": "Ühekordne ost",
+      "digitalPacks": "Digitaalsed kaardipakid",
+      "bundle": "Vali oma komplekt",
+      "subtotal": "Vahesumma",
+      "delivery": "Kohaletoimetamine",
+      "toAccount": "Seekprotocoli konto",
+      "total": "Kokku",
+      "feeNote": "Võivad lisanduda võrgutasud. Makseteenuse pakkuja või rahakott näitab neid enne kinnitamist.",
+      "linkedDelivery": "Seotud valitud kontoga",
+      "linkedDeliveryNote": "Pärast makse kinnitamist toimetatakse ost valitud Seekprotocoli kontole.",
+      "receipt": "Tellimuse andmed",
+      "refreshStatus": "Värskenda olekut",
+      "orderNumber": "Tellimuse viitenumber",
+      "receiptFailed": "Seda tellimust ei õnnestunud laadida. Hoia viitenumber alles ja proovi värskendada.",
+      "orderSaved": "Tellimus salvestatud",
+      "paymentReceived": "Makse kinnitatud",
+      "paymentWaiting": "Ootab makse kinnitust",
+      "delivered": "Ost kohale toimetatud",
+      "deliveryWaiting": "Ootab kohaletoimetamist",
+      "closedOrder": "See tellimus on suletud. Kui sinu rahakotist läks raha, võta enne uuesti maksmist selle viitenumbriga toega ühendust.",
+      "pendingNote": "Kui oled juba maksnud, ära maksa uuesti. Värskenda olekut; kohaletoimetamist kontrollitakse ka automaatselt.",
+      "loadingReceipt": "Tellimuse laadimine…",
+      "calculating": "Arvutamine…"
+    },
+    "errRecipient": "Me ei saanud kontot kontrollida. Sinu andmed on siin salvestatud; palun proovi uuesti.",
+    "errPreparing": "Sinu tellimust veel valmistatakse ette. Proovi varsti uuesti; kasutame sama tellimust.",
+    "history": {
+      "title": "Minu tellimused",
+      "lead": "Sinu poeostud, sealhulgas teisele kontole saadetud kaardipakid. Kontrolli siin makset ja kohaletoimetamist.",
+      "shortLead": "Vaata oma varasemaid oste, makse olekut ja kohaletoimetamist.",
+      "viewOrders": "Vaata minu tellimusi",
+      "navigation": "Pood ja konto",
+      "shop": "Tagasi poodi",
+      "signInTitle": "Logi sisse, et oma tellimusi näha",
+      "signInLead": "Kasuta sama kontot, millega ostsid. Näidatakse ainult sinu enda tellimusi.",
+      "autoUpdate": "Olek uueneb automaatselt.",
+      "updated": "Viimati uuendatud: {time}",
+      "loading": "Tellimuste laadimine…",
+      "loadFailed": "Me ei saanud sinu tellimusi uuendada. Näidatud olek võib olla aegunud. Proovi nuppu Värskenda olekut.",
+      "emptyTitle": "Tellimusi veel pole",
+      "emptyLead": "Selle kontoga tehtud tellimused ilmuvad siia.",
+      "purchase": "Seekprotocoli ost",
+      "paymentLabel": "Makse",
+      "deliveryLabel": "Kohaletoimetamine",
+      "paidNotDelivered": "Sinu makse on kinnitatud. Kohaletoimetamine on veel pooleli. Ära maksa uuesti; tarneolek uueneb automaatselt.",
+      "pagination": "Tellimuste ajaloo lehed",
+      "previous": "Eelmine",
+      "next": "Järgmine",
+      "page": "Leht {page}",
+      "orderedAt": "Tellitud",
+      "paidAt": "Makstud",
+      "deliveredAt": "Krediteeritud",
+      "payment": {
+        "paid": "Makstud",
+        "pending": "Ootab makset",
+        "expired": "Aegunud",
+        "failed": "Pole lõpetatud",
+        "unknown": "Olek teadmata"
+      },
+      "delivery": {
+        "delivered": "Ost kohale toimetatud",
+        "processing": "Kohaletoimetamine käib",
+        "notDelivered": "Pole krediteeritud",
+        "awaitingPayment": "Pärast makse kinnitamist"
+      },
+      "overview": "Tellimuse ülevaade",
+      "pageSize": "{count} tellimust lehel",
+      "orderShort": "Tellimus #{reference}",
+      "recipient": "Kellele: {name}",
+      "moreProducts": "+ veel {count} toodet",
+      "reorder": "Koosta ostukorv uuesti",
+      "resume": "Jätka makset",
+      "checkPayment": "Kontrolli makset",
+      "checkingPayment": "Makse kontrollimine…",
+      "actionFailed": "Me ei saanud seda makset kontrollida. Palun proovi uuesti.",
+      "viewDetails": "Vaata tellimuse andmeid",
+      "quantity": "Kogus: {count}",
+      "currencyNote": "Toodetel säilivad algsed valuutad. Kogusumma on selle ostu jaoks lukustatud summa, mis teisendati tellimuse esitamisel.",
+      "actionResult": {
+        "paid": "Sinu makse on kinnitatud. Tarneolekut uuendatakse.",
+        "pending": "Makse pole veel kinnitatud. Kui oled juba maksnud, ära maksa uuesti.",
+        "closed": "See ost on suletud. Jätkamiseks koosta ostukorv uuesti."
+      },
+      "restore": {
+        "loading": "Eelmise tellimuse kontrollimine…",
+        "ready": "Sinu ostukorv on taastatud. Kontrolli enne uuesti maksmist praeguseid hindu ja saavat kontot.",
+        "failed": "Seda tellimust ei õnnestunud taastada. Makse võib olla veel töötlemisel või mõni toode pole saadaval. Värskenda esmalt tellimuse olekut."
+      }
+    },
+    "catalogLoading": "Toodete laadimine…",
+    "catalogFailed": "Tooteid ei õnnestunud laadida. Palun proovi uuesti.",
+    "catalogEmpty": "Praegu pole ühtegi toodet saadaval.",
+    "errCatalogChanged": "See toode on muutunud. Värskenda tooteid ja vaata enne maksmist hind üle.",
+    "catalogTitle": "Vali oma toode",
+    "catalogLead": "Kaardipakid, Season Pass ja boostid sinu kontole.",
+    "passSeason": "Kehtib praegusel hooajal. Ühekordne ost.",
+    "cardsInPacks": "5 kaarti pakis",
+    "recipientPrompt": "Milline konto peaks sinu ostu saama?",
+    "recipientOther": "Sinu ost läheb sellele kontole.",
+    "purchaseDelivered": "Ost kohale toimetatud",
+    "errPassUnavailable": "Passi ei saa praegu osta.",
+    "errPassOwned": "Sellel kontol on juba aktiivne Pass.",
+    "errPassPending": "Selle konto Passi tellimus on veel avatud. Kontrolli enne uuesti proovimist selle makse olekut.",
+    "friendsHelp": "Friends ID on valikuline. Jäta see tühjaks, et toimetada ost Seekprotocoli kontole, mis on seotud sinu praeguse sisselogimisega. Teise konto jaoks sisesta selle 8-märgiline Friends ID.",
+    "productKinds": {
+      "pack": "Kaardipakid",
+      "pass": "Pass",
+      "consumable": "Boost",
+      "bundle": "Komplekt"
+    },
+    "powerupNames": {
+      "rare_boost": "Shiba",
+      "coin_magnet": "Spawn Magnet",
+      "to_the_moon": "XP Boost",
+      "pump_it": "Pump It",
+      "diamond_hands": "Diamond Hands",
+      "spawn_lure": "Spawn Lure",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
+    },
+    "cart": {
+      "add": "Lisa {product} ostukorvi",
+      "quantity": "Toote {product} kogus",
+      "decrease": "Vähenda kogust",
+      "increase": "Suurenda kogust",
+      "remove": "Eemalda",
+      "empty": "Sinu ostukorv on tühi. Lisa ülalt üks või mitu toodet.",
+      "conversion": "Eri valuutades tooted teisendatakse ostu vormistamisel ühte USD kogusummasse."
+    },
+    "errCart": "Kontrolli ostukorvi koguseid. Ühe tellimusega saad osta kuni 50 kaardipakki ja ühe Passi.",
+    "login": {
+      "heading": "Logi sisse oma äpi kontoga",
+      "existingOnly": "Kasuta sama sisselogimisviisi mis Seekprotocoli äpis. Pood on ainult olemasolevatele äpi kontodele.",
+      "methods": "Sisselogimisviisid",
+      "continueWith": "Jätka teenusega {provider}",
+      "notAvailable": "Ajutiselt pole saadaval",
+      "unavailable": "See sisselogimisviis pole praegu saadaval. Proovi hiljem uuesti või kasuta mõnda teist viisi, mis on sinu äpi kontoga juba seotud.",
+      "methodsFailed": "Mõnda sisselogimisviisi ei õnnestunud laadida.",
+      "orEmail": "või logi sisse e-postiga",
+      "emailMethod": "E-postiga sisselogimine",
+      "emailCode": "E-posti kood",
+      "signIn": "Logi sisse",
+      "emailNotSent": "Koodi ei õnnestunud saata. Kasuta oma olemasoleva äpi konto e-posti ja proovi uuesti.",
+      "appRequired": "Poe kasutamiseks on vaja olemasolevat äpi kontot. Loo konto või lõpeta selle seadistamine esmalt Seekprotocoli äpis ja tule siis tagasi.",
+      "noAccount": "Pole veel äpi kontot? Loo see Seekprotocoli äpis. Poes registreeruda ei saa.",
+      "changeAccount": "Kasuta teist kontot",
+      "expired": "See sisselogimiskatse on aegunud. Alusta poest uuesti.",
+      "wallet": "Jätka Solana rahakotiga",
+      "connectWallet": "Ühenda rahakott",
+      "walletSignIn": "Logi selle rahakotiga sisse",
+      "walletSigning": "Kinnita oma rahakotis…",
+      "changeWallet": "Vali teine rahakott",
+      "walletCannotSign": "See rahakott ei saa sisselogimissõnumit allkirjastada. Vali teine rahakott, mis on sinu äpi kontoga seotud.",
+      "walletFailed": "Rahakotiga sisselogimine ebaõnnestus või tühistati. Proovi uuesti rahakotiga, mis on sinu äpi kontoga seotud.",
+      "emailHelp": "Saadame sulle sisselogimiskoodi. Kasuta oma äpi konto e-posti aadressi.",
+      "welcome": "Tere tulemast tagasi.",
+      "intro": "Logi sisse oma Seekprotocoli äpi kontoga.",
+      "socialHeading": "Oma kontoga",
+      "socialHelp": "Vali sisselogimisviis, mida kasutad äpis.",
+      "accountNote": "Ainult olemasolevatele äpi kontodele. Loo uus konto Seekprotocoli äpis.",
+      "availabilityNote": "Hallid sisselogimisviisid on ajutiselt kättesaamatud."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Tahad teada, mis see on? Puuduta kaardil küsimärki ja vaata, mis selle all peitub, ükskõik kus see su kaardil on.",
+      "coin_magnet": "Rohkem avastusi jalutuskäigul. Lähedusse ilmub 30 minuti jooksul rohkem münte.",
+      "to_the_moon": "Võta igast katsest rohkem. Teeni müntide püüdmise katsetest 30 minutit 3× XP-d.",
+      "pump_it": "Üks kaardikast veel. Püüa täna üks lisaareenikaardikast lisaks oma päevalimiidile.",
+      "diamond_hands": "Liiga kaugel, et kõndida? Püüa üks münt kuni 500 meetri kauguselt tavalise tõenäosusega.",
+      "spawn_lure": "Too jaht enda juurde. Meelita 30 minutit münte lähedal olevatele mängijatele. Vajalik on klanni liikmesus.",
+      "cash": "Tee väikestest müntidest üks haruldasem. Vaheta 30 minuti jooksul 3 Commonit 1 Uncommoni, 3 Uncommonit 1 Rare'i või 5 Rare'i 1 Legendary vastu.",
+      "fitness": "Ulatu palju kaugemale. Püüa münte kuni 80 meetri kauguselt 15 minuti jooksul.",
+      "chill_guy": "Vaata hoolikalt ringi. Näe 15 minuti jooksul, mis on 15 lähimat spawni, mitte 5.",
+      "this_is_fine": "Läks mööda? Ära paanitse. Pärast järgmist möödalasku jääb münt 2 minutiks sulle ja keegi teine ei saa seda võtta. Kestab kuni 15 minutit."
+    },
+    "productInfo": {
+      "more": "Selle toote kohta",
+      "includes": "Mida sa saad",
+      "use": "Kuidas seda kasutada",
+      "pack": "Iga kaardipakk sisaldab 5 juhuslikku Arena kaarti. Ava oma kaardipakid äpis Arenas ja vaata, millised kaardid said. Korduvad kaardid on võimalikud; ühtki konkreetset kaarti ei garanteerita.",
+      "pass": "Naudi praegusel hooajal rohkem kohtumisi Rare, Epic ja Legendary müntidega ning iganädalast Rare münti, mille saad äpis lunastada. Pass lõpeb koos hooajaga ega uuene automaatselt.",
+      "bundle": "Loetletud boosterid lisatakse sinu varusse eraldi. Vali, millise esimesena aktiveerid; nende efektid ei tööta korraga.",
+      "delivery": "Toimetatakse sinu valitud Seekprotocoli kontole pärast makse kinnitamist. Ilma Friends ID-ta läheb ost äpi kontole, mis on seotud sinu sisselogimisega.",
+      "passName": "Season Pass",
+      "bundleName": "Boost Bundle",
+      "activate": "Lisatakse pärast ostu sinu varusse. Aktiveeri see äpi poest, kui oled valmis. Korraga saab töötada ainult üks booster."
+    }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | AR- ja AI-aardejahid päris auhindade nimel",
+    "description": "Koge tulevikku koos $SEEK-iga, AR- ja AI-kihiga auhindadele, mis elavad kindlas kohas. Jahi asukohapõhiseid droppe, kogu NFT-sid, lunasta kuponge, võida päris kaupu ja avasta koos AI-kaaslastega. Auhind võib olla token mis tahes plokiahelas või plokiahelaga üldse mitte seotud.",
+    "socialDescription": "Jahi asukohapõhiseid droppe, kogu NFT-sid, lunasta kuponge ja võida päris kaupu. AR- ja AI-kiht, mis ankurdab auhinna päris kohta, mis tahes plokiahelas või ilma selleta.",
+    "skipToContent": "Liigu põhisisu juurde"
+  }
+}

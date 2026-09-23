@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getMultilingualAlternates, OG_IMAGE, getOpenGraph, getBreadcrumbJsonLd } from "@/lib/seo";
-import { blogPosts } from "@/lib/blog-data";
+import { getLocalizedPosts } from "@/lib/blog-i18n";
 
 export async function generateMetadata({
   params,
@@ -72,7 +72,7 @@ function BlogPageContent({ locale }: { locale: string }) {
         <div className="noise-layer" aria-hidden="true" />
         <div className="shell">
           <div className="page-head-inner">
-            <p className="eyebrow">Blog</p>
+            <p className="eyebrow">{t("eyebrow")}</p>
             <h1 className="t-h1 page-head-title">{t("title")}</h1>
             <p className="t-lead">{t("desc")}</p>
           </div>
@@ -82,7 +82,7 @@ function BlogPageContent({ locale }: { locale: string }) {
       <section className="section">
         <div className="shell">
           <div className="post-grid">
-            {blogPosts.map((post, index) => (
+            {getLocalizedPosts(locale).map((post, index) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}

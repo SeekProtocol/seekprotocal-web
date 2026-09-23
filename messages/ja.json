@@ -13,7 +13,9 @@
     "shop": "ショップ",
     "getApp": "アプリを入手",
     "switchToLight": "ライトモードに切り替え",
-    "switchToDark": "ダークモードに切り替え"
+    "switchToDark": "ダークモードに切り替え",
+    "mainLabel": "メインメニュー",
+    "mobileLabel": "モバイルメニュー"
   },
   "footer": {
     "home": "ホーム",
@@ -33,7 +35,9 @@
     "resources": "リソース",
     "appStore": "App Store",
     "googlePlay": "Google Play",
-    "seekPartners": "Seek Partners"
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "App Store からダウンロード",
+    "googlePlayAlt": "Google Play で手に入れよう"
   },
   "home": {
     "heroTitle": "新しい現実を探索しよう",
@@ -156,13 +160,15 @@
     "renameLink": "お知らせを読む",
     "legacyEyebrow": "名称の履歴",
     "legacyTitle": "暗号資産AR アプリ「SeekAR」は現在「Seekprotocol」です",
-    "legacyBody": "変わったのはアプリの名前だけです。会社名ははじめから Seekprotocol です。リリースから2026年8月までiOSおよびAndroidで「SeekAR」の名称で公開されていたモバイルアプリは、現在「Seekprotocol」と呼ばれています。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ、UAE）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）。他の製品、アーティスト、場所も「Seekar」という名称を使用していますが、このページはオンチェーン報酬のためのマルチチェーン対応ARアプリについて具体的に説明しています。",
+    "legacyBody": "変わったのはアプリの名前だけです。会社名ははじめから Seekprotocol です。リリースから2026年8月までiOSおよびAndroidで「SeekAR」の名称で公開されていたモバイルアプリは、現在「Seekprotocol」と呼ばれています。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ、UAE）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）。他の製品、アーティスト、場所も「Seekar」という名称を使用していますが、このページはマルチチェーン対応のARと暗号資産報酬のアプリについて具体的に説明しています。",
     "q6": "SeekAR アプリはどうなりましたか？",
     "a6": "SeekARとしてリリースされたオンチェーン報酬のためのARモバイルアプリは、2026年8月10日にSeekprotocolに名称変更されました。同じ製品、同じ発行者（Block Protocol L.L.C-FZ、ドバイ）、同じApp Storeリスティング（id 6752813761）、同じPlay Storeパッケージ（com.seekar.seekar）。名称とアイコンのみが変更されました。",
     "q7": "以前SeekARと呼ばれていたアプリはどこでダウンロードできますか？",
     "a7": "App Storeのapps.apple.com/app/id6752813761、Google Playのplay.google.com/store/apps/details?id=com.seekar.seekar からダウンロードできます。両方のリスティングは現在Seekprotocolという名称です。",
     "q8": "SeekprotocolはSeekARと同じ製品ですか？",
-    "a8": "はい。会社名ははじめからSeekprotocolであり、変わったのはアプリの名前だけです。ローンチから2026年8月までSeekARと呼ばれていたオンチェーン報酬のためのマルチチェーン対応ARアプリが、現在はSeekprotocolと呼ばれています。ドバイのBlock Protocol L.L.C-FZの同じチームによって公開されています。"
+    "a8": "はい。会社名ははじめからSeekprotocolであり、変わったのはアプリの名前だけです。リリースから2026年8月までSeekARという名前だったマルチチェーン対応のAR暗号資産報酬アプリは、現在Seekprotocolという名前になり、UAEドバイのBlock Protocol L.L.C-FZの同じチームが公開しています。",
+    "stepsEyebrow": "ステップごとに",
+    "faqEyebrow": "よくある質問"
   },
   "about": {
     "heroTitle": "位置ベースデジタル体験の未来を発見",
@@ -225,7 +231,13 @@
     "ctaDesc": "世界があなたの遊び場になる新しい現実に踏み出しましょう。Seekprotocol は最新の AR テクノロジーと現実世界の探索を融合させ、あなたの周囲をインタラクティブな冒険に変えます。",
     "metaTitle": "Seekprotocolをつくるチームについて",
     "metaDescription": "すべてのチェーンに向けて位置連動のARをつくるチームの紹介。位置証明という発想、Seekprotocolを支える技術、そして$SEEKの背後にいる人たち。",
-    "ogTitle": "Seekprotocolをつくるチーム"
+    "ogTitle": "Seekprotocolをつくるチーム",
+    "eyebrow": "私たちについて",
+    "whyEyebrow": "私たちがこれをつくる理由",
+    "techEyebrow": "テクノロジー",
+    "pillarsEyebrow": "柱",
+    "teamEyebrow": "チーム",
+    "linkedinLabel": "LinkedIn の {name}"
   },
   "contact": {
     "getInTouch": "お問い合わせ",
@@ -241,7 +253,11 @@
     "pressTitle": "プレス・メディア",
     "pressBody": "掲載、取材、レビュー用配布、エンバーゴ情報。編集関連はすべてこちらから、当日中に返信します。",
     "supportTitle": "サポート",
-    "supportBody": "不具合、届かなかった報酬、ウォレットの質問。最速はDiscordですが、このフォームでも受け付けます。"
+    "supportBody": "不具合、届かなかった報酬、ウォレットの質問。最速はDiscordですが、このフォームでも受け付けます。",
+    "eyebrow": "お問い合わせ",
+    "elsewhere": "その他の窓口",
+    "documentation": "ドキュメント",
+    "registeredOffice": "登記上の所在地"
   },
   "services": {
     "heroTitle": "私たちの専門知識、あなたの成長",
@@ -282,7 +298,7 @@
     "agencies": "エージェンシー & コンサルタント",
     "agenciesDesc": "高価値コンテンツで権威を構築。",
     "localBusinesses": "ローカルビジネス",
-    "localBusinessesDesc": "地元やそれ以外のお客様とのつながりをサポート。",
+    "localBusinessesDesc": "あなたの街やその先のお客様とのつながりをサポート。",
     "largeCorporations": "大企業",
     "largeCorporationsDesc": "ブランドを強化する明確で効果的なメッセージングを作成。",
     "ctaConnect": "お問い合わせ",
@@ -301,7 +317,8 @@
     "relatedPages": "関連ページ",
     "metaTitle": "ブログ：AR、AI、位置連動の報酬",
     "metaDescription": "拡張現実、AIの相棒、ジオフェンス型エアドロップ、位置証明についての記事。Seekprotocol をつくるチームより。",
-    "ogTitle": "Seekprotocolのブログ"
+    "ogTitle": "Seekprotocolのブログ",
+    "eyebrow": "ブログ"
   },
   "forms": {
     "emailPlaceholder": "メールアドレス",
@@ -343,13 +360,15 @@
     "rejectAll": "すべて拒否",
     "customize": "カスタマイズ",
     "savePreferences": "設定を保存",
-    "cookieSettings": "Cookie 設定"
+    "cookieSettings": "Cookie 設定",
+    "toggleLabel": "{category}を切り替える"
   },
   "notFound": {
     "pageNotFound": "ページが見つかりません",
     "pageNotFoundDesc": "お探しのページは存在しないか、移動されました",
     "oops": "ページが見つかりません",
-    "backToHome": "ホームに戻る"
+    "backToHome": "ホームに戻る",
+    "errorCode": "エラー 404 · この座標に信号はありません"
   },
   "metrics": {
     "text1": "無限のアセット。",
@@ -425,12 +444,13 @@
     "contactP1": "本アプリケーションの使用中のプライバシーに関するご質問、または本ポリシーに記載されたデータ取扱い慣行に関するご質問がございましたら、以下の連絡先までサービス提供者にお問い合わせください：",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "プライバシーポリシー",
-    "metaDescription": "SeekprotocolとSeekprotocolが位置情報、センサーの値、ウォレット情報をどう扱うか。何を集め、どれだけ保持し、何を決して共有しないか。",
+    "metaDescription": "Seekprotocolが位置情報、センサーの値、ウォレット情報をどう扱うか。何を集め、どれだけ保持し、何を決して共有しないか。",
     "ogTitle": "Seekprotocolのプライバシー",
     "raspTitle": "Talsec freeRASP：セキュリティ診断",
     "raspP1": "freeRASPが有効なバージョンでは、Talsec（Lynx SFT s.r.o.）がアプリとOSのセキュリティ診断、端末モデルの情報、アプリインスタンス識別子および端末識別子を受け取ります。シグナルには、root化、エミュレーター、アプリ改変、デバッグ、フッキングなどが含まれる場合があります。これらは該当バージョンの実行中に自動送信され、任意のパフォーマンス分析設定では無効になりません。",
     "raspP2": "Talsecは、セキュリティレポート、無料および商用セキュリティ製品の改善、集計した研究にこれらのデータを利用します。Talsecは米国でのクラウド処理を説明しています。端末識別子がすべてのプライバシー法において完全に匿名であるとは限りません。以下のリンクからTalsecのデータポリシーをご確認ください。",
-    "raspP3": "当社のバックエンドも、収集の試行とともに脅威名を記録し、これらはアカウントに関連付けられる場合があります。当社のコールバック処理は、他のインストール済みアプリの一覧を送信しません。これらは端末から報告されたシグナルであり、それだけで不正の証拠になるものではありません。"
+    "raspP3": "当社のバックエンドも、収集の試行とともに脅威名を記録し、これらはアカウントに関連付けられる場合があります。当社のコールバック処理は、他のインストール済みアプリの一覧を送信しません。これらは端末から報告されたシグナルであり、それだけで不正の証拠になるものではありません。",
+    "eyebrow": "法的情報"
   },
   "termsPage": {
     "title": "利用規約",
@@ -452,7 +472,8 @@
     "contactP1": "利用規約についてご質問やご提案がございましたら、サービス提供者（<email>support@seekprotocol.ai</email>）までお気軽にお問い合わせください。",
     "metaTitle": "利用規約",
     "metaDescription": "SeekprotocolおよびSeekprotocolプラットフォームの利用条件。利用者の権利、アセット受け取りのルール、有料アイテムの扱いについて。",
-    "ogTitle": "Seekprotocolの利用規約"
+    "ogTitle": "Seekprotocolの利用規約",
+    "eyebrow": "法的情報"
   },
   "languageSwitcher": {
     "en": "English",
@@ -486,7 +507,17 @@
     "close": "閉じる",
     "secondsAgo": "{seconds}秒前",
     "zoomIn": "拡大",
-    "zoomOut": "縮小"
+    "zoomOut": "縮小",
+    "busiest": "今いちばん活発",
+    "units": "数量",
+    "zoomLabel": "ズーム",
+    "hubsLabel": "都市へ移動",
+    "wholeEarth": "地球全体",
+    "zoomLevel": "ズーム {percent}%",
+    "caught": "キャッチ成功 · +{xp, number} XP",
+    "escaped": "逃げられました · 再挑戦で {percent}%",
+    "tryCatch": "キャッチに挑戦",
+    "globeAria": "Seekprotocol の世界中の収集アクティビティを表示するインタラクティブな地球儀"
   },
   "homeSteps": {
     "placed": {
@@ -2310,7 +2341,7 @@
             "items": [
               "**対象**：手数料の重み付け、プロトコル手数料のうちシーカーの取り分、トレジャリーの配分、半径の上下限、そして高価値アセットが使える信頼しきい値。",
               "**遅延を伴って対象**：すでに設置されたアセットの価値を変えるもの。ある手数料体系のもとで資金を入れたキャンペーンは、その体系のもとで終わるべきです。",
-              "**対象外**：第13章のプライバシーに関する約束。保持期限と、移動データを公開しないという方針はパラメータではなく、投票はそれを弱める正当な手段ではありません。",
+              "**対象外**：第14章のプライバシーに関する約束。保持期限と、移動データを公開しないという方針はパラメータではなく、投票はそれを弱める正当な手段ではありません。",
               "**対象外**：個々の受け取りの結果。拒否された受け取りは紛争解決の問題であって、投票の問題ではありません。"
             ]
           },
@@ -2426,7 +2457,7 @@
           },
           {
             "kind": "p",
-            "text": "$SEEKはユーティリティおよび調整アセットとして設計され、第9章で述べた用途は飾りではなく実在します。これは設計上の立場であって、法的な結論ではありません。分類は法域によって異なり、時とともに変わり、ホワイトペーパーが言い切って決められるものではありません。したがって現地の規則が求める場所では提供を制限します。"
+            "text": "$SEEKはユーティリティおよび調整アセットとして設計され、第10章で述べた用途は飾りではなく実在します。これは設計上の立場であって、法的な結論ではありません。分類は法域によって異なり、時とともに変わり、ホワイトペーパーが言い切って決められるものではありません。したがって現地の規則が求める場所では提供を制限します。"
           },
           {
             "kind": "h",
@@ -2470,7 +2501,7 @@
           },
           {
             "kind": "p",
-            "text": "ドラッグ&ドロップのキャンペーン作成ツールは完成しています。次に来るのは、伴走型のパートナーシップを超えて設置を開放するセルフサービスの法人ポータルと、それに伴う来訪分析です。並行して、トークン生成イベント、ライブイベントモード、シーズン、物体スキャンが控えています。ガバナンスは、パラメータの判断に意味が出るだけの実際の手数料の流れが生まれてから続きます。理由は第11章のとおりです。"
+            "text": "ドラッグ&ドロップのキャンペーン作成ツールは完成しています。次に来るのは、伴走型のパートナーシップを超えて設置を開放するセルフサービスの法人ポータルと、それに伴う来訪分析です。並行して、トークン生成イベント、ライブイベントモード、シーズン、物体スキャンが控えています。ガバナンスは、パラメータの判断に意味が出るだけの実際の手数料の流れが生まれてから続きます。理由は第12章のとおりです。"
           },
           {
             "kind": "h",
@@ -2481,7 +2512,7 @@
             "items": [
               "ガバナンスの日付。取引量に左右されるものであり、取引量は日付ではありません。",
               "屋内精度を屋外と同等にすること。難しい問題であり、率直な答えは当面のあいだ屋内では広い半径を使うということです。",
-              "複数チェーンへの展開。第5章のレイテンシとコストの要件は狭く、それを満たさない二つ目のチェーンは技術ではなくマーケティングの判断になります。"
+              "新しいチェーンを増やすこと自体が目的の追加。第6章のレイテンシとコストの要件は狭く、それを満たさないチェーンを加えるのは技術ではなくマーケティングの判断になります。"
             ]
           },
           {
@@ -2685,7 +2716,8 @@
     "runOne": "1回まわす",
     "runThousand": "1000回まわす",
     "reset": "リセット",
-    "ladderCaption": "マイグレーションが公表しているのは{rarity}で{first}%、次に{second}%、スポーン全体で{overall}%です。これはレベル5、リングを満たし、クランなしのときのこのモデルであり、スライダーの初期値でもあります。キャッチしたものはゲーム内の単位であり、それがトークンでいくらになるかはゲームではなく市場の話です。"
+    "ladderCaption": "マイグレーションが公表しているのは{rarity}で{first}%、次に{second}%、スポーン全体で{overall}%です。これはレベル5、リングを満たし、クランなしのときのこのモデルであり、スライダーの初期値でもあります。キャッチしたものはゲーム内の単位であり、それがトークンでいくらになるかはゲームではなく市場の話です。",
+    "tocTitle": "目次"
   },
   "stackLayers": {
     "app": {
@@ -3012,10 +3044,10 @@
       "emailNote": "確認済みのログイン用メールです。アカウントを変更するには上でログアウトしてください。",
       "name": "名前（任意）",
       "deliverTo": "購入商品をどのアカウントに届けますか？",
-      "inApp": "SeekAR内で受け取り",
+      "inApp": "Seekprotocol内で受け取り",
       "friendsId": "Friends ID",
       "optional": "任意",
-      "friendsNote": "Friends IDは任意です。空欄の場合、現在ログインしているSeekARアカウントに付与されます。別のアカウントには、その8文字のFriends IDを入力してください。",
+      "friendsNote": "Friends IDは任意です。空欄の場合、現在ログインしているSeekprotocolアカウントに付与されます。別のアカウントには、その8文字のFriends IDを入力してください。",
       "checking": "アカウントを確認中…",
       "continue": "支払いへ進む",
       "invalidFriend": "このFriends IDの利用可能なアカウントが見つかりません。8文字のコードを確認してください。",
@@ -3036,11 +3068,11 @@
       "bundle": "セットを選択",
       "subtotal": "小計",
       "delivery": "配信先",
-      "toAccount": "SeekARアカウント",
+      "toAccount": "Seekprotocolアカウント",
       "total": "合計",
       "feeNote": "ネットワーク手数料が発生する場合があります。承認前に決済サービスまたはウォレットで表示されます。",
       "linkedDelivery": "選択したアカウントに連携",
-      "linkedDeliveryNote": "支払いの確認後、購入商品は選択したSeekARアカウントに付与されます。",
+      "linkedDeliveryNote": "支払いの確認後、購入商品は選択したSeekprotocolアカウントに付与されます。",
       "receipt": "注文詳細",
       "refreshStatus": "状況を更新",
       "orderNumber": "注文照会番号",
@@ -3072,7 +3104,7 @@
       "loadFailed": "注文を更新できませんでした。表示中の状況は古い可能性があります。「状況を更新」をお試しください。",
       "emptyTitle": "まだ注文はありません",
       "emptyLead": "このアカウントで注文すると、ここに表示されます。",
-      "purchase": "SeekARの購入",
+      "purchase": "Seekprotocolの購入",
       "paymentLabel": "支払い",
       "deliveryLabel": "付与",
       "paidNotDelivered": "支払いが確認されました。購入品を付与中です。再度支払わないでください。状況は自動更新されます。",
@@ -3134,7 +3166,7 @@
     "errPassUnavailable": "現在、Passを購入できません。",
     "errPassOwned": "このアカウントはすでに有効なPassを持っています。",
     "errPassPending": "このアカウントには未完了のPass注文があります。先に支払い状況をご確認ください。",
-    "friendsHelp": "Friends IDは任意です。空欄の場合、現在ログインしているSeekARアカウントに付与されます。別のアカウントには、その8文字のFriends IDを入力してください。",
+    "friendsHelp": "Friends IDは任意です。空欄の場合、現在ログインしているSeekprotocolアカウントに付与されます。別のアカウントには、その8文字のFriends IDを入力してください。",
     "productKinds": {
       "pack": "カードパック",
       "pass": "Pass",
@@ -3214,10 +3246,16 @@
       "pack": "各パックにはランダムなArenaカードが5枚入っています。アプリのArenaでパックを開き、カードを確認しましょう。同じカードが出ることもあり、特定のカードは保証されません。",
       "pass": "現在のシーズン中、レア・エピック・レジェンダリーのコインに出会いやすくなり、毎週レアコインを1枚アプリで受け取れます。パスはシーズン終了時に失効し、自動更新されません。",
       "bundle": "表示されているブーストがそれぞれ持ち物に追加されます。どれから発動するか選べますが、効果を同時には使えません。",
-      "delivery": "支払い確認後、選択したSeekARアカウントに届きます。Friends IDを入力しない場合は、ログインに紐づくアプリアカウントに付与されます。",
+      "delivery": "支払い確認後、選択したSeekprotocolアカウントに届きます。Friends IDを入力しない場合は、ログインに紐づくアプリアカウントに付与されます。",
       "passName": "シーズンパス",
       "bundleName": "ブーストセット",
       "activate": "購入後は持ち物に追加されます。準備ができたらアプリ内ショップで発動しましょう。同時に使えるブーストは1つです。"
     }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | AR と AI の宝探しで本物の報酬を",
+    "description": "$SEEK で未来を体験しましょう。場所に宿る報酬のための AR と AI のレイヤーです。位置情報ベースのドロップを探し、NFT を集め、バウチャーを引き換え、現実の商品を獲得し、AI コンパニオンと一緒に探索できます。報酬はどのチェーン上のトークンでも、チェーンとまったく関係のないものでもかまいません。",
+    "socialDescription": "位置情報ベースのドロップを探し、NFT を集め、バウチャーを引き換え、現実の商品を獲得しましょう。報酬を現実の場所に結びつける AR と AI のレイヤーです。どのチェーンでも、チェーンなしでも。",
+    "skipToContent": "メインコンテンツへスキップ"
   }
 }

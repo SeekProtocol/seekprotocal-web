@@ -13,7 +13,9 @@
     "shop": "Shop",
     "getApp": "App holen",
     "switchToLight": "Zum hellen Modus wechseln",
-    "switchToDark": "Zum dunklen Modus wechseln"
+    "switchToDark": "Zum dunklen Modus wechseln",
+    "mainLabel": "Hauptmenü",
+    "mobileLabel": "Mobiles Menü"
   },
   "footer": {
     "home": "Startseite",
@@ -33,7 +35,9 @@
     "resources": "Ressourcen",
     "appStore": "App Store",
     "googlePlay": "Google Play",
-    "seekPartners": "Seek Partners"
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "Laden im App Store",
+    "googlePlayAlt": "Jetzt bei Google Play"
   },
   "home": {
     "heroTitle": "Erkunde eine neue Realität mit",
@@ -162,7 +166,9 @@
     "q7": "Wo kann ich die zuvor als SeekAR bekannte App herunterladen?",
     "a7": "Im App Store unter apps.apple.com/app/id6752813761 und bei Google Play unter play.google.com/store/apps/details?id=com.seekar.seekar. Beide Einträge heißen jetzt Seekprotocol.",
     "q8": "Ist Seekprotocol dasselbe Produkt wie SeekAR?",
-    "a8": "Ja. Das Unternehmen heißt seit jeher Seekprotocol; nur der App-Name hat sich geändert. Die multi-chain AR-Krypto-Belohnungen-App, die von Launch bis August 2026 SeekAR hieß, heißt jetzt Seekprotocol, veröffentlicht vom selben Team bei Block Protocol L.L.C-FZ in Dubai, VAE."
+    "a8": "Ja. Das Unternehmen heißt seit jeher Seekprotocol; nur der App-Name hat sich geändert. Die multi-chain AR-Krypto-Belohnungen-App, die von Launch bis August 2026 SeekAR hieß, heißt jetzt Seekprotocol, veröffentlicht vom selben Team bei Block Protocol L.L.C-FZ in Dubai, VAE.",
+    "stepsEyebrow": "Schritt für Schritt",
+    "faqEyebrow": "FAQ"
   },
   "about": {
     "heroTitle": "Entdecke die Zukunft standortbasierter digitaler Erlebnisse",
@@ -193,7 +199,7 @@
     "techBlockchain": "BLOCKCHAIN-BELOHNUNGEN",
     "techBlockchainDesc": "Echte Belohnungen für echte Erkundung & Engagement.",
     "techSync": "SOFORT-SYNC",
-    "techSyncDesc": "Echtzeit-Updates für alle Spieler, sieh Entdeckungen live passieren, wie sie weltweit stattfinden.",
+    "techSyncDesc": "Echtzeit-Updates für alle Spieler. Sieh live, wie weltweit Entdeckungen passieren.",
     "threePillars": "DREI SÄULEN DES ERFOLGS",
     "threePillarsDesc": "Im Kern von Seekprotocol liegen drei revolutionäre Technologien, die transformieren, wie wir mit der Welt interagieren.",
     "pillarAR": "Augmented Reality",
@@ -225,7 +231,13 @@
     "ctaDesc": "Betritt eine neue Realität, in der die Welt dein Spielplatz wird. Seekprotocol verwandelt deine Umgebung in ein interaktives Abenteuer, das neueste AR-Technologie mit Echtwelt-Erkundung verbindet.",
     "metaTitle": "Über das Team hinter Seekprotocol",
     "metaDescription": "Lerne das Team hinter standortbasierter AR für jede Chain kennen: die Idee hinter Proof of Location, die Technik unter Seekprotocol und die Menschen hinter $SEEK.",
-    "ogTitle": "Das Team hinter Seekprotocol"
+    "ogTitle": "Das Team hinter Seekprotocol",
+    "eyebrow": "Über uns",
+    "whyEyebrow": "Warum wir das bauen",
+    "techEyebrow": "Technologie",
+    "pillarsEyebrow": "Säulen",
+    "teamEyebrow": "Team",
+    "linkedinLabel": "{name} auf LinkedIn"
   },
   "contact": {
     "getInTouch": "Kontakt aufnehmen",
@@ -241,7 +253,11 @@
     "pressTitle": "Presse & Medien",
     "pressBody": "Berichterstattung, Interviews, Rezensionsexemplare, Embargonachrichten. Erreiche uns hier für alles Redaktionelle; wir antworten am selben Tag.",
     "supportTitle": "Support",
-    "supportBody": "Ein Bug, ein Claim, der nicht ankam, eine Wallet-Frage. Der schnellste Weg ist Discord, aber dieses Formular funktioniert auch."
+    "supportBody": "Ein Bug, ein Claim, der nicht ankam, eine Wallet-Frage. Der schnellste Weg ist Discord, aber dieses Formular funktioniert auch.",
+    "eyebrow": "Kontakt",
+    "elsewhere": "Anderswo",
+    "documentation": "Dokumentation",
+    "registeredOffice": "Eingetragener Sitz"
   },
   "services": {
     "heroTitle": "UNSERE EXPERTISE, DEIN WACHSTUM",
@@ -282,7 +298,7 @@
     "agencies": "Agenturen & Berater",
     "agenciesDesc": "Autorität aufbauen mit High-Value-Content.",
     "localBusinesses": "Lokale Unternehmen",
-    "localBusinessesDesc": "Hilfe beim Verbinden mit Kunden in Prag und darüber hinaus.",
+    "localBusinessesDesc": "Wir verbinden dich mit Kunden in deiner Stadt und darüber hinaus.",
     "largeCorporations": "Große Konzerne",
     "largeCorporationsDesc": "Klare, effektive Botschaften schreiben, die deine Marke stärken.",
     "ctaConnect": "Lass uns verbinden",
@@ -301,7 +317,8 @@
     "relatedPages": "Verwandte Seiten",
     "metaTitle": "Blog: AR, KI und ortsgebundene Belohnungen",
     "metaDescription": "Beiträge über Augmented Reality, KI-Begleiter, geofencte Airdrops und Proof of Location, vom Team, das Seekprotocol baut.",
-    "ogTitle": "Der Blog von Seekprotocol"
+    "ogTitle": "Der Blog von Seekprotocol",
+    "eyebrow": "Blog"
   },
   "forms": {
     "emailPlaceholder": "E-Mail-Adresse",
@@ -343,13 +360,15 @@
     "rejectAll": "Alle ablehnen",
     "customize": "Anpassen",
     "savePreferences": "Einstellungen speichern",
-    "cookieSettings": "Cookie-Einstellungen"
+    "cookieSettings": "Cookie-Einstellungen",
+    "toggleLabel": "{category} ein- oder ausschalten"
   },
   "notFound": {
     "pageNotFound": "Seite nicht gefunden",
     "pageNotFoundDesc": "Die gesuchte Seite existiert nicht oder wurde verschoben",
     "oops": "Ups, Seite nicht gefunden",
-    "backToHome": "Zurück zur Startseite"
+    "backToHome": "Zurück zur Startseite",
+    "errorCode": "Fehler 404 · Kein Signal an dieser Koordinate"
   },
   "metrics": {
     "text1": "UNBEGRENZTE ASSETS.",
@@ -425,12 +444,13 @@
     "contactP1": "Wenn Sie Fragen zu Ihrer Privatsphäre bei der Nutzung der Anwendung haben oder Fragen zu den in dieser Richtlinie beschriebenen Datenpraktiken haben, kontaktieren Sie bitte den Dienstanbieter unter:",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "Datenschutzerklärung",
-    "metaDescription": "Wie Seekprotocol und Seekprotocol mit Standortdaten, Sensorwerten und Wallet-Angaben umgehen: was erhoben wird, wie lange es bleibt und was nie geteilt wird.",
+    "metaDescription": "Wie Seekprotocol mit Standortdaten, Sensorwerten und Wallet-Angaben umgeht: was erhoben wird, wie lange es gespeichert bleibt und was nie geteilt wird.",
     "ogTitle": "Datenschutz bei Seekprotocol",
     "raspTitle": "Talsec freeRASP: Sicherheitsdiagnosen",
     "raspP1": "In Versionen mit aktiviertem freeRASP erhält Talsec (Lynx SFT s.r.o.) Sicherheitsdiagnosen zur App und zum Betriebssystem, Informationen zum Gerätemodell sowie App-Instanz- und Gerätekennungen. Signale können Root-Zugriff, Emulatoren, App-Manipulation, Debugging und Hooking betreffen. Diese Daten werden während des Betriebs automatisch übermittelt; Einstellungen für optionale Leistungsanalysen deaktivieren dies nicht.",
     "raspP2": "Talsec nutzt diese Daten für Sicherheitsberichte, zur Verbesserung seiner kostenlosen und kommerziellen Sicherheitsprodukte und für aggregierte Forschung. Talsec beschreibt eine Cloud-Verarbeitung in den Vereinigten Staaten. Gerätekennungen sind nicht nach allen Datenschutzgesetzen als vollständig anonym anzusehen. Bitte beachten Sie die unten verlinkten Datenrichtlinien von Talsec.",
-    "raspP3": "Unser eigenes Backend speichert außerdem Bedrohungsnamen zu Sammelversuchen, die Ihrem Konto zugeordnet werden können. Unsere Callback-Verarbeitung lädt keine Liste anderer installierter Apps hoch. Diese vom Gerät gemeldeten Signale sind für sich genommen kein Betrugsnachweis."
+    "raspP3": "Unser eigenes Backend speichert außerdem Bedrohungsnamen zu Sammelversuchen, die Ihrem Konto zugeordnet werden können. Unsere Callback-Verarbeitung lädt keine Liste anderer installierter Apps hoch. Diese vom Gerät gemeldeten Signale sind für sich genommen kein Betrugsnachweis.",
+    "eyebrow": "Rechtliches"
   },
   "termsPage": {
     "title": "Allgemeine Geschäftsbedingungen",
@@ -452,7 +472,8 @@
     "contactP1": "Wenn Sie Fragen oder Anregungen zu den Allgemeinen Geschäftsbedingungen haben, zögern Sie bitte nicht, den Dienstanbieter unter <email>support@seekprotocol.ai</email> zu kontaktieren.",
     "metaTitle": "Allgemeine Geschäftsbedingungen",
     "metaDescription": "Die Bedingungen für die Nutzung von Seekprotocol und der Seek-Protocol-Plattform: deine Rechte, die Regeln für Claims und wie die bezahlten Inhalte funktionieren.",
-    "ogTitle": "Bedingungen von Seekprotocol"
+    "ogTitle": "Bedingungen von Seekprotocol",
+    "eyebrow": "Rechtliches"
   },
   "languageSwitcher": {
     "en": "English",
@@ -486,7 +507,17 @@
     "close": "Schließen",
     "secondsAgo": "vor {seconds} s",
     "zoomIn": "Heranzoomen",
-    "zoomOut": "Herauszoomen"
+    "zoomOut": "Herauszoomen",
+    "busiest": "Gerade am aktivsten",
+    "units": "Einheiten",
+    "zoomLabel": "Zoom",
+    "hubsLabel": "Zu einer Stadt springen",
+    "wholeEarth": "Ganze Erde",
+    "zoomLevel": "Zoom {percent} %",
+    "caught": "Gefangen · +{xp, number} XP",
+    "escaped": "Entwischt · {percent} % beim nächsten Versuch",
+    "tryCatch": "Jetzt fangen",
+    "globeAria": "Interaktiver Globus mit der weltweiten Sammelaktivität von Seekprotocol"
   },
   "homeSteps": {
     "placed": {
@@ -2310,7 +2341,7 @@
             "items": [
               "**Regiert**: Gebührengewichtung, der Seeker-Anteil an den Protokollgebühren, Treasury-Zuteilung, Radiusgrenzen und die Vertrauensschwellen, die hochwertigen Assets zur Verfügung stehen.",
               "**Regiert mit Verzögerung**: alles, was den Wert bereits platzierter Assets ändert. Eine Kampagne, die unter einem Gebührenplan finanziert wurde, sollte unter ihm zu Ende gehen.",
-              "**Nicht regiert**: die Datenschutzzusagen in Kapitel dreizehn. Aufbewahrungsgrenzen und die Weigerung, Bewegungsdaten zu veröffentlichen, sind keine Parameter, und eine Abstimmung ist kein legitimer Weg, sie zu schwächen.",
+              "**Nicht regiert**: die Datenschutzzusagen in Kapitel vierzehn. Aufbewahrungsgrenzen und die Weigerung, Bewegungsdaten zu veröffentlichen, sind keine Parameter, und eine Abstimmung ist kein legitimer Weg, sie zu schwächen.",
               "**Nicht regiert**: einzelne Claim-Ergebnisse. Ein abgelehnter Claim ist Sache der Streitklärung, nicht einer Abstimmung."
             ]
           },
@@ -2426,7 +2457,7 @@
           },
           {
             "kind": "p",
-            "text": "$SEEK ist als Nutzungs- und Koordinationsasset entworfen, und der in Kapitel neun beschriebene Nutzen ist echt statt dekorativ. Das ist eine Entwurfsposition, keine rechtliche Schlussfolgerung. Die Einordnung unterscheidet sich je Rechtsraum, ändert sich über die Zeit und lässt sich von einem Whitepaper nicht durch Behauptung klären. Die Verfügbarkeit ist deshalb dort eingeschränkt, wo lokale Regeln es verlangen."
+            "text": "$SEEK ist als Nutzungs- und Koordinationsasset entworfen, und der in Kapitel zehn beschriebene Nutzen ist echt statt dekorativ. Das ist eine Entwurfsposition, keine rechtliche Schlussfolgerung. Die Einordnung unterscheidet sich je Rechtsraum, ändert sich über die Zeit und lässt sich von einem Whitepaper nicht durch Behauptung klären. Die Verfügbarkeit ist deshalb dort eingeschränkt, wo lokale Regeln es verlangen."
           },
           {
             "kind": "h",
@@ -2470,7 +2501,7 @@
           },
           {
             "kind": "p",
-            "text": "Der Drag-and-drop-Kampagnen-Builder steht. Als Nächstes kommt das Self-Service-Portal, das Platzierung über betreute Partnerschaften hinaus öffnet, samt der zugehörigen Ankunftsanalytik. Daneben stehen das Token Generation Event, der Live-Event-Modus, Saisons und das Objektscannen. Governance folgt, sobald es genug echten Gebührenfluss gibt, damit Parameterentscheidungen etwas bedeuten, aus den in Kapitel elf genannten Gründen."
+            "text": "Der Drag-and-drop-Kampagnen-Builder steht. Als Nächstes kommt das Self-Service-Portal, das Platzierung über betreute Partnerschaften hinaus öffnet, samt der zugehörigen Ankunftsanalytik. Daneben stehen das Token Generation Event, der Live-Event-Modus, Saisons und das Objektscannen. Governance folgt, sobald es genug echten Gebührenfluss gibt, damit Parameterentscheidungen etwas bedeuten, aus den in Kapitel zwölf genannten Gründen."
           },
           {
             "kind": "h",
@@ -2481,7 +2512,7 @@
             "items": [
               "Ein Datum für Governance. Sie hängt am Volumen, und Volumen ist kein Datum.",
               "Gleiche Genauigkeit drinnen wie draußen. Es ist ein schweres Problem, und die ehrliche Antwort sind auf absehbare Zeit weitere Radien in Innenräumen.",
-              "Ein Deployment auf mehreren Chains. Die Anforderungen an Latenz und Kosten in Kapitel fünf sind eng, und eine zweite Chain, die sie nicht erfüllt, wäre eine Marketingentscheidung statt einer technischen."
+              "Eine neue Chain um ihrer selbst willen. Die Anforderungen an Latenz und Kosten in Kapitel sechs sind eng, und eine Chain hinzuzufügen, die sie nicht erfüllt, wäre eine Marketingentscheidung statt einer technischen."
             ]
           },
           {
@@ -2685,7 +2716,8 @@
     "runOne": "Einen Spawn laufen lassen",
     "runThousand": "Tausend laufen lassen",
     "reset": "Zurücksetzen",
-    "ladderCaption": "Die Migration veröffentlicht {rarity} mit {first}% und dann {second}%, {overall}% über den Spawn. Das ist dieses Modell auf Level 5 mit vollem Ring und ohne Clan, also genau dort, wo die Regler starten. Eine gefangene Einheit ist eine Spieleinheit, und was sie in Token wert ist, ist Sache des Marktes und nicht des Spiels."
+    "ladderCaption": "Die Migration veröffentlicht {rarity} mit {first}% und dann {second}%, {overall}% über den Spawn. Das ist dieses Modell auf Level 5 mit vollem Ring und ohne Clan, also genau dort, wo die Regler starten. Eine gefangene Einheit ist eine Spieleinheit, und was sie in Token wert ist, ist Sache des Marktes und nicht des Spiels.",
+    "tocTitle": "Inhalt"
   },
   "stackLayers": {
     "app": {
@@ -3012,10 +3044,10 @@
       "emailNote": "Deine bestätigte Anmeldeadresse. Zum Kontowechsel oben abmelden.",
       "name": "Name (optional)",
       "deliverTo": "Welches Konto soll deinen Kauf erhalten?",
-      "inApp": "Lieferung in SeekAR",
+      "inApp": "Lieferung in Seekprotocol",
       "friendsId": "Friends ID",
       "optional": "optional",
-      "friendsNote": "Die Friends ID ist optional. Ohne Eingabe erhält das SeekAR-Konto deiner aktuellen Anmeldung den Kauf. Für ein anderes Konto gib dessen 8-stellige Friends ID ein.",
+      "friendsNote": "Die Friends ID ist optional. Ohne Eingabe erhält das Seekprotocol-Konto deiner aktuellen Anmeldung den Kauf. Für ein anderes Konto gib dessen 8-stellige Friends ID ein.",
       "checking": "Konto wird geprüft…",
       "continue": "Weiter zur Zahlung",
       "invalidFriend": "Kein verfügbares Konto mit dieser Friends ID gefunden. Prüfe den 8-stelligen Code.",
@@ -3036,11 +3068,11 @@
       "bundle": "Bundle wählen",
       "subtotal": "Zwischensumme",
       "delivery": "Lieferung",
-      "toAccount": "SeekAR-Konto",
+      "toAccount": "Seekprotocol-Konto",
       "total": "Gesamt",
       "feeNote": "Netzwerkgebühren sind möglich. Zahlungsanbieter oder Wallet zeigen sie vor deiner Bestätigung an.",
       "linkedDelivery": "Mit dem gewählten Konto verknüpft",
-      "linkedDeliveryNote": "Nach der Zahlungsbestätigung wird dein Kauf dem gewählten SeekAR-Konto zugeteilt.",
+      "linkedDeliveryNote": "Nach der Zahlungsbestätigung wird dein Kauf dem gewählten Seekprotocol-Konto zugeteilt.",
       "receipt": "Bestelldetails",
       "refreshStatus": "Status aktualisieren",
       "orderNumber": "Bestellreferenz",
@@ -3072,7 +3104,7 @@
       "loadFailed": "Deine Bestellungen konnten nicht aktualisiert werden. Der angezeigte Status kann veraltet sein. Versuche Status aktualisieren.",
       "emptyTitle": "Noch keine Bestellungen",
       "emptyLead": "Bestellungen mit diesem Konto erscheinen hier.",
-      "purchase": "SeekAR-Kauf",
+      "purchase": "Seekprotocol-Kauf",
       "paymentLabel": "Zahlung",
       "deliveryLabel": "Lieferung",
       "paidNotDelivered": "Deine Zahlung ist bestätigt. Die Zuweisung läuft noch. Zahle nicht erneut; der Lieferstatus wird automatisch aktualisiert.",
@@ -3134,7 +3166,7 @@
     "errPassUnavailable": "Der Pass ist derzeit nicht erhältlich.",
     "errPassOwned": "Dieses Konto hat bereits einen aktiven Pass.",
     "errPassPending": "Für dieses Konto ist bereits eine Pass-Bestellung offen. Prüfe zuerst den Zahlungsstatus.",
-    "friendsHelp": "Die Friends ID ist optional. Ohne Eingabe erhält das SeekAR-Konto deiner aktuellen Anmeldung den Kauf. Für ein anderes Konto gib dessen 8-stellige Friends ID ein.",
+    "friendsHelp": "Die Friends ID ist optional. Ohne Eingabe erhält das Seekprotocol-Konto deiner aktuellen Anmeldung den Kauf. Für ein anderes Konto gib dessen 8-stellige Friends ID ein.",
     "productKinds": {
       "pack": "Kartenpacks",
       "pass": "Pass",
@@ -3214,10 +3246,16 @@
       "pack": "Jedes Pack enthält 5 zufällige Arena-Karten. Öffne deine Packs im Arena-Bereich der App und entdecke deine Karten. Doppelte Karten sind möglich; eine bestimmte Karte ist nicht garantiert.",
       "pass": "Entdecke in der aktuellen Saison häufiger seltene, epische und legendäre Coins und hole dir jede Woche einen seltenen Coin in der App ab. Der Pass endet mit der Saison und verlängert sich nicht automatisch.",
       "bundle": "Die aufgeführten Booster werden einzeln deinem Inventar hinzugefügt. Du entscheidest, welchen du zuerst aktivierst; ihre Effekte wirken nicht gleichzeitig.",
-      "delivery": "Nach Zahlungsbestätigung erhält dein ausgewähltes SeekAR-Konto den Kauf. Ohne Friends ID geht er an das App-Konto, das mit deiner Anmeldung verknüpft ist.",
+      "delivery": "Nach Zahlungsbestätigung erhält dein ausgewähltes Seekprotocol-Konto den Kauf. Ohne Friends ID geht er an das App-Konto, das mit deiner Anmeldung verknüpft ist.",
       "passName": "Saisonpass",
       "bundleName": "Booster-Paket",
       "activate": "Nach dem Kauf in deinem Inventar. Aktiviere den Booster im App-Shop, wenn du bereit bist. Nur ein Booster gleichzeitig."
     }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | AR- & KI-Schatzsuchen für echte Belohnungen",
+    "description": "Erlebe die Zukunft mit $SEEK, der AR- und KI-Ebene für Belohnungen, die an einem Ort leben. Jage standortbasierte Drops, sammle NFTs, löse Gutscheine ein, gewinne echte Produkte und entdecke die Welt mit KI-Begleitern. Eine Belohnung kann ein Token auf jeder Chain sein oder gar nichts mit einer Chain zu tun haben.",
+    "socialDescription": "Jage standortbasierte Drops, sammle NFTs, löse Gutscheine ein und gewinne echte Produkte. Die AR- und KI-Ebene, die eine Belohnung an einem realen Ort verankert, auf jeder Chain oder ganz ohne.",
+    "skipToContent": "Zum Hauptinhalt springen"
   }
 }

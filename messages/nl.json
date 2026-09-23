@@ -13,7 +13,9 @@
     "shop": "Shop",
     "getApp": "Download de app",
     "switchToLight": "Naar lichte modus",
-    "switchToDark": "Naar donkere modus"
+    "switchToDark": "Naar donkere modus",
+    "mainLabel": "Hoofdmenu",
+    "mobileLabel": "Mobiel menu"
   },
   "footer": {
     "home": "Home",
@@ -33,7 +35,9 @@
     "resources": "Bronnen",
     "appStore": "App Store",
     "googlePlay": "Google Play",
-    "seekPartners": "Seek Partners"
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "Download in de App Store",
+    "googlePlayAlt": "Ontdek het op Google Play"
   },
   "home": {
     "heroTitle": "Verken een nieuwe realiteit met",
@@ -162,7 +166,9 @@
     "q7": "Waar kan ik de app downloaden die vroeger SeekAR heette?",
     "a7": "In de App Store op apps.apple.com/app/id6752813761 en in Google Play op play.google.com/store/apps/details?id=com.seekar.seekar. Beide vermeldingen dragen nu de naam Seekprotocol.",
     "q8": "Is Seekprotocol hetzelfde product als SeekAR?",
-    "a8": "Ja. Het bedrijf heet al vanaf het begin Seekprotocol; alleen de app-naam is veranderd. De multi-chain AR-crypto-beloningen-app die van launch tot en met augustus 2026 SeekAR heette is nu Seekprotocol, uitgebracht door hetzelfde team bij Block Protocol L.L.C-FZ in Dubai, VAE."
+    "a8": "Ja. Het bedrijf heet al vanaf het begin Seekprotocol; alleen de app-naam is veranderd. De multi-chain AR-crypto-beloningen-app die van launch tot en met augustus 2026 SeekAR heette is nu Seekprotocol, uitgebracht door hetzelfde team bij Block Protocol L.L.C-FZ in Dubai, VAE.",
+    "stepsEyebrow": "Stap voor stap",
+    "faqEyebrow": "Veelgestelde vragen"
   },
   "about": {
     "heroTitle": "Ontdek de toekomst van locatie-gebaseerde digitale ervaringen",
@@ -193,7 +199,7 @@
     "techBlockchain": "BLOCKCHAIN BELONINGEN",
     "techBlockchainDesc": "Echte beloningen voor echte verkenning & betrokkenheid.",
     "techSync": "INSTANTE SYNC",
-    "techSyncDesc": "Real-time updates voor alle spelers - zie ontdekkingen live gebeuren terwijl ze wereldwijd plaatsvinden.",
+    "techSyncDesc": "Real-time updates voor alle spelers. Zie ontdekkingen live gebeuren terwijl ze wereldwijd plaatsvinden.",
     "threePillars": "DRIE PILAREN VAN SUCCES",
     "threePillarsDesc": "In de kern van Seekprotocol liggen drie revolutionaire technologieën die transformeren hoe we met de wereld omgaan.",
     "pillarAR": "Augmented reality",
@@ -225,7 +231,13 @@
     "ctaDesc": "Stap in een nieuwe realiteit waar de wereld je speeltuin wordt. Seekprotocol transformeert je omgeving in een interactief avontuur, de nieuwste AR-technologie vermengend met verkenning in de echte wereld.",
     "metaTitle": "Over het team achter Seekprotocol",
     "metaDescription": "Maak kennis met het team achter locatiegebonden AR voor elke chain: de missie achter locatiebewijs, de techniek onder Seekprotocol en de mensen achter $SEEK.",
-    "ogTitle": "Het team achter Seekprotocol"
+    "ogTitle": "Het team achter Seekprotocol",
+    "eyebrow": "Over ons",
+    "whyEyebrow": "Waarom we dit bouwen",
+    "techEyebrow": "Technologie",
+    "pillarsEyebrow": "Pijlers",
+    "teamEyebrow": "Team",
+    "linkedinLabel": "{name} op LinkedIn"
   },
   "contact": {
     "getInTouch": "Neem contact op",
@@ -241,7 +253,11 @@
     "pressTitle": "Pers & media",
     "pressBody": "Coverage, interviews, review-kopieën, embargonieuws. Neem hier contact op voor alles wat redactioneel is; we reageren dezelfde dag.",
     "supportTitle": "Support",
-    "supportBody": "Een bug, een claim die niet aankwam, een wallet-vraag. De snelste route is Discord, maar dit formulier werkt ook."
+    "supportBody": "Een bug, een claim die niet aankwam, een wallet-vraag. De snelste route is Discord, maar dit formulier werkt ook.",
+    "eyebrow": "Contact",
+    "elsewhere": "Elders",
+    "documentation": "Documentatie",
+    "registeredOffice": "Statutair adres"
   },
   "services": {
     "heroTitle": "ONZE EXPERTISE, JOUW GROEI",
@@ -282,7 +298,7 @@
     "agencies": "Bureaus & Consultants",
     "agenciesDesc": "Autoriteit opbouwen met high-value content.",
     "localBusinesses": "Lokale bedrijven",
-    "localBusinessesDesc": "Helpen je te verbinden met klanten in Praag en daarbuiten.",
+    "localBusinessesDesc": "We helpen je klanten te bereiken in je eigen stad en daarbuiten.",
     "largeCorporations": "Grote bedrijven",
     "largeCorporationsDesc": "Duidelijke, effectieve boodschappen schrijven die je merk versterken.",
     "ctaConnect": "Laten we verbinden",
@@ -301,7 +317,8 @@
     "relatedPages": "Verwante pagina's",
     "metaTitle": "Blog: AR, AI en locatiegebonden beloningen",
     "metaDescription": "Artikelen over augmented reality, AI-metgezellen, geofenced airdrops en locatiebewijs, van het team dat Seekprotocol bouwt.",
-    "ogTitle": "Blog van Seekprotocol"
+    "ogTitle": "Blog van Seekprotocol",
+    "eyebrow": "Blog"
   },
   "forms": {
     "emailPlaceholder": "E-mailadres",
@@ -343,13 +360,15 @@
     "rejectAll": "Alles weigeren",
     "customize": "Aanpassen",
     "savePreferences": "Voorkeuren opslaan",
-    "cookieSettings": "Cookie-instellingen"
+    "cookieSettings": "Cookie-instellingen",
+    "toggleLabel": "{category} in- of uitschakelen"
   },
   "notFound": {
     "pageNotFound": "Pagina niet gevonden",
     "pageNotFoundDesc": "De pagina die je zoekt bestaat niet of is verplaatst",
     "oops": "Oeps Pagina niet gevonden",
-    "backToHome": "Terug naar Home"
+    "backToHome": "Terug naar Home",
+    "errorCode": "Fout 404 · Geen signaal op deze coördinaat"
   },
   "metrics": {
     "text1": "ONBEPERKTE ACTIVA.",
@@ -425,12 +444,13 @@
     "contactP1": "Indien u vragen heeft over uw privacy tijdens het gebruik van de Applicatie, of indien u vragen heeft over de gegevenspraktijken die in dit beleid worden beschreven, neem dan contact op met de Dienstverlener via:",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "Privacybeleid",
-    "metaDescription": "Hoe Seekprotocol en Seekprotocol omgaan met locatiedata, sensormetingen en walletgegevens: wat er verzameld wordt en wat nooit gedeeld wordt.",
+    "metaDescription": "Hoe Seekprotocol omgaat met locatiedata, sensormetingen en walletgegevens: wat er verzameld wordt, hoe lang het bewaard blijft en wat nooit gedeeld wordt.",
     "ogTitle": "Privacy bij Seekprotocol",
     "raspTitle": "Talsec freeRASP: beveiligingsdiagnostiek",
     "raspP1": "In versies waarin freeRASP actief is, ontvangt Talsec (Lynx SFT s.r.o.) beveiligingsdiagnostiek over de app en het besturingssysteem, informatie over het apparaatmodel en identificatoren van de app-installatie en het apparaat. Signalen kunnen betrekking hebben op roottoegang, emulators, gewijzigde apps, debugging en hooking. Deze gegevens worden automatisch verzonden zolang de betreffende versie draait; instellingen voor optionele prestatieanalyses schakelen dit niet uit.",
     "raspP2": "Talsec gebruikt deze gegevens voor beveiligingsrapporten, verbetering van zijn gratis en commerciële beveiligingsproducten en geaggregeerd onderzoek. Talsec beschrijft verwerking in de cloud in de Verenigde Staten. Apparaatidentificatoren mogen niet onder alle privacywetten als volledig anoniem worden beschouwd. Raadpleeg het gegevensbeleid van Talsec via de onderstaande link.",
-    "raspP3": "Onze eigen backend slaat ook dreigingsnamen op bij verzamelpogingen, die aan je account gekoppeld kunnen worden. Onze verwerking van callbacks verstuurt geen lijst van andere geïnstalleerde apps. Het gaat om signalen die het apparaat meldt; op zichzelf bewijzen ze geen fraude."
+    "raspP3": "Onze eigen backend slaat ook dreigingsnamen op bij verzamelpogingen, die aan je account gekoppeld kunnen worden. Onze verwerking van callbacks verstuurt geen lijst van andere geïnstalleerde apps. Het gaat om signalen die het apparaat meldt; op zichzelf bewijzen ze geen fraude.",
+    "eyebrow": "Juridisch"
   },
   "termsPage": {
     "title": "Algemene Voorwaarden",
@@ -452,7 +472,8 @@
     "contactP1": "Indien u vragen of suggesties heeft over de Algemene Voorwaarden, aarzel dan niet om contact op te nemen met de Dienstverlener via <email>support@seekprotocol.ai</email>.",
     "metaTitle": "Algemene voorwaarden",
     "metaDescription": "De voorwaarden voor het gebruik van Seekprotocol en het Seekprotocol-platform: je rechten, de regels voor het claimen van assets en hoe de betaalde items werken.",
-    "ogTitle": "Voorwaarden van Seekprotocol"
+    "ogTitle": "Voorwaarden van Seekprotocol",
+    "eyebrow": "Juridisch"
   },
   "languageSwitcher": {
     "en": "English",
@@ -486,7 +507,17 @@
     "close": "Sluiten",
     "secondsAgo": "{seconds}s geleden",
     "zoomIn": "Inzoomen",
-    "zoomOut": "Uitzoomen"
+    "zoomOut": "Uitzoomen",
+    "busiest": "Nu het drukst",
+    "units": "Eenheden",
+    "zoomLabel": "Zoom",
+    "hubsLabel": "Spring naar een stad",
+    "wholeEarth": "Hele aarde",
+    "zoomLevel": "Zoom {percent}%",
+    "caught": "Gevangen · +{xp, number} XP",
+    "escaped": "Ontsnapt · {percent}% bij een nieuwe poging",
+    "tryCatch": "Probeer te vangen",
+    "globeAria": "Interactieve wereldbol met de verzamelactiviteit van Seekprotocol wereldwijd"
   },
   "homeSteps": {
     "placed": {
@@ -513,7 +544,7 @@
       "label": "Talen"
     },
     "stores": {
-      "label": "App stores live"
+      "label": "Live in de app stores"
     }
   },
   "worldDescent": {
@@ -2310,7 +2341,7 @@
             "items": [
               "**Bestuurd**: de weging van fees, het seekeraandeel in de protocolfees, toewijzing uit de treasury, grenzen aan de straal, en de vertrouwensdrempels die beschikbaar zijn voor waardevolle assets.",
               "**Bestuurd met vertraging**: alles wat de waarde verandert van assets die al geplaatst zijn. Een campagne die onder het ene tarief gefinancierd is, hoort daar ook onder af te lopen.",
-              "**Niet bestuurd**: de privacytoezeggingen in hoofdstuk dertien. Bewaartermijnen en de weigering om bewegingsdata te publiceren zijn geen parameters, en een stemming is geen legitieme manier om ze te verzwakken.",
+              "**Niet bestuurd**: de privacytoezeggingen in hoofdstuk veertien. Bewaartermijnen en de weigering om bewegingsdata te publiceren zijn geen parameters, en een stemming is geen legitieme manier om ze te verzwakken.",
               "**Niet bestuurd**: individuele claimuitkomsten. Een geweigerde claim is een zaak voor geschilbeslechting, niet voor een stembus."
             ]
           },
@@ -2426,7 +2457,7 @@
           },
           {
             "kind": "p",
-            "text": "$SEEK is ontworpen als nuts- en coördinatie-asset, en het nut dat in hoofdstuk negen beschreven staat is echt in plaats van decoratief. Dat is een ontwerpstandpunt, geen juridische conclusie. Classificatie verschilt per rechtsgebied, verandert in de tijd, en is niets wat een whitepaper kan beslechten door het te beweren. Beschikbaarheid is daarom beperkt waar lokale regels dat vereisen."
+            "text": "$SEEK is ontworpen als nuts- en coördinatie-asset, en het nut dat in hoofdstuk tien beschreven staat is echt in plaats van decoratief. Dat is een ontwerpstandpunt, geen juridische conclusie. Classificatie verschilt per rechtsgebied, verandert in de tijd, en is niets wat een whitepaper kan beslechten door het te beweren. Beschikbaarheid is daarom beperkt waar lokale regels dat vereisen."
           },
           {
             "kind": "h",
@@ -2470,7 +2501,7 @@
           },
           {
             "kind": "p",
-            "text": "De campagnebouwer met slepen en neerzetten is klaar. Daarna komt het selfserviceportaal dat plaatsing openzet buiten begeleide samenwerkingen om, plus de bezoekanalytics die daarbij horen. Daarnaast staan het token generation event, de live-eventmodus, seizoenen en objecten scannen. Governance volgt zodra er genoeg echte feestromen zijn om parameterbeslissingen betekenisvol te maken, om de redenen in hoofdstuk elf."
+            "text": "De campagnebouwer met slepen en neerzetten is klaar. Daarna komt het selfserviceportaal dat plaatsing openzet buiten begeleide samenwerkingen om, plus de bezoekanalytics die daarbij horen. Daarnaast staan het token generation event, de live-eventmodus, seizoenen en objecten scannen. Governance volgt zodra er genoeg echte feestromen zijn om parameterbeslissingen betekenisvol te maken, om de redenen in hoofdstuk twaalf."
           },
           {
             "kind": "h",
@@ -2481,7 +2512,7 @@
             "items": [
               "Een datum voor governance. Die hangt af van volume, en volume is geen datum.",
               "Even nauwkeurig binnen als buiten. Het is een lastig probleem en het eerlijke antwoord is voorlopig ruimere stralen binnen.",
-              "Een uitrol op meerdere chains. De eisen aan vertraging en kosten in hoofdstuk vijf zijn smal, en een tweede chain die er niet aan voldoet zou een marketingbeslissing zijn in plaats van een technische."
+              "Een nieuwe chain omwille van de chain zelf. De eisen aan vertraging en kosten in hoofdstuk zes zijn smal, en een chain toevoegen die er niet aan voldoet zou een marketingbeslissing zijn in plaats van een technische."
             ]
           },
           {
@@ -2685,7 +2716,8 @@
     "runOne": "Doe één spawn",
     "runThousand": "Doe er duizend",
     "reset": "Opnieuw",
-    "ladderCaption": "De migratie publiceert {rarity} op {first}% en daarna {second}%, met {overall}% over de hele spawn. Dat is dit model bij level 5 met een volle ring en zonder clan, precies waar de schuifjes op beginnen. Een gevangen eenheid is een spel-eenheid, en wat die in tokens waard is, is een zaak van de markt en niet van het spel."
+    "ladderCaption": "De migratie publiceert {rarity} op {first}% en daarna {second}%, met {overall}% over de hele spawn. Dat is dit model bij level 5 met een volle ring en zonder clan, precies waar de schuifjes op beginnen. Een gevangen eenheid is een spel-eenheid, en wat die in tokens waard is, is een zaak van de markt en niet van het spel.",
+    "tocTitle": "Inhoud"
   },
   "stackLayers": {
     "app": {
@@ -3012,10 +3044,10 @@
       "emailNote": "Je geverifieerde inlogadres. Gebruik Uitloggen hierboven om van account te wisselen.",
       "name": "Naam (optioneel)",
       "deliverTo": "Welk account krijgt je aankoop?",
-      "inApp": "Geleverd in SeekAR",
+      "inApp": "Geleverd in Seekprotocol",
       "friendsId": "Friends ID",
       "optional": "optioneel",
-      "friendsNote": "Friends ID is optioneel. Laat het leeg om te leveren aan het SeekAR-account van je huidige login. Vul voor een ander account de Friends ID van 8 tekens in.",
+      "friendsNote": "Friends ID is optioneel. Laat het leeg om te leveren aan het Seekprotocol-account van je huidige login. Vul voor een ander account de Friends ID van 8 tekens in.",
       "checking": "Account controleren…",
       "continue": "Verder naar betalen",
       "invalidFriend": "We vinden geen beschikbaar account met deze Friends ID. Controleer de code van 8 tekens.",
@@ -3036,11 +3068,11 @@
       "bundle": "Kies je bundel",
       "subtotal": "Subtotaal",
       "delivery": "Levering",
-      "toAccount": "SeekAR-account",
+      "toAccount": "Seekprotocol-account",
       "total": "Totaal",
       "feeNote": "Er kunnen netwerkkosten gelden. De betaaldienst of wallet toont deze voordat je akkoord gaat.",
       "linkedDelivery": "Gekoppeld aan het gekozen account",
-      "linkedDeliveryNote": "Na bevestiging van je betaling wordt je aankoop aan het gekozen SeekAR-account toegekend.",
+      "linkedDeliveryNote": "Na bevestiging van je betaling wordt je aankoop aan het gekozen Seekprotocol-account toegekend.",
       "receipt": "Bestelgegevens",
       "refreshStatus": "Status vernieuwen",
       "orderNumber": "Bestelreferentie",
@@ -3072,7 +3104,7 @@
       "loadFailed": "Je bestellingen konden niet worden bijgewerkt. De getoonde status kan verouderd zijn. Probeer Status vernieuwen.",
       "emptyTitle": "Nog geen bestellingen",
       "emptyLead": "Zodra je met dit account een bestelling plaatst, vind je die hier terug.",
-      "purchase": "SeekAR-aankoop",
+      "purchase": "Seekprotocol-aankoop",
       "paymentLabel": "Betaling",
       "deliveryLabel": "Levering",
       "paidNotDelivered": "Je betaling is bevestigd. De aankoop wordt nog toegekend. Betaal niet opnieuw; de leverstatus wordt automatisch bijgewerkt.",
@@ -3134,7 +3166,7 @@
     "errPassUnavailable": "De Pass is momenteel niet te koop.",
     "errPassOwned": "Dit account heeft al een actieve Pass.",
     "errPassPending": "Er staat al een Pass-bestelling voor dit account open. Controleer eerst de betaalstatus.",
-    "friendsHelp": "Friends ID is optioneel. Laat het leeg om te leveren aan het SeekAR-account van je huidige login. Vul voor een ander account de Friends ID van 8 tekens in.",
+    "friendsHelp": "Friends ID is optioneel. Laat het leeg om te leveren aan het Seekprotocol-account van je huidige login. Vul voor een ander account de Friends ID van 8 tekens in.",
     "productKinds": {
       "pack": "Kaartpacks",
       "pass": "Pass",
@@ -3214,10 +3246,16 @@
       "pack": "Elk pack bevat 5 willekeurige Arena-kaarten. Open je packs in Arena in de app en ontdek welke kaarten je hebt gekregen. Dubbele kaarten zijn mogelijk; een specifieke kaart is niet gegarandeerd.",
       "pass": "Kom dit seizoen vaker zeldzame, epische en legendarische munten tegen en claim elke week een zeldzame munt in de app. De Pass loopt tot het einde van het huidige seizoen en wordt niet automatisch verlengd.",
       "bundle": "De genoemde boosters komen apart in je voorraad. Kies zelf welke je eerst activeert; hun effecten werken niet tegelijk.",
-      "delivery": "Na bevestiging van de betaling leveren we aan je gekozen SeekAR-account. Zonder Friends ID gaat je aankoop naar het appaccount dat aan je login is gekoppeld.",
+      "delivery": "Na bevestiging van de betaling leveren we aan je gekozen Seekprotocol-account. Zonder Friends ID gaat je aankoop naar het appaccount dat aan je login is gekoppeld.",
       "passName": "Seizoenspas",
       "bundleName": "Boostbundel",
       "activate": "Na aankoop staat de booster in je voorraad. Activeer hem in de winkel in de app wanneer je wilt. Er kan één booster tegelijk actief zijn."
     }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | AR & AI schattenjachten voor echte beloningen",
+    "description": "Ervaar de toekomst met $SEEK, de AR- en AI-laag voor beloningen die op een plek leven. Jaag op locatiegebonden drops, verzamel NFT's, wissel vouchers in, win echte producten en ga op pad met AI-companions. Een beloning kan een token op elke chain zijn, of helemaal niets met een chain te maken hebben.",
+    "socialDescription": "Jaag op locatiegebonden drops, verzamel NFT's, wissel vouchers in en win echte producten. De AR- en AI-laag die een beloning aan een echte plek verankert, op elke chain of op geen enkele.",
+    "skipToContent": "Naar hoofdinhoud"
   }
 }

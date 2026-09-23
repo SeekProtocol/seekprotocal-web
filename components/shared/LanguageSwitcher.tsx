@@ -1,28 +1,17 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
+import { localeMeta } from "@/i18n/locale-meta";
 import "flag-icons/css/flag-icons.min.css";
 
-const LOCALE_TO_COUNTRY: Record<string, string> = {
-  en: "gb",
-  nl: "nl",
-  de: "de",
-  es: "es",
-  fr: "fr",
-  zh: "cn",
-  ja: "jp",
-  ko: "kr",
-  tr: "tr",
-};
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const t = useTranslations("languageSwitcher");
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -49,9 +38,9 @@ export default function LanguageSwitcher() {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
-        aria-label={t(locale as Locale)}
+        aria-label={localeMeta(locale).name}
       >
-        <span className={`fi fi-${LOCALE_TO_COUNTRY[locale]} language-flag`} />
+        <span className={`fi fi-${localeMeta(locale).flag} language-flag`} />
       </button>
 
       {isOpen && (
@@ -63,8 +52,8 @@ export default function LanguageSwitcher() {
                 className={`language-option ${loc === locale ? "language-option-active" : ""}`}
                 onClick={() => switchLocale(loc)}
               >
-                <span className={`fi fi-${LOCALE_TO_COUNTRY[loc]} language-flag`} />
-                <span>{t(loc)}</span>
+                <span className={`fi fi-${localeMeta(loc).flag} language-flag`} />
+                <span lang={loc} dir={localeMeta(loc).dir}>{localeMeta(loc).name}</span>
               </button>
             </li>
           ))}

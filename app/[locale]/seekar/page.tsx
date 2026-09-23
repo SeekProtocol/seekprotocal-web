@@ -335,7 +335,7 @@ function SeekarContent() {
       <section className="section">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow eyebrow-center">Step by step</p>
+            <p className="eyebrow eyebrow-center">{t("stepsEyebrow")}</p>
             <h2 className="t-h2">{t("howTitle")}</h2>
           </div>
           <div className="steps">
@@ -356,7 +356,7 @@ function SeekarContent() {
       <section className="section section-sunken">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow eyebrow-center">FAQ</p>
+            <p className="eyebrow eyebrow-center">{t("faqEyebrow")}</p>
             <h2 className="t-h2">{t("faqTitle")}</h2>
           </div>
           <div className="grid-3">

@@ -1,0 +1,3261 @@
+{
+  "nav": {
+    "home": "Početna",
+    "seekar": "Aplikacija",
+    "about": "O nama",
+    "whitepaper": "Whitepaper",
+    "contact": "Kontakt",
+    "toggleMenu": "Otvori ili zatvori navigacijski izbornik",
+    "ecosystem": "Ekosustav",
+    "roadmap": "Plan razvoja",
+    "business": "Za tvrtke",
+    "blog": "Blog",
+    "shop": "Trgovina",
+    "getApp": "Preuzmi aplikaciju",
+    "switchToLight": "Prebaci na svijetli način",
+    "switchToDark": "Prebaci na tamni način",
+    "mainLabel": "Glavni izbornik",
+    "mobileLabel": "Mobilni izbornik"
+  },
+  "footer": {
+    "home": "Početna",
+    "about": "O nama",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "whitepaper": "Whitepaper",
+    "tokenDashboard": "Token nadzorna ploča",
+    "address": "Block Protocol L.L.C-FZ Meydan Grandstand, 6th floor, Meydan Road, Nad AlSheba, Dubai, U.A.E.",
+    "description": "Seekprotocol je platforma nove generacije koju razvija Block Protocol L.L.C-FZ, a spaja proširenu stvarnost, umjetnu inteligenciju i blockchain u igrolika iskustva u stvarnom svijetu.",
+    "copyright": "© 2024-2026 Block Protocol. Sva prava pridržana",
+    "privacyPolicy": "Pravila privatnosti",
+    "termsOfService": "Uvjeti korištenja",
+    "cookieSettings": "Postavke kolačića",
+    "product": "Proizvod",
+    "company": "Tvrtka",
+    "resources": "Resursi",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "Preuzmi na App Storeu",
+    "googlePlayAlt": "Nabavi na Google Playu"
+  },
+  "home": {
+    "heroTitle": "Istraži novu stvarnost uz",
+    "heroTitleHighlight": "Seekprotocol",
+    "heroSubtitle": "AR i AI sloj za nagrade koje žive na određenom mjestu: token na bilo kojem chainu, vaučer koji vrijedi na blagajni, stvar koja stigne u kutiji. Prošetaj do koordinate, usmjeri mobitel i pokupi ono što je tamo ostavljeno.",
+    "downloadAppStore": "Preuzmi na App Storeu",
+    "downloadGooglePlay": "Nabavi na Google Playu",
+    "benefitsTitle": "Neograničene",
+    "benefitsTitleHighlight": "mogućnosti!",
+    "benefitAR": "Proširena stvarnost",
+    "benefitARDesc": "Pretvori bilo koje mjesto u interaktivni lov na blago uz AR tehnologiju koja oživljava digitalnu imovinu.",
+    "benefitSeekToEarn": "Seek-to-Earn",
+    "benefitSeekToEarnDesc": "Pretvori svakodnevno kretanje u nagrade. Svaki korak, trčanje i avantura vode do airdropova i drugog skrivenog blaga.",
+    "benefitLiveEvents": "Eventi uživo",
+    "benefitLiveEventsDesc": "Pridruži se okupljanjima u stvarnom svijetu obogaćenima AR nagradama, od lokalnih susreta do velikih lovova na blago po cijelom gradu.",
+    "benefitCreatorTools": "Alati za kreatore",
+    "benefitCreatorToolsDesc": "Naš drag & drop alat omogućuje svakome da pokrene AR kampanje, dijeli NFT-ove, tokene i drugu imovinu te dosegne publiku u velikom opsegu.",
+    "benefitGeofencing": "Geofencing tehnologija",
+    "benefitGeofencingDesc": "Precizno postavljanje imovine na temelju GPS-a s točnošću od 30 metara omogućuje nagrade i iskustva s potvrđenom lokacijom.",
+    "benefitQuests": "Misije",
+    "benefitQuestsDesc": "Dinamične misije koje se prilagođavaju tvojoj lokaciji, razini vještine i sklonostima, s rastućim nagradama i izazovima.",
+    "futureTitle": "Budućnost interakcija temeljenih na lokaciji",
+    "futureDesc": "Doživi revolucionarno spajanje ključnih tehnologija. Svaka inovacija besprijekorno se uklapa i pretvara tvoj fizički svijet u igroliki ekosustav zarade u kojem svaki korak ima vrijednost, svako mjesto krije potencijal, a svaka te avantura nagrađuje stvarnom digitalnom imovinom",
+    "serviceLocationAirdrops": "Airdropovi temeljeni na lokaciji",
+    "serviceLocationAirdropsDesc": "Geofencing tehnologija omogućuje precizno postavljanje digitalne imovine na određene GPS koordinate. Od središta grada do skrivenih kutaka, svako mjesto postaje moguća zona nagrada. Ekskluzivni NFT-ovi, token airdropovi i ograničeni kolekcionarski predmeti čekaju da ih otkriješ.",
+    "serviceImmersiveAR": "Imerzivna AR tehnologija",
+    "serviceImmersiveARDesc": "Doživi proširenu stvarnost nove generacije koja besprijekorno spaja digitalnu imovinu s tvojim fizičkim okruženjem. Naš napredni AR engine donosi zadivljujuće 3D vizualizacije, mapiranje okoline u stvarnom vremenu i trajno sidrenje u svijetu. Gledaj kako NFT-ovi oživljavaju, tokeni lebde u zraku, a digitalni predmeti djeluju kao da su stvarno tu.",
+    "serviceAIPersonalization": "Personalizacija uz AI",
+    "serviceAIPersonalizationDesc": "Tvoj AI suputnik ne samo da te vodi: kroz AR vidi ono što ti vidiš, analizira okolinu i daje ti korisne savjete u stvarnom vremenu. Zamisli AI koji prepoznaje znamenitosti i otkriva lokalna mjesta za hranu, predlaže najbolje rute za šetnju prema tvom stilu igre i čak u hodu stvara personalizirani AR sadržaj.",
+    "serviceMoveToEarn": "Move-to-Earn susreće evente uživo",
+    "serviceMoveToEarnDesc": "Pridruži se velikim AR eventima uživo na kojima se tisuće igrača okupljaju u stvarnom svijetu uz digitalne nagrade. Zamisli glazbene festivale na kojima posjetitelji dobivaju ekskluzivne nagrade, sportske događaje s kolekcionarskim predmetima vezanima uz lokaciju ili lov na blago po cijelom gradu s nagradnim fondom.",
+    "threePathsTitle": "Tri puta do napretka",
+    "pathBlockchain": "Pokreće ga blockchain",
+    "pathBlockchainDesc": "Svaki NFT, token i predmet u igri osiguran je na blockchainu. To znači stvarno vlasništvo, dokazivu poštenost i nagrade koje stvarno možeš koristiti, unutar i izvan Seekprotocola.",
+    "pathAI": "Pokreće ga AI",
+    "pathAIDesc": "Naš AI uči kako istražuješ i igraš te ti daje pametnije savjete o lokacijama, personalizirane misije i nagrade koje stvarno nešto znače. Što se više krećeš, to je bolji.",
+    "pathProofOfLocation": "Proof of Location",
+    "pathProofOfLocationDesc": "Svaki tvoj korak je dokaz. Naš sustav potvrđuje tvoju lokaciju u stvarnom svijetu i otključava tokene, NFT-ove i drugu digitalnu imovinu. Bez varanja, samo stvarne nagrade za stvarno sudjelovanje.",
+    "builtToScale": "IZGRAĐENO DA RASTE S TOBOM",
+    "builtToScaleDesc": "Bilo da pokrećeš projekt ili istražuješ svoj grad, Seekprotocol pokreće tvoje putovanje imerzivnom tehnologijom, potvrđenom prisutnošću i stvarnim nagradama.",
+    "interested": "Zainteresiran?",
+    "scaleOnboarding": "Jednostavan početak",
+    "scaleOnboardingDesc": "Brza staza za korisnike, kreatore i tvrtke. Od izrade društvenih novčanika do prvih AR evenata, početak je kao igra, a ne papirologija.",
+    "scaleProjectLaunch": "Integracija za lansiranje projekta",
+    "scaleProjectLaunchDesc": "Bilo da si meme coin ili projekt s misijom, spoji se na naše AR, AI i nagradne slojeve. Pokreni evente, spawnove tokena ili NFT misije, sve vezano uz lokaciju i u obliku igre.",
+    "scaleBusinessPortal": "Aktivacija poslovnog portala",
+    "scaleBusinessPortalDesc": "Lokalne trgovine, globalni brendovi: uđite u Seek ekosustav. Objavite ekskluzivne ponude i nagrade vezane uz lokaciju te privucite stvarne posjetitelje digitalnim poticajima.",
+    "scaleEngagement": "Motor angažmana",
+    "scaleEngagementDesc": "Misije preporuka, nizovi na ljestvici i cehovske misije: cijeli set alata za dnevni, tjedni i društveni angažman korisnika.",
+    "scaleCrossPlatform": "Dostupno na svim platformama",
+    "scaleCrossPlatformDesc": "Jedan profil i jedan novčanik na iOS-u i Androidu, s imovinom sa svakog chaina na kojem radimo. Beskrajna Seek iskustva, bilo gdje i bilo kad.",
+    "featuredOn": "PISALI SU O NAMA:",
+    "joinBeta": "Pridruži se beti",
+    "getReady": "Spremi se za potragu!",
+    "ctaDesc": "Zakorači u novu stvarnost u kojoj svijet postaje tvoje igralište. Seekprotocol pretvara tvoju okolinu u interaktivnu avanturu, spajajući najnoviju AR tehnologiju s istraživanjem stvarnog svijeta. Pronađi skriveno blago, skupljaj vrijedne digitalne nagrade i osvoji dinamične misije!",
+    "coinReadoutLabel": "Signal zaključan",
+    "coinReadoutAccuracy": "Točnost {meters} m",
+    "beyondEyebrow": "Više od kovanica",
+    "beyondTitle": "Drop ne mora biti token",
+    "beyondLead": "Sve što se može dati osobi može se dati i mjestu. Popust na blagajni, fizička stvar koja čeka u trgovini, propusnica koja postoji samo na lokaciji. Za trgovačku ulicu kovanica je obično najmanje zanimljiva od svega.",
+    "howEyebrow": "Kako funkcionira",
+    "howTitle": "Tri koraka, a treći se isplati",
+    "liveEyebrow": "Mreža uživo",
+    "liveTitle": "Odaberi grad i okušaj sreću",
+    "liveLead": "Skoči u bilo koje središte, dodirni kovanicu da vidiš tko ju je pokupio i sam pokušaj uhvatiti jednu, uz stvarne izglede iz aplikacije.",
+    "foundationsEyebrow": "Temelji",
+    "readWhitepaper": "Pročitaj tehnički whitepaper",
+    "metaTitle": "Seekprotocol | AR lov na blago za stvarne nagrade",
+    "metaDescription": "Lovi nagrade vezane uz lokaciju u proširenoj stvarnosti: tokene na bilo kojem chainu, vaučere, stvarnu robu. Seekprotocol ih sidri na stvarna mjesta i dokazuje da si bio tamo.",
+    "ogTitle": "Seekprotocol | AR i AI za nagrade u stvarnom svijetu",
+    "heroEyebrow": "AR · AI · Bilo koja nagrada",
+    "placeReward": "Postavi nagradu na svoje koordinate",
+    "exploreEcosystem": "Istraži ekosustav",
+    "viewRoadmap": "Pogledaj plan razvoja",
+    "polCtaEyebrow": "Proof of location",
+    "polCtaTitle": "Prisutnost, potvrđena",
+    "polCtaBody": "Četiri neovisna signala moraju se složiti prije nego se zahtjev prihvati. Objašnjenje jednostavnim jezikom nalazi se na blogu.",
+    "polCtaLink": "Kako funkcionira proof of location"
+  },
+  "seekarPage": {
+    "metaTitle": "Seekprotocol | AR aplikacija za lov na blago",
+    "metaDescription": "Seekprotocol je aplikacija proširene stvarnosti tvrtke Seekprotocol. Lovi nagrade na stvarnim koordinatama: tokene na bilo kojem chainu, vaučere i stvarnu robu. Besplatno na iOS-u i Androidu.",
+    "ogTitle": "Seekprotocol | AR aplikacija za lov na blago",
+    "eyebrow": "Aplikacija",
+    "heroTitle": "Seekprotocol",
+    "heroDesc": "Aplikacija proširene stvarnosti tvrtke Seekprotocol. Usmjeri mobitel prema svijetu i pronađi ono što je tamo postavljeno: tokene, NFT-ove, vaučere i stvari koje stižu u kutiji, sve usidreno na stvarne koordinate.",
+    "whatTitle": "Što je Seekprotocol?",
+    "whatBody": "Seekprotocol je glavna mobilna aplikacija, besplatna na iOS-u i Androidu. Bilo koju ulicu, park ili lokaciju pretvara u mjesto gdje se digitalna imovina može sakriti i preuzeti. Izdavač postavi nagradu na koordinatu; da bi je pokupio, moraš fizički biti tamo, a protokol dokazuje da si bio. Bez emulatora, bez lažiranja lokacije, bez prečaca.",
+    "featuresTitle": "Što možeš raditi",
+    "f1Title": "Lovi airdropove vezane uz lokaciju",
+    "f1Desc": "Tokeni i NFT-ovi usidreni su na stvarne koordinate. Prošetaj do mjesta, otvori kameru i preuzmi ono što te čeka.",
+    "f2Title": "Skupljaj u proširenoj stvarnosti",
+    "f2Desc": "Imovina se pojavljuje u svijetu kroz tvoju kameru, u pravoj veličini i na svom mjestu, a ne kao popis na ekranu.",
+    "f3Title": "Istražuj uz AI suputnike",
+    "f3Desc": "AI vodič reagira na to gdje si i što je u blizini te ti pokazuje što je vrijedno šetnje.",
+    "f4Title": "Zarađuj stvarne kripto nagrade",
+    "f4Desc": "Sve se namiruje na chainu na kojem imovina već postoji. Ono što skupiš je tvoje, u tvom novčaniku, i kreće se s tobom.",
+    "howTitle": "Kako funkcionira",
+    "s1Title": "Preuzmi i otvori",
+    "s1Desc": "Besplatno na App Storeu i Google Playu. Novčanik se izradi za tebe; ne moraš nikad prije imati privatni ključ.",
+    "s2Title": "Pronađi što je u blizini",
+    "s2Desc": "Mapa prikazuje što je postavljeno oko tebe. Odaberi nešto i prošetaj do toga.",
+    "s3Title": "Dokaži da si tamo i preuzmi",
+    "s3Desc": "Proof of Location potvrđuje tvoju prisutnost na chainu, a imovina stiže u tvoj novčanik.",
+    "faqTitle": "Česta pitanja",
+    "q1": "Je li Seekprotocol besplatan?",
+    "a1": "Da. Seekprotocol se besplatno preuzima na iOS-u i Androidu. Neki predmeti u aplikaciji se plaćaju, ali lov i preuzimanje ne.",
+    "q2": "Tko izrađuje Seekprotocol?",
+    "a2": "Seekprotocol izrađuje Seekprotocol, proizvod tvrtke Block Protocol L.L.C-FZ iz Dubaija. To je AR i AI aplikacija za nagrade usidrene na stvarna mjesta, na bilo kojem chainu ili bez chaina, dostupna na App Storeu i Google Playu.",
+    "q3": "Moram li znati išta o kriptu?",
+    "a3": "Ne. Novčanik se izradi za tebe kad otvoriš aplikaciju, a imovinu možeš skupljati i držati bez da ikad sam rukuješ seed phraseom.",
+    "q4": "Na kojim mobitelima radi Seekprotocol?",
+    "a4": "Na novijim iPhoneima i Android uređajima s podrškom za AR. Obje verzije imaju iste funkcije.",
+    "q5": "Mogu li lažirati lokaciju?",
+    "a5": "Ne. Proof of Location potvrđuje tvoju stvarnu prisutnost na chainu, i upravo to čini preuzimanje vrijednim izdavaču koji je nagradu postavio.",
+    "ctaTitle": "Preuzmi Seekprotocol",
+    "ctaDesc": "Besplatno na iOS-u i Androidu. Tvoj grad je već pun stvari koje vrijedi pronaći.",
+    "renameTitle": "Aplikacija SeekAR sada je Seekprotocol",
+    "renameBody": "Ista aplikacija, isti račun, ista mapa. Promijenilo se samo ime aplikacije; tvrtka se oduvijek zove Seekprotocol. Druga tvrtka podnijela je prijavu žiga koja pokriva staro ime aplikacije, pa smo aplikaciju prebacili na ime koje oduvijek posjedujemo.",
+    "renameLink": "Pročitaj obavijest",
+    "legacyEyebrow": "Povijest imena",
+    "legacyTitle": "Kripto AR aplikacija SeekAR sada je Seekprotocol",
+    "legacyBody": "Promijenilo se samo ime aplikacije; tvrtka se oduvijek zove Seekprotocol. Mobilna aplikacija koja je na iOS-u i Androidu izlazila pod imenom SeekAR od lansiranja do kolovoza 2026. sada se zove Seekprotocol. Isti proizvod, isti izdavač, Block Protocol L.L.C-FZ, Dubai, UAE, isti unos na App Storeu (id 6752813761) i isti paket na Play Storeu (com.seekar.seekar). Ime Seekar koriste i drugi proizvodi, umjetnici i mjesta; ova stranica odnosi se isključivo na multi-chain aplikaciju za AR i kripto nagrade.",
+    "q6": "Što se dogodilo s aplikacijom SeekAR?",
+    "a6": "AR mobilna aplikacija za kripto nagrade na chainu koja je izlazila kao SeekAR preimenovana je u Seekprotocol 10. kolovoza 2026. Isti proizvod, isti izdavač (Block Protocol L.L.C-FZ, Dubai), isti unos na App Storeu (id 6752813761), isti paket na Play Storeu (com.seekar.seekar). Promijenili su se samo ime i ikona.",
+    "q7": "Gdje mogu preuzeti aplikaciju koja se prije zvala SeekAR?",
+    "a7": "Na App Storeu na apps.apple.com/app/id6752813761 i na Google Playu na play.google.com/store/apps/details?id=com.seekar.seekar. Oba unosa sada nose naziv Seekprotocol.",
+    "q8": "Je li Seekprotocol isti proizvod kao SeekAR?",
+    "a8": "Da. Tvrtka se oduvijek zove Seekprotocol; promijenilo se samo ime aplikacije. Multi-chain AR aplikacija za kripto nagrade koja se od lansiranja do kolovoza 2026. zvala SeekAR sada se zove Seekprotocol, a izdaje je isti tim u Block Protocol L.L.C-FZ u Dubaiju, UAE.",
+    "stepsEyebrow": "Korak po korak",
+    "faqEyebrow": "FAQ"
+  },
+  "about": {
+    "heroTitle": "Otkrij budućnost digitalnih iskustava temeljenih na lokaciji",
+    "heroDesc": "Seekprotocol pretvara istraživanje stvarnog svijeta u nagrađujuće avanture uz naprednu proširenu stvarnost i blockchain tehnologiju.",
+    "whySeekprotocol": "Zašto Seekprotocol?",
+    "whyDesc": "Dok drugi grade aplikacije, mi gradimo revoluciju. Seekprotocol premošćuje fizički i digitalni svijet AR tehnologijom temeljenom na lokaciji koja svaki korak pretvara u priliku. Naš decentralizirani sustav nagrada osigurava da se istraživanje isplati, doslovno. Ne stvaramo samo iskustva; utiremo put novoj ekonomiji u kojoj otkrića u stvarnom svijetu stvaraju stvarnu vrijednost. Uz praćenje preciznije od jednog metra, zadivljujuće AR vizualizacije i blockchain nagrade, nevidljivo činimo vidljivim, a nemoguće isplativim.",
+    "letsConnect": "Povežimo se",
+    "ourValues": "Naše vrijednosti",
+    "whatDrivesUs": "ŠTO NAS POKREĆE",
+    "valueLocationIntelligence": "Inteligencija lokacije",
+    "valueLocationIntelligenceDesc": "Precizna geoprostorna tehnologija s točnošću ispod jednog metra koja u stvarnom vremenu reagira na svaki tvoj pokret.",
+    "valueARInnovation": "AR inovacija",
+    "valueARInnovationDesc": "Vrhunska proširena stvarnost koja besprijekorno spaja digitalno blago s tvojim fizičkim svijetom.",
+    "valueSocialDiscovery": "Zajedničko otkrivanje",
+    "valueSocialDiscoveryDesc": "Udruži se s istraživačima u blizini za višestruke nagrade i zajednička postignuća.",
+    "valueCrossChainRewards": "Cross-chain nagrade",
+    "valueCrossChainRewardsDesc": "Zarađuj brojne airdropove, NFT-ove i drugu digitalnu imovinu na različitim blockchain mrežama.",
+    "valueProofOfExploration": "Dokaz istraživanja",
+    "valueProofOfExplorationDesc": "Provjerljivi zapisi tvojih otkrića na chainu stvaraju trajno nasljeđe avantura.",
+    "readyToSeek": "Spreman za potragu?",
+    "startExploring": "Počni istraživati",
+    "coreTechnologies": "KLJUČNE TEHNOLOGIJE KOJE KORISTIMO",
+    "coreTechDesc": "U Seekprotocolu znamo da istraživanje treba imati svrhu. Ne nudimo iskustva po principu jedno za sve. Stvaramo dinamične avanture svjesne lokacije za svakog korisnika.",
+    "techGeospatial": "GEOPROSTORNO MAPIRANJE",
+    "techGeospatialDesc": "Praćenje lokacije u stvarnom vremenu uz dinamični geofencing koji stvara iskustva prilagođena kontekstu.",
+    "techAR": "AR RENDERIRANJE",
+    "techARDesc": "Napredne mehanike renderiranja i prostorno računalstvo za imerzivnu proširenu stvarnost.",
+    "techBlockchain": "BLOCKCHAIN NAGRADE",
+    "techBlockchainDesc": "Stvarne nagrade za stvarno istraživanje i sudjelovanje.",
+    "techSync": "TRENUTNA SINKRONIZACIJA",
+    "techSyncDesc": "Ažuriranja u stvarnom vremenu za sve igrače. Gledaj otkrića uživo dok se događaju diljem svijeta.",
+    "threePillars": "TRI STUPA USPJEHA",
+    "threePillarsDesc": "U srži Seekprotocola su tri revolucionarne tehnologije koje mijenjaju način na koji komuniciramo sa svijetom.",
+    "pillarAR": "Proširena stvarnost",
+    "pillarARDesc": "Najnaprednija AR tehnologija koja otkriva skrivene digitalne slojeve nevidljive golim okom.",
+    "pillarLocation": "Preciznost lokacije",
+    "pillarLocationDesc": "GPS točan ispod jednog metra uz dinamični geofencing koji točno zna gdje su airdropovi postavljeni.",
+    "pillarReward": "Raspodjela nagrada",
+    "pillarRewardDesc": "Decentralizirani fondovi koji jamče poštenu, trenutnu i transparentnu zaradu svakom korisniku Seekprotocola.",
+    "ourApproach": "Naš pristup",
+    "approachTitle": "GDJE ISTRAŽIVANJE SUSREĆE NAGRADE",
+    "approachDesc": "Svako mjesto krije neispričanu vrijednost. Naš posao? Otključati je na načine koji oduševljavaju, nagrađuju i vraćaju tragače po još.",
+    "approachTreasureHunts": "Uzbudljivi lovovi na blago",
+    "approachTreasureHuntsDesc": "Dinamični izazovi vezani uz lokaciju.",
+    "approachARExperiences": "Zadivljujuća AR iskustva",
+    "approachARExperiencesDesc": "Imerzivni digitalni slojevi preko stvarnosti.",
+    "approachRewardPools": "Nagradni fondovi koji isplaćuju",
+    "approachRewardPoolsDesc": "Prilike za zaradu koje pokreće zajednica.",
+    "approachSocial": "Društvene funkcije koje povezuju",
+    "approachSocialDesc": "Istraživanje i suradnja više korisnika.",
+    "approachAnalytics": "Analitika koja informira",
+    "approachAnalyticsDesc": "Uvidi u obrasce istraživanja u stvarnom vremenu.",
+    "approachEvents": "Eventi koji ujedinjuju",
+    "approachEventsDesc": "Vremenski ograničeni eventi zajednice koji okupljaju mase. Zamisli Pokémon Go raidove, u Web3 stilu.",
+    "approachCollaborations": "Suradnje koje stvaraju",
+    "approachCollaborationsDesc": "Sadržaj i izazovi koje stvaraju korisnici.",
+    "ourTeam": "Naš sjajni tim",
+    "joinBeta": "Pridruži se beti",
+    "getReady": "Spremi se za potragu!",
+    "ctaDesc": "Zakorači u novu stvarnost u kojoj svijet postaje tvoje igralište. Seekprotocol pretvara tvoju okolinu u interaktivnu avanturu, spajajući najnoviju AR tehnologiju s istraživanjem stvarnog svijeta.",
+    "metaTitle": "O timu iza Seekprotocola",
+    "metaDescription": "Upoznaj tim koji gradi AR temeljen na lokaciji za svaki chain: misiju iza proof of locationa, tehnologiju ispod Seekprotocola i ljude iza $SEEK-a.",
+    "ogTitle": "Tim iza Seekprotocola",
+    "eyebrow": "O nama",
+    "whyEyebrow": "Zašto ovo gradimo",
+    "techEyebrow": "Tehnologija",
+    "pillarsEyebrow": "Stupovi",
+    "teamEyebrow": "Tim",
+    "linkedinLabel": "{name} na LinkedInu"
+  },
+  "contact": {
+    "getInTouch": "Javi nam se",
+    "formDesc": "Ispuni obrazac ispod i javit ćemo ti se što prije.",
+    "metaTitle": "Kontakt: partnerstva i kampanje",
+    "metaDescription": "Razgovaraj s timom Seekprotocola o postavljanju kampanje na vlastite koordinate, partnerstvima, pristupu beti ili medijima.",
+    "ogTitle": "Kontaktiraj Seekprotocol",
+    "inquiryTypesEyebrow": "Ili, konkretnije",
+    "partnershipsTitle": "Partnerstva",
+    "partnershipsBody": "Imaš projekt, IP ili mrežu lokacija koju želiš dovesti u Seek. Reci nam što i gdje, ostalo je na nama.",
+    "publishersTitle": "Izdavači",
+    "publishersBody": "Želiš postaviti AR kampanje na određene koordinate i plaćati po potvrđenom posjetu. Pošalji lokaciju i ponudu; kampanju ćemo postaviti zajedno.",
+    "pressTitle": "Tisak i mediji",
+    "pressBody": "Članci, intervjui, primjerci za recenziju, vijesti pod embargom. Za sve uredničko javi nam se ovdje i odgovorit ćemo isti dan.",
+    "supportTitle": "Podrška",
+    "supportBody": "Bug, preuzimanje koje nije prošlo, pitanje o novčaniku. Najbrži put je Discord, ali radi i ovaj obrazac.",
+    "eyebrow": "Kontakt",
+    "elsewhere": "Drugdje",
+    "documentation": "Dokumentacija",
+    "registeredOffice": "Sjedište"
+  },
+  "services": {
+    "heroTitle": "NAŠA STRUČNOST, TVOJ RAST",
+    "heroDesc": "Seekprotocol isporučuje vrhunska AR, AI i blockchain rješenja na svim glavnim chainovima. Ne gradimo samo tehnologiju. Mi smo tvoji partneri u preobrazbi angažmana u stvarnom svijetu.",
+    "letsContact": "Javi nam se",
+    "businessStrategy": "Poslovna strategija",
+    "businessStrategyDesc": "Strategije po mjeri koje usklađuju poslovne ciljeve s digitalnim rastom.",
+    "visualDirection": "Vizualni smjer",
+    "visualDirectionDesc": "Stvaramo dosljedne i bezvremenske identitete brenda koji hvataju tvoju viziju.",
+    "websiteCreation": "Izrada web stranica",
+    "websiteCreationDesc": "Potpuno responzivne web stranice izrađene s naglaskom na brzinu i eleganciju.",
+    "contentSolutions": "Sadržajna rješenja",
+    "contentSolutionsDesc": "Privuci pažnju i potakni rast snažnim smjerom sadržaja.",
+    "campaignExecution": "Provedba kampanja",
+    "campaignExecutionDesc": "Pokreni učinkovit marketing na digitalnim kanalima i platformama.",
+    "uiuxSystems": "UI/UX sustavi",
+    "uiuxSystemsDesc": "Dizajniraj besprijekorna, funkcionalna korisnička putovanja na svim uređajima i tokovima.",
+    "growthTactics": "Taktike rasta",
+    "growthTacticsDesc": "Strateške metode za povećanje vidljivosti i rast brenda.",
+    "copywriting": "Copywriting",
+    "copywritingDesc": "Stvaramo dosljedne i bezvremenske identitete brenda koji hvataju tvoju viziju.",
+    "details": "Detalji",
+    "pricingTitle": "Cijene: fleksibilno za svaku uslugu",
+    "pricingDesc": "Znamo da svaka tvrtka ima svoj budžet, zato se naše cijene temelje na modulu koji odabereš.",
+    "pricingQuestion": "Spreman detaljno razgovarati o svom projektu?",
+    "scheduleConsultation": "Dogovori konzultacije",
+    "smallModule": "Mali modul",
+    "smallModuleDesc": "Idealan za manje logotipe i kratke poruke.",
+    "mediumModule": "Srednji modul",
+    "mediumModuleDesc": "Nudi više prostora za sadržaj tvog brenda.",
+    "largeModule": "Veliki modul",
+    "largeModuleDesc": "Najistaknutije mjesto na mapi.",
+    "whoWeWorkWith": "S kime radimo",
+    "smallBusinesses": "Mala poduzeća i startupi",
+    "smallBusinessesDesc": "Stvaramo tvoj glas i brinemo se da se čuje.",
+    "ecommerce": "E-commerce brendovi",
+    "ecommerceDesc": "Pišemo uvjerljive opise proizvoda koji prodaju.",
+    "agencies": "Agencije i konzultanti",
+    "agenciesDesc": "Gradimo autoritet vrijednim sadržajem.",
+    "localBusinesses": "Lokalne tvrtke",
+    "localBusinessesDesc": "Pomažemo ti da se povežeš s kupcima u svom gradu i šire.",
+    "largeCorporations": "Velike korporacije",
+    "largeCorporationsDesc": "Pišemo jasne, učinkovite poruke koje jačaju tvoj brend.",
+    "ctaConnect": "Povežimo se",
+    "ctaTitle": "IMAŠ IDEJU ILI TREBAŠ POKRENUTI PROJEKT?"
+  },
+  "blog": {
+    "title": "Seekprotocol blog",
+    "desc": "Uvidi, novosti i detaljne analize o proširenoj stvarnosti, umjetnoj inteligenciji, blockchain tehnologiji i budućnosti iskustava temeljenih na lokaciji.",
+    "read": "čitanja",
+    "backToBlog": "← Natrag na blog",
+    "readyToSeek": "Spreman za potragu?",
+    "readyToSeekDesc": "Preuzmi Seekprotocol i pretvori svoj svijet u igralište pokretano blockchainom.",
+    "moreArticles": "Još članaka",
+    "keepReading": "Nastavi čitati",
+    "allArticles": "Svi članci",
+    "relatedPages": "Povezane stranice",
+    "metaTitle": "Blog: AR, AI i nagrade temeljene na lokaciji",
+    "metaDescription": "Članci o proširenoj stvarnosti, AI suputnicima, geofenced airdropovima i proof of locationu, od tima koji gradi Seekprotocol.",
+    "ogTitle": "Seekprotocol blog",
+    "eyebrow": "Blog"
+  },
+  "forms": {
+    "emailPlaceholder": "E-mail adresa",
+    "sendNow": "Pošalji",
+    "sending": "Šaljemo...",
+    "captchaError": "Dovrši captcha provjeru.",
+    "genericError": "Nešto je pošlo po zlu.",
+    "genericErrorRetry": "Nešto je pošlo po zlu. Pokušaj ponovno.",
+    "successMessage": "Hvala! Tvoja poruka je zaprimljena!",
+    "yourName": "Tvoje ime",
+    "namePlaceholder": "Upiši svoje ime",
+    "yourEmail": "Tvoj e-mail",
+    "emailInputPlaceholder": "Upiši svoj e-mail",
+    "message": "Poruka",
+    "messagePlaceholder": "Piši ovdje",
+    "yourPhone": "Broj telefona",
+    "phonePlaceholder": "Upiši svoj broj telefona",
+    "validationRequired": "Ovo polje je obavezno",
+    "validationEmail": "Upiši valjanu e-mail adresu",
+    "validationPhone": "Upiši valjan broj telefona",
+    "validationName": "Upiši svoje ime",
+    "optional": "neobavezno"
+  },
+  "cookies": {
+    "title": "Postavke kolačića",
+    "subtitle": "Upravljaj postavkama privatnosti",
+    "description": "Koristimo kolačiće kako bismo poboljšali tvoje iskustvo pregledavanja, prikazivali personalizirani sadržaj i analizirali promet. Klikom na \"Prihvati sve\" pristaješ na našu upotrebu kolačića.",
+    "readMore": "Više pročitaj u našim",
+    "privacyPolicy": "Pravilima privatnosti",
+    "necessary": "Nužni",
+    "necessaryDesc": "Potrebni za ispravan rad web stranice. Ne mogu se isključiti.",
+    "functional": "Funkcionalni",
+    "functionalDesc": "Omogućuju naprednije funkcije i personalizaciju.",
+    "analytics": "Analitički",
+    "analyticsDesc": "Pomažu nam razumjeti kako posjetitelji koriste našu web stranicu.",
+    "marketing": "Marketinški",
+    "marketingDesc": "Koriste se za prikaz relevantnih oglasa i praćenje kampanja.",
+    "acceptAll": "Prihvati sve",
+    "rejectAll": "Odbij sve",
+    "customize": "Prilagodi",
+    "savePreferences": "Spremi postavke",
+    "cookieSettings": "Postavke kolačića",
+    "toggleLabel": "Uključi ili isključi: {category}"
+  },
+  "notFound": {
+    "pageNotFound": "Stranica nije pronađena",
+    "pageNotFoundDesc": "Stranica koju tražiš ne postoji ili je premještena",
+    "oops": "Ups, stranica nije pronađena",
+    "backToHome": "Natrag na početnu",
+    "errorCode": "Greška 404 · Nema signala na ovoj koordinati"
+  },
+  "metrics": {
+    "text1": "NEOGRANIČENA IMOVINA.",
+    "text2": "STVARAN ANGAŽMAN.",
+    "text3": "TRAŽI. SKUPLJAJ. ZARAĐUJ"
+  },
+  "privacyPolicyPage": {
+    "title": "Pravila privatnosti",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Ažurirano: 6. rujna 2026.",
+    "introTitle": "Uvod",
+    "introP1": "Ova Pravila privatnosti primjenjuju se na mobilnu aplikaciju Seekprotocol (u ovom dokumentu \"Aplikacija\"), koju je razvio i održava Block Protocol LLC (\"Pružatelj usluge\") kao besplatnu uslugu za mobilne uređaje. Aplikacija se pruža u viđenom stanju (\"AS IS\").",
+    "introP2": "Seekprotocol je platforma nove generacije koja spaja proširenu stvarnost, umjetnu inteligenciju i blockchain te svojim korisnicima stvara igrolika iskustva u stvarnom svijetu. S obzirom na prirodu tih iskustava, Aplikacija obrađuje nekoliko kategorija osobnih podataka kako bi svoje funkcije pružala potpuno i sigurno. Ova pravila detaljno opisuju koji se podaci prikupljaju, zašto se prikupljaju, kako se s njima postupa, s kime se mogu dijeliti i koja prava korisnici imaju u vezi sa svojim osobnim podacima.",
+    "introP3": "Preuzimanjem i korištenjem Aplikacije pristajete na postupanje s podacima opisano u ovim Pravilima privatnosti. Ova pravila treba redovito pregledavati jer se povremeno mogu ažurirati kako bi odražavala promjene u postupanju s podacima, mjerodavnim propisima ili funkcijama Aplikacije.",
+    "part1Title": "I. dio: Prikupljanje i korištenje podataka",
+    "part1P1": "Aplikacija prikuplja podatke kada je preuzmete i koristite. To uključuje tehničke podatke koji se automatski prikupljaju tijekom korištenja, poput IP adrese vašeg uređaja, stranica ili dijelova Aplikacije koje posjećujete, vremena i datuma posjeta, vremena provedenog na tim stranicama te podataka o operativnom sustavu vašeg mobilnog uređaja.",
+    "part1P2": "Osim ovih automatski prikupljenih tehničkih podataka, Aplikacija prikuplja nekoliko kategorija osobnih podataka, od kojih je svaka u cijelosti opisana u nastavku.",
+    "part1P3": "Svi podaci koje Aplikacija prikupi prenose se i pohranjuju uz šifriranje tijekom prijenosa, čime se osigurava zaštita podataka dok putuju između vašeg uređaja i sustava Pružatelja usluge.",
+    "part1s1Title": "1. Izrada računa",
+    "part1s1P1": "Aplikacija podržava više načina na koje korisnici mogu izraditi račun i pristupiti mu. To uključuje autentifikaciju korisničkim imenom i lozinkom, korisničko ime u kombinaciji s drugim oblicima autentifikacije, korisničko ime u kombinaciji s lozinkom i dodatnim čimbenicima autentifikacije te autentifikaciju putem OAuth-a kod podržanih vanjskih pružatelja identiteta. Način izrade računa koji korisnik odabere određuje koje identifikatore povezane s računom Aplikacija prikuplja i zadržava.",
+    "part1s2Title": "2. Osobni podaci",
+    "part1s2P1": "Aplikacija prikuplja podatke koji omogućuju identifikaciju osobe, uključujući vaše ime, e-mail adresu i korisničke identifikatore (User ID).",
+    "part1s2P2": "Vaše ime prikuplja se jer je potrebno za osnovne funkcije aplikacije, uključujući personalizaciju korisničkog sučelja i identifikaciju vašeg profila na platformi. Ovi se podaci samo prikupljaju i ne dijele se s trećim stranama.",
+    "part1s2P3": "Vaša e-mail adresa također je obavezna i prikuplja se isključivo za funkcije aplikacije, uključujući autentifikaciju računa, komunikaciju vezanu uz uslugu i dostavu važnih obavijesti. Ovi se podaci samo prikupljaju i ne dijele se s trećim stranama.",
+    "part1s2P4": "Korisnički identifikatori, jedinstveni identifikatori dodijeljeni vašem računu ili sesiji, obavezni su i prikupljaju se za širi skup svrha. One uključuju podršku osnovnim funkcijama aplikacije, internu analitiku radi razumijevanja načina korištenja Aplikacije, provođenje mjera sigurnosti i sprječavanja prijevara te upravljanje funkcijama i dopuštenjima na razini računa. Korisnički identifikatori samo se prikupljaju i ne dijele se izvan tvrtke.",
+    "part1s3Title": "3. Podaci o lokaciji",
+    "part1s3P1": "Aplikacija zahtijeva pristup i približnim i preciznim podacima o lokaciji vašeg uređaja. Pristup lokaciji je obavezan i korisnici ga ne mogu isključiti bez utjecaja na osnovne funkcije aplikacije.",
+    "part1s3P2": "Približni podaci o lokaciji, koji određuju vaše opće zemljopisno područje bez utvrđivanja točnog položaja, i prikupljaju se i dijele. Prikupljaju se radi podrške osnovnim funkcijama aplikacije i interne analitike o tome kako korisnici koriste funkcije temeljene na lokaciji u različitim zemljopisnim regijama. Približni podaci o lokaciji dijele se i s trećim stranama radi podrške funkcijama aplikacije i pružanja personaliziranog sadržaja i iskustava na temelju zemljopisnog konteksta.",
+    "part1s3P3": "Precizni podaci o lokaciji, odnosno točne zemljopisne koordinate dobivene iz GPS-a ili istovrijednih tehnologija, i prikupljaju se i dijele te služe najširem rasponu svrha od svih vrsta podataka u Aplikaciji. To proizlazi iz činjenice da je osnovno iskustvo Seekprotocola izgrađeno oko proširene stvarnosti usidrene na lokacije u stvarnom svijetu. Precizni podaci o lokaciji prikupljaju se radi podrške AR funkcijama i drugim osnovnim funkcijama koje ovise o točnom položaju u stvarnom svijetu, detaljne analitike korištenja, slanja komunikacije razvojnog tima relevantne za vašu lokaciju, primjene mjera sigurnosti i sprječavanja prijevara povezanih sa zemljopisnim obrascima aktivnosti, personalizacije sadržaja i funkcija prema vašem točnom okruženju te upravljanja funkcijama računa ili uvjetima usluge koji ovise o zemljopisnim parametrima. Isti se podaci dijele s pružateljima usluga trećih strana za sve te iste svrhe.",
+    "part1s4Title": "4. Poruke",
+    "part1s4P1": "Aplikacija prikuplja tri oblika podataka o porukama: e-poštu, SMS ili MMS poruke i druge poruke unutar aplikacije. Sve tri vrste su obavezne i korisnik ih ne može isključiti.",
+    "part1s4P2": "E-pošta se prikuplja isključivo radi podrške osnovnim funkcijama aplikacije, uključujući komunikaciju između korisnika i platforme te dostavu obavijesti vezanih uz uslugu.",
+    "part1s4P3": "SMS ili MMS podaci prikupljaju se isključivo radi podrške osnovnim funkcijama aplikacije i obrađuju se privremeno, što znači da se ne zadržavaju nakon završetka odgovarajuće obrade i Aplikacija ih ne pohranjuje trajno.",
+    "part1s4P4": "Druge poruke unutar aplikacije prikupljaju se isključivo radi podrške osnovnim funkcijama aplikacije, uključujući interakcije unutar vlastitih sustava za poruke i komunikaciju Aplikacije.",
+    "part1s5Title": "5. Fotografije i videozapisi",
+    "part1s5P1": "Aplikacija zahtijeva pristup fotografijama i videozapisima na vašem uređaju. Obje vrste podataka samo se prikupljaju i koriste isključivo radi podrške osnovnim funkcijama aplikacije, posebno u kontekstu funkcija proširene stvarnosti koje zahtijevaju pristup kameri uređaja i medijskoj biblioteci radi postavljanja digitalnog sadržaja preko fizičkog okruženja ili snimanja iskustava unutar interaktivnih sesija Aplikacije.",
+    "part1s6Title": "6. Podaci o zdravlju i tjelesnoj aktivnosti",
+    "part1s6P1": "Aplikacija prikuplja podatke povezane sa zdravljem i podatke povezane s tjelesnom aktivnošću. Obje su kategorije obavezne i koriste se isključivo radi podrške osnovnim funkcijama aplikacije. Ovi se podaci ne dijele s trećim stranama.",
+    "part1s6P2": "Podaci o zdravlju omogućuju Aplikaciji da, gdje je to relevantno, uključi zdravstveni kontekst u svoja iskustva, podržavajući funkcije koje reagiraju na opće tjelesno stanje korisnika kao dio šireg igrolikog modela angažmana Seekprotocola.",
+    "part1s6P3": "Podaci o tjelesnoj aktivnosti koriste se zajedno sa sustavima izazova i nagrada Aplikacije. Aplikacija traži Android dopuštenje ACTIVITY_RECOGNITION kako bi putem senzora vašeg uređaja prepoznala i pratila tjelesne aktivnosti poput hodanja, trčanja ili vožnje bicikla. To dopuštenje pokreće funkcije izazova i nagrada Aplikacije, osmišljene za prepoznavanje tjelesne aktivnosti u stvarnom svijetu kao dijela igrolikog iskustva Seekprotocola. Prepoznavanjem obrazaca kretanja Aplikacija može pokretati događaje u aplikaciji, potvrđivati završetak izazova i dodjeljivati nagrade vezane uz tjelesni angažman u stvarnom svijetu. Podaci o prepoznavanju aktivnosti ne koriste se u oglašivačke svrhe i ne dijele se s trećim stranama. Ovo dopuštenje možete u bilo kojem trenutku opozvati u postavkama aplikacija na uređaju, no time će se onemogućiti izazovi i nagrade temeljeni na aktivnosti koji o njemu ovise.",
+    "part1s7Title": "7. Podaci o performansama i dijagnostici aplikacije",
+    "part1s7P1": "Aplikacija prikuplja tehničke podatke povezane s vlastitim performansama. To uključuje zapisnike rušenja, dijagnostičke podatke i druge pokazatelje performansi aplikacije.",
+    "part1s7P2": "Zapisnici rušenja su obavezni i prikupljaju se automatski radi podrške osnovnim funkcijama aplikacije: konkretno, radi prepoznavanja, dijagnosticiranja i otklanjanja tehničkih kvarova koji utječu na korisničko iskustvo.",
+    "part1s7P3": "Neobavezna analitika performansi prikuplja se kada je korisnici dopuste, radi poboljšanja stabilnosti i odziva Aplikacije. Sigurnosna dijagnostika koja se koristi za sprječavanje prijevara je zasebna: u verzijama s omogućenim Talsec freeRASP-om prikuplja se automatski, kako je opisano u II. dijelu.",
+    "part1s8Title": "8. Datoteke i dokumenti",
+    "part1s8P1": "Aplikacija neobavezno može prikupljati datoteke i dokumente dostupne s vašeg uređaja. Ovo prikupljanje kontrolira korisnik i pokreće se samo u situacijama u kojima vaša izravna interakcija s Aplikacijom uključuje datoteke ili dokumente. Prikupljeni podaci koriste se isključivo radi podrške osnovnim funkcijama aplikacije i ne dijele se s trećim stranama.",
+    "part1s9Title": "9. Identifikatori uređaja i drugi identifikatori",
+    "part1s9P1": "Aplikacija prikuplja identifikatore uređaja i slične tehničke identifikatore radi funkcija aplikacije i sprječavanja prijevara te neke identifikatore dijeli s pružateljima usluga. Sigurnosni identifikatori i dijagnostički zapisi mogu se zadržati i nakon pojedine sesije; ne obrađuju se svi privremeno. Vidi II. i IV. dio.",
+    "part1s9P2": "Identifikatori uređaja prikupljaju se radi podrške osnovnim funkcijama aplikacije koje ovise o prepoznavanju na razini uređaja te provođenja mjera sigurnosti i sprječavanja prijevara. Isti se podaci dijele s trećim stranama radi funkcija aplikacije te sigurnosti i sprječavanja prijevara.",
+    "part2Title": "II. dio: Pristup trećih strana i dijeljenje podataka",
+    "part2P1": "Podatke dijelimo s pružateljima usluga u svrhe opisane u ovim pravilima. Neka su izvješća zbirna, no dijeljenje nije ograničeno na zbirne podatke: sigurnosna dijagnostika i identifikatori uređaja mogu se prenositi i Talsecu, kako je opisano u nastavku.",
+    "part2P2": "Podatke možemo otkriti kada to zakon zahtijeva ili kada je to razumno potrebno radi zaštite prava i sigurnosti, istrage prijevara ili odgovora na zakonite zahtjeve. Pružatelji usluga obrađuju podatke za usluge koje pružaju u skladu s mjerodavnim uvjetima. Talsec sigurnosnu dijagnostiku koristi i za poboljšanje vlastitih proizvoda i zbirno sigurnosno istraživanje, kako je objašnjeno u nastavku.",
+    "part2P3": "Aplikacija integrira sljedeće usluge trećih strana, od kojih svaka djeluje prema vlastitim pravilima privatnosti. Korisnicima se preporučuje da ta pravila izravno pregledaju kako bi razumjeli kako svaki pružatelj postupa s podacima primljenima od Aplikacije:",
+    "part3Title": "III. dio: Pravo na odustajanje",
+    "part3P1": "Svako prikupljanje podataka putem Aplikacije možete u bilo kojem trenutku zaustaviti deinstalacijom. Možete koristiti standardne postupke deinstalacije dostupne na vašem mobilnom uređaju ili putem odgovarajuće trgovine mobilnih aplikacija.",
+    "part3P2": "Neobaveznu analitiku performansi te prikupljanje datoteka ili dokumenata moguće je kontrolirati putem odgovarajućih postavki i funkcija. Te kontrole ne isključuju sigurnosnu dijagnostiku u verzijama s omogućenim freeRASP-om. Za pitanja ili zahtjeve u vezi sa sigurnosnim podacima obratite se na support@seekprotocol.ai.",
+    "part3P3": "Android dopuštenje ACTIVITY_RECOGNITION možete u bilo kojem trenutku opozvati u postavkama dopuštenja aplikacija na uređaju. Opoziv ovog dopuštenja onemogućit će izazove i nagrade temeljene na aktivnosti, ali inače neće utjecati na vaše korištenje Aplikacije.",
+    "part4Title": "IV. dio: Zadržavanje podataka",
+    "part4P1": "Podatke koje daju korisnici zadržavamo dok koristite Aplikaciju, a nakon toga koliko je potrebno u operativne, pravne ili administrativne svrhe. Sigurnosna dijagnostika i identifikatori mogu se zadržati i nakon sesije radi istrage zlouporabe i izrade sigurnosnih izvješća; zadržavanje kod Talseca uređeno je njegovim pravilima o podacima i mjerodavnim ugovornim uvjetima. SMS/MMS podaci koji se obrađuju privremeno odbacuju se nakon neposredne svrhe obrade.",
+    "part4P2": "Ako želite da Pružatelj usluge izbriše podatke koje ste dostavili putem Aplikacije, obratite mu se na <email>support@seekprotocol.ai</email>. Pružatelj usluge odgovorit će u razumnom roku.",
+    "part5Title": "V. dio: Djeca",
+    "part5P1": "Pružatelj usluge ne koristi Aplikaciju kako bi svjesno prikupljao podatke od djece mlađe od 13 godina ili im se marketinški obraćao. Aplikacija nije namijenjena nikome mlađem od 13 godina i Pružatelj usluge svjesno ne prikuplja podatke koji omogućuju identifikaciju od djece te dobne skupine. Ako Pružatelj usluge otkrije da je dijete mlađe od 13 godina dostavilo osobne podatke, oni će odmah biti izbrisani s njegovih poslužitelja. Ako ste roditelj ili skrbnik i smatrate da je vaše dijete dostavilo osobne podatke Aplikaciji, obratite se Pružatelju usluge na <email>support@seekprotocol.ai</email> kako bi mogao poduzeti potrebne korektivne mjere.",
+    "part6Title": "VI. dio: Sigurnost",
+    "part6P1": "Pružatelj usluge predan je zaštiti povjerljivosti i cjelovitosti vaših podataka. Svi podaci koje Aplikacija prikupi šifriraju se tijekom prijenosa. Održavaju se fizičke, elektroničke i proceduralne zaštitne mjere radi zaštite podataka koje Pružatelj usluge obrađuje i zadržava. Kada se podaci prenose pružateljima usluga trećih strana, Pružatelj usluge poduzima razumne napore kako bi osigurao da je takvo dijeljenje ograničeno, vezano uz svrhu i podložno odgovarajućim ugovorima o obradi podataka.",
+    "part7Title": "VII. dio: Zahtjevi za brisanje podataka",
+    "part7P1": "Korisnici koji žele zatražiti brisanje svog računa i svih povezanih podataka mogu podnijeti zahtjev putem web stranice Seekprotocola na:",
+    "part7P2": "Zahtjevi za brisanje mogu se podnijeti i izravnim obraćanjem Pružatelju usluge na <email>support@seekprotocol.ai</email>. Pružatelj usluge obradit će sve zahtjeve za brisanje u razumnom roku.",
+    "part8Title": "VIII. dio: Izmjene ovih pravila",
+    "part8P1": "Ova Pravila privatnosti mogu se povremeno ažurirati iz bilo kojeg razloga. Pružatelj usluge obavijestit će vas o svim izmjenama ažuriranjem ove stranice novim Pravilima privatnosti i izmjenom datuma stupanja na snagu prikazanog na vrhu ovog dokumenta. Ako su izmjene bitne, Pružatelj usluge može korisnike obavijestiti i putem same Aplikacije. Savjetuje vam se da redovito pregledavate ova Pravila privatnosti. Nastavak korištenja Aplikacije nakon objave izmjena znači da ih prihvaćate.",
+    "consentTitle": "Vaša privola",
+    "consentP1": "Korištenjem Aplikacije pristajete na prikupljanje, korištenje i dijeljenje svojih podataka kako je opisano u ovim Pravilima privatnosti, u sadašnjem obliku i u obliku u kojem ih Pružatelj usluge ubuduće eventualno izmijeni.",
+    "contactTitle": "Kontakt",
+    "contactP1": "Ako imate pitanja o svojoj privatnosti tijekom korištenja Aplikacije ili o postupanju s podacima opisanom u ovim pravilima, obratite se Pružatelju usluge na:",
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, Ujedinjeni Arapski Emirati",
+    "metaTitle": "Pravila privatnosti",
+    "metaDescription": "Kako Seekprotocol postupa s podacima o lokaciji, očitanjima senzora i podacima o novčaniku: što se prikuplja, koliko se dugo čuva i što se nikad ne dijeli.",
+    "ogTitle": "Privatnost u Seekprotocolu",
+    "raspTitle": "Talsec freeRASP: sigurnosna dijagnostika",
+    "raspP1": "U verzijama s omogućenim freeRASP-om Talsec (Lynx SFT s.r.o.) prima sigurnosnu dijagnostiku aplikacije i operativnog sustava, podatke o modelu uređaja te identifikatore instance aplikacije i uređaja. Signali mogu uključivati rootanje, emulatore, neovlaštene izmjene aplikacije, debugiranje i hooking. Ova se dijagnostika šalje automatski dok radi omogućena verzija; neobavezne postavke analitike performansi ne isključuju je.",
+    "raspP2": "Talsec ove podatke koristi za sigurnosno izvještavanje, poboljšanje svojih besplatnih i komercijalnih sigurnosnih proizvoda te zbirno istraživanje. Talsec navodi da se obrada u oblaku odvija u Sjedinjenim Američkim Državama. Ne treba pretpostaviti da su identifikatori uređaja potpuno anonimni prema svim zakonima o privatnosti. Pravila o podacima Talseca pregledajte putem poveznice u nastavku.",
+    "raspP3": "Naš vlastiti backend također bilježi nazive prijetnji uz pokušaje prikupljanja, što se može povezati s vašim računom. Naša obrada povratnih poziva ne prenosi popis drugih instaliranih aplikacija. Riječ je o signalima koje prijavljuje uređaj i oni sami po sebi nisu dokaz prijevare.",
+    "eyebrow": "Pravno"
+  },
+  "termsPage": {
+    "title": "Uvjeti korištenja",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Na snazi od: 12. kolovoza 2025.",
+    "p1": "Ovi uvjeti korištenja primjenjuju se na aplikaciju Seekprotocol (u daljnjem tekstu \"Aplikacija\") za mobilne uređaje koju je izradio Block Protocol LLC (u daljnjem tekstu \"Pružatelj usluge\") kao besplatnu uslugu.",
+    "p2": "Preuzimanjem ili korištenjem Aplikacije automatski prihvaćate sljedeće uvjete. Snažno se preporučuje da ove uvjete temeljito pročitate i razumijete prije korištenja Aplikacije. Neovlašteno kopiranje ili mijenjanje Aplikacije, bilo kojeg njezinog dijela ili naših žigova strogo je zabranjeno. Nisu dopušteni nikakvi pokušaji izdvajanja izvornog koda Aplikacije, prevođenja Aplikacije na druge jezike ili izrade izvedenih verzija. Svi žigovi, autorska prava, prava na bazu podataka i druga prava intelektualnog vlasništva povezana s Aplikacijom ostaju vlasništvo Pružatelja usluge.",
+    "p3": "Pružatelj usluge posvećen je tome da Aplikacija bude što korisnija i učinkovitija. Stoga zadržava pravo izmijeniti Aplikaciju ili naplaćivati svoje usluge u bilo kojem trenutku i iz bilo kojeg razloga. Pružatelj usluge jamči da će vam sve naknade za Aplikaciju ili njezine usluge biti jasno priopćene.",
+    "p4": "Aplikacija pohranjuje i obrađuje osobne podatke koje ste dali Pružatelju usluge radi pružanja Usluge. Vaša je odgovornost održavati sigurnost svog telefona i pristupa Aplikaciji. Pružatelj usluge snažno savjetuje da ne radite jailbreak ili rootanje telefona, što uključuje uklanjanje softverskih ograničenja koja nameće službeni operativni sustav vašeg uređaja. Takve radnje mogu izložiti vaš telefon zlonamjernom softveru, virusima i štetnim programima, ugroziti sigurnosne značajke telefona i dovesti do toga da Aplikacija ne radi ispravno ili uopće ne radi.",
+    "thirdPartyIntro": "Imajte na umu da Aplikacija koristi usluge trećih strana koje imaju vlastite uvjete korištenja. U nastavku su poveznice na uvjete korištenja pružatelja usluga trećih strana koje Aplikacija koristi:",
+    "p6": "Imajte na umu da Pružatelj usluge ne preuzima odgovornost za određene aspekte. Neke funkcije Aplikacije zahtijevaju aktivnu internetsku vezu, putem Wi-Fi mreže ili vašeg mobilnog operatera. Pružatelj usluge ne može se smatrati odgovornim ako Aplikacija ne radi punim kapacitetom zbog nedostatka pristupa Wi-Fi mreži ili ako ste potrošili svoj podatkovni promet.",
+    "p7": "Ako Aplikaciju koristite izvan područja Wi-Fi mreže, imajte na umu da i dalje vrijede uvjeti ugovora s vašim mobilnim operaterom. Zbog toga vam mobilni operater može naplatiti podatkovni promet tijekom povezivanja s aplikacijom ili druge naknade trećih strana. Korištenjem aplikacije prihvaćate odgovornost za sve takve naknade, uključujući naknade za podatkovni roaming ako aplikaciju koristite izvan svog matičnog područja (tj. regije ili države) bez isključivanja podatkovnog roaminga. Ako niste platitelj računa za uređaj na kojem koristite aplikaciju, pretpostavlja se da ste dobili dopuštenje platitelja računa.",
+    "p8": "Isto tako, Pružatelj usluge ne može uvijek preuzeti odgovornost za način na koji koristite aplikaciju. Primjerice, vaša je odgovornost osigurati da vaš uređaj bude napunjen. Ako se baterija uređaja isprazni i ne možete pristupiti Usluzi, Pružatelj usluge ne može se smatrati odgovornim.",
+    "p9": "Što se tiče odgovornosti Pružatelja usluge za vaše korištenje aplikacije, važno je napomenuti da se, iako nastoji osigurati da aplikacija uvijek bude ažurna i točna, oslanja na treće strane koje mu dostavljaju informacije kako bi ih mogao učiniti dostupnima vama. Pružatelj usluge ne prihvaća nikakvu odgovornost za bilo kakav gubitak, izravan ili neizravan, koji pretrpite zbog potpunog oslanjanja na ovu funkcionalnost aplikacije.",
+    "p10": "Pružatelj usluge u nekom trenutku može htjeti ažurirati aplikaciju. Aplikacija je trenutno dostupna u skladu sa zahtjevima operativnog sustava, a ti se zahtjevi (kao i zahtjevi svih dodatnih sustava na koje se odluči proširiti dostupnost aplikacije) mogu promijeniti, pa ćete morati preuzeti ažuriranja ako želite nastaviti koristiti aplikaciju. Pružatelj usluge ne jamči da će aplikaciju uvijek ažurirati tako da vam bude relevantna i/ili kompatibilna s određenom verzijom operativnog sustava instaliranom na vašem uređaju. Međutim, pristajete uvijek prihvatiti ažuriranja aplikacije kada vam se ponude. Pružatelj usluge također može htjeti prestati pružati aplikaciju te može u bilo kojem trenutku prekinuti njezino korištenje bez obavijesti o prestanku. Ako vas ne obavijesti drukčije, po svakom prestanku (a) prava i licence koje su vam dodijeljene ovim uvjetima prestaju; (b) morate prestati koristiti aplikaciju i (ako je potrebno) izbrisati je sa svog uređaja.",
+    "changesTitle": "Izmjene ovih uvjeta korištenja",
+    "changesP1": "Pružatelj usluge povremeno može ažurirati svoje uvjete korištenja. Stoga vam se savjetuje da redovito provjeravate ovu stranicu radi eventualnih izmjena. Pružatelj usluge obavijestit će vas o svim izmjenama objavom novih uvjeta korištenja na ovoj stranici.",
+    "contactTitle": "Kontaktirajte nas",
+    "contactP1": "Ako imate pitanja ili prijedloge u vezi s uvjetima korištenja, slobodno se obratite Pružatelju usluge na <email>support@seekprotocol.ai</email>.",
+    "metaTitle": "Uvjeti korištenja",
+    "metaDescription": "Uvjeti korištenja Seekprotocola i platforme Seekprotocol: tvoja prava, pravila za preuzimanje imovine i kako funkcioniraju plaćeni predmeti.",
+    "ogTitle": "Uvjeti korištenja Seekprotocola",
+    "eyebrow": "Pravno"
+  },
+  "languageSwitcher": {
+    "en": "English",
+    "nl": "Nederlands",
+    "de": "Deutsch",
+    "es": "Español",
+    "fr": "Français",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "tr": "Türkçe"
+  },
+  "globe": {
+    "liveLabel": "Tragači uživo",
+    "panelTitle": "Tragači upravo skupljaju",
+    "panelDesc": "Svaka oznaka je stvaran grad. Dropovi padaju na fiksne koordinate i otključavaju se tek kad netko stvarno stoji tamo.",
+    "todayLabel": "Skupljeno danas",
+    "waiting": "Čekamo sljedeće preuzimanje…",
+    "dragHint": "Povuci za okretanje",
+    "xpLabel": "Zarađeni XP",
+    "clickHint": "Dodirni kovanicu da vidiš preuzimanje",
+    "seekerLabel": "Tragač",
+    "xpGained": "Dobiveni XP",
+    "coordsLabel": "Koordinate",
+    "verified": "Prisutnost potvrđena na chainu",
+    "all": "Sve",
+    "yourHaul": "Tvoj ulov",
+    "filterLabel": "Filtriraj po rijetkosti",
+    "waitingRarity": "Još nema preuzimanja rijetkosti {rarity}",
+    "catchChance": "Šansa za hvatanje",
+    "close": "Zatvori",
+    "secondsAgo": "prije {seconds} s",
+    "zoomIn": "Približi",
+    "zoomOut": "Udalji",
+    "busiest": "Trenutno najživlje",
+    "units": "Jedinice",
+    "zoomLabel": "Zum",
+    "hubsLabel": "Skoči u grad",
+    "wholeEarth": "Cijela Zemlja",
+    "zoomLevel": "Zum {percent} %",
+    "caught": "Uhvaćeno · +{xp, number} XP",
+    "escaped": "Pobjegla je · {percent} % u sljedećem pokušaju",
+    "tryCatch": "Pokušaj je uhvatiti",
+    "globeAria": "Interaktivni globus koji prikazuje aktivnost skupljanja na Seekprotocolu diljem svijeta"
+  },
+  "homeSteps": {
+    "placed": {
+      "title": "Nešto se postavi",
+      "meta": "Izdavač · bilo gdje na Zemlji",
+      "body": "Brend, projekt ili event pričvrsti imovinu na određene koordinate i odredi radijus iz kojeg se može preuzeti. Stoji tamo, vidljiva na mapi, dok netko ne dođe po nju."
+    },
+    "arrive": {
+      "title": "Ulaziš u domet",
+      "meta": "Zadani radijus 30 m",
+      "body": "Tvoj mobitel potvrđuje da si stvarno tamo: satelitski položaj, okolni radio signali, atestacija uređaja i trag tvog kretanja moraju se svi složiti. Lažirati jedan signal je lako; lažirati sve odjednom nije."
+    },
+    "collect": {
+      "title": "Pokupiš je",
+      "meta": "Namiruje se na vlastitom chainu imovine",
+      "body": "Podigni kameru, vidi imovinu usidrenu na ulici ispred sebe i uzmi je. Prijenos se namiruje na chainu za djelić centa i tvoja je."
+    }
+  },
+  "homeStats": {
+    "accuracy": {
+      "label": "Točnost preuzimanja"
+    },
+    "languages": {
+      "label": "Jezika"
+    },
+    "stores": {
+      "label": "Aktivne trgovine aplikacija"
+    }
+  },
+  "worldDescent": {
+    "hint": "Nastavi skrolati",
+    "bannerDistance": "84 m od tebe",
+    "orbit": {
+      "label": "Orbita",
+      "title": "Svaki drop je koordinata",
+      "body": "Imovina se objavljuje na točke na planetu, ne u feed. Odavde gore to je cijela mreža: nekoliko tisuća mjesta na kojima nešto čeka."
+    },
+    "descent": {
+      "label": "Spuštanje",
+      "title": "Padamo prema jednom od njih",
+      "body": "Odaberi bilo koju od tih točaka i kreni. Protokolu nije važno koju, samo da stojiš tamo kad je preuzimaš."
+    },
+    "street": {
+      "label": "Razina ulice",
+      "title": "Ovo je ista mapa, četiristo kilometara bliže",
+      "body": "Zgrade preko kojih letiš upravo su one između tebe i dropa. Udaljenost je cijela mehanika, pa mapa mora biti prava."
+    },
+    "hand": {
+      "label": "U tvojoj ruci",
+      "title": "I stane u mobitel",
+      "body": "Ništa nije zamijenjeno. Prikaz kroz koji si upravo proletio je ono što aplikacija iscrtava, s vlastitim kontrolama na vrhu."
+    }
+  },
+  "appChrome": {
+    "home": "Početna",
+    "map": "Mapa",
+    "quests": "Misije",
+    "wallet": "Novčanik",
+    "backToMap": "‹ Mapa",
+    "tapCoin": "Dodirni kovanicu",
+    "distanceAway": "{metres} m od tebe"
+  },
+  "arSection": {
+    "eyebrow": "Proširena stvarnost",
+    "hint": "Nastavi skrolati",
+    "see": {
+      "label": "Kamera gleda",
+      "title": "Kamera ne vidi ulicu",
+      "body": "Vidi svjetlinu koja se mijenja preko mreže. Prije nego se išta može bilo gdje postaviti, prizor treba pretvoriti u nešto sa strukturom, a u ovom trenutku strukture nema.",
+      "readout": "KADAR 1/60 · BEZ PRAĆENJA"
+    },
+    "track": {
+      "label": "Značajke se izdvajaju",
+      "title": "Svijet je sazdan od kutova",
+      "body": "Točke u kojima se svjetlina mijenja u dva smjera odjednom preživljavaju pokret, pa ih engine zadržava, a ostalo odbacuje. Prati ih dovoljno kroz dovoljno kadrova i mobitel zna kako se pomaknuo.",
+      "readout": "PRAĆENJE · 2.412 ZNAČAJKI"
+    },
+    "plane": {
+      "label": "Pronađena je ploha",
+      "title": "Nešto na čemu se može stajati",
+      "body": "Značajke koje dijele površinu grupiraju se u plohu. To je trenutak kad drop prestaje biti slika na ekranu i postaje predmet s mjestom na kojem može stajati.",
+      "readout": "PLOHA OTKRIVENA · 6,0 × 6,0 M"
+    },
+    "anchor": {
+      "label": "Sidro se postavlja",
+      "title": "Pričvršćeno za svijet, ne za mobitel",
+      "body": "Drop je vezan za taj komadić geometrije i za koordinatu na kojoj je objavljen. Obiđi ga i ostaje gdje je bio. Dvije osobe na istom mjestu vide ga na istom mjestu.",
+      "readout": "SIDRO ZAKLJUČANO · 52.3702 N 4.8952 E"
+    },
+    "persist": {
+      "label": "Ostaje",
+      "title": "Tu je i sutra",
+      "body": "Sidro se sprema uz lokaciju, a ne uz sesiju, pa ga zatvaranje aplikacije ne pomiče. Upravo ta postojanost razlikuje AR igračku od AR protokola.",
+      "readout": "SIDRO SPREMLJENO · NEOVISNO O SESIJI"
+    }
+  },
+  "mobiSection": {
+    "title": "Suputnik koji vidi ono što ti vidiš",
+    "lead": "Pitaj naglas i Mobi čita ulicu kroz kameru: znamenitosti, radno vrijeme, u kojem je smjeru drop. Radi na uređaju gdje god može i nikad ne čuva trag o tome gdje si bio.",
+    "tapHint": "Dodirni Mobija",
+    "tapAgain": "{label} · dodirni ponovno",
+    "tapAria": "Mobi: {state}. Dodirni za nastavak.",
+    "points": [
+      "Glas unutra, glas van, slobodne ruke dok hodaš",
+      "Čita znamenitosti i natpise iz kamere uživo",
+      "Misije koje se prilagođavaju tome kako i gdje igraš"
+    ],
+    "listening": {
+      "label": "Sluša",
+      "line": "Do čega se ovdje isplati prošetati?"
+    },
+    "thinking": {
+      "label": "Čita ulicu",
+      "line": "Uspoređujem ono što kamera vidi sa spawnovima u blizini…"
+    },
+    "answering": {
+      "label": "Odgovara",
+      "line": "Dvije ulice gore, iza tržnice, je legendarna. Šest minuta tvojim tempom, a zatvara se u šest."
+    },
+    "idle": {
+      "label": "Mirovanje",
+      "line": "Čeka. Ništa se ne snima."
+    }
+  },
+  "socialSection": {
+    "eyebrow": "Zajedno",
+    "title": "Pola svega je s kim ideš",
+    "lead": "Klanovi skupljaju ono što svi pokupe. Chat je šifriran od kraja do kraja, s porukama koje nestaju kad razgovor ne treba nadživjeti sam sebe. A kad nekoga dovedeš, dobivaš udio u onome što pronađe.",
+    "points": [
+      "Direktne i klanske poruke, šifrirane od kraja do kraja",
+      "Power-upovi i savjeti koje prijatelji dijele",
+      "Nagrade za preporuke koje isplaćuju dok oni igraju"
+    ],
+    "online": "{count} online",
+    "encrypted": "Šifrirano",
+    "composer": "Poruka",
+    "disappearing": "Poruke koje nestaju",
+    "yourCode": "Tvoj kod",
+    "copy": "Kopiraj",
+    "copied": "Kopirano",
+    "spot": {
+      "text": "Legendarna se upravo spawnala kod tržnice. Dvije ulice od tramvajske stanice."
+    },
+    "coming": {
+      "text": "Stižem. Ima li netko još magnet?"
+    },
+    "sent": {
+      "text": "Poslao sam ti dva. Diamond Hands čuvaj za leak."
+    },
+    "missed": {
+      "text": "Pun krug i opet je pobjegla. Još dva pokušaja."
+    },
+    "invited": {
+      "label": "Pozvani"
+    },
+    "active": {
+      "label": "Aktivni"
+    },
+    "share": {
+      "label": "Tvoj udio"
+    }
+  },
+  "videoReveal": {
+    "mute": "Isključi zvuk filma",
+    "unmute": "Pusti film sa zvukom"
+  },
+  "featureGroups": {
+    "eyebrow": "Što je unutra",
+    "title": "Više od mape s kovanicama",
+    "tablist": "Skupine funkcija",
+    "hunt": {
+      "label": "Lov",
+      "items": [
+        {
+          "title": "Spawnovi na stvarnim koordinatama",
+          "body": "Dropovi se pojavljuju na fiksnim točkama oko tebe i ostaju tamo dok ih netko ne preuzme. Označi jedan i aplikacija odbrojava udaljenost dok hodaš."
+        },
+        {
+          "title": "Postojana AR hvatanja",
+          "body": "Kovanica se sidri za tlo ispred tebe i ostaje usidrena između sesija, pa je na istom mjestu za svakoga tko dođe do nje."
+        },
+        {
+          "title": "Power-upovi i tajming",
+          "body": "Magnet, dvostruko i zamrzavanje slažu se na jedno hvatanje. Traka tajminga odlučuje koliko dropa zadržavaš, jer loše uhvaćena legendarna i dalje je loše uhvaćena legendarna."
+        },
+        {
+          "title": "Rijetkost koja nešto znači",
+          "body": "Od obične do legendarne, a rijetkost određuje boju prstena na mapi i prije nego što se uopće približiš."
+        }
+      ]
+    },
+    "progress": {
+      "label": "Napredak",
+      "items": [
+        {
+          "title": "Deset rangova, zarađenih hodanjem",
+          "body": "Od Seekera do Legenda. Rang dolazi od prijeđene udaljenosti i posjećenih mjesta, ne od onoga što si potrošio."
+        },
+        {
+          "title": "Šezdeset i jedna značka",
+          "body": "Cijeli kolekcionarski set, od Diamond Hands do On-Chain Detective, svaka s vlastitim uvjetom za otključavanje."
+        },
+        {
+          "title": "Game Center i Play Games",
+          "body": "Postignuća se sinkroniziraju s platformom koju već koristiš, pa su nizovi i prekretnice uz ostatak tvojih igara."
+        },
+        {
+          "title": "Nizovi i dnevne misije",
+          "body": "Misije koje se prilagođavaju tome gdje si i kako igraš, a nagrada raste dok niz traje."
+        }
+      ]
+    },
+    "together": {
+      "label": "Zajedno",
+      "items": [
+        {
+          "title": "Klanovi",
+          "body": "Pridruži se klanu ili ga osnuj, udružite doprinose i penjite se na ljestvici klanova. Uključeni su amblemi, rangovi i zajednički nagradni fondovi."
+        },
+        {
+          "title": "Šifrirani chat",
+          "body": "Direktne i klanske poruke, šifrirane od kraja do kraja, s porukama koje nestaju kad razgovor ne treba nadživjeti sam sebe."
+        },
+        {
+          "title": "Ljestvice",
+          "body": "Globalne, nacionalne i klanske, s medaljama za prva tri mjesta i tablicom koja se ažurira dok ljudi hodaju."
+        },
+        {
+          "title": "Preporuke",
+          "body": "Dovedi ljude i zarađuj udio u onome što skupe. Tvoj kod je prvo na ekranu, jer si po njega i došao."
+        }
+      ]
+    },
+    "own": {
+      "label": "Posjeduj",
+      "items": [
+        {
+          "title": "Novčanik bez seed phrasea",
+          "body": "Izrađuje se preko društvene prijave, pa možeš skupljati već minutu nakon instalacije. Izvezi ključ kad god želiš sam čuvati imovinu."
+        },
+        {
+          "title": "Season Pass",
+          "body": "Sezonski niz nagrada koji teče uz uobičajenu igru, s besplatnom i plaćenom razinom."
+        },
+        {
+          "title": "Trgovina",
+          "body": "Power-upovi, kozmetika i dijelovi avatara, s cijenama u onome što si skupio, a ne samo u onome što možeš kupiti."
+        },
+        {
+          "title": "3D avatari",
+          "body": "Potpuni avatari kompatibilni s Decentralandom, s animacijama i emotikonima, a ne izrezana profilna fotografija."
+        }
+      ]
+    }
+  },
+  "progression": {
+    "eyebrow": "Napredak",
+    "title": "Deset rangova, šezdeset i jedna značka i ništa od toga ne možeš kupiti",
+    "lead": "Rang dolazi od prijeđene udaljenosti i posjećenih mjesta. Sve na ovom zidu zarađuje se izlaskom van.",
+    "badgeAlt": "Značka ranga {name}",
+    "rankOf": "Rang {tier} od {total}",
+    "rankTablist": "Razine rangova",
+    "badgesTitle": "Kolekcionarske značke",
+    "badgesShown": "Prikazano {shown} od {total}",
+    "achievementsTitle": "Postignuća"
+  },
+  "ranks": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "scout": {
+      "name": "Scout"
+    },
+    "tracker": {
+      "name": "Tracker"
+    },
+    "hunter": {
+      "name": "Hunter"
+    },
+    "pathfinder": {
+      "name": "Pathfinder"
+    },
+    "ranger": {
+      "name": "Ranger"
+    },
+    "sentinel": {
+      "name": "Sentinel"
+    },
+    "apex": {
+      "name": "Apex"
+    },
+    "mythic": {
+      "name": "Mythic"
+    },
+    "legend": {
+      "name": "Legend"
+    }
+  },
+  "badges": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "web3Wizard": {
+      "name": "Web3 Wizard"
+    },
+    "whale": {
+      "name": "Whale"
+    },
+    "bull": {
+      "name": "Bull"
+    },
+    "detective": {
+      "name": "On-Chain Detective"
+    },
+    "samurai": {
+      "name": "Degen Samurai"
+    },
+    "liquidityKing": {
+      "name": "Liquidity King"
+    }
+  },
+  "achievements": {
+    "firstCatch": {
+      "name": "Prvi ulov",
+      "detail": "Pokupi svoj prvi drop"
+    },
+    "explorer": {
+      "name": "Istraživač",
+      "detail": "Skupljaj na 50 različitih mjesta"
+    },
+    "legendary": {
+      "name": "Legendarno",
+      "detail": "Uhvati legendarni spawn"
+    },
+    "rareHunter": {
+      "name": "Lovac na rijetke",
+      "detail": "250 rijetkih ulova"
+    },
+    "streak": {
+      "name": "Niz od trideset dana",
+      "detail": "Igraj 30 dana zaredom"
+    },
+    "clanFounder": {
+      "name": "Osnivač klana",
+      "detail": "Osnuj vlastiti klan"
+    }
+  },
+  "clans": {
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "laserEyes": {
+      "name": "Laser Eyes"
+    },
+    "megaWhales": {
+      "name": "Mega Whales"
+    },
+    "moonSquad": {
+      "name": "Moon Squad"
+    },
+    "alphaWolves": {
+      "name": "Alpha Wolves"
+    },
+    "yieldFarmers": {
+      "name": "Yield Farmers"
+    },
+    "anonCabal": {
+      "name": "Anon Cabal"
+    },
+    "bullRunners": {
+      "name": "Bull Runners"
+    }
+  },
+  "clansSection": {
+    "eyebrow": "Klanovi",
+    "title": "Nitko ne pokriva grad sam",
+    "lead": "Osnuj klan ili se pridruži jednom, udružite sve što skupite i penjite se na ljestvici zajedno. Chat je šifriran od kraja do kraja, a poruke se mogu postaviti da nestanu kad razgovor ne treba nadživjeti sam sebe.",
+    "statClans": "Klanovi osnivači",
+    "statChat": "Šifrirani chat",
+    "statRanks": "Rangovi klanova",
+    "tableTitle": "Ljestvica klanova",
+    "thisSeason": "Ova sezona",
+    "rankAlt": "Rang {rank}"
+  },
+  "rarity": {
+    "common": "Obična",
+    "uncommon": "Neobična",
+    "rare": "Rijetka",
+    "epic": "Epska",
+    "legendary": "Legendarna"
+  },
+  "powerups": {
+    "coin_magnet": {
+      "label": "Magnet spawnova",
+      "effect": "Oko tebe se pojavljuje više kovanica"
+    },
+    "diamond_hands": {
+      "label": "Diamond Hands",
+      "effect": "Uhvati jednu kovanicu izdaleka"
+    },
+    "pump_it": {
+      "label": "Pump It",
+      "effect": "Jedna dodatna kutija karata danas"
+    },
+    "to_the_moon": {
+      "label": "To the Moon",
+      "effect": "Trostruki XP 30 minuta"
+    },
+    "whale": {
+      "label": "Whale",
+      "effect": "Privlači spawnove na tvoje mjesto"
+    },
+    "this_is_fine": {
+      "label": "This Is Fine",
+      "effect": "Čuva promašenu kovanicu za tebe"
+    }
+  },
+  "collectiblesSection": {
+    "eyebrow": "Kolekcionarski predmeti",
+    "title": "Ovo su kovanice koje su vani",
+    "lead": "Rijetkost određuje koliko se često jedna pojavi i kolike su šanse da je zadržiš. Uhvaćena jedinica je jedinica igre. Koliko se za nju isplati u stvarnim tokenima, stvar je tržišta.",
+    "filterLabel": "Filtriraj po rijetkosti",
+    "all": "Sve",
+    "catchChance": "Šansa za hvatanje",
+    "overThree": "U 3 pokušaja",
+    "perUnit": "Po jedinici",
+    "powerupsTitle": "Power-upovi koji mijenjaju rundu"
+  },
+  "offers": {
+    "railLabel": "Formati dropova",
+    "redeemLabel": "Kako se iskorištava",
+    "proofLabel": "Što ga čini valjanim",
+    "voucher": {
+      "label": "Vaučer za popust",
+      "headline": "Popust, na vratima koja su ti ga dala",
+      "face": "25 % popusta",
+      "fine": "Jedan po osobi · Vrijedi 14 dana · Samo u trgovini",
+      "redeem": "Kod se pokaže na blagajni i označi kao iskorišten. Ne može se proslijediti jer je izdan uređaju koji je stajao unutar radijusa.",
+      "proof": "Preuzimanje je na chainu zajedno s koordinatom na kojoj je napravljeno, pa se iskorištenje može provjeriti prema stvarnom dolasku, a ne prema screenshotu.",
+      "placedBy": "Maloprodaja i ugostiteljstvo"
+    },
+    "asset": {
+      "label": "Imovina iz stvarnog svijeta",
+      "headline": "Fizička stvar koja čeka na nekom mjestu",
+      "face": "Par tenisica",
+      "fine": "1 od 250 · Preuzimanje u trgovini · Vrijedi dok ima zaliha",
+      "redeem": "Vlasnik sam preuzima predmet. Token je pravo na njega i spaljuje se pri predaji, pa se isti par ne može preuzeti dvaput.",
+      "proof": "Zalihe su ograničene, a preuzimanje je zaključavanje, a ne samo provjera, pa dvjema osobama koje posegnu za posljednjim ne može se obje reći da su ga dobile.",
+      "placedBy": "Brendovi koji imaju nešto za pokloniti"
+    },
+    "access": {
+      "label": "Propusnica",
+      "headline": "Ulaznica je to što si na lokaciji",
+      "face": "Ulaz B · 19:00",
+      "fine": "Neprenosivo · Istječe na kraju eventa",
+      "redeem": "Skenira se na ulazu kao i svaka druga propusnica. Razlika je u tome što se mogla dobiti samo na licu mjesta, i upravo zato ju je vrijedno izdati.",
+      "proof": "Dropovi visoke vrijednosti postavljaju strog prag pouzdanosti, pa se radio okruženje mora složiti s položajem prije nego se drop otpusti.",
+      "placedBy": "Eventi, lokacije i festivali"
+    },
+    "token": {
+      "label": "Token drop",
+      "headline": "Distribucija čije farmanje nešto košta",
+      "face": "40 $SEEK",
+      "fine": "Jedno preuzimanje po uređaju · Namiruje se na vlastitom chainu",
+      "redeem": "Stiže u novčanik koji ti je aplikacija izradila i tvoj je, možeš ga držati, premjestiti ili prodati. Ništa za iskoristiti i nikoga za pitati.",
+      "proof": "Novčanik se izrađuje besplatno, a šetnja ne. Geografija je filtar kroz koji se airdrop ne može jeftino farmati.",
+      "placedBy": "Token projekti i zajednice"
+    },
+    "collectible": {
+      "label": "Kolekcionarski predmet",
+      "headline": "Nešto što postoji samo tamo gdje je postavljeno",
+      "face": "Rijetka",
+      "fine": "Serija od 500 · Može se razmijeniti · Rijetkost fiksirana pri izdavanju",
+      "redeem": "Ništa za iskoristiti. To je zapis da si negdje bio, a to je najstariji razlog zbog kojeg je itko ikad išta čuvao.",
+      "proof": "Svaki nosi koordinatu na kojoj je preuzet, pa je set koji netko drži mapa mjesta na kojima je stvarno bio.",
+      "placedBy": "Gradovi, turističke zajednice, umjetnici"
+    }
+  },
+  "rewards": {
+    "eyebrow": "Nagrade",
+    "title": "Na koordinati može čekati bilo što",
+    "lead": "Kovanica je verzija koju svi zamišljaju, a najmanje je zanimljiva. Protokolu nije važno što je u kutiji: ako se može dati osobi, može se dati i mjestu, a netko mora prošetati tamo da to uzme.",
+    "railLabel": "Odaberi vrstu nagrade",
+    "phoneAlt": "Aplikacija Seekprotocol prikazuje event uživo i nagrade koje dijeli",
+    "liveChip": "Event uživo",
+    "participateLabel": "Sudjeluj u eventu uživo",
+    "alertTitle": "Tajanstvena nagrada u blizini",
+    "alertBody": "301 m od tebe i aktivna do 21 h. Dobiva je onaj tko prvi stigne.",
+    "alertSeekers": "Drugi tragači su u pokretu",
+    "foundLabel": "Pronašao si je",
+    "foundWhere": "Champ de Mars · prehodano 301 m",
+    "foundFine": "Preuzeto po dolasku i namireno na chainu. U tvom je novčaniku.",
+    "foundAlt": "Osvajanje nagrade na mapi",
+    "mapCredit": "© Mapbox © OpenStreetMap",
+    "items": {
+      "seek": "$SEEK",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "bnb": "BNB",
+      "hyperliquid": "Hyperliquid",
+      "berachain": "Berachain",
+      "dogecoin": "Dogecoin",
+      "pepe": "PEPE",
+      "babydoge": "Baby Doge",
+      "spx6900": "SPX6900",
+      "toshi": "Toshi",
+      "turbo": "Turbo",
+      "nft": "Tajanstveni NFT",
+      "voucher": "Vaučer za trgovinu",
+      "food": "Vaučer za hranu",
+      "barcode": "Propusnica za event",
+      "console": "PlayStation 5",
+      "handheld": "Ručna konzola",
+      "shoes": "Tenisice iz limitirane serije"
+    },
+    "proofNote": "Što god bilo u kutiji, ono što sprječava da je preuzme netko tko nikad nije bio tamo uvijek je isto: prisutnost, ocijenjena prema četiri neovisna signala u trenutku preuzimanja.",
+    "categories": {
+      "tokens": {
+        "label": "Tokeni",
+        "headline": "Bilo koji token, na bilo kojem chainu",
+        "body": "Ethereum, Solana, BNB Smart Chain i mreže nakon njih. Izdavač financira kampanju u tokenu koji već drži, a namiruje se tamo gdje taj token živi, pa nitko ne mora ništa bridgeati da bi sudjelovao."
+      },
+      "memes": {
+        "label": "Memecoini",
+        "headline": "Lansiranja za koja nitko nema kanal",
+        "body": "Memecoin ima publiku, ali nema način da je dosegne osim airdrop farme. Kad se ponuda stavi na stvarne ulice, dolazi pred ljude koji su izašli zbog nje, a svako preuzimanje je osoba, a ne adresa."
+      },
+      "nfts": {
+        "label": "NFT-ovi",
+        "headline": "Mintano tamo gdje si stajao",
+        "body": "Kolekcionarski predmet koji nosi koordinatu s koje potječe drukčiji je predmet od onoga mintanog s kauča. Izdanje se može vezati uz grad, lokaciju ili jedna jedina vrata, a zapis o tome gdje je koji preuzet je javan."
+      },
+      "vouchers": {
+        "label": "Vaučeri",
+        "headline": "Popust, na blagajni",
+        "body": "Format koji trgovačka ulica stvarno želi. Kod koji se otvara samo na vratima, iskoristi ga na blagajni netko tko je ušao, a računa se kao dolazak, a ne kao prikaz koji je možda doveo do njega."
+      },
+      "goods": {
+        "label": "Stvarna roba",
+        "headline": "Stvari koje stignu u kutiji",
+        "body": "Konzola, par tenisica, komad opreme. Preuzimanje je na chainu, a isporuka je obična logistika, pa brend može staviti nešto fizičko na kraj šetnje bez da išta gradi za to."
+      },
+      "events": {
+        "label": "Eventi uživo",
+        "headline": "Sve to, dok event traje",
+        "body": "Festival, utakmica ili konferencija postaju privremeni sloj nagrada koji istječe zajedno s eventom. Dolazak ih otključava, pa nagradni fond stiže do ljudi koji su stvarno bili tamo, a blagajna su vrata."
+      }
+    }
+  },
+  "distribution": {
+    "eyebrow": "Distribucija",
+    "title": "Doseg je lako kupiti, a nemoguće mu vjerovati",
+    "lead": "Svaki kanal koji lansiranje može kupiti prodaje istu stvar: broj koji skripta može proizvesti. Prikazi, klikovi, pratitelji, novčanici: sve se to u velikim količinama proizvodi za djelić centa. Prisutnost je jedina interakcija koju nitko nije automatizirao, jer nitko nije napisao bota koji hoda.",
+    "failureTag": "Što kupuješ",
+    "answerTag": "Što ovdje dobivaš",
+    "failures": {
+      "bots": "Plaćeni promet dolazi iz podatkovnih centara i farmi klikova. Plaćaš po prikazu, a znatan dio njih nikad nije ni prikazan stvarnoj osobi.",
+      "farms": "Airdrop preuzimaju novčanici, a novčanik ne košta ništa. Jedan farmer sa skriptom postaje četrdeset tisuća adresa koje ispunjavaju uvjete, a tokeni završe daleko od ljudi kojima su bili namijenjeni.",
+      "unaudited": "Brojke angažmana prijavljuje platforma koja ih prodaje. Praćenje, pregled ili modelirani posjet trgovini ne mogu se revidirati, pa se kampanja ocjenjuje brojem u koji moraš vjerovati na riječ."
+    },
+    "answers": {
+      "bots": "Preuzimanje je uređaj koji je stajao na koordinati, a njegov satelitski položaj, radio okruženje i trag kretanja se slažu. Ne postoji serverska verzija toga da si negdje bio.",
+      "farms": "Jedno preuzimanje po uređaju unutar radijusa i vremenskog okvira. Drugo preuzimanje znači drugo putovanje, a nitko nije u četrdeset gradova odjednom.",
+      "unaudited": "Svako preuzimanje je javni zapis: koordinata, vrijeme, imovina. Prebroji ih sam na block exploreru umjesto da nas pitaš za brojku."
+    },
+    "askLegend": "Što želiš da naprave?",
+    "askNote": "Protokol potvrđuje da je osoba bila tamo. Što mora napraviti da zaradi nagradu, određuješ ti, a ništa od toga ne mijenja provjeru ispod.",
+    "actions": {
+      "visit": {
+        "label": "Ulazak u trgovinu",
+        "headline": "Preuzmi na blagajni",
+        "body": "Drop je na samim vratima, s radijusom toliko uskim da ga može otvoriti samo mobitel na blagajni. Kod koji se iskoristi pripada nekome tko je ušao.",
+        "button": "Preuzmi u trgovini",
+        "recorded": "Potvrđen dolazak na tvoju adresu, s vremenskom oznakom trenutka preuzimanja."
+      },
+      "follow": {
+        "label": "Praćenje računa",
+        "headline": "Zaprati za otključavanje",
+        "body": "Imovina ostaje zaključana dok se račun ne zaprati, a praćenje se računa samo s uređaja unutar radijusa. Farma može proizvesti praćenje. Ne može proizvesti šetnju.",
+        "button": "Zaprati i preuzmi",
+        "recorded": "Praćenje iza kojeg stoji potvrđen posjet, pripisano lokaciji na kojoj se dogodilo."
+      },
+      "signup": {
+        "label": "Prijava ili upis na listu",
+        "headline": "Prijavi se na licu mjesta",
+        "body": "Jedno polje, ispunjeno tamo gdje je drop. Svaka adresa na listi pripada osobi koja je stajala kod tvoje kampanje dok ju je upisivala.",
+        "button": "Prijavi se i preuzmi",
+        "recorded": "Prijava iza koje stoji potvrđen dolazak, jedina vrsta koju se isplati platiti."
+      },
+      "scan": {
+        "label": "Skeniranje proizvoda",
+        "headline": "Skeniraj ga na polici",
+        "body": "Usmjeri kameru na proizvod umjesto na oznaku. Skeniranje se mora dogoditi unutar radijusa, pa nagrada stiže do osobe koja stvarno drži proizvod.",
+        "button": "Skeniraj i preuzmi",
+        "recorded": "Skeniranje jednog proizvoda u jednoj trgovini, računano po artiklu, a ne po kampanji."
+      },
+      "mint": {
+        "label": "Mintanje na licu mjesta",
+        "headline": "Minti tamo gdje stojiš",
+        "body": "Kolekcionarski predmet minta se na koordinati i nosi je sa sobom. Njegova kasnija vrijednost ima veze s tim odakle je došao, a to mint stranica ne može reći.",
+        "button": "Minti ovdje",
+        "recorded": "Mint vezan uz mjesto i trenutak, na chainu na kojem živi kolekcija."
+      }
+    },
+    "dropStatus": "Uživo",
+    "dropWhere": "Kalverstraat 92, Amsterdam · radijus 25 m",
+    "dropFine": "Jedno preuzimanje po uređaju · Potvrđuje se po dolasku",
+    "recordedLegend": "Što dobivaš natrag",
+    "recordedNever": "Brojke po lokaciji, vremenu i kampanji. Nikad pojedinac i nikad trag o tome kamo je otišao dalje.",
+    "chainsLegend": "Bilo koji izvor, bilo koji blockchain",
+    "chainsNote": "Izvor je svatko tko može nešto izdati: projekt, brend, lokacija, dućan na uglu. Mreža je redak u tablici, a ne izdanje, pa jedna kampanja može raditi na više njih odjednom, a tragač nikad ne mora birati. Solana se namiruje već danas; sljedeća je samo konfiguracija.",
+    "chainsCoinsAlt": "3D kovanice koje se vrte za chainove na kojima Seekprotocol radi",
+    "chainAny": "Bilo koji drugi chain"
+  },
+  "walkthrough": {
+    "eyebrow": "Prođi kroz to",
+    "title": "Ovo je cijeli krug",
+    "lead": "Ne video aplikacije. Ovo su njezina vlastita pravila, pokrenuta ovdje. Dodirni spawn na mapi i nastavi od tamo.",
+    "startOver": "Kreni ispočetka",
+    "map": {
+      "label": "Mapa",
+      "title": "Sve u blizini, točno tamo gdje stvarno jest",
+      "body": "Spawnovi su na fiksnim koordinatama i ostaju tamo dok ih netko ne preuzme. Dodirni jedan da vidiš što je i koliko moraš hodati."
+    },
+    "spawn": {
+      "label": "Spawn",
+      "title": "Rijetkost ti govori prema čemu hodaš",
+      "body": "Od obične do legendarne, svaka sa svojom šansom za hvatanje. Imaš dva pokušaja, a drugi vrijedi 0,65 prvog, pa prvi dodir najviše znači."
+    },
+    "catch": {
+      "label": "Hvatanje",
+      "title": "Dodiruj za punjenje i drži živce",
+      "body": "Prsten se puni dok dodiruješ. Svaku rundu ili dvije nešto prekida: kugla se zamrzne, punjenje počne curiti ili se otvori val u kojem se dodiri računaju dvostruko."
+    },
+    "result": {
+      "label": "Bacanje",
+      "title": "Punjenje kupuje šansu, ne sigurnost",
+      "body": "Pun prsten na legendarnoj i dalje je jedan prema pet. Upravo to čini legendarnu vrijednom, i zato dodir nešto odlučuje."
+    },
+    "wallet": {
+      "label": "Tvoje",
+      "title": "Stiže u novčanik koji nikad nisi morao postavljati",
+      "body": "Izrađuje se preko društvene prijave, pa novi igrač nešto skupi već u prvoj minuti. Izvezi ključ kad god želiš sam čuvati imovinu."
+    }
+  },
+  "spawnScreen": {
+    "back": "‹ Mapa",
+    "distance": "Udaljenost",
+    "inRange": "U dometu",
+    "thisAttempt": "Ovaj pokušaj",
+    "attemptsLeft": "Preostali pokušaji",
+    "attemptsOf": "{left} od {total}",
+    "note": "Punjenje prstena ovo podiže. Sljedeći pokušaj vrijedi 0,65 prvog.",
+    "cta": "Uhvati je"
+  },
+  "catchScreen": {
+    "attempt": "Pokušaj {attempt} od {total}",
+    "tapAria": "Dodirni za punjenje",
+    "sealAria": "Zakrpaj pukotinu",
+    "ringFull": "Prsten je pun, drži",
+    "tapPrompt": "Dodirni kovanicu",
+    "mechanic": {
+      "freeze": "Zamrznuto, nastavi dodirivati da se otopi",
+      "leak": "Curi, zakrpaj pukotine",
+      "surge": "Val, svaki dodir računa se dvostruko"
+    }
+  },
+  "resultScreen": {
+    "caught": "Uhvaćeno",
+    "escaped": "Pobjegla je",
+    "ringCharged": "Prsten napunjen",
+    "chance": "Šansa u ovom pokušaju",
+    "xp": "XP",
+    "gameValue": "Vrijednost u igri",
+    "noteCaught": "Uhvaćena jedinica je jedinica igre. Koliko se za nju isplati u stvarnim tokenima, stvar je tržišta.",
+    "noteRetry": "Još jedan pokušaj, vrijedi 0,65 prvog.",
+    "noteGone": "Taj spawn je nestao. Uskoro stiže drugi.",
+    "openWallet": "Otvori novčanik",
+    "tryAgain": "Pokušaj ponovno",
+    "backToMap": "Natrag na mapu"
+  },
+  "walletScreen": {
+    "totalBalance": "Ukupni saldo",
+    "delta": "+ {amount} danas",
+    "deposit": "Uplati",
+    "send": "Pošalji",
+    "exchange": "Zamijeni",
+    "qr": "QR",
+    "justCaught": "Upravo uhvaćeno",
+    "assets": "Imovina",
+    "recentBadges": "Nedavne značke"
+  },
+  "dropKinds": {
+    "airdrop": "Airdrop",
+    "quest": "Nagrada za misiju",
+    "partner": "Partnerski drop",
+    "event": "Token eventa",
+    "cache": "Ulična skrivalica"
+  },
+  "ecosystemPage": {
+    "metaTitle": "Ekosustav: tragači, izdavači, protokol",
+    "metaDescription": "Kako se ekosustav Seekprotocola slaže: tragači koji skupljaju, izdavači koji postavljaju i protokol koji potvrđuje prisutnost i namiruje je na chainu.",
+    "ogTitle": "Tri strane, jedna koordinata",
+    "eyebrow": "Ekosustav",
+    "titleStart": "Tri strane, jedna",
+    "titleAccent": "koordinata",
+    "lead": "Netko postavi imovinu. Netko otputuje do nje. Protokol potvrdi da je stvarno bio tamo i namiri je. Sve ostalo su detalji iznad tog kruga.",
+    "networkEyebrow": "Mreža",
+    "networkTitle": "Svaka oznaka je stvarno mjesto",
+    "networkLead": "Povuci globus. Koordinate su stvarni položaji gradova, a svaki luk je drop koji putuje između njih.",
+    "capabilitiesEyebrow": "Mogućnosti",
+    "capabilitiesTitle": "Što protokol zapravo pruža",
+    "faqEyebrow": "Pitanja",
+    "faqTitle": "Ona koja vrijedi postaviti",
+    "faqLead": "Uključujući i ona s neugodnim odgovorima.",
+    "ctaEyebrow": "Dublje",
+    "ctaTitle": "Tehnički opis",
+    "ctaBody": "Proof of location, arhitektura, dizajn tokena i iskren popis napada od kojih se branimo i ograničenja koja prihvaćamo.",
+    "ctaWhitepaper": "Pročitaj whitepaper",
+    "ctaBusiness": "Postavi vlastitu imovinu",
+    "polCtaEyebrow": "Proof of location",
+    "polCtaTitle": "Prisutnost, potvrđena",
+    "polCtaBody": "Četiri neovisna signala moraju se složiti prije nego se zahtjev prihvati. Objašnjenje jednostavnim jezikom nalazi se na blogu.",
+    "polCtaLink": "Kako funkcionira proof of location"
+  },
+  "participants": {
+    "seekers": {
+      "label": "Tragači",
+      "tag": "Potražnja",
+      "title": "Ljudi koji odu po to",
+      "body": "Svatko s aplikacijom. Hodaju, pronalaze stvari i zadržavaju ono što skupe. Ne pretpostavlja se nikakvo prethodno znanje o kriptu: novčanik se izrađuje preko društvene prijave, a kasnije ga može izvesti svatko tko želi sam čuvati imovinu.",
+      "gets": [
+        "Tokene, NFT-ove i partnerske nagrade",
+        "Misije koje se prilagođavaju mjestu gdje su",
+        "Novčanik koji nisu morali prvo razumjeti"
+      ]
+    },
+    "publishers": {
+      "label": "Izdavači",
+      "tag": "Ponuda",
+      "title": "Onaj tko je to tamo stavio",
+      "body": "Brendovi, lokacije, token projekti i organizatori evenata. Postavljaju imovinu na koordinate do kojih im je stalo i plaćaju po postavljanju, ovisno o radijusu, trajanju i tome koliko je područje traženo.",
+      "gets": [
+        "Potvrđene dolaske, a ne prikaze",
+        "Geografsku distribuciju otpornu na farmanje",
+        "Alat za izradu kampanja bez integracije"
+      ]
+    },
+    "protocol": {
+      "label": "Protokol",
+      "tag": "Namira",
+      "title": "Dio koji ih drži poštenima",
+      "body": "Ocjenjivanje provjere, čuvanje imovine i namira. Uzima naknadu pri postavljanju, veći dio vraća tragačima i čuva zapis o tome što je gdje preuzeto.",
+      "gets": [
+        "Naknade koje prate stvarnu aktivnost",
+        "Javni zapis preuzimanja",
+        "Parametre koji s vremenom prelaze na upravljanje"
+      ]
+    }
+  },
+  "capabilities": {
+    "placement": {
+      "title": "Geofenced postavljanje",
+      "meta": "Od 5 m do 500 m",
+      "body": "Imovina se pričvršćuje na koordinate s podesivim radijusom preuzimanja. Vrata trgovine koriste uzak radijus, a festivalski prostor širok."
+    },
+    "verification": {
+      "title": "Provjera s više signala",
+      "meta": "4 neovisna signala",
+      "body": "Satelitski položaj, okolni radio signali, atestacija uređaja i kontinuitet kretanja moraju se svi složiti prije nego se zahtjev prihvati."
+    },
+    "anchoring": {
+      "title": "AR sidrenje",
+      "meta": "Trajno",
+      "body": "Imovina ostaje na mjestu između sesija i između korisnika. Dvije osobe na istom mjestu vide istu stvar na istom mjestu."
+    },
+    "companion": {
+      "title": "AI suputnik",
+      "meta": "Prvo na uređaju",
+      "body": "Čita kameru kako bi objasnio što gledaš i predložio kamo dalje, bez slanja tvoje povijesti kretanja bilo kamo."
+    },
+    "wallet": {
+      "title": "Društveni novčanik",
+      "meta": "Bez seed phrasea",
+      "body": "Izrađuje se preko društvene prijave, pa novi korisnik nešto skupi već u prvoj minuti, a izvoz za samostalno čuvanje dostupan je kad god ga poželi."
+    },
+    "settlement": {
+      "title": "Multi-chain namira",
+      "meta": "Ispod sekunde",
+      "body": "Imovina se namiruje na mreži na kojoj već živi, uz jedan uvjet koji svaki chain mora ispuniti: preuzimanje male nagrade ne smije koštati više nego što nagrada vrijedi."
+    }
+  },
+  "ecosystemFaq": {
+    "spoofing": {
+      "question": "Mogu li lažirati lokaciju i skupljati bez odlaska na mjesto?",
+      "answer": "Ne jeftino. Sirovi GPS položaj lako je lažirati, zato je samo jedan od četiri signala. Okolno radio okruženje, atestacija uređaja i trag tvog kretanja moraju ga svi potvrditi, a uređaj koji više puta padne suočava se s višim pragom. Cilj je da krivotvorenje košta više nego što nagrada vrijedi, a ne tvrditi da je nemoguće."
+    },
+    "crypto": {
+      "question": "Moram li znati išta o kriptu da bih koristio Seekprotocol?",
+      "answer": "Ne. Novčanik se izrađuje preko društvene prijave i seed phrase nikad ne vidiš osim ako ga sam ne potražiš. Ako kasnije želiš sam čuvati imovinu, ključ možeš izvesti u bilo kojem trenutku."
+    },
+    "tracking": {
+      "question": "Prati li Seekprotocol kamo idem?",
+      "answer": "Ne. Aplikacija traži položaj kad pokušaš preuzimanje, a ne neprekidno u pozadini. Sirovi podaci senzora koriste se za ocjenu tog jednog preuzimanja i zatim se odbacuju, a tvoja povijest kretanja ostaje na tvom uređaju."
+    },
+    "farming": {
+      "question": "Što sprječava jednu osobu da farma lokaciju s mnogo novčanika?",
+      "answer": "Ograničenja preuzimanja po uređaju unutar radijusa i vremenskog okvira, plus atestacija uređaja na kojoj farme emulatora padaju. Novčanici su besplatni, ali putovanje nije, i upravo je to smisao vezanja distribucije uz geografiju."
+    },
+    "chain": {
+      "question": "Na kojem chainu radi Seekprotocol?",
+      "answer": "Na onom na kojem imovina živi. Mreže su redci u tablici, a ne kod, pa izdavač financira kampanju u tokenu koji već drži, a tragač nikad ne mora birati chain. Svaka mreža mora ispuniti isti uvjet: nagrada od nekoliko centi mora preživjeti prijenos, a netko tko stoji na uglu ulice ne bi trebao čekati na nju. Traka na početnoj stranici pokazuje koji se chainovi danas namiruju."
+    },
+    "rewardKind": {
+      "question": "Mora li nagrada biti kripto?",
+      "answer": "Ne. Vaučer iskorišten na blagajni, par tenisica u kutiji, propusnica koja postoji samo na lokaciji: ništa od toga ne dotiče chain, a provjera ispod je u svakom slučaju ista. Kad je riječ o tokenu, on se namiruje na chainu na kojem već živi. Protokol dokazuje da je netko bio tamo; što će dobiti, tvoja je odluka."
+    },
+    "business": {
+      "question": "Može li moja tvrtka već danas postavljati imovinu?",
+      "answer": "Putem upravljanog partnerstva, da. Samouslužni portal koji uklanja potrebu za razgovorom s nama je u izradi, a plan razvoja pokazuje gdje se nalazi."
+    }
+  },
+  "roadmapPage": {
+    "metaTitle": "Plan razvoja: isporučeno i što slijedi",
+    "metaDescription": "Što je Seekprotocol isporučio i što slijedi, od prototipa proof of locationa i javnog lansiranja Seekprotocola do samouslužnog portala i upravljanja.",
+    "ogTitle": "Plan razvoja Seekprotocola",
+    "eyebrow": "Plan razvoja",
+    "titleStart": "Što je izgrađeno, a što",
+    "titleAccent": "slijedi",
+    "lead": "Faza: {phases}, praćeno prema onome što je stvarno isporučeno. Završeno {shipped} od {total} prekretnica.",
+    "status": {
+      "done": "Isporučeno",
+      "active": "U tijeku",
+      "next": "Planirano"
+    },
+    "datesTitle": "Na ove datume",
+    "datesNote": "Datumi opisuju namjeru, a ne obveze. Sve što još nije označeno kao završeno može se pomaknuti, a radije ćemo to reći nego tiho preslagivati grafikon.",
+    "legendTitle": "Legenda",
+    "ctaEyebrow": "Detalji",
+    "ctaTitle": "Razlozi iza redoslijeda",
+    "ctaBody": "Whitepaper objašnjava zašto je provjera došla prije rasta i zašto upravljanje dolazi zadnje.",
+    "ctaWhitepaper": "Pročitaj whitepaper"
+  },
+  "roadmapPhases": {
+    "foundation": {
+      "title": "Temelji",
+      "summary": "Dokazivanje da osnovna ideja uopće radi: može li mobitel potvrditi da je netko negdje bio dovoljno pouzdano da se oslobodi nešto vrijedno?",
+      "items": {
+        "prototype": "Prototip proof of locationa uz GNSS i kontinuitet kretanja",
+        "engine": "AR engine za renderiranje s trajnim sidrenjem u svijetu",
+        "settlement": "Prvi sloj namire, na Solani, s definicijama imovine",
+        "alpha": "Interna alfa u tri testna grada"
+      }
+    },
+    "launch": {
+      "title": "Javno lansiranje",
+      "summary": "Seekprotocol u rukama stvarnih ljudi, u obje trgovine aplikacija, s uvodom koji ne pretpostavlja da je korisnik ikad držao privatni ključ.",
+      "items": {
+        "stores": "Seekprotocol objavljen na iOS-u i Androidu",
+        "wallet": "Novčanik s društvenom prijavom i neobaveznim izvozom za samostalno čuvanje",
+        "drops": "Dropovi temeljeni na lokaciji i sustav misija",
+        "attestation": "Atestacija uređaja putem Play Integrity i App Attest",
+        "localisation": "Stranica i aplikacija lokalizirane na osam jezika"
+      }
+    },
+    "scale": {
+      "title": "Otvaranje",
+      "summary": "Godina u kojoj punjenje mreže prestaje biti naš posao. Svatko može postavljati imovinu bez da prvo razgovara s nama, token koji je financira postaje javan, a razlozi za povratak više nisu stvari koje radiš sam.",
+      "groups": {
+        "supply": "Strana ponude",
+        "network": "Mrežni učinci"
+      },
+      "items": {
+        "companion": "AI suputnik s kontekstualnim vođenjem svjesnim kamere",
+        "radio": "Radio otisci dodani u sustav provjere",
+        "builder": "Drag-and-drop alat za kampanje za manje izdavače",
+        "portal": "Samouslužni poslovni portal za lokacije i brendove",
+        "analytics": "Analitika potvrđenih dolazaka i izvještaji o cijeni po posjetu",
+        "tge": "Događaj generiranja tokena",
+        "partnerships": "Velika partnerstva",
+        "liveEvents": "Način za evente uživo: festivale, utakmice i konferencije",
+        "seasons": "Sezone, s vlastitim ljestvicama i nagradama",
+        "scanning": "Skeniranje predmeta u obliku igre",
+        "guilds": "Cehovi, timske misije i zajednički nagradni fondovi",
+        "revenueShare": "Udio kreatora u prihodu od postavljene imovine",
+        "multichain": "Namira na Ethereumu, BNB Smart Chainu i Arbitrumu"
+      }
+    },
+    "governance": {
+      "title": "Predaja parametara",
+      "summary": "Upravljanje slijedi stvarni tok naknada, a ne prethodi mu. Glasanje o ekonomiji bez volumena je kazalište, pa ovo namjerno dolazi zadnje.",
+      "items": {
+        "onChain": "Upravljanje parametrima protokola na chainu",
+        "treasury": "Raspodjela sredstava zajedničke riznice",
+        "providers": "Pružatelji provjere trećih strana",
+        "sdk": "Otvoreni SDK za vanjske aplikacije na protokolu"
+      }
+    }
+  },
+  "businessPage": {
+    "metaTitle": "Geofencing marketing, plaćanje po dolasku",
+    "metaDescription": "AR oglašavanje temeljeno na lokaciji za izdavače i brendove. Postavi nagradu na svoje koordinate i plaćaj po potvrđenom posjetu, a ne po prikazu.",
+    "ogTitle": "Plaćaj po potvrđenom dolasku",
+    "eyebrow": "Za tvrtke",
+    "titleStart": "Kupuj dolaske, ne",
+    "titleAccent": "prikaze",
+    "lead": "Digitalno oglašavanje može tvoj logotip staviti pred nekoga u milisekundama. Ne može ga natjerati da prošeta tri ulice dalje. Postavi nagradu na svoja vrata i plaćaj za ljude koji do nje stignu.",
+    "ctaTalk": "Razgovaraj s nama",
+    "ctaVerification": "Kako funkcionira provjera",
+    "argumentEyebrow": "Argument",
+    "argumentTitle": "Gdje brojanje prestaje",
+    "argumentLead": "Potroši isti novac na dva načina i lijevci izgledaju usporedivo do zadnjeg retka. Jedan je izbrojen. Drugi je model, a upravo po tom retku se ocjenjuje svaka kampanja.",
+    "useCasesEyebrow": "Primjene",
+    "useCasesTitle": "Četiri načina na koja se koristi",
+    "setupEyebrow": "Postavljanje",
+    "setupTitle": "Četiri odluke, bez programiranja",
+    "setupLead": "Ovo je cijeli postupak. Donesi četiri odluke i objavi, pa vidi što svaka od njih radi s područjem koje držiš i cijenom osobe na tvojim vratima.",
+    "measurementEyebrow": "Mjerenje",
+    "measurementTitle": "Što dobivaš, a što ne",
+    "measurementLead": "Podaci o lokaciji najosjetljivija su kategorija podataka. Dobivaš brojke koje ti trebaju za ocjenu kampanje, i ništa što bi ti omogućilo da pratiš pojedinca.",
+    "ctaEyebrow": "Započni",
+    "ctaTitle": "Stavi nešto pred svoja vrata",
+    "ctaBody": "Samouslužni portal je u izradi. Dok ne stigne, kampanje postavljamo izravno s tobom. Reci nam lokaciju i što želiš postaviti.",
+    "ctaStart": "Započni razgovor",
+    "ctaRoadmap": "Pogledaj kad stiže samoposluga",
+    "realEyebrow": "Jedinica",
+    "realTitle": "Što je dolazak, a što nije",
+    "realLead": "Svaka metrika na tržištu je posredna, a za svaku posrednu metriku postoji skripta koja je proizvodi za manje od centa. Prisutnost je iznimka, i to iz razloga koji ne slabi s boljim hardverom: trošak je fizički.",
+    "chainsNote": "Financiraj kampanju imovinom koju već držiš ili bez ikakve imovine. Vaučer na blagajni i kutija na pragu ne trebaju ni chain ni novčanik. Kad je riječ o tokenu, mreža je konfiguracija, a ne integracija, pa jedna kampanja može raditi na više njih odjednom, a osoba koja preuzima nikad ne mora znati na kojoj.",
+    "verifiedEyebrow": "Samo potvrđeni posjeti",
+    "verifiedTitle": "Plaćaj samo kad je netko stvarno bio tamo",
+    "verifiedBody": "Bez prikaza, bez klikova koji nikad nisu postali posjet. Kampanja troši tek kad protokol potvrdi osobu na licu mjesta.",
+    "verifiedLink": "Otvori Seek Partners"
+  },
+  "useCases": {
+    "retail": {
+      "label": "Maloprodaja i ugostiteljstvo",
+      "metric": "Cijena po potvrđenom dolasku",
+      "title": "Pretvori lokaciju u razlog za posjet",
+      "body": "Postavi ponudu na svoja vrata s uskim radijusom preuzimanja. Može je uzeti samo netko tko stoji tamo, pa je iskorištenje koje vidiš osoba koja je ušla, a ne oglas pored kojeg je netko proskrolao.",
+      "points": [
+        "Radijus prilagođen vratima, a ne poštanskom broju",
+        "Iskorištenje se bilježi u trenutku dolaska",
+        "Radi u cijelom lancu bez integracije po trgovini"
+      ]
+    },
+    "events": {
+      "label": "Eventi i lokacije",
+      "metric": "Angažman na licu mjesta",
+      "title": "Mapa za preuzimanje dok event traje",
+      "body": "Festivali, utakmice i konferencije postaju privremeni sloj imovine koji istječe zajedno s eventom. Dolazak ih otključava, pa nagrada stiže do ljudi koji su se stvarno pojavili.",
+      "points": [
+        "Vremenski ograničena imovina koja istječe po rasporedu",
+        "Široki radijusi za prostore, uski za pozornice i štandove",
+        "Viši pragovi provjere za dropove visoke vrijednosti"
+      ]
+    },
+    "token": {
+      "label": "Token i NFT projekti",
+      "metric": "Otpornost na Sybil napade",
+      "title": "Dijeli ljudima, a ne novčanicima",
+      "body": "Novčanik se izrađuje besplatno, zato se airdropovi farmaju. Zahtjev za fizičkom prisutnošću stavlja stvarnu cijenu na svako dodatno preuzimanje, jer nitko nije u četrdeset gradova odjednom.",
+      "points": [
+        "Geografska distribucija na odabranim tržištima",
+        "Ograničenja preuzimanja po uređaju unutar radijusa i vremenskog okvira",
+        "Javni zapis preuzimanja na vlastitom chainu imovine"
+      ]
+    },
+    "tourism": {
+      "label": "Gradovi i turizam",
+      "metric": "Raspodjela posjetitelja",
+      "title": "Usmjeri ljude kroz mjesta koja želiš da se koriste",
+      "body": "Poveži imovinu u stazu da se posjetitelji njome kreću redom. Mirne ulice, sporedne lokacije i sati izvan špice mogu nositi nagrade koje prometnim znamenitostima nisu potrebne.",
+      "points": [
+        "Misije u nizu na više lokacija",
+        "Ponderiranje izvan špice radi raspodjele potražnje",
+        "Zbirni brojevi dolazaka, nikad pojedinačni tragovi"
+      ]
+    }
+  },
+  "interactionClaims": {
+    "nobots": {
+      "metric": "Bez bot prometa",
+      "title": "Ništa ovdje ne može proizvesti skripta",
+      "body": "Preuzimanje zahtijeva uređaj na koordinati koji se slaže s vlastitim satelitskim položajem, radio okruženjem oko sebe i kretanjem koje ga je tamo dovelo. Ništa od toga nema ekvivalent u podatkovnom centru, zato stopa prijevara nije broj koji moramo spuštati."
+    },
+    "organic": {
+      "metric": "Organsko po samoj konstrukciji",
+      "title": "Svaka interakcija je nečije putovanje",
+      "body": "Angažman se ne zaključuje iz klika i ne modelira iz panela. Netko je odlučio prošetati do tvoje adrese, a zapis o tome nastaje u trenutku dolaska, a ne rekonstruira se naknadno."
+    },
+    "cta": {
+      "metric": "Tvoj poziv na akciju",
+      "title": "Mi potvrđujemo prisutnost, ti odlučuješ što tražiš",
+      "body": "Uvjetuj nagradu kupnjom, praćenjem, prijavom, skeniranjem proizvoda na polici ili ničim osim dolaskom. Provjera ispod je u svakom slučaju ista, pa se zahtjev može mijenjati između kampanja bez promjene jamstva."
+    }
+  },
+  "measurement": {
+    "counted": {
+      "label": "Što se broji",
+      "value": "Potvrđen dolazak unutar tvog radijusa"
+    },
+    "when": {
+      "label": "Kada se broji",
+      "value": "U trenutku preuzimanja, a ne naknadno zaključeno"
+    },
+    "receive": {
+      "label": "Što dobivaš",
+      "value": "Zbirne brojke po lokaciji, vremenu i kampanji"
+    },
+    "never": {
+      "label": "Što nikad ne dobivaš",
+      "value": "Pojedinačne tragove kretanja ili identitete"
+    }
+  },
+  "funnel": {
+    "budget": "Budžet kampanje",
+    "displayTitle": "Kupljeno kao display",
+    "displayCost": "po modeliranom posjetu",
+    "seekTitle": "Kupljeno kao dolasci",
+    "seekCost": "po potvrđenom dolasku",
+    "counted": "Izbrojeno",
+    "estimated": "Procijenjeno",
+    "stages": {
+      "impressions": "Prikazani oglasi",
+      "viewable": "Prikazano u vidnom polju",
+      "clicks": "Klikovi",
+      "visits": "Posjeti trgovini",
+      "saw": "Vidio oznaku u blizini",
+      "opened": "Otvorio drop",
+      "walked": "Prošetao do njega",
+      "claimed": "Preuzeo na vratima"
+    },
+    "caption": "Display koristi CPM od ${cpm}, vidljivost od {viewability} %, stopu klikova od {ctr} % i omjer prikaza i posjeta od {modelled} % koji modeliraju oglasne platforme. Zadnji redak je onaj koji treba gledati: ne broji se, nego se procjenjuje, i ne proizlazi iz klikova iznad njega. U desnom stupcu svaki je redak nešto što se dogodilo na uređaju unutar tvog radijusa."
+  },
+  "deploy": {
+    "stepsLabel": "Koraci",
+    "steps": {
+      "location": "Lokacija",
+      "asset": "Imovina",
+      "rules": "Pravila",
+      "publish": "Objava"
+    },
+    "whereLegend": "Gdje se nalazi",
+    "whereNote": "U portalu je ovo oznaka koju povlačiš. Koordinata je cijela adresa koju imovina ikad dobije.",
+    "assetLegend": "Što postavljaš",
+    "assetNote": "Jedno preuzimanje po uređaju unutar radijusa i vremenskog okvira, pa je količina broj ljudi, a ne podatak o ponudi.",
+    "rulesLegend": "Tko je može uzeti",
+    "campaignLegend": "Kampanja",
+    "quantity": "Količina",
+    "claimRadius": "Radijus preuzimanja",
+    "presets": {
+      "store": {
+        "label": "Izlog trgovine",
+        "place": "Kalverstraat 92, Amsterdam",
+        "hint": "Vrata. Dovoljno usko da preuzeti može samo netko na blagajni."
+      },
+      "venue": {
+        "label": "Prostor eventa",
+        "place": "Johan Cruijff ArenA, Amsterdam",
+        "hint": "Cijela lokacija dok traje event, istječe kad završi."
+      },
+      "trail": {
+        "label": "Gradska staza",
+        "place": "Šest lokacija u Amsterdam Noordu",
+        "hint": "Povezana imovina, preuzima se redom, s naglaskom na mirne ulice."
+      }
+    },
+    "assets": {
+      "token": "Token",
+      "nft": "Kolekcionarski predmet",
+      "offer": "Kod ponude",
+      "ticket": "Propusnica"
+    },
+    "tiers": {
+      "standard": {
+        "label": "Standardna provjera",
+        "note": "GNSS, atestacija i kretanje moraju se složiti."
+      },
+      "strict": {
+        "label": "Stroga provjera",
+        "note": "Dodaje radio otisak. Za dropove visoke vrijednosti."
+      }
+    },
+    "summaryLocation": "Lokacija",
+    "summaryAsset": "Imovina",
+    "summaryRadius": "Radijus",
+    "summaryVerification": "Provjera",
+    "summaryThreshold": "{tier}, prag {threshold}",
+    "summaryBudget": "Budžet",
+    "summaryBudgetValue": "${budget} uz ${cost} po dolasku",
+    "publish": "Objavi kampanju",
+    "sequence": {
+      "signing": "Potpisujemo kampanju",
+      "writing": "Zapisujemo definiciju imovine na chain",
+      "indexing": "Indeksiramo koordinate",
+      "live": "Uživo na mapi"
+    },
+    "again": "Postavi još jednu",
+    "back": "Natrag",
+    "next": "Dalje",
+    "review": "Pregled",
+    "verifiedArrivals": "Potvrđeni dolasci",
+    "costPerArrival": "Cijena po dolasku",
+    "sawPin": "Vidio oznaku u blizini",
+    "placementFee": "Naknada za postavljanje",
+    "perArrival": "Po dolasku",
+    "live": "Uživo",
+    "radiusOf": "Radijus {radius} m",
+    "captionLive": "Dolasci su projekcija na temelju radijusa i prometa na mapi oko njega, a ne jamstvo. Svaki od njih bio bi preuzimanje zabilježeno na chainu u trenutku kad je netko stajao tamo.",
+    "captionIdle": "Prsten je nacrtan u mjerilu u odnosu na podlogu. Ništa ovdje ne treba programera: četiri odluke, zatim objava."
+  },
+  "whitepaper": {
+    "metaTitle": "Whitepaper: proof of location, na bilo kojem chainu",
+    "metaDescription": "Kako Seekprotocol izdaje digitalnu imovinu na stvarne koordinate, potvrđuje da je netko stvarno bio tamo i namiruje je na chainu na kojem imovina živi. Arhitektura, dizajn tokena, napadi.",
+    "ogTitle": "Seekprotocol whitepaper",
+    "ogDescription": "Proof of location, arhitektura, dizajn tokena i iskren prikaz napada i ograničenja.",
+    "eyebrow": "Whitepaper",
+    "titleStart": "Digitalna imovina koja živi",
+    "titleAccent": "na nekom mjestu",
+    "lead": "Tehnički opis toga kako Seekprotocol izdaje imovinu na koordinate, dokazuje da je netko tamo stajao i namiruje to na chainu, uključujući i ono što sustav ne može.",
+    "readingTime": "{minutes} min čitanja",
+    "updated": "Ažurirano {date}",
+    "updatedValue": "Kolovoz 2026.",
+    "gitbook": "Potpuna dokumentacija na GitBooku",
+    "ctaEyebrow": "Dalje",
+    "ctaTitle": "Pogledaj kako radi",
+    "ctaBody": "Stranica ekosustava prikazuje mrežu uživo, a plan razvoja prati što je isporučeno u odnosu na ono što slijedi.",
+    "ctaEcosystem": "Istraži ekosustav",
+    "ctaRoadmap": "Pogledaj plan razvoja",
+    "chapters": {
+      "summary": {
+        "index": "01",
+        "eyebrow": "Sažetak",
+        "title": "Protokol za stvari koje postoje na nekom mjestu",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Internet je svaki digitalni predmet učinio dostupnim svugdje odjednom. To je bila poanta, i uspjelo je. Ali time je digitalnim stvarima oduzeto jedino svojstvo zbog kojeg fizičke stvari djeluju vrijedno: to što su negdje određeno. Ulaznica za koncert nešto znači jer te pušta u dvoranu. Znamenitost nešto znači jer do nje moraš otputovati."
+          },
+          {
+            "kind": "p",
+            "text": "Seekprotocol vraća lokaciju u digitalnu imovinu. Token, NFT ili nagrada mogu se izdati skupu koordinata umjesto novčaniku i ostaju tamo dok netko fizički ne stane unutar njihovog radijusa i to ne dokaže. To zovemo proof of location i to je temeljni element na kojem je izgrađen ostatak protokola."
+          },
+          {
+            "kind": "p",
+            "text": "Korisnička strana je **Seekprotocol**, mobilna aplikacija za iOS i Android koja tu imovinu prikazuje u proširenoj stvarnosti. Hodaš, mobitel ti pokazuje što je u blizini i skupljaš ono što pronađeš. Ispod toga namira se odvija na chainu na kojem imovina već živi, uz jedan uvjet: troškovi transakcije dovoljno niski da preuzimanje male nagrade ne košta više nego što nagrada vrijedi."
+          },
+          {
+            "kind": "callout",
+            "text": "Ukratko: izrađujemo digitalnu imovinu koja se može preuzeti samo s određenog mjesta, potvrđujemo da je netko stvarno bio tamo i namirujemo to na chainu za manje od sekunde, za djelić centa."
+          },
+          {
+            "kind": "h",
+            "text": "Što ovaj dokument pokriva"
+          },
+          {
+            "kind": "p",
+            "text": "Šesnaest poglavlja u četiri cjeline. Prva tri iznose problem i temeljni element koji ga rješava. Poglavlja od četvrtog do sedmog su mehanizam: kako preuzimanje putuje, kako se slojevi uklapaju i što aplikacija s njima radi. Od osmog do jedanaestog je ekonomija, od toga tko plaća postavljanje do toga tko odlučuje o parametrima. Zadnjih pet su stvari koje whitepaper obično izostavi: napadi, cijena privatnosti, regulatorni položaj i iskrena ograničenja."
+          },
+          {
+            "kind": "p",
+            "text": "Nekoliko grafikona možeš isprobati. Model provjere, vremenska crta preuzimanja, bacanje za hvatanje i kalkulator budžeta računaju istu aritmetiku kao protokol, s istim konstantama, pa se možeš ne slagati s dizajnom, a ne s dijagramom."
+          }
+        ]
+      },
+      "problem": {
+        "index": "02",
+        "eyebrow": "Problem",
+        "title": "Pažnja je na internetu jeftina, a na ulici skupa",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Dvije skupine imaju problem za koji se pokaže da je isti problem gledan s dva kraja."
+          },
+          {
+            "kind": "h",
+            "text": "Brendovi i lokacije ne mogu kupiti posjetitelje"
+          },
+          {
+            "kind": "p",
+            "text": "Digitalno oglašavanje može sliku staviti pred nekoga u milisekundama. Ne može ga natjerati da prošeta tri ulice dalje. Pretvorba prikaza u fizički posjet najslabija je karika cijelog lijevka u maloprodaji i eventima, a mjeri se loše, obično tako da se ljude na blagajni pita jesu li vidjeli oglas."
+          },
+          {
+            "kind": "p",
+            "text": "Odgovor industrije bilo je modeliranje. Paneli uređaja čiji su korisnici pristali ekstrapoliraju se na cijelu populaciju, a dobiveni broj posjeta trgovini prijavljuje se uz prikaze i klikove kao da dolazi iz iste vrste brojača. Ne dolazi. Jedan broj je događaj, a drugi procjena, a kampanje se ocjenjuju po procjeni."
+          },
+          {
+            "kind": "h",
+            "text": "Kripto projekti ne mogu pronaći stvarne korisnike"
+          },
+          {
+            "kind": "p",
+            "text": "Airdropovi su standardni alat za distribuciju, i farmaju se. Novčanik se izrađuje besplatno, pa svaku nagradu koju može preuzeti novčanik preuzmu tisuće novčanika koji pripadaju šačici ljudi. Projekti odgovaraju sve složenijim pravilima prihvatljivosti, koja uglavnom izbacuju obične korisnike dok se vješti farmeri prilagođavaju."
+          },
+          {
+            "kind": "p",
+            "text": "Oba problema nestaju ako možeš dokazati da je čovjek bio na određenom mjestu u određeno vrijeme. Posjetitelji postaju mjerljivi jer je dolazak upravo događaj koji se bilježi. Farmanje airdropova postaje skupo jer je novčanik besplatan, a putovanje nije, i nitko nije u četrdeset gradova odjednom."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Trošak izrade novčanika",
+                "value": "Praktički nula"
+              },
+              {
+                "label": "Trošak da budeš negdje",
+                "value": "Vrijeme, udaljenost, fizička prisutnost"
+              },
+              {
+                "label": "Što ta razlika kupuje",
+                "value": "Zaštitu od Sybil napada utemeljenu u fizici"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Zašto se ovo može izgraditi sada, a prije nije"
+          },
+          {
+            "kind": "p",
+            "text": "Tri stvari morale su stići istovremeno. Mobiteli su morali standardno imati dvofrekventni GNSS, kamere koje percipiraju dubinu i hardverski podržanu atestaciju, a ne samo u vodećim modelima. Namira je morala postati dovoljno jeftina da nagrada od nekoliko centi preživi prijenos, što je isključivalo svaki chain dok naknade nisu pale ispod centa. I ljudi su morali biti spremni usmjeriti kameru prema ulici i vidjeti nešto iscrtano u njoj, što je desetljeće AR-a u igrama tiho riješilo."
+          }
+        ]
+      },
+      "distribution": {
+        "index": "03",
+        "eyebrow": "Distribucija",
+        "title": "Zašto plaćeni doseg ne može dovesti stvarnu osobu",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Prethodno poglavlje reklo je da dvije skupine imaju isti problem. Ovo govori o alatu za kojim obje prve posegnu i zašto zakazuje na način koji veća potrošnja ne popravlja."
+          },
+          {
+            "kind": "h",
+            "text": "Svaka metrika na tržištu je posredna"
+          },
+          {
+            "kind": "p",
+            "text": "Prikaz, klik, pregled, praćenje, adresa novčanika: nijedno od toga nije osoba. Svako je signal koji korelira s osobom pod uvjetima koje kontrolira prodavatelj signala. Kad nagrada za proizvodnju signala nadmaši trošak njegove proizvodnje bez osobe, on se proizvodi bez osobe, a korelacija na kojoj se temelje cijene cijelog tržišta tiho se odvaja od onoga što je predstavljala."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Jedan prikaz",
+                "value": "Djelići centa, osoba nije potrebna"
+              },
+              {
+                "label": "Jedan klik",
+                "value": "Centi, iz skupa rezidencijalnih proxyja"
+              },
+              {
+                "label": "Jedan novčanik",
+                "value": "Besplatno, i skriptira se u tisućama"
+              },
+              {
+                "label": "Jedan potvrđeni dolazak",
+                "value": "Putovanje, koje tijelo napravi, jednom"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Filtri ne vraćaju signal"
+          },
+          {
+            "kind": "p",
+            "text": "Standardni odgovor su pravila prihvatljivosti: minimalni saldo, prethodna aktivnost, vremenski okviri snimke stanja, captche, otisci uređaja. Svako od njih podiže cijenu lažnog preuzimanja za neki iznos, a cijenu stvarnog preuzimanja za neki drugi, a omjer tih dvaju jedino odlučuje je li filtar pomogao. U praksi vješti farmer podnese trošak, a običan korisnik odustane, pa filtri na kraju biraju upravo populaciju koju su trebali isključiti."
+          },
+          {
+            "kind": "p",
+            "text": "Prisutnost nije bolji filtar. To je druga vrsta stvari, jer trošak koji nameće nije računalni. Ne može se paralelizirati preko servera, ne pada kako hardver pojeftinjuje i ne postoji rezidencijalni proxy za ulicu."
+          },
+          {
+            "kind": "callout",
+            "text": "Korisno pitanje o bilo kojoj mjeri protiv prijevara nije koliko košta napadača, nego koliko košta napadača u odnosu na poštenog korisnika. Prisutnost je jedini signal na popisu kod kojeg se taj omjer s vremenom ne pomiče u korist napadača."
+          },
+          {
+            "kind": "h",
+            "text": "Izdavač i dalje određuje što traži"
+          },
+          {
+            "kind": "p",
+            "text": "Potvrda da je netko negdje bio ne govori ništa o tome što bi tamo trebao napraviti, a protokol namjerno odbija o tome odlučivati. Preuzimanje se može uvjetovati praćenjem, prijavom, skeniranjem proizvoda na polici, mintanjem na koordinati, kupnjom na blagajni ili ničim osim dolaskom. Provjera ispod je u svakom slučaju ista, što znači da izdavač može mijenjati zahtjev između kampanja bez ikakve promjene jamstva."
+          },
+          {
+            "kind": "p",
+            "text": "To je važno iz razloga koji je lako previdjeti. Distribucijski kanal koji diktira poziv na akciju odgovara samo kampanjama za koje je osmišljen, a svaki izdavač izvan tog oblika mora prilagoditi ponudu kanalu. Ovdje se prodaje dokaz, a ne lijevak."
+          },
+          {
+            "kind": "h",
+            "text": "Što ovo ne rješava"
+          },
+          {
+            "kind": "p",
+            "text": "Potvrđeni dolazak dokaz je da je uređaj bio na koordinati, a ne da je osoba koja ga drži željela biti tamo ili da će se ikad vratiti. Netko tko je plaćen da prođe pokraj vrata stvaran je dolazak i loš kupac. Protokol čini dolazak skupim za lažiranje i jednostavnim za brojanje. Je li ga se isplatilo kupiti, i dalje je marketinško pitanje, i nijedan chain na njega ne odgovara."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "04",
+        "eyebrow": "Temeljni element",
+        "title": "Proof of location",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Proof of location je tvrdnja da je određeni uređaj bio unutar određenog radijusa u određenom vremenskom okviru, dovoljno vjerodostojna da se na temelju nje oslobodi nešto vrijedno."
+          },
+          {
+            "kind": "p",
+            "text": "Nijedan pojedinačni signal nije pouzdan sam po sebi. Sirovi GPS može lažirati svaki rootani uređaj s pružateljem lažne lokacije. Zato protokol ocjenjuje preuzimanje prema nekoliko neovisnih signala i zahtijeva da kombinacija bude dosljedna, jer je lažirati jedan signal lako, a lažirati sve dosljedno nije."
+          },
+          {
+            "kind": "h",
+            "text": "Signali koje kombiniramo"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GNSS položaj**, sirovi satelitski položaj s prijavljenom točnošću, plus konstelacija i broj satelita, koje lažnjaci često pogriješe.",
+              "**Okolni radio signali**, skup obližnjih Wi-Fi mreža i baznih stanica, uspoređen s onim što protokol očekuje na tim koordinatama. Radio okruženja teško je krivotvoriti i sporo se mijenjaju.",
+              "**Atestacija uređaja**, Play Integrity na Androidu i DeviceCheck ili App Attest na iOS-u, koji potvrđuju da je aplikacija izvorna i da OS nije kompromitiran.",
+              "**Kontinuitet kretanja**, trag akcelerometra između prethodnog potvrđenog položaja i ovoga. Preuzimanje prema kojem si prešao 400 km u 90 sekundi bez odgovarajućeg profila kretanja odbija se.",
+              "**Vremenska uvjerljivost**, gdje se vrijeme dolaska provjerava prema vremenu putovanja koje proizlazi iz tvoje posljednje potvrđene lokacije."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Svaki signal doprinosi ocjeni pouzdanosti. Imovina određuje ocjenu koju zahtijeva: nagrada za misiju male vrijednosti može prihvatiti umjerenu ocjenu, dok drop visoke vrijednosti na eventu s ulaznicama može zahtijevati atestaciju uređaja i odgovarajuće radio okruženje. Preuzimanja ispod praga se odbijaju, a ponovljena odbijanja s jednog uređaja tom uređaju podižu prag."
+          },
+          {
+            "kind": "confidence"
+          },
+          {
+            "kind": "callout",
+            "text": "Cilj nije savršen dokaz, koji je na potrošačkom hardveru nedostižan. Cilj je da krivotvorenje košta više nego što nagrada vrijedi, isti standard koji plaćanje karticama održava funkcionalnim."
+          },
+          {
+            "kind": "h",
+            "text": "Zašto se signali ponderiraju, a ne zahtijevaju"
+          },
+          {
+            "kind": "p",
+            "text": "Pravilo koje zahtijeva svaki signal je pravilo koje odbija poštene korisnike. Podzemne stanice gube GNSS. Nove zgrade imaju radio okruženja koja mapa nikad nije vidjela. Mobitel dvije verzije OS-a iza može pasti na atestaciji iz razloga koji nemaju veze s prijevarom. Ponderiranje omogućuje imovini da kaže koliko dokaza njezina vrijednost zaslužuje, a poštenom preuzimanju da preživi jedan loš signal bez da lažno preživi s četiri."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Zadani radijus preuzimanja",
+                "value": "30 m"
+              },
+              {
+                "label": "Podesivi raspon",
+                "value": "Od 5 m do 500 m po imovini"
+              },
+              {
+                "label": "Uobičajena potvrda",
+                "value": "Ispod sekunde na chainu za namiru"
+              },
+              {
+                "label": "Atestacija",
+                "value": "Play Integrity, App Attest"
+              },
+              {
+                "label": "Postupanje s odbijanjima",
+                "value": "Bilježi se po uređaju, podiže prag tom uređaju"
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "index": "05",
+        "eyebrow": "Mehanika",
+        "title": "Što se zapravo događa kad nešto preuzmeš",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Prethodno poglavlje opisuje dokaz. Ovo prati jedno preuzimanje od trenutka kad posegneš za imovinom do trenutka kad je u tvom novčaniku, jer se u redoslijedu operacija krije većina odluka o dizajnu."
+          },
+          {
+            "kind": "timeline"
+          },
+          {
+            "kind": "h",
+            "text": "Granica koja je važna"
+          },
+          {
+            "kind": "p",
+            "text": "Pogledaj gdje faze mijenjaju stroj. Sve osjetljivo događa se u prve tri: položaj, radio skeniranje, trag kretanja, atestacija. Ništa od toga ne napušta tvoj mobitel u sirovom obliku. Do provjeravatelja stiže potpisano preuzimanje, a od provjeravatelja do chaina potpisana atestacija da je preuzimanje ispunilo prag."
+          },
+          {
+            "kind": "p",
+            "text": "Zato je provjera izvan chaina. To nije kompromis radi skaliranja. Stavljanje ocjenjivanja na chain značilo bi objavljivanje ulaznih podataka, a ulazni podaci su opis toga gdje stojiš i koje su bežične mreže oko tebe."
+          },
+          {
+            "kind": "h",
+            "text": "Što se događa kad ne uspije"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Ispod praga**: preuzimanje se odbija, imovina ostaje na mapi i ništa se ne zapisuje na chain. Odbijanje se bilježi uz uređaj.",
+              "**Ponovljena odbijanja**: potrebna ocjena za taj uređaj raste. Uređaj koji je u sat vremena pao na šest preuzimanja ne tretira se kao onaj koji nije pao ni na jednom.",
+              "**Neuspjela namira**: preuzimanje se zadržava i ponovno pokušava umjesto da se odbaci. Osvojena, a neisporučena imovina je bug koji košta povjerenje, pa je red osmišljen tako da zaglavljenu isplatu makne u stranu umjesto da blokira one iza nje.",
+              "**Istek usred preuzimanja**: imovina ima vremenski okvir, a preuzimanje koje stigne nakon što se zatvori odbija se čak i uz savršenu ocjenu. Okvir je dio imovine, a ne stanje mreže."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Preuzimanje je zaključavanje, a ne provjera. Dvjema osobama koje u istom trenutku posegnu za posljednjom jedinicom imovine ne smije se obje reći da su je dobile, pa provjera uzima zaključavanje prije nego išta odluči."
+          }
+        ]
+      },
+      "architecture": {
+        "index": "06",
+        "eyebrow": "Arhitektura",
+        "title": "Kako se slojevi uklapaju",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokol ima četiri sloja. O svakom se može razmišljati, i svaki se može zamijeniti, zasebno."
+          },
+          {
+            "kind": "stack"
+          },
+          {
+            "kind": "p",
+            "text": "Razdvajanje je najvažnije na granici između lokacije i namire. Provjera lokacije je probabilistička i odvija se izvan chaina, jer ovisi o podacima senzora koji nemaju što tražiti u javnosti. Na chain stiže potpisana atestacija da je preuzimanje ispunilo prag, a ne tvoja povijest kretanja."
+          },
+          {
+            "kind": "h",
+            "text": "Što se pohranjuje i gdje"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Na chainu**: definicije imovine, njihove koordinate i radijusi, zapisi preuzimanja i prijenosi tokena. Javno i trajno.",
+              "**Izvan chaina**: sirova očitanja senzora, radio otisci i atestacije uređaja. Čuvaju se samo dok je potrebno za ocjenu preuzimanja i rješavanje sporova, a zatim se odbacuju.",
+              "**Na uređaju**: tvoja povijest položaja i podaci AR sidara. Ostaju na tvom mobitelu osim ako ih izričito ne podijeliš."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Zašto sloj namire nije fiksan"
+          },
+          {
+            "kind": "p",
+            "text": "Zahtjev je za chain neobičan: vrlo velik broj transakcija, vrlo mala vrijednost po transakciji i potvrda dovoljno brza da je osoba koja stoji na ulici ne primijeti. Netko tko preuzima nagradu vrijednu dvadeset centi ne može platiti deset centi da je primi i neće trideset sekundi stajati i čekati. To isključuje velik dio polja zbog troška, a ostatak zbog kašnjenja. Isključuje ih, međutim, kao zahtjev, a ne kao jednom donesen izbor chaina oko kojeg se sve gradi."
+          },
+          {
+            "kind": "p",
+            "text": "Zato je namira konfiguracija. Mreža je redak s vlastitim endpointom, explorerom i nativnim tokenom; imovina nosi mreže na kojima postoji, s adresom ugovora i decimalama na svakoj; a novčanik pripada jednoj od dvije obitelji adresa, a ne jednoj po chainu, jer sve EVM mreže dijele adresu. Izdavač financira kampanju u tokenu koji već drži, a preuzimanje se namiruje tamo gdje taj token živi. Dodavanje mreže je redak, a ne izdanje."
+          },
+          {
+            "kind": "p",
+            "text": "Kompromis vrijedi izreći. Chainovi stanu, a chain koji stane znači preuzimanja u redu čekanja. Namira se tretira kao korak koji može pasti i ponoviti se, a ne kao korak koji uvijek uspije, što je ispravan dizajn na bilo kojoj mreži i nezaobilazan na brzoj. Širenje na više mreža ne uklanja taj rizik. Sprječava da ispad jedne mreže bude ispad cijelog protokola, što je manja tvrdnja i ona iskrena."
+          },
+          {
+            "kind": "h",
+            "text": "Što radi gdje"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Položaj, senzori, AR sidra",
+                "value": "Na uređaju, nikad se ne šalju sirovi"
+              },
+              {
+                "label": "Ocjenjivanje i prag",
+                "value": "Provjeravatelj protokola, izvan chaina"
+              },
+              {
+                "label": "Definicije imovine i preuzimanja",
+                "value": "Chain za namiru, javno"
+              },
+              {
+                "label": "Mediji i grafike kovanica",
+                "value": "Predmemorirano na uređaju, poslužuje se iz object storagea"
+              },
+              {
+                "label": "Najave spawnova",
+                "value": "Odlučuje server, nikad klijent"
+              }
+            ]
+          }
+        ]
+      },
+      "seekar": {
+        "index": "07",
+        "eyebrow": "Aplikacija",
+        "title": "Seekprotocol, korisnička strana",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol je mjesto gdje protokol postaje nešto što osoba može koristiti bez da zna išta od navedenog. Otvara se mapom onoga što je u blizini, a kad podigneš kameru, AR engine tu imovinu iscrtava na njezino mjesto."
+          },
+          {
+            "kind": "h",
+            "text": "Što aplikacija radi"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Otkrij**, mapa uživo s dropovima, misijama i eventima na pješačkoj udaljenosti, filtrirana prema onome što te stvarno zanima.",
+              "**Skupljaj**, gdje usmjeriš kameru, vidiš imovinu usidrenu u svijetu, posegneš i uzmeš je. Namira se odvija u pozadini.",
+              "**Vodič**, AI suputnik koji kroz kameru čita tvoju okolinu, predlaže rute, objašnjava što gledaš i prilagođava se tvom načinu igre.",
+              "**Čuvaj**, ugrađeni novčanik izrađen preko društvene prijave, pa novog korisnika nitko ne traži da zapiše seed phrase prije nego što išta pokupi."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Ograničenje uvoda pokreće više odluka o dizajnu nego bilo što drugo. Većina ljudi koji će ikad koristiti Seekprotocol nikad nije držala privatni ključ. Ako se u prvih trideset sekundi pojavi riječ 'mnemonik', odlaze. Zato se novčanik izrađuje neprimjetno, a kasnije ga može izvesti svatko tko ga želi sam čuvati."
+          },
+          {
+            "kind": "h",
+            "text": "Šetnja do dropa"
+          },
+          {
+            "kind": "p",
+            "text": "Imovina je desetke do par stotina metara daleko, na udaljenosti na kojoj je mapa dovoljna, a ruta pretjerana. Označavanje spawna povlači ravnu crtu od tebe do njega. Crta je namjerno isprekidana: to je smjer, a ne ruta, ne zna ništa o zgradama, a na toj udaljenosti smjer je obično i šetnja. Sama nestaje kad uđeš u domet hvatanja, gdje preuzima prsten."
+          },
+          {
+            "kind": "p",
+            "text": "Spawnovi istječu unutar sat vremena. To je odluka igre s posljedicom za protokol: oznaka vraćena pri sljedećem pokretanju pokazivala bi na ništa, pa je aplikacija ne sprema."
+          },
+          {
+            "kind": "h",
+            "text": "Sidrenje i čemu ovdje služi AR"
+          },
+          {
+            "kind": "p",
+            "text": "Prikaz kamere nije ukras, a nije ni provjera. Radi dvije stvari. Postavlja imovinu na uvjerljivo mjesto u svijetu, pa je posezanje za njom radnja, a ne pritisak gumba, i daje signalu kretanja nešto s čime mora biti dosljedan, jer osoba koja hoda oko usidrenog predmeta kreće se kao osoba, a lažnjak koji mirno drži mobitel ne."
+          }
+        ]
+      },
+      "play": {
+        "index": "08",
+        "eyebrow": "Krug igre",
+        "title": "Što nekoga tjera da hoda",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokol koji plaća dolazak i dalje treba razlog za prvi dolazak. Nitko ne hoda četiri ulice zbog mehanizma. Sloj igre je strana potražnje u mreži i osmišljen je s istom iskrenošću kao provjera: izgledi se objavljuju, računaju se na serveru, a klijenta se nikad ne pita što se dogodilo."
+          },
+          {
+            "kind": "h",
+            "text": "Hvatanje"
+          },
+          {
+            "kind": "p",
+            "text": "Dolazak do imovine ne predaje ti je. Prsten punjenja vrti se dok držiš dodir, a kvaliteta tog punjenja utječe na množitelj. Zatim server baca. Na spawn imaš dva pokušaja, a drugi vrijedi 0,65 prvog, i upravo zbog tog broja druga šansa djeluje kao druga šansa, a ne kao utješna nagrada."
+          },
+          {
+            "kind": "catch"
+          },
+          {
+            "kind": "h",
+            "text": "Uvjeti koje obično nitko ne objavljuje"
+          },
+          {
+            "kind": "p",
+            "text": "Većina igara skriva modifikatore. Ovdje za to nema razloga, jer je zanimljivo svojstvo to što vještina gura, ali nikad ne odlučuje. Prsten punjenja je množitelj između 0,85 i 1,0, pa je savršen dodir na legendarnoj i dalje legendarna, a nespretan dodir na običnoj i dalje vjerojatno obična."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Bonus razine**, fiksnih 0,3 boda šanse po razini igrača, kroz deset razina od Seekera do Legenda.",
+              "**Hladni niz**, mjerač sažaljenja vrijedan 2 boda po uzastopnom promašaju, najviše 12, koji vrijedi i za drugi pokušaj i između kovanica.",
+              "**Kazna za niz**, 4 boda po uzastopnom uspjehu na istoj kovanici, najviše 20, pa farmanje jedne točke spawna postaje lošije, a ne bolje.",
+              "**Bonus klana**, najviše 5 bodova, koji zarađuje klan, a ne igrač.",
+              "**Power-upovi**, kupljeni ili osvojeni, koji množe osnovnu šansu prije nego se doda bilo koji drugi član."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Donja granica je 5 %, a gornja 95 %. Ništa se ne zbraja u jamstvo i ništa se ne zbraja u zid."
+          },
+          {
+            "kind": "h",
+            "text": "Napredak i čemu služi"
+          },
+          {
+            "kind": "p",
+            "text": "Razine, značke, klanovi, izazovi od dvanaest sati i tjedni ciljevi postoje kako bi šetnja imala oblik dulji od jednog dropa. Oni rade i posao protokola: igrač s razinom, klanom i nizom ima račun s poviješću, a povijest je skupo krivotvoriti u velikom opsegu. Napredak je drugi trošak nametnut farmeru koji poštenog igrača ne košta ništa, jer bi on ionako igrao."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Pokušaja po spawnu",
+                "value": "2"
+              },
+              {
+                "label": "Množitelj drugog pokušaja",
+                "value": "×0,65"
+              },
+              {
+                "label": "Raspon prstena punjenja",
+                "value": "Od ×0,85 do ×1,00"
+              },
+              {
+                "label": "Donja i gornja granica šanse",
+                "value": "5 % i 95 %"
+              },
+              {
+                "label": "XP za ulov",
+                "value": "Od 30 do 140"
+              },
+              {
+                "label": "XP za promašaj",
+                "value": "Od 5 do 15"
+              },
+              {
+                "label": "Razine",
+                "value": "Deset, od Seekera do Legenda"
+              }
+            ]
+          }
+        ]
+      },
+      "creators": {
+        "index": "09",
+        "eyebrow": "Strana ponude",
+        "title": "Tko postavlja imovinu",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Mreža temeljena na lokaciji bezvrijedna je ako su lokacije prazne. Zato protokol postavljanje imovine tretira kao prvorazredni proizvod, a ne interni alat."
+          },
+          {
+            "kind": "h",
+            "text": "Tri vrste izdavača"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Brendovi i lokacije** koriste poslovni portal za postavljanje ponuda u vlastitim prostorima i mjerenje tko je stvarno došao. Kupuju potvrđeni posjet, a ne prikaz.",
+              "**Token projekti i NFT zajednice** dijele ljudima, a ne novčanicima, koristeći geografiju kao filtar koji farmanje ne može jeftino zaobići.",
+              "**Organizatori evenata** pretvaraju festival, utakmicu ili konferenciju u mapu za preuzimanje dok event traje, s imovinom koja istječe kad završi."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Sva tri koriste isti alat za kampanje: spusti oznaku, postavi radijus, odaberi imovinu i količinu, postavi prag pouzdanosti i vremenski okvir, financiraj, objavi. Bez integracije i bez ugovora za pisanje."
+          },
+          {
+            "kind": "callout",
+            "text": "Za lokaciju je važna metrika cijena po potvrđenom dolasku. To je prvi broj posjetitelja u digitalnom marketingu koji se mjeri na vratima, a ne zaključuje iz ankete."
+          },
+          {
+            "kind": "calculator"
+          },
+          {
+            "kind": "h",
+            "text": "Problem gustoće"
+          },
+          {
+            "kind": "p",
+            "text": "Ponuda i potražnja ovdje su geografske, pa su uobičajeni savjeti za tržišta beskorisni. Tisuću jedinica imovine ravnomjerno raspoređenih po zemlji je prazna mapa svugdje. Istih tisuću u jednom gradu razlog je da izađeš iz kuće. Zato se cijena postavljanja ponderira prema potražnji za područjem, umjesto da bude fiksna, pa zasićenu trgovačku ulicu košta više držati nego mirnu, a protokol subvencionira ulice kojima treba promet, a ne one koje ga već imaju."
+          }
+        ]
+      },
+      "token": {
+        "index": "10",
+        "eyebrow": "Token",
+        "title": "$SEEK i čemu služi",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "$SEEK je imovina protokola za namiru i koordinaciju. Postoji jer mreža mora prenositi vrijednost između strana koje se ne poznaju, primjerice brend u jednoj zemlji financira nagradu koju preuzme neznanac u drugoj, i jer cijena postavljanja imovine treba rasti s potražnjom za mjestima koja se koriste."
+          },
+          {
+            "kind": "h",
+            "text": "Namjena"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Financiranje kampanja**, gdje izdavači iskazuju i financiraju nagrade u $SEEK-u.",
+              "**Naknade za postavljanje**, naknada po postavljenoj imovini, ponderirana prema radijusu, trajanju i potražnji za tim područjem.",
+              "**Staking za prioritet**, gdje stakani $SEEK podiže prioritet postavljanja izdavača kad se više kampanja natječe za iste koordinate.",
+              "**Nagrade**, pri čemu se većina naknada protokola vraća ljudima koji hodaju.",
+              "**Upravljanje**, koje obuhvaća promjene parametara, raspodjelu riznice i pragove pouzdanosti za preuzimanja visoke vrijednosti."
+            ]
+          },
+          {
+            "kind": "economy"
+          },
+          {
+            "kind": "tokenomics"
+          },
+          {
+            "kind": "h",
+            "text": "Ponuda kroz vrijeme"
+          },
+          {
+            "kind": "p",
+            "text": "Grafikon alokacije govori tko drži što, a ništa o tome kada. Raspored ispod korisniji je prikaz, jer rizik tokena rijetko je u podjeli, nego u cliffu."
+          },
+          {
+            "kind": "vesting"
+          },
+          {
+            "kind": "p",
+            "text": "Namjera dizajna je da tok naknada prati stvarnu aktivnost, a ne špekulaciju: protokol zarađuje kad se imovina postavlja i preuzima, a to se događa samo kad je netko spreman platiti za potvrđeni posjet."
+          },
+          {
+            "kind": "h",
+            "text": "Što token namjerno ne radi"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Ne fiksira tečaj između uhvaćene jedinice igre i tokena. Igra vrednuje ulov; tržište vrednuje token; protokol se ne pretvara da ih premošćuje.",
+              "Nije potreban za igranje. Hvatanje, XP i izazovi su besplatni, a igrač koji nikad ne dotakne token i dalje stvara dolaske za koje izdavač plaća.",
+              "Ne uvjetuje postavljanje minimalnim posjedom. Staking kupuje prioritet kad se kampanje natječu, a ne pravo na objavu uopće."
+            ]
+          }
+        ]
+      },
+      "revenue": {
+        "index": "11",
+        "eyebrow": "Poslovni model",
+        "title": "Kako protokol zarađuje i od koga",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Whitepaper koji opisuje token, a ne posao, opisuje pola sustava. Postoje dva izvora prihoda i dolaze sa suprotnih strana mreže, što je namjerno: nijedna strana sama ne bi je održala."
+          },
+          {
+            "kind": "h",
+            "text": "Postavljanje, koje plaćaju izdavači"
+          },
+          {
+            "kind": "p",
+            "text": "Glavni izvor. Izdavač financira nagrade i povrh toga plaća naknadu za postavljanje, ponderiranu prema tome koliko područja imovina drži, koliko dugo i koliko je to područje traženo. To je naknada koja raste s vrijednošću koju mreža stvara, jer se naplaćuje za ono što izdavači stvarno kupuju, a to je dolazak."
+          },
+          {
+            "kind": "h",
+            "text": "Pass i trgovina, koje plaćaju igrači"
+          },
+          {
+            "kind": "p",
+            "text": "Neobavezno i namjerno ograničeno. Sezonski pass traje devedeset dana i naginje ponderiranje spawnova prema rjeđim kovanicama, uz tjedno preuzimanje rijetke kovanice i otkrivanje. Boostovi se prodaju zasebno i nijedan ne kupuje bolje izglede na kovanici: otkrivaju što je upitnik, šire domet hvatanja, dovode više kovanica u blizinu, množe XP, čuvaju promašenu kovanicu, omogućuju jedno hvatanje izdaleka ili dodaju kutiju karata."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Season Pass",
+                "value": "9,95 € po sezoni od 90 dana"
+              },
+              {
+                "label": "Shiba (3 otkrivanja), This Is Fine",
+                "value": "0,99 € svaki"
+              },
+              {
+                "label": "XP Boost, Chill Guy, Pump It, Cash",
+                "value": "1,49 € svaki"
+              },
+              {
+                "label": "Fitness, Diamond Hands",
+                "value": "1,99 € svaki"
+              },
+              {
+                "label": "Magnet spawnova, mamac spawnova",
+                "value": "2,49 € svaki"
+              }
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Osnovno hvatanje, XP, izazovi i postignuća na platformi ostaju besplatni, zauvijek. Plaćena razina koja bi zaključavala krug igre slomila bi jedinu stvar koju izdavači kupuju, a to je da se ljudi pojave."
+          },
+          {
+            "kind": "h",
+            "text": "Zašto je ova podjela pravog oblika"
+          },
+          {
+            "kind": "p",
+            "text": "Potrošnja igrača je elastična, sezonska i ograničena onim što je osoba spremna platiti za hobi. Potrošnja izdavača je marketinška stavka koja se ocjenjuje prema cijeni po dolasku za koju postoji stvarna alternativa za usporedbu. Prva održava svjetla upaljenima na početku, kad ima više igrača nego kampanja. Druga je ono što posao postaje, a radi samo ako se prva nikad ne izrodi u pay-to-win, jer mreža igrača koji plaćaju i svi hvataju sve prijavljuje dolaske koji lokaciji ne vrijede ništa."
+          }
+        ]
+      },
+      "governance": {
+        "index": "12",
+        "eyebrow": "Upravljanje",
+        "title": "Tko odlučuje o brojkama",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ovaj protokol ima neobično velik broj podesivih konstanti: granice radijusa, pragove pouzdanosti, ponderiranje naknada za postavljanje, udio naknada koji se vraća tragačima i same ljestve hvatanja. Svaka od njih je odluka o politici prerušena u konfiguracijsku vrijednost, a pretvaranje da nije tako je način na koji protokolima na kraju upravlja onaj tko je zadnji uredio datoteku."
+          },
+          {
+            "kind": "h",
+            "text": "Postupni položaj, iskreno rečeno"
+          },
+          {
+            "kind": "p",
+            "text": "Upravljanje nije aktivno. Parametre danas postavlja osnovni tim i mijenjaju se migracijama koje su zabilježene i mogu se pregledati. To nećemo opisivati kao decentralizirano, jer nije."
+          },
+          {
+            "kind": "p",
+            "text": "Razlog odgode nije nevoljkost. Glasanje o ekonomiji bez volumena je kazalište: odaziv je nizak, šačica vlasnika odlučuje, a odluke se donose o parametrima za čiju procjenu nitko nema dovoljno podataka. Upravljanje postaje smisleno kad postoji stvaran tok naknada, jer tada promjena parametra ima mjerljivu posljedicu o kojoj se može raspravljati."
+          },
+          {
+            "kind": "h",
+            "text": "Čime će se upravljati, a čime ne"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Upravlja se**: ponderiranjem naknada, udjelom tragača u naknadama protokola, raspodjelom riznice, granicama radijusa i pragovima pouzdanosti dostupnima imovini visoke vrijednosti.",
+              "**Upravlja se s odgodom**: svime što mijenja vrijednost već postavljene imovine. Kampanja financirana prema jednom rasporedu naknada treba po njemu i završiti.",
+              "**Ne upravlja se**: obvezama o privatnosti iz četrnaestog poglavlja. Ograničenja zadržavanja i odbijanje objave podataka o kretanju nisu parametri, a glasanje nije legitiman način da se oslabe.",
+              "**Ne upravlja se**: ishodima pojedinačnih preuzimanja. Odbijeno preuzimanje stvar je rješavanja sporova, a ne glasanja."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Sustav upravljanja koji može izglasati ukidanje privatnosti vlastitih korisnika nije zaštita, nego napadna površina s kvorumom."
+          }
+        ]
+      },
+      "security": {
+        "index": "13",
+        "eyebrow": "Rizik",
+        "title": "Napadi, ograničenja i ono što ne tvrdimo",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokol koji ljude plaća zato što su negdje poziva ljude da lažu da su negdje. Konkretno navesti napade korisnije je nego tvrditi da je sustav siguran."
+          },
+          {
+            "kind": "h",
+            "text": "Napadi od kojih se branimo"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Lažiranje GPS-a**, ublaženo zahtjevom da radio okruženje i trag kretanja potvrde položaj te atestacijom uređaja koja otkriva izmijenjene verzije OS-a.",
+              "**Sybil farmanje**, ublaženo fizičkim troškom putovanja i ograničenjima preuzimanja po uređaju unutar radijusa i vremenskog okvira.",
+              "**Relay napadi**, u kojima stvarni uređaj na lokaciji potpisuje za udaljenog korisnika, ublaženi vezanjem atestacije uz instancu aplikacije i sesiju te ograničavanjem broja preuzimanja po uređaju.",
+              "**Farme emulatora**, ublažene atestacijom, na kojoj emulatori padaju, i tragovima kretanja koji se statistički razlikuju od stvarnog hodanja.",
+              "**Spawnovi koje prijavljuje klijent**, spriječeni, a ne samo ublaženi: samo server najavljuje što postoji i gdje, pa izmijenjeni klijent može lagati o onome što vidi i ništa ne dobiti.",
+              "**Dvostruka preuzimanja**, spriječena uzimanjem zaključavanja prije procjene preuzimanja, pa se dvjema osobama koje posegnu za posljednjom jedinicom ne može obje reći da su je dobile."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Ograničenja koja prihvaćamo"
+          },
+          {
+            "kind": "p",
+            "text": "Dovoljno odlučan napadač s izmijenjenim hardverom i fizičkom prisutnošću na jednoj lokaciji može iz nje izvući više vrijednosti nego pošten korisnik. Štetu ograničavamo gornjim granicama po lokaciji umjesto da se pretvaramo da je to nemoguće. Pozicioniranje u zatvorenom i dalje je bitno manje točno nego na otvorenom, pa imovina u zatvorenom koristi šire radijuse i više se oslanja na radio otiske. I nijedan potrošački uređaj ne može dokazati da je prisutan bio čovjek, a ne uređaj: mobitel u dostavnom kombiju i dalje se kreće kao mobitel u džepu."
+          },
+          {
+            "kind": "h",
+            "text": "Rizici koji nisu napadi"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Ovisnost o platformama**. Atestaciju daju Apple i Google. Promjena politike kod bilo koga od njih mogla bi preko noći oslabiti najjači signal u sustavu, a ne postoji verzija ovoga koja zaobilazi operativni sustav.",
+              "**Dostupnost chaina**. Zaustavljen chain znači preuzimanja u redu čekanja. Protokol ponavlja umjesto da odbaci, ali osoba koja stoji na ulici ponovni pokušaj ne doživljava kao uspjeh.",
+              "**Fizička sigurnost**. Nagrađivanje ljudi za odlazak na mjesta dovodi ljude na mjesta. Imovina se postavlja na raskrižja, a ne unutar tlocrta zgrada, dropovi visoke vrijednosti izbjegavaju privatne posjede, a aplikacija nosi sigurnosnu obavijest. To je ograničenje dizajna, a ne odricanje od odgovornosti."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Gradimo ekonomsko odvraćanje, a ne kriptografsko jamstvo. Kad se to dvoje pomiješa, korisnici stradaju."
+          }
+        ]
+      },
+      "privacy": {
+        "index": "14",
+        "eyebrow": "Privatnost",
+        "title": "Podaci o lokaciji najosjetljiviji su podaci koji postoje",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Zapis o tome kamo netko ide otkriva njegov dom, posao, zdravlje, vjeru i odnose. Graditi mrežu na tvrdnjama o lokaciji znači prihvatiti odgovornost za to, a odgovoran dizajn je držati toga što je moguće manje."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Neprekidno praćenje nikad nije potrebno. Aplikacija traži položaj kad pokušaš preuzimanje, a ne u pozadini.",
+              "Sirovi podaci senzora i radija koriste se za ocjenu preuzimanja i zatim odbacuju nakon kratkog razdoblja zadržavanja.",
+              "Na chain se zapisuje da je preuzimanje na javnoj koordinati uspjelo, ista informacija kao kad trgovina zna da je netko iskoristio vaučer.",
+              "Tvoja povijest kretanja ostaje na tvom uređaju. Protokolu ne treba i ne želi je.",
+              "Izdavači dobivaju zbirne brojke, nikad pojedinačne tragove."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Problem koji nismo riješili"
+          },
+          {
+            "kind": "p",
+            "text": "Budući da su zapisi preuzimanja po prirodi chaina javni i trajni, uporan promatrač može povezati preuzimanja istog novčanika na različitim lokacijama. To je stvarna slabost i svojstvena je namiri na javnoj knjizi. Korisnici koji to žele izbjeći trebali bi koristiti zasebne novčanike za zasebne kontekste, a aplikacija to olakšava umjesto da skriva, no zadana postavka koja zahtijeva da korisnik zna za problem nije rješenje."
+          },
+          {
+            "kind": "callout",
+            "text": "Iskreni sažetak: minimiziramo ono što držimo, ne prodajemo ono što držimo, a postoji jedan napad povezivanja na javni zapis koji možemo smanjiti, ali ne i ukloniti."
+          }
+        ]
+      },
+      "compliance": {
+        "index": "15",
+        "eyebrow": "Nadležnost",
+        "title": "Regulacija i gdje se ovo nalazi",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Tri režima istovremeno dotiču ovaj protokol, što je neobično i vrijedi to izričito reći, a ne ostaviti u fusnoti."
+          },
+          {
+            "kind": "h",
+            "text": "Zaštita podataka"
+          },
+          {
+            "kind": "p",
+            "text": "Lokacija je prema većini suvremenih zakona o zaštiti podataka blizu posebnih kategorija, a protokol je izgrađen prema najstrožem, a ne najpovoljnijem tumačenju. Položaj se prikuplja u navedenu svrhu u trenutku preuzimanja, zadržava samo koliko to zahtijevaju ocjenjivanje i rješavanje sporova, i nikad se ne spaja u profil kretanja. Gdje režim daje pravo na brisanje, zapis izvan chaina može se izbrisati; zapis preuzimanja na chainu ne može, što je ograničenje knjige i otvoreno se navodi, a ne uljepšava."
+          },
+          {
+            "kind": "h",
+            "text": "Klasifikacija tokena"
+          },
+          {
+            "kind": "p",
+            "text": "$SEEK je osmišljen kao imovina za korištenje i koordinaciju, a namjena opisana u desetom poglavlju stvarna je, a ne ukrasna. To je stav dizajna, a ne pravni zaključak. Klasifikacija se razlikuje po nadležnostima, mijenja se s vremenom i whitepaper je ne može riješiti samom tvrdnjom. Dostupnost je stoga ograničena tamo gdje to lokalna pravila zahtijevaju."
+          },
+          {
+            "kind": "h",
+            "text": "Nagrade, sreća i granica prema kockanju"
+          },
+          {
+            "kind": "p",
+            "text": "Hvatanje uključuje bacanje, što ga stavlja blizu granice koja se razlikuje od zemlje do zemlje. Dva svojstva drže ga na pravoj strani u većini režima i namjerno se čuvaju: sudjelovanje ne košta ništa, a plaćeni predmeti prilagođavaju izglede i stope, a nisu oklade s promjenjivom isplatom. Pass kupuje ponderiranje, a boost množitelj; ni jedno nije ulog koji se može izgubiti. Gdje neka nadležnost to drukčije tumači, plaćena razina se ne nudi, umjesto da se o tome raspravlja."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Osobni podaci izvan chaina",
+                "value": "Mogu se izbrisati na zahtjev"
+              },
+              {
+                "label": "Zapis preuzimanja na chainu",
+                "value": "Trajan, i kao takav otvoreno naveden"
+              },
+              {
+                "label": "Dobna provjera",
+                "value": "Pri registraciji, provodi se za plaćene predmete"
+              },
+              {
+                "label": "Plaćeni predmeti",
+                "value": "Ne nude se u nadležnostima koje ih smatraju okladama"
+              }
+            ]
+          }
+        ]
+      },
+      "roadmap": {
+        "index": "16",
+        "eyebrow": "Smjer",
+        "title": "Što je izgrađeno i što slijedi",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol je aktivan na iOS-u i Androidu s dropovima temeljenima na lokaciji, AR renderiranjem i društvenim novčanikom. Sustav provjere trenutno koristi signale GNSS-a, atestacije i kontinuiteta kretanja; radio otisci uvode se postupno. Atestacija se provodi iza zastavice, i to je njezino iskreno stanje: put odbijanja je izgrađen, a prekidač za provođenje nije uključen na svakoj površini."
+          },
+          {
+            "kind": "p",
+            "text": "Drag-and-drop alat za kampanje je izgrađen. Slijedi samouslužni poslovni portal koji otvara postavljanje izvan upravljanih partnerstava i analitika dolazaka koja ide uz njega. Uz to su token generation event, način za evente uživo, sezone i skeniranje predmeta. Upravljanje slijedi kad bude dovoljno stvarnog toka naknada da odluke o parametrima budu smislene, iz razloga navedenih u dvanaestom poglavlju."
+          },
+          {
+            "kind": "h",
+            "text": "Što ne obećavamo"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Datum za upravljanje. Ovisi o volumenu, a volumen nije datum.",
+              "Jednaku točnost u zatvorenom. To je težak problem, a iskren odgovor su širi radijusi u zatvorenom u doglednoj budućnosti.",
+              "Novi chain radi samog chaina. Zahtjevi za kašnjenje i trošak iz šestog poglavlja su uski, a dodavanje chaina koji ih ne ispunjava bila bi marketinška, a ne tehnička odluka."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Potpuna raščlamba po fazama nalazi se na stranici plana razvoja, koja se ažurira kako se stvari isporučuju."
+          }
+        ]
+      },
+      "glossary": {
+        "index": "17",
+        "eyebrow": "Referenca",
+        "title": "Pojmovnik",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Pojmovi korišteni u ovom dokumentu, sa značenjem koje imaju ovdje, a ne onim koje imaju općenito."
+          },
+          {
+            "kind": "glossary"
+          }
+        ]
+      }
+    }
+  },
+  "allocations": {
+    "community": {
+      "label": "Nagrade zajednice",
+      "note": "Tragači ih zarađuju skupljanjem i misijama"
+    },
+    "ecosystem": {
+      "label": "Ekosustav i partneri",
+      "note": "Subvencije kampanja, uključivanje lokacija, integracije"
+    },
+    "team": {
+      "label": "Tim i suradnici",
+      "note": "Vesting 4 godine, cliff 12 mjeseci"
+    },
+    "treasury": {
+      "label": "Riznica",
+      "note": "Upravljana rezerva za razvoj protokola"
+    },
+    "liquidity": {
+      "label": "Likvidnost",
+      "note": "Dubina tržišta na burzama i na chainu"
+    },
+    "backers": {
+      "label": "Rani ulagači",
+      "note": "Vesting 2 godine, cliff 6 mjeseci"
+    }
+  },
+  "tokenFacts": {
+    "ticker": {
+      "label": "Ticker",
+      "value": "$SEEK"
+    },
+    "chain": {
+      "label": "Chain",
+      "value": "Solana (SPL), namira na bilo kojem chainu"
+    },
+    "supply": {
+      "label": "Ukupna ponuda",
+      "value": "1.000.000.000"
+    },
+    "emission": {
+      "label": "Emisija",
+      "value": "Fiksna, bez daljnjeg mintanja"
+    }
+  },
+  "glossary": {
+    "proof-of-location": {
+      "term": "Proof of location",
+      "definition": "Tvrdnja da je uređaj bio unutar zadanog radijusa u zadanom vremenskom okviru, ocijenjena prema nekoliko neovisnih signala i dovoljno vjerodostojna da se na temelju nje oslobodi vrijednost. Probabilistička, nikad apsolutna."
+    },
+    "confidence-score": {
+      "term": "Ocjena pouzdanosti",
+      "definition": "Kombinirani rezultat ocjenjivanja signala preuzimanja. Svaka imovina određuje ocjenu koju zahtijeva, pa nagrada za misiju i drop s ulaznicom mogu dijeliti provjeru, a ne dijeliti prag."
+    },
+    "claim-radius": {
+      "term": "Radijus preuzimanja",
+      "definition": "Udaljenost od koordinata imovine unutar koje se može uzeti. Zadano 30 m, podesivo od 5 m do 500 m, i najveća pojedinačna poluga koju izdavač ima i nad cijenom i nad značenjem."
+    },
+    "drop": {
+      "term": "Drop",
+      "definition": "Imovina postavljena na koordinate koja čeka preuzimanje. Ima količinu, vremenski okvir, prag pouzdanosti i radijus."
+    },
+    "spawn": {
+      "term": "Spawn",
+      "definition": "Drop onako kako ga igra prikazuje: najavljuje ga server, vidljiv je na mapi, istječe unutar sat vremena i vrijedi dva pokušaja hvatanja."
+    },
+    "attestation": {
+      "term": "Atestacija",
+      "definition": "Potpisana izjava operativnog sustava da je aplikacija izvorna, a uređaj neizmijenjen. Play Integrity na Androidu, App Attest na iOS-u. Najjači signal u sustavu i onaj koji protokol ne kontrolira."
+    },
+    "radio-fingerprint": {
+      "term": "Radio otisak",
+      "definition": "Skup Wi-Fi mreža i baznih stanica vidljivih s nekog položaja, uspoređen s onim što bi tamo trebalo biti vidljivo. Sporo se mijenja i teško se krivotvori, i upravo ga to čini korisnim."
+    },
+    "motion-continuity": {
+      "term": "Kontinuitet kretanja",
+      "definition": "Trag akcelerometra između jednog potvrđenog položaja i sljedećeg. Hvata preuzimanje koje se teleportira, jer pomak od 400 km u 90 sekundi ne ostavlja odgovarajući profil kretanja."
+    },
+    "verified-arrival": {
+      "term": "Potvrđeni dolazak",
+      "definition": "Preuzimanje koje je ispunilo svoj prag unutar izdavačevog radijusa. Jedinica koju izdavač kupuje, i razlog zašto se brojka troška kampanje broji, a ne modelira."
+    },
+    "placement-fee": {
+      "term": "Naknada za postavljanje",
+      "definition": "Ono što izdavač plaća da drži područje, ovisno o radijusu, trajanju i potražnji za područjem. Razlikuje se od nagrade, koju dobiva tragač."
+    },
+    "cold-streak": {
+      "term": "Hladni niz",
+      "definition": "Mjerač sažaljenja. Dva postotna boda šanse za hvatanje po uzastopnom promašaju, najviše dvanaest, primjenjuje se i na drugi pokušaj i između kovanica."
+    },
+    "streak-penalty": {
+      "term": "Kazna za niz",
+      "definition": "Suprotna poluga. Četiri postotna boda manje po uzastopnom uspjehu na istoj kovanici, najviše dvadeset, pa farmanje jedne točke spawna postaje lošije, a ne bolje."
+    },
+    "seeker": {
+      "term": "Tragač",
+      "definition": "Osoba koja hoda do imovine i preuzima je. Ujedno i prva od deset razina igrača, a posljednja je Legend."
+    },
+    "seek": {
+      "term": "$SEEK",
+      "definition": "Imovina za namiru i koordinaciju. Financira kampanje, plaća naknade za postavljanje, kupuje prioritet postavljanja kroz staking i nosi glas u upravljanju kad upravljanje postane aktivno."
+    }
+  },
+  "whitepaperFigures": {
+    "draft": "Nacrt brojki, nije konačna tokenomika",
+    "totalSupply": "Ukupna ponuda",
+    "donutAria": "Raspodjela tokena po udjelu u ukupnoj ponudi",
+    "terms": "Pojmova: {count}",
+    "filterTerms": "Filtriraj pojmove",
+    "filter": "Filtar",
+    "noMatch": "Ništa ne odgovara. Sam dokument možeš pretraživati funkcijom traženja u pregledniku.",
+    "stackCaption": "Preuzimanja putuju niz slojeve; vrijednost se vraća gore. Odaberi sloj za detalje.",
+    "liveModel": "Model uživo",
+    "interactive": "Interaktivno",
+    "confidenceTitle": "Pokušaj odbiti preuzimanje",
+    "thresholdLabel": "Prag imovine",
+    "confidenceThreshold": "pouzdanost · prag {threshold}",
+    "claimAccepted": "Preuzimanje prihvaćeno",
+    "claimRefused": "Preuzimanje odbijeno",
+    "shortBy": "Nedostaje {short}. Ponovljena odbijanja s jednog uređaja dodatno mu podižu prag.",
+    "confidenceCaption": "Težine su ilustrativne. Poanta je u obliku: nijedan signal sam ne prolazi za financiranu kampanju, a krivotvorenje sva četiri odjednom košta više od dropa.",
+    "economyLabel": "Ekonomski krug",
+    "stageOf": "Faza {step} od {total}",
+    "timelineTitle": "Jedno preuzimanje, faza po faza",
+    "stop": "Zaustavi",
+    "runReal": "Pokreni stvarnom brzinom",
+    "claimStages": "Faze preuzimanja",
+    "segAria": "{label}, {ms} milisekundi, {where}",
+    "endToEnd": "{seconds} s od početka do kraja",
+    "takes": "Traje",
+    "elapsed": "Proteklo",
+    "whatMoves": "Što se kreće",
+    "timelineWhere": {
+      "device": "Na tvom mobitelu",
+      "verifier": "Provjeravatelj",
+      "chain": "Chain za namiru"
+    },
+    "timelineCaption": "Ovo su budžeti, a ne mjerenja. Prozor senzora i namira mijenjaju se s uvjetima, a sve između njih je aritmetika koja se ne mijenja. Obrati pažnju gdje je granica: sirovi podaci senzora nikad ne napuštaju prve tri faze.",
+    "vestingTitle": "Ponuda u optjecaju, mjesec po mjesec",
+    "vestingAria": "Ponuda u optjecaju po alokaciji kroz 48 mjeseci",
+    "circulatingMonth": "u optjecaju u mjesecu {month}",
+    "circulatingLaunch": "u optjecaju pri lansiranju",
+    "axisLaunch": "Lansiranje",
+    "axisYear": "Godina {year}",
+    "month": "Mjesec",
+    "vestingCaption": "Čitaj stepenice, ne krivulju. Ravan dio nakon kojeg slijedi skok je cliff, a na cliffu raspored ili drži ili ne. Alokacije tima i ulagača vrijedi provjeriti, jer se te dvije otključavaju na tržište, a ne ljudima koji koriste mrežu.",
+    "calcTitle": "Što budžet kupuje",
+    "calcBudget": "Budžet kampanje",
+    "calcReward": "Nagrada po preuzimanju",
+    "calcRadius": "Radijus preuzimanja",
+    "calcFee": "Naknada za postavljanje na ovom radijusu: ${fee} po dropu",
+    "calcArrivals": "Potvrđeni dolasci",
+    "calcPerPerson": "${cost} po osobi na vratima",
+    "calcDisplay": "Isti budžet kao display",
+    "calcInferred": "prikaza, od kojih otprilike {visits} postane pretpostavljeni posjet po ${cost} svaki",
+    "calcCaption": "Display brojke koriste CPM od ${cpm} i omjer prikaza i posjeta od {rate} %, oboje uobičajena pravila u industriji. Bitna razlika je u tome što se jedan stupac mjeri na vratima, a drugi se pretpostavlja.",
+    "contents": "Sadržaj · poglavlja: {count}",
+    "chaptersLabel": "Poglavlja",
+    "close": "Zatvori",
+    "ladderTitle": "Bacanje za hvatanje, onako kako ga računa server",
+    "rarityLabel": "Rijetkost",
+    "playerLevel": "Razina igrača",
+    "chargeRing": "Prsten punjenja",
+    "missed": "Promašaji",
+    "clanBonus": "Bonus klana",
+    "points": "+{points} b",
+    "baseChance": "Osnovna šansa",
+    "levelBonus": "Bonus razine",
+    "ringMultiplier": "Množitelj prstena",
+    "retryMultiplier": "Množitelj drugog pokušaja",
+    "firstAttempt": "Prvi pokušaj",
+    "retry": "Drugi pokušaj",
+    "acrossSpawn": "Za cijeli spawn",
+    "youCaught": "Uhvatio si",
+    "notYet": "još ne",
+    "ladderHint": "Jedan spawn ne govori gotovo ništa. Pokreni tisuću i gledaj kako se dvije trake približavaju.",
+    "ladderTally": "Uhvaćeno {caught} od {spawns} spawnova, {gap} bodova od modela.",
+    "runOne": "Pokreni jedan spawn",
+    "runThousand": "Pokreni tisuću",
+    "reset": "Poništi",
+    "ladderCaption": "Migracija za rijetkost {rarity} objavljuje {first} %, zatim {second} %, a za cijeli spawn {overall} %. To je ovaj model na razini 5 s punim prstenom i bez klana, što su početne vrijednosti klizača. Uhvaćena jedinica je jedinica igre, a koliko vrijedi u tokenima stvar je tržišta, a ne igre.",
+    "tocTitle": "Sadržaj"
+  },
+  "stackLayers": {
+    "app": {
+      "label": "Aplikacija",
+      "sub": "Seekprotocol · poslovni portal · alat za kampanje",
+      "detail": "Ono što ljudi dodiruju. Mobilna aplikacija prikazuje imovinu u AR-u i brine se o skupljanju; portal je mjesto gdje je izdavači postavljaju. Oboje su obični klijenti slojeva ispod i nemaju povlašteni pristup."
+    },
+    "intelligence": {
+      "label": "Inteligencija",
+      "sub": "AI suputnik · generiranje misija · usmjeravanje",
+      "detail": "Čita sliku kamere i tvoju povijest igre kako bi predložio kamo dalje i objasnio što gledaš. Radi na uređaju gdje god može i nikad ne vidi sirovu povijest položaja koja mu ne treba."
+    },
+    "location": {
+      "label": "Provjera lokacije",
+      "sub": "GNSS · radio otisak · atestacija · kretanje",
+      "detail": "Ocjenjuje preuzimanje prema neovisnim signalima i izdaje potpisanu atestaciju kad ocjena prijeđe prag imovine. Namjerno izvan chaina: podaci senzora koji omogućuju provjeru upravo su podaci koji ne bi smjeli biti javni."
+    },
+    "settlement": {
+      "label": "Namira",
+      "sub": "Bilo koji chain · imovina · zapisi preuzimanja",
+      "detail": "Čuva definicije imovine, koordinate i zapise preuzimanja te prenosi vrijednost kad se preuzimanje prihvati. Mreža je konfiguracija, a ne integracija, a prag koji svaka mora prijeći su naknade toliko niske da trošak preuzimanja male nagrade ne nadmaši nju samu."
+    }
+  },
+  "confidenceSignals": {
+    "gnss": {
+      "label": "GNSS položaj",
+      "detail": "Satelitski položaj i njegova prijavljena točnost, plus konstelacija i broj satelita.",
+      "spoofable": "Na rootanom uređaju trivijalno se lažira."
+    },
+    "radio": {
+      "label": "Okolni radio signali",
+      "detail": "Wi-Fi mreže i bazne stanice u blizini uspoređene s onim što bi ovdje trebalo biti vidljivo.",
+      "spoofable": "Teško se krivotvori; radio okruženja sporo se mijenjaju."
+    },
+    "attest": {
+      "label": "Atestacija uređaja",
+      "detail": "Play Integrity ili App Attest potvrđuju izvornu aplikaciju na neizmijenjenom OS-u.",
+      "spoofable": "Farme emulatora ovdje odmah padaju."
+    },
+    "motion": {
+      "label": "Kontinuitet kretanja",
+      "detail": "Trag akcelerometra između tvog posljednjeg potvrđenog položaja i ovoga.",
+      "spoofable": "Skok od 400 km u 90 sekundi nema odgovarajući profil kretanja."
+    }
+  },
+  "confidenceTiers": {
+    "low": {
+      "label": "Nagrada za misiju",
+      "note": "Mala vrijednost, nizak prag."
+    },
+    "mid": {
+      "label": "Partnerski drop",
+      "note": "Zadano za financirane kampanje."
+    },
+    "high": {
+      "label": "Event s ulaznicama",
+      "note": "Visoka vrijednost, sve se mora složiti."
+    }
+  },
+  "economyStages": {
+    "fund": {
+      "label": "Izdavač financira",
+      "actor": "Brend · projekt · lokacija",
+      "body": "Kampanja se iskazuje i financira u $SEEK-u, uz naknadu za postavljanje ovisnu o radijusu, trajanju i tome koliko je područje traženo.",
+      "flow": "$SEEK ulazi"
+    },
+    "place": {
+      "label": "Imovina se postavlja",
+      "actor": "Protokol",
+      "body": "Drop se zapisuje na svoje koordinate s radijusom preuzimanja, vremenskim okvirom i pragom pouzdanosti koji zahtijeva.",
+      "flow": "Naknada u riznicu"
+    },
+    "walk": {
+      "label": "Netko prošeta tamo",
+      "actor": "Tragač",
+      "body": "Jedini korak koji se ne može automatizirati. Putovanje je trošak koji farmanje čini skupim.",
+      "flow": "Vrijeme i udaljenost"
+    },
+    "verify": {
+      "label": "Prisutnost se potvrđuje",
+      "actor": "Sloj provjere",
+      "body": "Četiri signala ocjenjuju se izvan chaina. Na chain stiže potpisana atestacija, a ne tvoji podaci senzora.",
+      "flow": "Atestacija"
+    },
+    "settle": {
+      "label": "Namiruje se",
+      "actor": "Chain za namiru",
+      "body": "Prijenos se potvrđuje za manje od sekunde, za djelić centa, na chainu na kojem imovina živi, a zapis preuzimanja je javan.",
+      "flow": "Nagrada izlazi"
+    },
+    "split": {
+      "label": "Naknade se vraćaju",
+      "actor": "Protokol",
+      "body": "Većina naknada protokola ide ljudima koji hodaju; ostatak financira riznicu i ekosustav.",
+      "flow": "Većina tragačima"
+    }
+  },
+  "timelineStages": {
+    "open": {
+      "label": "Drop otvoren",
+      "detail": "Dodirneš imovinu na mapi ili posegneš za njom kroz kameru. Aplikacija uzima položaj koji već ima i pokreće novi prozor senzora.",
+      "payload": "ID imovine, zadnji poznati položaj"
+    },
+    "window": {
+      "label": "Prozor senzora",
+      "detail": "Daleko najdulja faza i ona koja odlučuje o svemu nakon nje: novi GNSS položaj s točnošću, skeniranje radio okruženja i trag kretanja od posljednjeg potvrđenog položaja.",
+      "payload": "GNSS položaj, broj satelita, skup Wi-Fi mreža i baznih stanica, trag akcelerometra"
+    },
+    "attest": {
+      "label": "Atestacija i potpis",
+      "detail": "Play Integrity ili App Attest potvrđuju da je aplikacija izvorna, a OS neizmijenjen. Preuzimanje se potpisuje ključem vezanim uz tu instancu aplikacije, i upravo to čini proslijeđeno preuzimanje skupim.",
+      "payload": "Token atestacije, potpisano preuzimanje"
+    },
+    "score": {
+      "label": "Ocjenjivanje",
+      "detail": "Izvan chaina, jer ovisi o podacima senzora koji nemaju što tražiti u javnosti. Svaki signal ocjenjuje se prema tome kako bi koordinata trebala izgledati, a rezultati se spajaju u jedan broj pouzdanosti.",
+      "payload": "Ocjena pouzdanosti, raščlamba po signalima"
+    },
+    "threshold": {
+      "label": "Provjera praga",
+      "detail": "Ocjena ili ispunjava prag imovine ili ne. Odbijanje se bilježi uz uređaj, a ponovljena odbijanja tom uređaju podižu prag, umjesto da samo ponovno padne.",
+      "payload": "Prihvati ili odbij, potpisana atestacija"
+    },
+    "settle": {
+      "label": "Namira",
+      "detail": "Zapis preuzimanja i prijenos stižu na chain za namiru u jednoj transakciji. To je jedina faza koju itko drugi može vidjeti, a govori samo da je preuzimanje na javnoj koordinati uspjelo.",
+      "payload": "Zapis preuzimanja, prijenos tokena"
+    },
+    "confirm": {
+      "label": "U tvom novčaniku",
+      "detail": "Novčanik se ažurira, a imovina nestaje s tvoje mape. Od dodira do posjedovanja manje od dvije sekunde uz dobru vezu.",
+      "payload": "Ažuriranje salda, stanje mape"
+    }
+  },
+  "referrals": {
+    "eyebrow": "Preporuke",
+    "title": "Svaki prijatelj koji igra čini te jačim",
+    "lead": "Daj prijatelju svoj kod pozivnice i dobivaš 5 % više XP-a na svakom svom ulovu, dokle god on igra. Bez gornje granice, i to mu se nikad ne oduzima.",
+    "codeLabel": "Tvoj kod pozivnice od osam znakova",
+    "activeLabel": "AKTIVAN",
+    "exampleLabel": "Jedan legendarni ulov, prije i poslije",
+    "exampleBody": "Bonus se primjenjuje kad se ulov ocjenjuje, na serveru, i upisuje u zapis uz tvoj rang u klanu, kako bi se to dvoje kasnije moglo razlikovati.",
+    "activeRule": "Aktivan znači {needed} ulova u posljednjih {days} dana",
+    "panelTitle": "TVOJ TIM",
+    "rateLabel": "TVOJA STOPA",
+    "idle": "neaktivan",
+    "levelShort": "RZ"
+  },
+  "referralRules": {
+    "once": {
+      "title": "Jedan pozivatelj, bira se jednom",
+      "body": "Kod se može iskoristiti samo jednom i poslije se nikad ne može promijeniti. Baza podataka odbija drugi pokušaj, pa aplikaciju nije moguće nagovoriti da to zaobiđe."
+    },
+    "newOnly": {
+      "title": "Samo novi računi",
+      "body": "Kod radi samo na računu bez XP-a i bez ičega skupljenog. Iskusni tragač ne može se naknadno priključiti timu i računati kao nov."
+    },
+    "oneLevel": {
+      "title": "Samo jedna razina",
+      "body": "Zarađuješ od prijatelja koje si doveo, a ne od prijatelja koje oni dovedu. Ti tragači grade vlastiti tim i zadržavaju ga u cijelosti."
+    },
+    "friendKeeps": {
+      "title": "Tvoj prijatelj ništa ne gubi",
+      "body": "Bonus se dodaje tvojim ulovima. Nije dio njihovih, pa ništa što dobiješ nije nikome oduzeto."
+    }
+  },
+  "referralInfo": {
+    "openLabel": "Kako preporuke rade, u cijelosti",
+    "close": "Zatvori",
+    "eyebrow": "Preporuke u cijelosti",
+    "title": "Koliko tim vrijedi i kad se počinje računati",
+    "lead": "Dvije stvari ovdje je lako krivo shvatiti. Bonus nema gornju granicu, a prijatelj ne počinje donositi čim instalira aplikaciju. Oboje je bolje vidjeti nego slušati.",
+    "ladderLabel": "Aktivni prijatelji i koliko vrijede tvoji ulovi",
+    "ladderFriends": "Igra: {count}",
+    "noCap": "Nema gornje granice. Dvadeset aktivnih prijatelja znači dvostruko, i ništa u izračunu tu ne staje.",
+    "lifecycleLabel": "Kako prijatelj postaje preporuka",
+    "foot": "Prijatelj se računa kad ima {needed} stvarnih ulova unutar {days} dana. Ako ne stigne, prestaje se računati; kad opet zaigra, vraća se. Ni u jednom slučaju ništa se ne gubi."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "Daješ svoj kod",
+      "body": "Svaki tragač pri registraciji dobiva kod od osam znakova. Tvoj je zauvijek i ništa ne treba preuzimati ni generirati."
+    },
+    "redeem": {
+      "title": "Unose ga na novom računu",
+      "body": "Kod se prihvaća samo na računu bez XP-a i bez ičega skupljenog. Zapisuje se jednom i poslije se ne može promijeniti, pa nitko ne može biti premješten iz tima u tim."
+    },
+    "play": {
+      "title": "Izlaze van i igraju",
+      "body": "Računaju se samo stvarni ulovi. Pokušaji u simulatoru bilježe se zasebno i nisu dio ukupnog broja."
+    },
+    "count": {
+      "title": "Počinju donositi i nastavljaju",
+      "body": "Ovo je korak koji ljudi propuste. Instalacija nije dovoljna: prijatelj stvarno mora biti vani prije nego se tvoj množitelj pomakne."
+    }
+  },
+  "shop": {
+    "metaTitle": "Seekprotocol trgovina",
+    "metaDescription": "Paketi karata, Season Pass i boostovi za tvoj račun.",
+    "ogTitle": "Seekprotocol trgovina",
+    "eyebrow": "Trgovina",
+    "title": "Seekprotocol trgovina",
+    "lead": "Paketi karata, Season Pass i boostovi za tvoj račun.",
+    "howEyebrow": "Kako funkcionira",
+    "stepSignIn": "Prijavi se",
+    "stepSignInBody": "Isti račun kao u aplikaciji: Google, Apple ili kod poslan e-mailom.",
+    "stepPay": "Plati kriptom",
+    "stepPayBody": "Poveži Phantom, Solflare, Backpack ili bilo koji Wallet Standard novčanik i odobri jedan prijenos.",
+    "stepOpen": "Otvori u aplikaciji",
+    "stepOpenBody": "Paketi stižu na tvoj račun čim se plaćanje namiri. Otvori ih u Areni.",
+    "notConfigured": "Trgovina nije konfigurirana na ovom okruženju.",
+    "loadingAccount": "Provjeravamo tvoju sesiju...",
+    "signInTitle": "Prijavi se za kupnju",
+    "signInLead": "Paketi karata, Season Pass i boostovi za tvoj račun.",
+    "continueGoogle": "Nastavi s Googleom",
+    "continueApple": "Nastavi s Appleom",
+    "orEmail": "ili s kodom poslanim e-mailom",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "ti@primjer.hr",
+    "sendCode": "Pošalji kod",
+    "sendingCode": "Šaljemo...",
+    "codeSentTo": "Poslali smo 8-znamenkasti kod na {email}.",
+    "codeLabel": "Kod",
+    "verifyCode": "Prijavi se",
+    "verifying": "Provjeravamo...",
+    "useAnotherEmail": "Koristi drugi e-mail",
+    "signInFailed": "Prijava nije uspjela. Pokušaj ponovno.",
+    "codeInvalid": "Kod se ne podudara. Provjeri e-mail i pokušaj ponovno.",
+    "emailInvalid": "Upiši valjanu e-mail adresu.",
+    "signedInAs": "Prijavljen kao",
+    "signOut": "Odjavi se",
+    "productsEyebrow": "Paketi",
+    "productsTitle": "Odaberi paket",
+    "bundleSaving": "Uštedi {percent} %",
+    "paymentEyebrow": "Plaćanje",
+    "paymentTitle": "Odaberi način plaćanja",
+    "paymentSolHint": "SOL · Phantom, Solflare i drugi",
+    "paymentCrypto": "Plati kriptom",
+    "paymentDetails": "Valute i detalji plaćanja",
+    "packSingle": "Jedan paket",
+    "packFive": "Pet paketa",
+    "packTen": "Deset paketa",
+    "packs": "{count, plural, one {# paket} few {# paketa} other {# paketa}}",
+    "perPack": "{price} po paketu",
+    "solApprox": "oko {sol} SOL",
+    "solPending": "Iznos u SOL-u nakon osvježavanja",
+    "rateFrom": "Tečaj od {time}.",
+    "rateStale": "Možda se u međuvremenu promijenio.",
+    "rateNone": "Još nema tečaja za SOL.",
+    "refreshRate": "Osvježi tečaj SOL-a",
+    "refreshing": "Dohvaćamo tečaj...",
+    "rateNote": "Točan iznos u SOL-u fiksira se kad izradiš narudžbu i vrijedi pet minuta.",
+    "waysToPay": "Dva načina plaćanja: SOL iz novčanika u pregledniku na Solani ili USDC, USDT, SOL, ETH, BTC i drugo na Ethereumu, Baseu, Arbitrumu, Polygonu, BNB-u, Tronu i Bitcoinu putem Radomove stranice za plaćanje.",
+    "buy": "Kupi SOL-om",
+    "payOther": "Plati stablecoinima ili drugom kriptom",
+    "connectToBuy": "Poveži novčanik za kupnju",
+    "walletEyebrow": "Novčanik",
+    "walletTitle": "Plati iz svog novčanika",
+    "walletLead": "Phantom, Solflare, Backpack ili bilo koji novčanik koji podržava Wallet Standard. Ništa se ne šalje dok to tamo ne odobriš.",
+    "walletSelect": "Odaberi novčanik",
+    "walletConnecting": "Povezujemo...",
+    "walletConnect": "Poveži novčanik",
+    "walletCopy": "Kopiraj adresu",
+    "walletCopied": "Kopirano",
+    "walletChange": "Promijeni novčanik",
+    "walletDisconnect": "Odspoji",
+    "verificationNote": "Kratka provjera protiv automatiziranih kupnji. Obično se završi sama.",
+    "flowVerifying": "Dovršavamo sigurnosnu provjeru...",
+    "flowCreating": "Izrađujemo tvoju narudžbu...",
+    "flowReady": "Narudžba spremna",
+    "flowPay": "Plati {sol} SOL",
+    "flowFor": "za {product}",
+    "flowHeld": "Cijena zadržana {seconds} s",
+    "payInWallet": "Plati u novčaniku",
+    "cancelOrder": "Odustani",
+    "flowSigning": "Odobri plaćanje u svom novčaniku...",
+    "flowRedirecting": "Preusmjeravamo na stranicu za plaćanje...",
+    "flowChecking": "Provjeravamo tvoje plaćanje, pokušaj {attempt} od {total}...",
+    "flowConfirming": "Potvrđujemo na chainu, pokušaj {attempt} od {total}...",
+    "flowPaid": "Plaćeno. {count, plural, one {# paket je} few {# paketa su} other {# paketa je}} na tvom računu.",
+    "flowPaidAny": "Plaćeno. Tvoja kupnja je isporučena.",
+    "flowPending": "Tvoje plaćanje se potvrđuje. Kupnja će se pojaviti u aplikaciji nakon isporuke.",
+    "flowCancelled": "Narudžba otkazana. Ništa nije poslano.",
+    "viewTransaction": "Pogledaj transakciju",
+    "flowDone": "Gotovo",
+    "tryAgain": "Pokušaj ponovno",
+    "errCheckoutUnavailable": "Trgovina je trenutno pauzirana. Pokušaj kasnije.",
+    "errArenaUnavailable": "Arena još nije otvorena za ovaj račun. Prvo otvori aplikaciju.",
+    "errBuildRefused": "Ovu kupnju nije bilo moguće potvrditi s web stranice. Osvježi stranicu i pokušaj ponovno.",
+    "errRateLimited": "Previše pokušaja. Pričekaj trenutak i pokušaj ponovno.",
+    "errOrderExpired": "Narudžba je istekla prije plaćanja. Izradi novu.",
+    "errUnknownAction": "Trgovina i server se ne slažu. Osvježi stranicu.",
+    "errUnknownProduct": "Taj proizvod nije na prodaju.",
+    "errAccountBlocked": "Ovaj račun ne može kupovati pakete.",
+    "errUnauthorized": "Tvoja sesija je završila. Prijavi se ponovno.",
+    "errWalletRejected": "Novčanik je odbio plaćanje.",
+    "errInsufficient": "U novčaniku nema dovoljno SOL-a za ovaj iznos i mrežnu naknadu.",
+    "errWalletFailed": "Novčanik nije mogao poslati transakciju.",
+    "errNetwork": "Server nije dostupan. Provjeri vezu i pokušaj ponovno.",
+    "errCaptcha": "Provjera nije dovršena. Pokušaj ponovno.",
+    "errRadomUnavailable": "Stranica za plaćanje trenutno nije dostupna. Pokušaj kasnije ili plati Solana novčanikom.",
+    "errGeneric": "Nešto je pošlo po zlu. Pokušaj ponovno.",
+    "packsEyebrow": "Tvoji paketi",
+    "packsWaiting": "{count, plural, =0 {Nema paketa na čekanju} one {# paket čeka} few {# paketa čekaju} other {# paketa čeka}}",
+    "packsHint": "Otvori ih u aplikaciji, u Areni.",
+    "packsLive": "Uživo",
+    "ordersEyebrow": "Nedavne narudžbe",
+    "ordersEmpty": "Još nema narudžbi.",
+    "statusPending": "Na čekanju",
+    "statusPaid": "Plaćeno",
+    "statusExpired": "Isteklo",
+    "statusFailed": "Neuspjelo",
+    "checkout": {
+      "steps": "Koraci naplate",
+      "details": "Podaci",
+      "payment": "Plaćanje",
+      "digitalDelivery": "DIGITALNA ISPORUKA",
+      "yourDetails": "Tvoji podaci za naplatu",
+      "reviewPay": "Pregledaj i plati",
+      "intro": "Paketi karata, Season Pass i boostovi za tvoj račun.",
+      "contact": "Kontakt",
+      "email": "E-mail adresa",
+      "signedInAccount": "Prijavljeni račun",
+      "emailNote": "Tvoj potvrđeni e-mail za prijavu. Račun promijeni preko Odjavi se iznad.",
+      "name": "Ime (neobavezno)",
+      "deliverTo": "Koji račun treba primiti tvoju kupnju?",
+      "inApp": "Isporuka u Seekprotocol",
+      "friendsId": "Friends ID",
+      "optional": "neobavezno",
+      "friendsNote": "Friends ID nije obavezan. Ostavi prazno za isporuku na Seekprotocol račun povezan s tvojom trenutnom prijavom. Za drugi račun upiši njegov Friends ID od 8 znakova.",
+      "checking": "Provjeravamo račun…",
+      "continue": "Nastavi na plaćanje",
+      "invalidFriend": "S ovim Friends ID-om nismo pronašli dostupan račun. Provjeri kod od 8 znakova.",
+      "recipientUnavailable": "Arena još nije dostupna za ovaj račun. Odaberi drugog primatelja.",
+      "detailsFailed": "Nismo uspjeli provjeriti račun. Tvoji podaci su ovdje spremljeni; pokušaj ponovno.",
+      "receivingAccount": "Račun primatelja",
+      "yourAccount": "Tvoj prijavljeni račun",
+      "otherAccount": "Tvoja kupnja ide na ovaj račun.",
+      "change": "Promijeni",
+      "solWallet": "Solana novčanik",
+      "radomNote": "Nastavi na Radom i odaberi valutu i mrežu. Prije potvrde provjeri eventualnu mrežnu naknadu.",
+      "walletNote": "Odobri plaćanje u svom novčaniku. Sljedeći korak prikazuje točan iznos u SOL-u.",
+      "payNow": "Plati {price}",
+      "supportNote": "Svaka narudžba ima referencu i status isporuke. Sačuvaj referencu ako ti zatreba pomoć oko kupnje.",
+      "orderSummary": "Sažetak narudžbe",
+      "oneTime": "Jednokratna kupnja",
+      "digitalPacks": "Digitalni paketi karata",
+      "bundle": "Odaberi svoj paket",
+      "subtotal": "Međuzbroj",
+      "delivery": "Isporuka",
+      "toAccount": "Seekprotocol račun",
+      "total": "Ukupno",
+      "feeNote": "Mogu se primijeniti mrežne naknade. Pružatelj plaćanja ili novčanik prikazuje ih prije nego odobriš.",
+      "linkedDelivery": "Povezano s odabranim računom",
+      "linkedDeliveryNote": "Nakon potvrde plaćanja kupnja se isporučuje na odabrani Seekprotocol račun.",
+      "receipt": "Detalji narudžbe",
+      "refreshStatus": "Osvježi status",
+      "orderNumber": "Referenca narudžbe",
+      "receiptFailed": "Nismo uspjeli učitati ovu narudžbu. Sačuvaj referencu i pokušaj osvježiti.",
+      "orderSaved": "Narudžba spremljena",
+      "paymentReceived": "Plaćanje potvrđeno",
+      "paymentWaiting": "Čeka se potvrda plaćanja",
+      "delivered": "Kupnja isporučena",
+      "deliveryWaiting": "Čeka se isporuka",
+      "closedOrder": "Ova narudžba je zatvorena. Ako je novac otišao iz tvog novčanika, javi se podršci s ovom referencom prije ponovnog plaćanja.",
+      "pendingNote": "Ako si već platio, nemoj plaćati ponovno. Osvježi status; isporuka se provjerava i automatski.",
+      "loadingReceipt": "Učitavanje narudžbe…",
+      "calculating": "Izračunavamo…"
+    },
+    "errRecipient": "Nismo uspjeli provjeriti račun. Tvoji podaci su ovdje spremljeni; pokušaj ponovno.",
+    "errPreparing": "Tvoja narudžba se još priprema. Pokušaj ponovno uskoro; koristit ćemo istu narudžbu.",
+    "history": {
+      "title": "Moje narudžbe",
+      "lead": "Tvoje kupnje u trgovini, uključujući pakete poslane na drugi račun. Ovdje provjeri plaćanje i isporuku.",
+      "shortLead": "Pogledaj prethodne kupnje, status plaćanja i isporuku.",
+      "viewOrders": "Pogledaj moje narudžbe",
+      "navigation": "Trgovina i račun",
+      "shop": "Natrag u trgovinu",
+      "signInTitle": "Prijavi se da vidiš svoje narudžbe",
+      "signInLead": "Koristi isti račun kojim si kupovao. Prikazuju se samo tvoje narudžbe.",
+      "autoUpdate": "Status se ažurira automatski.",
+      "updated": "Zadnje ažuriranje: {time}",
+      "loading": "Učitavanje narudžbi…",
+      "loadFailed": "Nismo uspjeli ažurirati tvoje narudžbe. Prikazani status možda nije aktualan. Pokušaj Osvježi status.",
+      "emptyTitle": "Još nema narudžbi",
+      "emptyLead": "Narudžbe napravljene ovim računom pojavit će se ovdje.",
+      "purchase": "Seekprotocol kupnja",
+      "paymentLabel": "Plaćanje",
+      "deliveryLabel": "Isporuka",
+      "paidNotDelivered": "Tvoje plaćanje je potvrđeno. Isporuka se još obrađuje. Nemoj plaćati ponovno; status isporuke ažurira se automatski.",
+      "pagination": "Stranice povijesti narudžbi",
+      "previous": "Prethodna",
+      "next": "Sljedeća",
+      "page": "Stranica {page}",
+      "orderedAt": "Naručeno",
+      "paidAt": "Plaćeno",
+      "deliveredAt": "Pripisano",
+      "payment": {
+        "paid": "Plaćeno",
+        "pending": "Čeka plaćanje",
+        "expired": "Isteklo",
+        "failed": "Nije dovršeno",
+        "unknown": "Status nepoznat"
+      },
+      "delivery": {
+        "delivered": "Kupnja isporučena",
+        "processing": "Isporuka u tijeku",
+        "notDelivered": "Nije pripisano",
+        "awaitingPayment": "Nakon potvrde plaćanja"
+      },
+      "overview": "Pregled narudžbi",
+      "pageSize": "Narudžbi po stranici: {count}",
+      "orderShort": "Narudžba #{reference}",
+      "recipient": "Za {name}",
+      "moreProducts": "+ još proizvoda: {count}",
+      "reorder": "Ponovno složi košaricu",
+      "resume": "Nastavi plaćanje",
+      "checkPayment": "Provjeri plaćanje",
+      "checkingPayment": "Provjeravamo plaćanje…",
+      "actionFailed": "Nismo uspjeli provjeriti ovo plaćanje. Pokušaj ponovno.",
+      "viewDetails": "Pogledaj detalje narudžbe",
+      "quantity": "Količina: {count}",
+      "currencyNote": "Proizvodi zadržavaju izvorne valute. Ukupni iznos je iznos fiksiran za ovu naplatu, preračunat u trenutku narudžbe.",
+      "actionResult": {
+        "paid": "Tvoje plaćanje je potvrđeno. Status isporuke se ažurira.",
+        "pending": "Plaćanje još nije potvrđeno. Ako si već platio, nemoj plaćati ponovno.",
+        "closed": "Ova naplata je zatvorena. Ponovno složi košaricu za nastavak."
+      },
+      "restore": {
+        "loading": "Provjeravamo prethodnu narudžbu…",
+        "ready": "Tvoja košarica je vraćena. Prije ponovnog plaćanja provjeri trenutne cijene i račun primatelja.",
+        "failed": "Nismo uspjeli vratiti ovu narudžbu. Plaćanje se možda još obrađuje ili neki proizvod nije dostupan. Prvo osvježi status narudžbe."
+      }
+    },
+    "catalogLoading": "Učitavanje proizvoda…",
+    "catalogFailed": "Proizvodi se nisu mogli učitati. Pokušaj ponovno.",
+    "catalogEmpty": "Trenutno nema dostupnih proizvoda.",
+    "errCatalogChanged": "Ovaj proizvod se promijenio. Osvježi proizvode i provjeri cijenu prije plaćanja.",
+    "catalogTitle": "Odaberi proizvod",
+    "catalogLead": "Paketi karata, Season Pass i boostovi za tvoj račun.",
+    "passSeason": "Vrijedi za tekuću sezonu. Jednokratna kupnja.",
+    "cardsInPacks": "5 karata po paketu",
+    "recipientPrompt": "Koji račun treba primiti tvoju kupnju?",
+    "recipientOther": "Tvoja kupnja ide na ovaj račun.",
+    "purchaseDelivered": "Kupnja isporučena",
+    "errPassUnavailable": "Pass trenutno nije dostupan za kupnju.",
+    "errPassOwned": "Ovaj račun već ima aktivan Pass.",
+    "errPassPending": "Za ovaj račun još je otvorena narudžba Passa. Provjeri status plaćanja prije novog pokušaja.",
+    "friendsHelp": "Friends ID nije obavezan. Ostavi prazno za isporuku na Seekprotocol račun povezan s tvojom trenutnom prijavom. Za drugi račun upiši njegov Friends ID od 8 znakova.",
+    "productKinds": {
+      "pack": "Paketi karata",
+      "pass": "Pass",
+      "consumable": "Boost",
+      "bundle": "Paket"
+    },
+    "powerupNames": {
+      "rare_boost": "Shiba",
+      "coin_magnet": "Magnet spawnova",
+      "to_the_moon": "XP Boost",
+      "pump_it": "Pump It",
+      "diamond_hands": "Diamond Hands",
+      "spawn_lure": "Mamac spawnova",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
+    },
+    "cart": {
+      "add": "Dodaj {product} u košaricu",
+      "quantity": "Količina za {product}",
+      "decrease": "Smanji količinu",
+      "increase": "Povećaj količinu",
+      "remove": "Ukloni",
+      "empty": "Tvoja košarica je prazna. Dodaj jedan ili više proizvoda iznad.",
+      "conversion": "Proizvodi u različitim valutama pri naplati se preračunavaju u jedan ukupni iznos u USD."
+    },
+    "errCart": "Provjeri količine u košarici. Po narudžbi možeš kupiti do 50 paketa karata i jedan Pass.",
+    "login": {
+      "heading": "Prijavi se računom iz aplikacije",
+      "existingOnly": "Koristi isti način prijave kao u aplikaciji Seekprotocol. Trgovina je samo za postojeće račune aplikacije.",
+      "methods": "Načini prijave",
+      "continueWith": "Nastavi s {provider}",
+      "notAvailable": "Privremeno nedostupno",
+      "unavailable": "Ovaj način prijave trenutno nije dostupan. Pokušaj kasnije ili koristi drugi način već povezan s tvojim računom u aplikaciji.",
+      "methodsFailed": "Neki načini prijave nisu se mogli učitati.",
+      "orEmail": "ili se prijavi e-mailom",
+      "emailMethod": "Prijava e-mailom",
+      "emailCode": "Kod iz e-maila",
+      "signIn": "Prijavi se",
+      "emailNotSent": "Kod nije bilo moguće poslati. Koristi e-mail svog postojećeg računa u aplikaciji i pokušaj ponovno.",
+      "appRequired": "Za korištenje trgovine treba ti postojeći račun u aplikaciji. Prvo izradi račun ili dovrši njegovo postavljanje u aplikaciji Seekprotocol, pa se vrati ovamo.",
+      "noAccount": "Još nemaš račun u aplikaciji? Izradi ga u aplikaciji Seekprotocol. U trgovini se ne možeš registrirati.",
+      "changeAccount": "Koristi drugi račun",
+      "expired": "Ovaj pokušaj prijave je istekao. Kreni ispočetka iz trgovine.",
+      "wallet": "Nastavi sa Solana novčanikom",
+      "connectWallet": "Poveži novčanik",
+      "walletSignIn": "Prijavi se ovim novčanikom",
+      "walletSigning": "Potvrdi u svom novčaniku…",
+      "changeWallet": "Odaberi drugi novčanik",
+      "walletCannotSign": "Ovaj novčanik ne može potpisati poruku za prijavu. Odaberi drugi novčanik povezan s tvojim računom u aplikaciji.",
+      "walletFailed": "Prijava novčanikom nije uspjela ili je otkazana. Pokušaj ponovno s novčanikom povezanim s tvojim računom u aplikaciji.",
+      "emailHelp": "Poslat ćemo ti kod za prijavu. Koristi e-mail adresu svog računa u aplikaciji.",
+      "welcome": "Dobro došao natrag.",
+      "intro": "Prijavi se svojim računom iz aplikacije Seekprotocol.",
+      "socialHeading": "Svojim računom",
+      "socialHelp": "Odaberi način prijave koji koristiš u aplikaciji.",
+      "accountNote": "Samo za postojeće račune aplikacije. Novi račun izradi u aplikaciji Seekprotocol.",
+      "availabilityNote": "Zasivljeni načini prijave privremeno su nedostupni."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Zanima te što je to? Dodirni upitnik na mapi i pogledaj što se ispod njega krije, bilo gdje na svojoj mapi.",
+      "coin_magnet": "Više otkrića u šetnji. U blizini se 30 minuta pojavljuje više kovanica.",
+      "to_the_moon": "Iskoristi svaki pokušaj. Osvoji 3× XP za pokušaje hvatanja kovanica tijekom 30 minuta.",
+      "pump_it": "Još jedna kutija karata. Uhvati danas jednu dodatnu kutiju karata za arenu, povrh dnevnog ograničenja.",
+      "diamond_hands": "Predaleko za hodanje? Uhvati jednu kovanicu s udaljenosti do 500 metara, s uobičajenom šansom.",
+      "spawn_lure": "Dovedi lov k sebi. Privlači kovanice za obližnje igrače tijekom 30 minuta. Potrebno je članstvo u klanu.",
+      "cash": "Pretvori male kovanice u rjeđu. Tijekom 30 minuta zamijeni 3 obične za 1 neobičnu, 3 neobične za 1 rijetku ili 5 rijetkih za 1 legendarnu.",
+      "fitness": "Dosegni mnogo dalje. Hvataj kovanice s udaljenosti do 80 metara tijekom 15 minuta.",
+      "chill_guy": "Dobro se osvrni. Tijekom 15 minuta vidi što je 15 najbližih spawnova, umjesto 5.",
+      "this_is_fine": "Promašio si? Bez panike. Nakon sljedećeg promašaja kovanica ostaje tvoja 2 minute i nitko je drugi ne može uzeti. Traje do 15 minuta."
+    },
+    "productInfo": {
+      "more": "O ovom proizvodu",
+      "includes": "Što dobivaš",
+      "use": "Kako se koristi",
+      "pack": "Svaki paket sadrži 5 nasumičnih Arena karata. Otvori pakete u Areni u aplikaciji i otkrij koje si karte dobio. Duplikati su mogući; određena karta nije zajamčena.",
+      "pass": "Uživaj u više susreta s rijetkim, epskim i legendarnim kovanicama tijekom tekuće sezone, plus tjednoj rijetkoj kovanici koju preuzimaš u aplikaciji. Pass završava sa sezonom i ne obnavlja se automatski.",
+      "bundle": "Navedeni boosteri dodaju se zasebno u tvoj inventar. Odaberi koji ćeš prvi aktivirati; njihovi učinci ne traju istovremeno.",
+      "delivery": "Isporučuje se na odabrani Seekprotocol račun nakon potvrde plaćanja. Bez Friends ID-a kupnja ide na račun u aplikaciji povezan s tvojom prijavom.",
+      "passName": "Season Pass",
+      "bundleName": "Boost Bundle",
+      "activate": "Dodaje se u tvoj inventar nakon kupnje. Aktiviraj ga iz trgovine u aplikaciji kad budeš spreman. Istovremeno može raditi samo jedan booster."
+    }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | AR i AI lov na blago za stvarne nagrade",
+    "description": "Doživi budućnost uz $SEEK, AR i AI sloj za nagrade koje žive na određenom mjestu. Lovi dropove vezane uz lokaciju, skupljaj NFT-ove, iskoristi vaučere, osvoji stvarnu robu i istražuj uz AI suputnike. Nagrada može biti token na bilo kojem chainu ili nešto što s chainom nema nikakve veze.",
+    "socialDescription": "Lovi dropove vezane uz lokaciju, skupljaj NFT-ove, iskoristi vaučere i osvoji stvarnu robu. AR i AI sloj koji nagradu sidri na stvarno mjesto, na bilo kojem chainu ili bez njega.",
+    "skipToContent": "Preskoči na glavni sadržaj"
+  }
+}

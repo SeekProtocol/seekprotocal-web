@@ -2010,6 +2010,10 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   right: 0;
   z-index: 100;
   min-width: 11rem;
+  /* Thirty-one languages do not fit a phone screen; the list scrolls. */
+  max-height: min(70vh, 28rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   margin: 0;
   padding: 0.35rem;
   list-style: none;

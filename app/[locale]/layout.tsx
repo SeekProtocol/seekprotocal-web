@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Sans, Inter_Tight, JetBrains_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { clientMessages } from "@/i18n/client-messages";
 import { notFound } from "next/navigation";
+import { LOCALE_META, localeMeta } from "@/i18n/locale-meta";
 import { routing, type Locale } from "@/i18n/routing";
 import { getMultilingualAlternates, OG_IMAGE, baseUrl } from "@/lib/seo";
 import SiteEffects from "@/components/shared/SiteEffects";
@@ -48,16 +49,9 @@ export const viewport: Viewport = {
   ],
 };
 
-const localeToOgLocale: Record<string, string> = {
-  en: "en_US",
-  nl: "nl_NL",
-  de: "de_DE",
-  es: "es_ES",
-  fr: "fr_FR",
-  zh: "zh_CN",
-  ja: "ja_JP",
-  ko: "ko_KR",
-};
+const localeToOgLocale: Record<string, string> = Object.fromEntries(
+  Object.entries(LOCALE_META).map(([locale, meta]) => [locale, meta.og]),
+);
 
 export async function generateMetadata({
   params,
@@ -65,17 +59,17 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "siteMeta" });
 
   return {
     metadataBase: new URL(baseUrl),
     // Google truncates the SERP title around 60 characters. The previous
     // default ran to 76, so "Redefining Innovation" was never shown.
     title: {
-      default: "Seekprotocol | AR & AI Treasure Hunts for Real Rewards",
+      default: t("title"),
       template: "%s | Seekprotocol",
     },
-    description:
-      "Experience the future with $SEEK, the AR and AI layer for rewards that live in a place. Hunt location-based drops, collect NFTs, redeem vouchers, win real-world goods and explore with AI companions. A reward can be a token on any chain, or nothing to do with a chain at all.",
+    description: t("description"),
     keywords: [
       "Seekprotocol",
       "$SEEK",
@@ -110,9 +104,8 @@ export async function generateMetadata({
     publisher: "Block Protocol L.L.C-FZ",
     category: "Technology",
     openGraph: {
-      title: "Seekprotocol | AR & AI Treasure Hunts for Real Rewards",
-      description:
-        "Hunt location-based drops, collect NFTs, redeem vouchers and win real-world goods. The AR and AI layer that anchors a reward to a real place, on any chain or none at all.",
+      title: t("title"),
+      description: t("socialDescription"),
       type: "website",
       locale: localeToOgLocale[locale] || "en_US",
       alternateLocale: Object.entries(localeToOgLocale)
@@ -126,9 +119,8 @@ export async function generateMetadata({
       card: "summary_large_image",
       site: "@Seekprotocol",
       creator: "@Seekprotocol",
-      title: "Seekprotocol | AR & AI Treasure Hunts for Real Rewards",
-      description:
-        "Hunt location-based drops, collect NFTs, redeem vouchers and win real-world goods. The AR and AI layer that anchors a reward to a real place, on any chain or none at all.",
+      title: t("title"),
+      description: t("socialDescription"),
       images: [OG_IMAGE],
     },
     robots: {
@@ -186,10 +178,12 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
+  const tMeta = await getTranslations({ locale, namespace: "siteMeta" });
 
   return (
     <html
       lang={locale}
+      dir={localeMeta(locale).dir}
       /* The pre-paint script in <head> overwrites this before anything is
          drawn. It only has to match the provider's own initial state so the
          server and the first client render agree. */
@@ -349,7 +343,7 @@ export default async function LocaleLayout({
                  casual readers who would have quoted us. */}
           <ThemeProvider>
             <a href="#main-content" className="skip-link">
-              Skip to main content
+              {tMeta("skipToContent")}
             </a>
             <SiteHeader />
             <CookieConsent>

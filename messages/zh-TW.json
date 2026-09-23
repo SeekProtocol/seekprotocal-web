@@ -1,0 +1,3261 @@
+{
+  "nav": {
+    "home": "首頁",
+    "seekar": "App",
+    "about": "關於",
+    "whitepaper": "白皮書",
+    "contact": "聯絡我們",
+    "toggleMenu": "切換導覽選單",
+    "ecosystem": "生態系",
+    "roadmap": "路線圖",
+    "business": "企業合作",
+    "blog": "部落格",
+    "shop": "商店",
+    "getApp": "下載 App",
+    "switchToLight": "切換為淺色模式",
+    "switchToDark": "切換為深色模式",
+    "mainLabel": "主選單",
+    "mobileLabel": "行動版選單"
+  },
+  "footer": {
+    "home": "首頁",
+    "about": "關於",
+    "contact": "聯絡我們",
+    "blog": "部落格",
+    "whitepaper": "白皮書",
+    "tokenDashboard": "代幣儀表板",
+    "address": "Block Protocol L.L.C-FZ Meydan Grandstand, 6th floor, Meydan Road, Nad AlSheba, Dubai, U.A.E.",
+    "description": "Seekprotocol 是由 Block Protocol L.L.C-FZ 開發的新世代平台，結合擴增實境、AI 與區塊鏈，打造真實世界中的遊戲化體驗。",
+    "copyright": "© 2024-2026 Block Protocol 版權所有",
+    "privacyPolicy": "隱私權政策",
+    "termsOfService": "服務條款",
+    "cookieSettings": "Cookie 設定",
+    "product": "產品",
+    "company": "公司",
+    "resources": "資源",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "在 App Store 下載",
+    "googlePlayAlt": "在 Google Play 取得"
+  },
+  "home": {
+    "heroTitle": "探索全新的現實，就在",
+    "heroTitleHighlight": "Seekprotocol",
+    "heroSubtitle": "為存在於某個地點的獎勵而生的 AR 與 AI 層：任何鏈上的代幣、在櫃台就能用的優惠券、裝在盒子裡寄到你手上的實物。走到座標、舉起手機，收下留在那裡的東西。",
+    "downloadAppStore": "在 App Store 下載",
+    "downloadGooglePlay": "在 Google Play 取得",
+    "benefitsTitle": "無限",
+    "benefitsTitleHighlight": "可能！",
+    "benefitAR": "擴增實境",
+    "benefitARDesc": "透過讓數位資產栩栩如生的 AR 技術，把任何地點變成互動式尋寶遊戲。",
+    "benefitSeekToEarn": "Seek-to-Earn",
+    "benefitSeekToEarnDesc": "把你每天的移動變成獎勵。每一步、每次跑步、每場冒險，都能帶你找到空投和其他隱藏寶藏。",
+    "benefitLiveEvents": "現場活動",
+    "benefitLiveEventsDesc": "參加結合 AR 獎勵的實體聚會，從在地小聚到全城規模的大型尋寶活動。",
+    "benefitCreatorTools": "創作者工具",
+    "benefitCreatorToolsDesc": "我們的拖放工具讓任何人都能部署 AR 活動、發放 NFT、代幣和資產，並大規模觸及受眾。",
+    "benefitGeofencing": "地理圍欄技術",
+    "benefitGeofencingDesc": "以 GPS 為基礎、精準度達 30 公尺的資產放置，實現經過位置驗證的獎勵與體驗。",
+    "benefitQuests": "任務",
+    "benefitQuestsDesc": "依你的位置、技術等級和喜好而變化的動態任務，獎勵與挑戰逐步升級。",
+    "futureTitle": "以位置為基礎的互動的未來",
+    "futureDesc": "體驗關鍵技術的革命性匯流。每項創新都無縫整合，把你的實體世界變成遊戲化的賺取生態系：每一步都有價值，每個地點都藏有潛力，每場冒險都以真正的數位資產回報你",
+    "serviceLocationAirdrops": "以位置為基礎的空投",
+    "serviceLocationAirdropsDesc": "地理圍欄技術能把數位資產精準放置在特定的 GPS 座標。從市中心到隱藏景點，每個地點都可能成為獎勵區。獨家 NFT、代幣空投和限量收藏品正等著被發現。",
+    "serviceImmersiveAR": "沉浸式 AR 技術",
+    "serviceImmersiveARDesc": "體驗新世代擴增實境，讓數位資產與你的實體環境無縫融合。我們先進的 AR 引擎帶來驚豔的 3D 視覺效果、即時環境建圖，以及持久的世界錨定。看 NFT 活起來、看代幣漂浮在半空中，並與數位物件互動，就像它們真的在那裡一樣。",
+    "serviceAIPersonalization": "AI 驅動的個人化",
+    "serviceAIPersonalizationDesc": "你的 AI 夥伴不只為你帶路，還能透過 AR 看見你看到的東西、分析你的環境，並即時提供與情境相關的建議。想像一個 AI 能辨識地標並告訴你附近的在地美食、依你的玩法建議最佳步行路線，甚至即時生成專屬於你的 AR 內容。",
+    "serviceMoveToEarn": "Move-to-Earn 結合現場活動",
+    "serviceMoveToEarnDesc": "參加大型 AR 現場活動，數千名玩家齊聚實體聚會，贏取數位獎勵。想像音樂祭現場向參加者空降獨家獎勵、體育賽事中只能在場取得的收藏品，或是設有獎金池的全城尋寶活動。",
+    "threePathsTitle": "三條前進的道路",
+    "pathBlockchain": "區塊鏈驅動",
+    "pathBlockchainDesc": "每個 NFT、代幣和遊戲內資產都在區塊鏈上受到保護。這代表真正的所有權、可驗證的公平性，以及你真的能用的獎勵，不論在 Seekprotocol 之內或之外。",
+    "pathAI": "AI 驅動",
+    "pathAIDesc": "我們的 AI 會學習你探索和遊玩的方式，提供更聰明的地點建議、個人化任務和真正有意義的獎勵。你走得越多，它就越懂你。",
+    "pathProofOfLocation": "Proof of Location",
+    "pathProofOfLocationDesc": "你走的每一步都是證明。我們的系統會確認你在真實世界中的位置，以解鎖代幣、NFT 和其他數位資產。沒有作弊，只有真實參與換來的真實獎勵。",
+    "builtToScale": "與你一同成長的架構",
+    "builtToScaleDesc": "不論你是在推出專案還是探索你的城市，Seekprotocol 都以沉浸式技術、經過驗證的到場紀錄和真實獎勵，為你的旅程注入動力。",
+    "interested": "有興趣嗎？",
+    "scaleOnboarding": "無縫上手",
+    "scaleOnboardingDesc": "為使用者、創作者和企業提供的快速通道。從建立社群錢包到第一場 AR 活動，我們讓上手像玩遊戲，而不是填表格。",
+    "scaleProjectLaunch": "專案上線整合",
+    "scaleProjectLaunchDesc": "不論你是迷因幣還是以使命為導向的專案，都能接入我們的 AR、AI 和獎勵層。舉辦上線活動、代幣投放或 NFT 任務，全部以地點為基礎並且遊戲化。",
+    "scaleBusinessPortal": "企業入口啟用",
+    "scaleBusinessPortalDesc": "在地商店、國際品牌：加入 Seek 生態系。推出獨家優惠、以位置為基礎的獎勵，用數位誘因帶來真實的來客人流。",
+    "scaleEngagement": "互動引擎",
+    "scaleEngagementDesc": "推薦任務、排行榜連續紀錄和公會任務：一整套工具，推動使用者每日、每週和社群層面的互動。",
+    "scaleCrossPlatform": "跨平台推出",
+    "scaleCrossPlatformDesc": "在 iOS 和 Android 上使用同一個個人檔案和同一個錢包，存放我們所支援的每條鏈上的資產。無盡的 Seek 體驗，隨時隨地。",
+    "featuredOn": "媒體報導：",
+    "joinBeta": "加入我們的測試版",
+    "getReady": "準備出發尋寶！",
+    "ctaDesc": "踏入全新的現實，讓世界成為你的遊樂場。Seekprotocol 把你周遭的環境變成互動式冒險，結合最新的 AR 技術與真實世界的探索。追蹤隱藏的寶藏、收集有價值的數位獎勵，並征服多變的任務！",
+    "coinReadoutLabel": "訊號鎖定",
+    "coinReadoutAccuracy": "精準度 {meters} 公尺",
+    "beyondEyebrow": "不只是代幣",
+    "beyondTitle": "投放的東西不一定要是代幣",
+    "beyondLead": "任何能發給一個人的東西，都能發給一個地點。櫃台折扣、在店裡等著你的實體商品、只存在於活動現場的通行證。對一條商店街來說，代幣通常是其中最不有趣的一種。",
+    "howEyebrow": "運作方式",
+    "howTitle": "三個步驟，第三步就有回報",
+    "liveEyebrow": "即時網路",
+    "liveTitle": "選一座城市，試試你的運氣",
+    "liveLead": "跳到任何一個據點，點一下代幣看看是誰撿走的，也親自試一次，套用的是 App 真實的機率。",
+    "foundationsEyebrow": "基礎",
+    "readWhitepaper": "閱讀技術白皮書",
+    "metaTitle": "Seekprotocol | 贏得真實獎勵的 AR 尋寶",
+    "metaDescription": "在擴增實境中搜尋以位置為基礎的獎勵：任何鏈上的代幣、優惠券、實體商品。Seekprotocol 把它們錨定在真實地點，並證明你確實到過那裡。",
+    "ogTitle": "Seekprotocol | 為真實世界獎勵打造的 AR 與 AI",
+    "heroEyebrow": "AR · AI · 任何獎勵",
+    "placeReward": "在你的座標放置獎勵",
+    "exploreEcosystem": "探索生態系",
+    "viewRoadmap": "查看路線圖",
+    "polCtaEyebrow": "Proof of location",
+    "polCtaTitle": "到場，經過驗證",
+    "polCtaBody": "必須有四個獨立的訊號一致，領取才會被接受。白話說明請見部落格。",
+    "polCtaLink": "Proof of location 如何運作"
+  },
+  "seekarPage": {
+    "metaTitle": "Seekprotocol | AR 尋寶 App",
+    "metaDescription": "Seekprotocol 是 Seekprotocol 推出的擴增實境 App。在真實座標上搜尋獎勵：任何鏈上的代幣、優惠券和實體商品。iOS 與 Android 免費下載。",
+    "ogTitle": "Seekprotocol | AR 尋寶 App",
+    "eyebrow": "App",
+    "heroTitle": "Seekprotocol",
+    "heroDesc": "Seekprotocol 推出的擴增實境 App。把手機對準世界，找到被放在那裡的東西：代幣、NFT、優惠券，以及會裝在盒子裡寄給你的實物，全都錨定在真實座標上。",
+    "whatTitle": "Seekprotocol 是什麼？",
+    "whatBody": "Seekprotocol 是我們的旗艦行動 App，在 iOS 和 Android 上免費提供。它把任何街道、公園或場地，變成可以藏放和領取數位資產的地方。發布者在某個座標放置獎勵；你必須親自到場才能領取，而協議會證明你確實在那裡。不能用模擬器、不能偽造位置、沒有捷徑。",
+    "featuresTitle": "你可以做什麼",
+    "f1Title": "搜尋以位置為基礎的空投",
+    "f1Desc": "代幣和 NFT 錨定在真實座標上。走到定點、打開相機，領取正在等你的東西。",
+    "f2Title": "在擴增實境中收集",
+    "f2Desc": "資產透過你的相機出現在世界中，大小與位置都恰如其分，而不是螢幕上的一份清單。",
+    "f3Title": "和 AI 夥伴一起探索",
+    "f3Desc": "AI 嚮導會依你所在的位置和附近的東西做出反應，並告訴你哪些值得走一趟。",
+    "f4Title": "賺取真正的加密貨幣獎勵",
+    "f4Desc": "一切都在資產原本所在的鏈上結算。你收集到的東西屬於你，放在你的錢包裡，並跟著你走。",
+    "howTitle": "運作方式",
+    "s1Title": "下載並開啟",
+    "s1Desc": "在 App Store 和 Google Play 免費下載。系統會為你建立錢包；你不需要事先持有過私鑰。",
+    "s2Title": "找出你附近有什麼",
+    "s2Desc": "地圖會顯示你周圍被放置的東西。選一個，然後走過去。",
+    "s3Title": "證明你在現場並領取",
+    "s3Desc": "Proof of Location 會在鏈上驗證你的到場，資產隨即進入你的錢包。",
+    "faqTitle": "常見問題",
+    "q1": "Seekprotocol 是免費的嗎？",
+    "a1": "是的。Seekprotocol 在 iOS 和 Android 上都能免費下載。部分 App 內項目需要付費，但搜尋和領取不用。",
+    "q2": "Seekprotocol 是誰做的？",
+    "a2": "Seekprotocol 由 Seekprotocol 打造，是杜拜 Block Protocol L.L.C-FZ 旗下的產品。它是為錨定在真實地點的獎勵而生的 AR 與 AI App，可以在任何鏈上，也可以完全不需要鏈，在 App Store 和 Google Play 都能下載。",
+    "q3": "我需要懂加密貨幣嗎？",
+    "a3": "不需要。你打開 App 時就會為你建立錢包，你可以收集和持有資產，完全不必自己處理助記詞。",
+    "q4": "Seekprotocol 可以在哪些手機上執行？",
+    "a4": "支援 AR 的近期 iPhone 和 Android 裝置。兩個版本的功能完全相同。",
+    "q5": "我可以偽造位置嗎？",
+    "a5": "不行。Proof of Location 會在鏈上驗證你真實的到場，這正是一次領取對放置獎勵的發布者有價值的原因。",
+    "ctaTitle": "下載 Seekprotocol",
+    "ctaDesc": "iOS 與 Android 免費下載。你的城市早已充滿值得尋找的東西。",
+    "renameTitle": "SeekAR App 現在改名為 Seekprotocol",
+    "renameBody": "同一個 App、同一個帳號、同一張地圖。只有 App 名稱變了；公司一直都叫 Seekprotocol。另一家公司針對舊 App 名稱提出了商標申請，所以我們把 App 改用我們一直擁有的名稱。",
+    "renameLink": "閱讀公告",
+    "legacyEyebrow": "名稱沿革",
+    "legacyTitle": "加密貨幣 AR App SeekAR 現在改名為 Seekprotocol",
+    "legacyBody": "只有 App 名稱變了；公司一直都叫 Seekprotocol。從上線到 2026 年 8 月以 SeekAR 之名在 iOS 和 Android 上架的行動 App，現在名為 Seekprotocol。同一個產品、同一個發行商（Block Protocol L.L.C-FZ，阿聯杜拜），同一個 App Store 頁面（id 6752813761），同一個 Play 商店套件（com.seekar.seekar）。其他產品、藝人和地點也使用 Seekar 這個名稱；本頁專門說明這款多鏈 AR 加密貨幣獎勵 App。",
+    "q6": "SeekAR App 怎麼了？",
+    "a6": "以 SeekAR 之名上架、提供鏈上加密貨幣獎勵的 AR 行動 App，已於 2026 年 8 月 10 日更名為 Seekprotocol。同一個產品、同一個發行商（Block Protocol L.L.C-FZ，杜拜）、同一個 App Store 頁面（id 6752813761）、同一個 Play 商店套件（com.seekar.seekar）。只有名稱和圖示變了。",
+    "q7": "前身為 SeekAR 的 App 要去哪裡下載？",
+    "a7": "App Store：apps.apple.com/app/id6752813761，Google Play：play.google.com/store/apps/details?id=com.seekar.seekar。兩個頁面現在的標題都是 Seekprotocol。",
+    "q8": "Seekprotocol 和 SeekAR 是同一個產品嗎？",
+    "a8": "是的。公司一直都叫 Seekprotocol；只有 App 名稱變了。從上線到 2026 年 8 月名為 SeekAR 的多鏈 AR 加密貨幣獎勵 App，現在名為 Seekprotocol，由杜拜（阿聯）Block Protocol L.L.C-FZ 的同一個團隊發行。",
+    "stepsEyebrow": "一步一步來",
+    "faqEyebrow": "常見問題"
+  },
+  "about": {
+    "heroTitle": "探索以位置為基礎的數位體驗的未來",
+    "heroDesc": "Seekprotocol 透過先進的擴增實境與區塊鏈技術，把真實世界的探索變成有回報的冒險。",
+    "whySeekprotocol": "為什麼選擇 Seekprotocol？",
+    "whyDesc": "當別人在做 App，我們在打造一場革命。Seekprotocol 透過以位置為基礎的 AR 技術，串起實體與數位世界，讓每一步都成為機會。我們的去中心化獎勵系統確保探索真的有回報，字面上的意思。我們不只是在創造體驗；我們正在開創一個新經濟，讓真實世界的發現產生真實的價值。憑藉次公尺級的精準追蹤、驚豔的 AR 視覺效果和區塊鏈獎勵，我們讓看不見的變得看得見，讓不可能變得有利可圖。",
+    "letsConnect": "與我們聯繫",
+    "ourValues": "我們的價值",
+    "whatDrivesUs": "驅動我們的力量",
+    "valueLocationIntelligence": "位置智慧",
+    "valueLocationIntelligenceDesc": "次公尺級精準度的地理空間技術，即時回應你的每一個動作。",
+    "valueARInnovation": "AR 創新",
+    "valueARInnovationDesc": "最先進的擴增實境，讓數位寶藏與你的實體世界無縫融合。",
+    "valueSocialDiscovery": "社群探索",
+    "valueSocialDiscoveryDesc": "和附近的探索者組隊，獲得加倍獎勵並共享成就。",
+    "valueCrossChainRewards": "跨鏈獎勵",
+    "valueCrossChainRewardsDesc": "在不同的區塊鏈網路上賺取多種空投、NFT 和其他數位資產。",
+    "valueProofOfExploration": "Proof of Exploration",
+    "valueProofOfExplorationDesc": "你的發現留下可驗證的鏈上紀錄，成為永久的冒險足跡。",
+    "readyToSeek": "準備好尋寶了嗎？",
+    "startExploring": "開始探索",
+    "coreTechnologies": "我們部署的核心技術",
+    "coreTechDesc": "在 Seekprotocol，我們明白探索需要目的。我們不提供千篇一律的體驗，而是為每位使用者打造動態、能感知位置的冒險。",
+    "techGeospatial": "地理空間建圖",
+    "techGeospatialDesc": "即時位置追蹤搭配動態地理圍欄，打造符合情境的體驗。",
+    "techAR": "AR 渲染",
+    "techARDesc": "先進的渲染機制與空間運算，帶來沉浸式擴增實境。",
+    "techBlockchain": "區塊鏈獎勵",
+    "techBlockchainDesc": "真實的探索與參與，換來真實的獎勵。",
+    "techSync": "即時同步",
+    "techSyncDesc": "所有玩家即時更新。看著世界各地的發現即時發生。",
+    "threePillars": "成功的三大支柱",
+    "threePillarsDesc": "Seekprotocol 的核心是三項革命性技術，改變我們與世界互動的方式。",
+    "pillarAR": "擴增實境",
+    "pillarARDesc": "尖端 AR 技術，揭開肉眼看不見的隱藏數位層。",
+    "pillarLocation": "精準定位",
+    "pillarLocationDesc": "次公尺級精準的 GPS 搭配動態地理圍欄，準確知道空投放在哪裡。",
+    "pillarReward": "獎勵分配",
+    "pillarRewardDesc": "去中心化的獎勵池，確保每位 Seekprotocol 使用者都能獲得公平、即時且透明的收益。",
+    "ourApproach": "我們的做法",
+    "approachTitle": "探索與獎勵相遇之處",
+    "approachDesc": "每個地點都有未被發掘的價值。我們的工作？用引人入勝、值得回報、讓尋寶者一再回來的方式把它解鎖。",
+    "approachTreasureHunts": "令人興奮的尋寶",
+    "approachTreasureHuntsDesc": "以位置為基礎的動態挑戰。",
+    "approachARExperiences": "令人驚豔的 AR 體驗",
+    "approachARExperiencesDesc": "疊加在現實上的沉浸式數位圖層。",
+    "approachRewardPools": "真的會發放的獎勵池",
+    "approachRewardPoolsDesc": "由社群推動的賺取機會。",
+    "approachSocial": "連結彼此的社群功能",
+    "approachSocialDesc": "多人探索與協作。",
+    "approachAnalytics": "提供洞察的分析",
+    "approachAnalyticsDesc": "即時掌握探索模式。",
+    "approachEvents": "凝聚眾人的活動",
+    "approachEventsDesc": "把大家聚在一起的限時社群活動，想像一下 Web3 版的 Pokémon Go 團體戰。",
+    "approachCollaborations": "共同創造的合作",
+    "approachCollaborationsDesc": "由使用者產生的內容與挑戰。",
+    "ourTeam": "我們的超棒團隊",
+    "joinBeta": "加入我們的測試版",
+    "getReady": "準備出發尋寶！",
+    "ctaDesc": "踏入全新的現實，讓世界成為你的遊樂場。Seekprotocol 把你周遭的環境變成互動式冒險，結合最新的 AR 技術與真實世界的探索。",
+    "metaTitle": "認識 Seekprotocol 背後的團隊",
+    "metaDescription": "認識為每條鏈打造以位置為基礎之 AR 的團隊：proof of location 背後的使命、Seekprotocol 底層的技術，以及 $SEEK 背後的人。",
+    "ogTitle": "Seekprotocol 背後的團隊",
+    "eyebrow": "關於",
+    "whyEyebrow": "我們為什麼打造它",
+    "techEyebrow": "技術",
+    "pillarsEyebrow": "支柱",
+    "teamEyebrow": "團隊",
+    "linkedinLabel": "{name} 的 LinkedIn"
+  },
+  "contact": {
+    "getInTouch": "與我們聯絡",
+    "formDesc": "請填寫下方表單，我們會盡快回覆你。",
+    "metaTitle": "聯絡我們：合作與行銷活動",
+    "metaDescription": "與 Seekprotocol 團隊洽談在你自己的座標投放活動、合作夥伴關係、測試版資格或媒體採訪。",
+    "ogTitle": "聯絡 Seekprotocol",
+    "inquiryTypesEyebrow": "或者，更具體地說",
+    "partnershipsTitle": "合作夥伴",
+    "partnershipsBody": "你有專案、IP 或一整個據點網路想帶進 Seek。告訴我們是什麼、在哪裡，其餘的交給我們。",
+    "publishersTitle": "發布者",
+    "publishersBody": "你想在特定座標投放 AR 活動，並依每次經過驗證的到訪付費。把地點和優惠傳給我們；我們會和你一起設定活動。",
+    "pressTitle": "媒體與新聞",
+    "pressBody": "報導、採訪、評測用版本、禁運新聞。任何編輯相關事宜都可以在這裡聯絡我們，我們會當天回覆。",
+    "supportTitle": "客服支援",
+    "supportBody": "遇到錯誤、領取沒有成功、錢包相關問題。最快的管道是 Discord，但這個表單也可以。",
+    "eyebrow": "聯絡我們",
+    "elsewhere": "其他管道",
+    "documentation": "文件",
+    "registeredOffice": "註冊辦公室"
+  },
+  "services": {
+    "heroTitle": "我們的專業，你的成長",
+    "heroDesc": "Seekprotocol 在各大主流鏈上提供尖端的 AR、AI 與區塊鏈解決方案。我們不只是打造技術，更是你改變真實世界互動方式的合作夥伴。",
+    "letsContact": "與我們聯絡",
+    "businessStrategy": "商業策略",
+    "businessStrategyDesc": "量身打造的策略，讓商業目標與數位成長一致。",
+    "visualDirection": "視覺方向",
+    "visualDirectionDesc": "我們打造一致且歷久彌新的品牌識別，完整呈現你的願景。",
+    "websiteCreation": "網站建置",
+    "websiteCreationDesc": "完全響應式的網站，兼顧速度與優雅。",
+    "contentSolutions": "內容解決方案",
+    "contentSolutionsDesc": "以強而有力的內容方向吸引目光、推動成長。",
+    "campaignExecution": "活動執行",
+    "campaignExecutionDesc": "在各數位管道與平台上推出高成效的行銷活動。",
+    "uiuxSystems": "UI/UX 系統",
+    "uiuxSystemsDesc": "設計跨裝置、跨流程的流暢實用使用者旅程。",
+    "growthTactics": "成長策略",
+    "growthTacticsDesc": "提升品牌能見度與規模的策略方法。",
+    "copywriting": "文案撰寫",
+    "copywritingDesc": "我們打造一致且歷久彌新的品牌識別，完整呈現你的願景。",
+    "details": "詳情",
+    "pricingTitle": "價格：每項服務都有彈性",
+    "pricingDesc": "我們明白每家企業的預算都不同，所以我們的價格依你選擇的模組而定。",
+    "pricingQuestion": "準備好詳細討論你的專案了嗎？",
+    "scheduleConsultation": "預約諮詢",
+    "smallModule": "小型模組",
+    "smallModuleDesc": "適合較小的標誌和簡短訊息。",
+    "mediumModule": "中型模組",
+    "mediumModuleDesc": "為你的品牌內容提供更多空間。",
+    "largeModule": "大型模組",
+    "largeModuleDesc": "地圖上最醒目的位置。",
+    "whoWeWorkWith": "我們的合作對象",
+    "smallBusinesses": "小型企業與新創",
+    "smallBusinessesDesc": "打造你的聲音，並確保它被聽見。",
+    "ecommerce": "電商品牌",
+    "ecommerceDesc": "撰寫能帶來轉換的吸睛商品描述。",
+    "agencies": "代理商與顧問",
+    "agenciesDesc": "以高價值內容建立權威。",
+    "localBusinesses": "在地商家",
+    "localBusinessesDesc": "協助你與所在城市及其他地區的顧客建立連結。",
+    "largeCorporations": "大型企業",
+    "largeCorporationsDesc": "撰寫清楚有效、能強化品牌的訊息。",
+    "ctaConnect": "與我們聯繫",
+    "ctaTitle": "有想法，或需要啟動一個專案嗎？"
+  },
+  "blog": {
+    "title": "Seekprotocol 部落格",
+    "desc": "關於擴增實境、AI、區塊鏈技術，以及以位置為基礎之體驗的未來的觀點、最新消息與深度解析。",
+    "read": "閱讀",
+    "backToBlog": "← 返回部落格",
+    "readyToSeek": "準備開始尋寶了嗎？",
+    "readyToSeekDesc": "下載 Seekprotocol，把你的世界變成由區塊鏈驅動的遊樂場。",
+    "moreArticles": "更多文章",
+    "keepReading": "繼續閱讀",
+    "allArticles": "所有文章",
+    "relatedPages": "相關頁面",
+    "metaTitle": "部落格：AR、AI 與以位置為基礎的獎勵",
+    "metaDescription": "由打造 Seekprotocol 的團隊撰寫，關於擴增實境、AI 夥伴、地理圍欄空投和 proof of location 的文章。",
+    "ogTitle": "Seekprotocol 部落格",
+    "eyebrow": "部落格"
+  },
+  "forms": {
+    "emailPlaceholder": "電子郵件地址",
+    "sendNow": "立即送出",
+    "sending": "傳送中...",
+    "captchaError": "請完成驗證碼驗證。",
+    "genericError": "發生錯誤。",
+    "genericErrorRetry": "發生錯誤。請再試一次。",
+    "successMessage": "謝謝！我們已收到你送出的資料！",
+    "yourName": "你的姓名",
+    "namePlaceholder": "輸入你的姓名",
+    "yourEmail": "你的電子郵件",
+    "emailInputPlaceholder": "輸入你的電子郵件",
+    "message": "訊息",
+    "messagePlaceholder": "在此輸入",
+    "yourPhone": "電話號碼",
+    "phonePlaceholder": "輸入你的電話號碼",
+    "validationRequired": "此欄位為必填",
+    "validationEmail": "請輸入有效的電子郵件地址",
+    "validationPhone": "請輸入有效的電話號碼",
+    "validationName": "請輸入你的姓名",
+    "optional": "選填"
+  },
+  "cookies": {
+    "title": "Cookie 偏好設定",
+    "subtitle": "管理你的隱私設定",
+    "description": "我們使用 Cookie 來提升你的瀏覽體驗、提供個人化內容並分析網站流量。點選「全部接受」即表示你同意我們使用 Cookie。",
+    "readMore": "詳情請參閱我們的",
+    "privacyPolicy": "隱私權政策",
+    "necessary": "必要",
+    "necessaryDesc": "網站正常運作所必需。無法停用。",
+    "functional": "功能性",
+    "functionalDesc": "啟用進階功能與個人化設定。",
+    "analytics": "分析",
+    "analyticsDesc": "幫助我們了解訪客如何與網站互動。",
+    "marketing": "行銷",
+    "marketingDesc": "用於投放相關廣告並追蹤行銷活動。",
+    "acceptAll": "全部接受",
+    "rejectAll": "全部拒絕",
+    "customize": "自訂",
+    "savePreferences": "儲存偏好設定",
+    "cookieSettings": "Cookie 設定",
+    "toggleLabel": "切換{category}"
+  },
+  "notFound": {
+    "pageNotFound": "找不到頁面",
+    "pageNotFoundDesc": "你要找的頁面不存在或已被移動",
+    "oops": "糟糕，找不到頁面",
+    "backToHome": "返回首頁",
+    "errorCode": "錯誤 404 · 此座標沒有訊號"
+  },
+  "metrics": {
+    "text1": "無限資產。",
+    "text2": "真實互動。",
+    "text3": "尋寶。收集。賺取"
+  },
+  "privacyPolicyPage": {
+    "title": "隱私權政策",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "更新日期：2026 年 9 月 6 日",
+    "introTitle": "前言",
+    "introP1": "本隱私權政策適用於 Seekprotocol 行動應用程式（本文件中稱「本應用程式」），由 Block Protocol LLC（稱「服務提供者」）開發及維護，作為行動裝置的免費服務。本應用程式依「現狀」提供。",
+    "introP2": "Seekprotocol 是結合擴增實境、人工智慧與區塊鏈的新世代平台，為使用者打造遊戲化的真實世界體驗。基於這些體驗的性質，本應用程式會處理多種類別的個人資料，以完整且安全地提供其功能。本政策完整詳細說明蒐集哪些資料、蒐集的原因、處理方式、可能與誰分享，以及使用者對其個人資訊享有的權利。",
+    "introP3": "下載並使用本應用程式，即表示你同意本隱私權政策所述的資料處理方式。本政策可能不時更新，以反映資料處理方式、適用法律或本應用程式功能的變更，因此建議你定期查閱。",
+    "part1Title": "第一部分：資訊的蒐集與使用",
+    "part1P1": "本應用程式會在你下載及使用時蒐集資訊，包括使用期間自動蒐集的技術資料，例如你裝置的網際網路協定（IP）位址、你造訪的本應用程式頁面或區塊、造訪的日期與時間、在這些頁面停留的時間長度，以及你行動裝置所執行作業系統的相關資訊。",
+    "part1P2": "除上述自動蒐集的技術資料外，本應用程式還會蒐集數種類別的個人資訊，各類別均於下文完整說明。",
+    "part1P3": "本應用程式蒐集的所有資料在傳輸過程中皆經加密傳送及儲存，確保資訊在你的裝置與服務提供者系統之間傳遞時受到保護。",
+    "part1s1Title": "1. 帳號建立",
+    "part1s1P1": "本應用程式支援多種讓使用者建立及存取帳號的方式，包括使用者名稱與密碼驗證、使用者名稱搭配其他形式的驗證、使用者名稱同時搭配密碼與其他驗證因素，以及透過受支援的外部身分提供者進行的 OAuth 驗證。使用者所採用的帳號建立方式，決定本應用程式蒐集及保存哪些與帳號相關的識別碼。",
+    "part1s2Title": "2. 個人資訊",
+    "part1s2P1": "本應用程式蒐集可識別個人身分的資訊，包括你的姓名、電子郵件地址和使用者識別碼（User ID）。",
+    "part1s2P2": "蒐集你的姓名，是因為支援本應用程式的核心功能需要此資訊，包括個人化使用者介面及在平台內識別你的個人檔案。此資料僅供蒐集，不會與第三方分享。",
+    "part1s2P3": "你的電子郵件地址同樣為必要資訊，且僅為支援本應用程式功能而蒐集，包括帳號驗證、與服務相關的通訊及重要通知的傳送。此資料僅供蒐集，不會與第三方分享。",
+    "part1s2P4": "User ID 是指派給你的帳號或工作階段的唯一識別碼，為必要資訊，並基於更廣泛的目的蒐集，包括支援本應用程式的核心功能、進行內部分析以了解本應用程式的使用方式、執行安全與防詐措施，以及管理帳號層級的功能與權限。User ID 僅供蒐集，不會對外分享。",
+    "part1s3Title": "3. 位置資料",
+    "part1s3P1": "本應用程式需要存取你裝置的概略位置及精確位置資料。位置存取為強制性，使用者若停用將影響本應用程式的核心功能。",
+    "part1s3P2": "概略位置資料可識別你所在的大致地理區域，但不會精確指出你的確切位置，此類資料會被蒐集並分享。蒐集目的是支援本應用程式的核心功能，並就使用者在不同地理區域如何使用以位置為基礎的功能進行內部分析。概略位置資料也會與第三方分享，以支援本應用程式功能，並依地理情境提供個人化內容與體驗。",
+    "part1s3P3": "精確位置資料是指由 GPS 或同等技術取得的確切地理座標，此類資料會被蒐集並分享，且在本應用程式所有資料類型中用途最廣。這反映出 Seekprotocol 的核心體驗是圍繞錨定於真實世界位置的擴增實境所打造。蒐集精確位置資料的目的包括：支援仰賴真實世界精確定位的 AR 功能及其他核心功能、進行詳細的使用分析、傳送與你特定位置相關的開發者通訊、實施與地理活動模式相關的安全與防詐措施、依你的精確環境個人化內容與功能，以及管理取決於地理參數的帳號功能或服務條件。相同資料也會基於上述所有目的與第三方服務提供者分享。",
+    "part1s4Title": "4. 訊息",
+    "part1s4P1": "本應用程式蒐集三種形式的訊息資料：電子郵件、SMS 或 MMS 簡訊，以及其他應用程式內訊息。三種類型皆為必要，使用者無法停用。",
+    "part1s4P2": "電子郵件僅為支援本應用程式的核心功能而蒐集，包括使用者與平台之間的通訊及與服務相關通知的傳送。",
+    "part1s4P3": "SMS 或 MMS 資料僅為支援本應用程式的核心功能而蒐集，並以暫時性方式處理，亦即在相關處理作業完成後不會保留，本應用程式也不會持久儲存。",
+    "part1s4P4": "其他應用程式內訊息僅為支援本應用程式的核心功能而蒐集，包括在本應用程式自有的訊息與通訊系統中的互動。",
+    "part1s5Title": "5. 照片與影片",
+    "part1s5P1": "本應用程式需要存取你裝置上的照片與影片。這兩種資料類型僅供蒐集，且僅用於支援本應用程式的核心功能，特別是需要存取裝置相機與媒體庫的擴增實境功能，以便將數位內容疊加於實體環境上，或在本應用程式的互動工作階段中記錄體驗。",
+    "part1s6Title": "6. 健康與體能資訊",
+    "part1s6P1": "本應用程式蒐集與健康相關的資訊及與體能相關的資訊。兩種類別皆為必要，且僅用於支援本應用程式的核心功能。此資料不會與第三方分享。",
+    "part1s6P2": "健康資訊讓本應用程式能在適當情況下將健康情境納入體驗，支援依使用者一般身體狀況做出回應的功能，作為 Seekprotocol 更廣泛遊戲化參與模式的一部分。",
+    "part1s6P3": "體能資訊與本應用程式的挑戰及獎勵系統搭配使用。本應用程式會要求 Android ACTIVITY_RECOGNITION 權限，以便直接透過你裝置的感測器偵測及監測步行、跑步或騎單車等身體活動。此權限支撐本應用程式的挑戰與獎勵功能，這些功能旨在將真實世界的身體活動納入 Seekprotocol 的遊戲化體驗。藉由偵測移動模式，本應用程式能觸發應用程式內事件、驗證挑戰完成，並發放與真實世界身體參與相關的獎勵。任何活動辨識資料均不會用於廣告目的，也不會與第三方分享。你可隨時透過裝置的應用程式設定撤銷此權限，但這樣做會停用仰賴此權限的活動型挑戰與獎勵。",
+    "part1s7Title": "7. 應用程式效能與診斷資料",
+    "part1s7P1": "本應用程式蒐集與其自身效能相關的技術資料，包括當機記錄、診斷資訊及其他應用程式效能指標。",
+    "part1s7P2": "當機記錄為必要資訊，會自動蒐集以支援本應用程式的核心功能：具體而言，是為了找出、診斷及解決影響使用者體驗的技術故障。",
+    "part1s7P3": "選擇性的效能分析會在使用者允許時蒐集，以提升本應用程式的穩定性與回應速度。用於防詐的安全診斷則另行處理：在啟用 Talsec freeRASP 的版本中，會依第二部分所述自動蒐集。",
+    "part1s8Title": "8. 檔案與文件",
+    "part1s8P1": "本應用程式可選擇性蒐集可從你裝置存取的檔案與文件。此蒐集由使用者控制，僅在你與本應用程式的直接互動涉及檔案或文件時才會觸發。蒐集後，此資料僅用於支援本應用程式的核心功能，不會與第三方分享。",
+    "part1s9Title": "9. 裝置識別碼及其他 ID",
+    "part1s9P1": "本應用程式為了應用程式功能與防詐目的蒐集裝置及類似的技術識別碼，並與服務提供者分享部分識別碼。安全識別碼與診斷紀錄可能在單一工作階段結束後仍被保留；並非全部都以暫時性方式處理。請參閱第二部分與第四部分。",
+    "part1s9P2": "蒐集裝置識別碼的目的，是支援仰賴裝置層級辨識的本應用程式核心功能，並執行安全與防詐措施。相同資料也會基於應用程式功能、安全與防詐目的與第三方分享。",
+    "part2Title": "第二部分：第三方存取與資料分享",
+    "part2P1": "我們基於本政策所述的目的與服務提供者分享資料。部分報告為彙總資料，但分享並不限於彙總資料：安全診斷與裝置識別碼也可能依下文所述傳送給 Talsec。",
+    "part2P2": "在法律要求，或為保護權利與安全、調查詐欺或回應合法請求而合理必要時，我們可能揭露資訊。服務提供者依適用條款處理資訊，以提供其服務。Talsec 也會將安全診斷用於其自身產品改進及彙總性安全研究，說明如下。",
+    "part2P3": "本應用程式整合下列第三方服務，每項服務皆依其自身的隱私權政策運作。建議使用者直接查閱這些政策，以了解各提供者如何處理從本應用程式收到的資料：",
+    "part3Title": "第三部分：退出權利",
+    "part3P1": "你可以隨時解除安裝本應用程式，以停止其所有資訊蒐集。你可以使用行動裝置上的標準解除安裝程序，或透過相應的行動應用程式市集進行。",
+    "part3P2": "選擇性的效能分析以及檔案或文件的蒐集，可透過相關設定與功能加以控制。這些控制項不會停用啟用 freeRASP 之版本中的安全診斷。如對安全資料有任何問題或請求，請聯絡 support@seekprotocol.ai。",
+    "part3P3": "Android 上的 ACTIVITY_RECOGNITION 權限可隨時透過裝置的應用程式權限設定撤銷。撤銷此權限將停用活動型挑戰與獎勵，但不會以其他方式影響你使用本應用程式。",
+    "part4Title": "第四部分：資料保存",
+    "part4P1": "在你使用本應用程式期間，以及之後基於營運、法律或行政目的所需的期間，我們會保存使用者提供的資料。安全診斷與識別碼可能在工作階段結束後仍被保存，以調查濫用行為並製作安全報告；Talsec 的保存期間依其資料政策及適用的合約條款規範。以暫時性方式處理的 SMS/MMS 資料，會在其即時處理目的完成後刪除。",
+    "part4P2": "如果你希望服務提供者刪除你透過本應用程式提交的使用者提供資料，請透過 <email>support@seekprotocol.ai</email> 與其聯絡。服務提供者將在合理期間內回覆。",
+    "part5Title": "第五部分：兒童",
+    "part5P1": "服務提供者不會利用本應用程式故意向未滿 13 歲的兒童索取資料或進行行銷。本應用程式並非以未滿 13 歲者為對象，服務提供者也不會故意蒐集該年齡層兒童的可識別個人身分資訊。服務提供者若發現未滿 13 歲的兒童提供了個人資訊，將立即從其伺服器中刪除。如果你是家長或監護人，並認為你的孩子已向本應用程式提供個人資訊，請透過 <email>support@seekprotocol.ai</email> 聯絡服務提供者，以便其採取必要的更正措施。",
+    "part6Title": "第六部分：安全",
+    "part6P1": "服務提供者致力於保護你資訊的機密性與完整性。本應用程式蒐集的所有資料在傳輸過程中皆經加密。服務提供者維持實體、電子及程序上的保護措施，以保護其處理及保存的資訊。資料傳送給第三方服務提供者時，服務提供者會盡合理努力確保此類分享有所限制、限於特定目的，並受適當的資料處理協議約束。",
+    "part7Title": "第七部分：資料刪除請求",
+    "part7P1": "希望請求刪除其帳號及所有相關資料的使用者，可透過 Seekprotocol 網站提交請求：",
+    "part7P2": "你也可以直接透過 <email>support@seekprotocol.ai</email> 聯絡服務提供者提交刪除請求。服務提供者將在合理期間內處理所有刪除請求。",
+    "part8Title": "第八部分：本政策的變更",
+    "part8P1": "本隱私權政策可能因任何原因不時更新。服務提供者會以新版隱私權政策更新本頁，並修改本文件頂端所示的生效日期，藉此通知你任何變更。若變更屬重大變更，服務提供者也可能透過本應用程式本身通知使用者。建議你定期查閱本隱私權政策。在任何變更公布後繼續使用本應用程式，即表示你接受該等變更。",
+    "consentTitle": "你的同意",
+    "consentP1": "使用本應用程式，即表示你同意依本隱私權政策（包括其現行版本及服務提供者日後可能修訂的版本）所述蒐集、使用及分享你的資訊。",
+    "contactTitle": "聯絡方式",
+    "contactP1": "如果你對使用本應用程式時的隱私有任何疑問，或對本政策所述的資料處理方式有疑問，請聯絡服務提供者：",
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
+    "metaTitle": "隱私權政策",
+    "metaDescription": "Seekprotocol 如何處理位置資料、感測器讀數和錢包資訊：蒐集哪些資料、保存多久，以及哪些資料絕不分享。",
+    "ogTitle": "Seekprotocol 的隱私保護",
+    "raspTitle": "Talsec freeRASP：安全診斷",
+    "raspP1": "在啟用 freeRASP 的版本中，Talsec（Lynx SFT s.r.o.）會收到應用程式與作業系統的安全診斷、裝置型號資訊，以及應用程式執行個體與裝置識別碼。訊號可能包括 root、模擬器、應用程式遭竄改、偵錯與 hooking。這些診斷會在啟用的版本執行時自動傳送；選擇性的效能分析設定不會將其停用。",
+    "raspP2": "Talsec 將此資料用於安全報告、改進其免費與商業安全產品，以及彙總性研究。Talsec 表示雲端處理於美國進行。不應假設裝置識別碼在所有隱私法律下都是完全匿名的。請透過下方連結查閱 Talsec 的資料政策。",
+    "raspP3": "我們自己的後端也會在蒐集嘗試時記錄威脅名稱，這些紀錄可能與你的帳號相連結。我們的回呼處理不會上傳其他已安裝應用程式的清單。這些是裝置回報的訊號，本身並不構成詐欺的證據。",
+    "eyebrow": "法律"
+  },
+  "termsPage": {
+    "title": "條款與條件",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "生效日期：2025 年 8 月 12 日",
+    "p1": "本條款與條件適用於 Block Protocol LLC（以下稱「服務提供者」）以免費服務形式為行動裝置所打造的 Seekprotocol 應用程式（以下稱「本應用程式」）。",
+    "p2": "下載或使用本應用程式，即表示你自動同意下列條款。強烈建議你在使用本應用程式前詳閱並充分理解這些條款。嚴格禁止未經授權複製、修改本應用程式、本應用程式的任何部分或我們的商標。不得嘗試擷取本應用程式的原始碼、將本應用程式翻譯成其他語言，或製作衍生版本。與本應用程式相關的所有商標、著作權、資料庫權利及其他智慧財產權，均仍屬服務提供者所有。",
+    "p3": "服務提供者致力於讓本應用程式盡可能實用且有效率。因此，服務提供者保留隨時以任何理由修改本應用程式或對其服務收費的權利。服務提供者保證，本應用程式或其服務的任何費用都會清楚告知你。",
+    "p4": "本應用程式會儲存及處理你為了使用本服務而提供給服務提供者的個人資料。維護你手機的安全及本應用程式的存取權限是你的責任。服務提供者強烈建議不要對手機進行越獄（jailbreak）或 root，亦即移除裝置官方作業系統所施加的軟體限制。此類行為可能使你的手機暴露於惡意軟體、病毒和惡意程式，損害手機的安全功能，並可能導致本應用程式無法正常運作或完全無法運作。",
+    "thirdPartyIntro": "請注意，本應用程式使用具有其各自條款與條件的第三方服務。以下是本應用程式所使用之第三方服務提供者的條款與條件連結：",
+    "p6": "請注意，服務提供者對某些方面不承擔責任。本應用程式的部分功能需要有效的網際網路連線，可以是 Wi-Fi，也可以由你的行動網路業者提供。若因無法使用 Wi-Fi 或你的數據用量已用完，導致本應用程式無法完整運作，服務提供者概不負責。",
+    "p7": "如果你在 Wi-Fi 範圍以外使用本應用程式，請注意你與行動網路業者之間的協議條款仍然適用。因此，你在連線使用本應用程式期間，可能需要向行動業者支付數據使用費，或其他第三方費用。使用本應用程式，即表示你同意承擔任何此類費用，包括在未關閉數據漫遊的情況下，於你所在地區以外（即地區或國家）使用本應用程式所產生的漫遊數據費用。如果你不是使用本應用程式之裝置的帳單付款人，服務提供者將認定你已取得帳單付款人的許可。",
+    "p8": "同樣地，服務提供者並非總能對你使用本應用程式的情況負責。例如，確保你的裝置保持充電是你的責任。如果你的裝置沒電，導致你無法使用本服務，服務提供者概不負責。",
+    "p9": "關於服務提供者對你使用本應用程式所負的責任，須注意的是，雖然服務提供者盡力確保其隨時保持更新與正確，但仍仰賴第三方提供資訊，才能將資訊提供給你。對於你因完全依賴本應用程式的此項功能而遭受的任何直接或間接損失，服務提供者概不承擔責任。",
+    "p10": "服務提供者可能在某個時間點希望更新本應用程式。本應用程式目前依作業系統（以及服務提供者決定擴展提供本應用程式的任何其他系統）的需求提供，而這些需求可能會改變，若你想繼續使用本應用程式，就需要下載更新。服務提供者不保證會一直更新本應用程式，使其符合你的需求及／或與你裝置上安裝的特定作業系統版本相容。但你同意在獲得本應用程式更新時一律接受更新。服務提供者也可能希望停止提供本應用程式，並可隨時終止其使用，而無須向你發出終止通知。除非服務提供者另行通知，否則一旦終止：(a) 本條款授予你的權利與授權即告終止；(b) 你必須停止使用本應用程式，並（於必要時）將其從你的裝置刪除。",
+    "changesTitle": "本條款與條件的變更",
+    "changesP1": "服務提供者可能定期更新其條款與條件。因此，建議你定期查閱本頁以了解任何變更。服務提供者會在本頁張貼新的條款與條件，藉此通知你任何變更。",
+    "contactTitle": "聯絡我們",
+    "contactP1": "如果你對本條款與條件有任何疑問或建議，歡迎隨時透過 <email>support@seekprotocol.ai</email> 聯絡服務提供者。",
+    "metaTitle": "條款與條件",
+    "metaDescription": "使用 Seekprotocol App 與 Seekprotocol 平台的條款：你的權利、領取資產的規則，以及付費項目如何運作。",
+    "ogTitle": "Seekprotocol 條款",
+    "eyebrow": "法律"
+  },
+  "languageSwitcher": {
+    "en": "English",
+    "nl": "Nederlands",
+    "de": "Deutsch",
+    "es": "Español",
+    "fr": "Français",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "tr": "Türkçe"
+  },
+  "globe": {
+    "liveLabel": "線上尋寶者",
+    "panelTitle": "尋寶者正在收集中",
+    "panelDesc": "每個圖釘都是一座真實的城市。投放物落在固定座標上，只有真的有人站在那裡時才會解鎖。",
+    "todayLabel": "今日已收集",
+    "waiting": "正在等待下一次拾取…",
+    "dragHint": "拖曳以旋轉",
+    "xpLabel": "已獲得 XP",
+    "clickHint": "點一下代幣查看拾取紀錄",
+    "seekerLabel": "尋寶者",
+    "xpGained": "獲得的 XP",
+    "coordsLabel": "座標",
+    "verified": "到場已在鏈上驗證",
+    "all": "全部",
+    "yourHaul": "你的收穫",
+    "filterLabel": "依稀有度篩選",
+    "waitingRarity": "還沒有{rarity}的拾取紀錄",
+    "catchChance": "捕捉機率",
+    "close": "關閉",
+    "secondsAgo": "{seconds} 秒前",
+    "zoomIn": "放大",
+    "zoomOut": "縮小",
+    "busiest": "目前最熱門",
+    "units": "單位",
+    "zoomLabel": "縮放",
+    "hubsLabel": "跳到一座城市",
+    "wholeEarth": "整個地球",
+    "zoomLevel": "縮放 {percent}%",
+    "caught": "抓到了 · +{xp, number} XP",
+    "escaped": "被牠跑了 · 重試機率 {percent}%",
+    "tryCatch": "試著捕捉",
+    "globeAria": "顯示全球 Seekprotocol 收集活動的互動式地球"
+  },
+  "homeSteps": {
+    "placed": {
+      "title": "有東西被放置了",
+      "meta": "發布者 · 地球上的任何地方",
+      "body": "品牌、專案或活動把一項資產釘在一組座標上，並設定可領取的半徑範圍。它就待在那裡，顯示在地圖上，直到有人來拿。"
+    },
+    "arrive": {
+      "title": "你走進範圍內",
+      "meta": "預設半徑 30 公尺",
+      "body": "你的手機會確認你真的在那裡：衛星定位、周遭無線訊號、裝置驗證和你的移動軌跡全都必須一致。偽造一個訊號很容易；同時偽造全部就不容易了。"
+    },
+    "collect": {
+      "title": "你把它收下",
+      "meta": "在資產自己的鏈上結算",
+      "body": "舉起相機，看見資產錨定在你眼前的街道上，然後拿走它。轉移會在鏈上結算，費用不到一分錢，它就是你的了。"
+    }
+  },
+  "homeStats": {
+    "accuracy": {
+      "label": "領取精準度"
+    },
+    "languages": {
+      "label": "支援語言"
+    },
+    "stores": {
+      "label": "已上架應用程式商店"
+    }
+  },
+  "worldDescent": {
+    "hint": "繼續捲動",
+    "bannerDistance": "距離 84 公尺",
+    "orbit": {
+      "label": "軌道",
+      "title": "每個投放物都是一個座標",
+      "body": "資產是發布到地球上的點，而不是動態消息裡。從這麼高的地方看，整個網路就只是幾千個有東西在等待的地方。"
+    },
+    "descent": {
+      "label": "下降",
+      "title": "朝其中一個落下",
+      "body": "挑任何一個點就出發。協議不在乎是哪一個，只在乎你領取時是否站在那裡。"
+    },
+    "street": {
+      "label": "街道層級",
+      "title": "這是同一張地圖，只是近了四百公里",
+      "body": "你正在飛越的建築物，就是你和投放物之間的那些建築物。距離就是整個機制的核心，所以地圖必須是真實的。"
+    },
+    "hand": {
+      "label": "在你手中",
+      "title": "而且它能裝進一支手機",
+      "body": "沒有任何東西被替換。你剛剛飛過的畫面，就是 App 渲染出來的樣子，上面疊著它自己的控制項。"
+    }
+  },
+  "appChrome": {
+    "home": "首頁",
+    "map": "地圖",
+    "quests": "任務",
+    "wallet": "錢包",
+    "backToMap": "‹ 地圖",
+    "tapCoin": "點一下代幣",
+    "distanceAway": "距離 {metres} 公尺"
+  },
+  "arSection": {
+    "eyebrow": "擴增實境",
+    "hint": "繼續捲動",
+    "see": {
+      "label": "相機在看",
+      "title": "相機看不到一條街",
+      "body": "它看到的是網格上變化的亮度。在任何東西能被放置到任何地方之前，場景必須先被轉換成有結構的東西，而此刻還什麼結構都沒有。",
+      "readout": "畫格 1/60 · 未追蹤"
+    },
+    "track": {
+      "label": "特徵浮現",
+      "title": "世界是由角點構成的",
+      "body": "亮度同時在兩個方向變化的點，在移動中依然能被辨識，所以引擎會保留它們，捨棄其他部分。在足夠多的畫格中追蹤足夠多的點，手機就知道自己是怎麼移動的。",
+      "readout": "追蹤中 · 2,412 個特徵"
+    },
+    "plane": {
+      "label": "找到平面",
+      "title": "有個可以站的地方",
+      "body": "位於同一表面上的特徵會被歸成一個平面。就在那一刻，投放物不再只是螢幕上的一張圖，而是一個有地方可以放的物件。",
+      "readout": "偵測到平面 · 6.0 × 6.0 公尺"
+    },
+    "anchor": {
+      "label": "錨點設定",
+      "title": "釘在世界上，而不是手機上",
+      "body": "投放物會綁定在那一片幾何結構上，以及它被發布時的座標上。繞著它走，它仍待在原處。兩個人站在同一個地方，會看到它在同一個位置。",
+      "readout": "錨點已鎖定 · 52.3702 N 4.8952 E"
+    },
+    "persist": {
+      "label": "持續存在",
+      "title": "明天依然在那裡",
+      "body": "錨點是依位置而非工作階段儲存的，所以關掉 App 也不會讓它移動。正是這種持久性，區分了 AR 玩具與 AR 協議。",
+      "readout": "錨點已保存 · 不受工作階段影響"
+    }
+  },
+  "mobiSection": {
+    "title": "看得見你所見的夥伴",
+    "lead": "直接開口問，Mobi 就會透過相機解讀街景：地標、營業時間、投放物在哪個方向。它盡可能在裝置上執行，而且絕不保留你去過哪裡的紀錄。",
+    "tapHint": "點一下 Mobi",
+    "tapAgain": "{label} · 再點一下",
+    "tapAria": "Mobi 目前{state}。點一下繼續。",
+    "points": [
+      "語音輸入、語音輸出，走路時雙手自由",
+      "從即時相機畫面讀取地標和標誌",
+      "依你的玩法和地點調整的任務"
+    ],
+    "listening": {
+      "label": "聆聽中",
+      "line": "這附近有什麼值得走一趟的？"
+    },
+    "thinking": {
+      "label": "正在解讀街景",
+      "line": "正在比對相機看到的畫面和附近的生成點…"
+    },
+    "answering": {
+      "label": "回答中",
+      "line": "往上兩條街、市場後面有一個傳說代幣。照你的速度要六分鐘，它六點關閉。"
+    },
+    "idle": {
+      "label": "待機",
+      "line": "等待中。沒有任何內容被錄下。"
+    }
+  },
+  "socialSection": {
+    "eyebrow": "一起玩",
+    "title": "一半的樂趣來自和誰同行",
+    "lead": "戰隊會匯集每個人收集到的東西。聊天採端對端加密，當一段對話不該留存時，還有閱後即焚訊息。而邀請別人加入，你就能分到他們找到的一部分。",
+    "points": [
+      "私訊與戰隊訊息，端對端加密",
+      "好友之間互相傳遞道具和情報",
+      "在他們遊玩時持續發放的推薦獎勵"
+    ],
+    "online": "{count} 人在線",
+    "encrypted": "已加密",
+    "composer": "訊息",
+    "disappearing": "閱後即焚訊息",
+    "yourCode": "你的邀請碼",
+    "copy": "複製",
+    "copied": "已複製",
+    "spot": {
+      "text": "市場旁邊剛生成一個傳說代幣。離電車站兩條街。"
+    },
+    "coming": {
+      "text": "我在路上了。有人還有磁鐵嗎？"
+    },
+    "sent": {
+      "text": "傳給你兩個了。鑽石手留著等外洩的時候用。"
+    },
+    "missed": {
+      "text": "完美圓圈結果還是被牠跑了。還剩兩次機會。"
+    },
+    "invited": {
+      "label": "已邀請"
+    },
+    "active": {
+      "label": "活躍中"
+    },
+    "share": {
+      "label": "你的分潤"
+    }
+  },
+  "videoReveal": {
+    "mute": "將影片靜音",
+    "unmute": "播放有聲影片"
+  },
+  "featureGroups": {
+    "eyebrow": "裡面有什麼",
+    "title": "不只是一張有代幣的地圖",
+    "tablist": "功能分類",
+    "hunt": {
+      "label": "尋寶",
+      "items": [
+        {
+          "title": "在真實座標上生成",
+          "body": "投放物出現在你周圍的固定點，並一直留在那裡直到有人領取。標記一個，App 就會在你走路時倒數距離。"
+        },
+        {
+          "title": "持久的 AR 捕捉",
+          "body": "代幣錨定在你眼前的地面上，在不同工作階段之間保持不動，所以每個來找它的人看到的位置都一樣。"
+        },
+        {
+          "title": "道具與時機",
+          "body": "磁鐵、加倍和冰凍可以疊加在同一次捕捉上。時機條決定你能保留多少投放物，因為傳說代幣捕捉失誤，就是失誤。"
+        },
+        {
+          "title": "有意義的稀有度",
+          "body": "從普通到傳說，稀有度決定地圖上光圈的顏色，你還沒靠近就看得出來。"
+        }
+      ]
+    },
+    "progress": {
+      "label": "成長",
+      "items": [
+        {
+          "title": "十個段位，用雙腳贏得",
+          "body": "從 Seeker 到 Legend。段位來自你走過的距離和造訪的地點，而不是你花了多少錢。"
+        },
+        {
+          "title": "六十一枚徽章",
+          "body": "一整套收藏，從鑽石手到鏈上偵探，每枚都有自己的解鎖條件。"
+        },
+        {
+          "title": "Game Center 與 Play 遊戲",
+          "body": "成就會同步到你已經在用的平台，讓連續紀錄和里程碑和你其他遊戲並列。"
+        },
+        {
+          "title": "連續紀錄與每日任務",
+          "body": "依你所在位置和玩法調整的任務，連續紀錄維持越久，獎勵越高。"
+        }
+      ]
+    },
+    "together": {
+      "label": "一起玩",
+      "items": [
+        {
+          "title": "戰隊",
+          "body": "加入或創立戰隊，匯集貢獻，一起爬上戰隊排行榜。包含隊徽、段位和共享獎勵池。"
+        },
+        {
+          "title": "加密聊天",
+          "body": "私訊與戰隊訊息採端對端加密，當一段對話不該留存時，還有閱後即焚訊息。"
+        },
+        {
+          "title": "排行榜",
+          "body": "全球、國家和戰隊層級，前三名有獎牌，排行榜隨著大家走路即時更新。"
+        },
+        {
+          "title": "推薦",
+          "body": "邀請別人加入，分到他們收集的一部分。你的邀請碼就在畫面最上方，因為那正是你來這裡的目的。"
+        }
+      ]
+    },
+    "own": {
+      "label": "擁有",
+      "items": [
+        {
+          "title": "不需要助記詞的錢包",
+          "body": "透過社群帳號登入建立，讓你安裝後一分鐘內就能開始收集。想自行保管時，隨時可以匯出金鑰。"
+        },
+        {
+          "title": "賽季通行證",
+          "body": "與一般遊玩並行的賽季獎勵軌道，有免費層和付費層。"
+        },
+        {
+          "title": "商店",
+          "body": "道具、外觀和頭像配件，用你收集到的東西定價，而不只是用你能買的東西。"
+        },
+        {
+          "title": "3D 頭像",
+          "body": "完整相容 Decentraland 的頭像，含動畫與表情動作，而不是一張裁切過的大頭貼。"
+        }
+      ]
+    }
+  },
+  "progression": {
+    "eyebrow": "成長",
+    "title": "十個段位、六十一枚徽章，而且都買不到",
+    "lead": "段位來自你走過的距離和造訪的地點。這面牆上的一切，都要走出門才能贏得。",
+    "badgeAlt": "{name} 段位徽章",
+    "rankOf": "段位 {tier}/{total}",
+    "rankTablist": "段位等級",
+    "badgesTitle": "收藏徽章",
+    "badgesShown": "顯示 {shown}/{total}",
+    "achievementsTitle": "成就"
+  },
+  "ranks": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "scout": {
+      "name": "Scout"
+    },
+    "tracker": {
+      "name": "Tracker"
+    },
+    "hunter": {
+      "name": "Hunter"
+    },
+    "pathfinder": {
+      "name": "探路者"
+    },
+    "ranger": {
+      "name": "Ranger"
+    },
+    "sentinel": {
+      "name": "Sentinel"
+    },
+    "apex": {
+      "name": "Apex"
+    },
+    "mythic": {
+      "name": "Mythic"
+    },
+    "legend": {
+      "name": "Legend"
+    }
+  },
+  "badges": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "diamondHands": {
+      "name": "鑽石手"
+    },
+    "web3Wizard": {
+      "name": "Web3 巫師"
+    },
+    "whale": {
+      "name": "巨鯨"
+    },
+    "bull": {
+      "name": "牛市"
+    },
+    "detective": {
+      "name": "鏈上偵探"
+    },
+    "samurai": {
+      "name": "Degen 武士"
+    },
+    "liquidityKing": {
+      "name": "流動性之王"
+    }
+  },
+  "achievements": {
+    "firstCatch": {
+      "name": "第一次捕捉",
+      "detail": "收集你的第一個投放物"
+    },
+    "explorer": {
+      "name": "探險家",
+      "detail": "在 50 個不同地點收集"
+    },
+    "legendary": {
+      "name": "傳說",
+      "detail": "捕捉一個傳說生成物"
+    },
+    "rareHunter": {
+      "name": "稀有獵人",
+      "detail": "捕捉 250 次稀有"
+    },
+    "streak": {
+      "name": "連續三十天",
+      "detail": "連續遊玩 30 天"
+    },
+    "clanFounder": {
+      "name": "戰隊創辦人",
+      "detail": "創立你自己的戰隊"
+    }
+  },
+  "clans": {
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "laserEyes": {
+      "name": "Laser Eyes"
+    },
+    "megaWhales": {
+      "name": "Mega Whales"
+    },
+    "moonSquad": {
+      "name": "Moon Squad"
+    },
+    "alphaWolves": {
+      "name": "Alpha Wolves"
+    },
+    "yieldFarmers": {
+      "name": "Yield Farmers"
+    },
+    "anonCabal": {
+      "name": "Anon Cabal"
+    },
+    "bullRunners": {
+      "name": "Bull Runners"
+    }
+  },
+  "clansSection": {
+    "eyebrow": "戰隊",
+    "title": "沒有人能獨自走遍一座城市",
+    "lead": "創立或加入戰隊，匯集每個人收集到的東西，一起爬上排行榜。聊天採端對端加密，當一段對話不該留存時，訊息也能設定為閱後即焚。",
+    "statClans": "創始戰隊",
+    "statChat": "加密聊天",
+    "statRanks": "戰隊段位",
+    "tableTitle": "戰隊排行榜",
+    "thisSeason": "本賽季",
+    "rankAlt": "第 {rank} 名"
+  },
+  "rarity": {
+    "common": "普通",
+    "uncommon": "罕見",
+    "rare": "稀有",
+    "epic": "史詩",
+    "legendary": "傳說"
+  },
+  "powerups": {
+    "coin_magnet": {
+      "label": "代幣磁鐵",
+      "effect": "你周圍會出現更多代幣"
+    },
+    "diamond_hands": {
+      "label": "鑽石手",
+      "effect": "從遠處捕捉一枚代幣"
+    },
+    "pump_it": {
+      "label": "Pump It",
+      "effect": "今天多一個卡牌寶箱"
+    },
+    "to_the_moon": {
+      "label": "衝上月球",
+      "effect": "30 分鐘內 XP 三倍"
+    },
+    "whale": {
+      "label": "巨鯨",
+      "effect": "把生成物吸引到你的位置"
+    },
+    "this_is_fine": {
+      "label": "問題不大",
+      "effect": "幫你保留一枚沒抓到的代幣"
+    }
+  },
+  "collectiblesSection": {
+    "eyebrow": "收藏品",
+    "title": "這些就是外面的代幣",
+    "lead": "稀有度決定一枚代幣生成的頻率，以及你留住它的機率。捕捉到的單位是遊戲單位。它能換成多少真實代幣，是市場的事。",
+    "filterLabel": "依稀有度篩選",
+    "all": "全部",
+    "catchChance": "捕捉機率",
+    "overThree": "三次嘗試內",
+    "perUnit": "每單位",
+    "powerupsTitle": "改變局勢的道具"
+  },
+  "offers": {
+    "railLabel": "投放形式",
+    "redeemLabel": "如何兌換",
+    "proofLabel": "有效的依據",
+    "voucher": {
+      "label": "折扣優惠券",
+      "headline": "折扣，就在發給你的那家店門口",
+      "face": "75 折",
+      "fine": "每人限用一次 · 14 天內有效 · 限門市使用",
+      "redeem": "在櫃台出示代碼並標記為已使用。它無法轉送，因為它是發給曾站在範圍內的那台裝置。",
+      "proof": "領取紀錄連同領取時的座標一起記錄在鏈上，所以兌換可以對照真實的到場，而不是一張截圖。",
+      "placedBy": "零售與餐旅業"
+    },
+    "asset": {
+      "label": "實體資產",
+      "headline": "一件實物，在某個地方等著你",
+      "face": "一雙運動鞋",
+      "fine": "限量 250 份 · 門市取貨 · 售完即止",
+      "redeem": "持有者親自領取商品。代幣是領取它的憑證，並在交付時銷毀，所以同一雙鞋不會被領兩次。",
+      "proof": "庫存有限，而領取是一道鎖，不是一次查詢，所以兩個人同時搶最後一份時，不可能都被告知搶到了。",
+      "placedBy": "有東西想送出去的品牌"
+    },
+    "access": {
+      "label": "入場通行證",
+      "headline": "門票就是人在現場",
+      "face": "B 門 · 19:00",
+      "fine": "不可轉讓 · 活動結束時失效",
+      "redeem": "像其他通行證一樣在入口掃描。不同之處在於它只能在現場取得，這正是它值得發放的原因。",
+      "proof": "高價值投放會設定嚴格的信心門檻，所以周遭的無線訊號環境必須與位置一致，才會釋出。",
+      "placedBy": "活動、場館與音樂祭"
+    },
+    "token": {
+      "label": "代幣投放",
+      "headline": "想刷也得付出代價的分發方式",
+      "face": "40 $SEEK",
+      "fine": "每台裝置限領一次 · 在其自身的鏈上結算",
+      "redeem": "它會進入 App 為你建立的錢包，你可以自由持有、轉移或出售。不用兌換，也不用問任何人。",
+      "proof": "建立錢包是免費的，走路可不是。地理位置就是讓空投無法被便宜刷走的那道過濾器。",
+      "placedBy": "代幣專案與社群"
+    },
+    "collectible": {
+      "label": "收藏品",
+      "headline": "只存在於它被放置之處的東西",
+      "face": "稀有",
+      "fine": "系列共 500 份 · 可交易 · 稀有度於發行時固定",
+      "redeem": "不需要兌換。它是你曾到過某處的紀錄，這是人類保存任何東西最古老的理由。",
+      "proof": "每一件都帶著被領取時的座標，所以一個人持有的收藏，就是一張他真正去過哪些地方的地圖。",
+      "placedBy": "城市、觀光單位、藝術家"
+    }
+  },
+  "rewards": {
+    "eyebrow": "獎勵",
+    "title": "任何東西都可能在某個座標等著你",
+    "lead": "代幣是大家最先想到的版本，也是最不有趣的一種。協議不在乎盒子裡裝的是什麼：只要能發給一個人，就能發給一個地點，而且一定得有人走過去拿。",
+    "railLabel": "選擇獎勵類型",
+    "phoneAlt": "Seekprotocol App 顯示一場現場活動及其發放的獎勵",
+    "liveChip": "現場活動",
+    "participateLabel": "參加現場活動",
+    "alertTitle": "你附近有神秘獎勵",
+    "alertBody": "距離 301 公尺，開放到晚上 9 點。誰先到就是誰的。",
+    "alertSeekers": "其他尋寶者正在移動",
+    "foundLabel": "你找到了",
+    "foundWhere": "戰神廣場 · 走了 301 公尺",
+    "foundFine": "抵達即領取，並已在鏈上結算。它已在你的錢包裡。",
+    "foundAlt": "在地圖上贏得獎勵",
+    "mapCredit": "© Mapbox © OpenStreetMap",
+    "items": {
+      "seek": "$SEEK",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "bnb": "BNB",
+      "hyperliquid": "Hyperliquid",
+      "berachain": "Berachain",
+      "dogecoin": "Dogecoin",
+      "pepe": "PEPE",
+      "babydoge": "Baby Doge",
+      "spx6900": "SPX6900",
+      "toshi": "Toshi",
+      "turbo": "Turbo",
+      "nft": "神秘 NFT",
+      "voucher": "商店優惠券",
+      "food": "餐飲優惠券",
+      "barcode": "活動通行證",
+      "console": "PlayStation 5",
+      "handheld": "掌上遊戲機",
+      "shoes": "限量球鞋"
+    },
+    "proofNote": "不管盒子裡裝的是什麼，阻止從未到過現場的人領走它的機制都一樣：到場，在領取當下依四個獨立訊號評分。",
+    "categories": {
+      "tokens": {
+        "label": "代幣",
+        "headline": "任何代幣，任何鏈",
+        "body": "Ethereum、Solana、BNB Smart Chain，以及之後的網路。發布者用自己已持有的代幣資助活動，並在該代幣所在的鏈上結算，所以任何人都不需要跨鏈就能參與。"
+      },
+      "memes": {
+        "label": "迷因幣",
+        "headline": "沒有任何管道可以觸及的發行",
+        "body": "迷因幣有受眾，卻沒有空投農場以外的方式能觸及他們。把供應量放到真實的街道上，就能讓它出現在特地出門的人面前，而每一次領取都是一個真人，而不是一個地址。"
+      },
+      "nfts": {
+        "label": "NFT",
+        "headline": "在你站的地方鑄造",
+        "body": "帶著出處座標的收藏品，和在沙發上鑄造的收藏品是完全不同的東西。一個版本可以綁定一座城市、一個場館，甚至單一個門口，而每一件在哪裡被領取的紀錄都是公開的。"
+      },
+      "vouchers": {
+        "label": "優惠券",
+        "headline": "折扣，就在櫃台",
+        "body": "商店街真正想要的形式。只有在門內才能打開的代碼，由親自走進來的人在收銀台兌換，並被計為一次到店，而不是一次可能帶來到店的曝光。"
+      },
+      "goods": {
+        "label": "實體商品",
+        "headline": "裝在盒子裡寄到的東西",
+        "body": "一台遊戲機、一雙運動鞋、一件裝備。領取在鏈上完成，出貨則是一般物流，這讓品牌不必另外打造任何東西，就能在一段步行的終點放上一件實物。"
+      },
+      "events": {
+        "label": "現場活動",
+        "headline": "全部都有，在活動期間",
+        "body": "音樂祭、比賽或研討會都能變成一層臨時的獎勵，隨活動結束而失效。到場就能解鎖，所以獎金池會送到真正在場的人手上，而計數器就是那道門。"
+      }
+    }
+  },
+  "distribution": {
+    "eyebrow": "分發",
+    "title": "觸及率很容易買，卻無法信任",
+    "lead": "每個發行活動能買到的管道，賣的都是同一樣東西：一個腳本就能產生的數字。曝光、點擊、追蹤、錢包，大量製造的成本都不到一分錢。到場是唯一還沒被自動化的互動，因為還沒有人寫出會走路的機器人。",
+    "failureTag": "你買到的",
+    "answerTag": "你在這裡得到的",
+    "failures": {
+      "bots": "付費流量來自資料中心和點擊農場。你按曝光付費，而其中相當比例從來沒有真正顯示給任何一個人看過。",
+      "farms": "空投是由錢包領取的，而錢包不用錢。一個拿著腳本的刷子就能變成四萬個符合資格的地址，代幣完全落不到原本預定的那群人手上。",
+      "unaudited": "互動數據是由販售它的平台自己回報的。一次追蹤、一次觀看或一次模型推估的到店都無法稽核，所以活動成效只能用一個你只能選擇相信的數字來評斷。"
+    },
+    "answers": {
+      "bots": "一次領取就是一台曾站在某個座標上的裝置，它的衛星定位、周遭無線訊號和移動軌跡全都一致。「人在某處」沒有伺服器端的版本。",
+      "farms": "在範圍與時段內，每台裝置限領一次。第二次領取就代表第二趟路程，而沒有人能同時出現在四十座城市。",
+      "unaudited": "每一次領取都是公開紀錄：一個座標、一個時間、一項資產。請自己在區塊瀏覽器上數，而不是向我們要數字。"
+    },
+    "askLegend": "你希望他們做什麼？",
+    "askNote": "協議驗證的是有一個人到過那裡。他們要做什麼才能獲得獎勵，由你來決定，而這些都不會改變底層的驗證。",
+    "actions": {
+      "visit": {
+        "label": "走進店裡",
+        "headline": "在櫃台領取",
+        "body": "投放物就在門內，範圍小到只有收銀台前的手機才能打開。被兌換的代碼屬於親自走進來的人。",
+        "button": "到店領取",
+        "recorded": "一次經過驗證、抵達你店址的到場，時間戳記為領取當下。"
+      },
+      "follow": {
+        "label": "追蹤帳號",
+        "headline": "追蹤即可解鎖",
+        "body": "資產會一直鎖定，直到帳號被追蹤，而且只有來自範圍內裝置的追蹤才算數。農場可以製造追蹤，卻製造不了那段路。",
+        "button": "追蹤並領取",
+        "recorded": "一次背後有經過驗證之到訪的追蹤，依其發生的地點計算。"
+      },
+      "signup": {
+        "label": "註冊或加入名單",
+        "headline": "當場註冊",
+        "body": "只有一個欄位，在投放物所在處填寫。名單上的每個地址，都屬於在輸入當下正站在你活動現場的人。",
+        "button": "註冊並領取",
+        "recorded": "一次背後有經過驗證之到場的註冊，這是唯一值得付費的那種。"
+      },
+      "scan": {
+        "label": "掃描商品",
+        "headline": "在貨架上掃描",
+        "body": "把相機對準商品，而不是地圖上的圖釘。掃描必須在範圍內進行，所以獎勵會送到真正手上拿著商品的人。",
+        "button": "掃描領取",
+        "recorded": "在一家店掃描一件商品，依品項而非依活動計算。"
+      },
+      "mint": {
+        "label": "當場鑄造",
+        "headline": "在你站的地方鑄造",
+        "body": "收藏品在該座標鑄造，並帶著該座標。它日後的價值多少和它的出處有關，這是鑄造頁面說不出來的。",
+        "button": "在這裡鑄造",
+        "recorded": "一次綁定某個地點和某個時刻的鑄造，在該收藏所在的任何一條鏈上。"
+      }
+    },
+    "dropStatus": "進行中",
+    "dropWhere": "Kalverstraat 92, Amsterdam · 半徑 25 公尺",
+    "dropFine": "每台裝置限領一次 · 抵達時驗證",
+    "recordedLegend": "你會拿回什麼",
+    "recordedNever": "依地點、時間和活動計數。絕不追蹤個人，也絕不記錄他們接下來去了哪裡。",
+    "chainsLegend": "任何來源，任何區塊鏈",
+    "chainsNote": "來源是任何能發放東西的人：一個專案、一個品牌、一個場館、街角的一家店。一個網路只是表格中的一列，而不是一次版本發布，所以一個活動可以同時在多個網路上進行，尋寶者也永遠不必選擇。Solana 目前已可結算；下一條鏈只是設定的問題。",
+    "chainsCoinsAlt": "Seekprotocol 所結算之各條鏈的旋轉 3D 代幣",
+    "chainAny": "任何其他鏈"
+  },
+  "walkthrough": {
+    "eyebrow": "實際走一遍",
+    "title": "這就是完整的循環",
+    "lead": "這不是 App 的影片，而是它自己的規則，正在這裡執行。點一下地圖上的生成點，接著往下玩。",
+    "startOver": "重新開始",
+    "map": {
+      "label": "地圖",
+      "title": "附近的一切，就在它真正所在的位置",
+      "body": "生成點位於固定座標上，並一直留在那裡直到有人領取。點一下，看看它是什麼，以及你要走多遠。"
+    },
+    "spawn": {
+      "label": "生成點",
+      "title": "稀有度告訴你正走向什麼",
+      "body": "從普通到傳說，每種都有自己的捕捉機率。你有兩次機會，重試的價值是第一次的 0.65 倍，所以第一次點擊最重要。"
+    },
+    "catch": {
+      "label": "捕捉",
+      "title": "點擊充能，穩住心神",
+      "body": "你點擊時圓圈會逐漸填滿。每一兩回合就會有干擾：光球凍結、充能漏掉，或者開啟一段點擊加倍的爆發時間。"
+    },
+    "result": {
+      "label": "擲骰",
+      "title": "充能換來的是機率，不是保證",
+      "body": "傳說代幣就算充滿圓圈，也只有五分之一的機率。正因如此，傳說代幣才珍貴，點擊也才真的有意義。"
+    },
+    "wallet": {
+      "label": "屬於你",
+      "title": "它會進入一個你從不需要設定的錢包",
+      "body": "透過社群帳號登入建立，所以新玩家一分鐘內就能收集到東西。想自行保管時，隨時可以匯出金鑰。"
+    }
+  },
+  "spawnScreen": {
+    "back": "‹ 地圖",
+    "distance": "距離",
+    "inRange": "在範圍內",
+    "thisAttempt": "本次嘗試",
+    "attemptsLeft": "剩餘次數",
+    "attemptsOf": "{left}/{total}",
+    "note": "為圓圈充能可以提高這個數字。之後的重試價值為第一次的 0.65 倍。",
+    "cta": "捕捉它"
+  },
+  "catchScreen": {
+    "attempt": "第 {attempt}/{total} 次嘗試",
+    "tapAria": "點擊充能",
+    "sealAria": "堵住破口",
+    "ringFull": "圓圈已滿，穩住",
+    "tapPrompt": "點擊代幣",
+    "mechanic": {
+      "freeze": "凍結了，繼續點擊來融化它",
+      "leak": "漏能中，堵住破口",
+      "surge": "爆發，每次點擊都算兩倍"
+    }
+  },
+  "resultScreen": {
+    "caught": "捕捉成功",
+    "escaped": "被牠跑了",
+    "ringCharged": "圓圈充能",
+    "chance": "本次嘗試機率",
+    "xp": "XP",
+    "gameValue": "遊戲價值",
+    "noteCaught": "捕捉到的單位是遊戲單位。它能換成多少真實代幣，是市場的事。",
+    "noteRetry": "還有一次機會，價值為第一次的 0.65 倍。",
+    "noteGone": "那個生成點消失了。很快會有下一個。",
+    "openWallet": "打開錢包",
+    "tryAgain": "再試一次",
+    "backToMap": "返回地圖"
+  },
+  "walletScreen": {
+    "totalBalance": "總餘額",
+    "delta": "今日 + {amount}",
+    "deposit": "儲值",
+    "send": "傳送",
+    "exchange": "兌換",
+    "qr": "QR",
+    "justCaught": "剛剛捕捉",
+    "assets": "資產",
+    "recentBadges": "最近的徽章"
+  },
+  "dropKinds": {
+    "airdrop": "空投",
+    "quest": "任務獎勵",
+    "partner": "合作夥伴投放",
+    "event": "活動代幣",
+    "cache": "街頭寶藏"
+  },
+  "ecosystemPage": {
+    "metaTitle": "生態系：尋寶者、發布者、協議",
+    "metaDescription": "Seekprotocol 生態系如何運作：負責收集的尋寶者、負責放置的發布者，以及驗證到場並在鏈上結算的協議。",
+    "ogTitle": "三方，一個座標",
+    "eyebrow": "生態系",
+    "titleStart": "三方，一個",
+    "titleAccent": "座標",
+    "lead": "有人放置資產。有人前往那裡。協議確認他們真的到過並完成結算。其他一切，都只是建立在這個循環上的細節。",
+    "networkEyebrow": "網路",
+    "networkTitle": "每個圖釘都是真實的地點",
+    "networkLead": "拖曳地球。座標都是真實的城市位置，每一道弧線都是在它們之間移動的投放物。",
+    "capabilitiesEyebrow": "功能",
+    "capabilitiesTitle": "協議實際提供什麼",
+    "faqEyebrow": "問題",
+    "faqTitle": "值得一問的問題",
+    "faqLead": "包括那些答案讓人不太舒服的問題。",
+    "ctaEyebrow": "深入了解",
+    "ctaTitle": "技術說明",
+    "ctaBody": "Proof of location、架構、代幣設計，以及一份坦白列出我們所防禦的攻擊和我們所接受之限制的清單。",
+    "ctaWhitepaper": "閱讀白皮書",
+    "ctaBusiness": "放置你自己的資產",
+    "polCtaEyebrow": "Proof of location",
+    "polCtaTitle": "到場，經過驗證",
+    "polCtaBody": "必須有四個獨立的訊號一致，領取才會被接受。白話說明請見部落格。",
+    "polCtaLink": "Proof of location 如何運作"
+  },
+  "participants": {
+    "seekers": {
+      "label": "尋寶者",
+      "tag": "需求",
+      "title": "親自去拿的人",
+      "body": "任何擁有 App 的人。他們走路、找到東西，並保留收集到的東西。不需要任何加密貨幣背景知識：錢包由社群帳號登入建立，想自行保管的人日後隨時可以匯出。",
+      "gets": [
+        "代幣、NFT 和合作夥伴獎勵",
+        "依所在地點調整的任務",
+        "一個不需要先弄懂的錢包"
+      ]
+    },
+    "publishers": {
+      "label": "發布者",
+      "tag": "供給",
+      "title": "把東西放在那裡的人",
+      "body": "品牌、場館、代幣專案和活動主辦單位。他們在自己重視的座標放置資產，並依每次放置付費，費用依半徑、時長和該區域的競爭程度加權計算。",
+      "gets": [
+        "經過驗證的到場，而非曝光",
+        "抗刷的地理分布",
+        "無需整合工作的活動建立工具"
+      ]
+    },
+    "protocol": {
+      "label": "協議",
+      "tag": "結算",
+      "title": "讓各方保持誠實的那一部分",
+      "body": "驗證評分、資產託管和結算。它在放置時收取費用，將大部分回流給尋寶者，並保存什麼東西在哪裡被領取的紀錄。",
+      "gets": [
+        "反映真實活動的費用",
+        "公開的領取紀錄",
+        "逐步移交給治理的參數"
+      ]
+    }
+  },
+  "capabilities": {
+    "placement": {
+      "title": "地理圍欄放置",
+      "meta": "5 公尺至 500 公尺",
+      "body": "資產以可設定的領取半徑釘在座標上。店門口用小半徑；音樂祭場地用大半徑。"
+    },
+    "verification": {
+      "title": "多重訊號驗證",
+      "meta": "4 個獨立訊號",
+      "body": "衛星定位、周遭無線訊號、裝置驗證和移動連續性全都必須一致，領取才會被接受。"
+    },
+    "anchoring": {
+      "title": "AR 錨定",
+      "meta": "持久",
+      "body": "資產在不同工作階段和不同使用者之間都待在原處。兩個人站在同一個地方，會在同一個位置看到同一個東西。"
+    },
+    "companion": {
+      "title": "AI 夥伴",
+      "meta": "優先在裝置上執行",
+      "body": "讀取相機畫面，說明你正在看什麼，並建議下一步去哪裡，而不會把你的移動紀錄傳到任何地方。"
+    },
+    "wallet": {
+      "title": "社群錢包",
+      "meta": "免助記詞",
+      "body": "透過社群帳號登入建立，讓新使用者一分鐘內就能收集到東西，並可隨時匯出以自行保管。"
+    },
+    "settlement": {
+      "title": "多鏈結算",
+      "meta": "不到一秒",
+      "body": "資產在它原本所在的網路上結算，而每條鏈都必須符合一個要求：領取一份小獎勵的成本不能高於獎勵本身的價值。"
+    }
+  },
+  "ecosystemFaq": {
+    "spoofing": {
+      "question": "我可以偽造位置，不去現場就領取嗎？",
+      "answer": "代價不低。單純的 GPS 定位很容易偽造，所以它只是四個訊號之一。周遭無線訊號環境、裝置驗證和你的移動軌跡都必須佐證它，而屢次失敗的裝置會面臨更高的門檻。我們的目標是讓偽造的成本高於獎勵的價值，而不是宣稱偽造不可能。"
+    },
+    "crypto": {
+      "question": "使用 Seekprotocol 需要懂加密貨幣嗎？",
+      "answer": "不需要。錢包由社群帳號登入建立，除非你自己去找，否則永遠不會看到助記詞。如果日後想自行保管，隨時都可以匯出金鑰。"
+    },
+    "tracking": {
+      "question": "Seekprotocol 會追蹤我去了哪裡嗎？",
+      "answer": "不會。App 只在你嘗試領取時要求位置，而不是在背景持續追蹤。原始感測器資料只用來為那一次領取評分，之後就會刪除，你的移動紀錄會留在你的裝置上。"
+    },
+    "farming": {
+      "question": "什麼能阻止一個人用很多錢包刷同一個地點？",
+      "answer": "在一定半徑與時段內的每裝置領取上限，加上模擬器農場無法通過的裝置驗證。錢包是免費的，但移動不是，這正是把分發綁定在地理位置上的原因。"
+    },
+    "chain": {
+      "question": "Seekprotocol 在哪條鏈上運作？",
+      "answer": "資產在哪條鏈上，就在哪條鏈上。網路只是表格中的一列而不是程式碼，所以發布者用自己已持有的代幣資助活動，而尋寶者永遠不必選擇哪條鏈。每個網路都必須符合同樣的要求：價值幾分錢的獎勵在轉移後仍要有價值，而站在街角的人也不該需要等待。首頁的標誌列會顯示目前哪些鏈可以結算。"
+    },
+    "rewardKind": {
+      "question": "獎勵一定要是加密貨幣嗎？",
+      "answer": "不一定。在收銀台兌換的優惠券、裝在盒子裡的一雙運動鞋、只存在於活動現場的通行證：這些都不會碰到任何一條鏈，而底層的驗證完全相同。涉及代幣時，它會在它原本所在的鏈上結算。協議證明有人到過那裡；要給他們什麼，由你決定。"
+    },
+    "business": {
+      "question": "我的企業今天就能放置資產嗎？",
+      "answer": "透過代管式合作可以。讓你不必和我們接洽就能自行操作的自助入口正在開發中，路線圖上有標示它目前的進度。"
+    }
+  },
+  "roadmapPage": {
+    "metaTitle": "路線圖：已推出與接下來的計畫",
+    "metaDescription": "Seekprotocol 已推出的成果與接下來的計畫，從 proof of location 原型、Seekprotocol 公開上線，到自助入口與治理。",
+    "ogTitle": "Seekprotocol 路線圖",
+    "eyebrow": "路線圖",
+    "titleStart": "已經完成的，以及",
+    "titleAccent": "接下來的",
+    "lead": "共 {phases} 個階段，依實際已推出的成果追蹤。{total} 個里程碑中已完成 {shipped} 個。",
+    "status": {
+      "done": "已推出",
+      "active": "進行中",
+      "next": "已規劃"
+    },
+    "datesTitle": "時程",
+    "datesNote": "日期代表意向，而非承諾。任何尚未標示完成的項目都可能變動，我們寧可直說，也不想悄悄調整圖表。",
+    "legendTitle": "圖例",
+    "ctaEyebrow": "細節",
+    "ctaTitle": "順序背後的理由",
+    "ctaBody": "白皮書說明為什麼驗證要先於規模，以及為什麼治理放在最後。",
+    "ctaWhitepaper": "閱讀白皮書"
+  },
+  "roadmapPhases": {
+    "foundation": {
+      "title": "奠基",
+      "summary": "證明核心概念真的可行：一支手機能否足夠可靠地確認某人到過某處，可靠到能釋出有價值的東西？",
+      "items": {
+        "prototype": "採用 GNSS 與移動連續性的 proof of location 原型",
+        "engine": "具備持久世界錨定的 AR 渲染引擎",
+        "settlement": "第一個結算層，在 Solana 上，含資產定義",
+        "alpha": "在三座測試城市進行內部 Alpha 測試"
+      }
+    },
+    "launch": {
+      "title": "公開上線",
+      "summary": "讓 Seekprotocol 真正到使用者手上，在兩大應用程式商店上架，並提供不預設使用者曾持有私鑰的上手流程。",
+      "items": {
+        "stores": "Seekprotocol 在 iOS 與 Android 上架",
+        "wallet": "社群登入錢包，可選擇匯出自行保管",
+        "drops": "以位置為基礎的投放與任務系統",
+        "attestation": "透過 Play Integrity 與 App Attest 進行裝置驗證",
+        "localisation": "網站與 App 在地化為八種語言"
+      }
+    },
+    "scale": {
+      "title": "全面開放",
+      "summary": "這一年，網路不再只由我們來填滿。任何人都能不必先和我們洽談就放置資產，資助它們的代幣公開發行，而讓人回來的理由也不再只是獨自進行的事。",
+      "groups": {
+        "supply": "供給端",
+        "network": "網路效應"
+      },
+      "items": {
+        "companion": "具備相機感知情境導引的 AI 夥伴",
+        "radio": "在驗證機制中加入無線訊號指紋",
+        "builder": "為小型發布者打造的拖放式活動建立工具",
+        "portal": "為場館與品牌提供的企業自助入口",
+        "analytics": "經驗證到場分析與每次到訪成本報告",
+        "tge": "代幣生成事件（TGE）",
+        "partnerships": "重大合作夥伴關係",
+        "liveEvents": "適用於音樂祭、比賽和研討會的現場活動模式",
+        "seasons": "賽季，各有專屬的天梯與獎勵",
+        "scanning": "遊戲化物件掃描",
+        "guilds": "公會、團隊任務與共享獎勵池",
+        "revenueShare": "放置資產的創作者收益分潤",
+        "multichain": "在 Ethereum、BNB Smart Chain 和 Arbitrum 上結算"
+      }
+    },
+    "governance": {
+      "title": "移交參數",
+      "summary": "治理跟隨真實的費用流而來，而不是走在它前面。對一個沒有交易量的經濟體投票只是作秀，所以我們刻意把它放在最後。",
+      "items": {
+        "onChain": "協議參數的鏈上治理",
+        "treasury": "社群金庫分配",
+        "providers": "第三方驗證提供者",
+        "sdk": "供外部應用程式使用協議的開放 SDK"
+      }
+    }
+  },
+  "businessPage": {
+    "metaTitle": "地理圍欄行銷，依到場付費",
+    "metaDescription": "為發布者與品牌打造的以位置為基礎的 AR 廣告。在你的座標放置獎勵，依每次經過驗證的到訪付費，而不是依曝光付費。",
+    "ogTitle": "依每次經過驗證的到場付費",
+    "eyebrow": "企業合作",
+    "titleStart": "買到場，而不是",
+    "titleAccent": "曝光",
+    "lead": "數位廣告能在幾毫秒內把你的標誌送到某人眼前，卻無法讓他走過三條街。把獎勵放在你的店門口，只為真正走到那裡的人付費。",
+    "ctaTalk": "與我們聯絡",
+    "ctaVerification": "驗證如何運作",
+    "argumentEyebrow": "論點",
+    "argumentTitle": "計數在哪裡停止",
+    "argumentLead": "把同一筆錢用兩種方式花掉，兩個漏斗在最後一列之前看起來差不多。其中一個是實際計數，另一個是模型推估，而那一列正是每個活動被評斷的依據。",
+    "useCasesEyebrow": "應用情境",
+    "useCasesTitle": "四種使用方式",
+    "setupEyebrow": "設定",
+    "setupTitle": "四個決定，不需要工程",
+    "setupLead": "這就是完整流程。做出四個選擇並發布，看看每個選擇如何影響你佔據的範圍，以及每位來到你門口的人的成本。",
+    "measurementEyebrow": "成效衡量",
+    "measurementTitle": "你會拿到什麼，不會拿到什麼",
+    "measurementLead": "位置資料是最敏感的資料類別。你會收到評估活動所需的數字，但不會收到任何能讓你追蹤個人的資料。",
+    "ctaEyebrow": "開始",
+    "ctaTitle": "在你的門口放點東西",
+    "ctaBody": "自助入口正在開發中。在它上線之前，我們會直接和你一起設定活動。告訴我們地點，以及你想放什麼。",
+    "ctaStart": "開始洽談",
+    "ctaRoadmap": "看看自助入口何時推出",
+    "realEyebrow": "計量單位",
+    "realTitle": "什麼是到場，什麼不是",
+    "realLead": "市場上每一個指標都是代理指標，而每個代理指標都有腳本能以不到一分錢的成本製造出來。到場是例外，而且它之所以是例外，是因為一個不會隨硬體進步而消失的原因：它的成本是實體的。",
+    "chainsNote": "用你已持有的資產資助活動，或者完全不用資產。收銀台的優惠券和送到家門口的盒子都不需要鏈，也不需要錢包。涉及代幣時，網路只是設定而不是整合工作，所以一個活動可以同時在多個網路上進行，而領取的人永遠不需要知道是哪一個。",
+    "verifiedEyebrow": "只計經驗證的到訪",
+    "verifiedTitle": "只在真的有人到場時付費",
+    "verifiedBody": "沒有曝光，也沒有從未變成到訪的點擊。只有在協議驗證有人在現場時，活動才會花錢。",
+    "verifiedLink": "開啟 Seek Partners"
+  },
+  "useCases": {
+    "retail": {
+      "label": "零售與餐旅業",
+      "metric": "每次經驗證到場成本",
+      "title": "讓一個地點成為來訪的理由",
+      "body": "在你門口放置優惠，並設定很小的領取半徑。只有站在那裡的人才能拿到，所以你看到的兌換是一個真正走進來的人，而不是某人滑過去的廣告。",
+      "points": [
+        "半徑精準到門口，而不是郵遞區號",
+        "在抵達當下記錄兌換",
+        "適用於連鎖店，不需要逐店整合"
+      ]
+    },
+    "events": {
+      "label": "活動與場館",
+      "metric": "現場參與",
+      "title": "活動期間可領取的地圖",
+      "body": "音樂祭、比賽和研討會都能變成一層臨時資產，隨活動結束而失效。到場就能解鎖，所以獎勵會送到真正出席的人手上。",
+      "points": [
+        "依排程到期的限時資產",
+        "場地用大半徑，舞台和攤位用小半徑",
+        "高價值投放採用更高的驗證門檻"
+      ]
+    },
+    "token": {
+      "label": "代幣與 NFT 專案",
+      "metric": "抗女巫攻擊",
+      "title": "發給人，而不是發給錢包",
+      "body": "建立錢包是免費的，所以空投總是被刷。要求實際到場會讓每一次額外領取都付出真實代價，因為沒有人能同時出現在四十座城市。",
+      "points": [
+        "在選定市場中依地理分布發放",
+        "在一定半徑與時段內的每裝置領取上限",
+        "在資產自身的鏈上保留公開領取紀錄"
+      ]
+    },
+    "tourism": {
+      "label": "城市與觀光",
+      "metric": "人流分布",
+      "title": "引導人們走過你希望被使用的地方",
+      "body": "把資產串成一條路線，讓遊客依序前進。安靜的街道、次要景點和離峰時段，可以承載熱門地標不需要的獎勵。",
+      "points": [
+        "跨多個地點的連續任務",
+        "離峰加權以分散需求",
+        "彙總的到場數字，絕不包含個人軌跡"
+      ]
+    }
+  },
+  "interactionClaims": {
+    "nobots": {
+      "metric": "沒有機器人流量",
+      "title": "這裡沒有任何東西能用腳本製造",
+      "body": "一次領取需要一台位於某座標的裝置，並與它自己的衛星定位、周遭的無線訊號環境，以及把它帶到那裡的移動軌跡一致。這些都沒有資料中心的替代品，所以詐欺率不是我們需要努力壓低的數字。"
+    },
+    "organic": {
+      "metric": "天生自然",
+      "title": "每一次互動都是某人走過的一段路",
+      "body": "互動不是從點擊推測出來的，也不是從樣本群建模出來的。有人選擇走到你的地址，而這個紀錄在他抵達的當下寫入，而不是事後重建。"
+    },
+    "cta": {
+      "metric": "你的行動呼籲",
+      "title": "我們驗證到場，你決定要求",
+      "body": "可以把獎勵設定為購買、追蹤、註冊、掃描貨架上的商品，或者只要到場就好。每種情況底層的驗證都一樣，所以要求可以在不同活動間改變，而保證不變。"
+    }
+  },
+  "measurement": {
+    "counted": {
+      "label": "計算什麼",
+      "value": "在你範圍內一次經過驗證的到場"
+    },
+    "when": {
+      "label": "何時計算",
+      "value": "在領取當下，而不是事後推測"
+    },
+    "receive": {
+      "label": "你會收到什麼",
+      "value": "依地點、時間和活動彙總的數字"
+    },
+    "never": {
+      "label": "你絕不會收到什麼",
+      "value": "個人的移動軌跡或身分"
+    }
+  },
+  "funnel": {
+    "budget": "活動預算",
+    "displayTitle": "以展示廣告購買",
+    "displayCost": "每次模型推估到訪",
+    "seekTitle": "以到場購買",
+    "seekCost": "每次經驗證到場",
+    "counted": "實際計數",
+    "estimated": "推估",
+    "stages": {
+      "impressions": "已投放曝光",
+      "viewable": "可視範圍內呈現",
+      "clicks": "點擊",
+      "visits": "到店",
+      "saw": "看到附近的圖釘",
+      "opened": "打開投放物",
+      "walked": "走過去",
+      "claimed": "在門口領取"
+    },
+    "caption": "展示廣告採用 ${cpm} 的 CPM、{viewability}% 可視率、{ctr}% 點擊率，以及廣告平台模型推估的 {modelled}% 曝光到訪比例。最後一列才是該看的：它不是實際計數，而是推估，而且它並不是由上面的點擊推導而來。右側欄位的每一列，都是在你範圍內的裝置上真實發生的事。"
+  },
+  "deploy": {
+    "stepsLabel": "步驟",
+    "steps": {
+      "location": "地點",
+      "asset": "資產",
+      "rules": "規則",
+      "publish": "發布"
+    },
+    "whereLegend": "放在哪裡",
+    "whereNote": "在入口中，這是一個你可以拖曳的圖釘。座標就是這項資產唯一的地址。",
+    "assetLegend": "你要放什麼",
+    "assetNote": "在範圍與時段內每台裝置限領一次，所以數量代表人數，而不是供應量。",
+    "rulesLegend": "誰可以拿",
+    "campaignLegend": "活動",
+    "quantity": "數量",
+    "claimRadius": "領取半徑",
+    "presets": {
+      "store": {
+        "label": "店面",
+        "place": "Kalverstraat 92, Amsterdam",
+        "hint": "一個門口。範圍小到只有站在櫃台前的人才能領取。"
+      },
+      "venue": {
+        "label": "活動場地",
+        "place": "Johan Cruijff ArenA, Amsterdam",
+        "hint": "整個場地，於活動期間有效，活動結束即失效。"
+      },
+      "trail": {
+        "label": "城市路線",
+        "place": "阿姆斯特丹北區的六個地點",
+        "hint": "串連的資產，須依序領取，偏重安靜的街道。"
+      }
+    },
+    "assets": {
+      "token": "代幣",
+      "nft": "收藏品",
+      "offer": "優惠代碼",
+      "ticket": "入場通行證"
+    },
+    "tiers": {
+      "standard": {
+        "label": "標準驗證",
+        "note": "GNSS、裝置驗證與移動必須一致。"
+      },
+      "strict": {
+        "label": "嚴格驗證",
+        "note": "加入無線訊號指紋。適用於高價值投放。"
+      }
+    },
+    "summaryLocation": "地點",
+    "summaryAsset": "資產",
+    "summaryRadius": "半徑",
+    "summaryVerification": "驗證",
+    "summaryThreshold": "{tier}，門檻 {threshold}",
+    "summaryBudget": "預算",
+    "summaryBudgetValue": "${budget}，每次到場 ${cost}",
+    "publish": "發布活動",
+    "sequence": {
+      "signing": "正在簽署活動",
+      "writing": "正在將資產定義寫入鏈上",
+      "indexing": "正在為座標建立索引",
+      "live": "已在地圖上線"
+    },
+    "again": "再設定一個",
+    "back": "返回",
+    "next": "下一步",
+    "review": "檢視",
+    "verifiedArrivals": "經驗證到場",
+    "costPerArrival": "每次到場成本",
+    "sawPin": "看到附近的圖釘",
+    "placementFee": "放置費用",
+    "perArrival": "每次到場",
+    "live": "上線中",
+    "radiusOf": "半徑 {radius} 公尺",
+    "captionLive": "到場數是依半徑和周遭地圖流量所做的推估，而不是保證。其中每一次都會是有人站在那裡時，記錄在鏈上的一次領取。",
+    "captionIdle": "圓圈依地圖比例繪製。這裡不需要任何開發人員：四個決定，然後發布。"
+  },
+  "whitepaper": {
+    "metaTitle": "白皮書：Proof of Location，適用於任何鏈",
+    "metaDescription": "Seekprotocol 如何將數位資產發放到真實座標、驗證有人真的到過那裡，並在資產所在的任何一條鏈上結算。架構、代幣設計與攻擊分析。",
+    "ogTitle": "Seekprotocol 白皮書",
+    "ogDescription": "Proof of location、架構、代幣設計，以及對攻擊與限制的誠實說明。",
+    "eyebrow": "白皮書",
+    "titleStart": "存在於",
+    "titleAccent": "某個地點的數位資產",
+    "lead": "關於 Seekprotocol 如何把資產發放到座標、證明有人站在那裡並在鏈上結算的技術說明，也包括這套系統做不到的事。",
+    "readingTime": "閱讀時間 {minutes} 分鐘",
+    "updated": "更新於 {date}",
+    "updatedValue": "2026 年 8 月",
+    "gitbook": "GitBook 上的完整文件",
+    "ctaEyebrow": "下一步",
+    "ctaTitle": "看它實際運作",
+    "ctaBody": "生態系頁面顯示即時網路，路線圖則追蹤已推出與接下來的項目。",
+    "ctaEcosystem": "探索生態系",
+    "ctaRoadmap": "查看路線圖",
+    "chapters": {
+      "summary": {
+        "index": "01",
+        "eyebrow": "摘要",
+        "title": "為存在於某個地點的事物而生的協議",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "網際網路讓每一個數位物件同時在任何地方都能取得。這正是它的目的，而且成功了。但它也剝奪了數位事物一個讓實體事物顯得珍貴的特性：身在某個特定的地方。演唱會門票之所以重要，是因為它讓你進入一個場地。地標之所以重要，是因為你必須親自前往。"
+          },
+          {
+            "kind": "p",
+            "text": "Seekprotocol 把位置還給數位資產。代幣、NFT 或獎勵可以發放到一組座標，而不是發放到一個錢包，並一直留在那裡，直到有人實際站進它的範圍內並證明這一點。我們稱之為 proof of location，它是整個協議其餘部分的基礎原語。"
+          },
+          {
+            "kind": "p",
+            "text": "面向消費者的介面是 **Seekprotocol**，一款在 iOS 和 Android 上以擴增實境呈現這些資產的行動 App。你走路，手機顯示附近有什麼，你收集你找到的東西。在底層，結算發生在資產原本所在的任何一條鏈上，只有一個要求：交易成本必須低到撿起一份小獎勵的花費不會超過獎勵本身的價值。"
+          },
+          {
+            "kind": "callout",
+            "text": "簡單來說：我們打造只能在特定地點領取的數位資產，驗證有人真的到過那裡，並在一秒內以不到一分錢的成本於鏈上結算。"
+          },
+          {
+            "kind": "h",
+            "text": "本文件涵蓋的內容"
+          },
+          {
+            "kind": "p",
+            "text": "共十六章，分為四個部分。前三章闡述問題以及解決它的原語。第四到第七章是機制：一次領取如何流轉、各層如何組合，以及 App 如何運用它們。第八到第十一章是經濟，從誰為放置付費，到誰決定參數。最後五章是白皮書通常略過的內容：攻擊、隱私代價、法規立場，以及誠實的限制。"
+          },
+          {
+            "kind": "p",
+            "text": "其中幾張圖表可以互動操作。驗證模型、領取時間軸、捕捉擲骰和預算計算器，執行的都是協議本身所執行的運算，使用相同的常數，讓你可以對設計本身提出異議，而不只是對一張示意圖。"
+          }
+        ]
+      },
+      "problem": {
+        "index": "02",
+        "eyebrow": "問題",
+        "title": "注意力在網路上很便宜，在街頭卻很昂貴",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "有兩個群體面臨的問題，其實是從相反兩端看到的同一個問題。"
+          },
+          {
+            "kind": "h",
+            "text": "品牌與場館買不到來客人流"
+          },
+          {
+            "kind": "p",
+            "text": "數位廣告能在幾毫秒內把一張圖片送到某人眼前，卻無法讓他走過三條街。從曝光到實際到訪的轉換，是整個零售與活動漏斗中最薄弱的一環，而且衡量方式很差，通常是在收銀台問客人有沒有看到廣告。"
+          },
+          {
+            "kind": "p",
+            "text": "業界的解方是建模。由自願加入的裝置樣本群推估到整體人口，得出的到店數字和曝光、點擊並列回報，彷彿它來自同一種計數器。事實並非如此。一個數字是事件，另一個是推估，而活動成效卻是依推估來評斷。"
+          },
+          {
+            "kind": "h",
+            "text": "加密貨幣專案找不到真正的使用者"
+          },
+          {
+            "kind": "p",
+            "text": "空投是標準的分發工具，而且總是被刷。建立錢包不需要成本，所以任何能由錢包領取的獎勵，都會被屬於少數幾個人的數千個錢包領走。專案的回應是設下越來越複雜的資格規則，而這些規則大多把一般使用者擋在外面，精明的刷子卻能隨之調整。"
+          },
+          {
+            "kind": "p",
+            "text": "只要能證明一個真人在特定時間出現在特定地點，這兩個問題就都迎刃而解。來客人流變得可以衡量，因為到場本身就是被記錄的事件。刷空投變得昂貴，因為錢包是免費的，移動卻不是，而沒有人能同時出現在四十座城市。"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "建立錢包的成本",
+                "value": "幾乎為零"
+              },
+              {
+                "label": "身在某處的成本",
+                "value": "時間、距離、實際到場"
+              },
+              {
+                "label": "這個差異換來什麼",
+                "value": "一種以物理為基礎的抗女巫機制"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "為什麼現在做得到，以前卻做不到"
+          },
+          {
+            "kind": "p",
+            "text": "有三件事必須同時到位。手機必須把雙頻 GNSS、具深度感知的相機和硬體級驗證當成標準配備，而不只是旗艦機的功能。結算必須便宜到價值幾分錢的獎勵在轉移後仍有價值，這在手續費降到一分錢以下之前排除了所有的鏈。而人們必須願意把相機對準街道，看見有東西被渲染在其中，這一點已經被十年來遊戲中的 AR 默默解決了。"
+          }
+        ]
+      },
+      "distribution": {
+        "index": "03",
+        "eyebrow": "分發",
+        "title": "為什麼付費觸及無法帶來真人",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "上一章提到兩個群體有同一個問題。這一章談的是他們最先想到的工具，以及它為什麼會以一種砸再多錢都無法修正的方式失敗。"
+          },
+          {
+            "kind": "h",
+            "text": "市場上每個指標都是代理指標"
+          },
+          {
+            "kind": "p",
+            "text": "一次曝光、一次點擊、一次觀看、一次追蹤、一個錢包地址：這些沒有一個是人。每一個都只是在訊號販售者所控制的條件下，與某個人相關的訊號。一旦產生訊號的報酬超過不靠真人產生它的成本，它就會在沒有真人的情況下被產生，而整個市場賴以定價的相關性，就這樣悄悄脫離了它所代表的東西。"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "一次曝光",
+                "value": "不到一分錢，不需要真人"
+              },
+              {
+                "label": "一次點擊",
+                "value": "幾分錢，來自住宅代理池"
+              },
+              {
+                "label": "一個錢包",
+                "value": "免費，而且能用腳本大量產生數千個"
+              },
+              {
+                "label": "一次經驗證到場",
+                "value": "一段由一個人親身走過的路程，一次"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "過濾機制無法恢復訊號"
+          },
+          {
+            "kind": "p",
+            "text": "標準的應對方式是資格規則：最低餘額、過往活動、快照時段、驗證碼、裝置指紋。每一條規則都會讓假領取的成本增加一些，也讓真領取的成本增加另一些，而兩者之間的比例，才是決定過濾機制是否有幫助的唯一因素。實際上，精明的刷子會吸收成本，一般使用者則會放棄，所以過濾機制最後篩選出的，正是它原本要排除的族群。"
+          },
+          {
+            "kind": "p",
+            "text": "到場並不是更好的過濾機制。它是另一種性質的東西，因為它施加的成本不是運算成本。它無法在機架上平行化，不會隨硬體變便宜而下降，而且街道沒有住宅代理這種東西。"
+          },
+          {
+            "kind": "callout",
+            "text": "評估任何防詐措施時，有用的問題不是它讓攻擊者付出多少成本，而是相對於誠實使用者，它讓攻擊者付出多少成本。在這份清單中，到場是唯一一個這個比例不會隨時間往攻擊者有利方向移動的訊號。"
+          },
+          {
+            "kind": "h",
+            "text": "要求仍由發布者決定"
+          },
+          {
+            "kind": "p",
+            "text": "驗證某人到過某處，並不代表他在那裡應該做什麼，而協議刻意不做這個決定。一次領取可以設定為需要追蹤、註冊、掃描貨架上的商品、在座標處鑄造、在收銀台購買，或者只要到場就好。每種情況底層的驗證都完全相同，這代表發布者可以在不同活動間改變要求，而保證本身完全不變。"
+          },
+          {
+            "kind": "p",
+            "text": "這件事重要的原因很容易被忽略。一個規定了行動呼籲的分發管道，只適合它原本設計服務的活動，而不符合那個形狀的每個發布者，都得把自己的優惠硬塞進那個管道。這裡賣的是證據，不是漏斗。"
+          },
+          {
+            "kind": "h",
+            "text": "這解決不了什麼"
+          },
+          {
+            "kind": "p",
+            "text": "一次經驗證的到場，證明的是一台裝置到過某個座標，而不是拿著它的人想去那裡，或會再回來。被付錢走過一扇門的人，是一次真實的到場，也是一個糟糕的顧客。協議讓到場難以偽造、容易計數。至於它值不值得買，仍然是行銷問題，沒有任何一條鏈能回答。"
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "04",
+        "eyebrow": "核心原語",
+        "title": "Proof of location",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Proof of location 是一項主張：某台裝置在某個時段內位於某個範圍內，而且這項主張可信到足以據此釋出有價值的東西。"
+          },
+          {
+            "kind": "p",
+            "text": "沒有任何單一訊號本身值得信任。任何已 root 且裝有模擬位置提供者的裝置，都能偽造原始 GPS。因此協議會根據多個獨立訊號為一次領取評分，並要求這些訊號的組合彼此一致，因為偽造一個訊號很容易，要一致地偽造全部就不容易了。"
+          },
+          {
+            "kind": "h",
+            "text": "我們結合的訊號"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GNSS 定位**：原始衛星位置及其回報的精準度，加上星系和衛星數量，這些往往是偽造者會弄錯的地方。",
+              "**周遭無線訊號**：附近的 Wi-Fi SSID 和行動基地台組合，與協議預期在該座標看到的內容比對。無線訊號環境很難捏造，而且變化緩慢。",
+              "**裝置驗證**：Android 上的 Play Integrity，以及 iOS 上的 DeviceCheck 或 App Attest，確認 App 是正版且作業系統未遭入侵。",
+              "**移動連續性**：從上一個已確認位置到這個位置之間的加速度計軌跡。若主張你在 90 秒內移動了 400 公里，卻沒有相符的移動特徵，該領取會被拒絕。",
+              "**時間合理性**：將抵達時間與根據你上一個已確認位置推算出的移動時間相比對。"
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "每個訊號都會貢獻一部分信心分數。資產自行設定所需的分數：低價值的任務獎勵可能接受中等分數，而售票活動中的高價值投放可以要求裝置驗證和相符的無線訊號環境。低於門檻的領取會被拒絕，同一台裝置屢次被拒，會提高該裝置的門檻。"
+          },
+          {
+            "kind": "confidence"
+          },
+          {
+            "kind": "callout",
+            "text": "目標不是完美的證明，這在消費級硬體上不可能達成。目標是讓偽造的成本高於獎勵的價值，這和讓信用卡支付得以運作的標準相同。"
+          },
+          {
+            "kind": "h",
+            "text": "為什麼訊號採加權而非全部必要"
+          },
+          {
+            "kind": "p",
+            "text": "要求每個訊號都必須具備的規則，就是會拒絕誠實使用者的規則。地下車站收不到 GNSS。新建築的無線訊號環境是地圖從未見過的。落後兩個作業系統版本的手機，可能因為與詐欺毫無關係的原因而驗證失敗。加權讓資產能表明它的價值值得多少證據，也讓誠實的領取能撐過一個不良訊號，卻不會讓偽造的領取撐過四個。"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "預設領取半徑",
+                "value": "30 公尺"
+              },
+              {
+                "label": "可設定範圍",
+                "value": "每項資產 5 公尺至 500 公尺"
+              },
+              {
+                "label": "一般確認時間",
+                "value": "在結算鏈上不到一秒"
+              },
+              {
+                "label": "驗證",
+                "value": "Play Integrity、App Attest"
+              },
+              {
+                "label": "拒絕處理",
+                "value": "依裝置記錄，提高該裝置的門檻"
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "index": "05",
+        "eyebrow": "機制",
+        "title": "你領取東西時實際發生了什麼",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "上一章描述的是證據。這一章追蹤一次領取，從你伸手拿取資產的那一刻，到它進入你錢包的那一刻，因為大多數設計決策都藏在運作順序裡。"
+          },
+          {
+            "kind": "timeline"
+          },
+          {
+            "kind": "h",
+            "text": "真正重要的邊界"
+          },
+          {
+            "kind": "p",
+            "text": "看看各階段在哪裡換到另一台機器。所有敏感的事都發生在前三個階段：位置、無線訊號掃描、移動軌跡、裝置驗證。這些都不會以原始形式離開你的手機。傳到驗證者的是一份經簽署的領取，而從驗證者傳到鏈上的，是一份經簽署、證明該領取達到門檻的證明。"
+          },
+          {
+            "kind": "p",
+            "text": "這就是驗證在鏈下進行的原因。這不是為了擴充規模而做的妥協。把評分放到鏈上，就代表要公開輸入資料，而輸入資料正是關於你站在哪裡、周圍有哪些無線網路的描述。"
+          },
+          {
+            "kind": "h",
+            "text": "失敗時會發生什麼"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**低於門檻**：領取被拒絕，資產留在地圖上，鏈上不會寫入任何東西。拒絕會記錄在該裝置上。",
+              "**屢次被拒**：該裝置所需的分數會提高。一小時內失敗六次領取的裝置，不會被當成從未失敗的裝置看待。",
+              "**結算失敗**：領取會被保留並重試，而不是被丟棄。已贏得卻未交付的資產是會損害信任的錯誤，所以佇列設計為把卡住的撥款移到一旁，而不是擋住後面的撥款。",
+              "**領取途中到期**：資產帶有時段，在時段結束後才抵達的領取，即使分數完美也會被拒絕。時段是資產的一部分，而不是網路狀況。"
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "一次領取是一道鎖，而不是一次查詢。兩個人在同一瞬間伸手拿某項資產的最後一份時，不能兩人都被告知拿到了，所以檢查會先取得鎖，再做任何決定。"
+          }
+        ]
+      },
+      "architecture": {
+        "index": "06",
+        "eyebrow": "架構",
+        "title": "各層如何組合在一起",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "協議分為四層。每一層都可以獨立分析，也可以獨立替換。"
+          },
+          {
+            "kind": "stack"
+          },
+          {
+            "kind": "p",
+            "text": "這種分離在位置與結算的邊界上最為重要。位置驗證是機率性的，並在鏈下進行，因為它仰賴的感測器資料沒有任何理由公開。上鏈的是一份經簽署、證明某次領取達到門檻的證明，而不是你的移動紀錄。"
+          },
+          {
+            "kind": "h",
+            "text": "儲存了什麼，存在哪裡"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**鏈上**：資產定義、其座標與半徑、領取紀錄，以及代幣轉移。公開且永久。",
+              "**鏈下**：原始感測器讀數、無線訊號指紋和裝置驗證。只在為一次領取評分和解決爭議所需的期間內保存，之後即刪除。",
+              "**裝置上**：你的位置紀錄和 AR 錨點資料。除非你明確分享，否則它們會留在你的手機上。"
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "為什麼結算層不是固定的"
+          },
+          {
+            "kind": "p",
+            "text": "這個需求對一條鏈來說很不尋常：交易數量非常多、每筆交易價值非常低，而且確認速度要快到站在街上的人察覺不到。撿起價值二十分錢獎勵的人，不可能付十分錢來領取，也不會站著不動等上三十秒。這因成本排除了大部分的鏈，又因延遲排除了剩下的。不過，這是把它們當作一項要求來排除，而不是一次選定一條鏈、再圍繞它打造一切。"
+          },
+          {
+            "kind": "p",
+            "text": "所以結算是設定問題。一個網路就是一列資料，帶有自己的端點、區塊瀏覽器和原生代幣；一項資產帶有它存在的各個網路，以及它在每個網路上的合約地址和小數位數；而錢包是兩種地址家族之一，而不是每條鏈一個，因為所有 EVM 網路共用同一個地址。發布者用自己已持有的代幣資助活動，領取就在該代幣所在的地方結算。新增一個網路只是新增一列，而不是一次版本發布。"
+          },
+          {
+            "kind": "p",
+            "text": "這個取捨值得說清楚。鏈會停擺，而一條鏈停擺就代表領取會排隊。結算被視為一個可能失敗並可重試的步驟，而不是一個總會成功的步驟，這在任何網路上都是正確的設計，在快速網路上更是必要。分散到多個網路並不能消除這個風險。它能做到的，是讓一個網路的中斷不會變成整個協議的中斷，這是一個較小的主張，也是誠實的主張。"
+          },
+          {
+            "kind": "h",
+            "text": "什麼在哪裡執行"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "位置、感測器、AR 錨點",
+                "value": "在裝置上，絕不以原始形式上傳"
+              },
+              {
+                "label": "評分與門檻",
+                "value": "協議驗證者，鏈下"
+              },
+              {
+                "label": "資產定義與領取",
+                "value": "結算鏈，公開"
+              },
+              {
+                "label": "媒體與代幣圖像",
+                "value": "快取於裝置上，由物件儲存空間提供"
+              },
+              {
+                "label": "生成公告",
+                "value": "由伺服器決定，絕不由用戶端宣告"
+              }
+            ]
+          }
+        ]
+      },
+      "seekar": {
+        "index": "07",
+        "eyebrow": "應用程式",
+        "title": "Seekprotocol，面向消費者的介面",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "在 Seekprotocol 中，協議變成了一般人不必了解上述任何內容就能使用的東西。它一打開就是一張顯示附近有什麼的地圖，舉起相機，AR 引擎就會把這些資產呈現在原處。"
+          },
+          {
+            "kind": "h",
+            "text": "App 能做什麼"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**探索**：步行距離內投放物、任務和活動的即時地圖，依你真正在意的內容篩選。",
+              "**收集**：把相機對準，看到錨定在世界中的資產，伸手拿走它。結算在背景進行。",
+              "**導引**：一位透過相機解讀你周遭環境的 AI 夥伴，會建議路線、說明你正在看什麼，並配合你的玩法調整。",
+              "**持有**：由社群帳號登入建立的內建錢包，讓新使用者在撿起任何東西之前，不必先抄寫助記詞。"
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "上手流程的限制，主導的設計決策比其他任何因素都多。大多數會使用 Seekprotocol 的人從未持有過私鑰。如果前三十秒出現「助記詞」這個詞，他們就會離開。所以錢包會在背景默默建立，想自行保管的人日後隨時可以匯出。"
+          },
+          {
+            "kind": "h",
+            "text": "走向投放物的路"
+          },
+          {
+            "kind": "p",
+            "text": "資產通常位於幾十到兩三百公尺外，在這種距離下，一張地圖就夠了，規劃路線反而多餘。標記一個生成點，會畫出一條從你到它的直線。這條線刻意畫成虛線：它是一個方位，而不是路線，它對建築物一無所知，而在這種距離下，方位通常就是要走的路。一旦你進入捕捉範圍，它就會自動消失，由圓圈接手。"
+          },
+          {
+            "kind": "p",
+            "text": "生成點會在一小時內到期。這是一個遊戲設計決策，也帶來協議上的後果：在下次啟動時還原的標記會指向空無一物之處，所以 App 不會保存它。"
+          },
+          {
+            "kind": "h",
+            "text": "錨定，以及 AR 在這裡的用途"
+          },
+          {
+            "kind": "p",
+            "text": "相機畫面不是裝飾，也不是驗證本身。它做兩件事。它把資產放在世界中一個可信的位置，讓伸手去拿成為一個動作，而不是按一個按鈕；它也讓移動訊號有個能對照一致性的對象，因為繞著錨定物件走動的人，移動方式就像一個人，而拿著手機站著不動的偽造者則不然。"
+          }
+        ]
+      },
+      "play": {
+        "index": "08",
+        "eyebrow": "循環",
+        "title": "是什麼讓人持續走下去",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "一個為到場付費的協議，仍然需要一個讓人第一次到場的理由。沒有人會為了一個機制走過四條街。遊戲層是網路的需求端，它的設計和驗證一樣誠實：機率公開、在伺服器上計算，而且從不詢問用戶端發生了什麼。"
+          },
+          {
+            "kind": "h",
+            "text": "捕捉"
+          },
+          {
+            "kind": "p",
+            "text": "抵達資產所在處，並不代表它就交到你手上。按住點擊時會有一個充能圓圈在跑，充能的品質會轉換成一個倍率。接著由伺服器擲骰。每個生成點你有兩次機會，重試的價值是第一次的 0.65 倍，這個數字讓第二次機會感覺真的是第二次機會，而不是安慰獎。"
+          },
+          {
+            "kind": "catch"
+          },
+          {
+            "kind": "h",
+            "text": "通常沒人公開的條件"
+          },
+          {
+            "kind": "p",
+            "text": "大多數遊戲會隱藏修正值。這裡沒有理由隱藏，因為有趣之處在於技巧只會微調結果，永遠不會決定結果。充能圓圈是介於 0.85 到 1.0 之間的倍率，所以對傳說代幣的完美點擊仍然是傳說等級的難度，而對普通代幣的失誤點擊多半還是抓得到。"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**等級加成**：每個玩家等級固定增加 0.3 個百分點的機率，從 Seeker 到 Legend 共十級。",
+              "**手氣不佳補償**：每連續失誤一次加 2 個百分點，上限 12，適用於重試，也適用於不同代幣之間。",
+              "**連續成功懲罰**：同一枚代幣每連續成功一次扣 4 個百分點，上限 20，所以死守同一個生成點只會越來越差。",
+              "**戰隊加成**：上限 5 個百分點，由戰隊而非個人賺得。",
+              "**道具**：購買或贏得，會在加上其他所有項目之前，先乘上基礎機率。"
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "下限是 5%，上限是 95%。沒有任何組合能疊到保證成功，也沒有任何組合能疊到完全不可能。"
+          },
+          {
+            "kind": "h",
+            "text": "成長系統，以及它的用途"
+          },
+          {
+            "kind": "p",
+            "text": "等級、徽章、戰隊、十二小時挑戰和每週目標的存在，是為了讓走路有比單一投放物更長遠的形狀。它們也為協議做事：一個有等級、有戰隊、有連續紀錄的玩家，擁有的是一個有歷史的帳號，而歷史很難大量偽造。成長系統是加在刷子身上的第二道成本，對誠實玩家卻毫無代價，因為他們本來就會玩。"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "每個生成點的嘗試次數",
+                "value": "2"
+              },
+              {
+                "label": "重試倍率",
+                "value": "×0.65"
+              },
+              {
+                "label": "充能圓圈範圍",
+                "value": "×0.85 至 ×1.00"
+              },
+              {
+                "label": "機率下限與上限",
+                "value": "5% 與 95%"
+              },
+              {
+                "label": "捕捉成功的 XP",
+                "value": "30 至 140"
+              },
+              {
+                "label": "失誤的 XP",
+                "value": "5 至 15"
+              },
+              {
+                "label": "等級",
+                "value": "十級，從 Seeker 到 Legend"
+              }
+            ]
+          }
+        ]
+      },
+      "creators": {
+        "index": "09",
+        "eyebrow": "供給端",
+        "title": "誰來放置資產",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "如果地點都是空的，以位置為基礎的網路就毫無價值。因此協議把資產放置當成一級產品，而不是內部工具。"
+          },
+          {
+            "kind": "h",
+            "text": "三種發布者"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**品牌與場館**使用企業入口，在自己的營業場所放置優惠，並衡量誰真的來了。他們購買的單位是經驗證的到訪，而不是曝光。",
+              "**代幣專案與 NFT 社群**把資源發給人而不是錢包，用地理位置作為刷子無法便宜突破的過濾器。",
+              "**活動主辦單位**把音樂祭、比賽或研討會，變成活動期間可以領取的地圖，資產在活動結束時到期。"
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "三者都使用同一個活動建立工具：放下圖釘、設定半徑、選擇資產與數量、設定信心門檻與時段、注入資金、發布。不需要整合工作，也不需要寫合約。"
+          },
+          {
+            "kind": "callout",
+            "text": "對場館來說，重要的指標是每次經驗證到場的成本。這是數位行銷中第一個在門口實際計數、而不是從問卷推估的來客數字。"
+          },
+          {
+            "kind": "calculator"
+          },
+          {
+            "kind": "h",
+            "text": "密度問題"
+          },
+          {
+            "kind": "p",
+            "text": "這裡的供需是地理性的，這讓一般的市集經營建議派不上用場。一千項資產平均分散在全國，到處都是一張空地圖。同樣一千項集中在一座城市，就是出門的理由。因此放置價格會依該區域的需求加權，而不是統一價，讓熱門商店街的佔位成本高於安靜的街道，協議補貼的是需要人流的街道，而不是已經有人流的街道。"
+          }
+        ]
+      },
+      "token": {
+        "index": "10",
+        "eyebrow": "代幣",
+        "title": "$SEEK 及其用途",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "$SEEK 是協議的結算與協調資產。它之所以存在，是因為網路必須在互不相識的各方之間轉移價值，例如一個國家的品牌資助另一個國家的陌生人領取的獎勵，也因為放置資產的成本應該隨著被使用地點的需求而調整。"
+          },
+          {
+            "kind": "h",
+            "text": "用途"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**活動資金**：發布者以 $SEEK 計價並資助獎勵。",
+              "**放置費用**：每放置一項資產收取一筆費用，依半徑、時長和該區域的需求加權。",
+              "**質押以取得優先權**：當多個活動競爭同一組座標時，質押的 $SEEK 會提高發布者的放置優先順序。",
+              "**獎勵**：大部分協議費用會回流給實際走路的人。",
+              "**治理**：涵蓋參數變更、金庫分配，以及高價值領取的信心門檻。"
+            ]
+          },
+          {
+            "kind": "economy"
+          },
+          {
+            "kind": "tokenomics"
+          },
+          {
+            "kind": "h",
+            "text": "隨時間變化的供給量"
+          },
+          {
+            "kind": "p",
+            "text": "分配圖只告訴你誰持有什麼，完全沒說何時。下方的時程才是更有用的數據，因為代幣的風險很少在於分配比例，而在於懸崖期。"
+          },
+          {
+            "kind": "vesting"
+          },
+          {
+            "kind": "p",
+            "text": "設計意圖是讓費用流反映真實活動而非投機：只有在資產被放置和領取時協議才有收入，而這只會發生在有人願意為經驗證的到訪付費時。"
+          },
+          {
+            "kind": "h",
+            "text": "代幣刻意不做的事"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "它不固定捕捉到的遊戲單位和代幣之間的匯率。遊戲為捕捉定價；市場為代幣定價；協議不假裝能在兩者之間架橋。",
+              "玩遊戲不需要它。捕捉、XP 和挑戰都是免費的，一個從未碰過代幣的玩家，仍然會產生發布者付費購買的到場。",
+              "它不以最低持有量作為放置門檻。質押買到的是活動競爭時的優先權，而不是發布的資格本身。"
+            ]
+          }
+        ]
+      },
+      "revenue": {
+        "index": "11",
+        "eyebrow": "商業模式",
+        "title": "協議如何賺錢，以及向誰賺",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "一份只描述代幣而不描述商業的白皮書，只描述了半個系統。這裡有兩條收入來源，分別來自網路的兩端，這是刻意的：單靠任何一端都無法維持運作。"
+          },
+          {
+            "kind": "h",
+            "text": "放置費，由發布者支付"
+          },
+          {
+            "kind": "p",
+            "text": "主要收入來源。發布者資助獎勵，並額外支付一筆放置費，依資產佔據多大範圍、多長時間，以及該範圍的競爭程度加權。這是會隨網路創造的價值成長的費用，因為它是針對發布者實際購買的東西收取的，也就是到場。"
+          },
+          {
+            "kind": "h",
+            "text": "通行證與商店，由玩家支付"
+          },
+          {
+            "kind": "p",
+            "text": "選擇性的，而且刻意設有上限。賽季通行證為期九十天，會讓生成權重偏向較稀有的代幣，並包含每週一次的稀有領取和一次揭示。加成道具另外販售，沒有一個能買到更好的捕捉機率：它們能揭示問號是什麼、擴大捕捉範圍、讓附近出現更多代幣、倍增 XP、保留沒抓到的代幣、從遠處捕捉一次，或增加一個卡牌寶箱。"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "賽季通行證",
+                "value": "每 90 天賽季 €9.95"
+              },
+              {
+                "label": "柴犬（3 次揭示）、問題不大",
+                "value": "每個 €0.99"
+              },
+              {
+                "label": "XP 增益、淡定哥、Pump It、現金",
+                "value": "每個 €1.49"
+              },
+              {
+                "label": "健身、鑽石手",
+                "value": "每個 €1.99"
+              },
+              {
+                "label": "生成磁鐵、生成誘餌",
+                "value": "每個 €2.49"
+              }
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "核心捕捉、XP、挑戰和平台成就永久免費。一個把循環鎖在付費層後面的設計，會破壞發布者唯一在買的東西，也就是真的有人出現。"
+          },
+          {
+            "kind": "h",
+            "text": "為什麼這樣的分配是對的"
+          },
+          {
+            "kind": "p",
+            "text": "玩家消費有彈性、有季節性，而且受限於一個人願意為嗜好付多少錢。發布者支出是行銷預算的一個項目，以每次到場成本來評斷，而這個成本有真實的替代方案可以比較。前者在早期玩家比活動多時維持營運。後者是這門生意最終的樣貌，而它只有在前者永遠不淪為付費致勝時才行得通，因為一個所有付費玩家什麼都抓得到的網路，回報給場館的到場將毫無價值。"
+          }
+        ]
+      },
+      "governance": {
+        "index": "12",
+        "eyebrow": "治理",
+        "title": "誰決定這些數字",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "這個協議有異常多的可調常數：半徑界限、信心門檻、放置費加權、回饋給尋寶者的費用比例，以及捕捉機率階梯本身。每一個都是披著設定值外衣的政策決定，而假裝不是這樣，正是協議最後變成由最後一個改檔案的人治理的原因。"
+          },
+          {
+            "kind": "h",
+            "text": "分階段的立場，坦白說明"
+          },
+          {
+            "kind": "p",
+            "text": "治理尚未上線。目前參數由核心團隊設定，並透過有紀錄、可審查的遷移程序變更。我們不會把這描述成去中心化，因為它不是。"
+          },
+          {
+            "kind": "p",
+            "text": "延後的原因不是不情願。對一個沒有交易量的經濟體投票只是作秀：投票率低、少數持有者決定一切，而被決定的是沒有人有足夠數據判斷的參數。當有真實的費用流時，治理才有意義，因為那時參數變更會帶來可衡量、可供爭論的後果。"
+          },
+          {
+            "kind": "h",
+            "text": "哪些會被治理，哪些不會"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**納入治理**：費用加權、協議費用中尋寶者的比例、金庫分配、半徑界限，以及高價值資產可用的信心門檻。",
+              "**延遲納入治理**：任何會改變已放置資產價值的事項。依某個費率表資助的活動，應依該費率表結束。",
+              "**不納入治理**：第十四章中的隱私承諾。保存期限以及拒絕公開移動資料都不是參數，投票也不是削弱它們的正當方式。",
+              "**不納入治理**：個別領取的結果。被拒絕的領取屬於爭議處理的範疇，而不是投票。"
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "一個能投票取消自家使用者隱私的治理系統不是保障，而是一個有法定人數的攻擊面。"
+          }
+        ]
+      },
+      "security": {
+        "index": "13",
+        "eyebrow": "風險",
+        "title": "攻擊、限制，以及我們不宣稱的事",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "一個付錢給人們、只因他們身在某處的協議，會誘使人們謊報自己身在某處。具體說明攻擊方式，比宣稱系統很安全更有用。"
+          },
+          {
+            "kind": "h",
+            "text": "我們防禦的攻擊"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**GPS 偽造**：要求無線訊號環境與移動軌跡佐證定位，並以能偵測遭竄改作業系統的裝置驗證來降低風險。",
+              "**女巫刷量**：以移動的實體成本，以及在一定半徑與時段內的每裝置領取上限來降低風險。",
+              "**轉送攻擊**：由位於現場的真實裝置替遠端使用者簽署，透過將驗證綁定到 App 執行個體與工作階段，並限制每台裝置的領取頻率來降低風險。",
+              "**模擬器農場**：以模擬器無法通過的裝置驗證，以及在統計上可與真實步行區分的移動軌跡來降低風險。",
+              "**用戶端宣告生成點**：直接防止而非僅降低風險：只有伺服器能宣告什麼東西存在、在哪裡，所以遭修改的用戶端即使謊報所見也得不到任何好處。",
+              "**重複領取**：在評估領取之前先取得鎖來防止，所以兩個人同時伸手拿最後一份時，不可能都被告知拿到了。"
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "我們接受的限制"
+          },
+          {
+            "kind": "p",
+            "text": "一個夠堅決、擁有改裝硬體並實際身在某地的攻擊者，能從該地點榨取比誠實使用者更多的價值。我們以每個地點的上限來限制損害，而不是假裝這不可能發生。室內定位的精準度仍明顯低於戶外，所以室內資產使用較大的半徑，並更倚重無線訊號指紋。而且沒有任何消費級裝置能證明在場的是一個人而不是一台裝置：送貨車上的手機，移動起來仍然像口袋裡的手機。"
+          },
+          {
+            "kind": "h",
+            "text": "不屬於攻擊的風險"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**平台依賴**。裝置驗證由 Apple 和 Google 提供。任何一方的政策變更，都可能一夕之間削弱整個機制中最強的訊號，而且沒有任何方法能繞過作業系統。",
+              "**鏈的可用性**。鏈停擺代表領取要排隊。協議會重試而不是丟棄，但對站在街上的人來說，重試並不等於成功。",
+              "**人身安全**。獎勵人們前往某些地方，就會讓人們出現在那些地方。資產放在道路交叉口，而不是建築物範圍內，高價值投放會避開私人土地，App 也附有安全提示。這是一項設計限制，而不是免責聲明。"
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "我們打造的是經濟上的嚇阻，而不是密碼學上的保證。一旦兩者被混為一談，受傷的是使用者。"
+          }
+        ]
+      },
+      "privacy": {
+        "index": "14",
+        "eyebrow": "隱私",
+        "title": "位置資料是最敏感的資料",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "一個人去過哪裡的紀錄，會透露他的住家、工作、健康、宗教和人際關係。以位置領取為基礎打造網路，就代表要承擔這份責任，而負責任的設計就是盡可能少持有這類資料。"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "從不需要持續追蹤。App 只在你嘗試領取時要求位置，而不是在背景執行。",
+              "原始感測器與無線訊號資料用來為一次領取評分，之後依短暫的保存期限刪除。",
+              "寫入鏈上的是某個公開座標上的一次領取成功了，這和一家店知道有人兌換了優惠券是同樣的資訊。",
+              "你的移動紀錄留在你的裝置上。協議不需要它，也不想要它。",
+              "發布者收到的是彙總數字，絕不是個人軌跡。"
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "我們尚未解決的問題"
+          },
+          {
+            "kind": "p",
+            "text": "由於鏈的本質，領取紀錄是公開且永久的，一個有心的觀察者可以把同一個錢包在不同地點的領取串連起來。這是一個真正的弱點，也是在公開帳本上結算所固有的問題。想避免這一點的使用者，應該在不同情境使用不同的錢包，而 App 讓這件事變得簡單而不是把它藏起來，但一個需要使用者先知道問題存在的預設值，並不算解決。"
+          },
+          {
+            "kind": "callout",
+            "text": "誠實的總結：我們把持有的資料降到最少，我們不販賣持有的資料，而針對公開紀錄有一種關聯攻擊，我們能減輕卻無法消除。"
+          }
+        ]
+      },
+      "compliance": {
+        "index": "15",
+        "eyebrow": "法域",
+        "title": "法規，以及本協議的定位",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "有三套法規同時涉及本協議，這很不尋常，值得明確說明，而不是留在註腳裡。"
+          },
+          {
+            "kind": "h",
+            "text": "資料保護"
+          },
+          {
+            "kind": "p",
+            "text": "在多數現代資料保護法中，位置資料接近特殊類別資料，而本協議依最嚴格而非最方便的解讀來打造。位置只在領取當下為明示目的而蒐集，只在評分與爭議處理所需期間保存，且絕不彙整成移動輪廓。在賦予刪除權的法規下，鏈下紀錄可以刪除；鏈上的領取紀錄則不行，這是帳本的限制，我們選擇揭露而不是輕描淡寫。"
+          },
+          {
+            "kind": "h",
+            "text": "代幣分類"
+          },
+          {
+            "kind": "p",
+            "text": "$SEEK 被設計為一種功能與協調資產，第十章所述的用途是真實的，而不是裝飾性的。這是一個設計立場，不是法律結論。分類因法域而異，會隨時間改變，也不是一份白皮書靠宣稱就能定案的事。因此在當地法規有要求之處，會限制其可用性。"
+          },
+          {
+            "kind": "h",
+            "text": "獎勵、機率與賭博的界線"
+          },
+          {
+            "kind": "p",
+            "text": "捕捉包含擲骰，這讓它接近一條因國家而異的界線。有兩個特性讓它在多數法規下落在正確的一側，而且是刻意維持的：參與不需要任何費用，而付費項目調整的是機率與倍率，而不是回報可變的賭注。通行證買的是權重，加成道具買的是倍率；兩者都不是可能輸掉的賭注。若某個法域有不同解讀，我們會直接不提供付費層，而不是與之爭辯。"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "鏈下個人資料",
+                "value": "可依請求刪除"
+              },
+              {
+                "label": "鏈上領取紀錄",
+                "value": "永久保存，並如實揭露"
+              },
+              {
+                "label": "年齡限制",
+                "value": "註冊時套用，購買付費項目時強制執行"
+              },
+              {
+                "label": "付費項目",
+                "value": "在將其歸類為賭注的法域不予提供"
+              }
+            ]
+          }
+        ]
+      },
+      "roadmap": {
+        "index": "16",
+        "eyebrow": "方向",
+        "title": "已經完成的，以及接下來的",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol 已在 iOS 和 Android 上線，具備以位置為基礎的投放、AR 渲染和社群錢包。驗證機制目前執行 GNSS、裝置驗證和移動連續性訊號；無線訊號指紋正分階段推出。裝置驗證的強制執行目前受功能旗標控制，這是它誠實的現況：拒絕流程已經完成，但強制執行的開關尚未在所有介面開啟。"
+          },
+          {
+            "kind": "p",
+            "text": "拖放式活動建立工具已經完成。接下來是自助式企業入口，讓放置不再侷限於代管式合作，以及隨之而來的到場分析。同時進行的還有代幣生成事件、現場活動模式、賽季和物件掃描。治理會在有足夠真實費用流、讓參數決策有意義之後才推出，原因如第十二章所述。"
+          },
+          {
+            "kind": "h",
+            "text": "我們不承諾的事"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "治理的日期。它取決於交易量，而交易量不是一個日期。",
+              "室內與戶外同等的精準度。這是個難題，誠實的答案是在可預見的未來，室內會使用較大的半徑。",
+              "為了新鏈而加一條新鏈。第六章中的延遲與成本要求相當嚴格，加入一條無法滿足這些要求的鏈，會是行銷決策而不是技術決策。"
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "完整的分階段說明請見路線圖頁面，它會隨著項目推出持續更新。"
+          }
+        ]
+      },
+      "glossary": {
+        "index": "17",
+        "eyebrow": "參考",
+        "title": "詞彙表",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "本文件中使用的術語，以及它們在這裡的意思，而不是一般用法中的意思。"
+          },
+          {
+            "kind": "glossary"
+          }
+        ]
+      }
+    }
+  },
+  "allocations": {
+    "community": {
+      "label": "社群獎勵",
+      "note": "尋寶者透過收集和任務賺得"
+    },
+    "ecosystem": {
+      "label": "生態系與合作夥伴",
+      "note": "活動補貼、場館導入、整合"
+    },
+    "team": {
+      "label": "團隊與貢獻者",
+      "note": "4 年歸屬期，12 個月懸崖期"
+    },
+    "treasury": {
+      "label": "金庫",
+      "note": "受治理的協議開發準備金"
+    },
+    "liquidity": {
+      "label": "流動性",
+      "note": "交易所與鏈上市場深度"
+    },
+    "backers": {
+      "label": "早期支持者",
+      "note": "2 年歸屬期，6 個月懸崖期"
+    }
+  },
+  "tokenFacts": {
+    "ticker": {
+      "label": "代號",
+      "value": "$SEEK"
+    },
+    "chain": {
+      "label": "鏈",
+      "value": "Solana（SPL），可結算至任何鏈"
+    },
+    "supply": {
+      "label": "總供給量",
+      "value": "1,000,000,000"
+    },
+    "emission": {
+      "label": "發行",
+      "value": "固定，不再增發"
+    }
+  },
+  "glossary": {
+    "proof-of-location": {
+      "term": "Proof of location",
+      "definition": "主張某台裝置在某個時段內位於某個範圍內，依多個獨立訊號評分，可信到足以據此釋出價值。這是機率性的，永遠不是絕對的。"
+    },
+    "confidence-score": {
+      "term": "信心分數",
+      "definition": "為一次領取的各項訊號評分後的綜合結果。每項資產自行設定所需分數，所以任務獎勵和售票活動的投放可以共用同一個驗證者，卻不共用同一個門檻。"
+    },
+    "claim-radius": {
+      "term": "領取半徑",
+      "definition": "距離資產座標、可在其中領取資產的範圍。預設 30 公尺，可設定為 5 公尺至 500 公尺，是發布者影響成本與意義的最大槓桿。"
+    },
+    "drop": {
+      "term": "投放物",
+      "definition": "放置在座標上、等待被領取的資產。帶有數量、時段、信心門檻和半徑。"
+    },
+    "spawn": {
+      "term": "生成點",
+      "definition": "遊戲中呈現的投放物：由伺服器公告、顯示在地圖上、一小時內到期，並有兩次捕捉機會。"
+    },
+    "attestation": {
+      "term": "裝置驗證",
+      "definition": "由作業系統簽署的聲明，表示 App 是正版且裝置未遭竄改。Android 上是 Play Integrity，iOS 上是 App Attest。這是整個機制中最強的訊號，也是協議無法掌控的訊號。"
+    },
+    "radio-fingerprint": {
+      "term": "無線訊號指紋",
+      "definition": "從某個位置可見的 Wi-Fi 網路和行動基地台組合，與該處應該可見的內容比對。變化緩慢且難以捏造，這正是它有用的原因。"
+    },
+    "motion-continuity": {
+      "term": "移動連續性",
+      "definition": "從一個已確認位置到下一個位置之間的加速度計軌跡。能抓出瞬間移動式的領取，因為 90 秒內移動 400 公里不會留下相符的移動特徵。"
+    },
+    "verified-arrival": {
+      "term": "經驗證到場",
+      "definition": "在發布者範圍內達到門檻的一次領取。這是發布者購買的單位，也是活動的成本數字能實際計數而非模型推估的原因。"
+    },
+    "placement-fee": {
+      "term": "放置費",
+      "definition": "發布者為佔據一個範圍所支付的費用，依半徑、時長和該區域需求加權。有別於獎勵，獎勵是尋寶者獲得的東西。"
+    },
+    "cold-streak": {
+      "term": "手氣不佳補償",
+      "definition": "保底計時器。每連續失誤一次，捕捉機率增加兩個百分點，上限十二，適用於重試，也適用於不同代幣之間。"
+    },
+    "streak-penalty": {
+      "term": "連續成功懲罰",
+      "definition": "反方向的槓桿。在同一枚代幣上每連續成功一次扣四個百分點，上限二十，所以死守單一生成點只會越刷越差。"
+    },
+    "seeker": {
+      "term": "Seeker",
+      "definition": "走到資產所在處並領取它們的人。也是十個玩家等級中的第一級，最後一級是 Legend。"
+    },
+    "seek": {
+      "term": "$SEEK",
+      "definition": "結算與協調資產。用於資助活動、支付放置費、透過質押購買放置優先權，並在治理上線後承載治理投票權。"
+    }
+  },
+  "whitepaperFigures": {
+    "draft": "草案數據，並非最終代幣經濟",
+    "totalSupply": "總供給量",
+    "donutAria": "依占總供給比例的代幣分配",
+    "terms": "{count} 個術語",
+    "filterTerms": "篩選術語",
+    "filter": "篩選",
+    "noMatch": "沒有符合的結果。你可以用瀏覽器本身的尋找功能搜尋整份文件。",
+    "stackCaption": "領取沿著各層往下傳；價值則往上回流。選擇一層查看詳情。",
+    "liveModel": "即時模型",
+    "interactive": "互動式",
+    "confidenceTitle": "試著拒絕一次領取",
+    "thresholdLabel": "資產門檻",
+    "confidenceThreshold": "信心 · 門檻 {threshold}",
+    "claimAccepted": "領取已接受",
+    "claimRefused": "領取遭拒絕",
+    "shortBy": "差了 {short}。同一台裝置屢次被拒，會進一步提高它的門檻。",
+    "confidenceCaption": "權重僅供示意。重點在於形狀：沒有任何單一訊號能獨自通過有資金的活動門檻，而同時偽造四個訊號的成本高於投放物本身。",
+    "economyLabel": "經濟循環",
+    "stageOf": "第 {step}/{total} 階段",
+    "timelineTitle": "一次領取，逐個階段",
+    "stop": "停止",
+    "runReal": "以實際速度執行",
+    "claimStages": "領取階段",
+    "segAria": "{label}，{ms} 毫秒，{where}",
+    "endToEnd": "全程 {seconds} 秒",
+    "takes": "耗時",
+    "elapsed": "已經過",
+    "whatMoves": "傳遞的內容",
+    "timelineWhere": {
+      "device": "在你的手機上",
+      "verifier": "驗證者",
+      "chain": "結算鏈"
+    },
+    "timelineCaption": "這些是時間預算，而不是實測值。感測器時段和結算都會隨狀況變動，兩者之間的一切則是不會變的運算。請注意邊界所在的位置：原始感測器資料絕不會離開前三個階段。",
+    "vestingTitle": "流通供給量，逐月變化",
+    "vestingAria": "48 個月內依分配類別的流通供給量",
+    "circulatingMonth": "第 {month} 個月流通量",
+    "circulatingLaunch": "上線時流通量",
+    "axisLaunch": "上線",
+    "axisYear": "第 {year} 年",
+    "month": "月份",
+    "vestingCaption": "看階梯，而不是曲線。一段平坦之後接著一次跳升，就是懸崖期，而懸崖期正是時程表守不守得住的關鍵。團隊和支持者的分配最值得檢查，因為只有這兩者是解鎖流入市場，而不是發給使用網路的人。",
+    "calcTitle": "一筆預算能買到什麼",
+    "calcBudget": "活動預算",
+    "calcReward": "每次領取的獎勵",
+    "calcRadius": "領取半徑",
+    "calcFee": "此半徑下的放置費：每個投放物 ${fee}",
+    "calcArrivals": "經驗證到場",
+    "calcPerPerson": "每位到門口的人 ${cost}",
+    "calcDisplay": "同樣預算用於展示廣告",
+    "calcInferred": "次曝光，其中約 {visits} 次會被推估為到訪，每次 ${cost}",
+    "calcCaption": "展示廣告數據採用 ${cpm} 的 CPM 和 {rate}% 的曝光到訪率，兩者都是業界經驗法則。真正重要的差別在於，一欄是在門口實際測量，另一欄則是推估。",
+    "contents": "目錄 · 共 {count} 章",
+    "chaptersLabel": "章節",
+    "close": "關閉",
+    "ladderTitle": "伺服器如何計算捕捉擲骰",
+    "rarityLabel": "稀有度",
+    "playerLevel": "玩家等級",
+    "chargeRing": "充能圓圈",
+    "missed": "失誤次數",
+    "clanBonus": "戰隊加成",
+    "points": "+{points} 點",
+    "baseChance": "基礎機率",
+    "levelBonus": "等級加成",
+    "ringMultiplier": "圓圈倍率",
+    "retryMultiplier": "重試倍率",
+    "firstAttempt": "第一次嘗試",
+    "retry": "重試",
+    "acrossSpawn": "整個生成點",
+    "youCaught": "你已捕捉",
+    "notYet": "尚未",
+    "ladderHint": "一個生成點幾乎說明不了什麼。跑一千次，看兩條長條逐漸接近。",
+    "ladderTally": "{spawns} 個生成點中捕捉到 {caught} 個，與模型相差 {gap} 個百分點。",
+    "runOne": "跑一個生成點",
+    "runThousand": "跑一千次",
+    "reset": "重設",
+    "ladderCaption": "遷移程序公布的{rarity}機率為第一次 {first}%、第二次 {second}%，整個生成點合計 {overall}%。那就是這個模型在等級 5、圓圈充滿、沒有戰隊時的結果，也就是滑桿的起始設定。捕捉到的單位是遊戲單位，它值多少代幣是市場的事，而不是遊戲的事。",
+    "tocTitle": "目錄"
+  },
+  "stackLayers": {
+    "app": {
+      "label": "應用層",
+      "sub": "Seekprotocol · 企業入口 · 活動建立工具",
+      "detail": "人們實際接觸的部分。行動 App 以 AR 呈現資產並處理收集；入口則是發布者放置資產的地方。兩者都只是下層的一般用戶端，沒有任何特權存取。"
+    },
+    "intelligence": {
+      "label": "智慧層",
+      "sub": "AI 夥伴 · 任務生成 · 路線規劃",
+      "detail": "讀取相機畫面和你的遊玩紀錄，建議下一步去哪裡，並說明你正在看什麼。盡可能在裝置上執行，絕不接觸它不需要的原始位置紀錄。"
+    },
+    "location": {
+      "label": "位置驗證",
+      "sub": "GNSS · 無線訊號指紋 · 裝置驗證 · 移動",
+      "detail": "依多個獨立訊號為一次領取評分，分數超過資產門檻時發出一份經簽署的證明。刻意設計在鏈下：讓驗證得以運作的感測器資料，正是不該公開的資料。"
+    },
+    "settlement": {
+      "label": "結算層",
+      "sub": "任何鏈 · 資產 · 領取紀錄",
+      "detail": "保存資產定義、座標和領取紀錄，並在領取被接受時轉移價值。網路只是設定而不是整合，而每個網路都必須達到的標準是：手續費要夠低，讓領取一份小獎勵不會被領取成本吃掉。"
+    }
+  },
+  "confidenceSignals": {
+    "gnss": {
+      "label": "GNSS 定位",
+      "detail": "衛星位置及其回報的精準度，加上星系和衛星數量。",
+      "spoofable": "在已 root 的裝置上輕易就能偽造。"
+    },
+    "radio": {
+      "label": "周遭無線訊號",
+      "detail": "附近的 Wi-Fi SSID 和行動基地台，與此處應該可見的內容比對。",
+      "spoofable": "難以捏造；無線訊號環境變化緩慢。"
+    },
+    "attest": {
+      "label": "裝置驗證",
+      "detail": "Play Integrity 或 App Attest 確認在未遭竄改的作業系統上執行的是正版 App。",
+      "spoofable": "模擬器農場會直接失敗。"
+    },
+    "motion": {
+      "label": "移動連續性",
+      "detail": "從你上一個已確認位置到這個位置之間的加速度計軌跡。",
+      "spoofable": "90 秒內跳躍 400 公里不會有相符的移動特徵。"
+    }
+  },
+  "confidenceTiers": {
+    "low": {
+      "label": "任務獎勵",
+      "note": "低價值，低門檻。"
+    },
+    "mid": {
+      "label": "合作夥伴投放",
+      "note": "有資金活動的預設值。"
+    },
+    "high": {
+      "label": "售票活動",
+      "note": "高價值，所有訊號都必須一致。"
+    }
+  },
+  "economyStages": {
+    "fund": {
+      "label": "發布者注資",
+      "actor": "品牌 · 專案 · 場館",
+      "body": "活動以 $SEEK 計價並注資，放置費依半徑、時長和該區域的競爭程度加權。",
+      "flow": "$SEEK 流入"
+    },
+    "place": {
+      "label": "資產被放置",
+      "actor": "協議",
+      "body": "投放物連同領取半徑、時段和所需的信心門檻，一起寫入其座標。",
+      "flow": "費用進入金庫"
+    },
+    "walk": {
+      "label": "有人走過去",
+      "actor": "尋寶者",
+      "body": "唯一無法自動化的步驟。移動就是讓刷量變得昂貴的成本。",
+      "flow": "時間與距離"
+    },
+    "verify": {
+      "label": "到場經過驗證",
+      "actor": "驗證層",
+      "body": "四個訊號在鏈下評分。上鏈的是一份經簽署的證明，而不是你的感測器資料。",
+      "flow": "證明"
+    },
+    "settle": {
+      "label": "完成結算",
+      "actor": "結算鏈",
+      "body": "在資產所在的鏈上，轉移在一秒內確認，費用不到一分錢，領取紀錄公開可查。",
+      "flow": "獎勵流出"
+    },
+    "split": {
+      "label": "費用回流",
+      "actor": "協議",
+      "body": "大部分協議費用會流向實際走路的人；其餘用於資助金庫與生態系。",
+      "flow": "大部分歸尋寶者"
+    }
+  },
+  "timelineStages": {
+    "open": {
+      "label": "打開投放物",
+      "detail": "你點一下地圖上的資產，或透過相機伸手去拿。App 取用它已持有的位置，並開始一個新的感測器時段。",
+      "payload": "資產 ID、最後已知定位"
+    },
+    "window": {
+      "label": "感測器時段",
+      "detail": "目前為止最長的階段，也決定了之後的一切：一次新的 GNSS 定位及其精準度、一次無線訊號環境掃描，以及自上一個已確認位置以來的移動軌跡。",
+      "payload": "GNSS 定位、衛星數量、Wi-Fi 與基地台組合、加速度計軌跡"
+    },
+    "attest": {
+      "label": "驗證與簽署",
+      "detail": "Play Integrity 或 App Attest 確認 App 是正版、作業系統未遭竄改。領取由綁定該 App 執行個體的金鑰簽署，這正是讓轉送領取變得昂貴的原因。",
+      "payload": "驗證權杖、經簽署的領取"
+    },
+    "score": {
+      "label": "評分",
+      "detail": "在鏈下進行，因為它仰賴沒有理由公開的感測器資料。每個訊號都依該座標應有的樣貌評分，結果再合併成一個信心數值。",
+      "payload": "信心分數、各訊號明細"
+    },
+    "threshold": {
+      "label": "門檻檢查",
+      "detail": "分數不是達到資產門檻，就是沒有。拒絕會記錄在該裝置上，而屢次被拒會提高該裝置的門檻，而不只是再失敗一次。",
+      "payload": "接受或拒絕、經簽署的證明"
+    },
+    "settle": {
+      "label": "結算",
+      "detail": "領取紀錄與轉移在同一筆交易中寫入結算鏈。這是其他人唯一能看到的階段，而它只說明了某個公開座標上的一次領取成功了。",
+      "payload": "領取紀錄、代幣轉移"
+    },
+    "confirm": {
+      "label": "進入你的錢包",
+      "detail": "錢包更新，資產也從你的地圖上消失。從點擊到持有，網路良好時不到兩秒。",
+      "payload": "餘額更新、地圖狀態"
+    }
+  },
+  "referrals": {
+    "eyebrow": "推薦",
+    "title": "每位一起玩的朋友都讓你更強",
+    "lead": "把你的邀請碼交給朋友，只要他們持續遊玩，你每次捕捉都能多保留 5% XP。沒有上限，而且從不會從他們那邊扣。",
+    "codeLabel": "你的八碼邀請碼",
+    "activeLabel": "活躍",
+    "exampleLabel": "一次傳說捕捉，前後對比",
+    "exampleBody": "加成會在伺服器為捕捉評分時套用，並與你的戰隊段位一起寫入紀錄，讓兩者日後可以分辨。",
+    "activeRule": "活躍代表過去 {days} 天內有 {needed} 次捕捉",
+    "panelTitle": "你的團隊",
+    "rateLabel": "你的比率",
+    "idle": "休眠中",
+    "levelShort": "LV"
+  },
+  "referralRules": {
+    "once": {
+      "title": "只能選一位邀請人，且只能選一次",
+      "body": "邀請碼只能兌換一次，之後永遠無法更改。資料庫會拒絕第二次嘗試，所以這不是能說服 App 通融的規則。"
+    },
+    "newOnly": {
+      "title": "僅限新帳號",
+      "body": "邀請碼只對還沒有 XP、也還沒收集任何東西的帳號有效。已經在玩的尋寶者，無法事後加入某個團隊並被當作新人計算。"
+    },
+    "oneLevel": {
+      "title": "只有一層",
+      "body": "你從自己邀請的朋友身上獲得加成，而不是從他們邀請的朋友身上。那些尋寶者會建立自己的團隊，並保有全部成果。"
+    },
+    "friendKeeps": {
+      "title": "你的朋友不會損失任何東西",
+      "body": "加成是加在你自己的捕捉上，不是從他們的捕捉中抽成，所以你得到的任何東西都不是從別人那裡拿走的。"
+    }
+  },
+  "referralInfo": {
+    "openLabel": "推薦機制完整說明",
+    "close": "關閉",
+    "eyebrow": "推薦完整說明",
+    "title": "一個團隊值多少，以及何時開始計算",
+    "lead": "這裡有兩件事很容易搞錯。加成沒有上限，而朋友並不是一安裝就開始為你帶來加成。這兩點都值得親眼看看，而不只是聽人說。",
+    "ladderLabel": "活躍朋友數，以及你的捕捉價值",
+    "ladderFriends": "{count} 人在玩",
+    "noCap": "沒有上限。二十位活躍朋友就是整整翻倍，而計算中沒有任何東西會停在那裡。",
+    "lifecycleLabel": "朋友如何成為有效推薦",
+    "foot": "朋友在 {days} 天內完成 {needed} 次真實捕捉後才會計入。不夠就停止計入；再次遊玩就會恢復。無論哪種情況都不會有任何損失。"
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "你交出你的邀請碼",
+      "body": "每位尋寶者在註冊時都會獲得一組八碼邀請碼。它永遠屬於你，不需要領取或產生。"
+    },
+    "redeem": {
+      "title": "他們在新帳號上輸入",
+      "body": "邀請碼只適用於還沒有 XP、也還沒收集任何東西的帳號。它只寫入一次，之後無法更改，所以沒有人能在團隊之間被轉移。"
+    },
+    "play": {
+      "title": "他們出門去玩",
+      "body": "只有真實的捕捉才算數。在模擬器中的嘗試會另外記錄，不計入總數。"
+    },
+    "count": {
+      "title": "他們開始為你帶來加成，並持續下去",
+      "body": "這是大家常忽略的一步。光是安裝還不夠：朋友必須真的出門去玩，你的倍率才會變動。"
+    }
+  },
+  "shop": {
+    "metaTitle": "Seekprotocol 商店",
+    "metaDescription": "為你的帳號購買卡包、賽季通行證和加成道具。",
+    "ogTitle": "Seekprotocol 商店",
+    "eyebrow": "商店",
+    "title": "Seekprotocol 商店",
+    "lead": "為你的帳號購買卡包、賽季通行證和加成道具。",
+    "howEyebrow": "運作方式",
+    "stepSignIn": "登入",
+    "stepSignInBody": "與 App 相同的帳號：Google、Apple 或電子郵件驗證碼。",
+    "stepPay": "以加密貨幣付款",
+    "stepPayBody": "連結 Phantom、Solflare、Backpack 或任何支援 Wallet Standard 的錢包，並核准一筆轉帳。",
+    "stepOpen": "在 App 中開啟",
+    "stepOpenBody": "付款完成後，卡包會立即進入你的帳號。在 Arena 中開啟它們。",
+    "notConfigured": "此部署環境尚未設定商店。",
+    "loadingAccount": "正在確認你的登入狀態...",
+    "signInTitle": "登入以購買",
+    "signInLead": "為你的帳號購買卡包、賽季通行證和加成道具。",
+    "continueGoogle": "使用 Google 繼續",
+    "continueApple": "使用 Apple 繼續",
+    "orEmail": "或使用電子郵件驗證碼",
+    "emailLabel": "電子郵件",
+    "emailPlaceholder": "you@example.com",
+    "sendCode": "傳送驗證碼",
+    "sendingCode": "傳送中...",
+    "codeSentTo": "我們已將 8 位數驗證碼傳送至 {email}。",
+    "codeLabel": "驗證碼",
+    "verifyCode": "登入",
+    "verifying": "確認中...",
+    "useAnotherEmail": "使用其他電子郵件",
+    "signInFailed": "登入失敗。請再試一次。",
+    "codeInvalid": "驗證碼不符。請檢查電子郵件後再試一次。",
+    "emailInvalid": "請輸入有效的電子郵件地址。",
+    "signedInAs": "已登入為",
+    "signOut": "登出",
+    "productsEyebrow": "卡包",
+    "productsTitle": "選擇組合",
+    "bundleSaving": "省 {percent}%",
+    "paymentEyebrow": "付款",
+    "paymentTitle": "選擇付款方式",
+    "paymentSolHint": "SOL · Phantom、Solflare 等",
+    "paymentCrypto": "以加密貨幣付款",
+    "paymentDetails": "幣別與付款詳情",
+    "packSingle": "單包",
+    "packFive": "五包",
+    "packTen": "十包",
+    "packs": "{count, plural, other {# 包}}",
+    "perPack": "每包 {price}",
+    "solApprox": "約 {sol} SOL",
+    "solPending": "重新整理後顯示 SOL 金額",
+    "rateFrom": "{time} 的匯率。",
+    "rateStale": "之後可能已有變動。",
+    "rateNone": "尚無 SOL 匯率。",
+    "refreshRate": "重新整理 SOL 匯率",
+    "refreshing": "正在取得匯率...",
+    "rateNote": "確切的 SOL 金額會在你建立訂單時鎖定，並維持五分鐘。",
+    "waysToPay": "兩種付款方式：從 Solana 上的瀏覽器錢包支付 SOL，或透過 Radom 付款頁面，以 Ethereum、Base、Arbitrum、Polygon、BNB、Tron 和 Bitcoin 上的 USDC、USDT、SOL、ETH、BTC 等支付。",
+    "buy": "以 SOL 購買",
+    "payOther": "以穩定幣或其他加密貨幣付款",
+    "connectToBuy": "連結錢包以購買",
+    "walletEyebrow": "錢包",
+    "walletTitle": "從你的錢包付款",
+    "walletLead": "Phantom、Solflare、Backpack 或任何支援 Wallet Standard 的錢包。在你於錢包中核准之前，不會送出任何東西。",
+    "walletSelect": "選擇錢包",
+    "walletConnecting": "連結中...",
+    "walletConnect": "連結錢包",
+    "walletCopy": "複製地址",
+    "walletCopied": "已複製",
+    "walletChange": "更換錢包",
+    "walletDisconnect": "中斷連結",
+    "verificationNote": "防止自動化購買的簡短檢查，通常會自動完成。",
+    "flowVerifying": "正在完成安全檢查...",
+    "flowCreating": "正在建立你的訂單...",
+    "flowReady": "訂單已就緒",
+    "flowPay": "支付 {sol} SOL",
+    "flowFor": "購買 {product}",
+    "flowHeld": "價格保留 {seconds} 秒",
+    "payInWallet": "在錢包中付款",
+    "cancelOrder": "取消",
+    "flowSigning": "請在錢包中核准付款...",
+    "flowRedirecting": "正在前往付款頁面...",
+    "flowChecking": "正在確認你的付款，第 {attempt}/{total} 次...",
+    "flowConfirming": "正在鏈上確認，第 {attempt}/{total} 次...",
+    "flowPaid": "已付款。{count, plural, other {# 包}}已進入你的帳號。",
+    "flowPaidAny": "已付款。你購買的商品已送達。",
+    "flowPending": "你的付款正在確認中。送達後，購買的商品會出現在 App 中。",
+    "flowCancelled": "訂單已取消。沒有送出任何東西。",
+    "viewTransaction": "查看交易",
+    "flowDone": "完成",
+    "tryAgain": "再試一次",
+    "errCheckoutUnavailable": "商店目前暫停中。請稍後再試。",
+    "errArenaUnavailable": "此帳號尚未開放 Arena。請先開啟 App。",
+    "errBuildRefused": "無法從網站驗證這筆購買。請重新整理頁面後再試一次。",
+    "errRateLimited": "嘗試次數過多。請稍等片刻再試。",
+    "errOrderExpired": "訂單在付款前已過期。請建立新訂單。",
+    "errUnknownAction": "商店與伺服器不一致。請重新整理頁面。",
+    "errUnknownProduct": "此商品未開放販售。",
+    "errAccountBlocked": "此帳號無法購買卡包。",
+    "errUnauthorized": "你的登入已失效。請重新登入。",
+    "errWalletRejected": "錢包拒絕了這筆付款。",
+    "errInsufficient": "錢包中的 SOL 不足以支付此金額加上網路手續費。",
+    "errWalletFailed": "錢包無法送出交易。",
+    "errNetwork": "無法連線到伺服器。請檢查網路連線後再試一次。",
+    "errCaptcha": "驗證未完成。請再試一次。",
+    "errRadomUnavailable": "付款頁面目前無法使用。請稍後再試，或使用 Solana 錢包付款。",
+    "errGeneric": "發生錯誤。請再試一次。",
+    "packsEyebrow": "你的卡包",
+    "packsWaiting": "{count, plural, =0 {沒有待開啟的卡包} other {# 包待開啟}}",
+    "packsHint": "在 App 的 Arena 中開啟。",
+    "packsLive": "即時",
+    "ordersEyebrow": "最近訂單",
+    "ordersEmpty": "還沒有訂單。",
+    "statusPending": "處理中",
+    "statusPaid": "已付款",
+    "statusExpired": "已過期",
+    "statusFailed": "失敗",
+    "checkout": {
+      "steps": "結帳步驟",
+      "details": "資料",
+      "payment": "付款",
+      "digitalDelivery": "數位交付",
+      "yourDetails": "你的結帳資料",
+      "reviewPay": "確認並付款",
+      "intro": "為你的帳號購買卡包、賽季通行證和加成道具。",
+      "contact": "聯絡資訊",
+      "email": "電子郵件地址",
+      "signedInAccount": "目前登入的帳號",
+      "emailNote": "你已驗證的登入電子郵件。可使用上方的「登出」切換帳號。",
+      "name": "姓名（選填）",
+      "deliverTo": "要由哪個帳號接收你購買的商品？",
+      "inApp": "於 Seekprotocol 中交付",
+      "friendsId": "好友 ID",
+      "optional": "選填",
+      "friendsNote": "好友 ID 為選填。留空即交付到與你目前登入連結的 Seekprotocol 帳號。若要送給其他帳號，請輸入該帳號的 8 碼好友 ID。",
+      "checking": "正在確認帳號…",
+      "continue": "繼續付款",
+      "invalidFriend": "找不到使用此好友 ID 的可用帳號。請檢查 8 碼代碼。",
+      "recipientUnavailable": "此帳號尚未開放 Arena。請選擇其他收件人。",
+      "detailsFailed": "無法確認帳號。你的資料已保存在此；請再試一次。",
+      "receivingAccount": "接收帳號",
+      "yourAccount": "你目前登入的帳號",
+      "otherAccount": "你購買的商品會送到這個帳號。",
+      "change": "變更",
+      "solWallet": "Solana 錢包",
+      "radomNote": "繼續前往 Radom 選擇幣別與網路。確認前請檢查網路手續費。",
+      "walletNote": "請在錢包中核准付款。下一步會顯示確切的 SOL 金額。",
+      "payNow": "支付 {price}",
+      "supportNote": "每筆訂單都有參考編號和交付狀態。如需購買相關協助，請保留參考編號。",
+      "orderSummary": "訂單摘要",
+      "oneTime": "一次性購買",
+      "digitalPacks": "數位卡包",
+      "bundle": "選擇你的組合",
+      "subtotal": "小計",
+      "delivery": "交付",
+      "toAccount": "Seekprotocol 帳號",
+      "total": "總計",
+      "feeNote": "可能會產生網路手續費。付款服務商或錢包會在你核准前顯示。",
+      "linkedDelivery": "連結至所選帳號",
+      "linkedDeliveryNote": "付款確認後，你購買的商品會交付到所選的 Seekprotocol 帳號。",
+      "receipt": "訂單詳情",
+      "refreshStatus": "重新整理狀態",
+      "orderNumber": "訂單參考編號",
+      "receiptFailed": "無法載入此訂單。請保留參考編號並嘗試重新整理。",
+      "orderSaved": "訂單已儲存",
+      "paymentReceived": "付款已確認",
+      "paymentWaiting": "等待付款確認",
+      "delivered": "商品已交付",
+      "deliveryWaiting": "等待交付",
+      "closedOrder": "此訂單已關閉。如果款項已從你的錢包扣除，請在再次付款前，帶著此參考編號聯絡客服。",
+      "pendingNote": "如果你已經付款，請勿再次付款。請重新整理狀態；系統也會自動確認交付。",
+      "loadingReceipt": "正在載入訂單…",
+      "calculating": "計算中…"
+    },
+    "errRecipient": "無法確認帳號。你的資料已保存在此；請再試一次。",
+    "errPreparing": "你的訂單仍在準備中。請稍後重試；我們會沿用同一筆訂單。",
+    "history": {
+      "title": "我的訂單",
+      "lead": "你在商店的購買紀錄，包括送到其他帳號的卡包。在這裡查看付款和交付狀態。",
+      "shortLead": "查看你先前的購買、付款狀態和交付情況。",
+      "viewOrders": "查看我的訂單",
+      "navigation": "商店與帳號",
+      "shop": "返回商店",
+      "signInTitle": "登入以查看你的訂單",
+      "signInLead": "請使用你購買時所用的同一個帳號。只會顯示你自己的訂單。",
+      "autoUpdate": "狀態會自動更新。",
+      "updated": "最後更新：{time}",
+      "loading": "正在載入訂單…",
+      "loadFailed": "無法更新你的訂單。顯示的狀態可能已過時。請嘗試「重新整理狀態」。",
+      "emptyTitle": "還沒有訂單",
+      "emptyLead": "使用此帳號下的訂單會顯示在這裡。",
+      "purchase": "Seekprotocol 購買",
+      "paymentLabel": "付款",
+      "deliveryLabel": "交付",
+      "paidNotDelivered": "你的付款已確認，交付仍在處理中。請勿再次付款；交付狀態會自動更新。",
+      "pagination": "訂單紀錄頁面",
+      "previous": "上一頁",
+      "next": "下一頁",
+      "page": "第 {page} 頁",
+      "orderedAt": "訂購日期",
+      "paidAt": "付款日期",
+      "deliveredAt": "入帳日期",
+      "payment": {
+        "paid": "已付款",
+        "pending": "等待付款",
+        "expired": "已過期",
+        "failed": "未完成",
+        "unknown": "狀態不明"
+      },
+      "delivery": {
+        "delivered": "商品已交付",
+        "processing": "交付處理中",
+        "notDelivered": "尚未入帳",
+        "awaitingPayment": "付款確認後"
+      },
+      "overview": "訂單總覽",
+      "pageSize": "每頁 {count} 筆訂單",
+      "orderShort": "訂單 #{reference}",
+      "recipient": "給 {name}",
+      "moreProducts": "+ 另外 {count} 項商品",
+      "reorder": "重新建立購物車",
+      "resume": "繼續付款",
+      "checkPayment": "確認付款",
+      "checkingPayment": "正在確認付款…",
+      "actionFailed": "無法確認這筆付款。請再試一次。",
+      "viewDetails": "查看訂單詳情",
+      "quantity": "數量：{count}",
+      "currencyNote": "商品保留其原始幣別。總計是此次結帳鎖定的金額，於下單時換算。",
+      "actionResult": {
+        "paid": "你的付款已確認。交付狀態正在更新。",
+        "pending": "付款尚未確認。如果你已經付款，請勿再次付款。",
+        "closed": "此次結帳已關閉。請重新建立購物車以繼續。"
+      },
+      "restore": {
+        "loading": "正在確認先前的訂單…",
+        "ready": "你的購物車已還原。再次付款前，請確認目前的價格和接收帳號。",
+        "failed": "無法還原此訂單。付款可能仍在處理中，或某項商品可能已無法購買。請先重新整理訂單狀態。"
+      }
+    },
+    "catalogLoading": "正在載入商品…",
+    "catalogFailed": "無法載入商品。請再試一次。",
+    "catalogEmpty": "目前沒有可購買的商品。",
+    "errCatalogChanged": "此商品已變更。請重新整理商品，並在付款前確認價格。",
+    "catalogTitle": "選擇你的商品",
+    "catalogLead": "為你的帳號購買卡包、賽季通行證和加成道具。",
+    "passSeason": "本賽季有效。一次性購買。",
+    "cardsInPacks": "每包 5 張卡牌",
+    "recipientPrompt": "要由哪個帳號接收你購買的商品？",
+    "recipientOther": "你購買的商品會送到這個帳號。",
+    "purchaseDelivered": "商品已交付",
+    "errPassUnavailable": "目前無法購買通行證。",
+    "errPassOwned": "此帳號已有有效的通行證。",
+    "errPassPending": "此帳號仍有一筆未完成的通行證訂單。請先確認其付款狀態再試一次。",
+    "friendsHelp": "好友 ID 為選填。留空即交付到與你目前登入連結的 Seekprotocol 帳號。若要送給其他帳號，請輸入該帳號的 8 碼好友 ID。",
+    "productKinds": {
+      "pack": "卡包",
+      "pass": "通行證",
+      "consumable": "加成道具",
+      "bundle": "組合"
+    },
+    "powerupNames": {
+      "rare_boost": "柴犬",
+      "coin_magnet": "生成磁鐵",
+      "to_the_moon": "XP 增益",
+      "pump_it": "Pump It",
+      "diamond_hands": "鑽石手",
+      "spawn_lure": "生成誘餌",
+      "cash": "現金",
+      "fitness": "健身",
+      "chill_guy": "淡定哥",
+      "this_is_fine": "問題不大"
+    },
+    "cart": {
+      "add": "將 {product} 加入購物車",
+      "quantity": "{product} 的數量",
+      "decrease": "減少數量",
+      "increase": "增加數量",
+      "remove": "移除",
+      "empty": "你的購物車是空的。請從上方加入一項或多項商品。",
+      "conversion": "不同幣別的商品會在結帳時換算成一個美元總額。"
+    },
+    "errCart": "請檢查購物車中的數量。每筆訂單最多可購買 50 包卡包和一張通行證。",
+    "login": {
+      "heading": "使用你的 App 帳號登入",
+      "existingOnly": "請使用與 Seekprotocol App 相同的登入方式。商店僅供既有 App 帳號使用。",
+      "methods": "登入方式",
+      "continueWith": "使用 {provider} 繼續",
+      "notAvailable": "暫時無法使用",
+      "unavailable": "此登入方式目前無法使用。請稍後再試，或使用已連結到你 App 帳號的其他方式。",
+      "methodsFailed": "部分登入方式無法載入。",
+      "orEmail": "或使用電子郵件登入",
+      "emailMethod": "電子郵件登入方式",
+      "emailCode": "電子郵件驗證碼",
+      "signIn": "登入",
+      "emailNotSent": "無法傳送驗證碼。請使用你既有 App 帳號的電子郵件後再試一次。",
+      "appRequired": "你需要既有的 App 帳號才能使用商店。請先在 Seekprotocol App 中建立帳號或完成設定，再回到這裡。",
+      "noAccount": "還沒有 App 帳號？請在 Seekprotocol App 中建立。無法在商店註冊。",
+      "changeAccount": "使用其他帳號",
+      "expired": "此次登入嘗試已過期。請從商店重新開始。",
+      "wallet": "使用 Solana 錢包繼續",
+      "connectWallet": "連結錢包",
+      "walletSignIn": "使用此錢包登入",
+      "walletSigning": "請在錢包中確認…",
+      "changeWallet": "選擇其他錢包",
+      "walletCannotSign": "此錢包無法簽署登入訊息。請選擇已連結到你 App 帳號的其他錢包。",
+      "walletFailed": "錢包登入失敗或已取消。請使用已連結到你 App 帳號的錢包再試一次。",
+      "emailHelp": "我們會寄給你一組登入驗證碼。請使用你 App 帳號的電子郵件地址。",
+      "welcome": "歡迎回來。",
+      "intro": "使用你的 Seekprotocol App 帳號登入。",
+      "socialHeading": "使用你的帳號",
+      "socialHelp": "選擇你在 App 中使用的登入方式。",
+      "accountNote": "僅限既有 App 帳號。請在 Seekprotocol App 中建立新帳號。",
+      "availabilityNote": "呈灰色的登入方式暫時無法使用。"
+    },
+    "powerupDescriptions": {
+      "rare_boost": "好奇那是什麼嗎？在地圖上點一個問號，從地圖上的任何位置都能看到底下是什麼。",
+      "coin_magnet": "路上有更多東西可以發現。30 分鐘內，附近會出現更多代幣。",
+      "to_the_moon": "讓每次嘗試都有價值。30 分鐘內，捕捉代幣的嘗試可獲得 3 倍 XP。",
+      "pump_it": "再多一個卡牌寶箱。今天可以在每日上限之外，多捕捉一個競技場卡牌寶箱。",
+      "diamond_hands": "太遠走不到？從最遠 500 公尺外捕捉一枚代幣，機率不變。",
+      "spawn_lure": "把尋寶帶到你身邊。30 分鐘內為附近玩家吸引代幣。需要加入戰隊。",
+      "cash": "把小代幣換成更稀有的。30 分鐘內，可用 3 枚普通換 1 枚罕見、3 枚罕見換 1 枚稀有，或 5 枚稀有換 1 枚傳說。",
+      "fitness": "伸手可及的範圍大很多。15 分鐘內可從最遠 80 公尺外捕捉代幣。",
+      "chill_guy": "好好看看四周。15 分鐘內可以看到最近 15 個生成點是什麼，而不是 5 個。",
+      "this_is_fine": "沒抓到？別慌。下一次失誤後，那枚代幣會為你保留 2 分鐘，其他人拿不走。效果最長持續 15 分鐘。"
+    },
+    "productInfo": {
+      "more": "關於此商品",
+      "includes": "你會獲得",
+      "use": "使用方式",
+      "pack": "每包含 5 張隨機 Arena 卡牌。在 App 的 Arena 中開啟卡包，看看你拿到哪些卡牌。可能會有重複的卡牌；不保證獲得特定卡牌。",
+      "pass": "在本賽季中遇到更多稀有、史詩和傳說代幣，另外每週還能在 App 中領取一枚稀有代幣。通行證隨賽季結束，不會自動續訂。",
+      "bundle": "列出的加成道具會分別加入你的背包。你可以選擇先啟用哪一個；它們的效果不會同時生效。",
+      "delivery": "付款確認後，交付到你選擇的 Seekprotocol 帳號。未填好友 ID 時，商品會送到與你登入連結的 App 帳號。",
+      "passName": "賽季通行證",
+      "bundleName": "加成組合",
+      "activate": "購買後加入你的背包。準備好時，從 App 商店中啟用。一次只能啟用一個加成道具。"
+    }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | 贏得真實獎勵的 AR 與 AI 尋寶",
+    "description": "與 $SEEK 一起體驗未來：為存在於某個地點的獎勵而生的 AR 與 AI 層。搜尋以位置為基礎的投放、收集 NFT、兌換優惠券、贏得實體商品，並與 AI 夥伴一起探索。獎勵可以是任何鏈上的代幣，也可以與區塊鏈完全無關。",
+    "socialDescription": "搜尋以位置為基礎的投放、收集 NFT、兌換優惠券、贏得實體商品。把獎勵錨定在真實地點的 AR 與 AI 層，可在任何鏈上，也可以不需要鏈。",
+    "skipToContent": "跳到主要內容"
+  }
+}

@@ -166,7 +166,7 @@ function AboutContent() {
         <div className="noise-layer" aria-hidden="true" />
         <div className="shell">
           <div className="page-head-inner">
-            <p className="eyebrow">About</p>
+            <p className="eyebrow">{t("eyebrow")}</p>
             <h1 className="t-h1 page-head-title">{t("heroTitle")}</h1>
             <p className="t-lead">{t("heroDesc")}</p>
           </div>
@@ -178,7 +178,7 @@ function AboutContent() {
         <div className="shell">
           <div className="about-why reveal">
             <div>
-              <p className="eyebrow">Why we build this</p>
+              <p className="eyebrow">{t("whyEyebrow")}</p>
               <h2 className="t-h2">{t("whySeekprotocol")}</h2>
             </div>
             <div>
@@ -224,7 +224,7 @@ function AboutContent() {
       <section className="section">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow">Technology</p>
+            <p className="eyebrow">{t("techEyebrow")}</p>
             <h2 className="t-h2">{t("coreTechnologies")}</h2>
             <p className="t-lead" style={{ marginTop: "1.25rem" }}>{t("coreTechDesc")}</p>
           </div>
@@ -249,7 +249,7 @@ function AboutContent() {
       <section className="section section-sunken">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow">Pillars</p>
+            <p className="eyebrow">{t("pillarsEyebrow")}</p>
             <h2 className="t-h2">{t("threePillars")}</h2>
             <p className="t-lead" style={{ marginTop: "1.25rem" }}>{t("threePillarsDesc")}</p>
           </div>
@@ -293,7 +293,7 @@ function AboutContent() {
       <section className="section section-sunken">
         <div className="shell">
           <div className="sec-head reveal">
-            <p className="eyebrow">Team</p>
+            <p className="eyebrow">{t("teamEyebrow")}</p>
             <h2 className="t-h2">{t("ourTeam")}</h2>
           </div>
 
@@ -320,7 +320,7 @@ function AboutContent() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="team-card-social"
-                    aria-label={`${member.name} on LinkedIn`}
+                    aria-label={t("linkedinLabel", { name: member.name })}
                   >
                     <img loading="lazy" src="/images/Linkdin-Image.svg" alt="" width={16} height={16} />
                   </a>

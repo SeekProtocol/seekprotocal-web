@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog-data";
+import { blogPostLocales } from "@/lib/blog-i18n";
 import { baseUrl, getSitemapAlternates, OG_IMAGE } from "@/lib/seo";
 import { routing } from "@/i18n/routing";
 
@@ -121,17 +122,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  /* The articles are the only single-language content left: their bodies live in
-     lib/blog-data.ts in English and are not in the message files, which is why
-     the article page still declares getSingleLanguageAlternates. One entry each,
-     no cluster, matching what the page says. */
-  const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${baseUrl}/${defaultLocale}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "monthly",
-    priority: 0.7,
-    images: [`${baseUrl}/og/blog/${post.slug}`],
-  }));
+  /* Articles: English lives in lib/blog-data.ts, translations in
+     content/blog/<locale>.json. One entry per language a post exists in, each
+     carrying the cluster of those languages, matching what the article page
+     declares. A locale without a translation is left out: its URL canonicalises
+     to English. */
+  const blogEntries: MetadataRoute.Sitemap = blogPosts.flatMap((post) => {
+    const locales = blogPostLocales(post.slug);
+    const languages = {
+      ...Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}/blog/${post.slug}`])),
+      "x-default": `${baseUrl}/${defaultLocale}/blog/${post.slug}`,
+    };
+    return locales.map((l) => ({
+      url: `${baseUrl}/${l}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      images: [`${baseUrl}/og/blog/${post.slug}`],
+      alternates: { languages },
+    }));
+  });
 
   return [...translatedEntries, ...blogEntries];
 }

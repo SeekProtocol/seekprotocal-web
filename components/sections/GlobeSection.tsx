@@ -141,7 +141,7 @@ export default function GlobeSection() {
         )}
 
         {/* Same shape as the map HUD in the app. */}
-        <div className="globe-zoom" role="group" aria-label="Zoom">
+        <div className="globe-zoom" role="group" aria-label={t("zoomLabel")}>
           <button
             type="button"
             onClick={() => nudgeZoom(0.25)}
@@ -162,12 +162,12 @@ export default function GlobeSection() {
         </div>
 
         <span className="t-mono-sm globe-scale">
-          {zoom === 0 ? "Whole earth" : `Zoom ${Math.round(zoom * 100)}%`}
+          {zoom === 0 ? t("wholeEarth") : t("zoomLevel", { percent: Math.round(zoom * 100) })}
         </span>
 
         {leaders.length > 0 && (
           <div className="globe-leaders">
-            <span className="t-mono-sm globe-leaders-title">Busiest right now</span>
+            <span className="t-mono-sm globe-leaders-title">{t("busiest")}</span>
             <ol>
               {leaders.map(([city, count], i) => (
                 <li key={city}>
@@ -182,7 +182,7 @@ export default function GlobeSection() {
           </div>
         )}
 
-        <div className="globe-hubs" role="group" aria-label="Jump to a city">
+        <div className="globe-hubs" role="group" aria-label={t("hubsLabel")}>
           {HUBS.map((city) => (
             <button
               key={city}
@@ -343,7 +343,7 @@ function DropCard({
           <dd>{Math.round(ladder.base * 100)}%</dd>
         </div>
         <div>
-          <dt className="t-mono-sm">Units</dt>
+          <dt className="t-mono-sm">{t("units")}</dt>
           <dd>
             {drop.amount} × ${drop.coin.symbol}
           </dd>
@@ -353,12 +353,12 @@ function DropCard({
       {rolling ? (
         <p className="drop-card-outcome" data-win={rolling === "win" || undefined}>
           {rolling === "win"
-            ? `Caught it · +${format.number(drop.xp)} XP`
-            : `It got away · ${Math.round(ladder.base * RETRY_DECAY * 100)}% on a retry`}
+            ? t("caught", { xp: drop.xp })
+            : t("escaped", { percent: Math.round(ladder.base * RETRY_DECAY * 100) })}
         </p>
       ) : (
         <button type="button" className="btn btn-brand btn-sm drop-card-try" onClick={onAttempt}>
-          Try to catch it
+          {t("tryCatch")}
         </button>
       )}
 

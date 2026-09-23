@@ -102,7 +102,7 @@ export default function SiteHeader() {
             <SeekLogo markSize={42} gradientId="seek-logo-header" />
           </Link>
 
-          <nav className="site-nav" aria-label="Main">
+          <nav className="site-nav" aria-label={t("mainLabel")}>
             {LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -147,7 +147,7 @@ export default function SiteHeader() {
           before hydration. display:none keeps it out of the accessibility tree
           while closed, which is what the hidden attribute was doing. */}
       <div id="mobile-nav" className="mobile-nav">
-        <nav className="mobile-nav-list" aria-label="Mobile">
+        <nav className="mobile-nav-list" aria-label={t("mobileLabel")}>
           {/* prefetch={false} on the sheet only. It is display:none while closed,
               so nothing here prefetches until it opens — and then all seven go
               at once, on a phone, in the same gesture that is already animating

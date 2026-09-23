@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import { record } from "@/lib/crash-log";
+import { routeErrorCopy } from "@/lib/route-error-copy";
 
 /**
  * Route-level error boundary.
@@ -16,7 +17,10 @@ import { record } from "@/lib/crash-log";
  * Deliberately free of dependencies. No useTranslations, no data, no icons. An
  * error boundary that needs anything to render is a boundary that can fail while
  * reporting a failure, and a missing message key is one of the things it has to
- * be able to report. English only for the same reason.
+ * be able to report. For the same reason its copy is not in messages/*.json but
+ * in lib/route-error-copy.ts, plain data with no imports, and the locale is
+ * read off the URL rather than asked of next-intl. A locale without an entry
+ * there reads English.
  *
  * The message and digest are shown on purpose. Next strips server-side error
  * messages in production, but a client-side exception keeps its text, and that
@@ -24,6 +28,12 @@ import { record } from "@/lib/crash-log";
  * names the line. If that is ever felt to be too much for a visitor to see, hide
  * the block behind a details element rather than removing it.
  */
+const noSubscription = () => () => {};
+const readPathname = () => window.location.pathname;
+/* Null on the server, so the server render and the hydration pass agree on
+   English; the client then settles on the real path straight after. */
+const serverPathname = () => null;
+
 export default function RouteError({
   error,
   reset,
@@ -42,32 +52,32 @@ export default function RouteError({
     });
   }, [error]);
 
+  const pathname = useSyncExternalStore(noSubscription, readPathname, serverPathname);
+  const { locale, copy } = routeErrorCopy(pathname);
+
   return (
     <section className="page-head">
       <div className="grid-field" aria-hidden="true" />
       <div className="noise-layer" aria-hidden="true" />
       <div className="shell">
         <div className="page-head-inner">
-          <p className="eyebrow">Something broke</p>
+          <p className="eyebrow">{copy.eyebrow}</p>
           <h1 className="t-h1 page-head-title">
-            This page stopped <span className="text-gradient">halfway</span>
+            {copy.titleStart}
+            <span className="text-gradient">{copy.titleEmphasis}</span>
+            {copy.titleEnd}
           </h1>
-          <p className="t-lead">
-            Not your connection. Something in the page threw an error and could
-            not finish drawing. Trying again usually works, and the details below
-            are what we need to stop it happening twice.
-          </p>
+          <p className="t-lead">{copy.lead}</p>
 
           <div className="btn-row" style={{ marginTop: "2rem" }}>
             <button type="button" onClick={reset} className="btn btn-brand btn-lg">
-              Try again
+              {copy.tryAgain}
             </button>
             {/* A plain anchor, not next/link, and on purpose. A Link navigates
                 through the same router that has just failed; a full document
                 load is the thing most likely to actually get the reader out. */}
-            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <a href="/en" className="btn btn-outline btn-lg">
-              Back to the homepage
+            <a href={`/${locale}`} className="btn btn-outline btn-lg">
+              {copy.home}
             </a>
           </div>
 
@@ -88,7 +98,7 @@ export default function RouteError({
             }}
           >
             {error.digest ? `digest ${error.digest}\n` : ""}
-            {error.message || "No message was attached to the error."}
+            {error.message || copy.noMessage}
           </pre>
         </div>
       </div>

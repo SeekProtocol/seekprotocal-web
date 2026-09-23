@@ -74,7 +74,7 @@ function ContactContent() {
         <div className="noise-layer" aria-hidden="true" />
         <div className="shell">
           <div className="page-head-inner">
-            <p className="eyebrow">Contact</p>
+            <p className="eyebrow">{t("eyebrow")}</p>
             <h1 className="t-h1 page-head-title">{t("getInTouch")}</h1>
             <p className="t-lead">{t("formDesc")}</p>
           </div>
@@ -114,7 +114,7 @@ function ContactContent() {
             <aside className="contact-aside reveal">
               <div className="card">
                 <p className="t-mono" style={{ marginBottom: "0.75rem" }}>
-                  Elsewhere
+                  {t("elsewhere")}
                 </p>
                 <ul className="contact-links">
                   <li>
@@ -141,7 +141,7 @@ function ContactContent() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Documentation
+                      {t("documentation")}
                     </a>
                   </li>
                 </ul>
@@ -149,7 +149,7 @@ function ContactContent() {
 
               <div className="card">
                 <p className="t-mono" style={{ marginBottom: "0.75rem" }}>
-                  Registered office
+                  {t("registeredOffice")}
                 </p>
                 <p className="t-small">
                   Block Protocol L.L.C-FZ

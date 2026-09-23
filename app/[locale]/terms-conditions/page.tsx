@@ -112,7 +112,7 @@ function TermsPageContent() {
         <div className="noise-layer" aria-hidden="true" />
         <div className="shell">
           <div className="page-head-inner">
-            <p className="eyebrow">Legal</p>
+            <p className="eyebrow">{t("eyebrow")}</p>
             <h1 className="t-h1 page-head-title">{t("title")}</h1>
           </div>
         </div>

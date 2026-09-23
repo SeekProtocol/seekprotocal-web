@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 import * as THREE from "three";
 import { useSceneSlot } from "@/lib/use-scene-slot";
 import type { SceneBuilder, SceneModule } from "@/lib/three-stage";
@@ -879,6 +880,7 @@ export default function SeekGlobe({
   zoomDepth = 1,
   focusRef,
 }: Props) {
+  const t = useTranslations("globe");
   const labelLayerRef = useRef<HTMLDivElement>(null);
   const collectRef = useRef(onCollect);
   collectRef.current = onCollect;
@@ -906,7 +908,7 @@ export default function SeekGlobe({
       ref={hostRef}
       className={`three-host globe-canvas ${className}`}
       role="img"
-      aria-label="Interactive globe showing Seekprotocol collection activity worldwide"
+      aria-label={t("globeAria")}
     >
       <canvas ref={viewRef} className="three-view" />
       <div ref={labelLayerRef} className="globe-labels" aria-hidden="true" />

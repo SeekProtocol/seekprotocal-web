@@ -232,7 +232,7 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                       type="button"
                       className={`${styles.toggle} ${tempPrefs.functional ? styles.toggleOn : ''}`}
                       onClick={() => togglePref('functional')}
-                      aria-label={`Toggle ${t('functional')}`}
+                      aria-label={t('toggleLabel', { category: t('functional') })}
                     >
                       <div className={styles.toggleDot} />
                     </button>
@@ -249,7 +249,7 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                       type="button"
                       className={`${styles.toggle} ${tempPrefs.analytics ? styles.toggleOn : ''}`}
                       onClick={() => togglePref('analytics')}
-                      aria-label={`Toggle ${t('analytics')}`}
+                      aria-label={t('toggleLabel', { category: t('analytics') })}
                     >
                       <div className={styles.toggleDot} />
                     </button>
@@ -266,7 +266,7 @@ export default function CookieConsent({ children }: { children: React.ReactNode 
                       type="button"
                       className={`${styles.toggle} ${tempPrefs.marketing ? styles.toggleOn : ''}`}
                       onClick={() => togglePref('marketing')}
-                      aria-label={`Toggle ${t('marketing')}`}
+                      aria-label={t('toggleLabel', { category: t('marketing') })}
                     >
                       <div className={styles.toggleDot} />
                     </button>

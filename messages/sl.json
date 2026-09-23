@@ -1,0 +1,3261 @@
+{
+  "nav": {
+    "home": "Domov",
+    "seekar": "Aplikacija",
+    "about": "O nas",
+    "whitepaper": "Bela knjiga",
+    "contact": "Kontakt",
+    "toggleMenu": "Preklopi navigacijski meni",
+    "ecosystem": "Ekosistem",
+    "roadmap": "Načrt razvoja",
+    "business": "Za podjetja",
+    "blog": "Blog",
+    "shop": "Trgovina",
+    "getApp": "Prenesi aplikacijo",
+    "switchToLight": "Preklopi na svetli način",
+    "switchToDark": "Preklopi na temni način",
+    "mainLabel": "Glavni meni",
+    "mobileLabel": "Mobilni meni"
+  },
+  "footer": {
+    "home": "Domov",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "whitepaper": "Bela knjiga",
+    "tokenDashboard": "Nadzorna plošča žetona",
+    "address": "Block Protocol L.L.C-FZ Meydan Grandstand, 6th floor, Meydan Road, Nad AlSheba, Dubai, U.A.E.",
+    "description": "Seekprotocol je platforma nove generacije, ki jo razvija Block Protocol L.L.C-FZ in združuje razširjeno resničnost, umetno inteligenco in verigo blokov v igrive izkušnje v resničnem svetu.",
+    "copyright": "© 2024-2026 Block Protocol Vse pravice pridržane",
+    "privacyPolicy": "Pravilnik o zasebnosti",
+    "termsOfService": "Pogoji uporabe",
+    "cookieSettings": "Nastavitve piškotkov",
+    "product": "Izdelek",
+    "company": "Podjetje",
+    "resources": "Viri",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "Prenesi v App Store",
+    "googlePlayAlt": "Prenesi v Google Play"
+  },
+  "home": {
+    "heroTitle": "Odkrij novo resničnost s",
+    "heroTitleHighlight": "Seekprotocol",
+    "heroSubtitle": "Plast AR in umetne inteligence za nagrade, ki živijo na določenem kraju: žeton na kateri koli verigi, bon, ki velja na blagajni, stvar, ki se pojavi v škatli. Odpravi se do koordinate, usmeri telefon in poberi, kar je tam ostalo.",
+    "downloadAppStore": "Prenesi v App Store",
+    "downloadGooglePlay": "Prenesi v Google Play",
+    "benefitsTitle": "Neomejene",
+    "benefitsTitleHighlight": "možnosti!",
+    "benefitAR": "Razširjena resničnost",
+    "benefitARDesc": "Spremeni vsak kraj v interaktivni lov na zaklad s tehnologijo AR, ki digitalnim sredstvom vdahne življenje.",
+    "benefitSeekToEarn": "Seek-to-Earn",
+    "benefitSeekToEarnDesc": "Spremeni svoje vsakdanje gibanje v nagrade. Vsak korak, tek in dogodivščina vodi do airdropov in drugih skritih zakladov.",
+    "benefitLiveEvents": "Dogodki v živo",
+    "benefitLiveEventsDesc": "Pridruži se srečanjem v resničnem svetu, obogatenim z nagradami AR, od lokalnih druženj do velikih lovov na zaklad po vsem mestu.",
+    "benefitCreatorTools": "Orodja za ustvarjalce",
+    "benefitCreatorToolsDesc": "Naše orodje povleci in spusti vsakomur omogoča, da zažene kampanje AR, deli NFT-je, žetone in sredstva ter nagovori občinstvo v velikem obsegu.",
+    "benefitGeofencing": "Tehnologija geoograj",
+    "benefitGeofencingDesc": "Natančna postavitev sredstev na podlagi GPS z natančnostjo 30 metrov, ki omogoča nagrade in izkušnje s preverjeno lokacijo.",
+    "benefitQuests": "Misije",
+    "benefitQuestsDesc": "Dinamične misije, ki se prilagajajo tvoji lokaciji, ravni znanja in željam, z vedno večjimi nagradami in izzivi.",
+    "futureTitle": "Prihodnost interakcij na podlagi lokacije",
+    "futureDesc": "Doživi revolucionarno zlitje ključnih tehnologij. Vsaka novost se brez težav poveže z drugimi in tvoj fizični svet spremeni v igriv ekosistem zaslužka, kjer ima vsak korak vrednost, vsak kraj potencial in te vsaka dogodivščina nagradi z resničnimi digitalnimi sredstvi",
+    "serviceLocationAirdrops": "Airdropi na podlagi lokacije",
+    "serviceLocationAirdropsDesc": "Tehnologija geoograj omogoča natančno postavitev digitalnih sredstev na določene koordinate GPS. Od mestnih središč do skritih kotičkov: vsak kraj postane morebitno območje nagrad. Ekskluzivni NFT-ji, airdropi žetonov in omejeni zbirateljski predmeti čakajo, da jih odkriješ.",
+    "serviceImmersiveAR": "Poglobljena tehnologija AR",
+    "serviceImmersiveARDesc": "Doživi razširjeno resničnost naslednje generacije, ki digitalna sredstva brezhibno zlije s tvojim fizičnim okoljem. Naš napredni pogon AR ponuja osupljive 3D prikaze, sprotno kartiranje okolja in trajno sidranje v svetu. Glej, kako NFT-ji oživijo, kako žetoni lebdijo v zraku, in upravljaj z digitalnimi predmeti, kot da bi res bili tam.",
+    "serviceAIPersonalization": "Personalizacija z umetno inteligenco",
+    "serviceAIPersonalizationDesc": "Tvoj spremljevalec z umetno inteligenco te ne le vodi, temveč prek AR vidi, kar vidiš ti, analizira tvoje okolje in ti sproti daje uporabne informacije. Predstavljaj si umetno inteligenco, ki prepozna znamenitosti in ti razkrije lokalne kotičke s hrano, predlaga najboljše sprehajalne poti glede na tvoj slog igranja in celo sproti ustvarja osebno vsebino AR.",
+    "serviceMoveToEarn": "Move-to-Earn se sreča z dogodki v živo",
+    "serviceMoveToEarnDesc": "Pridruži se velikim dogodkom AR v živo, kjer se tisoči igralcev zberejo na srečanjih v resničnem svetu z digitalnimi nagradami. Predstavljaj si glasbene festivale, kjer obiskovalci prejmejo ekskluzivne nagrade, športne dogodke z zbirateljskimi predmeti, vezanimi na lokacijo, ali love na zaklad po vsem mestu z nagradnimi skladi.",
+    "threePathsTitle": "Tri poti do napredka",
+    "pathBlockchain": "Na verigi blokov",
+    "pathBlockchainDesc": "Vsak NFT, žeton in predmet v igri je zavarovan na verigi blokov. To pomeni resnično lastništvo, dokazljivo poštenost in nagrade, ki jih lahko res uporabiš, v Seekprotocolu in zunaj njega.",
+    "pathAI": "Z umetno inteligenco",
+    "pathAIDesc": "Naša umetna inteligenca se uči, kako raziskuješ in igraš, ter ti daje pametnejše nasvete o lokacijah, osebne misije in nagrade, ki so res pomembne. Več kot se gibaš, boljša je.",
+    "pathProofOfLocation": "Dokaz lokacije",
+    "pathProofOfLocationDesc": "Vsak tvoj korak je dokaz. Naš sistem potrdi tvojo lokacijo v resničnem svetu in odklene žetone, NFT-je in druga digitalna sredstva. Brez goljufanja, samo resnične nagrade za resnično sodelovanje.",
+    "builtToScale": "ZGRAJENO, DA RASTE S TABO",
+    "builtToScaleDesc": "Ne glede na to, ali zaganjaš projekt ali raziskuješ svoje mesto, Seekprotocol poganja tvojo pot s poglobljeno tehnologijo, preverjeno prisotnostjo in resničnimi nagradami.",
+    "interested": "Te zanima?",
+    "scaleOnboarding": "Enostaven začetek",
+    "scaleOnboardingDesc": "Hitra pot za uporabnike, ustvarjalce in podjetja. Od ustvarjanja družbenih denarnic do prvih dogodkov AR: začetek je kot igra, ne kot papirologija.",
+    "scaleProjectLaunch": "Integracija za zagon projektov",
+    "scaleProjectLaunchDesc": "Ne glede na to, ali si meme coin ali projekt s poslanstvom, se priključi na naše plasti AR, umetne inteligence in nagrad. Zaženi dogodke, spawne žetonov ali misije NFT, vse vezano na lokacijo in v obliki igre.",
+    "scaleBusinessPortal": "Aktivacija poslovnega portala",
+    "scaleBusinessPortalDesc": "Lokalne trgovine in svetovne blagovne znamke: vstopite v ekosistem Seek. Objavite ekskluzivne ponudbe in nagrade na podlagi lokacije ter z digitalnimi spodbudami pripeljite resnične obiskovalce.",
+    "scaleEngagement": "Pogon angažiranosti",
+    "scaleEngagementDesc": "Misije s priporočili, nizi na lestvicah in misije cehov: celoten nabor orodij za dnevno, tedensko in družabno angažiranost uporabnikov.",
+    "scaleCrossPlatform": "Uvedba na vseh platformah",
+    "scaleCrossPlatformDesc": "En profil in ena denarnica na iOS in Androidu, s sredstvi z vseh verig, na katerih poravnavamo. Neskončne izkušnje Seek, kjer koli in kadar koli.",
+    "featuredOn": "OMENJENO V:",
+    "joinBeta": "Pridruži se naši beti",
+    "getReady": "Pripravi se na iskanje!",
+    "ctaDesc": "Stopi v novo resničnost, kjer svet postane tvoje igrišče. Seekprotocol tvojo okolico spremeni v interaktivno dogodivščino, ki združuje najnovejšo tehnologijo AR z raziskovanjem resničnega sveta. Poišči skrite zaklade, zbiraj dragocene digitalne nagrade in osvoji dinamične misije!",
+    "coinReadoutLabel": "Signal zaklenjen",
+    "coinReadoutAccuracy": "Natančnost {meters} m",
+    "beyondEyebrow": "Več kot kovanci",
+    "beyondTitle": "Drop ni nujno žeton",
+    "beyondLead": "Vse, kar je mogoče izdati osebi, je mogoče izdati tudi kraju. Popust na blagajni, fizična stvar, ki čaka v trgovini, vstopnica, ki obstaja samo na prizorišču. Za nakupovalno ulico je kovanec običajno najmanj zanimiv od vseh.",
+    "howEyebrow": "Kako deluje",
+    "howTitle": "Trije koraki, tretji se izplača",
+    "liveEyebrow": "Omrežje v živo",
+    "liveTitle": "Izberi mesto in poskusi srečo",
+    "liveLead": "Skoči v katero koli središče, tapni kovanec, da vidiš, kdo ga je pobral, in ga poskusi ujeti tudi sam, z resničnimi verjetnostmi iz aplikacije.",
+    "foundationsEyebrow": "Temelji",
+    "readWhitepaper": "Preberi tehnično belo knjigo",
+    "metaTitle": "Seekprotocol | Lov na zaklad v AR za resnične nagrade",
+    "metaDescription": "Lovi nagrade na podlagi lokacije v razširjeni resničnosti: žetone na kateri koli verigi, bone, resnično blago. Seekprotocol jih zasidra na resnične kraje in dokaže, da si bil tam.",
+    "ogTitle": "Seekprotocol | AR in umetna inteligenca za nagrade v resničnem svetu",
+    "heroEyebrow": "AR · AI · Katera koli nagrada",
+    "placeReward": "Postavi nagrado na svoje koordinate",
+    "exploreEcosystem": "Razišči ekosistem",
+    "viewRoadmap": "Poglej načrt razvoja",
+    "polCtaEyebrow": "Dokaz lokacije",
+    "polCtaTitle": "Prisotnost, preverjena",
+    "polCtaBody": "Preden je zahtevek sprejet, se morajo ujemati štirje neodvisni signali. Razlaga v preprostem jeziku je na blogu.",
+    "polCtaLink": "Kako deluje dokaz lokacije"
+  },
+  "seekarPage": {
+    "metaTitle": "Seekprotocol | Aplikacija za lov na zaklad v AR",
+    "metaDescription": "Seekprotocol je aplikacija za razširjeno resničnost podjetja Seekprotocol. Lovi nagrade na resničnih koordinatah: žetone na kateri koli verigi, bone in resnično blago. Brezplačno za iOS in Android.",
+    "ogTitle": "Seekprotocol | Aplikacija za lov na zaklad v AR",
+    "eyebrow": "Aplikacija",
+    "heroTitle": "Seekprotocol",
+    "heroDesc": "Aplikacija za razširjeno resničnost podjetja Seekprotocol. Usmeri telefon v svet in najdi, kar je tam postavljeno: žetone, NFT-je, bone in stvari, ki prispejo v škatli, vse zasidrano na resnične koordinate.",
+    "whatTitle": "Kaj je Seekprotocol?",
+    "whatBody": "Seekprotocol je glavna mobilna aplikacija, brezplačna za iOS in Android. Vsako ulico, park ali prizorišče spremeni v kraj, kjer je mogoče skriti in prevzeti digitalna sredstva. Izdajatelj postavi nagrado na koordinato; da jo pobereš, moraš biti fizično tam, protokol pa dokaže, da si bil. Brez emulatorjev, brez ponarejanja lokacije, brez bližnjic.",
+    "featuresTitle": "Kaj lahko počneš",
+    "f1Title": "Lovi airdrope na podlagi lokacije",
+    "f1Desc": "Žetoni in NFT-ji so zasidrani na resnične koordinate. Pojdi na mesto, odpri kamero in prevzemi, kar te čaka.",
+    "f2Title": "Zbiraj v razširjeni resničnosti",
+    "f2Desc": "Sredstva se prek kamere pojavijo v svetu, v pravi velikosti in na pravem mestu, namesto kot seznam na zaslonu.",
+    "f3Title": "Raziskuj s spremljevalci z umetno inteligenco",
+    "f3Desc": "Vodnik z umetno inteligenco se odziva na to, kje si in kaj je v bližini, ter te usmeri k temu, kar je vredno poti.",
+    "f4Title": "Služi resnične kripto nagrade",
+    "f4Desc": "Vse se poravna na verigi, na kateri sredstvo že živi. Kar zbereš, je tvoje, v tvoji denarnici, in potuje s tabo.",
+    "howTitle": "Kako deluje",
+    "s1Title": "Prenesi in odpri",
+    "s1Desc": "Brezplačno v App Store in Google Play. Denarnica se ustvari zate; zasebnega ključa ti še ni bilo treba imeti.",
+    "s2Title": "Poišči, kar je blizu tebe",
+    "s2Desc": "Zemljevid pokaže, kaj je postavljeno okoli tebe. Izberi nekaj in se odpravi tja.",
+    "s3Title": "Dokaži, da si tam, in prevzemi",
+    "s3Desc": "Dokaz lokacije preveri tvojo prisotnost na verigi in sredstvo pristane v tvoji denarnici.",
+    "faqTitle": "Pogosta vprašanja",
+    "q1": "Ali je Seekprotocol brezplačen?",
+    "a1": "Da. Seekprotocol je za iOS in Android brezplačen za prenos. Nekateri predmeti v aplikaciji so plačljivi, lov in prevzemanje pa ne.",
+    "q2": "Kdo izdeluje Seekprotocol?",
+    "a2": "Seekprotocol razvija Seekprotocol, izdelek podjetja Block Protocol L.L.C-FZ iz Dubaja. To je aplikacija AR in umetne inteligence za nagrade, zasidrane na resnične kraje, na kateri koli verigi ali brez nje, na voljo v App Store in Google Play.",
+    "q3": "Ali moram kaj vedeti o kriptovalutah?",
+    "a3": "Ne. Ko odpreš aplikacijo, se zate ustvari denarnica, sredstva pa lahko zbiraš in hraniš, ne da bi se kdaj sam ukvarjal s seed phrase.",
+    "q4": "Na katerih telefonih deluje Seekprotocol?",
+    "a4": "Na novejših napravah iPhone in Android s podporo za AR. Obe različici imata enake funkcije.",
+    "q5": "Ali lahko ponaredim svojo lokacijo?",
+    "a5": "Ne. Dokaz lokacije na verigi preveri tvojo resnično prisotnost, in prav to da zahtevku vrednost za izdajatelja, ki je nagrado postavil.",
+    "ctaTitle": "Prenesi Seekprotocol",
+    "ctaDesc": "Brezplačno za iOS in Android. Tvoje mesto je že polno stvari, ki jih je vredno najti.",
+    "renameTitle": "Aplikacija SeekAR se zdaj imenuje Seekprotocol",
+    "renameBody": "Ista aplikacija, isti račun, isti zemljevid. Spremenilo se je samo ime aplikacije; podjetje je bilo vedno Seekprotocol. Drugo podjetje je vložilo prijavo blagovne znamke za staro ime aplikacije, zato smo aplikacijo preimenovali v ime, ki je bilo vedno naše.",
+    "renameLink": "Preberi obvestilo",
+    "legacyEyebrow": "Zgodovina imena",
+    "legacyTitle": "Kripto aplikacija AR SeekAR se zdaj imenuje Seekprotocol",
+    "legacyBody": "Spremenilo se je samo ime aplikacije; podjetje je bilo vedno Seekprotocol. Mobilna aplikacija, ki je bila od lansiranja do avgusta 2026 na voljo za iOS in Android pod imenom SeekAR, se zdaj imenuje Seekprotocol. Isti izdelek, isti izdajatelj, Block Protocol L.L.C-FZ, Dubaj, ZAE, isti vnos v App Store (id 6752813761) in isti paket v Play Store (com.seekar.seekar). Ime Seekar uporabljajo tudi drugi izdelki, umetniki in kraji; ta stran opisuje specifično večverižno aplikacijo za AR in kripto nagrade.",
+    "q6": "Kaj se je zgodilo z aplikacijo SeekAR?",
+    "a6": "Mobilna aplikacija AR za kripto nagrade na verigi, ki je izhajala kot SeekAR, je bila 10. avgusta 2026 preimenovana v Seekprotocol. Isti izdelek, isti izdajatelj (Block Protocol L.L.C-FZ, Dubaj), isti vnos v App Store (id 6752813761), isti paket v Play Store (com.seekar.seekar). Spremenila sta se samo ime in ikona.",
+    "q7": "Kje prenesem aplikacijo, ki se je prej imenovala SeekAR?",
+    "a7": "V App Store na apps.apple.com/app/id6752813761 in v Google Play na play.google.com/store/apps/details?id=com.seekar.seekar. Oba vnosa se zdaj imenujeta Seekprotocol.",
+    "q8": "Ali je Seekprotocol isti izdelek kot SeekAR?",
+    "a8": "Da. Podjetje se je vedno imenovalo Seekprotocol; spremenilo se je samo ime aplikacije. Večverižna aplikacija AR za kripto nagrade, ki se je od lansiranja do avgusta 2026 imenovala SeekAR, se zdaj imenuje Seekprotocol in jo izdaja ista ekipa pri Block Protocol L.L.C-FZ v Dubaju, ZAE.",
+    "stepsEyebrow": "Korak za korakom",
+    "faqEyebrow": "Pogosta vprašanja"
+  },
+  "about": {
+    "heroTitle": "Odkrij prihodnost digitalnih izkušenj na podlagi lokacije",
+    "heroDesc": "Seekprotocol z napredno razširjeno resničnostjo in tehnologijo verige blokov spremeni raziskovanje resničnega sveta v nagrajujoče dogodivščine.",
+    "whySeekprotocol": "Zakaj Seekprotocol?",
+    "whyDesc": "Medtem ko drugi gradijo aplikacije, mi gradimo revolucijo. Seekprotocol premošča vrzel med fizičnim in digitalnim svetom s tehnologijo AR na podlagi lokacije, ki vsak korak spremeni v priložnost. Naš decentraliziran sistem nagrad poskrbi, da se raziskovanje izplača, dobesedno. Ne ustvarjamo le izkušenj; utiramo pot novi ekonomiji, v kateri odkrivanje v resničnem svetu ustvarja resnično vrednost. S sledenjem na manj kot meter natančno, osupljivimi prikazi AR in nagradami na verigi blokov nevidno delamo vidno in nemogoče donosno.",
+    "letsConnect": "Povežimo se",
+    "ourValues": "Naše vrednote",
+    "whatDrivesUs": "KAJ NAS ŽENE",
+    "valueLocationIntelligence": "Lokacijska inteligenca",
+    "valueLocationIntelligenceDesc": "Natančna geoprostorska tehnologija z natančnostjo pod enim metrom, ki se sproti odziva na vsak tvoj gib.",
+    "valueARInnovation": "Inovacije v AR",
+    "valueARInnovationDesc": "Vrhunska razširjena resničnost, ki digitalne zaklade brezhibno zlije s tvojim fizičnim svetom.",
+    "valueSocialDiscovery": "Družabno odkrivanje",
+    "valueSocialDiscoveryDesc": "Poveži se z raziskovalci v bližini za pomnožene nagrade in skupne dosežke.",
+    "valueCrossChainRewards": "Nagrade na več verigah",
+    "valueCrossChainRewardsDesc": "Prisluži si več airdropov, NFT-jev in drugih digitalnih sredstev na različnih omrežjih verig blokov.",
+    "valueProofOfExploration": "Dokaz raziskovanja",
+    "valueProofOfExplorationDesc": "Preverljivi zapisi tvojih odkritij na verigi ustvarijo trajno zapuščino dogodivščin.",
+    "readyToSeek": "Pripravljen na iskanje?",
+    "startExploring": "Začni raziskovati",
+    "coreTechnologies": "KLJUČNE TEHNOLOGIJE, KI JIH UPORABLJAMO",
+    "coreTechDesc": "V Seekprotocolu vemo, da raziskovanje potrebuje namen. Ne ponujamo enakih izkušenj za vse. Za vsakega uporabnika ustvarjamo dinamične dogodivščine, ki se zavedajo lokacije.",
+    "techGeospatial": "GEOPROSTORSKO KARTIRANJE",
+    "techGeospatialDesc": "Sledenje lokaciji v realnem času z dinamičnimi geoograjami, ki ustvarja izkušnje, prilagojene okoliščinam.",
+    "techAR": "UPODABLJANJE AR",
+    "techARDesc": "Napredna mehanika upodabljanja in prostorsko računalništvo za poglobljeno razširjeno resničnost.",
+    "techBlockchain": "NAGRADE NA VERIGI BLOKOV",
+    "techBlockchainDesc": "Resnične nagrade za resnično raziskovanje in sodelovanje.",
+    "techSync": "TAKOJŠNJA SINHRONIZACIJA",
+    "techSyncDesc": "Posodobitve v realnem času za vse igralce. Glej odkritja v živo, ko se zgodijo po vsem svetu.",
+    "threePillars": "TRIJE STEBRI USPEHA",
+    "threePillarsDesc": "Jedro Seekprotocola so tri revolucionarne tehnologije, ki spreminjajo naš odnos do sveta.",
+    "pillarAR": "Razširjena resničnost",
+    "pillarARDesc": "Najsodobnejša AR, ki razkrije skrite digitalne plasti, nevidne s prostim očesom.",
+    "pillarLocation": "Natančnost lokacije",
+    "pillarLocationDesc": "GPS z natančnostjo pod enim metrom in dinamične geoograje, ki natanko vedo, kje so postavljeni airdropi.",
+    "pillarReward": "Razdeljevanje nagrad",
+    "pillarRewardDesc": "Decentralizirani skladi, ki vsakemu uporabniku Seekprotocola zagotavljajo pošten, takojšen in pregleden zaslužek.",
+    "ourApproach": "Naš pristop",
+    "approachTitle": "KJER SE RAZISKOVANJE SREČA Z NAGRADAMI",
+    "approachDesc": "Vsak kraj ima neizmerno vrednost. Naša naloga? Odkleniti jo na načine, ki navdušijo, nagradijo in iskalce vedno znova pripeljejo nazaj.",
+    "approachTreasureHunts": "Lovi na zaklad, ki navdušijo",
+    "approachTreasureHuntsDesc": "Dinamični izzivi na podlagi lokacije.",
+    "approachARExperiences": "Izkušnje AR, ki osupnejo",
+    "approachARExperiencesDesc": "Poglobljene digitalne plasti na resničnosti.",
+    "approachRewardPools": "Skladi nagrad, ki se izplačajo",
+    "approachRewardPoolsDesc": "Priložnosti za zaslužek, ki jih poganja skupnost.",
+    "approachSocial": "Družabne funkcije, ki povezujejo",
+    "approachSocialDesc": "Raziskovanje in sodelovanje več uporabnikov.",
+    "approachAnalytics": "Analitika, ki informira",
+    "approachAnalyticsDesc": "Vpogledi v vzorce raziskovanja v realnem času.",
+    "approachEvents": "Dogodki, ki združujejo",
+    "approachEventsDesc": "Časovno omejeni dogodki skupnosti, ki združijo množice. Predstavljaj si Pokémon Go Raide v slogu Web3.",
+    "approachCollaborations": "Sodelovanja, ki ustvarjajo",
+    "approachCollaborationsDesc": "Vsebine in izzivi, ki jih ustvarijo uporabniki.",
+    "ourTeam": "Naša izjemna ekipa",
+    "joinBeta": "Pridruži se naši beti",
+    "getReady": "Pripravi se na iskanje!",
+    "ctaDesc": "Stopi v novo resničnost, kjer svet postane tvoje igrišče. Seekprotocol tvojo okolico spremeni v interaktivno dogodivščino, ki združuje najnovejšo tehnologijo AR z raziskovanjem resničnega sveta.",
+    "metaTitle": "O ekipi za Seekprotocolom",
+    "metaDescription": "Spoznaj ekipo, ki gradi AR na podlagi lokacije za vse verige: poslanstvo za dokazom lokacije, tehnologijo pod Seekprotocolom in ljudi za $SEEK.",
+    "ogTitle": "Ekipa za Seekprotocolom",
+    "eyebrow": "O nas",
+    "whyEyebrow": "Zakaj to gradimo",
+    "techEyebrow": "Tehnologija",
+    "pillarsEyebrow": "Stebri",
+    "teamEyebrow": "Ekipa",
+    "linkedinLabel": "{name} na LinkedInu"
+  },
+  "contact": {
+    "getInTouch": "Stopi v stik",
+    "formDesc": "Izpolni spodnji obrazec in odgovorili ti bomo čim prej.",
+    "metaTitle": "Kontakt: partnerstva in kampanje",
+    "metaDescription": "Pogovori se z ekipo Seekprotocol o postavitvi kampanje na tvoje koordinate, partnerstvih, dostopu do bete ali medijih.",
+    "ogTitle": "Kontaktiraj Seekprotocol",
+    "inquiryTypesEyebrow": "Ali bolj natančno",
+    "partnershipsTitle": "Partnerstva",
+    "partnershipsBody": "Imaš projekt, intelektualno lastnino ali mrežo lokacij, ki jih želiš pripeljati v Seek. Povej nam, kaj in kje, za ostalo poskrbimo mi.",
+    "publishersTitle": "Izdajatelji",
+    "publishersBody": "Želiš postaviti kampanje AR na določene koordinate in plačati za vsak preverjen obisk. Pošlji lokacijo in ponudbo; kampanjo pripravimo skupaj s tabo.",
+    "pressTitle": "Mediji",
+    "pressBody": "Poročanje, intervjuji, izvodi za recenzijo, novice pod embargom. Za vse uredniške zadeve nas kontaktiraj tukaj in odgovorili bomo še isti dan.",
+    "supportTitle": "Podpora",
+    "supportBody": "Napaka, zahtevek, ki ni uspel, vprašanje o denarnici. Najhitrejša pot je Discord, deluje pa tudi ta obrazec.",
+    "eyebrow": "Kontakt",
+    "elsewhere": "Drugje",
+    "documentation": "Dokumentacija",
+    "registeredOffice": "Sedež podjetja"
+  },
+  "services": {
+    "heroTitle": "NAŠE ZNANJE, VAŠA RAST",
+    "heroDesc": "Seekprotocol ponuja najsodobnejše rešitve AR, umetne inteligence in verige blokov na vseh večjih verigah. Ne gradimo samo tehnologije. Smo vaši partnerji pri preobrazbi angažiranosti v resničnem svetu.",
+    "letsContact": "Stopimo v stik",
+    "businessStrategy": "Poslovna strategija",
+    "businessStrategyDesc": "Prilagojene strategije, ki poslovne cilje uskladijo z digitalno rastjo.",
+    "visualDirection": "Vizualna usmeritev",
+    "visualDirectionDesc": "Ustvarjamo usklajene in brezčasne identitete blagovnih znamk, ki ujamejo vašo vizijo.",
+    "websiteCreation": "Izdelava spletnih strani",
+    "websiteCreationDesc": "Popolnoma odzivne spletne strani, zgrajene s poudarkom na hitrosti in eleganci.",
+    "contentSolutions": "Vsebinske rešitve",
+    "contentSolutionsDesc": "Pritegnite pozornost in spodbudite rast z jasno vsebinsko usmeritvijo.",
+    "campaignExecution": "Izvedba kampanj",
+    "campaignExecutionDesc": "Zaženite zmogljivo trženje prek digitalnih kanalov in platform.",
+    "uiuxSystems": "Sistemi UI/UX",
+    "uiuxSystemsDesc": "Oblikujte brezhibne, funkcionalne uporabniške poti na vseh napravah in v vseh tokovih.",
+    "growthTactics": "Taktike rasti",
+    "growthTacticsDesc": "Strateške metode za večjo prepoznavnost in rast blagovne znamke.",
+    "copywriting": "Copywriting",
+    "copywritingDesc": "Ustvarjamo usklajene in brezčasne identitete blagovnih znamk, ki ujamejo vašo vizijo.",
+    "details": "Podrobnosti",
+    "pricingTitle": "Cene: prilagodljive za vsako storitev",
+    "pricingDesc": "Vemo, da ima vsako podjetje svoj proračun, zato so naše cene odvisne od izbranega modula.",
+    "pricingQuestion": "Ste pripravljeni podrobno predstaviti svoj projekt?",
+    "scheduleConsultation": "Dogovorite se za posvet",
+    "smallModule": "Majhen modul",
+    "smallModuleDesc": "Idealen za manjše logotipe in kratka sporočila.",
+    "mediumModule": "Srednji modul",
+    "mediumModuleDesc": "Ponuja več prostora za vsebino vaše blagovne znamke.",
+    "largeModule": "Velik modul",
+    "largeModuleDesc": "Najbolj izpostavljeno mesto na zemljevidu.",
+    "whoWeWorkWith": "S kom sodelujemo",
+    "smallBusinesses": "Mala podjetja in zagonska podjetja",
+    "smallBusinessesDesc": "Ustvarimo vaš glas in poskrbimo, da ga slišijo.",
+    "ecommerce": "Blagovne znamke e-trgovine",
+    "ecommerceDesc": "Pišemo prepričljive opise izdelkov, ki prodajajo.",
+    "agencies": "Agencije in svetovalci",
+    "agenciesDesc": "Gradimo avtoriteto z vsebino visoke vrednosti.",
+    "localBusinesses": "Lokalna podjetja",
+    "localBusinessesDesc": "Pomagamo vam povezati se s strankami v vašem mestu in drugod.",
+    "largeCorporations": "Velike korporacije",
+    "largeCorporationsDesc": "Pišemo jasna in učinkovita sporočila, ki krepijo vašo blagovno znamko.",
+    "ctaConnect": "Povežimo se",
+    "ctaTitle": "IMATE IDEJO ALI ŽELITE ZAČETI PROJEKT?"
+  },
+  "blog": {
+    "title": "Blog Seekprotocol",
+    "desc": "Vpogledi, novice in poglobljeni članki o razširjeni resničnosti, umetni inteligenci, tehnologiji verige blokov in prihodnosti izkušenj na podlagi lokacije.",
+    "read": "branja",
+    "backToBlog": "← Nazaj na blog",
+    "readyToSeek": "Pripravljen na iskanje?",
+    "readyToSeekDesc": "Prenesi Seekprotocol in spremeni svoj svet v igrišče, ki ga poganja veriga blokov.",
+    "moreArticles": "Več člankov",
+    "keepReading": "Beri naprej",
+    "allArticles": "Vsi članki",
+    "relatedPages": "Sorodne strani",
+    "metaTitle": "Blog: AR, umetna inteligenca in nagrade na podlagi lokacije",
+    "metaDescription": "Članki o razširjeni resničnosti, spremljevalcih z umetno inteligenco, airdropih z geoograjami in dokazu lokacije, od ekipe, ki gradi Seekprotocol.",
+    "ogTitle": "Blog Seekprotocol",
+    "eyebrow": "Blog"
+  },
+  "forms": {
+    "emailPlaceholder": "E-poštni naslov",
+    "sendNow": "Pošlji zdaj",
+    "sending": "Pošiljam ...",
+    "captchaError": "Dokončaj preverjanje captcha.",
+    "genericError": "Nekaj je šlo narobe.",
+    "genericErrorRetry": "Nekaj je šlo narobe. Poskusi znova.",
+    "successMessage": "Hvala! Tvoje sporočilo smo prejeli!",
+    "yourName": "Tvoje ime",
+    "namePlaceholder": "Vnesi svoje ime",
+    "yourEmail": "Tvoj e-poštni naslov",
+    "emailInputPlaceholder": "Vnesi svoj e-poštni naslov",
+    "message": "Sporočilo",
+    "messagePlaceholder": "Piši tukaj",
+    "yourPhone": "Telefonska številka",
+    "phonePlaceholder": "Vnesi svojo telefonsko številko",
+    "validationRequired": "To polje je obvezno",
+    "validationEmail": "Vnesi veljaven e-poštni naslov",
+    "validationPhone": "Vnesi veljavno telefonsko številko",
+    "validationName": "Vnesi svoje ime",
+    "optional": "neobvezno"
+  },
+  "cookies": {
+    "title": "Nastavitve piškotkov",
+    "subtitle": "Upravljaj nastavitve zasebnosti",
+    "description": "Piškotke uporabljamo za izboljšanje tvoje izkušnje brskanja, prikaz prilagojene vsebine in analizo prometa. S klikom na »Sprejmi vse« se strinjaš z našo uporabo piškotkov.",
+    "readMore": "Več si preberi v našem",
+    "privacyPolicy": "Pravilniku o zasebnosti",
+    "necessary": "Nujni",
+    "necessaryDesc": "Potrebni za pravilno delovanje spletne strani. Ni jih mogoče izklopiti.",
+    "functional": "Funkcionalni",
+    "functionalDesc": "Omogočajo izboljšano funkcionalnost in prilagajanje.",
+    "analytics": "Analitični",
+    "analyticsDesc": "Pomagajo nam razumeti, kako obiskovalci uporabljajo našo spletno stran.",
+    "marketing": "Trženjski",
+    "marketingDesc": "Uporabljajo se za prikaz ustreznih oglasov in spremljanje kampanj.",
+    "acceptAll": "Sprejmi vse",
+    "rejectAll": "Zavrni vse",
+    "customize": "Prilagodi",
+    "savePreferences": "Shrani nastavitve",
+    "cookieSettings": "Nastavitve piškotkov",
+    "toggleLabel": "Preklopi {category}"
+  },
+  "notFound": {
+    "pageNotFound": "Stran ni najdena",
+    "pageNotFoundDesc": "Stran, ki jo iščeš, ne obstaja ali je bila premaknjena",
+    "oops": "Ups, stran ni najdena",
+    "backToHome": "Nazaj na domačo stran",
+    "errorCode": "Napaka 404 · Na tej koordinati ni signala"
+  },
+  "metrics": {
+    "text1": "NEOMEJENA SREDSTVA.",
+    "text2": "RESNIČNA ANGAŽIRANOST.",
+    "text3": "IŠČI. ZBIRAJ. SLUŽI"
+  },
+  "privacyPolicyPage": {
+    "title": "Pravilnik o zasebnosti",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Posodobljeno: 6. september 2026",
+    "introTitle": "Uvod",
+    "introP1": "Ta pravilnik o zasebnosti velja za mobilno aplikacijo Seekprotocol (v tem dokumentu »aplikacija«), ki jo kot brezplačno storitev za mobilne naprave razvija in vzdržuje podjetje Block Protocol LLC (v nadaljnjem besedilu »ponudnik storitve«). Aplikacija je na voljo »TAKŠNA, KOT JE«.",
+    "introP2": "Seekprotocol je platforma nove generacije, ki združuje razširjeno resničnost, umetno inteligenco in verigo blokov ter uporabnikom ustvarja igrive izkušnje v resničnem svetu. Glede na naravo teh izkušenj aplikacija obdeluje več kategorij osebnih podatkov, da lahko svoje funkcije zagotavlja v celoti in varno. Ta pravilnik podrobno opisuje, kateri podatki se zbirajo, zakaj se zbirajo, kako se z njimi ravna, s kom se lahko delijo in katere pravice imajo uporabniki glede svojih osebnih podatkov.",
+    "introP3": "S prenosom in uporabo aplikacije soglašate s prakso ravnanja s podatki, opisano v tem pravilniku o zasebnosti. Pravilnik redno pregledujte, saj se lahko občasno posodobi zaradi sprememb v ravnanju s podatki, veljavni zakonodaji ali funkcijah aplikacije.",
+    "part1Title": "I. del: Zbiranje in uporaba podatkov",
+    "part1P1": "Aplikacija zbira podatke, ko jo prenesete in uporabljate. To vključuje tehnične podatke, ki se med uporabo zbirajo samodejno, kot so naslov internetnega protokola (IP) vaše naprave, strani ali deli aplikacije, ki jih obiščete, čas in datum obiskov, čas, preživet na teh straneh, in podatki o operacijskem sistemu vaše mobilne naprave.",
+    "part1P2": "Poleg teh samodejno zbranih tehničnih podatkov aplikacija zbira več kategorij osebnih podatkov, ki so v celoti opisane spodaj.",
+    "part1P3": "Vsi podatki, ki jih zbira aplikacija, se prenašajo in shranjujejo s šifriranjem med prenosom, kar zagotavlja zaščito podatkov med potjo med vašo napravo in sistemi ponudnika storitve.",
+    "part1s1Title": "1. Ustvarjanje računa",
+    "part1s1P1": "Aplikacija podpira več načinov, s katerimi uporabniki ustvarijo račun in dostopajo do njega. Ti vključujejo preverjanje z uporabniškim imenom in geslom, uporabniško ime v kombinaciji z drugimi oblikami preverjanja, uporabniško ime v kombinaciji z geslom in dodatnimi dejavniki preverjanja ter preverjanje na podlagi OAuth prek podprtih zunanjih ponudnikov identitete. Način ustvarjanja računa, ki ga uporabi posamezni uporabnik, določa, katere identifikatorje, povezane z računom, aplikacija zbira in hrani.",
+    "part1s2Title": "2. Osebni podatki",
+    "part1s2P1": "Aplikacija zbira osebne podatke, ki omogočajo identifikacijo, vključno z vašim imenom, e-poštnim naslovom in uporabniškimi identifikatorji (ID-ji uporabnikov).",
+    "part1s2P2": "Vaše ime se zbira, ker je potrebno za osnovno delovanje aplikacije, vključno s prilagajanjem uporabniškega vmesnika in identifikacijo vašega profila na platformi. Ti podatki se samo zbirajo in se ne delijo s tretjimi osebami.",
+    "part1s2P3": "Vaš e-poštni naslov je prav tako potreben in se zbira izključno za podporo delovanju aplikacije, vključno s preverjanjem računa, sporočili, povezanimi s storitvijo, in pošiljanjem pomembnih obvestil. Ti podatki se samo zbirajo in se ne delijo s tretjimi osebami.",
+    "part1s2P4": "ID-ji uporabnikov, edinstveni identifikatorji, dodeljeni vašemu računu ali seji, so potrebni in se zbirajo za širši nabor namenov. Ti vključujejo podporo osnovnemu delovanju aplikacije, izvajanje notranje analitike za razumevanje uporabe aplikacije, izvajanje ukrepov za varnost in preprečevanje goljufij ter upravljanje funkcij in dovoljenj na ravni računa. ID-ji uporabnikov se samo zbirajo in se ne delijo navzven.",
+    "part1s3Title": "3. Podatki o lokaciji",
+    "part1s3P1": "Aplikacija potrebuje dostop do približnih in natančnih podatkov o lokaciji vaše naprave. Dostop do lokacije je obvezen in ga uporabniki ne morejo izklopiti, ne da bi to vplivalo na osnovno delovanje aplikacije.",
+    "part1s3P2": "Približni podatki o lokaciji, ki določajo vaše splošno geografsko območje brez natančne določitve položaja, se zbirajo in delijo. Zbirajo se za podporo osnovnemu delovanju aplikacije in za notranjo analitiko o tem, kako uporabniki v različnih geografskih regijah uporabljajo funkcije na podlagi lokacije. Približni podatki o lokaciji se delijo tudi s tretjimi osebami za podporo delovanju aplikacije in zagotavljanje prilagojene vsebine in izkušenj na podlagi geografskega konteksta.",
+    "part1s3P3": "Natančni podatki o lokaciji, torej natančne geografske koordinate, pridobljene z GPS ali enakovrednimi tehnologijami, se zbirajo in delijo ter služijo najširšemu naboru namenov med vsemi vrstami podatkov v aplikaciji. To odraža dejstvo, da je osnovna izkušnja Seekprotocol zgrajena okoli razširjene resničnosti, zasidrane na lokacije v resničnem svetu. Natančni podatki o lokaciji se zbirajo za podporo funkcijam AR in drugim osnovnim funkcijam, ki so odvisne od natančnega položaja v resničnem svetu, za podrobno analitiko uporabe, za pošiljanje sporočil razvijalca, pomembnih za vašo konkretno lokacijo, za izvajanje ukrepov za varnost in preprečevanje goljufij, povezanih z vzorci geografske dejavnosti, za prilagajanje vsebin in funkcij vašemu natančnemu okolju ter za upravljanje funkcij računa ali pogojev storitve, ki so odvisni od geografskih parametrov. Isti podatki se za vse te namene delijo z zunanjimi ponudniki storitev.",
+    "part1s4Title": "4. Sporočila",
+    "part1s4P1": "Aplikacija zbira tri oblike podatkov o sporočilih: e-pošto, sporočila SMS ali MMS in druga sporočila v aplikaciji. Vse tri vrste so obvezne in jih uporabnik ne more izklopiti.",
+    "part1s4P2": "E-pošta se zbira izključno za podporo osnovnemu delovanju aplikacije, vključno s komunikacijo med uporabniki in platformo ter pošiljanjem obvestil, povezanih s storitvijo.",
+    "part1s4P3": "Podatki SMS ali MMS se zbirajo izključno za podporo osnovnemu delovanju aplikacije in se obdelujejo začasno, kar pomeni, da se po zaključku ustrezne obdelave ne hranijo in jih aplikacija trajno ne shranjuje.",
+    "part1s4P4": "Druga sporočila v aplikaciji se zbirajo izključno za podporo osnovnemu delovanju aplikacije, vključno z interakcijami v lastnih sistemih za sporočanje in komunikacijo aplikacije.",
+    "part1s5Title": "5. Fotografije in videoposnetki",
+    "part1s5P1": "Aplikacija potrebuje dostop do fotografij in videoposnetkov v vaši napravi. Obe vrsti podatkov se samo zbirata in uporabljata izključno za podporo osnovnemu delovanju aplikacije, zlasti pri funkcijah razširjene resničnosti, ki potrebujejo dostop do kamere in medijske knjižnice naprave za prekrivanje digitalne vsebine s fizičnim okoljem ali zajem izkušenj med interaktivnimi sejami aplikacije.",
+    "part1s6Title": "6. Podatki o zdravju in telesni pripravljenosti",
+    "part1s6P1": "Aplikacija zbira podatke, povezane z zdravjem, in podatke, povezane s telesno pripravljenostjo. Obe kategoriji sta obvezni in se uporabljata izključno za podporo osnovnemu delovanju aplikacije. Ti podatki se ne delijo s tretjimi osebami.",
+    "part1s6P2": "Podatki o zdravju aplikaciji omogočajo, da v svoje izkušnje, kjer je to ustrezno, vključi zdravstveni kontekst, in podpirajo funkcije, ki se odzivajo na splošno telesno stanje uporabnika kot del širšega igrivega modela sodelovanja Seekprotocol.",
+    "part1s6P3": "Podatki o telesni pripravljenosti se uporabljajo skupaj s sistemi izzivov in nagrad aplikacije. Aplikacija zahteva dovoljenje Android ACTIVITY_RECOGNITION, da lahko prek senzorjev vaše naprave neposredno zaznava in spremlja telesne dejavnosti, kot so hoja, tek ali kolesarjenje. To dovoljenje poganja funkcije izzivov in nagrad aplikacije, ki so zasnovane tako, da prepoznajo telesno dejavnost v resničnem svetu kot del igrive izkušnje Seekprotocol. Z zaznavanjem vzorcev gibanja lahko aplikacija sproži dogodke v aplikaciji, potrdi dokončanje izzivov in dodeli nagrade, povezane s telesno dejavnostjo v resničnem svetu. Podatki o prepoznavanju dejavnosti se ne uporabljajo za oglaševanje in se ne delijo s tretjimi osebami. To dovoljenje lahko kadar koli prekličete v nastavitvah aplikacij vaše naprave, vendar se s tem onemogočijo izzivi in nagrade, ki so od njega odvisni.",
+    "part1s7Title": "7. Podatki o delovanju in diagnostiki aplikacije",
+    "part1s7P1": "Aplikacija zbira tehnične podatke o svojem delovanju. To vključuje dnevnike zrušitev, diagnostične podatke in druge meritve delovanja aplikacije.",
+    "part1s7P2": "Dnevniki zrušitev so obvezni in se zbirajo samodejno za podporo osnovnemu delovanju aplikacije: natančneje za prepoznavanje, diagnosticiranje in odpravljanje tehničnih napak, ki vplivajo na uporabniško izkušnjo.",
+    "part1s7P3": "Neobvezna analitika delovanja se zbira, kadar jo uporabniki dovolijo, za izboljšanje stabilnosti in odzivnosti aplikacije. Varnostna diagnostika, ki se uporablja za preprečevanje goljufij, je ločena: v različicah z omogočenim Talsec freeRASP se zbira samodejno, kot je opisano v II. delu.",
+    "part1s8Title": "8. Datoteke in dokumenti",
+    "part1s8P1": "Aplikacija lahko neobvezno zbira datoteke in dokumente, dostopne v vaši napravi. To zbiranje nadzoruje uporabnik in se sproži samo v okoliščinah, ko vaša neposredna interakcija z aplikacijo vključuje datoteke ali dokumente. Ko se ti podatki zberejo, se uporabljajo izključno za podporo osnovnemu delovanju aplikacije in se ne delijo s tretjimi osebami.",
+    "part1s9Title": "9. Identifikatorji naprave in drugi ID-ji",
+    "part1s9P1": "Aplikacija zbira identifikatorje naprave in podobne tehnične identifikatorje za delovanje aplikacije in preprečevanje goljufij, nekatere identifikatorje pa deli s ponudniki storitev. Varnostni identifikatorji in diagnostični zapisi se lahko hranijo dlje od posamezne seje; niso vsi obdelani le začasno. Glejte II. in IV. del.",
+    "part1s9P2": "Identifikatorji naprave se zbirajo za podporo osnovnemu delovanju aplikacije, ki je odvisno od prepoznavanja na ravni naprave, in za izvajanje ukrepov za varnost in preprečevanje goljufij. Isti podatki se s tretjimi osebami delijo za namene delovanja aplikacije ter varnosti in preprečevanja goljufij.",
+    "part2Title": "II. del: Dostop tretjih oseb in deljenje podatkov",
+    "part2P1": "Podatke delimo s ponudniki storitev za namene, opisane v tem pravilniku. Nekatera poročila so združena, vendar deljenje ni omejeno na združene podatke: varnostna diagnostika in identifikatorji naprave se lahko prenesejo tudi družbi Talsec, kot je opisano spodaj.",
+    "part2P2": "Podatke lahko razkrijemo, kadar to zahteva zakon ali je razumno potrebno za zaščito pravic in varnosti, preiskavo goljufij ali odziv na zakonite zahteve. Ponudniki storitev obdelujejo podatke za storitve, ki jih zagotavljajo v skladu z veljavnimi pogoji. Talsec varnostno diagnostiko uporablja tudi za izboljšanje lastnih izdelkov in združene varnostne raziskave, kot je pojasnjeno spodaj.",
+    "part2P3": "Aplikacija vključuje naslednje storitve tretjih oseb, od katerih vsaka deluje v skladu s svojim pravilnikom o zasebnosti. Uporabnikom priporočamo, da te pravilnike neposredno preberejo, da razumejo, kako posamezni ponudnik ravna s podatki, ki jih prejme od aplikacije:",
+    "part3Title": "III. del: Pravica do zavrnitve",
+    "part3P1": "Vse zbiranje podatkov prek aplikacije lahko kadar koli ustavite tako, da jo odstranite. Uporabite lahko običajne postopke odstranjevanja, ki so na voljo v vaši mobilni napravi ali prek ustrezne trgovine z mobilnimi aplikacijami.",
+    "part3P2": "Neobvezno analitiko delovanja ter zbiranje datotek ali dokumentov lahko nadzorujete z ustreznimi nastavitvami in funkcijami. Ti kontrolniki ne onemogočijo varnostne diagnostike v različicah z omogočenim freeRASP. Za vprašanja ali zahteve v zvezi z varnostnimi podatki se obrnite na support@seekprotocol.ai.",
+    "part3P3": "Dovoljenje ACTIVITY_RECOGNITION v sistemu Android lahko kadar koli prekličete v nastavitvah dovoljenj aplikacij vaše naprave. Preklic tega dovoljenja onemogoči izzive in nagrade na podlagi dejavnosti, sicer pa ne vpliva na vašo uporabo aplikacije.",
+    "part4Title": "IV. del: Hramba podatkov",
+    "part4P1": "Podatke, ki jih posredujejo uporabniki, hranimo, dokler uporabljate aplikacijo, in pozneje, kolikor je to potrebno za operativne, pravne ali upravne namene. Varnostna diagnostika in identifikatorji se lahko hranijo dlje od seje zaradi preiskovanja zlorab in priprave varnostnih poročil; hrambo pri Talsecu urejajo njegovi pravilniki o podatkih in veljavni pogodbeni pogoji. Začasno obdelani podatki SMS/MMS se zavržejo po izpolnitvi neposrednega namena obdelave.",
+    "part4P2": "Če želite, da ponudnik storitve izbriše podatke, ki ste jih posredovali prek aplikacije, se obrnite nanj na <email>support@seekprotocol.ai</email>. Ponudnik storitve bo odgovoril v razumnem roku.",
+    "part5Title": "V. del: Otroci",
+    "part5P1": "Ponudnik storitve aplikacije ne uporablja za zavestno pridobivanje podatkov od otrok, mlajših od 13 let, ali za trženje njim. Aplikacija ni namenjena osebam, mlajšim od 13 let, in ponudnik storitve zavestno ne zbira osebnih podatkov, ki omogočajo identifikacijo otrok te starostne skupine. Če ponudnik storitve ugotovi, da je otrok, mlajši od 13 let, posredoval osebne podatke, jih bo nemudoma izbrisal s svojih strežnikov. Če ste starš ali skrbnik in menite, da je vaš otrok aplikaciji posredoval osebne podatke, se obrnite na ponudnika storitve na <email>support@seekprotocol.ai</email>, da bo lahko sprejel potrebne popravne ukrepe.",
+    "part6Title": "VI. del: Varnost",
+    "part6P1": "Ponudnik storitve se zavezuje k varovanju zaupnosti in celovitosti vaših podatkov. Vsi podatki, ki jih zbira aplikacija, so med prenosom šifrirani. Za zaščito podatkov, ki jih ponudnik storitve obdeluje in hrani, se vzdržujejo fizični, elektronski in postopkovni zaščitni ukrepi. Kadar se podatki prenašajo zunanjim ponudnikom storitev, si ponudnik storitve razumno prizadeva, da je takšno deljenje omejeno, namensko in predmet ustreznih dogovorov o ravnanju s podatki.",
+    "part7Title": "VII. del: Zahteve za izbris podatkov",
+    "part7P1": "Uporabniki, ki želijo zahtevati izbris svojega računa in vseh povezanih podatkov, lahko zahtevo oddajo prek spletne strani Seekprotocol na naslovu:",
+    "part7P2": "Zahteve za izbris lahko oddate tudi tako, da se neposredno obrnete na ponudnika storitve na <email>support@seekprotocol.ai</email>. Ponudnik storitve bo vse zahteve za izbris obdelal v razumnem roku.",
+    "part8Title": "VIII. del: Spremembe tega pravilnika",
+    "part8P1": "Ta pravilnik o zasebnosti se lahko občasno posodobi iz katerega koli razloga. Ponudnik storitve vas bo o vseh spremembah obvestil tako, da bo na tej strani objavil nov pravilnik o zasebnosti in posodobil datum veljavnosti na vrhu tega dokumenta. Pri bistvenih spremembah lahko ponudnik storitve uporabnike obvesti tudi prek same aplikacije. Priporočamo, da ta pravilnik o zasebnosti redno pregledujete. Nadaljnja uporaba aplikacije po objavi sprememb pomeni, da te spremembe sprejemate.",
+    "consentTitle": "Vaša privolitev",
+    "consentP1": "Z uporabo aplikacije privolite v zbiranje, uporabo in deljenje vaših podatkov, kot je opisano v tem pravilniku o zasebnosti, v njegovi sedanji obliki in kot ga bo ponudnik storitve morda spremenil v prihodnosti.",
+    "contactTitle": "Kontakt",
+    "contactP1": "Če imate kakršna koli vprašanja o svoji zasebnosti med uporabo aplikacije ali o praksah ravnanja s podatki, opisanih v tem pravilniku, se obrnite na ponudnika storitve na:",
+    "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
+    "metaTitle": "Pravilnik o zasebnosti",
+    "metaDescription": "Kako Seekprotocol ravna s podatki o lokaciji, meritvami senzorjev in podatki o denarnici: kaj se zbira, kako dolgo se hrani in česa nikoli ne delimo.",
+    "ogTitle": "Zasebnost pri Seekprotocolu",
+    "raspTitle": "Talsec freeRASP: varnostna diagnostika",
+    "raspP1": "V različicah z omogočenim freeRASP prejema Talsec (Lynx SFT s.r.o.) varnostno diagnostiko aplikacije in operacijskega sistema, podatke o modelu naprave ter identifikatorje namestitve aplikacije in naprave. Signali lahko vključujejo root, emulatorje, poseganje v aplikacijo, razhroščevanje in hooking. Ta diagnostika se pošilja samodejno, medtem ko teče omogočena različica; nastavitve neobvezne analitike delovanja je ne onemogočijo.",
+    "raspP2": "Talsec te podatke uporablja za varnostna poročila, izboljšanje svojih brezplačnih in komercialnih varnostnih izdelkov ter za združene raziskave. Talsec navaja obdelavo v oblaku v Združenih državah. Ne smete predpostavljati, da so identifikatorji naprave po vseh zakonih o zasebnosti popolnoma anonimni. Preberite pravilnike Talseca o podatkih prek spodnje povezave.",
+    "raspP3": "Naš lastni zaledni sistem skupaj s poskusi zbiranja beleži tudi imena groženj, ki jih je mogoče povezati z vašim računom. Naša obdelava povratnih klicev ne nalaga seznama drugih nameščenih aplikacij. To so signali, ki jih sporoči naprava, in sami po sebi niso dokaz goljufije.",
+    "eyebrow": "Pravno"
+  },
+  "termsPage": {
+    "title": "Pogoji uporabe",
+    "subtitle1": "Seekprotocol · Block Protocol LLC",
+    "subtitle2": "Veljavnost: 12. avgust 2025",
+    "p1": "Ti pogoji uporabe veljajo za aplikacijo Seekprotocol (v nadaljnjem besedilu »aplikacija«) za mobilne naprave, ki jo je kot brezplačno storitev ustvarilo podjetje Block Protocol LLC (v nadaljnjem besedilu »ponudnik storitve«).",
+    "p2": "S prenosom ali uporabo aplikacije samodejno sprejmete naslednje pogoje. Močno priporočamo, da te pogoje pred uporabo aplikacije temeljito preberete in razumete. Nepooblaščeno kopiranje ali spreminjanje aplikacije, katerega koli njenega dela ali naših blagovnih znamk je strogo prepovedano. Poskusi pridobivanja izvorne kode aplikacije, prevajanja aplikacije v druge jezike ali ustvarjanja izpeljanih različic niso dovoljeni. Vse blagovne znamke, avtorske pravice, pravice do baz podatkov in druge pravice intelektualne lastnine, povezane z aplikacijo, ostanejo last ponudnika storitve.",
+    "p3": "Ponudnik storitve si prizadeva, da bi bila aplikacija čim bolj koristna in učinkovita. Zato si pridržuje pravico, da aplikacijo kadar koli in iz katerega koli razloga spremeni ali zaračuna svoje storitve. Ponudnik storitve vam zagotavlja, da vam bodo vsi stroški za aplikacijo ali njene storitve jasno sporočeni.",
+    "p4": "Aplikacija shranjuje in obdeluje osebne podatke, ki ste jih posredovali ponudniku storitve za zagotavljanje storitve. Vaša odgovornost je, da skrbite za varnost svojega telefona in dostopa do aplikacije. Ponudnik storitve močno odsvetuje jailbreak ali rootanje telefona, kar pomeni odstranjevanje programskih omejitev, ki jih določa uradni operacijski sistem vaše naprave. Takšna dejanja lahko telefon izpostavijo zlonamerni programski opremi, virusom in škodljivim programom, ogrozijo varnostne funkcije telefona in lahko povzročijo, da aplikacija ne deluje pravilno ali sploh ne deluje.",
+    "thirdPartyIntro": "Upoštevajte, da aplikacija uporablja storitve tretjih oseb, ki imajo svoje pogoje uporabe. Spodaj so povezave do pogojev uporabe ponudnikov storitev tretjih oseb, ki jih uporablja aplikacija:",
+    "p6": "Upoštevajte, da ponudnik storitve ne prevzema odgovornosti za nekatere vidike. Nekatere funkcije aplikacije zahtevajo aktivno internetno povezavo, ki je lahko Wi-Fi ali jo zagotavlja vaš mobilni operater. Ponudnik storitve ne more biti odgovoren, če aplikacija zaradi pomanjkanja dostopa do Wi-Fi ali porabljenega podatkovnega paketa ne deluje v celoti.",
+    "p7": "Če aplikacijo uporabljate zunaj območja Wi-Fi, upoštevajte, da še vedno veljajo pogoji pogodbe z vašim mobilnim operaterjem. Posledično vam lahko mobilni operater zaračuna prenos podatkov med povezavo z aplikacijo ali druge stroške tretjih oseb. Z uporabo aplikacije prevzemate odgovornost za vse takšne stroške, vključno s stroški podatkovnega gostovanja, če aplikacijo uporabljate zunaj domačega območja (tj. regije ali države), ne da bi izklopili podatkovno gostovanje. Če niste plačnik računa za napravo, na kateri uporabljate aplikacijo, se predpostavlja, da ste od plačnika računa pridobili dovoljenje.",
+    "p8": "Prav tako ponudnik storitve ne more vedno prevzeti odgovornosti za vašo uporabo aplikacije. Na primer, vaša odgovornost je, da je vaša naprava napolnjena. Če se baterija vaše naprave izprazni in ne morete dostopati do storitve, ponudnik storitve ne more biti odgovoren.",
+    "p9": "Glede odgovornosti ponudnika storitve za vašo uporabo aplikacije je pomembno vedeti, da si sicer prizadeva, da bi bila aplikacija vedno posodobljena in točna, vendar se pri zagotavljanju informacij, ki vam jih da na voljo, zanaša na tretje osebe. Ponudnik storitve ne sprejema nobene odgovornosti za kakršno koli neposredno ali posredno izgubo, ki jo utrpite, ker ste se v celoti zanašali na to funkcionalnost aplikacije.",
+    "p10": "Ponudnik storitve bo morda želel aplikacijo kdaj posodobiti. Aplikacija je trenutno na voljo v skladu z zahtevami operacijskega sistema (in vseh dodatnih sistemov, na katere se bo odločil razširiti razpoložljivost aplikacije), ki se lahko spremenijo, in če želite aplikacijo še naprej uporabljati, boste morali prenesti posodobitve. Ponudnik storitve ne jamči, da bo aplikacijo vedno posodabljal tako, da bo za vas ustrezna in/ali združljiva z različico operacijskega sistema, nameščeno na vaši napravi. Vendar se strinjate, da boste posodobitve aplikacije vedno sprejeli, ko vam bodo ponujene. Ponudnik storitve lahko tudi preneha zagotavljati aplikacijo in lahko kadar koli prekine njeno uporabo, ne da bi vas o tem obvestil. Razen če vas ne obvesti drugače, ob vsakem prenehanju (a) prenehajo pravice in licence, podeljene vam s temi pogoji; (b) morate prenehati uporabljati aplikacijo in jo (po potrebi) izbrisati s svoje naprave.",
+    "changesTitle": "Spremembe teh pogojev uporabe",
+    "changesP1": "Ponudnik storitve lahko občasno posodobi svoje pogoje uporabe. Zato vam svetujemo, da to stran redno pregledujete glede sprememb. Ponudnik storitve vas bo o vseh spremembah obvestil tako, da bo nove pogoje uporabe objavil na tej strani.",
+    "contactTitle": "Kontaktirajte nas",
+    "contactP1": "Če imate kakršna koli vprašanja ali predloge glede pogojev uporabe, se brez oklevanja obrnite na ponudnika storitve na <email>support@seekprotocol.ai</email>.",
+    "metaTitle": "Pogoji uporabe",
+    "metaDescription": "Pogoji za uporabo Seekprotocola in platforme Seekprotocol: vaše pravice, pravila za prevzemanje sredstev in delovanje plačljivih predmetov.",
+    "ogTitle": "Pogoji Seekprotocol",
+    "eyebrow": "Pravno"
+  },
+  "languageSwitcher": {
+    "en": "English",
+    "nl": "Nederlands",
+    "de": "Deutsch",
+    "es": "Español",
+    "fr": "Français",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "tr": "Türkçe"
+  },
+  "globe": {
+    "liveLabel": "Iskalci v živo",
+    "panelTitle": "Iskalci prav zdaj zbirajo",
+    "panelDesc": "Vsaka oznaka je resnično mesto. Dropi pristanejo na fiksnih koordinatah in se odklenejo šele, ko nekdo res stoji tam.",
+    "todayLabel": "Danes zbrano",
+    "waiting": "Čakam na naslednji ulov …",
+    "dragHint": "Povleci za vrtenje",
+    "xpLabel": "Pridobljeni XP",
+    "clickHint": "Tapni kovanec, da vidiš ulov",
+    "seekerLabel": "Iskalec",
+    "xpGained": "Pridobljeni XP",
+    "coordsLabel": "Koordinate",
+    "verified": "Prisotnost preverjena na verigi",
+    "all": "Vse",
+    "yourHaul": "Tvoj plen",
+    "filterLabel": "Filtriraj po redkosti",
+    "waitingRarity": "Še ni ulovov redkosti {rarity}",
+    "catchChance": "Možnost ulova",
+    "close": "Zapri",
+    "secondsAgo": "pred {seconds} s",
+    "zoomIn": "Povečaj",
+    "zoomOut": "Pomanjšaj",
+    "busiest": "Trenutno najbolj živahno",
+    "units": "Enote",
+    "zoomLabel": "Povečava",
+    "hubsLabel": "Skoči v mesto",
+    "wholeEarth": "Cela Zemlja",
+    "zoomLevel": "Povečava {percent} %",
+    "caught": "Ujeto · +{xp, number} XP",
+    "escaped": "Pobegnil je · {percent} % ob ponovnem poskusu",
+    "tryCatch": "Poskusi ga ujeti",
+    "globeAria": "Interaktivni globus, ki prikazuje dejavnost zbiranja Seekprotocol po svetu"
+  },
+  "homeSteps": {
+    "placed": {
+      "title": "Nekaj je postavljeno",
+      "meta": "Izdajatelj · kjer koli na Zemlji",
+      "body": "Blagovna znamka, projekt ali dogodek pripne sredstvo na koordinate in določi polmer, v katerem ga je mogoče prevzeti. Tam ostane, vidno na zemljevidu, dokler nekdo ne pride ponj."
+    },
+    "arrive": {
+      "title": "Vstopiš v doseg",
+      "meta": "Privzeti polmer 30 m",
+      "body": "Tvoj telefon potrdi, da si res tam: satelitski položaj, okoliški radijski signali, potrditev naprave in sled tvojega gibanja se morajo ujemati. Ponarediti en signal je lahko; ponarediti vse hkrati ni."
+    },
+    "collect": {
+      "title": "Pobereš ga",
+      "meta": "Poravnava na lastni verigi sredstva",
+      "body": "Dvigni kamero, poglej sredstvo, zasidrano na ulici pred tabo, in ga vzemi. Prenos se na verigi poravna za delček centa in je tvoj."
+    }
+  },
+  "homeStats": {
+    "accuracy": {
+      "label": "Natančnost zahtevkov"
+    },
+    "languages": {
+      "label": "Jeziki"
+    },
+    "stores": {
+      "label": "Aktivne trgovine z aplikacijami"
+    }
+  },
+  "worldDescent": {
+    "hint": "Drsaj naprej",
+    "bannerDistance": "84 m stran",
+    "orbit": {
+      "label": "Orbita",
+      "title": "Vsak drop je koordinata",
+      "body": "Sredstva so objavljena na točkah planeta, ne v viru novic. Od tu zgoraj je omrežje samo to: nekaj tisoč krajev, kjer nekaj čaka."
+    },
+    "descent": {
+      "label": "Spust",
+      "title": "Padamo proti enemu od njih",
+      "body": "Izberi katero koli od teh točk in pojdi. Protokolu je vseeno, katero, pomembno je le, da tam stojiš, ko jo prevzameš."
+    },
+    "street": {
+      "label": "Raven ulice",
+      "title": "To je isti zemljevid, štiristo kilometrov bliže",
+      "body": "Stavbe, nad katerimi letiš, so tiste med tabo in dropom. Razdalja je celotna mehanika, zato mora biti zemljevid resničen."
+    },
+    "hand": {
+      "label": "V tvoji roki",
+      "title": "In prilega se v telefon",
+      "body": "Nič ni bilo zamenjano. Pogled, skozi katerega si pravkar letel, je tisto, kar izriše aplikacija, s svojimi kontrolniki na vrhu."
+    }
+  },
+  "appChrome": {
+    "home": "Domov",
+    "map": "Zemljevid",
+    "quests": "Misije",
+    "wallet": "Denarnica",
+    "backToMap": "‹ Zemljevid",
+    "tapCoin": "Tapni kovanec",
+    "distanceAway": "{metres} m stran"
+  },
+  "arSection": {
+    "eyebrow": "Razširjena resničnost",
+    "hint": "Drsaj naprej",
+    "see": {
+      "label": "Kamera gleda",
+      "title": "Kamera ne vidi ulice",
+      "body": "Vidi svetlost, ki se spreminja po mreži. Preden je mogoče kar koli kamor koli postaviti, je treba prizor spremeniti v nekaj s strukturo, in v tem trenutku je ni.",
+      "readout": "SLIKA 1/60 · BREZ SLEDENJA"
+    },
+    "track": {
+      "label": "Značilnice se izrišejo",
+      "title": "Svet je sestavljen iz vogalov",
+      "body": "Točke, kjer se svetlost spremeni v dveh smereh hkrati, preživijo gibanje, zato jih pogon obdrži, ostalo pa zavrže. Če jih dovolj slediš skozi dovolj slik, telefon ve, kako se je premaknil.",
+      "readout": "SLEDENJE · 2.412 ZNAČILNIC"
+    },
+    "plane": {
+      "label": "Ravnina je najdena",
+      "title": "Nekaj, na čemer lahko stoji",
+      "body": "Značilnice, ki si delijo površino, se združijo v ravnino. To je trenutek, ko drop ni več slika na zaslonu, ampak postane predmet z mestom, kjer lahko sedi.",
+      "readout": "RAVNINA ZAZNANA · 6,0 × 6,0 M"
+    },
+    "anchor": {
+      "label": "Sidro se postavi",
+      "title": "Pripet na svet, ne na telefon",
+      "body": "Drop je vezan na ta košček geometrije in na koordinato, na kateri je bil objavljen. Obhodi ga in ostane, kjer je bil. Dva človeka, ki stojita na istem mestu, ga vidita na isti točki.",
+      "readout": "SIDRO ZAKLENJENO · 52.3702 N 4.8952 E"
+    },
+    "persist": {
+      "label": "Ostane",
+      "title": "Tam je tudi jutri",
+      "body": "Sidro je shranjeno glede na lokacijo, ne glede na sejo, zato ga zaprtje aplikacije ne premakne. Prav ta trajnost loči igračo AR od protokola AR.",
+      "readout": "SIDRO SHRANJENO · NEODVISNO OD SEJE"
+    }
+  },
+  "mobiSection": {
+    "title": "Spremljevalec, ki vidi, kar vidiš ti",
+    "lead": "Vprašaj na glas in Mobi prek kamere prebere ulico: znamenitosti, delovni čas, v kateri smeri je drop. Kjer le lahko, deluje na napravi in nikoli ne hrani sledi o tem, kje si bil.",
+    "tapHint": "Tapni Mobija",
+    "tapAgain": "{label} · tapni znova",
+    "tapAria": "Mobi je v stanju: {state}. Tapni za nadaljevanje.",
+    "points": [
+      "Glas noter, glas ven, proste roke med hojo",
+      "Bere znamenitosti in napise iz žive kamere",
+      "Misije, ki se prilagajajo temu, kako in kje igraš"
+    ],
+    "listening": {
+      "label": "Posluša",
+      "line": "Kaj je tu naokoli vredno obiska?"
+    },
+    "thinking": {
+      "label": "Bere ulico",
+      "line": "Primerjam, kar vidi kamera, s spawni v bližini …"
+    },
+    "answering": {
+      "label": "Odgovarja",
+      "line": "Dve ulici višje, za tržnico, je legendarni. Šest minut v tvojem tempu, zapre pa se ob šestih."
+    },
+    "idle": {
+      "label": "Miruje",
+      "line": "Čakam. Nič se ne snema."
+    }
+  },
+  "socialSection": {
+    "eyebrow": "Skupaj",
+    "title": "Polovica je v tem, s kom greš",
+    "lead": "Klani združujejo, kar zbere vsak. Klepet je šifriran od konca do konca, s sporočili, ki izginejo, ko pogovor ne sme preživeti samega sebe. Ko pripelješ nekoga, dobiš delež tega, kar najde.",
+    "points": [
+      "Neposredna in klanska sporočila, šifrirana od konca do konca",
+      "Powerupi in namigi, ki si jih podajajo prijatelji",
+      "Nagrade za priporočila, ki se izplačujejo, ko igrajo"
+    ],
+    "online": "{count} na spletu",
+    "encrypted": "Šifrirano",
+    "composer": "Sporočilo",
+    "disappearing": "Izginjajoča sporočila",
+    "yourCode": "Tvoja koda",
+    "copy": "Kopiraj",
+    "copied": "Kopirano",
+    "spot": {
+      "text": "Pri tržnici se je pravkar pojavil legendarni. Dve ulici od tramvajske postaje."
+    },
+    "coming": {
+      "text": "Na poti sem. Ima kdo še kakšen magnet?"
+    },
+    "sent": {
+      "text": "Poslal sem ti dva. Diamond Hands prihrani za pobeg."
+    },
+    "missed": {
+      "text": "Poln krog, pa je vseeno ušel. Še dva poskusa."
+    },
+    "invited": {
+      "label": "Povabljeni"
+    },
+    "active": {
+      "label": "Aktivni"
+    },
+    "share": {
+      "label": "Tvoj delež"
+    }
+  },
+  "videoReveal": {
+    "mute": "Izklopi zvok filma",
+    "unmute": "Predvajaj film z zvokom"
+  },
+  "featureGroups": {
+    "eyebrow": "Kaj je v njej",
+    "title": "Več kot zemljevid s kovanci",
+    "tablist": "Skupine funkcij",
+    "hunt": {
+      "label": "Lov",
+      "items": [
+        {
+          "title": "Spawni na resničnih koordinatah",
+          "body": "Dropi se pojavijo na fiksnih točkah okoli tebe in tam ostanejo, dokler jih kdo ne prevzame. Označi enega in aplikacija med hojo odšteva razdaljo."
+        },
+        {
+          "title": "Trajni ulovi v AR",
+          "body": "Kovanec se zasidra na tla pred tabo in ostane zasidran med sejami, zato je na istem mestu za vsakogar, ki pride ponj."
+        },
+        {
+          "title": "Powerupi in pravi trenutek",
+          "body": "Magnet, dvojnik in zamrznitev se pri ulovu seštevajo. Časovni trak odloči, koliko dropa obdržiš, ker je slabo ujet legendarni še vedno slabo ujet legendarni."
+        },
+        {
+          "title": "Redkost, ki nekaj pomeni",
+          "body": "Od Common do Legendary, redkost pa določa barvo kroga na zemljevidu, še preden se mu sploh približaš."
+        }
+      ]
+    },
+    "progress": {
+      "label": "Napredek",
+      "items": [
+        {
+          "title": "Deset rangov, prisluženih s hojo",
+          "body": "Od Iskalca do Legende. Rang pride iz prehojene razdalje in obiskanih krajev, ne iz tega, koliko si zapravil."
+        },
+        {
+          "title": "Enainšestdeset značk",
+          "body": "Celoten zbirateljski komplet, od Diamond Hands do On-Chain Detective, vsaka s svojim pogojem za odklep."
+        },
+        {
+          "title": "Game Center in Play Games",
+          "body": "Dosežki se sinhronizirajo s platformo, ki jo že uporabljaš, zato so nizi in mejniki ob tvojih drugih igrah."
+        },
+        {
+          "title": "Nizi in dnevne misije",
+          "body": "Misije, ki se prilagajajo temu, kje si in kako igraš, nagrada pa raste, dokler niz zdrži."
+        }
+      ]
+    },
+    "together": {
+      "label": "Skupaj",
+      "items": [
+        {
+          "title": "Klani",
+          "body": "Pridruži se klanu ali ga ustanovi, združujte prispevke in plezajte po lestvici klanov. Vključeni so emblemi, rangi in skupni skladi nagrad."
+        },
+        {
+          "title": "Šifriran klepet",
+          "body": "Neposredna in klanska sporočila, šifrirana od konca do konca, z izginjajočimi sporočili, ko pogovor ne sme preživeti samega sebe."
+        },
+        {
+          "title": "Lestvice",
+          "body": "Svetovne, nacionalne in klanske, z medaljami za prve tri in lestvico, ki se posodablja, medtem ko ljudje hodijo."
+        },
+        {
+          "title": "Priporočila",
+          "body": "Pripelji ljudi in prisluži delež tega, kar zberejo. Tvoja koda je prva stvar na zaslonu, ker si prišel prav po to."
+        }
+      ]
+    },
+    "own": {
+      "label": "Lastnina",
+      "items": [
+        {
+          "title": "Denarnica brez seed phrase",
+          "body": "Ustvarjena iz prijave z družbenim računom, da lahko zbiraš že minuto po namestitvi. Ključ izvozi, kadar koli želiš prevzeti skrbništvo."
+        },
+        {
+          "title": "Season Pass",
+          "body": "Sezonska pot nagrad, ki teče vzporedno z običajno igro, z brezplačno in plačljivo stopnjo."
+        },
+        {
+          "title": "Trgovina",
+          "body": "Powerupi, kozmetika in deli avatarjev, ki se plačujejo s tem, kar si zbral, ne le s tem, kar lahko kupiš."
+        },
+        {
+          "title": "3D avatarji",
+          "body": "Polni avatarji, združljivi z Decentraland, z animacijami in emoti, ne obrezana profilna fotografija."
+        }
+      ]
+    }
+  },
+  "progression": {
+    "eyebrow": "Napredovanje",
+    "title": "Deset rangov, enainšestdeset značk in nobenega ni mogoče kupiti",
+    "lead": "Rang pride iz prehojene razdalje in obiskanih krajev. Vse na tej steni si prislužiš tako, da greš ven.",
+    "badgeAlt": "Značka ranga {name}",
+    "rankOf": "Rang {tier} od {total}",
+    "rankTablist": "Stopnje rangov",
+    "badgesTitle": "Zbirateljske značke",
+    "badgesShown": "Prikazanih {shown} od {total}",
+    "achievementsTitle": "Dosežki"
+  },
+  "ranks": {
+    "seeker": {
+      "name": "Iskalec"
+    },
+    "scout": {
+      "name": "Izvidnik"
+    },
+    "tracker": {
+      "name": "Sledilec"
+    },
+    "hunter": {
+      "name": "Lovec"
+    },
+    "pathfinder": {
+      "name": "Utiralec poti"
+    },
+    "ranger": {
+      "name": "Gozdar"
+    },
+    "sentinel": {
+      "name": "Stražar"
+    },
+    "apex": {
+      "name": "Vrh"
+    },
+    "mythic": {
+      "name": "Mythic"
+    },
+    "legend": {
+      "name": "Legenda"
+    }
+  },
+  "badges": {
+    "seeker": {
+      "name": "Seeker"
+    },
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "web3Wizard": {
+      "name": "Web3 Wizard"
+    },
+    "whale": {
+      "name": "Whale"
+    },
+    "bull": {
+      "name": "Bull"
+    },
+    "detective": {
+      "name": "On-Chain Detective"
+    },
+    "samurai": {
+      "name": "Degen Samurai"
+    },
+    "liquidityKing": {
+      "name": "Liquidity King"
+    }
+  },
+  "achievements": {
+    "firstCatch": {
+      "name": "Prvi ulov",
+      "detail": "Poberi svoj prvi drop"
+    },
+    "explorer": {
+      "name": "Raziskovalec",
+      "detail": "Zbiraj na 50 različnih krajih"
+    },
+    "legendary": {
+      "name": "Legendarno",
+      "detail": "Ujemi legendarni spawn"
+    },
+    "rareHunter": {
+      "name": "Lovec na redke",
+      "detail": "250 redkih ulovov"
+    },
+    "streak": {
+      "name": "Trideset dni zapored",
+      "detail": "Igraj 30 dni zapored"
+    },
+    "clanFounder": {
+      "name": "Ustanovitelj klana",
+      "detail": "Ustanovi svoj klan"
+    }
+  },
+  "clans": {
+    "diamondHands": {
+      "name": "Diamond Hands"
+    },
+    "laserEyes": {
+      "name": "Laser Eyes"
+    },
+    "megaWhales": {
+      "name": "Mega Whales"
+    },
+    "moonSquad": {
+      "name": "Moon Squad"
+    },
+    "alphaWolves": {
+      "name": "Alpha Wolves"
+    },
+    "yieldFarmers": {
+      "name": "Yield Farmers"
+    },
+    "anonCabal": {
+      "name": "Anon Cabal"
+    },
+    "bullRunners": {
+      "name": "Bull Runners"
+    }
+  },
+  "clansSection": {
+    "eyebrow": "Klani",
+    "title": "Nihče ne pokrije mesta sam",
+    "lead": "Ustanovi klan ali se pridruži enemu, združujte, kar zbere vsak, in skupaj plezajte po lestvici. Klepet je šifriran od konca do konca, sporočila pa lahko nastaviš, da izginejo, ko pogovor ne sme preživeti samega sebe.",
+    "statClans": "Ustanovni klani",
+    "statChat": "Šifriran klepet",
+    "statRanks": "Rangi klanov",
+    "tableTitle": "Lestvica klanov",
+    "thisSeason": "Ta sezona",
+    "rankAlt": "Rang {rank}"
+  },
+  "rarity": {
+    "common": "Common",
+    "uncommon": "Uncommon",
+    "rare": "Rare",
+    "epic": "Epic",
+    "legendary": "Legendary"
+  },
+  "powerups": {
+    "coin_magnet": {
+      "label": "Coin Magnet",
+      "effect": "Okoli tebe se pojavi več kovancev"
+    },
+    "diamond_hands": {
+      "label": "Diamond Hands",
+      "effect": "Ujemi en kovanec od daleč"
+    },
+    "pump_it": {
+      "label": "Pump It",
+      "effect": "Danes ena dodatna škatla kart"
+    },
+    "to_the_moon": {
+      "label": "To the Moon",
+      "effect": "Trojni XP za 30 minut"
+    },
+    "whale": {
+      "label": "Whale",
+      "effect": "Privabi spawne na tvoje mesto"
+    },
+    "this_is_fine": {
+      "label": "This Is Fine",
+      "effect": "Zadrži zgrešen kovanec zate"
+    }
+  },
+  "collectiblesSection": {
+    "eyebrow": "Zbirateljski predmeti",
+    "title": "To so kovanci, ki so tam zunaj",
+    "lead": "Redkost določa, kako pogosto se kovanec pojavi in kako verjetno ga obdržiš. Ujeta enota je igralna enota. Koliko izplača v resničnih žetonih, je stvar trga.",
+    "filterLabel": "Filtriraj po redkosti",
+    "all": "Vse",
+    "catchChance": "Možnost ulova",
+    "overThree": "V 3 poskusih",
+    "perUnit": "Na enoto",
+    "powerupsTitle": "Powerupi, ki spremenijo krog"
+  },
+  "offers": {
+    "railLabel": "Oblike dropov",
+    "redeemLabel": "Kako se unovči",
+    "proofLabel": "Kaj ga naredi veljavnega",
+    "voucher": {
+      "label": "Bon za popust",
+      "headline": "Popust na vratih, ki so ti ga dala",
+      "face": "25 % popusta",
+      "fine": "En na osebo · Velja 14 dni · Samo v trgovini",
+      "redeem": "Koda se pokaže na blagajni in označi kot porabljena. Posredovati je ni mogoče, ker je bila izdana napravi, ki je stala znotraj polmera.",
+      "proof": "Zahtevek je na verigi skupaj s koordinato, kjer je bil prevzet, zato je unovčenje mogoče preveriti glede na resničen prihod in ne na posnetek zaslona.",
+      "placedBy": "Trgovina in gostinstvo"
+    },
+    "asset": {
+      "label": "Sredstvo iz resničnega sveta",
+      "headline": "Fizična stvar, ki čaka na nekem kraju",
+      "face": "Par superg",
+      "fine": "1 od 250 · Prevzem v trgovini · Poteče, ko poide zaloga",
+      "redeem": "Imetnik sam prevzame predmet. Žeton je pravica do njega in ob predaji zgori, zato istega para ni mogoče prevzeti dvakrat.",
+      "proof": "Zaloga je omejena, zahtevek pa je zaklep, ne poizvedba, zato dvema, ki hkrati sežeta po zadnjem, ni mogoče obema reči, da sta ga dobila.",
+      "placedBy": "Blagovne znamke, ki imajo kaj podariti"
+    },
+    "access": {
+      "label": "Vstopna prepustnica",
+      "headline": "Vstopnica je to, da si na prizorišču",
+      "face": "Vhod B · 19:00",
+      "fine": "Neprenosljivo · Poteče ob koncu dogodka",
+      "redeem": "Na vhodu se skenira kot vsaka druga prepustnica. Razlika je v tem, da jo je bilo mogoče dobiti samo na kraju samem, in prav zato jo je vredno izdati.",
+      "proof": "Dropi visoke vrednosti imajo strog prag zaupanja, zato se mora radijsko okolje ujemati s položajem, preden je drop sproščen.",
+      "placedBy": "Dogodki, prizorišča in festivali"
+    },
+    "token": {
+      "label": "Drop žetonov",
+      "headline": "Razdeljevanje, ki ga je drago izkoriščati",
+      "face": "40 $SEEK",
+      "fine": "En zahtevek na napravo · Poravna se na lastni verigi",
+      "redeem": "Pristane v denarnici, ki ti jo je ustvarila aplikacija, in je tvoj, da ga hraniš, premakneš ali prodaš. Ničesar ni treba unovčiti in nikogar ni treba prositi.",
+      "proof": "Denarnico je ustvariti brezplačno, sprehod pa ni. Geografija je filter, skozi katerega airdropa ni mogoče poceni izkoriščati.",
+      "placedBy": "Projekti žetonov in skupnosti"
+    },
+    "collectible": {
+      "label": "Zbirateljski predmet",
+      "headline": "Nekaj, kar obstaja samo tam, kjer je bilo postavljeno",
+      "face": "Rare",
+      "fine": "Serija 500 · Mogoča menjava · Redkost določena ob izdaji",
+      "redeem": "Ničesar ni treba unovčiti. To je zapis o tem, da si nekje bil, kar je najstarejši razlog, zakaj je kdor koli kdaj kaj hranil.",
+      "proof": "Vsak nosi koordinato, kjer je bil prevzet, zato je zbirka, ki jo ima nekdo, zemljevid krajev, kjer je res bil.",
+      "placedBy": "Mesta, turistične organizacije, umetniki"
+    }
+  },
+  "rewards": {
+    "eyebrow": "Nagrade",
+    "title": "Na koordinati lahko čaka kar koli",
+    "lead": "Kovanec je različica, ki si jo predstavlja vsak, in je najmanj zanimiva. Protokolu je vseeno, kaj je v škatli: če je mogoče nekaj izdati osebi, je mogoče to izdati kraju, in nekdo mora tja priti, da to vzame.",
+    "railLabel": "Izberi vrsto nagrade",
+    "phoneAlt": "Aplikacija Seekprotocol prikazuje dogodek v živo in nagrade, ki jih deli",
+    "liveChip": "Dogodek v živo",
+    "participateLabel": "Sodeluj na dogodku v živo",
+    "alertTitle": "Skrivnostna nagrada v tvoji bližini",
+    "alertBody": "301 m stran in v živo do 21. ure. Dobi jo tisti, ki pride prvi.",
+    "alertSeekers": "Drugi iskalci se premikajo",
+    "foundLabel": "Našel si jo",
+    "foundWhere": "Champ de Mars · prehojenih 301 m",
+    "foundFine": "Prevzeto ob prihodu in poravnano na verigi. V tvoji denarnici je.",
+    "foundAlt": "Osvojitev nagrade na zemljevidu",
+    "mapCredit": "© Mapbox © OpenStreetMap",
+    "items": {
+      "seek": "$SEEK",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "bnb": "BNB",
+      "hyperliquid": "Hyperliquid",
+      "berachain": "Berachain",
+      "dogecoin": "Dogecoin",
+      "pepe": "PEPE",
+      "babydoge": "Baby Doge",
+      "spx6900": "SPX6900",
+      "toshi": "Toshi",
+      "turbo": "Turbo",
+      "nft": "Skrivnostni NFT",
+      "voucher": "Bon za trgovino",
+      "food": "Bon za hrano",
+      "barcode": "Prepustnica za dogodek",
+      "console": "PlayStation 5",
+      "handheld": "Ročna konzola",
+      "shoes": "Omejene superge"
+    },
+    "proofNote": "Karkoli je v škatli, jo pred prevzemom nekoga, ki nikoli ni bil tam, varuje isto: prisotnost, ocenjena s štirimi neodvisnimi signali v trenutku zahtevka.",
+    "categories": {
+      "tokens": {
+        "label": "Žetoni",
+        "headline": "Kateri koli žeton na kateri koli verigi",
+        "body": "Ethereum, Solana, BNB Smart Chain in omrežja, ki pridejo za njimi. Izdajatelj financira kampanjo v žetonu, ki ga že ima, in ta se poravna tam, kjer žeton živi, zato nikomur ni treba ničesar premostiti, da sodeluje."
+      },
+      "memes": {
+        "label": "Memecoini",
+        "headline": "Lansiranja, za katera nihče nima kanala",
+        "body": "Memecoin ima občinstvo, a ga ne more doseči drugače kot s farmo airdropov. Ko ponudbo postaviš na resnične ulice, je pred ljudmi, ki so prišli ponjo, in vsak zahtevek je človek, ne naslov."
+      },
+      "nfts": {
+        "label": "NFT-ji",
+        "headline": "Skovani tam, kjer si stal",
+        "body": "Zbirateljski predmet, ki nosi koordinato svojega izvora, je drugačen predmet od tistega, skovanega s kavča. Izdaja je lahko vezana na mesto, prizorišče ali ena sama vrata, zapis o tem, kje je bil vsak prevzet, pa je javen."
+      },
+      "vouchers": {
+        "label": "Boni",
+        "headline": "Popust na blagajni",
+        "body": "Oblika, ki si jo nakupovalna ulica res želi. Koda, ki se odpre samo znotraj vrat, unovči jo na blagajni nekdo, ki je vstopil, in šteje kot prihod, ne kot prikaz, ki bi morda vodil do njega."
+      },
+      "goods": {
+        "label": "Blago iz resničnega sveta",
+        "headline": "Stvari, ki pridejo v škatli",
+        "body": "Konzola, par superg, kos opreme. Zahtevek je na verigi, dostava pa je običajna logistika, zato lahko blagovna znamka na konec sprehoda postavi nekaj fizičnega, ne da bi morala za to kar koli graditi."
+      },
+      "events": {
+        "label": "Dogodki v živo",
+        "headline": "Vse to, za čas trajanja dogodka",
+        "body": "Festival, tekma ali konferenca postane začasna plast nagrad, ki poteče skupaj z dogodkom. Odklene jih prihod, zato sklad nagrad doseže ljudi, ki so bili res tam, in števec so vrata."
+      }
+    }
+  },
+  "distribution": {
+    "eyebrow": "Distribucija",
+    "title": "Doseg je lahko kupiti in ga je nemogoče zaupati",
+    "lead": "Vsak kanal, ki ga lahko kupi lansiranje, prodaja isto: številko, ki jo lahko ustvari skripta. Prikazi, kliki, sledilci, denarnice: vse to stane delček centa, če jih proizvajaš v velikem obsegu. Prisotnost je edina interakcija, ki je še nihče ni avtomatiziral, ker še nihče ni napisal bota, ki hodi.",
+    "failureTag": "Kaj kupiš",
+    "answerTag": "Kaj dobiš tukaj",
+    "failures": {
+      "bots": "Plačani promet prihaja iz podatkovnih centrov in klik farm. Plačaš za prikaz, precejšen del pa jih ni bil nikoli prikazan človeku.",
+      "farms": "Airdrop prevzamejo denarnice, denarnica pa ne stane nič. En farmer s skripto postane štirideset tisoč upravičenih naslovov, žetoni pa pristanejo daleč od ljudi, ki so jim bili namenjeni.",
+      "unaudited": "Številke angažiranosti poroča platforma, ki jih prodaja. Sledenja, ogleda ali modeliranega obiska trgovine ni mogoče revidirati, zato se kampanja presoja po številki, ki ji moraš verjeti na besedo."
+    },
+    "answers": {
+      "bots": "Zahtevek je naprava, ki je stala na koordinati, pri čemer se ujemajo njen satelitski položaj, radijsko okolje in sled gibanja. Biti nekje ni mogoče na strežniku.",
+      "farms": "En zahtevek na napravo znotraj polmera in časovnega okna. Drugi zahtevek pomeni drugo pot, in nihče ni v štiridesetih mestih hkrati.",
+      "unaudited": "Vsak zahtevek je javni zapis: koordinata, čas, sredstvo. Preštej jih sam v raziskovalcu blokov, namesto da nas vprašaš za številko."
+    },
+    "askLegend": "Kaj želiš, da naredijo?",
+    "askNote": "Protokol preveri, da je bil človek tam. Kaj mora narediti, da si prisluži nagrado, določiš ti, in nič od tega ne spremeni preverjanja pod tem.",
+    "actions": {
+      "visit": {
+        "label": "Vstopi v trgovino",
+        "headline": "Prevzem na blagajni",
+        "body": "Drop je znotraj vrat s tako tesnim polmerom, da ga lahko odpre samo telefon pri blagajni. Koda, ki se unovči, pripada nekomu, ki je vstopil.",
+        "button": "Prevzemi v trgovini",
+        "recorded": "Preverjen prihod na tvoj naslov s časovnim žigom trenutka zahtevka."
+      },
+      "follow": {
+        "label": "Sledi računu",
+        "headline": "Sledi za odklep",
+        "body": "Sredstvo ostane zaklenjeno, dokler ne slediš računu, sledenje pa šteje samo z naprave znotraj polmera. Farma lahko ustvari sledenje. Ne more ustvariti sprehoda.",
+        "button": "Sledi in prevzemi",
+        "recorded": "Sledenje s preverjenim obiskom v ozadju, šteto glede na lokacijo, kjer se je zgodilo."
+      },
+      "signup": {
+        "label": "Prijavi se ali se pridruži seznamu",
+        "headline": "Prijava na kraju samem",
+        "body": "Eno polje, izpolnjeno tam, kjer je drop. Vsak naslov na seznamu pripada osebi, ki je stala ob tvoji kampanji, ko ga je vnesla.",
+        "button": "Prijavi se in prevzemi",
+        "recorded": "Prijava s preverjenim prihodom v ozadju, edina vrsta, za katero se splača plačati."
+      },
+      "scan": {
+        "label": "Skeniraj izdelek",
+        "headline": "Skeniraj ga na polici",
+        "body": "Usmeri kamero v izdelek namesto v oznako. Skeniranje se mora zgoditi znotraj polmera, zato nagrada doseže osebo, ki stvar res drži v rokah.",
+        "button": "Skeniraj za prevzem",
+        "recorded": "Skeniranje enega izdelka v eni trgovini, šteto po izdelku in ne po kampanji."
+      },
+      "mint": {
+        "label": "Skuj na kraju samem",
+        "headline": "Skuj tam, kjer stojiš",
+        "body": "Zbirateljski predmet se skuje na koordinati in jo nosi s seboj. Njegova poznejša vrednost je povezana s tem, od kod izvira, česar stran za kovanje ne more povedati.",
+        "button": "Skuj tukaj",
+        "recorded": "Kovanje, vezano na kraj in trenutek, na kateri koli verigi je zbirka."
+      }
+    },
+    "dropStatus": "V živo",
+    "dropWhere": "Kalverstraat 92, Amsterdam · polmer 25 m",
+    "dropFine": "En zahtevek na napravo · Preverjeno ob prihodu",
+    "recordedLegend": "Kaj dobiš nazaj",
+    "recordedNever": "Štetje po lokaciji, času in kampanji. Nikoli posameznik in nikoli sled o tem, kam je šel potem.",
+    "chainsLegend": "Kateri koli vir, katera koli veriga blokov",
+    "chainsNote": "Vir je kdor koli, ki lahko nekaj izda: projekt, blagovna znamka, prizorišče, trgovina na vogalu. Omrežje je vrstica v tabeli, ne nova različica, zato lahko ena kampanja teče na več omrežjih hkrati in iskalcu nikoli ni treba izbrati enega. Solana poravnava že danes; naslednje omrežje je stvar nastavitve.",
+    "chainsCoinsAlt": "Vrteči se 3D kovanci verig, na katerih Seekprotocol poravnava",
+    "chainAny": "Katera koli druga veriga"
+  },
+  "walkthrough": {
+    "eyebrow": "Preizkusi",
+    "title": "To je celoten krog",
+    "lead": "Ne video aplikacije. To so njena lastna pravila, ki tečejo tukaj. Tapni spawn na zemljevidu in nadaljuj od tam.",
+    "startOver": "Začni znova",
+    "map": {
+      "label": "Zemljevid",
+      "title": "Vse v bližini, tam, kjer res je",
+      "body": "Spawni so na fiksnih koordinatah in tam ostanejo, dokler jih kdo ne prevzame. Tapni enega, da vidiš, kaj je in kako daleč moraš hoditi."
+    },
+    "spawn": {
+      "label": "Spawn",
+      "title": "Redkost ti pove, proti čemu hodiš",
+      "body": "Od Common do Legendary, vsak s svojo možnostjo ulova. Imaš dva poskusa, ponovni poskus pa je vreden 0,65 prvega, zato je prvi tap najpomembnejši."
+    },
+    "catch": {
+      "label": "Ulov",
+      "title": "Tapkaj za polnjenje in ohrani živce",
+      "body": "Krog se polni, ko tapkaš. Vsak krog ali dva nekaj poseže vmes: krogla zamrzne, naboj začne puščati ali pa se odpre val, v katerem tapi štejejo dvojno."
+    },
+    "result": {
+      "label": "Met",
+      "title": "Naboj kupi možnost, ne gotovosti",
+      "body": "Poln krog pri legendarnem je še vedno ena proti petim. Prav zato je legendarni vreden, in prav zato tap nekaj odloči."
+    },
+    "wallet": {
+      "label": "Tvoje",
+      "title": "Pristane v denarnici, ki ti je ni bilo treba nastaviti",
+      "body": "Ustvarjena iz prijave z družbenim računom, zato nov igralec nekaj zbere že v minuti. Ključ izvozi, kadar koli želiš prevzeti skrbništvo."
+    }
+  },
+  "spawnScreen": {
+    "back": "‹ Zemljevid",
+    "distance": "Razdalja",
+    "inRange": "V dosegu",
+    "thisAttempt": "Ta poskus",
+    "attemptsLeft": "Preostali poskusi",
+    "attemptsOf": "{left} od {total}",
+    "note": "Polnjenje kroga to poveča. Ponovni poskus po njem je vreden 0,65 prvega.",
+    "cta": "Ujemi ga"
+  },
+  "catchScreen": {
+    "attempt": "Poskus {attempt} od {total}",
+    "tapAria": "Tapni za polnjenje",
+    "sealAria": "Zatesni razpoko",
+    "ringFull": "Krog je poln, zdrži",
+    "tapPrompt": "Tapni kovanec",
+    "mechanic": {
+      "freeze": "Zamrznjeno, tapkaj naprej, da se stali",
+      "leak": "Pušča, zatesni razpoke",
+      "surge": "Val, vsak tap šteje dvojno"
+    }
+  },
+  "resultScreen": {
+    "caught": "Ujeto",
+    "escaped": "Pobegnil je",
+    "ringCharged": "Napolnjenost kroga",
+    "chance": "Možnost pri tem poskusu",
+    "xp": "XP",
+    "gameValue": "Vrednost v igri",
+    "noteCaught": "Ujeta enota je igralna enota. Koliko izplača v resničnih žetonih, je stvar trga.",
+    "noteRetry": "Še en poskus, vreden 0,65 prvega.",
+    "noteGone": "Ta spawn je izginil. Prišel bo drug.",
+    "openWallet": "Odpri denarnico",
+    "tryAgain": "Poskusi znova",
+    "backToMap": "Nazaj na zemljevid"
+  },
+  "walletScreen": {
+    "totalBalance": "Skupno stanje",
+    "delta": "+ {amount} danes",
+    "deposit": "Polog",
+    "send": "Pošlji",
+    "exchange": "Menjava",
+    "qr": "QR",
+    "justCaught": "Pravkar ujeto",
+    "assets": "Sredstva",
+    "recentBadges": "Nedavne značke"
+  },
+  "dropKinds": {
+    "airdrop": "Airdrop",
+    "quest": "Nagrada misije",
+    "partner": "Partnerski drop",
+    "event": "Žeton dogodka",
+    "cache": "Ulični zaklad"
+  },
+  "ecosystemPage": {
+    "metaTitle": "Ekosistem: iskalci, izdajatelji, protokol",
+    "metaDescription": "Kako se povezuje ekosistem Seekprotocol: iskalci, ki zbirajo, izdajatelji, ki postavljajo, in protokol, ki preveri prisotnost in jo poravna na verigi.",
+    "ogTitle": "Tri strani, ena koordinata",
+    "eyebrow": "Ekosistem",
+    "titleStart": "Tri strani, ena",
+    "titleAccent": "koordinata",
+    "lead": "Nekdo postavi sredstvo. Nekdo odpotuje do njega. Protokol potrdi, da je bil res tam, in ga poravna. Vse drugo so podrobnosti nad tem krogom.",
+    "networkEyebrow": "Omrežje",
+    "networkTitle": "Vsaka oznaka je resničen kraj",
+    "networkLead": "Povleci globus. Koordinate so pravi položaji mest, vsak lok pa je drop, ki se premika med njimi.",
+    "capabilitiesEyebrow": "Zmogljivosti",
+    "capabilitiesTitle": "Kaj protokol dejansko ponuja",
+    "faqEyebrow": "Vprašanja",
+    "faqTitle": "Tista, ki jih je vredno postaviti",
+    "faqLead": "Tudi tista z neprijetnimi odgovori.",
+    "ctaEyebrow": "Poglobi se",
+    "ctaTitle": "Tehnični opis",
+    "ctaBody": "Dokaz lokacije, arhitektura, zasnova žetona in iskren seznam napadov, pred katerimi se branimo, ter omejitev, ki jih sprejemamo.",
+    "ctaWhitepaper": "Preberi belo knjigo",
+    "ctaBusiness": "Postavi svoja sredstva",
+    "polCtaEyebrow": "Dokaz lokacije",
+    "polCtaTitle": "Prisotnost, preverjena",
+    "polCtaBody": "Preden je zahtevek sprejet, se morajo ujemati štirje neodvisni signali. Razlaga v preprostem jeziku je na blogu.",
+    "polCtaLink": "Kako deluje dokaz lokacije"
+  },
+  "participants": {
+    "seekers": {
+      "label": "Iskalci",
+      "tag": "Povpraševanje",
+      "title": "Ljudje, ki gredo ponj",
+      "body": "Vsak z aplikacijo. Hodijo, najdejo stvari in obdržijo, kar zberejo. Predznanje o kriptovalutah ni potrebno: denarnica se ustvari iz prijave z družbenim računom, kdor želi skrbništvo, pa jo lahko pozneje izvozi.",
+      "gets": [
+        "Žetoni, NFT-ji in partnerske nagrade",
+        "Misije, ki se prilagajajo kraju, kjer so",
+        "Denarnica, ki je ni bilo treba najprej razumeti"
+      ]
+    },
+    "publishers": {
+      "label": "Izdajatelji",
+      "tag": "Ponudba",
+      "title": "Kdor koli ga je postavil tja",
+      "body": "Blagovne znamke, prizorišča, projekti žetonov in organizatorji dogodkov. Sredstva postavijo na koordinate, ki so jim pomembne, in plačajo za vsako postavitev, uteženo po polmeru, trajanju in tem, kako oblegano je območje.",
+      "gets": [
+        "Preverjeni prihodi, ne prikazi",
+        "Geografska distribucija, odporna na izkoriščanje",
+        "Graditelj kampanj brez integracijskega dela"
+      ]
+    },
+    "protocol": {
+      "label": "Protokol",
+      "tag": "Poravnava",
+      "title": "Del, ki skrbi, da so vsi pošteni",
+      "body": "Točkovanje preverjanja, hramba sredstev in poravnava. Ob postavitvi zaračuna provizijo, večino vrne iskalcem in hrani zapis o tem, kaj je bilo kje prevzeto.",
+      "gets": [
+        "Provizije, ki sledijo resnični dejavnosti",
+        "Javni zapis zahtevkov",
+        "Parametri, ki sčasoma preidejo v upravljanje skupnosti"
+      ]
+    }
+  },
+  "capabilities": {
+    "placement": {
+      "title": "Postavitev z geoograjo",
+      "meta": "5 m do 500 m",
+      "body": "Sredstva so pripeta na koordinate z nastavljivim polmerom za prevzem. Vrata trgovine uporabljajo tesen polmer, festivalsko prizorišče širokega."
+    },
+    "verification": {
+      "title": "Preverjanje z več signali",
+      "meta": "4 neodvisni signali",
+      "body": "Satelitski položaj, okoliški radijski signali, potrditev naprave in neprekinjenost gibanja se morajo ujemati, preden je zahtevek sprejet."
+    },
+    "anchoring": {
+      "title": "Sidranje AR",
+      "meta": "Trajno",
+      "body": "Sredstva ostanejo na mestu med sejami in med uporabniki. Dva človeka, ki stojita na istem mestu, vidita isto stvar na isti točki."
+    },
+    "companion": {
+      "title": "Spremljevalec z umetno inteligenco",
+      "meta": "Najprej na napravi",
+      "body": "Bere kamero, da razloži, kaj gledaš, in predlaga, kam naprej, ne da bi tvojo zgodovino gibanja pošiljal kamor koli."
+    },
+    "wallet": {
+      "title": "Družbena denarnica",
+      "meta": "Brez seed phrase",
+      "body": "Ustvarjena iz prijave z družbenim računom, da nov uporabnik nekaj zbere že v minuti, izvoz za lastno skrbništvo pa je na voljo, kadar koli ga želi."
+    },
+    "settlement": {
+      "title": "Poravnava na več verigah",
+      "meta": "Pod eno sekundo",
+      "body": "Sredstvo se poravna na omrežju, na katerem že živi, ob eni zahtevi, ki jo mora izpolniti vsaka veriga: prevzem majhne nagrade ne sme stati več, kot je nagrada vredna."
+    }
+  },
+  "ecosystemFaq": {
+    "spoofing": {
+      "question": "Ali lahko ponaredim lokacijo in zbiram, ne da bi šel tja?",
+      "answer": "Ne poceni. Surov položaj GPS je lahko ponarediti, zato je le eden od štirih signalov. Potrditi ga morajo okoliško radijsko okolje, potrditev naprave in sled tvojega gibanja, naprava, ki večkrat ne uspe, pa ima višji prag. Cilj je, da ponaredek stane več, kot je nagrada vredna, ne pa trditi, da je nemogoč."
+    },
+    "crypto": {
+      "question": "Ali moram kaj vedeti o kriptovalutah, da uporabljam Seekprotocol?",
+      "answer": "Ne. Denarnica se ustvari iz prijave z družbenim računom in seed phrase nikoli ne vidiš, razen če ga sam poiščeš. Če pozneje želiš lastno skrbništvo, lahko ključ kadar koli izvoziš."
+    },
+    "tracking": {
+      "question": "Ali Seekprotocol sledi, kam hodim?",
+      "answer": "Ne. Aplikacija zahteva položaj, ko poskusiš prevzeti, ne neprekinjeno v ozadju. Surovi podatki senzorjev se uporabijo za točkovanje tega enega zahtevka in se nato zavržejo, tvoja zgodovina gibanja pa ostane na tvoji napravi."
+    },
+    "farming": {
+      "question": "Kaj preprečuje, da bi en človek z veliko denarnicami izkoriščal lokacijo?",
+      "answer": "Omejitve zahtevkov na napravo znotraj polmera in časovnega okna ter potrditev naprave, ki je farme emulatorjev ne prestanejo. Denarnice so brezplačne, potovanje pa ne, in prav zato distribucijo sploh vežemo na geografijo."
+    },
+    "chain": {
+      "question": "Na kateri verigi deluje Seekprotocol?",
+      "answer": "Na tisti, na kateri živi sredstvo. Omrežja so vrstice v tabeli, ne koda, zato izdajatelj financira kampanjo v žetonu, ki ga že ima, iskalcu pa nikoli ni treba izbrati verige. Vsako omrežje mora izpolniti isto zahtevo: nagrada, vredna nekaj centov, mora preživeti premik, in nekdo, ki stoji na vogalu ulice, ne bi smel čakati nanjo. Trak na domači strani pove, katere verige poravnavajo danes."
+    },
+    "rewardKind": {
+      "question": "Ali mora biti nagrada kripto?",
+      "answer": "Ne. Bon, unovčen na blagajni, par superg v škatli, prepustnica, ki obstaja samo na prizorišču: nič od tega se ne dotakne verige, preverjanje pod tem pa je v vsakem primeru enako. Kjer gre za žeton, se ta poravna na verigi, na kateri že živi. Protokol dokaže, da je bil nekdo tam; kaj dobi, se odločiš ti."
+    },
+    "business": {
+      "question": "Ali lahko moje podjetje danes postavi sredstva?",
+      "answer": "Da, prek upravljanega partnerstva. Samopostrežni portal, s katerim pogovor z nami ne bo več potreben, je v razvoju, načrt razvoja pa pove, kje je."
+    }
+  },
+  "roadmapPage": {
+    "metaTitle": "Načrt razvoja: kaj je izdano in kaj sledi",
+    "metaDescription": "Kaj je Seekprotocol že izdal in kaj sledi, od prototipa dokaza lokacije in javnega lansiranja Seekprotocola do samopostrežnega portala in upravljanja.",
+    "ogTitle": "Načrt razvoja Seekprotocol",
+    "eyebrow": "Načrt razvoja",
+    "titleStart": "Kaj je zgrajeno in kaj je",
+    "titleAccent": "naslednje",
+    "lead": "{phases} faz, spremljanih glede na to, kar je bilo res izdano. Dokončanih {shipped} od {total} mejnikov.",
+    "status": {
+      "done": "Izdano",
+      "active": "V teku",
+      "next": "Načrtovano"
+    },
+    "datesTitle": "Na te datume",
+    "datesNote": "Datumi izražajo namen, ne zavez. Vse, kar še ni označeno kot dokončano, se lahko premakne, in to raje povemo, kot da bi tiho premetavali grafikon.",
+    "legendTitle": "Legenda",
+    "ctaEyebrow": "Podrobnosti",
+    "ctaTitle": "Razlogi za vrstni red",
+    "ctaBody": "Bela knjiga pojasni, zakaj je preverjanje prišlo pred obsegom in zakaj je upravljanje na koncu.",
+    "ctaWhitepaper": "Preberi belo knjigo"
+  },
+  "roadmapPhases": {
+    "foundation": {
+      "title": "Temelji",
+      "summary": "Dokazati, da osnovna zamisel sploh deluje: ali lahko telefon dovolj zanesljivo potrdi, da je bil nekdo nekje, da se sprosti nekaj vrednega?",
+      "items": {
+        "prototype": "Prototip dokaza lokacije z GNSS in neprekinjenostjo gibanja",
+        "engine": "Pogon za upodabljanje AR s trajnim sidranjem v svetu",
+        "settlement": "Prva plast poravnave na Solani z definicijami sredstev",
+        "alpha": "Interna alfa v treh testnih mestih"
+      }
+    },
+    "launch": {
+      "title": "Javno lansiranje",
+      "summary": "Spraviti Seekprotocol v resnične roke, v obeh trgovinah z aplikacijami, s postopkom začetka, ki ne predpostavlja, da je uporabnik kdaj imel zasebni ključ.",
+      "items": {
+        "stores": "Seekprotocol izdan za iOS in Android",
+        "wallet": "Denarnica s prijavo z družbenim računom in neobveznim izvozom za lastno skrbništvo",
+        "drops": "Dropi na podlagi lokacije in sistem misij",
+        "attestation": "Potrditev naprave prek Play Integrity in App Attest",
+        "localisation": "Spletna stran in aplikacija prevedeni v osem jezikov"
+      }
+    },
+    "scale": {
+      "title": "Odpiranje",
+      "summary": "Leto, ko omrežja ne polnimo več sami. Vsakdo lahko postavi sredstva, ne da bi se prej pogovoril z nami, žeton, ki jih financira, postane javen, razlogi za vračanje pa niso več stvari, ki jih počneš sam.",
+      "groups": {
+        "supply": "Stran ponudbe",
+        "network": "Omrežni učinki"
+      },
+      "items": {
+        "companion": "Spremljevalec z umetno inteligenco s kontekstnimi nasveti prek kamere",
+        "radio": "Radijski prstni odtisi, dodani v sklop preverjanja",
+        "builder": "Graditelj kampanj povleci in spusti za manjše izdajatelje",
+        "portal": "Samopostrežni poslovni portal za prizorišča in blagovne znamke",
+        "analytics": "Analitika preverjenih prihodov in poročila o ceni na obisk",
+        "tge": "Dogodek ustvarjanja žetona (TGE)",
+        "partnerships": "Velika partnerstva",
+        "liveEvents": "Način za dogodke v živo za festivale, tekme in konference",
+        "seasons": "Sezone z lastnimi lestvicami in nagradami",
+        "scanning": "Igrivo skeniranje predmetov",
+        "guilds": "Cehi, ekipne misije in skupni skladi nagrad",
+        "revenueShare": "Delitev prihodkov z ustvarjalci od postavljenih sredstev",
+        "multichain": "Poravnava na Ethereumu, BNB Smart Chain in Arbitrumu"
+      }
+    },
+    "governance": {
+      "title": "Predaja parametrov",
+      "summary": "Upravljanje sledi resničnemu toku provizij, ne pride pred njim. Glasovanje o ekonomiji brez prometa je gledališče, zato je to namenoma na koncu.",
+      "items": {
+        "onChain": "Upravljanje parametrov protokola na verigi",
+        "treasury": "Razporeditev sredstev skupnostne zakladnice",
+        "providers": "Zunanji ponudniki preverjanja",
+        "sdk": "Odprt SDK za zunanje aplikacije na protokolu"
+      }
+    }
+  },
+  "businessPage": {
+    "metaTitle": "Trženje z geoograjami, plačano na prihod",
+    "metaDescription": "Oglaševanje AR na podlagi lokacije za izdajatelje in blagovne znamke. Postavi nagrado na svoje koordinate in plačaj za preverjen obisk, ne za prikaz.",
+    "ogTitle": "Plačaj za preverjen prihod",
+    "eyebrow": "Za podjetja",
+    "titleStart": "Kupi prihode, ne",
+    "titleAccent": "prikazov",
+    "lead": "Digitalno oglaševanje lahko tvoj logotip v milisekundah postavi pred nekoga. Ne more pa ga pripraviti, da prehodi tri ulice. Postavi nagrado pred svoja vrata in plačaj za ljudi, ki pridejo do nje.",
+    "ctaTalk": "Pogovori se z nami",
+    "ctaVerification": "Kako deluje preverjanje",
+    "argumentEyebrow": "Argument",
+    "argumentTitle": "Kjer se štetje ustavi",
+    "argumentLead": "Isti denar porabi na dva načina in lijaka sta si podobna do zadnje vrstice. Eno je prešteto. Drugo je model, in prav po tej vrstici se presoja vsaka kampanja.",
+    "useCasesEyebrow": "Primeri uporabe",
+    "useCasesTitle": "Štirje načini uporabe",
+    "setupEyebrow": "Nastavitev",
+    "setupTitle": "Štiri odločitve, brez inženiringa",
+    "setupLead": "To je celoten postopek. Sprejmi štiri odločitve in objavi, nato pa poglej, kaj vsaka naredi z območjem, ki ga držiš, in s ceno človeka pred tvojimi vrati.",
+    "measurementEyebrow": "Merjenje",
+    "measurementTitle": "Kaj dobiš in česa ne",
+    "measurementLead": "Podatki o lokaciji so najobčutljivejša kategorija, kar jih obstaja. Prejmeš števila, ki jih potrebuješ za presojo kampanje, in nič, kar bi ti omogočalo slediti posamezniku.",
+    "ctaEyebrow": "Začni",
+    "ctaTitle": "Postavi nekaj pred svoja vrata",
+    "ctaBody": "Samopostrežni portal je v razvoju. Dokler ne bo na voljo, kampanje pripravimo neposredno s tabo. Povej nam lokacijo in kaj želiš postaviti.",
+    "ctaStart": "Začni pogovor",
+    "ctaRoadmap": "Poglej, kdaj pride samopostrežni portal",
+    "realEyebrow": "Enota",
+    "realTitle": "Kaj je prihod in kaj ni",
+    "realLead": "Vsaka metrika na trgu je približek, in za vsak približek obstaja skripta, ki ga ustvari za manj kot cent. Prisotnost je izjema, in to iz razloga, ki ga boljša strojna oprema ne načne: strošek je fizičen.",
+    "chainsNote": "Financiraj kampanjo v sredstvu, ki ga že imaš, ali brez sredstva. Bon na blagajni in škatla na pragu ne potrebujeta ne verige ne denarnice. Kjer gre za žeton, je omrežje stvar nastavitve, ne integracije, zato lahko ena kampanja teče na več omrežjih hkrati, oseba, ki prevzema, pa ji nikoli ni treba vedeti, na katerem.",
+    "verifiedEyebrow": "Samo preverjeni obiski",
+    "verifiedTitle": "Plačaj samo, ko je bil nekdo res tam",
+    "verifiedBody": "Brez prikazov, brez klikov, ki nikoli niso postali obisk. Kampanja porablja, ko protokol preveri osebo na kraju samem.",
+    "verifiedLink": "Odpri Seek Partners"
+  },
+  "useCases": {
+    "retail": {
+      "label": "Trgovina in gostinstvo",
+      "metric": "Cena na preverjen prihod",
+      "title": "Spremeni lokacijo v razlog za obisk",
+      "body": "Postavi ponudbo pred svoja vrata s tesnim polmerom za prevzem. Prevzame jo lahko samo nekdo, ki stoji tam, zato je unovčenje, ki ga vidiš, človek, ki je vstopil, ne oglas, mimo katerega je nekdo podrsal.",
+      "points": [
+        "Polmer, prilagojen vratom, ne poštni številki",
+        "Unovčenje, zabeleženo v trenutku prihoda",
+        "Deluje v celotni verigi trgovin brez integracije za vsako trgovino"
+      ]
+    },
+    "events": {
+      "label": "Dogodki in prizorišča",
+      "metric": "Angažiranost na kraju samem",
+      "title": "Zemljevid za prevzem za čas trajanja dogodka",
+      "body": "Festivali, tekme in konference postanejo začasna plast sredstev, ki poteče skupaj z dogodkom. Odklene jih udeležba, zato nagrada doseže ljudi, ki so res prišli.",
+      "points": [
+        "Časovno omejena sredstva, ki potečejo po urniku",
+        "Široki polmeri za prizorišča, tesni za odre in stojnice",
+        "Višji pragi preverjanja za drope visoke vrednosti"
+      ]
+    },
+    "token": {
+      "label": "Projekti žetonov in NFT",
+      "metric": "Odpornost na Sybil",
+      "title": "Razdeljuj ljudem, ne denarnicam",
+      "body": "Denarnico je ustvariti brezplačno, zato se airdropi izkoriščajo. Zahteva po fizični prisotnosti vsakemu dodatnemu zahtevku doda resničen strošek, ker nihče ni v štiridesetih mestih hkrati.",
+      "points": [
+        "Geografska distribucija na izbranih trgih",
+        "Omejitve zahtevkov na napravo znotraj polmera in časovnega okna",
+        "Javni zapis zahtevkov na lastni verigi sredstva"
+      ]
+    },
+    "tourism": {
+      "label": "Mesta in turizem",
+      "metric": "Porazdelitev obiska",
+      "title": "Usmeri ljudi skozi kraje, ki jih želiš oživiti",
+      "body": "Poveži sredstva v pot, da se obiskovalci po njej premikajo po vrsti. Mirne ulice, manj znane točke in ure izven konice lahko nosijo nagrade, ki jih obiskane znamenitosti ne potrebujejo.",
+      "points": [
+        "Zaporedne misije na več lokacijah",
+        "Utež za čas izven konice, ki razprši povpraševanje",
+        "Skupna števila prihodov, nikoli posamezne sledi"
+      ]
+    }
+  },
+  "interactionClaims": {
+    "nobots": {
+      "metric": "Brez prometa botov",
+      "title": "Ničesar tukaj ne more ustvariti skripta",
+      "body": "Zahtevek zahteva napravo na koordinati, ki se ujema s svojim satelitskim položajem, radijskim okoljem okoli sebe in gibanjem, ki jo je pripeljalo tja. Nič od tega nima ustreznice v podatkovnem centru, zato stopnja goljufij ni številka, ki bi jo morali zniževati."
+    },
+    "organic": {
+      "metric": "Organsko po zasnovi",
+      "title": "Vsaka interakcija je pot, ki jo je nekdo prehodil",
+      "body": "Angažiranost ni sklepana iz klika in ni modelirana iz panela. Nekdo se je odločil priti na tvoj naslov, zapis o tem pa nastane v trenutku prihoda, ne pa rekonstruiran pozneje."
+    },
+    "cta": {
+      "metric": "Tvoj poziv k dejanju",
+      "title": "Mi preverimo prisotnost, ti določiš zahtevo",
+      "body": "Nagrado veži na nakup, sledenje, prijavo, skeniranje izdelka na polici ali na nič drugega kot prihod. Preverjanje pod tem je v vsakem primeru enako, zato se zahteva lahko med kampanjami spreminja, ne da bi se spremenilo jamstvo."
+    }
+  },
+  "measurement": {
+    "counted": {
+      "label": "Kaj se šteje",
+      "value": "Preverjen prihod znotraj tvojega polmera"
+    },
+    "when": {
+      "label": "Kdaj se šteje",
+      "value": "V trenutku zahtevka, ne sklepano pozneje"
+    },
+    "receive": {
+      "label": "Kaj prejmeš",
+      "value": "Skupna števila po lokaciji, času in kampanji"
+    },
+    "never": {
+      "label": "Česa nikoli ne prejmeš",
+      "value": "Sledi gibanja ali identitete posameznikov"
+    }
+  },
+  "funnel": {
+    "budget": "Proračun kampanje",
+    "displayTitle": "Kupljeno kot prikazno oglaševanje",
+    "displayCost": "na modeliran obisk",
+    "seekTitle": "Kupljeno kot prihodi",
+    "seekCost": "na preverjen prihod",
+    "counted": "Prešteto",
+    "estimated": "Ocenjeno",
+    "stages": {
+      "impressions": "Prikazani oglasi",
+      "viewable": "Vidno upodobljeni",
+      "clicks": "Kliki",
+      "visits": "Obiski trgovine",
+      "saw": "Videli oznako v bližini",
+      "opened": "Odprli drop",
+      "walked": "Prišli do njega",
+      "claimed": "Prevzeli pri vratih"
+    },
+    "caption": "Prikazno oglaševanje uporablja CPM ${cpm}, {viewability} % vidnosti, {ctr} % stopnjo klikov in {modelled} % delež prikazov, ki postanejo obiski, kot ga modelirajo oglaševalske platforme. Ta zadnja vrstica je tista, ki jo je vredno pogledati: ni preštevana, ampak ocenjena, in ne izhaja iz klikov nad njo. V desnem stolpcu je vsaka vrstica nekaj, kar se je zgodilo na napravi znotraj tvojega polmera."
+  },
+  "deploy": {
+    "stepsLabel": "Koraki",
+    "steps": {
+      "location": "Lokacija",
+      "asset": "Sredstvo",
+      "rules": "Pravila",
+      "publish": "Objava"
+    },
+    "whereLegend": "Kje je",
+    "whereNote": "V portalu je to oznaka, ki jo povlečeš. Koordinata je edini naslov, ki ga sredstvo kdaj dobi.",
+    "assetLegend": "Kaj postaviš",
+    "assetNote": "En zahtevek na napravo znotraj polmera in časovnega okna, zato je količina število ljudi, ne količina zaloge.",
+    "rulesLegend": "Kdo ga lahko vzame",
+    "campaignLegend": "Kampanja",
+    "quantity": "Količina",
+    "claimRadius": "Polmer prevzema",
+    "presets": {
+      "store": {
+        "label": "Izložba",
+        "place": "Kalverstraat 92, Amsterdam",
+        "hint": "Vrata. Dovolj tesno, da lahko prevzame samo nekdo pri pultu."
+      },
+      "venue": {
+        "label": "Prizorišče dogodka",
+        "place": "Johan Cruijff ArenA, Amsterdam",
+        "hint": "Celotno prizorišče za čas dogodka, ki poteče, ko se ta konča."
+      },
+      "trail": {
+        "label": "Mestna pot",
+        "place": "Šest točk po Amsterdam Noord",
+        "hint": "Povezana sredstva, ki jih prevzemaš po vrsti, z utežjo na mirnih ulicah."
+      }
+    },
+    "assets": {
+      "token": "Žeton",
+      "nft": "Zbirateljski predmet",
+      "offer": "Koda ponudbe",
+      "ticket": "Vstopna prepustnica"
+    },
+    "tiers": {
+      "standard": {
+        "label": "Standardno preverjanje",
+        "note": "GNSS, potrditev naprave in gibanje se morajo ujemati."
+      },
+      "strict": {
+        "label": "Strogo preverjanje",
+        "note": "Doda radijski prstni odtis. Za drope visoke vrednosti."
+      }
+    },
+    "summaryLocation": "Lokacija",
+    "summaryAsset": "Sredstvo",
+    "summaryRadius": "Polmer",
+    "summaryVerification": "Preverjanje",
+    "summaryThreshold": "{tier}, prag {threshold}",
+    "summaryBudget": "Proračun",
+    "summaryBudgetValue": "${budget} po ${cost} na prihod",
+    "publish": "Objavi kampanjo",
+    "sequence": {
+      "signing": "Podpisujem kampanjo",
+      "writing": "Zapisujem definicijo sredstva na verigo",
+      "indexing": "Indeksiram koordinate",
+      "live": "V živo na zemljevidu"
+    },
+    "again": "Nastavi še eno",
+    "back": "Nazaj",
+    "next": "Naprej",
+    "review": "Pregled",
+    "verifiedArrivals": "Preverjeni prihodi",
+    "costPerArrival": "Cena na prihod",
+    "sawPin": "Videli oznako v bližini",
+    "placementFee": "Provizija za postavitev",
+    "perArrival": "Na prihod",
+    "live": "V živo",
+    "radiusOf": "Polmer {radius} m",
+    "captionLive": "Prihodi so projekcija na podlagi polmera in prometa na zemljevidu okoli njega, ne jamstvo. Vsak od njih bi bil zahtevek, zapisan na verigi v trenutku, ko je nekdo stal tam.",
+    "captionIdle": "Krog je narisan v merilu glede na podlago. Nič tukaj ne potrebuje razvijalca: štiri odločitve, nato objava."
+  },
+  "whitepaper": {
+    "metaTitle": "Bela knjiga: dokaz lokacije na kateri koli verigi",
+    "metaDescription": "Kako Seekprotocol izdaja digitalna sredstva na resnične koordinate, preveri, da je bil nekdo res tam, in poravnava na verigi, na kateri sredstvo živi. Arhitektura, zasnova žetona, napadi.",
+    "ogTitle": "Bela knjiga Seekprotocol",
+    "ogDescription": "Dokaz lokacije, arhitektura, zasnova žetona in iskren opis napadov in omejitev.",
+    "eyebrow": "Bela knjiga",
+    "titleStart": "Digitalna sredstva, ki živijo na",
+    "titleAccent": "kraju",
+    "lead": "Tehnični opis tega, kako Seekprotocol izdaja sredstva na koordinate, dokaže, da je nekdo stal tam, in to poravna na verigi, vključno s tem, česar sistem ne zmore.",
+    "readingTime": "{minutes} min branja",
+    "updated": "Posodobljeno {date}",
+    "updatedValue": "Avgust 2026",
+    "gitbook": "Celotna dokumentacija na GitBooku",
+    "ctaEyebrow": "Naprej",
+    "ctaTitle": "Poglej, kako deluje",
+    "ctaBody": "Stran ekosistema prikazuje omrežje v živo, načrt razvoja pa spremlja, kaj je izdano in kaj sledi.",
+    "ctaEcosystem": "Razišči ekosistem",
+    "ctaRoadmap": "Poglej načrt razvoja",
+    "chapters": {
+      "summary": {
+        "index": "01",
+        "eyebrow": "Povzetek",
+        "title": "Protokol za stvari, ki obstajajo na nekem kraju",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Internet je vsak digitalni predmet naredil dostopen povsod hkrati. To je bil namen, in uspelo je. A digitalnim stvarem je odvzel edino lastnost, zaradi katere se fizične stvari zdijo dragocene: da so nekje določeno. Vstopnica za koncert je pomembna, ker te spusti v dvorano. Znamenitost je pomembna, ker moraš do nje potovati."
+          },
+          {
+            "kind": "p",
+            "text": "Seekprotocol digitalnim sredstvom vrača lokacijo. Žeton, NFT ali nagrado je mogoče izdati naboru koordinat namesto denarnici, in tam ostane, dokler nekdo fizično ne stoji znotraj njenega polmera in tega ne dokaže. Temu pravimo dokaz lokacije in to je gradnik, na katerem je zgrajen preostali protokol."
+          },
+          {
+            "kind": "p",
+            "text": "Uporabniška površina je **Seekprotocol**, mobilna aplikacija za iOS in Android, ki ta sredstva prikaže v razširjeni resničnosti. Hodiš, telefon pokaže, kaj je v bližini, in pobereš, kar najdeš. Pod tem poteka poravnava na verigi, na kateri sredstvo že živi, ob eni sami zahtevi: stroški transakcij morajo biti dovolj nizki, da prevzem majhne nagrade ne stane več, kot je nagrada vredna."
+          },
+          {
+            "kind": "callout",
+            "text": "Na kratko: ustvarjamo digitalna sredstva, ki jih je mogoče prevzeti samo z določenega kraja, preverimo, da je bil nekdo res tam, in to v manj kot sekundi za delček centa poravnamo na verigi."
+          },
+          {
+            "kind": "h",
+            "text": "Kaj zajema ta dokument"
+          },
+          {
+            "kind": "p",
+            "text": "Šestnajst poglavij v štirih delih. Prva tri predstavijo problem in gradnik, ki ga rešuje. Poglavja od štiri do sedem so stroj: kako potuje zahtevek, kako se plasti povezujejo in kaj aplikacija z njimi počne. Od osem do enajst je ekonomija, od tega, kdo plača postavitev, do tega, kdo določa parametre. Zadnjih pet so stvari, ki jih bela knjiga običajno izpusti: napadi, cena za zasebnost, regulativni položaj in iskrene omejitve."
+          },
+          {
+            "kind": "p",
+            "text": "Več slik je interaktivnih. Model preverjanja, časovnica zahtevka, met za ulov in kalkulator proračuna izvajajo isto aritmetiko kot protokol, z enakimi konstantami, zato se lahko ne strinjaš z zasnovo in ne le z diagramom."
+          }
+        ]
+      },
+      "problem": {
+        "index": "02",
+        "eyebrow": "Problem",
+        "title": "Pozornost je na spletu poceni, na ulici pa draga",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Dve skupini imata problem, ki se izkaže za isti problem, gledan z nasprotnih koncev."
+          },
+          {
+            "kind": "h",
+            "text": "Blagovne znamke in prizorišča ne morejo kupiti obiska"
+          },
+          {
+            "kind": "p",
+            "text": "Digitalno oglaševanje lahko sliko v milisekundah postavi pred nekoga. Ne more ga pripraviti, da prehodi tri ulice. Pretvorba prikaza v fizični obisk je najšibkejši člen celotnega lijaka v trgovini in pri dogodkih, meri pa se slabo, običajno tako, da ljudi na blagajni vprašajo, ali so videli oglas."
+          },
+          {
+            "kind": "p",
+            "text": "Odgovor panoge je bilo modeliranje. Paneli naprav s privolitvijo se ekstrapolirajo na populacijo, dobljena številka obiskov trgovine pa se poroča ob prikazih in klikih, kot da bi prišla iz iste vrste števca. Ni. Ena številka je dogodek, druga je ocena, kampanje pa se presojajo po oceni."
+          },
+          {
+            "kind": "h",
+            "text": "Kripto projekti ne najdejo resničnih uporabnikov"
+          },
+          {
+            "kind": "p",
+            "text": "Airdropi so standardno orodje za distribucijo, in se izkoriščajo. Denarnico je ustvariti brezplačno, zato vsako nagrado, ki jo lahko prevzame denarnica, prevzamejo tisoči denarnic peščice ljudi. Projekti se odzovejo z vse bolj zapletenimi pravili upravičenosti, ki večinoma izločijo običajne uporabnike, medtem ko se izurjeni farmerji prilagodijo."
+          },
+          {
+            "kind": "p",
+            "text": "Oba problema izgineta, če lahko dokažeš, da je bil človek ob določenem času na določenem kraju. Obisk postane merljiv, ker je prihod dogodek, ki se beleži. Izkoriščanje airdropov postane drago, ker je denarnica brezplačna, potovanje pa ne, in nihče ni v štiridesetih mestih hkrati."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Strošek ustvarjanja denarnice",
+                "value": "Praktično nič"
+              },
+              {
+                "label": "Strošek biti nekje",
+                "value": "Čas, razdalja, fizična prisotnost"
+              },
+              {
+                "label": "Kaj kupi ta razlika",
+                "value": "Mehanizem odpornosti na Sybil, utemeljen v fiziki"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Zakaj je to mogoče zgraditi zdaj in prej ni bilo"
+          },
+          {
+            "kind": "p",
+            "text": "Hkrati so morale priti tri stvari. Telefoni so morali imeti dvofrekvenčni GNSS, kamere z zaznavanjem globine in strojno podprto potrditev kot standard, ne kot funkcije vrhunskih modelov. Poravnava je morala postati dovolj poceni, da nagrada, vredna nekaj centov, preživi premik, kar je izključilo vse verige, dokler provizije niso padle pod cent. In ljudje so morali biti pripravljeni usmeriti kamero v ulico in v njej videti nekaj izrisanega, kar je desetletje AR v igrah tiho uredilo."
+          }
+        ]
+      },
+      "distribution": {
+        "index": "03",
+        "eyebrow": "Distribucija",
+        "title": "Zakaj plačan doseg ne more pripeljati resničnega človeka",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Prejšnje poglavje je povedalo, da imata dve skupini isti problem. To govori o orodju, po katerem obe najprej sežeta, in zakaj odpove na način, ki ga večja poraba ne popravi."
+          },
+          {
+            "kind": "h",
+            "text": "Vsaka metrika na trgu je približek"
+          },
+          {
+            "kind": "p",
+            "text": "Prikaz, klik, ogled, sledenje, naslov denarnice: nič od tega ni človek. Vsak je signal, ki je s človekom povezan pod pogoji, ki jih nadzoruje prodajalec signala. Ko nagrada za ustvarjanje signala preseže strošek ustvarjanja brez človeka, se signal ustvari brez človeka, povezava, na kateri je oblikovana cena celotnega trga, pa se tiho odlepi od tistega, kar je nadomeščala."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "En prikaz",
+                "value": "Delčki centa, človek ni potreben"
+              },
+              {
+                "label": "En klik",
+                "value": "Centi, iz bazena stanovanjskih proxyjev"
+              },
+              {
+                "label": "Ena denarnica",
+                "value": "Brezplačno in skriptno v tisočih"
+              },
+              {
+                "label": "En preverjen prihod",
+                "value": "Pot, ki jo enkrat opravi telo"
+              }
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Filtri signala ne obnovijo"
+          },
+          {
+            "kind": "p",
+            "text": "Standardni odziv so pravila upravičenosti: najnižja stanja, predhodna dejavnost, okna posnetkov, captche, prstni odtisi naprav. Vsako od njih strošek lažnega zahtevka dvigne za nek znesek, strošek resničnega pa za drug znesek, in razmerje med njima je edino, kar odloči, ali je filter pomagal. V praksi izurjeni farmer strošek prevzame, običajni uporabnik pa obupa, zato filtri na koncu izbirajo prav populacijo, ki naj bi jo izločili."
+          },
+          {
+            "kind": "p",
+            "text": "Prisotnost ni boljši filter. Je druga vrsta stvari, ker strošek, ki ga naloži, ni računski. Ni ga mogoče vzporediti na strežniški omari, ne pada s cenejšo strojno opremo in za ulico ni stanovanjskega proxyja."
+          },
+          {
+            "kind": "callout",
+            "text": "Uporabno vprašanje o katerem koli ukrepu proti goljufijam ni, koliko stane napadalca, ampak koliko ga stane v primerjavi s poštenim uporabnikom. Prisotnost je edini signal na seznamu, pri katerem se to razmerje sčasoma ne premika v napadalčevo korist."
+          },
+          {
+            "kind": "h",
+            "text": "Zahteva ostaja izdajateljeva"
+          },
+          {
+            "kind": "p",
+            "text": "Preverjanje, da je bil nekdo nekje, ne pove ničesar o tem, kaj naj tam naredi, in protokol se namenoma ne odloči. Zahtevek je lahko pogojen s sledenjem, prijavo, skeniranjem izdelka na polici, kovanjem na koordinati, nakupom na blagajni ali z ničimer drugim kot prihodom. Preverjanje pod tem je v vsakem primeru enako, kar pomeni, da lahko izdajatelj zahtevo med kampanjami spremeni, ne da bi spremenil karkoli pri jamstvu."
+          },
+          {
+            "kind": "p",
+            "text": "To je pomembno iz razloga, ki ga je lahko spregledati. Distribucijski kanal, ki narekuje poziv k dejanju, ustreza samo kampanjam, za katere je bil zasnovan, in vsak izdajatelj zunaj te oblike mora svojo ponudbo prilagoditi kanalu. Tu se prodaja dokaz, ne lijak."
+          },
+          {
+            "kind": "h",
+            "text": "Česa to ne reši"
+          },
+          {
+            "kind": "p",
+            "text": "Preverjen prihod je dokaz, da je bila naprava na koordinati, ne pa, da je oseba, ki jo drži, želela biti tam ali da se bo kdaj vrnila. Nekdo, ki je plačan, da gre mimo vrat, je resničen prihod in slaba stranka. Protokol naredi prihod drag za ponarejanje in preprost za štetje. Ali se ga je splačalo kupiti, je še vedno trženjsko vprašanje, in nanj ne odgovori nobena veriga."
+          }
+        ]
+      },
+      "proof-of-location": {
+        "index": "04",
+        "eyebrow": "Osnovni gradnik",
+        "title": "Dokaz lokacije",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Dokaz lokacije je trditev, da je bila določena naprava v določenem časovnem oknu znotraj določenega polmera, dovolj verodostojna, da se na njeni podlagi sprosti nekaj vrednega."
+          },
+          {
+            "kind": "p",
+            "text": "Noben posamezen signal sam po sebi ni zaupanja vreden. Surov GPS lahko ponaredi vsaka rootana naprava z lažnim ponudnikom lokacije. Zato protokol zahtevek oceni na podlagi več neodvisnih signalov in zahteva, da je njihova kombinacija skladna, ker je en signal lahko ponarediti, vse skladno pa ne."
+          },
+          {
+            "kind": "h",
+            "text": "Signali, ki jih združujemo"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Položaj GNSS**, surov satelitski položaj s sporočeno natančnostjo ter konstelacija in število satelitov, ki jih ponarejevalci pogosto zgrešijo.",
+              "**Okoliški radijski signali**, nabor bližnjih omrežij Wi-Fi in baznih postaj, primerjan s tem, kar protokol pričakuje na teh koordinatah. Radijska okolja je težko ponarediti in se spreminjajo počasi.",
+              "**Potrditev naprave**, Play Integrity na Androidu ter DeviceCheck ali App Attest na iOS, ki potrdi, da je aplikacija pristna in OS ni ogrožen.",
+              "**Neprekinjenost gibanja**, zapis merilnika pospeška med prejšnjim potrjenim položajem in tem. Trditev, da si se v 90 sekundah premaknil 400 km brez ustreznega profila gibanja, je zavrnjena.",
+              "**Časovna verjetnost**, pri kateri se časi prihoda preverijo glede na čas potovanja, ki izhaja iz tvoje zadnje potrjene lokacije."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Vsak signal prispeva k oceni zaupanja. Sredstva določijo oceno, ki jo zahtevajo: nagrada misije nizke vrednosti lahko sprejme zmerno oceno, drop visoke vrednosti na dogodku z vstopnicami pa lahko zahteva potrditev naprave in ustrezno radijsko okolje. Zahtevki pod pragom so zavrnjeni, ponovljene zavrnitve iste naprave pa tej napravi dvignejo prag."
+          },
+          {
+            "kind": "confidence"
+          },
+          {
+            "kind": "callout",
+            "text": "Cilj ni popoln dokaz, ki ga na potrošniški strojni opremi ni mogoče doseči. Cilj je, da ponaredek stane več, kot je nagrada vredna, kar je isti standard, ki omogoča delovanje kartičnih plačil."
+          },
+          {
+            "kind": "h",
+            "text": "Zakaj so signali uteženi in ne obvezni"
+          },
+          {
+            "kind": "p",
+            "text": "Pravilo, ki zahteva vsak signal, je pravilo, ki zavrača poštene uporabnike. Podzemne postaje izgubijo GNSS. Nove stavbe imajo radijska okolja, ki jih zemljevid še ni videl. Telefon, ki zaostaja za dve različici OS, lahko pade pri potrditvi iz razlogov, ki nimajo nobene zveze z goljufijo. Uteževanje sredstvu omogoča, da pove, koliko dokazov si njegova vrednost zasluži, pošten zahtevek pa preživi en slab signal, ne da bi ponarejen preživel štiri."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Privzeti polmer prevzema",
+                "value": "30 m"
+              },
+              {
+                "label": "Nastavljiv razpon",
+                "value": "5 m do 500 m na sredstvo"
+              },
+              {
+                "label": "Običajna potrditev",
+                "value": "Pod eno sekundo na verigi poravnave"
+              },
+              {
+                "label": "Potrditev naprave",
+                "value": "Play Integrity, App Attest"
+              },
+              {
+                "label": "Ravnanje z zavrnitvami",
+                "value": "Beleži se za vsako napravo in ji dvigne prag"
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "index": "05",
+        "eyebrow": "Mehanika",
+        "title": "Kaj se v resnici zgodi, ko nekaj prevzameš",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Prejšnje poglavje opisuje dokaze. To sledi enemu zahtevku od trenutka, ko sežeš po sredstvu, do trenutka, ko je v tvoji denarnici, ker je v vrstnem redu korakov večina odločitev o zasnovi."
+          },
+          {
+            "kind": "timeline"
+          },
+          {
+            "kind": "h",
+            "text": "Meja, ki šteje"
+          },
+          {
+            "kind": "p",
+            "text": "Poglej, kje stopnje zamenjajo napravo. Vse občutljivo se zgodi v prvih treh: položaj, pregled radijskega okolja, sled gibanja, potrditev naprave. Nič od tega ne zapusti tvojega telefona v surovi obliki. K preverjevalcu gre podpisan zahtevek, od preverjevalca na verigo pa podpisano potrdilo, da je zahtevek dosegel prag."
+          },
+          {
+            "kind": "p",
+            "text": "Zato je preverjanje zunaj verige. To ni kompromis zaradi razširljivosti. Točkovanje na verigi bi pomenilo objavo vhodnih podatkov, ti pa so opis tega, kje stojiš in katera brezžična omrežja so okoli tebe."
+          },
+          {
+            "kind": "h",
+            "text": "Kaj se zgodi, ko ne uspe"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Pod pragom**: zahtevek je zavrnjen, sredstvo ostane na zemljevidu in na verigo se nič ne zapiše. Zavrnitev se zabeleži za napravo.",
+              "**Ponovljene zavrnitve**: zahtevana ocena za to napravo naraste. Naprava, ki je v eni uri padla pri šestih zahtevkih, se ne obravnava enako kot tista, ki ni padla pri nobenem.",
+              "**Neuspešna poravnava**: zahtevek se zadrži in poskusi znova, ne zavrže. Osvojeno in nedostavljeno sredstvo je napaka, ki stane zaupanje, zato je čakalna vrsta zasnovana tako, da zataknjeno izplačilo umakne na stran, namesto da bi blokiralo tista za njim.",
+              "**Potek med zahtevkom**: sredstva imajo časovno okno, in zahtevek, ki pride po njegovem zaprtju, je zavrnjen tudi s popolno oceno. Okno je del sredstva, ne pogoj omrežja."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Zahtevek je zaklep, ne poizvedba. Dvema, ki v istem trenutku sežeta po zadnji enoti sredstva, ne smemo obema reči, da sta jo dobila, zato preverjanje prevzame zaklep, preden karkoli odloči."
+          }
+        ]
+      },
+      "architecture": {
+        "index": "06",
+        "eyebrow": "Arhitektura",
+        "title": "Kako se plasti povezujejo",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokol ima štiri plasti. O vsaki je mogoče razmišljati in jo zamenjati posebej."
+          },
+          {
+            "kind": "stack"
+          },
+          {
+            "kind": "p",
+            "text": "Ločitev je najpomembnejša na meji med lokacijo in poravnavo. Preverjanje lokacije je verjetnostno in poteka zunaj verige, ker je odvisno od podatkov senzorjev, ki nimajo kaj iskati v javnosti. Na verigo pride podpisano potrdilo, da je zahtevek dosegel prag, ne tvoja zgodovina gibanja."
+          },
+          {
+            "kind": "h",
+            "text": "Kaj se hrani in kje"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Na verigi**: definicije sredstev, njihove koordinate in polmeri, zapisi zahtevkov in prenosi žetonov. Javno in trajno.",
+              "**Zunaj verige**: surove meritve senzorjev, radijski prstni odtisi in potrdila naprav. Hranijo se samo, dokler je treba oceniti zahtevek in razrešiti spore, nato se zavržejo.",
+              "**Na napravi**: tvoja zgodovina položajev in podatki sider AR. Ostanejo na tvojem telefonu, razen če jih izrecno deliš."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Zakaj plast poravnave ni fiksna"
+          },
+          {
+            "kind": "p",
+            "text": "Zahteva je za verigo nenavadna: zelo veliko transakcij, zelo nizka vrednost na transakcijo in potrditev, dovolj hitra, da je človek na ulici ne opazi. Nekdo, ki pobira nagrado, vredno dvajset centov, ne more plačati deset centov, da jo prejme, in ne bo trideset sekund stal pri miru in čakal. To zaradi stroškov izloči velik del ponudbe, preostanek pa zaradi zakasnitve. Izloči pa jih kot zahtevo, ne kot enkratno izbiro verige, okoli katere bi vse zgradili."
+          },
+          {
+            "kind": "p",
+            "text": "Zato je poravnava stvar nastavitve. Omrežje je vrstica s svojo končno točko, raziskovalcem in izvornim žetonom; sredstvo nosi omrežja, na katerih obstaja, s svojim naslovom pogodbe in decimalkami na vsakem; denarnica pa je ena od dveh družin naslovov, ne ena na verigo, ker si vsa omrežja EVM delijo naslov. Izdajatelj financira kampanjo v žetonu, ki ga že ima, zahtevek pa se poravna tam, kjer ta žeton živi. Dodajanje omrežja je vrstica, ne nova izdaja."
+          },
+          {
+            "kind": "p",
+            "text": "Kompromis je vreden omembe. Verige se ustavijo, in ustavljena veriga pomeni zahtevke v čakalni vrsti. Poravnava se obravnava kot korak, ki lahko ne uspe in se ponovi, ne kot korak, ki vedno uspe, kar je prava zasnova na katerem koli omrežju in na hitrem ni neobvezna. Razpršitev na več omrežij tega tveganja ne odpravi. Prepreči pa, da bi izpad enega omrežja postal izpad celotnega protokola, kar je skromnejša trditev in iskrena."
+          },
+          {
+            "kind": "h",
+            "text": "Kaj teče kje"
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Položaj, senzorji, sidra AR",
+                "value": "Na napravi, nikoli naloženo v surovi obliki"
+              },
+              {
+                "label": "Točkovanje in prag",
+                "value": "Preverjevalec protokola, zunaj verige"
+              },
+              {
+                "label": "Definicije sredstev in zahtevki",
+                "value": "Veriga poravnave, javno"
+              },
+              {
+                "label": "Mediji in podobe kovancev",
+                "value": "Predpomnjeno na napravi, strežene iz objektne shrambe"
+              },
+              {
+                "label": "Napovedi spawnov",
+                "value": "Odloča strežnik, nikoli jih ne razglasi odjemalec"
+              }
+            ]
+          }
+        ]
+      },
+      "seekar": {
+        "index": "07",
+        "eyebrow": "Aplikacija",
+        "title": "Seekprotocol, uporabniška površina",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol je kraj, kjer protokol postane nekaj, kar lahko človek uporablja, ne da bi vedel kar koli od zgoraj napisanega. Odpre se z zemljevidom stvari v bližini, ko pa dvigneš kamero, pogon AR ta sredstva izriše na mestu."
+          },
+          {
+            "kind": "h",
+            "text": "Kaj aplikacija počne"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Odkrivaj**: zemljevid dropov, misij in dogodkov v bližini v živo, filtriran po tem, kar te res zanima.",
+              "**Zbiraj**: usmeriš kamero, vidiš sredstvo, zasidrano v svetu, sežeš ponj in ga vzameš. Poravnava poteka v ozadju.",
+              "**Vodi**: spremljevalec z umetno inteligenco, ki prek kamere bere okolico, predlaga poti, razloži, kaj gledaš, in se prilagaja tvojemu načinu igranja.",
+              "**Hrani**: vgrajena denarnica, ustvarjena iz prijave z družbenim računom, zato novega uporabnika nihče ne prosi, naj si zapiše seed phrase, preden lahko karkoli pobere."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Omejitev pri začetku vodi več odločitev o zasnovi kot katera koli druga. Večina ljudi, ki bodo kdaj uporabljali Seekprotocol, ni nikoli imela zasebnega ključa. Če se v prvih tridesetih sekundah pojavi beseda »mnemonik«, odidejo. Zato se denarnica ustvari tiho, kdor želi skrbništvo, pa jo lahko pozneje izvozi."
+          },
+          {
+            "kind": "h",
+            "text": "Pot do dropa"
+          },
+          {
+            "kind": "p",
+            "text": "Sredstva so od nekaj deset do nekaj sto metrov stran, kar je razdalja, pri kateri zadošča zemljevid, pot pa je odveč. Ko označiš spawn, se nariše ravna črta od tebe do njega. Črta je namenoma črtkana: je smer, ne pot, o stavbah ne ve ničesar, in na tej razdalji je smer običajno kar pot. Izbriše se, ko si znotraj dosega ulova, kjer prevzame krog."
+          },
+          {
+            "kind": "p",
+            "text": "Spawni potečejo v eni uri. To je odločitev igre s posledico za protokol: oznaka, obnovljena ob naslednjem zagonu, bi kazala v prazno, zato je aplikacija ne shranjuje."
+          },
+          {
+            "kind": "h",
+            "text": "Sidranje in čemu tu služi AR"
+          },
+          {
+            "kind": "p",
+            "text": "Pogled skozi kamero ni okras in ni niti preverjanje. Naredi dve stvari. Sredstvo postavi na verjeten kraj v svetu, da je seganje ponj dejanje in ne pritisk gumba, signalu gibanja pa da nekaj, s čimer mora biti skladen, ker se človek, ki hodi okoli zasidranega predmeta, giblje kot človek, ponarejevalec z mirujočim telefonom pa ne."
+          }
+        ]
+      },
+      "play": {
+        "index": "08",
+        "eyebrow": "Krog igre",
+        "title": "Kaj nekoga drži v gibanju",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokol, ki plačuje za prihod, še vedno potrebuje razlog za prvi prihod. Nihče ne prehodi štirih ulic zaradi mehanizma. Plast igre je stran povpraševanja v omrežju in je zasnovana z enako iskrenostjo kot preverjanje: verjetnosti so objavljene, izračunane so na strežniku, odjemalca pa nikoli ne vprašamo, kaj se je zgodilo."
+          },
+          {
+            "kind": "h",
+            "text": "Ulov"
+          },
+          {
+            "kind": "p",
+            "text": "Ko prideš do sredstva, ti ga to še ne preda. Medtem ko držiš tap, teče krog naboja, kakovost tega naboja pa vpliva na množitelj. Nato strežnik vrže kocko. Na spawn imaš dva poskusa, ponovni pa je vreden 0,65 prvega, kar je številka, zaradi katere se druga priložnost zdi kot druga priložnost in ne kot tolažba."
+          },
+          {
+            "kind": "catch"
+          },
+          {
+            "kind": "h",
+            "text": "Pogoji, ki jih običajno nihče ne objavi"
+          },
+          {
+            "kind": "p",
+            "text": "Večina iger skriva modifikatorje. Tu za to ni razloga, ker je zanimiva lastnost ta, da spretnost pomaga, a nikoli ne odloči. Krog naboja je množitelj med 0,85 in 1,0, zato je popoln tap pri legendarnem še vedno legendarni, pokvarjen tap pri navadnem pa najverjetneje še vedno navaden."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Bonus ravni**: pavšalnih 0,3 točke možnosti na raven igralca, čez deset ravni od Iskalca do Legende.",
+              "**Hladen niz**: časovnik usmiljenja, vreden 2 točki na zaporedni zgrešen poskus, največ 12, ki velja za ponovni poskus in med kovanci.",
+              "**Kazen za niz**: 4 točke na zaporedni uspeh na istem kovancu, največ 20, zato je izkoriščanje ene točke spawnov vse slabše, ne boljše.",
+              "**Bonus klana**: največ 5 točk, ki si jih prisluži klan, ne igralec.",
+              "**Powerupi**: kupljeni ali osvojeni, ki pomnožijo osnovno možnost, preden se prišteje vse ostalo."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Spodnja meja je 5 %, zgornja 95 %. Nič se ne sešteje v gotovost in nič v zid."
+          },
+          {
+            "kind": "h",
+            "text": "Napredovanje in čemu služi"
+          },
+          {
+            "kind": "p",
+            "text": "Ravni, značke, klani, dvanajsturni izzivi in tedenski cilji obstajajo, da da hoji obliko, daljšo od enega dropa. Opravljajo pa tudi delo za protokol: igralec z ravnjo, klanom in nizom ima račun z zgodovino, zgodovino pa je v velikem obsegu drago ponarediti. Napredovanje je drugi strošek, naložen farmerju, ki poštenega igralca ne stane nič, ker bi tako ali tako igral."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Poskusi na spawn",
+                "value": "2"
+              },
+              {
+                "label": "Množitelj ponovitve",
+                "value": "×0,65"
+              },
+              {
+                "label": "Razpon kroga naboja",
+                "value": "×0,85 do ×1,00"
+              },
+              {
+                "label": "Spodnja in zgornja meja možnosti",
+                "value": "5 % in 95 %"
+              },
+              {
+                "label": "XP ob ulovu",
+                "value": "30 do 140"
+              },
+              {
+                "label": "XP ob zgrešenem poskusu",
+                "value": "5 do 15"
+              },
+              {
+                "label": "Ravni",
+                "value": "Deset, od Iskalca do Legende"
+              }
+            ]
+          }
+        ]
+      },
+      "creators": {
+        "index": "09",
+        "eyebrow": "Stran ponudbe",
+        "title": "Kdo postavlja sredstva",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Omrežje na podlagi lokacije je brez vrednosti, če so lokacije prazne. Zato protokol postavljanje sredstev obravnava kot polnovreden izdelek, ne kot notranje orodje."
+          },
+          {
+            "kind": "h",
+            "text": "Tri vrste izdajateljev"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Blagovne znamke in prizorišča** prek poslovnega portala postavljajo ponudbe v svojih prostorih in merijo, kdo je res prišel. Enota, ki jo kupijo, je preverjen obisk, ne prikaz.",
+              "**Projekti žetonov in skupnosti NFT** razdeljujejo ljudem, ne denarnicam, pri čemer je geografija filter, ki ga izkoriščanje ne more poceni premagati.",
+              "**Organizatorji dogodkov** festival, tekmo ali konferenco spremenijo v zemljevid za prevzem za čas dogodka, s sredstvi, ki potečejo ob njegovem koncu."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Vsi trije uporabljajo isti graditelj kampanj: postavi oznako, nastavi polmer, izberi sredstvo in količino, nastavi prag zaupanja in časovno okno, financiraj, objavi. Brez integracijskega dela in brez pisanja pogodb."
+          },
+          {
+            "kind": "callout",
+            "text": "Za prizorišče je pomembna metrika cena na preverjen prihod. To je prva številka obiska v digitalnem trženju, ki se meri pri vratih in ne sklepa iz ankete."
+          },
+          {
+            "kind": "calculator"
+          },
+          {
+            "kind": "h",
+            "text": "Problem gostote"
+          },
+          {
+            "kind": "p",
+            "text": "Ponudba in povpraševanje sta tu geografska, zato so običajni nasveti za tržnice neuporabni. Tisoč sredstev, enakomerno razporejenih po državi, je povsod prazen zemljevid. Istih tisoč v enem mestu je razlog, da greš od doma. Cene postavitve so zato utežene glede na povpraševanje po območju, ne pavšalne, zato je zasedba prenasičene nakupovalne ulice dražja od mirne, protokol pa subvencionira ulice, ki potrebujejo promet, namesto tistih, ki ga že imajo."
+          }
+        ]
+      },
+      "token": {
+        "index": "10",
+        "eyebrow": "Žeton",
+        "title": "$SEEK in čemu služi",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "$SEEK je sredstvo protokola za poravnavo in usklajevanje. Obstaja, ker mora omrežje prenašati vrednost med stranmi, ki se ne poznajo, na primer blagovna znamka v eni državi financira nagrado, ki jo prevzame neznanec v drugi, in ker bi se moral strošek postavljanja sredstev prilagajati povpraševanju po uporabljenih krajih."
+          },
+          {
+            "kind": "h",
+            "text": "Uporabnost"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Financiranje kampanj**: izdajatelji nagrade izražajo in financirajo v $SEEK.",
+              "**Provizije za postavitev**: provizija na postavljeno sredstvo, utežena po polmeru, trajanju in povpraševanju po tem območju.",
+              "**Staking za prednost**: vloženi $SEEK izdajatelju dvigne prednost pri postavitvi, ko se več kampanj poteguje za iste koordinate.",
+              "**Nagrade**: večina provizij protokola teče nazaj k ljudem, ki hodijo.",
+              "**Upravljanje**: zajema spremembe parametrov, razporeditev zakladnice in prage zaupanja za zahtevke visoke vrednosti."
+            ]
+          },
+          {
+            "kind": "economy"
+          },
+          {
+            "kind": "tokenomics"
+          },
+          {
+            "kind": "h",
+            "text": "Ponudba skozi čas"
+          },
+          {
+            "kind": "p",
+            "text": "Grafikon razporeditve pove, kdo ima kaj, ne pa kdaj. Spodnji urnik je uporabnejša slika, ker tveganje pri žetonu redko tiči v razdelitvi, temveč v obdobju zadržanja (cliff)."
+          },
+          {
+            "kind": "vesting"
+          },
+          {
+            "kind": "p",
+            "text": "Namen zasnove je, da tok provizij sledi resnični dejavnosti, ne špekulaciji: protokol zasluži, ko so sredstva postavljena in prevzeta, kar se zgodi le, ko je nekdo pripravljen plačati za preverjen obisk."
+          },
+          {
+            "kind": "h",
+            "text": "Česa žeton namenoma ne počne"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Ne določa menjalnega razmerja med ujeto igralno enoto in žetonom. Igra vrednoti ulov, trg vrednoti žeton, protokol pa se ne pretvarja, da ju povezuje.",
+              "Za igranje ni potreben. Lovljenje, XP in izzivi so brezplačni, igralec, ki se žetona nikoli ne dotakne, pa še vedno ustvarja prihode, za katere plačuje izdajatelj.",
+              "Postavitve ne veže na najmanjše imetje. Staking kupi prednost, ko kampanje tekmujejo, ne pa pravice do objave."
+            ]
+          }
+        ]
+      },
+      "revenue": {
+        "index": "11",
+        "eyebrow": "Poslovni model",
+        "title": "Kako protokol služi in od koga",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Bela knjiga, ki opisuje žeton in ne posla, opisuje pol sistema. Obstajata dve liniji prihodkov, ki prihajata z nasprotnih strani omrežja, kar je namerno: nobena stran sama ga ne bi ohranjala pri življenju."
+          },
+          {
+            "kind": "h",
+            "text": "Postavitev, ki jo plačajo izdajatelji"
+          },
+          {
+            "kind": "p",
+            "text": "Glavna linija. Izdajatelj financira nagrade in povrhu plača provizijo za postavitev, uteženo po tem, koliko območja sredstvo zaseda, kako dolgo in kako oblegano je to območje. To je provizija, ki raste z vrednostjo, ki jo ustvari omrežje, ker se zaračuna za tisto, kar izdajatelji dejansko kupujejo, torej prihod."
+          },
+          {
+            "kind": "h",
+            "text": "Pass in trgovina, ki ju plačajo igralci"
+          },
+          {
+            "kind": "p",
+            "text": "Neobvezno in namenoma omejeno. Sezonski pass traja devetdeset dni in utež spawnov nagne proti redkejšim kovancem, vključena pa sta tedenski redki prevzem in razkritje. Boosti se prodajajo posebej, in noben ne kupi boljših možnosti na kovancu: razkrijejo, kaj je vprašaj, razširijo doseg ulova, pripeljejo več kovancev v bližino, pomnožijo XP, zadržijo zgrešen kovanec, omogočijo en ulov od daleč ali dodajo škatlo kart."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Season Pass",
+                "value": "9,95 € na 90-dnevno sezono"
+              },
+              {
+                "label": "Shiba (3 razkritja), This Is Fine",
+                "value": "0,99 € vsak"
+              },
+              {
+                "label": "XP Boost, Chill Guy, Pump It, Cash",
+                "value": "1,49 € vsak"
+              },
+              {
+                "label": "Fitness, Diamond Hands",
+                "value": "1,99 € vsak"
+              },
+              {
+                "label": "Spawn Magnet, Spawn Lure",
+                "value": "2,49 € vsak"
+              }
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Osnovno lovljenje, XP, izzivi in dosežki na platformah ostanejo brezplačni, za vedno. Plačljiva stopnja, ki bi zaklenila krog igre, bi pokvarila edino, kar izdajatelji kupujejo, torej ljudi, ki pridejo."
+          },
+          {
+            "kind": "h",
+            "text": "Zakaj je ta razdelitev prava"
+          },
+          {
+            "kind": "p",
+            "text": "Poraba igralcev je elastična, sezonska in omejena s tem, koliko je človek pripravljen plačati za hobi. Poraba izdajateljev je postavka trženja, ki se presoja glede na ceno na prihod, s katero je mogoče primerjati resnično alternativo. Prva zgodaj drži luči prižgane, ko je igralcev več kot kampanj. Druga je tisto, kar posel postane, in deluje le, če se prva nikoli ne sprevrže v pay-to-win, ker omrežje plačujočih igralcev, ki ujamejo vse, poroča prihode, ki za prizorišče niso vredni nič."
+          }
+        ]
+      },
+      "governance": {
+        "index": "12",
+        "eyebrow": "Upravljanje",
+        "title": "Kdo odloča o številkah",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ta protokol ima nenavadno veliko nastavljivih konstant: meje polmera, prage zaupanja, uteževanje provizij za postavitev, delež provizij, vrnjen iskalcem, in samo lestvico ulova. Vsaka od njih je politična odločitev, preoblečena v nastavitveno vrednost, in pretvarjanje, da ni tako, je način, kako protokoli končajo pod upravo tistega, ki je zadnji urejal datoteko."
+          },
+          {
+            "kind": "h",
+            "text": "Postopni položaj, iskreno povedano"
+          },
+          {
+            "kind": "p",
+            "text": "Upravljanje ni aktivno. Parametre danes določa osrednja ekipa, spreminjajo pa se z migracijami, ki so zabeležene in pregledljive. Tega ne bomo opisovali kot decentralizirano, ker ni."
+          },
+          {
+            "kind": "p",
+            "text": "Razlog za zamik ni nepripravljenost. Glasovanje o ekonomiji brez prometa je gledališče: udeležba je nizka, odloča peščica imetnikov, odločitve pa zadevajo parametre, za presojo katerih nihče nima dovolj podatkov. Upravljanje postane smiselno, ko obstaja resničen tok provizij, ker ima takrat sprememba parametra merljivo posledico, o kateri se je mogoče prepirati."
+          },
+          {
+            "kind": "h",
+            "text": "O čem se bo odločalo in o čem ne"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Upravljano**: uteževanje provizij, delež provizij protokola za iskalce, razporeditev zakladnice, meje polmera in pragi zaupanja, ki so na voljo sredstvom visoke vrednosti.",
+              "**Upravljano z zamikom**: vse, kar spremeni vrednost že postavljenih sredstev. Kampanja, financirana po enem ceniku provizij, naj se po njem tudi konča.",
+              "**Neupravljano**: zaveze glede zasebnosti v štirinajstem poglavju. Omejitve hrambe in zavrnitev objave podatkov o gibanju niso parametri, glasovanje pa ni legitimen način, da bi jih oslabili.",
+              "**Neupravljano**: izidi posameznih zahtevkov. Zavrnjen zahtevek je stvar reševanja sporov, ne glasovanja."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Sistem upravljanja, ki lahko izglasuje odpravo zasebnosti lastnih uporabnikov, ni zaščita, ampak napadalna površina s sklepčnostjo."
+          }
+        ]
+      },
+      "security": {
+        "index": "13",
+        "eyebrow": "Tveganje",
+        "title": "Napadi, omejitve in česa ne trdimo",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Protokol, ki ljudi plačuje za to, da so nekje, ljudi vabi, da lažejo o tem, da so nekje. Natančnost glede napadov je uporabnejša od trditve, da je sistem varen."
+          },
+          {
+            "kind": "h",
+            "text": "Napadi, pred katerimi se branimo"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Ponarejanje GPS**: omiljeno z zahtevo, da radijsko okolje in sled gibanja potrdita položaj, ter s potrditvijo naprave, ki zazna spremenjene različice OS.",
+              "**Izkoriščanje Sybil**: omiljeno s fizičnim stroškom potovanja in z omejitvami zahtevkov na napravo znotraj polmera in časovnega okna.",
+              "**Napadi s posredovanjem**, pri katerih resnična naprava na lokaciji podpiše za oddaljenega uporabnika: omiljeni z vezavo potrditve na namestitev aplikacije in sejo ter z omejevanjem števila zahtevkov na napravo.",
+              "**Farme emulatorjev**: omiljene s potrditvijo naprave, pri kateri emulatorji padejo, in s sledmi gibanja, ki so statistično razločljive od resnične hoje.",
+              "**Spawni, ki jih razglasi odjemalec**: preprečeni, ne le omiljeni. Samo strežnik napove, kaj obstaja in kje, zato lahko spremenjen odjemalec laže o tem, kaj vidi, a ne pridobi ničesar.",
+              "**Dvojni zahtevki**: preprečeni s prevzemom zaklepa, preden se zahtevek oceni, zato dvema, ki sežeta po zadnji enoti, ni mogoče obema reči, da sta jo dobila."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Omejitve, ki jih sprejemamo"
+          },
+          {
+            "kind": "p",
+            "text": "Dovolj odločen napadalec s spremenjeno strojno opremo in fizično prisotnostjo na eni lokaciji lahko z nje iztisne več vrednosti, kot bi jo pošten uporabnik. Škodo omejimo z omejitvami na lokacijo, namesto da bi se pretvarjali, da je to nemogoče. Določanje položaja v zaprtih prostorih ostaja bistveno manj natančno kot zunaj, zato sredstva v zaprtih prostorih uporabljajo širše polmere in se bolj zanašajo na radijske prstne odtise. In nobena potrošniška naprava ne more dokazati, da je bil prisoten človek in ne naprava: telefon v dostavnem kombiju se še vedno giblje kot telefon v žepu."
+          },
+          {
+            "kind": "h",
+            "text": "Tveganja, ki niso napadi"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "**Odvisnost od platform**. Potrditev naprave dajeta Apple in Google. Sprememba pravil pri katerem koli od njiju bi lahko čez noč oslabila najmočnejši signal v sklopu, in ni različice tega, ki bi šla mimo operacijskega sistema.",
+              "**Razpoložljivost verige**. Ustavljena veriga pomeni zahtevke v čakalni vrsti. Protokol poskuša znova, namesto da bi zavrgel, a človek, ki stoji na ulici, ponovnega poskusa ne doživi kot uspeha.",
+              "**Fizična varnost**. Nagrajevanje ljudi za odhod na kraje ljudi postavlja na kraje. Sredstva so postavljena na cestna križišča in ne znotraj tlorisov stavb, dropi visoke vrednosti se izogibajo zasebni lastnini, aplikacija pa vsebuje varnostno opozorilo. To je omejitev zasnove, ne izjava o omejitvi odgovornosti."
+            ]
+          },
+          {
+            "kind": "callout",
+            "text": "Gradimo ekonomsko odvračanje, ne kriptografskega jamstva. Kjer se ju zamenjuje, uporabniki utrpijo škodo."
+          }
+        ]
+      },
+      "privacy": {
+        "index": "14",
+        "eyebrow": "Zasebnost",
+        "title": "Podatki o lokaciji so najobčutljivejši podatki, kar jih obstaja",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Zapis o tem, kam nekdo hodi, razkrije njegov dom, delo, zdravje, vero in odnose. Graditi omrežje na zahtevkih lokacije pomeni sprejeti odgovornost za to, odgovorna zasnova pa je, da jih hranimo čim manj."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Neprekinjeno sledenje nikoli ni potrebno. Aplikacija zahteva položaj, ko poskusiš prevzeti, ne v ozadju.",
+              "Surovi podatki senzorjev in radijski podatki se uporabijo za točkovanje zahtevka in se nato po kratkem roku hrambe zavržejo.",
+              "Na verigo se zapiše, da je zahtevek na javni koordinati uspel, kar je enaka informacija, kot če trgovina ve, da je nekdo unovčil bon.",
+              "Tvoja zgodovina gibanja ostane na tvoji napravi. Protokol je ne potrebuje in je noče.",
+              "Izdajatelji prejmejo skupna števila, nikoli posameznih sledi."
+            ]
+          },
+          {
+            "kind": "h",
+            "text": "Problem, ki ga nismo rešili"
+          },
+          {
+            "kind": "p",
+            "text": "Ker so zapisi zahtevkov zaradi narave verige javni in trajni, lahko odločen opazovalec poveže zahtevke iste denarnice na različnih lokacijah. To je resnična slabost, neločljivo povezana s poravnavo na javni knjigi. Uporabniki, ki se temu želijo izogniti, naj za različne okoliščine uporabljajo ločene denarnice, aplikacija pa to olajša, namesto da bi to skrila, vendar privzeta nastavitev, pri kateri mora uporabnik vedeti za problem, ni rešitev."
+          },
+          {
+            "kind": "callout",
+            "text": "Iskren povzetek: hranimo čim manj, tega, kar hranimo, ne prodajamo, obstaja pa en napad s povezovanjem javnega zapisa, ki ga lahko zmanjšamo, ne pa odpravimo."
+          }
+        ]
+      },
+      "compliance": {
+        "index": "15",
+        "eyebrow": "Pristojnost",
+        "title": "Regulacija in kje smo",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Ta protokol hkrati zadevajo trije režimi, kar je nenavadno in vredno izrecne omembe, namesto da bi to prepustili opombi."
+          },
+          {
+            "kind": "h",
+            "text": "Varstvo podatkov"
+          },
+          {
+            "kind": "p",
+            "text": "Lokacija je po večini sodobne zakonodaje o varstvu podatkov blizu posebnih vrst podatkov, protokol pa je zgrajen po najstrožji razlagi, ne po najugodnejši. Položaj se zbira za navedeni namen v trenutku zahtevka, hrani samo toliko časa, kot to zahtevata točkovanje in reševanje sporov, in se nikoli ne združi v profil gibanja. Kjer režim daje pravico do izbrisa, je mogoče izbrisati zapis zunaj verige; zapisa zahtevka na verigi ni mogoče, kar je omejitev knjige, ki jo razkrivamo in ne prikrivamo."
+          },
+          {
+            "kind": "h",
+            "text": "Razvrstitev žetona"
+          },
+          {
+            "kind": "p",
+            "text": "$SEEK je zasnovan kot uporabno sredstvo in sredstvo za usklajevanje, uporabnost, opisana v desetem poglavju, pa je resnična in ne okrasna. To je stališče zasnove, ne pravni sklep. Razvrstitev se med pristojnostmi razlikuje, se sčasoma spreminja in je bela knjiga ne more urediti s trditvijo. Razpoložljivost je zato omejena, kjer to zahtevajo lokalna pravila."
+          },
+          {
+            "kind": "h",
+            "text": "Nagrade, naključje in meja z igrami na srečo"
+          },
+          {
+            "kind": "p",
+            "text": "Ulov vključuje met, kar ga postavlja blizu meje, ki se razlikuje od države do države. Dve lastnosti ga v večini režimov držita na pravi strani in ju ohranjamo namenoma: sodelovanje ne stane nič, plačljivi predmeti pa prilagajajo verjetnosti in stopnje, niso pa stave s spremenljivim izplačilom. Pass kupi utež, boost kupi množitelj; nobeden ni vložek, ki ga je mogoče izgubiti. Kjer ga pristojnost razlaga drugače, plačljive stopnje zadržimo, namesto da bi se prepirali."
+          },
+          {
+            "kind": "specs",
+            "rows": [
+              {
+                "label": "Osebni podatki zunaj verige",
+                "value": "Izbrisljivi na zahtevo"
+              },
+              {
+                "label": "Zapis zahtevka na verigi",
+                "value": "Trajen, kot tak razkrit"
+              },
+              {
+                "label": "Starostna omejitev",
+                "value": "Uporabi se ob registraciji, uveljavljena za plačljive predmete"
+              },
+              {
+                "label": "Plačljivi predmeti",
+                "value": "Zadržani v pristojnostih, ki jih razvrščajo kot stave"
+              }
+            ]
+          }
+        ]
+      },
+      "roadmap": {
+        "index": "16",
+        "eyebrow": "Smer",
+        "title": "Kaj je zgrajeno in kaj sledi",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Seekprotocol deluje na iOS in Androidu z dropi na podlagi lokacije, upodabljanjem AR in družbeno denarnico. Sklop preverjanja trenutno uporablja signale GNSS, potrditve naprave in neprekinjenosti gibanja; radijski prstni odtisi se uvajajo postopoma. Potrditev naprave se uveljavlja za stikalom, kar je iskreno stanje: pot zavrnitve je zgrajena, stikalo za uveljavljanje pa še ni vklopljeno za vse površine."
+          },
+          {
+            "kind": "p",
+            "text": "Graditelj kampanj povleci in spusti je zgrajen. Naslednji je samopostrežni poslovni portal, ki postavitev odpre širše od upravljanih partnerstev, in analitika prihodov, ki spada zraven. Ob tem so še dogodek ustvarjanja žetona, način za dogodke v živo, sezone in skeniranje predmetov. Upravljanje sledi, ko bo dovolj resničnega toka provizij, da bodo odločitve o parametrih smiselne, iz razlogov, pojasnjenih v dvanajstem poglavju."
+          },
+          {
+            "kind": "h",
+            "text": "Česa ne obljubljamo"
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Datuma za upravljanje. Odvisno je od prometa, promet pa ni datum.",
+              "Enake natančnosti v zaprtih prostorih. To je težak problem, iskren odgovor pa so v bližnji prihodnosti širši polmeri v zaprtih prostorih.",
+              "Nove verige zaradi nje same. Zahteve glede zakasnitve in stroškov v šestem poglavju so ozke, dodajanje verige, ki jih ne izpolnjuje, pa bi bila trženjska odločitev, ne tehnična."
+            ]
+          },
+          {
+            "kind": "p",
+            "text": "Celotna razčlenitev po fazah je na strani načrta razvoja, ki jo sproti posodabljamo, ko stvari izidejo."
+          }
+        ]
+      },
+      "glossary": {
+        "index": "17",
+        "eyebrow": "Referenca",
+        "title": "Slovar",
+        "blocks": [
+          {
+            "kind": "p",
+            "text": "Izrazi, uporabljeni v tem dokumentu, s pomenom, ki ga imajo tukaj, in ne s tistim, ki ga imajo na splošno."
+          },
+          {
+            "kind": "glossary"
+          }
+        ]
+      }
+    }
+  },
+  "allocations": {
+    "community": {
+      "label": "Nagrade skupnosti",
+      "note": "Iskalci jih prislužijo z zbiranjem in misijami"
+    },
+    "ecosystem": {
+      "label": "Ekosistem in partnerji",
+      "note": "Subvencije kampanj, vključevanje prizorišč, integracije"
+    },
+    "team": {
+      "label": "Ekipa in sodelavci",
+      "note": "4-letno pridobivanje, 12-mesečno obdobje zadržanja"
+    },
+    "treasury": {
+      "label": "Zakladnica",
+      "note": "Upravljana rezerva za razvoj protokola"
+    },
+    "liquidity": {
+      "label": "Likvidnost",
+      "note": "Globina trga na borzah in na verigi"
+    },
+    "backers": {
+      "label": "Zgodnji vlagatelji",
+      "note": "2-letno pridobivanje, 6-mesečno obdobje zadržanja"
+    }
+  },
+  "tokenFacts": {
+    "ticker": {
+      "label": "Oznaka",
+      "value": "$SEEK"
+    },
+    "chain": {
+      "label": "Veriga",
+      "value": "Solana (SPL), poravnava na kateri koli verigi"
+    },
+    "supply": {
+      "label": "Skupna ponudba",
+      "value": "1.000.000.000"
+    },
+    "emission": {
+      "label": "Izdajanje",
+      "value": "Fiksno, brez nadaljnjega kovanja"
+    }
+  },
+  "glossary": {
+    "proof-of-location": {
+      "term": "Dokaz lokacije",
+      "definition": "Trditev, da je bila naprava v danem časovnem oknu znotraj danega polmera, ocenjena na podlagi več neodvisnih signalov in dovolj verodostojna, da se na njeni podlagi sprosti vrednost. Verjetnostna, nikoli absolutna."
+    },
+    "confidence-score": {
+      "term": "Ocena zaupanja",
+      "definition": "Skupni rezultat točkovanja signalov zahtevka. Vsako sredstvo določi oceno, ki jo zahteva, zato si nagrada misije in drop z vstopnico lahko delita preverjevalca, ne pa tudi praga."
+    },
+    "claim-radius": {
+      "term": "Polmer prevzema",
+      "definition": "Razdalja od koordinat sredstva, znotraj katere ga je mogoče vzeti. Privzeto 30 m, nastavljivo od 5 m do 500 m, in največji vzvod, ki ga ima izdajatelj nad stroškom in pomenom."
+    },
+    "drop": {
+      "term": "Drop",
+      "definition": "Sredstvo, postavljeno na koordinate, ki čaka na prevzem. Ima količino, časovno okno, prag zaupanja in polmer."
+    },
+    "spawn": {
+      "term": "Spawn",
+      "definition": "Drop, kot ga prikaže igra: napove ga strežnik, viden je na zemljevidu, poteče v eni uri in omogoča dva poskusa ulova."
+    },
+    "attestation": {
+      "term": "Potrditev naprave",
+      "definition": "Podpisana izjava operacijskega sistema, da je aplikacija pristna in naprava nespremenjena. Play Integrity na Androidu, App Attest na iOS. Najmočnejši signal v sklopu in tisti, ki ga protokol ne nadzoruje."
+    },
+    "radio-fingerprint": {
+      "term": "Radijski prstni odtis",
+      "definition": "Nabor omrežij Wi-Fi in baznih postaj, vidnih s položaja, primerjan s tem, kar bi tam moralo biti vidno. Počasi se spreminja in ga je težko ponarediti, zato je uporaben."
+    },
+    "motion-continuity": {
+      "term": "Neprekinjenost gibanja",
+      "definition": "Zapis merilnika pospeška med enim potrjenim položajem in naslednjim. Ujame zahtevek, ki se teleportira, ker premik 400 km v 90 sekundah ne pusti ustreznega profila gibanja."
+    },
+    "verified-arrival": {
+      "term": "Preverjen prihod",
+      "definition": "Zahtevek, ki je znotraj izdajateljevega polmera dosegel svoj prag. Enota, ki jo izdajatelj kupi, in razlog, zakaj je strošek kampanje preštet in ne modeliran."
+    },
+    "placement-fee": {
+      "term": "Provizija za postavitev",
+      "definition": "Kar izdajatelj plača, da zasede območje, uteženo po polmeru, trajanju in povpraševanju po območju. Ločeno od nagrade, ki jo prejme iskalec."
+    },
+    "cold-streak": {
+      "term": "Hladen niz",
+      "definition": "Časovnik usmiljenja. Dve točki možnosti ulova za vsak zaporedni zgrešen poskus, največ dvanajst, velja za ponovni poskus in med kovanci."
+    },
+    "streak-penalty": {
+      "term": "Kazen za niz",
+      "definition": "Nasprotni vzvod. Štiri točke manj za vsak zaporedni uspeh na istem kovancu, največ dvajset, zato je izkoriščanje ene točke spawnov vse slabše, ne boljše."
+    },
+    "seeker": {
+      "term": "Iskalec",
+      "definition": "Oseba, ki hodi do sredstev in jih prevzema. Tudi prva od desetih igralskih ravni, zadnja je Legenda."
+    },
+    "seek": {
+      "term": "$SEEK",
+      "definition": "Sredstvo za poravnavo in usklajevanje. Financira kampanje, plačuje provizije za postavitev, s stakingom kupuje prednost postavitve in nosi glas pri upravljanju, ko bo upravljanje aktivno."
+    }
+  },
+  "whitepaperFigures": {
+    "draft": "Osnutek številk, ne končna tokenomika",
+    "totalSupply": "Skupna ponudba",
+    "donutAria": "Razporeditev žetonov po deležu skupne ponudbe",
+    "terms": "Izrazi: {count}",
+    "filterTerms": "Filtriraj izraze",
+    "filter": "Filter",
+    "noMatch": "Nič se ne ujema. Sam dokument lahko preiščeš z iskanjem v svojem brskalniku.",
+    "stackCaption": "Zahtevki potujejo navzdol po sklopu, vrednost potuje nazaj navzgor. Izberi plast za podrobnosti.",
+    "liveModel": "Model v živo",
+    "interactive": "Interaktivno",
+    "confidenceTitle": "Poskusi zavrniti zahtevek",
+    "thresholdLabel": "Prag sredstva",
+    "confidenceThreshold": "zaupanje · prag {threshold}",
+    "claimAccepted": "Zahtevek sprejet",
+    "claimRefused": "Zahtevek zavrnjen",
+    "shortBy": "Manjka {short}. Ponovljene zavrnitve iste naprave njen prag še dvignejo.",
+    "confidenceCaption": "Uteži so ponazoritvene. Pomembna je oblika: noben signal sam ne preskoči financirane kampanje, ponarediti vse štiri hkrati pa stane več od dropa.",
+    "economyLabel": "Ekonomski krog",
+    "stageOf": "Stopnja {step} od {total}",
+    "timelineTitle": "En zahtevek, stopnjo za stopnjo",
+    "stop": "Ustavi",
+    "runReal": "Zaženi v resnični hitrosti",
+    "claimStages": "Stopnje zahtevka",
+    "segAria": "{label}, {ms} milisekund, {where}",
+    "endToEnd": "{seconds} s od začetka do konca",
+    "takes": "Traja",
+    "elapsed": "Pretečeno",
+    "whatMoves": "Kaj se premika",
+    "timelineWhere": {
+      "device": "Na tvojem telefonu",
+      "verifier": "Preverjevalec",
+      "chain": "Veriga poravnave"
+    },
+    "timelineCaption": "To so proračuni, ne meritve. Okno senzorjev in poravnava se spreminjata z razmerami, vse vmes pa je aritmetika, ki se ne. Opazi, kje je meja: surovi podatki senzorjev nikoli ne zapustijo prvih treh stopenj.",
+    "vestingTitle": "Ponudba v obtoku, mesec za mesecem",
+    "vestingAria": "Ponudba v obtoku po razporeditvah v 48 mesecih",
+    "circulatingMonth": "v obtoku v mesecu {month}",
+    "circulatingLaunch": "v obtoku ob lansiranju",
+    "axisLaunch": "Lansiranje",
+    "axisYear": "Leto {year}",
+    "month": "Mesec",
+    "vestingCaption": "Beri stopnice, ne krivulje. Raven odsek, ki mu sledi skok, je obdobje zadržanja (cliff), in prav tam urnik bodisi zdrži bodisi ne. Razporeditvi ekipe in vlagateljev je vredno preveriti, ker se edini sprostita na trg in ne ljudem, ki uporabljajo omrežje.",
+    "calcTitle": "Kaj kupi proračun",
+    "calcBudget": "Proračun kampanje",
+    "calcReward": "Nagrada na zahtevek",
+    "calcRadius": "Polmer prevzema",
+    "calcFee": "Provizija za postavitev pri tem polmeru: ${fee} na drop",
+    "calcArrivals": "Preverjeni prihodi",
+    "calcPerPerson": "${cost} na osebo pri vratih",
+    "calcDisplay": "Isti proračun kot prikazno oglaševanje",
+    "calcInferred": "prikazov, od katerih jih približno {visits} postane sklepan obisk po ${cost}",
+    "calcCaption": "Številke prikaznega oglaševanja uporabljajo CPM ${cpm} in {rate} % stopnjo prikazov, ki postanejo obiski, oboje panožni pravili. Pomembna razlika je, da je en stolpec izmerjen pri vratih, drugi pa sklepan.",
+    "contents": "Vsebina · poglavja: {count}",
+    "chaptersLabel": "Poglavja",
+    "close": "Zapri",
+    "ladderTitle": "Met za ulov, kot ga izračuna strežnik",
+    "rarityLabel": "Redkost",
+    "playerLevel": "Raven igralca",
+    "chargeRing": "Krog naboja",
+    "missed": "Zgrešeno",
+    "clanBonus": "Bonus klana",
+    "points": "+{points} t",
+    "baseChance": "Osnovna možnost",
+    "levelBonus": "Bonus ravni",
+    "ringMultiplier": "Množitelj kroga",
+    "retryMultiplier": "Množitelj ponovitve",
+    "firstAttempt": "Prvi poskus",
+    "retry": "Ponovitev",
+    "acrossSpawn": "Za celoten spawn",
+    "youCaught": "Ujel si",
+    "notYet": "še ne",
+    "ladderHint": "En spawn ti ne pove skoraj ničesar. Zaženi jih tisoč in glej, kako se stolpca približata.",
+    "ladderTally": "{caught} ujetih iz {spawns} spawnov, {gap} točk od modela.",
+    "runOne": "Zaženi en spawn",
+    "runThousand": "Zaženi tisoč",
+    "reset": "Ponastavi",
+    "ladderCaption": "Migracija objavi {rarity} pri {first} %, nato {second} %, {overall} % za celoten spawn. To je ta model na ravni 5 s polnim krogom in brez klana, kar je začetna nastavitev drsnikov. Ujeta enota je igralna enota, koliko je vredna v žetonih, pa je stvar trga, ne igre.",
+    "tocTitle": "Vsebina"
+  },
+  "stackLayers": {
+    "app": {
+      "label": "Aplikacija",
+      "sub": "Seekprotocol · poslovni portal · graditelj kampanj",
+      "detail": "Tisto, česar se ljudje dotaknejo. Mobilna aplikacija izriše sredstva v AR in skrbi za zbiranje; portal je kraj, kjer jih izdajatelji postavljajo. Oba sta običajna odjemalca spodnjih plasti in nimata privilegiranega dostopa."
+    },
+    "intelligence": {
+      "label": "Inteligenca",
+      "sub": "Spremljevalec z umetno inteligenco · ustvarjanje misij · usmerjanje",
+      "detail": "Bere sliko kamere in tvojo zgodovino igranja, da predlaga, kam naprej in kaj gledaš. Kjer lahko, deluje na napravi in nikoli ne vidi surove zgodovine položajev, ki je ne potrebuje."
+    },
+    "location": {
+      "label": "Preverjanje lokacije",
+      "sub": "GNSS · radijski prstni odtis · potrditev naprave · gibanje",
+      "detail": "Oceni zahtevek na podlagi neodvisnih signalov in izda podpisano potrdilo, ko ocena preseže prag sredstva. Namenoma zunaj verige: podatki senzorjev, zaradi katerih preverjanje deluje, so prav tisti, ki ne bi smeli biti javni."
+    },
+    "settlement": {
+      "label": "Poravnava",
+      "sub": "Katera koli veriga · sredstva · zapisi zahtevkov",
+      "detail": "Hrani definicije sredstev, koordinate in zapise zahtevkov ter premakne vrednost, ko je zahtevek sprejet. Omrežje je stvar nastavitve, ne integracije, pogoj, ki ga mora izpolniti vsako, pa so dovolj nizke provizije, da strošek prevzema majhne nagrade ne preseže nagrade."
+    }
+  },
+  "confidenceSignals": {
+    "gnss": {
+      "label": "Položaj GNSS",
+      "detail": "Satelitski položaj in njegova sporočena natančnost ter konstelacija in število satelitov.",
+      "spoofable": "Na rootani napravi ga je trivialno ponarediti."
+    },
+    "radio": {
+      "label": "Okoliški radijski signali",
+      "detail": "Bližnja omrežja Wi-Fi in bazne postaje, primerjani s tem, kar bi moralo biti tu vidno.",
+      "spoofable": "Težko jih je ponarediti; radijska okolja se spreminjajo počasi."
+    },
+    "attest": {
+      "label": "Potrditev naprave",
+      "detail": "Play Integrity ali App Attest potrdi pristno aplikacijo na nespremenjenem OS.",
+      "spoofable": "Farme emulatorjev tu takoj padejo."
+    },
+    "motion": {
+      "label": "Neprekinjenost gibanja",
+      "detail": "Zapis merilnika pospeška med tvojim zadnjim potrjenim položajem in tem.",
+      "spoofable": "Skok 400 km v 90 sekundah nima ustreznega profila gibanja."
+    }
+  },
+  "confidenceTiers": {
+    "low": {
+      "label": "Nagrada misije",
+      "note": "Nizka vrednost, nizek prag."
+    },
+    "mid": {
+      "label": "Partnerski drop",
+      "note": "Privzeto za financirane kampanje."
+    },
+    "high": {
+      "label": "Dogodek z vstopnicami",
+      "note": "Visoka vrednost, vse se mora ujemati."
+    }
+  },
+  "economyStages": {
+    "fund": {
+      "label": "Izdajatelj financira",
+      "actor": "Blagovna znamka · projekt · prizorišče",
+      "body": "Kampanja je izražena in financirana v $SEEK, s provizijo za postavitev, uteženo po polmeru, trajanju in tem, kako oblegano je območje.",
+      "flow": "$SEEK noter"
+    },
+    "place": {
+      "label": "Sredstvo je postavljeno",
+      "actor": "Protokol",
+      "body": "Drop je zapisan na svoje koordinate s polmerom prevzema, časovnim oknom in pragom zaupanja, ki ga zahteva.",
+      "flow": "Provizija v zakladnico"
+    },
+    "walk": {
+      "label": "Nekdo gre tja",
+      "actor": "Iskalec",
+      "body": "Edini korak, ki ga ni mogoče avtomatizirati. Potovanje je strošek, zaradi katerega je izkoriščanje drago.",
+      "flow": "Čas in razdalja"
+    },
+    "verify": {
+      "label": "Prisotnost je preverjena",
+      "actor": "Plast preverjanja",
+      "body": "Štirje signali se ocenijo zunaj verige. Na verigo pride podpisano potrdilo, ne tvoji podatki senzorjev.",
+      "flow": "Potrdilo"
+    },
+    "settle": {
+      "label": "Poravna se",
+      "actor": "Veriga poravnave",
+      "body": "Prenos se potrdi v manj kot sekundi za delček centa, na verigi, kjer sredstvo živi, zapis zahtevka pa je javen.",
+      "flow": "Nagrada ven"
+    },
+    "split": {
+      "label": "Provizije tečejo nazaj",
+      "actor": "Protokol",
+      "body": "Večina provizij protokola gre ljudem, ki hodijo; preostanek financira zakladnico in ekosistem.",
+      "flow": "Večina iskalcem"
+    }
+  },
+  "timelineStages": {
+    "open": {
+      "label": "Drop odprt",
+      "detail": "Tapneš sredstvo na zemljevidu ali ga dosežeš prek kamere. Aplikacija vzame položaj, ki ga že ima, in začne novo okno senzorjev.",
+      "payload": "ID sredstva, zadnji znani položaj"
+    },
+    "window": {
+      "label": "Okno senzorjev",
+      "detail": "Daleč najdaljša stopnja in tista, ki odloči o vsem, kar sledi: nov položaj GNSS z natančnostjo, pregled radijskega okolja in sled gibanja od zadnjega potrjenega položaja.",
+      "payload": "Položaj GNSS, število satelitov, nabor Wi-Fi in baznih postaj, zapis merilnika pospeška"
+    },
+    "attest": {
+      "label": "Potrditev in podpis",
+      "detail": "Play Integrity ali App Attest potrdi, da je aplikacija pristna in OS nespremenjen. Zahtevek podpiše ključ, vezan na to namestitev aplikacije, zato je posredovan zahtevek drag.",
+      "payload": "Žeton potrditve, podpisan zahtevek"
+    },
+    "score": {
+      "label": "Točkovanje",
+      "detail": "Zunaj verige, ker temelji na podatkih senzorjev, ki nimajo kaj iskati v javnosti. Vsak signal se oceni glede na to, kako bi morala koordinata izgledati, rezultati pa se združijo v eno število zaupanja.",
+      "payload": "Ocena zaupanja, razčlenitev po signalih"
+    },
+    "threshold": {
+      "label": "Preverjanje praga",
+      "detail": "Ocena doseže prag sredstva ali ga ne. Zavrnitev se zabeleži za napravo, ponovljene zavrnitve pa tej napravi dvignejo prag, ne le spet ne uspejo.",
+      "payload": "Sprejem ali zavrnitev, podpisano potrdilo"
+    },
+    "settle": {
+      "label": "Poravnava",
+      "detail": "Zapis zahtevka in prenos pristaneta na verigi poravnave v eni transakciji. To je edina stopnja, ki jo lahko vidi kdor koli drug, in pove le, da je zahtevek na javni koordinati uspel.",
+      "payload": "Zapis zahtevka, prenos žetona"
+    },
+    "confirm": {
+      "label": "V tvoji denarnici",
+      "detail": "Denarnica se posodobi in sredstvo zate izgine z zemljevida. Od tapa do posesti manj kot dve sekundi ob dobri povezavi.",
+      "payload": "Posodobitev stanja, stanje zemljevida"
+    }
+  },
+  "referrals": {
+    "eyebrow": "Priporočila",
+    "title": "Vsak prijatelj, ki igra, te naredi močnejšega",
+    "lead": "Daj prijatelju svojo kodo povabila in pri vsakem ulovu obdržiš 5 % več XP, dokler on igra. Brez omejitve, in nikoli ne gre na njegov račun.",
+    "codeLabel": "Tvoja osemznakovna koda povabila",
+    "activeLabel": "AKTIVEN",
+    "exampleLabel": "En legendarni ulov, prej in potem",
+    "exampleBody": "Bonus se uporabi, ko se ulov oceni na strežniku, in se zapiše v zapis skupaj s tvojim klanskim rangom, da ju je mogoče pozneje ločiti.",
+    "activeRule": "Aktiven pomeni {needed} ulovov v zadnjih {days} dneh",
+    "panelTitle": "TVOJA EKIPA",
+    "rateLabel": "TVOJA STOPNJA",
+    "idle": "neaktiven",
+    "levelShort": "RV"
+  },
+  "referralRules": {
+    "once": {
+      "title": "En povabitelj, izbran enkrat",
+      "body": "Kodo je mogoče unovčiti samo enkrat in je pozneje ni mogoče spremeniti. Baza podatkov zavrne drugi poskus, zato to ni pravilo, iz katerega bi aplikacijo lahko pregovorili."
+    },
+    "newOnly": {
+      "title": "Samo novi računi",
+      "body": "Koda deluje samo na računu brez XP in brez zbranih stvari. Uveljavljen iskalec se pozneje ne more priključiti ekipi in šteti kot nov."
+    },
+    "oneLevel": {
+      "title": "Ena raven globoko",
+      "body": "Služiš od prijateljev, ki si jih pripeljal, ne od prijateljev, ki jih pripeljejo oni. Ti iskalci gradijo svojo ekipo in obdržijo vse."
+    },
+    "friendKeeps": {
+      "title": "Tvoj prijatelj ne izgubi ničesar",
+      "body": "Bonus se doda tvojim ulovom. Ni delež njegovih, zato nič, kar pridobiš, ni vzeto nikomur."
+    }
+  },
+  "referralInfo": {
+    "openLabel": "Kako delujejo priporočila, v celoti",
+    "close": "Zapri",
+    "eyebrow": "Priporočila v celoti",
+    "title": "Koliko je vredna ekipa in kdaj začne šteti",
+    "lead": "Tu je lahko zgrešiti dve stvari. Bonus nima zgornje meje, prijatelj pa ne začne prinašati v trenutku, ko namesti aplikacijo. Oboje je vredno videti, ne le slišati.",
+    "ladderLabel": "Aktivni prijatelji in koliko so vredni tvoji ulovi",
+    "ladderFriends": "{count} igra",
+    "noCap": "Omejitve ni. Dvajset aktivnih prijateljev je čista podvojitev, in nič v računu se tam ne ustavi.",
+    "lifecycleLabel": "Kako prijatelj postane priporočilo",
+    "foot": "Prijatelj šteje, ko ima {needed} resničnih ulovov v {days} dneh. Če jih nima dovolj, preneha šteti; ko spet igra, se vrne. V nobenem primeru se nič ne izgubi."
+  },
+  "referralLifecycle": {
+    "share": {
+      "title": "Predaš svojo kodo",
+      "body": "Vsak iskalec ob registraciji dobi osemznakovno kodo. Tvoja je za vedno in ničesar ni treba prevzeti ali ustvariti."
+    },
+    "redeem": {
+      "title": "Vnese jo na novem računu",
+      "body": "Koda deluje samo na računu brez XP in brez zbranih stvari. Zapiše se enkrat in je pozneje ni mogoče spremeniti, zato nikogar ni mogoče premikati med ekipami."
+    },
+    "play": {
+      "title": "Gre ven in igra",
+      "body": "Štejejo samo resnični ulovi. Poskusi v simulatorju se beležijo ločeno in niso del vsote."
+    },
+    "count": {
+      "title": "Začne prinašati in prinaša naprej",
+      "body": "To je korak, ki ga ljudje spregledajo. Namestitev ni dovolj: prijatelj mora biti res zunaj, preden se tvoj množitelj premakne."
+    }
+  },
+  "shop": {
+    "metaTitle": "Trgovina Seekprotocol",
+    "metaDescription": "Paketi kart, Season Pass in boosti za tvoj račun.",
+    "ogTitle": "Trgovina Seekprotocol",
+    "eyebrow": "Trgovina",
+    "title": "Trgovina Seekprotocol",
+    "lead": "Paketi kart, Season Pass in boosti za tvoj račun.",
+    "howEyebrow": "Kako deluje",
+    "stepSignIn": "Prijavi se",
+    "stepSignInBody": "Isti račun kot v aplikaciji: Google, Apple ali koda po e-pošti.",
+    "stepPay": "Plačaj s kriptovalutami",
+    "stepPayBody": "Poveži Phantom, Solflare, Backpack ali katero koli denarnico Wallet Standard in odobri en prenos.",
+    "stepOpen": "Odpri v aplikaciji",
+    "stepOpenBody": "Paketi pristanejo na tvojem računu takoj, ko je plačilo poravnano. Odpri jih pod Areno.",
+    "notConfigured": "Trgovina v tej namestitvi ni nastavljena.",
+    "loadingAccount": "Preverjam tvojo sejo ...",
+    "signInTitle": "Prijavi se za nakup",
+    "signInLead": "Paketi kart, Season Pass in boosti za tvoj račun.",
+    "continueGoogle": "Nadaljuj z Googlom",
+    "continueApple": "Nadaljuj z Applom",
+    "orEmail": "ali s kodo po e-pošti",
+    "emailLabel": "E-pošta",
+    "emailPlaceholder": "ti@primer.si",
+    "sendCode": "Pošlji kodo",
+    "sendingCode": "Pošiljam ...",
+    "codeSentTo": "Na {email} smo poslali 8-mestno kodo.",
+    "codeLabel": "Koda",
+    "verifyCode": "Prijava",
+    "verifying": "Preverjam ...",
+    "useAnotherEmail": "Uporabi drug e-poštni naslov",
+    "signInFailed": "Prijava ni uspela. Poskusi znova.",
+    "codeInvalid": "Koda se ne ujema. Preveri e-pošto in poskusi znova.",
+    "emailInvalid": "Vnesi veljaven e-poštni naslov.",
+    "signedInAs": "Prijavljen kot",
+    "signOut": "Odjava",
+    "productsEyebrow": "Paketi",
+    "productsTitle": "Izberi komplet",
+    "bundleSaving": "Prihrani {percent} %",
+    "paymentEyebrow": "Plačilo",
+    "paymentTitle": "Izberi način plačila",
+    "paymentSolHint": "SOL · Phantom, Solflare in drugi",
+    "paymentCrypto": "Plačaj s kriptovalutami",
+    "paymentDetails": "Valute in podrobnosti plačila",
+    "packSingle": "En paket",
+    "packFive": "Pet paketov",
+    "packTen": "Deset paketov",
+    "packs": "{count, plural, one {# paket} two {# paketa} few {# paketi} other {# paketov}}",
+    "perPack": "{price} na paket",
+    "solApprox": "približno {sol} SOL",
+    "solPending": "Znesek v SOL ob osvežitvi",
+    "rateFrom": "Tečaj od {time}.",
+    "rateStale": "Od takrat se je morda spremenil.",
+    "rateNone": "Tečaja SOL še ni.",
+    "refreshRate": "Osveži tečaj SOL",
+    "refreshing": "Pridobivam tečaj ...",
+    "rateNote": "Točen znesek v SOL se določi, ko ustvariš naročilo, in velja pet minut.",
+    "waysToPay": "Dva načina plačila: SOL iz denarnice v brskalniku na Solani ali USDC, USDT, SOL, ETH, BTC in drugo na Ethereumu, Base, Arbitrumu, Polygonu, BNB, Tronu in Bitcoinu prek plačilne strani Radom.",
+    "buy": "Kupi s SOL",
+    "payOther": "Plačaj s stablecoini ali drugimi kriptovalutami",
+    "connectToBuy": "Poveži denarnico za nakup",
+    "walletEyebrow": "Denarnica",
+    "walletTitle": "Plačaj iz svoje denarnice",
+    "walletLead": "Phantom, Solflare, Backpack ali katera koli denarnica, ki podpira Wallet Standard. Nič se ne pošlje, dokler tam ne odobriš.",
+    "walletSelect": "Izberi denarnico",
+    "walletConnecting": "Povezujem ...",
+    "walletConnect": "Poveži denarnico",
+    "walletCopy": "Kopiraj naslov",
+    "walletCopied": "Kopirano",
+    "walletChange": "Zamenjaj denarnico",
+    "walletDisconnect": "Prekini povezavo",
+    "verificationNote": "Kratko preverjanje proti avtomatiziranim nakupom. Običajno se zaključi samo.",
+    "flowVerifying": "Zaključujem varnostno preverjanje ...",
+    "flowCreating": "Ustvarjam tvoje naročilo ...",
+    "flowReady": "Naročilo je pripravljeno",
+    "flowPay": "Plačaj {sol} SOL",
+    "flowFor": "za {product}",
+    "flowHeld": "Cena zadržana še {seconds} s",
+    "payInWallet": "Plačaj v denarnici",
+    "cancelOrder": "Prekliči",
+    "flowSigning": "Odobri plačilo v svoji denarnici ...",
+    "flowRedirecting": "Preusmerjam na plačilno stran ...",
+    "flowChecking": "Preverjam tvoje plačilo, poskus {attempt} od {total} ...",
+    "flowConfirming": "Potrjujem na verigi, poskus {attempt} od {total} ...",
+    "flowPaid": "Plačano. {count, plural, one {# paket je} two {# paketa sta} few {# paketi so} other {# paketov je}} na tvojem računu.",
+    "flowPaidAny": "Plačano. Tvoj nakup je dostavljen.",
+    "flowPending": "Tvoje plačilo se potrjuje. Nakup se bo po dostavi prikazal v aplikaciji.",
+    "flowCancelled": "Naročilo preklicano. Nič ni bilo poslano.",
+    "viewTransaction": "Poglej transakcijo",
+    "flowDone": "Končano",
+    "tryAgain": "Poskusi znova",
+    "errCheckoutUnavailable": "Trgovina je trenutno ustavljena. Poskusi znova pozneje.",
+    "errArenaUnavailable": "Arena za ta račun še ni odprta. Najprej odpri aplikacijo.",
+    "errBuildRefused": "Tega nakupa ni bilo mogoče preveriti s spletne strani. Osveži stran in poskusi znova.",
+    "errRateLimited": "Preveč poskusov. Počakaj trenutek in poskusi znova.",
+    "errOrderExpired": "Naročilo je poteklo, preden je bilo plačano. Ustvari novo.",
+    "errUnknownAction": "Trgovina in strežnik se ne ujemata. Osveži stran.",
+    "errUnknownProduct": "Ta izdelek ni naprodaj.",
+    "errAccountBlocked": "Ta račun ne more kupovati paketov.",
+    "errUnauthorized": "Tvoja seja je potekla. Prijavi se znova.",
+    "errWalletRejected": "Denarnica je zavrnila plačilo.",
+    "errInsufficient": "V denarnici ni dovolj SOL za ta znesek skupaj z omrežnino.",
+    "errWalletFailed": "Denarnica ni mogla poslati transakcije.",
+    "errNetwork": "Strežnika ni bilo mogoče doseči. Preveri povezavo in poskusi znova.",
+    "errCaptcha": "Preverjanje se ni zaključilo. Poskusi znova.",
+    "errRadomUnavailable": "Plačilna stran trenutno ni na voljo. Poskusi znova pozneje ali plačaj z denarnico Solana.",
+    "errGeneric": "Nekaj je šlo narobe. Poskusi znova.",
+    "packsEyebrow": "Tvoji paketi",
+    "packsWaiting": "{count, plural, =0 {Noben paket ne čaka} one {# paket čaka} two {# paketa čakata} few {# paketi čakajo} other {# paketov čaka}}",
+    "packsHint": "Odpri jih v aplikaciji, pod Areno.",
+    "packsLive": "V živo",
+    "ordersEyebrow": "Nedavna naročila",
+    "ordersEmpty": "Še ni naročil.",
+    "statusPending": "V obdelavi",
+    "statusPaid": "Plačano",
+    "statusExpired": "Poteklo",
+    "statusFailed": "Neuspešno",
+    "checkout": {
+      "steps": "Koraki nakupa",
+      "details": "Podatki",
+      "payment": "Plačilo",
+      "digitalDelivery": "DIGITALNA DOSTAVA",
+      "yourDetails": "Tvoji podatki za nakup",
+      "reviewPay": "Preglej in plačaj",
+      "intro": "Paketi kart, Season Pass in boosti za tvoj račun.",
+      "contact": "Kontakt",
+      "email": "E-poštni naslov",
+      "signedInAccount": "Prijavljeni račun",
+      "emailNote": "Tvoj preverjeni e-poštni naslov za prijavo. Račun zamenjaš z Odjava zgoraj.",
+      "name": "Ime (neobvezno)",
+      "deliverTo": "Kateri račun naj prejme tvoj nakup?",
+      "inApp": "Dostavljeno v Seekprotocol",
+      "friendsId": "Friends ID",
+      "optional": "neobvezno",
+      "friendsNote": "Friends ID je neobvezen. Pusti prazno za dostavo na račun Seekprotocol, povezan s tvojo trenutno prijavo. Za drug račun vnesi njegov 8-znakovni Friends ID.",
+      "checking": "Preverjam račun …",
+      "continue": "Nadaljuj na plačilo",
+      "invalidFriend": "Razpoložljivega računa s tem Friends ID nismo našli. Preveri 8-znakovno kodo.",
+      "recipientUnavailable": "Arena za ta račun še ni na voljo. Izberi drugega prejemnika.",
+      "detailsFailed": "Računa nismo mogli preveriti. Tvoji podatki so shranjeni tukaj; poskusi znova.",
+      "receivingAccount": "Račun prejemnika",
+      "yourAccount": "Tvoj prijavljeni račun",
+      "otherAccount": "Tvoj nakup gre na ta račun.",
+      "change": "Spremeni",
+      "solWallet": "Denarnica Solana",
+      "radomNote": "Nadaljuj na Radom, kjer izbereš valuto in omrežje. Pred potrditvijo preglej morebitno omrežnino.",
+      "walletNote": "Odobri plačilo v svoji denarnici. Naslednji korak pokaže točen znesek v SOL.",
+      "payNow": "Plačaj {price}",
+      "supportNote": "Vsako naročilo ima sklic in stanje dostave. Sklic shrani, če boš potreboval pomoč pri nakupu.",
+      "orderSummary": "Povzetek naročila",
+      "oneTime": "Enkratni nakup",
+      "digitalPacks": "Digitalni paketi kart",
+      "bundle": "Izberi komplet",
+      "subtotal": "Vmesni seštevek",
+      "delivery": "Dostava",
+      "toAccount": "Račun Seekprotocol",
+      "total": "Skupaj",
+      "feeNote": "Morda bodo zaračunane omrežnine. Ponudnik plačil ali denarnica jih pokaže, preden odobriš.",
+      "linkedDelivery": "Povezano z izbranim računom",
+      "linkedDeliveryNote": "Ko je plačilo potrjeno, je tvoj nakup dostavljen na izbrani račun Seekprotocol.",
+      "receipt": "Podrobnosti naročila",
+      "refreshStatus": "Osveži stanje",
+      "orderNumber": "Sklic naročila",
+      "receiptFailed": "Tega naročila nismo mogli naložiti. Shrani sklic in poskusi osvežiti.",
+      "orderSaved": "Naročilo shranjeno",
+      "paymentReceived": "Plačilo potrjeno",
+      "paymentWaiting": "Čakam na potrditev plačila",
+      "delivered": "Nakup dostavljen",
+      "deliveryWaiting": "Čakam na dostavo",
+      "closedOrder": "To naročilo je zaprto. Če je denar zapustil tvojo denarnico, se s tem sklicem obrni na podporo, preden znova plačaš.",
+      "pendingNote": "Če si že plačal, ne plačaj znova. Osveži stanje; dostava se preverja tudi samodejno.",
+      "loadingReceipt": "Nalagam naročilo …",
+      "calculating": "Računam …"
+    },
+    "errRecipient": "Računa nismo mogli preveriti. Tvoji podatki so shranjeni tukaj; poskusi znova.",
+    "errPreparing": "Tvoje naročilo se še pripravlja. Kmalu poskusi znova; uporabili bomo isto naročilo.",
+    "history": {
+      "title": "Moja naročila",
+      "lead": "Tvoji nakupi v trgovini, vključno s paketi, poslanimi na drug račun. Tukaj preveri plačilo in dostavo.",
+      "shortLead": "Oglej si pretekle nakupe, stanje plačil in dostavo.",
+      "viewOrders": "Poglej moja naročila",
+      "navigation": "Trgovina in račun",
+      "shop": "Nazaj v trgovino",
+      "signInTitle": "Prijavi se, da vidiš svoja naročila",
+      "signInLead": "Uporabi isti račun, s katerim si kupoval. Prikazana so samo tvoja naročila.",
+      "autoUpdate": "Stanje se posodablja samodejno.",
+      "updated": "Zadnja posodobitev: {time}",
+      "loading": "Nalagam naročila …",
+      "loadFailed": "Tvojih naročil nismo mogli posodobiti. Prikazano stanje je morda zastarelo. Poskusi Osveži stanje.",
+      "emptyTitle": "Še ni naročil",
+      "emptyLead": "Naročila, oddana s tem računom, se bodo prikazala tukaj.",
+      "purchase": "Nakup Seekprotocol",
+      "paymentLabel": "Plačilo",
+      "deliveryLabel": "Dostava",
+      "paidNotDelivered": "Tvoje plačilo je potrjeno. Dostava je še v obdelavi. Ne plačaj znova; stanje dostave se posodablja samodejno.",
+      "pagination": "Strani zgodovine naročil",
+      "previous": "Prejšnja",
+      "next": "Naslednja",
+      "page": "Stran {page}",
+      "orderedAt": "Naročeno",
+      "paidAt": "Plačano",
+      "deliveredAt": "Dobropisano",
+      "payment": {
+        "paid": "Plačano",
+        "pending": "Čaka na plačilo",
+        "expired": "Poteklo",
+        "failed": "Ni dokončano",
+        "unknown": "Stanje neznano"
+      },
+      "delivery": {
+        "delivered": "Nakup dostavljen",
+        "processing": "Dostava v teku",
+        "notDelivered": "Ni dobropisano",
+        "awaitingPayment": "Po potrditvi plačila"
+      },
+      "overview": "Pregled naročila",
+      "pageSize": "Naročil na stran: {count}",
+      "orderShort": "Naročilo #{reference}",
+      "recipient": "Za {name}",
+      "moreProducts": "+ še {count} izdelkov",
+      "reorder": "Znova sestavi košarico",
+      "resume": "Nadaljuj plačilo",
+      "checkPayment": "Preveri plačilo",
+      "checkingPayment": "Preverjam plačilo …",
+      "actionFailed": "Tega plačila nismo mogli preveriti. Poskusi znova.",
+      "viewDetails": "Poglej podrobnosti naročila",
+      "quantity": "Količina: {count}",
+      "currencyNote": "Izdelki ohranijo svoje izvirne valute. Skupni znesek je znesek, določen za ta nakup, preračunan ob oddaji naročila.",
+      "actionResult": {
+        "paid": "Tvoje plačilo je potrjeno. Stanje dostave se posodablja.",
+        "pending": "Plačilo še ni potrjeno. Če si že plačal, ne plačaj znova.",
+        "closed": "Ta nakup je zaprt. Za nadaljevanje znova sestavi košarico."
+      },
+      "restore": {
+        "loading": "Preverjam prejšnje naročilo …",
+        "ready": "Tvoja košarica je obnovljena. Pred ponovnim plačilom preveri trenutne cene in račun prejemnika.",
+        "failed": "Tega naročila nismo mogli obnoviti. Plačilo se morda še obdeluje ali pa izdelek ni na voljo. Najprej osveži stanje naročila."
+      }
+    },
+    "catalogLoading": "Nalagam izdelke …",
+    "catalogFailed": "Izdelkov ni bilo mogoče naložiti. Poskusi znova.",
+    "catalogEmpty": "Trenutno ni na voljo nobenega izdelka.",
+    "errCatalogChanged": "Ta izdelek se je spremenil. Osveži izdelke in pred plačilom preglej ceno.",
+    "catalogTitle": "Izberi izdelek",
+    "catalogLead": "Paketi kart, Season Pass in boosti za tvoj račun.",
+    "passSeason": "Velja za trenutno sezono. Enkratni nakup.",
+    "cardsInPacks": "5 kart na paket",
+    "recipientPrompt": "Kateri račun naj prejme tvoj nakup?",
+    "recipientOther": "Tvoj nakup gre na ta račun.",
+    "purchaseDelivered": "Nakup dostavljen",
+    "errPassUnavailable": "Passa trenutno ni mogoče kupiti.",
+    "errPassOwned": "Ta račun že ima aktiven Pass.",
+    "errPassPending": "Naročilo Passa za ta račun je še odprto. Preden poskusiš znova, preveri stanje njegovega plačila.",
+    "friendsHelp": "Friends ID je neobvezen. Pusti prazno za dostavo na račun Seekprotocol, povezan s tvojo trenutno prijavo. Za drug račun vnesi njegov 8-znakovni Friends ID.",
+    "productKinds": {
+      "pack": "Paketi kart",
+      "pass": "Pass",
+      "consumable": "Boost",
+      "bundle": "Komplet"
+    },
+    "powerupNames": {
+      "rare_boost": "Shiba",
+      "coin_magnet": "Spawn Magnet",
+      "to_the_moon": "XP Boost",
+      "pump_it": "Pump It",
+      "diamond_hands": "Diamond Hands",
+      "spawn_lure": "Spawn Lure",
+      "cash": "Cash",
+      "fitness": "Fitness",
+      "chill_guy": "Chill Guy",
+      "this_is_fine": "This Is Fine"
+    },
+    "cart": {
+      "add": "Dodaj {product} v košarico",
+      "quantity": "Količina za {product}",
+      "decrease": "Zmanjšaj količino",
+      "increase": "Povečaj količino",
+      "remove": "Odstrani",
+      "empty": "Tvoja košarica je prazna. Zgoraj dodaj enega ali več izdelkov.",
+      "conversion": "Izdelki v različnih valutah se ob nakupu preračunajo v en skupni znesek v USD."
+    },
+    "errCart": "Preveri količine v košarici. Na naročilo lahko kupiš do 50 paketov kart in en Pass.",
+    "login": {
+      "heading": "Prijavi se z računom aplikacije",
+      "existingOnly": "Uporabi isti način prijave kot v aplikaciji Seekprotocol. Trgovina je samo za obstoječe račune aplikacije.",
+      "methods": "Načini prijave",
+      "continueWith": "Nadaljuj prek {provider}",
+      "notAvailable": "Začasno ni na voljo",
+      "unavailable": "Ta način prijave trenutno ni na voljo. Poskusi znova pozneje ali uporabi drug način, ki je že povezan z računom aplikacije.",
+      "methodsFailed": "Nekaterih načinov prijave ni bilo mogoče naložiti.",
+      "orEmail": "ali se prijavi z e-pošto",
+      "emailMethod": "Prijava z e-pošto",
+      "emailCode": "Koda iz e-pošte",
+      "signIn": "Prijava",
+      "emailNotSent": "Kode ni bilo mogoče poslati. Uporabi e-poštni naslov obstoječega računa aplikacije in poskusi znova.",
+      "appRequired": "Za uporabo trgovine potrebuješ obstoječ račun aplikacije. Najprej ustvari račun ali dokončaj nastavitev v aplikaciji Seekprotocol, nato se vrni sem.",
+      "noAccount": "Še nimaš računa aplikacije? Ustvari ga v aplikaciji Seekprotocol. V trgovini se ni mogoče registrirati.",
+      "changeAccount": "Uporabi drug račun",
+      "expired": "Ta poskus prijave je potekel. Začni znova v trgovini.",
+      "wallet": "Nadaljuj z denarnico Solana",
+      "connectWallet": "Poveži denarnico",
+      "walletSignIn": "Prijavi se s to denarnico",
+      "walletSigning": "Potrdi v svoji denarnici …",
+      "changeWallet": "Izberi drugo denarnico",
+      "walletCannotSign": "Ta denarnica ne more podpisati sporočila za prijavo. Izberi drugo denarnico, povezano z računom aplikacije.",
+      "walletFailed": "Prijava z denarnico ni uspela ali je bila preklicana. Poskusi znova z denarnico, povezano z računom aplikacije.",
+      "emailHelp": "Poslali ti bomo kodo za prijavo. Uporabi e-poštni naslov svojega računa aplikacije.",
+      "welcome": "Dobrodošel nazaj.",
+      "intro": "Prijavi se z računom aplikacije Seekprotocol.",
+      "socialHeading": "S svojim računom",
+      "socialHelp": "Izberi način prijave, ki ga uporabljaš v aplikaciji.",
+      "accountNote": "Samo za obstoječe račune aplikacije. Nov račun ustvari v aplikaciji Seekprotocol.",
+      "availabilityNote": "Posivljeni načini prijave so začasno nedosegljivi."
+    },
+    "powerupDescriptions": {
+      "rare_boost": "Te zanima, kaj je to? Tapni vprašaj na zemljevidu in poglej, kaj se skriva pod njim, kjer koli na zemljevidu.",
+      "coin_magnet": "Več odkritij na sprehodu. 30 minut se v bližini pojavlja več kovancev.",
+      "to_the_moon": "Izkoristi vsak poskus. 30 minut prejemaš 3× XP za poskuse lovljenja kovancev.",
+      "pump_it": "Še ena škatla kart. Danes ujemi eno dodatno škatlo kart za Areno, poleg dnevne omejitve.",
+      "diamond_hands": "Predaleč za hojo? Ujemi en kovanec z razdalje do 500 metrov, z običajno možnostjo.",
+      "spawn_lure": "Pripelji lov k sebi. 30 minut privabljaj kovance za igralce v bližini. Potrebno je članstvo v klanu.",
+      "cash": "Spremeni majhne kovance v redkejšega. 30 minut zamenjuj 3 navadne za 1 nenavadnega, 3 nenavadne za 1 redkega ali 5 redkih za 1 legendarnega.",
+      "fitness": "Seži veliko dlje. 15 minut loviš kovance z razdalje do 80 metrov.",
+      "chill_guy": "Dobro se razglej. 15 minut vidiš, kaj je 15 najbližjih spawnov, namesto 5.",
+      "this_is_fine": "Zgrešil? Brez panike. Po naslednjem zgrešenem poskusu kovanec 2 minuti ostane tvoj in ga nihče drug ne more vzeti. Traja do 15 minut."
+    },
+    "productInfo": {
+      "more": "O tem izdelku",
+      "includes": "Kaj dobiš",
+      "use": "Kako ga uporabiš",
+      "pack": "Vsak paket vsebuje 5 naključnih kart Arene. Pakete odpri v Areni v aplikaciji in odkrij, katere karte si dobil. Podvojene karte so mogoče; določena karta ni zagotovljena.",
+      "pass": "V trenutni sezoni uživaj v več srečanjih z redkimi, epskimi in legendarnimi kovanci ter v tedenskem redkem kovancu, ki ga prevzameš v aplikaciji. Pass se konča s sezono in se ne podaljša samodejno.",
+      "bundle": "Navedeni boosti se ločeno dodajo v tvoj inventar. Izberi, katerega aktiviraš najprej; njihovi učinki ne tečejo hkrati.",
+      "delivery": "Dostavljeno na izbrani račun Seekprotocol, ko je plačilo potrjeno. Brez Friends ID gre nakup na račun aplikacije, povezan s tvojo prijavo.",
+      "passName": "Season Pass",
+      "bundleName": "Komplet boostov",
+      "activate": "Po nakupu se doda v tvoj inventar. Aktiviraj ga v trgovini aplikacije, ko si pripravljen. Hkrati lahko teče samo en boost."
+    }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | Lov na zaklad z AR in umetno inteligenco za resnične nagrade",
+    "description": "Doživi prihodnost z $SEEK, plastjo AR in umetne inteligence za nagrade, ki živijo na določenem kraju. Lovi drope na podlagi lokacije, zbiraj NFT-je, unovči bone, osvoji resnično blago in raziskuj s spremljevalci z umetno inteligenco. Nagrada je lahko žeton na kateri koli verigi ali pa sploh nima zveze z verigo.",
+    "socialDescription": "Lovi drope na podlagi lokacije, zbiraj NFT-je, unovči bone in osvoji resnično blago. Plast AR in umetne inteligence, ki nagrado zasidra na resničen kraj, na kateri koli verigi ali brez nje.",
+    "skipToContent": "Preskoči na glavno vsebino"
+  }
+}

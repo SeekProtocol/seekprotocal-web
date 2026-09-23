@@ -6,7 +6,8 @@ import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { baseUrl, getSingleLanguageAlternates, getBreadcrumbJsonLd, getOpenGraph } from "@/lib/seo";
-import { getBlogPost, blogPosts, getAllSlugs } from "@/lib/blog-data";
+import { getAllSlugs } from "@/lib/blog-data";
+import { blogPostLocales, getLocalizedPost, getLocalizedPosts, hasBlogTranslation } from "@/lib/blog-i18n";
 
 interface BlogPostPageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -21,9 +22,14 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const post = getBlogPost(slug);
+  const { locale, slug } = await params;
+  const post = getLocalizedPost(slug, locale);
   if (!post) return {};
+  /* A locale with its own translation self-canonicalises and joins the hreflang
+     cluster of every language this post exists in. One without falls back to
+     the English body and points at the English URL, as before. */
+  const translated = hasBlogTranslation(slug, locale);
+  const shareLocale = translated ? locale : "en";
 
   /* The article's own artwork is AVIF, which no major scraper decodes, so
      sharing a post produced a blank card. This is a generated PNG of the
@@ -45,10 +51,9 @@ export async function generateMetadata({
     openGraph: getOpenGraph({
       title: post.title,
       description: post.excerpt,
-      // Articles are English only, so the share URL is the canonical one and the
-      // OG locale is en whichever prefix was requested.
-      path: `/en/blog/${post.slug}`,
-      locale: "en",
+      // The canonical URL of the language actually shown.
+      path: `/${shareLocale}/blog/${post.slug}`,
+      locale: shareLocale,
       type: "article",
       publishedTime: post.date,
       section: post.category,
@@ -59,12 +64,20 @@ export async function generateMetadata({
       description: post.excerpt,
       images: [card],
     },
-    alternates: getSingleLanguageAlternates(`/blog/${post.slug}`),
+    alternates: translated
+      ? {
+          canonical: `/${locale}/blog/${post.slug}`,
+          languages: {
+            ...Object.fromEntries(blogPostLocales(slug).map((l) => [l, `/${l}/blog/${post.slug}`])),
+            "x-default": `/en/blog/${post.slug}`,
+          },
+        }
+      : getSingleLanguageAlternates(`/blog/${post.slug}`),
   };
 }
 
-function formatDate(dateString: string): string {
-  return new Date(dateString).toLocaleDateString("en-US", {
+function formatDate(dateString: string, locale: string): string {
+  return new Date(dateString).toLocaleDateString(locale, {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -73,7 +86,7 @@ function formatDate(dateString: string): string {
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { locale, slug } = await params;
-  const post = getBlogPost(slug);
+  const post = getLocalizedPost(slug, locale);
 
   if (!post) {
     notFound();
@@ -81,8 +94,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   setRequestLocale(locale);
 
-  const currentIndex = blogPosts.findIndex((p) => p.slug === slug);
-  const relatedPosts = blogPosts
+  const posts = getLocalizedPosts(locale);
+  const shownLocale = hasBlogTranslation(slug, locale) ? locale : "en";
+  const currentIndex = posts.findIndex((p) => p.slug === slug);
+  const relatedPosts = posts
     .filter((_, i) => i !== currentIndex)
     .slice(0, 3);
 
@@ -94,7 +109,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     /* The generated PNG card, not post.image: post.image is AVIF, which Google
        does not accept for article structured data. */
     image: `${baseUrl}/og/blog/${post.slug}`,
-    url: `${baseUrl}/en/blog/${post.slug}`,
+    url: `${baseUrl}/${shownLocale}/blog/${post.slug}`,
     datePublished: post.date,
     dateModified: post.date,
     author: {
@@ -117,11 +132,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
        URL, so the reference resolved to nothing. */
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${baseUrl}/en/blog/${post.slug}`,
+      "@id": `${baseUrl}/${shownLocale}/blog/${post.slug}`,
     },
     articleSection: post.category,
     wordCount: post.content.join(" ").split(/\s+/).length,
-    inLanguage: "en-US",
+    inLanguage: shownLocale === "en" ? "en-US" : shownLocale,
   };
 
   const breadcrumbJsonLd = getBreadcrumbJsonLd([
@@ -144,7 +159,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="article">
             <header className="article-head">
               <BlogBackLink />
-              <BlogArticleMeta post={post} />
+              <BlogArticleMeta post={post} locale={locale} />
               <h1 className="t-h1 article-title">{post.title}</h1>
               <p className="t-lead">{post.excerpt}</p>
             </header>
@@ -186,7 +201,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </article>
 
       {relatedPosts.length > 0 && (
-        <BlogRelatedSection relatedPosts={relatedPosts} />
+        <BlogRelatedSection relatedPosts={relatedPosts} locale={locale} />
       )}
     </>
   );
@@ -219,12 +234,12 @@ function BlogBackLink() {
   );
 }
 
-function BlogArticleMeta({ post }: { post: { category: string; date: string; readTime: string } }) {
+function BlogArticleMeta({ post, locale }: { post: { category: string; date: string; readTime: string }; locale: string }) {
   const t = useTranslations("blog");
   return (
     <div className="article-meta">
       <span className="chip chip-brand">{post.category}</span>
-      <span className="t-mono-sm">{formatDate(post.date)}</span>
+      <span className="t-mono-sm">{formatDate(post.date, locale)}</span>
       <span className="t-mono-sm">
         {post.readTime} {t("read")}
       </span>
@@ -234,6 +249,7 @@ function BlogArticleMeta({ post }: { post: { category: string; date: string; rea
 
 function BlogArticleCta() {
   const t = useTranslations("blog");
+  const footer = useTranslations("footer");
   return (
     <div className="cta-band article-cta">
       <div className="cta-band-inner">
@@ -245,7 +261,7 @@ function BlogArticleCta() {
             target="_blank"
             rel="noopener noreferrer"
             className="store-button"
-            aria-label="Download on the App Store"
+            aria-label={footer("appStoreAlt")}
           >
             <img src="/images/app-store.svg" alt="" loading="lazy" />
           </a>
@@ -254,7 +270,7 @@ function BlogArticleCta() {
             target="_blank"
             rel="noopener noreferrer"
             className="store-button"
-            aria-label="Get it on Google Play"
+            aria-label={footer("googlePlayAlt")}
           >
             <img src="/images/google-play.svg" alt="" loading="lazy" />
           </a>
@@ -266,7 +282,9 @@ function BlogArticleCta() {
 
 function BlogRelatedSection({
   relatedPosts,
+  locale,
 }: {
+  locale: string;
   relatedPosts: Array<{
     slug: string;
     image: string;
@@ -297,7 +315,7 @@ function BlogRelatedSection({
               <div className="post-card-body">
                 <div className="post-card-meta">
                   <span className="chip chip-brand">{related.category}</span>
-                  <span className="t-mono-sm">{formatDate(related.date)}</span>
+                  <span className="t-mono-sm">{formatDate(related.date, locale)}</span>
                 </div>
                 <h3 className="t-h4 post-card-title">{related.title}</h3>
                 <p className="t-small post-card-excerpt">{related.excerpt}</p>

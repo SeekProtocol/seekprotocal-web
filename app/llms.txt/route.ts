@@ -58,8 +58,8 @@ export async function GET() {
     /* Counted rather than written out. It said "eight" in both places, and was
        already wrong: Turkish landed and nothing here noticed. */
     `The site is served at ${routing.locales.length} locales under a path prefix (${routing.locales.join(", ")}).`,
-    `Every page is translated into all ${routing.locales.length}. The articles are English only and`,
-    `canonicalise to their /${routing.defaultLocale} URL. This file describes the English site.`,
+    `Every page and article is translated into all ${routing.locales.length}; an article without a`,
+    `translation canonicalises to its /${routing.defaultLocale} URL. This file describes the English site.`,
     ``,
     `The consumer app was named SeekAR from launch through August 2026 and is now`,
     `named Seekprotocol, the same product, the same publisher (Block Protocol`,

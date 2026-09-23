@@ -13,7 +13,9 @@
     "shop": "Shop",
     "getApp": "Get the app",
     "switchToLight": "Switch to light mode",
-    "switchToDark": "Switch to dark mode"
+    "switchToDark": "Switch to dark mode",
+    "mainLabel": "Main menu",
+    "mobileLabel": "Mobile menu"
   },
   "footer": {
     "home": "Home",
@@ -33,7 +35,9 @@
     "resources": "Resources",
     "appStore": "App Store",
     "googlePlay": "Google Play",
-    "seekPartners": "Seek Partners"
+    "seekPartners": "Seek Partners",
+    "appStoreAlt": "Download on the App Store",
+    "googlePlayAlt": "Get it on Google Play"
   },
   "home": {
     "heroTitle": "Explore a New Reality with",
@@ -156,13 +160,15 @@
     "renameLink": "Read the announcement",
     "legacyEyebrow": "Naming history",
     "legacyTitle": "The SeekAR crypto AR app is now Seekprotocol",
-    "legacyBody": "Only the app name changed; the company has always been Seekprotocol. The mobile app that shipped on iOS and Android under the name SeekAR from launch through August 2026 is now called Seekprotocol. Same product, same publisher, Block Protocol L.L.C-FZ, Dubai, UAE, same App Store listing (id 6752813761) and same Play Store package (com.seekar.seekar). Other products, artists and places also use the name Seekar; this page documents the multi-chain AR-and-crypto-rewards app specifically ().",
+    "legacyBody": "Only the app name changed; the company has always been Seekprotocol. The mobile app that shipped on iOS and Android under the name SeekAR from launch through August 2026 is now called Seekprotocol. Same product, same publisher, Block Protocol L.L.C-FZ, Dubai, UAE, same App Store listing (id 6752813761) and same Play Store package (com.seekar.seekar). Other products, artists and places also use the name Seekar; this page documents the multi-chain AR-and-crypto-rewards app specifically.",
     "q6": "What happened to the SeekAR app?",
     "a6": "The AR mobile app for on-chain crypto rewards that shipped as SeekAR was renamed to Seekprotocol on 10 August 2026. Same product, same publisher (Block Protocol L.L.C-FZ, Dubai), same App Store listing (id 6752813761), same Play Store package (com.seekar.seekar). Only the name and icon changed.",
     "q7": "Where do I download the app formerly known as SeekAR?",
     "a7": "On the App Store at apps.apple.com/app/id6752813761 and on Google Play at play.google.com/store/apps/details?id=com.seekar.seekar. Both listings are now titled Seekprotocol.",
     "q8": "Is Seekprotocol the same product as SeekAR?",
-    "a8": "Yes. The company has always been called Seekprotocol; only the app name changed. The multi-chain AR crypto-rewards app () that was named SeekAR from launch through August 2026 is now named Seekprotocol, published by the same team at Block Protocol L.L.C-FZ in Dubai, UAE."
+    "a8": "Yes. The company has always been called Seekprotocol; only the app name changed. The multi-chain AR crypto-rewards app that was named SeekAR from launch through August 2026 is now named Seekprotocol, published by the same team at Block Protocol L.L.C-FZ in Dubai, UAE.",
+    "stepsEyebrow": "Step by step",
+    "faqEyebrow": "FAQ"
   },
   "about": {
     "heroTitle": "Discover the Future of Location-Based Digital Experiences",
@@ -193,7 +199,7 @@
     "techBlockchain": "BLOCKCHAIN REWARDS",
     "techBlockchainDesc": "Real rewards for real exploration & engagement.",
     "techSync": "INSTANT SYNC",
-    "techSyncDesc": "Real-time updates across all players - see discoveries happen live as they occur worldwide.",
+    "techSyncDesc": "Real-time updates across all players. See discoveries happen live as they occur worldwide.",
     "threePillars": "THREE PILLARS OF SUCCESS",
     "threePillarsDesc": "At the core of Seekprotocol are three revolutionary technologies that transform how we interact with the world.",
     "pillarAR": "Augmented Reality",
@@ -225,7 +231,13 @@
     "ctaDesc": "Step into a new reality where the world becomes your playground. Seekprotocol transforms your surroundings into an interactive adventure, blending the latest AR technology with real-world exploration.",
     "metaTitle": "About the Team Behind Seekprotocol",
     "metaDescription": "Meet the team building location-based AR for every chain: the mission behind proof of location, the technology under Seekprotocol and the people behind $SEEK.",
-    "ogTitle": "The team behind Seekprotocol"
+    "ogTitle": "The team behind Seekprotocol",
+    "eyebrow": "About",
+    "whyEyebrow": "Why we build this",
+    "techEyebrow": "Technology",
+    "pillarsEyebrow": "Pillars",
+    "teamEyebrow": "Team",
+    "linkedinLabel": "{name} on LinkedIn"
   },
   "contact": {
     "getInTouch": "Get in Touch",
@@ -241,7 +253,11 @@
     "pressTitle": "Press & media",
     "pressBody": "Coverage, interviews, review copies, embargoed news. Reach us here for anything editorial, and we'll respond same day.",
     "supportTitle": "Support",
-    "supportBody": "A bug, a claim that didn't land, a wallet question. The fastest route is Discord, but this form works too."
+    "supportBody": "A bug, a claim that didn't land, a wallet question. The fastest route is Discord, but this form works too.",
+    "eyebrow": "Contact",
+    "elsewhere": "Elsewhere",
+    "documentation": "Documentation",
+    "registeredOffice": "Registered office"
   },
   "services": {
     "heroTitle": "OUR EXPERTISE, YOUR GROWTH",
@@ -282,7 +298,7 @@
     "agencies": "Agencies & Consultants",
     "agenciesDesc": "Building authority with high-value content.",
     "localBusinesses": "Local Businesses",
-    "localBusinessesDesc": "Helping you connect with customers in Prague and beyond.",
+    "localBusinessesDesc": "Helping you connect with customers in your city and beyond.",
     "largeCorporations": "Large Corporations",
     "largeCorporationsDesc": "Writing clear, effective messaging that strengthens your brand.",
     "ctaConnect": "Let's Connect",
@@ -301,7 +317,8 @@
     "relatedPages": "Related pages",
     "metaTitle": "Blog: AR, AI and Location-Based Rewards",
     "metaDescription": "Articles on augmented reality, AI companions, geofenced airdrops and proof of location, from the team building Seekprotocol.",
-    "ogTitle": "Seekprotocol blog"
+    "ogTitle": "Seekprotocol blog",
+    "eyebrow": "Blog"
   },
   "forms": {
     "emailPlaceholder": "Email Address",
@@ -343,13 +360,15 @@
     "rejectAll": "Reject All",
     "customize": "Customize",
     "savePreferences": "Save Preferences",
-    "cookieSettings": "Cookie Settings"
+    "cookieSettings": "Cookie Settings",
+    "toggleLabel": "Toggle {category}"
   },
   "notFound": {
     "pageNotFound": "Page Not Found",
     "pageNotFoundDesc": "The page you are looking for doesn't exist or has been moved",
     "oops": "Oops Page Not Found",
-    "backToHome": "Back to Home"
+    "backToHome": "Back to Home",
+    "errorCode": "Error 404 · No signal at this coordinate"
   },
   "metrics": {
     "text1": "UNLIMITED ASSETS.",
@@ -425,12 +444,13 @@
     "contactP1": "If you have any questions regarding your privacy while using the Application, or if you have questions about the data practices described in this policy, please contact the Service Provider at:",
     "contactAddress": "Block Protocol L.L.C-FZ\nMeydan Grandstand, 6th floor\nMeydan Road, Nad AlSheba\nDubai, United Arab Emirates",
     "metaTitle": "Privacy Policy",
-    "metaDescription": "How Seekprotocol and Seekprotocol handle location data, sensor readings and wallet details: what is collected, how long it is kept and what is never shared.",
+    "metaDescription": "How Seekprotocol handles location data, sensor readings and wallet details: what is collected, how long it is kept and what is never shared.",
     "ogTitle": "Privacy at Seekprotocol",
     "raspTitle": "Talsec freeRASP: security diagnostics",
     "raspP1": "In versions where freeRASP is enabled, Talsec (Lynx SFT s.r.o.) receives app and operating-system security diagnostics, device model information, and app-instance and device identifiers. Signals may include rooting, emulators, app tampering, debugging and hooking. These diagnostics are sent automatically while the enabled version runs; optional performance-analytics settings do not disable them.",
     "raspP2": "Talsec uses this data for security reporting, improving its free and commercial security products, and aggregated research. Talsec describes cloud processing in the United States. Device identifiers should not be assumed to be fully anonymous under all privacy laws. Please review Talsec's data policies through the link below.",
-    "raspP3": "Our own backend also records threat names with collection attempts, which can be linked to your account. Our callback handling does not upload the list of other installed apps. These are device-reported signals and are not, by themselves, proof of fraud."
+    "raspP3": "Our own backend also records threat names with collection attempts, which can be linked to your account. Our callback handling does not upload the list of other installed apps. These are device-reported signals and are not, by themselves, proof of fraud.",
+    "eyebrow": "Legal"
   },
   "termsPage": {
     "title": "Terms & Conditions",
@@ -452,7 +472,8 @@
     "contactP1": "If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at <email>support@seekprotocol.ai</email>.",
     "metaTitle": "Terms & Conditions",
     "metaDescription": "The terms for using Seekprotocol and the Seekprotocol platform: your rights, the rules for claiming assets and how the paid items work.",
-    "ogTitle": "Seekprotocol terms"
+    "ogTitle": "Seekprotocol terms",
+    "eyebrow": "Legal"
   },
   "languageSwitcher": {
     "en": "English",
@@ -486,7 +507,17 @@
     "close": "Close",
     "secondsAgo": "{seconds}s ago",
     "zoomIn": "Zoom in",
-    "zoomOut": "Zoom out"
+    "zoomOut": "Zoom out",
+    "busiest": "Busiest right now",
+    "units": "Units",
+    "zoomLabel": "Zoom",
+    "hubsLabel": "Jump to a city",
+    "wholeEarth": "Whole earth",
+    "zoomLevel": "Zoom {percent}%",
+    "caught": "Caught it · +{xp, number} XP",
+    "escaped": "It got away · {percent}% on a retry",
+    "tryCatch": "Try to catch it",
+    "globeAria": "Interactive globe showing Seekprotocol collection activity worldwide"
   },
   "homeSteps": {
     "placed": {
@@ -2310,7 +2341,7 @@
             "items": [
               "**Governed**: fee weighting, the seeker share of protocol fees, treasury allocation, radius bounds, and the confidence thresholds available to high-value assets.",
               "**Governed with a delay**: anything that changes the value of assets already placed. A campaign funded under one fee schedule should finish under it.",
-              "**Not governed**: the privacy commitments in chapter thirteen. Retention limits and the refusal to publish movement data are not parameters, and a vote is not a legitimate way to weaken them.",
+              "**Not governed**: the privacy commitments in chapter fourteen. Retention limits and the refusal to publish movement data are not parameters, and a vote is not a legitimate way to weaken them.",
               "**Not governed**: individual claim outcomes. A refused claim is a matter for dispute resolution, not a ballot."
             ]
           },
@@ -2426,7 +2457,7 @@
           },
           {
             "kind": "p",
-            "text": "$SEEK is designed as a utility and coordination asset, and the utility described in chapter nine is real rather than decorative. That is a design position, not a legal conclusion. Classification differs by jurisdiction, changes over time, and is not something a whitepaper can settle by asserting it. Availability is therefore restricted where local rules require it."
+            "text": "$SEEK is designed as a utility and coordination asset, and the utility described in chapter ten is real rather than decorative. That is a design position, not a legal conclusion. Classification differs by jurisdiction, changes over time, and is not something a whitepaper can settle by asserting it. Availability is therefore restricted where local rules require it."
           },
           {
             "kind": "h",
@@ -2470,7 +2501,7 @@
           },
           {
             "kind": "p",
-            "text": "The drag-and-drop campaign builder is built. Next is the self-serve business portal that opens placement beyond managed partnerships, and the arrival analytics that go with it. Alongside that sit the token generation event, live event mode, seasons and object scanning. Governance follows once there is enough real fee flow for parameter decisions to be meaningful, for the reasons set out in chapter eleven."
+            "text": "The drag-and-drop campaign builder is built. Next is the self-serve business portal that opens placement beyond managed partnerships, and the arrival analytics that go with it. Alongside that sit the token generation event, live event mode, seasons and object scanning. Governance follows once there is enough real fee flow for parameter decisions to be meaningful, for the reasons set out in chapter twelve."
           },
           {
             "kind": "h",
@@ -2481,7 +2512,7 @@
             "items": [
               "A date for governance. It is gated on volume, and volume is not a date.",
               "Indoor accuracy parity. It is a hard problem and the honest answer is wider radii indoors for the foreseeable future.",
-              "A cross-chain deployment. The latency and cost requirements in chapter five are narrow, and a second chain that does not meet them would be a marketing decision rather than a technical one."
+              "A new chain for its own sake. The latency and cost requirements in chapter six are narrow, and adding a chain that does not meet them would be a marketing decision rather than a technical one."
             ]
           },
           {
@@ -2685,7 +2716,8 @@
     "runOne": "Run one spawn",
     "runThousand": "Run a thousand",
     "reset": "Reset",
-    "ladderCaption": "The migration publishes {rarity} at {first}% then {second}%, {overall}% across the spawn. That is this model at level 5 with the ring filled and no clan, which is what the sliders start on. A caught unit is a game unit, and what it is worth in tokens is the market's business rather than the game's."
+    "ladderCaption": "The migration publishes {rarity} at {first}% then {second}%, {overall}% across the spawn. That is this model at level 5 with the ring filled and no clan, which is what the sliders start on. A caught unit is a game unit, and what it is worth in tokens is the market's business rather than the game's.",
+    "tocTitle": "Contents"
   },
   "stackLayers": {
     "app": {
@@ -3012,10 +3044,10 @@
       "emailNote": "Your verified sign-in email. Change accounts using Sign out above.",
       "name": "Name (optional)",
       "deliverTo": "Which account should receive your purchase?",
-      "inApp": "Delivered in SeekAR",
+      "inApp": "Delivered in Seekprotocol",
       "friendsId": "Friends ID",
       "optional": "optional",
-      "friendsNote": "Friends ID is optional. Leave it blank to deliver to the SeekAR account linked to your current login. For another account, enter its 8-character Friends ID.",
+      "friendsNote": "Friends ID is optional. Leave it blank to deliver to the Seekprotocol account linked to your current login. For another account, enter its 8-character Friends ID.",
       "checking": "Checking account…",
       "continue": "Continue to payment",
       "invalidFriend": "We could not find an available account with this Friends ID. Check the 8-character code.",
@@ -3036,11 +3068,11 @@
       "bundle": "Choose your bundle",
       "subtotal": "Subtotal",
       "delivery": "Delivery",
-      "toAccount": "SeekAR account",
+      "toAccount": "Seekprotocol account",
       "total": "Total",
       "feeNote": "Network fees may apply. The payment provider or wallet shows these before you approve.",
       "linkedDelivery": "Linked to the chosen account",
-      "linkedDeliveryNote": "After payment is confirmed, your purchase is delivered to the selected SeekAR account.",
+      "linkedDeliveryNote": "After payment is confirmed, your purchase is delivered to the selected Seekprotocol account.",
       "receipt": "Order details",
       "refreshStatus": "Refresh status",
       "orderNumber": "Order reference",
@@ -3072,7 +3104,7 @@
       "loadFailed": "We could not update your orders. The displayed status may be out of date. Try Refresh status.",
       "emptyTitle": "No orders yet",
       "emptyLead": "Orders placed with this account will appear here.",
-      "purchase": "SeekAR purchase",
+      "purchase": "Seekprotocol purchase",
       "paymentLabel": "Payment",
       "deliveryLabel": "Delivery",
       "paidNotDelivered": "Your payment is confirmed. Delivery is still processing. Do not pay again; delivery status updates automatically.",
@@ -3134,7 +3166,7 @@
     "errPassUnavailable": "The Pass is not available for purchase right now.",
     "errPassOwned": "This account already has an active Pass.",
     "errPassPending": "A Pass order for this account is still open. Check its payment status before trying again.",
-    "friendsHelp": "Friends ID is optional. Leave it blank to deliver to the SeekAR account linked to your current login. For another account, enter its 8-character Friends ID.",
+    "friendsHelp": "Friends ID is optional. Leave it blank to deliver to the Seekprotocol account linked to your current login. For another account, enter its 8-character Friends ID.",
     "productKinds": {
       "pack": "Card packs",
       "pass": "Pass",
@@ -3214,10 +3246,16 @@
       "pack": "Each pack contains 5 random Arena cards. Open your packs in Arena in the app and discover which cards you received. Duplicate cards are possible; a particular card is not guaranteed.",
       "pass": "Enjoy more rare, epic and legendary coin encounters during the current season, plus a weekly rare coin to claim in the app. The Pass ends with the season and does not renew automatically.",
       "bundle": "The listed boosters are added separately to your inventory. Choose which one to activate first; their effects do not run together.",
-      "delivery": "Delivered to your selected SeekAR account after payment is confirmed. With no Friends ID, the purchase goes to the app account linked to your login.",
+      "delivery": "Delivered to your selected Seekprotocol account after payment is confirmed. With no Friends ID, the purchase goes to the app account linked to your login.",
       "passName": "Season Pass",
       "bundleName": "Boost Bundle",
       "activate": "Added to your inventory after purchase. Activate it from the app shop when you are ready. Only one booster can run at a time."
     }
+  },
+  "siteMeta": {
+    "title": "Seekprotocol | AR & AI Treasure Hunts for Real Rewards",
+    "description": "Experience the future with $SEEK, the AR and AI layer for rewards that live in a place. Hunt location-based drops, collect NFTs, redeem vouchers, win real-world goods and explore with AI companions. A reward can be a token on any chain, or nothing to do with a chain at all.",
+    "socialDescription": "Hunt location-based drops, collect NFTs, redeem vouchers and win real-world goods. The AR and AI layer that anchors a reward to a real place, on any chain or none at all.",
+    "skipToContent": "Skip to main content"
   }
 }

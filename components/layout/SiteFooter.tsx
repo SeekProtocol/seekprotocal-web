@@ -76,12 +76,12 @@ const STORES = [
   {
     href: "https://apps.apple.com/app/seekar/id6752813761",
     img: "/images/app-store.svg",
-    alt: "Download on the App Store",
+    alt: "appStoreAlt",
   },
   {
     href: "https://play.google.com/store/apps/details?id=com.seekar.seekar",
     img: "/images/google-play.svg",
-    alt: "Get it on Google Play",
+    alt: "googlePlayAlt",
   },
 ] as const;
 
@@ -126,7 +126,7 @@ export default function SiteFooter() {
                   rel="noopener noreferrer"
                   className="store-button"
                 >
-                  <img src={store.img} alt={store.alt} width={140} height={32} loading="lazy" />
+                  <img src={store.img} alt={t(store.alt)} width={140} height={32} loading="lazy" />
                 </a>
               ))}
             </div>
