@@ -225,19 +225,16 @@
     "approachEventsDesc": "대중을 하나로 모으는 기간 한정 커뮤니티 이벤트, 포켓몬 GO 레이드의 Web3 버전을 상상해 보세요.",
     "approachCollaborations": "창조하는 콜라보레이션",
     "approachCollaborationsDesc": "사용자 생성 콘텐츠와 챌린지.",
-    "ourTeam": "우리의 멋진 팀",
     "joinBeta": "베타에 참여하세요",
     "getReady": "탐험할 준비가 되셨나요!",
     "ctaDesc": "세상이 당신의 놀이터가 되는 새로운 현실로 발걸음을 내딛으세요. Seekprotocol은 최신 AR 기술과 현실 세계 탐험을 융합하여 주변을 인터랙티브 모험으로 변환합니다.",
-    "metaTitle": "Seekprotocol를 만드는 팀 소개",
-    "metaDescription": "모든 체인을 위한 위치 기반 AR를 만드는 팀을 소개합니다. 위치 증명이라는 발상, Seekprotocol를 떠받치는 기술, 그리고 $SEEK 뒤의 사람들.",
-    "ogTitle": "Seekprotocol를 만드는 팀",
+    "metaTitle": "Seekprotocol 소개: 미션과 기술",
+    "metaDescription": "Seekprotocol이 모든 체인을 위한 위치 기반 AR를 만드는 이유. 위치 증명이라는 발상, 앱을 떠받치는 기술, 그리고 $SEEK의 역할.",
+    "ogTitle": "Seekprotocol이 존재하는 이유",
     "eyebrow": "소개",
     "whyEyebrow": "우리가 이것을 만드는 이유",
     "techEyebrow": "기술",
-    "pillarsEyebrow": "핵심 축",
-    "teamEyebrow": "팀",
-    "linkedinLabel": "LinkedIn의 {name}"
+    "pillarsEyebrow": "핵심 축"
   },
   "contact": {
     "getInTouch": "문의하기",

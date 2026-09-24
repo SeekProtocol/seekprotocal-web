@@ -83,7 +83,7 @@ export async function GET() {
       `- [Whitepaper](${en}/whitepaper): the technical account. ${WHITEPAPER_META.version}, updated ${WHITEPAPER_META.updated}, ${WHITEPAPER_META.readingMinutes} min read.`,
       `- [Roadmap](${en}/roadmap): ${shipped} of ${total} milestones shipped across ${PHASES.length} phases.`,
       `- [For business](${en}/business): placing campaigns and paying for verified arrivals rather than impressions.`,
-      `- [About](${en}/about): the team and why the protocol exists.`,
+      `- [About](${en}/about): why the protocol exists and the technology behind it.`,
       `- [Blog](${en}/blog): ${blogPosts.length} articles.`,
       `- [Contact](${en}/contact): partnerships, beta access and press.`,
     ]),

@@ -225,19 +225,16 @@
     "approachEventsDesc": "把大家聚在一起的限時社群活動，想像一下 Web3 版的 Pokémon Go 團體戰。",
     "approachCollaborations": "共同創造的合作",
     "approachCollaborationsDesc": "由使用者產生的內容與挑戰。",
-    "ourTeam": "我們的超棒團隊",
     "joinBeta": "加入我們的測試版",
     "getReady": "準備出發尋寶！",
     "ctaDesc": "踏入全新的現實，讓世界成為你的遊樂場。Seekprotocol 把你周遭的環境變成互動式冒險，結合最新的 AR 技術與真實世界的探索。",
-    "metaTitle": "認識 Seekprotocol 背後的團隊",
-    "metaDescription": "認識為每條鏈打造以位置為基礎之 AR 的團隊：proof of location 背後的使命、Seekprotocol 底層的技術，以及 $SEEK 背後的人。",
-    "ogTitle": "Seekprotocol 背後的團隊",
+    "metaTitle": "關於 Seekprotocol：使命與技術",
+    "metaDescription": "Seekprotocol 為何為每條鏈打造以位置為基礎的 AR：proof of location 背後的使命、App 底層的技術，以及 $SEEK 的角色。",
+    "ogTitle": "Seekprotocol 為何存在",
     "eyebrow": "關於",
     "whyEyebrow": "我們為什麼打造它",
     "techEyebrow": "技術",
-    "pillarsEyebrow": "支柱",
-    "teamEyebrow": "團隊",
-    "linkedinLabel": "{name} 的 LinkedIn"
+    "pillarsEyebrow": "支柱"
   },
   "contact": {
     "getInTouch": "與我們聯絡",

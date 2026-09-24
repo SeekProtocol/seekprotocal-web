@@ -225,19 +225,16 @@
     "approachEventsDesc": "Tidsbegränsade communityevenemang som samlar massorna, tänk Pokémon-Go-raider i Web3-stil.",
     "approachCollaborations": "Samarbeten som skapar",
     "approachCollaborationsDesc": "Användarskapat innehåll och utmaningar.",
-    "ourTeam": "Vårt fantastiska team",
     "joinBeta": "Gå med i vår beta",
     "getReady": "Gör dig redo att söka!",
     "ctaDesc": "Kliv in i en ny verklighet där världen blir din lekplats. Seekprotocol förvandlar din omgivning till ett interaktivt äventyr som blandar den senaste AR-tekniken med utforskande i verkligheten.",
-    "metaTitle": "Om teamet bakom Seekprotocol",
-    "metaDescription": "Möt teamet som bygger platsbaserad AR för alla kedjor: uppdraget bakom proof of location, tekniken under Seekprotocol och människorna bakom $SEEK.",
-    "ogTitle": "Teamet bakom Seekprotocol",
+    "metaTitle": "Om Seekprotocol: uppdrag och teknik",
+    "metaDescription": "Varför Seekprotocol bygger platsbaserad AR för alla kedjor: uppdraget bakom proof of location, tekniken under appen och rollen för $SEEK.",
+    "ogTitle": "Varför Seekprotocol finns",
     "eyebrow": "Om oss",
     "whyEyebrow": "Varför vi bygger det här",
     "techEyebrow": "Teknik",
-    "pillarsEyebrow": "Pelare",
-    "teamEyebrow": "Team",
-    "linkedinLabel": "{name} på LinkedIn"
+    "pillarsEyebrow": "Pelare"
   },
   "contact": {
     "getInTouch": "Hör av dig",

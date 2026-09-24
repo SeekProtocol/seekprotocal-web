@@ -225,19 +225,16 @@
     "approachEventsDesc": "限时社区活动将大众聚集在一起，想象一下宝可梦 Go 团战，Web3 风格。",
     "approachCollaborations": "创造的协作",
     "approachCollaborationsDesc": "用户生成的内容和挑战。",
-    "ourTeam": "我们出色的团队",
     "joinBeta": "加入我们的测试版",
     "getReady": "准备好寻找了！",
     "ctaDesc": "走进一个全新的现实，让世界成为您的游乐场。Seekprotocol 将您的周围变成互动冒险，融合最新的 AR 技术与真实世界探索。",
-    "metaTitle": "关于 Seekprotocol 背后的团队",
-    "metaDescription": "认识为每一条链构建位置增强现实的团队：位置证明背后的想法、Seekprotocol 的技术，以及 $SEEK 背后的人。",
-    "ogTitle": "Seekprotocol 背后的团队",
+    "metaTitle": "关于 Seekprotocol：使命与技术",
+    "metaDescription": "Seekprotocol 为何为每一条链构建位置增强现实：位置证明背后的想法、应用的技术，以及 $SEEK 的作用。",
+    "ogTitle": "Seekprotocol 为何存在",
     "eyebrow": "关于我们",
     "whyEyebrow": "我们为何打造它",
     "techEyebrow": "技术",
-    "pillarsEyebrow": "支柱",
-    "teamEyebrow": "团队",
-    "linkedinLabel": "{name} 的 LinkedIn"
+    "pillarsEyebrow": "支柱"
   },
   "contact": {
     "getInTouch": "联系我们",

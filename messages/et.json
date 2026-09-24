@@ -225,19 +225,16 @@
     "approachEventsDesc": "Ajaliselt piiratud kogukonnaüritused, mis toovad massid kokku. Kujuta ette Pokémon-Go reide Web3 stiilis.",
     "approachCollaborations": "Koostööd, mis loovad",
     "approachCollaborationsDesc": "Kasutajate loodud sisu ja väljakutsed.",
-    "ourTeam": "Meie vinge meeskond",
     "joinBeta": "Liitu meie betaga",
     "getReady": "Valmistu otsima!",
     "ctaDesc": "Astu uude reaalsusse, kus maailmast saab sinu mänguväljak. Seekprotocol muudab sinu ümbruse interaktiivseks seikluseks, ühendades uusima AR-tehnoloogia päris maailma avastamisega.",
-    "metaTitle": "Seekprotocoli taga olev meeskond",
-    "metaDescription": "Tutvu meeskonnaga, kes ehitab asukohapõhist AR-i igale plokiahelale: asukoha tõendi missioon, Seekprotocoli tehnoloogia ja inimesed $SEEK taga.",
-    "ogTitle": "Seekprotocoli meeskond",
+    "metaTitle": "Seekprotocolist: missioon ja tehnoloogia",
+    "metaDescription": "Miks Seekprotocol ehitab asukohapõhist AR-i igale plokiahelale: asukoha tõendi missioon, rakenduse tehnoloogia ja $SEEK roll.",
+    "ogTitle": "Miks Seekprotocol on olemas",
     "eyebrow": "Meist",
     "whyEyebrow": "Miks me seda ehitame",
     "techEyebrow": "Tehnoloogia",
-    "pillarsEyebrow": "Sambad",
-    "teamEyebrow": "Meeskond",
-    "linkedinLabel": "{name} LinkedInis"
+    "pillarsEyebrow": "Sambad"
   },
   "contact": {
     "getInTouch": "Võta ühendust",

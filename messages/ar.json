@@ -225,19 +225,16 @@
     "approachEventsDesc": "فعاليات مجتمعية محدودة المدة تجمع الناس، تخيّل غارات Pokémon-Go بأسلوب Web3.",
     "approachCollaborations": "تعاونات تُبدع",
     "approachCollaborationsDesc": "محتوى وتحديات من صنع المستخدمين.",
-    "ourTeam": "فريقنا الرائع",
     "joinBeta": "انضم إلى النسخة التجريبية",
     "getReady": "استعد للبحث!",
     "ctaDesc": "ادخل إلى واقع جديد يصبح فيه العالم ساحة لعبك. يحوّل Seekprotocol محيطك إلى مغامرة تفاعلية، مازجًا أحدث تقنيات الواقع المعزز باستكشاف العالم الحقيقي.",
-    "metaTitle": "عن الفريق وراء Seekprotocol",
-    "metaDescription": "تعرّف على الفريق الذي يبني الواقع المعزز القائم على الموقع لكل سلسلة: الرسالة وراء إثبات الموقع، والتقنية تحت Seekprotocol، والأشخاص وراء $SEEK.",
-    "ogTitle": "الفريق وراء Seekprotocol",
+    "metaTitle": "عن Seekprotocol: الرسالة والتقنية",
+    "metaDescription": "لماذا يبني Seekprotocol الواقع المعزز القائم على الموقع لكل سلسلة: الرسالة وراء إثبات الموقع، والتقنية تحت التطبيق، ودور $SEEK.",
+    "ogTitle": "لماذا وُجد Seekprotocol",
     "eyebrow": "من نحن",
     "whyEyebrow": "لماذا نبني هذا",
     "techEyebrow": "التقنية",
-    "pillarsEyebrow": "الركائز",
-    "teamEyebrow": "الفريق",
-    "linkedinLabel": "{name} على LinkedIn"
+    "pillarsEyebrow": "الركائز"
   },
   "contact": {
     "getInTouch": "تواصل معنا",

@@ -225,19 +225,16 @@
     "approachEventsDesc": "大衆を一つにする期間限定コミュニティイベント。ポケモン GO レイドの Web3 版を想像してください。",
     "approachCollaborations": "創造するコラボレーション",
     "approachCollaborationsDesc": "ユーザー生成コンテンツとチャレンジ。",
-    "ourTeam": "素晴らしいチーム",
     "joinBeta": "ベータ版に参加",
     "getReady": "探索の準備はできましたか！",
     "ctaDesc": "世界があなたの遊び場になる新しい現実に踏み出しましょう。Seekprotocol は最新の AR テクノロジーと現実世界の探索を融合させ、あなたの周囲をインタラクティブな冒険に変えます。",
-    "metaTitle": "Seekprotocolをつくるチームについて",
-    "metaDescription": "すべてのチェーンに向けて位置連動のARをつくるチームの紹介。位置証明という発想、Seekprotocolを支える技術、そして$SEEKの背後にいる人たち。",
-    "ogTitle": "Seekprotocolをつくるチーム",
+    "metaTitle": "Seekprotocolについて：ミッションと技術",
+    "metaDescription": "Seekprotocolがすべてのチェーンに向けて位置連動のARをつくる理由。位置証明という発想、アプリを支える技術、そして$SEEKの役割。",
+    "ogTitle": "Seekprotocolが生まれた理由",
     "eyebrow": "私たちについて",
     "whyEyebrow": "私たちがこれをつくる理由",
     "techEyebrow": "テクノロジー",
-    "pillarsEyebrow": "柱",
-    "teamEyebrow": "チーム",
-    "linkedinLabel": "LinkedIn の {name}"
+    "pillarsEyebrow": "柱"
   },
   "contact": {
     "getInTouch": "お問い合わせ",

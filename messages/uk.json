@@ -225,19 +225,16 @@
     "approachEventsDesc": "Обмежені в часі події для всієї спільноти, що збирають маси разом: уявіть рейди з Pokémon Go у стилі Web3.",
     "approachCollaborations": "Колаборації, що створюють",
     "approachCollaborationsDesc": "Контент і завдання від самих користувачів.",
-    "ourTeam": "Наша чудова команда",
     "joinBeta": "Долучайтеся до бети",
     "getReady": "Готуйтеся шукати!",
     "ctaDesc": "Зробіть крок у нову реальність, де весь світ стає вашим ігровим майданчиком. Seekprotocol перетворює довкілля на інтерактивну пригоду, поєднуючи новітні AR-технології з дослідженням реального світу.",
-    "metaTitle": "Про команду Seekprotocol",
-    "metaDescription": "Познайомтеся з командою, яка будує AR із прив'язкою до місця для будь-якої мережі: місія доказу місцезнаходження, технології Seekprotocol і люди, що стоять за $SEEK.",
-    "ogTitle": "Команда Seekprotocol",
+    "metaTitle": "Про Seekprotocol: місія і технології",
+    "metaDescription": "Навіщо Seekprotocol будує AR із прив'язкою до місця для будь-якої мережі: місія доказу місцезнаходження, технології застосунку і роль $SEEK.",
+    "ogTitle": "Навіщо існує Seekprotocol",
     "eyebrow": "Про нас",
     "whyEyebrow": "Навіщо ми це будуємо",
     "techEyebrow": "Технології",
-    "pillarsEyebrow": "Опори",
-    "teamEyebrow": "Команда",
-    "linkedinLabel": "{name} у LinkedIn"
+    "pillarsEyebrow": "Опори"
   },
   "contact": {
     "getInTouch": "Зв'яжіться з нами",

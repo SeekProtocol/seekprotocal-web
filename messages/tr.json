@@ -225,19 +225,16 @@
     "approachEventsDesc": "Kalabalıkları bir araya getiren zamanla sınırlı topluluk etkinlikleri; Pokémon-Go Raidlerinin Web3 sürümünü düşün.",
     "approachCollaborations": "Yaratan İşbirlikleri",
     "approachCollaborationsDesc": "Kullanıcı tarafından üretilen içerikler ve zorluklar.",
-    "ourTeam": "Harika Ekibimiz",
     "joinBeta": "Beta'mıza katıl",
     "getReady": "Aramaya hazır ol!",
     "ctaDesc": "Dünyanın oyun alanın olduğu yeni bir gerçekliğe adım at. Seekprotocol, çevreni interaktif bir maceraya dönüştürerek en yeni AR teknolojisini gerçek dünya keşfiyle harmanlar.",
-    "metaTitle": "Seekprotocol'ün Arkasındaki Ekip Hakkında",
-    "metaDescription": "Her zincir için konum tabanlı AR inşa eden ekibi tanıyın: konum kanıtı arkasındaki misyon, Seekprotocol'ün altındaki teknoloji ve $SEEK'in arkasındaki insanlar.",
-    "ogTitle": "Seekprotocol'ün arkasındaki ekip",
+    "metaTitle": "Seekprotocol Hakkında: Misyon ve Teknoloji",
+    "metaDescription": "Seekprotocol neden her zincir için konum tabanlı AR inşa ediyor: konum kanıtı arkasındaki misyon, uygulamanın altındaki teknoloji ve $SEEK'in rolü.",
+    "ogTitle": "Seekprotocol neden var",
     "eyebrow": "Hakkımızda",
     "whyEyebrow": "Bunu neden inşa ediyoruz",
     "techEyebrow": "Teknoloji",
-    "pillarsEyebrow": "Temel taşlar",
-    "teamEyebrow": "Ekip",
-    "linkedinLabel": "LinkedIn'de {name}"
+    "pillarsEyebrow": "Temel taşlar"
   },
   "contact": {
     "getInTouch": "İletişime Geç",

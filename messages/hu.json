@@ -225,19 +225,16 @@
     "approachEventsDesc": "Időkorlátos közösségi események, amelyek tömegeket hoznak össze: képzeld el a Pokémon Go raideket Web3-stílusban.",
     "approachCollaborations": "Alkotó együttműködések",
     "approachCollaborationsDesc": "Felhasználók által készített tartalmak és kihívások.",
-    "ourTeam": "Csodás csapatunk",
     "joinBeta": "Csatlakozz a bétához",
     "getReady": "Készülj a keresésre!",
     "ctaDesc": "Lépj be egy új valóságba, ahol a világ a játszótered. A Seekprotocol interaktív kalanddá alakítja a környezetedet, a legújabb AR-technológiát a valós felfedezéssel ötvözve.",
-    "metaTitle": "A Seekprotocol mögött álló csapat",
-    "metaDescription": "Ismerd meg a csapatot, amely minden láncra helyalapú AR-t épít: a helyszínigazolás mögötti küldetést, a Seekprotocol technológiáját és a $SEEK mögött álló embereket.",
-    "ogTitle": "A Seekprotocol mögött álló csapat",
+    "metaTitle": "A Seekprotocolról: küldetés és technológia",
+    "metaDescription": "Miért épít a Seekprotocol helyalapú AR-t minden láncra: a helyszínigazolás mögötti küldetés, az alkalmazás technológiája és a $SEEK szerepe.",
+    "ogTitle": "Miért létezik a Seekprotocol",
     "eyebrow": "Rólunk",
     "whyEyebrow": "Miért építjük",
     "techEyebrow": "Technológia",
-    "pillarsEyebrow": "Pillérek",
-    "teamEyebrow": "Csapat",
-    "linkedinLabel": "{name} a LinkedInen"
+    "pillarsEyebrow": "Pillérek"
   },
   "contact": {
     "getInTouch": "Vedd fel velünk a kapcsolatot",

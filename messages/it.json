@@ -225,19 +225,16 @@
     "approachEventsDesc": "Eventi della community a tempo limitato che riuniscono le folle: immagina i raid di Pokémon Go, in stile Web3.",
     "approachCollaborations": "Collaborazioni che creano",
     "approachCollaborationsDesc": "Contenuti e sfide creati dagli utenti.",
-    "ourTeam": "Il nostro fantastico team",
     "joinBeta": "Unisciti alla beta",
     "getReady": "Preparati a cercare!",
     "ctaDesc": "Entra in una nuova realtà dove il mondo diventa il tuo parco giochi. Seekprotocol trasforma ciò che ti circonda in un'avventura interattiva, unendo la tecnologia AR più recente all'esplorazione del mondo reale.",
-    "metaTitle": "Il team dietro Seekprotocol",
-    "metaDescription": "Conosci il team che costruisce l'AR basata sulla posizione per ogni chain: la missione dietro la proof of location, la tecnologia di Seekprotocol e le persone dietro $SEEK.",
-    "ogTitle": "Il team dietro Seekprotocol",
+    "metaTitle": "Chi siamo: missione e tecnologia di Seekprotocol",
+    "metaDescription": "Perché Seekprotocol costruisce l'AR basata sulla posizione per ogni chain: la missione dietro la proof of location, la tecnologia dell'app e il ruolo di $SEEK.",
+    "ogTitle": "Perché esiste Seekprotocol",
     "eyebrow": "Chi siamo",
     "whyEyebrow": "Perché lo costruiamo",
     "techEyebrow": "Tecnologia",
-    "pillarsEyebrow": "Pilastri",
-    "teamEyebrow": "Team",
-    "linkedinLabel": "{name} su LinkedIn"
+    "pillarsEyebrow": "Pilastri"
   },
   "contact": {
     "getInTouch": "Contattaci",
