@@ -12,6 +12,7 @@ export interface Receipt {
   price_usd_cents: number | null; created_at: string; signature: string | null;
   product_snapshot?: ProductSnapshot | null;
   mint?: string; amount_base_units?: string | number;
+  payment_finalized_through?:string|null;expires_at?:string;
   payment_amount_text?:string;payment_received_text?:string;
   payment_protocol?: string | null; payment_received_base_units?: string | number;
   payment_review_reason?: string | null;
@@ -20,7 +21,7 @@ export interface Receipt {
 export interface HistoryOrder extends Receipt {product_id:string;mint:string;expires_at?:string}
 export type OrderCursor = {created_at:string;id:string};
 export const HISTORY_PAGE_SIZE = 10;
-export const HISTORY_COLUMNS = 'id,product_id,mint,status,paid_at,fulfilled_at,price_usd_cents,created_at,expires_at,signature,checkout_snapshot,product_snapshot,payment_protocol,amount_base_units,payment_received_base_units,payment_review_reason,payment_amount_text,payment_received_text';
+export const HISTORY_COLUMNS = 'id,product_id,mint,status,paid_at,fulfilled_at,price_usd_cents,created_at,expires_at,signature,checkout_snapshot,product_snapshot,payment_protocol,amount_base_units,payment_received_base_units,payment_review_reason,payment_amount_text,payment_received_text,payment_finalized_through';
 
 /** Bounded API pagination. Ownership is also enforced by the table's RLS. */
 export async function fetchOrderPage(client: SupabaseClient, userId:string, cursor:OrderCursor|null, signal:AbortSignal) {
@@ -55,6 +56,7 @@ export function historyAction(order:HistoryOrder, now=Date.now()): 'resume'|'reo
   if(order.fulfilled_at || order.paid_at || order.status==='paid') return null;
   if(order.payment_review_reason || Number(order.payment_received_base_units ?? 0)>0) return 'check';
   if(order.signature) return 'check';
+  if(order.payment_protocol==='evm-native-v1' && (!order.payment_finalized_through || Date.parse(order.payment_finalized_through)<Date.parse(order.expires_at??'')+120_000)) return 'check';
   const expires=Date.parse(order.expires_at??'');
   if(order.status==='failed'||order.status==='expired'||order.status==='pending'&&Number.isFinite(expires)&&expires<=now) return 'reorder';
   if(order.status==='pending'&&order.mint==='RADOM'&&Number.isFinite(expires)&&expires>now) return 'resume';

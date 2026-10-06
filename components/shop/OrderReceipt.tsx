@@ -18,7 +18,7 @@ export default function OrderReceipt({orderId,refreshKey}:{orderId:string;refres
   let poll:ReturnType<typeof setTimeout>|undefined;
   void (async()=>{
    try{
-    const {data,error}=await getSupabase().from('solana_orders').select('id,status,fulfilled_at,paid_at,price_usd_cents,created_at,signature,checkout_snapshot,product_snapshot,mint,amount_base_units,payment_protocol,payment_received_base_units,payment_review_reason,payment_amount_text,payment_received_text').eq('id',orderId).abortSignal(controller.signal).maybeSingle();
+    const {data,error}=await getSupabase().from('solana_orders').select('id,status,fulfilled_at,paid_at,price_usd_cents,created_at,signature,checkout_snapshot,product_snapshot,mint,amount_base_units,payment_protocol,payment_received_base_units,payment_review_reason,payment_amount_text,payment_received_text,payment_finalized_through,expires_at').eq('id',orderId).abortSignal(controller.signal).maybeSingle();
     if(active){setFailed(!!error||!data);setReceipt(data as Receipt|null);if(data&&!data.fulfilled_at)poll=setTimeout(()=>setRefresh(n=>n+1),15_000);}
    }catch{if(active)setFailed(true);}finally{clearTimeout(timeout);if(active)setLoading(false);}
   })();
@@ -31,6 +31,7 @@ export function OrderReceiptView({receipt,orderId,failed,loading,onRefresh,embed
  const t=useTranslations('shop'),c=useTranslations('shop.checkout'),h=useTranslations('shop.history'),locale=useLocale();
  const dates=new Intl.DateTimeFormat(locale,{dateStyle:'medium',timeStyle:'short'}),items=receipt?receiptItems(receipt):[],progress=receipt?orderProgress(receipt):null;
  const mixed=new Set(items.map(i=>i.product.currency)).size>1;
+ const awaitingFinality=receipt?.payment_protocol==='evm-native-v1' && (!receipt.payment_finalized_through || Date.parse(receipt.payment_finalized_through)<Date.parse(receipt.expires_at??'')+120_000);
  const asset=receipt?.mint ? paymentAssetForMint(receipt.mint) : null;
  return <section className={embedded?undefined:styles.receipt} aria-live="polite">
   {!embedded&&<div className={styles.receiptHeader}><h3>{c('receipt')}</h3><button className={styles.quietButton} type="button" disabled={loading} onClick={onRefresh}>{c('refreshStatus')}</button></div>}
@@ -50,7 +51,7 @@ export function OrderReceiptView({receipt,orderId,failed,loading,onRefresh,embed
     {mixed&&<p className={styles.currencyNote}>{h('currencyNote')}</p>}
    </div>
    {receipt.payment_review_reason&&<p className={styles.notice}>{t('direct.review')}</p>}
-   {!embedded&&!receipt.fulfilled_at&&!receipt.payment_review_reason&&<p className={styles.notice}>{c(progress?.payment==='failed'||progress?.payment==='expired'?'closedOrder':'pendingNote')}</p>}
+   {!embedded&&!receipt.fulfilled_at&&!receipt.payment_review_reason&&<p className={styles.notice}>{awaitingFinality?t('direct.pending'):c(progress?.payment==='failed'||progress?.payment==='expired'?'closedOrder':'pendingNote')}</p>}
   </>:<p className={styles.notice}>{c('loadingReceipt')}</p>}
  </section>;
 }
