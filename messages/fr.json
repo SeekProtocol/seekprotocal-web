@@ -2966,11 +2966,11 @@
     "solPending": "Montant en SOL après actualisation",
     "rateFrom": "Cours de {time}.",
     "rateStale": "Il a pu bouger depuis.",
-    "rateNone": "Pas encore de cours SOL.",
-    "refreshRate": "Actualiser le cours SOL",
+    "rateNone": "Taux de change indisponible.",
+    "refreshRate": "Actualiser le taux",
     "refreshing": "Récupération du cours...",
     "rateNote": "Le montant exact en SOL est fixé à la création de la commande et reste valable cinq minutes.",
-    "waysToPay": "Deux façons de payer : en SOL depuis un portefeuille de navigateur sur Solana, ou en USDC, USDT, SOL, ETH, BTC et plus sur Ethereum, Base, Arbitrum, Polygon, BNB, Tron et Bitcoin via la page de paiement de Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Acheter en SOL",
     "payOther": "Payer en stablecoins ou autres cryptos",
     "connectToBuy": "Connectez un wallet pour acheter",
@@ -3250,6 +3250,33 @@
       "passName": "Pass saisonnier",
       "bundleName": "Pack de boosts",
       "activate": "Ajouté à votre inventaire après l’achat. Activez-le dans la boutique de l’app quand vous le souhaitez. Un seul boost peut être actif."
+    },
+    "direct": {
+      "walletNote": "Payez avec votre portefeuille {network}. Gardez un peu de {coin} pour les frais de réseau.",
+      "pending": "Nous vérifions votre paiement. Vous pouvez fermer cette page et suivre la commande dans votre historique. Ne payez pas à nouveau.",
+      "review": "Un paiement doit être vérifié. Contactez le support avec ce numéro de commande avant tout nouveau paiement.",
+      "received": "Reçu",
+      "insufficient": "Solde insuffisant en jetons ou en SOL pour le paiement et les frais de réseau.",
+      "evmWalletMissing": "Ouvrez cette page dans MetaMask ou Rabby, ou utilisez leur extension de navigateur."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Paquet basique",
+        "premium": "Paquet premium",
+        "elite": "Paquet élite"
+      },
+      "points": "+{points} points de paquet",
+      "always": "Toujours {cards}",
+      "fifthCard": "Cinquième carte",
+      "card": "{number}",
+      "rarities": {
+        "common": "Commun",
+        "uncommon": "Peu commune",
+        "rare": "Rare",
+        "epic": "Épique",
+        "legendary": "Légendaire",
+        "mythic": "Mythique"
+      }
     }
   },
   "siteMeta": {

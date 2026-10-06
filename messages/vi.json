@@ -2966,11 +2966,11 @@
     "solPending": "Số SOL sẽ hiện khi làm mới",
     "rateFrom": "Tỷ giá lúc {time}.",
     "rateStale": "Tỷ giá có thể đã thay đổi.",
-    "rateNone": "Chưa có tỷ giá SOL.",
-    "refreshRate": "Làm mới tỷ giá SOL",
+    "rateNone": "Chưa có tỷ giá.",
+    "refreshRate": "Làm mới tỷ giá",
     "refreshing": "Đang lấy tỷ giá...",
     "rateNote": "Số SOL chính xác được cố định khi bạn tạo đơn hàng và giữ nguyên trong năm phút.",
-    "waysToPay": "Hai cách thanh toán: SOL từ ví trình duyệt trên Solana, hoặc USDC, USDT, SOL, ETH, BTC và nhiều loại khác trên Ethereum, Base, Arbitrum, Polygon, BNB, Tron và Bitcoin qua trang thanh toán của Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Mua bằng SOL",
     "payOther": "Thanh toán bằng stablecoin hoặc crypto khác",
     "connectToBuy": "Kết nối ví để mua",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Combo Booster",
       "activate": "Được thêm vào kho đồ sau khi mua. Kích hoạt nó từ cửa hàng trong ứng dụng khi bạn sẵn sàng. Mỗi lần chỉ chạy được một booster."
+    },
+    "direct": {
+      "walletNote": "Thanh toán bằng ví {network}. Giữ lại một ít {coin} để trả phí mạng.",
+      "pending": "Chúng tôi đang kiểm tra khoản thanh toán. Bạn có thể đóng trang này và theo dõi đơn trong lịch sử đơn hàng. Vui lòng không thanh toán lại.",
+      "review": "Có khoản thanh toán cần kiểm tra. Hãy liên hệ hỗ trợ kèm mã đơn hàng này trước khi thanh toán lại.",
+      "received": "Đã nhận",
+      "insufficient": "Không đủ token hoặc SOL để thanh toán và trả phí mạng.",
+      "evmWalletMissing": "Mở trang này trong MetaMask hoặc Rabby, hoặc dùng tiện ích mở rộng trình duyệt của họ."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Gói cơ bản",
+        "premium": "Gói cao cấp",
+        "elite": "Gói tinh anh"
+      },
+      "points": "+{points} điểm gói",
+      "always": "Luôn có {cards}",
+      "fifthCard": "Thẻ thứ năm",
+      "card": "{number}",
+      "rarities": {
+        "common": "Common",
+        "uncommon": "Uncommon",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {

@@ -2966,11 +2966,11 @@
     "solPending": "SOL-määrä päivitettäessä",
     "rateFrom": "Kurssi ajalta {time}.",
     "rateStale": "Se on voinut muuttua sen jälkeen.",
-    "rateNone": "SOL-kurssia ei vielä ole.",
-    "refreshRate": "Päivitä SOL-kurssi",
+    "rateNone": "Valuuttakurssia ei vielä ole.",
+    "refreshRate": "Päivitä kurssi",
     "refreshing": "Haetaan kurssia...",
     "rateNote": "Tarkka SOL-määrä lukitaan, kun luot tilauksen, ja se on voimassa viisi minuuttia.",
-    "waysToPay": "Kaksi tapaa maksaa: SOL selainlompakosta Solanassa tai USDC, USDT, SOL, ETH, BTC ja muita Ethereumissa, Basessa, Arbitrumissa, Polygonissa, BNB:ssä, Tronissa ja Bitcoinissa Radomin maksusivun kautta.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Osta SOL:lla",
     "payOther": "Maksa stablecoineilla tai muulla kryptolla",
     "connectToBuy": "Yhdistä lompakko ostaaksesi",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Boost Bundle",
       "activate": "Lisätään varastoosi oston jälkeen. Aktivoi se sovelluksen kaupasta, kun olet valmis. Vain yksi tehoste voi olla käynnissä kerrallaan."
+    },
+    "direct": {
+      "walletNote": "Maksa {network}-lompakollasi. Varaa hieman {coin}ia verkkomaksuihin.",
+      "pending": "Tarkistamme maksuasi. Voit sulkea sivun ja seurata tilausta tilaushistoriassa. Älä maksa uudelleen.",
+      "review": "Maksu vaatii tarkistusta. Ota yhteyttä tukeen tällä tilausnumerolla ennen uutta maksua.",
+      "received": "Vastaanotettu",
+      "insufficient": "Tokeneita tai SOLia ei ole tarpeeksi maksuun ja verkkomaksuihin.",
+      "evmWalletMissing": "Avaa tämä sivu MetaMaskissa tai Rabbyssa tai käytä niiden selainlaajennusta."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Peruspakkaus",
+        "premium": "Premium-pakkaus",
+        "elite": "Eliittipakkaus"
+      },
+      "points": "+{points} pakkauspistettä",
+      "always": "Aina {cards}",
+      "fifthCard": "Viides kortti",
+      "card": "{number}",
+      "rarities": {
+        "common": "Common",
+        "uncommon": "Uncommon",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {

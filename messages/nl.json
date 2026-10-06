@@ -2966,17 +2966,17 @@
     "solPending": "SOL-bedrag na verversen",
     "rateFrom": "Koers van {time}.",
     "rateStale": "Die kan inmiddels zijn verschoven.",
-    "rateNone": "Nog geen SOL-koers.",
-    "refreshRate": "SOL-koers verversen",
+    "rateNone": "Nog geen wisselkoers.",
+    "refreshRate": "Koers verversen",
     "refreshing": "Koers ophalen...",
     "rateNote": "Het exacte SOL-bedrag wordt vastgezet zodra je de bestelling aanmaakt en blijft vijf minuten geldig.",
-    "waysToPay": "Twee manieren om te betalen: SOL vanuit een browserwallet op Solana, of USDC, USDT, SOL, ETH, BTC en meer op Ethereum, Base, Arbitrum, Polygon, BNB, Tron en Bitcoin via de betaalpagina van Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Kopen met SOL",
     "payOther": "Betalen met stablecoins of andere crypto",
     "connectToBuy": "Verbind een wallet om te kopen",
     "walletEyebrow": "Wallet",
     "walletTitle": "Betaal vanuit je wallet",
-    "walletLead": "Phantom, Solflare, Backpack of elke wallet die de Wallet Standard spreekt. Er wordt niets verstuurd voordat jij het daar goedkeurt.",
+    "walletLead": "Gebruik je wallet voor het gekozen netwerk. Er wordt niets verstuurd voordat jij het daar goedkeurt.",
     "walletSelect": "Wallet kiezen",
     "walletConnecting": "Verbinden...",
     "walletConnect": "Wallet verbinden",
@@ -3250,6 +3250,33 @@
       "passName": "Seizoenspas",
       "bundleName": "Boostbundel",
       "activate": "Na aankoop staat de booster in je voorraad. Activeer hem in de winkel in de app wanneer je wilt. Er kan één booster tegelijk actief zijn."
+    },
+    "direct": {
+      "walletNote": "Betaal op {network}. Houd wat {coin} beschikbaar voor de netwerkkosten.",
+      "pending": "We controleren je betaling. Je kunt deze pagina sluiten en de bestelling volgen in je bestelgeschiedenis. Betaal niet opnieuw.",
+      "review": "We hebben een betaling gevonden die gecontroleerd moet worden. Neem met dit ordernummer contact op met support voordat je opnieuw betaalt.",
+      "received": "Ontvangen",
+      "insufficient": "Onvoldoende saldo voor de betaling en netwerkkosten.",
+      "evmWalletMissing": "Open deze pagina in je MetaMask- of Rabby-wallet, of gebruik de browserextensie."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Basispakket",
+        "premium": "Premiumpakket",
+        "elite": "Elitepakket"
+      },
+      "points": "+{points} pakketpunten",
+      "always": "Altijd {cards}",
+      "fifthCard": "Vijfde kaart",
+      "card": "{number}",
+      "rarities": {
+        "common": "Common",
+        "uncommon": "Uncommon",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {

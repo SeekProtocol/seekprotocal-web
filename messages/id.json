@@ -2966,11 +2966,11 @@
     "solPending": "Jumlah SOL saat disegarkan",
     "rateFrom": "Kurs dari {time}.",
     "rateStale": "Mungkin sudah berubah sejak itu.",
-    "rateNone": "Belum ada kurs SOL.",
-    "refreshRate": "Segarkan kurs SOL",
+    "rateNone": "Kurs belum tersedia.",
+    "refreshRate": "Perbarui kurs",
     "refreshing": "Mengambil kurs...",
     "rateNote": "Jumlah SOL yang pasti ditetapkan saat kamu membuat pesanan dan berlaku selama lima menit.",
-    "waysToPay": "Dua cara membayar: SOL dari dompet browser di Solana, atau USDC, USDT, SOL, ETH, BTC, dan lainnya di Ethereum, Base, Arbitrum, Polygon, BNB, Tron, dan Bitcoin melalui halaman pembayaran Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Beli dengan SOL",
     "payOther": "Bayar dengan stablecoin atau kripto lain",
     "connectToBuy": "Hubungkan dompet untuk membeli",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Paket Boost",
       "activate": "Masuk ke inventarismu setelah pembelian. Aktifkan dari toko aplikasi saat kamu siap. Hanya satu boost yang bisa berjalan pada satu waktu."
+    },
+    "direct": {
+      "walletNote": "Bayar dengan dompet {network} Anda. Sisakan sedikit {coin} untuk biaya jaringan.",
+      "pending": "Kami sedang memeriksa pembayaran Anda. Anda dapat menutup halaman ini dan memantau pesanan di riwayat pesanan. Jangan membayar lagi.",
+      "review": "Ada pembayaran yang perlu diperiksa. Hubungi dukungan dengan nomor pesanan ini sebelum membayar lagi.",
+      "received": "Diterima",
+      "insufficient": "Token atau SOL tidak cukup untuk pembayaran dan biaya jaringan.",
+      "evmWalletMissing": "Buka halaman ini di MetaMask atau Rabby, atau gunakan ekstensi browser mereka."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Paket dasar",
+        "premium": "Paket premium",
+        "elite": "Paket elite"
+      },
+      "points": "+{points} poin paket",
+      "always": "Selalu {cards}",
+      "fifthCard": "Kartu kelima",
+      "card": "{number}",
+      "rarities": {
+        "common": "Biasa",
+        "uncommon": "Tidak biasa",
+        "rare": "Langka",
+        "epic": "Epik",
+        "legendary": "Legendaris",
+        "mythic": "Mitos"
+      }
     }
   },
   "siteMeta": {

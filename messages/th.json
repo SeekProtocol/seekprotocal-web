@@ -2966,11 +2966,11 @@
     "solPending": "จำนวน SOL จะแสดงเมื่อรีเฟรช",
     "rateFrom": "อัตราเมื่อ {time}",
     "rateStale": "อาจเปลี่ยนไปแล้ว",
-    "rateNone": "ยังไม่มีอัตรา SOL",
-    "refreshRate": "รีเฟรชอัตรา SOL",
+    "rateNone": "ยังไม่มีอัตราแลกเปลี่ยน",
+    "refreshRate": "รีเฟรชอัตราแลกเปลี่ยน",
     "refreshing": "กำลังดึงอัตรา...",
     "rateNote": "จำนวน SOL ที่แน่นอนจะถูกล็อกเมื่อคุณสร้างคำสั่งซื้อ และคงไว้ห้านาที",
-    "waysToPay": "จ่ายได้สองแบบ: SOL จากกระเป๋าบนเบราว์เซอร์บน Solana หรือ USDC, USDT, SOL, ETH, BTC และอื่นๆ บน Ethereum, Base, Arbitrum, Polygon, BNB, Tron และ Bitcoin ผ่านหน้าชำระเงินของ Radom",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "ซื้อด้วย SOL",
     "payOther": "จ่ายด้วย stablecoin หรือคริปโตอื่น",
     "connectToBuy": "เชื่อมต่อกระเป๋าเพื่อซื้อ",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Boost Bundle",
       "activate": "เพิ่มลงคลังหลังซื้อ เปิดใช้จากร้านค้าในแอปเมื่อพร้อม ใช้บูสต์ได้ครั้งละหนึ่งรายการ"
+    },
+    "direct": {
+      "walletNote": "ชำระด้วยกระเป๋า {network} ของคุณ และเก็บ {coin} ไว้เล็กน้อยสำหรับค่าธรรมเนียมเครือข่าย",
+      "pending": "เรากำลังตรวจสอบการชำระเงิน คุณสามารถปิดหน้านี้และติดตามคำสั่งซื้อในประวัติได้ โปรดอย่าชำระซ้ำ",
+      "review": "พบการชำระเงินที่ต้องตรวจสอบ โปรดติดต่อฝ่ายสนับสนุนพร้อมหมายเลขคำสั่งซื้อนี้ก่อนชำระอีกครั้ง",
+      "received": "ได้รับแล้ว",
+      "insufficient": "โทเคนหรือ SOL ไม่เพียงพอสำหรับการชำระเงินและค่าธรรมเนียมเครือข่าย",
+      "evmWalletMissing": "เปิดหน้านี้ใน MetaMask หรือ Rabby หรือใช้ส่วนขยายเบราว์เซอร์"
+    },
+    "packTiers": {
+      "names": {
+        "basic": "แพ็กพื้นฐาน",
+        "premium": "แพ็กพรีเมียม",
+        "elite": "แพ็กอีลีท"
+      },
+      "points": "+{points} แต้มแพ็ก",
+      "always": "ได้แน่นอน {cards}",
+      "fifthCard": "การ์ดใบที่ห้า",
+      "card": "{number}",
+      "rarities": {
+        "common": "Common",
+        "uncommon": "Uncommon",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {

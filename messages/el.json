@@ -2966,11 +2966,11 @@
     "solPending": "Το ποσό σε SOL με την ανανέωση",
     "rateFrom": "Ισοτιμία από {time}.",
     "rateStale": "Μπορεί να έχει αλλάξει από τότε.",
-    "rateNone": "Δεν υπάρχει ακόμα ισοτιμία SOL.",
-    "refreshRate": "Ανανέωση ισοτιμίας SOL",
+    "rateNone": "Δεν υπάρχει ακόμη ισοτιμία.",
+    "refreshRate": "Ανανέωση ισοτιμίας",
     "refreshing": "Λήψη ισοτιμίας...",
     "rateNote": "Το ακριβές ποσό σε SOL κλειδώνει όταν δημιουργείς την παραγγελία και ισχύει για πέντε λεπτά.",
-    "waysToPay": "Δύο τρόποι πληρωμής: SOL από ένα πορτοφόλι browser στο Solana ή USDC, USDT, SOL, ETH, BTC και άλλα σε Ethereum, Base, Arbitrum, Polygon, BNB, Tron και Bitcoin μέσω της σελίδας πληρωμής της Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Αγορά με SOL",
     "payOther": "Πλήρωσε με stablecoins ή άλλα crypto",
     "connectToBuy": "Σύνδεσε πορτοφόλι για να αγοράσεις",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Boost Bundle",
       "activate": "Προστίθεται στο απόθεμά σου μετά την αγορά. Ενεργοποίησέ το από το κατάστημα της εφαρμογής όταν είσαι έτοιμος. Μόνο ένα booster μπορεί να είναι ενεργό κάθε φορά."
+    },
+    "direct": {
+      "walletNote": "Πληρώστε με το πορτοφόλι {network} σας. Κρατήστε λίγο {coin} για τις χρεώσεις δικτύου.",
+      "pending": "Ελέγχουμε την πληρωμή σας. Μπορείτε να κλείσετε τη σελίδα και να παρακολουθείτε την παραγγελία στο ιστορικό. Μην πληρώσετε ξανά.",
+      "review": "Μια πληρωμή χρειάζεται έλεγχο. Επικοινωνήστε με την υποστήριξη με αυτόν τον αριθμό παραγγελίας πριν πληρώσετε ξανά.",
+      "received": "Ελήφθη",
+      "insufficient": "Δεν υπάρχουν αρκετά token ή SOL για την πληρωμή και τις χρεώσεις δικτύου.",
+      "evmWalletMissing": "Ανοίξτε αυτήν τη σελίδα στο MetaMask ή στο Rabby ή χρησιμοποιήστε την επέκταση του προγράμματος περιήγησης."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Βασικό πακέτο",
+        "premium": "Πακέτο premium",
+        "elite": "Πακέτο elite"
+      },
+      "points": "+{points} πόντοι πακέτων",
+      "always": "Πάντα {cards}",
+      "fifthCard": "Πέμπτη κάρτα",
+      "card": "{number}",
+      "rarities": {
+        "common": "Common",
+        "uncommon": "Uncommon",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {

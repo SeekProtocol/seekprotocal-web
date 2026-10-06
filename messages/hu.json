@@ -2966,11 +2966,11 @@
     "solPending": "A SOL-összeg frissítéskor jelenik meg",
     "rateFrom": "Árfolyam ekkorról: {time}.",
     "rateStale": "Azóta változhatott.",
-    "rateNone": "Még nincs SOL-árfolyam.",
-    "refreshRate": "SOL-árfolyam frissítése",
+    "rateNone": "Még nincs elérhető árfolyam.",
+    "refreshRate": "Árfolyam frissítése",
     "refreshing": "Árfolyam lekérése...",
     "rateNote": "A pontos SOL-összeg a rendelés létrehozásakor rögzül, és öt percig érvényes.",
-    "waysToPay": "Kétféleképpen fizethetsz: SOL-lal egy böngészős Solana-tárcából, vagy USDC-vel, USDT-vel, SOL-lal, ETH-val, BTC-vel és más eszközökkel Ethereumon, Base-en, Arbitrumon, Polygonon, BNB-n, Tronon és Bitcoinon keresztül, a Radom fizetési oldalán.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Vásárlás SOL-lal",
     "payOther": "Fizetés stablecoinnal vagy más kriptóval",
     "connectToBuy": "Csatlakoztass tárcát a vásárláshoz",
@@ -3250,6 +3250,33 @@
       "passName": "Szezonbérlet",
       "bundleName": "Boost Bundle",
       "activate": "Vásárlás után a leltáradba kerül. Aktiváld az app boltjából, amikor készen állsz. Egyszerre csak egy boost futhat."
+    },
+    "direct": {
+      "walletNote": "Fizess a {network}-tárcáddal. Hagyj egy kevés {coin}-t a hálózati díjakra.",
+      "pending": "Ellenőrizzük a fizetést. Bezárhatod ezt az oldalt, és követheted a rendelést a rendelési előzményekben. Ne fizess újra.",
+      "review": "Egy fizetést ellenőrizni kell. Újabb fizetés előtt fordulj az ügyfélszolgálathoz ezzel a rendelésszámmal.",
+      "received": "Beérkezett",
+      "insufficient": "Nincs elég token vagy SOL a fizetéshez és a hálózati díjakhoz.",
+      "evmWalletMissing": "Nyisd meg ezt az oldalt a MetaMaskban vagy a Rabbyban, vagy használd a böngészőbővítményt."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Alapcsomag",
+        "premium": "Prémium csomag",
+        "elite": "Elit csomag"
+      },
+      "points": "+{points} csomagpont",
+      "always": "Mindig {cards}",
+      "fifthCard": "Ötödik kártya",
+      "card": "{number}",
+      "rarities": {
+        "common": "Gyakori",
+        "uncommon": "Szokatlan",
+        "rare": "Ritka",
+        "epic": "Epic",
+        "legendary": "Legendás",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {

@@ -2966,11 +2966,11 @@
     "solPending": "Jumlah SOL semasa muat semula",
     "rateFrom": "Kadar dari {time}.",
     "rateStale": "Ia mungkin telah berubah sejak itu.",
-    "rateNone": "Belum ada kadar SOL.",
-    "refreshRate": "Muat semula kadar SOL",
+    "rateNone": "Kadar pertukaran belum tersedia.",
+    "refreshRate": "Muat semula kadar",
     "refreshing": "Mendapatkan kadar...",
     "rateNote": "Jumlah SOL yang tepat ditetapkan semasa anda membuat pesanan dan kekal selama lima minit.",
-    "waysToPay": "Dua cara untuk membayar: SOL daripada dompet pelayar di Solana, atau USDC, USDT, SOL, ETH, BTC dan lain-lain di Ethereum, Base, Arbitrum, Polygon, BNB, Tron dan Bitcoin melalui halaman pembayaran Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Beli dengan SOL",
     "payOther": "Bayar dengan stablecoin atau kripto lain",
     "connectToBuy": "Sambungkan dompet untuk membeli",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Pakej Boost",
       "activate": "Ditambah ke inventori anda selepas pembelian. Aktifkannya dari kedai aplikasi apabila anda bersedia. Hanya satu booster boleh berjalan pada satu masa."
+    },
+    "direct": {
+      "walletNote": "Bayar dengan dompet {network} anda. Simpan sedikit {coin} untuk yuran rangkaian.",
+      "pending": "Kami sedang menyemak pembayaran anda. Anda boleh menutup halaman ini dan mengikuti pesanan dalam sejarah pesanan. Jangan bayar lagi.",
+      "review": "Ada pembayaran yang perlu disemak. Hubungi sokongan dengan nombor pesanan ini sebelum membayar lagi.",
+      "received": "Diterima",
+      "insufficient": "Token atau SOL tidak mencukupi untuk pembayaran dan yuran rangkaian.",
+      "evmWalletMissing": "Buka halaman ini dalam MetaMask atau Rabby, atau gunakan sambungan pelayar mereka."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Pek asas",
+        "premium": "Pek premium",
+        "elite": "Pek elit"
+      },
+      "points": "+{points} mata pek",
+      "always": "Sentiasa {cards}",
+      "fifthCard": "Kad kelima",
+      "card": "{number}",
+      "rarities": {
+        "common": "Biasa",
+        "uncommon": "Tidak biasa",
+        "rare": "Jarang",
+        "epic": "Epik",
+        "legendary": "Legenda",
+        "mythic": "Mitos"
+      }
     }
   },
   "siteMeta": {

@@ -19,12 +19,11 @@ import {
   CheckoutError,
   confirmOrder,
   createOrder,
-  createRadomOrder,
-  formatSol,
   isWalletRejection,
   looksInsufficient,
   orderExpired,
   quoteOrder,
+  paymentOptions,
   quoteCart,
   radomOrderStatus,
   readOrderForReorder,
@@ -36,6 +35,10 @@ import {
   type CheckoutSelection,
   type ShopOrder,
 } from "@/lib/shop/checkout";
+
+import {useEvmWallet} from '@/lib/shop/use-evm-wallet';
+import {isEvmAsset,prepareEvmWallet,buildEvmPayment,EVM_HASH} from '@/lib/shop/evm-wallet';
+import {formatPaymentAmount, SOLANA_MAINNET_GENESIS, type PaymentAsset} from "@/lib/shop/payment-assets";
 
 type ErrorKey =
   | "errPassUnavailable" | "errPassOwned" | "errPassPending"
@@ -65,9 +68,7 @@ type ErrorKey =
  * `pending`, are the only two the page is allowed to end a payment in: a
  * signature that went out is never reported as a failure.
  *
- * The Radom path adds two phases of its own. `redirecting` covers the
- * moment between asking for the order and the browser leaving for the hosted
- * page; `returning` is the poll after the player comes back with `?order=`.
+ * Existing Radom orders retain the `returning` phase after `?order=`.
  * It ends in the same `paid`, `pending` and `cancelled` as the wallet, with
  * no signature and, when the browser forgot which bundle it left with, no
  * product either.
@@ -79,7 +80,6 @@ type Flow =
   | { phase: "ready"; product: CartItem[]; order: ShopOrder }
   | { phase: "signing"; product: CartItem[]; order: ShopOrder }
   | { phase: "confirming"; product: CartItem[]; order: ShopOrder; signature: string; attempt: number }
-  | { phase: "redirecting"; product: CartItem[] }
   | { phase: "returning"; product: CartItem[] | null; orderId: string; attempt: number }
   | { phase: "paid"; product: CartItem[] | null; signature: string }
   | { phase: "pending"; product: CartItem[] | null; signature: string }
@@ -90,7 +90,6 @@ type Flow =
 const QUOTE_FRESH_MS = 3 * 60_000;
 /** How long to wait for the Turnstile widget to hand over a token before giving up. */
 const TOKEN_WAIT_MS = 25_000;
-/** The bundle a Radom order was made for, kept for the return so the paid line can count packs. */
 
 /** Order ids the server hands out. Anything else on the URL is ignored rather than asked about. */
 const ORDER_ID_SHAPE = /^[A-Za-z0-9_-]{8,64}$/;
@@ -153,11 +152,16 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
   const { setVisible } = useWalletModal();
   const { containerRef, token, error: verificationError, armed, arm, reset } = useTurnstile();
   const [verify] = useState(() => createVerificationQueue());
+  const evmWallet=useEvmWallet();
   const localCheckout = isLocalShopDevelopment();
 
   // A quote belongs to exactly one product/version and its currency.
-  const [rate, setRate] = useState<{key:string;priceCents:number;currency:"usd"|"eur";lamports:bigint;at:number} | null>(null);
+  const [rate, setRate] = useState<{key:string;priceCents:number;currency:"usd"|"eur";amount:bigint;asset:PaymentAsset;at:number} | null>(null);
   const [totalQuote,setTotalQuote] = useState<{key:string;priceCents:number;currency:"usd"|"eur"}|null>(null);
+  const [asset,setAsset] = useState<PaymentAsset>("USDC");
+  const [assets,setAssets] = useState<PaymentAsset[]>([]);
+  const quoteGeneration = useRef(0);
+  useEffect(()=>{let active=true;void paymentOptions().then(values=>{if(active){setAssets(values);setAsset(value=>values.includes(value)?value:values[0]??"SOL");}}).catch(()=>{if(active)setAssets([]);});return()=>{active=false;};},[]);
   const [quoting, setQuoting] = useState(false);
   const [quoteError, setQuoteError] = useState<ErrorKey | null>(null);
   const [flow, setFlow] = useState<Flow>({ phase: "idle" });
@@ -237,19 +241,27 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
 
   const refreshQuote = useCallback(async () => {
     if (!baseProduct.length) return;
+    const generation=++quoteGeneration.current;
     setQuoting(true);
     setQuoteError(null);
     try {
+      const available = await paymentOptions();
+      if (!available.length) throw new CheckoutError("checkout_unavailable");
+      if (liveRef.current) setAssets(available);
+      if (!available.includes(asset)) {
+        if (liveRef.current) {setAsset(available[0]);setRate(null);}
+        return;
+      }
       const total = await runVerified(value=>quoteCart(baseProduct,value));
-      if (liveRef.current) setTotalQuote({key:cartKey(baseProduct),...total});
-      const quote = await runVerified((value) => quoteOrder(baseProduct, value));
-      if (liveRef.current) setRate({key:cartKey(baseProduct),priceCents:quote.priceCents,currency:quote.currency,lamports:quote.lamports,at:Date.now()});
+      if (liveRef.current && generation===quoteGeneration.current) setTotalQuote({key:cartKey(baseProduct),...total});
+      const quote = await runVerified((value) => quoteOrder(baseProduct, value, asset));
+      if (liveRef.current && generation===quoteGeneration.current) setRate({key:cartKey(baseProduct),priceCents:quote.priceCents,currency:quote.currency,amount:quote.amount,asset:quote.asset,at:Date.now()});
     } catch (error) {
-      if (liveRef.current) setQuoteError(errorKeyFor(error));
+      if (liveRef.current && generation===quoteGeneration.current) setQuoteError(errorKeyFor(error));
     } finally {
-      if (liveRef.current) setQuoting(false);
+      if (liveRef.current && generation===quoteGeneration.current) setQuoting(false);
     }
-  }, [runVerified, baseProduct]);
+  }, [runVerified, baseProduct, asset]);
 
   useEffect(() => {
     if (!baseProduct.length || (flow.phase !== 'idle' && flow.phase !== 'error')) return;
@@ -285,7 +297,11 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
     async (product: CartItem[]) => {
       const total=cartTotal(product) ?? (totalQuote?.key===cartKey(product) ? totalQuote : null);
       if (!selection || !product.length || !total || paymentBusy.current) return;
-      if (!publicKey) {
+      if(isEvmAsset(asset) && !evmWallet.account) {
+        try {await evmWallet.connect();} catch(error) {setFlow({phase:"error",code:isWalletRejection(error)?"errWalletRejected":"errWalletFailed"});}
+        return;
+      }
+      if (!isEvmAsset(asset) && !publicKey) {
         setVisible(true);
         return;
       }
@@ -294,7 +310,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
       try {
         const order = await runVerified((value) => {
           setFlow({ phase: "creating", product });
-          return createOrder(product, value, selection, total);
+          return createOrder(product, value, selection, total, asset);
         });
         if (!liveRef.current) return;
         setReceiptId(order.orderId);
@@ -309,13 +325,13 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
         if (liveRef.current) setFlow({ phase: "error", code: errorKeyFor(error) });
       } finally { paymentBusy.current = false; }
     },
-    [publicKey, setVisible, runVerified, onSettled, selection,totalQuote],
+    [publicKey, setVisible, runVerified, onSettled, selection,totalQuote,asset,evmWallet],
   );
 
   const pay = useCallback(async () => {
     if (flow.phase !== "ready" || paymentBusy.current) return;
     const { product, order } = flow;
-    if (!publicKey) {
+    if (!isEvmAsset(order.asset) && !publicKey) {
       setVisible(true);
       return;
     }
@@ -330,15 +346,24 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
 
     /* Everything up to the broadcast can still hand the order back. */
     let transaction;
+    let evmTransaction;
     try {
+      if(isEvmAsset(order.asset)) {
+        if(!evmWallet.provider||!evmWallet.account)throw new Error("wallet_unavailable");
+        await prepareEvmWallet(evmWallet.provider,order.asset,evmWallet.account);
+        if(orderExpired(order))throw new CheckoutError("order_expired");
+        evmTransaction=buildEvmPayment(order,evmWallet.account);
+      } else {
+      if (await connection.getGenesisHash() !== SOLANA_MAINNET_GENESIS) throw new CheckoutError("checkout_unavailable");
       const latest = await connection.getLatestBlockhash("confirmed");
       if (orderExpired(order)) throw new CheckoutError("order_expired");
       transaction = buildOrderTransaction({
         order,
-        payer: publicKey,
+        payer: publicKey!,
         blockhash: latest.blockhash,
         lastValidBlockHeight: latest.lastValidBlockHeight,
       });
+      }
     } catch (error) {
       void abortOrder(order.orderId, error instanceof CheckoutError ? error.code : "blockhash_failed");
       if (liveRef.current) {
@@ -353,7 +378,11 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
     let signature: string;
     try {
       void recordCheckoutEvent(order.orderId,"wallet_opened");
-      signature = await sendTransaction(transaction, connection);
+      if(evmTransaction) {
+        const hash=await evmWallet.provider!.request({method:'eth_sendTransaction',params:[evmTransaction]});
+        if(typeof hash!=='string'||!EVM_HASH.test(hash))throw new Error('wallet_uncertain');
+        signature=hash;
+      } else {signature = await sendTransaction(transaction!, connection);}
       void recordCheckoutEvent(order.orderId,"transaction_submitted",signature);
     } catch (error) {
       if (isWalletRejection(error)) {
@@ -390,37 +419,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
     }
     if (liveRef.current) setFlow({ phase: "pending", product, signature });
     } finally { paymentBusy.current = false; }
-  }, [flow, publicKey, connection, sendTransaction, setVisible, onSettled]);
-
-  /* The other way to pay. No wallet needed: the order is made here, the
-     money moves on Radom's page, and the browser comes back to this path
-     with the order id on the URL. The bundle is noted in session storage so
-     the paid line can still count packs after the round trip; a browser
-     that lost it gets the line without a count. `redirecting` is left
-     standing on purpose: the page is unloading. */
-  const startRadomOrder = useCallback(
-    async (product: CartItem[]) => {
-      const total=cartTotal(product) ?? (totalQuote?.key===cartKey(product) ? totalQuote : null);
-      if (!selection || !product.length || !total || paymentBusy.current) return;
-      paymentBusy.current = true;
-      setFlow({ phase: "verifying", product });
-      try {
-        const order = await runVerified((value) => {
-          setFlow({ phase: "creating", product });
-          return createRadomOrder(product, value, window.location.pathname, selection, total);
-        });
-        if (!liveRef.current) return;
-        setReceiptId(order.orderId);
-        setFlow({ phase: "redirecting", product });
-        await recordCheckoutEvent(order.orderId,"redirect_started");
-        window.location.assign(order.checkoutUrl);
-      } catch (error) {
-        if (error instanceof CheckoutError && error.orderId) setReceiptId(error.orderId);
-        if (liveRef.current) setFlow({ phase: "error", code: errorKeyFor(error) });
-      } finally { paymentBusy.current = false; }
-    },
-    [runVerified, selection,totalQuote],
-  );
+  }, [flow, publicKey, connection, sendTransaction, setVisible, onSettled,evmWallet]);
 
   /* Back from Radom. The order may already be paid (the webhook is usually
      ahead of the browser), still open, or closed on Radom's side. The poll
@@ -509,13 +508,12 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
     flow.phase === "ready" ||
     flow.phase === "signing" ||
     flow.phase === "confirming" ||
-    flow.phase === "redirecting" ||
     flow.phase === "returning";
   const stale = rate ? now - rate.at > QUOTE_FRESH_MS : false;
   const activeProduct = busy && "product" in flow && flow.product ? flow.product : baseProduct;
   const timeFormat = new Intl.DateTimeFormat(locale, { hour: "2-digit", minute: "2-digit" });
   const solFor = (product: CartItem[]) =>
-    rate?.key===cartKey(product) ? formatSol(rate.lamports,5) : null;
+    rate?.key===cartKey(product) && rate.asset===asset ? formatPaymentAmount(rate.amount,asset) : null;
 
   const walletLabels = {
     connecting: t("walletConnecting"),
@@ -528,7 +526,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
   };
 
   let rateLine: string;
-  if (rate && rate.key === cartKey(activeProduct)) {
+  if (rate && rate.key === cartKey(activeProduct) && rate.asset===asset) {
     rateLine = t("rateFrom", { time: timeFormat.format(rate.at) });
     if (stale) rateLine = `${rateLine} ${t("rateStale")}`;
   } else if (quoteError) {
@@ -554,15 +552,18 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
       setQuantities(current=>({...current,[product.id]:quantity}));setSelection(null);setReceiptId(null);setFlow({phase:"idle"});
     }}
     onSol={() => void startOrder(activeProduct)}
-    onRadom={() => void startRadomOrder(activeProduct)}
+    asset={asset} assets={assets} onAsset={value=>{quoteGeneration.current++;setAsset(value);setRate(null);setFlow({phase:"idle"});setReceiptId(null);}}
     onRefresh={() => void refreshQuote()}
     busy={busy || reorder?.state==='loading' || flow.phase === "paid" || flow.phase === "pending" || flow.phase === "cancelled"}
-    connected={connected}
+    connected={isEvmAsset(asset)?!!evmWallet.account:connected}
     quoting={quoting}
     rateLine={rateLine}
     sol={solFor(activeProduct)}
     quoteError={!!quoteError}
-    wallet={connected && <BaseWalletMultiButton labels={walletLabels} />}
+    wallet={isEvmAsset(asset) ? <div className="checkout-evm-wallet">
+      {evmWallet.wallets.length>1 && <select aria-label={t("walletSelect")} value={evmWallet.selected} disabled={busy} onChange={event=>evmWallet.select(event.target.value)}>{evmWallet.wallets.map(wallet=><option key={wallet.id} value={wallet.id}>{wallet.name}</option>)}</select>}
+      {evmWallet.account ? <span>{evmWallet.account.slice(0,6)}…{evmWallet.account.slice(-4)}</span> : !evmWallet.wallets.length && <span>{t("direct.evmWalletMissing")}</span>}
+    </div> : connected && <BaseWalletMultiButton labels={walletLabels} />}
     verificationNote={localCheckout ? null : undefined}
     verification={localCheckout ? null : <>
       {armed && <div ref={containerRef} className="cf-turnstile shop-turnstile" />}
@@ -594,15 +595,13 @@ function FlowView({
 
   if (flow.phase === "idle") return null;
 
-  if (flow.phase === "verifying" || flow.phase === "creating" || flow.phase === "signing" || flow.phase === "redirecting") {
+  if (flow.phase === "verifying" || flow.phase === "creating" || flow.phase === "signing") {
     const line =
       flow.phase === "verifying"
         ? t("flowVerifying")
         : flow.phase === "creating"
         ? t("flowCreating")
-        : flow.phase === "signing"
-          ? t("flowSigning")
-          : t("flowRedirecting");
+        : t("flowSigning");
     return (
       <div className="shop-flow" role="status" aria-live="polite">
         <div className="shop-flow-box">
@@ -644,7 +643,7 @@ function FlowView({
         <div className="shop-flow-box">
           <p className="t-mono">{t("flowReady")}</p>
           <p className="t-num shop-flow-amount">
-            {t("flowPay", { sol: formatSol(flow.order.lamports) })}
+            {formatPaymentAmount(flow.order.amount,flow.order.asset)} {flow.order.asset}
           </p>
           <p className="t-small text-muted">{t("flowFor", { product: flow.product.map(item=>`${item.quantity} × ${productName(item.product,t)}`).join(" · ") })}</p>
           <p className="t-mono-sm">{t("flowHeld", { seconds: left })}</p>
@@ -685,7 +684,7 @@ function FlowView({
       <div className="shop-flow" role="status" aria-live="polite">
         <p className={`form-status ${flow.phase === "paid" ? "form-status-success" : "shop-flow-pending"}`}>
           {flow.phase !== "paid"
-            ? t("flowPending")
+            ? t("direct.pending")
             : flow.product
               ? t("checkout.delivered")
               : t("checkout.delivered")}
@@ -725,7 +724,7 @@ function FlowView({
   return (
     <div className="shop-flow">
       <p className="form-status form-status-error" role="alert">
-        {t(flow.code)}
+        {t(flow.code === "errInsufficient" ? "direct.insufficient" : flow.code)}
       </p>
       <div className="shop-flow-row">
         <button type="button" className="btn btn-outline btn-sm" onClick={onReset}>

@@ -2966,11 +2966,11 @@
     "solPending": "Iznos u SOL posle osvežavanja",
     "rateFrom": "Kurs od {time}.",
     "rateStale": "Od tada se možda promenio.",
-    "rateNone": "Još nema kursa za SOL.",
-    "refreshRate": "Osveži kurs za SOL",
+    "rateNone": "Kurs još nije dostupan.",
+    "refreshRate": "Osveži kurs",
     "refreshing": "Preuzimamo kurs...",
     "rateNote": "Tačan iznos u SOL utvrđuje se kada napravite porudžbinu i važi pet minuta.",
-    "waysToPay": "Dva načina plaćanja: SOL iz novčanika u pregledaču na Solana mreži, ili USDC, USDT, SOL, ETH, BTC i druge valute na mrežama Ethereum, Base, Arbitrum, Polygon, BNB, Tron i Bitcoin preko Radom stranice za plaćanje.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Kupi sa SOL",
     "payOther": "Platite stejblkoinovima ili drugom kriptovalutom",
     "connectToBuy": "Povežite novčanik da biste kupili",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Paket pojačanja",
       "activate": "Dodaje se u vaš inventar nakon kupovine. Aktivirajte ga iz prodavnice u aplikaciji kada budete spremni. Istovremeno može da radi samo jedno pojačanje."
+    },
+    "direct": {
+      "walletNote": "Platite svojim {network} novčanikom. Ostavite malo {coin}-a za mrežne naknade.",
+      "pending": "Proveravamo uplatu. Možete zatvoriti ovu stranicu i pratiti porudžbinu u istoriji porudžbina. Nemojte ponovo plaćati.",
+      "review": "Uplatu treba proveriti. Pre ponovnog plaćanja kontaktirajte podršku sa ovim brojem porudžbine.",
+      "received": "Primljeno",
+      "insufficient": "Nema dovoljno tokena ili SOL-a za plaćanje i mrežne naknade.",
+      "evmWalletMissing": "Otvorite ovu stranicu u MetaMask-u ili Rabby-ju ili koristite dodatak za pregledač."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Osnovni paket",
+        "premium": "Premijum paket",
+        "elite": "Elitni paket"
+      },
+      "points": "+{points} poena paketa",
+      "always": "Uvek {cards}",
+      "fifthCard": "Peta karta",
+      "card": "{number}",
+      "rarities": {
+        "common": "Obična",
+        "uncommon": "Neobična",
+        "rare": "Retka",
+        "epic": "Epska",
+        "legendary": "Legendarna",
+        "mythic": "Mitska"
+      }
     }
   },
   "siteMeta": {

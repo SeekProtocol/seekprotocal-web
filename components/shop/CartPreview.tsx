@@ -3,13 +3,14 @@ import {useState} from "react";
 import {CheckoutLayout} from "@/components/shop/CheckoutLayout";
 import type {CheckoutSelection} from "@/lib/shop/checkout";
 import type {ShopProduct} from "@/lib/shop/catalog";
+import type {PaymentAsset} from "@/lib/shop/payment-assets";
 import type {CartItem} from "@/lib/shop/cart";
 // Development-only examples: no account, purchase, or live catalog required.
 const base = {revision:1,description:"",grants:[],currency:"eur" as const};
 const products: ShopProduct[] = [
- {...base,id:"seekar_pack_single",name:"Card pack",kind:"pack",packs:1,priceCents:299,currency:"usd"},
- {...base,id:"seekar_pack_five",name:"5 packs",kind:"pack",packs:5,priceCents:1299,currency:"usd"},
- {...base,id:"seekar_pack_ten",name:"10 packs",kind:"pack",packs:10,priceCents:2399,currency:"usd"},
+ {...base,id:"seekar_pack_basic",name:"Basic pack",kind:"pack",packs:1,priceCents:249,currency:"usd",pack:{"tier":"basic","policy_version":"arena-balance-v1-seek02-20261006-tiers","points_per_pack":100,"slots":[{"slot":0,"card_rarity":"common","weight":1000},{"slot":1,"card_rarity":"common","weight":1000},{"slot":2,"card_rarity":"common","weight":1000},{"slot":3,"card_rarity":"uncommon","weight":1000},{"slot":4,"card_rarity":"uncommon","weight":800},{"slot":4,"card_rarity":"rare","weight":180},{"slot":4,"card_rarity":"epic","weight":20}]}},
+ {...base,id:"seekar_pack_premium",name:"Premium pack",kind:"pack",packs:1,priceCents:499,currency:"usd",pack:{"tier":"premium","policy_version":"arena-balance-v1-seek02-20261006-tiers","points_per_pack":200,"slots":[{"slot":0,"card_rarity":"common","weight":1000},{"slot":1,"card_rarity":"common","weight":1000},{"slot":2,"card_rarity":"uncommon","weight":1000},{"slot":3,"card_rarity":"uncommon","weight":1000},{"slot":4,"card_rarity":"rare","weight":820},{"slot":4,"card_rarity":"epic","weight":150},{"slot":4,"card_rarity":"legendary","weight":26},{"slot":4,"card_rarity":"mythic","weight":4}]}},
+ {...base,id:"seekar_pack_elite",name:"Elite pack",kind:"pack",packs:1,priceCents:999,currency:"usd",pack:{"tier":"elite","policy_version":"arena-balance-v1-seek02-20261006-tiers","points_per_pack":500,"slots":[{"slot":0,"card_rarity":"uncommon","weight":1000},{"slot":1,"card_rarity":"uncommon","weight":1000},{"slot":2,"card_rarity":"rare","weight":1000},{"slot":3,"card_rarity":"rare","weight":1000},{"slot":4,"card_rarity":"epic","weight":800},{"slot":4,"card_rarity":"legendary","weight":170},{"slot":4,"card_rarity":"mythic","weight":30}]}},
  {...base,id:"seekar_pass",name:"Season Pass",kind:"pass",priceCents:995},
  ...[
    ["rare_boost","Rare Boost",199], ["coin_magnet","Coin Magnet",199],
@@ -22,6 +23,7 @@ const products: ShopProduct[] = [
 const context={email:"test@example.test",name:"Test",friends_id:"",beneficiary_id:"test-account",beneficiary_name:"Test",beneficiary_code:"TEST1234",buyer_id:"test-account",is_self:true,version:1};
 const resolveContext=async()=>context;
 export default function CartPreview(){
+ const [asset,setAsset]=useState<PaymentAsset>("USDC");
  const [items,setItems]=useState<CartItem[]>([]);const [selection,setSelection]=useState<CheckoutSelection|null>(null);const [done,setDone]=useState("");
- return <main style={{padding:"112px 24px 48px",maxWidth:1300,margin:"auto"}}><p role="status">Voorbeeld van het winkelmandje — geen echte bestelling of betaling.</p><CheckoutLayout products={products} items={items} onQuantity={(product,quantity)=>setItems(current=>[...current.filter(item=>item.product.id!==product.id),{product,quantity}].filter(item=>item.quantity>0))} quotedTotal={{priceCents:items.reduce((sum,i)=>sum+(i.product.currency==="usd"?i.product.priceCents:Math.round(i.product.priceCents*1.1))*i.quantity,0),currency:"usd"}} onSol={()=>setDone("Voorbeeld: geen betaling uitgevoerd.")} onRadom={()=>setDone("Voorbeeld: geen betaling uitgevoerd.")} onRefresh={()=>{}} busy={false} connected={true} quoting={false} rateLine="" sol="0.04" quoteError={false} selection={selection} onSelection={setSelection} resolveContext={resolveContext} verificationNote={null} email="test@example.test" flow={<p>{done}</p>}/></main>;
+ return <main style={{padding:"112px 24px 48px",maxWidth:1300,margin:"auto"}}><p role="status">Voorbeeld van het winkelmandje — geen echte bestelling of betaling.</p><CheckoutLayout products={products} items={items} onQuantity={(product,quantity)=>setItems(current=>[...current.filter(item=>item.product.id!==product.id),{product,quantity}].filter(item=>item.quantity>0))} quotedTotal={{priceCents:items.reduce((sum,i)=>sum+(i.product.currency==="usd"?i.product.priceCents:Math.round(i.product.priceCents*1.1))*i.quantity,0),currency:"usd"}} onSol={()=>setDone("Voorbeeld: geen betaling uitgevoerd.")} asset={asset} assets={["USDC","USDT","SOL","BNB","ETH"]} onAsset={setAsset} onRefresh={()=>{}} busy={false} connected={true} quoting={false} rateLine="" sol={({SOL:"0.04",USDC:"12.99",USDT:"12.99",BNB:"0.015",ETH:"0.0035"})[asset]} quoteError={false} selection={selection} onSelection={setSelection} resolveContext={resolveContext} verificationNote={null} email="test@example.test" flow={<p>{done}</p>}/></main>;
 }

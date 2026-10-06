@@ -2966,11 +2966,11 @@
     "solPending": "Yenileyince SOL tutarı gösterilir",
     "rateFrom": "Kur {time} itibarıyla.",
     "rateStale": "O zamandan beri değişmiş olabilir.",
-    "rateNone": "Henüz SOL kuru yok.",
-    "refreshRate": "SOL kurunu yenile",
+    "rateNone": "Döviz kuru henüz mevcut değil.",
+    "refreshRate": "Kuru yenile",
     "refreshing": "Kur alınıyor...",
     "rateNote": "Kesin SOL tutarı sipariş oluşturulduğunda sabitlenir ve beş dakika geçerli kalır.",
-    "waysToPay": "İki ödeme yolu var: Solana üzerinde bir tarayıcı cüzdanından SOL ile, ya da Radom'un ödeme sayfası üzerinden Ethereum, Base, Arbitrum, Polygon, BNB, Tron ve Bitcoin'de USDC, USDT, SOL, ETH, BTC ve daha fazlasıyla.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "SOL ile satın al",
     "payOther": "Stablecoin veya başka kripto ile öde",
     "connectToBuy": "Satın almak için cüzdan bağla",
@@ -3250,6 +3250,33 @@
       "passName": "Sezon Bileti",
       "bundleName": "Güçlendirme Paketi",
       "activate": "Satın alınca envanterine eklenir. Hazır olduğunda uygulama mağazasından etkinleştir. Aynı anda yalnızca bir güçlendirme çalışabilir."
+    },
+    "direct": {
+      "walletNote": "{network} cüzdanınızla ödeyin. Ağ ücretleri için bir miktar {coin} bulundurun.",
+      "pending": "Ödemenizi kontrol ediyoruz. Bu sayfayı kapatıp siparişi sipariş geçmişinizden takip edebilirsiniz. Tekrar ödeme yapmayın.",
+      "review": "Kontrol edilmesi gereken bir ödeme bulundu. Tekrar ödeme yapmadan önce bu sipariş numarasıyla destek ekibine başvurun.",
+      "received": "Alınan",
+      "insufficient": "Ödeme ve ağ ücretleri için yeterli token veya SOL yok.",
+      "evmWalletMissing": "Bu sayfayı MetaMask veya Rabby içinde açın ya da tarayıcı uzantısını kullanın."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Temel paket",
+        "premium": "Premium paket",
+        "elite": "Elit paket"
+      },
+      "points": "+{points} paket puanı",
+      "always": "Her zaman {cards}",
+      "fifthCard": "Beşinci kart",
+      "card": "{number}",
+      "rarities": {
+        "common": "Yaygın",
+        "uncommon": "Az Yaygın",
+        "rare": "Nadir",
+        "epic": "Epik",
+        "legendary": "Efsanevi",
+        "mythic": "Mitik"
+      }
     }
   },
   "siteMeta": {

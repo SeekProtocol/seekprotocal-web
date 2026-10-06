@@ -2966,11 +2966,11 @@
     "solPending": "SOL-belopp vid uppdatering",
     "rateFrom": "Kurs från {time}.",
     "rateStale": "Den kan ha ändrats sedan dess.",
-    "rateNone": "Ingen SOL-kurs än.",
-    "refreshRate": "Uppdatera SOL-kursen",
+    "rateNone": "Ingen växelkurs ännu.",
+    "refreshRate": "Uppdatera kurs",
     "refreshing": "Hämtar kursen...",
     "rateNote": "Det exakta SOL-beloppet låses när du skapar ordern och gäller i fem minuter.",
-    "waysToPay": "Två sätt att betala: SOL från en webbläsarplånbok på Solana, eller USDC, USDT, SOL, ETH, BTC med flera på Ethereum, Base, Arbitrum, Polygon, BNB, Tron och Bitcoin via Radoms betalsida.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Köp med SOL",
     "payOther": "Betala med stablecoins eller annan krypto",
     "connectToBuy": "Anslut en plånbok för att köpa",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Boost-paket",
       "activate": "Läggs i ditt förråd efter köp. Aktivera i appbutiken när du vill. Bara en booster kan vara aktiv åt gången."
+    },
+    "direct": {
+      "walletNote": "Betala med din {network}-plånbok. Behåll lite {coin} för nätverksavgifter.",
+      "pending": "Vi kontrollerar din betalning. Du kan stänga sidan och följa beställningen i din orderhistorik. Betala inte igen.",
+      "review": "En betalning behöver kontrolleras. Kontakta supporten med detta ordernummer innan du betalar igen.",
+      "received": "Mottaget",
+      "insufficient": "Inte tillräckligt med token eller SOL för betalningen och nätverksavgifterna.",
+      "evmWalletMissing": "Öppna den här sidan i MetaMask eller Rabby, eller använd deras webbläsartillägg."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Baspaket",
+        "premium": "Premiumpaket",
+        "elite": "Elitpaket"
+      },
+      "points": "+{points} paketpoäng",
+      "always": "Alltid {cards}",
+      "fifthCard": "Femte kortet",
+      "card": "{number}",
+      "rarities": {
+        "common": "Common",
+        "uncommon": "Uncommon",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {

@@ -1,6 +1,8 @@
+import {isEvmAsset,EVM_ADDRESS,EVM_HASH} from './evm-wallet';
 import { cartRequest, type CartItem } from "./cart";
 import { HISTORY_COLUMNS, historyAction, type HistoryOrder } from './order-history';
-import { PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
+import {parsePaymentQuote, isPaymentAsset, type PaymentAsset} from "./payment-assets";
+export {buildPaymentTransaction as buildOrderTransaction} from "./payment-transaction";
 import { getSupabase, getShopSessionPolicy, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/lib/supabase-browser";
 import { isLocalShopDevelopment } from "@/lib/shop/local-development";
 
@@ -18,11 +20,8 @@ import { isLocalShopDevelopment } from "@/lib/shop/local-development";
  * good for one verification, so the widget is reset after each of those.
  * Local development uses a server-signed relay instead of a browser challenge.
  *
- * The second way to pay goes through the `radom-checkout` function: the same
- * headers and the same error codes, but the money moves on Radom's hosted
- * page rather than in a wallet the site can see. `createRadomOrder` hands
- * back a URL to leave for; `radomOrderStatus` is what the page asks when the
- * player comes back.
+ * SOL, USDC and USDT are paid directly on Solana. The Radom helpers remain
+ * available for recovering and inspecting previously created orders.
  */
 
 export type { ShopProduct } from "./catalog";
@@ -147,27 +146,31 @@ export interface ShopQuote {
   priceCents: number;
   currency: "usd" | "eur";
   priceUsdCents: number;
-  /** Lamports for the whole price at this moment. */
-  lamports: bigint;
+  /** Integer base units for the whole price at this moment. */
+  amount: bigint;
+  asset: PaymentAsset;
 }
 
 export interface ShopOrder {
   orderId: string;
   productId: string;
-  lamports: bigint;
+  amount: bigint;
+  asset: PaymentAsset;
   recipient: string;
   reference: string;
+  chainId?: number;
+  router?: string;
   expiresAt: string;
   priceUsdCents: number;
   coinCents: number;
   solCents: number;
-  /** True only when something other than SOL already paid. The web never sends coins, so this stays false. */
+  /** Legacy app-only coin settlement. Direct web orders require a wallet transfer. */
   settled: boolean;
 }
 
-/** What a product costs in SOL right now. The coins the server also offers are for the app; the web pays in SOL only. */
-export async function quoteOrder(items: CartItem[], turnstileToken: string): Promise<ShopQuote> {
-  const data = await call({ action: "quote_order", items: cartRequest(items) }, turnstileToken);
+/** Quote a cart in the selected Solana asset. App-only caught coins are not used. */
+export async function quoteOrder(items: CartItem[], turnstileToken: string, asset: PaymentAsset = "SOL"): Promise<ShopQuote> {
+  const data = await call({ action: "quote_order", items: cartRequest(items), asset }, turnstileToken);
   if (!wholeNumber(data.amount) || BigInt(String(data.amount)) <= BigInt(0)) {
     throw new CheckoutError("quote_unavailable");
   }
@@ -176,27 +179,29 @@ export async function quoteOrder(items: CartItem[], turnstileToken: string): Pro
     priceCents: cents(data.price_cents),
     currency: data.currency === "eur" ? "eur" : "usd",
     priceUsdCents: cents(data.price_usd_cents),
-    lamports: BigInt(String(data.amount)),
+    ...parsePaymentQuote(data,asset),
   };
 }
 
-/** Make the order. All in SOL: `coins` is empty on purpose. */
-export async function createOrder(items: CartItem[], turnstileToken: string, checkout: CheckoutSelection, total: {priceCents:number;currency:"usd"|"eur"}): Promise<ShopOrder> {
+/** Create a direct Solana payment; app-only caught coins are excluded. */
+export async function createOrder(items: CartItem[], turnstileToken: string, checkout: CheckoutSelection, total: {priceCents:number;currency:"usd"|"eur"}, asset: PaymentAsset = "SOL"): Promise<ShopOrder> {
   const data = await call(
-    { action: "create_order", items: cartRequest(items), coins: [], expected_total:{price_cents:total.priceCents,currency:total.currency}, ...checkoutBody(checkout) },
+    { action: "create_order", asset, items: cartRequest(items), coins: [], expected_total:{price_cents:total.priceCents,currency:total.currency}, ...checkoutBody(checkout) },
     turnstileToken,
   );
   const settled = data.settled === true;
   if (!wholeNumber(data.amount) || (!settled && BigInt(String(data.amount)) <= BigInt(0))) {
     throw new CheckoutError("checkout_unavailable");
   }
-  if (!settled && (!looksLikeAddress(data.recipient) || !looksLikeAddress(data.reference))) {
+  if (!settled && (isEvmAsset(asset) ? (!EVM_ADDRESS.test(String(data.recipient)) || !EVM_ADDRESS.test(String(data.router)) || /^0x0+$/i.test(String(data.router)) || !EVM_HASH.test(String(data.reference)) || /^0x0+$/i.test(String(data.reference)) || data.chain_id !== (asset==='BNB'?56:1)) : (!looksLikeAddress(data.recipient) || !looksLikeAddress(data.reference)))) {
     throw new CheckoutError("checkout_unavailable");
   }
   return {
     orderId: String(data.order_id),
     productId: String(data.product_id ?? "seekar_cart"),
-    lamports: BigInt(String(data.amount)),
+    ...parsePaymentQuote(data,asset),
+    chainId:typeof data.chain_id==='number'?data.chain_id:undefined,
+    router:typeof data.router==='string'?data.router:undefined,
     recipient: String(data.recipient),
     reference: String(data.reference),
     expiresAt: String(data.expires_at),
@@ -315,37 +320,6 @@ export function orderExpired(order: ShopOrder, now = Date.now()): boolean {
   return !Number.isFinite(at) || now >= at;
 }
 
-/**
- * The transaction the wallet signs: one transfer from the player to the
- * treasury, with the order's reference key on the instruction so the server
- * can find the payment by reference rather than by trusting a signature it
- * was told about. Non-signer, non-writable, exactly as the app appends it.
- */
-export function buildOrderTransaction(input: {
-  order: ShopOrder;
-  payer: PublicKey;
-  blockhash: string;
-  lastValidBlockHeight: number;
-}): Transaction {
-  const transfer = SystemProgram.transfer({
-    fromPubkey: input.payer,
-    toPubkey: new PublicKey(input.order.recipient),
-    lamports: input.order.lamports,
-  });
-  transfer.keys.push({
-    pubkey: new PublicKey(input.order.reference),
-    isSigner: false,
-    isWritable: false,
-  });
-  const tx = new Transaction({
-    feePayer: input.payer,
-    blockhash: input.blockhash,
-    lastValidBlockHeight: input.lastValidBlockHeight,
-  });
-  tx.add(transfer);
-  return tx;
-}
-
 function looksLikeAddress(x: unknown): boolean {
   return typeof x === "string" && /^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(x);
 }
@@ -390,19 +364,26 @@ function checkoutBody(value: CheckoutSelection) {
   return {friends_id:value.friends_id,customer_name:value.customer_name,expected_recipient_id:value.expected_recipient_id,request_id:value.request_id};
 }
 export async function checkoutContext(friendsId: string, name: string, requestId?: string, items?: CartItem[]): Promise<CheckoutContext> {
-  const data=await call({action:"checkout_context",...(items?.length ? {items:cartRequest(items)} : {}),friends_id:friendsId,customer_name:name,request_id:requestId},undefined,"radom-checkout");
+  const data=await call({action:"checkout_context",...(items?.length ? {items:cartRequest(items)} : {}),friends_id:friendsId,customer_name:name,request_id:requestId});
   if (typeof data.beneficiary_id !== "string" || typeof data.beneficiary_name !== "string") throw new CheckoutError("checkout_unavailable");
   return data as unknown as CheckoutContext;
 }
 
 /** Client observations support investigation but can never confirm payment or delivery. */
 export async function recordCheckoutEvent(orderId: string, event: "wallet_opened" | "wallet_rejected" | "wallet_uncertain" | "transaction_submitted" | "redirect_started", signature?: string): Promise<void> {
-  await call({action:"client_event",order_id:orderId,event,signature},undefined,"radom-checkout",3000).catch(() => undefined);
+  await call({action:"client_event",order_id:orderId,event,signature},undefined,"solana-checkout",3000).catch(() => undefined);
 }
 
-/** Total is available independently of the optional SOL wallet payment method. */
+/** Fiat total is independent of the selected payment asset. */
 export async function quoteCart(items: CartItem[], token: string) {
-  const data=await call({action:"quote_cart",items:cartRequest(items)},token,"radom-checkout");
+  const data=await call({action:"quote_cart",items:cartRequest(items)},token,"solana-checkout");
   if (!Number.isSafeInteger(data.price_cents) || Number(data.price_cents)<=0 || !["usd","eur"].includes(String(data.currency))) throw new CheckoutError("quote_unavailable");
   return {priceCents:Number(data.price_cents),currency:data.currency as "usd"|"eur"};
+}
+
+/** The server can temporarily disable an asset without changing the storefront. */
+export async function paymentOptions(): Promise<PaymentAsset[]> {
+  const data = await call({action:'payment_options'});
+  if (!['solana-mainnet','multi-chain'].includes(String(data.network)) || !Array.isArray(data.assets)) throw new CheckoutError('checkout_unavailable');
+  return data.assets.filter(isPaymentAsset);
 }

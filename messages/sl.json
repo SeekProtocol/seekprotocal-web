@@ -2966,11 +2966,11 @@
     "solPending": "Znesek v SOL ob osvežitvi",
     "rateFrom": "Tečaj od {time}.",
     "rateStale": "Od takrat se je morda spremenil.",
-    "rateNone": "Tečaja SOL še ni.",
-    "refreshRate": "Osveži tečaj SOL",
+    "rateNone": "Menjalni tečaj še ni na voljo.",
+    "refreshRate": "Osveži tečaj",
     "refreshing": "Pridobivam tečaj ...",
     "rateNote": "Točen znesek v SOL se določi, ko ustvariš naročilo, in velja pet minut.",
-    "waysToPay": "Dva načina plačila: SOL iz denarnice v brskalniku na Solani ali USDC, USDT, SOL, ETH, BTC in drugo na Ethereumu, Base, Arbitrumu, Polygonu, BNB, Tronu in Bitcoinu prek plačilne strani Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Kupi s SOL",
     "payOther": "Plačaj s stablecoini ali drugimi kriptovalutami",
     "connectToBuy": "Poveži denarnico za nakup",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Komplet boostov",
       "activate": "Po nakupu se doda v tvoj inventar. Aktiviraj ga v trgovini aplikacije, ko si pripravljen. Hkrati lahko teče samo en boost."
+    },
+    "direct": {
+      "walletNote": "Plačajte z denarnico {network}. Pustite nekaj {coin} za omrežnine.",
+      "pending": "Preverjamo vaše plačilo. Stran lahko zaprete in naročilo spremljate v zgodovini naročil. Ne plačajte znova.",
+      "review": "Plačilo je treba preveriti. Pred ponovnim plačilom se s to številko naročila obrnite na podporo.",
+      "received": "Prejeto",
+      "insufficient": "Premalo žetonov ali SOL za plačilo in omrežnine.",
+      "evmWalletMissing": "Odprite to stran v MetaMasku ali Rabbyju ali uporabite razširitev brskalnika."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Osnovni paket",
+        "premium": "Premium paket",
+        "elite": "Elitni paket"
+      },
+      "points": "+{points} točk paketov",
+      "always": "Vedno {cards}",
+      "fifthCard": "Peta karta",
+      "card": "{number}",
+      "rarities": {
+        "common": "Common",
+        "uncommon": "Uncommon",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {

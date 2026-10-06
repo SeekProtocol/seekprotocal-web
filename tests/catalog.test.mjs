@@ -21,3 +21,21 @@ test('history uses the purchased EUR price, preserving legacy USD records',()=>{
   assert.equal(receiptPrice({price_usd_cents:1042,product_snapshot:{price_cents:899,currency:'eur'}},'en-US'),'€8.99');
   assert.equal(receiptPrice({price_usd_cents:299,product_snapshot:{legacy:true}},'en-US'),'$2.99');
 });
+
+const slots=[0,1,2,3,4].map(slot=>({slot,card_rarity:slot===4?'epic':'common',weight:1000}));
+const tierRow={...row,fulfillment:{kind:'pack',packs:1,tier:'elite',policy_version:'test-policy',points_per_pack:500,slots}};
+test('tier metadata comes from the server, and malformed offers fail closed',()=>{
+ const [p]=parseWebCatalog([tierRow]);
+ assert.equal(p.pack.tier,'elite');assert.equal(p.pack.points_per_pack,500);assert.deepEqual(p.pack.slots,slots);
+ for(const patch of [{tier:'future'},{points_per_pack:-1},{points_per_pack:1.5},{policy_version:''},{slots:slots.slice(1)},{slots:[...slots,slots[0]]},{slots:slots.map(s=>({...s,weight:999}))},{slots:slots.map(s=>({...s,card_rarity:'unknown'}))},{tier:null}]) {
+  assert.throws(()=>parseWebCatalog([{...tierRow,fulfillment:{...tierRow.fulfillment,...patch}}]),/catalog_unavailable/);
+ }
+ assert.equal(parseWebCatalog([row])[0].pack,undefined);
+});
+test('discounts never compare different tiers or frozen policies',()=>{
+ const [single]=parseWebCatalog([tierRow]);const bundle={...single,id:'seekar_elite_bundle',packs:5,priceCents:single.priceCents*4};
+ assert.equal(bundleSaving(bundle,[single]),20);
+ assert.equal(bundleSaving(bundle,[{...single,pack:{...single.pack,tier:'basic'}}]),null);
+ assert.equal(bundleSaving(bundle,[{...single,pack:{...single.pack,policy_version:'old'}}]),null);
+ assert.equal(bundleSaving(bundle,[{...single,pack:undefined}]),null);
+});

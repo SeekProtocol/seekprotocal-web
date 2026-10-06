@@ -1,21 +1,26 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { ShopProduct } from './catalog';
+import {parseTierPack, type TierPack} from './pack-tiers.ts';
 
 export interface ProductSnapshot {
   id?: string; name?: string; kind?: string; quantity?: number; revision?: number;
   price_cents?: number; currency?: string; items?: ProductSnapshot[];
-  fulfillment?: {kind?: string; packs?: number; grants?: {powerupKey:string;quantity:number}[]};
+  fulfillment?: Partial<TierPack> & {kind?: string; packs?: number; grants?: {powerupKey:string;quantity:number}[]};
 }
 export interface Receipt {
   id: string; status: string; fulfilled_at: string | null; paid_at: string | null;
   price_usd_cents: number | null; created_at: string; signature: string | null;
   product_snapshot?: ProductSnapshot | null;
+  mint?: string; amount_base_units?: string | number;
+  payment_amount_text?:string;payment_received_text?:string;
+  payment_protocol?: string | null; payment_received_base_units?: string | number;
+  payment_review_reason?: string | null;
   checkout_snapshot: {email?:string;beneficiary_name?:string;beneficiary_code?:string;is_self?:boolean} | null;
 }
 export interface HistoryOrder extends Receipt {product_id:string;mint:string;expires_at?:string}
 export type OrderCursor = {created_at:string;id:string};
 export const HISTORY_PAGE_SIZE = 10;
-export const HISTORY_COLUMNS = 'id,product_id,mint,status,paid_at,fulfilled_at,price_usd_cents,created_at,expires_at,signature,checkout_snapshot,product_snapshot';
+export const HISTORY_COLUMNS = 'id,product_id,mint,status,paid_at,fulfilled_at,price_usd_cents,created_at,expires_at,signature,checkout_snapshot,product_snapshot,payment_protocol,amount_base_units,payment_received_base_units,payment_review_reason,payment_amount_text,payment_received_text';
 
 /** Bounded API pagination. Ownership is also enforced by the table's RLS. */
 export async function fetchOrderPage(client: SupabaseClient, userId:string, cursor:OrderCursor|null, signal:AbortSignal) {
@@ -39,7 +44,7 @@ export function receiptItems(receipt:Receipt & {product_id?:string}): {product:S
     return {quantity:item.quantity ?? 1,product:{
       id:item.id ?? receipt.product_id ?? `receipt_${index}`,name:item.name ?? '',
       kind:kind==='pack'||kind==='pass'||kind==='bundle' ? kind : 'consumable',
-      packs:item.fulfillment?.packs,grants:item.fulfillment?.grants ?? [],
+      packs:item.fulfillment?.packs,pack:kind==='pack' ? parseTierPack(item.fulfillment) : undefined,grants:item.fulfillment?.grants ?? [],
       priceCents:item.price_cents ?? receipt.price_usd_cents ?? 0,currency:item.currency==='eur'?'eur':'usd',
       revision:item.revision ?? 1,description:'',
     }};
@@ -48,6 +53,7 @@ export function receiptItems(receipt:Receipt & {product_id?:string}): {product:S
 
 export function historyAction(order:HistoryOrder, now=Date.now()): 'resume'|'reorder'|'check'|null {
   if(order.fulfilled_at || order.paid_at || order.status==='paid') return null;
+  if(order.payment_review_reason || Number(order.payment_received_base_units ?? 0)>0) return 'check';
   if(order.signature) return 'check';
   const expires=Date.parse(order.expires_at??'');
   if(order.status==='failed'||order.status==='expired'||order.status==='pending'&&Number.isFinite(expires)&&expires<=now) return 'reorder';

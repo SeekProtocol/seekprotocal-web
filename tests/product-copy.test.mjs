@@ -20,6 +20,14 @@ for(const file of locales) test(`product information resolves in ${file}`,()=>{
   assert.equal(productName({...example,grants:[{powerupKey:'shiba',quantity:1}]},t),messages.shop.powerupNames.rare_boost);
   assert.equal(productName({...example,kind:'pass'},t),messages.shop.productInfo.passName);
   assert.equal(productName({...example,kind:'pack',packs:5},t),t('packs',{count:5}));
+  for(const tier of ['basic','premium','elite']) {
+    assert.equal(productName({...example,kind:'pack',packs:1,pack:{tier}},t),messages.shop.packTiers.names[tier]);
+    assert.equal(productName({...example,kind:'pack',packs:5,pack:{tier}},t),messages.shop.packTiers.names[tier]+' × 5');
+    assert.ok(t('packTiers.points',{points:500}).includes('500'));
+    assert.ok(t('packTiers.always',{cards:'2 Rare'}).includes('2 Rare'));
+    for(const rarity of ['common','uncommon','rare','epic','legendary','mythic']) assert.ok(t('packTiers.rarities.'+rarity));
+  }
+
   const bundle={...example,id:'seekar_boost_bundle',kind:'bundle',grants:[{powerupKey:'fitness',quantity:2}]};
   assert.equal(productDescription(bundle,t),`2 × ${messages.shop.powerupNames.fitness}`);
   if(locale!=='en'){

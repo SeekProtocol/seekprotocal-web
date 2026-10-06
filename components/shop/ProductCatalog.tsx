@@ -1,6 +1,7 @@
 "use client";
 import { canSetQuantity, type CartItem } from "@/lib/shop/cart";
 import ProductArt from "./ProductArt";
+import PackDetails from "./PackDetails";
 export { default as ProductArt } from "./ProductArt";
 import {useLocale,useTranslations} from 'next-intl';
 import {bundleSaving,formatPrice,type ShopProduct} from '@/lib/shop/catalog';
@@ -16,14 +17,14 @@ export default function ProductCatalog({products,items,onQuantity,disabled}: {pr
         const quantity = items.find(item => item.product.id === product.id)?.quantity ?? 0;
         const name = productName(product, t);
         const description = productDescription(product, t);
-        return <article className="shop-product-card" key={product.id} data-selected={quantity>0} data-kind={product.kind}>
+        return <article className="shop-product-card" key={product.id} data-selected={quantity>0} data-kind={product.kind} data-tier={product.pack?.tier}>
           <div className="shop-product-art"><ProductArt product={product}/></div>
           <span className="shop-product-kind">{t(`productKinds.${product.kind}`)}</span>
           <strong>{name}</strong>
-          <span className="shop-product-detail">{description}</span>
+          <span className="shop-product-detail">{description}{product.pack && <><br/>{t("packTiers.points",{points:product.pack.points_per_pack})}</>}</span>
           <details className="shop-product-info">
             <summary>{t('productInfo.more')}<span className="sr-only">: {name}</span></summary>
-            {product.kind === 'pack' || product.kind === 'pass' ? <p>{t(`productInfo.${product.kind}`)}</p> : <>
+            {product.kind === 'pack' || product.kind === 'pass' ? <>{product.pack ? <PackDetails pack={product.pack}/> : <p>{t(`productInfo.${product.kind}`)}</p>}</> : <>
               <dl><dt>{t('productInfo.includes')}</dt><dd><ul>{product.grants.map(grant => {
                 const key = powerupCopyKey(grant.powerupKey);
                 return <li key={grant.powerupKey}><b>{grant.quantity} × {t.has(`powerupNames.${key}`) ? t(`powerupNames.${key}`) : grant.powerupKey}</b>

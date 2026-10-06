@@ -1,6 +1,8 @@
+import {parseTierPack, type TierPack} from './pack-tiers.ts';
+
 export type ProductKind = 'pack' | 'pass' | 'consumable' | 'bundle';
 export interface ShopProduct {
-  id: string; name: string; kind: ProductKind; packs?: number;
+  id: string; name: string; kind: ProductKind; packs?: number; pack?: TierPack;
   description: string; priceCents: number; currency: 'usd' | 'eur'; revision: number;
   grants: {powerupKey:string;quantity:number}[];
 }
@@ -15,14 +17,14 @@ export function parseWebCatalog(raw: unknown): ShopProduct[] {
       (p.kind==='pack' && (!Number.isSafeInteger(p.fulfillment.packs) || p.fulfillment.packs < 1)) ||
       (['consumable','bundle'].includes(p.kind) && (!Array.isArray(p.fulfillment.grants) || !p.fulfillment.grants.length || p.fulfillment.grants.some((g: {powerupKey?:unknown;quantity?:number}) => typeof g.powerupKey!=='string' || !Number.isSafeInteger(g.quantity) || (g.quantity ?? 0)<1)))) throw new Error('catalog_unavailable');
     ids.add(p.id);
-    return {id:p.id,name:p.name,kind:p.kind,packs:p.fulfillment.packs,description:p.description ?? '',priceCents:p.price_cents,currency:p.currency,revision:p.revision,grants:p.fulfillment.grants ?? []};
+    return {id:p.id,name:p.name,kind:p.kind,packs:p.fulfillment.packs,pack:p.kind === 'pack' ? parseTierPack(p.fulfillment) : undefined,description:p.description ?? '',priceCents:p.price_cents,currency:p.currency,revision:p.revision,grants:p.fulfillment.grants ?? []};
   });
 }
 export function formatPrice(product: Pick<ShopProduct,'priceCents'|'currency'>, locale: string): string {
   return new Intl.NumberFormat(locale,{style:'currency',currency:product.currency.toUpperCase()}).format(product.priceCents/100);
 }
 export function bundleSaving(product: ShopProduct, products: ShopProduct[]): number | null {
-  const single = products.find(p => p.kind==='pack' && p.packs === 1 && p.currency===product.currency);
+  const single = products.find(p => p.kind==='pack' && p.packs === 1 && p.currency===product.currency && p.pack?.tier===product.pack?.tier && p.pack?.policy_version===product.pack?.policy_version);
   if (!single || product.kind!=='pack' || !product.packs || product.packs <= 1) return null;
   const percent = Math.round((1 - product.priceCents / (single.priceCents * product.packs)) * 100);
   return percent > 0 ? percent : null;

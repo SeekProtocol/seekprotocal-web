@@ -2966,11 +2966,11 @@
     "solPending": "Kwota w SOL po odświeżeniu",
     "rateFrom": "Kurs z {time}.",
     "rateStale": "Od tego czasu mógł się zmienić.",
-    "rateNone": "Brak jeszcze kursu SOL.",
-    "refreshRate": "Odśwież kurs SOL",
+    "rateNone": "Kurs wymiany jest jeszcze niedostępny.",
+    "refreshRate": "Odśwież kurs",
     "refreshing": "Pobieranie kursu...",
     "rateNote": "Dokładna kwota w SOL jest ustalana przy tworzeniu zamówienia i obowiązuje przez pięć minut.",
-    "waysToPay": "Dwa sposoby płatności: SOL z portfela w przeglądarce na Solanie albo USDC, USDT, SOL, ETH, BTC i inne na Ethereum, Base, Arbitrum, Polygon, BNB, Tron i Bitcoin przez stronę płatności Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Kup za SOL",
     "payOther": "Zapłać stablecoinami lub innym krypto",
     "connectToBuy": "Połącz portfel, aby kupić",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Zestaw boostów",
       "activate": "Trafia do ekwipunku po zakupie. Aktywuj go w sklepie w aplikacji, kiedy zechcesz. Naraz może działać tylko jeden booster."
+    },
+    "direct": {
+      "walletNote": "Zapłać portfelem {network}. Zachowaj niewielką ilość {coin} na opłaty sieciowe.",
+      "pending": "Sprawdzamy płatność. Możesz zamknąć tę stronę i śledzić zamówienie w historii. Nie płać ponownie.",
+      "review": "Płatność wymaga sprawdzenia. Skontaktuj się z pomocą, podając ten numer zamówienia, zanim zapłacisz ponownie.",
+      "received": "Otrzymano",
+      "insufficient": "Za mało tokenów lub SOL na płatność i opłaty sieciowe.",
+      "evmWalletMissing": "Otwórz tę stronę w MetaMask lub Rabby albo użyj ich rozszerzenia przeglądarki."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Paczka podstawowa",
+        "premium": "Paczka premium",
+        "elite": "Paczka elitarna"
+      },
+      "points": "+{points} pkt paczek",
+      "always": "Zawsze {cards}",
+      "fifthCard": "Piąta karta",
+      "card": "{number}",
+      "rarities": {
+        "common": "Zwykła",
+        "uncommon": "Niezwykła",
+        "rare": "Rzadka",
+        "epic": "Epicka",
+        "legendary": "Legendarna",
+        "mythic": "Mityczna"
+      }
     }
   },
   "siteMeta": {

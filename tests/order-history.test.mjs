@@ -37,3 +37,10 @@ test('reorder keeps only the validated order id across sign-in',()=>{
  assert.equal(shopReturnPath('/nl/shop','?reorder='+base.id+'&price=1&recipient=someone'),'/nl/shop?reorder='+base.id);
  assert.equal(shopReturnPath('/nl/shop','?reorder=https://evil.test'),'/nl/shop');
 });
+
+test('immutable receipt retains pack tier, points and purchase price after catalog changes',()=>{
+ const pack={tier:'premium',policy_version:'old-policy',points_per_pack:200,slots:[0,1,2,3,4].map(slot=>({slot,card_rarity:'common',weight:1000}))};
+ const receipt={...base,product_snapshot:{items:[{id:'seekar_pack_premium',kind:'pack',name:'Premium',quantity:2,price_cents:499,currency:'usd',fulfillment:{kind:'pack',packs:1,...pack}}]}};
+ const [item]=receiptItems(receipt);assert.equal(item.quantity,2);assert.equal(item.product.priceCents,499);assert.deepEqual(item.product.pack,pack);
+ assert.deepEqual(restoreOrderCart({...receipt,status:'expired'},[{...item.product,priceCents:599,revision:9}]).quantities,{seekar_pack_premium:2});
+});

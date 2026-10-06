@@ -2966,11 +2966,11 @@
     "solPending": "새로고침하면 SOL 금액 표시",
     "rateFrom": "{time} 기준 환율.",
     "rateStale": "이후 변동되었을 수 있습니다.",
-    "rateNone": "아직 SOL 환율이 없습니다.",
-    "refreshRate": "SOL 환율 새로고침",
+    "rateNone": "아직 환율이 없습니다.",
+    "refreshRate": "환율 새로고침",
     "refreshing": "환율 가져오는 중...",
     "rateNote": "정확한 SOL 금액은 주문을 만들 때 확정되며 5분 동안 유지됩니다.",
-    "waysToPay": "결제 방법은 두 가지입니다. Solana에서 브라우저 지갑으로 SOL을 내거나, Radom 결제 페이지를 통해 Ethereum, Base, Arbitrum, Polygon, BNB, Tron, Bitcoin에서 USDC, USDT, SOL, ETH, BTC 등으로 낼 수 있습니다.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "SOL로 구매",
     "payOther": "스테이블코인이나 다른 암호화폐로 결제",
     "connectToBuy": "지갑을 연결하고 구매",
@@ -3250,6 +3250,33 @@
       "passName": "시즌 패스",
       "bundleName": "부스트 묶음",
       "activate": "구매하면 보관함에 추가됩니다. 준비가 되면 앱 상점에서 활성화하세요. 한 번에 하나의 부스트만 사용할 수 있습니다."
+    },
+    "direct": {
+      "walletNote": "{network} 지갑으로 결제하세요. 네트워크 수수료를 위한 소량의 {coin}을 남겨 두세요.",
+      "pending": "결제를 확인하고 있습니다. 이 페이지를 닫고 주문 내역에서 진행 상황을 확인할 수 있습니다. 다시 결제하지 마세요.",
+      "review": "확인이 필요한 결제가 있습니다. 다시 결제하기 전에 이 주문 번호로 고객 지원에 문의하세요.",
+      "received": "받은 금액",
+      "insufficient": "결제 및 네트워크 수수료에 필요한 토큰 또는 SOL이 부족합니다.",
+      "evmWalletMissing": "MetaMask 또는 Rabby에서 이 페이지를 열거나 브라우저 확장 프로그램을 사용하세요."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "기본 팩",
+        "premium": "프리미엄 팩",
+        "elite": "엘리트 팩"
+      },
+      "points": "+{points} 팩 포인트",
+      "always": "항상 {cards}",
+      "fifthCard": "다섯 번째 카드",
+      "card": "{number}",
+      "rarities": {
+        "common": "일반",
+        "uncommon": "비범",
+        "rare": "희귀",
+        "epic": "영웅",
+        "legendary": "전설",
+        "mythic": "신화"
+      }
     }
   },
   "siteMeta": {

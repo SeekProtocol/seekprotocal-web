@@ -2966,11 +2966,11 @@
     "solPending": "مبلغ SOL عند التحديث",
     "rateFrom": "السعر من {time}.",
     "rateStale": "ربما تغيّر منذ ذلك الحين.",
-    "rateNone": "لا يوجد سعر SOL بعد.",
-    "refreshRate": "تحديث سعر SOL",
+    "rateNone": "سعر الصرف غير متاح بعد.",
+    "refreshRate": "تحديث سعر الصرف",
     "refreshing": "جارٍ جلب السعر...",
     "rateNote": "يُثبَّت مبلغ SOL الدقيق عند إنشاء الطلب ويبقى صالحًا خمس دقائق.",
-    "waysToPay": "طريقتان للدفع: SOL من محفظة متصفح على Solana، أو USDC وUSDT وSOL وETH وBTC وغيرها على Ethereum وBase وArbitrum وPolygon وBNB وTron وBitcoin عبر صفحة الدفع من Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "اشترِ بـ SOL",
     "payOther": "ادفع بالعملات المستقرة أو عملات مشفرة أخرى",
     "connectToBuy": "اربط محفظة للشراء",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "باقة تعزيز",
       "activate": "يُضاف إلى مخزونك بعد الشراء. فعّله من متجر التطبيق عندما تكون مستعدًا. لا يمكن تشغيل أكثر من معزز واحد في كل مرة."
+    },
+    "direct": {
+      "walletNote": "ادفع باستخدام محفظة {network}. احتفظ بكمية صغيرة من {coin} لرسوم الشبكة.",
+      "pending": "نتحقق من دفعتك. يمكنك إغلاق هذه الصفحة ومتابعة الطلب في سجل طلباتك. يرجى عدم الدفع مرة أخرى.",
+      "review": "عثرنا على دفعة تحتاج إلى مراجعة. تواصل مع الدعم باستخدام رقم الطلب هذا قبل الدفع مجددًا.",
+      "received": "المبلغ المستلم",
+      "insufficient": "لا توجد رموز أو SOL كافية للدفع ورسوم الشبكة.",
+      "evmWalletMissing": "افتح هذه الصفحة في MetaMask أو Rabby، أو استخدم إضافة المتصفح."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "الحزمة الأساسية",
+        "premium": "الحزمة المميزة",
+        "elite": "حزمة النخبة"
+      },
+      "points": "+{points} نقطة حزم",
+      "always": "دائمًا {cards}",
+      "fifthCard": "البطاقة الخامسة",
+      "card": "{number}",
+      "rarities": {
+        "common": "شائعة",
+        "uncommon": "غير شائعة",
+        "rare": "نادرة",
+        "epic": "ملحمية",
+        "legendary": "أسطورية",
+        "mythic": "خرافية"
+      }
     }
   },
   "siteMeta": {

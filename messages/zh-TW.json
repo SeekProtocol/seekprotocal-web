@@ -2966,11 +2966,11 @@
     "solPending": "重新整理後顯示 SOL 金額",
     "rateFrom": "{time} 的匯率。",
     "rateStale": "之後可能已有變動。",
-    "rateNone": "尚無 SOL 匯率。",
-    "refreshRate": "重新整理 SOL 匯率",
+    "rateNone": "暫無匯率。",
+    "refreshRate": "重新整理匯率",
     "refreshing": "正在取得匯率...",
     "rateNote": "確切的 SOL 金額會在你建立訂單時鎖定，並維持五分鐘。",
-    "waysToPay": "兩種付款方式：從 Solana 上的瀏覽器錢包支付 SOL，或透過 Radom 付款頁面，以 Ethereum、Base、Arbitrum、Polygon、BNB、Tron 和 Bitcoin 上的 USDC、USDT、SOL、ETH、BTC 等支付。",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "以 SOL 購買",
     "payOther": "以穩定幣或其他加密貨幣付款",
     "connectToBuy": "連結錢包以購買",
@@ -3250,6 +3250,33 @@
       "passName": "賽季通行證",
       "bundleName": "加成組合",
       "activate": "購買後加入你的背包。準備好時，從 App 商店中啟用。一次只能啟用一個加成道具。"
+    },
+    "direct": {
+      "walletNote": "使用 {network} 錢包付款。請保留少量 {coin} 以支付網路費用。",
+      "pending": "我們正在核查您的付款。您可以關閉此頁面，在訂單紀錄中查看進度。請勿重複付款。",
+      "review": "有一筆付款需要核查。再次付款前，請提供此訂單編號並聯絡客服。",
+      "received": "已收到",
+      "insufficient": "代幣或 SOL 不足，無法支付款項和網路費用。",
+      "evmWalletMissing": "請在 MetaMask 或 Rabby 中開啟此頁面，或使用其瀏覽器擴充功能。"
+    },
+    "packTiers": {
+      "names": {
+        "basic": "基礎卡包",
+        "premium": "高級卡包",
+        "elite": "精英卡包"
+      },
+      "points": "+{points} 卡包積分",
+      "always": "必得 {cards}",
+      "fifthCard": "第五張卡",
+      "card": "{number}",
+      "rarities": {
+        "common": "普通",
+        "uncommon": "罕見",
+        "rare": "稀有",
+        "epic": "史詩",
+        "legendary": "傳說",
+        "mythic": "神話"
+      }
     }
   },
   "siteMeta": {

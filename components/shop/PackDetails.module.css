@@ -1,0 +1,7 @@
+.details { margin-block: .7rem; }
+.details > div { margin-top: .65rem; }
+.details strong { font-size: .8rem; font-weight: 600; }
+.details .odds { display: grid; gap: .25rem; margin: .4rem 0 0; }
+.odds > div { display: flex; justify-content: space-between; gap: .5rem; }
+.details .odds dt, .details .odds dd { margin: 0; font-weight: 400; }
+.details .odds dd { font-variant-numeric: tabular-nums; color: var(--fg); }

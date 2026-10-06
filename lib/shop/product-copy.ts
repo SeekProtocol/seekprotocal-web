@@ -11,7 +11,10 @@ export function powerupCopyKey(key: string): string {
 
 /** Product names follow the selected language in both the catalog and the cart. */
 export function productName(product: ShopProduct, t: Translate): string {
-  if (product.kind === 'pack') return t('packs', {count:product.packs ?? 1});
+  if (product.kind === 'pack') {
+    if (product.pack) return t(`packTiers.names.${product.pack.tier}`) + ((product.packs ?? 1) > 1 ? ` × ${product.packs}` : '');
+    return t('packs', {count:product.packs ?? 1});
+  }
   if (product.kind === 'pass') return t('productInfo.passName');
   if (product.kind === 'bundle') return product.id === 'seekar_boost_bundle' ? t('productInfo.bundleName') : product.name;
   const key = `powerupNames.${powerupCopyKey(product.grants[0]?.powerupKey ?? '')}`;

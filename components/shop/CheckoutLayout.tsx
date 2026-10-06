@@ -4,6 +4,8 @@ import { useId, useState, type ReactNode } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { checkoutContext, CheckoutError, type CheckoutSelection, type ShopProduct } from "@/lib/shop/checkout";
 
+import {PAYMENT_ASSETS,type PaymentAsset} from "@/lib/shop/payment-assets";
+import PaymentAssetMark from "./PaymentAssetMark";
 import ProductCatalog, {ProductArt,productName} from "./ProductCatalog";
 import { accountCheckError } from "@/lib/shop/account-check-error";
 import { cartTotal, canSetQuantity, type CartItem } from "@/lib/shop/cart";
@@ -13,7 +15,8 @@ export interface CheckoutLayoutProps {
   products: ShopProduct[]; catalogFailed?: boolean; catalogNotice?: ReactNode;
   items: CartItem[]; onQuantity: (product: ShopProduct, quantity: number) => void;
   quotedTotal?: {priceCents:number;currency:"usd"|"eur"} | null;
-  onSol: () => void; onRadom: () => void; onRefresh: () => void;
+  onSol: () => void; onRefresh: () => void;
+  asset: PaymentAsset; assets: PaymentAsset[]; onAsset: (asset: PaymentAsset) => void;
   busy: boolean; connected: boolean; quoting: boolean; rateLine: string;
   sol: string | null; quoteError: boolean; wallet?: ReactNode; verification?: ReactNode;
   verificationNote?: string | null; flow?: ReactNode;
@@ -23,7 +26,7 @@ export interface CheckoutLayoutProps {
   resolveContext?: typeof checkoutContext;
 }
 
-export function CheckoutLayout({products,catalogFailed=false,catalogNotice,items,onQuantity,quotedTotal,onSol,onRadom,onRefresh,busy,connected,quoting,rateLine,sol,
+export function CheckoutLayout({products,catalogFailed=false,catalogNotice,items,onQuantity,quotedTotal,onSol,onRefresh,asset,assets,onAsset,busy,connected,quoting,rateLine,sol,
   wallet,verification,verificationNote,flow,email="",name:knownName="",selection,onSelection,initialFriendsId="",resolveContext=checkoutContext}: CheckoutLayoutProps) {
   const t = useTranslations("shop");
   const c = useTranslations("shop.checkout");
@@ -32,7 +35,6 @@ export function CheckoutLayout({products,catalogFailed=false,catalogNotice,items
   const [contactEmail,setContactEmail] = useState(email);
   const [friendsId,setFriendsId] = useState(initialFriendsId);
   const [stage,setStage] = useState<"details" | "payment">("details");
-  const [method,setMethod] = useState<"radom" | "sol">("radom");
   const [checking,setChecking] = useState(false);
   const [error,setError] = useState<string | null>(null);
   const total = cartTotal(items) ?? quotedTotal;
@@ -86,12 +88,18 @@ export function CheckoutLayout({products,catalogFailed=false,catalogNotice,items
         <div className="checkout-recipient-confirmed" role="status"><span className="checkout-confirmed-icon" aria-hidden="true">✓</span><div><span>{c("receivingAccount")}</span><strong>{selection.context.beneficiary_name}{selection.context.beneficiary_code && ` · #${selection.context.beneficiary_code}`}</strong><small>{selection.context.is_self ? c("yourAccount") : c("otherAccount")}</small></div><button type="button" disabled={locked} onClick={() => setStage("details")}>{c("change")}</button></div>
         <fieldset className="checkout-methods" disabled={locked}>
           <legend>{c("payment")}</legend>
-          <label data-selected={method === "radom"}><input type="radio" name={`${id}-method`} checked={method === "radom"} onChange={() => {setMethod("radom");if (selection) onSelection?.({...selection,request_id:crypto.randomUUID()});}} /><span><strong>{t("paymentCrypto")}</strong><small>USDC · USDT · ETH · BTC · SOL</small></span><span className="checkout-method-brand">Radom ↗</span></label>
-          <label data-selected={method === "sol"}><input type="radio" name={`${id}-method`} checked={method === "sol"} onChange={() => {setMethod("sol");if (selection) onSelection?.({...selection,request_id:crypto.randomUUID()});}} /><span><strong>{c("solWallet")}</strong><small>Phantom · Solflare · Backpack</small></span><span className="checkout-method-brand">≋ SOL</span></label>
+          {!!assets.length && <div className="checkout-method-options">
+            {assets.map(value=><label className="checkout-method-option" key={value} data-selected={asset === value}>
+              <PaymentAssetMark asset={value} />
+              <span className="checkout-method-copy"><strong>{value}</strong><small>{PAYMENT_ASSETS[value].networkName}</small></span>
+              <input type="radio" name={`${id}-method`} value={value} checked={asset === value} onChange={()=>{onAsset(value);if(selection)onSelection?.({...selection,request_id:crypto.randomUUID()});}}/>
+            </label>)}
+          </div>}
         </fieldset>
-        {method === "sol" && <div className="checkout-rate"><span>{sol ? t("solApprox",{sol}) : rateLine}</span><button type="button" disabled={locked || quoting} onClick={onRefresh}>{quoting ? t("refreshing") : t("refreshRate")}</button>{wallet}</div>}
-        <p className="checkout-hint">{method === "radom" ? c("radomNote") : c("walletNote")}</p>
-        {!busy && <button type="button" className="checkout-primary" onClick={method === "radom" ? onRadom : onSol} disabled={locked || !payable}>{method === "sol" && !connected ? t("walletConnect") : c("payNow",{price:totalLabel})}<span aria-hidden="true">→</span></button>}
+        {!assets.length && <p className="checkout-error" role="status">{t("errCheckoutUnavailable")}</p>}
+        <div className="checkout-rate"><span>{sol ? `${sol} ${asset}` : rateLine}</span><button type="button" disabled={locked || quoting} onClick={onRefresh}>{quoting ? t("refreshing") : t("refreshRate")}</button>{wallet}</div>
+        <p className="checkout-hint">{t("direct.walletNote",{network:PAYMENT_ASSETS[asset].networkName,coin:PAYMENT_ASSETS[asset].feeAsset})}</p>
+        {!busy && <button type="button" className="checkout-primary" onClick={onSol} disabled={locked || !payable || !assets.includes(asset)}>{!connected ? t("walletConnect") : c("payNow",{price:totalLabel})}<span aria-hidden="true">→</span></button>}
       </section>}
       {verificationNote !== null && <div className="checkout-verification">{verification}</div>}
       {flow}

@@ -2966,11 +2966,11 @@
     "solPending": "更新するとSOLの金額を表示",
     "rateFrom": "{time} 時点のレート。",
     "rateStale": "その後変動している可能性があります。",
-    "rateNone": "SOLのレートはまだありません。",
-    "refreshRate": "SOLレートを更新",
+    "rateNone": "為替レートはまだ取得されていません。",
+    "refreshRate": "レートを更新",
     "refreshing": "レートを取得中...",
     "rateNote": "正確なSOLの金額は注文作成時に確定し、5分間有効です。",
-    "waysToPay": "支払い方法は2つ。Solana上のブラウザウォレットからSOLで支払うか、Radomの決済ページを通じてEthereum、Base、Arbitrum、Polygon、BNB、Tron、BitcoinでUSDC、USDT、SOL、ETH、BTCなどで支払えます。",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "SOLで購入",
     "payOther": "ステーブルコインやその他の暗号資産で支払う",
     "connectToBuy": "ウォレットを接続して購入",
@@ -3250,6 +3250,33 @@
       "passName": "シーズンパス",
       "bundleName": "ブーストセット",
       "activate": "購入後は持ち物に追加されます。準備ができたらアプリ内ショップで発動しましょう。同時に使えるブーストは1つです。"
+    },
+    "direct": {
+      "walletNote": "{network}ウォレットでお支払いください。ネットワーク手数料用に少量の{coin}を残してください。",
+      "pending": "お支払いを確認しています。このページを閉じても注文履歴で状況を確認できます。再度お支払いしないでください。",
+      "review": "確認が必要なお支払いが見つかりました。再度お支払いする前に、この注文番号を添えてサポートにお問い合わせください。",
+      "received": "受取済み",
+      "insufficient": "お支払いとネットワーク手数料に必要なトークンまたはSOLが不足しています。",
+      "evmWalletMissing": "このページをMetaMaskまたはRabbyで開くか、ブラウザー拡張機能をご利用ください。"
+    },
+    "packTiers": {
+      "names": {
+        "basic": "ベーシックパック",
+        "premium": "プレミアムパック",
+        "elite": "エリートパック"
+      },
+      "points": "+{points} パックポイント",
+      "always": "確定：{cards}",
+      "fifthCard": "5枚目",
+      "card": "{number}",
+      "rarities": {
+        "common": "コモン",
+        "uncommon": "アンコモン",
+        "rare": "レア",
+        "epic": "エピック",
+        "legendary": "レジェンダリー",
+        "mythic": "ミシック"
+      }
     }
   },
   "siteMeta": {

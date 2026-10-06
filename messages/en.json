@@ -2966,17 +2966,17 @@
     "solPending": "SOL amount on refresh",
     "rateFrom": "Rate from {time}.",
     "rateStale": "It may have moved since.",
-    "rateNone": "No SOL rate yet.",
-    "refreshRate": "Refresh SOL rate",
+    "rateNone": "No exchange rate yet.",
+    "refreshRate": "Refresh rate",
     "refreshing": "Getting the rate...",
     "rateNote": "The exact SOL amount is fixed when you create the order and holds for five minutes.",
-    "waysToPay": "Two ways to pay: SOL from a browser wallet on Solana, or USDC, USDT, SOL, ETH, BTC and more on Ethereum, Base, Arbitrum, Polygon, BNB, Tron and Bitcoin through Radom's payment page.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Buy with SOL",
     "payOther": "Pay with stablecoins or other crypto",
     "connectToBuy": "Connect a wallet to buy",
     "walletEyebrow": "Wallet",
     "walletTitle": "Pay from your wallet",
-    "walletLead": "Phantom, Solflare, Backpack or any wallet that speaks the Wallet Standard. Nothing is sent until you approve it there.",
+    "walletLead": "Use your wallet for the selected network. Nothing is sent until you approve it there.",
     "walletSelect": "Select wallet",
     "walletConnecting": "Connecting...",
     "walletConnect": "Connect wallet",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Boost Bundle",
       "activate": "Added to your inventory after purchase. Activate it from the app shop when you are ready. Only one booster can run at a time."
+    },
+    "direct": {
+      "walletNote": "Pay on {network}. Keep some {coin} available for network fees.",
+      "pending": "We are checking your payment. You can close this page and follow the order in your order history. Please do not pay again.",
+      "review": "We found a payment that needs checking. Contact support with this order number before making another payment.",
+      "received": "Received",
+      "insufficient": "Not enough funds for the payment and network fees.",
+      "evmWalletMissing": "Open this page in MetaMask or Rabby, or use their browser extension."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Basic pack",
+        "premium": "Premium pack",
+        "elite": "Elite pack"
+      },
+      "points": "+{points} pack points",
+      "always": "Always {cards}",
+      "fifthCard": "Fifth card",
+      "card": "{number}",
+      "rarities": {
+        "common": "Common",
+        "uncommon": "Uncommon",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {

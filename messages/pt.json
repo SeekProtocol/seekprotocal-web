@@ -2966,11 +2966,11 @@
     "solPending": "Valor em SOL ao atualizar",
     "rateFrom": "Cotação de {time}.",
     "rateStale": "Pode ter mudado desde então.",
-    "rateNone": "Ainda sem cotação de SOL.",
-    "refreshRate": "Atualizar cotação de SOL",
+    "rateNone": "Taxa de câmbio ainda indisponível.",
+    "refreshRate": "Atualizar o câmbio",
     "refreshing": "Buscando a cotação...",
     "rateNote": "O valor exato em SOL é fixado quando você cria o pedido e vale por cinco minutos.",
-    "waysToPay": "Duas formas de pagar: SOL a partir de uma carteira de navegador na Solana, ou USDC, USDT, SOL, ETH, BTC e mais em Ethereum, Base, Arbitrum, Polygon, BNB, Tron e Bitcoin pela página de pagamento da Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Comprar com SOL",
     "payOther": "Pagar com stablecoins ou outra cripto",
     "connectToBuy": "Conecte uma carteira para comprar",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Combo de boosts",
       "activate": "Adicionado ao seu inventário após a compra. Ative-o pela loja do app quando quiser. Só um booster pode funcionar por vez."
+    },
+    "direct": {
+      "walletNote": "Paga com a tua carteira {network}. Mantém algum {coin} para as taxas de rede.",
+      "pending": "Estamos a verificar o pagamento. Podes fechar esta página e acompanhar a encomenda no histórico. Não voltes a pagar.",
+      "review": "Há um pagamento que precisa de verificação. Contacta o suporte com este número de encomenda antes de pagar novamente.",
+      "received": "Recebido",
+      "insufficient": "Tokens ou SOL insuficientes para o pagamento e as taxas de rede.",
+      "evmWalletMissing": "Abra esta página no MetaMask ou Rabby, ou use a extensão do navegador."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Pacote básico",
+        "premium": "Pacote premium",
+        "elite": "Pacote elite"
+      },
+      "points": "+{points} pontos de pacote",
+      "always": "Sempre {cards}",
+      "fifthCard": "Quinta carta",
+      "card": "{number}",
+      "rarities": {
+        "common": "Comum",
+        "uncommon": "Incomum",
+        "rare": "Raro",
+        "epic": "Épico",
+        "legendary": "Lendário",
+        "mythic": "Mítico"
+      }
     }
   },
   "siteMeta": {

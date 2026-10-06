@@ -2966,11 +2966,11 @@
     "solPending": "Shuma në SOL pas rifreskimit",
     "rateFrom": "Kursi nga {time}.",
     "rateStale": "Mund të ketë ndryshuar që atëherë.",
-    "rateNone": "Ende nuk ka kurs SOL.",
-    "refreshRate": "Rifresko kursin e SOL",
+    "rateNone": "Kursi i këmbimit nuk është ende i disponueshëm.",
+    "refreshRate": "Rifresko kursin",
     "refreshing": "Po merret kursi...",
     "rateNote": "Shuma e saktë në SOL fiksohet kur krijon porosinë dhe mbahet për pesë minuta.",
-    "waysToPay": "Dy mënyra pagese: SOL nga një portofol shfletuesi në Solana, ose USDC, USDT, SOL, ETH, BTC dhe të tjera në Ethereum, Base, Arbitrum, Polygon, BNB, Tron dhe Bitcoin përmes faqes së pagesës së Radom.",
+    "waysToPay": "SOL · USDC · USDT (Solana) · BNB (BNB Smart Chain) · ETH (Ethereum)",
     "buy": "Bli me SOL",
     "payOther": "Paguaj me stablecoin ose kripto të tjera",
     "connectToBuy": "Lidh një portofol për të blerë",
@@ -3250,6 +3250,33 @@
       "passName": "Season Pass",
       "bundleName": "Paketë boost-esh",
       "activate": "Shtohet në inventarin tënd pas blerjes. Aktivizoje nga dyqani i aplikacionit kur të jesh gati. Vetëm një boost mund të jetë aktiv në të njëjtën kohë."
+    },
+    "direct": {
+      "walletNote": "Paguani me portofolin tuaj {network}. Mbani pak {coin} për tarifat e rrjetit.",
+      "pending": "Po kontrollojmë pagesën. Mund ta mbyllni këtë faqe dhe ta ndiqni porosinë në historikun e porosive. Mos paguani përsëri.",
+      "review": "Një pagesë duhet kontrolluar. Kontaktoni mbështetjen me këtë numër porosie përpara se të paguani përsëri.",
+      "received": "Marrë",
+      "insufficient": "Nuk ka tokenë ose SOL të mjaftueshëm për pagesën dhe tarifat e rrjetit.",
+      "evmWalletMissing": "Hapeni këtë faqe në MetaMask ose Rabby, ose përdorni shtesën e tyre të shfletuesit."
+    },
+    "packTiers": {
+      "names": {
+        "basic": "Paketë bazë",
+        "premium": "Paketë premium",
+        "elite": "Paketë elitare"
+      },
+      "points": "+{points} pikë paketash",
+      "always": "Gjithmonë {cards}",
+      "fifthCard": "Letra e pestë",
+      "card": "{number}",
+      "rarities": {
+        "common": "E zakonshme",
+        "uncommon": "E pazakontë",
+        "rare": "E rrallë",
+        "epic": "Epic",
+        "legendary": "Legjendare",
+        "mythic": "Mythic"
+      }
     }
   },
   "siteMeta": {
