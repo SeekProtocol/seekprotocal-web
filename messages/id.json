@@ -225,19 +225,16 @@
     "approachEventsDesc": "Acara komunitas berbatas waktu yang mengumpulkan banyak orang, bayangkan Raid Pokémon Go ala Web3.",
     "approachCollaborations": "Kolaborasi yang Berkarya",
     "approachCollaborationsDesc": "Konten dan tantangan buatan pengguna.",
-    "ourTeam": "Tim Hebat Kami",
     "joinBeta": "Ikut beta kami",
     "getReady": "Bersiaplah untuk seek!",
     "ctaDesc": "Masuki realitas baru di mana dunia menjadi taman bermainmu. Seekprotocol mengubah sekitarmu menjadi petualangan interaktif, memadukan teknologi AR terbaru dengan penjelajahan dunia nyata.",
-    "metaTitle": "Tentang Tim di Balik Seekprotocol",
-    "metaDescription": "Kenali tim yang membangun AR berbasis lokasi untuk setiap chain: misi di balik bukti lokasi, teknologi di bawah Seekprotocol, dan orang-orang di balik $SEEK.",
-    "ogTitle": "Tim di balik Seekprotocol",
+    "metaTitle": "Tentang Seekprotocol: Misi dan Teknologi",
+    "metaDescription": "Mengapa Seekprotocol membangun AR berbasis lokasi untuk setiap chain: misi di balik bukti lokasi, teknologi di bawah aplikasinya, dan peran $SEEK.",
+    "ogTitle": "Mengapa Seekprotocol ada",
     "eyebrow": "Tentang",
     "whyEyebrow": "Kenapa kami membangun ini",
     "techEyebrow": "Teknologi",
-    "pillarsEyebrow": "Pilar",
-    "teamEyebrow": "Tim",
-    "linkedinLabel": "{name} di LinkedIn"
+    "pillarsEyebrow": "Pilar"
   },
   "contact": {
     "getInTouch": "Hubungi Kami",

@@ -225,19 +225,16 @@
     "approachEventsDesc": "อีเวนต์คอมมูนิตี้แบบจำกัดเวลาที่รวมคนจำนวนมาก ลองนึกถึง Raid ใน Pokémon-Go ในสไตล์ Web3",
     "approachCollaborations": "ความร่วมมือที่สร้างสรรค์",
     "approachCollaborationsDesc": "คอนเทนต์และความท้าทายที่ผู้ใช้สร้างเอง",
-    "ourTeam": "ทีมที่ยอดเยี่ยมของเรา",
     "joinBeta": "เข้าร่วมเบต้า",
     "getReady": "เตรียมตัวออกค้นหา!",
     "ctaDesc": "ก้าวเข้าสู่ความจริงใหม่ที่โลกกลายเป็นสนามเด็กเล่นของคุณ Seekprotocol เปลี่ยนสิ่งรอบตัวให้เป็นการผจญภัยแบบอินเทอร์แอคทีฟ ผสมผสานเทคโนโลยี AR ล่าสุดกับการสำรวจโลกจริง",
-    "metaTitle": "เกี่ยวกับทีมผู้อยู่เบื้องหลัง Seekprotocol",
-    "metaDescription": "พบกับทีมที่สร้าง AR ตามตำแหน่งสำหรับทุกเชน: พันธกิจเบื้องหลัง proof of location เทคโนโลยีใน Seekprotocol และผู้คนเบื้องหลัง $SEEK",
-    "ogTitle": "ทีมเบื้องหลัง Seekprotocol",
+    "metaTitle": "เกี่ยวกับ Seekprotocol: พันธกิจและเทคโนโลยี",
+    "metaDescription": "ทำไม Seekprotocol จึงสร้าง AR ตามตำแหน่งสำหรับทุกเชน: พันธกิจเบื้องหลัง proof of location เทคโนโลยีในแอป และบทบาทของ $SEEK",
+    "ogTitle": "ทำไม Seekprotocol จึงเกิดขึ้น",
     "eyebrow": "เกี่ยวกับเรา",
     "whyEyebrow": "ทำไมเราสร้างสิ่งนี้",
     "techEyebrow": "เทคโนโลยี",
-    "pillarsEyebrow": "เสาหลัก",
-    "teamEyebrow": "ทีม",
-    "linkedinLabel": "{name} บน LinkedIn"
+    "pillarsEyebrow": "เสาหลัก"
   },
   "contact": {
     "getInTouch": "ติดต่อเรา",

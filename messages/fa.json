@@ -225,19 +225,16 @@
     "approachEventsDesc": "رویدادهای اجتماعی محدود به زمان که جمعیت را گرد هم می‌آورند؛ یورش‌های Pokémon-Go را تصور کن، به سبک Web3.",
     "approachCollaborations": "همکاری‌هایی که می‌آفرینند",
     "approachCollaborationsDesc": "محتوا و چالش‌های ساخته‌شده توسط کاربران.",
-    "ourTeam": "تیم فوق‌العاده ما",
     "joinBeta": "به نسخه بتای ما بپیوند",
     "getReady": "آماده جستجو باش!",
     "ctaDesc": "به واقعیتی تازه قدم بگذار که جهان در آن زمین بازی توست. Seekprotocol محیط اطرافت را به یک ماجراجویی تعاملی تبدیل می‌کند و جدیدترین فناوری واقعیت افزوده را با کاوش در دنیای واقعی درمی‌آمیزد.",
-    "metaTitle": "درباره تیم پشت Seekprotocol",
-    "metaDescription": "با تیمی آشنا شو که واقعیت افزوده مبتنی بر مکان را برای هر زنجیره‌ای می‌سازد: مأموریت پشت اثبات مکان، فناوری زیر Seekprotocol و آدم‌های پشت $SEEK.",
-    "ogTitle": "تیم پشت Seekprotocol",
+    "metaTitle": "درباره Seekprotocol: مأموریت و فناوری",
+    "metaDescription": "چرا Seekprotocol واقعیت افزوده مبتنی بر مکان را برای هر زنجیره‌ای می‌سازد: مأموریت پشت اثبات مکان، فناوری زیر اپلیکیشن و نقش $SEEK.",
+    "ogTitle": "چرا Seekprotocol وجود دارد",
     "eyebrow": "درباره ما",
     "whyEyebrow": "چرا این را می‌سازیم",
     "techEyebrow": "فناوری",
-    "pillarsEyebrow": "ستون‌ها",
-    "teamEyebrow": "تیم",
-    "linkedinLabel": "{name} در LinkedIn"
+    "pillarsEyebrow": "ستون‌ها"
   },
   "contact": {
     "getInTouch": "با ما در تماس باش",

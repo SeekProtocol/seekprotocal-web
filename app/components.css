@@ -2078,74 +2078,6 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
   background: var(--brand-soft);
 }
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin-top: 3rem;
-}
-
-@media (max-width: 1000px) { .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (max-width: 700px) { .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-
-.team-card {
-  position: relative;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: var(--bg-raised);
-  transition: transform 0.3s var(--ease-out), border-color 0.3s, box-shadow 0.3s;
-}
-
-.team-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--brand-ring);
-  box-shadow: var(--shadow-lg);
-}
-
-.team-card-photo { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--bg-sunken); }
-
-.team-card-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s var(--ease-out);
-}
-
-.team-card:hover .team-card-photo img { transform: scale(1.04); }
-
-.team-card-body { padding: 1rem 1.15rem 1.25rem; }
-
-.team-card-name {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--fg);
-  margin-bottom: 0.3rem;
-}
-
-.team-card-role { line-height: 1.5; }
-
-.team-card-social {
-  position: absolute;
-  top: 0.85rem;
-  right: 0.85rem;
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
-  backdrop-filter: blur(8px);
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity 0.25s var(--ease-out), transform 0.25s var(--ease-out);
-}
-
-.team-card:hover .team-card-social,
-.team-card-social:focus-visible { opacity: 1; transform: none; }
-
 /* --------------------------------------------------------------------------
    CONTACT
    -------------------------------------------------------------------------- */
@@ -3910,9 +3842,6 @@ body:has(.nav-toggle:checked) { overflow: hidden; }
 
   /* The glossary filter, which is a real field and not a decoration. */
   .glossary-search input { min-height: 34px; }
-
-  /* The LinkedIn link on a team card. */
-  .team-card-social { min-width: 36px; min-height: 36px; }
 }
 
 /* The roadmap rail is 2.5rem plus a 1.5rem gutter, which is a fifth of a phone

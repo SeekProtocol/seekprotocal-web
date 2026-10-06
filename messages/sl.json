@@ -225,19 +225,16 @@
     "approachEventsDesc": "Časovno omejeni dogodki skupnosti, ki združijo množice. Predstavljaj si Pokémon Go Raide v slogu Web3.",
     "approachCollaborations": "Sodelovanja, ki ustvarjajo",
     "approachCollaborationsDesc": "Vsebine in izzivi, ki jih ustvarijo uporabniki.",
-    "ourTeam": "Naša izjemna ekipa",
     "joinBeta": "Pridruži se naši beti",
     "getReady": "Pripravi se na iskanje!",
     "ctaDesc": "Stopi v novo resničnost, kjer svet postane tvoje igrišče. Seekprotocol tvojo okolico spremeni v interaktivno dogodivščino, ki združuje najnovejšo tehnologijo AR z raziskovanjem resničnega sveta.",
-    "metaTitle": "O ekipi za Seekprotocolom",
-    "metaDescription": "Spoznaj ekipo, ki gradi AR na podlagi lokacije za vse verige: poslanstvo za dokazom lokacije, tehnologijo pod Seekprotocolom in ljudi za $SEEK.",
-    "ogTitle": "Ekipa za Seekprotocolom",
+    "metaTitle": "O Seekprotocolu: poslanstvo in tehnologija",
+    "metaDescription": "Zakaj Seekprotocol gradi AR na podlagi lokacije za vse verige: poslanstvo za dokazom lokacije, tehnologija pod aplikacijo in vloga $SEEK.",
+    "ogTitle": "Zakaj obstaja Seekprotocol",
     "eyebrow": "O nas",
     "whyEyebrow": "Zakaj to gradimo",
     "techEyebrow": "Tehnologija",
-    "pillarsEyebrow": "Stebri",
-    "teamEyebrow": "Ekipa",
-    "linkedinLabel": "{name} na LinkedInu"
+    "pillarsEyebrow": "Stebri"
   },
   "contact": {
     "getInTouch": "Stopi v stik",

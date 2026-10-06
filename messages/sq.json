@@ -225,19 +225,16 @@
     "approachEventsDesc": "Evente komuniteti me kohë të kufizuar që bashkojnë masat. Imagjino Raid-et e Pokémon Go në stilin Web3.",
     "approachCollaborations": "Bashkëpunime që krijojnë",
     "approachCollaborationsDesc": "Përmbajtje dhe sfida të krijuara nga përdoruesit.",
-    "ourTeam": "Ekipi ynë i mrekullueshëm",
     "joinBeta": "Bashkohu në betën tonë",
     "getReady": "Bëhu gati për të kërkuar!",
     "ctaDesc": "Hyr në një realitet të ri ku bota bëhet sheshi yt i lojërave. Seekprotocol e shndërron mjedisin tënd në një aventurë interaktive, duke bashkuar teknologjinë më të fundit AR me eksplorimin e botës reale.",
-    "metaTitle": "Rreth ekipit pas Seekprotocol",
-    "metaDescription": "Njihu me ekipin që ndërton AR të bazuar në vendndodhje për çdo zinxhir: misioni pas provës së vendndodhjes, teknologjia nën Seekprotocol dhe njerëzit pas $SEEK.",
-    "ogTitle": "Ekipi pas Seekprotocol",
+    "metaTitle": "Rreth Seekprotocol: misioni dhe teknologjia",
+    "metaDescription": "Pse Seekprotocol ndërton AR të bazuar në vendndodhje për çdo zinxhir: misioni pas provës së vendndodhjes, teknologjia nën aplikacion dhe roli i $SEEK.",
+    "ogTitle": "Pse ekziston Seekprotocol",
     "eyebrow": "Rreth nesh",
     "whyEyebrow": "Pse e ndërtojmë këtë",
     "techEyebrow": "Teknologjia",
-    "pillarsEyebrow": "Shtyllat",
-    "teamEyebrow": "Ekipi",
-    "linkedinLabel": "{name} në LinkedIn"
+    "pillarsEyebrow": "Shtyllat"
   },
   "contact": {
     "getInTouch": "Na kontakto",

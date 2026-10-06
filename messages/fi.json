@@ -225,19 +225,16 @@
     "approachEventsDesc": "Aikarajattuja yhteisötapahtumia, jotka kokoavat joukot yhteen. Kuvittele Pokémon Go -raidit Web3-tyyliin.",
     "approachCollaborations": "Luovaa yhteistyötä",
     "approachCollaborationsDesc": "Käyttäjien luomaa sisältöä ja haasteita.",
-    "ourTeam": "Mahtava tiimimme",
     "joinBeta": "Liity betaan",
     "getReady": "Valmistaudu etsimään!",
     "ctaDesc": "Astu uuteen todellisuuteen, jossa maailmasta tulee leikkikenttäsi. Seekprotocol muuttaa ympäristösi interaktiiviseksi seikkailuksi yhdistämällä uusimman AR-teknologian oikean maailman tutkimiseen.",
-    "metaTitle": "Seekprotocolin tiimi",
-    "metaDescription": "Tutustu tiimiin, joka rakentaa sijaintiin perustuvaa AR:ää jokaiselle ketjulle: proof of locationin taustalla oleva missio, Seekprotocolin teknologia ja $SEEKin takana olevat ihmiset.",
-    "ogTitle": "Seekprotocolin takana oleva tiimi",
+    "metaTitle": "Tietoa Seekprotocolista: missio ja teknologia",
+    "metaDescription": "Miksi Seekprotocol rakentaa sijaintiin perustuvaa AR:ää jokaiselle ketjulle: proof of locationin taustalla oleva missio, sovelluksen teknologia ja $SEEKin rooli.",
+    "ogTitle": "Miksi Seekprotocol on olemassa",
     "eyebrow": "Tietoa meistä",
     "whyEyebrow": "Miksi rakennamme tätä",
     "techEyebrow": "Teknologia",
-    "pillarsEyebrow": "Pilarit",
-    "teamEyebrow": "Tiimi",
-    "linkedinLabel": "{name} LinkedInissä"
+    "pillarsEyebrow": "Pilarit"
   },
   "contact": {
     "getInTouch": "Ota yhteyttä",

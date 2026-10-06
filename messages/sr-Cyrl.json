@@ -225,19 +225,16 @@
     "approachEventsDesc": "Временски ограничени догађаји заједнице који окупљају масу, замислите Pokémon-Go рејдове у Web3 стилу.",
     "approachCollaborations": "Сарадње које стварају",
     "approachCollaborationsDesc": "Садржај и изазови које праве корисници.",
-    "ourTeam": "Наш сјајни тим",
     "joinBeta": "Придружите се бети",
     "getReady": "Спремите се за потрагу!",
     "ctaDesc": "Закорачите у нову стварност у којој свет постаје ваше игралиште. Seekprotocol претвара ваше окружење у интерактивну авантуру и спаја најновију AR технологију са истраживањем стварног света.",
-    "metaTitle": "О тиму који стоји иза Seekprotocol",
-    "metaDescription": "Упознајте тим који гради AR засновану на локацији за сваки ланац: мисију иза доказа локације, технологију у основи Seekprotocol и људе који стоје иза $SEEK.",
-    "ogTitle": "Тим који стоји иза Seekprotocol",
+    "metaTitle": "О Seekprotocol: мисија и технологија",
+    "metaDescription": "Зашто Seekprotocol гради AR засновану на локацији за сваки ланац: мисија иза доказа локације, технологија у основи апликације и улога $SEEK.",
+    "ogTitle": "Зашто постоји Seekprotocol",
     "eyebrow": "О нама",
     "whyEyebrow": "Зашто ово градимо",
     "techEyebrow": "Технологија",
-    "pillarsEyebrow": "Стубови",
-    "teamEyebrow": "Тим",
-    "linkedinLabel": "{name} на LinkedIn-у"
+    "pillarsEyebrow": "Стубови"
   },
   "contact": {
     "getInTouch": "Јавите нам се",

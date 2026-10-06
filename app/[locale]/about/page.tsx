@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -103,18 +102,6 @@ export default async function AboutPage({
   return <AboutContent />;
 }
 
-
-const TEAM = [
-  { name: "Don Reijke", role: "Founder & CTO", img: "Don-Reijke.avif", linkedin: "https://www.linkedin.com/in/don-reijke-09630921b/" },
-  { name: "Lukas Novotny", role: "COO", img: "Lukas-Novotny.avif", linkedin: "" },
-  { name: "Tristan Wesenhagen", role: "Business Development & Strategy Lead", img: "Tristan-Wesenhagen_1.avif", linkedin: "https://www.linkedin.com/in/sdewansingh/" },
-  { name: "Martin Patzer", role: "Community Manager", img: "Martin-Patzer.avif", linkedin: "https://www.linkedin.com/in/martin-patzer-92885a295/" },
-  { name: "Vitor Souza", role: "Lead AI Engineer & Game Development", img: "Vitor-Souza.avif", linkedin: "" },
-  { name: "Wilson Bueres", role: "3D Design & Animations", img: "Wilson-Bueres.avif", linkedin: "" },
-  { name: "Samuel Pinheiro", role: "Blockchain & Game Development", img: "Samuel-Pinheiro.avif", linkedin: "" },
-  { name: "Mateus Henrique", role: "Game Development", img: "Mateus-Henrique.avif", linkedin: "" },
-  { name: "Twan Kersting", role: "Innovation Strategist", img: "Twan-Kersting.avif", linkedin: "" },
-];
 
 function AboutContent() {
   const t = useTranslations("about");
@@ -284,48 +271,6 @@ function AboutContent() {
                 </div>
                 <p className="t-body step-body">{item.desc}</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team ------------------------------------------------------------- */}
-      <section className="section section-sunken">
-        <div className="shell">
-          <div className="sec-head reveal">
-            <p className="eyebrow">{t("teamEyebrow")}</p>
-            <h2 className="t-h2">{t("ourTeam")}</h2>
-          </div>
-
-          <div className="team-grid">
-            {TEAM.map((member) => (
-              <article key={member.name} className="team-card reveal">
-                <div className="team-card-photo">
-                  {/* fill: the sources run from 800x598 to 1888x2048, so there is no one
-                      ratio to state. .team-card-photo already squares the box. */}
-                  <Image
-                    src={`/images/${member.img}`}
-                    alt={member.name}
-                    fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 200px"
-                  />
-                </div>
-                <div className="team-card-body">
-                  <h3 className="team-card-name">{member.name}</h3>
-                  <p className="t-mono-sm team-card-role">{member.role}</p>
-                </div>
-                {member.linkedin && (
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="team-card-social"
-                    aria-label={t("linkedinLabel", { name: member.name })}
-                  >
-                    <img loading="lazy" src="/images/Linkdin-Image.svg" alt="" width={16} height={16} />
-                  </a>
-                )}
-              </article>
             ))}
           </div>
         </div>
