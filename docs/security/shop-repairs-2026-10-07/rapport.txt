@@ -1,0 +1,180 @@
+SEEKPROTOCOL — HERSTEL VAN DE SHOPBEVINDINGEN
+7 oktober 2026
+
+STATUS
+
+F1, F2, F3 en F4 zijn in de lokale website en gekoppelde backend gerepareerd.
+De wijzigingen zijn getest, maar niet gecommit, gepubliceerd of in productie
+geactiveerd. Het oorspronkelijke onderzoeksrapport blijft als nulmeting staan.
+Dit rapport verklaart niet dat de gehele app vrij is van kwetsbaarheden.
+
+F1 — EVM-BETAALSCAN: GEREPAREERD
+
+De scanner verwerkt maximaal 25 geverifieerde events per scanstap en bewaart
+ook de positie binnen een blok. Een blok met 101 events kan dus verdergaan
+zonder de ongelezen gebeurtenissen over te slaan. Receipts worden per stap
+hergebruikt; tijd en het aantal verschillende transacties zijn begrensd.
+Een te groot blokbereik wordt bij een providerfout kleiner gemaakt. Een fout
+bij een enkel blok blijft een zichtbare fout; er wordt niets overgeslagen.
+
+De voortgang wordt alleen bijgewerkt als de opgeslagen vorige positie nog
+overeenkomt. Een verouderde worker kan een nieuwere positie niet terugzetten.
+Bij een onderbreking mogen al vastgelegde betalingen opnieuw gecontroleerd
+worden; de bestaande unieke betaalregistraties voorkomen dubbele levering.
+
+Bewijs: 101 events in hetzelfde blok werden in stappen van 25, 25, 25, 25 en
+1 verwerkt. Ook meerdere blokbereiken, providerlimieten, ontbrekende receipts,
+een databasefout halverwege en een verouderde voortgangsupdate zijn getest.
+
+F2 — HERSTELWACHTRIJ: GEREPAREERD
+
+Bekend betaalde orders krijgen voorrang en kopers worden binnen een categorie
+afgewisseld. Twee plekken per standaardbatch blijven beschikbaar voor het
+ontdekken van nieuwe betalingen, ook als veel betaalde leveringen vastlopen.
+De worker verwerkt maximaal zes batches van acht orders, vier tegelijk, en
+start na 40 seconden geen nieuwe batch. Een al gestarte batch wordt afgerond;
+40 seconden is dus geen harde bovengrens voor de totale uitvoering.
+
+Onbetaalde orders worden geleidelijk minder vaak gecontroleerd: tijdens de
+betaalperiode van 30 seconden naar maximaal 5 minuten; daarna 15 minuten,
+1 uur na een dag en 1 dag na een week. Betaalde orders blijven snel opnieuw
+controleerbaar. Oude betalingen worden niet definitief uit de herstelroute
+verwijderd. Een aangeboden transactiecode kan eerder gecontroleerd worden.
+
+Dezelfde exclusieve claim beschermt achtergrondherstel, handmatige controle
+en Radom-statuscontroles/webhooks. Een unieke claimcode voorkomt dat een oude
+controle een nieuwere claim vrijgeeft. Verlopen claims worden hersteld.
+
+Bestellen is atomair begrensd op maximaal drie gelijktijdig open, nog geldige
+onbetaalde orders en zes nieuwe orders per minuut per koper. Deze controle
+staat in dezelfde databasetransactie als het aanmaken van een bestelling.
+
+De hersteljob rapporteert aantallen en de ouderdom van de oudste betaalde
+niet-geleverde order. Na vijf minuten geeft hij een duidelijke logmelding en
+een 503-status voor operationele monitoring. De productie-alertontvanger en
+daadwerkelijke capaciteit onder echt verkeer zijn niet live geverifieerd.
+
+Bewijs: de betaalde order wordt direct geselecteerd tussen 80 onbetaalde
+orders; een andere koper behoudt ruimte; ook een grote betaalde achterstand
+blokkeert nieuwe detectie niet. Twaalf gelijktijdige aanvragen leveren maximaal
+drie open orders en precies één actieve betaalcontrole voor dezelfde order op.
+
+F3 — VERZOEKLIMIETEN: GEREPAREERD
+
+De centrale, atomaire databasebudgetten gelden vóór auditregels en externe
+betaalcontroles. Per minuut: 60 shopverzoeken per account, 240 per IP, 12
+bevestigings/status/hervatverzoeken per account, 2 herstelverzoeken en 6
+aanmaakverzoeken. Accountbudgetten worden tussen de betaalendpoints gedeeld.
+
+Walletchallenges hebben gezamenlijk 500 uitgiftepogingen per minuut, 20 per
+IP, 5 per walletadres en bij ingelogde aanvragen 10 per account. Wisselen van
+walletadres omzeilt de gedeelde IP/globalelimiet niet. IP-adressen komen uit de
+bestaande gatewayheaderverwerking en worden gehasht opgeslagen. Productie moet
+die headers bij de ingress blijven overschrijven; een vertrouwde ingress is
+een voorwaarde voor een betrouwbare IP-limiet. Andere limieten werken daarvan
+onafhankelijk. Zonder IP gebruiken verzoeken dezelfde begrensde fallback.
+
+Bij overschrijding volgt 429 met Retry-After en een veilige foutcode. Een
+fout in de begrenzing laat het kostbare verzoek niet alsnog doorgaan. De
+browser controleert betalingen op zijn vroegst elke vijf seconden en houdt
+rekening met de aangegeven wachttijd. Een verstuurde betaling wordt door een
+tijdelijke limiet niet als definitief mislukt aangemerkt.
+
+Gewone statuspolls schrijven geen extra generieke aanvraag-auditregel. Alleen
+de geclaimde betaalcontrole schrijft haar gekoppelde begin/resultaat/fout.
+Clientmeldingen blijven daarnaast begrensd volgens de vorige audituitbreiding.
+Radom gebruikt tijdens een claim of cooldown de bewaarde toestand; een betaalde
+maar nog niet geleverde order wordt niet als geleverd teruggegeven.
+
+Bewijs: twaalf gelijktijdige verzoeken verbruiken precies vijf beschikbare
+budgetplaatsen; verkeerde eigenaren, dubbele claims, onjuiste vrijgavecodes,
+cooldownomzeiling en ontbrekende limiterantwoorden zijn gecontroleerd.
+
+F4 — SCRIPTBEVEILIGING: GEREPAREERD
+
+De proxy geeft iedere HTML-aanvraag een onvoorspelbare nonce. Alleen scripts
+met die code en hun vertrouwde imports mogen uitvoeren. Productie staat geen
+unsafe-eval, naamloze inline scripts of inline eventhandlers toe. De oude
+ruime CSP in vercel.json is verwijderd, zodat die de nieuwe policy niet kruist.
+Inline stijlregels blijven toegestaan voor de bestaande vormgeving.
+
+De shop, bestellingen en support laden geen analytics. Navigatie tussen de
+shop en de overige website krijgt een nieuw document, zodat een oude policy
+of eerder geladen marketingcode niet op de betaalpagina blijft draaien.
+API-verbindingen zijn beperkt tot de ingestelde publieke backend/RPC-hosts.
+
+Deze nonce-aanpak maakt de locale-HTML-routes dynamisch en private/no-store;
+de statische assets houden hun eigen cachebeleid. De productiebuild slaagt.
+Deze bewust gekozen wijziging vergroot serverrendering ten opzichte van de
+oude statische HTML-cache. Verifieer hostinglatentie en capaciteit bij uitrol.
+
+Sessies gebruiken nog de bestaande browseropslag en levensduurcontrole.
+De mogelijke architectuurwijziging naar HttpOnly-serversessies uit het eerdere
+rapport is niet nodig om F4's ruime CSP te repareren en is hier niet uitgevoerd.
+Scripts die bewust als vertrouwd worden toegestaan blijven binnen de browser
+privileges houden. CSP is een verdedigingslaag, geen garantie tegen alle XSS.
+
+Bewijs: twee echte HTTP-antwoorden van de lokale productiebuild hebben unieke,
+bijpassende nonces, geen executable inline script zonder nonce, geen eval en
+geen analytics in de shop. In de browser werken de aanmeldpagina, walletkeuze
+en navigatie; bij terugkeer naar de shop zijn de analytics-scripts verdwenen.
+Er is geen echte wallet gekoppeld, inlogcode verstuurd of betaling uitgevoerd.
+Externe social-loginproviders zijn vanaf testpoort 3011 niet volledig getest.
+
+DEPENDENCIES
+
+De kwetsbare jayson-boom is vervangen door versie 5.0.0, met behoud van het
+door Solana gebruikte browserprotocol. De oude stream-json- en uuid-dependency
+vallen weg. Een test vraagt met de echte Solana-client een gemockte blockhash
+op en bouwt/ondertekent een lokale testtransactie zonder iets te versturen.
+
+De website levert zijn runtime-peers expliciet: React, web3.js en bs58.
+.npmrc voorkomt installatie van de native mobiele peerboom. De schone
+productie-installatie bevat geen React Native, Metro, braces, micromatch of
+stream-json. Dit behoudt de browserimplementatie van de mobiele walletadapter.
+De installatiewijze is met Node 22.21.1 en npm 11.13.0 getest; de projectconfig
+en lockfile moeten samen worden uitgerold.
+
+Productie-audit: 0 kwetsbaarheidsmeldingen. Compatibele updates voor humanfs,
+brace-expansion en js-yaml in ontwikkelgereedschap zijn ook toegepast.
+
+RESTPUNT: de volledige ontwikkelaudit toont nog vijf pakketmeldingen die
+teruggaan op één braces-kwetsbaarheid via het Next ESLint-gereedschap. De
+leverancier meldt geen gepatchte versie. Deze boom verwerkt interne
+lintpatronen en komt niet mee in de gecontroleerde productie-installatie.
+Een door npm voorgestelde downgrade van Nexts lintconfig naar versie 14 is
+geen passende reparatie voor deze Next 16-site en is niet toegepast.
+Dit restpunt is dus geïsoleerd van productie, niet als upstream gerepareerd
+geclaimd. Bron: https://github.com/advisories/GHSA-vfj7-8cjw-p6xm
+
+VALIDATIE EN BRONNEN
+
+- 84 frontendtests en 122 relevante backendtests geslaagd.
+- Typecontrole voor vier aangepaste backendentrypoints; frontend TypeScript
+  en ESLint voor de gewijzigde code geslaagd.
+- Productiebuild en schone productie-installatie geslaagd.
+- Nieuwe migratie vanaf nul op een eigen wegwerpdatabase toegepast.
+- SQL-regressies voor Solana, ETH/BNB, supportdossiers en nieuwe beveiliging
+  geslaagd; concurrencyproeven uitgevoerd met twaalf verzoeken tegelijk.
+- Geen productiegegevens, echte financiële transacties of lidmaatschappen
+  aangepast. De daadwerkelijke productieconfiguratie is niet opnieuw vrijgegeven.
+
+De logs, dependencyrapporten, HTTP-resultaten en bestandshashes in deze map
+horen bij de huidige lokale, reeds gewijzigde werkmappen. Een Git-commit alleen
+identificeert deze nog niet gecommitte bron niet volledig.
+
+UITROLVOLGORDE
+
+1. Controleer de gekoppelde migratiestatus. De nieuwe migratie
+   20261007170000_shop_security_controls.sql volgt op de directe betaalmigraties
+   en 20261007160000_shop_support_dossiers.sql. Voer SQL uit vóór functies die
+   de nieuwe budget-, claim- en voortgangs-RPC's aanroepen.
+2. Publiceer solana-checkout, radom-checkout, solana-order-reconcile en
+   solana-wallet met hun gedeelde helpers.
+3. Publiceer de website inclusief package.json, package-lock.json, .npmrc,
+   proxy, layout en vercel.json. Gebruik de gecontroleerde Node/npm-omgeving.
+4. Verifieer live: exacte schema/functieversies, gewone klant versus beheerder,
+   429 met hervatting, hersteljob en signalering, CSP en login/wallet, vervolgens
+   een geautoriseerde betaling per ingeschakeld netwerk en idempotente levering.
+
+Productieactivering en die live betaalverificatie zijn nog niet uitgevoerd.

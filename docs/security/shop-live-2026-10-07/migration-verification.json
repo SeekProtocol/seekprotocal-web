@@ -1,0 +1,26 @@
+[
+  {
+    "version": "20261007120000",
+    "name": "direct_solana_shop",
+    "match": true,
+    "sha256": "4120012cbb59e5c831ca79b46aa0c82e15c10f963491b9a2d4fa4a55be93d61a"
+  },
+  {
+    "version": "20261007130000",
+    "name": "direct_evm_shop",
+    "match": true,
+    "sha256": "952a62a9ec90295e96ca4765095eed35afa9a421dfcd9f9731c1322a1f7662b5"
+  },
+  {
+    "version": "20261007160000",
+    "name": "shop_support_dossiers",
+    "match": true,
+    "sha256": "eb6e1dc76b8d144867342e6a4519b4e446fd3a6a049e033dbac7181d4acdce4a"
+  },
+  {
+    "version": "20261007170000",
+    "name": "shop_security_controls",
+    "match": true,
+    "sha256": "ba52680b28731edb3de0cf2ab76cfef05bb323fd9071b5dc63e561daa2f01164"
+  }
+]

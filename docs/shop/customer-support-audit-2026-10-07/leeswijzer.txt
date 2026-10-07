@@ -1,0 +1,165 @@
+SEEKPROTOCOL — KLANTVRAGEN EN BESTELDOSSIERS
+7 oktober 2026, Europe/Amsterdam
+
+STATUS
+
+Lokaal gebouwd en getest. De nieuwe migratie, backendfuncties en website zijn
+in deze taak niet naar productie uitgerold. Bestaande auditgegevens blijven
+bestaan; de nieuwe vastlegging start pas na activering. Dit document bewijst
+geen volledige dekking van gebeurtenissen die vóór die activering plaatsvonden.
+
+GEBRUIK DOOR SUPPORT
+
+Open /nl/shop/support en log in met een bestaand account dat toegang heeft tot
+de shop en als actieve dashboardbeheerder geregistreerd staat. Er zijn geen
+nieuwe beheerders toegevoegd. Een gewone klant of gedeactiveerde beheerder
+kan de onderliggende supportfuncties niet gebruiken.
+
+Zoek met de volledige bestelreferentie, transactiecode, e-mailadres, account-ID
+of Friends ID. Solana-transactiecodes zijn hoofdlettergevoelig. Open de juiste
+bestelling en vergelijk altijd koper en ontvanger: een cadeau kan op een ander
+account geleverd zijn. 'Dossier vernieuwen' haalt de actuele toestand op.
+
+De tijdlijn toont de nieuwste gebeurtenissen eerst, met oudere pagina's via
+'Oudere gebeurtenissen laden'. 'Volledig dossier downloaden' controleert de
+toegang opnieuw en downloadt alle pagina's tot een vastgelegde gebeurtenisgrens.
+De download is JSON en bevat klantgegevens; deel met een klant alleen de
+gegevens die nodig zijn voor diens vraag. Bij een downloadfout wordt geen
+onvolledig bestand aangeboden.
+
+Het voorbeeld /nl/support-check gebruikt uitsluitend verzonnen gegevens en
+bestaat alleen in de ontwikkelomgeving. De bijgevoegde screenshot toont dat
+voorbeeld, geen echte klant of betaling.
+
+WELKE VRAGEN KUNNEN WE ONDERBOUWEN?
+
+- Wat is besteld? De oorspronkelijke productgegevens, aantallen, prijs,
+  betaalquote, leveropdracht, gekozen ontvanger en checkoutreferentie.
+- Is betaald? Geregistreerde, gecontroleerde transacties met exact ontvangen
+  bedragen, netwerk, transactiecode en blokgegevens. Browsermeldingen over
+  verzenden of afwijzen staan apart en gelden niet als betaalbewijs.
+- Welke kosten waren er? Het afgesproken kostenbeleid plus de werkelijke
+  netwerkvergoeding uit een geverifieerde transactie, als die gegevens door
+  de verifier zijn vastgelegd. De verzender betaalt deze boven op de aankoop.
+- Waarom wacht een order? Betaal- en leverstatus, eventuele deelbetaling,
+  overbetaling of late betaling, controlepogingen met aanleiding, duur,
+  resultaat en een veilige foutcode. Een onbekende interne fout vraagt nog
+  technisch onderzoek; er wordt geen oorzaak verzonnen.
+- Wat is geleverd en aan wie? Levertijd, ontvangend account, toegewezen packs,
+  packgegevens en of/wanneer ze zijn geopend. Bestaande packrecords bevatten
+  waar aanwezig de uitgegeven kaartkopie-ID's en beleidsmetadata; het dossier
+  bewaart die details. Het is geen nieuwe volledige analyse van Arena-spellen.
+- Wie heeft dit opgezocht? Zoekopdrachten en het openen/verversen/exporteren
+  via het nieuwe supportpad registreren de beheerder en het tijdstip. De ruwe
+  zoektekst wordt daarbij niet extra opgeslagen. Dit is geen audit van iedere
+  directe databaselezing via andere beheerhulpmiddelen.
+
+REGELS VOOR EEN ANTWOORD AAN DE KLANT
+
+Betaald maar nog niet geleverd: vraag niet opnieuw te betalen. Controleer
+eerst het ontvangende account, de leverfout en de laatste herstelpoging.
+
+Alleen 'transactie verstuurd' in de browser: bevestig nog niet dat het geld is
+ontvangen. Controleer het bewijs op het gekozen netwerk. Geen betaalrecord
+bewijst niet dat de klant niets heeft afgeschreven; een controle kan ontbreken
+of nog onderweg zijn.
+
+Geleverd met een overbetaling: levering verklaart het extra bedrag niet.
+Beoordeel dat bedrag afzonderlijk. Dit supportscherm voert geen terugbetaling
+uit en geeft geen extra items uit.
+
+Ontbrekende kosten of oude gebeurtenissen: zeg dat ze niet zijn vastgelegd.
+Een onbekende vergoeding is niet nul. Bestaande ontbrekende gebeurtenissen
+worden niet achteraf gereconstrueerd alsof ze destijds zijn waargenomen.
+
+GRENZEN VAN HET BEWIJS
+
+De database bewaart de bestaande append-only audit. Bij normale applicatie-
+toegang kunnen gebeurtenissen niet worden gewijzigd of verwijderd; dit is
+geen extern ondertekend archief buiten de macht van een database-eigenaar.
+
+Browsergebeurtenissen zijn best-effort: offline gaan of de tab sluiten kan
+vastlegging verhinderen. De opgeslagen checkoutversie/taal/kostenmelding is
+gemarkeerd als clientinformatie en bewijst niet dat een klant de tekst las.
+Geldige betaling en levering steunen op servercontrole en databasegegevens.
+
+Netwerkkosten gelden voor de hele transactie, niet voor één order. Als één
+transactie meerdere orders betaalt, mag support dezelfde vergoeding niet
+meerdere keren optellen. Een Solana-tokenrekening aanmaken kan daarnaast saldo
+vastzetten; dit is niet opgenomen als netwerkvergoeding. Wisselkoersen van
+netwerkkosten naar euro worden niet achteraf verzonnen.
+
+Oude Radom-betalingen gebruiken de bewaarde provider- en webhookgegevens in de
+tijdlijn. Hiervoor belooft het nieuwe directe-chainkostenbewijs geen volledige
+historische dekking. Een verwijderde order kan een expliciet gemarkeerde laatste
+momentopname tonen; bijbehorende huidige betaal- of packrecords kunnen ontbreken.
+
+De tijdlijnexport gebruikt een vaste gebeurtenisgrens. Actuele order/leverrecords
+worden bij het starten van de export gelezen; het geheel is geen vergrendelde
+forensische momentopname van alle tabellen tijdens gelijktijdige betalingen.
+Ververs bij veranderingen. Er is geen nieuw bewaartermijnenbeleid ingevoerd.
+
+TECHNISCHE AFBAKENING
+
+Frontend: /Users/michaeldevries/Projects/seekprotocal-web
+Backend: /Users/michaeldevries/Projects/seekar-app/supabase
+
+Nieuw: migratie 20261007160000_shop_support_dossiers.sql, geselecteerd
+chainkostenbewijs, geauthenticeerde supportzoek- en dossierfuncties, begrensde
+clientmeldingen en het supportscherm. Exacte geldbedragen en audit-ID's worden
+als strings overgedragen om afronding door JavaScript te voorkomen.
+
+De nieuwe betalingswrappers roepen de bestaande validatie en levering aan.
+Betaling, levering en kostenbewijs worden in dezelfde databasetransactie
+vastgelegd; ongeldige auditgegevens laten geen halve betaling/levering achter.
+Herhaald verwerken levert geen dubbele kostenregels of extra packs op.
+
+Alleen geselecteerde velden uit chainresponses worden opgeslagen. De nieuwe
+helper slaat geen ruwe RPC-responses, credentials, geheime sleutels of ruwe
+onbekende foutmeldingen op. Dit is geen volledige herschoning van oude logs.
+Clientmeldingen kunnen geen serverevent imiteren, worden aan de ingelogde koper
+en diens order gebonden, ontdubbeld en atomair op maximaal 50 per order begrensd.
+
+TESTRESULTATEN
+
+- 82 frontendtests geslaagd; TypeScript en ESLint voor de nieuwe supportcode
+  geslaagd. De voorbeeldpagina is in de lokale browser visueel gecontroleerd.
+- 42 geselecteerde backendtests geslaagd; Deno-typecontrole van de drie
+  gewijzigde functie-entrypoints geslaagd.
+- Geïsoleerde PostgreSQL-tests: rollback bij ongeldig kostenbewijs, exacte
+  bedragen, geen dubbele levering, klant/eigenaarcontrole, geweigerde vervalste
+  clientevents, de 50-eventgrens, adminrechten, paginering, leesregistratie,
+  append-only bescherming en een verwijderde order met historische momentopname.
+- De bestaande directe Solana- en EVM-betaalregressies bleven groen.
+- Acht gelijktijdige registraties van dezelfde betaling: precies één betaling,
+  vijf packs, één leverevent en één event met kostenbewijs.
+- De 14 toegepaste backendbestanden komen byte voor byte overeen met de
+  geïsoleerd geteste bronversies; hashes staan in backend-files.json.
+
+Deze tests gebruiken synthetische data in een eigen tijdelijke database en
+gemockte netwerkantwoorden. De fixture vervangt omliggende appfuncties met
+stubs; het is geen herhaling van alle productiemigraties of echte mainnetbetaling.
+Er zijn geen echte klanten, transacties of productiegegevens aangepast.
+
+ACTIVERING EN NOG OPENSTAANDE PUNTEN
+
+Controleer vóór een release de migratiestatus van de gekoppelde backend, met
+de bestaande shop/auditmigraties en 20261007120000_direct_solana_shop.sql en
+20261007130000_direct_evm_shop.sql als afhankelijkheden. Voer de nieuwe
+160000-migratie uit vóór de backendfuncties de nieuwe RPC's gaan gebruiken.
+
+Publiceer vervolgens solana-checkout, radom-checkout en solana-order-reconcile
+met hun gedeelde helpers, en publiceer de website. Controleer daarna met een
+actieve beheerder én een gewone klant de toegangsgrens, en controleer een
+geautoriseerde testorder van betaling tot dossier/export. Productieactivering
+en die live verificatie zijn in deze taak niet uitgevoerd.
+
+De eerdere securitybevindingen over EVM-scans met meer dan 100 events, de
+herstelwachtrij, verzoeklimieten en CSP zijn daarna afzonderlijk lokaal
+gerepareerd. Zie ../../security/shop-repairs-2026-10-07/rapport.txt voor de
+testbewijzen, het resterende ontwikkeldependency-punt en de uitrolvolgorde.
+De audituitbreiding zelf is geen enterprise-ready-verklaring.
+
+Bewijsbestanden in deze map bevatten de testuitvoer en bronhashes van deze
+lokale implementatie. De screenshot staat één map hoger als
+support-dossier-2026-10-07.png.

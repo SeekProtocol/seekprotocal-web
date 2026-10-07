@@ -1,0 +1,87 @@
+[
+  {
+    "path": "supabase/functions/_shared/checkout-cors.ts",
+    "before_sha256": "199bff4cff708ab0f6ad98697e486676e1c64295c42d3da9baad31b6c4d558d8",
+    "after_sha256": "80878c7755e69ffab7cfb7d7d90b5041f60bd1f415d8fe1f497d8481a6d04586"
+  },
+  {
+    "path": "supabase/functions/_shared/radom.test.ts",
+    "before_sha256": "b4f0bfeb40624603a1ee6d4929688fcc9d95b040f0eb60befbb8fec1dc35f051",
+    "after_sha256": "6d8e5ceac9e91118e236170e93b63a375495a0ae133d687d8ab4d4b01481c621"
+  },
+  {
+    "path": "supabase/functions/_shared/shop-audit-evidence.test.ts",
+    "before_sha256": "8d07151eddc27ae13de243eaf2d4fadc670551ddc8c8b824f76e4fe343865174",
+    "after_sha256": "bee2fc3dc14815089b83969580631b9d59abc27f002094c3e33b38dc2ed4cc4a"
+  },
+  {
+    "path": "supabase/functions/_shared/shop-checkout.test.ts",
+    "before_sha256": "888a33a2d2f163f8be7fbeed214df16292f6ec47909e23da91ba202fb9914873",
+    "after_sha256": "563069d52ba4589a9b9943e70f7dcef63a4635414e78d27183ff9bf9be996a16"
+  },
+  {
+    "path": "supabase/functions/_shared/shop-evm-payment.ts",
+    "before_sha256": "e1cb6b268a61abcc62c99b4570bb010713c1b59805bea27eac096ff9d7facc6f",
+    "after_sha256": "2dad6e1f65649f71abed93ca1a101b77def2baff28d5cea3b9922519f20ad8c9"
+  },
+  {
+    "path": "supabase/functions/_shared/shop-request-limits.test.ts",
+    "before_sha256": null,
+    "after_sha256": "6effbbc383c8d177f8963fdb38210274e0492716d40ccec780d435be2efd90db"
+  },
+  {
+    "path": "supabase/functions/_shared/shop-request-limits.ts",
+    "before_sha256": null,
+    "after_sha256": "9a4d9e8534344d237a0a7991b7d5d17e9395b38667b48a5cb66b3f7b58553197"
+  },
+  {
+    "path": "supabase/functions/_shared/solana-order-settlement.ts",
+    "before_sha256": "774dde53fd10767a8475b4d72d533cd5446edd931244a9cd1813725c4570ee81",
+    "after_sha256": "6852f0488d0e8c112b1c561e08630a49d0c79a16f898aa1f6e9cc71d93a860eb"
+  },
+  {
+    "path": "supabase/functions/radom-checkout/index.ts",
+    "before_sha256": "bea50a88952077566464ab43f81deecd4e92a664a06954245569ea04d5067b2d",
+    "after_sha256": "644da36347921602513bf80549240143f917504877fb452edb818ef6cdd1a060"
+  },
+  {
+    "path": "supabase/functions/solana-checkout/index.ts",
+    "before_sha256": "150d728fba2f27baa5c05d458bd7fcdafd52bd94165d6671e8d35d259af9d1e9",
+    "after_sha256": "d02195d9cd5e4bfb7b15100b6e6030f4a986f3196b029926dfbe46398445be90"
+  },
+  {
+    "path": "supabase/functions/solana-order-reconcile/index.ts",
+    "before_sha256": "3dc09dcebfd1c7e8e37468167d98ffe8edebaf92e11c8354d23b3c5ba3c0890e",
+    "after_sha256": "5c4955771ed6f70c2b3c0c79e9b23669b3be958cc97c27880101d3508a4121a2"
+  },
+  {
+    "path": "supabase/functions/solana-wallet/index.ts",
+    "before_sha256": "09dff27a515466bf4f25e24aa6ec4d48b7cf2fc01bef85dbf5030151aaf271cf",
+    "after_sha256": "d1e8fa00e3724caf8280a11a49b210ac98185511e1e8179f3c6628d1cb906fbc"
+  },
+  {
+    "path": "supabase/migrations/20261007170000_shop_security_controls.sql",
+    "before_sha256": null,
+    "after_sha256": "ba52680b28731edb3de0cf2ab76cfef05bb323fd9071b5dc63e561daa2f01164"
+  },
+  {
+    "path": "supabase/tests/direct-solana-shop.sql",
+    "before_sha256": "62c4800ce50d5df981eac617e439ea0a8a9db181b733ff8257ee60b5d0ecfe1e",
+    "after_sha256": "a41efa375cf751be7f715122ed568b102934c3a7cac1de26168f73bbd565dfb1"
+  },
+  {
+    "path": "supabase/tests/shop-evm-payment.test.ts",
+    "before_sha256": "c5999e7ac0d2e2e5fd54ed75b4e725432a49268b16f2330ff5b9c4112c2c6943",
+    "after_sha256": "b721a197afc77437ec2b6e5230a1b27edd5cd162a152dd649b6820380513996d"
+  },
+  {
+    "path": "supabase/tests/shop-security-concurrency.py",
+    "before_sha256": null,
+    "after_sha256": "68359cf515f5990185ff9f8d841afb55422bd51d22f0f754ef3b1bc699bec312"
+  },
+  {
+    "path": "supabase/tests/shop-security-controls.sql",
+    "before_sha256": null,
+    "after_sha256": "0b0059da1131bbb2af1f60c2f5b1794ec9edcd66a82262ba307806013144d1bc"
+  }
+]

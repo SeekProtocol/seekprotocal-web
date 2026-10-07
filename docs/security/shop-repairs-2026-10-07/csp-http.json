@@ -1,0 +1,27 @@
+{
+  "requests": [
+    {
+      "status": 200,
+      "has_csp": true,
+      "script_nonce_count": 19,
+      "scripts": 20,
+      "inline_executable_without_nonce": 0,
+      "nonce_matches": true,
+      "unsafe_eval": false,
+      "analytics": false,
+      "cache": "private, no-store"
+    },
+    {
+      "status": 200,
+      "has_csp": true,
+      "script_nonce_count": 19,
+      "scripts": 20,
+      "inline_executable_without_nonce": 0,
+      "nonce_matches": true,
+      "unsafe_eval": false,
+      "analytics": false,
+      "cache": "private, no-store"
+    }
+  ],
+  "fresh_nonce": true
+}

@@ -1,0 +1,125 @@
+SEEKPROTOCOL — LIVE BACKENDRELEASE SHOP
+7 oktober 2026
+
+STATUS
+
+De database en vier betaal-/walletfuncties staan live op Supabase-project
+ukoqxyoogjouhdqhtiei. De gebruiker publiceert Vercel zelf. Daarom is de
+website niet door deze taak gepubliceerd; er is ook niets gepusht dat een
+automatische websitepublicatie zou starten. De strengere CSP en nieuwe
+webshop/supportinterface worden zichtbaar na die websitepublicatie.
+
+LIVE DATABASE
+
+Vier migraties zijn in één databasetransactie toegepast en geregistreerd:
+- 20261007120000_direct_solana_shop
+- 20261007130000_direct_evm_shop
+- 20261007160000_shop_support_dossiers
+- 20261007170000_shop_security_controls
+
+De opgeslagen migratie-inhoud is teruggelezen en is gelijk aan de lokale
+bestanden. Bestaande migratiegeschiedenis is niet gerepareerd en overige
+niet-toegepaste migraties zijn niet meegenomen. De vijf bestaande orders
+zijn behouden. Geen nieuwe klantbestelling, levering of terugbetaling is
+voor de verificatie aangemaakt.
+
+LIVE FUNCTIES
+
+- solana-checkout: versie 38
+- radom-checkout: versie 24
+- solana-order-reconcile: versie 31
+- solana-wallet: versie 29
+
+Alle functies zijn ACTIVE. De bestaande gatewayinstelling verify_jwt=false
+is behouden; hun eigen authenticatie, walletbewijs, webhook- of croncontrole
+blijft vereist. Alle 80 gedownloade bronbestanden, inclusief gedeelde helpers,
+komen byte voor byte overeen met de uiteindelijke lokale bron.
+
+TIJDENS LIVE VERIFICATIE EXTRA GEREPAREERD
+
+Het walletendpoint gaf door de algemene CORS-instelling alleen toestemming
+voor app.seekprotocol.ai. Daardoor kon de webshop een correct walletantwoord
+niet lezen. De wallet gebruikt nu de expliciete shoporigins plus het bestaande
+ingestelde app/dashboarddomein, ook voor fouten en 429-antwoorden. Native
+clients blijven door de bestaande authenticatie- en handtekeningcontroles gaan.
+Willekeurige origins en wildcardconfiguratie krijgen geen browsertoegang.
+Drie regressies zijn toegevoegd; de volledige relevante backendset telt nu
+125 geslaagde tests. De correctie is lokaal én live geverifieerd.
+
+LIVE CONTROLES
+
+- Anonieme betaal- en cronaanvragen: 401.
+- Geldige shoppreflights: 204 met de juiste origin; externe origin: 403.
+- Anonieme support- en limiter-RPC: geweigerd met 401.
+- Binnen een teruggedraaide SQL-transactie: gewone klant kan geen supportzoek-
+  opdracht of dossier openen; bestaande actieve beheerder kan dit wel.
+  De test heeft geen beheerrechten toegevoegd en geen klantgegevens uitgegeven.
+- Betaalregisters en limiettabel hebben RLS; gewone klanten kunnen niet lezen,
+  invoegen of wijzigen; beschermde betaal-/claim-RPC's zijn service-only.
+- Atomaire limiet: twee toegestane verzoeken, derde begrensd; SQL-test teruggedraaid.
+- Twee keer één nieuw leeg testwalletadres gebruikt: vijf tijdelijke inlog-
+  challenges toegestaan, zesde 429 met Retry-After. Geen account, handtekening,
+  privésleutelopslag, e-mail of financiële transactie. De challenges verlopen
+  volgens de bestaande noncelevensduur; de budgetten verlopen automatisch.
+- Drie automatische herstelantwoorden na de uitrol: HTTP 200, failures=0,
+  paid_waiting=0. Niet alleen de cronplanning, maar de echte HTTP-resultaten
+  zijn gelezen. Alle vijf bestaande orders zijn er nog; vier zijn niet geleverd,
+  maar er is geen bekende betaalde order die op levering wacht.
+- Een brede query op de algemene cronhistorie liep tegen de ingestelde
+  tijdslimiet; de verificatie is daarna beperkt tot de recentste runs. De
+  shopcontroles zelf slagen. Geen productiehistorie opgeschoond.
+
+CONFIGURATIE EN OPENSTAANDE ACTIVERING
+
+SHOP_SOLANA_ASSETS is expliciet SOL,USDC,USDT. De bestaande SOLANA_RPC_URL,
+SOLANA_TREASURY_ADDRESS en ingeschakelde solana_shop-vlag zijn behouden.
+De openbare koersbron leverde op het verificatiemoment voor alle drie munten
+waarden die door de daadwerkelijke quotevalidatie worden geaccepteerd. Dit
+was een controle vanaf de ontwikkelmachine, geen garantie voor provider-
+capaciteit of bewijs van een afgeronde productiebetaling.
+
+Het opgegeven EVM-ontvangstadres staat als SHOP_EVM_TREASURY_ADDRESS ingesteld:
+0xd55f3e07ee55f3644a93E26E569fF7e0Ea193de8
+De twee ingestelde waarden zijn via hun live digests gecontroleerd.
+
+BNB en ETH zijn NIET ingeschakeld: de NativeShopPayment-contracten zijn nog
+niet op Ethereum en BNB Smart Chain gepubliceerd. unsigned-evm-deployments.json
+bevat de twee voorbereide ongetekende publicatietransacties met dit vaste
+ontvangstadres, nul meegestuurd bedrag en de gepinde contractcode. De eigenaar
+van de betalende wallet moet netwerk en gasvergoeding beoordelen en zelf
+ondertekenen. Daarna moeten de twee definitieve contractadressen en passende
+RPC's worden ingesteld; de code/treasury/finaliteit moet worden geverifieerd
+voordat beide munten beschikbaar komen. Er is niets op een blockchain verstuurd.
+
+VOOR DE WEBSITEPUBLICATIE DOOR DE GEBRUIKER
+
+Publiceer de huidige werkmap seekprotocal-web, inclusief de nog ongecommitte
+shop-, support-, vertaal-, afbeeldings-, dependency- en beveiligingswijzigingen.
+Alleen de reeds gepushte hoofdbranch publiceren bevat deze wijzigingen niet.
+Neem package.json, package-lock.json, .npmrc, proxy.ts, layout en vercel.json
+samen mee. De installatie is met Node 22.21.1 en npm 11.13.0 gecontroleerd.
+Behoud de bestaande productievariabelen voor Supabase, publieke Solana-RPC en
+Turnstile. Privé-RPC-credentials horen alleen in de backend.
+
+De noncebeveiliging maakt locale-HTML dynamisch/private/no-store; controleer
+hostingcapaciteit en latency na publicatie. Controleer daarna www/root-domein,
+login/wallet, betaalopties, de verborgen Season Pass, kostenmelding,
+bestelgeschiedenis en /nl/shop/support met beheerder en gewone klant.
+Een echte betaling plus exact één levering en dossier per ingeschakelde munt
+blijft nog te verifiëren door/met de wallet-eigenaar.
+
+HERSTEL EN BEWIJS
+
+Oude SQL-functiedefinities, instellingen en afzonderlijke functiebundels zijn
+lokaal bewaard onder /private/tmp/seek-shop-live-20261007/before. Die map bevat
+operationele bronbestanden en is niet voor publicatie bedoeld. Bij problemen:
+pauzeer nieuwe verkoop, behoud betaalbewijzen en laat het herstelpad actief.
+Verwijder de nieuwe migraties niet terwijl betalingen kunnen binnenkomen.
+
+status.json, bronhashes, migratiehashes, HTTP-resultaten, databasecontroles,
+koerscontrole, herstelresultaten en testlogs staan bij dit rapport. De eerdere
+audit- en herstelrapporten blijven historische nulmetingen. De bekende
+onopgeloste braces-melding in intern lintgereedschap staat daar beschreven;
+die boom ontbreekt in de gecontroleerde productie-installatie van de website.
+Deze release claimt geen onafhankelijke contractaudit of voltooide echte
+betalingstest. Er is geen Git-commit gemaakt en niets gepusht.

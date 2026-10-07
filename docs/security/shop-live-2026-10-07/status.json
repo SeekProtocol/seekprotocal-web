@@ -1,0 +1,51 @@
+{
+  "verified_at": "2026-10-07T08:09:41.822238+00:00",
+  "backend_project": "ukoqxyoogjouhdqhtiei",
+  "backend_deployed": true,
+  "frontend_deployed_by_agent": false,
+  "frontend_publication_owner": "user",
+  "functions": [
+    {
+      "slug": "solana-wallet",
+      "version": 29,
+      "verify_jwt": false,
+      "status": "ACTIVE",
+      "updated_at": 1791360256202
+    },
+    {
+      "slug": "solana-checkout",
+      "version": 38,
+      "verify_jwt": false,
+      "status": "ACTIVE",
+      "updated_at": 1791360256202
+    },
+    {
+      "slug": "solana-order-reconcile",
+      "version": 31,
+      "verify_jwt": false,
+      "status": "ACTIVE",
+      "updated_at": 1791360256202
+    },
+    {
+      "slug": "radom-checkout",
+      "version": 24,
+      "verify_jwt": false,
+      "status": "ACTIVE",
+      "updated_at": 1791360256202
+    }
+  ],
+  "published_source_files_compared": 80,
+  "all_source_files_match": true,
+  "backend_tests_passed": 125,
+  "solana_assets": [
+    "SOL",
+    "USDC",
+    "USDT"
+  ],
+  "evm_treasury": "0xd55f3e07ee55f3644a93E26E569fF7e0Ea193de8",
+  "evm_contracts_published": false,
+  "evm_enabled_assets": [],
+  "real_payment_verified": false,
+  "git_commit_created": false,
+  "git_push_performed": false
+}

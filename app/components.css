@@ -6619,6 +6619,8 @@ html .wallet-adapter-modal-middle-button {
 .checkout-totals { display:grid; gap:.85rem; border-top:1px solid var(--line); padding-top:1.5rem; font-size:.85rem; }
 .checkout-totals > div,.checkout-receipt-details > div { display:flex; justify-content:space-between; gap:1rem; }
 .checkout-totals dt { color:var(--fg-muted); }
+.checkout-network-fee dt,.checkout-network-fee dd { min-width:0; overflow-wrap:anywhere; }
+.checkout-network-fee dd { text-align:end; }
 .checkout-total { border-top:1px solid var(--line); margin-top:.5rem; padding-top:1.5rem; align-items:center; }
 .checkout-total dt { color:var(--fg); font-size:1.1rem; font-weight:600; }
 .checkout-total dd { display:flex; align-items:center; gap:.65rem; font-size:1.65rem; font-weight:600; letter-spacing:-.04em; }
@@ -6641,7 +6643,7 @@ html .wallet-adapter-modal-middle-button {
 .checkout-method-option:hover { background:color-mix(in srgb,var(--fg) 3%,transparent); }
 .checkout-method-option[data-selected=true] { background:color-mix(in srgb,var(--brand) 7%,transparent); box-shadow:inset 3px 0 var(--brand); }
 .checkout-method-option:has(input:focus-visible) { outline:2px solid var(--brand); outline-offset:-2px; }
-.checkout-method-option > svg { display:block; flex-shrink:0; }
+.checkout-token-logo { display:block; flex-shrink:0; width:32px; height:32px; object-fit:contain; }
 .checkout-evm-wallet { min-width:0; max-width:100%; font-size:.78rem; overflow-wrap:anywhere; }
 .checkout-evm-wallet select { max-width:100%; padding:.4rem .6rem; color:inherit; background:var(--bg); border:1px solid var(--border); border-radius:6px; }
 .checkout-method-copy { display:grid; gap:.18rem; min-width:0; flex:1; }

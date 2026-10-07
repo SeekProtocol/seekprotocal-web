@@ -1,0 +1,62 @@
+
+> seekprotocolai@0.1.0 build
+> next build
+
+▲ Next.js 16.3.8 (Turbopack)
+- Environments: .env.local
+✓ Running next.config.ts took 29ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 961ms
+  Running TypeScript ...
+  Finished TypeScript in 2.1s ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/1016) ...
+  Generating static pages using 9 workers (254/1016) 
+  Generating static pages using 9 workers (508/1016) 
+  Generating static pages using 9 workers (762/1016) 
+✓ Generating static pages using 9 workers (1016/1016) in 1232ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /_not-found
+├ ƒ /[locale]
+├ ƒ /[locale]/about
+├ ƒ /[locale]/blog
+├ ƒ /[locale]/blog/[slug]
+├ ƒ /[locale]/business
+├ ƒ /[locale]/cart-check
+├ ƒ /[locale]/contact
+├ ƒ /[locale]/diag
+├ ƒ /[locale]/ecosystem
+├ ƒ /[locale]/orders-check
+├ ƒ /[locale]/privacy-policy
+├ ƒ /[locale]/roadmap
+├ ƒ /[locale]/seekar
+├ ƒ /[locale]/shop
+├ ƒ /[locale]/shop/orders
+├ ƒ /[locale]/shop/support
+├ ƒ /[locale]/support-check
+├ ƒ /[locale]/terms-conditions
+├ ƒ /[locale]/whitepaper
+├ ƒ /api/beta
+├ ƒ /api/contact
+├ ƒ /api/shop/dev-checkout
+├ ○ /llms.txt
+├ ○ /manifest.webmanifest
+├ ○ /og.png
+├   /og/blog/[slug]
+│ ├ ● /og/blog/seekar-is-now-seekprotocol
+│ ├ ● /og/blog/what-is-ar-treasure-hunt
+│ ├ ● /og/blog/pokemon-go-alternatives-2026
+│ └ ● [+11 more paths]
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

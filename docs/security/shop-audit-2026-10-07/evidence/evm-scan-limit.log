@@ -1,0 +1,7 @@
+Check file:///private/tmp/seek-security-audit-20261007/evm-scan-limit.test.ts
+running 2 tests from ../../../../private/tmp/seek-security-audit-20261007/evm-scan-limit.test.ts
+audit: 100 valid payment logs are processed and scan progresses ... ok (1ms)
+audit: 101 valid payment logs permanently block discovery on repeated retries ... ok (852µs)
+
+ok | 2 passed | 0 failed (4ms)
+

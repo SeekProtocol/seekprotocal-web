@@ -1,0 +1,60 @@
+{
+  "verified_at": "2026-10-07T00:22:34.564591+00:00",
+  "production_deployed": false,
+  "frontend_tests": 84,
+  "backend_tests": 122,
+  "frontend_files": [
+    {
+      "path": ".npmrc",
+      "sha256": "4ced2d1688a5f90e05627c824bd30fcd81168f5fc3d043ee31e7689473f41fd2"
+    },
+    {
+      "path": "package.json",
+      "sha256": "b6fb08c9bdfee40f6a78119a1048d5c5766c6860e54a6890c17c3bbc2945466e"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "99cc0bb3f4dc90092830b1f7b231409a3c98fd1bcb143c3bae63385e9fa4fbba"
+    },
+    {
+      "path": "vercel.json",
+      "sha256": "494bffc9032a317b979d7ff58b74d5c375b4b2cddf6801940ea0b9ac28de4655"
+    },
+    {
+      "path": "proxy.ts",
+      "sha256": "ec360ee7ddaedf370f4e8e5a6cd67640c6d2e38d497ff2e39b067d1dc3cf61dc"
+    },
+    {
+      "path": "lib/shop/content-security.ts",
+      "sha256": "2f6340080411775ba3bbbbf7a38d3ed07b26e0cdbf26e5c10249562e3073b0fa"
+    },
+    {
+      "path": "lib/shop/checkout.ts",
+      "sha256": "5886db08a21619209e20a46df68b08239053d3c5bb121972026a1525da46f1e1"
+    },
+    {
+      "path": "components/shop/Storefront.tsx",
+      "sha256": "a21a48084942517298270ada568d5427027062952ef4ff9817aa6823b88d1aa9"
+    },
+    {
+      "path": "components/shop/WalletSignIn.tsx",
+      "sha256": "69f1bf01237a732d46927d4b12b0eb320bfe7b0883589be066639f918717b387"
+    },
+    {
+      "path": "components/shop/ShopProviders.tsx",
+      "sha256": "b1db69b1a5c43e246c6df6049a9b22cf1cf51cd9c3dffe025fbd9bb7587cea5c"
+    },
+    {
+      "path": "components/shared/GoogleAnalytics.tsx",
+      "sha256": "2cc69761724aeb68bacad3b3d396a47b1488e17a84c6aa461c44f8eb6b2340db"
+    },
+    {
+      "path": "app/[locale]/layout.tsx",
+      "sha256": "99460604140c70f600c068412b3553519a6b0b85ff2f123a3ffa2315479fc89f"
+    },
+    {
+      "path": "tests/shop-security.test.mjs",
+      "sha256": "db807aba5d4e45e9f273d9855d71ae5bd04dfba720d480477a4c6fa89129141e"
+    }
+  ]
+}

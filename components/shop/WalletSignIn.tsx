@@ -31,7 +31,7 @@ export default function WalletSignIn({disabled,onSuccess,onBusy,onError}:{
           if(error?.context instanceof Response) {
             try { reason=(await error.context.json()).error; } catch { /* generic message */ }
           }
-          throw new Error(reason==='wallet_not_linked'?'app_account_required':reason==='account_blocked'?'account_blocked':'wallet_failed');
+          throw new Error(reason==='rate_limited'?'rate_limited':reason==='wallet_not_linked'?'app_account_required':reason==='account_blocked'?'account_blocked':'wallet_failed');
         }
         return data;
       };

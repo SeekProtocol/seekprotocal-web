@@ -1,0 +1,28 @@
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 899
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://prod.spline.design https://*.spline.design https://cdn.prod.website-files.com https://challenges.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://d3e54v103j8qbb.cloudfront.net https://cdn.prod.website-files.com https://www.googletagmanager.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://prod.spline.design https://cdn.prod.website-files.com https://unpkg.com https://*.spline.design https://challenges.cloudflare.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://ukoqxyoogjouhdqhtiei.supabase.co wss://ukoqxyoogjouhdqhtiei.supabase.co https://api.mainnet-beta.solana.com; frame-src 'self' https://iframe.mediadelivery.net https://prod.spline.design https://challenges.cloudflare.com; media-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; worker-src 'self' blob:
+content-type: text/html; charset=utf-8
+date: Tue, 06 Oct 2026 23:20:44 GMT
+etag: "76c953dde3925049d9d79eb2f209f29d"
+link: <https://www.seekprotocol.ai/en/shop>; rel="alternate"; hreflang="en", <https://www.seekprotocol.ai/nl/shop>; rel="alternate"; hreflang="nl", <https://www.seekprotocol.ai/de/shop>; rel="alternate"; hreflang="de", <https://www.seekprotocol.ai/fr/shop>; rel="alternate"; hreflang="fr", <https://www.seekprotocol.ai/es/shop>; rel="alternate"; hreflang="es", <https://www.seekprotocol.ai/it/shop>; rel="alternate"; hreflang="it", <https://www.seekprotocol.ai/pt/shop>; rel="alternate"; hreflang="pt", <https://www.seekprotocol.ai/pl/shop>; rel="alternate"; hreflang="pl", <https://www.seekprotocol.ai/sv/shop>; rel="alternate"; hreflang="sv", <https://www.seekprotocol.ai/fi/shop>; rel="alternate"; hreflang="fi", <https://www.seekprotocol.ai/et/shop>; rel="alternate"; hreflang="et", <https://www.seekprotocol.ai/hu/shop>; rel="alternate"; hreflang="hu", <https://www.seekprotocol.ai/el/shop>; rel="alternate"; hreflang="el", <https://www.seekprotocol.ai/hr/shop>; rel="alternate"; hreflang="hr", <https://www.seekprotocol.ai/sl/shop>; rel="alternate"; hreflang="sl", <https://www.seekprotocol.ai/sq/shop>; rel="alternate"; hreflang="sq", <https://www.seekprotocol.ai/sr-Latn/shop>; rel="alternate"; hreflang="sr-Latn", <https://www.seekprotocol.ai/sr-Cyrl/shop>; rel="alternate"; hreflang="sr-Cyrl", <https://www.seekprotocol.ai/uk/shop>; rel="alternate"; hreflang="uk", <https://www.seekprotocol.ai/ru/shop>; rel="alternate"; hreflang="ru", <https://www.seekprotocol.ai/tr/shop>; rel="alternate"; hreflang="tr", <https://www.seekprotocol.ai/ar/shop>; rel="alternate"; hreflang="ar", <https://www.seekprotocol.ai/fa/shop>; rel="alternate"; hreflang="fa", <https://www.seekprotocol.ai/id/shop>; rel="alternate"; hreflang="id", <https://www.seekprotocol.ai/ms/shop>; rel="alternate"; hreflang="ms", <https://www.seekprotocol.ai/vi/shop>; rel="alternate"; hreflang="vi", <https://www.seekprotocol.ai/th/shop>; rel="alternate"; hreflang="th", <https://www.seekprotocol.ai/zh/shop>; rel="alternate"; hreflang="zh", <https://www.seekprotocol.ai/zh-TW/shop>; rel="alternate"; hreflang="zh-TW", <https://www.seekprotocol.ai/ja/shop>; rel="alternate"; hreflang="ja", <https://www.seekprotocol.ai/ko/shop>; rel="alternate"; hreflang="ko", <https://www.seekprotocol.ai/shop>; rel="alternate"; hreflang="x-default"
+permissions-policy: camera=(self), microphone=(), geolocation=(), interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+server: Vercel
+set-cookie: NEXT_LOCALE=nl; Path=/; SameSite=lax
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-content-type-options: nosniff
+x-dns-prefetch-control: on
+x-frame-options: SAMEORIGIN
+x-matched-path: /nl/shop
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-vercel-cache: HIT
+x-vercel-id: cdg1::vrqvm-1791328844401-730d3c647b27
+x-xss-protection: 0
+content-length: 140454
+

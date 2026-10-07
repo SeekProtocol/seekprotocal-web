@@ -1,0 +1,228 @@
+SEEKPROTOCOL — SECURITYCONTROLE SHOP EN CRYPTOCHECKOUT
+7 oktober 2026, Europe/Amsterdam
+
+OORDEEL
+
+De onderzochte betaalflow is nog niet klaar om als enterprise-ready vrij te
+geven. Twee lokaal reproduceerbare beschikbaarheidsproblemen kunnen levering
+na betaling vertragen of automatische betaalherkenning laten vastlopen.
+Daarnaast ontbreken limieten op enkele kostbare verzoeken en is de browser-
+beveiliging van de live shop ruim ingesteld.
+
+In de onderzochte paden is geen manier aangetoond om zonder geldige betaling
+packs te krijgen, dezelfde betaling dubbel te gebruiken of als klant de orders
+van een andere klant te lezen. Dat is een testresultaat, geen garantie dat er
+nergens kwetsbaarheden bestaan.
+
+SCOPE EN METHODE
+
+Onderzocht: websitecheckout, authenticatie/OAuth, walletbewijzen, orderrechten,
+prijzen en ontvangers, directe Solana- en ETH/BNB-betalingen, Radom, contract,
+levering en herstel, Basic/Premium/Elite-packs, browserheaders en dependencies.
+
+Frontend: /Users/michaeldevries/Projects/seekprotocal-web
+Backend: /Users/michaeldevries/Projects/seekar-app
+De audit betreft de huidige lokale bestanden, inclusief bestaande wijzigingen.
+Git-revisies en SHA-256 van belangrijke bestanden staan in resultaten.json.
+De lokale broncode is niet volledig vergeleken met alle gedeployde functies,
+databasefuncties en instellingen. Vooral de nieuwe EVM-flow is dus geen bewijs
+over een reeds actieve productie-implementatie.
+
+Productie is alleen beperkt en niet-destructief gecontroleerd: headers,
+anonieme verzoeken, een onbetrouwbare CORS-origin en de openbare catalogus.
+Geen echte betalingen, nieuwe klantorders, productiewijzigingen of belasting-
+aanvallen uitgevoerd. Applicatiecode is niet aangepast. Alleen dit rapport,
+bewijsbestanden en tijdelijke synthetische testomgevingen zijn gemaakt.
+
+BEVINDING F1 — HOOG / P1 — AUTOMATISCHE EVM-SCAN KAN VASTLOPEN
+
+Locatie: backend supabase/functions/_shared/shop-evm-payment.ts:127-133;
+de afwijzing staat op regel 130. Contract: supabase/contracts/NativeShopPayment.sol:16-21.
+
+De scanner vraagt maximaal 2.000 blokken op. Zodra dezelfde orderreferentie
+meer dan 100 bijpassende betaal-events in dat bereik heeft, breekt de functie
+af voordat zij transacties verwerkt of haar voortgang opslaat. Elke volgende
+poging leest hetzelfde bereik en loopt opnieuw vast.
+
+Een betaler kan voor een bekende orderreferentie veel kleine echte betalingen
+doen. De referentie kan bijvoorbeeld zichtbaar zijn in een gepubliceerde
+transactie. Het contract accepteert iedere positieve hoeveelheid wei en
+iedere niet-lege referentie. Een lokale contractproef produceerde 101 echte
+Payment-events in één transactie: 101 wei naar de treasury, 1.757.550 gas.
+De contractproef gebruikte uitsluitend gesimuleerd geld.
+
+Een aparte proef met de werkelijke reconciliatiefunctie liet zien dat 100
+events worden verwerkt, maar 101 events bij drie opeenvolgende pogingen leiden
+tot nul opgeslagen betalingen en nul voortgangsupdates.
+
+Impact: een order waarvan de browser geen bruikbare transactiehash doorgeeft,
+kan betaald blijven zonder automatische herkenning/levering. De aanval vereist
+een bekende referentie, gas en events in een nog te scannen bereik. Er is geen
+diefstal aangetoond. Een bekende legitieme transactiehash kan via het aparte
+bevestigingspad alsnog worden geregistreerd; dit is geen totale blokkade van
+alle afhandelingspaden.
+
+Oplossing: verwerk events in begrensde, idempotente delen en sla voortgang ook
+binnen een blok op. Alleen een kleiner blokbereik is onvoldoende, omdat de
+101 events in één blok kunnen staan. Sla nooit ongelezen events over. Voeg
+regressies toe voor meer dan 100 events in één blok en meerdere scanbereiken.
+
+Bewijs: evidence/evm-scan-limit.log, evidence/contract-audit-tests.log en de
+twee bijbehorende bestanden onder reproductions/.
+
+BEVINDING F2 — HOOG / P1 — ONBETAALDE ORDERS VERTRAGEN BETAALDE ORDERS
+
+Locaties: backend supabase/functions/solana-order-reconcile/index.ts:10;
+supabase/migrations/20261007120000_direct_solana_shop.sql:123-138;
+minuutschema: 20260906230000_sol_orders_settle_with_their_goods.sql:75.
+
+De hersteljob verwerkt één batch van acht orders per uitvoering. Betaalde,
+openstaande en verlopen orders delen dezelfde wachtrij, gesorteerd op vorige
+controletijd, zonder voorrang voor betaald-maar-niet-geleverd. Jonge onbetaalde
+orders worden alweer na één minuut opnieuw verkiesbaar.
+
+In een geïsoleerde PostgreSQL-test met 80 oudere onbetaalde orders en één
+betaalde order werd de betaalde order pas in batch 11 geselecteerd. Onder het
+gedeclareerde minuutschema betekent deze vaste wachtrij ongeveer tien extra
+intervallen. Dit is een lokale reproductie van de selectie, geen meting van
+de huidige productievertraging.
+
+Een klant mag volgens de huidige creatielimiet tien orders per minuut maken,
+al meer dan de globale acht herstelcontroles per minuut. De creatielimiet is
+bovendien een losse count gevolgd door een insert; die grens is niet atomair.
+Andere controles beperken toegang tot bestellen, maar lossen de gedeelde
+achterstand en ontbrekende voorrang niet op.
+
+Impact: veel verlaten orders kunnen levering na echte betalingen ophouden,
+ook van andere klanten. Dit kan ontstaan door normaal verkeer of misbruik.
+
+Oplossing: geef bekende betaalde orders voorrang, verdeel capaciteit eerlijk
+over accounts en beperk gelijktijdig openstaande orders atomair. Controleer
+lege/onbetaalde orders geleidelijk minder vaak; dimensioneer de worker op het
+volume en alarmeer op achterstand en oudste betaalde order. Blijf late geldige
+betalingen herstellen; definitief afschrijven is geen veilige oplossing.
+
+Bewijs: reproductions/queue-and-rls.sql en evidence/queue-and-rls.log.
+
+BEVINDING F3 — MIDDEL / P2 — KOSTBARE VERZOEKEN MISSEN APPLICATIELIMIETEN
+
+Locaties: backend supabase/functions/solana-checkout/index.ts:65,81-99;
+supabase/functions/radom-checkout/index.ts:108-115;
+supabase/functions/solana-wallet/index.ts:416-429.
+
+Een ingelogde klant kan voor eigen orders confirm_order en recover_orders
+blijven aanvragen. Recover_orders kan per verzoek tot tien orders controleren.
+Deze paden hebben geen gedeelde cooldown of lease met de achtergrondjob.
+Radom-statusverzoeken kunnen eveneens telkens een providercontrole starten.
+De algemene auditregel wordt al geschreven vóór actiespecifieke limieten.
+
+Daarnaast maken publieke wallet login_challenge/signup_challenge-verzoeken
+nieuwe nonces aan zonder gevonden limiet op de uitgifte zelf. Een IP-blokkade
+of limiet op de latere signup beschermt deze schrijfactie niet volledig.
+
+Impact: onnodige externe RPC/providerkosten, databasegroei en vertraging.
+Dit is vastgesteld in de applicatiecode. Er is geen live overbelastingstest
+gedaan; eventuele aanvullende hosting/WAF-limieten zijn niet vastgesteld.
+
+Oplossing: centrale atomaire limieten per account, IP en actie; een gedeelde
+lease/cooldown per order voor handmatig en automatisch herstel; kort gecachte
+statussen en duidelijke retry/429-antwoorden. Begrens ook anonieme challenges
+en voorkom onbegrensde auditregels voor iedere statuspoll.
+
+BEVINDING F4 — MIDDEL / P2 VERHARDING — RUIME CSP OP DE LIVE SHOP
+
+Locaties frontend: vercel.json:18 en lib/supabase-browser.ts:18.
+Live gecontroleerd: https://www.seekprotocol.ai/nl/shop (HTTP 200).
+
+De Content Security Policy laat zowel unsafe-inline als unsafe-eval en diverse
+externe scriptdomeinen toe. De shop bewaart sessies in localStorage. Bij een
+eventuele scriptinjectie of gecompromitteerd toegestaan script zijn die tokens
+leesbaar voor JavaScript dat in de pagina draait.
+
+Er is GEEN werkend XSS-pad of sessiediefstal aangetoond. Dit is een tekort in
+verdediging tegen zulke fouten. HSTS, nosniff, SAMEORIGIN en Referrer-Policy
+zijn wel aanwezig op de gecontroleerde live pagina.
+
+Oplossing: een strikte shop-CSP met nonces/hashes, zonder unsafe-eval en met
+alleen de daadwerkelijk benodigde scriptbronnen. Beperk externe scripts op
+ingelogde betaalpagina's. Overweeg serverbeheerde HttpOnly-sessies als bewuste
+architectuurwijziging, inclusief de bijbehorende CSRF-bescherming.
+
+Bewijs: evidence/live-shop-headers.txt. Achtergrond:
+https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+
+DEPENDENCIES — OPVOLGEN, GEEN 23 AANGETOONDE SHOP-EXPLOITS
+
+Een actuele npm audit --omit=dev meldde 0 critical, 13 high en 10 moderate
+getroffen dependency-pakketten. Dit zijn onder meer transitieve meldingen;
+dezelfde onderliggende kwetsbaarheid kan meerdere pakketten markeren.
+
+De hoge braces-melding loopt onder andere via micromatch/Metro/React Native
+in de Solana/mobile dependencyboom. De bekeken advisory biedt momenteel geen
+patch. Voor jayson gebruikt de bekeken Solana-browserimplementatie de
+browserclient met uuid.v4; de gevonden uuid-melding betreft andere functies.
+stream-json zit in jaysons serverhulpmiddelen. Dit beperkt wat uit de ruwe
+audit aantallen mag worden geconcludeerd. Volledige bereikbaarheid in een
+verse productiebuild is niet bewezen; de bestaande build is niet opnieuw
+gegenereerd en kan van andere lokale wijzigingen afwijken.
+
+Oplossing: bepaal daadwerkelijke bundelbereikbaarheid, beperk onnodige mobiele
+afhankelijkheden in de webshop en volg beschikbare veilige updates. Geen
+blinde npm audit fix --force uitvoeren.
+
+Bewijs: evidence/npm-audit.json. Geraadpleegde primaire advisories:
+https://github.com/advisories/GHSA-vfj7-8cjw-p6xm
+https://github.com/advisories/GHSA-mjw6-4jj6-33hc
+
+TESTRESULTATEN EN POSITIEVE CONTROLES
+
+184 afzonderlijke JS/Deno/contracttests geslaagd: 79 frontend, 99 backend,
+4 contracttests en 2 extra EVM-scannertests. Drie van deze tests bevestigen
+juist de onveilige >100-events-situatie; groen betekent hier niet opgelost.
+
+Daarbovenop zijn SQL-suites voor directe Solana-betalingen, EVM-betalingen en
+packtiers uitgevoerd tegen geïsoleerde lokale databases met werkelijke
+shopmigraties en gesimuleerde omliggende gamefuncties. Negatieve controles
+omvatten verkeerde ontvanger/netwerk/referentie, te lage bedragen,
+deelbetalingen, hergebruik, ontbrekende finaliteit, late betalingen en
+privileges. Account B kon in de RLS-proef alleen de eigen order lezen en kon
+geen orders schrijven of betaalbewijzen als service certificeren.
+
+Acht gelijktijdige EVM-afhandelingen leverden één betaalregistratie, vijf
+packs en één delivery-event. Acht gelijktijdige leveringen van een gemengde
+tierorder leverden precies 2 Basic, 3 Premium, 1 Elite en één delivery-event.
+Tier-, eigenaar-, aantal-, catalogus- en policy-manipulaties werden in de
+bijbehorende SQL-suite afgewezen.
+
+De gecontroleerde live checkout-, webhook- en cronpaden weigerden anonieme
+verzoeken met 401. Een preflight van een niet-toegestane origin kreeg 403.
+Dit is een toegangstest, geen bewijs van alle geauthenticeerde paden.
+
+In de onderzochte frontendbroncode, publieke assets en bestaande browserbuild
+zijn geen onderzochte serversecretwaarden aangetroffen. Alleen .env.example
+is gevolgd door Git; geen volledige scan van alle Git-historie uitgevoerd.
+OAuth gebruikt PKCE/state en providercontrole; walletkoppeling vereist een
+ondertekende eenmalige challenge. Geen omzeiling aangetoond in de bekeken paden.
+
+Season Pass is volgens de opdracht alleen verborgen. Dat het product in de
+backendcatalogus blijft bestaan is hier geen onbedoelde securitybevinding.
+
+BEPERKINGEN EN VOLGORDE
+
+Niet uitgevoerd: echte walletbetalingen op mainnet, tests met twee echte
+productieaccounts, volledige controle van gedeployde broncode/configuratie,
+live contractadressen/RPC-betrouwbaarheid, providerbeheer, hosting/WAF-capaciteit
+of een audit van de hele mobiele app en alle gamefuncties.
+
+Los F1 en F2 op vóór activeren/vrijgeven van de nieuwe betaalflow. Pak F3 en
+de shop-CSP daarna gericht aan. Herhaal de negatieve en gelijktijdigheidstests
+na reparatie en verifieer apart de uiteindelijke deployment en een echte
+betaling per ingeschakeld netwerk.
+
+De bewijsbestanden bevatten synthetische orders en openbare headers/catalogus;
+geen klanttokens, private keys of service-rolecredentials. De reproductie-
+bestanden zijn auditbewijzen, geen nieuwe permanente applicatietests. Het
+Deno-bestand verwijst naar het genoemde lokale backendpad; de contracttest
+gebruikt compile.mjs, NativeShopPayment.sol en shop-evm-contract.json uit de
+backend plus de bestaande testdependencies. SQL-proeven vereisen uitsluitend
+een wegwerpdatabase opgebouwd met de backend fixtures, nooit productie.

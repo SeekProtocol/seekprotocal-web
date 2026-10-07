@@ -5,7 +5,7 @@ import {getSupabase} from '@/lib/supabase-browser';
 import {formatPrice,receiptPrice} from '@/lib/shop/catalog';
 import {receiptItems,type Receipt} from '@/lib/shop/order-history';
 import {productName} from '@/lib/shop/product-copy';
-import {orderProgress} from '@/lib/shop/order-status';
+import {orderProgress,awaitsEvmFinality} from '@/lib/shop/order-status';
 import ProductArt from './ProductArt';
 import {formatPaymentAmount,paymentAssetForMint} from '@/lib/shop/payment-assets';
 import styles from './OrderHistory.module.css';
@@ -31,7 +31,7 @@ export function OrderReceiptView({receipt,orderId,failed,loading,onRefresh,embed
  const t=useTranslations('shop'),c=useTranslations('shop.checkout'),h=useTranslations('shop.history'),locale=useLocale();
  const dates=new Intl.DateTimeFormat(locale,{dateStyle:'medium',timeStyle:'short'}),items=receipt?receiptItems(receipt):[],progress=receipt?orderProgress(receipt):null;
  const mixed=new Set(items.map(i=>i.product.currency)).size>1;
- const awaitingFinality=receipt?.payment_protocol==='evm-native-v1' && (!receipt.payment_finalized_through || Date.parse(receipt.payment_finalized_through)<Date.parse(receipt.expires_at??'')+120_000);
+ const awaitingFinality=receipt && awaitsEvmFinality(receipt);
  const asset=receipt?.mint ? paymentAssetForMint(receipt.mint) : null;
  return <section className={embedded?undefined:styles.receipt} aria-live="polite">
   {!embedded&&<div className={styles.receiptHeader}><h3>{c('receipt')}</h3><button className={styles.quietButton} type="button" disabled={loading} onClick={onRefresh}>{c('refreshStatus')}</button></div>}

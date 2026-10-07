@@ -1,0 +1,25 @@
+Check file:///private/tmp/seek-shop-live-20261007/wallet-fix/supabase/functions/_shared/checkout-cors.test.ts
+Check file:///private/tmp/seek-shop-live-20261007/wallet-fix/supabase/functions/_shared/shop-request-limits.test.ts
+running 11 tests from ../../../../private/tmp/seek-shop-live-20261007/wallet-fix/supabase/functions/_shared/checkout-cors.test.ts
+checkout preflight uses the shop allowlist, independently of the dashboard setting ... ok (18ms)
+success and every checkout failure replace stale CORS without changing the response ... ok (4ms)
+untrusted and opaque origins cannot preflight or inherit a wildcard from middleware ... ok (393µs)
+a configured shop list is shared exactly, never expanded to arbitrary subdomains ... ok (286µs)
+malformed configured origins never become a permissive browser policy ... ok (671µs)
+unexpected handler failures still have readable, sanitized shop responses ...
+------- output -------
+[checkout] unexpected request failure
+----- output end -----
+unexpected handler failures still have readable, sanitized shop responses ... ok (812µs)
+native clients, server relays and provider webhooks keep their existing handler checks ... ok (267µs)
+preflight cannot authorize extra methods and cache keys retain Origin once ... ok (227µs)
+wallet permits the shop and existing dashboard on preflight, success and failures ... ok (2ms)
+wallet rejects untrusted origins even with generic wildcard configuration ... ok (264µs)
+wallet supports existing ALLOWED_ORIGIN fallback without expanding checkout access ... ok (180µs)
+running 3 tests from ../../../../private/tmp/seek-shop-live-20261007/wallet-fix/supabase/functions/_shared/shop-request-limits.test.ts
+request work stops before provider and audit work when its account budget is exhausted ... ok (4ms)
+wallet addresses share IP/global limits, and the IP is hashed before storing ... ok (1ms)
+failed or malformed limiter responses fail closed ... ok (208µs)
+
+ok | 14 passed | 0 failed (112ms)
+

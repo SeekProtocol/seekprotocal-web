@@ -1,0 +1,18 @@
+BEGIN
+INSERT 0 2
+INSERT 0 2
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE TRIGGER
+psql:/private/tmp/seek-shop-audit-build/backend/supabase/tests/direct-solana-shop.sql:86: NOTICE:  PASS: partial, duplicate, replay, recipient, late, expiry, cancellation, overpayment, leases and permissions
+DO
+ROLLBACK
+BEGIN
+INSERT 0 2
+INSERT 0 2
+CREATE FUNCTION
+CREATE FUNCTION
+psql:/private/tmp/seek-shop-audit-build/backend/supabase/tests/direct-evm-shop.sql:50: NOTICE:  PASS: ETH/BNB, exact wei, split, replay, chain isolation, event indexes, late finality, late payment, overpayment and permissions
+DO
+ROLLBACK

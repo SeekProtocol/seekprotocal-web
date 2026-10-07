@@ -1,0 +1,19 @@
+BEGIN
+CREATE FUNCTION
+GRANT
+INSERT 0 2
+INSERT 0 2
+INSERT 0 80
+INSERT 0 1
+SET
+              set_config              
+--------------------------------------
+ bb000000-0000-4000-8000-000000000001
+(1 row)
+
+psql:/private/tmp/seek-security-audit-20261007/queue-and-rls.sql:17: NOTICE:  PASS: account B sees only its own order; writes and payment certification refused
+DO
+RESET
+psql:/private/tmp/seek-security-audit-20261007/queue-and-rls.sql:28: NOTICE:  CONFIRMED: paid order first selected in batch 11, behind 80 unpaid expired orders
+DO
+ROLLBACK

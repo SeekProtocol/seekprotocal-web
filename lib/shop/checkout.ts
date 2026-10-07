@@ -32,7 +32,7 @@ export const ORDER_TTL_MS = 5 * 60_000;
 export const RADOM_ORDER_TTL_MS = 30 * 60_000;
 /** confirm_order is polled this many times, this far apart, before the page stops claiming anything. */
 export const CONFIRM_ATTEMPTS = 12;
-export const CONFIRM_INTERVAL_MS = 2500;
+export const CONFIRM_INTERVAL_MS = 5000;
 
 export type CheckoutCode =
   | "pass_unavailable" | "pass_already_owned" | "pass_order_pending"
@@ -80,6 +80,7 @@ export class CheckoutError extends Error {
     readonly status?: number,
     message?: string,
     readonly orderId?: string,
+    readonly retryAfterSeconds?: number,
   ) {
     super(message ?? code);
     this.name = "CheckoutError";
@@ -132,7 +133,9 @@ async function call(
   const data = (await res.json().catch(() => ({}))) as Record<string, unknown>;
   if (!res.ok) {
     const raw = typeof data.error === "string" ? data.error : "";
-    throw new CheckoutError(codeFrom(raw, res.status), res.status, raw || `http_${res.status}`, typeof data.order_id === "string" ? data.order_id : undefined);
+    const retryAfter=Number(data.retry_after_seconds??res.headers.get('Retry-After'));
+    throw new CheckoutError(codeFrom(raw, res.status), res.status, raw || `http_${res.status}`, typeof data.order_id === "string" ? data.order_id : undefined,
+      res.status===429&&Number.isFinite(retryAfter)&&retryAfter>0?Math.min(60,Math.ceil(retryAfter)):undefined);
   }
   return data;
 }
@@ -361,7 +364,9 @@ export interface CheckoutSelection {
   friends_id: string; customer_name: string; expected_recipient_id: string; request_id: string; context: CheckoutContext;
 }
 function checkoutBody(value: CheckoutSelection) {
-  return {friends_id:value.friends_id,customer_name:value.customer_name,expected_recipient_id:value.expected_recipient_id,request_id:value.request_id};
+  return {friends_id:value.friends_id,customer_name:value.customer_name,expected_recipient_id:value.expected_recipient_id,request_id:value.request_id,
+    client_context:{locale:typeof document==='undefined'?null:document.documentElement.lang,
+      checkout_version:'shop-web-2026-10-07-fees',fee_disclosure:'buyer-network-v1'}};
 }
 export async function checkoutContext(friendsId: string, name: string, requestId?: string, items?: CartItem[]): Promise<CheckoutContext> {
   const data=await call({action:"checkout_context",...(items?.length ? {items:cartRequest(items)} : {}),friends_id:friendsId,customer_name:name,request_id:requestId});

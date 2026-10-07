@@ -1,0 +1,66 @@
+{
+  "verified_at": "2026-10-06T23:57:32.352384+00:00",
+  "frontend_tests": {
+    "passed": 82,
+    "failed": 0
+  },
+  "selected_backend_tests": {
+    "passed": 42,
+    "failed": 0
+  },
+  "frontend_typecheck": "passed",
+  "new_support_eslint": "passed",
+  "backend_typecheck": "passed",
+  "production_deployed": false,
+  "frontend_files": [
+    {
+      "path": "app/[locale]/shop/support/page.tsx",
+      "sha256": "cc51674cbb6d0366a189db2d08561ce641b97c88db032e57beb46aebe70a43e6"
+    },
+    {
+      "path": "app/[locale]/support-check/page.tsx",
+      "sha256": "d55e171bd8355f0e18b8ecc3c9e705ee6afd74622e4121b48eb4aeb603cebd27"
+    },
+    {
+      "path": "components/shop/SupportDesk.module.css",
+      "sha256": "6c0deb9a430e9e17f51dc9bd401798d7b3f38de1e957f5b70c2198d92344ad2f"
+    },
+    {
+      "path": "components/shop/SupportDesk.tsx",
+      "sha256": "dcaa61b143bfb42387e3ec7782481c75f0160a2779f37fdaa19e265d21a3d8e4"
+    },
+    {
+      "path": "components/shop/SupportDossierView.tsx",
+      "sha256": "135708260388e9405c78e9e20fe1a58279d595c362ad85114d0b0baf987b8e3b"
+    },
+    {
+      "path": "components/shop/SupportMount.tsx",
+      "sha256": "03365149f2c27bea8b15490936b913353f211104305cad6b1eb8a5707b752941"
+    },
+    {
+      "path": "components/shop/SupportPreview.tsx",
+      "sha256": "b33fc967509b046b081f9463ce8d6132ab2f829a0e00bdce1ceb04af363d773d"
+    },
+    {
+      "path": "components/shop/SupportSession.tsx",
+      "sha256": "5ec271892183ae5b483cfa78f30f1c671ab9dbb7e21e597999e05446576d52c6"
+    },
+    {
+      "path": "lib/shop/checkout.ts",
+      "sha256": "a5fb1237ac916fba1651b5fed37cc0edc1ea85430e9dbac3e81eca4c22b04470"
+    },
+    {
+      "path": "lib/shop/support-dossier.ts",
+      "sha256": "b432275b6f70ece8b842b02b0812bde8939cde9d38c37703f239f8da937a808a"
+    },
+    {
+      "path": "tests/support-dossier.test.mjs",
+      "sha256": "f81672af43f549a413a11134254ba15e41a165292490ab3089ce05afe7f8d414"
+    }
+  ],
+  "backend_tested_hashes_match": true,
+  "frontend_head": "c352d158d0dc5d6933bd309a4f491cf6ac4490e6",
+  "backend_head": "440991e1350ab66f964e47eaea3175bf478d002d",
+  "source_state": "existing dirty workspaces preserved; HEAD alone does not identify tested source",
+  "disposable_database": "seek_support_audit_20261007 removed after tests"
+}

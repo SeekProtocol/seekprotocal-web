@@ -120,8 +120,13 @@ export function CheckoutLayout({products,catalogFailed=false,catalogNotice,items
         </div><strong>{formatPrice({...product,priceCents:product.priceCents*quantity},locale)}</strong>
       </div>)}
       {items.length>0 && !cartTotal(items) && <p className="checkout-hint">{t("cart.conversion")}</p>}
-      <dl className="checkout-totals"><div><dt>{c("subtotal")}</dt><dd>{totalLabel}</dd></div><div><dt>{c("delivery")}</dt><dd>{c("toAccount")}</dd></div><div className="checkout-total"><dt>{c("total")}</dt><dd>{totalLabel}</dd></div></dl>
-      <p className="checkout-hint">{c("feeNote")}</p>
+      <dl className="checkout-totals">
+        <div><dt>{c("subtotal")}</dt><dd>{totalLabel}</dd></div>
+        <div><dt>{c("delivery")}</dt><dd>{c("toAccount")}</dd></div>
+        <div className="checkout-network-fee"><dt>{c("networkFee",{coin:PAYMENT_ASSETS[asset].feeAsset})}</dt><dd>{c("feeInWallet")}</dd></div>
+        <div className="checkout-total"><dt>{c("productTotal")}</dt><dd>{totalLabel}</dd></div>
+      </dl>
+      <p className="checkout-hint">{c("feeNote",{coin:PAYMENT_ASSETS[asset].feeAsset})}</p>
       <div className="checkout-summary-assurance"><span aria-hidden="true">✓</span><div><strong>{c("linkedDelivery")}</strong><p>{c("linkedDeliveryNote")}</p></div></div>
     </aside>
   </div></>;

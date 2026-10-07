@@ -1,0 +1,1 @@
+PASS: 12 concurrent requests admit 3 open orders, 5 budget uses and exactly 1 payment checker

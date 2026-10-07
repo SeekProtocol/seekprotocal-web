@@ -1,0 +1,156 @@
+Download https://registry.npmjs.org/jose
+Download https://registry.npmjs.org/jose/-/jose-6.1.3.tgz
+Download https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.112.3.tgz
+Download https://registry.npmjs.org/@supabase/postgrest-js/-/postgrest-js-2.112.3.tgz
+Download https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.112.3.tgz
+Download https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.112.3.tgz
+Download https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.112.3.tgz
+Download https://registry.npmjs.org/@supabase/functions-js/-/functions-js-2.112.3.tgz
+Check supabase/functions/shop-auth/providers.test.ts
+Check supabase/functions/shop-auth/index.test.ts
+Check supabase/functions/_shared/shop-solana-payment.test.ts
+Check supabase/functions/_shared/shop-cart.test.ts
+Check supabase/functions/_shared/shop-checkout.test.ts
+Check supabase/functions/_shared/shop-catalog.test.ts
+Check supabase/functions/_shared/shop-grants.test.ts
+Check supabase/functions/_shared/solana-payment.test.ts
+Check supabase/functions/_shared/solana-commerce.test.ts
+Check supabase/functions/_shared/web-shop-proof.test.ts
+Check supabase/functions/_shared/web-shop-local-proof.test.ts
+Check supabase/functions/_shared/checkout-cors.test.ts
+Check supabase/functions/_shared/shop-order-resume.test.ts
+Check supabase/functions/_shared/radom.test.ts
+Check supabase/tests/shop-evm-payment.test.ts
+running 5 tests from ./supabase/functions/shop-auth/providers.test.ts
+return destinations stay on the originating shop and preserve only order references ... ok (1ms)
+credentials cannot accidentally enable a provider before callback setup ... ok (132µs)
+authorize requests bind state, callback and nonce with minimal scopes ... ok (1ms)
+Google identity validation rejects wrong audience, nonce, expiry and signature ... ok (278ms)
+LINE and TikTok require provider-verified subject and matching login context ... ok (314µs)
+running 5 tests from ./supabase/functions/shop-auth/index.test.ts
+foreign origins, invalid providers and unsafe return destinations are refused without backend calls ... ok (13ms)
+callback cannot issue a login to an attacker who knows the transaction ID ... ok (3ms)
+wrong browser proof stops before provider token exchange ... ok (630µs)
+unknown verified social identity never reaches account or session creation ... ok (935µs)
+existing identity receives an existing-user-only token without mail or password change ... ok (1ms)
+running 6 tests from ./supabase/functions/_shared/shop-solana-payment.test.ts
+direct quote uses exact units, rejects unknown assets, stale rates and depegged stablecoins ... ok (702µs)
+payment evidence is per transaction, reference, actual mint, token program and recipient ... ok (382µs)
+read provider fails over and refuses devnet and transaction submission ... ok (11ms)
+paid delivery retry does not require a working RPC ... ok (285µs)
+scanner stores only finalized evidence and advances through multiple pages ... ok (548µs)
+unavailable transaction prevents advancing the scan cursor; forged evidence records nothing ... ok (230µs)
+running 5 tests from ./supabase/functions/_shared/shop-cart.test.ts
+cart accepts one or more lines and ignores all client price/fulfillment fields ... ok (12ms)
+invalid, duplicate and oversized selections never create an order ... ok (753µs)
+retired products and stale revisions refuse the whole cart ... ok (160µs)
+retry compares every ID, quantity and catalog revision independent of line order ... ok (77µs)
+the amount shown must still match before a new payment can be created ... ok (143µs)
+running 7 tests from ./supabase/functions/_shared/shop-checkout.test.ts
+recipient: client email and beneficiary fields never override server resolution ... ok (8ms)
+recipient: unknown ID and changed account mapping block order creation ... ok (496µs)
+idempotency: exact retry reuses order; changed product, provider or recipient is refused ... ok (277µs)
+audit failure stops checkout instead of silently losing critical evidence ... ok (84µs)
+settlement: paid-but-unfulfilled and failed RPC outcomes never report delivered ... ok (4ms)
+legacy published shop: only an entirely absent details contract may default to buyer ... ok (557µs)
+boosts and Pass: resolve the recipient without requiring Arena access ... ok (127µs)
+running 8 tests from ./supabase/functions/_shared/shop-catalog.test.ts
+catalog: new product pricing and grants come from the database ... ok (628µs)
+catalog: retired or wrong-channel products cannot start a purchase ... ok (376µs)
+catalog: lookup failure never falls back to a compiled price ... ok (192µs)
+catalog: stale or forged shelf versions are refused ... ok (132µs)
+Pass: season and entitlement checks use the receiving account before payment ... ok (228µs)
+Pass: no season, wrong product, ending season, and owned entitlement cannot be charged ... ok (154µs)
+bundle: fulfillment captures database quantities without mutating the catalog ... ok (195µs)
+tier packs retain the frozen tier, odds and points through payment fulfillment ... ok (71µs)
+running 6 tests from ./supabase/functions/_shared/shop-grants.test.ts
+shop-grants - an unknown product grants nothing and claims nothing ... ok (762µs)
+shop-grants - a replayed event id is a duplicate, not a second grant ... ok (130µs)
+shop-grants - a consumable grant that succeeds says so ... ok (196µs)
+shop-grants - a failed consumable grant throws and clears the idempotency row ... ok (147µs)
+shop-grants - a failed Pass entitlement insert rolls back too ... ok (158µs)
+shop-grants - a bundle stops at the first failed grant and rolls back ... ok (97µs)
+running 11 tests from ./supabase/functions/_shared/solana-payment.test.ts
+accounts are read whether the node named them or not ... ok (426µs)
+the fee payer is the first account ... ok (71µs)
+a credit is the difference, not the balance ... ok (77µs)
+an account created by this transaction counts as zero before ... ok (84µs)
+the exact price settles, and so does more ... ok (49µs)
+a cent short is not paid ... ok (64µs)
+a failed transaction pays nothing, whatever the balances say ... ok (44µs)
+a payment without the reference belongs to another order ... ok (34µs)
+the right amount of the wrong token is not payment ... ok (36µs)
+paying someone else is not paying us ... ok (39µs)
+native SOL requires a successful transaction, its own reference and the full treasury credit ... ok (63µs)
+running 7 tests from ./supabase/functions/_shared/solana-commerce.test.ts
+the server and the app sign the same sentence ... ok (372µs)
+the sentence names the address, the nonce and the domain ... ok (40µs)
+no two purposes sign the same sentence ... ok (41µs)
+both sides agree on the mint ... ok (18µs)
+prices become base units without a float in the middle ... ok (75µs)
+the app converts prices the same way ... ok (59µs)
+a timestamptz round trip does not invalidate a wallet signature ... ok (85µs)
+running 5 tests from ./supabase/functions/_shared/web-shop-proof.test.ts
+web shop proof: a listed origin with a passing challenge is accepted ... ok (12ms)
+web shop proof: an origin off the list never reaches Cloudflare ... ok (281µs)
+web shop proof: a failed or errored verdict is refused ...
+------- post-test output -------
+[web-shop] siteverify failed: offline
+----- post-test output end -----
+web shop proof: a failed or errored verdict is refused ... ok (1ms)
+web shop proof: the widget must have run on the origin that asks ... ok (145µs)
+web shop proof: without a token or without the secret the web path is closed ...
+------- post-test output -------
+[web-shop] TURNSTILE_SECRET_KEY is not set, so the web shop cannot sell
+----- post-test output end -----
+web shop proof: without a token or without the secret the web path is closed ... ok (128µs)
+running 5 tests from ./supabase/functions/_shared/web-shop-local-proof.test.ts
+localhost checkout accepts a valid server-signed request without calling Turnstile ... ok (11ms)
+a localhost Origin alone never bypasses Turnstile ... ok (256µs)
+local checkout proof is bound to the login, function and request body ... ok (604µs)
+production and lookalike origins never accept local proof ... ok (312µs)
+an expired timestamp, wrong secret or missing secret cannot authorize local checkout ... ok (349µs)
+running 8 tests from ./supabase/functions/_shared/checkout-cors.test.ts
+checkout preflight uses the shop allowlist, independently of the dashboard setting ... ok (12ms)
+success and every checkout failure replace stale CORS without changing the response ... ok (3ms)
+untrusted and opaque origins cannot preflight or inherit a wildcard from middleware ... ok (332µs)
+a configured shop list is shared exactly, never expanded to arbitrary subdomains ... ok (243µs)
+malformed configured origins never become a permissive browser policy ... ok (392µs)
+unexpected handler failures still have readable, sanitized shop responses ...
+------- post-test output -------
+[checkout] unexpected request failure
+----- post-test output end -----
+unexpected handler failures still have readable, sanitized shop responses ... ok (283µs)
+native clients, server relays and provider webhooks keep their existing handler checks ... ok (211µs)
+preflight cannot authorize extra methods and cache keys retain Origin once ... ok (183µs)
+running 7 tests from ./supabase/functions/_shared/shop-order-resume.test.ts
+resume returns the same saved session and records an audit; no replacement order ... ok (1ms)
+ownership and channel are checked before contacting the provider ... ok (453µs)
+closed, expired and refunded provider sessions never expose a payment URL ... ok (133µs)
+paid evidence and a concurrent webhook block paying again ... ok (7ms)
+blocked accounts, paused sales and an unavailable audit stop resuming ... ok (271µs)
+untrusted or malformed checkout URLs cannot become redirects ... ok (217µs)
+provider errors do not create a session or return an old URL ... ok (66µs)
+running 7 tests from ./supabase/functions/_shared/radom.test.ts
+radom: a session is created with the price in dollars, our order in the metadata and every network ... ok (12ms)
+radom: without an API key nothing is created, and an odd answer is an error ... ok (1ms)
+radom: the webhook key is compared whole, and an unset key accepts nobody ... ok (1ms)
+radom: the session id comes from radomData, never from the top level ... ok (66µs)
+settle: a RADOM order asks Radom and settles on success, closes on cancel, waits on pending ... ok (506µs)
+radom: EUR products retain the advertised one-time price and known contact fields ... ok (119µs)
+settle: a failed timeout is rechecked with Radom and delivered only after confirmed success ...
+------- post-test output -------
+[radom] /checkout_session/late-session 503 {}
+----- post-test output end -----
+settle: a failed timeout is rechecked with Radom and delivered only after confirmed success ... ok (2ms)
+running 7 tests from ./supabase/tests/shop-evm-payment.test.ts
+EVM quotes are exact and native coin rates are not treated as stablecoins ... ok (427µs)
+only the exact successful canonical finalized event credits an order ... ok (403µs)
+background recovery discovers a payment without a browser transaction hash ... ok (529µs)
+RPC outage or unavailable receipt leaves the scan cursor unchanged ... ok (259µs)
+another treasury, altered contract bytecode or wrong chain cannot settle ... ok (217µs)
+read-only RPC rejects another chain and fails over to a mainnet endpoint ... ok (3ms)
+delivery can retry during a chain RPC outage ... ok (51µs)
+
+ok | 99 passed | 0 failed (943ms)
+

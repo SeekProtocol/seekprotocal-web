@@ -16,7 +16,7 @@ import "@solana/wallet-adapter-react-ui/styles.css";
  * The RPC is a public endpoint configured in NEXT_PUBLIC_SOLANA_RPC_URL. The
  * page asks it for one thing, a recent blockhash; the wallet broadcasts the
  * transaction itself. Its host has to be in the CSP's connect-src in
- * vercel.json, so changing the endpoint means changing that line too.
+ * the request policy; it derives the allowed origin from the same public setting.
  */
 export const SOLANA_RPC_URL =
   process.env.NEXT_PUBLIC_SOLANA_RPC_URL || "https://api.mainnet-beta.solana.com";

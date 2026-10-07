@@ -1,0 +1,177 @@
+{
+  "checked_at": "2026-10-07T08:05:15.625Z",
+  "results": [
+    {
+      "name": "solana-checkout_anonymous",
+      "status": 401,
+      "error": "Unauthorized",
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "radom-checkout_anonymous",
+      "status": 401,
+      "error": "Unauthorized",
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "solana-order-reconcile_anonymous",
+      "status": 401,
+      "error": "Unauthorized",
+      "allow_origin": "https://app.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "solana-checkout_preflight",
+      "status": 204,
+      "error": null,
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "solana-checkout_foreign_origin",
+      "status": 403,
+      "error": null,
+      "allow_origin": null,
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "radom-checkout_preflight",
+      "status": 204,
+      "error": null,
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "radom-checkout_foreign_origin",
+      "status": 403,
+      "error": null,
+      "allow_origin": null,
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "solana-wallet_preflight",
+      "status": 204,
+      "error": null,
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "solana-wallet_foreign_origin",
+      "status": 403,
+      "error": null,
+      "allow_origin": null,
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "shop_support_search_anonymous",
+      "status": 401,
+      "error": "42501",
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "shop_take_request_budget_anonymous",
+      "status": 401,
+      "error": "42501",
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": false,
+      "cache": null
+    },
+    {
+      "name": "wallet_challenge_1",
+      "status": 200,
+      "error": null,
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": true,
+      "cache": null
+    },
+    {
+      "name": "wallet_challenge_2",
+      "status": 200,
+      "error": null,
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": true,
+      "cache": null
+    },
+    {
+      "name": "wallet_challenge_3",
+      "status": 200,
+      "error": null,
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": true,
+      "cache": null
+    },
+    {
+      "name": "wallet_challenge_4",
+      "status": 200,
+      "error": null,
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": true,
+      "cache": null
+    },
+    {
+      "name": "wallet_challenge_5",
+      "status": 200,
+      "error": null,
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": null,
+      "retry_after_seconds": null,
+      "challenge_present": true,
+      "cache": null
+    },
+    {
+      "name": "wallet_challenge_6",
+      "status": 429,
+      "error": "rate_limited",
+      "allow_origin": "https://www.seekprotocol.ai",
+      "retry_after": "58",
+      "retry_after_seconds": 58,
+      "challenge_present": false,
+      "cache": "no-store"
+    }
+  ],
+  "real_orders_created": 0,
+  "financial_transactions": 0
+}

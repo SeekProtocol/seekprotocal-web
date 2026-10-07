@@ -1,0 +1,9 @@
+{
+  "react-native": false,
+  "metro": false,
+  "braces": false,
+  "micromatch": false,
+  "stream-json": false,
+  "jayson": true,
+  "bs58": true
+}

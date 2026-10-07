@@ -1,0 +1,41 @@
+TAP version 13
+# This version of µWS is not compatible with your Node.js build:
+# Error: Cannot find module '../binaries/uws_darwin_arm64_127.node'
+# Require stack:
+# - /private/tmp/seek-evm-checkout/node_modules/ganache/node_modules/@trufflesuite/uws-js-unofficial/src/uws.js
+# - /private/tmp/seek-evm-checkout/node_modules/ganache/dist/node/core.js
+# Falling back to a NodeJS implementation; performance may be degraded.
+# Subtest: checked-in ABI, bytecode and selectors exactly match pinned source/compiler
+ok 1 - checked-in ABI, bytecode and selectors exactly match pinned source/compiler
+  ---
+  duration_ms: 0.936167
+  type: 'test'
+  ...
+# Subtest: native payment forwards exact wei on chain 1, and failed transfers never emit receipts
+ok 2 - native payment forwards exact wei on chain 1, and failed transfers never emit receipts
+  ---
+  duration_ms: 322.58525
+  type: 'test'
+  ...
+# Subtest: native payment forwards exact wei on chain 56, and failed transfers never emit receipts
+ok 3 - native payment forwards exact wei on chain 56, and failed transfers never emit receipts
+  ---
+  duration_ms: 142.831584
+  type: 'test'
+  ...
+# 101 genuine Payment logs in one transaction; gas used: 1757550
+# Subtest: audit: any payer can emit 101 valid receipts for one reference in one transaction
+ok 4 - audit: any payer can emit 101 valid receipts for one reference in one transaction
+  ---
+  duration_ms: 416.7765
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1721.362791

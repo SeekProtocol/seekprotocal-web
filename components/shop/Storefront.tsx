@@ -38,7 +38,7 @@ import {
 
 import {useEvmWallet} from '@/lib/shop/use-evm-wallet';
 import {isEvmAsset,prepareEvmWallet,buildEvmPayment,EVM_HASH} from '@/lib/shop/evm-wallet';
-import {formatPaymentAmount, SOLANA_MAINNET_GENESIS, type PaymentAsset} from "@/lib/shop/payment-assets";
+import {PAYMENT_ASSETS,formatPaymentAmount, SOLANA_MAINNET_GENESIS, type PaymentAsset} from "@/lib/shop/payment-assets";
 
 type ErrorKey =
   | "errPassUnavailable" | "errPassOwned" | "errPassPending"
@@ -404,6 +404,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
     for (let attempt = 1; attempt <= CONFIRM_ATTEMPTS; attempt++) {
       if (!liveRef.current) return;
       setFlow({ phase: "confirming", product, order, signature, attempt });
+      let waitMs=CONFIRM_INTERVAL_MS;
       try {
         if (await confirmOrder(order.orderId, signature)) {
           if (liveRef.current) {
@@ -412,10 +413,11 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
           }
           return;
         }
-      } catch {
+      } catch (error) {
+        if(error instanceof CheckoutError&&error.retryAfterSeconds)waitMs=Math.max(waitMs,error.retryAfterSeconds*1000);
         /* The server's reconciler also checks the persisted reference. */
       }
-      await sleep(CONFIRM_INTERVAL_MS);
+      await sleep(waitMs);
     }
     if (liveRef.current) setFlow({ phase: "pending", product, signature });
     } finally { paymentBusy.current = false; }
@@ -433,6 +435,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
       for (let attempt = 1; attempt <= CONFIRM_ATTEMPTS; attempt++) {
         if (!liveRef.current) return;
         setFlow({ phase: "returning", product, orderId, attempt });
+        let waitMs=CONFIRM_INTERVAL_MS;
         try {
           const status = await radomOrderStatus(orderId);
           if (status === "paid") {
@@ -447,6 +450,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
             return;
           }
         } catch (error) {
+          if(error instanceof CheckoutError&&error.retryAfterSeconds)waitMs=Math.max(waitMs,error.retryAfterSeconds*1000);
           const code = error instanceof CheckoutError ? error.code : null;
           if (code === "order_unknown" || code === "unauthorized" || code === "account_blocked") {
             if (liveRef.current) setFlow({ phase: "error", code: errorKeyFor(error) });
@@ -454,7 +458,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
           }
           /* Anything else is the network; the server's webhook settles it regardless. */
         }
-        await sleep(CONFIRM_INTERVAL_MS);
+        await sleep(waitMs);
       }
       if (liveRef.current) setFlow({ phase: "pending", product, signature: "" });
     },
@@ -535,7 +539,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
     rateLine = quoting ? t("refreshing") : t("rateNone");
   }
 
-  const flowView = <><FlowView flow={flow} now={now} onPay={pay} onCancel={cancel} onReset={resetFlow} />{receiptId && <OrderReceipt orderId={receiptId} refreshKey={flow.phase} />}</>;
+  const flowView = <><FlowView asset={asset} flow={flow} now={now} onPay={pay} onCancel={cancel} onReset={resetFlow} />{receiptId && <OrderReceipt orderId={receiptId} refreshKey={flow.phase} />}</>;
   const catalogMessage = catalog.failed ? t("catalogFailed") : catalog.loading && !products ? t("catalogLoading") : t("catalogEmpty");
   if (!products?.length) return <div className="card" aria-live="polite"><p>{catalogMessage}</p><button type="button" className="btn btn-outline" disabled={catalog.loading} onClick={catalog.refresh}>{t("tryAgain")}</button>{flowView}</div>;
   return <>{reorder&&<p className="card" role="status" style={{padding:'1rem 1.25rem',marginBottom:'1.5rem',fontSize:'.85rem'}}>{t(`history.restore.${reorder.state}`)}</p>}<CheckoutLayout
@@ -572,13 +576,14 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
         <button type="button" className="shop-rate-refresh" disabled={busy || quoting} onClick={() => void refreshQuote()}>{t("tryAgain")}</button>
       </div>}
     </>}
-    flow={<>{flow.phase === "error" && selection && !receiptId && <p className="checkout-order-reference">{t("checkout.orderNumber")}<code>{selection.request_id}</code></p>}<FlowView flow={flow} now={now} onPay={pay} onCancel={cancel} onReset={resetFlow} />{receiptId && <OrderReceipt orderId={receiptId} refreshKey={flow.phase} />}</>}
+    flow={<>{flow.phase === "error" && selection && !receiptId && <p className="checkout-order-reference">{t("checkout.orderNumber")}<code>{selection.request_id}</code></p>}<FlowView asset={asset} flow={flow} now={now} onPay={pay} onCancel={cancel} onReset={resetFlow} />{receiptId && <OrderReceipt orderId={receiptId} refreshKey={flow.phase} />}</>}
   /></>;
 }
 
 export { CheckoutLayout as StorefrontView } from "./CheckoutLayout";
 
 function FlowView({
+  asset,
   flow,
   now,
   onPay,
@@ -590,6 +595,7 @@ function FlowView({
   onPay: () => void;
   onCancel: () => void;
   onReset: () => void;
+  asset: PaymentAsset;
 }) {
   const t = useTranslations("shop");
 
@@ -646,6 +652,7 @@ function FlowView({
             {formatPaymentAmount(flow.order.amount,flow.order.asset)} {flow.order.asset}
           </p>
           <p className="t-small text-muted">{t("flowFor", { product: flow.product.map(item=>`${item.quantity} × ${productName(item.product,t)}`).join(" · ") })}</p>
+          <p className="t-small text-muted">{t("checkout.feeNote",{coin:PAYMENT_ASSETS[flow.order.asset].feeAsset})}</p>
           <p className="t-mono-sm">{t("flowHeld", { seconds: left })}</p>
           <div className="shop-flow-progress" aria-hidden="true">
             <i style={{ width: `${fraction * 100}%` }} />
@@ -724,7 +731,7 @@ function FlowView({
   return (
     <div className="shop-flow">
       <p className="form-status form-status-error" role="alert">
-        {t(flow.code === "errInsufficient" ? "direct.insufficient" : flow.code)}
+        {t(flow.code === "errInsufficient" ? "direct.insufficient" : flow.code,{coin:PAYMENT_ASSETS[asset].feeAsset})}
       </p>
       <div className="shop-flow-row">
         <button type="button" className="btn btn-outline btn-sm" onClick={onReset}>

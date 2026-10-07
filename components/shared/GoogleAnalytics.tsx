@@ -81,7 +81,7 @@ g.src='https://www.googletagmanager.com/gtag/js?id='+i;
 var f=d.getElementsByTagName('script')[0];f.parentNode.insertBefore(g,f);})(document,'${GA_MEASUREMENT_ID}');
 `;
 
-export default function GoogleAnalytics() {
+export default function GoogleAnalytics({nonce}:{nonce?:string}={}) {
   /* One inline script, with gtag.js injected from inside it rather than
      rendered as its own <script src>.
 
@@ -93,5 +93,5 @@ export default function GoogleAnalytics() {
 
      Injecting it from the last line of the block that sets the defaults makes
      the ordering structural instead of probable. */
-  return <script dangerouslySetInnerHTML={{ __html: consentBootstrap }} />;
+  return <script nonce={nonce} dangerouslySetInnerHTML={{ __html: consentBootstrap }} />;
 }

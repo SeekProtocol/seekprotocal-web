@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from 'react';
 import { getSupabase } from '@/lib/supabase-browser';
-import { parseWebCatalog, type ShopProduct } from './catalog';
+import { parseWebCatalog, visibleShopProducts, type ShopProduct } from './catalog';
 
 export function useCatalog() {
   const [products,setProducts]=useState<ShopProduct[] | null>(null);
@@ -22,7 +22,7 @@ export function useCatalog() {
       try {
         const {data,error}=await getSupabase().rpc('shop_catalog',{_channel:'web'}).abortSignal(controller.signal);
         if (error) throw error;
-        const result=parseWebCatalog(data);
+        const result=visibleShopProducts(parseWebCatalog(data));
         if (active) {setProducts(result);setFailed(false);}
       } catch {if (active) setFailed(true);}
       finally {clearTimeout(timeout);pending=false;if (active) setLoading(false);}

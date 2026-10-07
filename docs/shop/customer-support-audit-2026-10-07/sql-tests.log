@@ -1,0 +1,44 @@
+BEGIN
+CREATE FUNCTION
+CREATE TABLE
+CREATE FUNCTION
+GRANT
+INSERT 0 2
+INSERT 0 2
+INSERT 0 1
+INSERT 0 1
+psql:/private/tmp/seek-shop-audit-build/backend/supabase/tests/shop-support-dossiers.sql:62: NOTICE:  PASS: atomic evidence, exact gas and payment amounts, deduplication, client trust, ownership, lookup, pagination and support access audit
+DO
+SET
+              set_config              
+--------------------------------------
+ 81000000-0000-4000-8000-000000000001
+(1 row)
+
+psql:/private/tmp/seek-shop-audit-build/backend/supabase/tests/shop-support-dossiers.sql:70: NOTICE:  PASS: customer cannot read dossiers or search audit
+DO
+RESET
+UPDATE 1
+SET
+              set_config              
+--------------------------------------
+ 81000000-0000-4000-8000-000000000002
+(1 row)
+
+psql:/private/tmp/seek-shop-audit-build/backend/supabase/tests/shop-support-dossiers.sql:78: NOTICE:  PASS: inactive administrator is refused
+DO
+RESET
+UPDATE 1
+INSERT 0 1
+ shop_record_solana_payment_audited  
+-------------------------------------
+ {"review": null, "delivered": true}
+(1 row)
+
+psql:/private/tmp/seek-shop-audit-build/backend/supabase/tests/shop-support-dossiers.sql:90: NOTICE:  PASS: Solana transaction fees and immutable evidence
+DO
+INSERT 0 1
+DELETE 1
+psql:/private/tmp/seek-shop-audit-build/backend/supabase/tests/shop-support-dossiers.sql:98: NOTICE:  PASS: removed order has a clearly labelled historic snapshot
+DO
+ROLLBACK

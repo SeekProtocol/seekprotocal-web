@@ -14,6 +14,7 @@
     "@solana/wallet-adapter-react-ui": "^0.9.39",
     "@solana/web3.js": "^1.98.4",
     "@supabase/supabase-js": "^2.112.3",
+    "bs58": "^6.0.0",
     "buffer": "^6.0.3",
     "flag-icons": "^7.5.0",
     "next": "^16.3.8",
@@ -37,6 +38,7 @@
     "world-atlas": "^2.0.2"
   },
   "overrides": {
-    "postcss": "^8.5.10"
+    "postcss": "^8.5.10",
+    "jayson": "5.0.0"
   }
 }

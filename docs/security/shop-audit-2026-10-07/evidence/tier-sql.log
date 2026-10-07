@@ -1,0 +1,7 @@
+BEGIN
+INSERT 0 2
+INSERT 0 2
+CREATE FUNCTION
+psql:supabase/tests/web-pack-tiers.sql:69: NOTICE:  PASS: prices, six mixed-tier gift packs, correct odds/points, repeat, unpaid, owner/count tampering, immutable tier, false catalog, late payment, frozen policy, legacy packs and permissions
+DO
+ROLLBACK

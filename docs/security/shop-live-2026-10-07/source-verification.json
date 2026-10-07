@@ -1,0 +1,426 @@
+[
+  {
+    "function": "solana-checkout",
+    "files": [
+      {
+        "path": "supabase/functions/_shared/shop-request-limits.ts",
+        "match": true,
+        "sha256": "9a4d9e8534344d237a0a7991b7d5d17e9395b38667b48a5cb66b3f7b58553197"
+      },
+      {
+        "path": "supabase/functions/_shared/middleware.ts",
+        "match": true,
+        "sha256": "236b9f2d9e2629870716eae9369b1a7357928725a7d1c7b6500cea60829aa2b7"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-commerce.ts",
+        "match": true,
+        "sha256": "de994c2ec2e26120704506234788335afe78a738b93e5a8be3aa33fc2c00467f"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-solana-assets.ts",
+        "match": true,
+        "sha256": "3f3f5bc148ebaf55b00491fc5d24697caf2449a45c729f86c356daa05f1b74d1"
+      },
+      {
+        "path": "supabase/functions/_shared/arena-open.ts",
+        "match": true,
+        "sha256": "deb5b5798ded80826b7a4a2681c8625f94af287a90066eb90bfecc99f4c7b43c"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-quote.ts",
+        "match": true,
+        "sha256": "97f1ac16093654ca730d420f9c89d3da7b2d7d25200d17095e92a20baa3912a1"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-audit-evidence.ts",
+        "match": true,
+        "sha256": "f576cb50938e90246c16bb08f47732c4a66c8d2934d3f1e31ec9970f3905af11"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-evm-payment.ts",
+        "match": true,
+        "sha256": "2dad6e1f65649f71abed93ca1a101b77def2baff28d5cea3b9922519f20ad8c9"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-order-settlement.ts",
+        "match": true,
+        "sha256": "6852f0488d0e8c112b1c561e08630a49d0c79a16f898aa1f6e9cc71d93a860eb"
+      },
+      {
+        "path": "supabase/functions/_shared/web-shop-proof.ts",
+        "match": true,
+        "sha256": "9e36616a9a9dd556d784b86e2d4cf6cc6dd08aa6db7edee0251fda34da22a89f"
+      },
+      {
+        "path": "supabase/functions/_shared/web-shop-dev-proof.ts",
+        "match": true,
+        "sha256": "dc321be50ce37231544fd6719ac1ad2d59b5bafb70c5feb4ed4b0b6d10ee9f4c"
+      },
+      {
+        "path": "supabase/functions/_shared/attestation-token.ts",
+        "match": true,
+        "sha256": "e7aa5f45d36a02167af364cc3f4e7a64a9a0f6d6b609b6f725b732cafa630839"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-solana-payment.ts",
+        "match": true,
+        "sha256": "a99568785a62201a30ae34a1e2f4292b81b0bd41de593916a904fbb9d325e901"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-catalog.ts",
+        "match": true,
+        "sha256": "5ff0676cff18f625b07eed10eb90363a353384ec1efe3d078de6047e593ad68f"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-rent-protocol.ts",
+        "match": true,
+        "sha256": "109720f224318e79fb59aa3b233578d168ef15991a7e438e9dc4e3d9d8e5bf11"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-evm-contract.json",
+        "match": true,
+        "sha256": "61f09ac6b15376e8c5f5f60f71471aa820de2fb55de11e8768a9139ecb026c99"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-cart.ts",
+        "match": true,
+        "sha256": "8e6ca02738339c9476e03f45a9c6830ebb3ee625a97846531b279aff75bd9e54"
+      },
+      {
+        "path": "supabase/functions/_shared/checkout-cors.ts",
+        "match": true,
+        "sha256": "7195044d80e94bbb69cad5be9c3ed664378ca41e56d62f8be802dc9730c41f5c"
+      },
+      {
+        "path": "supabase/functions/_shared/zcat-transfer-fee.ts",
+        "match": true,
+        "sha256": "7dae3b378bede3149252773b4ef9d109cdece2770e6b5ce6163924e6b22e31ba"
+      },
+      {
+        "path": "supabase/functions/_shared/radom.ts",
+        "match": true,
+        "sha256": "e735925d4e670958e7f537b46688018d9c832a84219081910e42bb2322fe29a7"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-lite.ts",
+        "match": true,
+        "sha256": "eb3cfcfd90a0549daf0474f7725d47d1e85d0a70e055c065dac53ca76e1ed1af"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-payment.ts",
+        "match": true,
+        "sha256": "c50d2faf5551573ce4df9534db58809af9293f4d625c2870cd0091c4abadeb33"
+      },
+      {
+        "path": "supabase/functions/_shared/ip-ban.ts",
+        "match": true,
+        "sha256": "75e8f81625b6915f28bd980867e6c87bfaf8799f3a1985a9fb2fc112cb9301b2"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-checkout.ts",
+        "match": true,
+        "sha256": "9a5c6a19cc7d9791ddb322b7bce32dc8bcec718e522e9de0dec44f8176823b87"
+      },
+      {
+        "path": "supabase/functions/solana-checkout/index.ts",
+        "match": true,
+        "sha256": "d02195d9cd5e4bfb7b15100b6e6030f4a986f3196b029926dfbe46398445be90"
+      }
+    ],
+    "all_match": true
+  },
+  {
+    "function": "radom-checkout",
+    "files": [
+      {
+        "path": "supabase/functions/_shared/shop-request-limits.ts",
+        "match": true,
+        "sha256": "9a4d9e8534344d237a0a7991b7d5d17e9395b38667b48a5cb66b3f7b58553197"
+      },
+      {
+        "path": "supabase/functions/_shared/middleware.ts",
+        "match": true,
+        "sha256": "236b9f2d9e2629870716eae9369b1a7357928725a7d1c7b6500cea60829aa2b7"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-commerce.ts",
+        "match": true,
+        "sha256": "de994c2ec2e26120704506234788335afe78a738b93e5a8be3aa33fc2c00467f"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-solana-assets.ts",
+        "match": true,
+        "sha256": "3f3f5bc148ebaf55b00491fc5d24697caf2449a45c729f86c356daa05f1b74d1"
+      },
+      {
+        "path": "supabase/functions/_shared/arena-open.ts",
+        "match": true,
+        "sha256": "deb5b5798ded80826b7a4a2681c8625f94af287a90066eb90bfecc99f4c7b43c"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-quote.ts",
+        "match": true,
+        "sha256": "97f1ac16093654ca730d420f9c89d3da7b2d7d25200d17095e92a20baa3912a1"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-audit-evidence.ts",
+        "match": true,
+        "sha256": "f576cb50938e90246c16bb08f47732c4a66c8d2934d3f1e31ec9970f3905af11"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-evm-payment.ts",
+        "match": true,
+        "sha256": "2dad6e1f65649f71abed93ca1a101b77def2baff28d5cea3b9922519f20ad8c9"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-order-settlement.ts",
+        "match": true,
+        "sha256": "6852f0488d0e8c112b1c561e08630a49d0c79a16f898aa1f6e9cc71d93a860eb"
+      },
+      {
+        "path": "supabase/functions/_shared/web-shop-proof.ts",
+        "match": true,
+        "sha256": "9e36616a9a9dd556d784b86e2d4cf6cc6dd08aa6db7edee0251fda34da22a89f"
+      },
+      {
+        "path": "supabase/functions/_shared/web-shop-dev-proof.ts",
+        "match": true,
+        "sha256": "dc321be50ce37231544fd6719ac1ad2d59b5bafb70c5feb4ed4b0b6d10ee9f4c"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-solana-payment.ts",
+        "match": true,
+        "sha256": "a99568785a62201a30ae34a1e2f4292b81b0bd41de593916a904fbb9d325e901"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-catalog.ts",
+        "match": true,
+        "sha256": "5ff0676cff18f625b07eed10eb90363a353384ec1efe3d078de6047e593ad68f"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-rent-protocol.ts",
+        "match": true,
+        "sha256": "109720f224318e79fb59aa3b233578d168ef15991a7e438e9dc4e3d9d8e5bf11"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-evm-contract.json",
+        "match": true,
+        "sha256": "61f09ac6b15376e8c5f5f60f71471aa820de2fb55de11e8768a9139ecb026c99"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-cart.ts",
+        "match": true,
+        "sha256": "8e6ca02738339c9476e03f45a9c6830ebb3ee625a97846531b279aff75bd9e54"
+      },
+      {
+        "path": "supabase/functions/_shared/checkout-cors.ts",
+        "match": true,
+        "sha256": "7195044d80e94bbb69cad5be9c3ed664378ca41e56d62f8be802dc9730c41f5c"
+      },
+      {
+        "path": "supabase/functions/_shared/zcat-transfer-fee.ts",
+        "match": true,
+        "sha256": "7dae3b378bede3149252773b4ef9d109cdece2770e6b5ce6163924e6b22e31ba"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-order-resume.ts",
+        "match": true,
+        "sha256": "de51b10751e813f1a62dcc977232d6fd22479d34a8c02d81b2b532e246a5cc9e"
+      },
+      {
+        "path": "supabase/functions/_shared/radom.ts",
+        "match": true,
+        "sha256": "e735925d4e670958e7f537b46688018d9c832a84219081910e42bb2322fe29a7"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-lite.ts",
+        "match": true,
+        "sha256": "eb3cfcfd90a0549daf0474f7725d47d1e85d0a70e055c065dac53ca76e1ed1af"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-payment.ts",
+        "match": true,
+        "sha256": "c50d2faf5551573ce4df9534db58809af9293f4d625c2870cd0091c4abadeb33"
+      },
+      {
+        "path": "supabase/functions/_shared/ip-ban.ts",
+        "match": true,
+        "sha256": "75e8f81625b6915f28bd980867e6c87bfaf8799f3a1985a9fb2fc112cb9301b2"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-checkout.ts",
+        "match": true,
+        "sha256": "9a5c6a19cc7d9791ddb322b7bce32dc8bcec718e522e9de0dec44f8176823b87"
+      },
+      {
+        "path": "supabase/functions/radom-checkout/index.ts",
+        "match": true,
+        "sha256": "644da36347921602513bf80549240143f917504877fb452edb818ef6cdd1a060"
+      }
+    ],
+    "all_match": true
+  },
+  {
+    "function": "solana-order-reconcile",
+    "files": [
+      {
+        "path": "supabase/functions/solana-order-reconcile/index.ts",
+        "match": true,
+        "sha256": "5c4955771ed6f70c2b3c0c79e9b23669b3be958cc97c27880101d3508a4121a2"
+      },
+      {
+        "path": "supabase/functions/_shared/middleware.ts",
+        "match": true,
+        "sha256": "236b9f2d9e2629870716eae9369b1a7357928725a7d1c7b6500cea60829aa2b7"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-solana-assets.ts",
+        "match": true,
+        "sha256": "3f3f5bc148ebaf55b00491fc5d24697caf2449a45c729f86c356daa05f1b74d1"
+      },
+      {
+        "path": "supabase/functions/_shared/arena-open.ts",
+        "match": true,
+        "sha256": "deb5b5798ded80826b7a4a2681c8625f94af287a90066eb90bfecc99f4c7b43c"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-quote.ts",
+        "match": true,
+        "sha256": "97f1ac16093654ca730d420f9c89d3da7b2d7d25200d17095e92a20baa3912a1"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-audit-evidence.ts",
+        "match": true,
+        "sha256": "f576cb50938e90246c16bb08f47732c4a66c8d2934d3f1e31ec9970f3905af11"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-evm-payment.ts",
+        "match": true,
+        "sha256": "2dad6e1f65649f71abed93ca1a101b77def2baff28d5cea3b9922519f20ad8c9"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-order-settlement.ts",
+        "match": true,
+        "sha256": "6852f0488d0e8c112b1c561e08630a49d0c79a16f898aa1f6e9cc71d93a860eb"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-solana-payment.ts",
+        "match": true,
+        "sha256": "a99568785a62201a30ae34a1e2f4292b81b0bd41de593916a904fbb9d325e901"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-catalog.ts",
+        "match": true,
+        "sha256": "5ff0676cff18f625b07eed10eb90363a353384ec1efe3d078de6047e593ad68f"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-rent-protocol.ts",
+        "match": true,
+        "sha256": "109720f224318e79fb59aa3b233578d168ef15991a7e438e9dc4e3d9d8e5bf11"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-evm-contract.json",
+        "match": true,
+        "sha256": "61f09ac6b15376e8c5f5f60f71471aa820de2fb55de11e8768a9139ecb026c99"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-cart.ts",
+        "match": true,
+        "sha256": "8e6ca02738339c9476e03f45a9c6830ebb3ee625a97846531b279aff75bd9e54"
+      },
+      {
+        "path": "supabase/functions/_shared/zcat-transfer-fee.ts",
+        "match": true,
+        "sha256": "7dae3b378bede3149252773b4ef9d109cdece2770e6b5ce6163924e6b22e31ba"
+      },
+      {
+        "path": "supabase/functions/_shared/radom.ts",
+        "match": true,
+        "sha256": "e735925d4e670958e7f537b46688018d9c832a84219081910e42bb2322fe29a7"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-lite.ts",
+        "match": true,
+        "sha256": "eb3cfcfd90a0549daf0474f7725d47d1e85d0a70e055c065dac53ca76e1ed1af"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-payment.ts",
+        "match": true,
+        "sha256": "c50d2faf5551573ce4df9534db58809af9293f4d625c2870cd0091c4abadeb33"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-checkout.ts",
+        "match": true,
+        "sha256": "9a5c6a19cc7d9791ddb322b7bce32dc8bcec718e522e9de0dec44f8176823b87"
+      }
+    ],
+    "all_match": true
+  },
+  {
+    "function": "solana-wallet",
+    "files": [
+      {
+        "path": "supabase/functions/solana-wallet/index.ts",
+        "match": true,
+        "sha256": "beb40bfc6eb6fc7b685820e37f1ad74c99ad9f88f14e02d03ecb27c304c3ffb3"
+      },
+      {
+        "path": "supabase/functions/_shared/shop-request-limits.ts",
+        "match": true,
+        "sha256": "9a4d9e8534344d237a0a7991b7d5d17e9395b38667b48a5cb66b3f7b58553197"
+      },
+      {
+        "path": "supabase/functions/_shared/middleware.ts",
+        "match": true,
+        "sha256": "236b9f2d9e2629870716eae9369b1a7357928725a7d1c7b6500cea60829aa2b7"
+      },
+      {
+        "path": "supabase/functions/_shared/solana-commerce.ts",
+        "match": true,
+        "sha256": "de994c2ec2e26120704506234788335afe78a738b93e5a8be3aa33fc2c00467f"
+      },
+      {
+        "path": "supabase/functions/_shared/web-shop-proof.ts",
+        "match": true,
+        "sha256": "9e36616a9a9dd556d784b86e2d4cf6cc6dd08aa6db7edee0251fda34da22a89f"
+      },
+      {
+        "path": "supabase/functions/_shared/email-layout.ts",
+        "match": true,
+        "sha256": "f03088f6ecc90eefe863b65ed8a6b5b2055dd13a2614fa3632f19727fb469639"
+      },
+      {
+        "path": "supabase/functions/_shared/web-shop-dev-proof.ts",
+        "match": true,
+        "sha256": "dc321be50ce37231544fd6719ac1ad2d59b5bafb70c5feb4ed4b0b6d10ee9f4c"
+      },
+      {
+        "path": "supabase/functions/_shared/contact-email.ts",
+        "match": true,
+        "sha256": "1eb8f5e030dc24c2e6bfe391827ef97927ab83a5050f56d33da63af7339cacc9"
+      },
+      {
+        "path": "supabase/functions/_shared/verification-token.ts",
+        "match": true,
+        "sha256": "c55c197b2326c2f6efd338c8faf43adc8087d1cf136440cee74474cc182f4157"
+      },
+      {
+        "path": "supabase/functions/_shared/checkout-cors.ts",
+        "match": true,
+        "sha256": "7195044d80e94bbb69cad5be9c3ed664378ca41e56d62f8be802dc9730c41f5c"
+      },
+      {
+        "path": "supabase/functions/_shared/email-headers.ts",
+        "match": true,
+        "sha256": "2d499f3f37078e0141af5c235df2791cd25cd7aa20d8c100e1d2ce40dba2873e"
+      },
+      {
+        "path": "supabase/functions/_shared/ip-ban.ts",
+        "match": true,
+        "sha256": "75e8f81625b6915f28bd980867e6c87bfaf8799f3a1985a9fb2fc112cb9301b2"
+      }
+    ],
+    "all_match": true
+  }
+]

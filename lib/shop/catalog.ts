@@ -6,6 +6,12 @@ export interface ShopProduct {
   description: string; priceCents: number; currency: 'usd' | 'eur'; revision: number;
   grants: {powerupKey:string;quantity:number}[];
 }
+// Temporary storefront visibility only; keep the product and order history intact.
+// Set to true when the Season Pass should appear in the shop again.
+const SHOW_SEASON_PASS = false;
+export function visibleShopProducts(products: ShopProduct[]): ShopProduct[] {
+  return products.filter(product => SHOW_SEASON_PASS || product.kind !== 'pass');
+}
 export function parseWebCatalog(raw: unknown): ShopProduct[] {
   if (!Array.isArray(raw)) throw new Error('catalog_unavailable');
   const ids = new Set<string>();

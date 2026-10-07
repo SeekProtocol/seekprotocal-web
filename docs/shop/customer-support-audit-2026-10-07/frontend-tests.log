@@ -1,0 +1,550 @@
+TAP version 13
+# (node:47967) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/account-check-error.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: a rejected login is explained as sign-in required, not an unknown account
+ok 1 - a rejected login is explained as sign-in required, not an unknown account
+  ---
+  duration_ms: 0.868167
+  type: 'test'
+  ...
+# Subtest: connection, limits and changed products retain actionable messages
+ok 2 - connection, limits and changed products retain actionable messages
+  ---
+  duration_ms: 0.129625
+  type: 'test'
+  ...
+# Subtest: recipient mistakes keep their own correction instructions
+ok 3 - recipient mistakes keep their own correction instructions
+  ---
+  duration_ms: 0.128167
+  type: 'test'
+  ...
+# (node:47968) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/cart.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: cart keeps several products and quantities in one request without browser prices
+ok 4 - cart keeps several products and quantities in one request without browser prices
+  ---
+  duration_ms: 12.321584
+  type: 'test'
+  ...
+# Subtest: same-currency totals multiply quantities; mixed currencies require server conversion
+ok 5 - same-currency totals multiply quantities; mixed currencies require server conversion
+  ---
+  duration_ms: 0.1375
+  type: 'test'
+  ...
+# Subtest: quantities allow removal, prevent duplicate Pass and respect pack grant capacity
+ok 6 - quantities allow removal, prevent duplicate Pass and respect pack grant capacity
+  ---
+  duration_ms: 8.055375
+  type: 'test'
+  ...
+# (node:47969) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/catalog.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: new products of every supported kind are selectable with their original currency
+ok 7 - new products of every supported kind are selectable with their original currency
+  ---
+  duration_ms: 12.643042
+  type: 'test'
+  ...
+# Subtest: unavailable or malformed catalogs do not invent prices or grants
+ok 8 - unavailable or malformed catalogs do not invent prices or grants
+  ---
+  duration_ms: 0.483167
+  type: 'test'
+  ...
+# Subtest: discounts compare only cardpacks in the same currency
+ok 9 - discounts compare only cardpacks in the same currency
+  ---
+  duration_ms: 0.120791
+  type: 'test'
+  ...
+# Subtest: history uses the purchased EUR price, preserving legacy USD records
+ok 10 - history uses the purchased EUR price, preserving legacy USD records
+  ---
+  duration_ms: 0.161667
+  type: 'test'
+  ...
+# Subtest: tier metadata comes from the server, and malformed offers fail closed
+ok 11 - tier metadata comes from the server, and malformed offers fail closed
+  ---
+  duration_ms: 0.56675
+  type: 'test'
+  ...
+# Subtest: discounts never compare different tiers or frozen policies
+ok 12 - discounts never compare different tiers or frozen policies
+  ---
+  duration_ms: 0.09425
+  type: 'test'
+  ...
+# (node:47970) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/evm-wallet.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: ETH and BNB preserve all 18 decimals and reject quotes on another chain
+ok 13 - ETH and BNB preserve all 18 decimals and reject quotes on another chain
+  ---
+  duration_ms: 0.754916
+  type: 'test'
+  ...
+# Subtest: unsigned EVM transaction binds exact amount, router, reference and network
+ok 14 - unsigned EVM transaction binds exact amount, router, reference and network
+  ---
+  duration_ms: 0.745875
+  type: 'test'
+  ...
+# Subtest: expired EVM orders cannot be reordered until the finalized scan covers the payment window
+ok 15 - expired EVM orders cannot be reordered until the finalized scan covers the payment window
+  ---
+  duration_ms: 0.191583
+  type: 'test'
+  ...
+# Subtest: wallet switches network and checks the active account again before signing
+ok 16 - wallet switches network and checks the active account again before signing
+  ---
+  duration_ms: 0.327083
+  type: 'test'
+  ...
+# Subtest: rejected network switches never fall through to sending a payment
+ok 17 - rejected network switches never fall through to sending a payment
+  ---
+  duration_ms: 0.123583
+  type: 'test'
+  ...
+# (node:47971) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/order-history.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: API loads one bounded page and uses the immutable UUID for timestamp ties
+ok 18 - API loads one bounded page and uses the immutable UUID for timestamp ties
+  ---
+  duration_ms: 1.320125
+  type: 'test'
+  ...
+# Subtest: resume never appears for paid, delivered, closed or potentially broadcast orders
+ok 19 - resume never appears for paid, delivered, closed or potentially broadcast orders
+  ---
+  duration_ms: 0.139833
+  type: 'test'
+  ...
+# Subtest: receipts preserve historical item price while restored carts use current catalog
+ok 20 - receipts preserve historical item price while restored carts use current catalog
+  ---
+  duration_ms: 0.313333
+  type: 'test'
+  ...
+# Subtest: reorder keeps only the validated order id across sign-in
+ok 21 - reorder keeps only the validated order id across sign-in
+  ---
+  duration_ms: 0.212459
+  type: 'test'
+  ...
+# Subtest: immutable receipt retains pack tier, points and purchase price after catalog changes
+ok 22 - immutable receipt retains pack tier, points and purchase price after catalog changes
+  ---
+  duration_ms: 0.221916
+  type: 'test'
+  ...
+# (node:47972) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/order-status.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: a pending order is neither paid nor delivered
+ok 23 - a pending order is neither paid nor delivered
+  ---
+  duration_ms: 0.772291
+  type: 'test'
+  ...
+# Subtest: a confirmed payment without credits remains awaiting delivery
+ok 24 - a confirmed payment without credits remains awaiting delivery
+  ---
+  duration_ms: 0.075084
+  type: 'test'
+  ...
+# Subtest: late payment evidence survives an expired or failed order status
+ok 25 - late payment evidence survives an expired or failed order status
+  ---
+  duration_ms: 0.066292
+  type: 'test'
+  ...
+# Subtest: an unpaid closed order does not keep promising delivery
+ok 26 - an unpaid closed order does not keep promising delivery
+  ---
+  duration_ms: 0.184708
+  type: 'test'
+  ...
+# Subtest: only recorded fulfillment marks delivery complete
+ok 27 - only recorded fulfillment marks delivery complete
+  ---
+  duration_ms: 0.087083
+  type: 'test'
+  ...
+# (node:47973) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/pack-tiers.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: fifth-card percentages stay distinct from guaranteed cards
+ok 28 - fifth-card percentages stay distinct from guaranteed cards
+  ---
+  duration_ms: 0.958125
+  type: 'test'
+  ...
+# (node:47974) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/payment-assets.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: amounts preserve token precision without floating point
+ok 29 - amounts preserve token precision without floating point
+  ---
+  duration_ms: 0.532292
+  type: 'test'
+  ...
+# Subtest: server response must match the selected asset and mainnet
+ok 30 - server response must match the selected asset and mainnet
+  ---
+  duration_ms: 0.610333
+  type: 'test'
+  ...
+# Subtest: unsigned transactions match the official Solana SDK for all supported assets
+ok 31 - unsigned transactions match the official Solana SDK for all supported assets
+  ---
+  duration_ms: 19.835875
+  type: 'test'
+  ...
+# Subtest: orders with a partial or late payment cannot offer another purchase
+ok 32 - orders with a partial or late payment cannot offer another purchase
+  ---
+  duration_ms: 0.272042
+  type: 'test'
+  ...
+# (node:47975) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/product-copy.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: product information resolves in ar.json
+ok 33 - product information resolves in ar.json
+  ---
+  duration_ms: 18.352333
+  type: 'test'
+  ...
+# Subtest: product information resolves in de.json
+ok 34 - product information resolves in de.json
+  ---
+  duration_ms: 2.859291
+  type: 'test'
+  ...
+# Subtest: product information resolves in el.json
+ok 35 - product information resolves in el.json
+  ---
+  duration_ms: 3.467083
+  type: 'test'
+  ...
+# Subtest: product information resolves in en.json
+ok 36 - product information resolves in en.json
+  ---
+  duration_ms: 1.151708
+  type: 'test'
+  ...
+# Subtest: product information resolves in es.json
+ok 37 - product information resolves in es.json
+  ---
+  duration_ms: 1.874458
+  type: 'test'
+  ...
+# Subtest: product information resolves in et.json
+ok 38 - product information resolves in et.json
+  ---
+  duration_ms: 1.779084
+  type: 'test'
+  ...
+# Subtest: product information resolves in fa.json
+ok 39 - product information resolves in fa.json
+  ---
+  duration_ms: 5.437041
+  type: 'test'
+  ...
+# Subtest: product information resolves in fi.json
+ok 40 - product information resolves in fi.json
+  ---
+  duration_ms: 2.611833
+  type: 'test'
+  ...
+# Subtest: product information resolves in fr.json
+ok 41 - product information resolves in fr.json
+  ---
+  duration_ms: 2.410541
+  type: 'test'
+  ...
+# Subtest: product information resolves in hr.json
+ok 42 - product information resolves in hr.json
+  ---
+  duration_ms: 3.441333
+  type: 'test'
+  ...
+# Subtest: product information resolves in hu.json
+ok 43 - product information resolves in hu.json
+  ---
+  duration_ms: 3.384
+  type: 'test'
+  ...
+# Subtest: product information resolves in id.json
+ok 44 - product information resolves in id.json
+  ---
+  duration_ms: 2.006167
+  type: 'test'
+  ...
+# Subtest: product information resolves in it.json
+ok 45 - product information resolves in it.json
+  ---
+  duration_ms: 2.117958
+  type: 'test'
+  ...
+# Subtest: product information resolves in ja.json
+ok 46 - product information resolves in ja.json
+  ---
+  duration_ms: 2.332167
+  type: 'test'
+  ...
+# Subtest: product information resolves in ko.json
+ok 47 - product information resolves in ko.json
+  ---
+  duration_ms: 3.200792
+  type: 'test'
+  ...
+# Subtest: product information resolves in ms.json
+ok 48 - product information resolves in ms.json
+  ---
+  duration_ms: 1.815417
+  type: 'test'
+  ...
+# Subtest: product information resolves in nl.json
+ok 49 - product information resolves in nl.json
+  ---
+  duration_ms: 1.836042
+  type: 'test'
+  ...
+# Subtest: product information resolves in pl.json
+ok 50 - product information resolves in pl.json
+  ---
+  duration_ms: 2.044625
+  type: 'test'
+  ...
+# Subtest: product information resolves in pt.json
+ok 51 - product information resolves in pt.json
+  ---
+  duration_ms: 2.047334
+  type: 'test'
+  ...
+# Subtest: product information resolves in ru.json
+ok 52 - product information resolves in ru.json
+  ---
+  duration_ms: 3.99125
+  type: 'test'
+  ...
+# Subtest: product information resolves in sl.json
+ok 53 - product information resolves in sl.json
+  ---
+  duration_ms: 1.824167
+  type: 'test'
+  ...
+# Subtest: product information resolves in sq.json
+ok 54 - product information resolves in sq.json
+  ---
+  duration_ms: 1.871292
+  type: 'test'
+  ...
+# Subtest: product information resolves in sr-Cyrl.json
+ok 55 - product information resolves in sr-Cyrl.json
+  ---
+  duration_ms: 3.146792
+  type: 'test'
+  ...
+# Subtest: product information resolves in sr-Latn.json
+ok 56 - product information resolves in sr-Latn.json
+  ---
+  duration_ms: 1.993584
+  type: 'test'
+  ...
+# Subtest: product information resolves in sv.json
+ok 57 - product information resolves in sv.json
+  ---
+  duration_ms: 4.552833
+  type: 'test'
+  ...
+# Subtest: product information resolves in th.json
+ok 58 - product information resolves in th.json
+  ---
+  duration_ms: 3.272875
+  type: 'test'
+  ...
+# Subtest: product information resolves in tr.json
+ok 59 - product information resolves in tr.json
+  ---
+  duration_ms: 2.062875
+  type: 'test'
+  ...
+# Subtest: product information resolves in uk.json
+ok 60 - product information resolves in uk.json
+  ---
+  duration_ms: 3.046625
+  type: 'test'
+  ...
+# Subtest: product information resolves in vi.json
+ok 61 - product information resolves in vi.json
+  ---
+  duration_ms: 2.905625
+  type: 'test'
+  ...
+# Subtest: product information resolves in zh-TW.json
+ok 62 - product information resolves in zh-TW.json
+  ---
+  duration_ms: 2.648292
+  type: 'test'
+  ...
+# Subtest: product information resolves in zh.json
+ok 63 - product information resolves in zh.json
+  ---
+  duration_ms: 1.864458
+  type: 'test'
+  ...
+# Subtest: future catalog products retain their own names and actual grant counts
+ok 64 - future catalog products retain their own names and actual grant counts
+  ---
+  duration_ms: 0.893417
+  type: 'test'
+  ...
+# (node:47976) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/session-storage.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: idle expiry clears credentials at the deadline and cannot be revived by input or a late refresh
+ok 65 - idle expiry clears credentials at the deadline and cannot be revived by input or a late refresh
+  ---
+  duration_ms: 2.012917
+  type: 'test'
+  ...
+# Subtest: real input extends idle time, but periodic reads and token refreshes do not
+ok 66 - real input extends idle time, but periodic reads and token refreshes do not
+  ---
+  duration_ms: 0.417125
+  type: 'test'
+  ...
+# Subtest: active sessions still expire after eight hours
+ok 67 - active sessions still expire after eight hours
+  ---
+  duration_ms: 0.584208
+  type: 'test'
+  ...
+# Subtest: reload and a second tab share the same deadline and activity
+ok 68 - reload and a second tab share the same deadline and activity
+  ---
+  duration_ms: 0.125792
+  type: 'test'
+  ...
+# Subtest: manual logout removes credentials immediately and all tabs reject the ended login
+ok 69 - manual logout removes credentials immediately and all tabs reject the ended login
+  ---
+  duration_ms: 0.189333
+  type: 'test'
+  ...
+# Subtest: fresh authentication works after timeout; a late result from the old login cannot replace it
+ok 70 - fresh authentication works after timeout; a late result from the old login cannot replace it
+  ---
+  duration_ms: 0.622583
+  type: 'test'
+  ...
+# Subtest: legacy indefinite sessions need a fresh login, while PKCE verifier storage remains available
+ok 71 - legacy indefinite sessions need a fresh login, while PKCE verifier storage remains available
+  ---
+  duration_ms: 0.214209
+  type: 'test'
+  ...
+# Subtest: sleeping tabs and backwards clock changes cannot extend an old login
+ok 72 - sleeping tabs and backwards clock changes cannot extend an old login
+  ---
+  duration_ms: 0.129792
+  type: 'test'
+  ...
+# Subtest: corrupt metadata and malformed sessions fail closed
+ok 73 - corrupt metadata and malformed sessions fail closed
+  ---
+  duration_ms: 0.362125
+  type: 'test'
+  ...
+# Subtest: an auth event from another session is not accepted as the signed-in account
+ok 74 - an auth event from another session is not accepted as the signed-in account
+  ---
+  duration_ms: 0.324041
+  type: 'test'
+  ...
+# Subtest: checkout sign-in retains only a valid order reference and never trusts paid hints or redirect URLs
+ok 75 - checkout sign-in retains only a valid order reference and never trusts paid hints or redirect URLs
+  ---
+  duration_ms: 0.218292
+  type: 'test'
+  ...
+# Subtest: installed Supabase SDK restores, refreshes, expires and signs in again through the storage policy
+ok 76 - installed Supabase SDK restores, refreshes, expires and signs in again through the storage policy
+  ---
+  duration_ms: 15.661542
+  type: 'test'
+  ...
+# (node:47977) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/support-dossier.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: support displays exact wei and unknown fees without inventing a zero
+ok 77 - support displays exact wei and unknown fees without inventing a zero
+  ---
+  duration_ms: 0.8855
+  type: 'test'
+  ...
+# Subtest: a client claiming a sent transaction is not proof of payment
+ok 78 - a client claiming a sent transaction is not proof of payment
+  ---
+  duration_ms: 0.15275
+  type: 'test'
+  ...
+# Subtest: timeline pagination preserves very large IDs and deduplicates boundaries
+ok 79 - timeline pagination preserves very large IDs and deduplicates boundaries
+  ---
+  duration_ms: 0.120833
+  type: 'test'
+  ...
+# (node:47978) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/verification-queue.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: a purchase waits for the quote and receives a different single-use token
+ok 80 - a purchase waits for the quote and receives a different single-use token
+  ---
+  duration_ms: 2.408542
+  type: 'test'
+  ...
+# Subtest: a failed request still discards its token and does not block another purchase
+ok 81 - a failed request still discards its token and does not block another purchase
+  ---
+  duration_ms: 0.444792
+  type: 'test'
+  ...
+# Subtest: a challenge failure sends no request and stays failed until a deliberate retry
+ok 82 - a challenge failure sends no request and stays failed until a deliberate retry
+  ---
+  duration_ms: 0.160375
+  type: 'test'
+  ...
+1..82
+# tests 82
+# suites 0
+# pass 82
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 314.040125

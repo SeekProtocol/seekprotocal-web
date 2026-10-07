@@ -1,5 +1,9 @@
 # Directe Solana-checkout — 7 oktober 2026
 
+## Aanvulling: BNB en Ethereum
+
+De vervolgimplementatie voegt native BNB en ETH toe. Zie [status, controles en activering](direct-evm-checkout-2026-10-07.md). De onderstaande notities beschrijven de eerdere Solana-fase.
+
 Status: lokaal gebouwd en getest in `seekprotocal-web` en `seekar-app`. Geen productiepublicatie, migratie op productie of echte testbetaling uitgevoerd. Dit is fase 1: SOL, USDC en USDT op Solana vanuit een gekoppelde wallet. BNB Chain, Ethereum, BTC en betalingen vanaf exchanges vallen buiten deze fase.
 
 ## Gedrag

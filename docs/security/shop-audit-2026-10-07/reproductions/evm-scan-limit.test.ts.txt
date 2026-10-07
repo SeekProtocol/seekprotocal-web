@@ -1,0 +1,15 @@
+import {assertEquals,assertRejects} from 'jsr:@std/assert@1';
+import {reconcileShopEvmPayment} from '/Users/michaeldevries/Projects/seekar-app/supabase/functions/_shared/shop-evm-payment.ts';
+import contract from '/Users/michaeldevries/Projects/seekar-app/supabase/functions/_shared/shop-evm-contract.json' with {type:'json'};
+const treasury='0x'+'a'.repeat(40),router='0x'+'b'.repeat(40),reference='0x'+'c'.repeat(64),hash='0x'+'d'.repeat(64),blockHash='0x'+'e'.repeat(64);
+const order={id:'audit-order',mint:'eip155:1/native',reference,recipient:treasury,created_at:new Date(Date.now()-60000).toISOString(),payment_quote:{chain_id:1,router,scan_from:1}};
+const block={number:'0x2',hash:blockHash,timestamp:'0x'+Math.floor(Date.now()/1000).toString(16)};
+function setup(count:number){
+ const writes:unknown[]=[],updates:unknown[]=[];
+ const logs=Array.from({length:count},(_,i)=>({address:router,transactionHash:hash,blockHash,blockNumber:block.number,logIndex:'0x'+i.toString(16),topics:[contract.paymentTopic,reference,'0x'+'0'.repeat(24)+treasury.slice(2)],data:'0x'+'0'.repeat(63)+'1'}));
+ const admin={rpc:async(name:string,args:unknown)=>{if(name==='shop_record_evm_payment')writes.push(args);return {data:{delivered:false}}},from:()=>({update:(value:unknown)=>({eq:async()=>{updates.push(value);return {}}})})};
+ const rpc={call:async(method:string)=>({eth_getCode:contract.runtime,eth_call:'0x'+'0'.repeat(24)+treasury.slice(2),eth_getBlockByNumber:block,eth_getLogs:logs,eth_getTransactionReceipt:{status:'0x1',transactionHash:hash,blockHash,blockNumber:block.number,logs}}[method])};
+ return {admin,rpc,writes,updates};
+}
+Deno.test('audit: 100 valid payment logs are processed and scan progresses',async()=>{const s=setup(100);await reconcileShopEvmPayment(s.admin,order,undefined,s.rpc);assertEquals(s.writes.length,100);assertEquals(s.updates.length,1)});
+Deno.test('audit: 101 valid payment logs permanently block discovery on repeated retries',async()=>{const s=setup(101);for(let i=0;i<3;i++)await assertRejects(()=>reconcileShopEvmPayment(s.admin,order,undefined,s.rpc),Error,'payment_network_unavailable');assertEquals(s.writes.length,0);assertEquals(s.updates.length,0)});

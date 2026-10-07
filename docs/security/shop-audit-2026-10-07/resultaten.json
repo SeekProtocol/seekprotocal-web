@@ -1,0 +1,87 @@
+{
+  "created_at": "2026-10-06T23:29:54.578518+00:00",
+  "scope": "shop checkout, authentication, wallet proof, payment verification, fulfillment, recovery, dependencies and limited live negative checks",
+  "application_changes": false,
+  "production_changes": false,
+  "repositories": {
+    "frontend": {
+      "path": "/Users/michaeldevries/Projects/seekprotocal-web",
+      "head": "c352d158d0dc5d6933bd309a4f491cf6ac4490e6",
+      "working_tree": "contains existing uncommitted changes; hashes identify audited files",
+      "sha256": {
+        "vercel.json": "1a9818e7d7ea5ba8f0bd99c6452bdb3dce6a4367ae16eb3dfc862341d0e5b33f",
+        "package-lock.json": "4356e17a97c1a119b3bc3e5bae22e9e29d529ca0de8e0b5e4247cf172d1eced2",
+        "lib/supabase-browser.ts": "0f5e685630f10be9fe759c1553b44e59c3d1c7eb38d5a3ad3fc146e39a43e798",
+        "lib/shop/session-storage.ts": "ae3b36bc80d130747316e512fbbb890b18c3e2022d79d21a998223c7dd1d459c"
+      }
+    },
+    "backend": {
+      "path": "/Users/michaeldevries/Projects/seekar-app",
+      "head": "440991e1350ab66f964e47eaea3175bf478d002d",
+      "working_tree": "contains existing uncommitted changes; hashes identify audited files",
+      "sha256": {
+        "supabase/functions/_shared/shop-evm-payment.ts": "53bc5ebafaf8af6ba04c5ce9af029223ee7f12782e8fd674c6204cb52f2ecea8",
+        "supabase/functions/_shared/shop-solana-payment.ts": "f8a07445a096f9d80850fcc8193e1a23a749c9bfb0ba06a1d1d246121e0e8e69",
+        "supabase/functions/_shared/solana-order-settlement.ts": "5a7fa7e0d724f7e32520feb2893ad83c9e92452ed5806754484ff9644b0da10d",
+        "supabase/functions/solana-checkout/index.ts": "564c291bd460e0f3d03bcb07b7cd49b1b21790c1a84407c4f1db09285c5f8f32",
+        "supabase/functions/radom-checkout/index.ts": "6d6c04be12ec24caa7d1de50209d603c5acb1594436fa469f019f47bcc81f8ca",
+        "supabase/functions/solana-wallet/index.ts": "09dff27a515466bf4f25e24aa6ec4d48b7cf2fc01bef85dbf5030151aaf271cf",
+        "supabase/functions/solana-order-reconcile/index.ts": "d58f70a13fe00f54953bd5659c7246cbdf13e28ddf1166dc93e98bceea6c903c",
+        "supabase/contracts/NativeShopPayment.sol": "cb8001ab87e509e2966722a2d8c489ebe3ccc1b6fe9800b1d17a415f7bd98c07",
+        "supabase/functions/_shared/shop-evm-contract.json": "61f09ac6b15376e8c5f5f60f71471aa820de2fb55de11e8768a9139ecb026c99",
+        "supabase/migrations/20261007120000_direct_solana_shop.sql": "4120012cbb59e5c831ca79b46aa0c82e15c10f963491b9a2d4fa4a55be93d61a",
+        "supabase/migrations/20261007140000_web_pack_tiers.sql": "902903dce321f85e400f50d176438610e4c0875c42b99ca731ca618b6c475754"
+      }
+    }
+  },
+  "tests": {
+    "frontend": 79,
+    "backend": 99,
+    "contract_including_reproduction": 4,
+    "scanner_reproduction": 2,
+    "total": 184,
+    "additional_sql_suites": [
+      "direct Solana",
+      "direct EVM",
+      "web pack tiers",
+      "cross-user RLS",
+      "queue ordering",
+      "8 concurrent EVM settlements",
+      "8 concurrent mixed-tier deliveries"
+    ]
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P1",
+      "title": "More than 100 matching EVM logs block automatic scan progress",
+      "evidence": "local reproduction"
+    },
+    {
+      "id": "F2",
+      "priority": "P1",
+      "title": "Unpaid backlog delays paid orders in shared recovery queue",
+      "evidence": "isolated PostgreSQL reproduction"
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "title": "No application throttle for costly confirmation/recovery paths",
+      "evidence": "source review; no live load test"
+    },
+    {
+      "id": "F4",
+      "priority": "P2 hardening",
+      "title": "Permissive live shop CSP with script-readable sessions",
+      "evidence": "live response headers and source; no demonstrated XSS"
+    }
+  ],
+  "dependency_audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 10,
+    "high": 13,
+    "critical": 0,
+    "total": 23
+  }
+}

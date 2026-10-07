@@ -1,5 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { ShopProduct } from './catalog';
+import {awaitsEvmFinality} from './order-status.ts';
 import {parseTierPack, type TierPack} from './pack-tiers.ts';
 
 export interface ProductSnapshot {
@@ -56,7 +57,7 @@ export function historyAction(order:HistoryOrder, now=Date.now()): 'resume'|'reo
   if(order.fulfilled_at || order.paid_at || order.status==='paid') return null;
   if(order.payment_review_reason || Number(order.payment_received_base_units ?? 0)>0) return 'check';
   if(order.signature) return 'check';
-  if(order.payment_protocol==='evm-native-v1' && (!order.payment_finalized_through || Date.parse(order.payment_finalized_through)<Date.parse(order.expires_at??'')+120_000)) return 'check';
+  if(awaitsEvmFinality(order)) return 'check';
   const expires=Date.parse(order.expires_at??'');
   if(order.status==='failed'||order.status==='expired'||order.status==='pending'&&Number.isFinite(expires)&&expires<=now) return 'reorder';
   if(order.status==='pending'&&order.mint==='RADOM'&&Number.isFinite(expires)&&expires>now) return 'resume';

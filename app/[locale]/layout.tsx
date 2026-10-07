@@ -16,6 +16,8 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import { ThemeProvider, themeInitScript } from "@/components/theme/ThemeProvider";
 import { bisectInitScript } from "@/lib/bisect";
 import { deploymentInitScript } from "@/lib/crash-log";
+import {headers} from 'next/headers';
+import {shopNavigationBoundary} from '@/lib/shop/content-security';
 import "../globals.css";
 
 const dmSans = DM_Sans({
@@ -177,6 +179,10 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
+  const requestHeaders=await headers();
+  const nonce=requestHeaders.get('x-nonce')??undefined;
+  const shopPage=requestHeaders.get('x-shop-page')==='1';
+
   const messages = await getMessages();
   const tMeta = await getTranslations({ locale, namespace: "siteMeta" });
 
@@ -193,18 +199,19 @@ export default async function LocaleLayout({
     >
       <head>
         {/* Sets the theme before first paint so there is no flash. */}
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <script nonce={nonce} dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         {/* Diagnostic switches (?fx=off, ?anim=off, ?img=off, ?3d=off). Before
             first paint for the same reason: a flag has to hold for frame one. */}
-        <script dangerouslySetInnerHTML={{ __html: bisectInitScript }} />
+        <script nonce={nonce} dangerouslySetInnerHTML={{ __html: bisectInitScript }} />
         {/* Reads the build id off <html> before React hydrates it away, so the
             crash log can tell a deploy-triggered reload from a reader's. */}
-        <script dangerouslySetInnerHTML={{ __html: deploymentInitScript }} />
+        <script nonce={nonce} dangerouslySetInnerHTML={{ __html: deploymentInitScript }} />
+        <script nonce={nonce} dangerouslySetInnerHTML={{ __html: shopNavigationBoundary }} />
         {/* Consent Mode defaults, then GA4. In <head> and last among these,
             because the defaults have to reach the dataLayer before the tag
             reads it, that ordering is what keeps Google from writing anything
             to the device before the banner is answered. */}
-        <GoogleAnalytics />
+        {!shopPage&&<GoogleAnalytics nonce={nonce} />}
       </head>
       <body>
         <NextIntlClientProvider messages={clientMessages(messages)}>
@@ -212,6 +219,7 @@ export default async function LocaleLayout({
               below it has had a chance to throw. Renders nothing. */}
           <CrashLog />
           <script
+            nonce={nonce}
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({

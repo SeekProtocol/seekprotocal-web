@@ -1,0 +1,59 @@
+Check supabase/functions/_shared/shop-audit-evidence.test.ts
+Check supabase/functions/_shared/shop-checkout.test.ts
+Check supabase/functions/_shared/shop-solana-payment.test.ts
+Check supabase/functions/_shared/shop-order-resume.test.ts
+Check supabase/functions/_shared/shop-cart.test.ts
+Check supabase/functions/_shared/shop-grants.test.ts
+Check supabase/tests/shop-evm-payment.test.ts
+running 4 tests from ./supabase/functions/_shared/shop-audit-evidence.test.ts
+exact EVM gas fee uses receipt price and transaction sender, not the payment event payer ... ok (8ms)
+Solana fee and slot are distinct from transferred funds and rent ... ok (157µs)
+context and failures never retain arbitrary secrets, URLs or supplied proof claims ... ok (283µs)
+each settlement attempt links start and failure, with bounded safe error evidence ... ok (687µs)
+running 7 tests from ./supabase/functions/_shared/shop-checkout.test.ts
+recipient: client email and beneficiary fields never override server resolution ... ok (9ms)
+recipient: unknown ID and changed account mapping block order creation ... ok (573µs)
+idempotency: exact retry reuses order; changed product, provider or recipient is refused ... ok (352µs)
+audit failure stops checkout instead of silently losing critical evidence ... ok (74µs)
+settlement: paid-but-unfulfilled and failed RPC outcomes never report delivered ... ok (4ms)
+legacy published shop: only an entirely absent details contract may default to buyer ... ok (575µs)
+boosts and Pass: resolve the recipient without requiring Arena access ... ok (161µs)
+running 6 tests from ./supabase/functions/_shared/shop-solana-payment.test.ts
+direct quote uses exact units, rejects unknown assets, stale rates and depegged stablecoins ... ok (691µs)
+payment evidence is per transaction, reference, actual mint, token program and recipient ... ok (352µs)
+read provider fails over and refuses devnet and transaction submission ... ok (11ms)
+paid delivery retry does not require a working RPC ... ok (168µs)
+scanner stores only finalized evidence and advances through multiple pages ... ok (509µs)
+unavailable transaction prevents advancing the scan cursor; forged evidence records nothing ... ok (276µs)
+running 7 tests from ./supabase/functions/_shared/shop-order-resume.test.ts
+resume returns the same saved session and records an audit; no replacement order ... ok (1ms)
+ownership and channel are checked before contacting the provider ... ok (380µs)
+closed, expired and refunded provider sessions never expose a payment URL ... ok (122µs)
+paid evidence and a concurrent webhook block paying again ... ok (6ms)
+blocked accounts, paused sales and an unavailable audit stop resuming ... ok (216µs)
+untrusted or malformed checkout URLs cannot become redirects ... ok (225µs)
+provider errors do not create a session or return an old URL ... ok (213µs)
+running 5 tests from ./supabase/functions/_shared/shop-cart.test.ts
+cart accepts one or more lines and ignores all client price/fulfillment fields ... ok (9ms)
+invalid, duplicate and oversized selections never create an order ... ok (831µs)
+retired products and stale revisions refuse the whole cart ... ok (163µs)
+retry compares every ID, quantity and catalog revision independent of line order ... ok (70µs)
+the amount shown must still match before a new payment can be created ... ok (152µs)
+running 6 tests from ./supabase/functions/_shared/shop-grants.test.ts
+shop-grants - an unknown product grants nothing and claims nothing ... ok (709µs)
+shop-grants - a replayed event id is a duplicate, not a second grant ... ok (119µs)
+shop-grants - a consumable grant that succeeds says so ... ok (175µs)
+shop-grants - a failed consumable grant throws and clears the idempotency row ... ok (159µs)
+shop-grants - a failed Pass entitlement insert rolls back too ... ok (130µs)
+shop-grants - a bundle stops at the first failed grant and rolls back ... ok (103µs)
+running 7 tests from ./supabase/tests/shop-evm-payment.test.ts
+EVM quotes are exact and native coin rates are not treated as stablecoins ... ok (444µs)
+only the exact successful canonical finalized event credits an order ... ok (403µs)
+background recovery discovers a payment without a browser transaction hash ... ok (461µs)
+RPC outage or unavailable receipt leaves the scan cursor unchanged ... ok (420µs)
+another treasury, altered contract bytecode or wrong chain cannot settle ... ok (174µs)
+read-only RPC rejects another chain and fails over to a mainnet endpoint ... ok (3ms)
+delivery can retry during a chain RPC outage ... ok (40µs)
+
+ok | 42 passed | 0 failed (288ms)
+

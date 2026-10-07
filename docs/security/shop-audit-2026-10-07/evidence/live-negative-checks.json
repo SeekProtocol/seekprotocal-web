@@ -1,0 +1,115 @@
+[
+  {
+    "endpoint": "solana-checkout",
+    "unauthenticatedStatus": 401,
+    "body": "{\"error\":\"Unauthorized\"}"
+  },
+  {
+    "endpoint": "radom-checkout",
+    "unauthenticatedStatus": 401,
+    "body": "{\"error\":\"Unauthorized\"}"
+  },
+  {
+    "endpoint": "radom-checkout/webhook",
+    "unauthenticatedStatus": 401,
+    "body": "{\"error\":\"Unauthorized\"}"
+  },
+  {
+    "endpoint": "solana-order-reconcile",
+    "unauthenticatedStatus": 401,
+    "body": "{\"error\":\"Unauthorized\"}"
+  },
+  {
+    "endpoint": "solana-checkout",
+    "untrustedPreflightStatus": 403
+  },
+  {
+    "publicCatalog": [
+      {
+        "id": "seekar_chill_guy",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_pump_it",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_cash",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_diamond_hands",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_spawn_lure",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_pass_s1",
+        "kind": "pass",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_spawn_magnet",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_rare_boost",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_pack_single",
+        "kind": "pack",
+        "web_enabled": false
+      },
+      {
+        "id": "seekar_pack_five",
+        "kind": "pack",
+        "web_enabled": false
+      },
+      {
+        "id": "seekar_pack_ten",
+        "kind": "pack",
+        "web_enabled": false
+      },
+      {
+        "id": "seekar_xp_boost",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_this_is_fine",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_fitness",
+        "kind": "consumable",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_pack_basic",
+        "kind": "pack",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_pack_premium",
+        "kind": "pack",
+        "web_enabled": true
+      },
+      {
+        "id": "seekar_pack_elite",
+        "kind": "pack",
+        "web_enabled": true
+      }
+    ]
+  }
+]
