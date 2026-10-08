@@ -118,6 +118,25 @@ function ArbitrumMark({ size = 34 }: MarkProps) {
 }
 
 /**
+ * Robinhood Chain's feather, black on the lime disc.
+ *
+ * Traced from the chain's square logo in Trust Wallet's assets repo
+ * (`blockchains/robinhoodchain/info/logo.png`) and scaled to sit inside the
+ * disc like the other marks; no SVG of it was supplied.
+ */
+function RobinhoodMark({ size = 34 }: MarkProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+      <circle cx="100" cy="100" r="100" fill="#ccff00" />
+      <path
+        d="M116.5 79.8 114.1 81.9 107.0 90.6 96.5 104.9 85.7 122.9 81.4 131.1 81.5 131.7 103.5 125.2 105.3 124.1 107.3 122.1 116.8 105.9ZM112.4 75.1 90.6 75.3 74.7 95.0 73.6 97.4 73.0 100.9 73.0 120.8 65.9 141.2 63.1 150.5 63.3 151.3 66.2 151.3 66.8 150.8 73.8 133.8 79.2 123.0 90.8 103.2 99.7 90.6 112.1 76.0ZM131.8 53.3 127.8 52.7 120.6 52.7 116.4 53.3 111.2 54.9 104.4 60.7 95.5 69.5 95.9 70.3 119.2 70.3 121.1 71.5 121.5 72.4 121.5 98.5 122.0 99.1 136.9 80.0 138.6 77.0 139.0 75.3 139.6 66.6 138.6 60.0 137.3 56.9 135.8 55.1Z"
+        fill="#000"
+      />
+    </svg>
+  );
+}
+
+/**
  * The open end of the roster: a plus, not a logo.
  *
  * The one mark here that *is* a glyph, so it takes `currentColor` and themes
@@ -158,6 +177,7 @@ const MARKS: Record<string, (props: MarkProps) => React.ReactElement> = {
   solana: SolanaMark,
   bnb: BnbMark,
   arbitrum: ArbitrumMark,
+  robinhood: RobinhoodMark,
 };
 
 export function ChainMark({ id, name, size }: { id: string; name: string; size?: number }) {
