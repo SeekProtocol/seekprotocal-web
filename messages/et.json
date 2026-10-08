@@ -946,6 +946,26 @@
     "perUnit": "Ühiku kohta",
     "powerupsTitle": "Power-upid, mis muudavad vooru"
   },
+  "stocksSection": {
+    "eyebrow": "Päris maailma varad",
+    "title": "Apple, Tesla ja NVIDIA: püüa endale tükike",
+    "lead": "Kaardil on nüüd tokeniseeritud aktsiad. Apple, Tesla ja NVIDIA ilmuvad müntidena nagu kõik teisedki: kõnni ühe juurde, püüa see kinni ja võta see välja Robinhood Stock Tokenina Robinhood Chainis, otse oma rahakotti.",
+    "points": [
+      "Igal püügil on kindel mänguväärtus: Apple $0.05, Tesla $0.12 ja NVIDIA $0.30.",
+      "Väljamaksel makstakse see väärtus välja aktsiatokenis selle hetkehinnaga, nii et sellest hetkest järgib see, mis sul on, aktsia hinda.",
+      "Apple on Uncommon, Tesla on Rare ja NVIDIA on Epic, kolmest kõige raskemini püütav.",
+      "Aktsiadropid ilmuvad Euroopa Majanduspiirkonna 30 riigis. Määra oma profiilis oma riik ja kinnita enne esimest väljamakset, et sa ei ole USA isik (U.S. person)."
+    ],
+    "coinAlt": "{name} aktsiatokeni münt",
+    "catchChance": "Püügitõenäosus",
+    "perCatch": "Püügi kohta",
+    "finePrint": "Robinhood Stock Tokenid on Robinhood Assets (Jersey) Limitedi emiteeritud tokeniseeritud võlaväärtpaberid. Need järgivad alusaktsia hinda, kuid ei anna omandiõigust ettevõttes ega hääleõigust selles. Neid ei tohi pakkuda ega üle anda Ameerika Ühendriikides, USA isikutele ega piiratud jurisdiktsioonides, mille hulka kuuluvad Kanada, Ühendkuningriik ja Šveits. Tokeni saamine ei tähenda iseenesest, et saad selle müüa või lunastada. Haruldus on mängutase, mitte hinnang investeeringule. Hinnad võivad nii langeda kui ka tõusta ja miski siin ei ole investeerimisnõustamine. Apple, Tesla, NVIDIA ja Robinhood on nende omanike kaubamärgid ning omanikud ei sponsoreeri ega toeta Seekprotocoli.",
+    "links": {
+      "restrictions": "Robinhood: piiratud jurisdiktsioonid",
+      "terms": "Robinhood: prospekt ja Final Terms (lõplikud tingimused)",
+      "faq": "Robinhood: Stock Tokeni KKK"
+    }
+  },
   "offers": {
     "railLabel": "Dropi vormid",
     "redeemLabel": "Kuidas see lunastatakse",

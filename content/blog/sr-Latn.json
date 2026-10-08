@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla i NVIDIA su sada na mapi",
+    "excerpt": "Na Seekprotocol mapi padaju tri nova novčića: Apple, Tesla i NVIDIA. Ulovite ih kao bilo koji drugi novčić i isplatite ih kao Robinhood Stock Token-e, tokene koji prate stvarnu cenu akcije. Evo kako to funkcioniše i ko može da učestvuje.",
+    "content": [
+      "Na Seekprotocol mapi sada padaju tri nova novčića: Apple, Tesla i NVIDIA. Pojavljuju se, sijaju i love se kao i svaki drugi novčić. Razlika je u onome što dobijate kada ih isplatite: Robinhood Stock Token na Robinhood Chain-u, token koji prati cenu prave akcije.",
+      "Robinhood Stock Tokens su tokenizovane dužničke hartije od vrednosti koje izdaje Robinhood Assets (Jersey) Limited. Svaki od njih prati cenu jedne osnovne akcije. To nisu same akcije: držanje tokena vam ne daje vlasništvo nad kompanijama Apple, Tesla ili NVIDIA niti glas na njihovim skupštinama. Ono što vam daje jeste izloženost ceni, u vašem sopstvenom novčaniku.",
+      "Već neko vreme govorimo da protokol ne zanima šta je u kutiji. Mimkoini, vaučeri, NFT-ovi i fizička roba koriste istu mehaniku. Imovina iz stvarnog sveta je očigledan sledeći test te tvrdnje, a tokenizovane akcije su njegova najčistija verzija: poznata imovina, javna cena i token koji se poravnava na lancu kao i sve ostalo što delimo.",
+      "Svaka akcija ima retkost i fiksnu vrednost u igri po ulovu. Apple je Neobičan novčić i vredi $0.05 po ulovu. Tesla je Redak novčić i vredi $0.12. NVIDIA je Epski novčić, vredi $0.30 i od ova tri njega je najteže uloviti. Vaši ulovi se skupljaju u inventaru kao jedinice u igri. Kada isplatite, njihovu vrednost u dolarima pretvaramo u token akcije po trenutnoj ceni i šaljemo ga u vaš novčanik na Robinhood Chain-u. Od tog trenutka token se kreće zajedno sa akcijom.",
+      "Ovo su namerno mali iznosi. Ulov je nagrada za šetnju do nekog mesta, ne investicioni proizvod, a nivoi retkosti su dizajn igre, ne mišljenje o tome koja će kompanija proći bolje. Cene mogu i da padnu i da porastu i ništa u aplikaciji ni na ovoj stranici nije investicioni savet.",
+      "Tokeni akcija dolaze sa pravilima koja obični novčići nemaju. Robinhood ne dozvoljava da se nude ili isporučuju u Sjedinjenim Američkim Državama, američkim licima (U.S. persons) niti u nizu ograničenih jurisdikcija, uključujući Kanadu, Ujedinjeno Kraljevstvo i Švajcarsku. U aplikaciji se dropovi akcija pojavljuju u 30 zemalja Evropskog ekonomskog prostora. Da biste ulovili jedan, zemlja u vašem profilu mora da se poklapa sa zemljom u kojoj se nalazite. Za isplatu takođe potvrđujete kratku izjavu da niste američko lice i da ne delujete u ime takvog lica. Izjavu možete povući u bilo kom trenutku u Podešavanjima.",
+      "Primanje tokena samo po sebi ne znači da ga možete svuda prodati ili zatražiti njegov otkup, a otkup direktno kod izdavaoca podleže posebnim proverama identiteta. Potpuni uslovi nalaze se na stranici kompanije Robinhood o ograničenim jurisdikcijama i u njenom prospektu i dokumentu Final Terms (konačni uslovi). Odeljak Pomoć u aplikaciji sadrži linkove ka oba, kao i odeljak o tokenima akcija na našoj [početnoj stranici](/).",
+      "Za početak ažurirajte aplikaciju, proverite zemlju u profilu i prošetajte. Apple, Tesla, NVIDIA i Robinhood su žigovi svojih vlasnika, od kojih nijedan ne sponzoriše niti podržava Seekprotocol."
+    ],
+    "imageAlt": "Novčići tokena akcija Apple, Tesla i NVIDIA",
+    "readTime": "4 min",
+    "category": "Saopštenje"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR se sada zove Seekprotocol",
     "excerpt": "Aplikacija koju znate kao SeekAR sada je Seekprotocol. Sve ostalo je isto: isti nalog, ista mapa, isti novčići. Evo šta se desilo i šta to znači za vas.",

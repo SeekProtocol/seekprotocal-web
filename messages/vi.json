@@ -946,6 +946,26 @@
     "perUnit": "Mỗi đơn vị",
     "powerupsTitle": "Power-up thay đổi cả lượt chơi"
   },
+  "stocksSection": {
+    "eyebrow": "Tài sản thực",
+    "title": "Bắt một phần Apple, Tesla và NVIDIA",
+    "lead": "Bản đồ giờ đã có cổ phiếu được token hóa. Apple, Tesla và NVIDIA rơi xuống dưới dạng coin như mọi coin khác: đi bộ đến, bắt lấy, rồi rút về dưới dạng Robinhood Stock Token trên Robinhood Chain, thẳng vào ví của chính bạn.",
+    "points": [
+      "Mỗi lượt bắt có giá trị trong game cố định: $0.05 cho Apple, $0.12 cho Tesla và $0.30 cho NVIDIA.",
+      "Khi rút, giá trị đó được trả bằng token cổ phiếu theo giá hiện tại, nên từ đó trở đi, những gì bạn nắm giữ sẽ biến động theo giá cổ phiếu.",
+      "Apple là Uncommon, Tesla là Rare và NVIDIA là Epic, coin khó bắt nhất trong ba.",
+      "Coin cổ phiếu xuất hiện tại 30 quốc gia thuộc Khu vực Kinh tế châu Âu. Hãy đặt quốc gia trong hồ sơ và xác nhận bạn không phải là người Hoa Kỳ (U.S. person) trước lần rút đầu tiên."
+    ],
+    "coinAlt": "Coin token cổ phiếu {name}",
+    "catchChance": "Tỷ lệ bắt",
+    "perCatch": "Mỗi lượt bắt",
+    "finePrint": "Robinhood Stock Token là chứng khoán nợ được token hóa do Robinhood Assets (Jersey) Limited phát hành. Chúng theo sát giá của cổ phiếu cơ sở nhưng không mang lại quyền sở hữu hay quyền biểu quyết trong công ty đó. Chúng không được chào bán hoặc chuyển giao tại Hoa Kỳ, cho người Hoa Kỳ, hoặc tại các khu vực tài phán bị hạn chế, bao gồm Canada, Vương quốc Anh và Thụy Sĩ. Việc nhận được một token tự nó không có nghĩa là bạn có thể bán hoặc quy đổi (redeem) token đó. Độ hiếm là một cấp độ trong game, không phải nhận định về khoản đầu tư. Giá có thể giảm cũng như tăng, và không có nội dung nào ở đây là lời khuyên đầu tư. Apple, Tesla, NVIDIA và Robinhood là nhãn hiệu của chủ sở hữu tương ứng, những người không tài trợ hay xác nhận Seekprotocol.",
+    "links": {
+      "restrictions": "Robinhood: khu vực tài phán bị hạn chế",
+      "terms": "Robinhood: bản cáo bạch và Final Terms (Điều khoản cuối cùng)",
+      "faq": "Robinhood: Câu hỏi thường gặp về Stock Token"
+    }
+  },
   "offers": {
     "railLabel": "Hình thức phần thưởng",
     "redeemLabel": "Cách đổi",

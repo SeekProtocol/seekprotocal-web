@@ -946,6 +946,26 @@
     "perUnit": "Egységenként",
     "powerupsTitle": "Power-upok, amelyek megváltoztatják a kört"
   },
+  "stocksSection": {
+    "eyebrow": "Valós világbeli eszközök",
+    "title": "Kapj el egy darabot az Apple-ből, a Teslából és az NVIDIA-ból",
+    "lead": "A térképen mostantól tokenizált részvények is vannak. Az Apple, a Tesla és az NVIDIA érmeként jelenik meg, mint bármelyik másik: sétálj oda egyhez, kapd el, és a kifizetéskor Robinhood Stock Tokenként kapod meg a Robinhood Chainen, egyenesen a saját tárcádba.",
+    "points": [
+      "Minden elkapásnak rögzített játékbeli értéke van: az Apple $0.05, a Tesla $0.12, az NVIDIA $0.30.",
+      "Kifizetéskor ezt az értéket a részvénytokenben kapod meg annak aktuális árán, így onnantól az, ami nálad van, a részvény árát követi.",
+      "Az Apple Szokatlan, a Tesla Ritka, az NVIDIA pedig Epic, a három közül a legnehezebben elkapható.",
+      "A részvény-dropok az Európai Gazdasági Térség 30 országában jelennek meg. Állítsd be az országodat a profilodban, és az első kifizetésed előtt erősítsd meg, hogy nem vagy amerikai személy (U.S. person)."
+    ],
+    "coinAlt": "{name} részvénytoken-érme",
+    "catchChance": "Elkapási esély",
+    "perCatch": "Elkapásonként",
+    "finePrint": "A Robinhood Stock Tokenek a Robinhood Assets (Jersey) Limited által kibocsátott, tokenizált hitelviszonyt megtestesítő értékpapírok. A mögöttes részvény árát követik, de nem adnak sem tulajdonjogot, sem szavazati jogot a vállalatban. Nem ajánlhatók fel és nem szállíthatók le az Egyesült Államokban, amerikai személyeknek, illetve korlátozott joghatóságokban, amelyek közé tartozik Kanada, az Egyesült Királyság és Svájc. Egy token megkapása önmagában nem jelenti azt, hogy eladhatod vagy visszaválthatod. A ritkaság játékbeli szint, nem vélemény a befektetésről. Az árak csökkenhetnek és emelkedhetnek is, és semmi sem minősül itt befektetési tanácsnak. Az Apple, a Tesla, az NVIDIA és a Robinhood a tulajdonosaik védjegyei, akik nem szponzorálják és nem támogatják a Seekprotocolt.",
+    "links": {
+      "restrictions": "Robinhood: korlátozott joghatóságok",
+      "terms": "Robinhood: tájékoztató és Final Terms (végleges feltételek)",
+      "faq": "Robinhood: Stock Token GYIK"
+    }
+  },
   "offers": {
     "railLabel": "Drop-formátumok",
     "redeemLabel": "Hogyan váltható be",

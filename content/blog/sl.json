@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla in NVIDIA so zdaj na zemljevidu",
+    "excerpt": "Na zemljevidu Seekprotocol se pojavljajo trije novi kovanci: Apple, Tesla in NVIDIA. Ujemi jih kot vsak drug kovanec in jih dvigni kot Robinhood Stock Tokens, žetone, ki sledijo resnični ceni delnice. Tukaj je razloženo, kako deluje in kdo lahko sodeluje.",
+    "content": [
+      "Na zemljevidu Seekprotocol se zdaj pojavljajo trije novi kovanci: Apple, Tesla in NVIDIA. Spawnajo se, svetijo in jih ujameš tako kot vse druge kovance. Razlika je v tem, kaj prejmeš, ko jih dvigneš: Robinhood Stock Token na Robinhood Chain, žeton, ki sledi ceni prave delnice.",
+      "Robinhood Stock Tokens so tokenizirani dolžniški vrednostni papirji, ki jih izdaja Robinhood Assets (Jersey) Limited. Vsak sledi ceni osnovne delnice. To niso same delnice: imetništvo žetona ti ne daje lastništva v družbah Apple, Tesla ali NVIDIA in ne glasu na njihovih skupščinah. Daje ti izpostavljenost ceni, ki jo hraniš v svoji denarnici.",
+      "Že nekaj časa pravimo, da protokolu ni mar, kaj je v škatli. Memecoini, boni, NFT-ji in fizično blago tečejo na isti mehaniki. Sredstva iz resničnega sveta so očiten naslednji preizkus te trditve, tokenizirane delnice pa njegova najčistejša različica: znano sredstvo, javna cena in žeton, ki se poravna na verigi kot vse drugo, kar delimo.",
+      "Vsaka delnica ima redkost in fiksno vrednost v igri na ulov. Apple je Uncommon in vreden $0.05 na ulov. Tesla je Rare, $0.12. NVIDIA je Epic, $0.30, in je najtežje ulovljiv kovanec od vseh treh. Tvoji ulovi se zbirajo v inventarju kot igralne enote. Ko jih dvigneš, njihovo dolarsko vrednost po trenutni ceni pretvorimo v delniški žeton in ga pošljemo v tvojo denarnico na Robinhood Chain. Od tega trenutka se žeton giblje skupaj z delnico.",
+      "Zneski so namenoma majhni. Ulov je nagrada za to, da si nekam šel peš, ne naložbeni produkt, stopnje redkosti pa so oblikovanje igre, ne mnenje o tem, katero podjetje se bo bolje odrezalo. Cene padajo in tudi rastejo, nič v aplikaciji ali na tej strani pa ni naložbeni nasvet.",
+      "Za delniške žetone veljajo pravila, ki za navadne kovance ne veljajo. Robinhood ne dovoli, da bi jih ponujali ali dostavljali v Združenih državah, ameriškim osebam (U.S. person) ali v več omejenih jurisdikcijah, med drugim v Kanadi, Združenem kraljestvu in Švici. V aplikaciji se delniški dropi pojavljajo v 30 državah Evropskega gospodarskega prostora. Da ga ujameš, se mora država v tvojem profilu ujemati z državo, v kateri si. Za izplačilo potrdiš tudi kratko izjavo, da nisi ameriška oseba in ne deluješ v imenu take osebe. Izjavo lahko kadar koli prekličeš v Nastavitvah.",
+      "Prejem žetona sam po sebi ne pomeni, da ga lahko povsod prodaš ali unovčiš, unovčenje neposredno pri izdajatelju pa vključuje lastna preverjanja identitete. Celotni pogoji so na Robinhoodovi strani Restricted Jurisdictions ter v njegovem prospektu in Final Terms (končni pogoji). Razdelek Pomoč v aplikaciji vodi do obojega, prav tako razdelek o delniških žetonih na naši [domači strani](/).",
+      "Za začetek posodobi aplikacijo, preveri državo v profilu in se odpravi na sprehod. Apple, Tesla, NVIDIA in Robinhood so blagovne znamke svojih lastnikov, od katerih nobeden ne sponzorira ali podpira Seekprotocola."
+    ],
+    "imageAlt": "Kovanci delniških žetonov Apple, Tesla in NVIDIA",
+    "readTime": "4 min",
+    "category": "Obvestilo"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR se zdaj imenuje Seekprotocol",
     "excerpt": "Aplikacija, ki jo poznaš kot SeekAR, je zdaj Seekprotocol. Vse drugo ostaja enako: isti račun, isti zemljevid, isti kovanci. Tukaj je, kaj se je zgodilo in kaj to pomeni zate.",

@@ -946,6 +946,26 @@
     "perUnit": "Per unit",
     "powerupsTitle": "Power-ups that change the round"
   },
+  "stocksSection": {
+    "eyebrow": "Real-world assets",
+    "title": "Catch a piece of Apple, Tesla and NVIDIA",
+    "lead": "The map now holds tokenized stocks. Apple, Tesla and NVIDIA drop as coins like any other: walk to one, catch it, and cash it out as a Robinhood Stock Token on Robinhood Chain, straight into your own wallet.",
+    "points": [
+      "Every catch has a fixed game value: $0.05 for Apple, $0.12 for Tesla and $0.30 for NVIDIA.",
+      "At cash-out that value is paid in the stock token at its current price, so from then on what you hold follows the share price.",
+      "Apple is Uncommon, Tesla is Rare and NVIDIA is Epic, the hardest of the three to land.",
+      "Stock drops appear in the 30 countries of the European Economic Area. Set your country in your profile, and confirm you are not a U.S. person before your first cash-out."
+    ],
+    "coinAlt": "{name} stock token coin",
+    "catchChance": "Catch chance",
+    "perCatch": "Per catch",
+    "finePrint": "Robinhood Stock Tokens are tokenized debt securities issued by Robinhood Assets (Jersey) Limited. They track the price of the underlying share but give no ownership of, or voting rights in, the company. They may not be offered or delivered in the United States, to U.S. persons, or in restricted jurisdictions, which include Canada, the United Kingdom and Switzerland. Receiving a token does not by itself mean you can sell or redeem it. Rarity is a game tier, not a view on the investment. Prices can go down as well as up, and nothing here is investment advice. Apple, Tesla, NVIDIA and Robinhood are trademarks of their owners, who do not sponsor or endorse Seekprotocol.",
+    "links": {
+      "restrictions": "Robinhood: restricted jurisdictions",
+      "terms": "Robinhood: prospectus and Final Terms",
+      "faq": "Robinhood: Stock Token FAQ"
+    }
+  },
   "offers": {
     "railLabel": "Drop formats",
     "redeemLabel": "How it redeems",

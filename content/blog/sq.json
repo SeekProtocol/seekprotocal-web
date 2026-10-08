@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla dhe NVIDIA tani janë në hartë",
+    "excerpt": "Tri monedha të reja bien në hartën e Seekprotocol: Apple, Tesla dhe NVIDIA. Kapi si çdo monedhë tjetër dhe tërhiqi si Robinhood Stock Tokens, tokenë që ndjekin çmimin real të aksionit. Ja si funksionon dhe kush mund të marrë pjesë.",
+    "content": [
+      "Tri monedha të reja tani bien në hartën e Seekprotocol: Apple, Tesla dhe NVIDIA. Ato shfaqen, shkëlqejnë dhe kapen si çdo monedhë tjetër. Ndryshimi është ajo që merr kur i tërheq: një Robinhood Stock Token në Robinhood Chain, një token që ndjek çmimin e aksionit real.",
+      "Robinhood Stock Tokens janë letra me vlerë borxhi të tokenizuara, të emetuara nga Robinhood Assets (Jersey) Limited. Secili ndjek çmimin e një aksioni bazë. Ato nuk janë vetë aksionet: mbajtja e njërit nuk të jep pronësi mbi Apple, Tesla apo NVIDIA dhe as votë në mbledhjet e tyre. Ajo që të jep është ekspozim ndaj çmimit, i mbajtur në portofolin tënd.",
+      "Prej kohësh themi se protokollit nuk i intereson çfarë ka në kuti. Memecoin-et, kuponët, NFT-të dhe mallrat fizikë përdorin të njëjtin mekanizëm. Asetet e botës reale janë testi i qartë i radhës për këtë pohim, dhe aksionet e tokenizuara janë versioni më i pastër i tij: një aset i njohur, një çmim publik dhe një token që shlyhet në zinxhir si gjithçka tjetër që shpërndajmë.",
+      "Çdo aksion ka një rralli dhe një vlerë fikse loje për çdo kapje. Apple është E pazakontë dhe vlen $0.05 për kapje. Tesla është E rrallë me $0.12. NVIDIA është Epic me $0.30 dhe është më e vështira për t'u kapur nga të tria. Kapjet e tua mblidhen në inventar si njësi loje. Kur bën tërheqjen, ne e konvertojmë vlerën e tyre në dollarë në tokenin e aksionit me çmimin aktual dhe e dërgojmë në portofolin tënd në Robinhood Chain. Nga ai moment tokeni lëviz bashkë me aksionin.",
+      "Këto janë shuma të vogla qëllimisht. Një kapje është shpërblim për të ecur deri diku, jo një produkt investimi, dhe nivelet e rrallisë janë dizajn loje, jo një mendim se cila kompani do të ecë më mirë. Çmimet mund të ulen, ashtu si edhe të rriten, dhe asgjë në aplikacion apo në këtë faqe nuk është këshillë investimi.",
+      "Tokenët e aksioneve vijnë me rregulla që monedhat e zakonshme nuk i kanë. Robinhood nuk lejon që ato të ofrohen ose të dorëzohen në Shtetet e Bashkuara, te personat e SHBA-së (U.S. persons) ose në një sërë juridiksionesh të kufizuara, përfshirë Kanadanë, Mbretërinë e Bashkuar dhe Zvicrën. Në aplikacion, drop-et e aksioneve shfaqen në 30 vendet e Zonës Ekonomike Evropiane. Për të kapur një të tillë, vendi në profilin tënd duhet të përputhet me vendin ku ndodhesh. Për tërheqjen, konfirmon gjithashtu një deklaratë të shkurtër se nuk je person i SHBA-së dhe se nuk vepron në emër të një personi të tillë. Mund ta revokosh në çdo kohë te Cilësimet.",
+      "Marrja e një tokeni nuk do të thotë në vetvete që mund ta shesësh ose të kërkosh shlyerjen e tij kudo, dhe shlyerja drejtpërdrejt te emetuesi kërkon verifikimet e veta të identitetit. Kushtet e plota janë në faqen e Robinhood për juridiksionet e kufizuara dhe në prospektin e tij dhe në Final Terms (kushtet përfundimtare). Seksioni Ndihmë në aplikacion ka lidhje për të dyja, ashtu si edhe seksioni i tokenëve të aksioneve në [faqen tonë kryesore](/).",
+      "Për të filluar, përditëso aplikacionin, kontrollo vendin në profilin tënd dhe dil për një shëtitje. Apple, Tesla, NVIDIA dhe Robinhood janë marka tregtare të pronarëve përkatës, asnjëri prej të cilëve nuk e sponsorizon dhe nuk e mbështet Seekprotocol."
+    ],
+    "imageAlt": "Monedhat e tokenëve të aksioneve Apple, Tesla dhe NVIDIA",
+    "readTime": "4 min",
+    "category": "Njoftim"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR tani quhet Seekprotocol",
     "excerpt": "Aplikacioni që e njeh si SeekAR tani është Seekprotocol. Gjithçka tjetër mbetet e pandryshuar: e njëjta llogari, e njëjta hartë, të njëjtat monedha. Ja çfarë ndodhi dhe çfarë do të thotë për ty.",

@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla ja NVIDIA ovat nyt kartalla",
+    "excerpt": "Seekprotocolin kartalle ilmestyy kolme uutta kolikkoa: Apple, Tesla ja NVIDIA. Nappaa ne kuten minkä tahansa muun kolikon ja nosta ne Robinhood Stock Tokeneina, tokeneina, jotka seuraavat oikean osakkeen hintaa. Kerromme, miten se toimii ja kuka voi osallistua.",
+    "content": [
+      "Seekprotocolin kartalle ilmestyy nyt kolme uutta kolikkoa: Apple, Tesla ja NVIDIA. Ne spawnaavat, hehkuvat ja tulevat napatuiksi kuten kaikki muutkin kolikot. Ero on siinä, mitä saat, kun nostat ne: Robinhood Stock Tokenin Robinhood Chainissa, tokenin, joka seuraa oikean osakkeen hintaa.",
+      "Robinhood Stock Tokenit ovat Robinhood Assets (Jersey) Limitedin liikkeeseen laskemia tokenisoituja velkapapereita. Kukin niistä seuraa kohde-etuutena olevan osakkeen hintaa. Ne eivät ole itse osakkeita: tokenin omistaminen ei anna sinulle omistusta Applessa, Teslassa tai NVIDIAssa eikä ääntä niiden yhtiökokouksissa. Se antaa sinulle altistuksen hinnalle, ja token on omassa lompakossasi.",
+      "Olemme sanoneet jo jonkin aikaa, ettei protokollaa kiinnosta, mitä laatikossa on. Meemikolikot, arvosetelit, NFT:t ja fyysiset tuotteet kulkevat kaikki saman mekaniikan kautta. Reaalimaailman omaisuuserät ovat ilmeinen seuraava testi tälle väitteelle, ja tokenisoidut osakkeet ovat sen selkein muoto: tuttu omaisuuserä, julkinen hinta ja token, joka kirjataan ketjuun kuten kaikki muukin, mitä jaamme.",
+      "Jokaisella osakkeella on harvinaisuus ja kiinteä pelin sisäinen arvo nappausta kohden. Apple on Uncommon ja sen arvo on $0.05 nappausta kohden. Tesla on Rare, $0.12. NVIDIA on Epic, $0.30, ja kolmikosta vaikein napata. Nappauksesi kertyvät varastoosi peliyksikköinä. Kun nostat ne, muunnamme niiden dollariarvon osaketokeniksi senhetkiseen hintaan ja lähetämme sen lompakkoosi Robinhood Chainissa. Siitä hetkestä lähtien token liikkuu osakkeen mukana.",
+      "Summat ovat tarkoituksella pieniä. Nappaus on palkinto siitä, että kävelet jonnekin, ei sijoitustuote, ja harvinaisuustasot ovat pelisuunnittelua, eivät näkemys siitä, mikä yhtiö pärjää paremmin. Hinnat laskevat yhtä hyvin kuin nousevat, eikä mikään sovelluksessa tai tällä sivulla ole sijoitusneuvontaa.",
+      "Osaketokeneihin liittyy sääntöjä, joita tavallisilla kolikoilla ei ole. Robinhood ei salli niiden tarjoamista tai toimittamista Yhdysvalloissa, yhdysvaltalaisille henkilöille (U.S. person) eikä useilla rajoitetuilla lainkäyttöalueilla, muun muassa Kanadassa, Yhdistyneessä kuningaskunnassa ja Sveitsissä. Sovelluksessa osakedropit ilmestyvät Euroopan talousalueen 30 maassa. Jotta voit napata sellaisen, profiilissasi olevan maan on vastattava maata, jossa olet. Nostaaksesi vahvistat lisäksi lyhyen ilmoituksen siitä, että et ole yhdysvaltalainen henkilö etkä toimi sellaisen puolesta. Voit perua sen milloin tahansa Asetuksissa.",
+      "Tokenin saaminen ei itsessään tarkoita, että voit myydä tai lunastaa sen kaikkialla, ja lunastukseen suoraan liikkeeseenlaskijalta liittyy omat henkilöllisyystarkistuksensa. Täydelliset ehdot löytyvät Robinhoodin Restricted Jurisdictions -sivulta sekä sen esitteestä ja Final Terms -asiakirjasta (lopulliset ehdot). Sovelluksen Ohje-osio linkittää molempiin, ja niin tekee myös [etusivumme](/) osaketokeneita käsittelevä osio.",
+      "Aloita päivittämällä sovellus, tarkistamalla profiilisi maa ja lähtemällä kävelylle. Apple, Tesla, NVIDIA ja Robinhood ovat omistajiensa tavaramerkkejä, eikä yksikään omistajista sponsoroi tai tue Seekprotocolia."
+    ],
+    "imageAlt": "Apple-, Tesla- ja NVIDIA-osaketokenien kolikot",
+    "readTime": "4 min",
+    "category": "Tiedote"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR on nyt nimeltään Seekprotocol",
     "excerpt": "Sovellus, jonka tunnet nimellä SeekAR, on nyt Seekprotocol. Kaikki muu siinä on ennallaan: sama tili, sama kartta, samat kolikot. Näin kävi ja tätä se tarkoittaa sinulle.",

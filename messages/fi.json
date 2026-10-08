@@ -946,6 +946,26 @@
     "perUnit": "Yksikköä kohden",
     "powerupsTitle": "Tehosteet, jotka muuttavat kierroksen"
   },
+  "stocksSection": {
+    "eyebrow": "Reaalimaailman omaisuuserät",
+    "title": "Apple, Tesla ja NVIDIA: nappaa oma palasi",
+    "lead": "Kartalla on nyt tokenisoituja osakkeita. Apple, Tesla ja NVIDIA ilmestyvät kolikkoina aivan kuten muutkin: kävele kolikon luo, nappaa se ja nosta se Robinhood Stock Tokenina Robinhood Chainissa suoraan omaan lompakkoosi.",
+    "points": [
+      "Jokaisella nappauksella on kiinteä pelin sisäinen arvo: Apple $0.05, Tesla $0.12 ja NVIDIA $0.30.",
+      "Nostossa arvo maksetaan osaketokenina sen senhetkiseen hintaan, joten siitä lähtien se, mitä sinulla on, seuraa osakkeen hintaa.",
+      "Apple on Uncommon, Tesla on Rare ja NVIDIA on Epic, kolmikosta vaikein napata.",
+      "Osakedropit ilmestyvät Euroopan talousalueen 30 maassa. Aseta maasi profiiliisi ja vahvista ennen ensimmäistä nostoasi, että et ole yhdysvaltalainen henkilö (U.S. person)."
+    ],
+    "coinAlt": "{name}-osaketokenin kolikko",
+    "catchChance": "Nappausmahdollisuus",
+    "perCatch": "Nappausta kohden",
+    "finePrint": "Robinhood Stock Tokenit ovat Robinhood Assets (Jersey) Limitedin liikkeeseen laskemia tokenisoituja velkapapereita. Ne seuraavat kohde-etuutena olevan osakkeen hintaa, mutta eivät anna omistusoikeutta yhtiöön eivätkä äänioikeutta siinä. Niitä ei saa tarjota tai toimittaa Yhdysvalloissa, yhdysvaltalaisille henkilöille tai rajoitetuilla lainkäyttöalueilla, joihin kuuluvat muun muassa Kanada, Yhdistynyt kuningaskunta ja Sveitsi. Tokenin saaminen ei itsessään tarkoita, että voit myydä tai lunastaa sen. Harvinaisuus on pelin taso, ei näkemys sijoituksesta. Hinnat voivat laskea yhtä hyvin kuin nousta, eikä mikään tässä ole sijoitusneuvontaa. Apple, Tesla, NVIDIA ja Robinhood ovat omistajiensa tavaramerkkejä, eivätkä omistajat sponsoroi tai tue Seekprotocolia.",
+    "links": {
+      "restrictions": "Robinhood: rajoitetut lainkäyttöalueet",
+      "terms": "Robinhood: esite ja Final Terms (lopulliset ehdot)",
+      "faq": "Robinhood: Stock Token -UKK"
+    }
+  },
   "offers": {
     "railLabel": "Drop-muodot",
     "redeemLabel": "Miten se lunastetaan",

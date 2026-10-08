@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla ja NVIDIA on nüüd kaardil",
+    "excerpt": "Seekprotocoli kaardile ilmub kolm uut münti: Apple, Tesla ja NVIDIA. Püüa neid nagu iga teist münti ja võta need välja Robinhood Stock Tokenitena, tokenitena, mis järgivad päris aktsia hinda. Siin on kirjas, kuidas see töötab ja kes saavad osaleda.",
+    "content": [
+      "Seekprotocoli kaardile ilmub nüüd kolm uut münti: Apple, Tesla ja NVIDIA. Need spawnivad, helendavad ja neid püütakse nagu kõiki teisi münte. Erinevus on selles, mida saad, kui need välja võtad: Robinhood Stock Tokeni Robinhood Chainis, tokeni, mis järgib päris aktsia hinda.",
+      "Robinhood Stock Tokenid on Robinhood Assets (Jersey) Limitedi emiteeritud tokeniseeritud võlaväärtpaberid. Igaüks neist järgib ühe alusaktsia hinda. Need ei ole aktsiad ise: tokeni omamine ei anna sulle omandit Apple'is, Teslas ega NVIDIAs ega häält nende koosolekutel. Token annab sulle positsiooni hinna suhtes, mida hoiad oma rahakotis.",
+      "Oleme juba mõnda aega öelnud, et protokolli ei huvita, mis karbis on. Memecoinid, vautšerid, NFT-d ja füüsilised kaubad kasutavad kõik sama mehaanikat. Päris maailma varad on selle väite ilmselge järgmine proovikivi ja tokeniseeritud aktsiad on selle puhtaim versioon: tuttav vara, avalik hind ja token, mis arveldatakse plokiahelas nagu kõik muu, mida jagame.",
+      "Igal aktsial on haruldus ja kindel mänguväärtus püügi kohta. Apple on Uncommon ja väärt $0.05 püügi kohta. Tesla on Rare, $0.12. NVIDIA on Epic, $0.30, ja kolmest kõige raskemini püütav. Sinu püügid kogunevad sinu varudesse mänguühikutena. Kui need välja võtad, konverteerime nende dollariväärtuse hetkehinnaga aktsiatokeniks ja saadame selle sinu rahakotti Robinhood Chainis. Sellest hetkest liigub token koos aktsiaga.",
+      "Need on meelega väikesed summad. Püük on tasu kuhugi kõndimise eest, mitte investeerimistoode, ja harulduse tasemed on mängudisain, mitte hinnang selle kohta, millisel ettevõttel läheb paremini. Hinnad nii langevad kui ka tõusevad ja miski äpis ega sellel lehel ei ole investeerimisnõustamine.",
+      "Aktsiatokenitega kaasnevad reeglid, mida tavalistel müntidel ei ole. Robinhood ei luba neid pakkuda ega üle anda Ameerika Ühendriikides, USA isikutele (U.S. person) ega mitmes piiratud jurisdiktsioonis, sealhulgas Kanadas, Ühendkuningriigis ja Šveitsis. Äpis ilmuvad aktsiadropid Euroopa Majanduspiirkonna 30 riigis. Ühe püüdmiseks peab sinu profiilis olev riik ühtima riigiga, kus sa viibid. Väljavõtmiseks kinnitad lisaks lühikese deklaratsiooni, et sa ei ole USA isik ega tegutse sellise isiku nimel. Saad selle igal ajal Seadetes tagasi võtta.",
+      "Tokeni saamine ei tähenda iseenesest, et saad selle igal pool müüa või lunastada, ja otse emitendi juures lunastamisega kaasnevad omaette isikutuvastuse kontrollid. Täielikud tingimused on Robinhoodi Restricted Jurisdictions lehel ning selle prospektis ja Final Terms dokumendis (lõplikud tingimused). Äpi Abi jaotis viitab mõlemale, nagu ka aktsiatokenite jaotis meie [avalehel](/).",
+      "Alustamiseks uuenda äppi, kontrolli oma profiilis riiki ja mine jalutama. Apple, Tesla, NVIDIA ja Robinhood on nende vastavate omanike kaubamärgid ning ükski omanik ei sponsoreeri ega toeta Seekprotocoli."
+    ],
+    "imageAlt": "Apple'i, Tesla ja NVIDIA aktsiatokenite mündid",
+    "readTime": "4 min",
+    "category": "Teadaanne"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR on nüüd Seekprotocol",
     "excerpt": "Äpp, mida tunned SeekAR-i nime all, on nüüd Seekprotocol. Kõik muu on sama: sama konto, sama kaart, samad mündid. Siin on see, mis juhtus ja mida see sinu jaoks tähendab.",

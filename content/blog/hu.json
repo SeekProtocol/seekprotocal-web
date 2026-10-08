@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Az Apple, a Tesla és az NVIDIA mostantól a térképen",
+    "excerpt": "Három új érme jelenik meg a Seekprotocol térképén: Apple, Tesla és NVIDIA. Kapd el őket, mint bármelyik másik érmét, és a kifizetéskor Robinhood Stock Tokeneket kapsz értük, vagyis olyan tokeneket, amelyek a valódi részvény árát követik. Elmondjuk, hogyan működik, és ki vehet részt.",
+    "content": [
+      "Három új érme jelenik meg mostantól a Seekprotocol térképén: Apple, Tesla és NVIDIA. Ugyanúgy spawnolnak, világítanak és elkaphatók, mint bármelyik másik érme. A különbség az, hogy mit kapsz a kifizetéskor: egy Robinhood Stock Tokent a Robinhood Chainen, vagyis egy tokent, amely a valódi részvény árát követi.",
+      "A Robinhood Stock Tokenek a Robinhood Assets (Jersey) Limited által kibocsátott, tokenizált hitelviszonyt megtestesítő értékpapírok. Mindegyik egy mögöttes részvény árát követi. Ezek nem maguk a részvények: egy ilyen token birtoklása nem ad tulajdont az Apple-ben, a Teslában vagy az NVIDIA-ban, és szavazatot sem a közgyűléseiken. Amit ad, az az árfolyamkitettség, a saját tárcádban tartva.",
+      "Már egy ideje mondjuk, hogy a protokollt nem érdekli, mi van a dobozban. Memecoinok, utalványok, NFT-k és fizikai termékek mind ugyanazon a mechanikán futnak. A valós világbeli eszközök ennek az állításnak a kézenfekvő következő próbája, a tokenizált részvények pedig a legtisztább változata: ismert eszköz, nyilvános ár, és egy token, amely a láncon számolódik el, mint minden más, amit kiosztunk.",
+      "Minden részvénynek van ritkasága és elkapásonként rögzített játékbeli értéke. Az Apple Szokatlan, és értéke elkapásonként $0.05. A Tesla Ritka, $0.12. Az NVIDIA Epic, $0.30, és a három közül a legnehezebben elkapható. Az elkapásaid játékegységként gyűlnek a leltáradban. Kifizetéskor a dollárértéküket az aktuális áron átváltjuk részvénytokenre, és elküldjük a tárcádba a Robinhood Chainen. Attól a pillanattól a token a részvénnyel együtt mozog.",
+      "Ezek szándékosan kis összegek. Egy elkapás jutalom azért, hogy elsétáltál valahová, nem befektetési termék, a ritkasági szintek pedig játéktervezési döntések, nem vélemény arról, melyik cég fog jobban teljesíteni. Az árak csökkennek is, nem csak emelkednek, és semmi az appban vagy ezen az oldalon nem minősül befektetési tanácsnak.",
+      "A részvénytokenekre olyan szabályok vonatkoznak, amelyek a hagyományos érmékre nem. A Robinhood nem engedi, hogy felajánlják vagy leszállítsák őket az Egyesült Államokban, amerikai személyeknek (U.S. person), illetve számos korlátozott joghatóságban, köztük Kanadában, az Egyesült Királyságban és Svájcban. Az appban a részvény-dropok az Európai Gazdasági Térség 30 országában jelennek meg. Ahhoz, hogy elkapj egyet, a profilodban megadott országnak egyeznie kell azzal az országgal, ahol éppen vagy. A kifizetéshez emellett meg kell erősítened egy rövid nyilatkozatot arról, hogy nem vagy amerikai személy, és nem is ilyen személy nevében jársz el. Ezt bármikor visszavonhatod a Beállításokban.",
+      "Egy token megkapása önmagában nem jelenti azt, hogy mindenhol eladhatod vagy visszaválthatod, és a közvetlenül a kibocsátónál történő visszaváltáshoz saját személyazonosság-ellenőrzés tartozik. A teljes feltételek a Robinhood Restricted Jurisdictions oldalán, valamint a tájékoztatójában és a Final Terms dokumentumban (végleges feltételek) találhatók. Az app Súgó részéből mindkettőre van link, ahogy a [kezdőlapunk](/) részvénytoken-szakaszából is.",
+      "Kezdésként frissítsd az appot, ellenőrizd az országot a profilodban, és indulj el sétálni. Az Apple, a Tesla, az NVIDIA és a Robinhood a megfelelő tulajdonosaik védjegyei, akik közül egyik sem szponzorálja vagy támogatja a Seekprotocolt."
+    ],
+    "imageAlt": "Apple, Tesla és NVIDIA részvénytoken-érmék",
+    "readTime": "4 perc",
+    "category": "Bejelentés"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "A SeekAR mostantól Seekprotocol",
     "excerpt": "Az app, amelyet SeekAR néven ismersz, mostantól Seekprotocol. Minden más változatlan: ugyanaz a fiók, ugyanaz a térkép, ugyanazok az érmék. Elmondjuk, mi történt, és mit jelent ez neked.",

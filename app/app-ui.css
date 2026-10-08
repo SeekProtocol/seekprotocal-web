@@ -2769,6 +2769,66 @@
   color: var(--fg);
 }
 
+/* --------------------------------------------------------------------------
+   STOCK TOKENS
+   The cards are `.collectible`; only the layout around them is new.
+   -------------------------------------------------------------------------- */
+
+.stocks-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 1000px) { .stocks-layout { grid-template-columns: minmax(0, 1fr); } }
+
+.stocks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stocks-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Three full-width cards stacked on a phone are three screens of scrolling for
+   three coins. Kept side by side instead, smaller, with the stats stacked. */
+@media (max-width: 520px) {
+  .stocks-grid { gap: 0.5rem; }
+  .stocks-grid .collectible { padding: 1rem 0.5rem 0.85rem; }
+  .stocks-grid .collectible-art { width: 64px; }
+  .stocks-grid .collectible-name { font-size: 0.9375rem; }
+  .stocks-stats { grid-template-columns: minmax(0, 1fr); gap: 0.6rem; }
+}
+
+.stocks-fine {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--bg-raised);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--fg-subtle);
+}
+
+.stocks-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stocks-links a {
+  color: var(--fg-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.stocks-links a:hover { color: var(--fg); }
+
 .powerups {
   margin-top: 2.5rem;
   padding-top: 2.5rem;

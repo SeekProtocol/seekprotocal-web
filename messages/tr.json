@@ -946,6 +946,26 @@
     "perUnit": "Birim başına",
     "powerupsTitle": "Turu değiştiren güçlendirmeler"
   },
+  "stocksSection": {
+    "eyebrow": "Gerçek dünya varlıkları",
+    "title": "Apple, Tesla ve NVIDIA'dan bir parça yakala",
+    "lead": "Haritada artık tokenleştirilmiş hisseler var. Apple, Tesla ve NVIDIA diğer tüm coinler gibi düşer: birine yürü, onu yakala ve Robinhood Chain üzerinde bir Robinhood Stock Token olarak doğrudan kendi cüzdanına çek.",
+    "points": [
+      "Her yakalamanın sabit bir oyun değeri vardır: Apple için $0.05, Tesla için $0.12 ve NVIDIA için $0.30.",
+      "Çekim sırasında bu değer, hisse tokeniyle o tokenin güncel fiyatı üzerinden ödenir; böylece o andan itibaren elinde tuttuğun şey hisse fiyatını takip eder.",
+      "Apple Uncommon, Tesla Rare, NVIDIA ise Epic: üçü arasında yakalaması en zor olan o.",
+      "Hisse drop'ları Avrupa Ekonomik Alanı'nın 30 ülkesinde görünür. Profilinde ülkeni ayarla ve ilk çekiminden önce ABD kişisi (U.S. person) olmadığını onayla."
+    ],
+    "coinAlt": "{name} hisse tokeni coini",
+    "catchChance": "Yakalama şansı",
+    "perCatch": "Yakalama başına",
+    "finePrint": "Robinhood Stock Tokens, Robinhood Assets (Jersey) Limited tarafından ihraç edilen tokenleştirilmiş borçlanma araçlarıdır. Dayanak hissenin fiyatını takip ederler ancak şirket üzerinde mülkiyet ya da oy hakkı sağlamazlar. Amerika Birleşik Devletleri'nde, ABD kişilerine (U.S. persons) ya da aralarında Kanada, Birleşik Krallık ve İsviçre'nin de bulunduğu kısıtlı yargı bölgelerinde teklif edilemez veya teslim edilemezler. Bir token almak, tek başına onu satabileceğin ya da itfasını talep edebileceğin anlamına gelmez. Nadirlik bir oyun kademesidir, yatırım hakkında bir görüş değildir. Fiyatlar yükselebileceği gibi düşebilir de ve buradaki hiçbir şey yatırım tavsiyesi değildir. Apple, Tesla, NVIDIA ve Robinhood sahiplerinin ticari markalarıdır; bu sahipler Seekprotocol'ü sponsorlamaz veya desteklemez.",
+    "links": {
+      "restrictions": "Robinhood: kısıtlı yargı bölgeleri",
+      "terms": "Robinhood: izahname ve Final Terms (Nihai Koşullar)",
+      "faq": "Robinhood: Stock Token SSS"
+    }
+  },
   "offers": {
     "railLabel": "Drop biçimleri",
     "redeemLabel": "Nasıl kullanılır",

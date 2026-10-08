@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla và NVIDIA đã có mặt trên bản đồ",
+    "excerpt": "Ba coin mới xuất hiện trên bản đồ Seekprotocol: Apple, Tesla và NVIDIA. Hãy bắt chúng như mọi coin khác và rút về dưới dạng Robinhood Stock Token, loại token theo sát giá cổ phiếu thật. Đây là cách nó hoạt động và ai có thể tham gia.",
+    "content": [
+      "Ba coin mới giờ đã xuất hiện trên bản đồ Seekprotocol: Apple, Tesla và NVIDIA. Chúng spawn, phát sáng và được bắt như mọi coin khác. Điểm khác biệt là thứ bạn nhận được khi rút: một Robinhood Stock Token trên Robinhood Chain, loại token theo sát giá của cổ phiếu thật.",
+      "Robinhood Stock Token là chứng khoán nợ được token hóa do Robinhood Assets (Jersey) Limited phát hành. Mỗi token theo sát giá của một cổ phiếu cơ sở. Chúng không phải là chính cổ phiếu: nắm giữ một token không cho bạn bất kỳ quyền sở hữu nào đối với Apple, Tesla hay NVIDIA và không có quyền biểu quyết tại các cuộc họp của họ. Thứ nó mang lại là mức tiếp xúc với giá (exposure), nằm trong ví của chính bạn.",
+      "Từ một thời gian nay, chúng tôi vẫn nói rằng giao thức không quan tâm bên trong chiếc hộp là gì. Memecoin, voucher, NFT và hàng hóa vật lý đều chạy trên cùng một cơ chế. Tài sản thực là phép thử hiển nhiên tiếp theo cho tuyên bố đó, và cổ phiếu được token hóa là phiên bản gọn gàng nhất: một tài sản quen thuộc, một mức giá công khai, và một token được thanh toán on-chain như mọi thứ khác chúng tôi trao đi.",
+      "Mỗi cổ phiếu có một độ hiếm và một giá trị trong game cố định cho mỗi lượt bắt. Apple là Uncommon, trị giá $0.05 mỗi lượt bắt. Tesla là Rare với $0.12. NVIDIA là Epic với $0.30 và là coin khó bắt nhất trong ba. Những gì bạn bắt được sẽ tích lũy trong kho đồ dưới dạng đơn vị game. Khi bạn rút, chúng tôi quy đổi giá trị đô la của chúng sang token cổ phiếu theo giá hiện tại và gửi vào ví của bạn trên Robinhood Chain. Từ thời điểm đó, token biến động theo cổ phiếu.",
+      "Những khoản này nhỏ là có chủ ý. Một lượt bắt là phần thưởng cho việc đi bộ đến một nơi nào đó, không phải sản phẩm đầu tư, và các cấp độ hiếm là thiết kế game, không phải nhận định về việc công ty nào sẽ làm tốt hơn. Giá có thể giảm cũng như tăng, và không có nội dung nào trong ứng dụng hay trên trang này là lời khuyên đầu tư.",
+      "Token cổ phiếu đi kèm những quy định mà coin thông thường không có. Robinhood không cho phép chào bán hoặc chuyển giao chúng tại Hoa Kỳ, cho người Hoa Kỳ (U.S. person), hoặc tại một số khu vực tài phán bị hạn chế, bao gồm Canada, Vương quốc Anh và Thụy Sĩ. Trong ứng dụng, coin cổ phiếu xuất hiện tại 30 quốc gia thuộc Khu vực Kinh tế châu Âu. Để bắt một coin, quốc gia trong hồ sơ của bạn phải trùng với quốc gia bạn đang ở. Để rút, bạn còn phải xác nhận một bản tuyên bố ngắn rằng bạn không phải là người Hoa Kỳ và không hành động thay mặt cho người Hoa Kỳ. Bạn có thể rút lại tuyên bố này bất cứ lúc nào trong phần Cài đặt.",
+      "Việc nhận được một token tự nó không có nghĩa là bạn có thể bán hoặc quy đổi (redeem) token đó ở mọi nơi, và việc quy đổi trực tiếp với tổ chức phát hành đi kèm các bước xác minh danh tính riêng. Toàn bộ điều kiện có trên trang Restricted Jurisdictions (Khu vực tài phán bị hạn chế) của Robinhood và trong bản cáo bạch cùng Final Terms (Điều khoản cuối cùng) của Robinhood. Mục Trợ giúp trong ứng dụng có liên kết đến cả hai, và mục token cổ phiếu trên [trang chủ](/) của chúng tôi cũng vậy.",
+      "Để bắt đầu, hãy cập nhật ứng dụng, kiểm tra quốc gia trong hồ sơ và ra ngoài đi dạo. Apple, Tesla, NVIDIA và Robinhood là nhãn hiệu của chủ sở hữu tương ứng, không ai trong số họ tài trợ hay xác nhận Seekprotocol."
+    ],
+    "imageAlt": "Coin token cổ phiếu Apple, Tesla và NVIDIA",
+    "readTime": "4 phút",
+    "category": "Thông báo"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR giờ mang tên Seekprotocol",
     "excerpt": "Ứng dụng bạn biết với tên SeekAR giờ là Seekprotocol. Mọi thứ khác vẫn giữ nguyên: cùng tài khoản, cùng bản đồ, cùng những coin ấy. Đây là chuyện đã xảy ra và ý nghĩa của nó với bạn.",

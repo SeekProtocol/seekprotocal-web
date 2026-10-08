@@ -946,6 +946,26 @@
     "perUnit": "Por unidade",
     "powerupsTitle": "Power-ups que mudam a rodada"
   },
+  "stocksSection": {
+    "eyebrow": "Ativos do mundo real",
+    "title": "Capture um pedaço da Apple, da Tesla e da NVIDIA",
+    "lead": "O mapa agora tem ações tokenizadas. Apple, Tesla e NVIDIA aparecem como moedas, igual a qualquer outra: caminhe até uma, capture-a e saque como Robinhood Stock Token na Robinhood Chain, direto na sua própria carteira.",
+    "points": [
+      "Cada captura tem um valor de jogo fixo: $0.05 para Apple, $0.12 para Tesla e $0.30 para NVIDIA.",
+      "No saque, esse valor é pago no token de ação pelo preço atual, então a partir daí o que você tem acompanha o preço da ação.",
+      "Apple é Incomum, Tesla é Raro e NVIDIA é Épico, a mais difícil das três de conseguir.",
+      "Os drops de ações aparecem nos 30 países do Espaço Econômico Europeu. Defina seu país no perfil e confirme que você não é uma pessoa dos EUA (U.S. person) antes do seu primeiro saque."
+    ],
+    "coinAlt": "Moeda do token de ação {name}",
+    "catchChance": "Chance de captura",
+    "perCatch": "Por captura",
+    "finePrint": "Os Robinhood Stock Tokens são títulos de dívida tokenizados emitidos pela Robinhood Assets (Jersey) Limited. Eles acompanham o preço da ação subjacente, mas não dão propriedade sobre a empresa nem direito de voto nela. Eles não podem ser ofertados nem entregues nos Estados Unidos, a pessoas dos EUA ou em jurisdições restritas, que incluem Canadá, Reino Unido e Suíça. Receber um token não significa, por si só, que você possa vendê-lo ou solicitar seu reembolso. A raridade é um nível do jogo, não uma opinião sobre o investimento. Os preços podem cair, assim como subir, e nada aqui é recomendação de investimento. Apple, Tesla, NVIDIA e Robinhood são marcas de seus titulares, que não patrocinam nem endossam o Seekprotocol.",
+    "links": {
+      "restrictions": "Robinhood: jurisdições restritas",
+      "terms": "Robinhood: prospecto e Final Terms",
+      "faq": "Robinhood: perguntas frequentes sobre Stock Tokens"
+    }
+  },
   "offers": {
     "railLabel": "Formatos de drop",
     "redeemLabel": "Como é resgatado",

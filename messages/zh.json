@@ -946,6 +946,26 @@
     "perUnit": "每单位",
     "powerupsTitle": "能改变一局的道具"
   },
+  "stocksSection": {
+    "eyebrow": "现实世界资产",
+    "title": "捕获一份 Apple、Tesla 和 NVIDIA",
+    "lead": "地图上现在有了代币化股票。Apple、Tesla 和 NVIDIA 会像其他币一样以币的形式刷新：走过去，捕获它，再把它提现为 Robinhood Chain 上的 Robinhood Stock Token，直接进入你自己的钱包。",
+    "points": [
+      "每次捕获都有固定的游戏价值：Apple 为 $0.05，Tesla 为 $0.12，NVIDIA 为 $0.30。",
+      "提现时，这笔价值会按当时的价格以股票代币支付，因此从那以后，你持有的东西会跟随股价变动。",
+      "Apple 为非凡，Tesla 为稀有，NVIDIA 为史诗，是三者中最难捕获的。",
+      "股票币在欧洲经济区的 30 个国家刷新。请在个人资料中设置你的国家，并在首次提现前确认你不是美国人士（U.S. person）。"
+    ],
+    "coinAlt": "{name} 股票代币硬币",
+    "catchChance": "捕获概率",
+    "perCatch": "每次捕获",
+    "finePrint": "Robinhood Stock Token 是由 Robinhood Assets (Jersey) Limited 发行的代币化债务证券。它们追踪标的股票的价格，但不赋予对该公司的所有权或投票权。它们不得在美国境内、向美国人士，或在受限司法管辖区（包括加拿大、英国和瑞士）发售或交付。收到代币本身并不意味着你可以出售或赎回它。稀有度是游戏等级，并非对该投资的看法。价格可能下跌，也可能上涨，此处任何内容均不构成投资建议。Apple、Tesla、NVIDIA 和 Robinhood 是其各自所有者的商标，这些所有者并未赞助或背书 Seekprotocol。",
+    "links": {
+      "restrictions": "Robinhood：受限司法管辖区",
+      "terms": "Robinhood：募集说明书与 Final Terms（最终条款）",
+      "faq": "Robinhood：Stock Token 常见问题"
+    }
+  },
   "offers": {
     "railLabel": "投放形式",
     "redeemLabel": "如何兑现",

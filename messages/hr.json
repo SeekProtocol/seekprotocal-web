@@ -946,6 +946,26 @@
     "perUnit": "Po jedinici",
     "powerupsTitle": "Power-upovi koji mijenjaju rundu"
   },
+  "stocksSection": {
+    "eyebrow": "Imovina iz stvarnog svijeta",
+    "title": "Uhvati komadić Applea, Tesle i NVIDIA-e",
+    "lead": "Na mapi su sada tokenizirane dionice. Apple, Tesla i NVIDIA padaju kao kovanice, baš kao i sve druge: prošetaj do jedne, uhvati je i isplati je kao Robinhood Stock Token na Robinhood Chainu, izravno u vlastiti novčanik.",
+    "points": [
+      "Svako hvatanje ima fiksnu vrijednost u igri: $0.05 za Apple, $0.12 za Teslu i $0.30 za NVIDIA-u.",
+      "Pri isplati se ta vrijednost isplaćuje u tokenu dionice po njegovoj trenutačnoj cijeni, pa od tada ono što držiš prati cijenu dionice.",
+      "Apple je Neobična kovanica, Tesla Rijetka, a NVIDIA Epska: nju je od te tri najteže uhvatiti.",
+      "Dropovi dionica pojavljuju se u 30 zemalja Europskog gospodarskog prostora. Postavi svoju zemlju u profilu i prije prve isplate potvrdi da nisi američka osoba (U.S. person)."
+    ],
+    "coinAlt": "Kovanica tokena dionice {name}",
+    "catchChance": "Šansa za hvatanje",
+    "perCatch": "Po hvatanju",
+    "finePrint": "Robinhood Stock Tokens su tokenizirani dužnički vrijednosni papiri koje izdaje Robinhood Assets (Jersey) Limited. Prate cijenu temeljne dionice, ali ne daju vlasništvo nad društvom ni glasačka prava u njemu. Ne smiju se nuditi ni isporučivati u Sjedinjenim Američkim Državama, američkim osobama (U.S. persons) ni u ograničenim jurisdikcijama, među kojima su Kanada, Ujedinjeno Kraljevstvo i Švicarska. Primanje tokena samo po sebi ne znači da ga možeš prodati ili zatražiti njegov otkup. Rijetkost je razina u igri, a ne mišljenje o ulaganju. Cijene mogu i pasti i rasti, i ništa ovdje nije savjet za ulaganje. Apple, Tesla, NVIDIA i Robinhood žigovi su svojih vlasnika, koji ne sponzoriraju niti podržavaju Seekprotocol.",
+    "links": {
+      "restrictions": "Robinhood: ograničene jurisdikcije",
+      "terms": "Robinhood: prospekt i Final Terms (konačni uvjeti)",
+      "faq": "Robinhood: česta pitanja o Stock Tokenu"
+    }
+  },
   "offers": {
     "railLabel": "Formati dropova",
     "redeemLabel": "Kako se iskorištava",

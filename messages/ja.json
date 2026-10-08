@@ -946,6 +946,26 @@
     "perUnit": "1単位あたり",
     "powerupsTitle": "ラウンドを変えるパワーアップ"
   },
+  "stocksSection": {
+    "eyebrow": "現実資産",
+    "title": "Apple、Tesla、NVIDIAのひとかけらをキャッチ",
+    "lead": "マップにトークン化された株式が登場しました。Apple、Tesla、NVIDIAは、ほかのコインと同じようにコインとしてドロップします。歩いて近づき、キャッチして、Robinhood Chain上のRobinhood Stock Tokenとして出金すれば、あなた自身のウォレットに直接届きます。",
+    "points": [
+      "キャッチごとのゲーム内価値は固定です。Appleは$0.05、Teslaは$0.12、NVIDIAは$0.30です。",
+      "出金時、その価値はその時点の価格で株式トークンとして支払われます。そのため、それ以降あなたが保有するものは株価に連動します。",
+      "Appleはアンコモン、Teslaはレア、NVIDIAはエピックで、NVIDIAが3つの中でいちばんキャッチが難しいコインです。",
+      "株式のドロップは欧州経済領域の30か国で出現します。プロフィールで国を設定し、初めて出金する前に、米国人（U.S. person）ではないことを確認してください。"
+    ],
+    "coinAlt": "{name}の株式トークンコイン",
+    "catchChance": "キャッチ確率",
+    "perCatch": "1キャッチあたり",
+    "finePrint": "Robinhood Stock Tokenは、Robinhood Assets (Jersey) Limitedが発行するトークン化された債務証券です。原株の価格に連動しますが、その会社の所有権や議決権を与えるものではありません。米国内、米国人に対して、または制限対象の法域（カナダ、英国、スイスを含みます）において、提供または引き渡しを行うことはできません。トークンを受け取ったことだけで、それを売却または償還できるわけではありません。レアリティはゲーム上の区分であり、投資に関する見解ではありません。価格は上がることも下がることもあり、ここに記載された内容はいずれも投資助言ではありません。Apple、Tesla、NVIDIA、Robinhoodは各所有者の商標であり、所有者はSeekprotocolを後援または推奨していません。",
+    "links": {
+      "restrictions": "Robinhood：制限対象の法域",
+      "terms": "Robinhood：目論見書とFinal Terms（最終条件書）",
+      "faq": "Robinhood：Stock Token FAQ"
+    }
+  },
   "offers": {
     "railLabel": "ドロップの形式",
     "redeemLabel": "使い方",

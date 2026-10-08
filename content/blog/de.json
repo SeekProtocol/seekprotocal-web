@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla und NVIDIA sind jetzt auf der Karte",
+    "excerpt": "Drei neue Coins erscheinen auf der Seekprotocol-Karte: Apple, Tesla und NVIDIA. Fang sie wie jeden anderen Coin und lass sie dir als Robinhood Stock Tokens auszahlen, Token, die den echten Aktienkurs abbilden. Hier erfährst du, wie es funktioniert und wer mitmachen kann.",
+    "content": [
+      "Auf der Seekprotocol-Karte erscheinen jetzt drei neue Coins: Apple, Tesla und NVIDIA. Sie spawnen, leuchten und werden gefangen wie jeder andere Coin. Der Unterschied liegt darin, was du bei der Auszahlung bekommst: einen Robinhood Stock Token auf Robinhood Chain, einen Token, der den Kurs der echten Aktie abbildet.",
+      "Robinhood Stock Tokens sind tokenisierte Schuldverschreibungen, die von Robinhood Assets (Jersey) Limited ausgegeben werden. Jeder Token folgt dem Kurs einer zugrunde liegenden Aktie. Es sind nicht die Aktien selbst: Wer einen hält, erwirbt kein Eigentum an Apple, Tesla oder NVIDIA und hat keine Stimme auf deren Hauptversammlungen. Was du bekommst, ist ein Kurs-Exposure, verwahrt in deiner eigenen Wallet.",
+      "Wir sagen schon länger, dass es dem Protokoll egal ist, was in der Kiste steckt. Memecoins, Gutscheine, NFTs und physische Waren laufen alle über dieselbe Mechanik. Real-World-Assets sind der naheliegende nächste Test dieser Behauptung, und tokenisierte Aktien sind die sauberste Form davon: ein vertrauter Vermögenswert, ein öffentlicher Kurs und ein Token, der on chain abgewickelt wird wie alles andere, was wir ausgeben.",
+      "Jede Aktie hat eine Seltenheit und einen festen Spielwert pro Fang. Apple ist Ungewöhnlich und $0.05 pro Fang wert. Tesla ist Selten und $0.12 wert. NVIDIA ist Episch, $0.30 wert und von den dreien am schwersten zu fangen. Deine Fänge sammeln sich als Spieleinheiten in deinem Inventar. Bei der Auszahlung rechnen wir ihren Dollarwert zum aktuellen Kurs in den Aktien-Token um und senden ihn an deine Wallet auf Robinhood Chain. Ab diesem Moment bewegt sich der Token mit der Aktie.",
+      "Die Beträge sind absichtlich klein. Ein Fang ist eine Belohnung dafür, irgendwohin zu laufen, kein Anlageprodukt, und die Seltenheitsstufen sind Spieldesign, keine Einschätzung, welches Unternehmen sich besser entwickeln wird. Kurse können fallen und steigen, und nichts in der App oder auf dieser Seite ist eine Anlageberatung.",
+      "Für Aktien-Token gelten Regeln, die für normale Coins nicht gelten. Robinhood erlaubt nicht, dass sie in den Vereinigten Staaten, an US-Personen (U.S. persons) oder in einer Reihe von Rechtsordnungen mit Beschränkungen angeboten oder geliefert werden, darunter Kanada, das Vereinigte Königreich und die Schweiz. In der App erscheinen Aktien-Drops in den 30 Ländern des Europäischen Wirtschaftsraums. Um einen zu fangen, muss das Land in deinem Profil mit dem Land übereinstimmen, in dem du dich befindest. Für die Auszahlung bestätigst du außerdem eine kurze Erklärung, dass du keine US-Person bist und nicht für eine handelst. Du kannst sie jederzeit in den Einstellungen widerrufen.",
+      "Der Erhalt eines Tokens bedeutet für sich genommen nicht, dass du ihn überall verkaufen oder einlösen kannst, und die direkte Einlösung beim Emittenten ist mit eigenen Identitätsprüfungen verbunden. Die vollständigen Bedingungen findest du bei Robinhood auf der Seite zu Rechtsordnungen mit Beschränkungen sowie im Prospekt und in den Final Terms (Endgültige Bedingungen). Der Hilfebereich in der App verlinkt auf beides, ebenso der Abschnitt zu Aktien-Token auf unserer [Startseite](/).",
+      "Zum Start: Aktualisiere die App, prüfe das Land in deinem Profil und geh spazieren. Apple, Tesla, NVIDIA und Robinhood sind Marken ihrer jeweiligen Inhaber, von denen keiner Seekprotocol sponsert oder befürwortet."
+    ],
+    "imageAlt": "Coins der Aktien-Token von Apple, Tesla und NVIDIA",
+    "readTime": "4 Min.",
+    "category": "Ankündigung"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR heißt jetzt Seekprotocol",
     "excerpt": "Die App, die du als SeekAR kennst, heißt jetzt Seekprotocol. Alles andere bleibt gleich: derselbe Account, dieselbe Karte, dieselben Coins. Hier erfährst du, was passiert ist und was das für dich bedeutet.",

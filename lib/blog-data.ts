@@ -18,11 +18,42 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  /* The stock-token launch, 8 Oct 2026.
+
+     First because it is the newest announcement and the list renders in array
+     order. The rules paragraph is the issuer's, from the app's own FAQ
+     (`lib/stock-token-faq.ts` in the app repo); keep the two saying the same
+     thing. The issuer's pages are named in prose rather than linked, because
+     `renderCopy` only links internal paths; the homepage section carries the
+     real links. Hero art is the three banner coins from the app, composited. */
+  {
+    slug: "apple-tesla-nvidia-stock-tokens",
+    title: "Apple, Tesla and NVIDIA Are Now on the Map",
+    excerpt:
+      "Three new coins drop on the Seekprotocol map: Apple, Tesla and NVIDIA. Catch them like any other coin and cash them out as Robinhood Stock Tokens, tokens that track the real share price. Here is how it works and who can take part.",
+    content: [
+      "Three new coins now drop on the Seekprotocol map: Apple, Tesla and NVIDIA. They spawn, glow and get caught like every other coin. The difference is what you receive when you cash them out: a Robinhood Stock Token on Robinhood Chain, a token that tracks the price of the real share.",
+      "Robinhood Stock Tokens are tokenized debt securities issued by Robinhood Assets (Jersey) Limited. Each one follows the price of an underlying share. They are not the shares themselves: holding one gives you no ownership of Apple, Tesla or NVIDIA and no vote at their meetings. What it gives you is exposure to the price, held in your own wallet.",
+      "We have said for a while that the protocol does not care what is in the box. Memecoins, vouchers, NFTs and physical goods all ride the same mechanic. Real-world assets are the obvious next test of that claim, and tokenized stocks are the cleanest version of it: a familiar asset, a public price, and a token that settles on chain like everything else we hand out.",
+      "Each stock has a rarity and a fixed game value per catch. Apple is Uncommon and worth $0.05 a catch. Tesla is Rare at $0.12. NVIDIA is Epic at $0.30 and is the hardest of the three to land. Your catches collect in your inventory as game units. When you cash out, we convert their dollar value into the stock token at the current price and send it to your wallet on Robinhood Chain. From that moment the token moves with the share.",
+      "These are small amounts on purpose. A catch is a reward for walking somewhere, not an investment product, and the rarity tiers are game design, not a view on which company will do better. Prices go down as well as up, and nothing in the app or on this page is investment advice.",
+      "Stock tokens come with rules that ordinary coins do not. Robinhood does not allow them to be offered or delivered in the United States, to U.S. persons, or in a number of restricted jurisdictions, including Canada, the United Kingdom and Switzerland. In the app, stock drops appear in the 30 countries of the European Economic Area. To catch one, the country in your profile has to match the country you are in. To cash out, you also confirm a short declaration that you are not a U.S. person and are not acting for one. You can withdraw it at any time in Settings.",
+      "Receiving a token does not by itself mean you can sell or redeem it everywhere, and redeeming directly with the issuer comes with its own identity checks. The full conditions are on Robinhood's Restricted Jurisdictions page and in its prospectus and Final Terms. The Help section in the app links to both, and so does the stock token section on our [homepage](/).",
+      "To start, update the app, check the country in your profile, and go for a walk. Apple, Tesla, NVIDIA and Robinhood are trademarks of their respective owners, none of whom sponsors or endorses Seekprotocol.",
+    ],
+    image: "/images/blog/stock-tokens.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "Apple, Tesla and NVIDIA stock token coins",
+    date: "2026-10-08",
+    readTime: "4 min",
+    category: "Announcement",
+  },
+
   /* The rename announcement.
 
-     First in the array because the list renders in order and this is the one
-     thing a returning reader needs to see before anything else. Its date is
-     the day the app store listings changed over.
+     Second in the array, after the newest announcement; the list renders in
+     order. Its date is the day the app store listings changed over.
 
      IMPORTANT: this is the only place on the site that still writes the old
      name, and it has to stay that way in both directions. A sweep that renames

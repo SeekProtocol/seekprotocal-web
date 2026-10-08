@@ -946,6 +946,26 @@
     "perUnit": "Pro Einheit",
     "powerupsTitle": "Power-ups, die die Runde verändern"
   },
+  "stocksSection": {
+    "eyebrow": "Real-World-Assets",
+    "title": "Fang dir ein Stück Apple, Tesla und NVIDIA",
+    "lead": "Auf der Karte liegen jetzt tokenisierte Aktien. Apple, Tesla und NVIDIA erscheinen als Coins wie alle anderen: Geh hin, fang einen und lass ihn dir als Robinhood Stock Token auf Robinhood Chain auszahlen, direkt in deine eigene Wallet.",
+    "points": [
+      "Jeder Fang hat einen festen Spielwert: $0.05 für Apple, $0.12 für Tesla und $0.30 für NVIDIA.",
+      "Bei der Auszahlung wird dieser Wert im Aktien-Token zum aktuellen Kurs ausgezahlt; ab dann folgt das, was du hältst, dem Aktienkurs.",
+      "Apple ist Ungewöhnlich, Tesla ist Selten und NVIDIA ist Episch, von den dreien am schwersten zu fangen.",
+      "Aktien-Drops erscheinen in den 30 Ländern des Europäischen Wirtschaftsraums. Leg dein Land in deinem Profil fest und bestätige vor deiner ersten Auszahlung, dass du keine US-Person (U.S. person) bist."
+    ],
+    "coinAlt": "Coin des Aktien-Tokens {name}",
+    "catchChance": "Fangchance",
+    "perCatch": "Pro Fang",
+    "finePrint": "Robinhood Stock Tokens sind tokenisierte Schuldverschreibungen, die von Robinhood Assets (Jersey) Limited ausgegeben werden. Sie bilden den Kurs der zugrunde liegenden Aktie ab, verschaffen aber weder Eigentum an dem Unternehmen noch Stimmrechte darin. Sie dürfen nicht in den Vereinigten Staaten, an US-Personen oder in Rechtsordnungen mit Beschränkungen angeboten oder geliefert werden; dazu gehören Kanada, das Vereinigte Königreich und die Schweiz. Der Erhalt eines Tokens bedeutet für sich genommen nicht, dass du ihn verkaufen oder einlösen kannst. Die Seltenheit ist eine Spielstufe, keine Einschätzung der Anlage. Kurse können fallen und steigen, und nichts hier ist eine Anlageberatung. Apple, Tesla, NVIDIA und Robinhood sind Marken ihrer Inhaber, die Seekprotocol weder sponsern noch befürworten.",
+    "links": {
+      "restrictions": "Robinhood: Rechtsordnungen mit Beschränkungen",
+      "terms": "Robinhood: Prospekt und Final Terms",
+      "faq": "Robinhood: FAQ zu Stock Tokens"
+    }
+  },
   "offers": {
     "railLabel": "Drop-Formate",
     "redeemLabel": "Wie er eingelöst wird",

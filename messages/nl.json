@@ -946,6 +946,26 @@
     "perUnit": "Per eenheid",
     "powerupsTitle": "Power-ups die de ronde veranderen"
   },
+  "stocksSection": {
+    "eyebrow": "Assets uit de echte wereld",
+    "title": "Vang een stukje Apple, Tesla en NVIDIA",
+    "lead": "Op de kaart liggen nu getokeniseerde aandelen. Apple, Tesla en NVIDIA verschijnen als coins, net als alle andere: loop ernaartoe, vang er een en laat hem uitbetalen als Robinhood Stock Token op Robinhood Chain, rechtstreeks in je eigen wallet.",
+    "points": [
+      "Elke vangst heeft een vaste spelwaarde: $0.05 voor Apple, $0.12 voor Tesla en $0.30 voor NVIDIA.",
+      "Bij uitbetaling wordt die waarde uitgekeerd in de aandelentoken tegen de actuele koers, dus vanaf dat moment volgt wat je bezit de aandelenkoers.",
+      "Apple is Ongewoon, Tesla is Zeldzaam en NVIDIA is Episch, de moeilijkste van de drie om binnen te halen.",
+      "Aandelendrops verschijnen in de 30 landen van de Europese Economische Ruimte. Stel je land in je profiel in en bevestig vóór je eerste uitbetaling dat je geen U.S. person bent."
+    ],
+    "coinAlt": "Coin van de aandelentoken {name}",
+    "catchChance": "Vangkans",
+    "perCatch": "Per vangst",
+    "finePrint": "Robinhood Stock Tokens zijn getokeniseerde schuldbewijzen, uitgegeven door Robinhood Assets (Jersey) Limited. Ze volgen de koers van het onderliggende aandeel, maar geven geen eigendom van en geen stemrecht in het bedrijf. Ze mogen niet worden aangeboden of geleverd in de Verenigde Staten, aan U.S. persons of in rechtsgebieden met beperkingen, waaronder Canada, het Verenigd Koninkrijk en Zwitserland. Het ontvangen van een token betekent op zich niet dat je hem kunt verkopen of inwisselen. Zeldzaamheid is een spelniveau, geen oordeel over de belegging. Koersen kunnen zowel dalen als stijgen, en niets hier is beleggingsadvies. Apple, Tesla, NVIDIA en Robinhood zijn handelsmerken van hun eigenaren, die Seekprotocol niet sponsoren of onderschrijven.",
+    "links": {
+      "restrictions": "Robinhood: rechtsgebieden met beperkingen",
+      "terms": "Robinhood: basisprospectus en definitieve voorwaarden (Final Terms)",
+      "faq": "Robinhood: FAQ over Stock Tokens"
+    }
+  },
   "offers": {
     "railLabel": "Dropformats",
     "redeemLabel": "Hoe je hem verzilvert",

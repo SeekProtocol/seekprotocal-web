@@ -946,6 +946,26 @@
     "perUnit": "Par unité",
     "powerupsTitle": "Des power-ups qui changent la manche"
   },
+  "stocksSection": {
+    "eyebrow": "Actifs du monde réel",
+    "title": "Attrapez un morceau d'Apple, de Tesla et de NVIDIA",
+    "lead": "La carte accueille désormais des actions tokenisées. Apple, Tesla et NVIDIA apparaissent sous forme de pièces, comme toutes les autres : marchez jusqu'à l'une d'elles, attrapez-la et retirez-la sous forme de Robinhood Stock Token sur Robinhood Chain, directement dans votre propre portefeuille.",
+    "points": [
+      "Chaque capture a une valeur de jeu fixe : $0.05 pour Apple, $0.12 pour Tesla et $0.30 pour NVIDIA.",
+      "Au retrait, cette valeur est versée en token d'action au cours actuel ; à partir de là, ce que vous détenez suit le cours de l'action.",
+      "Apple est Peu commun, Tesla est Rare et NVIDIA est Épique, la plus difficile des trois à décrocher.",
+      "Les drops d'actions apparaissent dans les 30 pays de l'Espace économique européen. Indiquez votre pays dans votre profil et confirmez que vous n'êtes pas une personne américaine (U.S. person) avant votre premier retrait."
+    ],
+    "coinAlt": "Pièce du token d'action {name}",
+    "catchChance": "Chance de capture",
+    "perCatch": "Par capture",
+    "finePrint": "Les Robinhood Stock Tokens sont des titres de créance tokenisés émis par Robinhood Assets (Jersey) Limited. Ils suivent le cours de l'action sous-jacente, mais ne confèrent ni propriété de la société ni droit de vote dans celle-ci. Ils ne peuvent être ni offerts ni livrés aux États-Unis, à des personnes américaines ou dans des juridictions soumises à restrictions, dont le Canada, le Royaume-Uni et la Suisse. Recevoir un token ne signifie pas en soi que vous pouvez le vendre ou en demander le remboursement. La rareté est un niveau de jeu, pas un avis sur l'investissement. Les cours peuvent baisser comme monter, et rien ici ne constitue un conseil en investissement. Apple, Tesla, NVIDIA et Robinhood sont des marques de leurs propriétaires, qui ne parrainent ni ne cautionnent Seekprotocol.",
+    "links": {
+      "restrictions": "Robinhood : juridictions soumises à restrictions",
+      "terms": "Robinhood : prospectus et Final Terms",
+      "faq": "Robinhood : FAQ sur les Stock Tokens"
+    }
+  },
   "offers": {
     "railLabel": "Formats de drop",
     "redeemLabel": "Comment il se transforme",

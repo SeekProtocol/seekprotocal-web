@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla ve NVIDIA Artık Haritada",
+    "excerpt": "Seekprotocol haritasına üç yeni coin düşüyor: Apple, Tesla ve NVIDIA. Onları diğer coinler gibi yakala ve gerçek hisse fiyatını takip eden tokenler olan Robinhood Stock Token olarak çek. Nasıl çalıştığını ve kimlerin katılabileceğini anlatıyoruz.",
+    "content": [
+      "Seekprotocol haritasına artık üç yeni coin düşüyor: Apple, Tesla ve NVIDIA. Diğer tüm coinler gibi ortaya çıkar, parlar ve yakalanırlar. Fark, onları çektiğinde ne aldığında: Robinhood Chain üzerinde bir Robinhood Stock Token, yani gerçek hissenin fiyatını takip eden bir token.",
+      "Robinhood Stock Tokens, Robinhood Assets (Jersey) Limited tarafından ihraç edilen tokenleştirilmiş borçlanma araçlarıdır. Her biri bir dayanak hissenin fiyatını takip eder. Hisselerin kendisi değillerdir: birine sahip olmak sana Apple, Tesla ya da NVIDIA üzerinde mülkiyet ya da genel kurullarında oy hakkı vermez. Sana verdiği şey, kendi cüzdanında tuttuğun fiyata maruz kalmadır.",
+      "Bir süredir protokolün kutunun içinde ne olduğuyla ilgilenmediğini söylüyoruz. Meme coinler, kuponlar, NFT'ler ve fiziksel ürünler aynı mekanikle çalışır. Gerçek dünya varlıkları bu iddianın bariz bir sonraki sınavı, tokenleştirilmiş hisseler de bunun en temiz hali: tanıdık bir varlık, herkese açık bir fiyat ve dağıttığımız diğer her şey gibi zincir üzerinde çözümlenen bir token.",
+      "Her hissenin bir nadirliği ve yakalama başına sabit bir oyun değeri var. Apple Uncommon ve yakalama başına $0.05 değerinde. Tesla Rare ve $0.12 değerinde. NVIDIA Epic, $0.30 değerinde ve üçü arasında yakalaması en zor olan o. Yakalamaların envanterinde oyun birimi olarak birikir. Çekim yaptığında, bunların dolar değerini güncel fiyattan hisse tokenine çeviririz ve Robinhood Chain üzerindeki cüzdanına göndeririz. O andan itibaren token hisseyle birlikte hareket eder.",
+      "Bu tutarlar bilerek küçük. Bir yakalama, bir yere yürümenin ödülüdür, bir yatırım ürünü değil; nadirlik kademeleri de hangi şirketin daha iyi performans göstereceğine dair bir görüş değil, oyun tasarımıdır. Fiyatlar yükselebileceği gibi düşebilir de ve uygulamadaki ya da bu sayfadaki hiçbir şey yatırım tavsiyesi değildir.",
+      "Hisse tokenleri sıradan coinlerde olmayan kurallarla gelir. Robinhood, bunların Amerika Birleşik Devletleri'nde, ABD kişilerine (U.S. persons) ya da Kanada, Birleşik Krallık ve İsviçre dahil bir dizi kısıtlı yargı bölgesinde teklif edilmesine veya teslim edilmesine izin vermez. Uygulamada hisse drop'ları Avrupa Ekonomik Alanı'nın 30 ülkesinde görünür. Birini yakalamak için profilindeki ülkenin bulunduğun ülkeyle eşleşmesi gerekir. Çekim için ayrıca ABD kişisi olmadığını ve bir ABD kişisi adına hareket etmediğini belirten kısa bir beyanı onaylarsın. Bu beyanı Ayarlar'dan istediğin zaman geri çekebilirsin.",
+      "Bir token almak, tek başına onu her yerde satabileceğin ya da itfasını talep edebileceğin anlamına gelmez; doğrudan ihraççı üzerinden itfanın da kendine ait kimlik kontrolleri vardır. Tüm koşullar Robinhood'un kısıtlı yargı bölgeleri sayfasında, izahnamesinde ve Final Terms (Nihai Koşullar) belgesinde yer alır. Uygulamadaki Yardım bölümü her ikisine de bağlantı verir; [ana sayfamızdaki](/) hisse tokeni bölümü de öyle.",
+      "Başlamak için uygulamayı güncelle, profilindeki ülkeyi kontrol et ve yürüyüşe çık. Apple, Tesla, NVIDIA ve Robinhood ilgili sahiplerinin ticari markalarıdır ve hiçbiri Seekprotocol'ü sponsorlamaz veya desteklemez."
+    ],
+    "imageAlt": "Apple, Tesla ve NVIDIA hisse tokeni coinleri",
+    "readTime": "4 dk",
+    "category": "Duyuru"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR'ın Yeni Adı Seekprotocol",
     "excerpt": "SeekAR olarak bildiğin uygulamanın adı artık Seekprotocol. Geri kalan her şey aynı: aynı hesap, aynı harita, aynı coinler. Neler olduğunu ve bunun senin için ne anlama geldiğini anlatıyoruz.",

@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla y NVIDIA ya están en el mapa",
+    "excerpt": "Tres monedas nuevas aparecen en el mapa de Seekprotocol: Apple, Tesla y NVIDIA. Atrápalas como cualquier otra moneda y retíralas como Robinhood Stock Tokens, tokens que siguen el precio real de la acción. Te contamos cómo funciona y quién puede participar.",
+    "content": [
+      "Ya aparecen tres monedas nuevas en el mapa de Seekprotocol: Apple, Tesla y NVIDIA. Surgen, brillan y se atrapan como cualquier otra moneda. La diferencia está en lo que recibes al retirarlas: un Robinhood Stock Token en Robinhood Chain, un token que sigue el precio de la acción real.",
+      "Los Robinhood Stock Tokens son valores de deuda tokenizados emitidos por Robinhood Assets (Jersey) Limited. Cada uno sigue el precio de una acción subyacente. No son las acciones en sí: tener uno no te da ninguna propiedad sobre Apple, Tesla o NVIDIA ni voto en sus juntas. Lo que te da es exposición al precio, guardada en tu propia cartera.",
+      "Hace tiempo que decimos que al protocolo le da igual lo que haya en la caja. Memecoins, vales, NFTs y productos físicos funcionan con la misma mecánica. Los activos del mundo real son la siguiente prueba evidente de esa afirmación, y las acciones tokenizadas son su versión más limpia: un activo conocido, un precio público y un token que se liquida en cadena como todo lo demás que repartimos.",
+      "Cada acción tiene una rareza y un valor de juego fijo por captura. Apple es Poco común y vale $0.05 por captura. Tesla es Raro, con $0.12. NVIDIA es Épico, con $0.30, y es la más difícil de conseguir de las tres. Tus capturas se acumulan en tu inventario como unidades de juego. Cuando retiras, convertimos su valor en dólares al token de acciones al precio actual y lo enviamos a tu cartera en Robinhood Chain. A partir de ese momento, el token se mueve con la acción.",
+      "Son cantidades pequeñas a propósito. Una captura es una recompensa por caminar hasta algún sitio, no un producto de inversión, y los niveles de rareza son diseño de juego, no una opinión sobre qué empresa lo hará mejor. Los precios pueden bajar además de subir, y nada en la app ni en esta página es asesoramiento de inversión.",
+      "Los tokens de acciones tienen reglas que las monedas normales no tienen. Robinhood no permite que se ofrezcan ni se entreguen en Estados Unidos, a personas estadounidenses (U.S. persons) ni en varias jurisdicciones restringidas, entre ellas Canadá, el Reino Unido y Suiza. En la app, los drops de acciones aparecen en los 30 países del Espacio Económico Europeo. Para atrapar uno, el país de tu perfil tiene que coincidir con el país en el que estás. Para retirar, además confirmas una breve declaración de que no eres una persona estadounidense y no actúas en nombre de una. Puedes revocarla en cualquier momento en Configuración.",
+      "Recibir un token no significa por sí solo que puedas venderlo o solicitar su reembolso en todas partes, y el reembolso directo con el emisor conlleva sus propias comprobaciones de identidad. Las condiciones completas están en la página de jurisdicciones restringidas de Robinhood y en su folleto y sus Final Terms (condiciones finales). La sección de Ayuda de la app enlaza a ambos, igual que la sección de tokens de acciones de nuestra [página de inicio](/).",
+      "Para empezar, actualiza la app, revisa el país de tu perfil y sal a caminar. Apple, Tesla, NVIDIA y Robinhood son marcas comerciales de sus respectivos titulares, ninguno de los cuales patrocina ni respalda a Seekprotocol."
+    ],
+    "imageAlt": "Monedas de los tokens de acciones de Apple, Tesla y NVIDIA",
+    "readTime": "4 min",
+    "category": "Anuncio"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR ahora se llama Seekprotocol",
     "excerpt": "La app que conoces como SeekAR ahora es Seekprotocol. Todo lo demás sigue igual: la misma cuenta, el mismo mapa, las mismas monedas. Esto es lo que pasó y lo que significa para ti.",

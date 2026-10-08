@@ -946,6 +946,26 @@
     "perUnit": "Për njësi",
     "powerupsTitle": "Powerup-e që ndryshojnë raundin"
   },
+  "stocksSection": {
+    "eyebrow": "Asete të botës reale",
+    "title": "Kap një copë nga Apple, Tesla dhe NVIDIA",
+    "lead": "Harta tani ka aksione të tokenizuara. Apple, Tesla dhe NVIDIA bien si monedha, njësoj si çdo monedhë tjetër: ec deri te njëra, kape dhe tërhiqe si Robinhood Stock Token në Robinhood Chain, drejt e në portofolin tënd.",
+    "points": [
+      "Çdo kapje ka një vlerë fikse loje: $0.05 për Apple, $0.12 për Tesla dhe $0.30 për NVIDIA.",
+      "Në tërheqje kjo vlerë paguhet në tokenin e aksionit me çmimin e tij aktual, kështu që nga ai moment ajo që mban ndjek çmimin e aksionit.",
+      "Apple është E pazakontë, Tesla E rrallë dhe NVIDIA Epic, më e vështira për t'u kapur nga të tria.",
+      "Drop-et e aksioneve shfaqen në 30 vendet e Zonës Ekonomike Evropiane. Cakto vendin tënd në profil dhe konfirmo që nuk je person i SHBA-së (U.S. person) para tërheqjes së parë."
+    ],
+    "coinAlt": "Monedha e tokenit të aksionit {name}",
+    "catchChance": "Gjasa e kapjes",
+    "perCatch": "Për kapje",
+    "finePrint": "Robinhood Stock Tokens janë letra me vlerë borxhi të tokenizuara, të emetuara nga Robinhood Assets (Jersey) Limited. Ato ndjekin çmimin e aksionit bazë, por nuk japin pronësi mbi kompaninë dhe as të drejta vote në të. Ato nuk lejohet të ofrohen ose të dorëzohen në Shtetet e Bashkuara, te personat e SHBA-së (U.S. persons) ose në juridiksione të kufizuara, ku përfshihen Kanadaja, Mbretëria e Bashkuar dhe Zvicra. Marrja e një tokeni nuk do të thotë në vetvete që mund ta shesësh ose të kërkosh shlyerjen e tij. Rrallia është një nivel loje, jo një mendim për investimin. Çmimet mund të ulen, ashtu si edhe të rriten, dhe asgjë këtu nuk është këshillë investimi. Apple, Tesla, NVIDIA dhe Robinhood janë marka tregtare të pronarëve të tyre, të cilët nuk e sponsorizojnë dhe nuk e mbështesin Seekprotocol.",
+    "links": {
+      "restrictions": "Robinhood: juridiksionet e kufizuara",
+      "terms": "Robinhood: prospekti dhe Final Terms (kushtet përfundimtare)",
+      "faq": "Robinhood: pyetje të shpeshta për Stock Token"
+    }
+  },
   "offers": {
     "railLabel": "Formatet e drop-eve",
     "redeemLabel": "Si përdoret",

@@ -946,6 +946,26 @@
     "perUnit": "Za jednostkę",
     "powerupsTitle": "Powerupy, które zmieniają rundę"
   },
+  "stocksSection": {
+    "eyebrow": "Aktywa ze świata rzeczywistego",
+    "title": "Złap kawałek Apple, Tesli i NVIDII",
+    "lead": "Na mapie są teraz tokenizowane akcje. Apple, Tesla i NVIDIA pojawiają się jako monety, tak jak wszystkie inne: podejdź do jednej, złap ją i wypłać jako Robinhood Stock Token na Robinhood Chain, prosto do własnego portfela.",
+    "points": [
+      "Każde złapanie ma stałą wartość w grze: $0.05 za Apple, $0.12 za Teslę i $0.30 za NVIDIĘ.",
+      "Przy wypłacie ta wartość jest wypłacana w tokenie akcji po jego bieżącej cenie, więc od tej chwili to, co posiadasz, podąża za ceną akcji.",
+      "Apple to moneta Niezwykła, Tesla Rzadka, a NVIDIA Epicka, najtrudniejsza do złapania z całej trójki.",
+      "Dropy akcji pojawiają się w 30 krajach Europejskiego Obszaru Gospodarczego. Ustaw swój kraj w profilu i przed pierwszą wypłatą potwierdź, że nie jesteś osobą amerykańską (U.S. person)."
+    ],
+    "coinAlt": "Moneta tokenu akcji {name}",
+    "catchChance": "Szansa złapania",
+    "perCatch": "Za złapanie",
+    "finePrint": "Robinhood Stock Tokens to tokenizowane dłużne papiery wartościowe emitowane przez Robinhood Assets (Jersey) Limited. Odzwierciedlają cenę akcji bazowej, ale nie dają ani prawa własności w spółce, ani prawa głosu w niej. Nie mogą być oferowane ani dostarczane w Stanach Zjednoczonych, osobom amerykańskim ani w jurysdykcjach objętych ograniczeniami, do których należą Kanada, Zjednoczone Królestwo i Szwajcaria. Samo otrzymanie tokena nie oznacza, że możesz go sprzedać lub umorzyć. Rzadkość to poziom w grze, a nie opinia o inwestycji. Ceny mogą zarówno spadać, jak i rosnąć, a nic tutaj nie stanowi porady inwestycyjnej. Apple, Tesla, NVIDIA i Robinhood są znakami towarowymi ich właścicieli, którzy nie sponsorują ani nie popierają Seekprotocol.",
+    "links": {
+      "restrictions": "Robinhood: jurysdykcje objęte ograniczeniami",
+      "terms": "Robinhood: prospekt i Final Terms (warunki ostateczne)",
+      "faq": "Robinhood: najczęstsze pytania o Stock Token"
+    }
+  },
   "offers": {
     "railLabel": "Formaty dropów",
     "redeemLabel": "Jak się realizuje",

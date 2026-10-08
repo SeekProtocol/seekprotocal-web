@@ -946,6 +946,26 @@
     "perUnit": "Per enhet",
     "powerupsTitle": "Powerups som förändrar rundan"
   },
+  "stocksSection": {
+    "eyebrow": "Verkliga tillgångar",
+    "title": "Fånga en bit av Apple, Tesla och NVIDIA",
+    "lead": "Kartan rymmer nu tokeniserade aktier. Apple, Tesla och NVIDIA droppar som mynt precis som alla andra: gå fram till ett, fånga det och ta ut det som en Robinhood Stock Token på Robinhood Chain, direkt till din egen plånbok.",
+    "points": [
+      "Varje fångst har ett fast spelvärde: $0.05 för Apple, $0.12 för Tesla och $0.30 för NVIDIA.",
+      "Vid uttaget betalas värdet ut i aktietoken till dess aktuella pris, så från och med då följer det du har aktiekursen.",
+      "Apple är Uncommon, Tesla är Rare och NVIDIA är Epic, det svåraste av de tre att få.",
+      "Aktiedrops dyker upp i de 30 länderna i Europeiska ekonomiska samarbetsområdet. Ange ditt land i profilen och bekräfta att du inte är en amerikansk person (U.S. person) före ditt första uttag."
+    ],
+    "coinAlt": "Aktietokenmynt för {name}",
+    "catchChance": "Fångstchans",
+    "perCatch": "Per fångst",
+    "finePrint": "Robinhood Stock Tokens är tokeniserade skuldvärdepapper utgivna av Robinhood Assets (Jersey) Limited. De följer priset på den underliggande aktien men ger inget ägande av, eller rösträtt i, bolaget. De får inte erbjudas eller levereras i USA, till amerikanska personer eller i jurisdiktioner med restriktioner, som bland annat omfattar Kanada, Storbritannien och Schweiz. Att du tar emot en token betyder inte i sig att du kan sälja eller lösa in den. Sällsynthet är en spelnivå, inte en bedömning av investeringen. Priser kan gå ned såväl som upp, och inget här är investeringsrådgivning. Apple, Tesla, NVIDIA och Robinhood är varumärken som tillhör sina ägare, som inte sponsrar eller stöder Seekprotocol.",
+    "links": {
+      "restrictions": "Robinhood: jurisdiktioner med restriktioner",
+      "terms": "Robinhood: prospekt och Final Terms (slutliga villkor)",
+      "faq": "Robinhood: vanliga frågor om Stock Token"
+    }
+  },
   "offers": {
     "railLabel": "Dropformat",
     "redeemLabel": "Så löses den in",

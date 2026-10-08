@@ -10,6 +10,7 @@ import GlobeSection from "@/components/sections/GlobeSection";
 import AppWalkthrough from "@/components/app/AppWalkthrough";
 import VideoReveal from "@/components/sections/VideoReveal";
 import CollectiblesSection from "@/components/sections/CollectiblesSection";
+import StocksSection from "@/components/sections/StocksSection";
 import RewardsSection from "@/components/sections/RewardsSection";
 import DistributionSection from "@/components/sections/DistributionSection";
 import MobiSection from "@/components/sections/MobiSection";
@@ -254,6 +255,15 @@ function HomeContent() {
       <section className="section section-sunken">
         <div className="shell">
           <CollectiblesSection />
+        </div>
+      </section>
+
+      {/* ── Stock tokens ────────────────────────────────────────────────────
+          Straight after the coins because in the app they are coins: the same
+          spawn, the same catch, a different thing at cash-out. */}
+      <section className="section">
+        <div className="shell">
+          <StocksSection />
         </div>
       </section>
 

@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla och NVIDIA finns nu på kartan",
+    "excerpt": "Tre nya mynt droppar på Seekprotocol-kartan: Apple, Tesla och NVIDIA. Fånga dem som vilket mynt som helst och ta ut dem som Robinhood Stock Tokens, tokens som följer det verkliga aktiepriset. Så här fungerar det och vem som kan vara med.",
+    "content": [
+      "Tre nya mynt droppar nu på Seekprotocol-kartan: Apple, Tesla och NVIDIA. De spawnar, lyser och fångas precis som alla andra mynt. Skillnaden är vad du får när du tar ut dem: en Robinhood Stock Token på Robinhood Chain, en token som följer priset på den riktiga aktien.",
+      "Robinhood Stock Tokens är tokeniserade skuldvärdepapper utgivna av Robinhood Assets (Jersey) Limited. Var och en följer priset på en underliggande aktie. De är inte själva aktierna: att inneha en ger dig inget ägande i Apple, Tesla eller NVIDIA och ingen röst på deras stämmor. Det du får är exponering mot priset, i din egen plånbok.",
+      "Vi har sagt ett tag att protokollet inte bryr sig om vad som ligger i lådan. Memecoins, värdekuponger, NFT:er och fysiska varor använder alla samma mekanik. Verkliga tillgångar är det självklara nästa testet av det påståendet, och tokeniserade aktier är den renaste versionen av det: en välkänd tillgång, ett offentligt pris och en token som avvecklas on-chain precis som allt annat vi delar ut.",
+      "Varje aktie har en sällsynthet och ett fast spelvärde per fångst. Apple är Uncommon och värt $0.05 per fångst. Tesla är Rare och värt $0.12. NVIDIA är Epic och värt $0.30, och det svåraste av de tre att få. Dina fångster samlas i ditt förråd som spelenheter. När du tar ut omvandlar vi deras dollarvärde till aktietoken till det aktuella priset och skickar den till din plånbok på Robinhood Chain. Från det ögonblicket följer tokenen aktien.",
+      "Det här är små belopp med avsikt. En fångst är en belöning för att du har gått någonstans, inte en investeringsprodukt, och sällsynthetsnivåerna är speldesign, inte en bedömning av vilket bolag som kommer att gå bättre. Priser går ned såväl som upp, och inget i appen eller på den här sidan är investeringsrådgivning.",
+      "Aktietokens har regler som vanliga mynt inte har. Robinhood tillåter inte att de erbjuds eller levereras i USA, till amerikanska personer (U.S. person) eller i ett antal jurisdiktioner med restriktioner, däribland Kanada, Storbritannien och Schweiz. I appen dyker aktiedrops upp i de 30 länderna i Europeiska ekonomiska samarbetsområdet. För att fånga en måste landet i din profil stämma med landet du befinner dig i. För att ta ut bekräftar du dessutom en kort försäkran om att du inte är en amerikansk person och inte agerar för en sådan. Du kan återkalla den när som helst under Inställningar.",
+      "Att du tar emot en token betyder inte i sig att du kan sälja eller lösa in den överallt, och inlösen direkt hos emittenten medför egna identitetskontroller. De fullständiga villkoren finns på Robinhoods sida Restricted Jurisdictions och i dess prospekt och Final Terms (slutliga villkor). Hjälpavsnittet i appen länkar till båda, och det gör även aktietokenavsnittet på vår [startsida](/).",
+      "För att komma igång: uppdatera appen, kontrollera landet i din profil och ge dig ut på en promenad. Apple, Tesla, NVIDIA och Robinhood är varumärken som tillhör sina respektive ägare, av vilka ingen sponsrar eller stöder Seekprotocol."
+    ],
+    "imageAlt": "Aktietokenmynt för Apple, Tesla och NVIDIA",
+    "readTime": "4 min",
+    "category": "Tillkännagivande"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR heter nu Seekprotocol",
     "excerpt": "Appen du känner som SeekAR heter nu Seekprotocol. Allt annat är oförändrat: samma konto, samma karta, samma mynt. Här är vad som hände och vad det betyder för dig.",

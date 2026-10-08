@@ -1,4 +1,21 @@
 {
+  "apple-tesla-nvidia-stock-tokens": {
+    "title": "Apple, Tesla en NVIDIA staan nu op de kaart",
+    "excerpt": "Drie nieuwe coins verschijnen op de kaart van Seekprotocol: Apple, Tesla en NVIDIA. Vang ze zoals elke andere coin en laat ze uitbetalen als Robinhood Stock Tokens, tokens die de echte aandelenkoers volgen. Hier lees je hoe het werkt en wie er mee kan doen.",
+    "content": [
+      "Er verschijnen nu drie nieuwe coins op de kaart van Seekprotocol: Apple, Tesla en NVIDIA. Ze spawnen, gloeien en worden gevangen zoals elke andere coin. Het verschil zit in wat je krijgt als je ze laat uitbetalen: een Robinhood Stock Token op Robinhood Chain, een token die de koers van het echte aandeel volgt.",
+      "Robinhood Stock Tokens zijn getokeniseerde schuldbewijzen, uitgegeven door Robinhood Assets (Jersey) Limited. Elke token volgt de koers van een onderliggend aandeel. Het zijn niet de aandelen zelf: wie er een bezit, krijgt geen eigendom van Apple, Tesla of NVIDIA en geen stem op hun aandeelhoudersvergaderingen. Wat je wel krijgt, is blootstelling aan de koers, in je eigen wallet.",
+      "We zeggen al een tijdje dat het het protocol niet uitmaakt wat er in de doos zit. Memecoins, vouchers, NFT's en fysieke producten draaien allemaal op hetzelfde mechanisme. Assets uit de echte wereld zijn de voor de hand liggende volgende test van die bewering, en getokeniseerde aandelen zijn er de zuiverste versie van: een bekende asset, een openbare koers en een token die on chain wordt afgewikkeld, net als alles wat we verder uitdelen.",
+      "Elk aandeel heeft een zeldzaamheid en een vaste spelwaarde per vangst. Apple is Ongewoon en $0.05 per vangst waard. Tesla is Zeldzaam en $0.12 waard. NVIDIA is Episch, $0.30 waard en de moeilijkste van de drie om binnen te halen. Je vangsten verzamelen zich in je inventaris als spel-eenheden. Als je laat uitbetalen, zetten we hun dollarwaarde tegen de actuele koers om in de aandelentoken en sturen we die naar je wallet op Robinhood Chain. Vanaf dat moment beweegt de token mee met het aandeel.",
+      "Dit zijn bewust kleine bedragen. Een vangst is een beloning omdat je ergens naartoe loopt, geen beleggingsproduct, en de zeldzaamheidsniveaus zijn spelontwerp, geen oordeel over welk bedrijf het beter gaat doen. Koersen kunnen zowel dalen als stijgen, en niets in de app of op deze pagina is beleggingsadvies.",
+      "Voor aandelentokens gelden regels die voor gewone coins niet gelden. Robinhood staat niet toe dat ze worden aangeboden of geleverd in de Verenigde Staten, aan U.S. persons of in een aantal rechtsgebieden met beperkingen, waaronder Canada, het Verenigd Koninkrijk en Zwitserland. In de app verschijnen aandelendrops in de 30 landen van de Europese Economische Ruimte. Om er een te vangen, moet het land in je profiel overeenkomen met het land waar je bent. Om te laten uitbetalen, bevestig je ook een korte verklaring dat je geen U.S. person bent en niet namens een U.S. person handelt. Je kunt die verklaring op elk moment intrekken in Instellingen.",
+      "Het ontvangen van een token betekent op zich niet dat je hem overal kunt verkopen of inwisselen, en rechtstreeks inwisselen bij de uitgever gaat gepaard met eigen identiteitscontroles. De volledige voorwaarden staan bij Robinhood: op de pagina over rechtsgebieden met beperkingen en in het basisprospectus en de definitieve voorwaarden (Final Terms). Het onderdeel Help in de app linkt naar beide, en de sectie over aandelentokens op onze [homepage](/) ook.",
+      "Om te beginnen: werk de app bij, controleer het land in je profiel en ga een stuk wandelen. Apple, Tesla, NVIDIA en Robinhood zijn handelsmerken van hun respectieve eigenaren, die Seekprotocol geen van allen sponsoren of onderschrijven."
+    ],
+    "imageAlt": "Coins van de aandelentokens van Apple, Tesla en NVIDIA",
+    "readTime": "4 min",
+    "category": "Aankondiging"
+  },
   "seekar-is-now-seekprotocol": {
     "title": "SeekAR heet nu Seekprotocol",
     "excerpt": "De app die je kent als SeekAR heet nu Seekprotocol. Verder blijft alles hetzelfde: hetzelfde account, dezelfde kaart, dezelfde coins. Dit is wat er gebeurde en wat het voor jou betekent.",

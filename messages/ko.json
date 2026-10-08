@@ -946,6 +946,26 @@
     "perUnit": "단위당",
     "powerupsTitle": "한 판을 바꾸는 파워업"
   },
+  "stocksSection": {
+    "eyebrow": "실물 자산",
+    "title": "Apple, Tesla, NVIDIA의 한 조각을 잡으세요",
+    "lead": "이제 지도에 토큰화된 주식이 있습니다. Apple, Tesla, NVIDIA는 다른 코인과 똑같이 코인으로 드롭됩니다. 걸어가서 잡은 뒤 Robinhood Chain의 Robinhood Stock Token으로 출금하면, 여러분의 지갑으로 바로 들어갑니다.",
+    "points": [
+      "모든 캐치에는 고정된 게임 가치가 있습니다. Apple은 $0.05, Tesla는 $0.12, NVIDIA는 $0.30입니다.",
+      "출금할 때 그 가치는 현재 가격 기준의 주식 토큰으로 지급되므로, 그때부터 여러분이 보유한 것은 주가를 따라 움직입니다.",
+      "Apple은 언커먼, Tesla는 레어, NVIDIA는 에픽이며, NVIDIA가 셋 중 가장 잡기 어렵습니다.",
+      "주식 드롭은 유럽경제지역 30개국에서 나타납니다. 프로필에서 국가를 설정하고, 첫 출금 전에 미국인(U.S. person)이 아님을 확인하세요."
+    ],
+    "coinAlt": "{name} 주식 토큰 코인",
+    "catchChance": "캐치 확률",
+    "perCatch": "캐치당",
+    "finePrint": "Robinhood Stock Token은 Robinhood Assets (Jersey) Limited가 발행하는 토큰화된 채무증권입니다. 기초 주식의 가격을 추종하지만, 해당 회사에 대한 소유권이나 의결권을 부여하지 않습니다. 미국 내에서, 미국인에게, 또는 캐나다, 영국, 스위스를 포함한 제한 관할권에서 제공되거나 인도될 수 없습니다. 토큰을 받았다는 사실만으로 이를 매도하거나 상환할 수 있는 것은 아닙니다. 희귀도는 게임상의 등급이며, 투자에 대한 견해가 아닙니다. 가격은 내릴 수도 있고 오를 수도 있으며, 여기의 어떤 내용도 투자 조언이 아닙니다. Apple, Tesla, NVIDIA, Robinhood는 각 소유자의 상표이며, 소유자들은 Seekprotocol을 후원하거나 보증하지 않습니다.",
+    "links": {
+      "restrictions": "Robinhood: 제한 관할권",
+      "terms": "Robinhood: 투자설명서 및 Final Terms(최종 조건)",
+      "faq": "Robinhood: Stock Token FAQ"
+    }
+  },
   "offers": {
     "railLabel": "드롭 형식",
     "redeemLabel": "사용 방법",

@@ -946,6 +946,26 @@
     "perUnit": "Na enoto",
     "powerupsTitle": "Powerupi, ki spremenijo krog"
   },
+  "stocksSection": {
+    "eyebrow": "Sredstva iz resničnega sveta",
+    "title": "Apple, Tesla in NVIDIA: ujemi svoj delček",
+    "lead": "Na zemljevidu so zdaj tokenizirane delnice. Apple, Tesla in NVIDIA se pojavljajo kot kovanci, tako kot vsi drugi: stopi do enega, ga ujemi in ga dvigni kot Robinhood Stock Token na Robinhood Chain, naravnost v svojo denarnico.",
+    "points": [
+      "Vsak ulov ima fiksno vrednost v igri: Apple $0.05, Tesla $0.12 in NVIDIA $0.30.",
+      "Ob izplačilu se ta vrednost izplača v delniškem žetonu po njegovi trenutni ceni, zato od takrat naprej to, kar imaš, sledi ceni delnice.",
+      "Apple je Uncommon, Tesla je Rare, NVIDIA pa Epic, najtežje ulovljiv kovanec od vseh treh.",
+      "Delniški dropi se pojavljajo v 30 državah Evropskega gospodarskega prostora. V profilu nastavi svojo državo in pred prvim izplačilom potrdi, da nisi ameriška oseba (U.S. person)."
+    ],
+    "coinAlt": "Kovanec delniškega žetona {name}",
+    "catchChance": "Možnost ulova",
+    "perCatch": "Na ulov",
+    "finePrint": "Robinhood Stock Tokens so tokenizirani dolžniški vrednostni papirji, ki jih izdaja Robinhood Assets (Jersey) Limited. Sledijo ceni osnovne delnice, vendar ne dajejo lastništva v družbi niti glasovalnih pravic v njej. Ne smejo se ponujati ali dostavljati v Združenih državah, ameriškim osebam ali v omejenih jurisdikcijah, med katere spadajo Kanada, Združeno kraljestvo in Švica. Prejem žetona sam po sebi ne pomeni, da ga lahko prodaš ali unovčiš. Redkost je stopnja v igri, ne mnenje o naložbi. Cene lahko padajo in tudi rastejo, nič tukaj pa ni naložbeni nasvet. Apple, Tesla, NVIDIA in Robinhood so blagovne znamke svojih lastnikov, ki ne sponzorirajo niti ne podpirajo Seekprotocola.",
+    "links": {
+      "restrictions": "Robinhood: omejene jurisdikcije",
+      "terms": "Robinhood: prospekt in Final Terms (končni pogoji)",
+      "faq": "Robinhood: pogosta vprašanja o Stock Token"
+    }
+  },
   "offers": {
     "railLabel": "Oblike dropov",
     "redeemLabel": "Kako se unovči",

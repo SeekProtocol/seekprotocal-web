@@ -946,6 +946,26 @@
     "perUnit": "Per unit",
     "powerupsTitle": "Power-up yang mengubah ronde"
   },
+  "stocksSection": {
+    "eyebrow": "Aset dunia nyata",
+    "title": "Tangkap sepotong Apple, Tesla, dan NVIDIA",
+    "lead": "Peta kini memuat saham yang ditokenisasi. Apple, Tesla, dan NVIDIA muncul sebagai drop koin seperti koin lainnya: jalan ke salah satunya, tangkap, lalu cairkan sebagai Robinhood Stock Token di Robinhood Chain, langsung ke dompetmu sendiri.",
+    "points": [
+      "Setiap tangkapan punya nilai game tetap: $0.05 untuk Apple, $0.12 untuk Tesla, dan $0.30 untuk NVIDIA.",
+      "Saat pencairan, nilai itu dibayarkan dalam token saham dengan harga terkininya, jadi sejak saat itu yang kamu pegang mengikuti harga sahamnya.",
+      "Apple berstatus Tidak biasa, Tesla Langka, dan NVIDIA Epik, yang paling sulit ditangkap di antara ketiganya.",
+      "Drop saham muncul di 30 negara Kawasan Ekonomi Eropa. Atur negaramu di profil, dan konfirmasi bahwa kamu bukan Orang AS (U.S. person) sebelum pencairan pertamamu."
+    ],
+    "coinAlt": "Koin token saham {name}",
+    "catchChance": "Peluang tangkap",
+    "perCatch": "Per tangkapan",
+    "finePrint": "Robinhood Stock Tokens adalah efek utang yang ditokenisasi dan diterbitkan oleh Robinhood Assets (Jersey) Limited. Token ini mengikuti harga saham dasarnya, tetapi tidak memberikan kepemilikan atas perusahaan maupun hak suara di dalamnya. Token ini tidak boleh ditawarkan atau diserahkan di Amerika Serikat, kepada Orang AS (U.S. persons), atau di yurisdiksi terbatas, termasuk Kanada, Britania Raya, dan Swiss. Menerima token tidak dengan sendirinya berarti kamu bisa menjual atau menebusnya. Kelangkaan adalah tingkatan dalam game, bukan pandangan tentang investasi. Harga bisa turun maupun naik, dan tidak ada apa pun di sini yang merupakan nasihat investasi. Apple, Tesla, NVIDIA, dan Robinhood adalah merek dagang milik pemiliknya masing-masing, yang tidak mensponsori atau mendukung Seekprotocol.",
+    "links": {
+      "restrictions": "Robinhood: yurisdiksi terbatas",
+      "terms": "Robinhood: prospektus dan Final Terms",
+      "faq": "Robinhood: FAQ Stock Token"
+    }
+  },
   "offers": {
     "railLabel": "Format drop",
     "redeemLabel": "Cara menukarnya",
