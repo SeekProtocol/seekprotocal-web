@@ -60,8 +60,10 @@ export function OpenInWallet({ onClose }: { onClose: () => void }) {
   const go = async (app: "phantom" | "solflare") => {
     setGoing(true);
     const target = new URL(window.location.href);
+    target.hash = "";
     const code = await handoffCode();
-    target.hash = code ? new URLSearchParams({ shop_handoff: code }).toString() : "";
+    /* In the query, not the fragment: Phantom drops the fragment (11-10-2026). */
+    if (code) target.searchParams.set("shop_handoff", code);
     window.location.assign(walletBrowseLinks(target.toString())[app]);
   };
   return (

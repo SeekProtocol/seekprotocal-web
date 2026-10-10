@@ -15,6 +15,12 @@ export function supabaseConfigured(): boolean {
 export function getShopSessionPolicy() {
   if (!policy && typeof window !== "undefined") {
     const key = `sb-${new URL(SUPABASE_URL).hostname.split(".")[0]}-auth-token`;
+    // A sign-in that finished in another tab (a wallet app's browser opens the
+    // provider in one and returns there) lands in this same storage; this tab
+    // reloads to pick it up rather than staying signed out (11-10-2026).
+    window.addEventListener("storage", (event) => {
+      if (event.key === key && event.newValue && !event.oldValue) window.location.reload();
+    });
     policy = createShopSessionStorage(window.localStorage, key, {
       onChange: () => queueMicrotask(() => window.dispatchEvent(new Event(SHOP_SESSION_EVENT))),
       onEnd: (token) => {

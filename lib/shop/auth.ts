@@ -76,8 +76,9 @@ export function finishSocialLogin():Promise<boolean> {
 
 /**
  * Take the shop login into a wallet app's browser (11-10-2026). The code is
- * one-time and valid for two minutes (shop-auth/handoff); it travels in the
- * address fragment, which the shop's server never receives.
+ * one-time and valid for two minutes (shop-auth/handoff). It travels in the
+ * query: Phantom drops the fragment when it opens a page, so the first build
+ * (fragment) arrived signed out. It is taken out of the address at once.
  */
 export async function handoffCode():Promise<string|null> {
   const {data}=await getSupabase().auth.getSession();
@@ -88,15 +89,22 @@ export async function handoffCode():Promise<string|null> {
     return TOKEN.test(result.code??'')?result.code:null;
   } catch { return null; }
 }
+const HANDOFF='shop_handoff';
+function handoffParam():string|null {
+  return new URLSearchParams(window.location.search).get(HANDOFF)
+    ?? new URLSearchParams(window.location.hash.slice(1)).get(HANDOFF);
+}
 export function hasHandoff():boolean {
-  return new URLSearchParams(window.location.hash.slice(1)).has('shop_handoff');
+  return handoffParam()!==null;
 }
 let handoff:Promise<boolean>|null=null;
 export function finishHandoff():Promise<boolean> {
   if(handoff) return handoff;
-  const code=new URLSearchParams(window.location.hash.slice(1)).get('shop_handoff');
+  const code=handoffParam();
   if(!code) return Promise.resolve(false);
-  window.history.replaceState(window.history.state,'',`${window.location.pathname}${window.location.search}`);
+  const clean=new URLSearchParams(window.location.search);clean.delete(HANDOFF);
+  const query=clean.toString();
+  window.history.replaceState(window.history.state,'',`${window.location.pathname}${query?`?${query}`:''}`);
   handoff=(async()=>{
     if(!TOKEN.test(code)) throw new ShopLoginError('login_expired');
     const result=await request('handoff-redeem',{code});
