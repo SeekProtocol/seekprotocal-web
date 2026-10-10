@@ -1,0 +1,26 @@
+{
+  "verified_at": "2026-10-07T08:58:19.212Z",
+  "products": [
+    {
+      "id": "seekar_pack_basic",
+      "price_cents": 199,
+      "currency": "usd",
+      "display": "$1.99",
+      "revision": 2
+    },
+    {
+      "id": "seekar_pack_premium",
+      "price_cents": 249,
+      "currency": "usd",
+      "display": "$2.49",
+      "revision": 2
+    },
+    {
+      "id": "seekar_pack_elite",
+      "price_cents": 599,
+      "currency": "usd",
+      "display": "$5.99",
+      "revision": 2
+    }
+  ]
+}

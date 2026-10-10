@@ -1,0 +1,106 @@
+TAP version 13
+# (node:89834) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/cart.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: cart keeps several products and quantities in one request without browser prices
+ok 1 - cart keeps several products and quantities in one request without browser prices
+  ---
+  duration_ms: 8.705125
+  type: 'test'
+  ...
+# Subtest: same-currency totals multiply quantities; mixed currencies require server conversion
+ok 2 - same-currency totals multiply quantities; mixed currencies require server conversion
+  ---
+  duration_ms: 0.111542
+  type: 'test'
+  ...
+# Subtest: quantities allow removal, prevent duplicate Pass and respect pack grant capacity
+ok 3 - quantities allow removal, prevent duplicate Pass and respect pack grant capacity
+  ---
+  duration_ms: 0.190084
+  type: 'test'
+  ...
+# (node:89835) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/catalog.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: new products of every supported kind are selectable with their original currency
+ok 4 - new products of every supported kind are selectable with their original currency
+  ---
+  duration_ms: 12.809042
+  type: 'test'
+  ...
+# Subtest: unavailable or malformed catalogs do not invent prices or grants
+ok 5 - unavailable or malformed catalogs do not invent prices or grants
+  ---
+  duration_ms: 0.48125
+  type: 'test'
+  ...
+# Subtest: discounts compare only cardpacks in the same currency
+ok 6 - discounts compare only cardpacks in the same currency
+  ---
+  duration_ms: 0.115209
+  type: 'test'
+  ...
+# Subtest: history uses the purchased EUR price, preserving legacy USD records
+ok 7 - history uses the purchased EUR price, preserving legacy USD records
+  ---
+  duration_ms: 0.151
+  type: 'test'
+  ...
+# Subtest: tier metadata comes from the server, and malformed offers fail closed
+ok 8 - tier metadata comes from the server, and malformed offers fail closed
+  ---
+  duration_ms: 0.545584
+  type: 'test'
+  ...
+# Subtest: discounts never compare different tiers or frozen policies
+ok 9 - discounts never compare different tiers or frozen policies
+  ---
+  duration_ms: 0.094417
+  type: 'test'
+  ...
+# (node:89836) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/michaeldevries/Projects/seekprotocal-web/lib/shop/order-history.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/michaeldevries/Projects/seekprotocal-web/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: API loads one bounded page and uses the immutable UUID for timestamp ties
+ok 10 - API loads one bounded page and uses the immutable UUID for timestamp ties
+  ---
+  duration_ms: 1.274667
+  type: 'test'
+  ...
+# Subtest: resume never appears for paid, delivered, closed or potentially broadcast orders
+ok 11 - resume never appears for paid, delivered, closed or potentially broadcast orders
+  ---
+  duration_ms: 0.128083
+  type: 'test'
+  ...
+# Subtest: receipts preserve historical item price while restored carts use current catalog
+ok 12 - receipts preserve historical item price while restored carts use current catalog
+  ---
+  duration_ms: 0.284375
+  type: 'test'
+  ...
+# Subtest: reorder keeps only the validated order id across sign-in
+ok 13 - reorder keeps only the validated order id across sign-in
+  ---
+  duration_ms: 0.186375
+  type: 'test'
+  ...
+# Subtest: immutable receipt retains pack tier, points and purchase price after catalog changes
+ok 14 - immutable receipt retains pack tier, points and purchase price after catalog changes
+  ---
+  duration_ms: 0.204375
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 110.765042

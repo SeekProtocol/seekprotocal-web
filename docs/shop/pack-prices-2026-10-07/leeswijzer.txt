@@ -1,0 +1,23 @@
+WEBPACKPRIJZEN — 7 OKTOBER 2026
+
+Live aangepast en onafhankelijk via de openbare shop_catalog bevestigd:
+Basic: USD 1.99 (199 cent)
+Premium: USD 2.49 (249 cent)
+Elite: USD 5.99 (599 cent)
+
+Alle drie catalogusversies zijn van 1 naar 2 gegaan. De bestaande databasetrigger
+heeft drie catalog_update-auditregels geschreven, inclusief oude/nieuwe prijs.
+Het pakketbeleid, de inhoud en verkoopkanalen zijn daarbij gelijk gebleven.
+Historische orderbedragen zijn niet gewijzigd; nieuwe offertes lezen de catalogus.
+De frontend ververst de catalogus bij openen en iedere zichtbare minuut.
+Een websiteherpublicatie is niet nodig om de echte prijzen te wijzigen.
+Het lokale cart-check-voorbeeld is ook op deze prijzen aangepast.
+
+Backendmigratie: 20261007181000_web_pack_price_adjustment.sql.
+De eerste poging gebruikte een nummer dat al door keystore_failure_evidence
+bezet was en is volledig teruggedraaid; vervolgens is dit vrije nummer gebruikt.
+Bestaande migraties zijn niet overschreven. De aanpassing is niet gepusht.
+
+Verificatie: openbare API met de echte frontendparser en prijsformatter;
+drie auditregels en revisies teruggelezen; 14 bestaande catalogus-, winkelmand-
+en historische-ontvangsttests geslaagd. Geen echte bestelling of betaling gemaakt.
