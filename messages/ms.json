@@ -3297,6 +3297,13 @@
         "legendary": "Legenda",
         "mythic": "Mitos"
       }
+    },
+    "openInWallet": {
+      "title": "Buka kedai dalam dompet anda",
+      "lead": "Pelayar anda tiada dompet. Buka halaman ini dalam aplikasi dompet untuk membayar; troli anda kekal.",
+      "phantom": "Buka dalam Phantom",
+      "solflare": "Buka dalam Solflare",
+      "close": "Tutup"
     }
   },
   "siteMeta": {

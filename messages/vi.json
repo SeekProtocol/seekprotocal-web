@@ -3297,6 +3297,13 @@
         "legendary": "Legendary",
         "mythic": "Mythic"
       }
+    },
+    "openInWallet": {
+      "title": "Mở cửa hàng trong ví của bạn",
+      "lead": "Trình duyệt của bạn không có ví. Mở trang này trong ứng dụng ví để thanh toán; giỏ hàng vẫn được giữ nguyên.",
+      "phantom": "Mở trong Phantom",
+      "solflare": "Mở trong Solflare",
+      "close": "Đóng"
     }
   },
   "siteMeta": {

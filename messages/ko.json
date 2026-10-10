@@ -3297,6 +3297,13 @@
         "legendary": "전설",
         "mythic": "신화"
       }
+    },
+    "openInWallet": {
+      "title": "지갑에서 상점 열기",
+      "lead": "브라우저에 지갑이 없습니다. 결제하려면 지갑 앱에서 이 페이지를 여세요. 장바구니는 그대로 유지됩니다.",
+      "phantom": "Phantom에서 열기",
+      "solflare": "Solflare에서 열기",
+      "close": "닫기"
     }
   },
   "siteMeta": {

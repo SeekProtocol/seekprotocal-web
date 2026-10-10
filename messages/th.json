@@ -3297,6 +3297,13 @@
         "legendary": "Legendary",
         "mythic": "Mythic"
       }
+    },
+    "openInWallet": {
+      "title": "เปิดร้านค้าในวอลเล็ตของคุณ",
+      "lead": "เบราว์เซอร์ของคุณไม่มีวอลเล็ต เปิดหน้านี้ในแอปวอลเล็ตเพื่อชำระเงิน ตะกร้าของคุณยังอยู่ครบ",
+      "phantom": "เปิดใน Phantom",
+      "solflare": "เปิดใน Solflare",
+      "close": "ปิด"
     }
   },
   "siteMeta": {

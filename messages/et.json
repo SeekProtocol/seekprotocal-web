@@ -3297,6 +3297,13 @@
         "legendary": "Legendary",
         "mythic": "Mythic"
       }
+    },
+    "openInWallet": {
+      "title": "Ava pood oma rahakotis",
+      "lead": "Sinu brauseris pole rahakotti. Ava see leht rahakotirakenduses, et maksta; ostukorv jääb alles.",
+      "phantom": "Ava Phantomis",
+      "solflare": "Ava Solflare'is",
+      "close": "Sulge"
     }
   },
   "siteMeta": {

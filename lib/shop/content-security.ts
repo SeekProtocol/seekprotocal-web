@@ -1,3 +1,4 @@
+import {DEFAULT_SOLANA_RPC_URL,resolveSolanaRpc} from './solana-rpc.ts';
 /** Request-specific script policy; production never permits eval or unnamed inline scripts. */
 export function isShopPath(path:string):boolean {
   return /^\/[^/]+\/(?:shop(?:\/|$)|cart-check(?:\/|$)|support-check(?:\/|$))/.test(path);
@@ -7,7 +8,7 @@ function httpsOrigin(value:string|undefined):string|null {
 }
 export function shopContentSecurity(nonce:string,shop:boolean,development=false,config:{supabase?:string;solanaRpc?:string}={}):string {
   if(!/^[A-Za-z0-9+/=_-]{20,}$/.test(nonce))throw Error('invalid_nonce');
-  const backend=httpsOrigin(config.supabase),rpc=httpsOrigin(config.solanaRpc)??'https://api.mainnet-beta.solana.com';
+  const backend=httpsOrigin(config.supabase),rpc=httpsOrigin(resolveSolanaRpc(config.solanaRpc))??httpsOrigin(DEFAULT_SOLANA_RPC_URL)!;
   const connections=["'self'",'https://challenges.cloudflare.com',rpc,...(backend?[backend,backend.replace('https:','wss:')]:[])];
   if(!shop)connections.push('https://www.google-analytics.com','https://*.google-analytics.com','https://www.googletagmanager.com','https://prod.spline.design','https://*.spline.design');
   if(development)connections.push('ws://localhost:*','ws://127.0.0.1:*');

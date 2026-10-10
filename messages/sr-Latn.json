@@ -3297,6 +3297,13 @@
         "legendary": "Legendarna",
         "mythic": "Mitska"
       }
+    },
+    "openInWallet": {
+      "title": "Otvori prodavnicu u novčaniku",
+      "lead": "Tvoj pregledač nema novčanik. Otvori ovu stranicu u aplikaciji novčanika da platiš; korpa ostaje.",
+      "phantom": "Otvori u Phantomu",
+      "solflare": "Otvori u Solflareu",
+      "close": "Zatvori"
     }
   },
   "siteMeta": {

@@ -3297,6 +3297,13 @@
         "legendary": "Legendás",
         "mythic": "Mythic"
       }
+    },
+    "openInWallet": {
+      "title": "Nyisd meg a boltot a tárcádban",
+      "lead": "A böngésződben nincs tárca. Nyisd meg ezt az oldalt a tárcaalkalmazásban a fizetéshez; a kosár megmarad.",
+      "phantom": "Megnyitás Phantomban",
+      "solflare": "Megnyitás Solflare-ben",
+      "close": "Bezárás"
     }
   },
   "siteMeta": {

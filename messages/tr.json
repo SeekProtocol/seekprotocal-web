@@ -3297,6 +3297,13 @@
         "legendary": "Efsanevi",
         "mythic": "Mitik"
       }
+    },
+    "openInWallet": {
+      "title": "Mağazayı cüzdanında aç",
+      "lead": "Tarayıcında cüzdan yok. Ödemek için bu sayfayı cüzdan uygulamanda aç; sepetin aynen kalır.",
+      "phantom": "Phantom'da aç",
+      "solflare": "Solflare'de aç",
+      "close": "Kapat"
     }
   },
   "siteMeta": {

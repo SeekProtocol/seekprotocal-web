@@ -3297,6 +3297,13 @@
         "legendary": "Legendary",
         "mythic": "Mythic"
       }
+    },
+    "openInWallet": {
+      "title": "Odpri trgovino v denarnici",
+      "lead": "Tvoj brskalnik nima denarnice. Odpri to stran v aplikaciji denarnice za plačilo; košarica ostane.",
+      "phantom": "Odpri v Phantomu",
+      "solflare": "Odpri v Solflaru",
+      "close": "Zapri"
     }
   },
   "siteMeta": {

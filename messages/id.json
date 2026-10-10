@@ -3297,6 +3297,13 @@
         "legendary": "Legendaris",
         "mythic": "Mitos"
       }
+    },
+    "openInWallet": {
+      "title": "Buka toko di dompetmu",
+      "lead": "Browsermu tidak punya dompet. Buka halaman ini di aplikasi dompet untuk membayar; keranjangmu tetap tersimpan.",
+      "phantom": "Buka di Phantom",
+      "solflare": "Buka di Solflare",
+      "close": "Tutup"
     }
   },
   "siteMeta": {

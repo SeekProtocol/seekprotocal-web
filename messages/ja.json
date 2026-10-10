@@ -3297,6 +3297,13 @@
         "legendary": "レジェンダリー",
         "mythic": "ミシック"
       }
+    },
+    "openInWallet": {
+      "title": "ウォレットでショップを開く",
+      "lead": "このブラウザにはウォレットがありません。支払うにはウォレットアプリでこのページを開いてください。カートはそのまま残ります。",
+      "phantom": "Phantomで開く",
+      "solflare": "Solflareで開く",
+      "close": "閉じる"
     }
   },
   "siteMeta": {

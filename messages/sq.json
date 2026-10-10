@@ -3297,6 +3297,13 @@
         "legendary": "Legjendare",
         "mythic": "Mythic"
       }
+    },
+    "openInWallet": {
+      "title": "Hape dyqanin në portofolin tënd",
+      "lead": "Shfletuesi yt nuk ka portofol. Hape këtë faqe në aplikacionin e portofolit për të paguar; shporta mbetet.",
+      "phantom": "Hape në Phantom",
+      "solflare": "Hape në Solflare",
+      "close": "Mbyll"
     }
   },
   "siteMeta": {

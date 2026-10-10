@@ -3297,6 +3297,13 @@
         "legendary": "Legendarna",
         "mythic": "Mityczna"
       }
+    },
+    "openInWallet": {
+      "title": "Otwórz sklep w portfelu",
+      "lead": "Twoja przeglądarka nie ma portfela. Otwórz tę stronę w aplikacji portfela, aby zapłacić; koszyk zostaje bez zmian.",
+      "phantom": "Otwórz w Phantom",
+      "solflare": "Otwórz w Solflare",
+      "close": "Zamknij"
     }
   },
   "siteMeta": {

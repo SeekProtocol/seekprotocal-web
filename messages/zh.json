@@ -3297,6 +3297,13 @@
         "legendary": "传说",
         "mythic": "神话"
       }
+    },
+    "openInWallet": {
+      "title": "在钱包中打开商店",
+      "lead": "你的浏览器没有钱包。请在钱包应用中打开此页面进行付款，购物车会保留。",
+      "phantom": "在 Phantom 中打开",
+      "solflare": "在 Solflare 中打开",
+      "close": "关闭"
     }
   },
   "siteMeta": {

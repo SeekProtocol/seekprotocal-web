@@ -3297,6 +3297,13 @@
         "legendary": "Legendary",
         "mythic": "Mythic"
       }
+    },
+    "openInWallet": {
+      "title": "Öppna butiken i din wallet",
+      "lead": "Din webbläsare har ingen wallet. Öppna sidan i din wallet-app för att betala; varukorgen finns kvar.",
+      "phantom": "Öppna i Phantom",
+      "solflare": "Öppna i Solflare",
+      "close": "Stäng"
     }
   },
   "siteMeta": {

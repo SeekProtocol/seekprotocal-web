@@ -3297,6 +3297,13 @@
         "legendary": "傳說",
         "mythic": "神話"
       }
+    },
+    "openInWallet": {
+      "title": "在錢包中開啟商店",
+      "lead": "你的瀏覽器沒有錢包。請在錢包 App 中開啟此頁面付款，購物車會保留。",
+      "phantom": "在 Phantom 中開啟",
+      "solflare": "在 Solflare 中開啟",
+      "close": "關閉"
     }
   },
   "siteMeta": {

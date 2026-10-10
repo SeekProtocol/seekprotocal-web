@@ -3297,6 +3297,13 @@
         "legendary": "Lendário",
         "mythic": "Mítico"
       }
+    },
+    "openInWallet": {
+      "title": "Abre a loja na tua wallet",
+      "lead": "O teu navegador não tem wallet. Abre esta página na tua app de wallet para pagar; o carrinho mantém-se.",
+      "phantom": "Abrir no Phantom",
+      "solflare": "Abrir no Solflare",
+      "close": "Fechar"
     }
   },
   "siteMeta": {

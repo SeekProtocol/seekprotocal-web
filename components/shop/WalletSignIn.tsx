@@ -3,6 +3,7 @@
 import {useState} from 'react';
 import {useWallet} from '@solana/wallet-adapter-react';
 import {useWalletModal} from '@solana/wallet-adapter-react-ui';
+import {useAskForWallet} from './OpenInWallet';
 import {useTranslations} from 'next-intl';
 import {getSupabase} from '@/lib/supabase-browser';
 
@@ -12,10 +13,11 @@ export default function WalletSignIn({disabled,onSuccess,onBusy,onError}:{
   const t=useTranslations('shop.login');
   const {wallet,connect,publicKey,signMessage,connected,connecting}=useWallet();
   const {setVisible}=useWalletModal();
+  const askForWallet=useAskForWallet();
   const [signing,setSigning]=useState(false);
   async function login() {
     onError('');
-    if(!wallet) { setVisible(true); return; }
+    if(!wallet) { askForWallet(); return; }
     if(!connected || !publicKey) {
       try { await connect(); } catch { onError('wallet_failed'); }
       return;

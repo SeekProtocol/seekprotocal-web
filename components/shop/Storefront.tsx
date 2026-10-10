@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { cartKey, cartTotal, canSetQuantity, type CartItem } from "@/lib/shop/cart";
+import { useAskForWallet } from "./OpenInWallet";
 import {productName} from "./ProductCatalog";
 import { useCatalog } from "@/lib/shop/use-catalog";
 import {restoreOrderCart} from '@/lib/shop/order-history';
@@ -9,7 +10,7 @@ import { CheckoutLayout } from "./CheckoutLayout";
 import OrderReceipt from "./OrderReceipt";
 import { useLocale, useTranslations } from "next-intl";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
-import { BaseWalletMultiButton, useWalletModal } from "@solana/wallet-adapter-react-ui";
+import { BaseWalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useTurnstile } from "@/lib/use-turnstile";
 import { createVerificationQueue } from "@/lib/shop/verification-queue";
 import { isLocalShopDevelopment } from "@/lib/shop/local-development";
@@ -149,7 +150,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
   const catalog = useCatalog();
   const { connection } = useConnection();
   const { publicKey, sendTransaction, connected } = useWallet();
-  const { setVisible } = useWalletModal();
+  const setVisible = useAskForWallet();
   const { containerRef, token, error: verificationError, armed, arm, reset } = useTurnstile();
   const [verify] = useState(() => createVerificationQueue());
   const evmWallet=useEvmWallet();
@@ -302,7 +303,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
         return;
       }
       if (!isEvmAsset(asset) && !publicKey) {
-        setVisible(true);
+        setVisible();
         return;
       }
       paymentBusy.current = true;
@@ -332,7 +333,7 @@ export default function Storefront({ onSettled, email, name }: { onSettled?: () 
     if (flow.phase !== "ready" || paymentBusy.current) return;
     const { product, order } = flow;
     if (!isEvmAsset(order.asset) && !publicKey) {
-      setVisible(true);
+      setVisible();
       return;
     }
     if (orderExpired(order)) {
