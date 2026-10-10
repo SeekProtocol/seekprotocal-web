@@ -5,7 +5,7 @@ import {useLocale,useTranslations} from 'next-intl';
 import {getPathname,useRouter} from '@/i18n/navigation';
 import {shopReturnPath} from '@/lib/shop/checkout-return';
 import {getSupabase} from '@/lib/supabase-browser';
-import {availableSocialProviders,finishSocialLogin,hasSocialLoginReturn,startSocialLogin,type SocialProvider} from '@/lib/shop/auth';
+import {availableSocialProviders,finishHandoff,finishSocialLogin,hasHandoff,hasSocialLoginReturn,startSocialLogin,type SocialProvider} from '@/lib/shop/auth';
 import ShopProviders from './ShopProviders';
 import WalletSignIn from './WalletSignIn';
 import SignInPanel from './SignInPanel';
@@ -49,6 +49,19 @@ export default function SignIn({purpose='shop'}:{purpose?:'shop'|'orders'}) {
     }).catch(()=>{if(active) setProviderFailure(true);}).finally(()=>{if(active) setProvidersLoaded(true);});
     return ()=>{active=false;};
   },[providerRetry]);
+
+  // Arrived in a wallet app's browser with a login carried over (OpenInWallet).
+  useEffect(()=>{
+    let active=true;
+    if(!hasHandoff()) return;
+    queueMicrotask(()=>{if(active) setBusy('callback');});
+    finishHandoff().then(done=>{
+      if(active && done) router.replace(shopReturnPath('/shop',window.location.search));
+    }).catch(reason=>{
+      if(active) setError(reason instanceof Error?reason.message:'sign_in_failed');
+    }).finally(()=>{if(active) setBusy(null);});
+    return ()=>{active=false;};
+  },[router]);
 
   useEffect(()=>{
     let active=true;

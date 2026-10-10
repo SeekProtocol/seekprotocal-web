@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import { WalletReadyState } from "@solana/wallet-adapter-base";
+import { handoffCode } from "@/lib/shop/auth";
 
 /**
  * A phone browser with no wallet in it (Safari on an iPhone) cannot connect:
@@ -27,6 +28,7 @@ export function walletBrowseLinks(href: string) {
 
 const OpenContext = createContext<(open: boolean) => void>(() => {});
 
+/** Holds the "open in a wallet app" dialog for the whole shop; mounted in ShopProviders. */
 /** Holds the "open in a wallet app" dialog for the whole shop; mounted in ShopProviders. */
 export function OpenInWalletProvider({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
@@ -52,7 +54,16 @@ export function useAskForWallet() {
 
 export function OpenInWallet({ onClose }: { onClose: () => void }) {
   const t = useTranslations("shop.openInWallet");
-  const links = walletBrowseLinks(window.location.href);
+  const [going, setGoing] = useState(false);
+  /* The wallet app's browser shares nothing with this one: a signed-in player
+     takes the login along as a one-time code in the address fragment. */
+  const go = async (app: "phantom" | "solflare") => {
+    setGoing(true);
+    const target = new URL(window.location.href);
+    const code = await handoffCode();
+    target.hash = code ? new URLSearchParams({ shop_handoff: code }).toString() : "";
+    window.location.assign(walletBrowseLinks(target.toString())[app]);
+  };
   return (
     <div aria-labelledby="open-in-wallet-title" aria-modal="true" className="wallet-adapter-modal wallet-adapter-modal-fade-in" role="dialog">
       <div className="wallet-adapter-modal-container">
@@ -63,8 +74,8 @@ export function OpenInWallet({ onClose }: { onClose: () => void }) {
           <h1 id="open-in-wallet-title" className="wallet-adapter-modal-title">{t("title")}</h1>
           <p style={{ padding: "0 24px 16px", textAlign: "center", opacity: 0.8, lineHeight: 1.5 }}>{t("lead")}</p>
           <ul className="wallet-adapter-modal-list">
-            <li><a className="wallet-adapter-button" href={links.phantom} rel="noopener">{t("phantom")}</a></li>
-            <li><a className="wallet-adapter-button" href={links.solflare} rel="noopener">{t("solflare")}</a></li>
+            <li><button type="button" className="wallet-adapter-button" disabled={going} onClick={() => void go("phantom")}>{t("phantom")}</button></li>
+            <li><button type="button" className="wallet-adapter-button" disabled={going} onClick={() => void go("solflare")}>{t("solflare")}</button></li>
           </ul>
         </div>
       </div>
