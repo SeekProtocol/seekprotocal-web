@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useCallback, useContext, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
@@ -26,37 +26,60 @@ export function walletBrowseLinks(href: string) {
   };
 }
 
-const OpenContext = createContext<(open: boolean) => void>(() => {});
+type Asking = { setOpen: (open: boolean) => void; askedToConnect: () => void };
+const OpenContext = createContext<Asking>({ setOpen: () => {}, askedToConnect: () => {} });
 
-/** Holds the "open in a wallet app" dialog for the whole shop; mounted in ShopProviders. */
-/** Holds the "open in a wallet app" dialog for the whole shop; mounted in ShopProviders. */
+/**
+ * Holds the "open in a wallet app" dialog for the whole shop; mounted in
+ * ShopProviders, inside the WalletProvider.
+ *
+ * It also finishes the adapter modal's choice. Choosing a wallet there only
+ * selects it: with autoConnect off (no wallet prompt before the price is read)
+ * nothing connected it, so in Phantom's own browser "Phantom, Detected" was
+ * tapped and the button stayed at Connect wallet (11-10-2026). A wallet chosen
+ * after the player asked to connect is connected here.
+ */
 export function OpenInWalletProvider({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
+  const wantConnect = useRef(false);
+  const { wallet, connected, connecting, connect } = useWallet();
+  useEffect(() => {
+    if (!wantConnect.current || !wallet || connected || connecting) return;
+    wantConnect.current = false;
+    connect().catch(() => {});
+  }, [wallet, connected, connecting, connect]);
+  const askedToConnect = useCallback(() => { wantConnect.current = true; }, []);
   return (
-    <OpenContext.Provider value={setOpen}>
+    <OpenContext.Provider value={{ setOpen, askedToConnect }}>
       {children}
       {open ? <OpenInWallet onClose={() => setOpen(false)} /> : null}
     </OpenContext.Provider>
   );
 }
 
-/** `ask()` replaces `setVisible(true)`: the adapter's modal where a wallet can be reached, the wallet apps where not. */
+/**
+ * `ask()` replaces `setVisible(true)`: a wallet already chosen is connected,
+ * otherwise the adapter's modal opens where a wallet can be reached (and the
+ * choice is connected), and the wallet apps are offered where not.
+ */
 export function useAskForWallet() {
-  const { wallets } = useWallet();
+  const { wallets, wallet, connected, connect } = useWallet();
   const { setVisible } = useWalletModal();
-  const setOpen = useContext(OpenContext);
+  const { setOpen, askedToConnect } = useContext(OpenContext);
   return useCallback(() => {
+    if (wallet && !connected) { connect().catch(() => {}); return; }
     const reachable = wallets.some((w) => w.readyState === WalletReadyState.Installed || w.readyState === WalletReadyState.Loadable);
-    if (!reachable && isPhone()) setOpen(true);
-    else setVisible(true);
-  }, [wallets, setVisible, setOpen]);
+    if (!reachable && isPhone()) { setOpen(true); return; }
+    askedToConnect();
+    setVisible(true);
+  }, [wallets, wallet, connected, connect, setVisible, setOpen, askedToConnect]);
 }
 
 export function OpenInWallet({ onClose }: { onClose: () => void }) {
   const t = useTranslations("shop.openInWallet");
   const [going, setGoing] = useState(false);
   /* The wallet app's browser shares nothing with this one: a signed-in player
-     takes the login along as a one-time code in the address fragment. */
+     takes the login along as a one-time code in the address. */
   const go = async (app: "phantom" | "solflare") => {
     setGoing(true);
     const target = new URL(window.location.href);
