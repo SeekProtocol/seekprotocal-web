@@ -6,7 +6,9 @@ export const PAYMENT_ASSETS = {
   ETH: {mint:'eip155:1/native',decimals:18,network:'ethereum-mainnet',networkName:'Ethereum',feeAsset:'ETH'},
 } as const;
 export type PaymentAsset = keyof typeof PAYMENT_ASSETS;
-export const SOLANA_MAINNET_GENESIS = '5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp';
+// The full hash. A truncated one (7 to 11 October) never matched, so Pay stopped
+// every Solana payment with 'The shop is paused right now'.
+export const SOLANA_MAINNET_GENESIS = '5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d';
 
 export function isPaymentAsset(value: unknown): value is PaymentAsset {
   return value === 'SOL' || value === 'USDC' || value === 'USDT' || value === 'BNB' || value === 'ETH';
