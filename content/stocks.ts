@@ -1,15 +1,18 @@
 /**
- * The stock tokens on the map: Apple, Tesla and NVIDIA as Robinhood Stock
- * Tokens on Robinhood Chain (4663).
+ * The stock tokens on the map: Apple, Amazon, Tesla, Google and NVIDIA as
+ * Robinhood Stock Tokens on Robinhood Chain (4663). Google's token follows
+ * Alphabet Class A, hence the GOOGL ticker.
  *
- * Figures are the app's own, from `docs/robinhood-stock-drops.md` and
- * `docs/coins/stock-expansion/catalog.json` in the app repo:
+ * Figures are the app's own, from `docs/robinhood-stock-drops.md`,
+ * `docs/coins/stock-expansion/catalog.json` and
+ * `docs/coins/google-amazon/catalog.json` in the app repo:
  *  - `value` is the fixed game value of one catch in USD. At cash-out it is
  *    repriced into the token at the current ask, so the site quotes a dollar
  *    value and never a token amount.
  *  - `base` is the stock coin's own base catch chance. Apple's 30% is lower
  *    than the ordinary Uncommon rung on purpose, which is why these do not
- *    read from `RARITY_LADDER`.
+ *    read from `RARITY_LADDER`. Amazon sits on the same rung as Apple and
+ *    Google on the same rung as Tesla.
  *
  * Artwork is the app's banner coin, trimmed and encoded by the same steps as
  * `scripts/build-rewards.py`. Only ids, numbers and artwork live here; every
@@ -31,7 +34,9 @@ export type StockToken = {
 
 export const STOCK_TOKENS: StockToken[] = [
   { key: "aapl", name: "Apple", ticker: "AAPL", rarity: "uncommon", base: 0.3, value: 0.05, image: "/app/rewards/rh-aapl.avif" },
+  { key: "amzn", name: "Amazon", ticker: "AMZN", rarity: "uncommon", base: 0.3, value: 0.05, image: "/app/rewards/rh-amzn.avif" },
   { key: "tsla", name: "Tesla", ticker: "TSLA", rarity: "rare", base: 0.156, value: 0.12, image: "/app/rewards/rh-tsla.avif" },
+  { key: "googl", name: "Google", ticker: "GOOGL", rarity: "rare", base: 0.156, value: 0.12, image: "/app/rewards/rh-googl.avif" },
   { key: "nvda", name: "NVIDIA", ticker: "NVDA", rarity: "epic", base: 0.091, value: 0.3, image: "/app/rewards/rh-nvda.avif" },
 ];
 

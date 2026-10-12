@@ -30,7 +30,8 @@ export const SEEK_COIN: DropCoin = {
 
 export const DROP_COINS: DropCoin[] = [
   SEEK_COIN,
-  ...COLLECTIBLES.map((c) => ({
+  // SEEK is a collectible too now; the entry above already carries it.
+  ...COLLECTIBLES.filter((c) => c.key !== "seek").map((c) => ({
     key: c.key,
     name: c.name,
     symbol: c.symbol,

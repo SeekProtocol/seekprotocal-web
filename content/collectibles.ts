@@ -75,18 +75,84 @@ export type Collectible = {
   rarity: Rarity;
   image: string;
   xp: number;
+  /** The coin's own base catch chance, from `memecoins.base_collection_chance`. */
+  base: number;
+  /**
+   * Game value of one caught unit in USD, from `memecoins.game_value_usd`.
+   * Null for a coin that is redeemable at TGE: $SEEK carries a count and no
+   * figure until the token is released, and the site does not name one either.
+   */
+  value: number | null;
 };
 
+/**
+ * Every coin active on the map, read from the live `memecoins` table on
+ * 12 October 2026, minus the stock tokens, which have their own section in
+ * `content/stocks.ts`. Keys are the app's own.
+ *
+ * Odds and values are per coin rather than read from `RARITY_LADDER`: the
+ * live rungs (47%, 30%, 15.6% and 9.1%, set by
+ * `rarity_outranks_everything_and_tapping_pays`) have moved since that table
+ * was written, and Solana is priced and weighted on its own, not on the
+ * legendary rung. `xp` is the site's own demo figure per rarity, used by the
+ * globe and the walkthrough, not the app's `xp_reward`.
+ *
+ * Artwork is the app's `assets/coins/<key>.png`, trimmed and encoded to AVIF.
+ * Eight of those are drawn on the app's flat #07070D background rather than on
+ * transparency, so they were cut out first; the coins the site already had a
+ * transparent render of keep it.
+ */
+const XP: Record<Rarity, number> = { common: 80, uncommon: 140, rare: 240, epic: 420, legendary: 900 };
+
+const coin = (
+  key: string,
+  name: string,
+  symbol: string,
+  rarity: Rarity,
+  base: number,
+  value: number | null,
+  image = `/images/coins/${key}.avif`,
+): Collectible => ({ key, name, symbol, rarity, image, xp: XP[rarity], base, value });
+
 export const COLLECTIBLES: Collectible[] = [
-  { key: "trump", name: "Official Trump", symbol: "TRUMP", rarity: "legendary", image: "/images/official-trump-cryptocurrency-14325720-11625811.webp", xp: 900 },
-  { key: "btc", name: "Bitcoin", symbol: "BTC", rarity: "legendary", image: "/images/bitcoin-2.avif", xp: 900 },
-  { key: "pudgy", name: "Pudgy Penguins", symbol: "PENGU", rarity: "epic", image: "/images/pudgy-penguins-crypto-13701312-11009751.webp", xp: 420 },
-  { key: "virtuals", name: "Virtuals Protocol", symbol: "VIRTUAL", rarity: "epic", image: "/images/virtuals-protocol-crypto-13701310-11009749.webp", xp: 420 },
-  { key: "wif", name: "dogwifhat", symbol: "WIF", rarity: "rare", image: "/images/dogwifhat-cryptocurrency-11686723-9554873.webp", xp: 240 },
-  { key: "popcat", name: "Popcat", symbol: "POPCAT", rarity: "rare", image: "/images/popcat-cryptocurrency-12315804-10033435.webp", xp: 240 },
-  { key: "bonk", name: "Bonk", symbol: "BONK", rarity: "uncommon", image: "/images/bonk-cryptocurrency.avif", xp: 140 },
-  { key: "fartcoin", name: "Fartcoin", symbol: "FARTCOIN", rarity: "common", image: "/images/fartcoin-cryptocurrency-14325725-11625815.webp", xp: 80 },
+  coin("solana", "Solana", "SOL", "legendary", 0.1, 0.5),
+  coin("jupiter", "Jupiter", "JUP", "rare", 0.156, 0.12),
+  coin("seeker", "Seeker", "SKR", "rare", 0.156, 0.12),
+  coin("dogwifhat", "dogwifhat", "WIF", "rare", 0.156, 0.12, "/images/dogwifhat-cryptocurrency-11686723-9554873.webp"),
+  coin("trump", "Official Trump", "TRUMP", "uncommon", 0.3, 0.05, "/images/official-trump-cryptocurrency-14325720-11625811.webp"),
+  coin("pengu", "Pudgy Penguins", "PENGU", "uncommon", 0.3, 0.05, "/images/pudgy-penguins-crypto-13701312-11009751.webp"),
+  coin("virtualsprotocol", "Virtuals Protocol", "VIRTUAL", "uncommon", 0.3, 0.05, "/images/virtuals-protocol-crypto-13701310-11009749.webp"),
+  coin("spx6900", "SPX6900", "SPX", "uncommon", 0.3, 0.05),
+  coin("zcat", "Anonymous Cat", "ZCAT", "uncommon", 0.3, 0.05),
+  coin("seek", "Seek", "SEEK", "common", 0.47, null, "/app/seek-coin-3d.png"),
+  coin("bonk", "Bonk", "BONK", "common", 0.47, 0.02, "/images/bonk-cryptocurrency.avif"),
+  coin("popcat", "Popcat", "POPCAT", "common", 0.47, 0.02, "/images/popcat-cryptocurrency-12315804-10033435.webp"),
+  coin("fartcoin", "Fartcoin", "FARTCOIN", "common", 0.47, 0.02, "/images/fartcoin-cryptocurrency-14325725-11625815.webp"),
+  coin("hyperliquid", "Hyperliquid", "HYPE", "common", 0.47, 0.02),
+  coin("cake", "PancakeSwap", "CAKE", "common", 0.47, 0.02),
+  coin("moodeng", "Moo Deng", "MOODENG", "common", 0.47, 0.02),
+  coin("mew", "cat in a dogs world", "MEW", "common", 0.47, 0.02),
+  coin("ponke", "Ponke", "PONKE", "common", 0.47, 0.02),
+  coin("pumpfun", "Pump", "PUMP", "common", 0.47, 0.02),
+  coin("cupsey", "CUPSEY", "CUPSEY", "common", 0.47, 0.02),
+  coin("the-black-bull", "The Black Bull", "ANSEM", "common", 0.47, 0.02),
+  coin("ai16z", "ai16z", "AI16Z", "common", 0.47, 0.02),
 ];
+
+/** A collectible by its app key, for the scenes that stage particular coins. */
+export const collectible = (key: string): Collectible =>
+  COLLECTIBLES.find((c) => c.key === key) ?? COLLECTIBLES[0];
+
+/**
+ * The chance of keeping a spawn over every attempt it allows, for a player
+ * with no bonuses who fills the catch ring: each retry is worth RETRY_DECAY of
+ * the one before it.
+ */
+export const overAllAttempts = (base: number): number => {
+  let miss = 1;
+  for (let i = 0; i < MAX_ATTEMPTS; i++) miss *= 1 - base * Math.pow(RETRY_DECAY, i);
+  return 1 - miss;
+};
 
 /** Power-ups, from the app's own manifest. Names and effects live in `powerups`. */
 export const POWERUPS = [

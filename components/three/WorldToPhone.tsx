@@ -3,7 +3,7 @@
 import * as THREE from "three";
 import { useSceneSlot } from "@/lib/use-scene-slot";
 import type { SceneBuilder, SceneModule } from "@/lib/three-stage";
-import { COLLECTIBLES, RARITY_LADDER } from "@/content/collectibles";
+import { RARITY_LADDER, collectible } from "@/content/collectibles";
 
 /**
  * One continuous flight from orbit to street level.
@@ -425,11 +425,11 @@ function buildWorldToPhone(progressRef: React.MutableRefObject<number>): SceneBu
     // Kept inside the band the portrait frame shows, so none of them ends up
     // behind the status bar or the tab bar once the phone closes in.
     const coinSpots = [
-      { x: lane(0), z: lane(-1), coin: COLLECTIBLES[4] },
-      { x: lane(1), z: lane(0), coin: COLLECTIBLES[0] },
-      { x: lane(0), z: lane(1), coin: COLLECTIBLES[6] },
-      { x: lane(0), z: lane(2), coin: COLLECTIBLES[5] },
-      { x: lane(1), z: lane(2), coin: COLLECTIBLES[7] },
+      { x: lane(0), z: lane(-1), coin: collectible("dogwifhat") },
+      { x: lane(1), z: lane(0), coin: collectible("trump") },
+      { x: lane(0), z: lane(1), coin: collectible("bonk") },
+      { x: lane(0), z: lane(2), coin: collectible("popcat") },
+      { x: lane(1), z: lane(2), coin: collectible("fartcoin") },
     ];
     // A soft radial disc, used as the glow behind each coin.
     const glowTexture = track(dotTexture());

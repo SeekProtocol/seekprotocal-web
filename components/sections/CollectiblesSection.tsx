@@ -4,9 +4,18 @@ import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { withCopy } from "@/lib/content-i18n";
-import { COLLECTIBLES, POWERUPS, RARITY_LADDER, type Rarity } from "@/content/collectibles";
+import {
+  COLLECTIBLES,
+  POWERUPS,
+  RARITY_LADDER,
+  overAllAttempts,
+  type Rarity,
+} from "@/content/collectibles";
 
-const ORDER: Rarity[] = ["legendary", "epic", "rare", "uncommon", "common"];
+/** Only the tiers that hold a coin today: a filter that empties the grid is a dead end. */
+const ORDER = (["legendary", "epic", "rare", "uncommon", "common"] as Rarity[]).filter((tier) =>
+  COLLECTIBLES.some((coin) => coin.rarity === tier),
+);
 
 /** What you can actually catch, and what the ladder says it is worth. */
 export default function CollectiblesSection() {
@@ -58,6 +67,7 @@ export default function CollectiblesSection() {
       <div className="collectibles-grid">
         {shown.map((coin) => {
           const ladder = RARITY_LADDER[coin.rarity];
+          // Odds and value are the coin's own; the ladder only lends its colour.
           return (
             <article
               key={coin.key}
@@ -75,15 +85,15 @@ export default function CollectiblesSection() {
               <dl className="collectible-stats">
                 <div>
                   <dt>{t("catchChance")}</dt>
-                  <dd>{Math.round(ladder.base * 100)}%</dd>
+                  <dd>{Math.round(coin.base * 100)}%</dd>
                 </div>
                 <div>
-                  <dt>{t("overThree")}</dt>
-                  <dd>{Math.round(ladder.overall * 100)}%</dd>
+                  <dt>{t("overAttempts")}</dt>
+                  <dd>{Math.round(overAllAttempts(coin.base) * 100)}%</dd>
                 </div>
                 <div>
                   <dt>{t("perUnit")}</dt>
-                  <dd>${ladder.value.toFixed(2)}</dd>
+                  <dd>{coin.value === null ? t("atTge") : `$${coin.value.toFixed(2)}`}</dd>
                 </div>
               </dl>
             </article>

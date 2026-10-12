@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { StatusBar } from "@/components/app/PhoneFrame";
-import { COLLECTIBLES, RARITY_LADDER, type Collectible } from "@/content/collectibles";
+import { COLLECTIBLES, RARITY_LADDER, collectible, type Collectible } from "@/content/collectibles";
 import { APP_MAP } from "@/content/rewards";
 
 /** Where each spawn stands on the street grid, in 390 × 844 screen points. */
 const PLACEMENTS = [
-  { key: "wif", x: 112, y: 318, size: 50 },
+  { key: "dogwifhat", x: 112, y: 318, size: 50 },
   { key: "trump", x: 272, y: 244, size: 56 },
   { key: "bonk", x: 196, y: 474, size: 44 },
   { key: "popcat", x: 318, y: 408, size: 40 },
@@ -16,7 +16,7 @@ const PLACEMENTS = [
 ];
 
 /** The coin the banner is pointing at, so the artwork matches the name. */
-const WIF = COLLECTIBLES.find((c) => c.key === "wif") ?? COLLECTIBLES[0];
+const WIF = collectible("dogwifhat");
 
 export default function MapScreen({
   onPick,

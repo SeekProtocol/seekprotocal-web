@@ -942,24 +942,25 @@
     "filterLabel": "Filtriraj po retkosti",
     "all": "Sve",
     "catchChance": "Šansa za ulov",
-    "overThree": "U 3 pokušaja",
+    "overAttempts": "U 2 pokušaja",
     "perUnit": "Po jedinici",
+    "atTge": "Na TGE",
     "powerupsTitle": "Pojačanja koja menjaju rundu"
   },
   "stocksSection": {
     "eyebrow": "Imovina iz stvarnog sveta",
-    "title": "Ulovite deo kompanija Apple, Tesla i NVIDIA",
-    "lead": "Na mapi su sada tokenizovane akcije. Apple, Tesla i NVIDIA padaju kao novčići, isto kao i svi ostali: prošetajte do jednog, ulovite ga i isplatite ga kao Robinhood Stock Token na Robinhood Chain-u, pravo u svoj novčanik.",
+    "title": "Ulovite deo kompanija Apple, Amazon, Tesla, Google i NVIDIA",
+    "lead": "Na mapi su sada tokenizovane akcije. Apple, Amazon, Tesla, Google i NVIDIA padaju kao novčići, isto kao i svi ostali: prošetajte do jednog, ulovite ga i isplatite ga kao Robinhood Stock Token na Robinhood Chain-u, pravo u svoj novčanik.",
     "points": [
-      "Svaki ulov ima fiksnu vrednost u igri: Apple vredi $0.05, Tesla $0.12, a NVIDIA $0.30.",
+      "Svaki ulov ima fiksnu vrednost u igri: Apple i Amazon vrede $0.05, Tesla i Google $0.12, a NVIDIA $0.30.",
       "Pri isplati se ta vrednost isplaćuje u tokenu akcije po njegovoj trenutnoj ceni, pa od tada ono što držite prati cenu akcije.",
-      "Apple je Neobičan novčić, Tesla Redak, a NVIDIA Epski: od ova tri njega je najteže uloviti.",
+      "Apple i Amazon su Neobični novčići, Tesla i Google Retki, a NVIDIA Epski: od ovih pet njega je najteže uloviti.",
       "Dropovi akcija pojavljuju se u 30 zemalja Evropskog ekonomskog prostora. Podesite svoju zemlju u profilu i pre prve isplate potvrdite da niste američko lice (U.S. person)."
     ],
     "coinAlt": "Novčić tokena akcije {name}",
     "catchChance": "Šansa za ulov",
     "perCatch": "Po ulovu",
-    "finePrint": "Robinhood Stock Tokens su tokenizovane dužničke hartije od vrednosti koje izdaje Robinhood Assets (Jersey) Limited. Prate cenu osnovne akcije, ali ne daju vlasništvo nad kompanijom niti pravo glasa u njoj. Ne smeju se nuditi niti isporučivati u Sjedinjenim Američkim Državama, američkim licima (U.S. persons) niti u ograničenim jurisdikcijama, među kojima su Kanada, Ujedinjeno Kraljevstvo i Švajcarska. Primanje tokena samo po sebi ne znači da ga možete prodati ili zatražiti njegov otkup. Retkost je nivo u igri, a ne mišljenje o investiciji. Cene mogu i da padnu i da porastu i ništa ovde nije investicioni savet. Apple, Tesla, NVIDIA i Robinhood su žigovi svojih vlasnika, koji ne sponzorišu niti podržavaju Seekprotocol.",
+    "finePrint": "Robinhood Stock Tokens su tokenizovane dužničke hartije od vrednosti koje izdaje Robinhood Assets (Jersey) Limited. Prate cenu osnovne akcije, ali ne daju vlasništvo nad kompanijom niti pravo glasa u njoj. Ne smeju se nuditi niti isporučivati u Sjedinjenim Američkim Državama, američkim licima (U.S. persons) niti u ograničenim jurisdikcijama, među kojima su Kanada, Ujedinjeno Kraljevstvo i Švajcarska. Primanje tokena samo po sebi ne znači da ga možete prodati ili zatražiti njegov otkup. Google token prati akcije klase A kompanije Alphabet Inc. Retkost je nivo u igri, a ne mišljenje o investiciji. Cene mogu i da padnu i da porastu i ništa ovde nije investicioni savet. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA i Robinhood su žigovi svojih vlasnika, koji ne sponzorišu niti podržavaju Seekprotocol.",
     "links": {
       "restrictions": "Robinhood: ograničene jurisdikcije",
       "terms": "Robinhood: prospekt i Final Terms (konačni uslovi)",

@@ -9,7 +9,7 @@ import { useNearViewport } from "@/lib/use-near-viewport";
 import { StatusBar } from "@/components/app/PhoneFrame";
 import { TabIcon } from "@/components/app/screens/MapScreen";
 import { useScrubbedSection } from "@/lib/use-scrubbed-section";
-import { COLLECTIBLES } from "@/content/collectibles";
+import { collectible } from "@/content/collectibles";
 
 const WorldToPhone = dynamic(() => import("@/components/three/WorldToPhone"), {
   ssr: false,
@@ -32,7 +32,7 @@ const STAGES = [
 const STOPS = STAGES.map((s) => s.at);
 
 /** The coin the banner is pointing at, so the artwork matches the name. */
-const WIF = COLLECTIBLES.find((c) => c.key === "wif") ?? COLLECTIBLES[0];
+const WIF = collectible("dogwifhat");
 
 
 /**

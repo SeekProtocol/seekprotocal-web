@@ -2750,7 +2750,9 @@
   border-top: 1px solid var(--line);
 }
 
-.collectible-stats > div { display: grid; gap: 0.2rem; }
+/* Label on top, value on the bottom row, so a label that wraps to two lines
+   does not push its value below its neighbours'. */
+.collectible-stats > div { display: grid; grid-template-rows: 1fr auto; gap: 0.2rem; }
 
 .collectible-stats dt {
   margin: 0;
@@ -2778,11 +2780,12 @@
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 }
 
 @media (max-width: 1000px) { .stocks-layout { grid-template-columns: minmax(0, 1fr); } }
 
+/* Five coins in rows of three, the second row in the same columns as the first. */
 .stocks-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2791,8 +2794,8 @@
 
 .stocks-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-/* Three full-width cards stacked on a phone are three screens of scrolling for
-   three coins. Kept side by side instead, smaller, with the stats stacked. */
+/* Five full-width cards stacked on a phone are five screens of scrolling for
+   five coins. Kept three abreast instead, smaller, with the stats stacked. */
 @media (max-width: 520px) {
   .stocks-grid { gap: 0.5rem; }
   .stocks-grid .collectible { padding: 1rem 0.5rem 0.85rem; }

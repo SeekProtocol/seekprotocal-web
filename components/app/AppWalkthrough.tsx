@@ -9,10 +9,10 @@ import CatchScreen from "@/components/app/screens/CatchScreen";
 import ResultScreen from "@/components/app/screens/ResultScreen";
 import WalletScreen from "@/components/app/screens/WalletScreen";
 import {
-  COLLECTIBLES,
   MAX_ATTEMPTS,
   RARITY_LADDER,
   RETRY_DECAY,
+  collectible,
   type Collectible,
 } from "@/content/collectibles";
 
@@ -38,7 +38,7 @@ const STEPS: Step[] = ["map", "spawn", "catch", "result", "wallet"];
 export default function AppWalkthrough() {
   const t = useTranslations("walkthrough");
   const [step, setStep] = useState<Step>("map");
-  const [target, setTarget] = useState<Collectible>(COLLECTIBLES[4]);
+  const [target, setTarget] = useState<Collectible>(collectible("dogwifhat"));
   const [attempt, setAttempt] = useState(1);
   const [outcome, setOutcome] = useState<CatchOutcome | null>(null);
   const [caughtList, setCaughtList] = useState<Collectible[]>([]);
