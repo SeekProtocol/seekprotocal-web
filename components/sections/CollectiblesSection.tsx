@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { withCopy } from "@/lib/content-i18n";
 import {
@@ -23,6 +23,12 @@ export default function CollectiblesSection() {
   const rarity = useTranslations("rarity");
   const powerups = withCopy(useTranslations("powerups"), POWERUPS, ["label", "effect"]);
   const [filter, setFilter] = useState<Rarity | "all">("all");
+  const grid = useRef<HTMLDivElement>(null);
+
+  // On a phone the grid is a sideways rail; a new filter starts it from the left.
+  useEffect(() => {
+    grid.current?.scrollTo({ left: 0 });
+  }, [filter]);
 
   const shown =
     filter === "all"
@@ -64,7 +70,7 @@ export default function CollectiblesSection() {
         </div>
       </div>
 
-      <div className="collectibles-grid">
+      <div className="collectibles-grid" ref={grid}>
         {shown.map((coin) => {
           const ladder = RARITY_LADDER[coin.rarity];
           // Odds and value are the coin's own; the ladder only lends its colour.

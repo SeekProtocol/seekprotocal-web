@@ -2677,7 +2677,37 @@
 }
 
 @media (max-width: 1000px) { .collectibles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 520px) { .collectibles-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Twenty-two coins one under another is twenty-two screens on a phone. A rail
+   instead, like `.offers-rail`: one card tall, the next one peeking in so it
+   reads as something to swipe. */
+@media (max-width: 720px) {
+  .collectibles-grid {
+    display: flex;
+    gap: 0.85rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.5rem;
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
+    scroll-padding-inline: var(--gutter);
+    scrollbar-width: none;
+  }
+
+  .collectibles-grid::-webkit-scrollbar { display: none; }
+
+  .collectibles-grid .collectible {
+    flex: none;
+    width: min(16rem, 72vw);
+    scroll-snap-align: start;
+  }
+
+  /* The scroll reveal would leave every card past the first two waiting for a
+     swipe before it fades in; the rail arrives as one piece instead. */
+  .collectibles-grid .collectible.reveal { opacity: 1; transform: none; }
+
+  .collectibles-grid .collectible:hover { transform: none; }
+}
 
 .collectible {
   display: grid;
