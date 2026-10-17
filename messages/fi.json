@@ -3314,11 +3314,11 @@
     "skipToContent": "Siirry pääsisältöön"
   },
   "openApp": {
-    "title": "Avaa SEEK",
-    "opening": "Avataan SEEKiä…",
+    "title": "Avaa Seekprotocol",
+    "opening": "Avataan Seekprotocolia…",
     "notOpening": "Eikö mitään tapahdu? Napauta alla olevaa painiketta tai lataa sovellus kaupasta.",
-    "titleDesktop": "Hanki SEEK puhelimeesi",
-    "desktop": "SEEK on mobiilisovellus. Lataa se App Storesta tai Google Playsta.",
+    "titleDesktop": "Hanki Seekprotocol puhelimeesi",
+    "desktop": "Seekprotocol on mobiilisovellus. Lataa se App Storesta tai Google Playsta.",
     "openButton": "Avaa sovellus",
     "appStore": "Lataa App Storesta",
     "googlePlay": "Hanki Google Playsta"

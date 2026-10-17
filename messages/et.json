@@ -3314,11 +3314,11 @@
     "skipToContent": "Liigu põhisisu juurde"
   },
   "openApp": {
-    "title": "Ava SEEK",
-    "opening": "SEEK avaneb…",
+    "title": "Ava Seekprotocol",
+    "opening": "Seekprotocol avaneb…",
     "notOpening": "Midagi ei juhtu? Puuduta allolevat nuppu või laadi rakendus poest alla.",
-    "titleDesktop": "Hangi SEEK oma telefoni",
-    "desktop": "SEEK on mobiilirakendus. Laadi see alla App Store'ist või Google Playst.",
+    "titleDesktop": "Hangi Seekprotocol oma telefoni",
+    "desktop": "Seekprotocol on mobiilirakendus. Laadi see alla App Store'ist või Google Playst.",
     "openButton": "Ava rakendus",
     "appStore": "Laadi App Store'ist",
     "googlePlay": "Hangi Google Playst"

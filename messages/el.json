@@ -3314,11 +3314,11 @@
     "skipToContent": "Μετάβαση στο κύριο περιεχόμενο"
   },
   "openApp": {
-    "title": "Άνοιγμα SEEK",
-    "opening": "Άνοιγμα του SEEK…",
+    "title": "Άνοιγμα Seekprotocol",
+    "opening": "Άνοιγμα του Seekprotocol…",
     "notOpening": "Δεν συμβαίνει τίποτα; Πάτησε το κουμπί παρακάτω ή κατέβασε την εφαρμογή από το store σου.",
-    "titleDesktop": "Κατέβασε το SEEK στο κινητό σου",
-    "desktop": "Το SEEK είναι εφαρμογή για κινητά. Κατέβασέ το από το App Store ή το Google Play.",
+    "titleDesktop": "Κατέβασε το Seekprotocol στο κινητό σου",
+    "desktop": "Το Seekprotocol είναι εφαρμογή για κινητά. Κατέβασέ το από το App Store ή το Google Play.",
     "openButton": "Άνοιγμα εφαρμογής",
     "appStore": "Λήψη από το App Store",
     "googlePlay": "Διαθέσιμο στο Google Play"

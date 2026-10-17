@@ -3314,11 +3314,11 @@
     "skipToContent": "Chuyển đến nội dung chính"
   },
   "openApp": {
-    "title": "Mở SEEK",
-    "opening": "Đang mở SEEK…",
+    "title": "Mở Seekprotocol",
+    "opening": "Đang mở Seekprotocol…",
     "notOpening": "Không có gì xảy ra? Nhấn nút bên dưới hoặc tải ứng dụng từ cửa hàng.",
-    "titleDesktop": "Tải SEEK về điện thoại",
-    "desktop": "SEEK là ứng dụng di động. Tải về từ App Store hoặc Google Play.",
+    "titleDesktop": "Tải Seekprotocol về điện thoại",
+    "desktop": "Seekprotocol là ứng dụng di động. Tải về từ App Store hoặc Google Play.",
     "openButton": "Mở ứng dụng",
     "appStore": "Tải về trên App Store",
     "googlePlay": "Tải về trên Google Play"

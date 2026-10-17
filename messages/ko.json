@@ -3314,11 +3314,11 @@
     "skipToContent": "본문으로 건너뛰기"
   },
   "openApp": {
-    "title": "SEEK 열기",
-    "opening": "SEEK을 여는 중…",
+    "title": "Seekprotocol 열기",
+    "opening": "Seekprotocol을 여는 중…",
     "notOpening": "아무 일도 일어나지 않나요? 아래 버튼을 누르거나 스토어에서 앱을 받으세요.",
-    "titleDesktop": "휴대폰에 SEEK 설치하기",
-    "desktop": "SEEK은 모바일 앱입니다. App Store 또는 Google Play에서 다운로드하세요.",
+    "titleDesktop": "휴대폰에 Seekprotocol 설치하기",
+    "desktop": "Seekprotocol은 모바일 앱입니다. App Store 또는 Google Play에서 다운로드하세요.",
     "openButton": "앱 열기",
     "appStore": "App Store에서 다운로드",
     "googlePlay": "Google Play에서 다운로드"

@@ -3314,11 +3314,11 @@
     "skipToContent": "ข้ามไปยังเนื้อหาหลัก"
   },
   "openApp": {
-    "title": "เปิด SEEK",
-    "opening": "กำลังเปิด SEEK…",
+    "title": "เปิด Seekprotocol",
+    "opening": "กำลังเปิด Seekprotocol…",
     "notOpening": "ไม่มีอะไรเกิดขึ้นใช่ไหม แตะปุ่มด้านล่าง หรือดาวน์โหลดแอปจากสโตร์",
-    "titleDesktop": "ติดตั้ง SEEK บนมือถือ",
-    "desktop": "SEEK เป็นแอปบนมือถือ ดาวน์โหลดได้จาก App Store หรือ Google Play",
+    "titleDesktop": "ติดตั้ง Seekprotocol บนมือถือ",
+    "desktop": "Seekprotocol เป็นแอปบนมือถือ ดาวน์โหลดได้จาก App Store หรือ Google Play",
     "openButton": "เปิดแอป",
     "appStore": "ดาวน์โหลดบน App Store",
     "googlePlay": "ดาวน์โหลดบน Google Play"

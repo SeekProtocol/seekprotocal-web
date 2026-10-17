@@ -3314,11 +3314,11 @@
     "skipToContent": "Naar hoofdinhoud"
   },
   "openApp": {
-    "title": "SEEK openen",
-    "opening": "SEEK wordt geopend…",
+    "title": "Seekprotocol openen",
+    "opening": "Seekprotocol wordt geopend…",
     "notOpening": "Gebeurt er niets? Tik op de knop hieronder, of download de app in je store.",
-    "titleDesktop": "Haal SEEK op je telefoon",
-    "desktop": "SEEK is een mobiele app. Download hem in de App Store of Google Play.",
+    "titleDesktop": "Haal Seekprotocol op je telefoon",
+    "desktop": "Seekprotocol is een mobiele app. Download hem in de App Store of Google Play.",
     "openButton": "Open de app",
     "appStore": "Download in de App Store",
     "googlePlay": "Ontdek het op Google Play"

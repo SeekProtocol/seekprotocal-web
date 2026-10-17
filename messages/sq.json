@@ -3314,11 +3314,11 @@
     "skipToContent": "Kalo te përmbajtja kryesore"
   },
   "openApp": {
-    "title": "Hap SEEK",
-    "opening": "Po hapet SEEK…",
+    "title": "Hap Seekprotocol",
+    "opening": "Po hapet Seekprotocol…",
     "notOpening": "Nuk ndodh asgjë? Prek butonin më poshtë ose shkarko aplikacionin nga dyqani.",
-    "titleDesktop": "Merr SEEK në telefon",
-    "desktop": "SEEK është aplikacion celular. Shkarkoje nga App Store ose Google Play.",
+    "titleDesktop": "Merr Seekprotocol në telefon",
+    "desktop": "Seekprotocol është aplikacion celular. Shkarkoje nga App Store ose Google Play.",
     "openButton": "Hap aplikacionin",
     "appStore": "Shkarko në App Store",
     "googlePlay": "Merre në Google Play"

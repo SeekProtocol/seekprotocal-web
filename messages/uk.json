@@ -3314,11 +3314,11 @@
     "skipToContent": "Перейти до основного вмісту"
   },
   "openApp": {
-    "title": "Відкрити SEEK",
-    "opening": "Відкриваємо SEEK…",
+    "title": "Відкрити Seekprotocol",
+    "opening": "Відкриваємо Seekprotocol…",
     "notOpening": "Нічого не відбувається? Торкніться кнопки нижче або завантажте застосунок у магазині.",
-    "titleDesktop": "Встановіть SEEK на телефон",
-    "desktop": "SEEK це мобільний застосунок. Завантажте його з App Store або Google Play.",
+    "titleDesktop": "Встановіть Seekprotocol на телефон",
+    "desktop": "Seekprotocol це мобільний застосунок. Завантажте його з App Store або Google Play.",
     "openButton": "Відкрити застосунок",
     "appStore": "Завантажити в App Store",
     "googlePlay": "Завантажити з Google Play"

@@ -3314,11 +3314,11 @@
     "skipToContent": "Pređi na glavni sadržaj"
   },
   "openApp": {
-    "title": "Otvori SEEK",
-    "opening": "Otvaranje SEEK-a…",
+    "title": "Otvori Seekprotocol",
+    "opening": "Otvaranje Seekprotocola…",
     "notOpening": "Ništa se ne dešava? Dodirni dugme ispod ili preuzmi aplikaciju iz prodavnice.",
-    "titleDesktop": "Preuzmi SEEK na telefon",
-    "desktop": "SEEK je mobilna aplikacija. Preuzmi je sa App Store-a ili Google Play-a.",
+    "titleDesktop": "Preuzmi Seekprotocol na telefon",
+    "desktop": "Seekprotocol je mobilna aplikacija. Preuzmi je sa App Store-a ili Google Play-a.",
     "openButton": "Otvori aplikaciju",
     "appStore": "Preuzmi na App Store-u",
     "googlePlay": "Nabavi na Google Play-u"

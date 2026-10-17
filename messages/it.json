@@ -3314,11 +3314,11 @@
     "skipToContent": "Vai al contenuto principale"
   },
   "openApp": {
-    "title": "Apri SEEK",
-    "opening": "Apertura di SEEK…",
+    "title": "Apri Seekprotocol",
+    "opening": "Apertura di Seekprotocol…",
     "notOpening": "Non succede nulla? Tocca il pulsante qui sotto o scarica l'app dal tuo store.",
-    "titleDesktop": "Scarica SEEK sul telefono",
-    "desktop": "SEEK è un'app mobile. Scaricala dall'App Store o da Google Play.",
+    "titleDesktop": "Scarica Seekprotocol sul telefono",
+    "desktop": "Seekprotocol è un'app mobile. Scaricala dall'App Store o da Google Play.",
     "openButton": "Apri l'app",
     "appStore": "Scarica su App Store",
     "googlePlay": "Disponibile su Google Play"

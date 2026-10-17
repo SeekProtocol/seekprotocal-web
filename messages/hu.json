@@ -3314,11 +3314,11 @@
     "skipToContent": "Ugrás a fő tartalomra"
   },
   "openApp": {
-    "title": "SEEK megnyitása",
-    "opening": "A SEEK megnyitása…",
+    "title": "Seekprotocol megnyitása",
+    "opening": "A Seekprotocol megnyitása…",
     "notOpening": "Nem történik semmi? Koppints az alábbi gombra, vagy töltsd le az appot a boltból.",
-    "titleDesktop": "Töltsd le a SEEK-et a telefonodra",
-    "desktop": "A SEEK egy mobilalkalmazás. Töltsd le az App Store-ból vagy a Google Playről.",
+    "titleDesktop": "Töltsd le a Seekprotocolt a telefonodra",
+    "desktop": "A Seekprotocol egy mobilalkalmazás. Töltsd le az App Store-ból vagy a Google Playről.",
     "openButton": "Az app megnyitása",
     "appStore": "Letöltés az App Store-ból",
     "googlePlay": "Szerezd be: Google Play"

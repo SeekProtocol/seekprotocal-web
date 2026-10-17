@@ -3314,11 +3314,11 @@
     "skipToContent": "跳到主要內容"
   },
   "openApp": {
-    "title": "開啟 SEEK",
-    "opening": "正在開啟 SEEK…",
+    "title": "開啟 Seekprotocol",
+    "opening": "正在開啟 Seekprotocol…",
     "notOpening": "沒有反應？點一下下方按鈕，或從應用程式商店下載。",
-    "titleDesktop": "在手機上取得 SEEK",
-    "desktop": "SEEK 是一款手機 App。請從 App Store 或 Google Play 下載。",
+    "titleDesktop": "在手機上取得 Seekprotocol",
+    "desktop": "Seekprotocol 是一款手機 App。請從 App Store 或 Google Play 下載。",
     "openButton": "開啟 App",
     "appStore": "在 App Store 下載",
     "googlePlay": "在 Google Play 取得"

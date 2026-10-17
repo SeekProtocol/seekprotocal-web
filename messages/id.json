@@ -3314,11 +3314,11 @@
     "skipToContent": "Langsung ke konten utama"
   },
   "openApp": {
-    "title": "Buka SEEK",
-    "opening": "Membuka SEEK…",
+    "title": "Buka Seekprotocol",
+    "opening": "Membuka Seekprotocol…",
     "notOpening": "Tidak terjadi apa-apa? Ketuk tombol di bawah, atau unduh aplikasinya dari toko aplikasi.",
-    "titleDesktop": "Pasang SEEK di ponselmu",
-    "desktop": "SEEK adalah aplikasi seluler. Unduh dari App Store atau Google Play.",
+    "titleDesktop": "Pasang Seekprotocol di ponselmu",
+    "desktop": "Seekprotocol adalah aplikasi seluler. Unduh dari App Store atau Google Play.",
     "openButton": "Buka aplikasi",
     "appStore": "Unduh di App Store",
     "googlePlay": "Dapatkan di Google Play"
