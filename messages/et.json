@@ -3312,5 +3312,15 @@
     "description": "Koge tulevikku koos $SEEK-iga, AR- ja AI-kihiga auhindadele, mis elavad kindlas kohas. Jahi asukohapõhiseid droppe, kogu NFT-sid, lunasta kuponge, võida päris kaupu ja avasta koos AI-kaaslastega. Auhind võib olla token mis tahes plokiahelas või plokiahelaga üldse mitte seotud.",
     "socialDescription": "Jahi asukohapõhiseid droppe, kogu NFT-sid, lunasta kuponge ja võida päris kaupu. AR- ja AI-kiht, mis ankurdab auhinna päris kohta, mis tahes plokiahelas või ilma selleta.",
     "skipToContent": "Liigu põhisisu juurde"
+  },
+  "openApp": {
+    "title": "Ava SEEK",
+    "opening": "SEEK avaneb…",
+    "notOpening": "Midagi ei juhtu? Puuduta allolevat nuppu või laadi rakendus poest alla.",
+    "titleDesktop": "Hangi SEEK oma telefoni",
+    "desktop": "SEEK on mobiilirakendus. Laadi see alla App Store'ist või Google Playst.",
+    "openButton": "Ava rakendus",
+    "appStore": "Laadi App Store'ist",
+    "googlePlay": "Hangi Google Playst"
   }
 }

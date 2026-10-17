@@ -3312,5 +3312,15 @@
     "description": "Alami masa depan bersama $SEEK, lapisan AR dan AI untuk ganjaran yang wujud di sesuatu tempat. Buru drop berasaskan lokasi, kumpul NFT, tebus baucar, menangi barangan dunia sebenar dan teroka bersama teman AI. Ganjaran boleh jadi token pada mana-mana chain, atau langsung tiada kaitan dengan chain.",
     "socialDescription": "Buru drop berasaskan lokasi, kumpul NFT, tebus baucar dan menangi barangan dunia sebenar. Lapisan AR dan AI yang menambat ganjaran pada tempat sebenar, pada mana-mana chain atau tanpa chain langsung.",
     "skipToContent": "Langkau ke kandungan utama"
+  },
+  "openApp": {
+    "title": "Buka SEEK",
+    "opening": "Membuka SEEK…",
+    "notOpening": "Tiada apa-apa berlaku? Ketik butang di bawah, atau muat turun aplikasi dari kedai.",
+    "titleDesktop": "Dapatkan SEEK di telefon anda",
+    "desktop": "SEEK ialah aplikasi mudah alih. Muat turun dari App Store atau Google Play.",
+    "openButton": "Buka aplikasi",
+    "appStore": "Muat turun di App Store",
+    "googlePlay": "Dapatkan di Google Play"
   }
 }

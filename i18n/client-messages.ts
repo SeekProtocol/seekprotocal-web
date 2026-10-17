@@ -55,6 +55,7 @@ export const CLIENT_NAMESPACES = [
   "nav",
   "notFound",
   "offers",
+  "openApp",
   "powerups",
   "progression",
   "ranks",

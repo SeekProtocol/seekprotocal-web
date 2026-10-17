@@ -3312,5 +3312,15 @@
     "description": "$SEEK ile geleceği deneyimle: bir yerde yaşayan ödüller için AR ve AI katmanı. Konuma dayalı dropların peşine düş, NFT topla, kuponları kullan, gerçek ürünler kazan ve AI yol arkadaşlarıyla keşfet. Bir ödül herhangi bir zincirde bir token olabilir ya da zincirle hiçbir ilgisi olmayabilir.",
     "socialDescription": "Konuma dayalı dropların peşine düş, NFT topla, kuponları kullan ve gerçek ürünler kazan. Bir ödülü gerçek bir yere sabitleyen AR ve AI katmanı; herhangi bir zincirde ya da hiç zincir olmadan.",
     "skipToContent": "Ana içeriğe geç"
+  },
+  "openApp": {
+    "title": "SEEK'i aç",
+    "opening": "SEEK açılıyor…",
+    "notOpening": "Bir şey olmuyor mu? Aşağıdaki düğmeye dokun ya da uygulamayı mağazandan indir.",
+    "titleDesktop": "SEEK'i telefonuna indir",
+    "desktop": "SEEK bir mobil uygulamadır. App Store veya Google Play'den indir.",
+    "openButton": "Uygulamayı aç",
+    "appStore": "App Store'dan indirin",
+    "googlePlay": "Google Play'den alın"
   }
 }

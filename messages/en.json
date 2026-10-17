@@ -3312,5 +3312,15 @@
     "description": "Experience the future with $SEEK, the AR and AI layer for rewards that live in a place. Hunt location-based drops, collect NFTs, redeem vouchers, win real-world goods and explore with AI companions. A reward can be a token on any chain, or nothing to do with a chain at all.",
     "socialDescription": "Hunt location-based drops, collect NFTs, redeem vouchers and win real-world goods. The AR and AI layer that anchors a reward to a real place, on any chain or none at all.",
     "skipToContent": "Skip to main content"
+  },
+  "openApp": {
+    "title": "Open SEEK",
+    "opening": "Opening SEEK…",
+    "notOpening": "Nothing happening? Tap the button below, or get the app from your store.",
+    "titleDesktop": "Get SEEK on your phone",
+    "desktop": "SEEK is a mobile app. Download it from the App Store or Google Play.",
+    "openButton": "Open the app",
+    "appStore": "Download on the App Store",
+    "googlePlay": "Get it on Google Play"
   }
 }

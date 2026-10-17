@@ -3312,5 +3312,15 @@
     "description": "与 $SEEK 一起体验未来：这是为扎根于真实地点的奖励而生的 AR 与 AI 层。追寻基于位置的空投，收集 NFT，兑换代金券，赢取真实商品，并与 AI 伙伴一同探索。奖励可以是任意链上的代币，也可以与链毫无关系。",
     "socialDescription": "追寻基于位置的空投，收集 NFT，兑换代金券，赢取真实商品。AR 与 AI 层将奖励锚定在真实地点，可在任意链上，也可完全不依赖链。",
     "skipToContent": "跳到主要内容"
+  },
+  "openApp": {
+    "title": "打开 SEEK",
+    "opening": "正在打开 SEEK…",
+    "notOpening": "没有反应？点按下方按钮，或从应用商店下载。",
+    "titleDesktop": "在手机上获取 SEEK",
+    "desktop": "SEEK 是一款手机应用。请从 App Store 或 Google Play 下载。",
+    "openButton": "打开应用",
+    "appStore": "在 App Store 下载",
+    "googlePlay": "在 Google Play 获取"
   }
 }

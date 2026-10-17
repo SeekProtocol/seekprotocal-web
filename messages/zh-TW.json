@@ -3312,5 +3312,15 @@
     "description": "與 $SEEK 一起體驗未來：為存在於某個地點的獎勵而生的 AR 與 AI 層。搜尋以位置為基礎的投放、收集 NFT、兌換優惠券、贏得實體商品，並與 AI 夥伴一起探索。獎勵可以是任何鏈上的代幣，也可以與區塊鏈完全無關。",
     "socialDescription": "搜尋以位置為基礎的投放、收集 NFT、兌換優惠券、贏得實體商品。把獎勵錨定在真實地點的 AR 與 AI 層，可在任何鏈上，也可以不需要鏈。",
     "skipToContent": "跳到主要內容"
+  },
+  "openApp": {
+    "title": "開啟 SEEK",
+    "opening": "正在開啟 SEEK…",
+    "notOpening": "沒有反應？點一下下方按鈕，或從應用程式商店下載。",
+    "titleDesktop": "在手機上取得 SEEK",
+    "desktop": "SEEK 是一款手機 App。請從 App Store 或 Google Play 下載。",
+    "openButton": "開啟 App",
+    "appStore": "在 App Store 下載",
+    "googlePlay": "在 Google Play 取得"
   }
 }

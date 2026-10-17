@@ -3312,5 +3312,15 @@
     "description": "Erlebe die Zukunft mit $SEEK, der AR- und KI-Ebene für Belohnungen, die an einem Ort leben. Jage standortbasierte Drops, sammle NFTs, löse Gutscheine ein, gewinne echte Produkte und entdecke die Welt mit KI-Begleitern. Eine Belohnung kann ein Token auf jeder Chain sein oder gar nichts mit einer Chain zu tun haben.",
     "socialDescription": "Jage standortbasierte Drops, sammle NFTs, löse Gutscheine ein und gewinne echte Produkte. Die AR- und KI-Ebene, die eine Belohnung an einem realen Ort verankert, auf jeder Chain oder ganz ohne.",
     "skipToContent": "Zum Hauptinhalt springen"
+  },
+  "openApp": {
+    "title": "SEEK öffnen",
+    "opening": "SEEK wird geöffnet…",
+    "notOpening": "Passiert nichts? Tippe unten auf den Button oder lade die App aus deinem Store.",
+    "titleDesktop": "Hol dir SEEK aufs Handy",
+    "desktop": "SEEK ist eine mobile App. Lade sie im App Store oder bei Google Play herunter.",
+    "openButton": "App öffnen",
+    "appStore": "Im App Store laden",
+    "googlePlay": "Jetzt bei Google Play"
   }
 }

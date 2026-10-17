@@ -3312,5 +3312,15 @@
     "description": "Përjeto të ardhmen me $SEEK, shtresën AR dhe AI për shpërblime që jetojnë në një vend. Gjuaj drop-e të bazuara në vendndodhje, mblidh NFT, përdor kuponë, fito mallra reale dhe eksploro me shoqërues AI. Një shpërblim mund të jetë një token në çdo zinxhir, ose të mos ketë fare lidhje me një zinxhir.",
     "socialDescription": "Gjuaj drop-e të bazuara në vendndodhje, mblidh NFT, përdor kuponë dhe fito mallra reale. Shtresa AR dhe AI që e ankoron një shpërblim në një vend real, në çdo zinxhir ose pa zinxhir fare.",
     "skipToContent": "Kalo te përmbajtja kryesore"
+  },
+  "openApp": {
+    "title": "Hap SEEK",
+    "opening": "Po hapet SEEK…",
+    "notOpening": "Nuk ndodh asgjë? Prek butonin më poshtë ose shkarko aplikacionin nga dyqani.",
+    "titleDesktop": "Merr SEEK në telefon",
+    "desktop": "SEEK është aplikacion celular. Shkarkoje nga App Store ose Google Play.",
+    "openButton": "Hap aplikacionin",
+    "appStore": "Shkarko në App Store",
+    "googlePlay": "Merre në Google Play"
   }
 }

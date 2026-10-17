@@ -3312,5 +3312,15 @@
     "description": "Ervaar de toekomst met $SEEK, de AR- en AI-laag voor beloningen die op een plek leven. Jaag op locatiegebonden drops, verzamel NFT's, wissel vouchers in, win echte producten en ga op pad met AI-companions. Een beloning kan een token op elke chain zijn, of helemaal niets met een chain te maken hebben.",
     "socialDescription": "Jaag op locatiegebonden drops, verzamel NFT's, wissel vouchers in en win echte producten. De AR- en AI-laag die een beloning aan een echte plek verankert, op elke chain of op geen enkele.",
     "skipToContent": "Naar hoofdinhoud"
+  },
+  "openApp": {
+    "title": "SEEK openen",
+    "opening": "SEEK wordt geopend…",
+    "notOpening": "Gebeurt er niets? Tik op de knop hieronder, of download de app in je store.",
+    "titleDesktop": "Haal SEEK op je telefoon",
+    "desktop": "SEEK is een mobiele app. Download hem in de App Store of Google Play.",
+    "openButton": "Open de app",
+    "appStore": "Download in de App Store",
+    "googlePlay": "Ontdek het op Google Play"
   }
 }

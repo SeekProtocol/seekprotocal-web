@@ -3312,5 +3312,15 @@
     "description": "Poznaj przyszłość z $SEEK, warstwą AR i AI dla nagród, które żyją w konkretnym miejscu. Poluj na dropy oparte na lokalizacji, zbieraj NFT, realizuj kupony, wygrywaj prawdziwe produkty i odkrywaj z towarzyszami AI. Nagrodą może być token na dowolnym łańcuchu albo coś, co z łańcuchem nie ma nic wspólnego.",
     "socialDescription": "Poluj na dropy oparte na lokalizacji, zbieraj NFT, realizuj kupony i wygrywaj prawdziwe produkty. Warstwa AR i AI, która przypisuje nagrodę do prawdziwego miejsca, na dowolnym łańcuchu albo bez żadnego.",
     "skipToContent": "Przejdź do treści głównej"
+  },
+  "openApp": {
+    "title": "Otwórz SEEK",
+    "opening": "Otwieranie SEEK…",
+    "notOpening": "Nic się nie dzieje? Stuknij przycisk poniżej albo pobierz aplikację ze sklepu.",
+    "titleDesktop": "Pobierz SEEK na telefon",
+    "desktop": "SEEK to aplikacja mobilna. Pobierz ją z App Store lub Google Play.",
+    "openButton": "Otwórz aplikację",
+    "appStore": "Pobierz z App Store",
+    "googlePlay": "Pobierz z Google Play"
   }
 }

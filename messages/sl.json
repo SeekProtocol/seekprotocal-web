@@ -3312,5 +3312,15 @@
     "description": "Doživi prihodnost z $SEEK, plastjo AR in umetne inteligence za nagrade, ki živijo na določenem kraju. Lovi drope na podlagi lokacije, zbiraj NFT-je, unovči bone, osvoji resnično blago in raziskuj s spremljevalci z umetno inteligenco. Nagrada je lahko žeton na kateri koli verigi ali pa sploh nima zveze z verigo.",
     "socialDescription": "Lovi drope na podlagi lokacije, zbiraj NFT-je, unovči bone in osvoji resnično blago. Plast AR in umetne inteligence, ki nagrado zasidra na resničen kraj, na kateri koli verigi ali brez nje.",
     "skipToContent": "Preskoči na glavno vsebino"
+  },
+  "openApp": {
+    "title": "Odpri SEEK",
+    "opening": "Odpiranje SEEK…",
+    "notOpening": "Se nič ne zgodi? Tapni spodnji gumb ali prenesi aplikacijo iz trgovine.",
+    "titleDesktop": "Prenesi SEEK na telefon",
+    "desktop": "SEEK je mobilna aplikacija. Prenesi jo iz App Stora ali Google Playa.",
+    "openButton": "Odpri aplikacijo",
+    "appStore": "Prenesi iz App Stora",
+    "googlePlay": "Na voljo v Google Playu"
   }
 }

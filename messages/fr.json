@@ -3312,5 +3312,15 @@
     "description": "Vivez le futur avec $SEEK, la couche AR et IA pour des récompenses ancrées dans un lieu. Chassez des drops géolocalisés, collectionnez des NFT, utilisez des bons, gagnez des produits bien réels et explorez avec des compagnons IA. Une récompense peut être un token sur n'importe quelle chaîne, ou n'avoir aucun lien avec une chaîne.",
     "socialDescription": "Chassez des drops géolocalisés, collectionnez des NFT, utilisez des bons et gagnez des produits bien réels. La couche AR et IA qui ancre une récompense dans un lieu réel, sur n'importe quelle chaîne ou sans aucune.",
     "skipToContent": "Aller au contenu principal"
+  },
+  "openApp": {
+    "title": "Ouvrir SEEK",
+    "opening": "Ouverture de SEEK…",
+    "notOpening": "Rien ne se passe ? Touchez le bouton ci-dessous ou téléchargez l'app sur votre store.",
+    "titleDesktop": "Installez SEEK sur votre téléphone",
+    "desktop": "SEEK est une application mobile. Téléchargez-la sur l'App Store ou Google Play.",
+    "openButton": "Ouvrir l'app",
+    "appStore": "Télécharger dans l'App Store",
+    "googlePlay": "Disponible sur Google Play"
   }
 }

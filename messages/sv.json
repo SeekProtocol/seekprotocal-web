@@ -3312,5 +3312,15 @@
     "description": "Upplev framtiden med $SEEK, AR- och AI-lagret för belöningar som finns på en plats. Jaga platsbaserade drops, samla NFT:er, lös in kuponger, vinn fysiska varor och utforska med AI-kompanjoner. En belöning kan vara en token på vilken kedja som helst, eller inte ha med någon kedja att göra alls.",
     "socialDescription": "Jaga platsbaserade drops, samla NFT:er, lös in kuponger och vinn fysiska varor. AR- och AI-lagret som förankrar en belöning på en riktig plats, på vilken kedja som helst eller ingen alls.",
     "skipToContent": "Hoppa till huvudinnehållet"
+  },
+  "openApp": {
+    "title": "Öppna SEEK",
+    "opening": "Öppnar SEEK…",
+    "notOpening": "Händer inget? Tryck på knappen nedan eller hämta appen i din butik.",
+    "titleDesktop": "Skaffa SEEK i mobilen",
+    "desktop": "SEEK är en mobilapp. Ladda ner den från App Store eller Google Play.",
+    "openButton": "Öppna appen",
+    "appStore": "Hämta i App Store",
+    "googlePlay": "Ladda ned på Google Play"
   }
 }

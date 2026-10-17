@@ -3312,5 +3312,15 @@
     "description": "Iskusite budućnost uz $SEEK, AR i AI sloj za nagrade koje žive na nekom mestu. Lovite dropove zasnovane na lokaciji, sakupljajte NFT-ove, iskoristite vaučere, osvojite robu iz stvarnog sveta i istražujte uz AI saputnike. Nagrada može biti token na bilo kom lancu ili nešto što sa lancem nema nikakve veze.",
     "socialDescription": "Lovite dropove zasnovane na lokaciji, sakupljajte NFT-ove, iskoristite vaučere i osvojite robu iz stvarnog sveta. AR i AI sloj koji nagradu sidri za stvarno mesto, na bilo kom lancu ili bez lanca.",
     "skipToContent": "Pređi na glavni sadržaj"
+  },
+  "openApp": {
+    "title": "Otvori SEEK",
+    "opening": "Otvaranje SEEK-a…",
+    "notOpening": "Ništa se ne dešava? Dodirni dugme ispod ili preuzmi aplikaciju iz prodavnice.",
+    "titleDesktop": "Preuzmi SEEK na telefon",
+    "desktop": "SEEK je mobilna aplikacija. Preuzmi je sa App Store-a ili Google Play-a.",
+    "openButton": "Otvori aplikaciju",
+    "appStore": "Preuzmi na App Store-u",
+    "googlePlay": "Nabavi na Google Play-u"
   }
 }

@@ -3312,5 +3312,15 @@
     "description": "Trải nghiệm tương lai cùng $SEEK, lớp AR và AI cho những phần thưởng gắn với một địa điểm. Săn phần thưởng theo vị trí, sưu tầm NFT, đổi voucher, giành hàng hóa thật và khám phá cùng bạn đồng hành AI. Phần thưởng có thể là token trên bất kỳ chuỗi nào, hoặc chẳng liên quan gì đến blockchain.",
     "socialDescription": "Săn phần thưởng theo vị trí, sưu tầm NFT, đổi voucher và giành hàng hóa thật. Lớp AR và AI neo phần thưởng vào một địa điểm thật, trên bất kỳ chuỗi nào hoặc không cần chuỗi nào.",
     "skipToContent": "Chuyển đến nội dung chính"
+  },
+  "openApp": {
+    "title": "Mở SEEK",
+    "opening": "Đang mở SEEK…",
+    "notOpening": "Không có gì xảy ra? Nhấn nút bên dưới hoặc tải ứng dụng từ cửa hàng.",
+    "titleDesktop": "Tải SEEK về điện thoại",
+    "desktop": "SEEK là ứng dụng di động. Tải về từ App Store hoặc Google Play.",
+    "openButton": "Mở ứng dụng",
+    "appStore": "Tải về trên App Store",
+    "googlePlay": "Tải về trên Google Play"
   }
 }

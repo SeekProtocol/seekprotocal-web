@@ -3312,5 +3312,15 @@
     "description": "Vivi il futuro con $SEEK, il livello AR e AI per ricompense che vivono in un luogo. Caccia drop basati sulla posizione, colleziona NFT, riscatta voucher, vinci prodotti reali ed esplora con compagni AI. Una ricompensa può essere un token su qualsiasi chain, o non avere niente a che fare con una chain.",
     "socialDescription": "Caccia drop basati sulla posizione, colleziona NFT, riscatta voucher e vinci prodotti reali. Il livello AR e AI che ancora una ricompensa a un luogo reale, su qualsiasi chain o su nessuna.",
     "skipToContent": "Vai al contenuto principale"
+  },
+  "openApp": {
+    "title": "Apri SEEK",
+    "opening": "Apertura di SEEK…",
+    "notOpening": "Non succede nulla? Tocca il pulsante qui sotto o scarica l'app dal tuo store.",
+    "titleDesktop": "Scarica SEEK sul telefono",
+    "desktop": "SEEK è un'app mobile. Scaricala dall'App Store o da Google Play.",
+    "openButton": "Apri l'app",
+    "appStore": "Scarica su App Store",
+    "googlePlay": "Disponibile su Google Play"
   }
 }

@@ -3312,5 +3312,15 @@
     "description": "Tapasztald meg a jövőt a $SEEK-kel, a helyhez kötött jutalmak AR- és AI-rétegével. Vadássz helyalapú dropokra, gyűjts NFT-ket, válts be kuponokat, nyerj valódi termékeket, és fedezz fel AI-társakkal. Egy jutalom lehet token bármelyik láncon, vagy olyasmi, aminek semmi köze a lánchoz.",
     "socialDescription": "Vadássz helyalapú dropokra, gyűjts NFT-ket, válts be kuponokat, és nyerj valódi termékeket. Az AR- és AI-réteg, amely a jutalmat egy valódi helyhez köti, bármelyik láncon vagy lánc nélkül.",
     "skipToContent": "Ugrás a fő tartalomra"
+  },
+  "openApp": {
+    "title": "SEEK megnyitása",
+    "opening": "A SEEK megnyitása…",
+    "notOpening": "Nem történik semmi? Koppints az alábbi gombra, vagy töltsd le az appot a boltból.",
+    "titleDesktop": "Töltsd le a SEEK-et a telefonodra",
+    "desktop": "A SEEK egy mobilalkalmazás. Töltsd le az App Store-ból vagy a Google Playről.",
+    "openButton": "Az app megnyitása",
+    "appStore": "Letöltés az App Store-ból",
+    "googlePlay": "Szerezd be: Google Play"
   }
 }

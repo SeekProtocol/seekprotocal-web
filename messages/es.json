@@ -3312,5 +3312,15 @@
     "description": "Vive el futuro con $SEEK, la capa de AR e IA para recompensas que viven en un lugar. Caza drops basados en la ubicación, colecciona NFT, canjea vales, gana productos reales y explora con compañeros de IA. Una recompensa puede ser un token en cualquier cadena, o no tener nada que ver con una cadena.",
     "socialDescription": "Caza drops basados en la ubicación, colecciona NFT, canjea vales y gana productos reales. La capa de AR e IA que ancla una recompensa a un lugar real, en cualquier cadena o en ninguna.",
     "skipToContent": "Saltar al contenido principal"
+  },
+  "openApp": {
+    "title": "Abrir SEEK",
+    "opening": "Abriendo SEEK…",
+    "notOpening": "¿No pasa nada? Toca el botón de abajo o descarga la app en tu tienda.",
+    "titleDesktop": "Consigue SEEK en tu móvil",
+    "desktop": "SEEK es una app móvil. Descárgala en el App Store o Google Play.",
+    "openButton": "Abrir la app",
+    "appStore": "Descargar en el App Store",
+    "googlePlay": "Disponible en Google Play"
   }
 }
