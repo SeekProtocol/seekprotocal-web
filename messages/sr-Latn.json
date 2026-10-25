@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "Imovina iz stvarnog sveta",
     "title": "Ulovite deo kompanija Apple, Amazon, Tesla, Google i NVIDIA",
-    "lead": "Na mapi su sada tokenizovane akcije. Apple, Amazon, Tesla, Google i NVIDIA padaju kao novčići, isto kao i svi ostali: prošetajte do jednog, ulovite ga i isplatite ga kao Robinhood Stock Token na Robinhood Chain-u, pravo u svoj novčanik.",
+    "lead": "Na mapi su tokenizovane akcije. Apple, Amazon, Tesla, Google i NVIDIA padaju kao novčići, isto kao i svi ostali: prošetajte do jednog, ulovite ga i isplatite ga kao xStock na mreži Solana, pravo u svoj novčanik.",
     "points": [
       "Svaki ulov ima fiksnu vrednost u igri: Apple i Amazon vrede $0.05, Tesla i Google $0.12, a NVIDIA $0.30.",
-      "Pri isplati se ta vrednost isplaćuje u tokenu akcije po njegovoj trenutnoj ceni, pa od tada ono što držite prati cenu akcije.",
+      "Pri isplati se ta vrednost po trenutnoj ceni pretvara u odgovarajući xStock, pa od tada ono što držite prati cenu akcije, bilo da raste ili pada.",
       "Apple i Amazon su Neobični novčići, Tesla i Google Retki, a NVIDIA Epski: od ovih pet njega je najteže uloviti.",
-      "Dropovi akcija pojavljuju se u 30 zemalja Evropskog ekonomskog prostora. Podesite svoju zemlju u profilu i pre prve isplate potvrdite da niste američko lice (U.S. person)."
+      "Dropovi akcija pojavljuju se u 30 zemalja Evropskog ekonomskog prostora. Podesite svoju zemlju u profilu i pre prve isplate potvrdite tri izjave za token, među njima i da niste U.S. person."
     ],
-    "coinAlt": "Novčić tokena akcije {name}",
+    "coinAlt": "Novčić akcije {name}",
     "catchChance": "Šansa za ulov",
     "perCatch": "Po ulovu",
-    "finePrint": "Robinhood Stock Tokens su tokenizovane dužničke hartije od vrednosti koje izdaje Robinhood Assets (Jersey) Limited. Prate cenu osnovne akcije, ali ne daju vlasništvo nad kompanijom niti pravo glasa u njoj. Ne smeju se nuditi niti isporučivati u Sjedinjenim Američkim Državama, američkim licima (U.S. persons) niti u ograničenim jurisdikcijama, među kojima su Kanada, Ujedinjeno Kraljevstvo i Švajcarska. Primanje tokena samo po sebi ne znači da ga možete prodati ili zatražiti njegov otkup. Google token prati akcije klase A kompanije Alphabet Inc. Retkost je nivo u igri, a ne mišljenje o investiciji. Cene mogu i da padnu i da porastu i ništa ovde nije investicioni savet. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA i Robinhood su žigovi svojih vlasnika, koji ne sponzorišu niti podržavaju Seekprotocol.",
+    "finePrint": "xStocks su tracker sertifikati, dužnički instrumenti na donosioca koje izdaje Backed Assets (JE) Limited, društvo registrovano na Džerziju. Svaki je pokriven osnovnom akcijom koja se čuva kod regulisanih kastodi institucija i prati njenu cenu, ali ne daje vlasništvo nad kompanijom, pravo glasa niti druga akcionarska prava. xStocks su složeni proizvodi i njihova vrednost može da padne. Osnovni prospekt je odobrila Uprava za finansijsko tržište Lihtenštajna (FMA); to odobrenje nije preporuka proizvoda. xStocks ne smeju da se nude niti isporučuju u Sjedinjenim Američkim Državama, licima koja su U.S. persons niti licima na koja se primenjuju međunarodne sankcije. Prijem xStock samo po sebi ne znači da možete da ga prodate ili otkupite, a otkup kod izdavaoca zahteva njegove sopstvene provere identiteta. GOOGLx prati akcije klase A kompanije Alphabet Inc. Retkost je nivo u igri, a ne mišljenje o investiciji, i ništa ovde nije investicioni savet. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA i xStocks su žigovi svojih vlasnika, koji ne sponzorišu niti podržavaju Seekprotocol.",
     "links": {
-      "restrictions": "Robinhood: ograničene jurisdikcije",
-      "terms": "Robinhood: prospekt i Final Terms (konačni uslovi)",
-      "faq": "Robinhood: česta pitanja o Stock Token-u"
+      "legal": "Backed: pravna dokumenta i prospekt (na engleskom)",
+      "terms": "xStocks: uslovi korišćenja (na engleskom)",
+      "regulationS": "Regulation S: definicija pojma U.S. person (na engleskom)"
     }
   },
   "arenaSection": {

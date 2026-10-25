@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "Aset dunia nyata",
     "title": "Tangkap sepotong Apple, Amazon, Tesla, Google, dan NVIDIA",
-    "lead": "Peta kini memuat saham yang ditokenisasi. Apple, Amazon, Tesla, Google, dan NVIDIA muncul sebagai drop koin seperti koin lainnya: jalan ke salah satunya, tangkap, lalu cairkan sebagai Robinhood Stock Token di Robinhood Chain, langsung ke dompetmu sendiri.",
+    "lead": "Peta memuat saham yang ditokenisasi. Apple, Amazon, Tesla, Google, dan NVIDIA muncul sebagai drop koin seperti koin lainnya: jalan ke salah satunya, tangkap, lalu cairkan sebagai xStock di Solana, langsung ke dompetmu sendiri.",
     "points": [
       "Setiap tangkapan punya nilai game tetap: $0.05 untuk Apple dan Amazon, $0.12 untuk Tesla dan Google, serta $0.30 untuk NVIDIA.",
-      "Saat pencairan, nilai itu dibayarkan dalam token saham dengan harga terkininya, jadi sejak saat itu yang kamu pegang mengikuti harga sahamnya.",
+      "Saat pencairan, nilai itu dikonversi menjadi xStock yang sesuai dengan harga terkininya, jadi sejak saat itu yang kamu pegang mengikuti harga sahamnya, naik atau turun.",
       "Apple dan Amazon berstatus Tidak biasa, Tesla dan Google Langka, dan NVIDIA Epik, yang paling sulit ditangkap di antara kelimanya.",
-      "Drop saham muncul di 30 negara Kawasan Ekonomi Eropa. Atur negaramu di profil, dan konfirmasi bahwa kamu bukan Orang AS (U.S. person) sebelum pencairan pertamamu."
+      "Drop saham muncul di 30 negara Kawasan Ekonomi Eropa. Atur negaramu di profil dan konfirmasi ketiga pernyataan dalam pernyataan token, di antaranya bahwa kamu bukan Orang AS (U.S. person), sebelum pencairan pertamamu."
     ],
-    "coinAlt": "Koin token saham {name}",
+    "coinAlt": "Koin saham {name}",
     "catchChance": "Peluang tangkap",
     "perCatch": "Per tangkapan",
-    "finePrint": "Robinhood Stock Tokens adalah efek utang yang ditokenisasi dan diterbitkan oleh Robinhood Assets (Jersey) Limited. Token ini mengikuti harga saham dasarnya, tetapi tidak memberikan kepemilikan atas perusahaan maupun hak suara di dalamnya. Token ini tidak boleh ditawarkan atau diserahkan di Amerika Serikat, kepada Orang AS (U.S. persons), atau di yurisdiksi terbatas, termasuk Kanada, Britania Raya, dan Swiss. Menerima token tidak dengan sendirinya berarti kamu bisa menjual atau menebusnya. Token Google mengikuti saham Kelas A Alphabet Inc. Kelangkaan adalah tingkatan dalam game, bukan pandangan tentang investasi. Harga bisa turun maupun naik, dan tidak ada apa pun di sini yang merupakan nasihat investasi. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA, dan Robinhood adalah merek dagang milik pemiliknya masing-masing, yang tidak mensponsori atau mendukung Seekprotocol.",
+    "finePrint": "xStocks adalah sertifikat pelacak, yaitu instrumen utang atas unjuk yang diterbitkan oleh Backed Assets (JE) Limited, perusahaan yang terdaftar di Jersey. Setiap xStock dijamin oleh saham yang mendasarinya, yang disimpan oleh kustodian yang diatur, dan mengikuti harga saham tersebut, tetapi tidak memberikan kepemilikan atas perusahaan, hak suara, atau hak pemegang saham lainnya. xStocks adalah produk kompleks dan nilainya dapat turun. Prospektus dasar telah disetujui oleh Otoritas Pasar Keuangan Liechtenstein (FMA); persetujuan tersebut bukan merupakan dukungan terhadap produk. xStocks tidak boleh ditawarkan atau diserahkan di Amerika Serikat, kepada Orang AS (U.S. persons), atau kepada orang yang dikenai sanksi internasional. Menerima xStock tidak dengan sendirinya berarti kamu bisa menjual atau menebusnya, dan penebusan kepada penerbit memerlukan pemeriksaan identitas tersendiri dari penerbit. GOOGLx mengikuti saham Kelas A Alphabet Inc. Kelangkaan adalah tingkatan dalam game, bukan pandangan tentang investasi, dan tidak ada apa pun di sini yang merupakan nasihat investasi. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA, dan xStocks adalah merek dagang milik pemiliknya masing-masing, yang tidak mensponsori atau mendukung Seekprotocol.",
     "links": {
-      "restrictions": "Robinhood: yurisdiksi terbatas",
-      "terms": "Robinhood: prospektus dan Final Terms",
-      "faq": "Robinhood: FAQ Stock Token"
+      "legal": "Backed: dokumen hukum dan prospektus (bahasa Inggris)",
+      "terms": "xStocks: ketentuan layanan (bahasa Inggris)",
+      "regulationS": "Regulation S: definisi U.S. person (bahasa Inggris)"
     }
   },
   "arenaSection": {

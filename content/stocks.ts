@@ -1,7 +1,10 @@
 /**
- * The stock tokens on the map: Apple, Amazon, Tesla, Google and NVIDIA as
- * Robinhood Stock Tokens on Robinhood Chain (4663). Google's token follows
- * Alphabet Class A, hence the GOOGL ticker.
+ * The stock tokens on the map: Apple, Amazon, Tesla, Google and NVIDIA, paid
+ * out as xStocks on Solana (tracker certificates from Backed Assets (JE)
+ * Limited). They moved there from Robinhood Chain on 17 October 2026, in the
+ * app's `20261017120000_stock_payouts_as_xstocks.sql`: the Robinhood Chain
+ * pools held too little of each token to pay out. Google's xStock follows
+ * Alphabet Class A, hence GOOGLx.
  *
  * Figures are the app's own, from `docs/robinhood-stock-drops.md`,
  * `docs/coins/stock-expansion/catalog.json` and
@@ -16,7 +19,8 @@
  *
  * Artwork is the app's banner coin, trimmed and encoded by the same steps as
  * `scripts/build-rewards.py`. Only ids, numbers and artwork live here; every
- * word is in `messages/<locale>.json` under `stocksSection`.
+ * word is in `messages/<locale>.json` under `stocksSection`, and the legal
+ * wording there follows the app's own `stockTokens` copy.
  */
 
 import type { Rarity } from "@/content/collectibles";
@@ -33,19 +37,20 @@ export type StockToken = {
 };
 
 export const STOCK_TOKENS: StockToken[] = [
-  { key: "aapl", name: "Apple", ticker: "AAPL", rarity: "uncommon", base: 0.3, value: 0.05, image: "/app/rewards/rh-aapl.avif" },
-  { key: "amzn", name: "Amazon", ticker: "AMZN", rarity: "uncommon", base: 0.3, value: 0.05, image: "/app/rewards/rh-amzn.avif" },
-  { key: "tsla", name: "Tesla", ticker: "TSLA", rarity: "rare", base: 0.156, value: 0.12, image: "/app/rewards/rh-tsla.avif" },
-  { key: "googl", name: "Google", ticker: "GOOGL", rarity: "rare", base: 0.156, value: 0.12, image: "/app/rewards/rh-googl.avif" },
-  { key: "nvda", name: "NVIDIA", ticker: "NVDA", rarity: "epic", base: 0.091, value: 0.3, image: "/app/rewards/rh-nvda.avif" },
+  { key: "aapl", name: "Apple", ticker: "AAPLx", rarity: "uncommon", base: 0.3, value: 0.05, image: "/app/rewards/rh-aapl.avif" },
+  { key: "amzn", name: "Amazon", ticker: "AMZNx", rarity: "uncommon", base: 0.3, value: 0.05, image: "/app/rewards/rh-amzn.avif" },
+  { key: "tsla", name: "Tesla", ticker: "TSLAx", rarity: "rare", base: 0.156, value: 0.12, image: "/app/rewards/rh-tsla.avif" },
+  { key: "googl", name: "Google", ticker: "GOOGLx", rarity: "rare", base: 0.156, value: 0.12, image: "/app/rewards/rh-googl.avif" },
+  { key: "nvda", name: "NVIDIA", ticker: "NVDAx", rarity: "epic", base: 0.091, value: 0.3, image: "/app/rewards/rh-nvda.avif" },
 ];
 
 /**
- * The issuer's own pages. The section links to them rather than restating
- * their lists, because the lists change and these pages are where they change.
+ * The issuer's own pages, the same three the app's token declaration links
+ * to. The section links to them rather than restating their lists, because
+ * the lists change and these pages are where they change.
  */
 export const STOCK_LINKS = {
-  restrictions: "https://docs.robinhood.com/rhj/restricted-jurisdictions/",
-  terms: "https://robinhood.com/eu/en/legal/rhj/",
-  faq: "https://docs.robinhood.com/rhj/faq/",
+  legal: "https://assets.backed.fi/legal-documentation",
+  terms: "https://xstocks.fi/documents/xstocks-terms-of-service.pdf",
+  regulationS: "https://www.ecfr.gov/current/title-17/section-230.902#p-230.902",
 } as const;

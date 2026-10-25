@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "Real-World-Assets",
     "title": "Fang dir ein Stück Apple, Amazon, Tesla, Google und NVIDIA",
-    "lead": "Auf der Karte liegen jetzt tokenisierte Aktien. Apple, Amazon, Tesla, Google und NVIDIA erscheinen als Coins wie alle anderen: Geh hin, fang einen und lass ihn dir als Robinhood Stock Token auf Robinhood Chain auszahlen, direkt in deine eigene Wallet.",
+    "lead": "Auf der Karte liegen tokenisierte Aktien. Apple, Amazon, Tesla, Google und NVIDIA erscheinen als Coins wie alle anderen: Geh hin, fang einen und lass ihn dir als xStock auf Solana auszahlen, direkt in deine eigene Wallet.",
     "points": [
       "Jeder Fang hat einen festen Spielwert: $0.05 für Apple und Amazon, $0.12 für Tesla und Google und $0.30 für NVIDIA.",
-      "Bei der Auszahlung wird dieser Wert im Aktien-Token zum aktuellen Kurs ausgezahlt; ab dann folgt das, was du hältst, dem Aktienkurs.",
+      "Bei der Auszahlung wird dieser Wert zum aktuellen Kurs in den entsprechenden xStock umgerechnet; ab dann folgt das, was du hältst, dem Aktienkurs, nach oben wie nach unten.",
       "Apple und Amazon sind Ungewöhnlich, Tesla und Google sind Selten und NVIDIA ist Episch, von den fünfen am schwersten zu fangen.",
-      "Aktien-Drops erscheinen in den 30 Ländern des Europäischen Wirtschaftsraums. Leg dein Land in deinem Profil fest und bestätige vor deiner ersten Auszahlung, dass du keine US-Person (U.S. person) bist."
+      "Aktien-Drops erscheinen in den 30 Ländern des Europäischen Wirtschaftsraums. Leg dein Land in deinem Profil fest und bestätige vor deiner ersten Auszahlung die drei Erklärungen der Token-Erklärung, darunter, dass du keine U.S. person bist."
     ],
-    "coinAlt": "Coin des Aktien-Tokens {name}",
+    "coinAlt": "Aktien-Coin {name}",
     "catchChance": "Fangchance",
     "perCatch": "Pro Fang",
-    "finePrint": "Robinhood Stock Tokens sind tokenisierte Schuldverschreibungen, die von Robinhood Assets (Jersey) Limited ausgegeben werden. Sie bilden den Kurs der zugrunde liegenden Aktie ab, verschaffen aber weder Eigentum an dem Unternehmen noch Stimmrechte darin. Sie dürfen nicht in den Vereinigten Staaten, an US-Personen oder in Rechtsordnungen mit Beschränkungen angeboten oder geliefert werden; dazu gehören Kanada, das Vereinigte Königreich und die Schweiz. Der Erhalt eines Tokens bedeutet für sich genommen nicht, dass du ihn verkaufen oder einlösen kannst. Der Google-Token bildet die Class-A-Aktien der Alphabet Inc. ab. Die Seltenheit ist eine Spielstufe, keine Einschätzung der Anlage. Kurse können fallen und steigen, und nichts hier ist eine Anlageberatung. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA und Robinhood sind Marken ihrer Inhaber, die Seekprotocol weder sponsern noch befürworten.",
+    "finePrint": "xStocks sind Tracker-Zertifikate, Inhaberschuldverschreibungen von Backed Assets (JE) Limited, einem auf Jersey registrierten Unternehmen. Jeder xStock ist durch die zugrunde liegende Aktie gedeckt, die bei regulierten Verwahrstellen gehalten wird, und bildet deren Kurs ab, verschafft aber kein Eigentum an dem Unternehmen, keine Stimmrechte und keine sonstigen Aktionärsrechte. xStocks sind komplexe Produkte und ihr Wert kann fallen. Der Basisprospekt ist von der Finanzmarktaufsicht Liechtenstein (FMA) gebilligt; diese Billigung ist keine Empfehlung des Produkts. xStocks dürfen weder in den Vereinigten Staaten noch an U.S. persons oder an Personen, gegen die internationale Sanktionen verhängt wurden, angeboten oder geliefert werden. Der Erhalt eines xStock bedeutet für sich genommen nicht, dass du ihn verkaufen oder einlösen kannst, und eine Einlösung bei der Emittentin setzt deren eigene Identitätsprüfungen voraus. GOOGLx bildet die Class-A-Aktien der Alphabet Inc. ab. Die Seltenheit ist eine Spielstufe, keine Einschätzung der Anlage, und nichts hier ist eine Anlageberatung. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA und xStocks sind Marken ihrer Inhaber, die Seekprotocol weder sponsern noch befürworten.",
     "links": {
-      "restrictions": "Robinhood: Rechtsordnungen mit Beschränkungen",
-      "terms": "Robinhood: Prospekt und Final Terms",
-      "faq": "Robinhood: FAQ zu Stock Tokens"
+      "legal": "Backed: rechtliche Dokumente und Prospekt (auf Englisch)",
+      "terms": "xStocks: Nutzungsbedingungen (auf Englisch)",
+      "regulationS": "Regulation S: Definition von U.S. person (auf Englisch)"
     }
   },
   "arenaSection": {

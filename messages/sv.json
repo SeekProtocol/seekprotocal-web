@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "Verkliga tillgångar",
     "title": "Fånga en bit av Apple, Amazon, Tesla, Google och NVIDIA",
-    "lead": "Kartan rymmer nu tokeniserade aktier. Apple, Amazon, Tesla, Google och NVIDIA droppar som mynt precis som alla andra: gå fram till ett, fånga det och ta ut det som en Robinhood Stock Token på Robinhood Chain, direkt till din egen plånbok.",
+    "lead": "Kartan rymmer tokeniserade aktier. Apple, Amazon, Tesla, Google och NVIDIA droppar som mynt precis som alla andra: gå fram till ett, fånga det och ta ut det som en xStock på Solana, direkt till din egen plånbok.",
     "points": [
       "Varje fångst har ett fast spelvärde: $0.05 för Apple och Amazon, $0.12 för Tesla och Google, och $0.30 för NVIDIA.",
-      "Vid uttaget betalas värdet ut i aktietoken till dess aktuella pris, så från och med då följer det du har aktiekursen.",
+      "Vid uttaget omvandlas värdet till motsvarande xStock till aktuell kurs, så från och med då följer det du har aktiekursen, uppåt eller nedåt.",
       "Apple och Amazon är Uncommon, Tesla och Google är Rare och NVIDIA är Epic, det svåraste av de fem att få.",
-      "Aktiedrops dyker upp i de 30 länderna i Europeiska ekonomiska samarbetsområdet. Ange ditt land i profilen och bekräfta att du inte är en amerikansk person (U.S. person) före ditt första uttag."
+      "Aktiedrops dyker upp i de 30 länderna i Europeiska ekonomiska samarbetsområdet. Ange ditt land i profilen och bekräfta de tre uttalandena i tokenförsäkran, bland annat att du inte är en U.S. person, före ditt första uttag."
     ],
-    "coinAlt": "Aktietokenmynt för {name}",
+    "coinAlt": "Aktiemynt för {name}",
     "catchChance": "Fångstchans",
     "perCatch": "Per fångst",
-    "finePrint": "Robinhood Stock Tokens är tokeniserade skuldvärdepapper utgivna av Robinhood Assets (Jersey) Limited. De följer priset på den underliggande aktien men ger inget ägande av, eller rösträtt i, bolaget. De får inte erbjudas eller levereras i USA, till amerikanska personer eller i jurisdiktioner med restriktioner, som bland annat omfattar Kanada, Storbritannien och Schweiz. Att du tar emot en token betyder inte i sig att du kan sälja eller lösa in den. Googles token följer aktier av klass A i Alphabet Inc. Sällsynthet är en spelnivå, inte en bedömning av investeringen. Priser kan gå ned såväl som upp, och inget här är investeringsrådgivning. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA och Robinhood är varumärken som tillhör sina ägare, som inte sponsrar eller stöder Seekprotocol.",
+    "finePrint": "xStocks är trackercertifikat, skuldinstrument ställda till innehavaren som ges ut av Backed Assets (JE) Limited, ett bolag registrerat på Jersey. Varje xStock har som säkerhet den underliggande aktien, som förvaras hos reglerade förvaringsinstitut, och följer dess kurs, men ger inget ägande av bolaget, ingen rösträtt och inga andra aktieägarrättigheter. xStocks är komplexa produkter och deras värde kan sjunka. Grundprospektet är godkänt av Liechtensteins finansmarknadsmyndighet (FMA); godkännandet innebär inte att produkten rekommenderas. xStocks får inte erbjudas eller levereras i USA, till U.S. persons eller till personer som omfattas av internationella sanktioner. Att du tar emot en xStock innebär inte i sig att du kan sälja eller lösa in den, och inlösen hos emittenten kräver emittentens egna identitetskontroller. GOOGLx följer aktier av klass A i Alphabet Inc. Sällsynthet är en spelnivå, inte en bedömning av investeringen, och inget här är investeringsrådgivning. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA och xStocks är varumärken som tillhör sina ägare, som inte sponsrar eller stöder Seekprotocol.",
     "links": {
-      "restrictions": "Robinhood: jurisdiktioner med restriktioner",
-      "terms": "Robinhood: prospekt och Final Terms (slutliga villkor)",
-      "faq": "Robinhood: vanliga frågor om Stock Token"
+      "legal": "Backed: juridiska dokument och prospekt (på engelska)",
+      "terms": "xStocks: användarvillkor (på engelska)",
+      "regulationS": "Regulation S: definition av U.S. person (på engelska)"
     }
   },
   "arenaSection": {

@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "실물 자산",
     "title": "Apple, Amazon, Tesla, Google, NVIDIA의 한 조각을 잡으세요",
-    "lead": "이제 지도에 토큰화된 주식이 있습니다. Apple, Amazon, Tesla, Google, NVIDIA는 다른 코인과 똑같이 코인으로 드롭됩니다. 걸어가서 잡은 뒤 Robinhood Chain의 Robinhood Stock Token으로 출금하면, 여러분의 지갑으로 바로 들어갑니다.",
+    "lead": "지도에는 토큰화된 주식이 있습니다. Apple, Amazon, Tesla, Google, NVIDIA는 다른 코인과 똑같이 코인으로 드롭됩니다. 걸어가서 잡은 뒤 Solana의 xStock으로 출금하면, 여러분의 지갑으로 바로 들어갑니다.",
     "points": [
       "모든 캐치에는 고정된 게임 가치가 있습니다. Apple과 Amazon은 $0.05, Tesla와 Google은 $0.12, NVIDIA는 $0.30입니다.",
-      "출금할 때 그 가치는 현재 가격 기준의 주식 토큰으로 지급되므로, 그때부터 여러분이 보유한 것은 주가를 따라 움직입니다.",
+      "출금할 때 그 가치는 현재 가격으로 해당 xStock으로 환산되므로, 그때부터 여러분이 보유한 것은 주가를 따라 오르내립니다.",
       "Apple과 Amazon은 언커먼, Tesla와 Google은 레어, NVIDIA는 에픽이며, NVIDIA가 다섯 중 가장 잡기 어렵습니다.",
-      "주식 드롭은 유럽경제지역 30개국에서 나타납니다. 프로필에서 국가를 설정하고, 첫 출금 전에 미국인(U.S. person)이 아님을 확인하세요."
+      "주식 드롭은 유럽경제지역 30개국에서 나타납니다. 프로필에서 국가를 설정하고, 첫 출금 전에 미국인(U.S. person)이 아니라는 진술을 포함한 토큰 확인서의 세 가지 진술을 확인하세요."
     ],
-    "coinAlt": "{name} 주식 토큰 코인",
+    "coinAlt": "{name} 주식 코인",
     "catchChance": "캐치 확률",
     "perCatch": "캐치당",
-    "finePrint": "Robinhood Stock Token은 Robinhood Assets (Jersey) Limited가 발행하는 토큰화된 채무증권입니다. 기초 주식의 가격을 추종하지만, 해당 회사에 대한 소유권이나 의결권을 부여하지 않습니다. 미국 내에서, 미국인에게, 또는 캐나다, 영국, 스위스를 포함한 제한 관할권에서 제공되거나 인도될 수 없습니다. 토큰을 받았다는 사실만으로 이를 매도하거나 상환할 수 있는 것은 아닙니다. Google 토큰은 Alphabet Inc. 클래스 A 주식을 추종합니다. 희귀도는 게임상의 등급이며, 투자에 대한 견해가 아닙니다. 가격은 내릴 수도 있고 오를 수도 있으며, 여기의 어떤 내용도 투자 조언이 아닙니다. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA, Robinhood는 각 소유자의 상표이며, 소유자들은 Seekprotocol을 후원하거나 보증하지 않습니다.",
+    "finePrint": "xStocks는 트래커 증서로, 저지섬에 등록된 회사인 Backed Assets (JE) Limited가 발행한 무기명 채무증서입니다. 각 xStock은 기초 주식으로 담보되며, 해당 주식은 규제를 받는 수탁기관에 보관됩니다. 해당 주식의 가격을 추종하지만, 회사에 대한 소유권, 의결권 또는 기타 주주 권리를 부여하지 않습니다. xStocks는 복잡한 상품이며 가치가 하락할 수 있습니다. 기본투자설명서는 리히텐슈타인 금융시장감독청(FMA)의 승인을 받았으나, 이 승인은 상품에 대한 보증이 아닙니다. xStocks는 미국 내에서, 미국인(U.S. persons)에게, 또는 국제 제재 대상자에게 제공되거나 인도될 수 없습니다. xStock을 받았다는 사실만으로 이를 매도하거나 상환할 수 있는 것은 아니며, 발행인을 통한 상환에는 발행인 자체의 신원 확인 절차가 필요합니다. GOOGLx는 Alphabet Inc. 클래스 A 주식을 추종합니다. 희귀도는 게임상의 등급이며 투자에 대한 견해가 아니고, 여기의 어떤 내용도 투자 조언이 아닙니다. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA, xStocks는 각 소유자의 상표이며, 소유자들은 Seekprotocol을 후원하거나 보증하지 않습니다.",
     "links": {
-      "restrictions": "Robinhood: 제한 관할권",
-      "terms": "Robinhood: 투자설명서 및 Final Terms(최종 조건)",
-      "faq": "Robinhood: Stock Token FAQ"
+      "legal": "Backed: 법률 문서 및 투자설명서(영어)",
+      "terms": "xStocks: 서비스 약관(영어)",
+      "regulationS": "Regulation S: U.S. person의 정의(영어)"
     }
   },
   "arenaSection": {

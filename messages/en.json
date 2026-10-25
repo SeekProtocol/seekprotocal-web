@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "Real-world assets",
     "title": "Catch a piece of Apple, Amazon, Tesla, Google and NVIDIA",
-    "lead": "The map now holds tokenized stocks. Apple, Amazon, Tesla, Google and NVIDIA drop as coins like any other: walk to one, catch it, and cash it out as a Robinhood Stock Token on Robinhood Chain, straight into your own wallet.",
+    "lead": "The map holds tokenized stocks. Apple, Amazon, Tesla, Google and NVIDIA drop as coins like any other: walk to one, catch it, and cash it out as an xStock on Solana, straight into your own wallet.",
     "points": [
       "Every catch has a fixed game value: $0.05 for Apple and Amazon, $0.12 for Tesla and Google, and $0.30 for NVIDIA.",
-      "At cash-out that value is paid in the stock token at its current price, so from then on what you hold follows the share price.",
+      "At cash-out that value is converted into the matching xStock at its current price, so from then on what you hold follows the share price, up or down.",
       "Apple and Amazon are Uncommon, Tesla and Google are Rare, and NVIDIA is Epic, the hardest of the five to land.",
-      "Stock drops appear in the 30 countries of the European Economic Area. Set your country in your profile, and confirm you are not a U.S. person before your first cash-out."
+      "Stock drops appear in the 30 countries of the European Economic Area. Set your country in your profile and confirm the three statements of the token declaration, among them that you are not a U.S. person, before your first cash-out."
     ],
-    "coinAlt": "{name} stock token coin",
+    "coinAlt": "{name} stock coin",
     "catchChance": "Catch chance",
     "perCatch": "Per catch",
-    "finePrint": "Robinhood Stock Tokens are tokenized debt securities issued by Robinhood Assets (Jersey) Limited. They track the price of the underlying share but give no ownership of, or voting rights in, the company. They may not be offered or delivered in the United States, to U.S. persons, or in restricted jurisdictions, which include Canada, the United Kingdom and Switzerland. Receiving a token does not by itself mean you can sell or redeem it. The Google token tracks Alphabet Inc. Class A shares. Rarity is a game tier, not a view on the investment. Prices can go down as well as up, and nothing here is investment advice. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA and Robinhood are trademarks of their owners, who do not sponsor or endorse Seekprotocol.",
+    "finePrint": "xStocks are tracker certificates, bearer debt instruments issued by Backed Assets (JE) Limited, a company registered in Jersey. Each one is backed by the underlying share, held with regulated custodians, and follows its price, but gives no ownership of the company, voting rights or other shareholder rights. xStocks are complex products and their value can fall. The base prospectus is approved by the Liechtenstein Financial Market Authority; that approval is not an endorsement of the product. xStocks may not be offered or delivered in the United States, to U.S. persons, or to persons under international sanctions. Receiving an xStock does not by itself mean you can sell or redeem it, and redeeming with the issuer requires its own identity checks. GOOGLx tracks Alphabet Inc. Class A shares. Rarity is a game tier, not a view on the investment, and nothing here is investment advice. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA and xStocks are trademarks of their owners, who do not sponsor or endorse Seekprotocol.",
     "links": {
-      "restrictions": "Robinhood: restricted jurisdictions",
-      "terms": "Robinhood: prospectus and Final Terms",
-      "faq": "Robinhood: Stock Token FAQ"
+      "legal": "Backed: legal documents and prospectus",
+      "terms": "xStocks: terms of service",
+      "regulationS": "Regulation S: definition of U.S. person"
     }
   },
   "arenaSection": {

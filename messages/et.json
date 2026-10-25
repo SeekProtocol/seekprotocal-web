@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "Päris maailma varad",
     "title": "Apple, Amazon, Tesla, Google ja NVIDIA: püüa endale tükike",
-    "lead": "Kaardil on nüüd tokeniseeritud aktsiad. Apple, Amazon, Tesla, Google ja NVIDIA ilmuvad müntidena nagu kõik teisedki: kõnni ühe juurde, püüa see kinni ja võta see välja Robinhood Stock Tokenina Robinhood Chainis, otse oma rahakotti.",
+    "lead": "Kaardil on tokeniseeritud aktsiad. Apple, Amazon, Tesla, Google ja NVIDIA ilmuvad müntidena nagu kõik teisedki: kõnni ühe juurde, püüa see kinni ja võta see välja xStockina Solanas, otse oma rahakotti.",
     "points": [
       "Igal püügil on kindel mänguväärtus: Apple ja Amazon $0.05, Tesla ja Google $0.12 ning NVIDIA $0.30.",
-      "Väljamaksel makstakse see väärtus välja aktsiatokenis selle hetkehinnaga, nii et sellest hetkest järgib see, mis sul on, aktsia hinda.",
+      "Väljamaksel arvestatakse see väärtus kehtiva hinnaga ümber vastavaks xStockiks, nii et sellest hetkest järgib see, mis sul on, aktsia hinda nii üles kui ka alla.",
       "Apple ja Amazon on Uncommon, Tesla ja Google on Rare ning NVIDIA on Epic, viiest kõige raskemini püütav.",
-      "Aktsiadropid ilmuvad Euroopa Majanduspiirkonna 30 riigis. Määra oma profiilis oma riik ja kinnita enne esimest väljamakset, et sa ei ole USA isik (U.S. person)."
+      "Aktsiadropid ilmuvad Euroopa Majanduspiirkonna 30 riigis. Määra oma profiilis oma riik ja kinnita enne esimest väljamakset tokeni deklaratsiooni kolm väidet, sealhulgas see, et sa ei ole U.S. person."
     ],
-    "coinAlt": "{name} aktsiatokeni münt",
+    "coinAlt": "{name} aktsiamünt",
     "catchChance": "Püügitõenäosus",
     "perCatch": "Püügi kohta",
-    "finePrint": "Robinhood Stock Tokenid on Robinhood Assets (Jersey) Limitedi emiteeritud tokeniseeritud võlaväärtpaberid. Need järgivad alusaktsia hinda, kuid ei anna omandiõigust ettevõttes ega hääleõigust selles. Neid ei tohi pakkuda ega üle anda Ameerika Ühendriikides, USA isikutele ega piiratud jurisdiktsioonides, mille hulka kuuluvad Kanada, Ühendkuningriik ja Šveits. Tokeni saamine ei tähenda iseenesest, et saad selle müüa või lunastada. Google'i token järgib Alphabet Inc. A-klassi aktsiaid. Haruldus on mängutase, mitte hinnang investeeringule. Hinnad võivad nii langeda kui ka tõusta ja miski siin ei ole investeerimisnõustamine. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA ja Robinhood on nende omanike kaubamärgid ning omanikud ei sponsoreeri ega toeta Seekprotocoli.",
+    "finePrint": "xStocks on trackersertifikaadid ehk esitajavõlakirjad, mille on emiteerinud Jerseys registreeritud äriühing Backed Assets (JE) Limited. Iga xStocki tagab alusaktsia, mida hoitakse reguleeritud hoidjate juures, ja xStock järgib selle hinda, kuid ei anna omandiõigust ettevõttes, hääleõigust ega muid aktsionäri õigusi. xStocks on keerukad tooted ja nende väärtus võib langeda. Alusprospekti on kinnitanud Liechtensteini finantsturu järelevalveasutus (FMA); see kinnitus ei ole toote soovitus. xStocksi ei tohi pakkuda ega üle anda Ameerika Ühendriikides, isikutele, kes on U.S. persons, ega isikutele, kelle suhtes kohaldatakse rahvusvahelisi sanktsioone. xStocki saamine ei tähenda iseenesest, et saad selle müüa või lunastada, ja emitendi juures lunastamine eeldab emitendi enda isikutuvastuskontrolle. GOOGLx järgib Alphabet Inc. A-klassi aktsiaid. Haruldus on mängutase, mitte hinnang investeeringule, ja miski siin ei ole investeerimisnõustamine. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA ja xStocks on nende omanike kaubamärgid ning omanikud ei sponsoreeri ega toeta Seekprotocoli.",
     "links": {
-      "restrictions": "Robinhood: piiratud jurisdiktsioonid",
-      "terms": "Robinhood: prospekt ja Final Terms (lõplikud tingimused)",
-      "faq": "Robinhood: Stock Tokeni KKK"
+      "legal": "Backed: õiguslikud dokumendid ja prospekt (inglise keeles)",
+      "terms": "xStocks: kasutustingimused (inglise keeles)",
+      "regulationS": "Regulation S: U.S. personi määratlus (inglise keeles)"
     }
   },
   "arenaSection": {

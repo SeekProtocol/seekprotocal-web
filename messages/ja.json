@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "現実資産",
     "title": "Apple、Amazon、Tesla、Google、NVIDIAのひとかけらをキャッチ",
-    "lead": "マップにトークン化された株式が登場しました。Apple、Amazon、Tesla、Google、NVIDIAは、ほかのコインと同じようにコインとしてドロップします。歩いて近づき、キャッチして、Robinhood Chain上のRobinhood Stock Tokenとして出金すれば、あなた自身のウォレットに直接届きます。",
+    "lead": "マップにはトークン化された株式があります。Apple、Amazon、Tesla、Google、NVIDIAは、ほかのコインと同じようにコインとしてドロップします。歩いて近づき、キャッチして、Solana上のxStockとして出金すれば、あなた自身のウォレットに直接届きます。",
     "points": [
       "キャッチごとのゲーム内価値は固定です。AppleとAmazonは$0.05、TeslaとGoogleは$0.12、NVIDIAは$0.30です。",
-      "出金時、その価値はその時点の価格で株式トークンとして支払われます。そのため、それ以降あなたが保有するものは株価に連動します。",
+      "出金時、その価値はその時点の価格で対応するxStockに換算されます。そのため、それ以降あなたが保有するものは株価に連動して上下します。",
       "AppleとAmazonはアンコモン、TeslaとGoogleはレア、NVIDIAはエピックで、NVIDIAが5つの中でいちばんキャッチが難しいコインです。",
-      "株式のドロップは欧州経済領域の30か国で出現します。プロフィールで国を設定し、初めて出金する前に、米国人（U.S. person）ではないことを確認してください。"
+      "株式のドロップは欧州経済領域の30か国で出現します。プロフィールで国を設定し、初めて出金する前に、米国人（U.S. person）ではないことを含む、トークン申告の3つの記載内容を確認してください。"
     ],
-    "coinAlt": "{name}の株式トークンコイン",
+    "coinAlt": "{name}の株式コイン",
     "catchChance": "キャッチ確率",
     "perCatch": "1キャッチあたり",
-    "finePrint": "Robinhood Stock Tokenは、Robinhood Assets (Jersey) Limitedが発行するトークン化された債務証券です。原株の価格に連動しますが、その会社の所有権や議決権を与えるものではありません。米国内、米国人に対して、または制限対象の法域（カナダ、英国、スイスを含みます）において、提供または引き渡しを行うことはできません。トークンを受け取ったことだけで、それを売却または償還できるわけではありません。GoogleのトークンはAlphabet Inc.のクラスA株に連動します。 レアリティはゲーム上の区分であり、投資に関する見解ではありません。価格は上がることも下がることもあり、ここに記載された内容はいずれも投資助言ではありません。Apple、Amazon、Tesla、Google、Alphabet、NVIDIA、Robinhoodは各所有者の商標であり、所有者はSeekprotocolを後援または推奨していません。",
+    "finePrint": "xStocksはトラッカー証書であり、ジャージーで登記された会社であるBacked Assets (JE) Limitedが発行する無記名債務証券です。各xStockは原資産である株式に裏付けられており、その株式は規制を受けたカストディアンが保管しています。その株式の価格に連動しますが、その会社の所有権、議決権その他の株主権は付与されません。xStocksは複雑な商品であり、価値が下落する可能性があります。基本目論見書はリヒテンシュタイン金融市場監督庁（FMA）により承認されていますが、この承認は商品を推奨するものではありません。xStocksは、米国内において、米国人（U.S. persons）に対して、または国際的な制裁の対象者に対して、提供または引き渡しを行うことはできません。xStockを受け取ったことだけで、それを売却または償還できるわけではなく、発行体への償還には発行体独自の本人確認が必要です。GOOGLxはAlphabet Inc.のクラスA株に連動します。レアリティはゲーム上の区分であり、投資に関する見解ではなく、ここに記載された内容はいずれも投資助言ではありません。Apple、Amazon、Tesla、Google、Alphabet、NVIDIA、xStocksは各所有者の商標であり、所有者はSeekprotocolを後援または推奨していません。",
     "links": {
-      "restrictions": "Robinhood：制限対象の法域",
-      "terms": "Robinhood：目論見書とFinal Terms（最終条件書）",
-      "faq": "Robinhood：Stock Token FAQ"
+      "legal": "Backed：法的文書と目論見書（英語）",
+      "terms": "xStocks：利用規約（英語）",
+      "regulationS": "Regulation S：U.S. person の定義（英語）"
     }
   },
   "arenaSection": {

@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "真實世界資產",
     "title": "捕捉一份 Apple、Amazon、Tesla、Google 和 NVIDIA",
-    "lead": "地圖上現在有代幣化股票了。Apple、Amazon、Tesla、Google 和 NVIDIA 會像其他代幣一樣以代幣的形式投放：走過去、捕捉它，再提領為 Robinhood Chain 上的 Robinhood Stock Token，直接進到你自己的錢包。",
+    "lead": "地圖上有代幣化股票。Apple、Amazon、Tesla、Google 和 NVIDIA 會像其他代幣一樣以代幣的形式投放：走過去、捕捉它，再提領為 Solana 上的 xStock，直接進到你自己的錢包。",
     "points": [
       "每次捕捉都有固定的遊戲價值：Apple 和 Amazon 為 $0.05，Tesla 和 Google 為 $0.12，NVIDIA 為 $0.30。",
-      "提領時，這筆價值會按當下的價格以股票代幣支付，所以從那之後，你持有的東西會跟著股價變動。",
+      "提領時，這筆價值會依當下價格換算為對應的 xStock，所以從那之後，你持有的東西會跟著股價漲跌。",
       "Apple 和 Amazon 為罕見，Tesla 和 Google 為稀有，NVIDIA 為史詩，是五者中最難捕捉到的。",
-      "股票投放會出現在歐洲經濟區的 30 個國家。請在個人檔案中設定你的國家，並在第一次提領前確認你不是美國人士（U.S. person）。"
+      "股票投放會出現在歐洲經濟區的 30 個國家。請在個人檔案中設定你的國家，並在第一次提領前確認代幣聲明中的三項聲明，其中包括你不是美國人士（U.S. person）。"
     ],
-    "coinAlt": "{name} 股票代幣硬幣",
+    "coinAlt": "{name} 股票硬幣",
     "catchChance": "捕捉機率",
     "perCatch": "每次捕捉",
-    "finePrint": "Robinhood Stock Token 是由 Robinhood Assets (Jersey) Limited 發行的代幣化債務證券。它們追蹤標的股票的價格，但不提供該公司的所有權或表決權。它們不得在美國境內、向美國人士，或在受限司法管轄區（包括加拿大、英國和瑞士）發售或交付。收到代幣本身並不代表你可以出售或贖回它。Google 代幣追蹤 Alphabet Inc. A 類股票。稀有度是遊戲等級，並非對該投資的看法。價格可能下跌，也可能上漲，此處的任何內容都不構成投資建議。Apple、Amazon、Tesla、Google、Alphabet、NVIDIA 和 Robinhood 是其各自所有者的商標，這些所有者並未贊助或背書 Seekprotocol。",
+    "finePrint": "xStocks 是追蹤憑證，即由在澤西島註冊的公司 Backed Assets (JE) Limited 發行的無記名債務工具。每個 xStock 均以標的股票作為擔保，該股票由受監管的保管機構持有；它追蹤該股票的價格，但不提供該公司的所有權、投票權或其他股東權利。xStocks 是複雜商品，其價值可能下跌。基本公開說明書已獲列支敦斯登金融市場管理局（FMA）核准；該核准並不代表對商品的背書。xStocks 不得在美國境內、向美國人士（U.S. persons）或向受國際制裁的人士募集或交付。收到 xStock 本身並不代表你可以出售或贖回它，而向發行人贖回須通過發行人自身的身分審查。GOOGLx 追蹤 Alphabet Inc. A 類股票。稀有度是遊戲等級，並非對該投資的看法，此處的任何內容都不構成投資建議。Apple、Amazon、Tesla、Google、Alphabet、NVIDIA 和 xStocks 是其各自所有者的商標，這些所有者並未贊助或背書 Seekprotocol。",
     "links": {
-      "restrictions": "Robinhood：受限司法管轄區",
-      "terms": "Robinhood：公開說明書與 Final Terms（最終條款）",
-      "faq": "Robinhood：Stock Token 常見問題"
+      "legal": "Backed：法律文件與公開說明書（英文）",
+      "terms": "xStocks：服務條款（英文）",
+      "regulationS": "Regulation S：U.S. person 的定義（英文）"
     }
   },
   "arenaSection": {

@@ -2824,6 +2824,9 @@
 
 .stocks-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
+/* xStock tickers keep their lowercase x: AAPLx, not AAPLX. */
+.stocks-grid .collectible-symbol { text-transform: none; }
+
 /* Five full-width cards stacked on a phone are five screens of scrolling for
    five coins. Kept three abreast instead, smaller, with the stats stacked. */
 @media (max-width: 520px) {

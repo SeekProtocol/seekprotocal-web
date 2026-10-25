@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "Aktywa ze świata rzeczywistego",
     "title": "Złap kawałek Apple, Amazona, Tesli, Google i NVIDII",
-    "lead": "Na mapie są teraz tokenizowane akcje. Apple, Amazon, Tesla, Google i NVIDIA pojawiają się jako monety, tak jak wszystkie inne: podejdź do jednej, złap ją i wypłać jako Robinhood Stock Token na Robinhood Chain, prosto do własnego portfela.",
+    "lead": "Na mapie są tokenizowane akcje. Apple, Amazon, Tesla, Google i NVIDIA pojawiają się jako monety, tak jak wszystkie inne: podejdź do jednej, złap ją i wypłać jako xStock w sieci Solana, prosto do własnego portfela.",
     "points": [
       "Każde złapanie ma stałą wartość w grze: $0.05 za Apple i Amazon, $0.12 za Teslę i Google oraz $0.30 za NVIDIĘ.",
-      "Przy wypłacie ta wartość jest wypłacana w tokenie akcji po jego bieżącej cenie, więc od tej chwili to, co posiadasz, podąża za ceną akcji.",
+      "Przy wypłacie ta wartość jest przeliczana po aktualnym kursie na odpowiedni xStock, więc od tej chwili to, co posiadasz, podąża za ceną akcji, w górę lub w dół.",
       "Apple i Amazon to monety Niezwykłe, Tesla i Google Rzadkie, a NVIDIA Epicka, najtrudniejsza do złapania z całej piątki.",
-      "Dropy akcji pojawiają się w 30 krajach Europejskiego Obszaru Gospodarczego. Ustaw swój kraj w profilu i przed pierwszą wypłatą potwierdź, że nie jesteś osobą amerykańską (U.S. person)."
+      "Dropy akcji pojawiają się w 30 krajach Europejskiego Obszaru Gospodarczego. Ustaw swój kraj w profilu i przed pierwszą wypłatą potwierdź trzy punkty oświadczenia dotyczącego tokena, w tym to, że nie jesteś U.S. person."
     ],
-    "coinAlt": "Moneta tokenu akcji {name}",
+    "coinAlt": "Moneta akcji {name}",
     "catchChance": "Szansa złapania",
     "perCatch": "Za złapanie",
-    "finePrint": "Robinhood Stock Tokens to tokenizowane dłużne papiery wartościowe emitowane przez Robinhood Assets (Jersey) Limited. Odzwierciedlają cenę akcji bazowej, ale nie dają ani prawa własności w spółce, ani prawa głosu w niej. Nie mogą być oferowane ani dostarczane w Stanach Zjednoczonych, osobom amerykańskim ani w jurysdykcjach objętych ograniczeniami, do których należą Kanada, Zjednoczone Królestwo i Szwajcaria. Samo otrzymanie tokena nie oznacza, że możesz go sprzedać lub umorzyć. Token Google odzwierciedla akcje klasy A spółki Alphabet Inc. Rzadkość to poziom w grze, a nie opinia o inwestycji. Ceny mogą zarówno spadać, jak i rosnąć, a nic tutaj nie stanowi porady inwestycyjnej. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA i Robinhood są znakami towarowymi ich właścicieli, którzy nie sponsorują ani nie popierają Seekprotocol.",
+    "finePrint": "xStocks to certyfikaty typu tracker, czyli dłużne instrumenty na okaziciela emitowane przez Backed Assets (JE) Limited, spółkę zarejestrowaną na wyspie Jersey. Każdy xStock jest zabezpieczony akcją bazową przechowywaną u regulowanych depozytariuszy i odzwierciedla jej kurs, ale nie daje prawa własności w spółce, prawa głosu ani innych praw akcjonariusza. xStocks to złożone produkty, a ich wartość może spaść. Prospekt podstawowy został zatwierdzony przez Urząd Nadzoru Rynku Finansowego Liechtensteinu (FMA); zatwierdzenie to nie stanowi rekomendacji produktu. xStocks nie mogą być oferowane ani dostarczane w Stanach Zjednoczonych, osobom będącym U.S. persons ani osobom objętym sankcjami międzynarodowymi. Samo otrzymanie xStocka nie oznacza, że możesz go sprzedać lub zażądać jego wykupu, a wykup u emitenta wymaga przejścia jego własnej weryfikacji tożsamości. GOOGLx odzwierciedla akcje klasy A spółki Alphabet Inc. Rzadkość to poziom w grze, a nie opinia o inwestycji, i nic tutaj nie stanowi porady inwestycyjnej. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA i xStocks są znakami towarowymi ich właścicieli, którzy nie sponsorują ani nie popierają Seekprotocol.",
     "links": {
-      "restrictions": "Robinhood: jurysdykcje objęte ograniczeniami",
-      "terms": "Robinhood: prospekt i Final Terms (warunki ostateczne)",
-      "faq": "Robinhood: najczęstsze pytania o Stock Token"
+      "legal": "Backed: dokumenty prawne i prospekt (w języku angielskim)",
+      "terms": "xStocks: warunki korzystania z usług (w języku angielskim)",
+      "regulationS": "Regulation S: definicja U.S. person (w języku angielskim)"
     }
   },
   "arenaSection": {

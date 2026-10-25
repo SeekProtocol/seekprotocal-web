@@ -954,21 +954,21 @@
   "stocksSection": {
     "eyebrow": "Reaalimaailman omaisuuserät",
     "title": "Apple, Amazon, Tesla, Google ja NVIDIA: nappaa oma palasi",
-    "lead": "Kartalla on nyt tokenisoituja osakkeita. Apple, Amazon, Tesla, Google ja NVIDIA ilmestyvät kolikkoina aivan kuten muutkin: kävele kolikon luo, nappaa se ja nosta se Robinhood Stock Tokenina Robinhood Chainissa suoraan omaan lompakkoosi.",
+    "lead": "Kartalla on tokenisoituja osakkeita. Apple, Amazon, Tesla, Google ja NVIDIA ilmestyvät kolikkoina aivan kuten muutkin: kävele kolikon luo, nappaa se ja nosta se xStockina Solanassa suoraan omaan lompakkoosi.",
     "points": [
       "Jokaisella nappauksella on kiinteä pelin sisäinen arvo: Apple ja Amazon $0.05, Tesla ja Google $0.12 ja NVIDIA $0.30.",
-      "Nostossa arvo maksetaan osaketokenina sen senhetkiseen hintaan, joten siitä lähtien se, mitä sinulla on, seuraa osakkeen hintaa.",
+      "Nostossa arvo muunnetaan senhetkisellä kurssilla vastaavaksi xStockiksi, joten siitä lähtien se, mitä sinulla on, seuraa osakkeen kurssia ylös tai alas.",
       "Apple ja Amazon ovat Uncommon, Tesla ja Google ovat Rare ja NVIDIA on Epic, viisikosta vaikein napata.",
-      "Osakedropit ilmestyvät Euroopan talousalueen 30 maassa. Aseta maasi profiiliisi ja vahvista ennen ensimmäistä nostoasi, että et ole yhdysvaltalainen henkilö (U.S. person)."
+      "Osakedropit ilmestyvät Euroopan talousalueen 30 maassa. Aseta maasi profiiliisi ja vahvista ennen ensimmäistä nostoasi token-vakuutuksen kolme kohtaa, muun muassa että et ole U.S. person."
     ],
-    "coinAlt": "{name}-osaketokenin kolikko",
+    "coinAlt": "{name}-osakekolikko",
     "catchChance": "Nappausmahdollisuus",
     "perCatch": "Nappausta kohden",
-    "finePrint": "Robinhood Stock Tokenit ovat Robinhood Assets (Jersey) Limitedin liikkeeseen laskemia tokenisoituja velkapapereita. Ne seuraavat kohde-etuutena olevan osakkeen hintaa, mutta eivät anna omistusoikeutta yhtiöön eivätkä äänioikeutta siinä. Niitä ei saa tarjota tai toimittaa Yhdysvalloissa, yhdysvaltalaisille henkilöille tai rajoitetuilla lainkäyttöalueilla, joihin kuuluvat muun muassa Kanada, Yhdistynyt kuningaskunta ja Sveitsi. Tokenin saaminen ei itsessään tarkoita, että voit myydä tai lunastaa sen. Google-token seuraa Alphabet Inc:n A-sarjan osakkeita. Harvinaisuus on pelin taso, ei näkemys sijoituksesta. Hinnat voivat laskea yhtä hyvin kuin nousta, eikä mikään tässä ole sijoitusneuvontaa. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA ja Robinhood ovat omistajiensa tavaramerkkejä, eivätkä omistajat sponsoroi tai tue Seekprotocolia.",
+    "finePrint": "xStocks ovat tracker-sertifikaatteja eli haltijalle asetettuja velkainstrumentteja, joiden liikkeeseenlaskija on Jerseylle rekisteröity yhtiö Backed Assets (JE) Limited. Jokaisen xStockin vakuutena on kohde-etuutena oleva osake, jota säilytetään säänneltyjen säilyttäjien hallussa, ja xStock seuraa sen kurssia, mutta se ei anna omistusoikeutta yhtiöön, äänioikeutta tai muita osakkeenomistajan oikeuksia. xStocks ovat monimutkaisia tuotteita, ja niiden arvo voi laskea. Perusesitteen on hyväksynyt Liechtensteinin finanssimarkkinaviranomainen (FMA); hyväksyntä ei ole suositus tuotteesta. xStocksia ei saa tarjota tai toimittaa Yhdysvalloissa, henkilöille, jotka ovat U.S. persons, eikä henkilöille, joihin sovelletaan kansainvälisiä pakotteita. xStockin saaminen ei itsessään tarkoita, että voit myydä tai lunastaa sen, ja lunastus liikkeeseenlaskijalta edellyttää sen omia henkilöllisyystarkistuksia. GOOGLx seuraa Alphabet Inc:n A-sarjan osakkeita. Harvinaisuus on pelin taso, ei näkemys sijoituksesta, eikä mikään tässä ole sijoitusneuvontaa. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA ja xStocks ovat omistajiensa tavaramerkkejä, eivätkä omistajat sponsoroi tai tue Seekprotocolia.",
     "links": {
-      "restrictions": "Robinhood: rajoitetut lainkäyttöalueet",
-      "terms": "Robinhood: esite ja Final Terms (lopulliset ehdot)",
-      "faq": "Robinhood: Stock Token -UKK"
+      "legal": "Backed: oikeudelliset asiakirjat ja esite (englanniksi)",
+      "terms": "xStocks: käyttöehdot (englanniksi)",
+      "regulationS": "Regulation S: U.S. personin määritelmä (englanniksi)"
     }
   },
   "arenaSection": {

@@ -43,11 +43,11 @@ export default function VideoReveal() {
 
     /* Decide the encode before the element ever gets a src. Starting with the
        desktop file and swapping after hydration lets Safari begin decoding
-       16 MB on a phone for one frame — enough to tip a scroll that is already
-       close to the edge. */
+       13 MB of 720p on a phone for one frame — enough to tip a scroll that is
+       already close to the edge. Phones get the 480p encode. */
     srcRef.current = isHandheld()
-      ? "/videos/Seekr-mobile.mp4"
-      : "/videos/Seekr.mp4";
+      ? "/videos/seekprotocol-film-mobile.mp4"
+      : "/videos/seekprotocol-film.mp4";
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -140,7 +140,7 @@ export default function VideoReveal() {
         <div className="video-reveal-aperture">
           <video
             ref={videoRef}
-            poster="/videos/Seekr-poster.jpg"
+            poster="/videos/seekprotocol-film-poster.jpg"
             loop
             muted
             playsInline
