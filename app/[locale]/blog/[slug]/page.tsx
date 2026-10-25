@@ -56,6 +56,7 @@ export async function generateMetadata({
       locale: shareLocale,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: post.updated ?? post.date,
       section: post.category,
       images: [card],
     }),
@@ -111,7 +112,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     image: `${baseUrl}/og/blog/${post.slug}`,
     url: `${baseUrl}/${shownLocale}/blog/${post.slug}`,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     author: {
       "@type": "Organization",
       name: "Seekprotocol",

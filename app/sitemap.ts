@@ -56,31 +56,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
      laat "kloppen" voor pagina's die niet zijn aangeraakt. */
   const SEO_PASS = new Date("2026-08-15");
 
-  /* 16 Aug 2026: four Q1 cornerstones landed in the blog (best-ar-games-2026,
-     geocaching-vs-ar-treasure-hunts, how-proof-of-location-works,
-     ar-location-campaigns-for-brands). Each carries its own date on the article
-     entry, but the /blog index page changed too — it now lists fourteen posts
-     instead of ten — so its lastmod needs to reflect that. */
-  const BLOG_Q1_BATCH_TWO = new Date("2026-08-16");
-
-  /* 16 Aug 2026: positioning shift from "the AR & AI platform on Solana" to
-     "the multi-chain AR & AI platform, currently on Solana". Site-wide meta
-     (title / description / OG / Twitter / JSON-LD), homepage hero, /seekar
-     hero + feature + FAQ copy in all nine locales. The change is one of stance
-     — Solana still named, no longer led with — so the homepage and /seekar
-     lastmods bump. Whitepaper prose is unchanged (it is a technical account of
-     the current implementation and Solana is the current implementation). */
-  const SOFT_SOLANA = new Date("2026-08-16");
+  /* 25 Oct 2026: Seek Arena, steps and the watches, and iPad on the homepage,
+     the stock section moved to xStocks on Solana, and three new posts on the
+     blog (with the stock post revised), and two answers in the /seekar FAQ
+     (iPad and watches, Seek Arena). */
+  const DEVICES_AND_XSTOCKS = new Date("2026-10-25");
 
   const translated: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly"; lastModified: Date }[] = [
-    { path: "/", priority: 1, changeFrequency: "weekly", lastModified: SOFT_SOLANA },
+    { path: "/", priority: 1, changeFrequency: "weekly", lastModified: DEVICES_AND_XSTOCKS },
 
     /* Priority 0.9, level with /ecosystem and /whitepaper and below only the
        homepage. It is the page for the product the whole site is about, and the
        one carrying the app's name. */
-    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: SOFT_SOLANA },
+    { path: "/seekar", priority: 0.9, changeFrequency: "monthly", lastModified: DEVICES_AND_XSTOCKS },
     { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: REBUILT },
-    { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: BLOG_Q1_BATCH_TWO },
+    { path: "/blog", priority: 0.8, changeFrequency: "weekly", lastModified: DEVICES_AND_XSTOCKS },
     { path: "/contact", priority: 0.7, changeFrequency: "monthly", lastModified: SEO_PASS },
     /* 13 Sep 2026: the pack shop. Translated in all nine locales like the rest,
        so it takes the hreflang cluster. Level with /contact: it is a page a
@@ -135,7 +125,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
     return locales.map((l) => ({
       url: `${baseUrl}/${l}/blog/${post.slug}`,
-      lastModified: new Date(post.date),
+      lastModified: new Date(post.updated ?? post.date),
       changeFrequency: "monthly" as const,
       priority: 0.7,
       images: [`${baseUrl}/og/blog/${post.slug}`],
