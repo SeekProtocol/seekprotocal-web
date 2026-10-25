@@ -971,6 +971,135 @@
       "faq": "Robinhood: pyetje të shpeshta për Stock Token"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Kapjet e tua, tani një lojë me karta",
+    "lead": "Seek Arena është një betejë live me karta, një kundër një, brenda aplikacionit. Ndërto një dek me njëzet karta nga më shumë se 260 të tilla, përballu në kohë reale me një lojtar tjetër dhe nokauto pesë karta të tij para se ai të nokautojë të tuat.",
+    "points": [
+      "Kartat vijnë nga kutitë në hartën e gjuetisë, nga paketat që hap me SEEK që kap, si dhe nga misionet, luftërat e klaneve dhe sezoni.",
+      "Gjashtë rralli, nga E zakonshme te Mythic, në nëntë fraksione, dhe çdo kartë ka aftësinë e vet, kështu që një dek është një plan dhe jo një grumbull.",
+      "Shkëmbe karta me miqtë një për një në të njëjtën rralli dhe shkri dublikatat në XP.",
+      "Ngrohu kundër Botit të stërvitjes ose mëso lojën në Seek Academy, para se të luash për gradë."
+    ],
+    "tabletLabel": "Seek Arena në iPad, me ekrane të vërteta nga aplikacioni",
+    "cards": {
+      "label": "karta për të mbledhur"
+    },
+    "deck": {
+      "label": "karta në një dek"
+    },
+    "knockouts": {
+      "label": "nokaute për fitore"
+    },
+    "clock": {
+      "label": "sekonda për radhë"
+    },
+    "live": {
+      "title": "Ndeshje live",
+      "body": "Gjej një kundërshtar, sfido një mik ose ngrohu kundër Botit të stërvitjes. Çdo radhë ka një orë prej 45 sekondash."
+    },
+    "clanWar": {
+      "title": "Lufta e klaneve",
+      "body": "Çdo javë, nga e hëna në të hënën, ndeshjet e vlefshme të klanit tënd mblidhen: tre pikë për fitore, një për barazim."
+    },
+    "ranks": {
+      "title": "Grada dhe sezone",
+      "body": "Ngjitu nëpër 57 grada, nga Fillestar te World Champion, me misione ditore, javore dhe sezonale gjatë rrugës."
+    },
+    "packs": {
+      "title": "Paketa kartash",
+      "body": "Paketa bazë, Paketa premium dhe Paketa elitare kanë nga pesë karta secila, dhe sa më e shtrenjtë paketa, aq më të rralla kartat. Hapi në aplikacion ose bleji këtu."
+    },
+    "cta": "Merr paketa kartash në dyqan",
+    "match": {
+      "caption": "Ndeshje live"
+    },
+    "hand": {
+      "caption": "Dora fillestare"
+    },
+    "pack": {
+      "caption": "Kartë Mythic"
+    },
+    "season": {
+      "caption": "Shpërblimet e sezonit"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Hapat",
+    "title": "Çdo hap që bën ka rëndësi",
+    "lead": "Seekprotocol i lexon hapat e tu nga Apple Health ose Health Connect dhe e kthen një ditë të mirë në këmbë në powerup-e dhe XP. Kap një monedhë atë ditë dhe shpërblimet hapen ndërsa ecën.",
+    "points": [
+      "Hapat që bën ndërsa gjuan në hartë llogariten shtesë, të matur nga sensori i lëvizjes i vetë telefonit tënd.",
+      "Ec 10.000 hapa në ditë për ta mbajtur gjallë serinë, me shpërblime në ditën 14, 30, 60 dhe 100, deri te një Paketë premium.",
+      "Ec 15 km për të çelur një Vezë hapash me një Paketë bazë brenda, dhe ec me klanin tënd drejt një objektivi javor prej një milion hapash.",
+      "Përdoren vetëm hapat që telefoni ose ora jote i ka numëruar vetë, kurrë hapa të futur me dorë. Të dhënat e tua të hapave nuk shiten kurrë dhe mund ta shkëputësh lidhjen në çdo kohë."
+    ],
+    "ladderLabel": "Shpërblimet ditore për hapat",
+    "stepsCount": "{count} hapa",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Çdo ditë, pasi të kesh kapur një monedhë.",
+    "watchEyebrow": "Apple Watch dhe Wear OS",
+    "watchTitle": "Hapat e tu, në kyçin e dorës",
+    "watchLead": "Numri i sotëm, shpërblimi i radhës dhe seria jote janë vetëm një shikim larg. Të dy aplikacionet për orë vijnë bashkë me aplikacionin Seekprotocol.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Nis një shëtitje nga kyçi i dorës",
+      "points": [
+        "Unaza e sotme dhe shpërblimi i radhës, hapat sipas orëve, seria jote, java, Veza jote e hapave dhe objektivi i klanit tënd.",
+        "Regjistro një shëtitje me itinerarin, rrahjet e zemrës dhe distancën. Ruhet në Apple Health, dhe një shëtitje ose vrapim 8 km fiton një Fitness.",
+        "Komplikimet dhe një widget Smart Stack e mbajnë numrin në fytyrën e orës."
+      ],
+      "requires": "watchOS 11 ose më i ri"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch dhe çdo orë me Wear OS",
+      "points": [
+        "Unaza e sotme, shpërblimet, seria, java, Veza e hapave dhe Hapat e klanit në një ekran të vetëm që rrëshqet.",
+        "Një pllakë dhe një komplikim, për një shikim pa e hapur aplikacionin."
+      ],
+      "requires": "Wear OS 3 ose më i ri"
+    },
+    "face": {
+      "today": "Sot",
+      "steps": "Hapat",
+      "walk": "Ecje",
+      "streak": "Seria",
+      "best": "Më e mira {n}",
+      "byHour": "Sot sipas orëve",
+      "toNext": "{count} hapa deri te {reward}",
+      "nextStreak": "Shpërblimi tjetër në ditën {day}: {reward}",
+      "end": "Përfundo",
+      "chipUnlocked": "{reward} u zhbllokua",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal të djegura",
+      "chipStreak": "Seri prej {n} ditësh",
+      "label": "Seek në Apple Watch dhe Wear OS: hapat kalojnë 10.000, një ecje me distancë, rrahje zemre dhe kalori, monedhat e ditës që mbërrijnë në koleksion, dhe një seri prej 12 ditësh.",
+      "collection": "Koleksioni",
+      "caughtToday": "{n} të kapura sot",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "Edhe në iPad dhe tabletë",
+    "title": "Si në shtëpi edhe në ekranin e madh",
+    "lead": "Seekprotocol është bërë për telefonin në xhepin tënd, dhe funksionon gjithashtu si një aplikacion i vërtetë për iPad dhe në tabletët Android. Ekranet e shfrytëzojnë hapësirën shtesë në vend që thjesht të zgjerohen, në çdo orientim.",
+    "points": [
+      "Kap drop-e në AR në një ekran aq të madh sa të shohësh gjithë rrugën.",
+      "Seek Arena merr gjithë gjerësinë: karta më të mëdha, panele anësore dhe dekun tënd pranë koleksionit.",
+      "Chati, cilësimet, klanet dhe miqtë hapen krah për krah, me listën pranë faqes që ke hapur.",
+      "Një llogari në çdo pajisje, kështu që kapjet, kartat dhe progresi yt vijnë me ty nga telefoni te tableti."
+    ],
+    "tabletLabel": "Kapja e një drop-i në AR në iPad"
+  },
   "offers": {
     "railLabel": "Formatet e drop-eve",
     "redeemLabel": "Si përdoret",

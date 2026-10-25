@@ -971,6 +971,135 @@
       "faq": "Robinhood: Stock Token SSS"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Yakaladıkların artık bir kart oyunu",
+    "lead": "Seek Arena, uygulamanın içinde canlı oynanan bire bir bir kart savaşıdır. 260'tan fazla karttan yirmi kartlık bir deste kur, gerçek zamanlı olarak başka bir oyuncuyla karşılaş ve o seninkileri nakavt etmeden önce onun beş kartını nakavt et.",
+    "points": [
+      "Kartlar avlanma haritasındaki kutulardan, yakaladığın SEEK ile açtığın paketlerden, ayrıca görevlerden, klan savaşlarından ve sezondan gelir.",
+      "Dokuz fraksiyonda Yaygın'dan Mitik'e altı nadirlik var ve her kartın kendine ait bir yeteneği bulunuyor; böylece deste bir yığın değil, bir plan olur.",
+      "Kartları arkadaşlarınla aynı nadirlikte bire bir takas et, kopyalarını da eritip XP'ye dönüştür.",
+      "Sıralama için oynamadan önce Antrenman Botu'na karşı ısın ya da oyunu Seek Academy'de öğren."
+    ],
+    "tabletLabel": "iPad'de Seek Arena, uygulamadan gerçek ekranlarla",
+    "cards": {
+      "label": "toplanacak kart"
+    },
+    "deck": {
+      "label": "destedeki kart"
+    },
+    "knockouts": {
+      "label": "kazanmak için nakavt"
+    },
+    "clock": {
+      "label": "tur başına saniye"
+    },
+    "live": {
+      "title": "Canlı maçlar",
+      "body": "Bir rakip bul, bir arkadaşına meydan oku ya da Antrenman Botu'na karşı ısın. Her tur 45 saniyelik bir saatle oynanır."
+    },
+    "clanWar": {
+      "title": "Klan savaşı",
+      "body": "Her hafta, pazartesiden pazartesiye, klanının geçerli maçları toplanır: galibiyete üç puan, beraberliğe bir puan."
+    },
+    "ranks": {
+      "title": "Rütbeler ve sezonlar",
+      "body": "Acemi'den World Champion'a 57 rütbe tırman; yol boyunca günlük, haftalık ve sezonluk görevler seni bekliyor."
+    },
+    "packs": {
+      "title": "Kart paketleri",
+      "body": "Temel, Premium ve Elit paketlerin her birinde beş kart vardır ve paket ne kadar pahalıysa kartlar o kadar nadirdir. Onları uygulamada aç ya da buradan satın al."
+    },
+    "cta": "Kart paketlerini mağazadan al",
+    "match": {
+      "caption": "Canlı maç"
+    },
+    "hand": {
+      "caption": "Başlangıç eli"
+    },
+    "pack": {
+      "caption": "Mitik kart"
+    },
+    "season": {
+      "caption": "Sezon ödülleri"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Adımlar",
+    "title": "Attığın her adım sayılır",
+    "lead": "Seekprotocol adımlarını Apple Health ya da Health Connect'ten okur ve hareketli bir günü güçlendirmelere ve XP'ye dönüştürür. O gün bir coin yakala, ödüller sen yürüdükçe açılsın.",
+    "points": [
+      "Haritada avlanırken attığın adımlar ekstra sayılır ve telefonunun kendi hareket sensörüyle ölçülür.",
+      "Serini sürdürmek için günde 10.000 adım at; 14., 30., 60. ve 100. günlerde Premium pakete kadar uzanan ödüller seni bekliyor.",
+      "İçinde Temel paket olan bir Adım yumurtasını çatlatmak için 15 km yürü, klanınla birlikte de haftalık bir milyon adım hedefine doğru ilerle.",
+      "Yalnızca telefonunun ya da saatinin kendi saydığı adımlar kullanılır, elle girilen adımlar asla. Adım verilerin asla satılmaz ve bağlantıyı istediğin zaman kesebilirsin."
+    ],
+    "ladderLabel": "Günlük adım ödülleri",
+    "stepsCount": "{count} adım",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Yemi"
+    },
+    "ladderNote": "Her gün, bir coin yakaladıktan sonra.",
+    "watchEyebrow": "Apple Watch ve Wear OS",
+    "watchTitle": "Adımların bileğinde",
+    "watchLead": "Bugünkü sayı, sıradaki ödül ve serin bir bakış uzağında. İki saat uygulaması da Seekprotocol uygulamasıyla birlikte gelir.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Yürüyüşü bileğinden başlat",
+      "points": [
+        "Bugünün halkası ve sıradaki ödül, saatlik adımlar, serin, hafta, Adım yumurtan ve klanının hedefi.",
+        "Bir yürüyüşü rotası, nabzı ve mesafesiyle kaydet. Apple Health'e kaydedilir ve 8 km'lik bir yürüyüş ya da koşu bir Fitness kazandırır.",
+        "Komplikasyonlar ve bir Smart Stack widget'ı sayıyı saat kadranında tutar."
+      ],
+      "requires": "watchOS 11 veya üstü"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch ve tüm Wear OS saatler",
+      "points": [
+        "Bugünün halkası, ödüller, seri, hafta, Adım yumurtası ve Klan adımları kaydırılabilir tek bir ekranda.",
+        "Uygulamayı açmadan göz atmak için bir kutucuk ve bir komplikasyon."
+      ],
+      "requires": "Wear OS 3 veya üstü"
+    },
+    "face": {
+      "today": "Bugün",
+      "steps": "Adımlar",
+      "walk": "Yürüyüş",
+      "streak": "Seri",
+      "best": "En iyi {n}",
+      "byHour": "Bugün saat saat",
+      "toNext": "{reward} için {count} adım",
+      "nextStreak": "Sonraki ödül {day}. günde: {reward}",
+      "end": "Bitir",
+      "chipUnlocked": "{reward} açıldı",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal yakıldı",
+      "chipStreak": "{n} günlük seri",
+      "label": "Apple Watch ve Wear OS'ta Seek: 10.000'i aşan adımlar, mesafe, nabız ve kalori içeren bir yürüyüş, koleksiyona düşen günün coinleri ve 12 günlük bir seri.",
+      "collection": "Koleksiyon",
+      "caughtToday": "Bugün {n} yakalandı",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "iPad ve tabletlerde de",
+    "title": "Büyük ekranda da evinde gibi",
+    "lead": "Seekprotocol cebindeki telefon için yapıldı, ama gerçek bir iPad uygulaması olarak ve Android tabletlerde de çalışır. Ekranlar her yönde, sadece uzamak yerine ek alanı gerçekten kullanır.",
+    "points": [
+      "Bütün sokağı görebileceğin kadar büyük bir ekranda AR'da drop yakala.",
+      "Seek Arena tüm genişliği kullanır: daha büyük kartlar, yan paneller ve koleksiyonunun yanında desten.",
+      "Sohbet, ayarlar, klanlar ve arkadaşlar yan yana açılır; liste, açık olan sayfanın hemen yanında durur.",
+      "Her cihazda tek hesap; yakaladıkların, kartların ve ilerlemen telefondan tablete seninle gelir."
+    ],
+    "tabletLabel": "iPad'de AR'da drop yakalama"
+  },
   "offers": {
     "railLabel": "Drop biçimleri",
     "redeemLabel": "Nasıl kullanılır",

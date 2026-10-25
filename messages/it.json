@@ -971,6 +971,135 @@
       "faq": "Robinhood: FAQ sugli Stock Tokens"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Le tue catture, ora un gioco di carte",
+    "lead": "Seek Arena è una sfida di carte dal vivo, uno contro uno, direttamente nell'app. Costruisci un mazzo da venti scegliendo tra oltre 260 carte, affronta un altro seeker in tempo reale e manda knock-out cinque delle sue carte prima che lui lo faccia con le tue.",
+    "points": [
+      "Le carte arrivano dai box di carte sulla mappa di caccia, dai pacchetti che apri con i SEEK che catturi e da missioni, guerre tra clan e stagione.",
+      "Sei rarità, da Comune a Mitica, in nove fazioni, e ogni carta ha un'abilità tutta sua: un mazzo è una strategia, non un mucchio.",
+      "Scambia carte con gli amici una per una, a parità di rarità, e fondi i doppioni per trasformarli in XP.",
+      "Scaldati contro il Bot di allenamento o impara il gioco nella Seek Academy, prima di giocare per il grado."
+    ],
+    "tabletLabel": "Seek Arena su iPad, con schermate reali dell'app",
+    "cards": {
+      "label": "carte da collezionare"
+    },
+    "deck": {
+      "label": "carte in un mazzo"
+    },
+    "knockouts": {
+      "label": "knock-out per vincere"
+    },
+    "clock": {
+      "label": "secondi per turno"
+    },
+    "live": {
+      "title": "Partite dal vivo",
+      "body": "Trova un avversario, sfida un amico o scaldati contro il Bot di allenamento. Ogni turno ha un timer di 45 secondi."
+    },
+    "clanWar": {
+      "title": "Guerra tra clan",
+      "body": "Ogni settimana, da lunedì a lunedì, le partite valide del tuo clan si sommano: tre punti per una vittoria, uno per un pareggio."
+    },
+    "ranks": {
+      "title": "Gradi e stagioni",
+      "body": "Scala 57 gradi da Principiante a World Champion, con missioni giornaliere, settimanali e stagionali lungo il percorso."
+    },
+    "packs": {
+      "title": "Pacchetti di carte",
+      "body": "I pacchetti base, premium ed élite contengono cinque carte ciascuno, e più il pacchetto è costoso, più le carte sono rare. Aprili nell'app o acquistali qui."
+    },
+    "cta": "Prendi pacchetti di carte nello shop",
+    "match": {
+      "caption": "Partita dal vivo"
+    },
+    "hand": {
+      "caption": "Mano iniziale"
+    },
+    "pack": {
+      "caption": "Carta mitica"
+    },
+    "season": {
+      "caption": "Ricompense stagionali"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Passi",
+    "title": "Ogni passo che fai conta",
+    "lead": "Seekprotocol legge i tuoi passi da Apple Health o Health Connect e trasforma una bella giornata in movimento in power-up e XP. Cattura una moneta quel giorno e le ricompense si sbloccano mentre cammini.",
+    "points": [
+      "I passi fatti mentre cacci sulla mappa valgono di più, misurati dal sensore di movimento del tuo telefono.",
+      "Cammina 10.000 passi al giorno per mantenere una serie, con ricompense ai giorni 14, 30, 60 e 100, fino a un pacchetto premium.",
+      "Cammina 15 km per schiudere un Uovo dei passi con dentro un pacchetto base, e cammina con il tuo clan verso un obiettivo settimanale di un milione di passi.",
+      "Vengono usati solo i passi contati dal telefono o dall'orologio in autonomia, mai quelli inseriti a mano. I tuoi dati sui passi non vengono mai venduti e puoi disconnetterti in qualsiasi momento."
+    ],
+    "ladderLabel": "Ricompense giornaliere per i passi",
+    "stepsCount": "{count} passi",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Ogni giorno, dopo che hai catturato una moneta.",
+    "watchEyebrow": "Apple Watch e Wear OS",
+    "watchTitle": "I tuoi passi, al polso",
+    "watchLead": "Il conteggio di oggi, la prossima ricompensa e la tua serie sono a portata di sguardo. Entrambe le app per orologio sono incluse nell'app Seekprotocol.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Avvia una camminata dal polso",
+      "points": [
+        "L'anello e la prossima ricompensa di oggi, i passi per ora, la tua serie, la settimana, il tuo Uovo dei passi e l'obiettivo del clan.",
+        "Registra una camminata con percorso, battito cardiaco e distanza. Viene salvata in Apple Health, e una camminata o una corsa di 8 km ti fa guadagnare un Fitness.",
+        "Le complicazioni e un widget Smart Stack tengono il conteggio sul quadrante."
+      ],
+      "requires": "watchOS 11 o successivo"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch e ogni orologio Wear OS",
+      "points": [
+        "Anello di oggi, ricompense, serie, settimana, Uovo dei passi e Passi del clan in un'unica schermata scorrevole.",
+        "Un riquadro e una complicazione, per un'occhiata senza aprire l'app."
+      ],
+      "requires": "Wear OS 3 o successivo"
+    },
+    "face": {
+      "today": "Oggi",
+      "steps": "Passi",
+      "walk": "Camminata",
+      "streak": "Serie",
+      "best": "Record {n}",
+      "byHour": "Oggi per ora",
+      "toNext": "{count} passi per {reward}",
+      "nextStreak": "Prossimo premio al giorno {day}: {reward}",
+      "end": "Termina",
+      "chipUnlocked": "{reward} sbloccato",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal bruciate",
+      "chipStreak": "Serie di {n} giorni",
+      "label": "Seek su Apple Watch e Wear OS: passi che superano quota 10.000, una camminata con distanza, battito cardiaco e calorie, le monete del giorno che finiscono nella collezione, e una serie di 12 giorni.",
+      "collection": "Collezione",
+      "caughtToday": "{n} catturate oggi",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "Anche su iPad e tablet",
+    "title": "A suo agio anche sullo schermo grande",
+    "lead": "Seekprotocol è pensata per il telefono che hai in tasca, e funziona anche come vera app per iPad e sui tablet Android. Le schermate sfruttano lo spazio in più invece di allungarsi e basta, in ogni orientamento.",
+    "points": [
+      "Cattura i drop in AR su uno schermo abbastanza grande da abbracciare tutta la strada.",
+      "Seek Arena si prende tutta la larghezza: carte più grandi, pannelli laterali e il tuo mazzo accanto alla collezione.",
+      "Chat, impostazioni, clan e amici si aprono affiancati, con l'elenco accanto alla pagina che hai aperto.",
+      "Un solo account su tutti i dispositivi, così catture, carte e progressi ti seguono dal telefono al tablet."
+    ],
+    "tabletLabel": "La cattura di un drop in AR su iPad"
+  },
   "offers": {
     "railLabel": "Formati di drop",
     "redeemLabel": "Come si riscatta",

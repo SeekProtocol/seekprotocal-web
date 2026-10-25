@@ -971,6 +971,135 @@
       "faq": "Robinhood: Stock Tokeni KKK"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Sinu saak, nüüd kaardimänguna",
+    "lead": "Seek Arena on rakendusesisene live-kaardilahing üks ühe vastu. Pane enam kui 260 kaardi seast kokku kahekümnekaardiline pakk, mõõtu reaalajas jõudu teise seekeriga ja löö nokauti viis tema kaarti enne, kui ta lööb nokauti viis sinu omadest.",
+    "points": [
+      "Kaarte saad jahikaardil olevatest kaardikastidest, pakkidest, mille avad püütud SEEKiga, ning ülesannetest, klannisõdadest ja hooajast.",
+      "Kuus haruldusastet, Common kuni Mythic, üheksas fraktsioonis, ja igal kaardil on oma võime. Pakk on seega plaan, mitte hunnik.",
+      "Vaheta sõpradega kaarte üks ühe vastu sama harulduse piires ja sulata oma topeltkaardid XP-ks.",
+      "Soojenda Harjutusboti vastu või õpi mängu Seek Academys, enne kui hakkad auastme peale mängima."
+    ],
+    "tabletLabel": "Seek Arena iPadis, päris ekraanidega rakendusest",
+    "cards": {
+      "label": "kaarti kogumiseks"
+    },
+    "deck": {
+      "label": "kaarti pakis"
+    },
+    "knockouts": {
+      "label": "nokauti võiduks"
+    },
+    "clock": {
+      "label": "sekundit käigu kohta"
+    },
+    "live": {
+      "title": "Reaalajas matšid",
+      "body": "Leia vastane, kutsu sõber välja või soojenda Harjutusboti vastu. Iga käik käib 45 sekundi kellaga."
+    },
+    "clanWar": {
+      "title": "Klannisõda",
+      "body": "Igal nädalal, esmaspäevast esmaspäevani, liidetakse sinu klanni arvesse minevad matšid kokku: kolm punkti võidu ja üks viigi eest."
+    },
+    "ranks": {
+      "title": "Auastmed ja hooajad",
+      "body": "Roni läbi 57 auastme, Algajast World Championini, ning teel ootavad päeva-, nädala- ja hooajaülesanded."
+    },
+    "packs": {
+      "title": "Kaardipakid",
+      "body": "Põhipakis, Premium-pakis ja Eliitpakis on igaühes viis kaarti, ja mida kallim pakk, seda haruldasemad kaardid. Ava need rakenduses või osta siit."
+    },
+    "cta": "Osta kaardipakke poest",
+    "match": {
+      "caption": "Reaalajas matš"
+    },
+    "hand": {
+      "caption": "Alguskäsi"
+    },
+    "pack": {
+      "caption": "Mythic-kaart"
+    },
+    "season": {
+      "caption": "Hooaja auhinnad"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Sammud",
+    "title": "Iga sinu samm loeb",
+    "lead": "Seekprotocol loeb sinu samme Apple Healthist või Health Connectist ja muudab hea liikumispäeva võimendusteks ja XP-ks. Püüa sel päeval üks münt ja auhinnad avanevad kõndimise käigus.",
+    "points": [
+      "Kaardil jahtides tehtud sammud loevad rohkem ja neid mõõdab su telefoni enda liikumisandur.",
+      "Kõnni päevas 10 000 sammu, et seeria püsiks. Auhinnad tulevad 14., 30., 60. ja 100. päeval, kuni Premium-pakini välja.",
+      "Kõnni 15 km, et koorida Sammumuna, mille sees on Põhipakk, ja kõnni koos klanniga miljoni sammu suuruse nädalaeesmärgi poole.",
+      "Arvesse lähevad ainult sammud, mille su telefon või kell ise kokku luges, mitte kunagi käsitsi sisestatud sammud. Sinu sammuandmeid ei müüda kunagi ja ühenduse saad katkestada igal ajal."
+    ],
+    "ladderLabel": "Igapäevased sammuauhinnad",
+    "stepsCount": "{count} sammu",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Iga päev, kui oled mündi kinni püüdnud.",
+    "watchEyebrow": "Apple Watch ja Wear OS",
+    "watchTitle": "Sinu sammud randmel",
+    "watchLead": "Tänane sammude arv, järgmine auhind ja sinu seeria on ühe pilgu kaugusel. Mõlemad kellarakendused tulevad Seekprotocoli rakendusega kaasa.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Alusta jalutuskäiku randmelt",
+      "points": [
+        "Tänane rõngas ja järgmine auhind, sammud tundide kaupa, sinu seeria, nädal, sinu Sammumuna ja klanni eesmärk.",
+        "Salvesta jalutuskäik koos marsruudi, pulsi ja vahemaaga. See salvestub Apple Healthi ning 8 km jalutuskäik või jooks toob sulle Fitnessi.",
+        "Komplikatsioonid ja Smart Stacki vidin hoiavad sammude arvu su kellasihverplaadil."
+      ],
+      "requires": "watchOS 11 või uuem"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch ja kõik Wear OS-i kellad",
+      "points": [
+        "Tänane rõngas, auhinnad, seeria, nädal, Sammumuna ja Klanni sammud ühel keritaval ekraanil.",
+        "Paan ja komplikatsioon kiireks pilguks ilma rakendust avamata."
+      ],
+      "requires": "Wear OS 3 või uuem"
+    },
+    "face": {
+      "today": "Täna",
+      "steps": "Sammud",
+      "walk": "Jalutuskäik",
+      "streak": "Seeria",
+      "best": "Parim {n}",
+      "byHour": "Täna tundide kaupa",
+      "toNext": "Veel {count} sammu: {reward}",
+      "nextStreak": "Järgmine auhind päeval {day}: {reward}",
+      "end": "Lõpeta",
+      "chipUnlocked": "{reward} avatud",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal põletatud",
+      "chipStreak": "{n}-päevane seeria",
+      "label": "Seek Apple Watchis ja Wear OS-is: sammud tõusevad üle 10 000, jalutuskäik koos vahemaa, pulsi ja kaloritega, kogusse jõudvad päeva mündid ning 12-päevane seeria.",
+      "collection": "Kollektsioon",
+      "caughtToday": "Täna püütud {n}",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "Ka iPadis ja tahvelarvutites",
+    "title": "Kodus ka suurel ekraanil",
+    "lead": "Seekprotocol on loodud taskus oleva telefoni jaoks, kuid töötab ka päris iPadi rakendusena ja Androidi tahvelarvutites. Ekraanid kasutavad lisaruumi ära, selle asemel et lihtsalt välja venida, igas asendis.",
+    "points": [
+      "Püüa droppe AR-is ekraanil, mis on piisavalt suur, et kogu tänav ära mahuks.",
+      "Seek Arena saab kogu laiuse: suuremad kaardid, külgpaneelid ja su pakk kollektsiooni kõrval.",
+      "Chat, seaded, klannid ja sõbrad avanevad kõrvuti, nii et loend on avatud lehe kõrval.",
+      "Üks konto kõigis seadmetes, nii et su püügid, kaardid ja edusammud liiguvad sinuga telefonist tahvelarvutisse."
+    ],
+    "tabletLabel": "Dropi püüdmine AR-is iPadis"
+  },
   "offers": {
     "railLabel": "Dropi vormid",
     "redeemLabel": "Kuidas see lunastatakse",

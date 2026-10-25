@@ -100,6 +100,22 @@ const seekarFaqJsonLd = {
     },
     {
       "@type": "Question",
+      name: "Does Seekprotocol work on iPad and smartwatches?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Seekprotocol runs as a full iPad app and on Android tablets in every orientation, with two pane layouts for chat, settings, clans and friends. Apple Watch (watchOS 11 or later) and Wear OS (Wear OS 3 or later) apps show your daily steps, the next step reward, your streak and the week, with complications and a Wear OS tile. On Apple Watch you can also record a walk, which is saved to Apple Health.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Seek Arena?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Seek Arena is a live one on one collectible card game inside the Seekprotocol app. Players build a 20 card deck from more than 260 cards in six rarities and win by knocking out five of the opponent's cards, with a 45 second clock per turn. Cards come from boxes on the hunting map, from packs opened with caught SEEK, and from quests, weekly clan wars and seasons.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Do I need to know anything about crypto to use Seekprotocol?",
       acceptedAnswer: {
         "@type": "Answer",

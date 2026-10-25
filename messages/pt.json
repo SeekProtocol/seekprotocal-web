@@ -971,6 +971,135 @@
       "faq": "Robinhood: perguntas frequentes sobre Stock Tokens"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Suas capturas, agora um jogo de cartas",
+    "lead": "Seek Arena é uma batalha de cartas ao vivo, um contra um, dentro do app. Monte um baralho de vinte com mais de 260 cartas, enfrente outro seeker em tempo real e nocauteie cinco cartas dele antes que ele nocauteie cinco das suas.",
+    "points": [
+      "As cartas vêm de caixas de cartas no mapa de caça, de pacotes que você abre com o SEEK que captura, e de missões, guerras de clãs e da temporada.",
+      "Seis raridades, de Comum a Mítico, em nove facções, e cada carta tem uma habilidade própria, então um baralho é uma estratégia, não uma pilha.",
+      "Troque cartas com amigos, uma por uma e da mesma raridade, e derreta suas repetidas para virar XP.",
+      "Aqueça contra o Bot de treino ou aprenda o jogo na Seek Academy antes de jogar valendo rank."
+    ],
+    "tabletLabel": "Seek Arena no iPad, com telas reais do app",
+    "cards": {
+      "label": "cartas para colecionar"
+    },
+    "deck": {
+      "label": "cartas por baralho"
+    },
+    "knockouts": {
+      "label": "nocautes para vencer"
+    },
+    "clock": {
+      "label": "segundos por turno"
+    },
+    "live": {
+      "title": "Partidas ao vivo",
+      "body": "Encontre um oponente, desafie um amigo ou aqueça contra o Bot de treino. Cada turno corre num relógio de 45 segundos."
+    },
+    "clanWar": {
+      "title": "Guerra de clãs",
+      "body": "Toda semana, de segunda a segunda, as partidas válidas do seu clã se somam: três pontos por vitória, um por empate."
+    },
+    "ranks": {
+      "title": "Ranks e temporadas",
+      "body": "Suba 57 ranks, de Iniciante a World Champion, com missões diárias, semanais e de temporada pelo caminho."
+    },
+    "packs": {
+      "title": "Pacotes de cartas",
+      "body": "Os pacotes básico, premium e elite trazem cinco cartas cada, e quanto mais caro o pacote, mais raras as cartas. Abra no app ou compre aqui."
+    },
+    "cta": "Compre pacotes de cartas na loja",
+    "match": {
+      "caption": "Partida ao vivo"
+    },
+    "hand": {
+      "caption": "Mão inicial"
+    },
+    "pack": {
+      "caption": "Carta mítica"
+    },
+    "season": {
+      "caption": "Recompensas da temporada"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Passos",
+    "title": "Cada passo que você dá conta",
+    "lead": "O Seekprotocol lê seus passos do Apple Health ou do Health Connect e transforma um bom dia de caminhada em power-ups e XP. Capture uma moeda nesse dia e as recompensas são liberadas enquanto você caminha.",
+    "points": [
+      "Os passos que você dá caçando no mapa contam a mais, medidos pelo próprio sensor de movimento do seu celular.",
+      "Caminhe 10.000 passos por dia para manter uma sequência, com recompensas nos dias 14, 30, 60 e 100, chegando a um pacote premium.",
+      "Caminhe 15 km para chocar um Ovo de passos com um pacote básico dentro, e caminhe com seu clã rumo a uma meta semanal de um milhão de passos.",
+      "Só contam os passos que seu celular ou relógio registrou sozinho, nunca passos digitados à mão. Seus dados de passos nunca são vendidos, e você pode desconectar a qualquer momento."
+    ],
+    "ladderLabel": "Recompensas diárias de passos",
+    "stepsCount": "{count} passos",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Todo dia, depois que você capturar uma moeda.",
+    "watchEyebrow": "Apple Watch e Wear OS",
+    "watchTitle": "Seus passos, no seu pulso",
+    "watchLead": "A contagem de hoje, a próxima recompensa e sua sequência a um olhar de distância. Os dois apps de relógio vêm junto com o app Seekprotocol.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Comece uma caminhada pelo pulso",
+      "points": [
+        "O anel e a próxima recompensa de hoje, passos por hora, sua sequência, a semana, seu Ovo de passos e a meta do seu clã.",
+        "Registre uma caminhada com trajeto, frequência cardíaca e distância. Ela é salva no Apple Health, e uma caminhada ou corrida de 8 km rende um Fitness.",
+        "Complicações e um widget do Smart Stack deixam a contagem no mostrador."
+      ],
+      "requires": "watchOS 11 ou posterior"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch e qualquer relógio Wear OS",
+      "points": [
+        "Anel de hoje, recompensas, sequência, semana, Ovo de passos e Passos do clã em uma única tela com rolagem.",
+        "Um bloco e uma complicação, para uma olhada sem abrir o app."
+      ],
+      "requires": "Wear OS 3 ou posterior"
+    },
+    "face": {
+      "today": "Hoje",
+      "steps": "Passos",
+      "walk": "Caminhada",
+      "streak": "Sequência",
+      "best": "Melhor {n}",
+      "byHour": "Hoje por hora",
+      "toNext": "{count} passos para {reward}",
+      "nextStreak": "Próxima recompensa no dia {day}: {reward}",
+      "end": "Terminar",
+      "chipUnlocked": "{reward} liberado",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal queimadas",
+      "chipStreak": "Sequência de {n} dias",
+      "label": "Seek no Apple Watch e no Wear OS: passos subindo além de 10.000, uma caminhada com distância, frequência cardíaca e calorias, as moedas do dia chegando à coleção, e uma sequência de 12 dias.",
+      "collection": "Coleção",
+      "caughtToday": "{n} capturadas hoje",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "Também no iPad e em tablets",
+    "title": "Em casa na tela grande também",
+    "lead": "O Seekprotocol é feito para o celular no seu bolso, e também roda como um app de iPad de verdade e em tablets Android. As telas aproveitam o espaço extra em vez de só esticar, em qualquer orientação.",
+    "points": [
+      "Capture drops em AR numa tela grande o bastante para abranger a rua inteira.",
+      "O Seek Arena ganha a largura toda: cartas maiores, painéis laterais e seu baralho ao lado da sua coleção.",
+      "Chat, configurações, clãs e amigos abrem lado a lado, com a lista ao lado da página aberta.",
+      "Uma só conta em todos os aparelhos, então suas capturas, cartas e seu progresso vão com você do celular para o tablet."
+    ],
+    "tabletLabel": "Capturando um drop em AR no iPad"
+  },
   "offers": {
     "railLabel": "Formatos de drop",
     "redeemLabel": "Como é resgatado",

@@ -12,6 +12,9 @@ import VideoReveal from "@/components/sections/VideoReveal";
 import CollectiblesSection from "@/components/sections/CollectiblesSection";
 import StocksSection from "@/components/sections/StocksSection";
 import RewardsSection from "@/components/sections/RewardsSection";
+import ArenaSection from "@/components/sections/ArenaSection";
+import StepsSection from "@/components/sections/StepsSection";
+import TabletSection from "@/components/sections/TabletSection";
 import DistributionSection from "@/components/sections/DistributionSection";
 import MobiSection from "@/components/sections/MobiSection";
 import ARSection from "@/components/sections/ARSection";
@@ -267,6 +270,17 @@ function HomeContent() {
         </div>
       </section>
 
+      {/* ── Seek Arena ──────────────────────────────────────────────────────
+          After the coins and the stocks because the arena is what the catch
+          turns into: packs are opened with caught SEEK, and cards drop from
+          boxes on the same map. Always black, like the game itself. */}
+      <section className="section section-inverse">
+        <div className="noise-layer" aria-hidden="true" />
+        <div className="shell">
+          <ArenaSection />
+        </div>
+      </section>
+
       {/* ── What else can be placed ─────────────────────────────────────────
           Replaced `OffersSection`, which said the same thing with five drawn
           artefacts standing in for artwork that did not exist yet. It does now,
@@ -351,6 +365,22 @@ function HomeContent() {
       <section className="section">
         <div className="shell">
           <ProgressionSection />
+        </div>
+      </section>
+
+      {/* ── Steps, and the watches ──────────────────────────────────────────
+          Next to progression because steps are a second way to earn the same
+          powerups and XP, from walking rather than catching. */}
+      <section className="section section-sunken">
+        <div className="shell">
+          <StepsSection />
+        </div>
+      </section>
+
+      {/* ── iPad and tablets ────────────────────────────────────────────── */}
+      <section className="section">
+        <div className="shell">
+          <TabletSection />
         </div>
       </section>
 

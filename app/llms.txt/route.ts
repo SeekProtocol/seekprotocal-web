@@ -55,6 +55,13 @@ export async function GET() {
     `reward is worth. The protocol does not assert forgery is impossible, and the`,
     `whitepaper documents the attacks and the limits.`,
     ``,
+    `Inside the app: Seek Arena, a live one on one card game (20 card decks from`,
+    `260+ cards, five knock-outs to win) whose cards come from the same map and`,
+    `from packs opened with caught SEEK; step rewards read from Apple Health or`,
+    `Health Connect (powerups at 10,000, 16,000 and 24,000 steps a day); an Apple`,
+    `Watch app and a Wear OS app for steps, streaks and walks; and a full iPad and`,
+    `Android tablet layout.`,
+    ``,
     /* Counted rather than written out. It said "eight" in both places, and was
        already wrong: Turkish landed and nothing here noticed. */
     `The site is served at ${routing.locales.length} locales under a path prefix (${routing.locales.join(", ")}).`,

@@ -971,6 +971,135 @@
       "faq": "Robinhood：Stock Token 常见问题"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "你捕获的东西，现在是一款卡牌游戏",
+    "lead": "Seek Arena 是应用内的一对一实时卡牌对战。从 260 多张卡牌中组出一套二十张的卡组，与另一位寻宝者实时交锋，抢在对方之前击倒他的五张卡牌。",
+    "points": [
+      "卡牌来自狩猎地图上的宝箱、用你捕获的 SEEK 开启的卡包，以及任务、公会战和赛季奖励。",
+      "从普通到神话共六种稀有度，分属九大阵营，每张卡牌都有专属能力，所以卡组是一套战术，而不是一堆卡。",
+      "与好友按相同稀有度一换一交易卡牌，重复的卡牌还能熔炼成 XP。",
+      "先和练习机器人热热身，或在 Seek 学院学会玩法，再去打排位。"
+    ],
+    "tabletLabel": "iPad 上的 Seek Arena，均为应用真实界面",
+    "cards": {
+      "label": "可收集的卡牌"
+    },
+    "deck": {
+      "label": "每套卡组的卡牌"
+    },
+    "knockouts": {
+      "label": "获胜所需击倒"
+    },
+    "clock": {
+      "label": "每回合秒数"
+    },
+    "live": {
+      "title": "实时对局",
+      "body": "匹配对手、挑战好友，或者和练习机器人热身。每个回合限时 45 秒。"
+    },
+    "clanWar": {
+      "title": "公会战",
+      "body": "每周从周一到下周一，你所在战队的有效对局都会累计积分：胜一场得三分，平一场得一分。"
+    },
+    "ranks": {
+      "title": "段位与赛季",
+      "body": "从新手一路攀升到 World Champion，共 57 个段位，沿途还有每日、每周和赛季任务。"
+    },
+    "packs": {
+      "title": "卡包",
+      "body": "基础卡包、高级卡包和精英卡包每包都有五张卡牌，卡包越贵，卡牌越稀有。可以在应用里开启，也可以在这里购买。"
+    },
+    "cta": "去商店购买卡包",
+    "match": {
+      "caption": "实时对局"
+    },
+    "hand": {
+      "caption": "起手牌"
+    },
+    "pack": {
+      "caption": "开出神话卡"
+    },
+    "season": {
+      "caption": "赛季奖励"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "步数",
+    "title": "走出的每一步都算数",
+    "lead": "Seekprotocol 从 Apple Health 或 Health Connect 读取你的步数，把走得充实的一天变成道具和 XP。当天捕获一枚币，奖励就会随着你的脚步逐一解锁。",
+    "points": [
+      "在地图上狩猎时走的步数会额外计算，由你手机自带的运动传感器测量。",
+      "每天走满 10,000 步就能保持连续记录，第 14、30、60 和 100 天都有奖励，最高可得 Premium 卡包。",
+      "走满 15 km 即可孵化一枚步数蛋，里面是一个 Basic 卡包；还可以和战队一起向每周一百万步的目标迈进。",
+      "只采用手机或手表自行记录的步数，绝不采用手动输入的步数。你的步数数据绝不出售，你也可以随时断开连接。"
+    ],
+    "ladderLabel": "每日步数奖励",
+    "stepsCount": "{count} 步",
+    "fitness": {
+      "reward": "健身"
+    },
+    "xpBoost": {
+      "reward": "XP 增益"
+    },
+    "spawnLure": {
+      "reward": "刷新诱饵"
+    },
+    "ladderNote": "每天捕获一枚币后即可领取。",
+    "watchEyebrow": "Apple Watch 与 Wear OS",
+    "watchTitle": "你的步数，就在手腕上",
+    "watchLead": "今日步数、下一个奖励和连续记录，抬腕一瞥就能看到。两款手表应用都随 Seekprotocol 应用一同提供。",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "抬起手腕就能开始步行",
+      "points": [
+        "今日圆环和下一个奖励、每小时步数、连续记录、本周概况、步数蛋以及战队目标。",
+        "记录一次步行的路线、心率和距离。记录会存入 Apple Health，步行或跑步满 8 km 还能获得一个健身。",
+        "表盘组件和 Smart Stack 小组件让步数常驻在你的表盘上。"
+      ],
+      "requires": "watchOS 11 或更高版本"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch 和所有 Wear OS 手表",
+      "points": [
+        "今日圆环、奖励、连续记录、本周概况、步数蛋和战队步数，集中在一个可滚动的页面上。",
+        "一个卡片和一个表盘组件，无需打开应用，一眼就能看到。"
+      ],
+      "requires": "Wear OS 3 或更高版本"
+    },
+    "face": {
+      "today": "今天",
+      "steps": "步数",
+      "walk": "步行",
+      "streak": "连续记录",
+      "best": "最佳 {n}",
+      "byHour": "今日每小时",
+      "toNext": "再走 {count} 步得 {reward}",
+      "nextStreak": "第 {day} 天的下一个奖励：{reward}",
+      "end": "结束",
+      "chipUnlocked": "{reward} 已解锁",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "已消耗 {kcal} kcal",
+      "chipStreak": "连续 {n} 天",
+      "label": "Apple Watch 和 Wear OS 上的 Seek：步数突破 10,000，一次记录了距离、心率和卡路里的步行，当天捕获的币落入收藏，以及连续 12 天的记录。",
+      "collection": "收藏",
+      "caughtToday": "今日捕获 {n} 枚",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "iPad 和平板同样支持",
+    "title": "大屏幕上同样得心应手",
+    "lead": "Seekprotocol 为你口袋里的手机而生，同时也是一款真正的 iPad 应用，还能在 Android 平板上运行。无论横屏竖屏，界面都会充分利用多出来的空间，而不是简单拉伸。",
+    "points": [
+      "在大屏幕上用 AR 捕获投放物，整条街道尽收眼底。",
+      "Seek Arena 占满整个屏幕宽度：卡牌更大，配有侧边面板，卡组就在收藏旁边。",
+      "聊天、设置、战队和好友采用分栏布局，列表就在你打开的页面旁边。",
+      "一个账号通用所有设备，你的捕获、卡牌和进度从手机到平板一路相随。"
+    ],
+    "tabletLabel": "在 iPad 上用 AR 捕获投放物"
+  },
   "offers": {
     "railLabel": "投放形式",
     "redeemLabel": "如何兑现",

@@ -971,6 +971,135 @@
       "faq": "Robinhood: FAQ over Stock Tokens"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Je vangsten, nu als kaartspel",
+    "lead": "Seek Arena is een live kaartgevecht van één tegen één, gewoon in de app. Stel een deck van twintig samen uit meer dan 260 kaarten, neem het in realtime op tegen een andere seeker en schakel vijf van zijn kaarten uit voordat hij er vijf van jou uitschakelt.",
+    "points": [
+      "Kaarten vind je in kaartenboxen op de jachtkaart, in pakketten die je opent met de SEEK die je vangt, en bij quests, clan-oorlogen en het seizoen.",
+      "Zes zeldzaamheden van Gewoon tot Mythisch, verdeeld over negen facties, en elke kaart heeft een eigen vaardigheid. Een deck is dus een plan en geen stapel.",
+      "Ruil kaarten één op één met vrienden binnen dezelfde zeldzaamheid, en smelt je dubbele kaarten om tot XP.",
+      "Warm op tegen de Oefenbot of leer het spel in Seek Academy, voordat je om rang gaat spelen."
+    ],
+    "tabletLabel": "Seek Arena op iPad, met echte schermen uit de app",
+    "cards": {
+      "label": "kaarten om te verzamelen"
+    },
+    "deck": {
+      "label": "kaarten in een deck"
+    },
+    "knockouts": {
+      "label": "knock-outs om te winnen"
+    },
+    "clock": {
+      "label": "seconden per beurt"
+    },
+    "live": {
+      "title": "Live potjes",
+      "body": "Zoek een tegenstander, daag een vriend uit of warm op tegen de Oefenbot. Elke beurt loopt op een klok van 45 seconden."
+    },
+    "clanWar": {
+      "title": "Clan-oorlog",
+      "body": "Elke week, van maandag tot maandag, tellen de geldige potjes van je clan bij elkaar op: drie punten voor een overwinning, één voor een gelijkspel."
+    },
+    "ranks": {
+      "title": "Rangen en seizoenen",
+      "body": "Klim door 57 rangen van Beginner tot World Champion, met dagelijkse, wekelijkse en seizoensquests onderweg."
+    },
+    "packs": {
+      "title": "Kaartpakketten",
+      "body": "Een Basispakket, Premiumpakket of Elitepakket bevat elk vijf kaarten, en hoe duurder het pakket, hoe zeldzamer de kaarten. Open ze in de app of koop ze hier."
+    },
+    "cta": "Haal kaartpakketten in de shop",
+    "match": {
+      "caption": "Live potje"
+    },
+    "hand": {
+      "caption": "Openingshand"
+    },
+    "pack": {
+      "caption": "Mythische vondst"
+    },
+    "season": {
+      "caption": "Seizoensbeloningen"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Stappen",
+    "title": "Elke stap die je zet telt mee",
+    "lead": "Seekprotocol leest je stappen uit Apple Health of Health Connect en maakt van een actieve dag power-ups en XP. Vang die dag één coin, en de beloningen worden vrijgespeeld terwijl je loopt.",
+    "points": [
+      "Stappen die je tijdens het jagen op de kaart zet tellen extra, gemeten door de eigen bewegingssensor van je telefoon.",
+      "Loop 10.000 stappen per dag om je streak vol te houden, met beloningen op dag 14, 30, 60 en 100, tot en met een Premiumpakket.",
+      "Loop 15 km om een Stappenei met een Basispakket erin uit te broeden, en loop met je clan naar een weekdoel van een miljoen stappen.",
+      "Alleen stappen die je telefoon of horloge zelf heeft geteld worden gebruikt, nooit handmatig ingevoerde stappen. Je stapgegevens worden nooit verkocht, en je kunt de koppeling op elk moment verbreken."
+    ],
+    "ladderLabel": "Dagelijkse stapbeloningen",
+    "stepsCount": "{count} stappen",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Elke dag, zodra je een coin hebt gevangen.",
+    "watchEyebrow": "Apple Watch en Wear OS",
+    "watchTitle": "Je stappen, om je pols",
+    "watchLead": "De telling van vandaag, de volgende beloning en je streak zie je in één oogopslag. Beide horloge-apps zitten bij de Seekprotocol-app.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Start een wandeling vanaf je pols",
+      "points": [
+        "De ring en volgende beloning van vandaag, stappen per uur, je streak, de week, je Stappenei en het doel van je clan.",
+        "Leg een wandeling vast met route, hartslag en afstand. Die wordt bewaard in Apple Health, en een wandeling of hardlooprondje van 8 km levert een Fitness op.",
+        "Complicaties en een Smart Stack-widget houden de telling op je wijzerplaat."
+      ],
+      "requires": "watchOS 11 of hoger"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch en elk Wear OS-horloge",
+      "points": [
+        "De ring van vandaag, beloningen, streak, week, Stappenei en Clanstappen op één scrollend scherm.",
+        "Een tegel en een complicatie, voor een snelle blik zonder de app te openen."
+      ],
+      "requires": "Wear OS 3 of hoger"
+    },
+    "face": {
+      "today": "Vandaag",
+      "steps": "Stappen",
+      "walk": "Wandeling",
+      "streak": "Streak",
+      "best": "Beste {n}",
+      "byHour": "Vandaag per uur",
+      "toNext": "Nog {count} stappen tot {reward}",
+      "nextStreak": "Volgende beloning op dag {day}: {reward}",
+      "end": "Stop",
+      "chipUnlocked": "{reward} vrijgespeeld",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal verbrand",
+      "chipStreak": "Streak van {n} dagen",
+      "label": "Seek op Apple Watch en Wear OS: stappen die voorbij de 10.000 klimmen, een wandeling met afstand, hartslag en calorieën, de coins van vandaag die in de collectie belanden, en een streak van 12 dagen.",
+      "collection": "Collectie",
+      "caughtToday": "{n} vandaag gevangen",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "Ook op iPad en tablets",
+    "title": "Ook op het grote scherm helemaal thuis",
+    "lead": "Seekprotocol is gemaakt voor de telefoon in je broekzak, en draait daarnaast als echte iPad-app en op Android-tablets. De schermen benutten de extra ruimte in plaats van simpelweg uit te rekken, in elke stand.",
+    "points": [
+      "Vang drops in AR op een scherm dat groot genoeg is om de hele straat te overzien.",
+      "Seek Arena krijgt de volle breedte: grotere kaarten, zijpanelen en je deck naast je collectie.",
+      "Chat, instellingen, clans en vrienden openen naast elkaar, met de lijst naast de pagina die je open hebt.",
+      "Eén account op al je apparaten, dus je vangsten, kaarten en voortgang gaan mee van telefoon naar tablet."
+    ],
+    "tabletLabel": "Een drop vangen in AR op iPad"
+  },
   "offers": {
     "railLabel": "Dropformats",
     "redeemLabel": "Hoe je hem verzilvert",

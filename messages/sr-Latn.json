@@ -971,6 +971,135 @@
       "faq": "Robinhood: česta pitanja o Stock Token-u"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Vaši ulovi, sada kartaška igra",
+    "lead": "Seek Arena je kartaška borba jedan na jedan uživo, u okviru aplikacije. Od preko 260 karata složite špil od dvadeset, odmerite snage sa drugim igračem u realnom vremenu i nokautirajte pet njegovih karata pre nego što on nokautira vaše.",
+    "points": [
+      "Karte stižu iz kutija na mapi za lov, iz paketa koje otvarate SEEK-om koji ulovite, kao i iz zadataka, ratova klanova i sezone.",
+      "Šest retkosti, od Običnih do Mitskih, u devet frakcija, a svaka karta ima sopstvenu sposobnost, pa je špil plan, a ne gomila karata.",
+      "Menjajte karte sa prijateljima jednu za jednu iste retkosti, a duplikate pretopite u XP.",
+      "Zagrejte se protiv Bota za vežbu ili naučite igru u Seek Academy pre nego što zaigrate za rang."
+    ],
+    "tabletLabel": "Seek Arena na iPad-u, sa pravim ekranima iz aplikacije",
+    "cards": {
+      "label": "karata za sakupljanje"
+    },
+    "deck": {
+      "label": "karata u špilu"
+    },
+    "knockouts": {
+      "label": "nokauta za pobedu"
+    },
+    "clock": {
+      "label": "sekundi po potezu"
+    },
+    "live": {
+      "title": "Mečevi uživo",
+      "body": "Pronađite protivnika, izazovite prijatelja ili se zagrejte protiv Bota za vežbu. Za svaki potez imate 45 sekundi."
+    },
+    "clanWar": {
+      "title": "Rat klanova",
+      "body": "Svake nedelje, od ponedeljka do ponedeljka, sabiraju se važeći mečevi vašeg klana: tri boda za pobedu, jedan za nerešeno."
+    },
+    "ranks": {
+      "title": "Rangovi i sezone",
+      "body": "Popnite se kroz 57 rangova, od Početnika do titule World Champion, uz dnevne, nedeljne i sezonske zadatke usput."
+    },
+    "packs": {
+      "title": "Paketi karata",
+      "body": "Osnovni, Premijum i Elitni paket sadrže po pet karata, a što je paket skuplji, karte su ređe. Otvorite ih u aplikaciji ili ih kupite ovde."
+    },
+    "cta": "Nabavite pakete karata u prodavnici",
+    "match": {
+      "caption": "Meč uživo"
+    },
+    "hand": {
+      "caption": "Početna ruka"
+    },
+    "pack": {
+      "caption": "Mitska karta"
+    },
+    "season": {
+      "caption": "Sezonske nagrade"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Koraci",
+    "title": "Svaki vaš korak se računa",
+    "lead": "Seekprotocol čita vaše korake iz aplikacije Apple Health ili Health Connect i pretvara dobar dan na nogama u pojačanja i XP. Ulovite jedan novčić tog dana i nagrade se otključavaju dok hodate.",
+    "points": [
+      "Koraci koje napravite dok lovite na mapi vrede dodatno, a meri ih senzor pokreta u vašem telefonu.",
+      "Hodajte 10.000 koraka dnevno da biste održali niz, uz nagrade 14., 30., 60. i 100. dana, sve do Premijum paketa.",
+      "Prepešačite 15 km da izlegnete Jaje koraka sa Osnovnim paketom unutra, a sa svojim klanom hodajte ka nedeljnom cilju od milion koraka.",
+      "Koriste se samo koraci koje su vaš telefon ili sat sami izbrojali, nikada koraci uneti ručno. Vaši podaci o koracima nikada se ne prodaju, a vezu možete prekinuti u bilo kom trenutku."
+    ],
+    "ladderLabel": "Dnevne nagrade za korake",
+    "stepsCount": "{count} koraka",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP pojačanje"
+    },
+    "spawnLure": {
+      "reward": "Mamac za novčiće"
+    },
+    "ladderNote": "Svakog dana, kada ulovite novčić.",
+    "watchEyebrow": "Apple Watch i Wear OS",
+    "watchTitle": "Vaši koraci, na vašem zglobu",
+    "watchLead": "Današnji broj koraka, sledeća nagrada i vaš niz udaljeni su samo jedan pogled. Obe aplikacije za sat dolaze uz aplikaciju Seekprotocol.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Pokrenite šetnju sa zgloba",
+      "points": [
+        "Današnji prsten i sledeća nagrada, koraci po satima, vaš niz, nedelja, vaše Jaje koraka i cilj vašeg klana.",
+        "Snimite šetnju sa rutom, pulsom i razdaljinom. Čuva se u Apple Health, a šetnja ili trčanje od 8 km donosi Fitness.",
+        "Komplikacije i Smart Stack vidžet drže broj koraka na brojčaniku sata."
+      ],
+      "requires": "watchOS 11 ili noviji"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch i svaki Wear OS sat",
+      "points": [
+        "Današnji prsten, nagrade, niz, nedelja, Jaje koraka i Koraci klana na jednom ekranu koji se skroluje.",
+        "Pločica i komplikacija, za brz pogled bez otvaranja aplikacije."
+      ],
+      "requires": "Wear OS 3 ili noviji"
+    },
+    "face": {
+      "today": "Danas",
+      "steps": "Koraci",
+      "walk": "Šetnja",
+      "streak": "Niz",
+      "best": "Najbolji {n}",
+      "byHour": "Danas po satima",
+      "toNext": "{reward} za još {count} koraka",
+      "nextStreak": "Sledeća nagrada {day}. dana: {reward}",
+      "end": "Završi",
+      "chipUnlocked": "Otključano: {reward}",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "Potrošeno {kcal} kcal",
+      "chipStreak": "Niz od {n} dana",
+      "label": "Seek na Apple Watch i Wear OS satovima: koraci prelaze 10.000, šetnja sa razdaljinom, pulsom i kalorijama, današnji novčići koji stižu u kolekciju i niz od 12 dana.",
+      "collection": "Kolekcija",
+      "caughtToday": "Danas uhvaćeno: {n}",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "I na iPad-u i tabletima",
+    "title": "Kao kod kuće i na velikom ekranu",
+    "lead": "Seekprotocol je napravljen za telefon u vašem džepu, a radi i kao prava iPad aplikacija i na Android tabletima. Ekrani koriste dodatni prostor umesto da se samo razvuku, u svakoj orijentaciji.",
+    "points": [
+      "Ulovite dropove u AR-u na ekranu dovoljno velikom da obuhvati celu ulicu.",
+      "Seek Arena dobija punu širinu: veće karte, bočne panele i vaš špil pored kolekcije.",
+      "Ćaskanje, podešavanja, klanovi i prijatelji otvaraju se jedno pored drugog, sa listom pored stranice koju ste otvorili.",
+      "Jedan nalog na svakom uređaju, pa vaši ulovi, karte i napredak idu sa vama sa telefona na tablet."
+    ],
+    "tabletLabel": "Hvatanje dropa u AR-u na iPad-u"
+  },
   "offers": {
     "railLabel": "Formati dropova",
     "redeemLabel": "Kako se iskorišćava",
