@@ -68,7 +68,7 @@ export default function StocksSection() {
       <div className="stocks-fine reveal">
         <p>{t("finePrint")}</p>
         <ul className="stocks-links">
-          {(["restrictions", "terms", "faq"] as const).map((key) => (
+          {(["legal", "terms", "regulationS"] as const).map((key) => (
             <li key={key}>
               <a href={STOCK_LINKS[key]} target="_blank" rel="noopener noreferrer">
                 {t(`links.${key}`)}

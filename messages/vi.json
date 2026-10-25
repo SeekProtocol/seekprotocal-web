@@ -950,21 +950,21 @@
   "stocksSection": {
     "eyebrow": "Tài sản thực",
     "title": "Bắt một phần Apple, Amazon, Tesla, Google và NVIDIA",
-    "lead": "Bản đồ giờ đã có cổ phiếu được token hóa. Apple, Amazon, Tesla, Google và NVIDIA rơi xuống dưới dạng coin như mọi coin khác: đi bộ đến, bắt lấy, rồi rút về dưới dạng Robinhood Stock Token trên Robinhood Chain, thẳng vào ví của chính bạn.",
+    "lead": "Bản đồ có cổ phiếu được token hóa. Apple, Amazon, Tesla, Google và NVIDIA rơi xuống dưới dạng coin như mọi coin khác: đi bộ đến, bắt lấy, rồi rút về dưới dạng xStock trên Solana, thẳng vào ví của chính bạn.",
     "points": [
       "Mỗi lượt bắt có giá trị trong game cố định: $0.05 cho Apple và Amazon, $0.12 cho Tesla và Google, và $0.30 cho NVIDIA.",
-      "Khi rút, giá trị đó được trả bằng token cổ phiếu theo giá hiện tại, nên từ đó trở đi, những gì bạn nắm giữ sẽ biến động theo giá cổ phiếu.",
+      "Khi rút, giá trị đó được quy đổi sang xStock tương ứng theo giá hiện tại, nên từ đó trở đi, những gì bạn nắm giữ sẽ biến động theo giá cổ phiếu, lên hoặc xuống.",
       "Apple và Amazon là Uncommon, Tesla và Google là Rare, và NVIDIA là Epic, coin khó bắt nhất trong năm.",
-      "Coin cổ phiếu xuất hiện tại 30 quốc gia thuộc Khu vực Kinh tế châu Âu. Hãy đặt quốc gia trong hồ sơ và xác nhận bạn không phải là người Hoa Kỳ (U.S. person) trước lần rút đầu tiên."
+      "Coin cổ phiếu xuất hiện tại 30 quốc gia thuộc Khu vực Kinh tế châu Âu. Hãy đặt quốc gia trong hồ sơ và xác nhận ba nội dung cam kết trong bản cam kết token, trong đó có việc bạn không phải là người Hoa Kỳ (U.S. person), trước lần rút đầu tiên."
     ],
-    "coinAlt": "Coin token cổ phiếu {name}",
+    "coinAlt": "Coin cổ phiếu {name}",
     "catchChance": "Tỷ lệ bắt",
     "perCatch": "Mỗi lượt bắt",
-    "finePrint": "Robinhood Stock Token là chứng khoán nợ được token hóa do Robinhood Assets (Jersey) Limited phát hành. Chúng theo sát giá của cổ phiếu cơ sở nhưng không mang lại quyền sở hữu hay quyền biểu quyết trong công ty đó. Chúng không được chào bán hoặc chuyển giao tại Hoa Kỳ, cho người Hoa Kỳ, hoặc tại các khu vực tài phán bị hạn chế, bao gồm Canada, Vương quốc Anh và Thụy Sĩ. Việc nhận được một token tự nó không có nghĩa là bạn có thể bán hoặc quy đổi (redeem) token đó. Token Google theo sát cổ phiếu loại A của Alphabet Inc. Độ hiếm là một cấp độ trong game, không phải nhận định về khoản đầu tư. Giá có thể giảm cũng như tăng, và không có nội dung nào ở đây là lời khuyên đầu tư. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA và Robinhood là nhãn hiệu của chủ sở hữu tương ứng, những người không tài trợ hay xác nhận Seekprotocol.",
+    "finePrint": "xStocks là chứng chỉ theo dõi giá, một công cụ nợ vô danh do Backed Assets (JE) Limited, một công ty đăng ký tại Jersey, phát hành. Mỗi xStock được bảo đảm bằng cổ phiếu cơ sở, được nắm giữ tại các tổ chức lưu ký chịu sự quản lý, và theo sát giá của cổ phiếu đó, nhưng không mang lại quyền sở hữu công ty, quyền biểu quyết hay các quyền cổ đông khác. xStocks là sản phẩm phức tạp và giá trị của chúng có thể giảm. Bản cáo bạch cơ sở đã được Cơ quan Thị trường Tài chính Liechtenstein (FMA) phê duyệt; việc phê duyệt đó không phải là sự bảo chứng cho sản phẩm. xStocks không được chào bán hoặc chuyển giao tại Hoa Kỳ, cho người Hoa Kỳ (U.S. persons), hoặc cho những người chịu lệnh trừng phạt quốc tế. Việc nhận được một xStock tự nó không có nghĩa là bạn có thể bán hoặc yêu cầu mua lại xStock đó, và việc yêu cầu tổ chức phát hành mua lại đòi hỏi quy trình kiểm tra danh tính riêng của tổ chức đó. GOOGLx theo sát cổ phiếu loại A của Alphabet Inc. Độ hiếm là một cấp độ trong game, không phải nhận định về khoản đầu tư, và không có nội dung nào ở đây là lời khuyên đầu tư. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA và xStocks là nhãn hiệu của chủ sở hữu tương ứng, những người không tài trợ hay xác nhận Seekprotocol.",
     "links": {
-      "restrictions": "Robinhood: khu vực tài phán bị hạn chế",
-      "terms": "Robinhood: bản cáo bạch và Final Terms (Điều khoản cuối cùng)",
-      "faq": "Robinhood: Câu hỏi thường gặp về Stock Token"
+      "legal": "Backed: tài liệu pháp lý và bản cáo bạch (tiếng Anh)",
+      "terms": "xStocks: điều khoản dịch vụ (tiếng Anh)",
+      "regulationS": "Regulation S: định nghĩa U.S. person (tiếng Anh)"
     }
   },
   "arenaSection": {

@@ -950,21 +950,21 @@
   "stocksSection": {
     "eyebrow": "Actifs du monde réel",
     "title": "Attrapez un morceau d'Apple, d'Amazon, de Tesla, de Google et de NVIDIA",
-    "lead": "La carte accueille désormais des actions tokenisées. Apple, Amazon, Tesla, Google et NVIDIA apparaissent sous forme de pièces, comme toutes les autres : marchez jusqu'à l'une d'elles, attrapez-la et retirez-la sous forme de Robinhood Stock Token sur Robinhood Chain, directement dans votre propre portefeuille.",
+    "lead": "La carte accueille des actions tokenisées. Apple, Amazon, Tesla, Google et NVIDIA apparaissent sous forme de pièces, comme toutes les autres : marchez jusqu'à l'une d'elles, attrapez-la et retirez-la sous forme de xStock sur Solana, directement dans votre propre portefeuille.",
     "points": [
       "Chaque capture a une valeur de jeu fixe : $0.05 pour Apple et Amazon, $0.12 pour Tesla et Google, et $0.30 pour NVIDIA.",
-      "Au retrait, cette valeur est versée en token d'action au cours actuel ; à partir de là, ce que vous détenez suit le cours de l'action.",
+      "Au retrait, cette valeur est convertie au cours actuel en xStock correspondant ; à partir de là, ce que vous détenez suit le cours de l'action, à la hausse comme à la baisse.",
       "Apple et Amazon sont Peu commun, Tesla et Google sont Rare et NVIDIA est Épique, la plus difficile des cinq à décrocher.",
-      "Les drops d'actions apparaissent dans les 30 pays de l'Espace économique européen. Indiquez votre pays dans votre profil et confirmez que vous n'êtes pas une personne américaine (U.S. person) avant votre premier retrait."
+      "Les drops d'actions apparaissent dans les 30 pays de l'Espace économique européen. Indiquez votre pays dans votre profil et confirmez les trois points de la déclaration relative au token, dont le fait que vous n'êtes pas une U.S. person, avant votre premier retrait."
     ],
-    "coinAlt": "Pièce du token d'action {name}",
+    "coinAlt": "Pièce d'action {name}",
     "catchChance": "Chance de capture",
     "perCatch": "Par capture",
-    "finePrint": "Les Robinhood Stock Tokens sont des titres de créance tokenisés émis par Robinhood Assets (Jersey) Limited. Ils suivent le cours de l'action sous-jacente, mais ne confèrent ni propriété de la société ni droit de vote dans celle-ci. Ils ne peuvent être ni offerts ni livrés aux États-Unis, à des personnes américaines ou dans des juridictions soumises à restrictions, dont le Canada, le Royaume-Uni et la Suisse. Recevoir un token ne signifie pas en soi que vous pouvez le vendre ou en demander le remboursement. Le token Google suit les actions de classe A d'Alphabet Inc. La rareté est un niveau de jeu, pas un avis sur l'investissement. Les cours peuvent baisser comme monter, et rien ici ne constitue un conseil en investissement. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA et Robinhood sont des marques de leurs propriétaires, qui ne parrainent ni ne cautionnent Seekprotocol.",
+    "finePrint": "Les xStocks sont des certificats tracker, c'est-à-dire des titres de créance au porteur émis par Backed Assets (JE) Limited, une société immatriculée à Jersey. Chaque xStock est adossé à l'action sous-jacente, conservée auprès de dépositaires réglementés, et en suit le cours, mais ne confère ni propriété de la société, ni droit de vote, ni aucun autre droit d'actionnaire. Les xStocks sont des produits complexes et leur valeur peut baisser. Le prospectus de base est approuvé par l'Autorité des marchés financiers du Liechtenstein (FMA) ; cette approbation ne constitue pas une recommandation du produit. Les xStocks ne peuvent être ni offerts ni livrés aux États-Unis, à des U.S. persons ou à des personnes visées par des sanctions internationales. Recevoir un xStock ne signifie pas en soi que vous pouvez le vendre ou en obtenir le rachat, et le rachat auprès de l'émetteur est soumis à ses propres vérifications d'identité. GOOGLx suit les actions de classe A d'Alphabet Inc. La rareté est un niveau de jeu, pas un avis sur l'investissement, et rien ici ne constitue un conseil en investissement. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA et xStocks sont des marques de leurs propriétaires, qui ne parrainent ni ne cautionnent Seekprotocol.",
     "links": {
-      "restrictions": "Robinhood : juridictions soumises à restrictions",
-      "terms": "Robinhood : prospectus et Final Terms",
-      "faq": "Robinhood : FAQ sur les Stock Tokens"
+      "legal": "Backed : documents juridiques et prospectus (en anglais)",
+      "terms": "xStocks : conditions d'utilisation (en anglais)",
+      "regulationS": "Regulation S : définition de U.S. person (en anglais)"
     }
   },
   "arenaSection": {

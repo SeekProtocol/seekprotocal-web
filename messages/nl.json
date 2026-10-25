@@ -950,21 +950,21 @@
   "stocksSection": {
     "eyebrow": "Assets uit de echte wereld",
     "title": "Vang een stukje Apple, Amazon, Tesla, Google en NVIDIA",
-    "lead": "Op de kaart liggen nu getokeniseerde aandelen. Apple, Amazon, Tesla, Google en NVIDIA verschijnen als coins, net als alle andere: loop ernaartoe, vang er een en laat hem uitbetalen als Robinhood Stock Token op Robinhood Chain, rechtstreeks in je eigen wallet.",
+    "lead": "Op de kaart liggen getokeniseerde aandelen. Apple, Amazon, Tesla, Google en NVIDIA verschijnen als coins, net als alle andere: loop ernaartoe, vang er een en laat hem uitbetalen als xStock op Solana, rechtstreeks in je eigen wallet.",
     "points": [
       "Elke vangst heeft een vaste spelwaarde: $0.05 voor Apple en Amazon, $0.12 voor Tesla en Google en $0.30 voor NVIDIA.",
-      "Bij uitbetaling wordt die waarde uitgekeerd in de aandelentoken tegen de actuele koers, dus vanaf dat moment volgt wat je bezit de aandelenkoers.",
+      "Bij uitbetaling wordt die waarde tegen de actuele koers omgerekend naar de bijbehorende xStock, dus vanaf dat moment volgt wat je bezit de aandelenkoers, omhoog of omlaag.",
       "Apple en Amazon zijn Ongewoon, Tesla en Google zijn Zeldzaam en NVIDIA is Episch, de moeilijkste van de vijf om binnen te halen.",
-      "Aandelendrops verschijnen in de 30 landen van de Europese Economische Ruimte. Stel je land in je profiel in en bevestig vóór je eerste uitbetaling dat je geen U.S. person bent."
+      "Aandelendrops verschijnen in de 30 landen van de Europese Economische Ruimte. Stel je land in je profiel in en bevestig vóór je eerste uitbetaling de drie verklaringen in de tokenverklaring, waaronder dat je geen U.S. person bent."
     ],
-    "coinAlt": "Coin van de aandelentoken {name}",
+    "coinAlt": "Aandelencoin {name}",
     "catchChance": "Vangkans",
     "perCatch": "Per vangst",
-    "finePrint": "Robinhood Stock Tokens zijn getokeniseerde schuldbewijzen, uitgegeven door Robinhood Assets (Jersey) Limited. Ze volgen de koers van het onderliggende aandeel, maar geven geen eigendom van en geen stemrecht in het bedrijf. Ze mogen niet worden aangeboden of geleverd in de Verenigde Staten, aan U.S. persons of in rechtsgebieden met beperkingen, waaronder Canada, het Verenigd Koninkrijk en Zwitserland. Het ontvangen van een token betekent op zich niet dat je hem kunt verkopen of inwisselen. De Google-token volgt de klasse A-aandelen van Alphabet Inc. Zeldzaamheid is een spelniveau, geen oordeel over de belegging. Koersen kunnen zowel dalen als stijgen, en niets hier is beleggingsadvies. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA en Robinhood zijn handelsmerken van hun eigenaren, die Seekprotocol niet sponsoren of onderschrijven.",
+    "finePrint": "xStocks zijn trackercertificaten, schuldinstrumenten aan toonder van Backed Assets (JE) Limited, een bedrijf geregistreerd op Jersey. Elke xStock is gedekt door het onderliggende aandeel, dat bij gereguleerde bewaarders ligt, en volgt de koers daarvan, maar geeft geen eigendom van het bedrijf, geen stemrecht en geen andere aandeelhoudersrechten. xStocks zijn complexe producten en hun waarde kan dalen. Het basisprospectus is goedgekeurd door de Liechtensteinse financiële toezichthouder FMA; die goedkeuring is geen aanbeveling van het product. xStocks mogen niet worden aangeboden of geleverd in de Verenigde Staten, aan U.S. persons of aan personen tegen wie internationale sancties gelden. Een xStock ontvangen betekent op zichzelf niet dat je hem kunt verkopen of verzilveren, en verzilveren bij de uitgever vereist de eigen identiteitscontroles van de uitgever. GOOGLx volgt de klasse A-aandelen van Alphabet Inc. Zeldzaamheid is een spelniveau, geen oordeel over de belegging, en niets hier is beleggingsadvies. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA en xStocks zijn handelsmerken van hun eigenaren, die Seekprotocol niet sponsoren of onderschrijven.",
     "links": {
-      "restrictions": "Robinhood: rechtsgebieden met beperkingen",
-      "terms": "Robinhood: basisprospectus en definitieve voorwaarden (Final Terms)",
-      "faq": "Robinhood: FAQ over Stock Tokens"
+      "legal": "Backed: juridische documenten en prospectus (Engels)",
+      "terms": "xStocks: gebruiksvoorwaarden (Engels)",
+      "regulationS": "Regulation S: definitie van U.S. person (Engels)"
     }
   },
   "arenaSection": {

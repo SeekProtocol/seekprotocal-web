@@ -77,9 +77,10 @@ export const CHAINS: readonly Chain[] = [
   { id: "solana", name: "Solana", family: "solana", status: "live" },
   { id: "bnb", name: "BNB Smart Chain", family: "evm", status: "soon", coin: "bnb.glb" },
   { id: "arbitrum", name: "Arbitrum", family: "evm", status: "soon" },
-  /* Chain 4663, an Arbitrum Orbit L2 with ETH for gas. The app's
-     `robinhood-mainnet` row carries the stock tokens (`content/stocks.ts`).
-     `soon` like the other EVM rows until the team says it settles. */
+  /* Chain 4663, an Arbitrum Orbit L2 with ETH for gas. It carried the stock
+     tokens until 17 October 2026; they pay out as xStocks on Solana now
+     (`content/stocks.ts`). The app keeps its `robinhood-mainnet` row, so it
+     stays here as `soon` like the other EVM rows. */
   { id: "robinhood", name: "Robinhood Chain", family: "evm", status: "soon" },
 ];
 

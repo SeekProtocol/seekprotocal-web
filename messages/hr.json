@@ -950,21 +950,21 @@
   "stocksSection": {
     "eyebrow": "Imovina iz stvarnog svijeta",
     "title": "Uhvati komadić Applea, Amazona, Tesle, Googlea i NVIDIA-e",
-    "lead": "Na mapi su sada tokenizirane dionice. Apple, Amazon, Tesla, Google i NVIDIA padaju kao kovanice, baš kao i sve druge: prošetaj do jedne, uhvati je i isplati je kao Robinhood Stock Token na Robinhood Chainu, izravno u vlastiti novčanik.",
+    "lead": "Na mapi su tokenizirane dionice. Apple, Amazon, Tesla, Google i NVIDIA padaju kao kovanice, baš kao i sve druge: prošetaj do jedne, uhvati je i isplati je kao xStock na mreži Solana, izravno u vlastiti novčanik.",
     "points": [
       "Svako hvatanje ima fiksnu vrijednost u igri: $0.05 za Apple i Amazon, $0.12 za Teslu i Google i $0.30 za NVIDIA-u.",
-      "Pri isplati se ta vrijednost isplaćuje u tokenu dionice po njegovoj trenutačnoj cijeni, pa od tada ono što držiš prati cijenu dionice.",
+      "Pri isplati se ta vrijednost po trenutačnoj cijeni pretvara u odgovarajući xStock, pa od tada ono što držiš prati cijenu dionice, bilo da raste ili pada.",
       "Apple i Amazon su Neobične kovanice, Tesla i Google Rijetke, a NVIDIA Epska: nju je od tih pet najteže uhvatiti.",
-      "Dropovi dionica pojavljuju se u 30 zemalja Europskog gospodarskog prostora. Postavi svoju zemlju u profilu i prije prve isplate potvrdi da nisi američka osoba (U.S. person)."
+      "Dropovi dionica pojavljuju se u 30 zemalja Europskog gospodarskog prostora. Postavi svoju zemlju u profilu i prije prve isplate potvrdi tri izjave za token, među njima i da nisi U.S. person."
     ],
-    "coinAlt": "Kovanica tokena dionice {name}",
+    "coinAlt": "Kovanica dionice {name}",
     "catchChance": "Šansa za hvatanje",
     "perCatch": "Po hvatanju",
-    "finePrint": "Robinhood Stock Tokens su tokenizirani dužnički vrijednosni papiri koje izdaje Robinhood Assets (Jersey) Limited. Prate cijenu temeljne dionice, ali ne daju vlasništvo nad društvom ni glasačka prava u njemu. Ne smiju se nuditi ni isporučivati u Sjedinjenim Američkim Državama, američkim osobama (U.S. persons) ni u ograničenim jurisdikcijama, među kojima su Kanada, Ujedinjeno Kraljevstvo i Švicarska. Primanje tokena samo po sebi ne znači da ga možeš prodati ili zatražiti njegov otkup. Google token prati dionice klase A društva Alphabet Inc. Rijetkost je razina u igri, a ne mišljenje o ulaganju. Cijene mogu i pasti i rasti, i ništa ovdje nije savjet za ulaganje. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA i Robinhood žigovi su svojih vlasnika, koji ne sponzoriraju niti podržavaju Seekprotocol.",
+    "finePrint": "xStocks su tracker certifikati, dužnički instrumenti na donositelja koje izdaje Backed Assets (JE) Limited, društvo registrirano na Jerseyju. Svaki je pokriven temeljnom dionicom koja se čuva kod reguliranih skrbnika i prati njezinu cijenu, ali ne daje vlasništvo nad društvom, pravo glasa ni druga dioničarska prava. xStocks su složeni proizvodi i njihova vrijednost može pasti. Osnovni prospekt odobrilo je Tijelo za financijska tržišta Lihtenštajna (FMA); to odobrenje nije preporuka proizvoda. xStocks se ne smiju nuditi ni isporučivati u Sjedinjenim Američkim Državama, osobama koje su U.S. persons ni osobama na koje se primjenjuju međunarodne sankcije. Primitak xStock samo po sebi ne znači da ga možeš prodati ili otkupiti, a otkup kod izdavatelja zahtijeva njegove vlastite provjere identiteta. GOOGLx prati dionice klase A društva Alphabet Inc. Rijetkost je razina u igri, a ne mišljenje o ulaganju, i ništa ovdje nije savjet za ulaganje. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA i xStocks žigovi su svojih vlasnika, koji ne sponzoriraju niti podržavaju Seekprotocol.",
     "links": {
-      "restrictions": "Robinhood: ograničene jurisdikcije",
-      "terms": "Robinhood: prospekt i Final Terms (konačni uvjeti)",
-      "faq": "Robinhood: česta pitanja o Stock Tokenu"
+      "legal": "Backed: pravni dokumenti i prospekt (na engleskom)",
+      "terms": "xStocks: uvjeti korištenja (na engleskom)",
+      "regulationS": "Regulation S: definicija pojma U.S. person (na engleskom)"
     }
   },
   "arenaSection": {

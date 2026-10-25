@@ -950,21 +950,21 @@
   "stocksSection": {
     "eyebrow": "Ativos do mundo real",
     "title": "Capture um pedaço da Apple, da Amazon, da Tesla, do Google e da NVIDIA",
-    "lead": "O mapa agora tem ações tokenizadas. Apple, Amazon, Tesla, Google e NVIDIA aparecem como moedas, igual a qualquer outra: caminhe até uma, capture-a e saque como Robinhood Stock Token na Robinhood Chain, direto na sua própria carteira.",
+    "lead": "O mapa tem ações tokenizadas. Apple, Amazon, Tesla, Google e NVIDIA aparecem como moedas, igual a qualquer outra: caminhe até uma, capture-a e saque como xStock na Solana, direto na sua própria carteira.",
     "points": [
       "Cada captura tem um valor de jogo fixo: $0.05 para Apple e Amazon, $0.12 para Tesla e Google e $0.30 para NVIDIA.",
-      "No saque, esse valor é pago no token de ação pelo preço atual, então a partir daí o que você tem acompanha o preço da ação.",
+      "No saque, esse valor é convertido no xStock correspondente pela cotação atual, então a partir daí o que você tem acompanha o preço da ação, para cima ou para baixo.",
       "Apple e Amazon são Incomuns, Tesla e Google são Raros e NVIDIA é Épico, a mais difícil das cinco de conseguir.",
-      "Os drops de ações aparecem nos 30 países do Espaço Econômico Europeu. Defina seu país no perfil e confirme que você não é uma pessoa dos EUA (U.S. person) antes do seu primeiro saque."
+      "Os drops de ações aparecem nos 30 países do Espaço Econômico Europeu. Defina seu país no perfil e confirme os três itens da declaração do token, entre eles que você não é uma U.S. person, antes do seu primeiro saque."
     ],
-    "coinAlt": "Moeda do token de ação {name}",
+    "coinAlt": "Moeda de ação {name}",
     "catchChance": "Chance de captura",
     "perCatch": "Por captura",
-    "finePrint": "Os Robinhood Stock Tokens são títulos de dívida tokenizados emitidos pela Robinhood Assets (Jersey) Limited. Eles acompanham o preço da ação subjacente, mas não dão propriedade sobre a empresa nem direito de voto nela. Eles não podem ser ofertados nem entregues nos Estados Unidos, a pessoas dos EUA ou em jurisdições restritas, que incluem Canadá, Reino Unido e Suíça. Receber um token não significa, por si só, que você possa vendê-lo ou solicitar seu reembolso. O token do Google acompanha as ações Classe A da Alphabet Inc. A raridade é um nível do jogo, não uma opinião sobre o investimento. Os preços podem cair, assim como subir, e nada aqui é recomendação de investimento. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA e Robinhood são marcas de seus titulares, que não patrocinam nem endossam o Seekprotocol.",
+    "finePrint": "Os xStocks são certificados tracker, ou seja, títulos de dívida ao portador emitidos pela Backed Assets (JE) Limited, uma empresa registrada em Jersey. Cada xStock é lastreado pela ação subjacente, mantida junto a custodiantes regulamentados, e acompanha a cotação dela, mas não dá propriedade sobre a empresa, direito de voto nem outros direitos de acionista. Os xStocks são produtos complexos e seu valor pode cair. O prospecto de base é aprovado pela Autoridade do Mercado Financeiro de Liechtenstein (FMA); essa aprovação não constitui uma recomendação do produto. Os xStocks não podem ser ofertados nem entregues nos Estados Unidos, a U.S. persons ou a pessoas sujeitas a sanções internacionais. Receber um xStock não significa, por si só, que você possa vendê-lo ou resgatá-lo, e o resgate junto ao emissor exige as verificações de identidade do próprio emissor. O GOOGLx acompanha as ações Classe A da Alphabet Inc. A raridade é um nível do jogo, não uma opinião sobre o investimento, e nada aqui é recomendação de investimento. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA e xStocks são marcas de seus titulares, que não patrocinam nem endossam o Seekprotocol.",
     "links": {
-      "restrictions": "Robinhood: jurisdições restritas",
-      "terms": "Robinhood: prospecto e Final Terms",
-      "faq": "Robinhood: perguntas frequentes sobre Stock Tokens"
+      "legal": "Backed: documentos jurídicos e prospecto (em inglês)",
+      "terms": "xStocks: termos de serviço (em inglês)",
+      "regulationS": "Regulation S: definição de U.S. person (em inglês)"
     }
   },
   "arenaSection": {

@@ -950,21 +950,21 @@
   "stocksSection": {
     "eyebrow": "Valós világbeli eszközök",
     "title": "Kapj el egy darabot az Apple-ből, az Amazonból, a Teslából, a Google-ból és az NVIDIA-ból",
-    "lead": "A térképen mostantól tokenizált részvények is vannak. Az Apple, az Amazon, a Tesla, a Google és az NVIDIA érmeként jelenik meg, mint bármelyik másik: sétálj oda egyhez, kapd el, és a kifizetéskor Robinhood Stock Tokenként kapod meg a Robinhood Chainen, egyenesen a saját tárcádba.",
+    "lead": "A térképen tokenizált részvények is vannak. Az Apple, az Amazon, a Tesla, a Google és az NVIDIA érmeként jelenik meg, mint bármelyik másik: sétálj oda egyhez, kapd el, és fizesd ki xStockként a Solanán, egyenesen a saját tárcádba.",
     "points": [
       "Minden elkapásnak rögzített játékbeli értéke van: az Apple és az Amazon $0.05, a Tesla és a Google $0.12, az NVIDIA $0.30.",
-      "Kifizetéskor ezt az értéket a részvénytokenben kapod meg annak aktuális árán, így onnantól az, ami nálad van, a részvény árát követi.",
+      "Kifizetéskor ezt az értéket az aktuális árfolyamon átváltjuk a megfelelő xStockra, így onnantól az, ami nálad van, a részvény árfolyamát követi, akár felfelé, akár lefelé.",
       "Az Apple és az Amazon Szokatlan, a Tesla és a Google Ritka, az NVIDIA pedig Epic, az öt közül a legnehezebben elkapható.",
-      "A részvény-dropok az Európai Gazdasági Térség 30 országában jelennek meg. Állítsd be az országodat a profilodban, és az első kifizetésed előtt erősítsd meg, hogy nem vagy amerikai személy (U.S. person)."
+      "A részvény-dropok az Európai Gazdasági Térség 30 országában jelennek meg. Állítsd be az országodat a profilodban, és az első kifizetésed előtt erősítsd meg a tokennyilatkozat három nyilatkozatát, köztük azt, hogy nem vagy U.S. person."
     ],
-    "coinAlt": "{name} részvénytoken-érme",
+    "coinAlt": "{name} részvényérme",
     "catchChance": "Elkapási esély",
     "perCatch": "Elkapásonként",
-    "finePrint": "A Robinhood Stock Tokenek a Robinhood Assets (Jersey) Limited által kibocsátott, tokenizált hitelviszonyt megtestesítő értékpapírok. A mögöttes részvény árát követik, de nem adnak sem tulajdonjogot, sem szavazati jogot a vállalatban. Nem ajánlhatók fel és nem szállíthatók le az Egyesült Államokban, amerikai személyeknek, illetve korlátozott joghatóságokban, amelyek közé tartozik Kanada, az Egyesült Királyság és Svájc. Egy token megkapása önmagában nem jelenti azt, hogy eladhatod vagy visszaválthatod. A Google-token az Alphabet Inc. A osztályú részvényeit követi. A ritkaság játékbeli szint, nem vélemény a befektetésről. Az árak csökkenhetnek és emelkedhetnek is, és semmi sem minősül itt befektetési tanácsnak. Az Apple, az Amazon, a Tesla, a Google, az Alphabet, az NVIDIA és a Robinhood a tulajdonosaik védjegyei, akik nem szponzorálják és nem támogatják a Seekprotocolt.",
+    "finePrint": "Az xStocks tracker certifikátok, vagyis bemutatóra szóló hitelviszonyt megtestesítő értékpapírok, amelyeket a Jersey szigetén bejegyzett Backed Assets (JE) Limited bocsát ki. Mindegyik fedezete a mögöttes részvény, amelyet szabályozott letétkezelők őriznek, és követi annak árfolyamát, de nem biztosít tulajdonjogot a vállalatban, szavazati jogot vagy egyéb részvényesi jogokat. Az xStocks összetett termékek, és értékük csökkenhet. Az alaptájékoztatót a Liechtensteini Pénzügyi Piacfelügyeleti Hatóság (FMA) hagyta jóvá; ez a jóváhagyás nem jelenti a termék ajánlását. Az xStocks nem ajánlható fel és nem szállítható le az Egyesült Államokban, U.S. persons részére, illetve nemzetközi szankciók hatálya alá tartozó személyeknek. Egy xStock megkapása önmagában nem jelenti azt, hogy eladhatod vagy visszaválthatod, és a kibocsátónál történő visszaváltáshoz a kibocsátó saját személyazonosság-ellenőrzése szükséges. A GOOGLx az Alphabet Inc. A osztályú részvényeit követi. A ritkaság játékbeli szint, nem vélemény a befektetésről, és semmi sem minősül itt befektetési tanácsnak. Az Apple, az Amazon, a Tesla, a Google, az Alphabet, az NVIDIA és az xStocks a tulajdonosaik védjegyei, akik nem szponzorálják és nem támogatják a Seekprotocolt.",
     "links": {
-      "restrictions": "Robinhood: korlátozott joghatóságok",
-      "terms": "Robinhood: tájékoztató és Final Terms (végleges feltételek)",
-      "faq": "Robinhood: Stock Token GYIK"
+      "legal": "Backed: jogi dokumentumok és tájékoztató (angol nyelven)",
+      "terms": "xStocks: felhasználási feltételek (angol nyelven)",
+      "regulationS": "Regulation S: a U.S. person fogalma (angol nyelven)"
     }
   },
   "arenaSection": {
