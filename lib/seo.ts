@@ -51,6 +51,7 @@ export function getOpenGraph({
   locale,
   type = "website",
   publishedTime,
+  modifiedTime,
   section,
   images,
 }: {
@@ -61,6 +62,7 @@ export function getOpenGraph({
   locale: string;
   type?: "website" | "article";
   publishedTime?: string;
+  modifiedTime?: string;
   section?: string;
   /** Overrides the site card. The articles each generate their own. */
   images?: { url: string; width: number; height: number; alt: string }[];
@@ -77,6 +79,7 @@ export function getOpenGraph({
       .map(([, og]) => og),
     images: images ?? [OG_IMAGE],
     ...(publishedTime ? { publishedTime } : {}),
+    ...(modifiedTime ? { modifiedTime } : {}),
     ...(section ? { section } : {}),
   };
 }

@@ -13,39 +13,123 @@ export interface BlogPost {
   imageSrcSet?: string;
   imageAlt: string;
   date: string;
+  /** Set when a post is revised after publishing; feeds dateModified and the sitemap. */
+  updated?: string;
   readTime: string;
   category: string;
 }
 
 export const blogPosts: BlogPost[] = [
-  /* The stock-token launch, 8 Oct 2026.
-
-     First because it is the newest announcement and the list renders in array
-     order. The rules paragraph is the issuer's, from the app's own FAQ
-     (`lib/stock-token-faq.ts` in the app repo); keep the two saying the same
-     thing. The issuer's pages are named in prose rather than linked, because
-     `renderCopy` only links internal paths; the homepage section carries the
-     real links. Hero art is the three banner coins from the app, composited. */
+  /* Three posts for the late-October launches, 25 Oct 2026: Seek Arena, steps
+     and the watch apps, and the app on iPad. Newest first, since the list
+     renders in array order. Every figure is the app's own and matches the
+     homepage sections (content/devices.ts, messages/en.json); the Arena
+     season prizes are deliberately not named, because nothing pays them out
+     yet. Hero art is the film's own frames, and for the iPad post the real
+     iPad captures composited into the site's frames. */
   {
-    slug: "apple-tesla-nvidia-stock-tokens",
-    title: "Apple, Tesla and NVIDIA Are Now on the Map",
+    slug: "seek-arena-card-game",
+    title: "Seek Arena: Your Catches Are Now a Card Game",
     excerpt:
-      "Three new coins drop on the Seekprotocol map: Apple, Tesla and NVIDIA. Catch them like any other coin and cash them out as Robinhood Stock Tokens, tokens that track the real share price. Here is how it works and who can take part.",
+      "Seek Arena is a live one on one card battle inside Seekprotocol. Build a deck of twenty from more than 260 cards, take on another player in real time, and knock out five of their cards first. Here is how it plays and where the cards come from.",
     content: [
-      "Three new coins now drop on the Seekprotocol map: Apple, Tesla and NVIDIA. They spawn, glow and get caught like every other coin. The difference is what you receive when you cash them out: a Robinhood Stock Token on Robinhood Chain, a token that tracks the price of the real share.",
-      "Robinhood Stock Tokens are tokenized debt securities issued by Robinhood Assets (Jersey) Limited. Each one follows the price of an underlying share. They are not the shares themselves: holding one gives you no ownership of Apple, Tesla or NVIDIA and no vote at their meetings. What it gives you is exposure to the price, held in your own wallet.",
-      "We have said for a while that the protocol does not care what is in the box. Memecoins, vouchers, NFTs and physical goods all ride the same mechanic. Real-world assets are the obvious next test of that claim, and tokenized stocks are the cleanest version of it: a familiar asset, a public price, and a token that settles on chain like everything else we hand out.",
-      "Each stock has a rarity and a fixed game value per catch. Apple is Uncommon and worth $0.05 a catch. Tesla is Rare at $0.12. NVIDIA is Epic at $0.30 and is the hardest of the three to land. Your catches collect in your inventory as game units. When you cash out, we convert their dollar value into the stock token at the current price and send it to your wallet on Robinhood Chain. From that moment the token moves with the share.",
-      "These are small amounts on purpose. A catch is a reward for walking somewhere, not an investment product, and the rarity tiers are game design, not a view on which company will do better. Prices go down as well as up, and nothing in the app or on this page is investment advice.",
-      "Stock tokens come with rules that ordinary coins do not. Robinhood does not allow them to be offered or delivered in the United States, to U.S. persons, or in a number of restricted jurisdictions, including Canada, the United Kingdom and Switzerland. In the app, stock drops appear in the 30 countries of the European Economic Area. To catch one, the country in your profile has to match the country you are in. To cash out, you also confirm a short declaration that you are not a U.S. person and are not acting for one. You can withdraw it at any time in Settings.",
-      "Receiving a token does not by itself mean you can sell or redeem it everywhere, and redeeming directly with the issuer comes with its own identity checks. The full conditions are on Robinhood's Restricted Jurisdictions page and in its prospectus and Final Terms. The Help section in the app links to both, and so does the stock token section on our [homepage](/).",
-      "To start, update the app, check the country in your profile, and go for a walk. Apple, Tesla, NVIDIA and Robinhood are trademarks of their respective owners, none of whom sponsors or endorses Seekprotocol.",
+      "Seekprotocol has always been about the walk: you go somewhere, you catch what is there, and it is yours. Seek Arena gives that collection somewhere to go. It is a live card game inside the app, one player against another in real time, built on the same map and the same coins you already hunt.",
+      "A match is quick to learn. Each player brings a deck of twenty cards and draws an opening hand of five. If you do not like your hand, you can shuffle it back once for free before your first move; the game calls that a ReSEEK. Every turn runs on a 45 second clock, so nobody sits and waits. The first player to knock out five of the other's cards wins.",
+      "There are more than 260 cards to collect across six rarities, from Common to Mythic, and nine factions, from the Bulls that grow while they stand on the board to the Bears that take things off the enemy. Every card has an ability of its own, so a deck is a plan rather than a pile of the biggest numbers you own. The rarer the card, the more it relies on what it does rather than on raw attack and defence.",
+      "Cards come from the same places your coins do. Boxes appear on the hunting map, and catching them earns card points. Packs open with the SEEK you catch, from Basic to Premium to Elite, and the pricier the pack, the rarer the cards; you can also buy packs in the [shop](/shop). Quests, clan wars and the season add more. If you have duplicates, you can trade with friends one for one at the same rarity, or melt the extras into XP.",
+      "You do not have to play for rank straight away. The Practice Bot is always there and its matches do not count, and Seek Academy walks you through the rules one step at a time. When you are ready, find an opponent, or challenge a friend directly.",
+      "Clans fight too. Every week, Monday to Monday, the eligible matches of everyone in a clan add up to one shared standing: three points for a win and one for a draw. It is the clearest reason yet to play with the people you already hunt with. Above all of it sits a ladder of 57 ranks, from Beginner all the way to World Champion, with daily, weekly and season quests along the way.",
+      "Seek Arena plays on any phone the app runs on, and it was laid out for the bigger screen as well. On an iPad in landscape the board takes the whole display, with side panels and cards up to 2.2 times larger, and in portrait your deck sits beside your collection. There is more about that in our post on [Seekprotocol for iPad and tablets](/blog/seekprotocol-on-ipad-and-tablets).",
+      "To play, update the app and open the Arena from the home screen. The cards are waiting on the same streets as the coins.",
     ],
-    image: "/images/blog/stock-tokens.avif",
+    image: "/images/blog/seek-arena.avif",
     imageWidth: 1536,
     imageHeight: 960,
-    imageAlt: "Apple, Tesla and NVIDIA stock token coins",
+    imageAlt: "Seek Arena cards fanned out above a hexagonal arena floor",
+    date: "2026-10-25",
+    readTime: "4 min",
+    category: "Announcement",
+  },
+
+  {
+    slug: "step-rewards-apple-watch-wear-os",
+    title: "Every Step Counts: Step Rewards, Apple Watch and Wear OS",
+    excerpt:
+      "Seekprotocol now turns a good day on your feet into powerups. It reads your steps from Apple Health or Health Connect, and new apps for Apple Watch and Wear OS put your count, your next reward and your streak on your wrist.",
+    content: [
+      "Every catch on the map starts with a walk, so it was always a little odd that the walk itself counted for nothing. That has changed. Seekprotocol now reads your daily steps and turns a good day on your feet into powerups, and two new watch apps keep the count on your wrist.",
+      "The app reads your steps from Apple Health on iPhone and Apple Watch, or from Health Connect on Android, which brings in Google Fit, Samsung Health and Fitbit. Only steps your phone or watch counted by itself are used. Steps entered by hand are not.",
+      "The day has a ladder with three rungs. At 10,000 steps you earn a Fitness, which lets you catch coins from much further away for a while. At 16,000 you earn an XP Boost, and at 24,000 a Spawn Lure. Each rung also asks for one real coin catch that day, so the rewards go to people who are out hunting, not to a phone left in a pocket. Steps you walk while hunting on the map count extra, measured by your phone's own motion sensor.",
+      "There is more for the people who keep it up. Walk 10,000 steps a day and you build a streak, with rewards on day 14, 30, 60 and 100, the last of them a Premium card pack for Seek Arena. Walk 15 km and you hatch a Step egg with a Basic card pack inside; you can start a new egg every seven days. Clans walk together toward a weekly goal of a million steps, and the board for the week shows how you compare.",
+      "The Apple Watch app shows your day at a glance: a ring that fills toward the next reward, your steps by hour, your streak, the week, your Step egg and your clan's goal. You can start a walk straight from your wrist, and the watch records its route, heart rate, distance and calories and saves it to Apple Health. An outdoor walk or run of 8 km earns a Fitness on a day you have not already earned one from steps. Complications and a Smart Stack widget keep the count on your watch face. It needs watchOS 11 or later.",
+      "On Wear OS, including Galaxy Watch, the app puts your ring, rewards, streak, week, Step egg and clan steps on one scrolling screen, with a tile and a complication for a glance without opening it. It needs Wear OS 3 or later. Both watch apps come with the Seekprotocol app; there is nothing separate to buy.",
+      "Your step data stays yours. The app reads steps, distance and your walking, running and hiking workouts, and writes nothing back except the walks you start on the watch. Steps are stored per hour and checked for fairness, and nothing is sold. You can hide yourself from the boards and disconnect at any time. The details are in our [privacy policy](/privacy-policy).",
+      "To start, update the app, open Steps from the home screen and connect Apple Health or Health Connect. Then go for a walk. You were going to anyway.",
+    ],
+    image: "/images/blog/steps-watch.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "Seekprotocol's step count on an Apple Watch Ultra and a Wear OS watch",
+    date: "2026-10-25",
+    readTime: "4 min",
+    category: "Announcement",
+  },
+
+  {
+    slug: "seekprotocol-on-ipad-and-tablets",
+    title: "Seekprotocol on iPad and Tablets",
+    excerpt:
+      "Seekprotocol is made for the phone in your pocket, and it now runs as a proper iPad app and on Android tablets too. Here is what the bigger screen adds, from AR catches you can see the whole street around to a card game that gets the full width.",
+    content: [
+      "Seekprotocol is a phone app first, and it will stay that way: you take it for a walk, and a phone is what you have with you. But plenty of people also have an iPad or an Android tablet at home, and until now the app on those screens was a phone layout blown up to fit. That has changed. Seekprotocol runs as a proper iPad app and on Android tablets, in every orientation.",
+      "The difference is that the screens are rebuilt for the room rather than stretched. Chat, settings, clans and friends open side by side, with the list next to the page you have open. Home becomes a dashboard, the wallet gets a grid for your assets, the leaderboard shows the top three above the table, and the map gets a side panel of the spawns nearby.",
+      "AR is where a big screen shows its value most. A coin landing in the street ahead of you looks better on 11 inches than on 6, and you can take in the whole scene around it. The catch, AR and quests also hold their orientation while they run, so turning the tablet never breaks a catch halfway through.",
+      "Seek Arena gets the most out of the width. In landscape the board takes the whole display, with the bars in side panels, the active cards standing larger and your hand in a panel of its own; cards grow up to 2.2 times their phone size. In portrait you build your deck beside your collection, with more cards to a row. There is more about the game itself in our post on [Seek Arena](/blog/seek-arena-card-game).",
+      "It is the same account on every device. Sign in on your tablet and your catches, cards, XP and progress are already there, and whatever you do on one device is on the other next time you open it.",
+      "To get it, install Seekprotocol from the App Store on your iPad or from Google Play on your Android tablet, or update the app if you already have it, and sign in as you always do. Then take your phone for a walk, and keep the big screen for the arena.",
+    ],
+    image: "/images/blog/ipad-tablets.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "Seekprotocol on two iPads: an AR catch of a Solana coin and a live Seek Arena match",
+    date: "2026-10-25",
+    readTime: "3 min",
+    category: "Announcement",
+  },
+
+  /* The stock-token launch, 8 Oct 2026, updated 25 Oct 2026 for the move to
+     xStocks on Solana (the app's payout change of 17 Oct, migration
+     `20261017120000_stock_payouts_as_xstocks.sql`).
+
+     The rules paragraphs are the issuer's, from the app's own xStocks FAQ
+     (`stockTokens.faq` in lib/i18n/locales/en.json in the app repo); keep the
+     two saying the same thing. The issuer's pages are named in prose rather
+     than linked, because `renderCopy` only links internal paths; the homepage
+     section carries the real links. The slug keeps its three names so old
+     links still resolve. Hero art is the five banner coins from the app,
+     composited (a new file name, since /images/ is cached for a year). */
+  {
+    slug: "apple-tesla-nvidia-stock-tokens",
+    title: "Apple, Amazon, Tesla, Google and NVIDIA Are on the Map",
+    excerpt:
+      "Tokenized stocks drop on the Seekprotocol map: Apple, Amazon, Tesla, Google and NVIDIA. Catch them like any other coin and cash them out as xStocks on Solana, which track the real share price. Here is how it works and who can take part.",
+    content: [
+      "Update, 25 October 2026: stock drops now pay out as xStocks on Solana instead of Robinhood Stock Tokens on Robinhood Chain, and Amazon and Google have joined the original three. This post has been updated to match. Catches you already hold are paid out as xStocks too.",
+      "Tokenized stocks drop on the Seekprotocol map: Apple, Amazon, Tesla, Google and NVIDIA. They spawn, glow and get caught like every other coin. The difference is what you receive when you cash them out: an xStock on Solana, a token that tracks the price of the real share.",
+      "xStocks are tracker certificates, bearer debt instruments issued by Backed Assets (JE) Limited, a company registered in Jersey. Each one is backed by the underlying share, which is held with regulated custodians, and follows its price. They are not the shares themselves: holding one gives you no ownership of the company and no vote at its meetings. What it gives you is exposure to the price, held in your own wallet.",
+      "We have said for a while that the protocol does not care what is in the box. Memecoins, vouchers, NFTs and physical goods all ride the same mechanic. Real-world assets are the obvious next test of that claim, and tokenized stocks are the cleanest version of it: a familiar asset, a public price, and a token that settles on chain like everything else we hand out.",
+      "Each stock has a rarity and a fixed game value per catch. Apple and Amazon are Uncommon and worth $0.05 a catch. Tesla and Google are Rare at $0.12. NVIDIA is Epic at $0.30 and is the hardest of the five to land. Your catches collect in your inventory as game units. When you cash out, we convert their dollar value into the matching xStock at the current price and send it to your wallet on Solana. From that moment it moves with the share. The Google xStock tracks Alphabet Inc. Class A shares.",
+      "These are small amounts on purpose. A catch is a reward for walking somewhere, not an investment product, and the rarity tiers are game design, not a view on which company will do better. xStocks are complex products and their value can fall, and nothing in the app or on this page is investment advice.",
+      "xStocks come with rules that ordinary coins do not. They may not be offered, sold or delivered in the United States, to U.S. persons, or to people under international sanctions. In the app, stock drops appear in the 30 countries of the European Economic Area, where the issuer's base prospectus can be used; that prospectus is approved by the Liechtenstein Financial Market Authority, which is not an endorsement of the product. They are not available in, among others, Canada, the United Kingdom, Switzerland and Australia. To catch one, the country in your profile has to match the country you are in. To cash out, you also confirm the three statements of a short token declaration, among them that you are not a U.S. person and are not acting for one. You can withdraw it at any time in Settings.",
+      "Receiving an xStock does not by itself mean you can sell or redeem it everywhere, and redeeming directly with the issuer is only possible for eligible investors after its identity checks. The full conditions are in Backed's legal documents and prospectus and in the xStocks terms of service. The Help section in the app links to both, and so does the stock section on our [homepage](/).",
+      "To start, update the app, check the country in your profile, and go for a walk. Apple, Amazon, Tesla, Google, Alphabet, NVIDIA and xStocks are trademarks of their respective owners, none of whom sponsors or endorses Seekprotocol.",
+    ],
+    image: "/images/blog/stock-tokens-five.avif",
+    imageWidth: 1536,
+    imageHeight: 960,
+    imageAlt: "Amazon, Tesla, Apple, NVIDIA and Google stock coins",
     date: "2026-10-08",
+    updated: "2026-10-25",
     readTime: "4 min",
     category: "Announcement",
   },
