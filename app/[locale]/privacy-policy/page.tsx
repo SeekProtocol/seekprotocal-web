@@ -78,6 +78,7 @@ function PrivacyPolicyContent() {
       <h3>{t("part1s6Title")}</h3>
       <p>{t("part1s6P1")}</p>
       <p>{t("part1s6Watch")}</p>
+      <p>{t("part1s6Wear")}</p>
       <p>{t("part1s6P2")}</p>
       <p>{t("part1s6P3")}</p>
       <p>{t("part1s6P4")}</p>
