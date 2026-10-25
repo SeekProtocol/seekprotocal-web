@@ -967,6 +967,135 @@
       "faq": "Robinhood: Soalan lazim Stock Token"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Tangkapan anda, kini permainan kad",
+    "lead": "Seek Arena ialah pertarungan kad satu lawan satu secara langsung dalam aplikasi. Bina dek dua puluh kad daripada lebih 260 kad, berdepan dengan pemburu lain dalam masa nyata, dan tumpaskan lima kad lawan sebelum mereka menumpaskan lima kad anda.",
+    "points": [
+      "Kad datang daripada kotak di peta pemburuan, daripada pek yang anda buka dengan SEEK yang anda tangkap, dan daripada misi, perang klan serta musim.",
+      "Enam tahap kejarangan dari Biasa hingga Mitos merentasi sembilan puak, dan setiap kad ada kebolehannya sendiri, jadi dek ialah strategi, bukan sekadar timbunan.",
+      "Tukar kad dengan rakan satu sama satu pada kejarangan yang sama, dan leburkan kad pendua anda menjadi XP.",
+      "Panaskan badan dengan Bot latihan, atau belajar cara bermain di Akademi Seek, sebelum bermain untuk kedudukan."
+    ],
+    "tabletLabel": "Seek Arena di iPad, dengan skrin sebenar daripada aplikasi",
+    "cards": {
+      "label": "kad untuk dikumpul"
+    },
+    "deck": {
+      "label": "kad dalam satu dek"
+    },
+    "knockouts": {
+      "label": "knock-out untuk menang"
+    },
+    "clock": {
+      "label": "saat setiap giliran"
+    },
+    "live": {
+      "title": "Perlawanan langsung",
+      "body": "Cari lawan, cabar rakan, atau panaskan badan dengan Bot latihan. Setiap giliran berjalan dengan jam 45 saat."
+    },
+    "clanWar": {
+      "title": "Perang klan",
+      "body": "Setiap minggu, dari Isnin ke Isnin, perlawanan layak klan anda dikira bersama: tiga mata untuk menang, satu mata untuk seri."
+    },
+    "ranks": {
+      "title": "Pangkat dan musim",
+      "body": "Daki 57 pangkat dari Pemula hingga World Champion, dengan misi harian, mingguan dan bermusim di sepanjang perjalanan."
+    },
+    "packs": {
+      "title": "Pek kad",
+      "body": "Pek asas, Pek premium dan Pek elit masing-masing mengandungi lima kad, dan semakin mahal pek itu, semakin jarang kadnya. Buka dalam aplikasi atau beli di sini."
+    },
+    "cta": "Dapatkan pek kad di kedai",
+    "match": {
+      "caption": "Perlawanan langsung"
+    },
+    "hand": {
+      "caption": "Kad pembukaan"
+    },
+    "pack": {
+      "caption": "Kad Mitos"
+    },
+    "season": {
+      "caption": "Ganjaran musim"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Langkah",
+    "title": "Setiap langkah anda dikira",
+    "lead": "Seekprotocol membaca langkah anda daripada Apple Health atau Health Connect dan menukar hari yang aktif menjadi power-up dan XP. Tangkap satu koin pada hari itu, dan ganjaran terbuka sambil anda berjalan.",
+    "points": [
+      "Langkah yang anda ambil semasa memburu di peta dikira lebih, diukur oleh penderia gerakan telefon anda sendiri.",
+      "Berjalan 10,000 langkah sehari untuk mengekalkan runtun anda, dengan ganjaran pada hari ke-14, 30, 60 dan 100, sehingga Pek Premium.",
+      "Berjalan 15 km untuk menetaskan Telur langkah yang berisi Pek Basic, dan berjalan bersama klan anda ke arah sasaran mingguan sejuta langkah.",
+      "Hanya langkah yang dikira sendiri oleh telefon atau jam tangan anda digunakan, tidak sekali-kali langkah yang dimasukkan secara manual. Data langkah anda tidak pernah dijual, dan anda boleh memutuskan sambungan pada bila-bila masa."
+    ],
+    "ladderLabel": "Ganjaran langkah harian",
+    "stepsCount": "{count} langkah",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Setiap hari, selepas anda menangkap satu koin.",
+    "watchEyebrow": "Apple Watch dan Wear OS",
+    "watchTitle": "Langkah anda, di pergelangan tangan",
+    "watchLead": "Kiraan hari ini, ganjaran seterusnya dan runtun anda boleh dilihat sepintas lalu. Kedua-dua aplikasi jam tangan disertakan bersama aplikasi Seekprotocol.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Mulakan berjalan dari pergelangan tangan",
+      "points": [
+        "Gelang hari ini dan ganjaran seterusnya, langkah mengikut jam, runtun anda, minggu ini, Telur langkah dan sasaran klan anda.",
+        "Rakam perjalanan kaki berserta laluan, kadar denyutan jantung dan jaraknya. Ia disimpan ke Apple Health, dan berjalan atau berlari sejauh 8 km memberi anda Fitness.",
+        "Komplikasi dan widget Smart Stack memastikan kiraan langkah sentiasa di muka jam anda."
+      ],
+      "requires": "watchOS 11 atau lebih baharu"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch dan semua jam Wear OS",
+      "points": [
+        "Gelang hari ini, ganjaran, runtun, minggu ini, Telur langkah dan langkah klan dalam satu skrin yang boleh ditatal.",
+        "Jubin dan komplikasi, untuk melihat sepintas lalu tanpa membuka aplikasi."
+      ],
+      "requires": "Wear OS 3 atau lebih baharu"
+    },
+    "face": {
+      "today": "Hari ini",
+      "steps": "Langkah",
+      "walk": "Berjalan",
+      "streak": "Runtun",
+      "best": "Terbaik {n}",
+      "byHour": "Hari ini mengikut jam",
+      "toNext": "{count} langkah lagi ke {reward}",
+      "nextStreak": "Ganjaran seterusnya pada hari {day}: {reward}",
+      "end": "Tamat",
+      "chipUnlocked": "{reward} dibuka",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal dibakar",
+      "chipStreak": "Runtun {n} hari",
+      "label": "Seek di Apple Watch dan Wear OS: langkah yang terus mendaki melepasi 10,000, perjalanan kaki berserta jarak, kadar denyutan jantung dan kalori, koin hari ini yang masuk ke dalam koleksi, serta runtun 12 hari.",
+      "collection": "Koleksi",
+      "caughtToday": "{n} ditangkap hari ini",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "Juga di iPad dan tablet",
+    "title": "Selesa juga di skrin besar",
+    "lead": "Seekprotocol dibina untuk telefon di dalam poket anda, dan ia juga berjalan sebagai aplikasi iPad sebenar serta pada tablet Android. Dalam apa jua orientasi, skrinnya memanfaatkan ruang tambahan, bukan sekadar diregangkan.",
+    "points": [
+      "Tangkap drop dalam AR pada skrin yang cukup besar untuk melihat seluruh jalan.",
+      "Seek Arena menggunakan lebar penuh: kad lebih besar, panel sisi, dan dek anda di sebelah koleksi anda.",
+      "Chat, tetapan, klan dan rakan dibuka bersebelahan, dengan senarai di sebelah halaman yang anda buka.",
+      "Satu akaun pada setiap peranti, jadi tangkapan, kad dan kemajuan anda ikut bersama dari telefon ke tablet."
+    ],
+    "tabletLabel": "Menangkap drop dalam AR di iPad"
+  },
   "offers": {
     "railLabel": "Format drop",
     "redeemLabel": "Cara ia ditebus",

@@ -967,6 +967,135 @@
       "faq": "Robinhood: vanliga frågor om Stock Token"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Dina fångster, nu som kortspel",
+    "lead": "Seek Arena är en kortduell en mot en som spelas live direkt i appen. Bygg en kortlek på tjugo av fler än 260 kort, möt en annan seeker i realtid och slå ut fem av motståndarens kort innan du själv blir av med fem.",
+    "points": [
+      "Kort hittar du i kortlådor på jaktkartan, i paket du öppnar med den SEEK du fångar och genom uppdrag, klankrig och säsongen.",
+      "Sex sällsyntheter från Common till Mythic fördelade på nio fraktioner, och varje kort har en egen förmåga. En kortlek är alltså en plan, inte en hög.",
+      "Byt kort med vänner ett mot ett inom samma sällsynthet, och smält ner dina dubbletter till XP.",
+      "Värm upp mot Träningsbot eller lär dig spelet i Seek Academy innan du spelar om rank."
+    ],
+    "tabletLabel": "Seek Arena på iPad, med riktiga skärmar från appen",
+    "cards": {
+      "label": "kort att samla"
+    },
+    "deck": {
+      "label": "kort i en kortlek"
+    },
+    "knockouts": {
+      "label": "knockouts för att vinna"
+    },
+    "clock": {
+      "label": "sekunder per runda"
+    },
+    "live": {
+      "title": "Livematcher",
+      "body": "Hitta en motståndare, utmana en vän eller värm upp mot Träningsbot. Varje runda går på en klocka på 45 sekunder."
+    },
+    "clanWar": {
+      "title": "Klankrig",
+      "body": "Varje vecka, måndag till måndag, räknas din klans godkända matcher ihop: tre poäng för vinst och en för oavgjort."
+    },
+    "ranks": {
+      "title": "Ranker och säsonger",
+      "body": "Klättra genom 57 ranker från Nybörjare till World Champion, med dagliga, veckovisa och säsongsuppdrag längs vägen."
+    },
+    "packs": {
+      "title": "Kortpaket",
+      "body": "Baspaket, Premiumpaket och Elitpaket innehåller fem kort var, och ju dyrare paket, desto sällsyntare kort. Öppna dem i appen eller köp dem här."
+    },
+    "cta": "Skaffa kortpaket i butiken",
+    "match": {
+      "caption": "Livematch"
+    },
+    "hand": {
+      "caption": "Starthand"
+    },
+    "pack": {
+      "caption": "Mythic-drag"
+    },
+    "season": {
+      "caption": "Säsongsbelöningar"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Steg",
+    "title": "Varje steg du tar räknas",
+    "lead": "Seekprotocol läser dina steg från Apple Health eller Health Connect och gör en aktiv dag till powerups och XP. Fånga ett mynt den dagen, så låses belöningarna upp medan du går.",
+    "points": [
+      "Steg du går medan du jagar på kartan räknas extra, mätta av telefonens egen rörelsesensor.",
+      "Gå 10 000 steg om dagen för att hålla din streak vid liv, med belöningar dag 14, 30, 60 och 100, ända upp till ett Premiumpaket.",
+      "Gå 15 km för att kläcka ett Stegägg med ett Baspaket inuti, och gå med din klan mot ett veckomål på en miljon steg.",
+      "Bara steg som din telefon eller klocka har räknat själv används, aldrig steg som matats in för hand. Din stegdata säljs aldrig, och du kan koppla från när du vill."
+    ],
+    "ladderLabel": "Dagliga stegbelöningar",
+    "stepsCount": "{count} steg",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Varje dag, så snart du har fångat ett mynt.",
+    "watchEyebrow": "Apple Watch och Wear OS",
+    "watchTitle": "Dina steg, på handleden",
+    "watchLead": "Dagens antal, nästa belöning och din streak finns en blick bort. Båda klockapparna följer med Seekprotocol-appen.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Starta en promenad från handleden",
+      "points": [
+        "Dagens ring och nästa belöning, steg per timme, din streak, veckan, ditt Stegägg och klanens mål.",
+        "Spela in en promenad med rutt, puls och sträcka. Den sparas i Apple Health, och en promenad eller löprunda på 8 km ger en Fitness.",
+        "Komplikationer och en Smart Stack-widget håller antalet på urtavlan."
+      ],
+      "requires": "watchOS 11 eller senare"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch och alla Wear OS-klockor",
+      "points": [
+        "Dagens ring, belöningar, streak, vecka, Stegägg och Klansteg på en enda skrollbar skärm.",
+        "En bricka och en komplikation, för en snabb blick utan att öppna appen."
+      ],
+      "requires": "Wear OS 3 eller senare"
+    },
+    "face": {
+      "today": "Idag",
+      "steps": "Steg",
+      "walk": "Promenad",
+      "streak": "Streak",
+      "best": "Bästa {n}",
+      "byHour": "Idag per timme",
+      "toNext": "{count} steg till {reward}",
+      "nextStreak": "Nästa belöning dag {day}: {reward}",
+      "end": "Avsluta",
+      "chipUnlocked": "{reward} upplåst",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal förbrända",
+      "chipStreak": "{n} dagars streak",
+      "label": "Seek på Apple Watch och Wear OS: steg som klättrar förbi 10 000, en promenad med sträcka, puls och kalorier, dagens mynt som landar i samlingen, och en streak på 12 dagar.",
+      "collection": "Samling",
+      "caughtToday": "{n} fångade idag",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "Även på iPad och surfplattor",
+    "title": "Lika hemma på den stora skärmen",
+    "lead": "Seekprotocol är gjort för telefonen i fickan, och körs dessutom som en riktig iPad-app och på Android-surfplattor. Skärmarna tar vara på det extra utrymmet i stället för att bara sträckas ut, i alla lägen.",
+    "points": [
+      "Fånga drops i AR på en skärm som är stor nog att rymma hela gatan.",
+      "Seek Arena får hela bredden: större kort, sidopaneler och din kortlek bredvid din samling.",
+      "Chatt, inställningar, klaner och vänner öppnas sida vid sida, med listan bredvid sidan du har öppen.",
+      "Ett konto på alla enheter, så dina fångster, kort och framsteg följer med från telefon till surfplatta."
+    ],
+    "tabletLabel": "En drop fångas i AR på iPad"
+  },
   "offers": {
     "railLabel": "Dropformat",
     "redeemLabel": "Så löses den in",

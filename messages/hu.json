@@ -967,6 +967,135 @@
       "faq": "Robinhood: Stock Token GYIK"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Amit elkapsz, abból most kártyajáték lesz",
+    "lead": "A Seek Arena élő, egy az egy elleni kártyacsata az appon belül. Építs húszlapos paklit több mint 260 kártyából, mérkőzz meg valós időben egy másik játékossal, és üsd ki öt kártyáját, mielőtt ő kiütné a tieidet.",
+    "points": [
+      "A kártyák a vadászterkép dobozaiból, az elkapott SEEK-ből nyitott csomagokból, valamint küldetésekből, klánháborúkból és a szezonból érkeznek.",
+      "Hat ritkaság a Gyakoritól a Mythicig, kilenc frakcióban, és minden kártyának saját képessége van, így a pakli terv, nem pedig egy halom lap.",
+      "Cserélj kártyát a barátaiddal egyet egyért, azonos ritkaságon, a duplikátumokat pedig olvaszd XP-vé.",
+      "Melegíts be a Gyakorlóbot ellen, vagy tanuld meg a játékot a Seek Academyben, mielőtt rangért játszol."
+    ],
+    "tabletLabel": "Seek Arena iPaden, valódi képernyőkkel az appból",
+    "cards": {
+      "label": "gyűjthető kártya"
+    },
+    "deck": {
+      "label": "kártya egy pakliban"
+    },
+    "knockouts": {
+      "label": "kiütés a győzelemhez"
+    },
+    "clock": {
+      "label": "másodperc körönként"
+    },
+    "live": {
+      "title": "Élő meccsek",
+      "body": "Keress ellenfelet, hívj ki egy barátot, vagy melegíts be a Gyakorlóbot ellen. Minden körre 45 másodperc jut."
+    },
+    "clanWar": {
+      "title": "Klánháború",
+      "body": "Minden héten, hétfőtől hétfőig összeadódnak a klánod érvényes meccsei: győzelemért három pont, döntetlenért egy."
+    },
+    "ranks": {
+      "title": "Rangok és szezonok",
+      "body": "Mássz fel 57 rangon a Kezdőtől a World Championig, közben napi, heti és szezonális küldetésekkel."
+    },
+    "packs": {
+      "title": "Kártyacsomagok",
+      "body": "Az Alapcsomag, a Prémium csomag és az Elit csomag egyaránt öt kártyát rejt, és minél drágább a csomag, annál ritkábbak a lapok. Nyisd meg őket az appban, vagy vedd meg itt."
+    },
+    "cta": "Kártyacsomagok a boltban",
+    "match": {
+      "caption": "Élő meccs"
+    },
+    "hand": {
+      "caption": "Kezdő kéz"
+    },
+    "pack": {
+      "caption": "Mythic a csomagból"
+    },
+    "season": {
+      "caption": "Szezonjutalmak"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Lépések",
+    "title": "Minden megtett lépés számít",
+    "lead": "A Seekprotocol az Apple Healthből vagy a Health Connectből olvassa ki a lépéseidet, és egy aktív napot power-upokká és XP-vé alakít. Kapj el aznap egy érmét, és a jutalmak sétálás közben nyílnak meg.",
+    "points": [
+      "A térképen vadászat közben megtett lépések külön is számítanak, ezeket a telefonod saját mozgásérzékelője méri.",
+      "Napi 10 000 lépéssel életben tartod a sorozatodat, a 14., 30., 60. és 100. napon pedig jutalom jár, egészen egy Prémium csomagig.",
+      "Gyalogolj 15 km-t, és kikel egy Lépéstojás, benne egy Alapcsomaggal, a klánoddal pedig együtt sétálhattok a heti egymillió lépéses cél felé.",
+      "Csak a telefonod vagy órád által magától számolt lépések számítanak, kézzel bevitt lépések soha. A lépésadataidat sosem adjuk el, és bármikor leválaszthatod őket."
+    ],
+    "ladderLabel": "Napi lépésjutalmak",
+    "stepsCount": "{count} lépés",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Minden nap, miután elkaptál egy érmét.",
+    "watchEyebrow": "Apple Watch és Wear OS",
+    "watchTitle": "A lépéseid a csuklódon",
+    "watchLead": "A mai lépésszám, a következő jutalom és a sorozatod egy pillantásnyira van. Mindkét órás app a Seekprotocol apphoz jár.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Indíts sétát a csuklódról",
+      "points": [
+        "A mai gyűrű és a következő jutalom, óránkénti lépések, a sorozatod, a hét, a Lépéstojásod és a klánod célja.",
+        "Rögzíts egy sétát az útvonalával, pulzusával és távolságával. Az Apple Healthbe mentődik, egy 8 km-es séta vagy futás pedig egy Fitnesst ér.",
+        "Komplikációk és egy Smart Stack widget tartják a lépésszámot az óralapodon."
+      ],
+      "requires": "watchOS 11 vagy újabb"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch és minden Wear OS óra",
+      "points": [
+        "A mai gyűrű, jutalmak, sorozat, hét, Lépéstojás és Klánlépések egyetlen görgethető képernyőn.",
+        "Egy csempe és egy komplikáció, hogy az app megnyitása nélkül is rápillanthass."
+      ],
+      "requires": "Wear OS 3 vagy újabb"
+    },
+    "face": {
+      "today": "Ma",
+      "steps": "Lépések",
+      "walk": "Séta",
+      "streak": "Sorozat",
+      "best": "Legjobb {n}",
+      "byHour": "Ma óránként",
+      "toNext": "Még {count} lépés: {reward}",
+      "nextStreak": "{day}. napi jutalom: {reward}",
+      "end": "Befejezés",
+      "chipUnlocked": "{reward} feloldva",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal elégetve",
+      "chipStreak": "{n} napos sorozat",
+      "label": "Seek Apple Watchon és Wear OS-en: a lépésszám 10 000 fölé kúszik, egy séta távolsággal, pulzussal és kalóriával, a gyűjteménybe érkező napi érmék, és egy 12 napos sorozat.",
+      "collection": "Gyűjtemény",
+      "caughtToday": "Ma elkapva: {n}",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "iPaden és tableten is",
+    "title": "A nagy képernyőn is otthon van",
+    "lead": "A Seekprotocol a zsebedben lévő telefonra készült, de valódi iPad-appként és Android tableteken is fut. A képernyők nem egyszerűen széthúzódnak, hanem minden tájolásban kihasználják a plusz helyet.",
+    "points": [
+      "Kapj el dropokat AR-ben egy akkora képernyőn, amelyen az egész utca elfér.",
+      "A Seek Arena a teljes szélességet megkapja: nagyobb kártyák, oldalpanelek, és a paklid a gyűjteményed mellett.",
+      "A chat, a beállítások, a klánok és a barátok egymás mellett nyílnak meg, a lista ott marad a megnyitott oldal mellett.",
+      "Egy fiók minden eszközön, így az elkapásaid, a kártyáid és a haladásod veled jönnek a telefonról a tabletre."
+    ],
+    "tabletLabel": "Drop elkapása AR-ben iPaden"
+  },
   "offers": {
     "railLabel": "Drop-formátumok",
     "redeemLabel": "Hogyan váltható be",

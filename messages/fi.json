@@ -967,6 +967,135 @@
       "faq": "Robinhood: Stock Token -UKK"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Nappauksesi, nyt korttipelinä",
+    "lead": "Seek Arena on sovelluksen sisällä pelattava livekorttitaistelu yksi vastaan yksi. Kokoa kahdenkymmenen kortin pakka yli 260 kortista, kohtaa toinen seeker reaaliajassa ja tyrmää viisi hänen korttiaan ennen kuin hän tyrmää viisi sinun.",
+    "points": [
+      "Kortteja saat metsästyskartan korttilaatikoista, pakkauksista, jotka avaat nappaamallasi SEEKillä, sekä tehtävistä, klaanisodista ja kaudesta.",
+      "Kuusi harvinaisuutta Commonista Mythiciin yhdeksässä ryhmittymässä, ja jokaisella kortilla on oma kykynsä. Pakka on siis suunnitelma eikä pino.",
+      "Vaihda kortteja kavereiden kanssa yksi yhteen samalla harvinaisuudella ja sulata tuplakorttisi XP:ksi.",
+      "Lämmittele Harjoitusbottia vastaan tai opettele peli Seek Academyssa ennen kuin pelaat rankista."
+    ],
+    "tabletLabel": "Seek Arena iPadilla, aitoina näkyminä sovelluksesta",
+    "cards": {
+      "label": "kerättävää korttia"
+    },
+    "deck": {
+      "label": "korttia pakassa"
+    },
+    "knockouts": {
+      "label": "tyrmäystä voittoon"
+    },
+    "clock": {
+      "label": "sekuntia vuorossa"
+    },
+    "live": {
+      "title": "Liveottelut",
+      "body": "Etsi vastustaja, haasta kaveri tai lämmittele Harjoitusbottia vastaan. Jokaisella vuorolla on 45 sekunnin kello."
+    },
+    "clanWar": {
+      "title": "Klaanisota",
+      "body": "Joka viikko maanantaista maanantaihin klaanisi kelpaavat ottelut lasketaan yhteen: kolme pistettä voitosta, yksi tasapelistä."
+    },
+    "ranks": {
+      "title": "Rankit ja kaudet",
+      "body": "Kiipeä 57 rankin läpi Aloittelijasta World Championiksi, ja matkan varrella odottavat päivä-, viikko- ja kausitehtävät."
+    },
+    "packs": {
+      "title": "Korttipakkaukset",
+      "body": "Peruspakkauksessa, Premium-pakkauksessa ja Eliittipakkauksessa on kussakin viisi korttia, ja mitä kalliimpi pakkaus, sitä harvinaisemmat kortit. Avaa ne sovelluksessa tai osta täältä."
+    },
+    "cta": "Hae korttipakkauksia kaupasta",
+    "match": {
+      "caption": "Liveottelu"
+    },
+    "hand": {
+      "caption": "Aloituskäsi"
+    },
+    "pack": {
+      "caption": "Mythic-kortti"
+    },
+    "season": {
+      "caption": "Kauden palkinnot"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Askeleet",
+    "title": "Jokainen askel lasketaan",
+    "lead": "Seekprotocol lukee askeleesi Apple Healthista tai Health Connectista ja muuttaa hyvän liikuntapäivän tehosteiksi ja XP:ksi. Nappaa sinä päivänä yksi kolikko, niin palkinnot aukeavat kävellessäsi.",
+    "points": [
+      "Kartalla metsästäessä otetut askeleet painavat enemmän, ja ne mittaa puhelimesi oma liikeanturi.",
+      "Kävele 10 000 askelta päivässä pitääksesi putken yllä. Palkintoja saat päivinä 14, 30, 60 ja 100, aina Premium-pakkaukseen asti.",
+      "Kävele 15 km haudottaaksesi Askelmunan, jonka sisällä on Peruspakkaus, ja kävele klaanisi kanssa kohti miljoonan askeleen viikkotavoitetta.",
+      "Vain puhelimesi tai kellosi itse laskemat askeleet huomioidaan, ei koskaan käsin syötettyjä. Askeltietojasi ei koskaan myydä, ja voit katkaista yhteyden milloin tahansa."
+    ],
+    "ladderLabel": "Päivittäiset askelpalkinnot",
+    "stepsCount": "{count} askelta",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Joka päivä, kun olet napannut kolikon.",
+    "watchEyebrow": "Apple Watch ja Wear OS",
+    "watchTitle": "Askeleesi ranteessa",
+    "watchLead": "Päivän askelmäärä, seuraava palkinto ja putkesi yhdellä vilkaisulla. Molemmat kellosovellukset tulevat Seekprotocol-sovelluksen mukana.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Aloita kävely ranteesta",
+      "points": [
+        "Päivän rengas ja seuraava palkinto, askeleet tunneittain, putkesi, viikko, Askelmunasi ja klaanisi tavoite.",
+        "Tallenna kävely reitteineen, sykkeineen ja matkoineen. Se tallentuu Apple Healthiin, ja 8 km:n kävely tai juoksu ansaitsee Fitnessin.",
+        "Komplikaatiot ja Smart Stack -widget pitävät askelmäärän kellotaulullasi."
+      ],
+      "requires": "watchOS 11 tai uudempi"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch ja kaikki Wear OS -kellot",
+      "points": [
+        "Päivän rengas, palkinnot, putki, viikko, Askelmuna ja Klaanin askeleet yhdellä vieritettävällä näytöllä.",
+        "Ruutu ja komplikaatio, joista näet tilanteen avaamatta sovellusta."
+      ],
+      "requires": "Wear OS 3 tai uudempi"
+    },
+    "face": {
+      "today": "Tänään",
+      "steps": "Askeleet",
+      "walk": "Kävely",
+      "streak": "Putki",
+      "best": "Paras {n}",
+      "byHour": "Tänään tunneittain",
+      "toNext": "Vielä {count} askelta: {reward}",
+      "nextStreak": "Seuraava palkinto päivänä {day}: {reward}",
+      "end": "Lopeta",
+      "chipUnlocked": "{reward} avattu",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal kulutettu",
+      "chipStreak": "{n} päivän putki",
+      "label": "Seek Apple Watchissa ja Wear OS:ssä: yli 10 000:n nouseva askelmäärä, kävely matkoineen, sykkeineen ja kaloreineen, kokoelmaan päätyvät päivän kolikot sekä 12 päivän putki.",
+      "collection": "Kokoelma",
+      "caughtToday": "{n} napattu tänään",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "Myös iPadilla ja tableteilla",
+    "title": "Kotonaan myös isolla näytöllä",
+    "lead": "Seekprotocol on tehty taskussasi kulkevaan puhelimeen, ja se toimii myös aitona iPad-sovelluksena ja Android-tableteilla. Näkymät hyödyntävät lisätilan sen sijaan, että ne vain venyisivät, kaikissa asennoissa.",
+    "points": [
+      "Nappaa dropeja AR:ssä näytöllä, joka on tarpeeksi iso koko kadun hahmottamiseen.",
+      "Seek Arena saa koko leveyden: isommat kortit, sivupaneelit ja pakkasi kokoelmasi vieressä.",
+      "Chat, asetukset, klaanit ja kaverit avautuvat vierekkäin, ja lista näkyy avoinna olevan sivun vieressä.",
+      "Yksi tili kaikilla laitteilla, joten nappauksesi, korttisi ja edistymisesi kulkevat mukanasi puhelimesta tablettiin."
+    ],
+    "tabletLabel": "Dropin nappaaminen AR:ssä iPadilla"
+  },
   "offers": {
     "railLabel": "Drop-muodot",
     "redeemLabel": "Miten se lunastetaan",

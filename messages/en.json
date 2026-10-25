@@ -967,6 +967,135 @@
       "faq": "Robinhood: Stock Token FAQ"
     }
   },
+  "arenaSection": {
+    "eyebrow": "Seek Arena",
+    "title": "Your catches, now a card game",
+    "lead": "Seek Arena is a live one on one card battle inside the app. Build a deck of twenty from more than 260 cards, take on another seeker in real time, and knock out five of their cards before they knock out yours.",
+    "points": [
+      "Cards come from boxes on the hunting map, from packs you open with the SEEK you catch, and from quests, clan wars and the season.",
+      "Six rarities from Common to Mythic across nine factions, and every card has an ability of its own, so a deck is a plan rather than a pile.",
+      "Trade cards with friends one for one at the same rarity, and melt your duplicates into XP.",
+      "Warm up against the Practice Bot, or learn the game in Seek Academy, before you play for rank."
+    ],
+    "tabletLabel": "Seek Arena on iPad, in real screens from the app",
+    "cards": {
+      "label": "cards to collect"
+    },
+    "deck": {
+      "label": "cards in a deck"
+    },
+    "knockouts": {
+      "label": "knock-outs to win"
+    },
+    "clock": {
+      "label": "seconds per turn"
+    },
+    "live": {
+      "title": "Live matches",
+      "body": "Find an opponent, challenge a friend, or warm up against the Practice Bot. Every turn runs on a 45 second clock."
+    },
+    "clanWar": {
+      "title": "Clan war",
+      "body": "Every week, Monday to Monday, your clan's eligible matches add up: three points for a win, one for a draw."
+    },
+    "ranks": {
+      "title": "Ranks and seasons",
+      "body": "Climb 57 ranks from Beginner to World Champion, with daily, weekly and season quests along the way."
+    },
+    "packs": {
+      "title": "Card packs",
+      "body": "Basic, Premium and Elite packs hold five cards each, and the pricier the pack, the rarer the cards. Open them in the app or buy them here."
+    },
+    "cta": "Get card packs in the shop",
+    "match": {
+      "caption": "Live match"
+    },
+    "hand": {
+      "caption": "Opening hand"
+    },
+    "pack": {
+      "caption": "Mythic pull"
+    },
+    "season": {
+      "caption": "Season rewards"
+    }
+  },
+  "stepsSection": {
+    "eyebrow": "Steps",
+    "title": "Every step you walk counts",
+    "lead": "Seekprotocol reads your steps from Apple Health or Health Connect and turns a good day on your feet into powerups and XP. Catch one coin that day, and the rewards unlock as you walk.",
+    "points": [
+      "Steps you walk while hunting on the map count extra, measured by your phone's own motion sensor.",
+      "Walk 10,000 steps a day to keep a streak going, with rewards on day 14, 30, 60 and 100, up to a Premium card pack.",
+      "Walk 15 km to hatch a Step egg with a Basic card pack inside, and walk with your clan toward a weekly goal of a million steps.",
+      "Only steps your phone or watch counted by itself are used, never steps entered by hand. Your step data is never sold, and you can disconnect at any time."
+    ],
+    "ladderLabel": "Daily step rewards",
+    "stepsCount": "{count} steps",
+    "fitness": {
+      "reward": "Fitness"
+    },
+    "xpBoost": {
+      "reward": "XP Boost"
+    },
+    "spawnLure": {
+      "reward": "Spawn Lure"
+    },
+    "ladderNote": "Every day, once you have caught a coin.",
+    "watchEyebrow": "Apple Watch and Wear OS",
+    "watchTitle": "Your steps, on your wrist",
+    "watchLead": "Today's count, the next reward and your streak are one glance away. Both watch apps come with the Seekprotocol app.",
+    "apple": {
+      "kicker": "Apple Watch",
+      "title": "Start a walk from your wrist",
+      "points": [
+        "Today's ring and next reward, steps by hour, your streak, the week, your Step egg and your clan's goal.",
+        "Record a walk with its route, heart rate and distance. It is saved to Apple Health, and an 8 km walk or run earns a Fitness.",
+        "Complications and a Smart Stack widget keep the count on your watch face."
+      ],
+      "requires": "watchOS 11 or later"
+    },
+    "wear": {
+      "kicker": "Wear OS",
+      "title": "Galaxy Watch and every Wear OS watch",
+      "points": [
+        "Today's ring, rewards, streak, week, Step egg and clan steps on one scrolling screen.",
+        "A tile and a complication, for a glance without opening the app."
+      ],
+      "requires": "Wear OS 3 or later"
+    },
+    "face": {
+      "today": "Today",
+      "steps": "Steps",
+      "walk": "Walk",
+      "streak": "Streak",
+      "best": "Best {n}",
+      "byHour": "Today by hour",
+      "toNext": "{count} steps to {reward}",
+      "nextStreak": "Next reward on day {day}: {reward}",
+      "end": "End",
+      "chipUnlocked": "{reward} unlocked",
+      "chipXp": "+{xp} XP",
+      "chipKcal": "{kcal} kcal burned",
+      "chipStreak": "{n} day streak",
+      "label": "Seek on Apple Watch and Wear OS: steps climbing past 10,000, a walk with distance, heart rate and calories, the day's coins landing in the collection, and a 12 day streak.",
+      "collection": "Collection",
+      "caughtToday": "{n} caught today",
+      "chipCaught": "+1 {coin}"
+    }
+  },
+  "tabletSection": {
+    "eyebrow": "Also on iPad and tablets",
+    "title": "At home on the big screen too",
+    "lead": "Seekprotocol is made for the phone in your pocket, and it also runs as a proper iPad app and on Android tablets. The screens make use of the extra room instead of simply stretching, in every orientation.",
+    "points": [
+      "Catch drops in AR on a screen big enough to take in the whole street.",
+      "Seek Arena gets the full width: larger cards, side panels, and your deck beside your collection.",
+      "Chat, settings, clans and friends open side by side, with the list next to the page you have open.",
+      "One account on every device, so your catches, cards and progress come with you from phone to tablet."
+    ],
+    "tabletLabel": "Catching a drop in AR on iPad"
+  },
   "offers": {
     "railLabel": "Drop formats",
     "redeemLabel": "How it redeems",
