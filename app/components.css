@@ -6777,6 +6777,9 @@ html .wallet-adapter-modal-middle-button {
 .shop-product-price { margin-top:auto; display:flex; align-items:center; flex-wrap:wrap; gap:.5rem; }
 .shop-product-price b { font-size:1.15rem; font-weight:600; }
 .shop-product-price small { font-size:.65rem; color:var(--brand); }
+.shop-sale-was { font-size:.8rem; color:var(--fg-muted); text-decoration:line-through; }
+.shop-product-price small.shop-sale-badge { color:#fff; background:#E5484D; border-radius:.35rem; padding:.15rem .4rem; font-weight:700; }
+.shop-catalog-heading .shop-sale-banner { margin-top:.75rem; display:inline-block; color:#fff; background:#E5484D; border-radius:.5rem; padding:.45rem .75rem; font-weight:700; font-size:.9rem; }
 .checkout-item-art svg { height:64px; width:100%; display:block; color:var(--brand); }
 @media (max-width:1000px) { .shop-product-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
 @media (max-width:620px) { .shop-product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:.65rem; } .shop-product-card { padding:.8rem; } .shop-product-art { height:84px; } .shop-product-card > strong { font-size:.9rem; } }

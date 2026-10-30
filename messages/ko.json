@@ -3438,6 +3438,10 @@
       "phantom": "Phantom에서 열기",
       "solflare": "Solflare에서 열기",
       "close": "닫기"
+    },
+    "sale": {
+      "banner": "세일: {date}까지 전 상품 {percent}% 할인",
+      "was": "정가 {price}"
     }
   },
   "siteMeta": {

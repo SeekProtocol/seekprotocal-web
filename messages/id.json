@@ -3438,6 +3438,10 @@
       "phantom": "Buka di Phantom",
       "solflare": "Buka di Solflare",
       "close": "Tutup"
+    },
+    "sale": {
+      "banner": "Diskon: {percent}% untuk semua item sampai {date}",
+      "was": "Sebelumnya {price}"
     }
   },
   "siteMeta": {

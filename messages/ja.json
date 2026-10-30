@@ -3438,6 +3438,10 @@
       "phantom": "Phantomで開く",
       "solflare": "Solflareで開く",
       "close": "閉じる"
+    },
+    "sale": {
+      "banner": "セール：{date}まで全品{percent}%オフ",
+      "was": "通常価格 {price}"
     }
   },
   "siteMeta": {

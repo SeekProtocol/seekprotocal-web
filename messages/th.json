@@ -3438,6 +3438,10 @@
       "phantom": "เปิดใน Phantom",
       "solflare": "เปิดใน Solflare",
       "close": "ปิด"
+    },
+    "sale": {
+      "banner": "ลดราคา: ลด {percent}% ทุกรายการถึง {date}",
+      "was": "ราคาเดิม {price}"
     }
   },
   "siteMeta": {

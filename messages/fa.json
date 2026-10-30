@@ -3438,6 +3438,10 @@
       "phantom": "باز کردن در Phantom",
       "solflare": "باز کردن در Solflare",
       "close": "بستن"
+    },
+    "sale": {
+      "banner": "حراج: {percent}٪ تخفیف روی همه چیز تا {date}",
+      "was": "قیمت قبلی {price}"
     }
   },
   "siteMeta": {

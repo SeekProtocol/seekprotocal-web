@@ -3438,6 +3438,10 @@
       "phantom": "Hape në Phantom",
       "solflare": "Hape në Solflare",
       "close": "Mbyll"
+    },
+    "sale": {
+      "banner": "Ulje: {percent}% zbritje për gjithçka deri më {date}",
+      "was": "Më parë {price}"
     }
   },
   "siteMeta": {

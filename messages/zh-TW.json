@@ -3438,6 +3438,10 @@
       "phantom": "在 Phantom 中開啟",
       "solflare": "在 Solflare 中開啟",
       "close": "關閉"
+    },
+    "sale": {
+      "banner": "特價：{date}前全館{percent}%折扣",
+      "was": "原價 {price}"
     }
   },
   "siteMeta": {

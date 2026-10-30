@@ -3438,6 +3438,10 @@
       "phantom": "Mở trong Phantom",
       "solflare": "Mở trong Solflare",
       "close": "Đóng"
+    },
+    "sale": {
+      "banner": "Khuyến mãi: giảm {percent}% mọi thứ đến hết {date}",
+      "was": "Giá cũ {price}"
     }
   },
   "siteMeta": {

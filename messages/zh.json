@@ -3438,6 +3438,10 @@
       "phantom": "在 Phantom 中打开",
       "solflare": "在 Solflare 中打开",
       "close": "关闭"
+    },
+    "sale": {
+      "banner": "促销：{date}前全场{percent}%折扣",
+      "was": "原价 {price}"
     }
   },
   "siteMeta": {

@@ -3438,6 +3438,10 @@
       "phantom": "افتح في Phantom",
       "solflare": "افتح في Solflare",
       "close": "إغلاق"
+    },
+    "sale": {
+      "banner": "تخفيضات: خصم {percent}% على كل شيء حتى {date}",
+      "was": "السعر السابق {price}"
     }
   },
   "siteMeta": {

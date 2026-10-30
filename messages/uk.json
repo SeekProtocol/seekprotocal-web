@@ -3438,6 +3438,10 @@
       "phantom": "Відкрити в Phantom",
       "solflare": "Відкрити в Solflare",
       "close": "Закрити"
+    },
+    "sale": {
+      "banner": "Розпродаж: знижка {percent}% на все до {date}",
+      "was": "Було {price}"
     }
   },
   "siteMeta": {

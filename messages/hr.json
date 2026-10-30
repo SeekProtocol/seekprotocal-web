@@ -3438,6 +3438,10 @@
       "phantom": "Otvori u Phantomu",
       "solflare": "Otvori u Solflareu",
       "close": "Zatvori"
+    },
+    "sale": {
+      "banner": "Akcija: {percent}% popusta na sve do {date}",
+      "was": "Prije {price}"
     }
   },
   "siteMeta": {

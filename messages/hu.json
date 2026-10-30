@@ -3438,6 +3438,10 @@
       "phantom": "Megnyitás Phantomban",
       "solflare": "Megnyitás Solflare-ben",
       "close": "Bezárás"
+    },
+    "sale": {
+      "banner": "Akció: minden {percent}% kedvezménnyel {date}-ig",
+      "was": "Korábban {price}"
     }
   },
   "siteMeta": {

@@ -3438,6 +3438,10 @@
       "phantom": "Phantom'da aç",
       "solflare": "Solflare'de aç",
       "close": "Kapat"
+    },
+    "sale": {
+      "banner": "İndirim: {date} tarihine kadar her şeyde %{percent} indirim",
+      "was": "Önceki fiyat {price}"
     }
   },
   "siteMeta": {

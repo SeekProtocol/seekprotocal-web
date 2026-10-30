@@ -3438,6 +3438,10 @@
       "phantom": "Ava Phantomis",
       "solflare": "Ava Solflare'is",
       "close": "Sulge"
+    },
+    "sale": {
+      "banner": "Allahindlus: kõik {percent}% soodsamalt kuni {date}",
+      "was": "Varem {price}"
     }
   },
   "siteMeta": {

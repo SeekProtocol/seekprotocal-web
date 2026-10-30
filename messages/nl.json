@@ -3438,6 +3438,10 @@
       "phantom": "Open in Phantom",
       "solflare": "Open in Solflare",
       "close": "Sluiten"
+    },
+    "sale": {
+      "banner": "Sale: {percent}% korting op alles t/m {date}",
+      "was": "Was {price}"
     }
   },
   "siteMeta": {

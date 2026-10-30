@@ -3438,6 +3438,10 @@
       "phantom": "Avaa Phantomissa",
       "solflare": "Avaa Solflaressa",
       "close": "Sulje"
+    },
+    "sale": {
+      "banner": "Ale: kaikki {percent} % halvemmalla {date} asti",
+      "was": "Ennen {price}"
     }
   },
   "siteMeta": {

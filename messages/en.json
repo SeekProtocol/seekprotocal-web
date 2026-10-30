@@ -3438,6 +3438,10 @@
       "phantom": "Open in Phantom",
       "solflare": "Open in Solflare",
       "close": "Close"
+    },
+    "sale": {
+      "banner": "Sale: {percent}% off everything until {date}",
+      "was": "Was {price}"
     }
   },
   "siteMeta": {

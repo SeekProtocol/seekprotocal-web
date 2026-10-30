@@ -3438,6 +3438,10 @@
       "phantom": "Άνοιγμα στο Phantom",
       "solflare": "Άνοιγμα στο Solflare",
       "close": "Κλείσιμο"
+    },
+    "sale": {
+      "banner": "Προσφορά: {percent}% έκπτωση σε όλα έως {date}",
+      "was": "Πριν {price}"
     }
   },
   "siteMeta": {

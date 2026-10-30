@@ -3438,6 +3438,10 @@
       "phantom": "Buka dalam Phantom",
       "solflare": "Buka dalam Solflare",
       "close": "Tutup"
+    },
+    "sale": {
+      "banner": "Jualan: diskaun {percent}% untuk semua sehingga {date}",
+      "was": "Asal {price}"
     }
   },
   "siteMeta": {

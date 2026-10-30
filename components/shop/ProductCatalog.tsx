@@ -4,14 +4,15 @@ import ProductArt from "./ProductArt";
 import PackDetails from "./PackDetails";
 export { default as ProductArt } from "./ProductArt";
 import {useLocale,useTranslations} from 'next-intl';
-import {bundleSaving,formatPrice,type ShopProduct} from '@/lib/shop/catalog';
+import {bundleSaving,catalogSale,formatPrice,salePercent,type ShopProduct} from '@/lib/shop/catalog';
 import {productName,productDescription,powerupCopyKey} from '@/lib/shop/product-copy';
 export {productName} from '@/lib/shop/product-copy';
 
 export default function ProductCatalog({products,items,onQuantity,disabled}: {products:ShopProduct[];items:CartItem[];onQuantity:(p:ShopProduct,q:number)=>void;disabled:boolean}) {
   const t=useTranslations('shop');const locale=useLocale();
+  const sale=catalogSale(products);
   return <section className="shop-catalog" aria-labelledby="shop-catalog-title">
-    <div className="shop-catalog-heading"><span className="eyebrow">Seekprotocol Shop</span><h2 id="shop-catalog-title">{t('catalogTitle')}</h2><p>{t('catalogLead')}</p></div>
+    <div className="shop-catalog-heading"><span className="eyebrow">Seekprotocol Shop</span><h2 id="shop-catalog-title">{t('catalogTitle')}</h2><p>{t('catalogLead')}</p>{sale && <p className="shop-sale-banner" role="note">{t('sale.banner',{percent:sale.percent,date:new Intl.DateTimeFormat(locale,{day:'numeric',month:'long'}).format(new Date(sale.endsAt))})}</p>}</div>
     <fieldset disabled={disabled} className="shop-product-grid"><legend className="sr-only">{t('catalogTitle')}</legend>
       {products.map(product => {
         const quantity = items.find(item => item.product.id === product.id)?.quantity ?? 0;
@@ -34,7 +35,7 @@ export default function ProductCatalog({products,items,onQuantity,disabled}: {pr
             </>}
             <p>{t('productInfo.delivery')}</p>
           </details>
-          <div className="shop-product-price"><b>{formatPrice(product,locale)}</b>{bundleSaving(product,products)!>0 && <small>{t('bundleSaving',{percent:bundleSaving(product,products)!})}</small>}</div>
+          <div className="shop-product-price">{product.listPriceCents && <s className="shop-sale-was" aria-label={t('sale.was',{price:formatPrice({priceCents:product.listPriceCents,currency:product.currency},locale)})}>{formatPrice({priceCents:product.listPriceCents,currency:product.currency},locale)}</s>}<b>{formatPrice(product,locale)}</b>{salePercent(product)!==null && <small className="shop-sale-badge">-{salePercent(product)}%</small>}{bundleSaving(product,products)!>0 && <small>{t('bundleSaving',{percent:bundleSaving(product,products)!})}</small>}</div>
           <div className="shop-product-quantity" role="group" aria-label={t('cart.quantity',{product:name})}>
             <button type="button" disabled={disabled || quantity===0} aria-label={`${t('cart.decrease')}: ${name}`} onClick={()=>onQuantity(product,quantity-1)}>−</button>
             <span aria-live="polite">{quantity}</span>
