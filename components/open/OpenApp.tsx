@@ -32,9 +32,17 @@ export function storeLinks(campaign: string | null) {
   return { appStore: apple.toString(), googlePlay: play.toString() };
 }
 
+/** Screens a mail may open directly (`?to=`); anything else opens the app's start. */
+const SCREENS = new Set(["referral"]);
+
 /** Android opens the app, or Google Play without an error page when it is missing. */
-export function androidIntent(playUrl: string) {
-  return `intent://open#Intent;scheme=seekar;package=${ANDROID_PACKAGE};S.browser_fallback_url=${encodeURIComponent(playUrl)};end`;
+export function androidIntent(playUrl: string, screen: string | null = null) {
+  return `intent://${screen ?? "open"}#Intent;scheme=seekar;package=${ANDROID_PACKAGE};S.browser_fallback_url=${encodeURIComponent(playUrl)};end`;
+}
+
+function screenOf(search: string): string | null {
+  const value = new URLSearchParams(search).get("to");
+  return value && SCREENS.has(value) ? value : null;
 }
 
 const noSubscribe = () => () => {};
@@ -50,12 +58,14 @@ export function OpenApp() {
   // Read on the device only: the server renders the neutral page, the phone decides.
   const platform = useSyncExternalStore<Platform | null>(noSubscribe, () => platformOf(navigator.userAgent), () => null);
   const campaign = useSyncExternalStore(noSubscribe, () => campaignOf(window.location.search), () => null);
+  const screen = useSyncExternalStore(noSubscribe, () => screenOf(window.location.search), () => null);
   const links = useMemo(() => storeLinks(campaign), [campaign]);
+  const schemeUrl = screen ? `${SCHEME_URL}${screen}` : SCHEME_URL;
 
   useEffect(() => {
     const p = platform;
     if (p === "android") {
-      window.location.href = androidIntent(links.googlePlay);
+      window.location.href = androidIntent(links.googlePlay, screen);
       return;
     }
     if (p === "ios") {
@@ -67,16 +77,16 @@ export function OpenApp() {
       const timer = window.setTimeout(() => {
         if (!left && !document.hidden) window.location.href = links.appStore;
       }, IOS_FALLBACK_MS);
-      window.location.href = SCHEME_URL;
+      window.location.href = schemeUrl;
       return () => {
         window.clearTimeout(timer);
         document.removeEventListener("visibilitychange", away);
         window.removeEventListener("pagehide", away);
       };
     }
-  }, [platform, links]);
+  }, [platform, links, screen, schemeUrl]);
 
-  const openHref = platform === "android" ? androidIntent(links.googlePlay) : SCHEME_URL;
+  const openHref = platform === "android" ? androidIntent(links.googlePlay, screen) : schemeUrl;
 
   return (
     <section className="notfound">
